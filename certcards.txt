@@ -1,0 +1,923 @@
+
+
+
+
+11
+Automation Hub
+Assign Process Owner
+
+In this last section of the form, type to search and select a Process Owner for the automation. This action sends an invite to the selected person to fill in a more detailed assessment for the automation idea.
+
+
+
+
+
+12
+Security+
+On-Path browser attack
+What if the middleman was on the same computer as the victim?
+	Malware/Trojan does all of the proxy work
+	Formerly known as man-in-the-browser
+Huge advantages for the attackers
+	Relatively easy to proxy encrypted traffic
+	Everything looks normal to the victim
+
+
+
+13
+Security+
+Lan switching
+Forward or drop frames
+	Based on the destination MAC address
+Switches gather a constantly updating list of MAC addresses
+	Builds the list based on teh source MAC address of incoming traffic
+	These age out periodically, often in 5 minutes
+Maintain a loop-free environment
+	Using Spanning Tree Protocol (STP)
+
+
+
+14
+Security+
+MAC flooding
+The MAC table on a switch is only so big
+Attacker starts sending traffic with different MAC addressses
+	Forces out he legitimate MAC addresses
+The table fills up
+	Switch begins flooding server traffic to all interfaces
+
+
+
+15
+Security+
+Mac flooding
+Effectively turns a switch into a hub
+	All traffic is transmitted to all interfaces
+	No interruption in traffic flows
+Attacker can easily capture all network traffic
+Flooding can be restricted in the switch's port security setting
+
+
+
+16
+Security+
+MAC cloning/MAC spoofing
+An attacker changes their MAC address to match the MAC of an existing device
+This allows them to circumvent filters
+	Wireless or wired MAC filters
+	Identify a valid MAC address and copy it
+
+
+
+
+17
+Security+
+MAC cloning/MAC spoofing
+Create a Denial of Service (DoS)
+	Intercept and thus deny all communication the legitimate device receives
+Easily manipulated through software
+	Usually a device driver option
+
+
+
+
+
+
+18
+UiPath
+UiPath's Discovery portfolio helps uncover improvement and automation opportunities that have the highest impact on Key Performance Indicators (KPIs). The UiPath Discovery portfolio is currently made of four products:
+	• UiPath Process Mining
+	• UiPath Task Mining
+	• UiPath Task Capture
+UiPath Automation Hub
+
+
+
+19
+UiPath
+UiPath Process Mining analyzes data from your line of business applications to continuously understand and optimize end-to-end processes.
+
+
+
+20
+UiPath
+UiPath Task Mining analyzes the work people do to find everyday, repetitive tasks to automate.
+
+
+
+21
+UiPath
+UiPath Task Capture Automatically captures and documents processes as you work.
+
+
+
+22
+UiPath
+UiPath Automation Hub crowdsources ideas from your employees.
+
+
+
+23
+UiPath
+Event Logs loaded into UiPath Process Mining, where Process Mining Developers use application templates to create Process Mining application for it.
+
+
+
+24
+UiPath
+A Process Mining application is a set of menus and dashboards tailored to a certain process. It contains KPIs, process details, business rules, and process-visualizations.
+
+
+
+
+25
+UiPath
+The Process Mining Application used by the process analyst to visualize the process, monitor it, or find improvement opportunities.
+
+
+
+26
+General
+Eda the Owl Lady is played by Wendie Malick. She starred as Judith Tupper Stone in the HBO sitcom Dream On, and as Nina Van Horn in the NBC sitcom Just Shoot Me!, for which she was nominated for two Primetime Emmys and a Golden Globe Award.
+
+
+
+
+27
+Accuity
+A trial balance is a worksheet with two columns, one for debits and one for credits, that ensures a company’s bookkeeping is mathematically correct. The debits and credits include all business transactions for a company over a certain period, including the sum of such accounts as assets, expenses, liabilities, and revenues.
+
+
+
+28
+Accuity
+In computing, Open Database Connectivity (ODBC) is a standard application programming interface (API) for accessing database management systems (DBMS). The designers of ODBC aimed to make it independent of database systems and operating systems.
+
+
+
+29
+UiPath
+At the start of each Process Mining implementation, we need to load the data. UiPath Process Mining supports different methods to load the data. The most common ones are establishing an ODBC connection, reading from a flat file (csv, xlsx), or making a direct connection with SAP.
+
+
+
+30
+Security +
+DNS Poisoning
+Modify the DNS server
+	Requires some crafty hacking
+Can instead modify the client's host file
+	Host file takes precedent over DNS queries
+
+
+
+
+1
+Security +
+DNS Poisoning
+Could a fake response to a valid DNS request
+	Requires a redirection of the original request or the resulting response (on-path attack)
+
+
+2
+Security +
+Domain hijacking
+Get access to the domain registration and you have control over where the traffic flows
+	You don't need to touch the actual servers
+	Determines the DNS names and DNS IP addresses.
+
+
+
+3
+Security +
+Domain hijacking
+There are many ways to get into the account that controls a domain
+	Brute force the password
+	Social engineer the password
+	Gain access to the email address that manages the account with the registrar
+	The usual things
+
+
+
+4
+UiPath
+Domain Hijacking example
+Saturday, Oct 22, 2016
+Domain name registrations of 36 domains were changed
+	Owned by a Brazillian bank
+Under hacker control for 6 hours
+5 million customers, $27 billion in assets
+	Results of the hack have not been publicly released
+
+
+
+5
+Security +
+URL Hijacking
+Making money from your mistakes (typos)
+	Just directing you to a page that has adds
+Might to go to a phishing site
+	Looks like the real site; please login
+Might also infect with a drive-by download
+
+
+
+6
+Security +
+URL Hijacking
+Might sell the badly spelled domain to the owner of the site they're attacking
+Might also redirect to a compnetitor
+	Not as common and has legal issues
+
+
+
+
+7
+Security +
+Domain repulation
+Infected web servers are noticed by search engines
+	Your domain can be flagged or removed
+Will put a big "This site contains malware" page up before directing people to your site
+Malware might be removed quickly, but recovery of reputation takes much longer.
+[Denial of Service - SY0-601 CompTIA Security+ : 1.4]
+
+
+8
+General
+JS to speed up video playback if the player does not have a control for it
+you could open the browser console (ctrl+shift+i), click on console. Then execute following
+
+	document.querySelector('video').playbackRate = 1.5
+
+works like a charm for me.
+-SignificancePure1228
+
+
+
+
+9
+UiPath Process Mining
+Case
+–
+A case can be described as the tracked lifecycle of a process transaction. Cases are referenced by a unique case ID and contain all the steps and events that occur for the transaction from start to end. For eg: in the Invoicing process, the case is an invoice.
+
+
+
+10
+UiPath Process Mining
+Activity
+–
+An activity is a step or task performed in a process.
+
+
+
+11
+UiPath Process Mining
+Event
+–
+Activities performed on each case at a given time.
+
+
+
+12
+UiPath Process Mining
+Variant
+–
+A unique combination of ways/sequences in which the activities are performed.
+
+
+
+13
+UiPath Process Mining
+Attribute
+–
+Attributes are additional details about cases. They usually are extracted from the raw system data. Examples of attributes are caseID, case owner, supplier name, customer name, etc.
+
+
+
+14
+UiPath Process Mining
+Throughput time
+–
+Average time spent by a case in the system.
+
+
+
+15
+UiPath Process Mining
+KPIs
+–
+KPIs (Key Performance Indicators) are measurable values used to gauge performance of specific properties over time.
+
+
+
+16
+UiPath Process Mining
+Tags
+–
+Tags are additional business rules or KPIs (Key Performance Indicators) specific to a process. Adding tags helps us visualize how much the process complies with rules or standards set by the business.
+
+
+
+17
+UiPath Process Mining
+Purchase-to-Pay (P2P)
+–
+Purchase-to-Pay (P2P) is an aggregate Finance process, the end-to-end purchasing process, from acquiring goods to paying for them.
+
+
+
+18
+UiPath Process Mining
+Order-to-Cash (O2C)
+–
+Order-to-Cash involves the set of business processes from receiving and processing sales orders for goods and services to payment.
+
+
+
+19
+UiPath Process Mining
+Maverick buying
+–
+Maverick buying is defined as the number of purchase order items that were processed outside the regular Purchase-to-Pay process without the involvement of the Procurement department.
+
+
+
+20
+Security +
+DDos amplification
+Turns your small attack into a big attack
+	Often reflected off another device or service
+An increasingly common network DDOS technique
+	Turns internet services against victim
+
+
+21
+Security +
+DDos amplification
+Uses protocols with little (if any) authentication or checks
+	NTP, DNS, ICMP
+	A common example of protocol abuse
+
+
+
+22
+Security +
+Operational Technology (OT) DoS
+The hardware and software for infrastructure or industrial equipment
+	Electric grids, traffic control, manufacturing plants, etc
+This is more dire than a web server failing
+Requires a different approach; a much more critical security posture
+
+
+
+
+
+
+23
+UiPath Task Mining
+In Task Mining, there are two main personas using the product:
+
+	• Task Mining Admin: responsible for the set-up of Task Mining projects and configuring them in the UiPath Automation Cloud
+
+
+
+24
+UiPath Task Mining
+In Task Mining, there are two main personas using the product:
+
+	User: The employee who performs the task that will be analyzed with the help of Task Mining
+
+
+
+25
+UiPath Task Mining
+Throughout a Task Mining project, some other roles might get involved to support during some stages of the process.
+	• The automation Center of Excellence Lead: They can be involved in the initial phase of a project when we need to identify the business lines, processes, and users that are going to be part of the Task Mining project.
+		○ The Automation COE leads can also sometimes coincide with the Task Mining Admin
+
+
+
+
+26
+UiPath Task Mining
+Throughout a Task Mining project, some other roles might get involved to support during some stages of the process.
+	• The Subject Matter Expert: users with lots of expertise in performing the task. After the data has been recorded and analyzed  using an ML package, the SME, the Admin, and the Business Analyst can work together to understand which task variation is the desired one and where is the biggest potential for automation.
+
+
+
+
+27
+UiPath Task Mining
+Throughout a Task Mining project, some other roles might get involved to support during some stages of the process.
+	• The Business Analyst: they can join the SMEs and Admins in understanding how a task was performed, identifying opportunities for process improvement, and choosing the tasks with the highest automation potential.
+
+
+
+
+28
+UiPath Task Mining
+Throughout a Task Mining project, some other roles might get involved to support during some stages of the process.
+	• The Automation Developer: they usually come at the end of the analysis. Starting from process design documents and .xaml file exports, they build the automation project for the selected tasks.
+
+
+
+
+29
+UiPath Task Mining
+Before starting the recording process, instruct users on a few best practices to take into consideration while they are performing their tasks:
+
+	Have all the users consistently record for the defined period of time
+		This will avoid having one user recording a significantly larger amount of data and skew the results
+
+
+
+30
+UiPath Task Mining
+Before starting the recording process, instruct users on a few best practices to take into consideration while they are performing their tasks:
+
+	Instruct the users to finish one iteration of a task at a time
+		For example, process one invoice, then another. Instruct them to avoid processing the second invoice if the first one is not complete.
+
+
+
+1
+UiPath Task Mining
+The Task Mining admin console automatically creates a dataset under the Datasets section in the AI Center project we created and linked with our Task Mining project
+
+
+
+2
+UiPath Task Mining
+If the Admin chose the Continuous option in the Output Configuration section of the Task Mining project, the data captured was automatically pushed as a dataset in AI Center. If the Admin chose 'Via shared drive', they will have to explicitly push the recorded data from the network location to the AI Center project
+
+
+
+3
+UiPath Task Mining
+Then, the easiest option is to run the out-of-the-box ML model for Task Mining from AI Center. To do this:
+	Select the UiPath Task Mining package under the ML Packages section in the AI Center project. Select the Model version, hit Submit, then enter the Package Name and the Description. Finally, hit Submit.
+	Select the Evaluation run pipeline for the out-of-the-box Task Mining model and pass the dataset created by Task Mining console
+
+
+
+4
+UiPath Task Mining
+The ML model run will take between few hours and two days based on the size of the dataset
+
+Once the model completes the execution, the results will be automatically uploaded to the Task Mining project, under Discovery results.
+
+
+
+5
+UiPath Task Mining
+UiPath recomends collecting at least 40k actions for any analysis and 100k-200k actions for more optimal results.
+
+
+
+6
+Security+
+Attack script languages:
+	Powershell (.ps1 file) - associated with all windows functions
+	Python (.py file) - associated with web apps
+
+
+
+7
+Security+
+Scripting the Unix/Linux shell
+	Automate and extend the command line
+	Bash, Bourne, Korn, C
+Starts with a shebang or hashbang #!
+	Often has a .sh file extension
+ex: #!/bin/bash
+	Script for a bash shell
+
+
+8
+Security+
+Threat actors and attributes
+The entity responsible for an event that has an impact on the safety of another entity
+Broad scope of actors and motivations
+Often represent an Advanced Persistent Threat (APT)
+	Attackers are in the network and undetected.
+
+
+9
+Security+
+Type of threat actor: Insiders
+	Sophistication may not be advanced, but the insider has institutional knowledge
+		Attacks can be directed at vulnerable systems
+		insider knows what to hit
+	Extensive resources
+
+
+
+10
+Security+
+Type of Threat Actor: Nation State
+	Governments
+		National security, always an external entity
+	Highest sophistication
+		Military controls, utilitiees, financial control
+	ex: US and Israel distroyed 1000 nuclear centrifuges in Iran with the Stuxnet worm
+	Commonly an APT
+
+
+
+11
+Security+
+Type of Threat Actor: Hacktivist
+	A hacker with a purpose
+		Social change or political agenda
+		Often an external entity
+	Can be remarkably sophisticated
+		DoS, web site defacing, release of private documents, etc
+	Funding is limited
+
+
+
+12
+Security+
+Type of Threat Actor: Script Kiddie
+	Runs pre-made scripts without any knowledge of what's really happening
+		Not necessarily a youngster
+	Not very sophisticated
+	No formal funding
+
+
+
+13
+Security+
+Type of Threat Actor: Organized Crime
+	Professional criminals
+		Motivated by money, almost always external
+	Very sophisticated
+	Crime that's organized
+		One person hacks, one person manages exploits, another sells data, another handles customer support
+
+
+
+14
+Security+
+Shadow IT
+	Working around the internal IT organization
+	IT can put up roadblocks
+		Shadow IT would be unencumbered
+		Use the cloud, innovate
+	Not always a good thing
+		Wasted timeand money
+		Security risks
+		Compliance issues
+
+
+
+15
+Security+
+Direct access attack vectors
+	There's a reason we lock the data center
+	Modify the operating system
+		Boot in an administrative mode and reset the password
+	Attach a keylogger
+		Collect usernames and passwords
+	Transfer files
+
+
+
+16
+Security+
+Social media attack vectors
+	Attackers thank you for putting your personal information online
+		Where you are and when
+		Vacation pictures are especially telling
+	User profiling
+		Where were you born? Name of school mascot?
+		Use to reset password and get access.
+
+
+
+17
+Security+
+Cloud attack vectors
+	Publicly-facing applications and services
+		Mistakes are made all the time with configuration
+	Security misconfigurations
+		Data permissions
+
+
+
+18
+Security+
+Cloud attack vectors
+	Brute force attacks
+		or phish the users of the cloud service
+		get access to cloud resources
+	Orchestration attacks
+		Make the cloud build new application instances
+
+
+
+19
+Security+
+Closed/proprietary threat intelligence
+	Someone else has already compiled threat information
+		You can buy  it
+	Constant threat monitoring
+		Identify new threats
+		Create automated prevention workflows
+
+
+
+20
+Security+
+Vulnerability databases
+	Researchers find vulnerabilities
+		Everyone needs to know about them
+	Common Vulnerabilities and Exposures (CVE)
+		A community managed list of vulnerabilities
+		Sponsored by US Department of Homeland Security (DHS) and Cybersecurity and Infrastructure Security Agency (CISA)
+
+
+
+21
+Security+
+Vulnerability databases 
+	US National Vulnerabilitiy Database (NVD)
+		A summary of CVEs
+		Also sponsord by DHS and CISA
+		https://nvd.nist.gov/
+	NVD provides additional details over the CVE list
+		patch availability and severity scoring
+
+
+
+22
+Security+
+Automated indicator sharing (AIS)
+	Way for intelligence industry to quickly share and spread information
+	Structured Threat Information eXpression (STIX)
+		Describes cyber threat information
+	Trusted Automate eXchange of Indicator Information (TAXII)
+		Securely shrae STIX data
+
+
+
+23
+Security+
+Indicators of compromise (IOC)
+	Unusual amount of network activity
+	Change to file hash values
+	Irregular international traffic
+	Changes to DNS Data
+	Uncommon login patterns
+	Spikes of read requests to certain files
+[Threat Research - SY0-601 CompTIA Security+ : 1.5]
+
+
+
+
+24
+UiPath Task Mining
+Export option: Process Definition Document (PDD)
+
+This will provide detailed steps, along with a screenshot of each action performed by the business user
+
+
+
+25
+UiPath Task Mining
+Export option: .XAML 
+
+This is a workflow skeleton file that can be used as a start point for developer. This file can be opened in Uipath Studio and modified/updated to continue the development
+
+
+
+26
+UiPath Task Mining
+What are the recommended number of users and duration for the Collect Data stage of a Task Mining project?
+
+2-3 users for 2 weeks or 3-5 users for 1 week for each project 
+
+
+27
+UiPath Task Mining
+What are the options available to the user role in Task Mining?
+
+	Pause recording
+	See applications recorded
+	Propose new applications to be recorded
+
+
+
+
+
+28
+UiPath Automation Hub
+Which of the following information is required when submitting an employee-driven idea?
+
+Structure of the Input data
+Digital accessibility of the data
+Expected changes in the process
+
+
+
+29
+UiPath Automation Hub
+Which of the following is the automation score displayed after submitting an employee-driven idea NOT an indication of?
+
+Return on investment
+Estimated time for implementation
+
+
+
+30
+UiPath Automation Hub
+Automation ideas are handled differently based on the submission path:
+	Once an Employee-driven idea is approved, the Process Owner is invited to fill in the detailed assessment.
+	The CoE-driven ideas have the detailed assessment fields filled in by the submitter and the Process Owner just needs to review them.
+
+
+1
+UiPath Automation Hub
+User roles need to be paired with editing rights to allow users to perform activities. Without assigning editing rights on the Documentation page, Business Analysts cannot upload documents.
+
+
+
+
+
+
+2
+UiPath Automation Hub
+Collaborator Roles allow you to create for each automation and idea a specific team that collaborates on developing the idea and pushes it through the various phases. This is the page where you define and edit the different rights for each collaborator role."
+
+
+
+
+
+3
+UiPath Automation Hub
+Roles allow you to distribute the responsibility within your team by offering the possibility to provide suitable access to the Automation Hub sections and functionalities depending on each team member's expertise. The default roles available vary from the ones focusing on administrative responsibilities (managing the users, doing the platform setup), some in charge of managing the automation pipeline, as well as technical roles covering the reusable components repository.
+
+
+
+4
+UiPath Automation Hub
+
+
+
+
+5
+UiPath Automation Hub
+
+
+
+
+6
+UiPath Automation Hub
+
+
+
+
+7
+UiPath Automation Hub
+
+
+
+
+8
+UiPath Automation Hub
+
+
+
+
+9
+UiPath Automation Hub
+
+
+
+
+10
+UiPath Automation Hub
+
+
+
+
+11
+UiPath Automation Hub
+
+
+
+
+12
+UiPath Automation Hub
+
+
+
+
+13
+UiPath Automation Hub
+
+
+
+
+14
+UiPath Automation Hub
+
+
+
+
+15
+UiPath Automation Hub
+
+
+
+
+16
+UiPath Automation Hub
+
+
+
+
+17
+UiPath Automation Hub
+
+
+
+
+18
+UiPath Automation Hub
+
+
+
+
+19
+UiPath Automation Hub
+
+
+
+
+20
+UiPath Automation Hub
+
+
+
+
+21
+UiPath Automation Hub
+
+
+
+
+22
+UiPath Automation Hub
+
+
+
+
+23
+UiPath Automation Hub
+
+
+
+
+24
+UiPath Automation Hub
+
+
+
+
+25
+UiPath Automation Hub
+
+
+
+
+26
+UiPath Automation Hub
+
+
+
+
+27
+UiPath Automation Hub
+
+
+
+
+28
+UiPath Automation Hub
+
+
+
+
+29
+UiPath Automation Hub
+
+
+
+
+30
+UiPath Automation Hub
+
+
+

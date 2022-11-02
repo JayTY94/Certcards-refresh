@@ -1,0 +1,806 @@
+sIn addition to tables, a relational database can contain other structures that help to optimize data organization, encapsulate programmatic actions, and improve the speed of access. IN this unit, you'll learn about three of these structures in more detail: views, stored procedures, and indexes.
+
+What is a view?
+
+A view is a virtual table based on the results of a SELECT query. You an think of a view as a window on specified rows in one or more underlying tables. For example, you could create a view on the Order and Customer tabels that retrieves order and customer data to provide a single object that makes it easy to determine delivery addresses for orders.
+
+CREATE VIEW Deliveries
+AS
+SELECT o.OrderNo, o.OrderDate,
+  c.FirstName, c.LastName, c.Address, c.City
+from Order AS o JOIN Customer AS c
+ON o.Customer = c.ID;
+You can query the view and filter the data in much the same way as a table. The following query finds details in orders for customers who live in Seattle:
+
+SELECT OrderNo, OrderDate, LastName, Address
+FROM Deliveries
+WHERE City = 'Seattle';
+
+What is a stored procedure?
+
+A stored procedure defines SQL statements that an be run on command. Stored procedures are used to encapsulate programmatic logic in a database for actions that applications need to perform when working with data.
+
+You can define a stored procedure with parameters to create a flexible solution for common actions that might need to be applied to data based on a specific key or criteria. For example, the following stored procedure could be defined to change the name of a product based on the specified product ID.
+
+CRREATE PROCEDURE RenameProduct
+  @ProductID INT,
+  @NewName VARCHAR(20)
+AS
+UPDATE Product
+SET Name = @NewName
+WHERE ID = @ProductID
+
+When a product must be renamed, you can execute the proedure, passing the ID of the product and the new name to be assinged.
+
+EXEC RenameProduct 201, 'Spanner';
+
+What is an index?
+
+An index helps you search for data in a table. Think of an index over a table like an index at the back of a book. A book index contains a sorted set of references, with the pages on which each reference occurs. When you want to find a reference to an item in a book, you look it up through the index. You can use the page numbers in the index to directly to the correct pages in the book. Without an index, you might have to read through the entire book to find the references you're looking for.
+
+WHen you create an index in a database, you specify a column from the table, and the index contains a copy of this data in a sorted order, with pointers to the corresponding rows in the table. When the user runs a query that specifies this column in the WHERE clause, the database management system can use this index to fetch the data more quickly than if it had to scan the entire table row by row.
+
+For example, you could use the following code to create an index on the Name column of the Product table.
+
+CREATE INDEX idx_ProductName
+ON Product(NAME);
+
+The index creates a tree-based structure that the database system's query optimizer can use to quickly find rows in the Product table based on a specified Name.
+
+For a table containing few rows, using hte index is probably not any more efficient than simply reading the entire table and finding the rows requested by the query (in which case the query optimizer will ignore the index). However, when a table has many rows, the indexes can dramatically imporve the performance of queries.
+
+You can create many indexes on a table. So, if you also wanted to find products based on price, creating another Index on the Price column in the Product table might be useful. However, Indexes aren't free. An index consumes storage space, and each time you insert, update, and delte data in a table, teh indexes for that table must be maintained. The additional work can slow down insert, update, and delete operations. You must strike a balance between having indexes that speed up your queries versus the cost of performing other operations.
+
+https://docs.microsoft.com/en-us/learn/modules/explore-provision-deploy-relational-database-offerings-azure/2-azure-sql
+
+...
+
+
+SQL Server on Azure Virtual Machines
+
+SQL Server on Virtual Machines enables you to use full versions of SQL Server in the Cloud without having to manage any on premises hardware. This is an example of the IaaS approach.
+
+SQL Server running on an Azure virtual machine effectively replicates the database running on real on-premises hardware. Migrating from the system running on-premises to an Azure virtual machine is no different than mocing the databases from one on-premises server to another.
+
+This approach is suitable for migrations and applications requiring access to operating system features that might be unsupported at the PaaS level. SQL virtual machines are lift-and-shift ready for existing applications that require fast migration to the cloud with minimal changes.  YOu can also use SQL Server on Azure VMs to extend existing on-premises applications to the cloud in hybrid deployments.
+
+NOTE
+A hybrid deployment is a system where part of the operation runs on-premises and part in the cloud. Your database might be part of a larger system that runs on-premises, although the database elements might be hosted in the cloud.
+
+You can use SQL Server in a virtual machine to develop and test traditional SQL Server applications. With a virtual machine, you have the full administrative rights over the DBMS and operating system. It's a perfect choice when an organization already has IT resources available to maintain the virtual machines.
+
+These capabilities enable you to:
+
+...
+
+Business benefits
+
+Azure SQL Database automatically updates and patches the SQL Server software to ensure that you're always running the latest andmost secure version of the service. The scalability features of Azure SQL Database ensure that you can increase the resources available to store and process data without having to perform a costly manual upgrade.
+
+The service provides high avaialability guarantees, to ensure that your databases are avialable at least 99.995% of the time. Azure SQL Database supports point-in-time restore, enabling you to recover a database to the state it was in at any point in the past. Databases can be replicated to different regions to provide more resiliency and disaster recovery.
+
+Advanced threat protection provides advanced security capabilities, such as vulnerability assessments, to help detect and remediate potential security problems with your databases. Threat protection also detects anomalous activities that indicate unusual and potentially harmful attempts to access or exploit your database. It continuously monitors your database for suspicious activity, and recommended action on hwo to investigate and mitigate the threat.
+
+Auditing tracks database events and writes them to an audit log in your Azure storage account. Auditing can help you maintainregulatory complaince, understand database activity, and gain insight into discrepancies and anomalies that might indicate business concerns or suspected security violations.
+
+SQL Database helps secure your data by providing encryption that protects data that is stored in the database (at rest) and while it is being transferred across the network (in motion).
+
+https://docs.microsoft.com/en-us/learn/modules/explore-provision-deploy-relational-database-offerings-azure/3-azure-database-open-source
+
+Describe Azure services for open-source databases
+
+In addition to Azure SQL services, Azure data services are available for other popular relational database systems, including MySQL, MariaDB, and PostgreSQL. The primary reason for these services is to enable organizations that use them in on-premises apps to move to Azure quickly, without making significan changes to their applications.
+
+What are MySQL, MariaDB, and PostgreSQL?
+
+My SQL, MariaDB, and PostgreSQL are relational database management systems that are tailored for different specializations.
+
+MySQL started life as a simple-to-use open-source database management system. It's the leading open source relational database for Linux, Apache, MySQL, and PHP (LAMP) stack apps. It's available in several editions; Community, Standard, and Enterprise. The Community edition is available free-of-charge, and has historically been popular as a database management sytem for web applications, running under Linux. Versions are also available for Windows. Standard edition offers higher performance, and uses a different technology for storing data. Enterprise edition provides a comprehensive set of tools and features, including enhanced securiity, availability, and scalability. The Standard and Enterprise editions are the versions most frequently used by commercial organizations, although these versions of the software aren't free.
+
+MariaDB is a newer database management system, created by the original developers of MySQL. The database engine has since been rewritten and optimized to improve performance. MariaDB offers compatibility with Oracle Database (another popular commercial database management system). One notable feature of MariaDB is built-in support for temporal data. A table can hold several versions of data, enabling an application to query the data as it appeared at some point in time.
+
+PostgreSQL is a hybrid relational-object database. You can store data in relational tables, but a PostgreSQL database also enables you to store custom data types, with their own non-relational properties. The database management system is extensible; you can add code modules to the database, which can be run in queries. Another key feature is the ability to store and manipulate geometric data, such as lines, cercles, and polygons.
+
+PostgreSQL has its own query language called pgsql. This language is a variant of the standard relational query language, SQL, with features that allow you to write stored procedures taht run inside the database.
+
+Azure Database for MySQL
+
+...
+
+Azure Database for MySQL is a Paas implementation of MySQL in the Azure cloud, based on MySQL Community Edition.
+
+The Azure Database for MySQL service includes highly availability at no additional cost, and scalability as required. You only pay for what you use. Automatic backups are provided, with point-in-time restore.
+
+The server provides connection security to enforce firewall rules, and, optionally, require SSL connections. Many server parameters enable you to configure server settings such as lock modes, maximum number of connections, and timeouts.
+
+Azure Database for MySQL provides a global database system that scales up to large databases without the need to manage hardware, network components, virtual servers, software patches, and other underlying components.
+
+Certain operations aren't available with Azure Database for MySQL. These functions are primarily concerned with security and administration. Azure manages these aspects of the database server itself.
+
+...
+
+Azure Database for PostgreSQL
+
+If you prefer PostgreSQL, you can choose Azure Databatse for PostgreSQL to run a PaaS implementation of PostgreSQL in the Azure Cloud. THis service provides thes ame availability, performance, scaling, security, and administrative benefits as the MySQL Server.
+
+Some features of on-premises PostgreSQL databases aren't available in Azure Database for PostgreSQL. These features are monstly concerned with the extensions that users can add to a database to perform specialized tasks such as writing stored procedures in various programming languages (other than pgsql, which is available), and interacting directly with the operating system. A core set of the most frequently used extensions is supported, and the list of available extensions is under continuous review.
+
+Azure Database for PostgreSQL has three deployment options: Single Server, Flexible Server, and Hyperscale.
+
+Azure Database for PostgreSQL Single Server
+
+The single-server deployment option for PostgreSQL provides similar benefits as Azure Database for MySQL. You choose from three pricing tiers: Basic, General Purpose, and Memory Optimized. Each tier supports different numbers of CPUs, memory, and storage sizes; you select one base do on the load you expect to support.
+
+Azure Database for PostgreSQL Flexible Server
+
+The flexible-server deployment option fo PostgreSQL is a fully managed database service. It provides more control and server configuration customizations, and has better cost optimization controls.
+
+Azure Database for PostgreSQL Hyperscale (Citus)
+
+Hyperscale (Citus) is a deployment option that scales queries across multiple server nodes to support large database loads. Your database is split across nodes. Data is split into hunks based on the value of a partition key or sharding key. Consider using this deployemnt option for the largest database PostgreSQL deployments in the Azure Cloud.
+
+Doing the azure lab; recording information
+
+Name of server
+samplesql-afjh
+
+Server admin login
+endeavorlycanroc
+
+Server Password
+Def Ferrothorn: 486
+
+https://docs.microsoft.com/en-us/learn/modules/explore-provision-deploy-non-relational-data-services-azure/6-exercise-azure-storage
+
+Exercise: Explore Azure Storage
+
+Now it's your opportunity to explore Azure STorage.
+
+This exercise can be completed using a Microsoft learn...
+
+Provision an Azure Storage account
+
+The first step in using Azure Storage is to provision an Azure Storage account in your Azure subscription.
+
+1. If you haven't already done so, sign into the Azure portal at https://portal.azure.com/. Then on the Azure portal home page, select + Create a resource from the upper left-hand corner and search for Storage account. THen in the resulting Storage account page, select Create.
+
+2. Enter the following values on the Create a storage account page:
+
+  Subscription: If you're using a sandbox, select Concierge Subscription. Otherwise, select your Azure subscription.
+
+  Resource group: If you're using a sandbox, select the existing resource group (which will have a name like learn-xxx...). Otherwise, create a new resource group with a name of your choice.
+
+  Storage account name: Enter a unique name for your storage accoung using lower-case letters and numbers.
+
+  Region: Select any available location.
+
+  Performance: Standard
+
+  Redundancy: Locally-redundant storage (LRS)
+
+3. Select Next: Advanced > and view the advanced configuration options. In particular, note that this is where you can enable hierarchical namespace to support Azure Data Lack Storage Gen2. Leave this option unselected (you'll enable it later), and then select Next:Networking > to view the networking options for your storage account.
+
+4. Select Next: Data protection > and then in the Recovery section, deselect all of the Enable soft delete... options. These options retain deleted files for subsequent recovery, but can cause issues later when you enable hierarchical namespace.
+
+5. Continue through the remaining Next > pages without changing any of the default settings, and then on the Review + Create page, wait for your selections to be validated and select Create to create your Storage account.
+
+6. Wait for deployment to complete. Then go to ther resource that was deployed.
+
+Explore blob storage
+
+Now that you have an Azure Storage account, you can create a container for blob data.
+
+1. Download the product1.json JSON file from https://aka.ms/product1.json and save it to your computer (you can save it in any folder - you'll upload it to blob storage later).
+
+...
+
+3. In the DataLack Gen2 upgrade page, expand and complete each step to upgrade your storage account to enable hierarchical namespace and support Azure Data Lack Storage Gen 2. This may take some time.
+
+4. When the upgrade is complete, in the pane on the left side, in the top section, select Storage browser (preview) and navigate back to the root of your data blob container, which still contains the product_data folder.
+
+5. Select the product_data folder, and varify it still contains the product1.json file you uploaded previously.
+
+6. Use the Upload Button to open the Upload blob panel.
+
+7. IN the Upload blob panel, select the product2.json file you saved on your local computer. Then select the Upload button.
+
+https://docs.microsoft.com/en-us/learn/modules/explore-non-relational-data-stores-azure/2-describe-azure-cosmos-db
+
+Describe Azure Cosmos DB
+
+Azure Cosmos DB supports multiple application programming interfaces (APIs) that enable developers to use programming semantics of many kinds of data store to work with data in a CosmosDB database. The internal data structure is abstracted, enabling developers to use CosmosDB to store and query data using APIs with which they're already familiar.
+
+Note
+An API is an Application Programming Interface. Database management systems (and other software frameworks) provide a set of APIs that developers can use to write programs that need to access data. The APIs vary for different database management systems.
+
+Cosmos DB uses indexes and partitioning to provide fast read and write performance and can scale to massive volumes of data. You can enable multi-region writes, adding the Azure regions of your choice to your Cosmos DB account so that globally distributed users can each work with data in their local replica.
+
+When to use Cosmos DB
+
+Cosmos DB is a highly scalable database management system. Cosmos DB automatically allocates space in a container for your partitions, and each partition can grow up to 10 GB in size. Indexes are created and maintained automatically. There's virtually no administrative overhead.
+
+Cosmos DB is a foundational service in Azure. Cosmos DB has been used by many of Microsoft's products for mission critical applications at global scale, including Skype, Xbox, Microsoft 365, Azure, and many others. Cosmos DB is highly suitable for the following scenarios:
+
+  IoT and telematics. These systems typically ingest large amounts of data in frequent bursts of activity. Cosmos DB can accept and store this information quickly. The data can be used by analytics services, such as Azure Machine Learning, Azure HDInsight, and Power BI. Additionally, you can process data in real-time using Azure Functions that are triggered as data arrives in the database.
+
+  Retail and marketing. Microsoft uses Cosmos DB for its own e-commerce platforms that run as part of Windows Store and Xbox Live. It's also used in the retail industry for storing catalog data and for event sourcing in order processing pipelines.
+
+  Gaming. The database tier is a crucial component of gaming applications. Modern games perform graphical processing on mobile/console clients, but they rely on the cloud to deliver customized and personalized content like in-game stats, social media integration, and high-score leaderboards. Games often require single-millisecond latencies for reads and write to provide an engaging in-game experience. A game database needs to be fast and be able to handle massive spikes in request rates during new game launches and feature updates.
+
+  Web and mobile applications. Azure Cosmos DB is commonly used within web and mobile applications, and it is well suited for modeling social interactions, integrating with third-party services, and for building rich personalized experiences. The Cosmos DB SDKs can be used to build rich iOS and Android applications using the popular Xamarin framework.
+
+For additional information about uses for Cosmos DB, read Common Azure Cosmos DB use cases.
+
+https://docs.microsoft.com/en-us/learn/modules/explore-non-relational-data-stores-azure/3-cosmos-db-apis
+
+Identify Azure Cosmos DB APIs
+
+Azure Cosmos DB supports multiple APIs, enabling developers to easily migrate data from commonly used NoSQL stores and apply their existing programming skills. When you provision a new Cosmos DB instance, you select the API that you want to use. The choice of API depends on many factors including the type of data to be stored, the need to support existing applications, and the API skills of the developers who will work with the data store.
+
+Core (SQL) API
+
+The native API in Cosmos DB manages data in JSON document format, and despite being a NoSQL data storage solution, uses SQL syntax to work with the data.
+
+A SQL query for a Cosmos DB database containing customer data might look similar to this:
+
+  SELECT *
+  FROM customers c
+  WHERE c.id = "joe@litware.com"
+
+Theh result of this query consists of one or more JSON documents, as shown here:
+
+  {
+    "id": "joe@litware.com",
+    "name": "Joe Jones",
+    "address": {
+        "street": "1 Main St",
+        "city": "Seattle"
+    }
+  }
+
+MongoDB API
+
+MongoDB is a popular open source database in which data is stored in Binary JSON (BSON) format. The Azure Cosmos DB MongoDB API enables developers to use MongoDB client libraries and code to work with data in Azure Cosmos DB.
+
+MongoDB Query Language (MQL) uses a compact, object-oriented syntax in which developers use objects to call methods. For example, the following query uses the find method to query the producs collection in the db object:
+
+  db.products.find({id: 123})
+
+The results of this query consist of JSON documents, similar to this:
+
+  {
+      "id": 123,
+      "name": "Hammer",
+      "price": 2.99
+  }
+
+Table API
+
+The Table API is used to work with data in key-value tables, similar to Azure Table Storage. The Azure Cosmos DB Table API offers greater scalability and performance than Azure Table Storage.
+
+For example, you might define a table named customers like this:
+
+  PartitionKey	RowKey	Name	Email
+  1	123	Joe Jones	joe@litware.com
+  1	124	Samir Nadoy	samir@northwind.com
+
+You can then use the Cosmos DB Table API through one fo the language-specific SDKs to make calls to your service endpoint to retrieve data from the table. For example, the following request returns the row containing the record for Samir Nadoy in teh tabel above:
+
+  https://endpoint/Customers(PartitionKey='1', RowKey='124')
+
+https://docs.microsoft.com/en-us/learn/modules/explore-non-relational-data-stores-azure/4-exercise-explore-cosmos-db
+
+Create a Cosmos DB account
+
+To use Cosmos DB, you must provision an Cosmos DB account in your Azure subscription. In this exercise, you'll provision a Cosmos DB account that uses the core (SQL) API.
+
+  1. IN the Azure portal, select + Create a resource at the top left, and search for Azure Cosmos DB. In the results, select Azure Cosmos DB and select Creat.
+  2. In the Core (SQL) - Recommended tile, select Create.
+  3. Enter the following details, and then select Review + Create:
+
+    Subscription: If you're using a sandbox, select Concierge Subscription. Otherwise, select your Azure subscription.
+    Resource group: If you're using a sandbox, select the existing resource group (which will have a name like learn-xxxx...). Otherwise, create a new resource group with a name of your choice.
+    Account Name: Enter a unique name.
+    Location: Choose any recommended location
+    Capacity mode: Provisioned throughput
+    Apply Free-Tier Discount: Select Apply if available
+    Limit total account throughput: Unselected
+
+  4. When the configuration has been validated, select Create.
+  5. Wait for deployment to complete. Then go to the deployed resource.
+
+Create a simple database
+
+Throughout this procedure, close any tips that are displayed in the portal.
+
+  1. On the page for your new Cosmos DB account, in the pane on the left, select Data Explorer.
+  2. In the Data Explorer page, select Launch quick start.
+  3. In the New Container tab, review the
+
+https://docs.microsoft.com/en-us/learn/modules/examine-components-of-modern-data-warehouse/2-describe-warehousing
+
+...
+
+2. Analytical data store - data stores for large scale analytics include relational data warehouses, file-system based data lakes, and hybrid architectures that combine features of data warehouses and data lakes (sometimes called data lakehouses or lake databases). We'll discuss these in more depth later.
+
+3. Analytical data model - while data analysts and data scientists can work with the data directly in the analytical data store, it's common to create one or more data models that pre-aggregate the data to make it easier to produce reports, dashboards, and interactive visualizations. Often these data models are described as cubes, in which numeric data values are aggregated across one or more dimesniosn (for example, to determine total sales by product an dregion). The model encapsulates the relationships between data values and dimensional entities to support "drill-up/drill-down" analysis.
+
+4. Data visualization - Data analysts consume data from analytical models, and directly from analytical stores to create reports, dashboards, and other visualizations. Additionally, users in an organization who may not be technology professionals might perform self-service data analysis and reporting. The visualizations from the data show trends, comparisons, and key performance indicators (KPIs) for a business or other organization, and can take the form of printed reports, graphs and charts in documents or PowerPoint presentations, web-based dashboards, and interactive environments in which users can explore data visually.
+
+https://docs.microsoft.com/en-us/learn/modules/examine-components-of-modern-data-warehouse/3-data-ingestion-pipelines
+
+Explore data ingestion pipelines
+
+Now that you understand a little about the architecture of a large-scale data warehousing solution, and some of the distributed processing technologies that can be used to handle large volumes of data, it's time to explore how data is ingested into an analytical data store from one or more sources.
+
+On Azure, large-scale data ingestion is best implemented by creating pipelines that orchestrate ETL processes. You can create and run pipelines using Azure Data Factory, or you can use the same pipeline engine in Azure Synapse Analytics if you want to manage all of the components of your data warehousing solution in a unified workspace.
+
+In either case, pipelines consist of one or mroe activities that operate on data. An input dataset provides the source data, and activities can be defined as a data flow that incrementally manipulates the data until an output dataset is produced. Pipelines use linked services to load and process data - enabling you to use the right technology for each step of the workflow. For example, you might use an Azure Blob Store linked service to ingest the input dataset, an dthen use services such as Azure SQL Database to run a stored procedure that looks up related data valules, before running a data procesing task on Azure Databricks or Azure HDInsight, or apply custom logic using an Azure Function. Finally, you can save the output dataset in a linked service such as Azure Synapse Analytics. Pipelines can also includ some built-in activities, which don't require a linked service.
+
+https://docs.microsoft.com/en-us/learn/modules/examine-components-of-modern-data-warehouse/4-analytical-data-stores
+
+Explore analytical data stores
+
+A data warehouse is a relational database in which the data is stored in a schema that is optimized for data analytics rather than transactional workloads. Commonly, the data from a transactional store is transformed into a schema in which numeric values are stored in central fact tables, which are related to one or more dimension tables that represent entities by which the data can be aggregated. For example, a fact table might contain sales order data, which can be aggregated by customer, product, store, and time dimensions (enabling you, for example, to easily find the montly total sales revenue by product for each store). THis kind of fact and dimension tables chema is called a star schema; though it's often expanded into a snowflake schema by adding additional tables related to the dminsion tables to represent dimensional hierarchies (for example, product might be related to product categories). A data warehouse is a great chioce when you have transactionald ata that can be organized into a structred shema of tables, and you want to use SQL to query them.
+
+Data lakes
+
+A data lake is a file store, usually on a distributed file system for high performance data access. Technologies like Spark or Hadoop are often used to proces queires on the stored files and return data for reporting and analytics. These systems apply a schema-on-read approach to define tabular schemas on semi-structured data files at the point where the data is read for analysis, without applying constraints when it's stored. Data lakes are great for supporting a mix of structured, semi-structured, and even unstructured data that you want to analyze without the need for schema enforemcent when the data is written to the store.
+
+Hybrid approaches.
+
+You can use a hybrid approach that combines features of data lakes and data warehouses in a lake database or data lakehouse. The raw data is stored as fiels in a data lake, and a relational storage layer abstracts the underlying files and expose them as tables, which can be queried using SQL. SQL pools in Azure Synapse Analytics include PolyBase, which enables you to define external tables based on files in a datalake (and other sources) and query them using SQL. Synapse Analytics also supports a Lake Database approach in which you can use database templates to define the relational schema of ryour data warehouse, while storing the underlying data in data lake storage - separating the storage and compute for your data warehousing solution.
+
+================
+
+Azure services for analytical stores
+
+On Azure, there are three main services you can use to implement a large-scale analytical store.
+
+Azure Synapse Analytics is a unified, end-to-end solution for large scale data analytics. It brings together multiple technologies and capabilities, enabling you to combine the data integrity and flexibility of a scalable, high-performance SQL Server based relational data warehouse with the flexibility of a data lake and open-source Apache Spark. It also includes native support for log and telemetry analytics with Azure Synapse Data Explorer pools, as weel as built in data pipelines for data ingestion and transformation. All Azure Synapse Analytics services can be managed through a single, interactive user interface called Azure Synapse Studio, which includes the ability to create interactive notebooks in which Spark code and markdown content can be combined. Synapse Analytics is a great choice when you want to create a single, unified analytics solution on Azure.
+
+Azure Databricks is an Azure implementation of the popular Databricks platform. Databricks is a comprehensive data analytics solution built on Apache Spark, and offers native SQL capabilities as well as workload-optimized Spark clusters for data analytics and data science. Databricks provides an interactive user interface through which the system can be managed and data can be explored in interactive notebooks. Due to its common use on multiple cloud platforms, you might want to consider using Azure Databricks as your analytical store if you want to use existing expertise with the platform or if you need to operate in a multi-cloud environment or support a cloud-portable solution.
+
+Azure HDInsight is an Azure service that supports multiple open-source data analytics cluster types. Although not as user-friendly as Azure Synapse Analytics and Azure Databricks, it can be a suitable option if your analytics solution relies on multiple open-source frameworks or if you need to migrate an existing on-premises Hadoop-based solution to the cloud.
+
+NOTE
+
+Each of these services can be thought of as an analytical data store, in the sense that they provide a schema and interface through which teh data can be queried. IN many cases, however, the data is actually stored in a data lake and the service is used to process the data and run the queries. SOme solutions might even combine the use of these services. An extract, load, and transform (ELT) ingestion process might copy data into the data lake, and then use one of these services to transform data, and another to query it. For example, a pipeline might use a MapReduce job running in HDInsight or a notebook running in Azure Databricks to process a large volume of data in the data lake, and then load it into tables in the SQL pool in Azure Synapse Analytics.
+
+https://docs.microsoft.com/en-us/learn/modules/examine-components-of-modern-data-warehouse/5-exercise-azure-synapse
+
+Exercise Explore Azure Synapse analytics
+
+In this exercise, you'll create an Azure Synapse Analytics workspace and use it to ingest and analyze some data.
+
+The exercise is designed to familiarize you with some key elements of a large-scale data warehousing solution, not as a comprehensive guide to performing advanced data analytics with Azure Synapse Analytics. The exercise should take around 30 minutes to complete.
+
+Note
+To complete this article, you'll need a Microsoft Azure subscription. If you don't already have one, you can sigh up for a free trial at https://azure.microsoft/free. You cannot use a Microsoft Learn sandbox subscription for this exercise.
+
+Provision an Azure Synapse Analytics workspace
+
+To use Azure Synapse Analytics, you must provision and Azure Synapse Analytics Workspace resource in your Azure subscription.
+
+1. Open the Azure portal at https://portal.azure.com/ and sign in using the credentials associated with your Azure subscription.
+
+Tip
+Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory. Note that if you previously used a Microsoft Learn sandbox subscription, the portal may have defaulted to Microsoft Learn Sandbox directory. If so, you'll need to switch to your own directory.
+
+...
+
+Note
+
+A Synapse Analytics worwkspace requires two resource groups in your Azure subscription; one for the resources you explicitly create, and another for managed resources used by the service. It also requries a Data Lake storage account in which to store data, scripts, and other artifacts.
+
+4. When you've entreed these details, select Review + create, and then select Create to create the workspace.
+
+5. Wait for the workspace to be created - this may take five minutes or so.
+
+6. When deployement is complete, go to the resource group that was created and notice that it contains your Synapse Analytics workspace and Data Lake storage account.
+
+7. Select your Synapse workspeace, and in its Overview page, in Open Synapse Studio card, select Open to use Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
+
+8. On the left side of Synapse Studio, use the >> icon to expand the menu - this reveas the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
+
+Ingest data
+
+One of the key tasks you can perform with Azure Synapse Analytics is to define pipelines that transfer (and if necessary, transform) data from a wide range of sources into your workspace for analysis.
+
+1. In Synapse Studio, on the Home page, select Ingest and then choose Built-in copy task and open the Copy Data tool tool.
+
+2. In the Copy Data tool, on the Properties step, ensure that Built-in copy task and Run once now are selected, and click Next >.
+
+...
+
+5. On the Source step, in the Configuration substep, select Preview data to see a preview of the product data your pipelin will ingest, then close the preview.
+
+6. After previewing the data, on the Source/Configuration step, ensure the following settings are selected, and then select Next >:
+
+  File format: Delimited Text
+  Column delimiter: Comma (,)
+  Row delimiter: Line feed (\n)
+  First row as header: Selected
+  Compression type: None
+
+7. On the target step, in the Dataset substep, select the following settings:
+
+  Target type: Azure Data Lake Storage Gen 2
+  Connection: Select the existing connection to your data lake store (this was created for you when you created the workspace).
+
+https://docs.microsoft.com/en-us/learn/modules/explore-fundamentals-stream-processing/2-batch-stream
+
+Understand batch and stream processing
+
+Data processing is simply the conversion of raw data to meaningful information through a process. there are two general ways to process data:
+
+  Batch processing, in which data records are collected and stored before being processed together in a single operation.
+
+  Stream processing, in which a source of data is constantly monitored and processed in real time as new data events occur.
+
+Understand batch processing
+
+In batch processing, newly arrived data elements are collected and stored, and the whole group is processed together as a batch. Exactly when each group is processed can be determined in a number of ways. For example, you can process data based on a scheduled time interaval (for example, every hour), or it can be triggered when a certain amount of data has arrived, or as the result of some other event.
+
+For example, suppose you want to analyze road traffic by counting the number of cars on a stretch of road. A batch processing approach to this would require you collect cars in a parking lot, and then count them in a single operation while they're at rest.
+
+If the road is busy, with a large number of cars driving along at frequent intervals, this approach may be impractical; and note that you don't get any results until you have parked a batch of cars and counted them.
+
+A real world example of batch processing is the way that credit card companies handle billing. The customer doesn't receive a bill for each separate credit card purchase but one monthly bill for all of that month's purchases.
+
+Advantages of batch processing include:
+
+  Large volumes of data  can be processed at a convenient time.
+  It can be scheduled to run at a time when computers or systems might otherwise be idle, such as overnight or during off-peak hours.
+
+Disadvantages of batch processing include:
+
+  The time delay between ingesting data and getting the results.
+
+  All of a batch job's input data must be ready before a batch can be processed. This means data must be carefully checked. Problems with data, errors, and program crashes that occur during batch jobs bring the whole process to a halt. The input data must be carefully checked before the job can be run again. Even minor data errors can prevent a batch job from running.
+
+Understand stream processing
+
+In stream processing, each new piece of data is processed when it arrives. Unlike batch processing, there's no waiting until the next batch processing interval - data is processed as individual units in real-time rather than being processed a batch at a time.
+
+...
+
+Understand differences between batch and streaming data
+
+Apart from the way in which batch processing an streaming processing handle data, there are other differences:
+
+  Data scope: Batch processing can process all the data in the dataset. Stream processing typically only has access to the most recent data received, or within a rolling time window (the last 30 seconds, for example).
+
+  Data size: Batch processing is suitable for handling large data sets efficiently. Stream processing is intended for individual records or micro batches of a few records.
+
+  Performance: Latency is the time taken for the data to be received and processed. The latency for batch processing is typically a few hours. Stream processing typically occurs immediately, with latency in the order of seconds or milliseconds.
+
+  Analysis: You typically use batch processing to perform complex analytics. Stream processing is used for simple response functions, aggregates, or calculations as rolling averages.
+
+https://docs.microsoft.com/en-us/learn/modules/explore-fundamentals-stream-processing/3-explore-common-elements
+
+Explore common elements of stream processing architecture 
+
+There are many technologies that you can use to implement a stream processing solution, but while specific implementation details may bvary, there are common elements to most streaming architectures.
+
+A general architecture for stream processing 
+
+  1. An event generates some data. This mgiht be a signal being emitted by a sensor, a social media message being posted, a log file entry being written, or any other occurrence that results in some digital data.
+
+  2. The generated data is captured in a streaming source for processing. In simple cases, the source may be a folder in a cloud data store or a table in a database. In more robust streaming solutions, the source may be a "queue" that encapsulates logic to ensure that event data id processed in order and that each event is processed only once.
+
+  3. The event data is processed, often by a perpetual query that operates on the event data to select data for specific types of events, project data values, or aggregate data values over temporal (time-based) periods (or windows) - for example, by counting the number of sensor emissions per minute.
+
+  4. The results of the stream processing operation are written to an output (or sink), which may be a file, a database table, a real-time visual dashboard, or another queue for further rpocessing by a subsequent downstream query.
+
+...
+
+Sources for stream processing 
+
+The following services are commonly used to ingest data for stream processing on Azure:
+
+  Azure Event Hubs: A data ingestion services that you can use to manage queues of event data, ensuring that each event is processed in order, exactly once.
+
+  Azure IoT Hub: A data ingestion service that is similar to Azure Event Hubs, but which is optimized for managing data from Internet-of-things (IoT) devices.
+
+  Azure Data Lake Store Gen 2: A highly scalable storage service that is often used in batch processing scenarios, but which can also be used as a source of streaming data.
+
+  Apache Kafka: An open-source data ingestion solution that is commonly used together with Apache Spark. You can use Azure HDInsight to create a Kafka cluster.
+
+https://docs.microsoft.com/en-us/learn/modules/explore-fundamentals-stream-processing/4-stream-analytics
+
+Explore Azure Stream Analytics
+
+Azure Stream Analytics is a service for complex event processing and analysis of streaming data. Stream analytics is used to:
+
+  Ingest data from an input, such as Azure event hub, Azure IoT Hub, or Azure Storage blob container
+  Process the data by using a query to select, project, and aggregate data visuals
+  Write the results of an output, such as Azure Data Lake Gen 2, Azure SQL Database, Azure Synapse Analytics, Azure Functions, Azure event hub, Microsoft Power BI, and others.
+
+Once started, a Stream Analytics query will run perpetually, processing new data as it arrives in the input and storing results in the output.
+
+Azure Stream Analytics is a great technology choice when you need to continually capture data from a streaming source, filter or aggregate it, and send the results to a data store or downstream process for analysis and reporting.
+
+https://docs.microsoft.com/en-us/learn/modules/explore-fundamentals-stream-processing/5-exercise-stream-analytics
+
+Exercise: Analyze streaming data 
+
+Now it's your opportunity to explore Azure Stream Analytics in a sample solution that aggregates streaming data from a simulated IoT device.
+
+This exercise can be completed using a free Microsoft Learn sandbox subscription, which provides an Azure subscription and a Cloud Shell environment integrated into this page. The sandbox subscription will be created when you clickd the button above and automatically deleted when you complete this module.
+
+...
+
+Create Azure resources 
+
+1. In the Azure Cloud Shell, enter the following command to download the files you'll need for this exercise.
+
+  git clone https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals dp-900
+
+2. Wait for the command to complete, and then enter the following command to change teh current directory to the folder containing the files for this exercise
+
+  cd dp-900/streaming 
+
+3. Enter the following command to run a script that creates the Azure resources you will need in this exercise.
+
+  bash setup.sh 
+
+Wait as the script runs and performs the following actions:
+  
+  a. Installs the Azure CLI extensions needed to create resources (you can ignore any warnings about experimental extensions)
+  b. Identifies the Azure resource group provided for this exercise, which will have a name similar to learn-xxxxxxxxxxxxxx...
+  c. Creates an Azure IoT Hub resource, which will be used to receive a stream of data from a simulated device.
+  d. Creates an Azure Storage Account, which will be used to store processed data.
+  e. Creates an Azure Stream Analytics job, which will process the incoming device data in real-time, and write the results to the storage account.
+
+...
+
+Use the resources to analyze streaming data
+
+1. At the top of the Overview page for the Stream Analytics Job, select the start button, and then in the Start job pane, select Start to start the job.
+
+2. Wait for a notification that the streaming job started successfully
+
+3. Switch back to the Azure Cloud Shell, and enter the following command to simulate a device that sends data to the IoT Hub.
+
+  bash iotdevice.sh
+
+4. Wait for the simulation to start, which will be indicated by output like this:
+
+  [output]
+
+5. While the simulation is running, back in the Azure portal, return to the page for the learn-xxxxxxxxxxxx... resource group, and select the storexxxxxxxxx storage account.
+
+6. In the pane on the left of the storage account blade, select the Containers Tab.
+
+7. Open the data container
+
+8. In the data container, navigate through the folder hierarchy, which includes a folder for the current year, with subfolders for the month, day, and hour.
+
+9. In the folder for the hour, select the file that has been created, which should have a name similar to 0_xxx.json.
+
+10. On the page for the file, select Edit and review the contents of the file; which should consist of a JSON record for each 10 second period, showing the number of messages received form IoT devices like this:
+
+  [content]
+
+11. Use the Refresh button to refresh the file, noting that additional results are written to the file as Steram Analytics job processes the device data in real time as it is streamed from the device to the IoT Hub.
+
+...
+
+https://docs.microsoft.com/en-us/learn/modules/explore-fundamentals-stream-processing/6-spark-streaming
+
+Explore Apache Spark on Microsoft Azure 
+
+Apache Spark is a distributed processing framework for large scale data analytics. You can use Spark on Microsoft Azure in the following services: 
+
+  Azure Synapse Analytics
+  Azure Databricks
+  Azure HDInsight 
+
+Spark can be used to run code (usually written in Python, Scala, or Java) in parallel across multiple cluster nodes, enabling it to process very large volumes of data efficiently. Spark can be used for both batch processing and stream processing.
+
+Spark Structured Streaming 
+
+To process streaming data on Spark, you can use the Spark Structured Streaming library, which provides an application programming interface (API) for ingesting, processing, and outputting results from perpetual streams of data.
+
+Spark Structured Stereaming is built on the ubiquitous structure in Spark called a dataframe, which encapsulates a table of data. You use the Spark Structured Streaming API to read data from a real-time data source, such as Kafka hub, a file store, or a network port, into a "boundless" dataframe that is continuallly populated iwth new data from the stream. You then define a query on th edataframe that selects, projects, or aggregates the data - often in temporal windows. The result of the query generates another datafame, which can be persisted for further analysis of further processing.
+
+Spark Stuctured Streaming is a great choice for real-time analytics when you need to incorporate streaming data into a Spark based data lake or analytical data store.
+
+Note 
+For more information about Spark Structured Streaming, see the Spark Structured Streaming programming guide.
+
+Delta Lake
+
+Delta Lake is an open-source storage layer that adds support for transactional consistancy, schema enforcement, and other common data warehousing features to data lake storage.  It also unifies storage for streaming and batch data, and can be used in Spark to define relational tables for both batch and stream processing. WHen used for stream processing, a Delta Lake table can be used as a streaming source forr queries against real-time data, or as a sink in which a stream of data is written.
+
+The Spark runtimes in Azure Synapse Analytics and Azure Databricks includ support for Delta Lake.
+
+Delta Lake combined with Spark Structured Streaming is a good solution when you need to abstract batch and stream processed data in a data lake behind a relational schema for SQL-based querying and analysis.
+
+Note
+For more information about Delta Lake, see What is Delta Lake?
+
+https://docs.microsoft.com/en-us/learn/modules/explore-fundamentals-stream-processing/7-exercise-spark-streaming
+
+Exercise: Process streaming dat using Spark.
+
+In this exercise, you'll use Spark Structured Streaming and delta tables in Azure Synapse Analytics to process streaming data.
+
+To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.microsoft.com/free. You cannot use a Microsoft Learn sandbox subscription for this exercise.
+
+...
+
+Explore Azure Data Explorer
+
+Azure Data Explorer is a standalone Azure service for efficiently analyzing data. You can use the service as the output for analyzing large volumes of diverse data from data sources such as websites, applications, IoT devices, and more. For example, by outputting Azure Stream Analytics logs to Azure Data Explorer, you can complement Azure Stream Analytics low latency alerts handling with Data Explorers's deep investigation capabilities. The service is also encapsulated as a runtime in Azure Synapse Analytics, where it is referred to as Azure Synapse Data Explorer; enabling you to build and manage analytical soultions that combine SQL, Spark, and Data explorer analytics in a single workspace.
+
+Data is ingested into Data Explorer through one or more connectors built by writing a minimal amount of code. This enables you to quickly ingest data from a wide variety of data sources, including both static and streaming sources. Data Explorer supports batcing and streaming in near real time to optimize data ingestion. The ingested data is stored in tables in a Data Explorer database, wehre automatic indexing enables high-performance queries.
+
+Azure Data Explorer is a great choice of technology when you need to:
+
+  Capture and analyze real-time or batch data that includes a time-series element; such as log telemetry or values emitted by Internet-of-Things (IoT) devices.
+
+  Explore, filter, and aggregate data quickly by using the intuitive and powerful Kusto Query Language (KQL)
+
+...
+
+https://docs.microsoft.com/en-us/learn/modules/explore-fundamentals-stream-processing/9-exercise-data-explorer
+
+Create a Data Explorer pool 
+
+  1. In Synapse Studio, select the Manage page.
+  2. Select the Data Explorer pools tab, and then use the + New icon to create a new pool with the following settings:
+
+    Data Explorer pool name: dxpool 
+    Workload: Compute optimized 
+    Size: Extra Small (2 cores)
+  
+  3. Select next: Additional Settings > and enable the Streaming ingestion setting - this enables Data Explorer to ingest new data from a streaming source, such as Azure Event Hubs.
+
+  4. Select Review and createe to create the Data Explorer pool, and then wait for it to be deployed (which may take 15 minutes or longer - the status will change from Creating to Online).
+
+Create a database and ingest data 
+
+  1. In Synapse Studio, select the Data page.
+
+  2. Ensure that the Workspace tab is selected, and if necessary, select the refresh icon at the top-left of the page to refresh the view so that Data Explorer databases is listed.
+
+  3. Expand Data Explorer databases and verify that dxpool is listed.
+
+  4. In the Data pane, use the + icon to create a new Data Explorere Databaase in the dxpool with the name iot-data.
+
+  5. While waiting for the database to be created, download devices.csv from [url], saving it in any folder on your local computer.
+
+  6. In Synapse Studio, wait for the database to be created if necessary, and then in the ... meny for the new iot-data database, select Open in Azure Data Explorer.
+
+...
+
+https://docs.microsoft.com/en-us/learn/modules/explore-fundamentals-data-visualization/3-data-modeling
+
+Describe core concepts of data modeling 
+
+Analytical models enable you to structure data to support analytics. Models are based on related tables of data and define the numeric values that you want to analyze or report (known as measures) and the entities by which you want to aggregate them (known as dimensions). For example, a model might include a table containing numeric measure for sales (such as revenue or quantity) and dimensions for product, customers, and time. This would enable you to aggregate sales measures across one or more dimensions (for example, to identify total revenue by customer, or total items sold by prodcut per month). Conceptually, the model forms a multidimensional structure, which is commonly referred to as a cube, in which any point where the dimensions intersect represnts an aggregated measure for those dimensions.
+
+Note
+Although we commonly refer to an analytical model as a cube, there can be more (or fewer) than three dimensions - it's just not easy for us to visualize more than three.
+
+Tables and schema 
+
+Dimension tables represent entities by which you want to aggregate numeric measures - for example product or customer. Each entity is represented by a row with a unique key value. The remaining columns represent attributes of an entity - for example, products have names and categories, and customers have addresses and cities. It's common in most analytical models to include a Time 
+
+...
+
+https://docs.microsoft.com/en-us/learn/modules/explore-fundamentals-data-visualization/4-data-visualizations
+
+Describe considerations for data visualization
+
+After you've created a model, you can use it to generate data visualizations that can be included in a report.
+
+There are many kinds of data visualization, some commonly used and some more specialized. Power BI includes an extensive set of built-in visualizations, which can be extended with custom third-party visualizations. The rest of this unit discusses some common data visualizations but is by no means a complete list.
+
+Tables and text are often the simplest way to communicate data. Tables are useful when numerous related values must be displayed, and individual text values in cards can be a useful way to show important figures or metrics.
+
+Bar and column charts 
+
+Bar and column charts are a good way to visually compare numeric values for discrete categories.
+
+Line Charts
+
+Line Ccharts can also be used to compare categorized values and are useful when you need to examine trends, often over time.
+
+Pie Charts
+
+Pie charts are often used in business reports to visually compre categorized values as proportions of a total.
+
+Scatter plots 
+
+Scatter plots are useful when you want to compare two numeric measures and identify a relationship or correlation between them.
+
+Maps 
+
+Maps are a great way to visually compare values for different geographic areas or locations.
+
+Interactive reports
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===============

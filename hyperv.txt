@@ -1,0 +1,100 @@
+https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/enhanced-session-mode
+
+...
+
+Check session type 
+
+You can check to see what type of connection you have using the Enhanced Session mode icon at the top of the Virtual Machine Connect Tool (VMConnect). This button also lets you toggle between basic session and enhanced session mode.
+
+Configure VM for Remote Desktop
+
+Enhanced Session Mode requires Remote Desktop to be enabled in the VM. Search for "Remote Desktop Settings" in the Settings app or Start menu. Turn "Enable Remote Desktop" on.
+
+...
+
+Now, sign out of the VM or reboot before closing the Virtual Machine Connect window.
+
+Share drives and devices 
+
+Enhanced Session Mode's device sharing capabilities are hidden inside this inconspicuous connection window that pops up when you connect to a virtual machine:
+
+By default, virtual machines using enhanced session mode will share clipboard and printers. They are also configured by default to pass audio from the virtual machine back to your computer's speakers.
+
+To share devices with your virtual machine or to change those default Settings
+
+  1. Show more options 
+
+...
+
+Share audio devices (speakers and microphones)
+
+By default, virtual machines using enhanced session mode pass audio through so you can hear audio from the virtual machine. The virtual machine will use the audio device currrently selected on the host machine.
+
+To change those settings or to add microphone passthrough (so you can record audio in virtual machine): 
+
+Select the "Settings... " menu for configurin remote audio settings.
+
+Now configure audio and microphone settings.
+
+...
+
+https://support.cch.com/updates/practicemanagement/pdf/guides_tab/pm_guide.pdf
+
+...
+
+Welcome to ProSystem fx Practice Management 
+
+About ProSystem fx Practice Management 
+
+Welcome to ProSystem fx Practice Management, the most powerful interactive time and billing software on the market. ProSystem fx Practice Management combines a full range of time and billing options with the ease of Windows' graphical interface.
+
+Use ProSystem fx Practice Management to keep track of employee time, bill your clients with customized invoices, track client projects, and generate statistical reports for a vast array of information.
+
+ProSystem fx Pratice Management includes these modules:
+
+Time Entry : Enter employee time and expensies 
+
+Billing : Bill client, WIP, calculated fixed fee bills, and print customized invoices.
+
+Accounts Receivable : Enter payments, credits, and debits, and print client statements and dunning letters. 
+
+Projects : Set up projects to be completed for clients and track the progress of a project. An additional module, Project Tracking, allows you to set the status of a return, and extend due dates. Project Tracking can be selected from the Features menu of each module.
+
+Contact Management : View contact information for clients and maintain client notes. 
+
+Administration : Set up and maintain firm lists such as client files, employee files, service codes, and firm information. Update the system with the latest invoicing and time entry transactions.
+
+Reports : Run reports on client, employee, service code, project, and scheduling information.
+
+Report Writer : Creates reports for your firm.
+
+Dashboard : View summarized and detailed information for the firm, employees, clients, and projects.
+
+...
+
+Using Help 
+
+If you need help on any option in ProSystem fx Practice management, press F1 or user the Help Menu. Help gives you detailed information about the tasks and options in ProSystem fx Practice Management. In Help, you can select a topic, search for a topic associated with a phrase, find information about a word or phrase, move back through topics you've viewed, and print topics.
+
+To use Help 
+
+  1. Pres F1 to display help associated with the current window.
+  2. Use the scroll bar to display more text in the help window.
+  3. Jumps are displayed in blue with a solid underline. Click jump to a related topic.
+  4. Click the Related Topics button to view a list of topics related to the current topic.
+  5. Click Help Topics to display tabs for Contents, INdex, and Search.
+  6. In Contents, double-click books to open them and view the topics inside.
+  7. To exit help, click the [X] button in the upper-right corner.
+
+Tips 
+  To print a single topic from Contents, click the topic and click print.
+  To print a group of topics from Contents, click a book to print all help topics within the book.
+
+...
+
+New Firm Checklist 
+
+When you first set up your firm in ProSystem fx Practice Managemetn, follow these steps to make sure your setup is complete. For information on adding Canadian requirements to ProSystem fx Practice Management, see Setting up a Canadian Firm.
+
+Log on 
+
