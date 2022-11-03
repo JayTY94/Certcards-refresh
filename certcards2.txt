@@ -1,33 +1,4 @@
 
-21
-UiPath
-UiPath Task Capture Automatically captures and documents processes as you work.
-
-
-
-22
-UiPath
-UiPath Automation Hub crowdsources ideas from your employees.
-
-
-
-23
-UiPath
-Event Logs loaded into UiPath Process Mining, where Process Mining Developers use application templates to create Process Mining application for it.
-
-
-
-24
-UiPath
-A Process Mining application is a set of menus and dashboards tailored to a certain process. It contains KPIs, process details, business rules, and process-visualizations.
-
-
-
-
-25
-UiPath
-The Process Mining Application used by the process analyst to visualize the process, monitor it, or find improvement opportunities.
-
 
 
 26
