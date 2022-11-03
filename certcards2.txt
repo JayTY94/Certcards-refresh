@@ -702,164 +702,213 @@ Roles allow you to distribute the responsibility within your team by offering th
 
 
 
-4
-UiPath Automation Hub
 
+4
+UiPath CitDev Lesson
+Which of the following is an example of thinking computationally
+
+Planning out your tasks to achieve an objective
+NOT:   
+Asking a colleague to take over a task
+Brainstorming a challenge
+Performing a task
 
 
 
 5
-UiPath Automation Hub
+UiPath CitDev Lesson
+Which of these is an example of decomposition
 
+	Finding out how to write an Excel formula by analyzing which values and expressions you should be using
+	NOT
+	Watching a tutorial to learn how to write a formula in Excel
+	Looking at different Excel files for similarities between them
 
 
 
 6
-UiPath Automation Hub
-
+UiPath CitDev Lesson
+Which of the following contains a pattern?
+	Downloading all email attachments received in the past week from automation-first@uipath.com
+	All the spreadsheets must have columns E and D removed
+	Using the same set of credentials acoss applications
+	NOT
+	Sending an email to citizen-developer@uipath.com
+	Downloading a report in the Downloads folder
 
 
 
 7
-UiPath Automation Hub
+UiPath CitDev Lesson
+What links each instruction in a Robot Path?
 
+	An arrow
+	NOT
+	a line
+	a double line
+	a dotted line
 
 
 
 8
-UiPath Automation Hub
-
+UiPath CitDev Lesson
+What are the characteristics of a task with high automation potential?
+	Rule-based
+	Repetitive
+	Has standard input
+	Is stable
+	NOT
+	High exception rate
+	Constantly changing
 
 
 
 9
-UiPath Automation Hub
-
+UiPath CitDev Lesson
+There are two types of activities in StudioX: Resources (what application or file the automation is using) and Actions (steps performed to achieve the task goal).
 
 
 
 10
-UiPath Automation Hub
-
+UiPath CitDev Lesson
+Why is it important to evaluate your RobotPath and automation project?
+	To ensure that the automation is as good as it can be
+	NOT
+	To prove that the automation has been tested
+	To make sure the task is documented correctly
 
 
 
 11
-UiPath Automation Hub
-
+UiPath CitDev Lesson
+What is the difference between a value saved for later use and a variable?
+	None, they are the same thing
+	NOT
+	The data stored in a vairbale can change during a process
+	A value saved for later use cannot be changed once the program is running.
 
 
 
 12
-UiPath Automation Hub
-
+UiPath CitDev Lesson
+What is a variable?
+	A value you can save for later use in the automation project
+	A value that can change, depending on conditions or on information passed to the automation.
+	NOT
+	A value that changes its name throughout the automation project
+	A value that describes a RobotPath Step
+	A value that cannot be cnahgned once the program is running
 
 
 
 13
-UiPath Automation Hub
-
+UiPath CitDev Lesson
+What is computational thinking?
+	A set of techniques and approaches to problem solving
+	NOT
+	Giving instructions to a robot
+	Thinking like a robot
+	A programming language
 
 
 
 14
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 15
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 16
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 17
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 18
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 19
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 20
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 21
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 22
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 23
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 24
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 25
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 26
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 27
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 28
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 29
-UiPath Automation Hub
+UiPath CitDev Lesson
 
 
 
 
 30
-UiPath Automation Hub
-
+UiPath CitDev Lesson
 
 
