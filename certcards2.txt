@@ -561,102 +561,132 @@ What is computational thinking?
 
 
 14
-UiPath CitDev Lesson
-
+Security +
+Vulnerability feeds - Automated vulnerability notifications
+	National Vulnerability Database (https://nvd.nist.gov)
+	CVE Database Feeds (https://cve.mitre.org)
+	Third-party feeds
+		Additional vulnerability coverage
 
 
 
 15
-UiPath CitDev Lesson
-
+Security +
+Request for comments (RFC)
+	Published by the Internet Society (ISOC)
+		Often written by the Internet Engineering Task Force (IETF)
+		Internet society description is RFC 1602
+	Many informational RFCs analyze threats
+		RFC 3833 - Threat Analysis of the Domain Name Service
+		RFC 7624 - Confidentiality in teh Face of Pervasive Srurveillance: A Threat Model and Problem Statement
 
 
 
 16
-UiPath CitDev Lesson
-
+Security +
+Tactics, Techniques, and Procedures (TTP)
+	What are the adversaries doing and how are they doing it?
+	Different types of TTPs
+		Information on targetted victems (Finance for engergy companies)
+		Infrastructure used by attackers (DNS and IP addresses)
+		Outbreakd of a particular malware variant on a service type
 
 
 
 17
-UiPath CitDev Lesson
-
+Security +
+Open permissions
+	Increasingly common with cloud storage
+	June 2017 - 14 million Verizon records exposed
+		Third-party left an S3 bucket open to public
+		Researcher found the data before anyone else
 
 
 
 18
-UiPath CitDev Lesson
-
+Security +
+Error messages can provide useful information to an attacker
+	Service type, version information, debug data
+	Sept 2015 - Patreon compromised
+		Used a debugger to help monior and troubleshoot website issues
+		Debugger left exposed to internet
+		Effectively allowed for remote code executions
+		Gigabytes of customer data was released online
 
 
 
 19
-UiPath CitDev Lesson
-
-
+Security +
+Weak encryption
+	TLS is one of the most common issues 
+		Over 300 cipher suites
+	Avoid weak or null encryption (less than 128 bit key sizes)
+	Avoid oudated hashes (MD5)
+[Third-party Risks - SY0-601 CompTIA Security+ : 1.6]
 
 
 20
-UiPath CitDev Lesson
+Security +
 
 
 
 
 21
-UiPath CitDev Lesson
+Security +
 
 
 
 
 22
-UiPath CitDev Lesson
+Security +
 
 
 
 
 23
-UiPath CitDev Lesson
+Security +
 
 
 
 
 24
-UiPath CitDev Lesson
+Security +
 
 
 
 
 25
-UiPath CitDev Lesson
+Security +
 
 
 
 
 26
-UiPath CitDev Lesson
+Security +
 
 
 
 
 27
-UiPath CitDev Lesson
+Security +
 
 
 
 
 28
-UiPath CitDev Lesson
+Security +
 
 
 
 
 29
-UiPath CitDev Lesson
+Security +
 
 
 
 
 30
-UiPath CitDev Lesson
+Security +
+
 
 
