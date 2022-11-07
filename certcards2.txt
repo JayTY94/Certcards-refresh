@@ -625,6 +625,9 @@ Weak encryption
 [Third-party Risks - SY0-601 CompTIA Security+ : 1.6]
 
 
+
+
+
 20
 Security +
 
