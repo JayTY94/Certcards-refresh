@@ -1,42 +1,4 @@
 
-11
-UiPath Process Mining
-Event
-–
-Activities performed on each case at a given time.
-
-
-
-12
-UiPath Process Mining
-Variant
-–
-A unique combination of ways/sequences in which the activities are performed.
-
-
-
-13
-UiPath Process Mining
-Attribute
-–
-Attributes are additional details about cases. They usually are extracted from the raw system data. Examples of attributes are caseID, case owner, supplier name, customer name, etc.
-
-
-
-14
-UiPath Process Mining
-Throughput time
-–
-Average time spent by a case in the system.
-
-
-
-15
-UiPath Process Mining
-KPIs
-–
-KPIs (Key Performance Indicators) are measurable values used to gauge performance of specific properties over time.
-
 
 
 16
