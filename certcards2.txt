@@ -1,47 +1,4 @@
 
-
-
-16
-UiPath Process Mining
-Tags
-–
-Tags are additional business rules or KPIs (Key Performance Indicators) specific to a process. Adding tags helps us visualize how much the process complies with rules or standards set by the business.
-
-
-
-17
-UiPath Process Mining
-Purchase-to-Pay (P2P)
-–
-Purchase-to-Pay (P2P) is an aggregate Finance process, the end-to-end purchasing process, from acquiring goods to paying for them.
-
-
-
-18
-UiPath Process Mining
-Order-to-Cash (O2C)
-–
-Order-to-Cash involves the set of business processes from receiving and processing sales orders for goods and services to payment.
-
-
-
-19
-UiPath Process Mining
-Maverick buying
-–
-Maverick buying is defined as the number of purchase order items that were processed outside the regular Purchase-to-Pay process without the involvement of the Procurement department.
-
-
-
-20
-Security +
-DDos amplification
-Turns your small attack into a big attack
-	Often reflected off another device or service
-An increasingly common network DDOS technique
-	Turns internet services against victim
-
-
 21
 Security +
 DDos amplification
