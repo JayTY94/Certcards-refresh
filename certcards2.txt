@@ -622,50 +622,69 @@ Identity theft
 
 
 23
-Security +
+UiPath Process Mining
+The following points are covered in the Detailed Assessment 
 
+	The Automation Goal (cost, quality, productivity)
+	The Environmental Stability - changes of the process and/or of the applications
+	The Process Volumetry
+	The Applications used
 
 
 
 24
-Security +
+UiPath Process Mining
+Which of the following are collaborator roles?
 
+	Process Owner
+	Project Manager
+	NOT
+	Program Manager
+	Component Curator
+	Idea Approver
 
 
 
 25
-Security +
-
+UiPath Process Mining
+Which of the following information is requred when submitting an employee-driven idea?
+	How rule-based the process is
+	Are there expected changes in the process
+	What type is the input
+	NOT
+	The number of people involved in the as is process 
+	Estimated time saved by automating
 
 
 
 26
-Security +
+UiPath Process Mining
+Can the same user hold the Business Analyst and Project Manager collaborator roles at the same time?
 
+Yes, on thes ame automation idea and on different automation ideas
 
 
 
 27
-Security +
+UiPath Process Mining
 
 
 
 
 28
-Security +
+UiPath Process Mining
 
 
 
 
 29
-Security +
+UiPath Process Mining
 
 
 
 
 30
-Security +
-
+UiPath Process Mining
 
 
 
