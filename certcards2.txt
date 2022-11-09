@@ -579,7 +579,6 @@ Weak encryption
 		Over 300 cipher suites
 	Avoid weak or null encryption (less than 128 bit key sizes)
 	Avoid oudated hashes (MD5)
-[Third-party Risks - SY0-601 CompTIA Security+ : 1.6]
 
 
 
@@ -587,19 +586,38 @@ Weak encryption
 
 20
 Security +
-
+Lack of vendor support
+	Vendors are the only ones who can fix their products
+		Assuming they know about the problem
+		and care about fixing it
+	Trane Comfortlink II Thermostats
+		Control temp from your phone
+		Trane notified of 3 vulnerabilities in Apr 2014
+		Two patched in Apr 2015 and one in Jan 2016
 
 
 
 21
 Security +
-
+Data Loss
+	Vulnerability: Unsecured databases (no password or default password)
+	July 2020 - Internet databases are being deleted without warning or explanation
+	Overwrites data with iterations of the word "meow"
+		No messages or motivational content
 
 
 
 22
 Security +
-
+Identity theft
+	May through Jul 2017 - Equifax
+		Databreach of 147.9m Americans, 15.2m British citizens, 19k Canadian citizens
+		Name, SSN, birthdate, addresses, some driver's license numbers
+	Apache Struts vulnerability from Mar 7, 2017
+		Breach started Mar 12
+		Wasn't patched by Equifax until Jul 30 after discovering "suspicious network traffic"
+	Jul 2019 Equifax pays $575m in fines
+[Threat Hunting - SY0-601 CompTIA Security+ : 1.7]
 
 
 
@@ -647,6 +665,7 @@ Security +
 
 30
 Security +
+
 
 
 
