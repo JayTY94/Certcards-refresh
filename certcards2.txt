@@ -1,49 +1,4 @@
 
-21
-Security +
-DDos amplification
-Uses protocols with little (if any) authentication or checks
-	NTP, DNS, ICMP
-	A common example of protocol abuse
-
-
-
-22
-Security +
-Operational Technology (OT) DoS
-The hardware and software for infrastructure or industrial equipment
-	Electric grids, traffic control, manufacturing plants, etc
-This is more dire than a web server failing
-Requires a different approach; a much more critical security posture
-
-
-
-
-
-
-23
-UiPath Task Mining
-In Task Mining, there are two main personas using the product:
-
-	• Task Mining Admin: responsible for the set-up of Task Mining projects and configuring them in the UiPath Automation Cloud
-
-
-
-24
-UiPath Task Mining
-In Task Mining, there are two main personas using the product:
-
-	User: The employee who performs the task that will be analyzed with the help of Task Mining
-
-
-
-25
-UiPath Task Mining
-Throughout a Task Mining project, some other roles might get involved to support during some stages of the process.
-	• The automation Center of Excellence Lead: They can be involved in the initial phase of a project when we need to identify the business lines, processes, and users that are going to be part of the Task Mining project.
-		○ The Automation COE leads can also sometimes coincide with the Task Mining Admin
-
-
 
 
 26
@@ -661,7 +616,7 @@ Which of the following information is requred when submitting an employee-driven
 UiPath Process Mining
 Can the same user hold the Business Analyst and Project Manager collaborator roles at the same time?
 
-Yes, on thes ame automation idea and on different automation ideas
+Yes, on the same automation idea and on different automation ideas
 
 
 
