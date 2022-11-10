@@ -620,26 +620,213 @@ Yes, on the same automation idea and on different automation ideas
 
 
 
+
 27
-UiPath Process Mining
+UiPath StudioX
+To indicate a target, we have to click on the Indicate target on screen button in a StudioX activity. This will prompt us to select a UI element in the target application by clicking on it.
+
+If a target is selected correctly and there are no duplicates (e.g. similar typing fields in a form, it will be highlighted green.
 
 
 
 
 28
-UiPath Process Mining
+UiPath StudioX
+To indicate a target, we have to click on the Indicate target on screen button in a StudioX activity. This will prompt us to select a UI element in the target application by clicking on it.
+
+If a target is highlighted red, then it needs additional anchors to be recognized as a unique element. IN the case of duplicates, they will be highlighted yellow.
+
+
+
+29
+UiPath StudioX
+The Object Repository is a collection of UI elements that can be used within certain activities, without having to interact with the UI while developing the workflow. This helps increase development speed.
+
+
+
+30
+UiPath StudioX
+The Object Repository is a collection of UI elements which we can use inside and across automation projects. This allows us to reuse the elements in different projects, provided they all have the same libraries installed.
+
+
+
+
+1
+UiPath StudioX
+Elements in the Object Repository are organized in libraries: groups of UI elements that can be installed just like any other activity package. RPA Developers create these libraries and then make them available for other users within a company or publicly.
+
+
+
+2
+Security +
+
+
+
+
+3
+Security +
+
+
+
+
+4
+Security +
+
+
+
+
+5
+Security +
+
+
+
+
+6
+Security +
+
+
+
+
+7
+Security +
+
+
+
+
+8
+Security +
+
+
+
+
+9
+Security +
+
+
+
+
+10
+Security +
+
+
+
+
+11
+Security +
+
+
+
+
+12
+Security +
+
+
+
+
+13
+Security +
+
+
+
+
+14
+Security +
+
+
+
+
+15
+Security +
+
+
+
+
+16
+Security +
+
+
+
+
+17
+Security +
+
+
+
+
+18
+Security +
+
+
+
+
+19
+Security +
+
+
+
+
+20
+Security +
+
+
+
+
+21
+Security +
+
+
+
+
+22
+Security +
+
+
+
+
+23
+Security +
+
+
+
+
+24
+Security +
+
+
+
+
+25
+Security +
+
+
+
+
+26
+Security +
+
+
+
+
+27
+Security +
+
+
+
+
+28
+Security +
 
 
 
 
 29
-UiPath Process Mining
+Security +
 
 
 
 
 30
-UiPath Process Mining
+Security +
 
 
 
