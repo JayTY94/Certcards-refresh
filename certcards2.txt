@@ -1,41 +1,4 @@
 
-
-
-
-1
-UiPath Task Mining
-The Task Mining admin console automatically creates a dataset under the Datasets section in the AI Center project we created and linked with our Task Mining project
-
-
-
-2
-UiPath Task Mining
-If the Admin chose the Continuous option in the Output Configuration section of the Task Mining project, the data captured was automatically pushed as a dataset in AI Center. If the Admin chose 'Via shared drive', they will have to explicitly push the recorded data from the network location to the AI Center project
-
-
-
-3
-UiPath Task Mining
-Then, the easiest option is to run the out-of-the-box ML model for Task Mining from AI Center. To do this:
-	Select the UiPath Task Mining package under the ML Packages section in the AI Center project. Select the Model version, hit Submit, then enter the Package Name and the Description. Finally, hit Submit.
-	Select the Evaluation run pipeline for the out-of-the-box Task Mining model and pass the dataset created by Task Mining console
-
-
-
-4
-UiPath Task Mining
-The ML model run will take between few hours and two days based on the size of the dataset
-
-Once the model completes the execution, the results will be automatically uploaded to the Task Mining project, under Discovery results.
-
-
-
-5
-UiPath Task Mining
-UiPath recomends collecting at least 40k actions for any analysis and 100k-200k actions for more optimal results.
-
-
-
 6
 Security+
 Attack script languages:
