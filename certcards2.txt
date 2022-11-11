@@ -1,47 +1,6 @@
 
 
 
-26
-UiPath Task Mining
-Throughout a Task Mining project, some other roles might get involved to support during some stages of the process.
-	• The Subject Matter Expert: users with lots of expertise in performing the task. After the data has been recorded and analyzed  using an ML package, the SME, the Admin, and the Business Analyst can work together to understand which task variation is the desired one and where is the biggest potential for automation.
-
-
-
-
-27
-UiPath Task Mining
-Throughout a Task Mining project, some other roles might get involved to support during some stages of the process.
-	• The Business Analyst: they can join the SMEs and Admins in understanding how a task was performed, identifying opportunities for process improvement, and choosing the tasks with the highest automation potential.
-
-
-
-
-28
-UiPath Task Mining
-Throughout a Task Mining project, some other roles might get involved to support during some stages of the process.
-	• The Automation Developer: they usually come at the end of the analysis. Starting from process design documents and .xaml file exports, they build the automation project for the selected tasks.
-
-
-
-
-29
-UiPath Task Mining
-Before starting the recording process, instruct users on a few best practices to take into consideration while they are performing their tasks:
-
-	Have all the users consistently record for the defined period of time
-		This will avoid having one user recording a significantly larger amount of data and skew the results
-
-
-
-30
-UiPath Task Mining
-Before starting the recording process, instruct users on a few best practices to take into consideration while they are performing their tasks:
-
-	Instruct the users to finish one iteration of a task at a time
-		For example, process one invoice, then another. Instruct them to avoid processing the second invoice if the first one is not complete.
-
-
 
 1
 UiPath Task Mining
