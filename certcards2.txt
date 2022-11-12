@@ -743,8 +743,12 @@ This model differs from that of traditional networks, which use dedicated hardwa
 
 18
 Security +
-
-
+Virtual Machine escape
+	Break out of the VM an dinteract with the host operating system
+	Once you escape the VM, you have great control
+		Control the host and control other guist VMs
+	This would be a huge exploit.
+[Secure Deployments - SY0-601 CompTIA Security+ : 2.3]
 
 
 19
