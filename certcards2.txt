@@ -581,97 +581,163 @@ Elements in the Object Repository are organized in libraries: groups of UI eleme
 
 2
 Security +
-
+Vulnerability research
+Common Vulnerability Scoring System (CVSS
+	Quantitative scoring of a vulnerability 0 to 10
+	The scoring standards change over time
+	Different scoring for CVSS 2.0 vs CVSS 3.X
 
 
 
 3
 Security +
-
+Security Information and Event Management (SIEM)
+	Logging of security events and information
+Log collection of security alerts - Real-time information
+Log aggregation and long-term sotrage
+	Usually includes advanced reporting features
 
 
 
 4
 Security +
+Penetration Testing
+	Initial exploitation, how they get into the network
+	Lateral movement
+		Move from system to system
+		The inside of the network is relatively unprotected
 
 
 
 
 5
 Security +
-
+Penetration Testing
+	Persistence
+		Set up a backdoor, build user accounts, change or verify default passwords
+	The pivot
+		Gain access to systems that would normally not be accessible
+		Use a vulnerable system as a proxy or relay
 
 
 
 6
 Security +
-
+Reconnaissance - Passive Footprinting
+	Learn as much as you can from open sources
+		Social media
+		Corporate web stie
+		Online forums
+		Dumpster diving
 
 
 
 7
 Security +
-
+Open Source Intelligence (OSINT)
+	Gathering information from many sources
+		Find information on anyone or anything
+		The name is not related to open-sources oftwware
+	https://osintframework.com/
+	Automated gathering - Many software tools are available
 
 
 
 8
 Security +
+Confusion
+Confusion means that each binary digit (bit) of the ciphertext should depend on several parts of the key, obscuring the connections between the two.[2]
+The property of confusion hides the relationship between the ciphertext and the key.
+Confusion increases the ambiguity of ciphertext and it is used by both block and stream ciphers.
+
 
 
 
 
 9
 Security +
-
+Diffusion
+Diffusion means that if we change a single bit of the plaintext, then about half of the bits in the ciphertext should change, and similarly, if we change one bit of the ciphertext, then about half of the plaintext bits should change.[3] This is equivalent to the expectation that encryption schemes exhibit an avalanche effect.
 
 
 
 10
 Security +
-
+Data in-use
+	Actively procesing in memory
+	Data is almost always decripted. Otherwise, it wouldn't be useful
+	Attackers can pick decrypted information out of RAM
+		Very attractive target
 
 
 
 11
 Security +
+Tokenization is the process of exchanging sensitive data for nonsensitive data called “tokens” that can be used in a database or internal system without bringing it into scope.  
+
+Although the tokens are unrelated values, they retain certain elements of the original data commonly length or format so they can be used for uninterrupted business operations. The original sensitive data is then safely stored outside of the organization’s internal systems.  
+
 
 
 
 
 12
 Security +
-
+Data loss prevention (DLP) is a set of tools and processes used to ensure that sensitive data is not lost, misused, or accessed by unauthorized users. DLP software classifies regulated, confidential and business critical data and identifies violations of policies defined by organizations or within a predefined policy pack, typically driven by regulatory compliance such as HIPAA, PCI-DSS, or GDPR
 
 
 
 13
 Security +
-
+DNS sinkhole
+	A DNS that hands out incorrect IP addresses
+	This can be bad
+		AN attacker can redirect users to a malicious site
+	This can be good
+		Redirect known malicious domains to a benign IP address
+		Watch for any users hitting htat IP address
+		Those devices are infected.
 
 
 
 14
 Security +
-
+Fog computing
+	A cloud that's close to your data; Cloud + IoT
+	A distributed cloud architecture
+		Immediate data stays local - No latency
+		Local decisions made from local data - no bandwidth requirements
+		Private data never leaves
+		Long-term analysis can occur in the cloud - internet only when required
 
 
 
 15
 Security +
-
+Monolithic applications
+	One big application that does everything
+	Compare with (usually cloud) microservices
+	Code challenges
+		Large codebases, with change control challenges.
 
 
 
 16
 Security +
-
+Service Integration and Management (SIAM)
+	Many different service providers, result of multisourcing
+		Google, Microsoft, Amazon
+	Every provide works differently, with different tools to launch applications.
+	SIAM is the integration of these providers into one interface.
+	Kind of sus to me, ngl.
 
 
 
 17
 Security +
+Software-Defined Networking (SDN) is an approach to networking that uses software-based controllers or application programming interfaces (APIs) to communicate with underlying hardware infrastructure and direct traffic on a network.
 
+This model differs from that of traditional networks, which use dedicated hardware devices (i.e., routers and switches) to control network traffic. SDN can create and control a virtual network – or control a traditional hardware – via software.
 
 
 
