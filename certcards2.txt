@@ -751,74 +751,284 @@ Virtual Machine escape
 [Secure Deployments - SY0-601 CompTIA Security+ : 2.3]
 
 
+
 19
-Security +
+Scrummaster
+At which Scrum event is the Sprint Goal first introduced to the Scrum Team?
+
+Spring Planning
+
+
+
+20
+Scrummaster
+Jeff Sutherland defined "done-done" as "code complete and fully tested at the feature level". When Scrum Teams achieve "done-done" by the end of a Spring, what is the typical result?
+
+Productivity of the team doubles
+
+
+21
+Scrummaster
+What is the maximum duration of each of the Scrum Events?
+Sprint = One Month
+Sprint Planning = 8 hours
+Daily Scrum = 15 minutes
+
+
+
+22
+Scrummaster
+What is the maximum duration of each of the Scrum Events?
+Sprint Review = 4 hours
+Sprint Retrospective = 3 hours
+
+
+
+23
+Scrummaster
+The three components of Scrum are 
+Transparency
+Inspection
+Adaptation
+
+
+
+24
+Scrummaster
+Which of the following is true about the Daily Scrum?
+	It is a short meeting held every day so that the Development Team members can plan their work for the next 24 hours
+	NOT
+	In addition to the Development Team members, the Product Owner and the ScrumMaster are required to be present each day
+
+
+
+25
+Scrummaster
+The three roles in a Scrum Team are
+Developers
+ScrumMaster
+Product Owner
+
+
+
+26
+Scrummaster
+In Scrum, the goal of each Sprint is build a complete product Increment and release it to the customers and end users. This suggests that Scrum defines done as “in use” by the customer or an end user.
+
+
+
+27
+Scrummaster
+The Definition of Done (DoD) is a concise list of technical criteria - from six to twelve items - that each Product Backlog item must meet in order to be considered potentially releasable to a new, or existing, customer. It applies uniformly to all the items in the Product Backlog and is owned by the Development Team. 
+
+
+
+28
+Scrummaster
+Practice of Extreme Programming (XP)
+Refactoring: programmers restructure the system without changing its behavior to remove duplication, improve communication, simplify or add flexibility
+
+
+
+29
+Scrummaster
+Practice of Extreme Programming (XP)
+40-Hour Week: work no more than forty hours a week as rule. Never work overtime a second week in a row.
+
+
+
+30
+Scrummaster
+Practice of Extreme Programming (XP)
+Collective Ownership: anyone can change any code anywhere in the system at any time.
+
+
+
+
+1
+Scrummaster
+The first person to use the term "technical debt" was Ward Cunningham in the 1990s
+
+
+
+2
+Scrummaster
+What is the impact of accumulating technical debt?
+	
+	Short-term increase in productivity, followed by a long-term decrease in code quality and maintainability
+
+
+
+3
+Scrummaster
+What is the MOST likely reason why developers introduce techncial debt in the first place?
+
+	They are working under pressure to deliver.
+
+
+
+4
+Scrummaster
+The following are examples of technical debt
+	Bad naming conventions
+	Duplicate code
+	Incomplete or missing technical documentation
+	Lack of automated tests
+
+
+
+5
+Scrummaster
+
+
+
+
+6
+Scrummaster
+
+
+
+
+7
+Scrummaster
+
+
+
+
+8
+Scrummaster
+
+
+
+
+9
+Scrummaster
+
+
+
+
+10
+Scrummaster
+
+
+
+
+11
+Scrummaster
+
+
+
+
+12
+Scrummaster
+
+
+
+
+13
+Scrummaster
+
+
+
+
+14
+Scrummaster
+
+
+
+
+15
+Scrummaster
+
+
+
+
+16
+Scrummaster
+
+
+
+
+17
+Scrummaster
+
+
+
+
+18
+Scrummaster
+
+
+
+
+19
+Scrummaster
 
 
 
 
 20
-Security +
+Scrummaster
 
 
 
 
 21
-Security +
+Scrummaster
 
 
 
 
 22
-Security +
+Scrummaster
 
 
 
 
 23
-Security +
+Scrummaster
 
 
 
 
 24
-Security +
+Scrummaster
 
 
 
 
 25
-Security +
+Scrummaster
 
 
 
 
 26
-Security +
+Scrummaster
 
 
 
 
 27
-Security +
+Scrummaster
 
 
 
 
 28
-Security +
+Scrummaster
 
 
 
 
 29
-Security +
+Scrummaster
 
 
 
 
 30
-Security +
+Scrummaster
 
 
 
