@@ -1,65 +1,6 @@
 
 
 
-11
-Security+
-Type of Threat Actor: Hacktivist
-	A hacker with a purpose
-		Social change or political agenda
-		Often an external entity
-	Can be remarkably sophisticated
-		DoS, web site defacing, release of private documents, etc
-	Funding is limited
-
-
-
-12
-Security+
-Type of Threat Actor: Script Kiddie
-	Runs pre-made scripts without any knowledge of what's really happening
-		Not necessarily a youngster
-	Not very sophisticated
-	No formal funding
-
-
-
-13
-Security+
-Type of Threat Actor: Organized Crime
-	Professional criminals
-		Motivated by money, almost always external
-	Very sophisticated
-	Crime that's organized
-		One person hacks, one person manages exploits, another sells data, another handles customer support
-
-
-
-14
-Security+
-Shadow IT
-	Working around the internal IT organization
-	IT can put up roadblocks
-		Shadow IT would be unencumbered
-		Use the cloud, innovate
-	Not always a good thing
-		Wasted timeand money
-		Security risks
-		Compliance issues
-
-
-
-15
-Security+
-Direct access attack vectors
-	There's a reason we lock the data center
-	Modify the operating system
-		Boot in an administrative mode and reset the password
-	Attach a keylogger
-		Collect usernames and passwords
-	Transfer files
-
-
-
 16
 Security+
 Social media attack vectors
