@@ -1,17 +1,5 @@
 
 
-
-20
-Security+
-Vulnerability databases
-	Researchers find vulnerabilities
-		Everyone needs to know about them
-	Common Vulnerabilities and Exposures (CVE)
-		A community managed list of vulnerabilities
-		Sponsored by US Department of Homeland Security (DHS) and Cybersecurity and Infrastructure Security Agency (CISA)
-
-
-
 21
 Security+
 Vulnerability databases 
