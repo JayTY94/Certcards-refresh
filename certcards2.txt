@@ -1,50 +1,6 @@
 
 
 
-16
-Security+
-Social media attack vectors
-	Attackers thank you for putting your personal information online
-		Where you are and when
-		Vacation pictures are especially telling
-	User profiling
-		Where were you born? Name of school mascot?
-		Use to reset password and get access.
-
-
-
-17
-Security+
-Cloud attack vectors
-	Publicly-facing applications and services
-		Mistakes are made all the time with configuration
-	Security misconfigurations
-		Data permissions
-
-
-
-18
-Security+
-Cloud attack vectors
-	Brute force attacks
-		or phish the users of the cloud service
-		get access to cloud resources
-	Orchestration attacks
-		Make the cloud build new application instances
-
-
-
-19
-Security+
-Closed/proprietary threat intelligence
-	Someone else has already compiled threat information
-		You can buy  it
-	Constant threat monitoring
-		Identify new threats
-		Create automated prevention workflows
-
-
-
 20
 Security+
 Vulnerability databases
