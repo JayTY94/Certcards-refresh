@@ -742,12 +742,13 @@ UiPath Insights
 Business KPIs include:
 	ROI
 	Process Outcomes
-	
+
 
 
 9
 UiPath Insights
-
+You can add fields to a visualization from the left as dimensions or measures. A dimension is a groupable field that can be used to filter query results, like an attribute, a fact, or even a numerical value. Measures are based on a function, like sum, average, minimum, maximum, and so on.
+Once you added dimensions and measures, you need to click Run.
 
 
 10
