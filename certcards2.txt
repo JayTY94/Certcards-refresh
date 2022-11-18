@@ -715,157 +715,144 @@ The following are examples of technical debt
 
 
 5
-Scrummaster
+UiPath Insights
+Operational KPIs contain information that relates to the execution of automation itself, but they don’t include things like time saved and money saved. 
 
 
 
 
 6
-Scrummaster
-
-
+UiPath Insights
+Operational KPIs include:
+	Errors
+	Robot Utilization
+	Success Rate
+	Duration
 
 
 7
-Scrummaster
+UiPath Insights
+Business KPIs tie what happens in your RPA deployment (operational) to how it benefits your company (business). These are the metrics that you can use to actually grow and scale RPA in your organization. 
 
 
 
 
 8
-Scrummaster
-
-
+UiPath Insights
+Business KPIs include:
+	ROI
+	Process Outcomes
+	
 
 
 9
-Scrummaster
-
+UiPath Insights
 
 
 
 10
-Scrummaster
-
+UiPath Insights
 
 
 
 11
-Scrummaster
-
+UiPath Insights
 
 
 
 12
-Scrummaster
-
+UiPath Insights
 
 
 
 13
-Scrummaster
-
+UiPath Insights
 
 
 
 14
-Scrummaster
-
+UiPath Insights
 
 
 
 15
-Scrummaster
-
+UiPath Insights
 
 
 
 16
-Scrummaster
-
+UiPath Insights
 
 
 
 17
-Scrummaster
-
+UiPath Insights
 
 
 
 18
-Scrummaster
-
+UiPath Insights
 
 
 
 19
-Scrummaster
-
+UiPath Insights
 
 
 
 20
-Scrummaster
-
+UiPath Insights
 
 
 
 21
-Scrummaster
-
+UiPath Insights
 
 
 
 22
-Scrummaster
-
+UiPath Insights
 
 
 
 23
-Scrummaster
-
+UiPath Insights
 
 
 
 24
-Scrummaster
-
+UiPath Insights
 
 
 
 25
-Scrummaster
-
+UiPath Insights
 
 
 
 26
-Scrummaster
-
+UiPath Insights
 
 
 
 27
-Scrummaster
-
+UiPath Insights
 
 
 
 28
-Scrummaster
-
+UiPath Insights
 
 
 
 29
-Scrummaster
-
+UiPath Insights
 
 
 
 30
-Scrummaster
+UiPath Insights
 
 
 
+​
