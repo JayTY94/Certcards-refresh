@@ -769,43 +769,73 @@ A stored procedure provides an important layer of security between the user inte
 
 12
 Security+
-
+Software Diversity
+	Alternative compiler paths would result in a different binary each time
+		Each compiled application would be a little different, but functionality would be the same.
+	An attack against different binaries would only be successful on a fraction of users
+		An attacker wouldn't know what exploit to use
 
 
 
 13
 Security+
-
+Attestation - proving that hardware is really yours
+	Remote attestation
+		Device provides an operational report ot a verification server
+		Encrypted and digitally signed with TPM
+		An IMEI or other u nique hardwrae component can be included in the report
 
 
 
 14
 Security+
-
+Push notification
+	Similar to an SMS notification
+		Authentication factor is pushed using a specialized app
+		Usually a mobile device
+	Security challenges
+		Some push apps send in the clear
 
 
 
 15
 Security+
-
+Time-Based One-Time Password (TOTP) algorithm
+	Use a secret key and the time of day
+	No incremental counter
+	Secret key is configured ahead of time
+	Timestamps are synchronized via NTP
 
 
 
 16
 Security+
-
+AAA Framework	
+	Authentication
+		Prove who you say you are (password)
+	Authorization
+		Based on who your ID and auth, what do  you have acces to?
+	Accounting
+		Resources used, timestamps, logout time
 
 
 
 17
 Security+
-
+Multipath I/O
+	Especially useful for network-based storage subsystems
+	Multiple Fiber Channel interfaces with multiple switches
 
 
 
 18
 Security+
-
+NIC teaming
+	Multiple network adapters
+		Looks like a single adapter
+		Integrate over switches
+	Load Balancing/Fail over (LBFO)
+		Aggregate bandwidth, more redundant paths
 
 
 
