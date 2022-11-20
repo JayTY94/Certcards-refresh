@@ -836,6 +836,7 @@ NIC teaming
 		Integrate over switches
 	Load Balancing/Fail over (LBFO)
 		Aggregate bandwidth, more redundant paths
+Power Redundancy - SY0-601 CompTIA Security+ : 2.5
 
 
 
