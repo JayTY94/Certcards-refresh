@@ -1,76 +1,28 @@
-
-
-
 1
+Security+
+Multipath I/O
+	Especially useful for network-based storage subsystems
+	Multiple Fiber Channel interfaces with multiple switches
+
+
+2
 UiPath Automation Hub
 User roles need to be paired with editing rights to allow users to perform activities. Without assigning editing rights on the Documentation page, Business Analysts cannot upload documents.
 
 
 
 
-2
-UiPath Automation Hub
-Collaborator Roles allow you to create for each automation and idea a specific team that collaborates on developing the idea and pushes it through the various phases. This is the page where you define and edit the different rights for each collaborator role."
-
-
-
-
-
 3
-UiPath Automation Hub
-Roles allow you to distribute the responsibility within your team by offering the possibility to provide suitable access to the Automation Hub sections and functionalities depending on each team member's expertise. The default roles available vary from the ones focusing on administrative responsibilities (managing the users, doing the platform setup), some in charge of managing the automation pipeline, as well as technical roles covering the reusable components repository.
+Security +
+Tokenization is the process of exchanging sensitive data for nonsensitive data called “tokens” that can be used in a database or internal system without bringing it into scope.  
+
+Although the tokens are unrelated values, they retain certain elements of the original data commonly length or format so they can be used for uninterrupted business operations. The original sensitive data is then safely stored outside of the organization’s internal systems.  
+
 
 
 
 
 4
-UiPath CitDev Lesson
-Which of the following is an example of thinking computationally
-
-Planning out your tasks to achieve an objective
-NOT:   
-Asking a colleague to take over a task
-Brainstorming a challenge
-Performing a task
-
-
-
-5
-UiPath CitDev Lesson
-Which of these is an example of decomposition
-
-	Finding out how to write an Excel formula by analyzing which values and expressions you should be using
-	NOT
-	Watching a tutorial to learn how to write a formula in Excel
-	Looking at different Excel files for similarities between them
-
-
-
-6
-UiPath CitDev Lesson
-Which of the following contains a pattern?
-	Downloading all email attachments received in the past week from automation-first@uipath.com
-	All the spreadsheets must have columns E and D removed
-	Using the same set of credentials acoss applications
-	NOT
-	Sending an email to citizen-developer@uipath.com
-	Downloading a report in the Downloads folder
-
-
-
-7
-UiPath CitDev Lesson
-What links each instruction in a Robot Path?
-
-	An arrow
-	NOT
-	a line
-	a double line
-	a dotted line
-
-
-
-8
 UiPath CitDev Lesson
 What are the characteristics of a task with high automation potential?
 	Rule-based
@@ -83,66 +35,76 @@ What are the characteristics of a task with high automation potential?
 
 
 
+5
+Security +
+Open permissions
+	Increasingly common with cloud storage
+	June 2017 - 14 million Verizon records exposed
+		Third-party left an S3 bucket open to public
+		Researcher found the data before anyone else
+
+
+
+6
+Scrummaster
+Which of the following is true about the Daily Scrum?
+	It is a short meeting held every day so that the Development Team members can plan their work for the next 24 hours
+	NOT
+	In addition to the Development Team members, the Product Owner and the ScrumMaster are required to be present each day
+
+
+
+7
+Scrummaster
+What is the MOST likely reason why developers introduce techncial debt in the first place?
+
+	They are working under pressure to deliver.
+
+
+
+8
+Security +
+Service Integration and Management (SIAM)
+	Many different service providers, result of multisourcing
+		Google, Microsoft, Amazon
+	Every provide works differently, with different tools to launch applications.
+	SIAM is the integration of these providers into one interface.
+	Kind of sus to me, ngl.
+
+
+
 9
-UiPath CitDev Lesson
-There are two types of activities in StudioX: Resources (what application or file the automation is using) and Actions (steps performed to achieve the task goal).
+Security +
+Virtual Machine escape
+	Break out of the VM an dinteract with the host operating system
+	Once you escape the VM, you have great control
+		Control the host and control other guist VMs
+	This would be a huge exploit.
+
 
 
 
 10
-UiPath CitDev Lesson
-Why is it important to evaluate your RobotPath and automation project?
-	To ensure that the automation is as good as it can be
-	NOT
-	To prove that the automation has been tested
-	To make sure the task is documented correctly
+Scrummaster
+At which Scrum event is the Sprint Goal first introduced to the Scrum Team?
+
+Spring Planning
 
 
 
 11
-UiPath CitDev Lesson
-What is the difference between a value saved for later use and a variable?
-	None, they are the same thing
-	NOT
-	The data stored in a vairbale can change during a process
-	A value saved for later use cannot be changed once the program is running.
+Security +
+Weak encryption
+	TLS is one of the most common issues 
+		Over 300 cipher suites
+	Avoid weak or null encryption (less than 128 bit key sizes)
+	Avoid oudated hashes (MD5)
+
+
 
 
 
 12
-UiPath CitDev Lesson
-What is a variable?
-	A value you can save for later use in the automation project
-	A value that can change, depending on conditions or on information passed to the automation.
-	NOT
-	A value that changes its name throughout the automation project
-	A value that describes a RobotPath Step
-	A value that cannot be cnahgned once the program is running
-
-
-
-13
-UiPath CitDev Lesson
-What is computational thinking?
-	A set of techniques and approaches to problem solving
-	NOT
-	Giving instructions to a robot
-	Thinking like a robot
-	A programming language
-
-
-
-14
-Security +
-Vulnerability feeds - Automated vulnerability notifications
-	National Vulnerability Database (https://nvd.nist.gov)
-	CVE Database Feeds (https://cve.mitre.org)
-	Third-party feeds
-		Additional vulnerability coverage
-
-
-
-15
 Security +
 Request for comments (RFC)
 	Published by the Internet Society (ISOC)
@@ -154,48 +116,67 @@ Request for comments (RFC)
 
 
 
+13
+UiPath Insights
+Operational KPIs include:
+	Errors
+	Robot Utilization
+	Success Rate
+	Duration
+
+
+14
+UiPath Insights
+Operational KPIs contain information that relates to the execution of automation itself, but they don’t include things like time saved and money saved. 
+
+
+
+
+15
+UiPath Automation Hub
+User roles need to be paired with editing rights to allow users to perform activities. Without assigning editing rights on the Documentation page, Business Analysts cannot upload documents.
+
+
+
+
 16
 Security +
-Tactics, Techniques, and Procedures (TTP)
-	What are the adversaries doing and how are they doing it?
-	Different types of TTPs
-		Information on targetted victems (Finance for engergy companies)
-		Infrastructure used by attackers (DNS and IP addresses)
-		Outbreakd of a particular malware variant on a service type
+Security Information and Event Management (SIEM)
+	Logging of security events and information
+Log collection of security alerts - Real-time information
+Log aggregation and long-term sotrage
+	Usually includes advanced reporting features
 
 
 
 17
 Security +
-Open permissions
-	Increasingly common with cloud storage
-	June 2017 - 14 million Verizon records exposed
-		Third-party left an S3 bucket open to public
-		Researcher found the data before anyone else
+Tokenization is the process of exchanging sensitive data for nonsensitive data called “tokens” that can be used in a database or internal system without bringing it into scope.  
+
+Although the tokens are unrelated values, they retain certain elements of the original data commonly length or format so they can be used for uninterrupted business operations. The original sensitive data is then safely stored outside of the organization’s internal systems.  
+
+
 
 
 
 18
-Security +
-Error messages can provide useful information to an attacker
-	Service type, version information, debug data
-	Sept 2015 - Patreon compromised
-		Used a debugger to help monior and troubleshoot website issues
-		Debugger left exposed to internet
-		Effectively allowed for remote code executions
-		Gigabytes of customer data was released online
+UiPath Insights
+Business KPIs include:
+	ROI
+	Process Outcomes
 
 
 
 19
 Security +
-Weak encryption
-	TLS is one of the most common issues 
-		Over 300 cipher suites
-	Avoid weak or null encryption (less than 128 bit key sizes)
-	Avoid oudated hashes (MD5)
-
-
+DNS sinkhole
+	A DNS that hands out incorrect IP addresses
+	This can be bad
+		AN attacker can redirect users to a malicious site
+	This can be good
+		Redirect known malicious domains to a benign IP address
+		Watch for any users hitting htat IP address
+		Those devices are infected.
 
 
 
@@ -213,330 +194,32 @@ Lack of vendor support
 
 
 21
-Security +
-Data Loss
-	Vulnerability: Unsecured databases (no password or default password)
-	July 2020 - Internet databases are being deleted without warning or explanation
-	Overwrites data with iterations of the word "meow"
-		No messages or motivational content
-
-
-
-22
-Security +
-Identity theft
-	May through Jul 2017 - Equifax
-		Databreach of 147.9m Americans, 15.2m British citizens, 19k Canadian citizens
-		Name, SSN, birthdate, addresses, some driver's license numbers
-	Apache Struts vulnerability from Mar 7, 2017
-		Breach started Mar 12
-		Wasn't patched by Equifax until Jul 30 after discovering "suspicious network traffic"
-	Jul 2019 Equifax pays $575m in fines
-[Threat Hunting - SY0-601 CompTIA Security+ : 1.7]
-
-
-
-23
-UiPath Process Mining
-The following points are covered in the Detailed Assessment 
-
-	The Automation Goal (cost, quality, productivity)
-	The Environmental Stability - changes of the process and/or of the applications
-	The Process Volumetry
-	The Applications used
-
-
-
-24
-UiPath Process Mining
-Which of the following are collaborator roles?
-
-	Process Owner
-	Project Manager
-	NOT
-	Program Manager
-	Component Curator
-	Idea Approver
-
-
-
-25
-UiPath Process Mining
-Which of the following information is requred when submitting an employee-driven idea?
-	How rule-based the process is
-	Are there expected changes in the process
-	What type is the input
-	NOT
-	The number of people involved in the as is process 
-	Estimated time saved by automating
-
-
-
-26
-UiPath Process Mining
-Can the same user hold the Business Analyst and Project Manager collaborator roles at the same time?
-
-Yes, on the same automation idea and on different automation ideas
-
-
-
-
-27
-UiPath StudioX
-To indicate a target, we have to click on the Indicate target on screen button in a StudioX activity. This will prompt us to select a UI element in the target application by clicking on it.
-
-If a target is selected correctly and there are no duplicates (e.g. similar typing fields in a form, it will be highlighted green.
-
-
-
-
-28
-UiPath StudioX
-To indicate a target, we have to click on the Indicate target on screen button in a StudioX activity. This will prompt us to select a UI element in the target application by clicking on it.
-
-If a target is highlighted red, then it needs additional anchors to be recognized as a unique element. IN the case of duplicates, they will be highlighted yellow.
-
-
-
-29
 UiPath StudioX
 The Object Repository is a collection of UI elements that can be used within certain activities, without having to interact with the UI while developing the workflow. This helps increase development speed.
 
 
 
-30
+22
+Security +
+Vulnerability feeds - Automated vulnerability notifications
+	National Vulnerability Database (https://nvd.nist.gov)
+	CVE Database Feeds (https://cve.mitre.org)
+	Third-party feeds
+		Additional vulnerability coverage
+
+
+
+23
 UiPath StudioX
 The Object Repository is a collection of UI elements which we can use inside and across automation projects. This allows us to reuse the elements in different projects, provided they all have the same libraries installed.
 
 
 
 
-1
-UiPath StudioX
-Elements in the Object Repository are organized in libraries: groups of UI elements that can be installed just like any other activity package. RPA Developers create these libraries and then make them available for other users within a company or publicly.
-
-
-
-2
-Security +
-Vulnerability research
-Common Vulnerability Scoring System (CVSS
-	Quantitative scoring of a vulnerability 0 to 10
-	The scoring standards change over time
-	Different scoring for CVSS 2.0 vs CVSS 3.X
-
-
-
-3
-Security +
-Security Information and Event Management (SIEM)
-	Logging of security events and information
-Log collection of security alerts - Real-time information
-Log aggregation and long-term sotrage
-	Usually includes advanced reporting features
-
-
-
-4
-Security +
-Penetration Testing
-	Initial exploitation, how they get into the network
-	Lateral movement
-		Move from system to system
-		The inside of the network is relatively unprotected
-
-
-
-
-5
-Security +
-Penetration Testing
-	Persistence
-		Set up a backdoor, build user accounts, change or verify default passwords
-	The pivot
-		Gain access to systems that would normally not be accessible
-		Use a vulnerable system as a proxy or relay
-
-
-
-6
-Security +
-Reconnaissance - Passive Footprinting
-	Learn as much as you can from open sources
-		Social media
-		Corporate web stie
-		Online forums
-		Dumpster diving
-
-
-
-7
-Security +
-Open Source Intelligence (OSINT)
-	Gathering information from many sources
-		Find information on anyone or anything
-		The name is not related to open-sources oftwware
-	https://osintframework.com/
-	Automated gathering - Many software tools are available
-
-
-
-8
-Security +
-Confusion
-Confusion means that each binary digit (bit) of the ciphertext should depend on several parts of the key, obscuring the connections between the two.[2]
-The property of confusion hides the relationship between the ciphertext and the key.
-Confusion increases the ambiguity of ciphertext and it is used by both block and stream ciphers.
-
-
-
-
-
-9
+24
 Security +
 Diffusion
 Diffusion means that if we change a single bit of the plaintext, then about half of the bits in the ciphertext should change, and similarly, if we change one bit of the ciphertext, then about half of the plaintext bits should change.[3] This is equivalent to the expectation that encryption schemes exhibit an avalanche effect.
-
-
-
-10
-Security +
-Data in-use
-	Actively procesing in memory
-	Data is almost always decripted. Otherwise, it wouldn't be useful
-	Attackers can pick decrypted information out of RAM
-		Very attractive target
-
-
-
-11
-Security +
-Tokenization is the process of exchanging sensitive data for nonsensitive data called “tokens” that can be used in a database or internal system without bringing it into scope.  
-
-Although the tokens are unrelated values, they retain certain elements of the original data commonly length or format so they can be used for uninterrupted business operations. The original sensitive data is then safely stored outside of the organization’s internal systems.  
-
-
-
-
-
-12
-Security +
-Data loss prevention (DLP) is a set of tools and processes used to ensure that sensitive data is not lost, misused, or accessed by unauthorized users. DLP software classifies regulated, confidential and business critical data and identifies violations of policies defined by organizations or within a predefined policy pack, typically driven by regulatory compliance such as HIPAA, PCI-DSS, or GDPR
-
-
-
-13
-Security +
-DNS sinkhole
-	A DNS that hands out incorrect IP addresses
-	This can be bad
-		AN attacker can redirect users to a malicious site
-	This can be good
-		Redirect known malicious domains to a benign IP address
-		Watch for any users hitting htat IP address
-		Those devices are infected.
-
-
-
-14
-Security +
-Fog computing
-	A cloud that's close to your data; Cloud + IoT
-	A distributed cloud architecture
-		Immediate data stays local - No latency
-		Local decisions made from local data - no bandwidth requirements
-		Private data never leaves
-		Long-term analysis can occur in the cloud - internet only when required
-
-
-
-15
-Security +
-Monolithic applications
-	One big application that does everything
-	Compare with (usually cloud) microservices
-	Code challenges
-		Large codebases, with change control challenges.
-
-
-
-16
-Security +
-Service Integration and Management (SIAM)
-	Many different service providers, result of multisourcing
-		Google, Microsoft, Amazon
-	Every provide works differently, with different tools to launch applications.
-	SIAM is the integration of these providers into one interface.
-	Kind of sus to me, ngl.
-
-
-
-17
-Security +
-Software-Defined Networking (SDN) is an approach to networking that uses software-based controllers or application programming interfaces (APIs) to communicate with underlying hardware infrastructure and direct traffic on a network.
-
-This model differs from that of traditional networks, which use dedicated hardware devices (i.e., routers and switches) to control network traffic. SDN can create and control a virtual network – or control a traditional hardware – via software.
-
-
-
-18
-Security +
-Virtual Machine escape
-	Break out of the VM an dinteract with the host operating system
-	Once you escape the VM, you have great control
-		Control the host and control other guist VMs
-	This would be a huge exploit.
-
-
-
-
-19
-Scrummaster
-At which Scrum event is the Sprint Goal first introduced to the Scrum Team?
-
-Spring Planning
-
-
-
-20
-Scrummaster
-Jeff Sutherland defined "done-done" as "code complete and fully tested at the feature level". When Scrum Teams achieve "done-done" by the end of a Spring, what is the typical result?
-
-Productivity of the team doubles
-
-
-21
-Scrummaster
-What is the maximum duration of each of the Scrum Events?
-Sprint = One Month
-Sprint Planning = 8 hours
-Daily Scrum = 15 minutes
-
-
-
-22
-Scrummaster
-What is the maximum duration of each of the Scrum Events?
-Sprint Review = 4 hours
-Sprint Retrospective = 3 hours
-
-
-
-23
-Scrummaster
-The three components of Scrum are 
-Transparency
-Inspection
-Adaptation
-
-
-
-24
-Scrummaster
-Which of the following is true about the Daily Scrum?
-	It is a short meeting held every day so that the Development Team members can plan their work for the next 24 hours
-	NOT
-	In addition to the Development Team members, the Product Owner and the ScrumMaster are required to be present each day
 
 
 
@@ -550,62 +233,69 @@ Product Owner
 
 
 26
-Scrummaster
-In Scrum, the goal of each Sprint is build a complete product Increment and release it to the customers and end users. This suggests that Scrum defines done as “in use” by the customer or an end user.
+UiPath CitDev Lesson
+What is computational thinking?
+	A set of techniques and approaches to problem solving
+	NOT
+	Giving instructions to a robot
+	Thinking like a robot
+	A programming language
 
 
 
 27
-Scrummaster
-The Definition of Done (DoD) is a concise list of technical criteria - from six to twelve items - that each Product Backlog item must meet in order to be considered potentially releasable to a new, or existing, customer. It applies uniformly to all the items in the Product Backlog and is owned by the Development Team. 
-
-
-
-28
-Scrummaster
-Practice of Extreme Programming (XP)
-Refactoring: programmers restructure the system without changing its behavior to remove duplication, improve communication, simplify or add flexibility
-
-
-
-29
 Scrummaster
 Practice of Extreme Programming (XP)
 40-Hour Week: work no more than forty hours a week as rule. Never work overtime a second week in a row.
 
 
 
+28
+Scrummaster
+What is the maximum duration of each of the Scrum Events?
+Sprint = One Month
+Sprint Planning = 8 hours
+Daily Scrum = 15 minutes
+
+
+
+29
+Security +
+Vulnerability feeds - Automated vulnerability notifications
+	National Vulnerability Database (https://nvd.nist.gov)
+	CVE Database Feeds (https://cve.mitre.org)
+	Third-party feeds
+		Additional vulnerability coverage
+
+
+
 30
+Security +
+Lack of vendor support
+	Vendors are the only ones who can fix their products
+		Assuming they know about the problem
+		and care about fixing it
+	Trane Comfortlink II Thermostats
+		Control temp from your phone
+		Trane notified of 3 vulnerabilities in Apr 2014
+		Two patched in Apr 2015 and one in Jan 2016
+
+
+
+31
 Scrummaster
 Practice of Extreme Programming (XP)
-Collective Ownership: anyone can change any code anywhere in the system at any time.
+Refactoring: programmers restructure the system without changing its behavior to remove duplication, improve communication, simplify or add flexibility
 
 
 
-
-1
-Scrummaster
-The first person to use the term "technical debt" was Ward Cunningham in the 1990s
-
-
-
-2
-Scrummaster
-What is the impact of accumulating technical debt?
-	
-	Short-term increase in productivity, followed by a long-term decrease in code quality and maintainability
+32
+Security +
+Data loss prevention (DLP) is a set of tools and processes used to ensure that sensitive data is not lost, misused, or accessed by unauthorized users. DLP software classifies regulated, confidential and business critical data and identifies violations of policies defined by organizations or within a predefined policy pack, typically driven by regulatory compliance such as HIPAA, PCI-DSS, or GDPR
 
 
 
-3
-Scrummaster
-What is the MOST likely reason why developers introduce techncial debt in the first place?
-
-	They are working under pressure to deliver.
-
-
-
-4
+33
 Scrummaster
 The following are examples of technical debt
 	Bad naming conventions
@@ -615,14 +305,200 @@ The following are examples of technical debt
 
 
 
-5
+34
+Security +
+Service Integration and Management (SIAM)
+	Many different service providers, result of multisourcing
+		Google, Microsoft, Amazon
+	Every provide works differently, with different tools to launch applications.
+	SIAM is the integration of these providers into one interface.
+	Kind of sus to me, ngl.
+
+
+
+35
+Scrummaster
+The three components of Scrum are 
+Transparency
+Inspection
+Adaptation
+
+
+
+36
+UiPath StudioX
+Elements in the Object Repository are organized in libraries: groups of UI elements that can be installed just like any other activity package. RPA Developers create these libraries and then make them available for other users within a company or publicly.
+
+
+
+37
+UiPath Automation Hub
+User roles need to be paired with editing rights to allow users to perform activities. Without assigning editing rights on the Documentation page, Business Analysts cannot upload documents.
+
+
+
+
+38
+UiPath Process Mining
+Can the same user hold the Business Analyst and Project Manager collaborator roles at the same time?
+
+Yes, on the same automation idea and on different automation ideas
+
+
+
+
+39
+UiPath CitDev Lesson
+There are two types of activities in StudioX: Resources (what application or file the automation is using) and Actions (steps performed to achieve the task goal).
+
+
+
+40
+UiPath Insights
+Business KPIs tie what happens in your RPA deployment (operational) to how it benefits your company (business). These are the metrics that you can use to actually grow and scale RPA in your organization. 
+
+
+
+
+41
+Security +
+Vulnerability feeds - Automated vulnerability notifications
+	National Vulnerability Database (https://nvd.nist.gov)
+	CVE Database Feeds (https://cve.mitre.org)
+	Third-party feeds
+		Additional vulnerability coverage
+
+
+
+42
+UiPath Insights
+Business KPIs include:
+	ROI
+	Process Outcomes
+
+
+
+43
+Security +
+Diffusion
+Diffusion means that if we change a single bit of the plaintext, then about half of the bits in the ciphertext should change, and similarly, if we change one bit of the ciphertext, then about half of the plaintext bits should change.[3] This is equivalent to the expectation that encryption schemes exhibit an avalanche effect.
+
+
+
+44
+Scrummaster
+What is the impact of accumulating technical debt?
+	
+	Short-term increase in productivity, followed by a long-term decrease in code quality and maintainability
+
+
+
+45
 UiPath Insights
 Operational KPIs contain information that relates to the execution of automation itself, but they don’t include things like time saved and money saved. 
 
 
 
 
-6
+46
+Security +
+Confusion
+Confusion means that each binary digit (bit) of the ciphertext should depend on several parts of the key, obscuring the connections between the two.[2]
+The property of confusion hides the relationship between the ciphertext and the key.
+Confusion increases the ambiguity of ciphertext and it is used by both block and stream ciphers.
+
+
+
+
+
+47
+Scrummaster
+Practice of Extreme Programming (XP)
+Refactoring: programmers restructure the system without changing its behavior to remove duplication, improve communication, simplify or add flexibility
+
+
+
+48
+UiPath CitDev Lesson
+Which of the following contains a pattern?
+	Downloading all email attachments received in the past week from automation-first@uipath.com
+	All the spreadsheets must have columns E and D removed
+	Using the same set of credentials acoss applications
+	NOT
+	Sending an email to citizen-developer@uipath.com
+	Downloading a report in the Downloads folder
+
+
+
+49
+UiPath Process Mining
+The following points are covered in the Detailed Assessment 
+
+	The Automation Goal (cost, quality, productivity)
+	The Environmental Stability - changes of the process and/or of the applications
+	The Process Volumetry
+	The Applications used
+
+
+
+50
+Security +
+DNS sinkhole
+	A DNS that hands out incorrect IP addresses
+	This can be bad
+		AN attacker can redirect users to a malicious site
+	This can be good
+		Redirect known malicious domains to a benign IP address
+		Watch for any users hitting htat IP address
+		Those devices are infected.
+
+
+
+51
+UiPath Process Mining
+Can the same user hold the Business Analyst and Project Manager collaborator roles at the same time?
+
+Yes, on the same automation idea and on different automation ideas
+
+
+
+
+52
+UiPath Process Mining
+The following points are covered in the Detailed Assessment 
+
+	The Automation Goal (cost, quality, productivity)
+	The Environmental Stability - changes of the process and/or of the applications
+	The Process Volumetry
+	The Applications used
+
+
+
+53
+Security +
+Reconnaissance - Passive Footprinting
+	Learn as much as you can from open sources
+		Social media
+		Corporate web stie
+		Online forums
+		Dumpster diving
+
+
+
+54
+UiPath Process Mining
+Which of the following are collaborator roles?
+
+	Process Owner
+	Project Manager
+	NOT
+	Program Manager
+	Component Curator
+	Idea Approver
+
+
+
+55
 UiPath Insights
 Operational KPIs include:
 	Errors
@@ -631,44 +507,112 @@ Operational KPIs include:
 	Duration
 
 
-7
-UiPath Insights
-Business KPIs tie what happens in your RPA deployment (operational) to how it benefits your company (business). These are the metrics that you can use to actually grow and scale RPA in your organization. 
+56
+UiPath CitDev Lesson
+Which of the following contains a pattern?
+	Downloading all email attachments received in the past week from automation-first@uipath.com
+	All the spreadsheets must have columns E and D removed
+	Using the same set of credentials acoss applications
+	NOT
+	Sending an email to citizen-developer@uipath.com
+	Downloading a report in the Downloads folder
 
 
 
-
-8
-UiPath Insights
-Business KPIs include:
-	ROI
-	Process Outcomes
+57
+Security +
+Data loss prevention (DLP) is a set of tools and processes used to ensure that sensitive data is not lost, misused, or accessed by unauthorized users. DLP software classifies regulated, confidential and business critical data and identifies violations of policies defined by organizations or within a predefined policy pack, typically driven by regulatory compliance such as HIPAA, PCI-DSS, or GDPR
 
 
 
-9
-UiPath Insights
-You can add fields to a visualization from the left as dimensions or measures. A dimension is a groupable field that can be used to filter query results, like an attribute, a fact, or even a numerical value. Measures are based on a function, like sum, average, minimum, maximum, and so on.
-Once you added dimensions and measures, you need to click Run.
+58
+UiPath Process Mining
+The following points are covered in the Detailed Assessment 
+
+	The Automation Goal (cost, quality, productivity)
+	The Environmental Stability - changes of the process and/or of the applications
+	The Process Volumetry
+	The Applications used
 
 
 
+59
+UiPath Process Mining
+Which of the following information is requred when submitting an employee-driven idea?
+	How rule-based the process is
+	Are there expected changes in the process
+	What type is the input
+	NOT
+	The number of people involved in the as is process 
+	Estimated time saved by automating
 
-10
+
+
+60
+UiPath CitDev Lesson
+Which of the following contains a pattern?
+	Downloading all email attachments received in the past week from automation-first@uipath.com
+	All the spreadsheets must have columns E and D removed
+	Using the same set of credentials acoss applications
+	NOT
+	Sending an email to citizen-developer@uipath.com
+	Downloading a report in the Downloads folder
+
+
+
+61
 Security+
-A stored procedure is a set of Structured Query Language (SQL) statements with an assigned name, which are stored in a relational database management system (RDBMS) as a group, so it can be reused and shared by multiple programs.
+Multipath I/O
+	Especially useful for network-based storage subsystems
+	Multiple Fiber Channel interfaces with multiple switches
+
+
+62
+Security +
+Service Integration and Management (SIAM)
+	Many different service providers, result of multisourcing
+		Google, Microsoft, Amazon
+	Every provide works differently, with different tools to launch applications.
+	SIAM is the integration of these providers into one interface.
+	Kind of sus to me, ngl.
 
 
 
+63
+Security +
+Reconnaissance - Passive Footprinting
+	Learn as much as you can from open sources
+		Social media
+		Corporate web stie
+		Online forums
+		Dumpster diving
 
 
-11
-Security+
-A stored procedure provides an important layer of security between the user interface and the database. It supports security through data access controls because end users may enter or change data, but do not write procedures. 
+
+64
+UiPath CitDev Lesson
+What is computational thinking?
+	A set of techniques and approaches to problem solving
+	NOT
+	Giving instructions to a robot
+	Thinking like a robot
+	A programming language
 
 
 
-12
+65
+UiPath CitDev Lesson
+What links each instruction in a Robot Path?
+
+	An arrow
+	NOT
+	a line
+	a double line
+	a dotted line
+
+
+
+66
 Security+
 Software Diversity
 	Alternative compiler paths would result in a different binary each time
@@ -678,38 +622,76 @@ Software Diversity
 
 
 
-13
-Security+
-Attestation - proving that hardware is really yours
-	Remote attestation
-		Device provides an operational report ot a verification server
-		Encrypted and digitally signed with TPM
-		An IMEI or other u nique hardwrae component can be included in the report
+67
+Scrummaster
+Practice of Extreme Programming (XP)
+Collective Ownership: anyone can change any code anywhere in the system at any time.
 
 
 
-14
-Security+
-Push notification
-	Similar to an SMS notification
-		Authentication factor is pushed using a specialized app
-		Usually a mobile device
-	Security challenges
-		Some push apps send in the clear
+
+68
+UiPath CitDev Lesson
+Which of the following contains a pattern?
+	Downloading all email attachments received in the past week from automation-first@uipath.com
+	All the spreadsheets must have columns E and D removed
+	Using the same set of credentials acoss applications
+	NOT
+	Sending an email to citizen-developer@uipath.com
+	Downloading a report in the Downloads folder
 
 
 
-15
-Security+
-Time-Based One-Time Password (TOTP) algorithm
-	Use a secret key and the time of day
-	No incremental counter
-	Secret key is configured ahead of time
-	Timestamps are synchronized via NTP
+69
+Security +
+Open permissions
+	Increasingly common with cloud storage
+	June 2017 - 14 million Verizon records exposed
+		Third-party left an S3 bucket open to public
+		Researcher found the data before anyone else
 
 
 
-16
+70
+Scrummaster
+The following are examples of technical debt
+	Bad naming conventions
+	Duplicate code
+	Incomplete or missing technical documentation
+	Lack of automated tests
+
+
+
+71
+Scrummaster
+What is the maximum duration of each of the Scrum Events?
+Sprint Review = 4 hours
+Sprint Retrospective = 3 hours
+
+
+
+72
+UiPath StudioX
+The Object Repository is a collection of UI elements which we can use inside and across automation projects. This allows us to reuse the elements in different projects, provided they all have the same libraries installed.
+
+
+
+
+73
+Security +
+Identity theft
+	May through Jul 2017 - Equifax
+		Databreach of 147.9m Americans, 15.2m British citizens, 19k Canadian citizens
+		Name, SSN, birthdate, addresses, some driver's license numbers
+	Apache Struts vulnerability from Mar 7, 2017
+		Breach started Mar 12
+		Wasn't patched by Equifax until Jul 30 after discovering "suspicious network traffic"
+	Jul 2019 Equifax pays $575m in fines
+[Threat Hunting - SY0-601 CompTIA Security+ : 1.7]
+
+
+
+74
 Security+
 AAA Framework	
 	Authentication
@@ -721,11 +703,43 @@ AAA Framework
 
 
 
-17
+75
+UiPath CitDev Lesson
+Which of these is an example of decomposition
+
+	Finding out how to write an Excel formula by analyzing which values and expressions you should be using
+	NOT
+	Watching a tutorial to learn how to write a formula in Excel
+	Looking at different Excel files for similarities between them
+
+
+
+76
+Security +
+Fog computing
+	A cloud that's close to your data; Cloud + IoT
+	A distributed cloud architecture
+		Immediate data stays local - No latency
+		Local decisions made from local data - no bandwidth requirements
+		Private data never leaves
+		Long-term analysis can occur in the cloud - internet only when required
+
+
+
+77
+Scrummaster
+The Definition of Done (DoD) is a concise list of technical criteria - from six to twelve items - that each Product Backlog item must meet in order to be considered potentially releasable to a new, or existing, customer. It applies uniformly to all the items in the Product Backlog and is owned by the Development Team. 
+
+
+
+78
 Security+
-Multipath I/O
-	Especially useful for network-based storage subsystems
-	Multiple Fiber Channel interfaces with multiple switches
+Attestation - proving that hardware is really yours
+	Remote attestation
+		Device provides an operational report ot a verification server
+		Encrypted and digitally signed with TPM
+		An IMEI or other u nique hardwrae component can be included in the report
+
 
 
 
@@ -737,7 +751,7 @@ NIC teaming
 		Integrate over switches
 	Load Balancing/Fail over (LBFO)
 		Aggregate bandwidth, more redundant paths
-Power Redundancy - SY0-601 CompTIA Security+ : 2.5
+[Power Redundancy - SY0-601 CompTIA Security+ : 2.5]
 
 
 
