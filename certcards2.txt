@@ -88,7 +88,7 @@ Virtual Machine escape
 Scrummaster
 At which Scrum event is the Sprint Goal first introduced to the Scrum Team?
 
-Spring Planning
+Sprint Planning
 
 
 
