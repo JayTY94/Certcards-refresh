@@ -1,22 +1,3 @@
-1
-Security+
-Multipath I/O
-	Especially useful for network-based storage subsystems
-	Multiple Fiber Channel interfaces with multiple switches
-
-
-2
-UiPath Automation Hub
-User roles need to be paired with editing rights to allow users to perform activities. Without assigning editing rights on the Documentation page, Business Analysts cannot upload documents.
-
-
-
-
-3
-Security +
-Tokenization is the process of exchanging sensitive data for nonsensitive data called “tokens” that can be used in a database or internal system without bringing it into scope.  
-
-Although the tokens are unrelated values, they retain certain elements of the original data commonly length or format so they can be used for uninterrupted business operations. The original sensitive data is then safely stored outside of the organization’s internal systems.  
 
 
 
