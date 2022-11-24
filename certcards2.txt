@@ -1,31 +1,5 @@
 
 
-
-
-
-4
-UiPath CitDev Lesson
-What are the characteristics of a task with high automation potential?
-	Rule-based
-	Repetitive
-	Has standard input
-	Is stable
-	NOT
-	High exception rate
-	Constantly changing
-
-
-
-5
-Security +
-Open permissions
-	Increasingly common with cloud storage
-	June 2017 - 14 million Verizon records exposed
-		Third-party left an S3 bucket open to public
-		Researcher found the data before anyone else
-
-
-
 6
 Scrummaster
 Which of the following is true about the Daily Scrum?
