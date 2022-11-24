@@ -1,51 +1,5 @@
 
 
-6
-Scrummaster
-Which of the following is true about the Daily Scrum?
-	It is a short meeting held every day so that the Development Team members can plan their work for the next 24 hours
-	NOT
-	In addition to the Development Team members, the Product Owner and the ScrumMaster are required to be present each day
-
-
-
-7
-Scrummaster
-What is the MOST likely reason why developers introduce techncial debt in the first place?
-
-	They are working under pressure to deliver.
-
-
-
-8
-Security +
-Service Integration and Management (SIAM)
-	Many different service providers, result of multisourcing
-		Google, Microsoft, Amazon
-	Every provide works differently, with different tools to launch applications.
-	SIAM is the integration of these providers into one interface.
-	Kind of sus to me, ngl.
-
-
-
-9
-Security +
-Virtual Machine escape
-	Break out of the VM an dinteract with the host operating system
-	Once you escape the VM, you have great control
-		Control the host and control other guist VMs
-	This would be a huge exploit.
-
-
-
-
-10
-Scrummaster
-At which Scrum event is the Sprint Goal first introduced to the Scrum Team?
-
-Sprint Planning
-
-
 
 11
 Security +
