@@ -1,107 +1,5 @@
 
 
-
-11
-Security +
-Weak encryption
-	TLS is one of the most common issues 
-		Over 300 cipher suites
-	Avoid weak or null encryption (less than 128 bit key sizes)
-	Avoid oudated hashes (MD5)
-
-
-
-
-
-12
-Security +
-Request for comments (RFC)
-	Published by the Internet Society (ISOC)
-		Often written by the Internet Engineering Task Force (IETF)
-		Internet society description is RFC 1602
-	Many informational RFCs analyze threats
-		RFC 3833 - Threat Analysis of the Domain Name Service
-		RFC 7624 - Confidentiality in teh Face of Pervasive Srurveillance: A Threat Model and Problem Statement
-
-
-
-13
-UiPath Insights
-Operational KPIs include:
-	Errors
-	Robot Utilization
-	Success Rate
-	Duration
-
-
-14
-UiPath Insights
-Operational KPIs contain information that relates to the execution of automation itself, but they don’t include things like time saved and money saved. 
-
-
-
-
-15
-UiPath Automation Hub
-User roles need to be paired with editing rights to allow users to perform activities. Without assigning editing rights on the Documentation page, Business Analysts cannot upload documents.
-
-
-
-
-16
-Security +
-Security Information and Event Management (SIEM)
-	Logging of security events and information
-Log collection of security alerts - Real-time information
-Log aggregation and long-term sotrage
-	Usually includes advanced reporting features
-
-
-
-17
-Security +
-Tokenization is the process of exchanging sensitive data for nonsensitive data called “tokens” that can be used in a database or internal system without bringing it into scope.  
-
-Although the tokens are unrelated values, they retain certain elements of the original data commonly length or format so they can be used for uninterrupted business operations. The original sensitive data is then safely stored outside of the organization’s internal systems.  
-
-
-
-
-
-18
-UiPath Insights
-Business KPIs include:
-	ROI
-	Process Outcomes
-
-
-
-19
-Security +
-DNS sinkhole
-	A DNS that hands out incorrect IP addresses
-	This can be bad
-		AN attacker can redirect users to a malicious site
-	This can be good
-		Redirect known malicious domains to a benign IP address
-		Watch for any users hitting htat IP address
-		Those devices are infected.
-
-
-
-20
-Security +
-Lack of vendor support
-	Vendors are the only ones who can fix their products
-		Assuming they know about the problem
-		and care about fixing it
-	Trane Comfortlink II Thermostats
-		Control temp from your phone
-		Trane notified of 3 vulnerabilities in Apr 2014
-		Two patched in Apr 2015 and one in Jan 2016
-
-
-
 21
 UiPath StudioX
 The Object Repository is a collection of UI elements that can be used within certain activities, without having to interact with the UI while developing the workflow. This helps increase development speed.
@@ -639,15 +537,6 @@ Fog computing
 Scrummaster
 The Definition of Done (DoD) is a concise list of technical criteria - from six to twelve items - that each Product Backlog item must meet in order to be considered potentially releasable to a new, or existing, customer. It applies uniformly to all the items in the Product Backlog and is owned by the Development Team. 
 
-
-
-78
-Security+
-Attestation - proving that hardware is really yours
-	Remote attestation
-		Device provides an operational report ot a verification server
-		Encrypted and digitally signed with TPM
-		An IMEI or other u nique hardwrae component can be included in the report
 
 
 
