@@ -1,18 +1,5 @@
 
 
-
-30
-Security +
-Fog computing
-	A cloud that's close to your data; Cloud + IoT
-	A distributed cloud architecture
-		Immediate data stays local - No latency
-		Local decisions made from local data - no bandwidth requirements
-		Private data never leaves
-		Long-term analysis can occur in the cloud - internet only when required
-
-
-
 31
 Scrummaster
 Practice of Extreme Programming (XP)
