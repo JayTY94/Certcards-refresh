@@ -1,91 +1,15 @@
 
 
-21
-UiPath StudioX
-The Object Repository is a collection of UI elements that can be used within certain activities, without having to interact with the UI while developing the workflow. This helps increase development speed.
-
-
-
-22
-Security +
-Vulnerability feeds - Automated vulnerability notifications
-	National Vulnerability Database (https://nvd.nist.gov)
-	CVE Database Feeds (https://cve.mitre.org)
-	Third-party feeds
-		Additional vulnerability coverage
-
-
-
-23
-UiPath StudioX
-The Object Repository is a collection of UI elements which we can use inside and across automation projects. This allows us to reuse the elements in different projects, provided they all have the same libraries installed.
-
-
-
-
-24
-Security +
-Diffusion
-Diffusion means that if we change a single bit of the plaintext, then about half of the bits in the ciphertext should change, and similarly, if we change one bit of the ciphertext, then about half of the plaintext bits should change.[3] This is equivalent to the expectation that encryption schemes exhibit an avalanche effect.
-
-
-
-25
-Scrummaster
-The three roles in a Scrum Team are
-Developers
-ScrumMaster
-Product Owner
-
-
-
-26
-UiPath CitDev Lesson
-What is computational thinking?
-	A set of techniques and approaches to problem solving
-	NOT
-	Giving instructions to a robot
-	Thinking like a robot
-	A programming language
-
-
-
-27
-Scrummaster
-Practice of Extreme Programming (XP)
-40-Hour Week: work no more than forty hours a week as rule. Never work overtime a second week in a row.
-
-
-
-28
-Scrummaster
-What is the maximum duration of each of the Scrum Events?
-Sprint = One Month
-Sprint Planning = 8 hours
-Daily Scrum = 15 minutes
-
-
-
-29
-Security +
-Vulnerability feeds - Automated vulnerability notifications
-	National Vulnerability Database (https://nvd.nist.gov)
-	CVE Database Feeds (https://cve.mitre.org)
-	Third-party feeds
-		Additional vulnerability coverage
-
-
 
 30
 Security +
-Lack of vendor support
-	Vendors are the only ones who can fix their products
-		Assuming they know about the problem
-		and care about fixing it
-	Trane Comfortlink II Thermostats
-		Control temp from your phone
-		Trane notified of 3 vulnerabilities in Apr 2014
-		Two patched in Apr 2015 and one in Jan 2016
+Fog computing
+	A cloud that's close to your data; Cloud + IoT
+	A distributed cloud architecture
+		Immediate data stays local - No latency
+		Local decisions made from local data - no bandwidth requirements
+		Private data never leaves
+		Long-term analysis can occur in the cloud - internet only when required
 
 
 
@@ -498,44 +422,7 @@ Identity theft
 
 
 
-74
-Security+
-AAA Framework	
-	Authentication
-		Prove who you say you are (password)
-	Authorization
-		Based on who your ID and auth, what do  you have acces to?
-	Accounting
-		Resources used, timestamps, logout time
 
-
-
-75
-UiPath CitDev Lesson
-Which of these is an example of decomposition
-
-	Finding out how to write an Excel formula by analyzing which values and expressions you should be using
-	NOT
-	Watching a tutorial to learn how to write a formula in Excel
-	Looking at different Excel files for similarities between them
-
-
-
-76
-Security +
-Fog computing
-	A cloud that's close to your data; Cloud + IoT
-	A distributed cloud architecture
-		Immediate data stays local - No latency
-		Local decisions made from local data - no bandwidth requirements
-		Private data never leaves
-		Long-term analysis can occur in the cloud - internet only when required
-
-
-
-77
-Scrummaster
-The Definition of Done (DoD) is a concise list of technical criteria - from six to twelve items - that each Product Backlog item must meet in order to be considered potentially releasable to a new, or existing, customer. It applies uniformly to all the items in the Product Backlog and is owned by the Development Team. 
 
 
 
