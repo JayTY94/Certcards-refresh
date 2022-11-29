@@ -342,3 +342,218 @@ Which of the following information is requred when submitting an employee-driven
 Security+
 A power distribution unit (PDU) is a device fitted with multiple outputs designed to distribute electric power, especially to racks of computers and networking equipment located within a data center.[1] Data centers face challenges in power protection and management solutions. This is why many data centers rely on PDU monitoring to improve efficiency, uptime, and growth
 [Power Redundancy – SY0-601 CompTIA Security+ : 2.5]
+
+
+
+
+
+1
+UiPath Platform 2022.10
+Projects built with Studio Web are by default marked as Cross-platform. This means that they can be edited and run from any version of Studio (Studio Web, StudioX, Studio). StudioX now has the ability to create Cross-Platform projects. This creates compatibility between Web and Desktop projects. 
+
+
+
+
+2
+UiPath Platform 2022.10
+
+
+
+
+
+3
+UiPath Platform 2022.10
+
+
+
+
+
+4
+UiPath Platform 2022.10
+
+
+
+
+
+5
+UiPath Platform 2022.10
+
+
+
+
+
+6
+UiPath Platform 2022.10
+
+
+
+
+
+7
+UiPath Platform 2022.10
+
+
+
+
+
+8
+UiPath Platform 2022.10
+
+
+
+
+
+9
+UiPath Platform 2022.10
+
+
+
+
+
+10
+UiPath Platform 2022.10
+
+
+
+
+
+11
+UiPath Platform 2022.10
+
+
+
+
+
+12
+UiPath Platform 2022.10
+
+
+
+
+
+13
+UiPath Platform 2022.10
+
+
+
+
+
+14
+UiPath Platform 2022.10
+
+
+
+
+
+15
+UiPath Platform 2022.10
+
+
+
+
+
+16
+UiPath Platform 2022.10
+
+
+
+
+
+17
+UiPath Platform 2022.10
+
+
+
+
+
+18
+UiPath Platform 2022.10
+
+
+
+
+
+19
+UiPath Platform 2022.10
+
+
+
+
+
+20
+UiPath Platform 2022.10
+
+
+
+
+
+21
+UiPath Platform 2022.10
+
+
+
+
+
+22
+UiPath Platform 2022.10
+
+
+
+
+
+23
+UiPath Platform 2022.10
+
+
+
+
+
+24
+UiPath Platform 2022.10
+
+
+
+
+
+25
+UiPath Platform 2022.10
+
+
+
+
+
+26
+UiPath Platform 2022.10
+
+
+
+
+
+27
+UiPath Platform 2022.10
+
+
+
+
+
+28
+UiPath Platform 2022.10
+
+
+
+
+
+29
+UiPath Platform 2022.10
+
+
+
+
+
+30
+UiPath Platform 2022.10
+
+
+
+
+
