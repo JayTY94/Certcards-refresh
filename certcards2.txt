@@ -1,81 +1,5 @@
 
 
-31
-Scrummaster
-Practice of Extreme Programming (XP)
-Refactoring: programmers restructure the system without changing its behavior to remove duplication, improve communication, simplify or add flexibility
-
-
-
-32
-Security +
-Data loss prevention (DLP) is a set of tools and processes used to ensure that sensitive data is not lost, misused, or accessed by unauthorized users. DLP software classifies regulated, confidential and business critical data and identifies violations of policies defined by organizations or within a predefined policy pack, typically driven by regulatory compliance such as HIPAA, PCI-DSS, or GDPR
-
-
-
-33
-Scrummaster
-The following are examples of technical debt
-	Bad naming conventions
-	Duplicate code
-	Incomplete or missing technical documentation
-	Lack of automated tests
-
-
-
-34
-Security +
-Service Integration and Management (SIAM)
-	Many different service providers, result of multisourcing
-		Google, Microsoft, Amazon
-	Every provide works differently, with different tools to launch applications.
-	SIAM is the integration of these providers into one interface.
-	Kind of sus to me, ngl.
-
-
-
-35
-Scrummaster
-The three components of Scrum are 
-Transparency
-Inspection
-Adaptation
-
-
-
-36
-UiPath StudioX
-Elements in the Object Repository are organized in libraries: groups of UI elements that can be installed just like any other activity package. RPA Developers create these libraries and then make them available for other users within a company or publicly.
-
-
-
-37
-UiPath Automation Hub
-User roles need to be paired with editing rights to allow users to perform activities. Without assigning editing rights on the Documentation page, Business Analysts cannot upload documents.
-
-
-
-
-38
-UiPath Process Mining
-Can the same user hold the Business Analyst and Project Manager collaborator roles at the same time?
-
-Yes, on the same automation idea and on different automation ideas
-
-
-
-
-39
-UiPath CitDev Lesson
-There are two types of activities in StudioX: Resources (what application or file the automation is using) and Actions (steps performed to achieve the task goal).
-
-
-
-40
-UiPath Insights
-Business KPIs tie what happens in your RPA deployment (operational) to how it benefits your company (business). These are the metrics that you can use to actually grow and scale RPA in your organization. 
-
-
 
 
 41
@@ -388,29 +312,6 @@ Sprint Retrospective = 3 hours
 
 
 
-72
-UiPath StudioX
-The Object Repository is a collection of UI elements which we can use inside and across automation projects. This allows us to reuse the elements in different projects, provided they all have the same libraries installed.
-
-
-
-
-73
-Security +
-Identity theft
-	May through Jul 2017 - Equifax
-		Databreach of 147.9m Americans, 15.2m British citizens, 19k Canadian citizens
-		Name, SSN, birthdate, addresses, some driver's license numbers
-	Apache Struts vulnerability from Mar 7, 2017
-		Breach started Mar 12
-		Wasn't patched by Equifax until Jul 30 after discovering "suspicious network traffic"
-	Jul 2019 Equifax pays $575m in fines
-[Threat Hunting - SY0-601 CompTIA Security+ : 1.7]
-
-
-
-
-
 
 
 
@@ -429,75 +330,304 @@ NIC teaming
 
 19
 Security+
+John is using IE version 6.0 as his browser. He wants to enable ActiveX controls and he also wants a high level of security set for the Internet zone. How can he accomplish this?
+
+	D. If the security level for Internet is high, the ActiveX controls are automatically disabled. Modify the ActiveX controls in Custom Level tab.
 
 
 
 
 20
 Security+
-
+Tracking cookies are browser settings that provide websites a unique ID for a user. Tracking cookies are constantly recreated when a computer user browses the web. Spyware can use these cookies to collect information about the pages browsed by the user.
 
 
 
 21
 Security+
+Which of the following NIDS configurations is based solely on specific network traffic?
 
-
+	D. A signature-based
+	NOT
+	Anomaly based
 
 
 22
 Security+
-
+IDS is primarily focused on evaluating attacks based on attack signatures and audit trails. An A-signature-based IDS will monitor packets on the network and compare them against a database of signatures or attributes from known malicious threats. This is similar to the way most antivirus software detects malware.
 
 
 
 23
 Security+
-
+SYN attacks exploit the TCP three-way handshake and overload the servers, resulting in authorized users being denied access to network resources. The attacker uses a spoofed IP address not in use on the Internet and sends multiple SYN packets to the target machine. 
 
 
 
 24
 Security+
-
+Fiber optic media is least susceptible to stealing information using wire taps. UTP and STP are the most susceptible to vampire taps.
 
 
 
 25
 Security+
+TCP session hijacking is a technique that involves intercepting a TCP session initiated between two machines in order to hijack it. The initial authentication is performed by the legitimate machine. Later, the hacker who wishes to launch this attack takes control of the connection throughout the duration of the session.
 
 
 
 
 26
 Security+
+David is the Security Administrator at his organization. He is investigating an issue where the corporate server will not accept any connections using the TCP protocol. On close inspection he sees that the server indicates that it has exceeded its session limit. Which type of attack is this?
 
+A. TCP ACK attack
 
 
 
 27
 Security+
+44.
+Which protocol does the smurf attack use to attack a network or system?
 
+D. ICMP
+NOT
+UDP
 
 
 
 28
 Security+
-
+Domain name kiting is the practice of repeatedly registering and deleting a domain name so that in effect, the registrant can own the domain name without paying for it.
 
 
 
 29
-Security+
+UiPath Platform 2022.10 
+In an XML document or external entity, a CDATA section is a piece of element content that is marked up to be interpreted literally, as textual data, not as marked up content.[1] A CDATA section is merely an alternative syntax for expressing character data; there is no semantic difference between character data in a CDATA section and character data in standard syntax where, for example, "<" and "&" are represented by "&lt;" and "&amp;", respectively.
+
 
 
 
 
 30
-Security+
+UiPath Platform 2022.10 
+The Data Manager can be found in the Data Manager tab on the right-hand side of the Design view in Studio. 
+
+
+
+
+1
+UiPath Platform 2022.10
+The Data Manager panel lets you manage variables, arguments, constants, and resources such as processes, assets, queues, connections, and others.
 
 
 
 
 
-Process finished with exit code 0
+2
+UiPath Platform 2022.10
+Using the Show Data Manager Panel Only setting will hide the old Variables, Arguments, and Imports panels. 
+
+
+
+
+3
+UiPath Platform 2022.10
+Global Variables are variables with a global scope, not limited to a workflow or sequence within the project. Global Constants are used to hold values that can be used anywhere, in any workflow within the project, but cannot change.
+
+
+
+
+
+
+4
+UiPath Platform 2022.10
+To accurately identify performance issues using this Profile Execution (new tool), execute the project in Run mode and not Debug mode. The results of the profiling session can be found in the Profiling tab. Profile Execution can be toggled in under Debug in the ribbon
+
+
+
+
+5
+UiPath Platform 2022.10
+Unnecessary sequences are hidden from view, for example, the top-level sequence in a workflow, or the sequences from if, Do While, and other container activities. This feature was already available in StudioX from the beginning. Now it is implemented in Studio profile as well.
+
+
+
+
+
+6
+UiPath Platform 2022.10
+The Electron application is a web application, but they look like a desktop application. A few examples of applications with Chromium (mostly Electron) are UiPath Assistant, Slack, or Microsoft Teams
+
+
+
+
+7
+UiPath Platform 2022.10
+A new option has been added to the Table extraction wizard. This option allows you to select whether you want to create a new column with the text or URL of an element. Because of this change, the Extract URL toggle has been removed.
+
+
+
+
+8
+UiPath Platform 2022.10
+Remote browser isolation (RBI) is a web security technology that neutralizes online threats by hosting users’ web browsing sessions on a remote server instead of the user’s endpoint device. RBI separates web content from the user’s device to reduce its attack surface. 
+
+
+
+
+9
+UiPath Platform 2022.10
+
+
+
+
+
+10
+UiPath Platform 2022.10
+
+
+
+
+
+11
+UiPath Platform 2022.10
+
+
+
+
+
+12
+UiPath Platform 2022.10
+
+
+
+
+
+13
+UiPath Platform 2022.10
+
+
+
+
+
+14
+UiPath Platform 2022.10
+
+
+
+
+
+15
+UiPath Platform 2022.10
+
+
+
+
+
+16
+UiPath Platform 2022.10
+
+
+
+
+
+17
+UiPath Platform 2022.10
+
+
+
+
+
+18
+UiPath Platform 2022.10
+
+
+
+
+
+19
+UiPath Platform 2022.10
+
+
+
+
+
+20
+UiPath Platform 2022.10
+
+
+
+
+
+21
+UiPath Platform 2022.10
+
+
+
+
+
+22
+UiPath Platform 2022.10
+
+
+
+
+
+23
+UiPath Platform 2022.10
+
+
+
+
+
+24
+UiPath Platform 2022.10
+
+
+
+
+
+25
+UiPath Platform 2022.10
+
+
+
+
+
+26
+UiPath Platform 2022.10
+
+
+
+
+
+27
+UiPath Platform 2022.10
+
+
+
+
+
+28
+UiPath Platform 2022.10
+
+
+
+
+
+29
+UiPath Platform 2022.10
+
+
+
+
+
+30
+UiPath Platform 2022.10
+
+
+
+
+
