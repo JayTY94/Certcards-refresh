@@ -1,247 +1,4 @@
-
-
-
-
-41
-Security +
-Vulnerability feeds - Automated vulnerability notifications
-	National Vulnerability Database (https://nvd.nist.gov)
-	CVE Database Feeds (https://cve.mitre.org)
-	Third-party feeds
-		Additional vulnerability coverage
-
-
-
-
-44
-Scrummaster
-What is the impact of accumulating technical debt?
-	
-	Short-term increase in productivity, followed by a long-term decrease in code quality and maintainability
-
-
-
-45
-UiPath Insights
-Operational KPIs contain information that relates to the execution of automation itself, but they don’t include things like time saved and money saved. 
-
-
-
-
-46
-Security +
-Confusion
-Confusion means that each binary digit (bit) of the ciphertext should depend on several parts of the key, obscuring the connections between the two.[2]
-The property of confusion hides the relationship between the ciphertext and the key.
-Confusion increases the ambiguity of ciphertext and it is used by both block and stream ciphers.
-
-
-
-
-
-
-
-49
-UiPath Process Mining
-The following points are covered in the Detailed Assessment 
-
-	The Automation Goal (cost, quality, productivity)
-	The Environmental Stability - changes of the process and/or of the applications
-	The Process Volumetry
-	The Applications used
-
-
-
-
-
-
-52
-UiPath Process Mining
-The following points are covered in the Detailed Assessment 
-
-	The Automation Goal (cost, quality, productivity)
-	The Environmental Stability - changes of the process and/or of the applications
-	The Process Volumetry
-	The Applications used
-
-
-
-
-
-54
-UiPath Process Mining
-Which of the following are collaborator roles?
-
-	Process Owner
-	Project Manager
-	NOT
-	Program Manager
-	Component Curator
-	Idea Approver
-
-
-
-55
-UiPath Insights
-Operational KPIs include:
-	Errors
-	Robot Utilization
-	Success Rate
-	Duration
-
-
-
-
-58
-UiPath Process Mining
-The following points are covered in the Detailed Assessment 
-
-	The Automation Goal (cost, quality, productivity)
-	The Environmental Stability - changes of the process and/or of the applications
-	The Process Volumetry
-	The Applications used
-
-
-
-59
-UiPath Process Mining
-Which of the following information is requred when submitting an employee-driven idea?
-	How rule-based the process is
-	Are there expected changes in the process
-	What type is the input
-	NOT
-	The number of people involved in the as is process 
-	Estimated time saved by automating
-
-
-
-60
-UiPath CitDev Lesson
-Which of the following contains a pattern?
-	Downloading all email attachments received in the past week from automation-first@uipath.com
-	All the spreadsheets must have columns E and D removed
-	Using the same set of credentials acoss applications
-	NOT
-	Sending an email to citizen-developer@uipath.com
-	Downloading a report in the Downloads folder
-
-
-
-63
-Security +
-Reconnaissance - Passive Footprinting
-	Learn as much as you can from open sources
-		Social media
-		Corporate web stie
-		Online forums
-		Dumpster diving
-
-
-
-65
-UiPath CitDev Lesson
-What links each instruction in a Robot Path?
-
-	An arrow
-	NOT
-	a line
-	a double line
-	a dotted line
-
-
-
-66
-Security+
-Software Diversity
-	Alternative compiler paths would result in a different binary each time
-		Each compiled application would be a little different, but functionality would be the same.
-	An attack against different binaries would only be successful on a fraction of users
-		An attacker wouldn't know what exploit to use
-
-
-
-67
-Scrummaster
-Practice of Extreme Programming (XP)
-Collective Ownership: anyone can change any code anywhere in the system at any time.
-
-
-
-
-71
-Scrummaster
-What is the maximum duration of each of the Scrum Events?
-Sprint Review = 4 hours
-Sprint Retrospective = 3 hours
-
-
-
-
-
-
-
-18
-Security+
-NIC teaming
-	Multiple network adapters
-		Looks like a single adapter
-		Integrate over switches
-	Load Balancing/Fail over (LBFO)
-		Aggregate bandwidth, more redundant paths
-[Power Redundancy - SY0-601 CompTIA Security+ : 2.5]
-
-
-
-19
-Security+
-John is using IE version 6.0 as his browser. He wants to enable ActiveX controls and he also wants a high level of security set for the Internet zone. How can he accomplish this?
-
-	D. If the security level for Internet is high, the ActiveX controls are automatically disabled. Modify the ActiveX controls in Custom Level tab.
-
-
-
-
-20
-Security+
-Tracking cookies are browser settings that provide websites a unique ID for a user. Tracking cookies are constantly recreated when a computer user browses the web. Spyware can use these cookies to collect information about the pages browsed by the user.
-
-
-
-21
-Security+
-Which of the following NIDS configurations is based solely on specific network traffic?
-
-	D. A signature-based
-	NOT
-	Anomaly based
-
-
-22
-Security+
-IDS is primarily focused on evaluating attacks based on attack signatures and audit trails. An A-signature-based IDS will monitor packets on the network and compare them against a database of signatures or attributes from known malicious threats. This is similar to the way most antivirus software detects malware.
-
-
-
-23
-Security+
-SYN attacks exploit the TCP three-way handshake and overload the servers, resulting in authorized users being denied access to network resources. The attacker uses a spoofed IP address not in use on the Internet and sends multiple SYN packets to the target machine. 
-
-
-
-24
-Security+
-Fiber optic media is least susceptible to stealing information using wire taps. UTP and STP are the most susceptible to vampire taps.
-
-
-
-25
-Security+
-TCP session hijacking is a technique that involves intercepting a TCP session initiated between two machines in order to hijack it. The initial authentication is performed by the legitimate machine. Later, the hacker who wishes to launch this attack takes control of the connection throughout the duration of the session.
-
-
-
-
-26
+1
 Security+
 David is the Security Administrator at his organization. He is investigating an issue where the corporate server will not accept any connections using the TCP protocol. On close inspection he sees that the server indicates that it has exceeded its session limit. Which type of attack is this?
 
@@ -249,58 +6,17 @@ A. TCP ACK attack
 
 
 
-27
-Security+
-44.
-Which protocol does the smurf attack use to attack a network or system?
-
-D. ICMP
-NOT
-UDP
-
-
-
-28
-Security+
-Domain name kiting is the practice of repeatedly registering and deleting a domain name so that in effect, the registrant can own the domain name without paying for it.
-
-
-
-29
-UiPath Platform 2022.10 
-In an XML document or external entity, a CDATA section is a piece of element content that is marked up to be interpreted literally, as textual data, not as marked up content.[1] A CDATA section is merely an alternative syntax for expressing character data; there is no semantic difference between character data in a CDATA section and character data in standard syntax where, for example, "<" and "&" are represented by "&lt;" and "&amp;", respectively.
-
-
-
-
-
-30
-UiPath Platform 2022.10 
-The Data Manager can be found in the Data Manager tab on the right-hand side of the Design view in Studio. 
-
-
-
-
-1
-UiPath Platform 2022.10
-The Data Manager panel lets you manage variables, arguments, constants, and resources such as processes, assets, queues, connections, and others.
-
-
-
-
 
 2
 UiPath Platform 2022.10
-Using the Show Data Manager Panel Only setting will hide the old Variables, Arguments, and Imports panels. 
+Remote browser isolation (RBI) is a web security technology that neutralizes online threats by hosting users’ web browsing sessions on a remote server instead of the user’s endpoint device. RBI separates web content from the user’s device to reduce its attack surface.
 
 
 
 
 3
-UiPath Platform 2022.10
-Global Variables are variables with a global scope, not limited to a workflow or sequence within the project. Global Constants are used to hold values that can be used anywhere, in any workflow within the project, but cannot change.
-
-
+Security+
+IDS is primarily focused on evaluating attacks based on attack signatures and audit trails. An A-signature-based IDS will monitor packets on the network and compare them against a database of signatures or attributes from known malicious threats. This is similar to the way most antivirus software detects malware.
 
 
 
@@ -314,184 +30,315 @@ To accurately identify performance issues using this Profile Execution (new tool
 
 5
 UiPath Platform 2022.10
-Unnecessary sequences are hidden from view, for example, the top-level sequence in a workflow, or the sequences from if, Do While, and other container activities. This feature was already available in StudioX from the beginning. Now it is implemented in Studio profile as well.
-
+Global Variables are variables with a global scope, not limited to a workflow or sequence within the project. Global Constants are used to hold values that can be used anywhere, in any workflow within the project, but cannot change.
 
 
 
 
 6
-UiPath Platform 2022.10
-The Electron application is a web application, but they look like a desktop application. A few examples of applications with Chromium (mostly Electron) are UiPath Assistant, Slack, or Microsoft Teams
+Security+
+Software Diversity
+	Alternative compiler paths would result in a different binary each time
+		Each compiled application would be a little different, but functionality would be the same.
+	An attack against different binaries would only be successful on a fraction of users
+		An attacker wouldn't know what exploit to use
 
 
 
 
 7
 UiPath Platform 2022.10
-A new option has been added to the Table extraction wizard. This option allows you to select whether you want to create a new column with the text or URL of an element. Because of this change, the Extract URL toggle has been removed.
+The Electron application is a web application, but they look like a desktop application. A few examples of applications with Chromium (mostly Electron) are UiPath Assistant, Slack, or Microsoft Teams
 
 
 
 
 8
-UiPath Platform 2022.10
-Remote browser isolation (RBI) is a web security technology that neutralizes online threats by hosting users’ web browsing sessions on a remote server instead of the user’s endpoint device. RBI separates web content from the user’s device to reduce its attack surface. 
+Scrummaster
+Practice of Extreme Programming (XP)
+Collective Ownership: anyone can change any code anywhere in the system at any time.
 
 
 
 
 9
-UiPath Platform 2022.10
-
+Security+
+NIC teaming
+	Multiple network adapters
+		Looks like a single adapter
+		Integrate over switches
+	Load Balancing/Fail over (LBFO)
+		Aggregate bandwidth, more redundant paths
+[Power Redundancy - SY0-601 CompTIA Security+ : 2.5]
 
 
 
 
 10
-UiPath Platform 2022.10
+UiPath CitDev Lesson
+What links each instruction in a Robot Path?
 
+	An arrow
+	NOT
+	a line
+	a double line
+	a dotted line
 
 
 
 
 11
-UiPath Platform 2022.10
-
+Security+ 
+Another type of UPS is a line-interactive UPS. If the voltage is slowly diminishing on the line, the UPS can slowly ramp up the amount of power being provided by the batteries. So during brownouts or times when the voltage is not at optimal levels, the line-interactive UPS can fill in the differences for the power source.
 
 
 
 
 12
-UiPath Platform 2022.10
-
+Security +
+Reconnaissance - Passive Footprinting
+	Learn as much as you can from open sources
+		Social media
+		Corporate web stie
+		Online forums
+		Dumpster diving
 
 
 
 
 13
-UiPath Platform 2022.10
+Security+
+44.
+Which protocol does the smurf attack use to attack a network or system?
 
+D. ICMP
+NOT
+UDP
 
 
 
 
 14
-UiPath Platform 2022.10
-
+Scrummaster
+What is the impact of accumulating technical debt?
+	
+	Short-term increase in productivity, followed by a long-term decrease in code quality and maintainability
 
 
 
 
 15
-UiPath Platform 2022.10
-
+Scrummaster
+What is the maximum duration of each of the Scrum Events?
+Sprint Review = 4 hours
+Sprint Retrospective = 3 hours
 
 
 
 
 16
-UiPath Platform 2022.10
-
+Security+
+TCP session hijacking is a technique that involves intercepting a TCP session initiated between two machines in order to hijack it. The initial authentication is performed by the legitimate machine. Later, the hacker who wishes to launch this attack takes control of the connection throughout the duration of the session.
 
 
 
 
 17
-UiPath Platform 2022.10
-
+UiPath Insights
+Operational KPIs include:
+	Errors
+	Robot Utilization
+	Success Rate
+	Duration
 
 
 
 
 18
-UiPath Platform 2022.10
-
+Security + 
+One of the simplest and least expensive of the UPS is an offline or standby UPS. This is a UPS that is not normally enabled unless power is lost. If the UPS recognizes that the power source is gone, it will switch over to battery power. So there’s a short time frame between the time when power is lost and then power is made available from the UPS.
 
 
 
 
 19
-UiPath Platform 2022.10
-
+UiPath Platform 2022.10 
+The Data Manager can be found in the Data Manager tab on the right-hand side of the Design view in Studio.
 
 
 
 
 20
 UiPath Platform 2022.10
-
+The Data Manager panel lets you manage variables, arguments, constants, and resources such as processes, assets, queues, connections, and others.
 
 
 
 
 21
 UiPath Platform 2022.10
-
+Unnecessary sequences are hidden from view, for example, the top-level sequence in a workflow, or the sequences from if, Do While, and other container activities. This feature was already available in StudioX from the beginning. Now it is implemented in Studio profile as well.
 
 
 
 
 22
-UiPath Platform 2022.10
-
+Security +
+Confusion
+Confusion means that each binary digit (bit) of the ciphertext should depend on several parts of the key, obscuring the connections between the two.[2]
+The property of confusion hides the relationship between the ciphertext and the key.
+Confusion increases the ambiguity of ciphertext and it is used by both block and stream ciphers.
 
 
 
 
 23
-UiPath Platform 2022.10
-
+Security+
+SYN attacks exploit the TCP three-way handshake and overload the servers, resulting in authorized users being denied access to network resources. The attacker uses a spoofed IP address not in use on the Internet and sends multiple SYN packets to the target machine.
 
 
 
 
 24
-UiPath Platform 2022.10
+Security+
+John is using IE version 6.0 as his browser. He wants to enable ActiveX controls and he also wants a high level of security set for the Internet zone. How can he accomplish this?
 
+	D. If the security level for Internet is high, the ActiveX controls are automatically disabled. Modify the ActiveX controls in Custom Level tab.
 
 
 
 
 25
 UiPath Platform 2022.10
-
+A new option has been added to the Table extraction wizard. This option allows you to select whether you want to create a new column with the text or URL of an element. Because of this change, the Extract URL toggle has been removed.
 
 
 
 
 26
-UiPath Platform 2022.10
+UiPath Process Mining
+The following points are covered in the Detailed Assessment 
 
+	The Automation Goal (cost, quality, productivity)
+	The Environmental Stability - changes of the process and/or of the applications
+	The Process Volumetry
+	The Applications used
 
 
 
 
 27
-UiPath Platform 2022.10
-
+Security+
+Fiber optic media is least susceptible to stealing information using wire taps. UTP and STP are the most susceptible to vampire taps.
 
 
 
 
 28
-UiPath Platform 2022.10
-
+Security + 
+The kind of UPS that’s probably the most complex and the most expensive is the online, or what is called the double conversion, UPS. This UPS is always online and always providing power to your devices. And if the power does go out, there’s no switching process, because you’re already on battery power.
 
 
 
 
 29
-UiPath Platform 2022.10
-
+UiPath Insights
+Operational KPIs contain information that relates to the execution of automation itself, but they don’t include things like time saved and money saved.
 
 
 
 
 30
+Security+
+Tracking cookies are browser settings that provide websites a unique ID for a user. Tracking cookies are constantly recreated when a computer user browses the web. Spyware can use these cookies to collect information about the pages browsed by the user.
+
+
+
+
+31
+Security +
+Vulnerability feeds - Automated vulnerability notifications
+	National Vulnerability Database (https://nvd.nist.gov)
+	CVE Database Feeds (https://cve.mitre.org)
+	Third-party feeds
+		Additional vulnerability coverage
+
+
+
+
+32
+UiPath Process Mining
+Which of the following are collaborator roles?
+
+	Process Owner
+	Project Manager
+	NOT
+	Program Manager
+	Component Curator
+	Idea Approver
+
+
+
+
+33
+UiPath CitDev Lesson
+Which of the following contains a pattern?
+	Downloading all email attachments received in the past week from automation-first@uipath.com
+	All the spreadsheets must have columns E and D removed
+	Using the same set of credentials acoss applications
+	NOT
+	Sending an email to citizen-developer@uipath.com
+	Downloading a report in the Downloads folder
+
+
+
+
+34
+Security+
+Which of the following NIDS configurations is based solely on specific network traffic?
+
+	D. A signature-based
+	NOT
+	Anomaly based
+
+
+
+
+35
 UiPath Platform 2022.10
+Using the Show Data Manager Panel Only setting will hide the old Variables, Arguments, and Imports panels.
 
 
 
 
+36
+UiPath Platform 2022.10 
+In an XML document or external entity, a CDATA section is a piece of element content that is marked up to be interpreted literally, as textual data, not as marked up content.[1] A CDATA section is merely an alternative syntax for expressing character data; there is no semantic difference between character data in a CDATA section and character data in standard syntax where, for example, "<" and "&" are represented by "&lt;" and "&amp;", respectively.
 
+
+
+
+37
+Security+
+Domain name kiting is the practice of repeatedly registering and deleting a domain name so that in effect, the registrant can own the domain name without paying for it.
+
+
+
+
+38
+UiPath Process Mining
+Which of the following information is requred when submitting an employee-driven idea?
+	How rule-based the process is
+	Are there expected changes in the process
+	What type is the input
+	NOT
+	The number of people involved in the as is process 
+	Estimated time saved by automating
+
+
+
+
+1
+Security+
+A power distribution unit (PDU) is a device fitted with multiple outputs designed to distribute electric power, especially to racks of computers and networking equipment located within a data center.[1] Data centers face challenges in power protection and management solutions. This is why many data centers rely on PDU monitoring to improve efficiency, uptime, and growth
+[Power Redundancy – SY0-601 CompTIA Security+ : 2.5]
