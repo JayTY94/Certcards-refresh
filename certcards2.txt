@@ -355,8 +355,8 @@ Projects built with Studio Web are by default marked as Cross-platform. This mea
 
 
 2
-UiPath Platform 2022.10
-
+General 
+VPAT stands for “Voluntary Product Accessibility Template.” This template is used to draft your Accessibility Conformance Report (ACR). Your ACR clearly states which accessibility standards your product or service meets, and it warns users about any “accessibility blockers” they may encounter.
 
 
 
