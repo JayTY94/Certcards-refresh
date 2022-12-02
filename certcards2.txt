@@ -274,9 +274,57 @@ VPAT stands for “Voluntary Product Accessibility Template.” This template is
 
 
 
+1
+Security+
+A potentially unwanted program (PUP) or potentially unwanted application (PUA) is software that a user may perceive as unwanted or unnecessary. Companies often bundle a wanted program download with a wrapper application and may offer to install an unwanted application, and in some cases without providing a clear opt-out method. Antivirus companies define the software bundled as potentially unwanted programs[1][2] 
+
+
+
+2
+Security+
+The rainbow table in a rainbow table attack refers to a precomputed table that contains the password hash value for each plain text character used during the authentication process. If hackers gain access to the list of password hashes, they can crack all passwords very quickly with a rainbow table. 
+
+
+
+
+3
+Security+
+A birthday attack is a type of cryptographic attack that exploits the mathematics behind the birthday problem in probability theory. This attack can be used to abuse communication between two or more parties. The attack depends on the higher likelihood of collisions found between random attack attempts and a fixed degree of permutations (pigeonholes). 
+
+
+
+
+4
+UiPath Platform 2022.10
+Combine and extract both native and scanned text from native PDFs: the PDF parsing algorithm has been enhanced to apply OCR in images separately, and then, merge the result with the native text to obtain the full text of the document.
+
+
+
+
+1
+UiPath Platform 2022.10
+Which of the following ML models are available only on cloud?
+
+Signature Matching
+
+
+
+
+2
+UiPath Platform 2022.10
+Which of the following improvements in Document Manager allows easy migration fo Document Manager datasets between tenants?
+
+Exporting as unlabeled documents
+
+
+
+
 3
 UiPath Platform 2022.10
+Which Two of the following are improvements to Studio activities?
 
+	Display extraction & OCR confidence in the Validation Station
+	Report User Details for the Validation & Classification Tasks in Studio
 
 
 
