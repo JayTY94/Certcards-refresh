@@ -1,54 +1,5 @@
 
 
-11
-Security+ 
-Another type of UPS is a line-interactive UPS. If the voltage is slowly diminishing on the line, the UPS can slowly ramp up the amount of power being provided by the batteries. So during brownouts or times when the voltage is not at optimal levels, the line-interactive UPS can fill in the differences for the power source.
-
-
-
-
-12
-Security +
-Reconnaissance - Passive Footprinting
-	Learn as much as you can from open sources
-		Social media
-		Corporate web stie
-		Online forums
-		Dumpster diving
-
-
-
-
-13
-Security+
-44.
-Which protocol does the smurf attack use to attack a network or system?
-
-D. ICMP
-NOT
-UDP
-
-
-
-
-14
-Scrummaster
-What is the impact of accumulating technical debt?
-	
-	Short-term increase in productivity, followed by a long-term decrease in code quality and maintainability
-
-
-
-
-15
-Scrummaster
-What is the maximum duration of each of the Scrum Events?
-Sprint Review = 4 hours
-Sprint Retrospective = 3 hours
-
-
-
-
 16
 Security+
 TCP session hijacking is a technique that involves intercepting a TCP session initiated between two machines in order to hijack it. The initial authentication is performed by the legitimate machine. Later, the hacker who wishes to launch this attack takes control of the connection throughout the duration of the session.
