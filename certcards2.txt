@@ -280,192 +280,126 @@ Which Two of the following are improvements to Studio activities?
 
 
 
-4
-UiPath Platform 2022.10
+1
+Accounting
+Corporations
+Businesses that are given the right to exist by an individual state in the US. With this right to exist, the corporation is then allowed to sell stock. Those buying this stock become owners of the corporation.
 
+
+
+2
+Accounting
+
+
+
+
+3
+Accounting
+
+
+
+
+4
+Accounting
 
 
 
 
 5
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 6
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 7
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 8
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 9
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 10
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 11
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 12
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 13
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 14
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 15
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 16
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 17
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 18
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 19
-UiPath Platform 2022.10
-
+Accounting
 
 
 
 
 20
-UiPath Platform 2022.10
+Accounting
 
 
 
 
 
-21
-UiPath Platform 2022.10
-
-
-
-
-
-22
-UiPath Platform 2022.10
-
-
-
-
-
-23
-UiPath Platform 2022.10
-
-
-
-
-
-24
-UiPath Platform 2022.10
-
-
-
-
-
-25
-UiPath Platform 2022.10
-
-
-
-
-
-26
-UiPath Platform 2022.10
-
-
-
-
-
-27
-UiPath Platform 2022.10
-
-
-
-
-
-28
-UiPath Platform 2022.10
-
-
-
-
-
-29
-UiPath Platform 2022.10
-
-
-
-
-
-30
-UiPath Platform 2022.10
-
-
-
-
-
+Process finished with exit code 0
