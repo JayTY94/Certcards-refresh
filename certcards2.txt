@@ -289,115 +289,140 @@ Businesses that are given the right to exist by an individual state in the US. W
 
 2
 Accounting
+Financial Statements
+Reports prepared by companies on the financial status of their business; examples are
 
+	Balance Sheets
+	Income Statements
+	Statement of Cash Flow
+	Statement of Retained earnings
 
 
 
 3
 Accounting
-
+Proprietorship/Sole Proprietorship 
+Businesses with one single owner. Even though there is only one owner, the records of the owner's personal financial affairs are kept separate from those of the accounting records of the business. Separate tax returns are prepared for the business and for the individual.
 
 
 
 4
 Accounting
+Conservatism Principle: WHenever two or more accounting practices appear to be equally suitable ot the transaction under consideration, the accountant should always choose the one that results in the lower or lowest Asset figure on the balance Sheet and the highest Expense on the Income Statement.
+
 
 
 
 
 5
 Accounting
-
+Consistnecy: Practices and methods for presentation on the financial statements should be the same year to year and process to process. If for any reason the company and its accountants decide to change the method of presentation for any item, it must present a footnote explaining why the methods were changed.
 
 
 
 6
 Accounting
-
+Entity Concept: The principle that requires separation of the transactions of each business or person from those of other organizations or individuals. For example, when a compnay is owned by one person, the personal finances of the individual who owns the company are not included on the company's financial statements.
 
 
 
 7
 Accounting
-
+Going Concern Principle: THis principle assumes that ac company will continue in business into the future. Without this assumption, most of the accounting information could not be presented in the Financial Statements since we are alwasy amking assumptions (e.g. what the life of a Long-Term Asset is).
 
 
 
 8
 Accounting
-
+Historical Cost Principle: According to this rule, most Assets and Liabilities should be represented on the Balance Sheet at the amount that was paid to acquire the Asset, or for the Liabilities, at the amount that was contracted to be paid in the future. No account is taken for either inflation or changing value of the Assets over time.
 
 
 
 9
 Accounting
-
+Materiality Principle: This principle states that an item should only be included on the Balance aSheet if it would change any decisions of a statement user. For example, a multimillion dollar donating $100 to charity, this information would not change any decision that management or the owner would make. The expense should be recorded under "miscellaneous expense"
 
 
 
 10
 Accounting
+Obtainable Information: Information reported in financial statements must be accessible in a timely manner without an unreasonable expenditure of resources—for example, time, effort, and money—to be included in the financial statements.
+
 
 
 
 
 11
 Accounting
+Quantifiable Information: Information is easier to understand and use if it is quantified. However, when the information cannot be quantified but is still relevant to the users of the financial statements, it must be shown in the financial statements in narrative form in the footnotes.
+
 
 
 
 
 12
 Accounting
-
+Realizable Value Principle: This indicates that Assets should normally not be shown on the Balance Sheet at a value greater than they can bring to the company if sold. If the original historical cost for example is $5,000, and the maximum that the company can sell that Asset for today is $4,000, this Asset should be shown on the Balance Sheet at the lower amount because of this principle.
 
 
 
 13
 Accounting
+Recognition Principle: Revenue is recorded at the point of the transfer of the merchandise or service, and not at the point of receiving the cash. Once a service is provided for which a charge has been incurred, that service should be shown on the financial statements regardless of whether money has actually changed hands.
+
 
 
 
 
 14
 Accounting
-
+Relevant Information: Information reported on financial statements must be relevant in that it helps statement users to estimate the value of a firm and/or evaluate the firm’s management. Not all information about a company is relevant to this decision-making process. 
 
 
 
 15
 Accounting
+Stable-Monetary-Unit Concept: Even though the value of the dollar changes over time (due to inflation), the values that appear on the financial statements in the United States are normally presented at historical cost and do not take inflation into account.
+
 
 
 
 
 16
 Accounting
-
+Understandable Information: Financial information must be comparable and consistent. If one accountant calls a particular item an Asset, the accountant must follow the set of rules known as generally accepted accounting principles to arrive at the definition of that Asset. 
 
 
 
 17
 Accounting
-
+Verifiable Information: Information on the financial statements must be based on sufficient evidence that can be substantiated and provides a reliable basis for evaluating the firm and its management.
 
 
 
 18
 Accounting
+Accounting Equation: THe formula that depitcts teh relationships of the various elements of the Balance Sheet to each other:
 
+	A = L + OE
+	A is assets
+	L is liabilities
+	OE is Owner's Equity
 
 
 
 19
 Accounting
-
+Assets 
+	Company must control or own it
+	Item must have som value to the company
+	Value must be measurable
 
 
 
 20
 Accounting
-
+Balance sheet: This financial statement is a listing of the Assets, Liabilities, and Owner's equity. THe relationship between these items are represented by the accounting equation.
 
 
 
