@@ -429,3 +429,227 @@ Balance sheet: This financial statement is a listing of the Assets, Liabilities,
 
 
 
+1
+Security+
+Flavors of traceroute
+	Windows commonly sends ICMP echo requests
+		Receives ICMP time exceeded messages and an ICMP echo reply from final/destination device
+		Unfortunately, outgoing ICMP is commonly filtered
+	IOS devices send UDP datagrams over port 33434
+
+
+
+
+2
+Security+
+pathping
+	combines ping and traceroute
+		Included in Windows NT and later
+	First phase runs a traceroute
+	Second phase measures round trip time and packet loss at each hop
+	Takes several minutes
+
+
+
+
+
+3
+Security+
+netstat
+	Network Statistics - is in many operating systems
+	netstat -a
+		Show all active connections
+	netsat -b 
+		Show binaries (Windows)
+	netstat -n
+		Do not resolve names
+
+
+
+
+4
+Security+
+curl
+	Client URL
+		Retrives data using Uniform Resource Locator (URL)
+		Web pages, FTP, emails, databases, etc
+	Grab the raw data
+		Search
+		Parse 
+		Automate
+
+
+
+
+5
+Security+
+hping
+	TCP/IP packet assembler/analyzer
+		A ping that can send almost anything
+	Ping a device with ICMP, TCP, UDP
+		#hping3 --destport 80 10.1.10.1
+	Sends crafted frames, modifying all IP, TCP, UDP, and ICMP values
+
+
+
+
+6
+Security+
+Nmap
+	Network mapper
+		Find and learn more about network devices
+	Port scan
+		Find devices and identify open ports
+
+
+
+
+7
+Security+
+Nmap
+	Operating System scan
+		Discover the OS without logging into the device
+	Service Scan
+		What services is available on a device? Name, version, details
+
+
+
+
+8
+Security+
+theHarvester
+	Gather OSINT
+		Open-Source Intelligence
+	Scrape information from google or bing
+		Find associated IP adresses
+	DNS brute force
+		Find those unknown hosts; vpn, chat, mail, partner, etc
+
+
+
+
+9
+Security+
+cat command in Unix systems
+	Short for concatenate - link together in a series
+	Copy a file/files to the screen
+		cat file1.txt file2.txt
+	Copy a file/files to another file
+		cat file1.txt file2.txt > both.txt
+
+
+
+
+10
+Security+
+grep 
+	find text in a file - search through many files at a time
+	grep PATTERN [FILE]
+		grep failed auth.log
+
+
+
+
+11
+Security+
+OpenSSL
+	A toolkit for crypto libraries for SSL/TLS
+		build certificates, manage SSL/TLS communication
+	Create X.509 certificates
+		Manage certificate signing requests (CSRs) and Certificate revocations lists (CRLs)
+
+
+
+
+
+12
+Security+
+OpenSSL
+	Message digests
+		support for many hashing protocols
+	Encryption/decryption
+		SSL/TLS for services
+
+
+
+
+13
+Security+
+Wireshark
+	Graphical packet analyzer
+		get into the details
+	Gather frameson the network
+		or in the air
+		sometimes built into the device
+
+
+
+
+14
+Security+
+Wireshark
+	View traffic patterns
+		Identify unknonwn traffic
+		verify packet filtering and security controls
+	Extensive decodes
+		View the application traffic
+
+
+
+
+15
+Security+
+dd
+	A reference to the DD command in IBM mainframe JCL (Job control Language)
+		Data Definition (ASCII to EBCDIC converter)
+	Create a bit-by-bit copy of a drive
+		Used by many forensics tools
+
+
+
+
+16
+Security+
+WinHex
+	A universal hexadecimal editor
+		Windows OS
+	Edit disks, files, RAM
+		Includes data recovery features
+
+
+
+
+
+17
+Security+
+WinHex
+	Disk Cloning - Drive replication
+	Secure wipe - Hard drive cleaning
+	much more - a full-featured forensics tool
+
+
+
+
+18
+Security+
+
+
+
+
+
+19
+Security+
+
+
+
+
+
+20
+Security+
+
+
+
+
+
+
+Process finished with exit code 0
