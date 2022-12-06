@@ -545,37 +545,6 @@ Relevant Information: Information reported on financial statements must be relev
 
 
 
-61
-UiPath Insights
-Operational KPIs contain information that relates to the execution of automation itself, but they don’t include things like time saved and money saved.
-
-
-
-
-62
-Security+
-Wireshark
-	View traffic patterns
-		Identify unknonwn traffic
-		verify packet filtering and security controls
-	Extensive decodes
-		View the application traffic
-
-
-
-
-63
-Security+
-pathping
-	combines ping and traceroute
-		Included in Windows NT and later
-	First phase runs a traceroute
-	Second phase measures round trip time and packet loss at each hop
-	Takes several minutes
-
-
-
-
 
 
 
