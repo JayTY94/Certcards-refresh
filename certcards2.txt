@@ -1,60 +1,5 @@
 
 
-16
-Security+
-TCP session hijacking is a technique that involves intercepting a TCP session initiated between two machines in order to hijack it. The initial authentication is performed by the legitimate machine. Later, the hacker who wishes to launch this attack takes control of the connection throughout the duration of the session.
-
-
-
-
-17
-UiPath Insights
-Operational KPIs include:
-	Errors
-	Robot Utilization
-	Success Rate
-	Duration
-
-
-
-
-18
-Security + 
-One of the simplest and least expensive of the UPS is an offline or standby UPS. This is a UPS that is not normally enabled unless power is lost. If the UPS recognizes that the power source is gone, it will switch over to battery power. So there’s a short time frame between the time when power is lost and then power is made available from the UPS.
-
-
-
-
-19
-UiPath Platform 2022.10 
-The Data Manager can be found in the Data Manager tab on the right-hand side of the Design view in Studio.
-
-
-
-
-20
-UiPath Platform 2022.10
-The Data Manager panel lets you manage variables, arguments, constants, and resources such as processes, assets, queues, connections, and others.
-
-
-
-
-21
-UiPath Platform 2022.10
-Unnecessary sequences are hidden from view, for example, the top-level sequence in a workflow, or the sequences from if, Do While, and other container activities. This feature was already available in StudioX from the beginning. Now it is implemented in Studio profile as well.
-
-
-
-
-22
-Security +
-Confusion
-Confusion means that each binary digit (bit) of the ciphertext should depend on several parts of the key, obscuring the connections between the two.[2]
-The property of confusion hides the relationship between the ciphertext and the key.
-Confusion increases the ambiguity of ciphertext and it is used by both block and stream ciphers.
-
-
-
 
 23
 Security+
@@ -650,6 +595,3 @@ Security+
 
 
 
-
-
-Process finished with exit code 0
