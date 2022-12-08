@@ -1,34 +1,6 @@
 
 
 
-9
-Security+
-John is using IE version 6.0 as his browser. He wants to enable ActiveX controls and he also wants a high level of security set for the Internet zone. How can he accomplish this?
-
-	D. If the security level for Internet is high, the ActiveX controls are automatically disabled. Modify the ActiveX controls in Custom Level tab.
-
-
-
-
-10
-Accounting
-Conservatism Principle: WHenever two or more accounting practices appear to be equally suitable ot the transaction under consideration, the accountant should always choose the one that results in the lower or lowest Asset figure on the balance Sheet and the highest Expense on the Income Statement.
-
-
-
-
-11
-UiPath Platform 2022.10
-Combine and extract both native and scanned text from native PDFs: the PDF parsing algorithm has been enhanced to apply OCR in images separately, and then, merge the result with the native text to obtain the full text of the document.
-
-
-
-
-12
-Security+
-A potentially unwanted program (PUP) or potentially unwanted application (PUA) is software that a user may perceive as unwanted or unnecessary. Companies often bundle a wanted program download with a wrapper application and may offer to install an unwanted application, and in some cases without providing a clear opt-out method. Antivirus companies define the software bundled as potentially unwanted programs[1][2]
-
-
 
 
 13
