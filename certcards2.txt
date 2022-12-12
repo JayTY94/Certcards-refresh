@@ -1,13 +1,6 @@
 
 
 
-4
-Accounting
-Stable-Monetary-Unit Concept: Even though the value of the dollar changes over time (due to inflation), the values that appear on the financial statements in the United States are normally presented at historical cost and do not take inflation into account.
-
-
-
-
 5
 Security+
 The rainbow table in a rainbow table attack refers to a precomputed table that contains the password hash value for each plain text character used during the authentication process. If hackers gain access to the list of password hashes, they can crack all passwords very quickly with a rainbow table.
