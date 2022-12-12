@@ -1,13 +1,4 @@
 
-
-
-5
-Security+
-The rainbow table in a rainbow table attack refers to a precomputed table that contains the password hash value for each plain text character used during the authentication process. If hackers gain access to the list of password hashes, they can crack all passwords very quickly with a rainbow table.
-
-
-
-
 6
 UiPath Process Mining
 Which of the following information is requred when submitting an employee-driven idea?
