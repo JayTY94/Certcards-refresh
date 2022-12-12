@@ -1,33 +1,21 @@
 
 
 
-
-
-13
-Security+
-Domain name kiting is the practice of repeatedly registering and deleting a domain name so that in effect, the registrant can own the domain name without paying for it.
-
-
-
-
-14
-Security+
-grep 
-	find text in a file - search through many files at a time
-	grep PATTERN [FILE]
-		grep failed auth.log
-
-
-
-
-15
+4
 Accounting
-Materiality Principle: This principle states that an item should only be included on the Balance aSheet if it would change any decisions of a statement user. For example, a multimillion dollar donating $100 to charity, this information would not change any decision that management or the owner would make. The expense should be recorded under "miscellaneous expense"
+Stable-Monetary-Unit Concept: Even though the value of the dollar changes over time (due to inflation), the values that appear on the financial statements in the United States are normally presented at historical cost and do not take inflation into account.
 
 
 
 
-16
+5
+Security+
+The rainbow table in a rainbow table attack refers to a precomputed table that contains the password hash value for each plain text character used during the authentication process. If hackers gain access to the list of password hashes, they can crack all passwords very quickly with a rainbow table.
+
+
+
+
+6
 UiPath Process Mining
 Which of the following information is requred when submitting an employee-driven idea?
 	How rule-based the process is
@@ -40,120 +28,7 @@ Which of the following information is requred when submitting an employee-driven
 
 
 
-17
-Accounting
-Historical Cost Principle: According to this rule, most Assets and Liabilities should be represented on the Balance Sheet at the amount that was paid to acquire the Asset, or for the Liabilities, at the amount that was contracted to be paid in the future. No account is taken for either inflation or changing value of the Assets over time.
-
-
-
-
-18
-Accounting
-Quantifiable Information: Information is easier to understand and use if it is quantified. However, when the information cannot be quantified but is still relevant to the users of the financial statements, it must be shown in the financial statements in narrative form in the footnotes.
-
-
-
-
-19
-Accounting
-Corporations
-Businesses that are given the right to exist by an individual state in the US. With this right to exist, the corporation is then allowed to sell stock. Those buying this stock become owners of the corporation.
-
-
-
-
-20
-Security+
-cat command in Unix systems
-	Short for concatenate - link together in a series
-	Copy a file/files to the screen
-		cat file1.txt file2.txt
-	Copy a file/files to another file
-		cat file1.txt file2.txt > both.txt
-
-
-
-
-21
-Security+
-hping
-	TCP/IP packet assembler/analyzer
-		A ping that can send almost anything
-	Ping a device with ICMP, TCP, UDP
-		#hping3 --destport 80 10.1.10.1
-	Sends crafted frames, modifying all IP, TCP, UDP, and ICMP values
-
-
-
-
-22
-UiPath Platform 2022.10
-Which Two of the following are improvements to Studio activities?
-
-	Display extraction & OCR confidence in the Validation Station
-	Report User Details for the Validation & Classification Tasks in Studio
-
-
-
-
-23
-Accounting
-Understandable Information: Financial information must be comparable and consistent. If one accountant calls a particular item an Asset, the accountant must follow the set of rules known as generally accepted accounting principles to arrive at the definition of that Asset.
-
-
-
-
-24
-Accounting
-Balance sheet: This financial statement is a listing of the Assets, Liabilities, and Owner's equity. THe relationship between these items are represented by the accounting equation.
-
-
-
-
-25
-Security+
-Which of the following NIDS configurations is based solely on specific network traffic?
-
-	D. A signature-based
-	NOT
-	Anomaly based
-
-
-
-
-26
-Accounting
-Realizable Value Principle: This indicates that Assets should normally not be shown on the Balance Sheet at a value greater than they can bring to the company if sold. If the original historical cost for example is $5,000, and the maximum that the company can sell that Asset for today is $4,000, this Asset should be shown on the Balance Sheet at the lower amount because of this principle.
-
-
-
-
-27
-UiPath Platform 2022.10 
-In an XML document or external entity, a CDATA section is a piece of element content that is marked up to be interpreted literally, as textual data, not as marked up content.[1] A CDATA section is merely an alternative syntax for expressing character data; there is no semantic difference between character data in a CDATA section and character data in standard syntax where, for example, "<" and "&" are represented by "&lt;" and "&amp;", respectively.
-
-
-
-
-28
-Accounting
-Consistnecy: Practices and methods for presentation on the financial statements should be the same year to year and process to process. If for any reason the company and its accountants decide to change the method of presentation for any item, it must present a footnote explaining why the methods were changed.
-
-
-
-
-29
-Security+
-Flavors of traceroute
-	Windows commonly sends ICMP echo requests
-		Receives ICMP time exceeded messages and an ICMP echo reply from final/destination device
-		Unfortunately, outgoing ICMP is commonly filtered
-	IOS devices send UDP datagrams over port 33434
-
-
-
-
-30
+7
 Accounting
 Financial Statements
 Reports prepared by companies on the financial status of their business; examples are
@@ -166,45 +41,100 @@ Reports prepared by companies on the financial status of their business; example
 
 
 
-31
-Security+
-OpenSSL
-	A toolkit for crypto libraries for SSL/TLS
-		build certificates, manage SSL/TLS communication
-	Create X.509 certificates
-		Manage certificate signing requests (CSRs) and Certificate revocations lists (CRLs)
+8
+Security +
+Vulnerability feeds - Automated vulnerability notifications
+	National Vulnerability Database (https://nvd.nist.gov)
+	CVE Database Feeds (https://cve.mitre.org)
+	Third-party feeds
+		Additional vulnerability coverage
 
 
 
 
-32
-UiPath CitDev Lesson
-Which of the following contains a pattern?
-	Downloading all email attachments received in the past week from automation-first@uipath.com
-	All the spreadsheets must have columns E and D removed
-	Using the same set of credentials acoss applications
-	NOT
-	Sending an email to citizen-developer@uipath.com
-	Downloading a report in the Downloads folder
-
-
-
-
-33
-Security+
-Tracking cookies are browser settings that provide websites a unique ID for a user. Tracking cookies are constantly recreated when a computer user browses the web. Spyware can use these cookies to collect information about the pages browsed by the user.
-
-
-
-
-34
+9
 Accounting
-Going Concern Principle: THis principle assumes that ac company will continue in business into the future. Without this assumption, most of the accounting information could not be presented in the Financial Statements since we are alwasy amking assumptions (e.g. what the life of a Long-Term Asset is).
+Consistnecy: Practices and methods for presentation on the financial statements should be the same year to year and process to process. If for any reason the company and its accountants decide to change the method of presentation for any item, it must present a footnote explaining why the methods were changed.
 
 
 
 
-35
+10
+Security+
+A power distribution unit (PDU) is a device fitted with multiple outputs designed to distribute electric power, especially to racks of computers and networking equipment located within a data center.[1] Data centers face challenges in power protection and management solutions. This is why many data centers rely on PDU monitoring to improve efficiency, uptime, and growth
+[Power Redundancy – SY0-601 CompTIA Security+ : 2.5]
+
+
+
+
+11
+Accounting
+Recognition Principle: Revenue is recorded at the point of the transfer of the merchandise or service, and not at the point of receiving the cash. Once a service is provided for which a charge has been incurred, that service should be shown on the financial statements regardless of whether money has actually changed hands.
+
+
+
+
+12
+Security + 
+The kind of UPS that’s probably the most complex and the most expensive is the online, or what is called the double conversion, UPS. This UPS is always online and always providing power to your devices. And if the power does go out, there’s no switching process, because you’re already on battery power.
+
+
+
+
+13
+Accounting
+Quantifiable Information: Information is easier to understand and use if it is quantified. However, when the information cannot be quantified but is still relevant to the users of the financial statements, it must be shown in the financial statements in narrative form in the footnotes.
+
+
+
+
+14
+Security+
+WinHex
+	Disk Cloning - Drive replication
+	Secure wipe - Hard drive cleaning
+	much more - a full-featured forensics tool
+
+
+
+
+15
+Security+
+SYN attacks exploit the TCP three-way handshake and overload the servers, resulting in authorized users being denied access to network resources. The attacker uses a spoofed IP address not in use on the Internet and sends multiple SYN packets to the target machine.
+
+
+
+
+16
+Accounting
+Corporations
+Businesses that are given the right to exist by an individual state in the US. With this right to exist, the corporation is then allowed to sell stock. Those buying this stock become owners of the corporation.
+
+
+
+
+17
+Accounting
+Relevant Information: Information reported on financial statements must be relevant in that it helps statement users to estimate the value of a firm and/or evaluate the firm’s management. Not all information about a company is relevant to this decision-making process.
+
+
+
+
+18
+Accounting
+Understandable Information: Financial information must be comparable and consistent. If one accountant calls a particular item an Asset, the accountant must follow the set of rules known as generally accepted accounting principles to arrive at the definition of that Asset.
+
+
+
+
+19
+Accounting
+Entity Concept: The principle that requires separation of the transactions of each business or person from those of other organizations or individuals. For example, when a compnay is owned by one person, the personal finances of the individual who owns the company are not included on the company's financial statements.
+
+
+
+
+20
 Security+
 theHarvester
 	Gather OSINT
@@ -217,69 +147,40 @@ theHarvester
 
 
 
-36
-Accounting
-Obtainable Information: Information reported in financial statements must be accessible in a timely manner without an unreasonable expenditure of resources—for example, time, effort, and money—to be included in the financial statements.
+21
+UiPath Platform 2022.10
+Which Two of the following are improvements to Studio activities?
+
+	Display extraction & OCR confidence in the Validation Station
+	Report User Details for the Validation & Classification Tasks in Studio
 
 
 
 
-37
+22
 Security+
-WinHex
-	A universal hexadecimal editor
-		Windows OS
-	Edit disks, files, RAM
-		Includes data recovery features
+dd
+	A reference to the DD command in IBM mainframe JCL (Job control Language)
+		Data Definition (ASCII to EBCDIC converter)
+	Create a bit-by-bit copy of a drive
+		Used by many forensics tools
 
 
 
 
-38
-Accounting
-Stable-Monetary-Unit Concept: Even though the value of the dollar changes over time (due to inflation), the values that appear on the financial statements in the United States are normally presented at historical cost and do not take inflation into account.
-
-
-
-
-39
+23
 Security+
-Wireshark
-	Graphical packet analyzer
-		get into the details
-	Gather frameson the network
-		or in the air
-		sometimes built into the device
+cat command in Unix systems
+	Short for concatenate - link together in a series
+	Copy a file/files to the screen
+		cat file1.txt file2.txt
+	Copy a file/files to another file
+		cat file1.txt file2.txt > both.txt
 
 
 
 
-40
-Security+
-Nmap
-	Operating System scan
-		Discover the OS without logging into the device
-	Service Scan
-		What services is available on a device? Name, version, details
-
-
-
-
-41
-UiPath Process Mining
-Which of the following are collaborator roles?
-
-	Process Owner
-	Project Manager
-	NOT
-	Program Manager
-	Component Curator
-	Idea Approver
-
-
-
-
-42
+24
 Security+
 netstat
 	Network Statistics - is in many operating systems
@@ -293,43 +194,167 @@ netstat
 
 
 
-43
+25
+Security+
+Flavors of traceroute
+	Windows commonly sends ICMP echo requests
+		Receives ICMP time exceeded messages and an ICMP echo reply from final/destination device
+		Unfortunately, outgoing ICMP is commonly filtered
+	IOS devices send UDP datagrams over port 33434
+
+
+
+
+26
+Security+
+Nmap
+	Operating System scan
+		Discover the OS without logging into the device
+	Service Scan
+		What services is available on a device? Name, version, details
+
+
+
+
+27
+UiPath Process Mining
+The following points are covered in the Detailed Assessment 
+
+	The Automation Goal (cost, quality, productivity)
+	The Environmental Stability - changes of the process and/or of the applications
+	The Process Volumetry
+	The Applications used
+
+
+
+
+28
+Security+
+Domain name kiting is the practice of repeatedly registering and deleting a domain name so that in effect, the registrant can own the domain name without paying for it.
+
+
+
+
+29
+Accounting
+Realizable Value Principle: This indicates that Assets should normally not be shown on the Balance Sheet at a value greater than they can bring to the company if sold. If the original historical cost for example is $5,000, and the maximum that the company can sell that Asset for today is $4,000, this Asset should be shown on the Balance Sheet at the lower amount because of this principle.
+
+
+
+
+30
+Security+
+hping
+	TCP/IP packet assembler/analyzer
+		A ping that can send almost anything
+	Ping a device with ICMP, TCP, UDP
+		#hping3 --destport 80 10.1.10.1
+	Sends crafted frames, modifying all IP, TCP, UDP, and ICMP values
+
+
+
+
+31
+UiPath Process Mining
+Which of the following are collaborator roles?
+
+	Process Owner
+	Project Manager
+	NOT
+	Program Manager
+	Component Curator
+	Idea Approver
+
+
+
+
+32
+Security+
+OpenSSL
+	Message digests
+		support for many hashing protocols
+	Encryption/decryption
+		SSL/TLS for services
+
+
+
+
+33
+Accounting
+Balance sheet: This financial statement is a listing of the Assets, Liabilities, and Owner's equity. THe relationship between these items are represented by the accounting equation.
+
+
+
+
+34
+Security+
+Which of the following NIDS configurations is based solely on specific network traffic?
+
+	D. A signature-based
+	NOT
+	Anomaly based
+
+
+
+
+35
+Security+
+Tracking cookies are browser settings that provide websites a unique ID for a user. Tracking cookies are constantly recreated when a computer user browses the web. Spyware can use these cookies to collect information about the pages browsed by the user.
+
+
+
+
+36
+Security+
+WinHex
+	A universal hexadecimal editor
+		Windows OS
+	Edit disks, files, RAM
+		Includes data recovery features
+
+
+
+
+37
+UiPath Platform 2022.10 
+In an XML document or external entity, a CDATA section is a piece of element content that is marked up to be interpreted literally, as textual data, not as marked up content.[1] A CDATA section is merely an alternative syntax for expressing character data; there is no semantic difference between character data in a CDATA section and character data in standard syntax where, for example, "<" and "&" are represented by "&lt;" and "&amp;", respectively.
+
+
+
+
+38
 Accounting
 Verifiable Information: Information on the financial statements must be based on sufficient evidence that can be substantiated and provides a reliable basis for evaluating the firm and its management.
 
 
 
 
-44
-Security + 
-The kind of UPS that’s probably the most complex and the most expensive is the online, or what is called the double conversion, UPS. This UPS is always online and always providing power to your devices. And if the power does go out, there’s no switching process, because you’re already on battery power.
+39
+Security+
+OpenSSL
+	A toolkit for crypto libraries for SSL/TLS
+		build certificates, manage SSL/TLS communication
+	Create X.509 certificates
+		Manage certificate signing requests (CSRs) and Certificate revocations lists (CRLs)
 
 
 
 
-45
+40
+Security+
+Fiber optic media is least susceptible to stealing information using wire taps. UTP and STP are the most susceptible to vampire taps.
+
+
+
+
+41
 UiPath Platform 2022.10
 Projects built with Studio Web are by default marked as Cross-platform. This means that they can be edited and run from any version of Studio (Studio Web, StudioX, Studio). StudioX now has the ability to create Cross-Platform projects. This creates compatibility between Web and Desktop projects.
 
 
 
 
-46
-Security+
-SYN attacks exploit the TCP three-way handshake and overload the servers, resulting in authorized users being denied access to network resources. The attacker uses a spoofed IP address not in use on the Internet and sends multiple SYN packets to the target machine.
-
-
-
-
-47
-Security+
-A power distribution unit (PDU) is a device fitted with multiple outputs designed to distribute electric power, especially to racks of computers and networking equipment located within a data center.[1] Data centers face challenges in power protection and management solutions. This is why many data centers rely on PDU monitoring to improve efficiency, uptime, and growth
-[Power Redundancy – SY0-601 CompTIA Security+ : 2.5]
-
-
-
-
-48
+42
 Security+
 curl
 	Client URL
@@ -343,65 +368,7 @@ curl
 
 
 
-49
-Security +
-Vulnerability feeds - Automated vulnerability notifications
-	National Vulnerability Database (https://nvd.nist.gov)
-	CVE Database Feeds (https://cve.mitre.org)
-	Third-party feeds
-		Additional vulnerability coverage
-
-
-
-
-50
-Security+
-OpenSSL
-	Message digests
-		support for many hashing protocols
-	Encryption/decryption
-		SSL/TLS for services
-
-
-
-
-51
-UiPath Process Mining
-The following points are covered in the Detailed Assessment 
-
-	The Automation Goal (cost, quality, productivity)
-	The Environmental Stability - changes of the process and/or of the applications
-	The Process Volumetry
-	The Applications used
-
-
-
-
-52
-Accounting
-Entity Concept: The principle that requires separation of the transactions of each business or person from those of other organizations or individuals. For example, when a compnay is owned by one person, the personal finances of the individual who owns the company are not included on the company's financial statements.
-
-
-
-
-53
-Security+
-WinHex
-	Disk Cloning - Drive replication
-	Secure wipe - Hard drive cleaning
-	much more - a full-featured forensics tool
-
-
-
-
-54
-Security+
-Fiber optic media is least susceptible to stealing information using wire taps. UTP and STP are the most susceptible to vampire taps.
-
-
-
-
-55
+43
 Accounting
 Accounting Equation: THe formula that depitcts teh relationships of the various elements of the Balance Sheet to each other:
 
@@ -413,43 +380,262 @@ Accounting Equation: THe formula that depitcts teh relationships of the various 
 
 
 
-56
-Security+
-The rainbow table in a rainbow table attack refers to a precomputed table that contains the password hash value for each plain text character used during the authentication process. If hackers gain access to the list of password hashes, they can crack all passwords very quickly with a rainbow table.
-
-
-
-
-57
-Security+
-dd
-	A reference to the DD command in IBM mainframe JCL (Job control Language)
-		Data Definition (ASCII to EBCDIC converter)
-	Create a bit-by-bit copy of a drive
-		Used by many forensics tools
-
-
-
-
-58
+44
 Accounting
-Recognition Principle: Revenue is recorded at the point of the transfer of the merchandise or service, and not at the point of receiving the cash. Once a service is provided for which a charge has been incurred, that service should be shown on the financial statements regardless of whether money has actually changed hands.
+Going Concern Principle: THis principle assumes that ac company will continue in business into the future. Without this assumption, most of the accounting information could not be presented in the Financial Statements since we are alwasy amking assumptions (e.g. what the life of a Long-Term Asset is).
 
 
 
 
-59
+45
+Accounting
+Materiality Principle: This principle states that an item should only be included on the Balance aSheet if it would change any decisions of a statement user. For example, a multimillion dollar donating $100 to charity, this information would not change any decision that management or the owner would make. The expense should be recorded under "miscellaneous expense"
+
+
+
+
+46
+Accounting
+Obtainable Information: Information reported in financial statements must be accessible in a timely manner without an unreasonable expenditure of resources—for example, time, effort, and money—to be included in the financial statements.
+
+
+
+
+47
+UiPath CitDev Lesson
+Which of the following contains a pattern?
+	Downloading all email attachments received in the past week from automation-first@uipath.com
+	All the spreadsheets must have columns E and D removed
+	Using the same set of credentials acoss applications
+	NOT
+	Sending an email to citizen-developer@uipath.com
+	Downloading a report in the Downloads folder
+
+
+
+
+48
+Accounting
+Historical Cost Principle: According to this rule, most Assets and Liabilities should be represented on the Balance Sheet at the amount that was paid to acquire the Asset, or for the Liabilities, at the amount that was contracted to be paid in the future. No account is taken for either inflation or changing value of the Assets over time.
+
+
+
+
+1
 UiPath Platform 2022.10
-Which of the following ML models are available only on cloud?
-
-Signature Matching
+Hootsuite is a social media management platform. The system's user interface takes the form of a dashboard, and supports social network integrations for Twitter, Facebook, Instagram, LinkedIn, Pinterest, YouTube and TikTok.
 
 
 
 
-60
-Accounting
-Relevant Information: Information reported on financial statements must be relevant in that it helps statement users to estimate the value of a firm and/or evaluate the firm’s management. Not all information about a company is relevant to this decision-making process.
+2
+UiPath Platform 2022.10
+The Connector Builder will be housed in the Integration Service. It enables you to:
+
+Create and use a custom connector in Studio.
+Use custom connectors from the Studio Web.
+Publish custom connectors and share them among users
+
+
+
+
+3
+UiPath Platform 2022.10
+Cisco Webex Teams is a collaboration solution that keeps people and teamwork connected, bringing together messaging, file sharing, video meetings, white boarding, calling, and other tools used to streamline teamwork and achieve tangible results. 
+
+Cisco Webex Teams Activities can be used to automate user and room management, messaging, file sharing, and other collaboration tasks.
+
+
+
+
+4
+UiPath Platform 2022.10
+Hubspot Marketing Hub provides tools to help your marketing department. Integrates seamlessly with Hubspot CRM to help your marketing team draw in and nurture more qualified leads.
+
+With HubSpot Marketing Activities (Preview), you can create automated content creation, email campaign management, and analytics and data reporting tasks.
+
+
+
+
+5
+UiPath Platform 2022.10
+The current release (2022.10) is the last one in which Orchestrator supports classic folders. The most important thing we're bringing now is the Classic to Modern migration tool. Other Orchestrator improvements include more granular priorities for jobs, processes and triggers, revised alerts and a better EDR protection of robots, powered by CrowdStrike.
+
+
+
+
+6
+Accounting 
+General Ledger Accounts (GLs) are account numbers used to categorize types of financial transactions. Most commonly used GLs are revenues, expenses and transfers.
+
+
+
+
+7
+UiPath Platform 2022.10
+
+
+
+
+
+8
+UiPath Platform 2022.10
+
+
+
+
+
+9
+UiPath Platform 2022.10
+
+
+
+
+
+10
+UiPath Platform 2022.10
+
+
+
+
+
+11
+UiPath Platform 2022.10
+
+
+
+
+
+12
+UiPath Platform 2022.10
+
+
+
+
+
+13
+UiPath Platform 2022.10
+
+
+
+
+
+14
+UiPath Platform 2022.10
+
+
+
+
+
+15
+UiPath Platform 2022.10
+
+
+
+
+
+16
+UiPath Platform 2022.10
+
+
+
+
+
+17
+UiPath Platform 2022.10
+
+
+
+
+
+18
+UiPath Platform 2022.10
+
+
+
+
+
+19
+UiPath Platform 2022.10
+
+
+
+
+
+20
+UiPath Platform 2022.10
+
+
+
+
+
+21
+UiPath Platform 2022.10
+
+
+
+
+
+22
+UiPath Platform 2022.10
+
+
+
+
+
+23
+UiPath Platform 2022.10
+
+
+
+
+
+24
+UiPath Platform 2022.10
+
+
+
+
+
+25
+UiPath Platform 2022.10
+
+
+
+
+
+26
+UiPath Platform 2022.10
+
+
+
+
+
+27
+UiPath Platform 2022.10
+
+
+
+
+
+28
+UiPath Platform 2022.10
+
+
+
+
+
+29
+UiPath Platform 2022.10
+
+
+
+
+
+30
+UiPath Platform 2022.10
+
+
 
 
 
