@@ -1,58 +1,5 @@
 
 
-7
-Accounting
-Financial Statements
-Reports prepared by companies on the financial status of their business; examples are
-
-	Balance Sheets
-	Income Statements
-	Statement of Cash Flow
-	Statement of Retained earnings
-
-
-
-
-8
-Security +
-Vulnerability feeds - Automated vulnerability notifications
-	National Vulnerability Database (https://nvd.nist.gov)
-	CVE Database Feeds (https://cve.mitre.org)
-	Third-party feeds
-		Additional vulnerability coverage
-
-
-
-
-9
-Accounting
-Consistnecy: Practices and methods for presentation on the financial statements should be the same year to year and process to process. If for any reason the company and its accountants decide to change the method of presentation for any item, it must present a footnote explaining why the methods were changed.
-
-
-
-
-10
-Security+
-A power distribution unit (PDU) is a device fitted with multiple outputs designed to distribute electric power, especially to racks of computers and networking equipment located within a data center.[1] Data centers face challenges in power protection and management solutions. This is why many data centers rely on PDU monitoring to improve efficiency, uptime, and growth
-[Power Redundancy – SY0-601 CompTIA Security+ : 2.5]
-
-
-
-
-11
-Accounting
-Recognition Principle: Revenue is recorded at the point of the transfer of the merchandise or service, and not at the point of receiving the cash. Once a service is provided for which a charge has been incurred, that service should be shown on the financial statements regardless of whether money has actually changed hands.
-
-
-
-
-12
-Security + 
-The kind of UPS that’s probably the most complex and the most expensive is the online, or what is called the double conversion, UPS. This UPS is always online and always providing power to your devices. And if the power does go out, there’s no switching process, because you’re already on battery power.
-
-
-
-
 13
 Accounting
 Quantifiable Information: Information is easier to understand and use if it is quantified. However, when the information cannot be quantified but is still relevant to the users of the financial statements, it must be shown in the financial statements in narrative form in the footnotes.
