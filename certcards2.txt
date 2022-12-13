@@ -390,169 +390,211 @@ General Ledger Accounts (GLs) are account numbers used to categorize types of fi
 
 
 
+1
+Security+
+
+
+
+
+
+2
+Security+
+
+
+
+
+
+3
+Security+
+
+
+
+
+
+4
+Security+
+
+
+
+
+
+5
+Security+
+
+
+
+
+
+6
+Security+
+
+
+
+
+
 7
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 8
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 9
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 10
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 11
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 12
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 13
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 14
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 15
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 16
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 17
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 18
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 19
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 20
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 21
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 22
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 23
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 24
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 25
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 26
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 27
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 28
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 29
-UiPath Platform 2022.10
+Security+
 
 
 
 
 
 30
-UiPath Platform 2022.10
+Security+
 
 
 
