@@ -1,16 +1,4 @@
 
-6
-UiPath Process Mining
-Which of the following information is requred when submitting an employee-driven idea?
-	How rule-based the process is
-	Are there expected changes in the process
-	What type is the input
-	NOT
-	The number of people involved in the as is process 
-	Estimated time saved by automating
-
-
-
 
 7
 Accounting
