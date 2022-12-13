@@ -392,63 +392,110 @@ General Ledger Accounts (GLs) are account numbers used to categorize types of fi
 
 1
 Security+
-
+Digital forensics
+	Collect and protect information relating to an intrusion
+		Many different data sources and protection mechanisms
+	RFC 3227 - Guidelines for Evidence Collection and Archiving
+		good set of best practices
+	3 stages
+		Acquisition
+		Analysis
+		Reporting
 
 
 
 
 2
 Security+
-
+Legal hold
+	A legal technique to preserve relevant information
+		Prepare for impending litigateion
+		Initiated by legal counsel
+	Hold notification
+		Custodians are instructed to preserve data
+	Separate repository for electronically stored information (ESI)
 
 
 
 
 3
 Security+
-
+Admissibility
+	Not all data can be used in a court of law
+		Different rules in different jurisdictions
+	Legal authorization
+		Even if you can access the data, are you authorized to?
 
 
 
 
 4
 Security+
-
+Chain of custody
+	Everyone who contacts the evidence
+		Hash the data, to ensure it wasn't tampered with
+	Label and catalog everything
+		Digitally tag all items for ongoing documentation
+		Seal and store
 
 
 
 
 5
 Security+
-
+Recording time offsets
+	The time zone determines how the time is displayed
+		Document the local device settings
+	Different file systems store timestamps differently
+		FAT: Time is stored in local time
+		NTFS: Time is stored in GMT
 
 
 
 
 6
 Security+
-
+Reports of security event
+	Document the findings for internal use, legal proceedings, etc
+	Sections
+		Summary information
+		Detailed explanation of data acquisition
+		The findings
+		Conclusion
 
 
 
 
 7
 Security+
-
+GDPR - General Data Protection Regulation
+	European Union regulation
+		Data protection and privacy for individuals in the EU
+		Name, address, photo, email address, bank details, posts on social networking sites, medical information, a computer's IP, etc.
+	Controls export of personal data
+		Users can decide where their data goes
 
 
 
 
 8
 Security+
-
+Payment Card Industry Data Security Standard (PCI DSS)
+	3/6 control objectives:
+		Build and maintain a secure network and systems
+		Protect cardholder data
+		Maintain a vulnerability management solution (patching!)
 
 
 
 
 9
 Security+
-
+Payment Card Industry Data Security Standard (PCI DSS)
+	3/6 control objectives:
+		Implement strong access control measures
+		Regularly monitor and test networks
+		Maintain an information security policy
 
 
 
