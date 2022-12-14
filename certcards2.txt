@@ -502,7 +502,12 @@ Payment Card Industry Data Security Standard (PCI DSS)
 
 10
 Security+
-
+Configuration management
+	Identify and document hardware and software settings
+		Manage the security when changes occur
+	Rebuild those systems if a disaster occurs
+		Documentation and processes will be critical
+		Should be able to rebuild everything from the documentation
 
 
 
