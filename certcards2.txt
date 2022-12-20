@@ -1,48 +1,5 @@
 
 
-11
-UiPath Platform 2022.10
-Projects built with Studio Web are by default marked as Cross-platform. This means that they can be edited and run from any version of Studio (Studio Web, StudioX, Studio). StudioX now has the ability to create Cross-Platform projects. This creates compatibility between Web and Desktop projects.
-
-
-
-
-12
-Security+
-Flavors of traceroute
-	Windows commonly sends ICMP echo requests
-		Receives ICMP time exceeded messages and an ICMP echo reply from final/destination device
-		Unfortunately, outgoing ICMP is commonly filtered
-	IOS devices send UDP datagrams over port 33434
-
-
-
-
-13
-Security+
-hping
-	TCP/IP packet assembler/analyzer
-		A ping that can send almost anything
-	Ping a device with ICMP, TCP, UDP
-		#hping3 --destport 80 10.1.10.1
-	Sends crafted frames, modifying all IP, TCP, UDP, and ICMP values
-
-
-
-
-14
-Accuity
-Wolters Kluwer is a global company that provides information, software, and services to professionals in various industries, including healthcare, tax and accounting, and legal. The company was founded in 1836 and is headquartered in Alphen aan den Rijn, Netherlands. Some of the company's well-known brands include CCH, ProView, and OneSumX.
-
-
-
-
-15
-Accounting
-Balance sheet: This financial statement is a listing of the Assets, Liabilities, and Owner's equity. THe relationship between these items are represented by the accounting equation.
-
-
-
 
 16
 UiPath Platform 2022.10
