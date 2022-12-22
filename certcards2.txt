@@ -1,49 +1,6 @@
 
 
 
-16
-UiPath Platform 2022.10
-Hootsuite is a social media management platform. The system's user interface takes the form of a dashboard, and supports social network integrations for Twitter, Facebook, Instagram, LinkedIn, Pinterest, YouTube and TikTok.
-
-
-
-
-17
-Security+
-WinHex
-	Disk Cloning - Drive replication
-	Secure wipe - Hard drive cleaning
-	much more - a full-featured forensics tool
-
-
-
-
-18
-UiPath Platform 2022.10
-The current release (2022.10) is the last one in which Orchestrator supports classic folders. The most important thing we're bringing now is the Classic to Modern migration tool. Other Orchestrator improvements include more granular priorities for jobs, processes and triggers, revised alerts and a better EDR protection of robots, powered by CrowdStrike.
-
-
-
-
-19
-Security+
-GDPR - General Data Protection Regulation
-	European Union regulation
-		Data protection and privacy for individuals in the EU
-		Name, address, photo, email address, bank details, posts on social networking sites, medical information, a computer's IP, etc.
-	Controls export of personal data
-		Users can decide where their data goes
-
-
-
-
-20
-Accounting
-Historical Cost Principle: According to this rule, most Assets and Liabilities should be represented on the Balance Sheet at the amount that was paid to acquire the Asset, or for the Liabilities, at the amount that was contracted to be paid in the future. No account is taken for either inflation or changing value of the Assets over time.
-
-
-
-
 21
 Accounting
 Materiality Principle: This principle states that an item should only be included on the Balance aSheet if it would change any decisions of a statement user. For example, a multimillion dollar donating $100 to charity, this information would not change any decision that management or the owner would make. The expense should be recorded under "miscellaneous expense"
@@ -227,6 +184,8 @@ OpenSSL
 
 
 39
+Accounting
+Quantifiable Information: Information is easier to understand and use if it is quantified. However, when the information cannot be quantified but is still relevant to the users of the financial statements, it must be shown in the financial statements in narrative form in the footnotes.
 
 
 
@@ -377,10 +336,6 @@ Publish custom connectors and share them among users
 
 
 
-
-55
-Accounting
-Quantifiable Information: Information is easier to understand and use if it is quantified. However, when the information cannot be quantified but is still relevant to the users of the financial statements, it must be shown in the financial statements in narrative form in the footnotes.
 
 
 
