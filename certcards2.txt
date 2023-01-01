@@ -459,14 +459,24 @@ Data classifications
 
 15
 Security+
-
+Data minimization
+	Minimal data collection
+		only collect and retain necessary data
+	Included in many regulations
+		HIPAAA has a "Minimum Necessary" rule
+		GDPR "Personal data shall be adequate, relevant and not excessive in relation to the purpose or puroses for which they are processed"
 
 
 
 
 16
 Security+
-
+Data roles
+	Data controller
+		Manages the purposes and means by which personal data is processed
+	Data processor
+		Processes data on behalf of  the data controller
+		Often a third party or different group
 
 
 
