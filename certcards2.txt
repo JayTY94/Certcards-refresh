@@ -286,4 +286,213 @@ Publish custom connectors and share them among users
 
 
 
+1
+Security+
+Product support lifetime
+	End of life (EOL)
+		Manufacturer stops selling the product
+		May continue to support the product
+	Eend of service life (EOSL)
+		Manufacturer stops selling the product
+		Support is no longer available for the product
+	
+
+
+
+
+2
+Security+
+Credential management
+	Passwords must not be embedded int he application
+		Everything needs to reside on the server, not the client
+	Communication across the network should be encrypted
+		Authentication traffic should be impossible to see.
+
+
+
+
+3
+Security+
+Service accounts
+	Used exclusively by services running on a computer
+		No interactive/user access (ideally)
+		Web server, database server, etc
+	Access can be defined for a specific service
+		Web server rights and permissions will be different than those of a database server
+
+
+
+
+4
+Security+
+Risk Assessments
+	External threats
+		Outside the organizations: Hacker groups, former employees
+	Internal threats
+		Employees and partners
+	Legacy systems
+		May not be supported by manufacturer
+		Depending on teh age, may not be easily accessible
+
+
+
+
+5
+Security+
+Multi-party risk
+	May 2019 - American Medical Collection Agency
+		Provide debt collection for many different organizations
+		Data breach disclosed personal information on 24 million individuals
+		23 health care organizations affected by single breach
+
+
+
+
+6
+Security+
+Evaluating risk
+	Risk register
+		Every project has a plan, but also has risk
+		Identify and document the risk associated wtih every step
+		Apply possible solutions to identified risks
+		Monitor the results
+
+
+
+
+7
+Security+
+Evaluating risk
+	Risk matrix/risk heat map
+		View the results fo the risk assessment
+		Visually identify risk based on color
+		Combines the likely hood of an event with the potential impact
+		Assists with making strategic decisions
+
+
+
+
+8
+Security+
+Audit risk model
+	Inherent risk
+		Impact + likelyhood
+		Risk that exists in the absense of controls
+	Residual risk
+		Inerhent risk + control effectiveness
+		Risk that exists after controls have been considered
+
+
+
+
+9
+Security+
+Quantitative risk assessment
+	Likelyhood
+		Annualized Rate of Occurrence (ARO)
+		How likely is it that a hurricane will hit? In Montana? Florida?
+	Single Loss Expectancy (SLE)
+		What is the monetary loss if a single event occurs?
+
+
+
+
+10
+Security+
+Quantitative risk assessment
+	Annualized Loss Expectancy (ALE)
+		ARO x SLE
+		Seven laptops stolen per year (ARO) * $1000 (SLE) = $7k/year
+	THe business impact can be more than montetary
+		Quantitative vs Qualitative
+
+
+
+
+11
+Security+
+Privacy impact assessment (PIA)
+	Almost everything can affect privacy
+		New business relationships, product updates, website features, service offerings
+	Privacy risk needs to be identified in each initiative
+		How could the process compromise customer privacy?
+
+
+
+
+12
+Security+
+Privacy Impact Assessment (PIA)
+	Advantages
+		Fix privacy issues before they become a problem
+		Provides evidence of a focus on privacy
+		Avoid data breach
+		Shows the importance of privacy to everyone
+
+
+
+
+13
+Security+
+Data classifications
+	Public/Unclassified
+		No restrictions on viewing the data
+	Private/Classified/Restricted/Internal use only
+		Restricted access, may require non-disclosure agreement
+
+
+
+
+
+14
+Security+
+Data classifications
+	Sensitive
+		Intellectual property, PII, PHI
+	Confidential
+		Very sensitive, must be approved to view
+	Critical
+		Data should always be available
+
+
+
+
+15
+Security+
+
+
+
+
+
+16
+Security+
+
+
+
+
+
+17
+Security+
+
+
+
+
+
+18
+Security+
+
+
+
+
+
+19
+Security+
+
+
+
+
+
+20
+Security+
+
 
