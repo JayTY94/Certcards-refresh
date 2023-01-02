@@ -483,26 +483,45 @@ Data roles
 
 17
 Security+
-
+Public Key Infrastructure (PKI)
+	Policies, procedures, hardware, software, people
+		Digital certificates: Create, distribute, manage, store revoke
+	Also refers to the binding of public keys to people or devices
+		The certificate authority
 
 
 
 
 18
 Security+
-
+The key management lifecycle
+	Key Generation
+		Create a key with the requested strength using the proper cypher
+	Certificate Generation
+		Allocate the key to a user
+	Distribution
+		Make the key available to the user
 
 
 
 
 19
 Security+
-
+The key management lifecycle
+	Storage
+		Securely store and protect against unauthorized use
+	Revocation
+		Manage keys that have been compromised
+	Experiation
+		A certificate mya only have a certain "shelf life"
 
 
 
 
 20
 Security+
+
+
+
 
 
