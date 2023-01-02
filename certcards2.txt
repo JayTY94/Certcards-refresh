@@ -520,8 +520,222 @@ The key management lifecycle
 
 20
 Security+
+Commercial certificate authorities
+	Built into your browser
+		Any browser
+	Purchase your web site certificate
+		It will be trusted by everyone's browser
 
 
+
+
+
+21
+Security+
+Commercial certificate authorities
+	Create a key pair, send the public key to a CA to be signed
+		A certificate signing request (CSR)
+	May provide different levels of trust and additional feaures
+		Add a new "tag" to your website
+
+
+
+
+
+1
+Security+
+Private certificate authorities
+	You are your own CA
+		Build it in-house
+		Your devices must trust the internal CA
+	Needed for medium-to-large organizations
+		Many web servers and privacy agreements
+	Implement as part of your overall computing strategy with Windows Certificate Sercices, OpenCA
+
+
+
+
+2
+Security+
+PKI trust relationships
+	Single CA
+		Everyone receives their certificates from one authority
+	Hierarchical
+		Single CA issues certs to intermediate CAs
+		Distributes the cert management load
+		Easier to deal with the revocation of an intermediate CA than the root CA
+
+
+
+
+3
+Security+
+Registration authority (RA)
+	The entity requesting the certificate needs to be verified
+		The RA identifies and authenticate the requester
+	Approval or rejection
+		The foundation of trust in this model
+	Also responsible for revocation
+		Administratively revoked or by request
+
+
+
+
+4
+Security+
+Important certificate attributes
+	Common Name (CN)
+		the FQDN for the certificate
+	Subject alternative name (SAN)
+		Additional host names for the cert
+
+
+
+
+
+5
+Security+
+Important certificate attributes
+	Expiration
+		Limit exposure to compromise
+		398 day browser limit (13 months)
+
+
+
+
+6
+Security+
+Get revocation details to the browser
+	Online Certificate Status Protocol (OCSP)
+		The browser can check certificate revocation
+	Messages usually sent to an OCSP responder via HTTP
+		Easy to support over internet links
+		More efficient than downloading large CRLs
+
+
+
+
+7
+Security+
+Key revocation
+	Certificate revocation list (CRL)
+		Maintained by teh certificate authority (CA)
+		May contian many revocaitons in a large file
+	Many different reasons	
+		Changes all the time
+
+
+
+
+8
+Security+
+Key revocation
+	April 2014 - CVE-2014-0160
+		Heartbleed
+		OpenSSL flaw put the private key of affected web servers at risk
+		OpenSSL was patched, every web server certificate was replaced
+		Older certificates were moved to the CRL
+
+
+
+
+9
+Security+
+Web server SSL certificates
+	Domain validation certificate (DV)
+		Owner of the certificate has some control over a DNS domain
+
+
+
+
+10
+Security+
+Web server SSL certificate
+	Extended validation certificate (EV)
+		Additional checks have verified the certificate owner's identity
+		Borwsers used to show a green name on the address bar
+		Promoting the use of SSL is now outdated
+
+
+
+
+11
+Security+
+Certificate file formats
+	X.509 digital certificates
+		The structure of the certification is standardized
+		The format of te actual certificate file can take many forms
+
+
+
+
+12
+Security+
+Certificate file forms
+	There are many certificate file formats
+		You can convert between many of the forats
+		Use openssl or a siilar application to view the certificat contents
+
+
+
+
+13
+Security+
+Distinguished Encoding Rules (DER)
+	Format designed to transfer syntax for data structures
+		A very specific encoding format
+		Perfect for an X.509 certificate
+	Binary format - Not human readable
+	A common format
+		Used across many platofrms, often with Java certificates
+
+
+
+
+14
+Security+
+
+
+
+
+
+15
+Security+
+
+
+
+
+
+16
+Security+
+
+
+
+
+
+17
+Security+
+
+
+
+
+
+18
+Security+
+
+
+
+
+
+19
+Security+
+
+
+
+
+
+20
+Security+
 
 
 
