@@ -1,43 +1,6 @@
 
 
 
-8
-Security+
-Risk Assessments
-	External threats
-		Outside the organizations: Hacker groups, former employees
-	Internal threats
-		Employees and partners
-	Legacy systems
-		May not be supported by manufacturer
-		Depending on teh age, may not be easily accessible
-
-
-
-
-9
-Security+
-Web server SSL certificate
-	Extended validation certificate (EV)
-		Additional checks have verified the certificate owner's identity
-		Borwsers used to show a green name on the address bar
-		Promoting the use of SSL is now outdated
-
-
-
-
-10
-Security+
-Product support lifetime
-	End of life (EOL)
-		Manufacturer stops selling the product
-		May continue to support the product
-	Eend of service life (EOSL)
-		Manufacturer stops selling the product
-		Support is no longer available for the product
-
-
-
 11
 Security+
 Key revocation
