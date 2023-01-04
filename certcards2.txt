@@ -1,15 +1,4 @@
-
-
-36
-UiPath Platform 2022.10
-Hubspot Marketing Hub provides tools to help your marketing department. Integrates seamlessly with Hubspot CRM to help your marketing team draw in and nurture more qualified leads.
-
-With HubSpot Marketing Activities (Preview), you can create automated content creation, email campaign management, and analytics and data reporting tasks.
-
-
-
-
-37
+1
 UiPath Process Mining
 The following points are covered in the Detailed Assessment
 
@@ -21,83 +10,37 @@ The following points are covered in the Detailed Assessment
 
 
 
-38
-Security+
-OpenSSL
-	Message digests
-		support for many hashing protocols
-	Encryption/decryption
-		SSL/TLS for services
-
-
-
-
-39
+2
 Accounting
 Quantifiable Information: Information is easier to understand and use if it is quantified. However, when the information cannot be quantified but is still relevant to the users of the financial statements, it must be shown in the financial statements in narrative form in the footnotes.
 
 
 
 
-
-40
-Accounting
-Relevant Information: Information reported on financial statements must be relevant in that it helps statement users to estimate the value of a firm and/or evaluate the firm’s management. Not all information about a company is relevant to this decision-making process.
-
-
-
-
-41
+3
 Security+
-Legal hold
-	A legal technique to preserve relevant information
-		Prepare for impending litigateion
-		Initiated by legal counsel
-	Hold notification
-		Custodians are instructed to preserve data
-	Separate repository for electronically stored information (ESI)
+Data minimization
+	Minimal data collection
+		only collect and retain necessary data
+	Included in many regulations
+		HIPAAA has a "Minimum Necessary" rule
+		GDPR "Personal data shall be adequate, relevant and not excessive in relation to the purpose or puroses for which they are processed"
 
 
 
 
-42
+4
 Security+
-Digital forensics
-	Collect and protect information relating to an intrusion
-		Many different data sources and protection mechanisms
-	RFC 3227 - Guidelines for Evidence Collection and Archiving
-		good set of best practices
-	3 stages
-		Acquisition
-		Analysis
-		Reporting
+WinHex
+	A universal hexadecimal editor
+		Windows OS
+	Edit disks, files, RAM
+		Includes data recovery features
 
 
 
 
-43
-Accounting
-Corporations
-Businesses that are given the right to exist by an individual state in the US. With this right to exist, the corporation is then allowed to sell stock. Those buying this stock become owners of the corporation.
-
-
-
-
-44
-Accounting
-Going Concern Principle: THis principle assumes that ac company will continue in business into the future. Without this assumption, most of the accounting information could not be presented in the Financial Statements since we are alwasy amking assumptions (e.g. what the life of a Long-Term Asset is).
-
-
-
-
-45
-Accounting
-Verifiable Information: Information on the financial statements must be based on sufficient evidence that can be substantiated and provides a reliable basis for evaluating the firm and its management.
-
-
-
-
-46
+5
 Security+
 Reports of security event
 	Document the findings for internal use, legal proceedings, etc
@@ -110,122 +53,29 @@ Reports of security event
 
 
 
-47
+6
 Security+
-Domain name kiting is the practice of repeatedly registering and deleting a domain name so that in effect, the registrant can own the domain name without paying for it.
+Important certificate attributes
+	Common Name (CN)
+		the FQDN for the certificate
+	Subject alternative name (SAN)
+		Additional host names for the cert
 
 
 
 
-48
+7
 Security+
-WinHex
-	A universal hexadecimal editor
-		Windows OS
-	Edit disks, files, RAM
-		Includes data recovery features
+Data classifications
+	Public/Unclassified
+		No restrictions on viewing the data
+	Private/Classified/Restricted/Internal use only
+		Restricted access, may require non-disclosure agreement
 
 
 
 
-49
-Security+
-theHarvester
-	Gather OSINT
-		Open-Source Intelligence
-	Scrape information from google or bing
-		Find associated IP adresses
-	DNS brute force
-		Find those unknown hosts; vpn, chat, mail, partner, etc
-
-
-
-
-50
-Security+
-Fiber optic media is least susceptible to stealing information using wire taps. UTP and STP are the most susceptible to vampire taps.
-
-
-
-
-51
-UiPath Platform 2022.10
-Cisco Webex Teams is a collaboration solution that keeps people and teamwork connected, bringing together messaging, file sharing, video meetings, white boarding, calling, and other tools used to streamline teamwork and achieve tangible results.
-
-Cisco Webex Teams Activities can be used to automate user and room management, messaging, file sharing, and other collaboration tasks.
-
-
-
-
-52
-Accounting
-General Ledger Accounts (GLs) are account numbers used to categorize types of financial transactions. Most commonly used GLs are revenues, expenses and transfers.
-
-
-
-
-53
-Security+
-OpenSSL
-	A toolkit for crypto libraries for SSL/TLS
-		build certificates, manage SSL/TLS communication
-	Create X.509 certificates
-		Manage certificate signing requests (CSRs) and Certificate revocations lists (CRLs)
-
-
-
-
-54
-UiPath Platform 2022.10
-The Connector Builder will be housed in the Integration Service. It enables you to:
-
-Create and use a custom connector in Studio.
-Use custom connectors from the Studio Web.
-Publish custom connectors and share them among users
-
-
-
-
-
-
-1
-Security+
-Product support lifetime
-	End of life (EOL)
-		Manufacturer stops selling the product
-		May continue to support the product
-	Eend of service life (EOSL)
-		Manufacturer stops selling the product
-		Support is no longer available for the product
-	
-
-
-
-
-2
-Security+
-Credential management
-	Passwords must not be embedded int he application
-		Everything needs to reside on the server, not the client
-	Communication across the network should be encrypted
-		Authentication traffic should be impossible to see.
-
-
-
-
-3
-Security+
-Service accounts
-	Used exclusively by services running on a computer
-		No interactive/user access (ideally)
-		Web server, database server, etc
-	Access can be defined for a specific service
-		Web server rights and permissions will be different than those of a database server
-
-
-
-
-4
+8
 Security+
 Risk Assessments
 	External threats
@@ -239,90 +89,44 @@ Risk Assessments
 
 
 
-5
-Security+
-Multi-party risk
-	May 2019 - American Medical Collection Agency
-		Provide debt collection for many different organizations
-		Data breach disclosed personal information on 24 million individuals
-		23 health care organizations affected by single breach
-
-
-
-
-6
-Security+
-Evaluating risk
-	Risk register
-		Every project has a plan, but also has risk
-		Identify and document the risk associated wtih every step
-		Apply possible solutions to identified risks
-		Monitor the results
-
-
-
-
-7
-Security+
-Evaluating risk
-	Risk matrix/risk heat map
-		View the results fo the risk assessment
-		Visually identify risk based on color
-		Combines the likely hood of an event with the potential impact
-		Assists with making strategic decisions
-
-
-
-
-8
-Security+
-Audit risk model
-	Inherent risk
-		Impact + likelyhood
-		Risk that exists in the absense of controls
-	Residual risk
-		Inerhent risk + control effectiveness
-		Risk that exists after controls have been considered
-
-
-
-
 9
 Security+
-Quantitative risk assessment
-	Likelyhood
-		Annualized Rate of Occurrence (ARO)
-		How likely is it that a hurricane will hit? In Montana? Florida?
-	Single Loss Expectancy (SLE)
-		What is the monetary loss if a single event occurs?
+Web server SSL certificate
+	Extended validation certificate (EV)
+		Additional checks have verified the certificate owner's identity
+		Borwsers used to show a green name on the address bar
+		Promoting the use of SSL is now outdated
 
 
 
 
 10
 Security+
-Quantitative risk assessment
-	Annualized Loss Expectancy (ALE)
-		ARO x SLE
-		Seven laptops stolen per year (ARO) * $1000 (SLE) = $7k/year
-	THe business impact can be more than montetary
-		Quantitative vs Qualitative
+Product support lifetime
+	End of life (EOL)
+		Manufacturer stops selling the product
+		May continue to support the product
+	Eend of service life (EOSL)
+		Manufacturer stops selling the product
+		Support is no longer available for the product
 
 
 
 
 11
 Security+
-Privacy impact assessment (PIA)
-	Almost everything can affect privacy
-		New business relationships, product updates, website features, service offerings
-	Privacy risk needs to be identified in each initiative
-		How could the process compromise customer privacy?
 
 
 
 
 12
+Accounting
+Relevant Information: Information reported on financial statements must be relevant in that it helps statement users to estimate the value of a firm and/or evaluate the firm’s management. Not all information about a company is relevant to this decision-making process.
+
+
+
+
+13
 Security+
 Privacy Impact Assessment (PIA)
 	Advantages
@@ -334,51 +138,31 @@ Privacy Impact Assessment (PIA)
 
 
 
-13
-Security+
-Data classifications
-	Public/Unclassified
-		No restrictions on viewing the data
-	Private/Classified/Restricted/Internal use only
-		Restricted access, may require non-disclosure agreement
-
-
-
-
-
 14
 Security+
-Data classifications
-	Sensitive
-		Intellectual property, PII, PHI
-	Confidential
-		Very sensitive, must be approved to view
-	Critical
-		Data should always be available
+Evaluating risk
+	Risk matrix/risk heat map
+		View the results fo the risk assessment
+		Visually identify risk based on color
+		Combines the likely hood of an event with the potential impact
+		Assists with making strategic decisions
 
 
 
 
 15
 Security+
-Data minimization
-	Minimal data collection
-		only collect and retain necessary data
-	Included in many regulations
-		HIPAAA has a "Minimum Necessary" rule
-		GDPR "Personal data shall be adequate, relevant and not excessive in relation to the purpose or puroses for which they are processed"
+Domain name kiting is the practice of repeatedly registering and deleting a domain name so that in effect, the registrant can own the domain name without paying for it.
 
 
 
 
 16
 Security+
-Data roles
-	Data controller
-		Manages the purposes and means by which personal data is processed
-	Data processor
-		Processes data on behalf of  the data controller
-		Often a third party or different group
+Certificate file formats
+	X.509 digital certificates
+		The structure of the certification is standardized
+		The format of te actual certificate file can take many forms
 
 
 
@@ -395,56 +179,75 @@ Public Key Infrastructure (PKI)
 
 
 18
-Security+
-The key management lifecycle
-	Key Generation
-		Create a key with the requested strength using the proper cypher
-	Certificate Generation
-		Allocate the key to a user
-	Distribution
-		Make the key available to the user
+UiPath Platform 2022.10
+Cisco Webex Teams is a collaboration solution that keeps people and teamwork connected, bringing together messaging, file sharing, video meetings, white boarding, calling, and other tools used to streamline teamwork and achieve tangible results.
+
+Cisco Webex Teams Activities can be used to automate user and room management, messaging, file sharing, and other collaboration tasks.
 
 
 
 
 19
-Security+
-The key management lifecycle
-	Storage
-		Securely store and protect against unauthorized use
-	Revocation
-		Manage keys that have been compromised
-	Experiation
-		A certificate mya only have a certain "shelf life"
+UiPath Platform 2022.10
+The Connector Builder will be housed in the Integration Service. It enables you to:
+
+Create and use a custom connector in Studio.
+Use custom connectors from the Studio Web.
+Publish custom connectors and share them among users
 
 
 
 
 20
-Security+
-Commercial certificate authorities
-	Built into your browser
-		Any browser
-	Purchase your web site certificate
-		It will be trusted by everyone's browser
+UiPath Platform 2022.10
+Hubspot Marketing Hub provides tools to help your marketing department. Integrates seamlessly with Hubspot CRM to help your marketing team draw in and nurture more qualified leads.
 
+With HubSpot Marketing Activities (Preview), you can create automated content creation, email campaign management, and analytics and data reporting tasks.
 
 
 
 
 21
 Security+
-Commercial certificate authorities
-	Create a key pair, send the public key to a CA to be signed
-		A certificate signing request (CSR)
-	May provide different levels of trust and additional feaures
-		Add a new "tag" to your website
+Legal hold
+	A legal technique to preserve relevant information
+		Prepare for impending litigateion
+		Initiated by legal counsel
+	Hold notification
+		Custodians are instructed to preserve data
+	Separate repository for electronically stored information (ESI)
 
 
 
 
+22
+Security+
+Get revocation details to the browser
+	Online Certificate Status Protocol (OCSP)
+		The browser can check certificate revocation
+	Messages usually sent to an OCSP responder via HTTP
+		Easy to support over internet links
+		More efficient than downloading large CRLs
 
-1
+
+
+
+23
+Accounting
+Corporations
+Businesses that are given the right to exist by an individual state in the US. With this right to exist, the corporation is then allowed to sell stock. Those buying this stock become owners of the corporation.
+
+
+
+
+24
+Accounting
+Verifiable Information: Information on the financial statements must be based on sufficient evidence that can be substantiated and provides a reliable basis for evaluating the firm and its management.
+
+
+
+
+25
 Security+
 Private certificate authorities
 	You are your own CA
@@ -457,20 +260,7 @@ Private certificate authorities
 
 
 
-2
-Security+
-PKI trust relationships
-	Single CA
-		Everyone receives their certificates from one authority
-	Hierarchical
-		Single CA issues certs to intermediate CAs
-		Distributes the cert management load
-		Easier to deal with the revocation of an intermediate CA than the root CA
-
-
-
-
-3
+26
 Security+
 Registration authority (RA)
 	The entity requesting the certificate needs to be verified
@@ -483,105 +273,64 @@ Registration authority (RA)
 
 
 
-4
+27
 Security+
-Important certificate attributes
-	Common Name (CN)
-		the FQDN for the certificate
-	Subject alternative name (SAN)
-		Additional host names for the cert
+Audit risk model
+	Inherent risk
+		Impact + likelyhood
+		Risk that exists in the absense of controls
+	Residual risk
+		Inerhent risk + control effectiveness
+		Risk that exists after controls have been considered
 
 
 
 
-
-5
+28
 Security+
-Important certificate attributes
-	Expiration
-		Limit exposure to compromise
-		398 day browser limit (13 months)
+Digital forensics
+	Collect and protect information relating to an intrusion
+		Many different data sources and protection mechanisms
+	RFC 3227 - Guidelines for Evidence Collection and Archiving
+		good set of best practices
+	3 stages
+		Acquisition
+		Analysis
+		Reporting
 
 
 
 
-6
+29
+Accounting
+General Ledger Accounts (GLs) are account numbers used to categorize types of financial transactions. Most commonly used GLs are revenues, expenses and transfers.
+
+
+
+
+30
 Security+
-Get revocation details to the browser
-	Online Certificate Status Protocol (OCSP)
-		The browser can check certificate revocation
-	Messages usually sent to an OCSP responder via HTTP
-		Easy to support over internet links
-		More efficient than downloading large CRLs
+Credential management
+	Passwords must not be embedded int he application
+		Everything needs to reside on the server, not the client
+	Communication across the network should be encrypted
+		Authentication traffic should be impossible to see.
 
 
 
 
-7
+31
 Security+
-Key revocation
-	Certificate revocation list (CRL)
-		Maintained by teh certificate authority (CA)
-		May contian many revocaitons in a large file
-	Many different reasons	
-		Changes all the time
+Multi-party risk
+	May 2019 - American Medical Collection Agency
+		Provide debt collection for many different organizations
+		Data breach disclosed personal information on 24 million individuals
+		23 health care organizations affected by single breach
 
 
 
 
-8
-Security+
-Key revocation
-	April 2014 - CVE-2014-0160
-		Heartbleed
-		OpenSSL flaw put the private key of affected web servers at risk
-		OpenSSL was patched, every web server certificate was replaced
-		Older certificates were moved to the CRL
-
-
-
-
-9
-Security+
-Web server SSL certificates
-	Domain validation certificate (DV)
-		Owner of the certificate has some control over a DNS domain
-
-
-
-
-10
-Security+
-Web server SSL certificate
-	Extended validation certificate (EV)
-		Additional checks have verified the certificate owner's identity
-		Borwsers used to show a green name on the address bar
-		Promoting the use of SSL is now outdated
-
-
-
-
-11
-Security+
-Certificate file formats
-	X.509 digital certificates
-		The structure of the certification is standardized
-		The format of te actual certificate file can take many forms
-
-
-
-
-12
-Security+
-Certificate file forms
-	There are many certificate file formats
-		You can convert between many of the forats
-		Use openssl or a siilar application to view the certificat contents
-
-
-
-
-13
+32
 Security+
 Distinguished Encoding Rules (DER)
 	Format designed to transfer syntax for data structures
@@ -594,50 +343,250 @@ Distinguished Encoding Rules (DER)
 
 
 
-14
+33
 Security+
+Key revocation
+	April 2014 - CVE-2014-0160
+		Heartbleed
+		OpenSSL flaw put the private key of affected web servers at risk
+		OpenSSL was patched, every web server certificate was replaced
+		Older certificates were moved to the CRL
 
 
 
 
-
-15
+34
 Security+
+Quantitative risk assessment
+	Likelyhood
+		Annualized Rate of Occurrence (ARO)
+		How likely is it that a hurricane will hit? In Montana? Florida?
+	Single Loss Expectancy (SLE)
+		What is the monetary loss if a single event occurs?
 
 
 
 
-
-16
+35
 Security+
+Certificate file forms
+	There are many certificate file formats
+		You can convert between many of the forats
+		Use openssl or a siilar application to view the certificat contents
 
 
 
 
-
-17
+36
 Security+
+Data roles
+	Data controller
+		Manages the purposes and means by which personal data is processed
+	Data processor
+		Processes data on behalf of  the data controller
+		Often a third party or different group
 
 
 
 
-
-18
+37
 Security+
+OpenSSL
+	A toolkit for crypto libraries for SSL/TLS
+		build certificates, manage SSL/TLS communication
+	Create X.509 certificates
+		Manage certificate signing requests (CSRs) and Certificate revocations lists (CRLs)
 
 
 
 
-
-19
+38
 Security+
+Quantitative risk assessment
+	Annualized Loss Expectancy (ALE)
+		ARO x SLE
+		Seven laptops stolen per year (ARO) * $1000 (SLE) = $7k/year
+	THe business impact can be more than montetary
+		Quantitative vs Qualitative
 
 
 
 
-
-20
+39
 Security+
+Service accounts
+	Used exclusively by services running on a computer
+		No interactive/user access (ideally)
+		Web server, database server, etc
+	Access can be defined for a specific service
+		Web server rights and permissions will be different than those of a database server
+
+
+
+
+40
+Security+
+Web server SSL certificates
+	Domain validation certificate (DV)
+		Owner of the certificate has some control over a DNS domain
+
+
+
+
+41
+Security+
+Privacy impact assessment (PIA)
+	Almost everything can affect privacy
+		New business relationships, product updates, website features, service offerings
+	Privacy risk needs to be identified in each initiative
+		How could the process compromise customer privacy?
+
+
+
+
+42
+Security+
+Commercial certificate authorities
+	Built into your browser
+		Any browser
+	Purchase your web site certificate
+		It will be trusted by everyone's browser
+
+
+
+
+43
+Security+
+Commercial certificate authorities
+	Create a key pair, send the public key to a CA to be signed
+		A certificate signing request (CSR)
+	May provide different levels of trust and additional feaures
+		Add a new "tag" to your website
+
+
+
+
+44
+Security+
+Fiber optic media is least susceptible to stealing information using wire taps. UTP and STP are the most susceptible to vampire taps.
+
+
+
+
+45
+Security+
+The key management lifecycle
+	Key Generation
+		Create a key with the requested strength using the proper cypher
+	Certificate Generation
+		Allocate the key to a user
+	Distribution
+		Make the key available to the user
+
+
+
+
+46
+Security+
+PKI trust relationships
+	Single CA
+		Everyone receives their certificates from one authority
+	Hierarchical
+		Single CA issues certs to intermediate CAs
+		Distributes the cert management load
+		Easier to deal with the revocation of an intermediate CA than the root CA
+
+
+
+
+47
+Security+
+OpenSSL
+	Message digests
+		support for many hashing protocols
+	Encryption/decryption
+		SSL/TLS for services
+
+
+
+
+48
+Security+
+theHarvester
+	Gather OSINT
+		Open-Source Intelligence
+	Scrape information from google or bing
+		Find associated IP adresses
+	DNS brute force
+		Find those unknown hosts; vpn, chat, mail, partner, etc
+
+
+
+
+49
+Accounting
+Going Concern Principle: THis principle assumes that ac company will continue in business into the future. Without this assumption, most of the accounting information could not be presented in the Financial Statements since we are alwasy amking assumptions (e.g. what the life of a Long-Term Asset is).
+
+
+
+
+50
+Security+
+Evaluating risk
+	Risk register
+		Every project has a plan, but also has risk
+		Identify and document the risk associated wtih every step
+		Apply possible solutions to identified risks
+		Monitor the results
+
+
+
+
+51
+Security+
+The key management lifecycle
+	Storage
+		Securely store and protect against unauthorized use
+	Revocation
+		Manage keys that have been compromised
+	Experiation
+		A certificate mya only have a certain "shelf life"
+
+
+
+
+52
+Security+
+Important certificate attributes
+	Expiration
+		Limit exposure to compromise
+		398 day browser limit (13 months)
+
+
+
+
+53
+Security+
+Data classifications
+	Sensitive
+		Intellectual property, PII, PHI
+	Confidential
+		Very sensitive, must be approved to view
+	Critical
+		Data should always be available
+
+
+
+
+54
+Security+
+Key revocation
+	Certificate revocation list (CRL)
+		Maintained by teh certificate authority (CA)
+		May contian many revocaitons in a large file
+	Many different reasons	
+		Changes all the time
+
 
 
 
