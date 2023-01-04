@@ -1,77 +1,3 @@
-1
-UiPath Process Mining
-The following points are covered in the Detailed Assessment
-
-	The Automation Goal (cost, quality, productivity)
-	The Environmental Stability - changes of the process and/or of the applications
-	The Process Volumetry
-	The Applications used
-
-
-
-
-2
-Accounting
-Quantifiable Information: Information is easier to understand and use if it is quantified. However, when the information cannot be quantified but is still relevant to the users of the financial statements, it must be shown in the financial statements in narrative form in the footnotes.
-
-
-
-
-3
-Security+
-Data minimization
-	Minimal data collection
-		only collect and retain necessary data
-	Included in many regulations
-		HIPAAA has a "Minimum Necessary" rule
-		GDPR "Personal data shall be adequate, relevant and not excessive in relation to the purpose or puroses for which they are processed"
-
-
-
-
-4
-Security+
-WinHex
-	A universal hexadecimal editor
-		Windows OS
-	Edit disks, files, RAM
-		Includes data recovery features
-
-
-
-
-5
-Security+
-Reports of security event
-	Document the findings for internal use, legal proceedings, etc
-	Sections
-		Summary information
-		Detailed explanation of data acquisition
-		The findings
-		Conclusion
-
-
-
-
-6
-Security+
-Important certificate attributes
-	Common Name (CN)
-		the FQDN for the certificate
-	Subject alternative name (SAN)
-		Additional host names for the cert
-
-
-
-
-7
-Security+
-Data classifications
-	Public/Unclassified
-		No restrictions on viewing the data
-	Private/Classified/Restricted/Internal use only
-		Restricted access, may require non-disclosure agreement
-
 
 
 
@@ -112,9 +38,15 @@ Product support lifetime
 
 
 
-
 11
 Security+
+Key revocation
+	Certificate revocation list (CRL)
+		Maintained by teh certificate authority (CA)
+		May contian many revocaitons in a large file
+	Many different reasons	
+		Changes all the time
+
 
 
 
@@ -577,15 +509,6 @@ Data classifications
 
 
 
-
-54
-Security+
-Key revocation
-	Certificate revocation list (CRL)
-		Maintained by teh certificate authority (CA)
-		May contian many revocaitons in a large file
-	Many different reasons	
-		Changes all the time
 
 
 
