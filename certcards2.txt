@@ -492,7 +492,7 @@ A Cloud access security broker, or CASB, is cloud-hosted software or on-premises
 
 7
 Security+
- encrypt data as it is written to the disk. Each disk has a disk encryption key (DEK) that is set at the factory and stored on the disk. The disk uses the DEK to encrypt data as it writes, and then to decrypt the data as it is read from disk.
+Self-encrypting drives (SEDs) encrypt data as it is written to the disk. Each disk has a disk encryption key (DEK) that is set at the factory and stored on the disk. The disk uses the DEK to encrypt data as it writes, and then to decrypt the data as it is read from disk.
 
 
 
@@ -677,6 +677,13 @@ Moving laterally and attacking a host, virtual machine, or hypervisor is called 
 Security+
 VM sprawl is where a virtual machine is running out of resources.
 Privilege escalation occurs when someone has been given too many permissions.
+
+
+
+
+31
+Security+
+DES uses 56-bits, and AES goes up to 256 bits. These are both weak. Asymmetric encryption starts at around 1,024 bits.
 
 
 
