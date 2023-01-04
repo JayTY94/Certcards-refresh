@@ -444,3 +444,240 @@ Data classifications
 
 
 
+1
+Security+
+Continuous integration is the process whereby multiple software developers consolidate and test the code that they write to ensure that the different input codes do not conflict.
+
+
+
+
+
+
+2
+Security+
+Continuous monitoring is used to log any failures or security vulnerabilities suffered by the application so that steps can be taken to remedy them.
+
+
+
+
+
+3
+Security+
+Risky logins are where someone has logged in to a web application using a different device than the one that's normally used.
+
+
+
+
+4
+Security+
+Impossible time travel is where you are seen to log in in one location and then minutes later in another location that would be impossible to get to in time.
+
+
+
+
+
+5
+Security+
+Full-disk encryption (FDE) and self-encrypting drives (SED) encrypt data as it is written to the disk and decrypt data as it is read off the disk. FDE makes sense for laptops, which are highly susceptible to loss or theft. But FDE isn’t suitable for the most common risks faced in data center and cloud environments.
+
+
+
+
+6
+Security+
+A Cloud access security broker, or CASB, is cloud-hosted software or on-premises software or hardware that act as an intermediary between users and cloud service providers. The ability of a CASB to address gaps in security extends across software-as-a-service (SaaS), platform-as-a-service (PaaS), and infrastructure-as-a-service (IaaS) environments.
+
+
+
+
+7
+Security+
+ encrypt data as it is written to the disk. Each disk has a disk encryption key (DEK) that is set at the factory and stored on the disk. The disk uses the DEK to encrypt data as it writes, and then to decrypt the data as it is read from disk.
+
+
+
+
+8
+Security+
+With Self-encrypting drives (SEDs), the operation of the disk, and its encryption and decryption, is transparent to the users who are reading and writing data. This default encryption and decryption mode is referred to as secure erase mode. In secure erase mode, you do not need an authentication key or password to decrypt and read data. 
+
+
+
+
+9
+Security+
+Self-encrypting drives (SEDs) offer improved capabilities for an easy and speedy secure erase for situations when disks must be repurposed or returned for support or warranty reasons.
+
+
+
+
+
+
+10
+Security+
+ISO/IEC 27001 is the world’s best-known standard for information security management systems (ISMS) and their requirements. Additional best practice in data protection and cyber resilience are covered by more than a dozen standards in the ISO/IEC 27000 family.
+
+
+
+
+11
+Security+
+ISO 27101 deals with cybersecurity frameworks.
+ISO 27701 deals with privacy information management.
+
+
+
+
+12
+Security+
+ISO 27001 deals with security techniques for information security.
+ISO 28001 deals with security management for supply chains.
+
+
+
+
+13
+Security+
+Salespeople connect to many different networks, including at events and hotels, therefore their laptops are connected to an air-gapped computer called a dirty computer to scan for malware. They also need to check that any presentation material that they obtained from events does not contain malware. This is done before they can connect to the network to ensure security and that they don't import malware into the company.
+
+
+
+
+14
+Security+
+The Crossover Error Rate (CER) is where the False Rejection Rate (FRR) and the False Acceptance Rate (FAR) are equal. You would want to buy a biometric system with few errors.
+
+
+
+
+
+15
+Security+
+The False Rejection Rate (FRR) is where authorized users cannot access the system.
+The False Acceptance Rate (FAR) is where unauthorized users access your biometric system.
+
+
+
+
+16
+Security+
+Password spraying is where the attacker obtains the account name of company individuals by looking at the company’s website and then uses the same common passwords for each of them. 
+
+
+
+
+17
+Security+
+Shadow IT is someone that puts a device on your network without consent.
+
+An insider threat is a disgruntled employee who feels that they have been treated badly by the company.
+
+
+
+
+
+18
+Security+
+A dictionary attack can be spotted because it (potentially) uses words from a dictionary in alphabetical order. The best way to prevent dictionary password attacks is to use multifactor authentication as the dictionary attack is only a single factor.
+
+
+
+
+19
+Security+
+The data custodian is responsible for the storage, protection, and backing up of the data.
+
+The data owner is responsible for classifying data and deciding who can access the data.
+
+
+
+
+20
+Security+
+The data controller is responsible for investigating data breaches.
+
+The data steward is responsible for the quality and labeling of the data.
+
+
+
+
+21
+Security+
+The security administrator is responsible for giving access to data.
+
+The data controller is responsible for investigating data breaches.
+
+
+
+
+
+
+22
+Security+
+RAID 6 is a data storage approach that combines four or more hard drives into a single logical drive. Compared to individual data carriers, it boosts reliability of the system and read speeds. The basis for this is the combination of striping and parity, that also forms the basis of RAID level 5. It comes as little surprise then that RAID 6 is often referred to as “RAID 5 expansion”.
+
+
+
+
+
+
+23
+Security+
+ Wireless deauthentication is like a denial of service for a WAP that forces the client to attach to an evil twin that looks like the legitimate WAP. Once connected, the attacker can capture all of the information being sent through it. A sign of an evil twin is that internet access is slow but you cannot connect to the corporate network.
+
+
+
+
+24
+Security+
+Security Orchestration, Automation and Response (SOAR) refers to technologies that enable organizations to collect inputs monitored by the security operations team. For example, alerts from the SIEM system and other security technologies — where incident analysis and triage can be performed by leveraging a combination of human and machine power — help define, prioritize and drive standardized incident response activities. 
+
+
+
+
+25
+Security+
+Continuous validation is where the application meets the designed goals and is deemed fit for purpose.
+
+Continuous integration is the process where multiple software developers integrate their code to ensure that it is compatible.
+
+
+
+
+26
+Security+
+ISO 27701 deals with data privacy, unlike ISO 27001 which deals with security.
+
+ISO 31000 deals with risk management guidelines.
+
+
+
+
+27
+Security+
+ In order, the best ways to destroy paper waste are burning, followed by pulping, then shredding. 
+
+
+
+
+28
+Security+
+The best way to destroy media (disks) is by shredding, followed by pulverizing, and then degaussing.
+
+
+
+29
+Security+
+Moving laterally and attacking a host, virtual machine, or hypervisor is called VM escape. Moving laterally across a traditional network and attacking another host is called pivoting.
+
+
+
+
+30
+Security+
+VM sprawl is where a virtual machine is running out of resources.
+Privilege escalation occurs when someone has been given too many permissions.
+
+
+
+
