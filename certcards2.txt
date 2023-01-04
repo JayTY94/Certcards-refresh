@@ -1,38 +1,6 @@
 
 
 
-11
-Security+
-Key revocation
-	Certificate revocation list (CRL)
-		Maintained by teh certificate authority (CA)
-		May contian many revocaitons in a large file
-	Many different reasons	
-		Changes all the time
-
-
-
-
-
-12
-Accounting
-Relevant Information: Information reported on financial statements must be relevant in that it helps statement users to estimate the value of a firm and/or evaluate the firm’s management. Not all information about a company is relevant to this decision-making process.
-
-
-
-
-13
-Security+
-Privacy Impact Assessment (PIA)
-	Advantages
-		Fix privacy issues before they become a problem
-		Provides evidence of a focus on privacy
-		Avoid data breach
-		Shows the importance of privacy to everyone
-
-
-
-
 14
 Security+
 Evaluating risk
