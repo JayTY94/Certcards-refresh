@@ -1,36 +1,101 @@
-
-
-
-14
+1
 Security+
-Evaluating risk
-	Risk matrix/risk heat map
-		View the results fo the risk assessment
-		Visually identify risk based on color
-		Combines the likely hood of an event with the potential impact
-		Assists with making strategic decisions
+The data controller is responsible for investigating data breaches.
+
+The data steward is responsible for the quality and labeling of the data.
 
 
 
 
-15
+2
+Security+
+ISO 27701 deals with data privacy, unlike ISO 27001 which deals with security.
+
+ISO 31000 deals with risk management guidelines.
+
+
+
+
+3
+Security+
+Continuous monitoring is used to log any failures or security vulnerabilities suffered by the application so that steps can be taken to remedy them.
+
+
+
+
+4
 Security+
 Domain name kiting is the practice of repeatedly registering and deleting a domain name so that in effect, the registrant can own the domain name without paying for it.
 
 
 
 
-16
+5
 Security+
-Certificate file formats
-	X.509 digital certificates
-		The structure of the certification is standardized
-		The format of te actual certificate file can take many forms
+Impossible time travel is where you are seen to log in in one location and then minutes later in another location that would be impossible to get to in time.
 
 
 
 
-17
+6
+Security+
+Self-encrypting drives (SEDs) encrypt data as it is written to the disk. Each disk has a disk encryption key (DEK) that is set at the factory and stored on the disk. The disk uses the DEK to encrypt data as it writes, and then to decrypt the data as it is read from disk.
+
+
+
+
+7
+Security+
+ISO/IEC 27001 is the world’s best-known standard for information security management systems (ISMS) and their requirements. Additional best practice in data protection and cyber resilience are covered by more than a dozen standards in the ISO/IEC 27000 family.
+
+
+
+
+8
+Security+
+OpenSSL
+	Message digests
+		support for many hashing protocols
+	Encryption/decryption
+		SSL/TLS for services
+
+
+
+
+9
+Security+
+Fiber optic media is least susceptible to stealing information using wire taps. UTP and STP are the most susceptible to vampire taps.
+
+
+
+
+10
+Security+
+Self-encrypting drives (SEDs) offer improved capabilities for an easy and speedy secure erase for situations when disks must be repurposed or returned for support or warranty reasons.
+
+
+
+
+11
+Security+
+The Crossover Error Rate (CER) is where the False Rejection Rate (FRR) and the False Acceptance Rate (FAR) are equal. You would want to buy a biometric system with few errors.
+
+
+
+
+12
+Security+
+Data roles
+	Data controller
+		Manages the purposes and means by which personal data is processed
+	Data processor
+		Processes data on behalf of  the data controller
+		Often a third party or different group
+
+
+
+
+13
 Security+
 Public Key Infrastructure (PKI)
 	Policies, procedures, hardware, software, people
@@ -41,22 +106,65 @@ Public Key Infrastructure (PKI)
 
 
 
-18
-UiPath Platform 2022.10
-Cisco Webex Teams is a collaboration solution that keeps people and teamwork connected, bringing together messaging, file sharing, video meetings, white boarding, calling, and other tools used to streamline teamwork and achieve tangible results.
+14
+Security+
+Certificate file formats
+	X.509 digital certificates
+		The structure of the certification is standardized
+		The format of te actual certificate file can take many forms
 
-Cisco Webex Teams Activities can be used to automate user and room management, messaging, file sharing, and other collaboration tasks.
+
+
+
+15
+Security+
+Key revocation
+	April 2014 - CVE-2014-0160
+		Heartbleed
+		OpenSSL flaw put the private key of affected web servers at risk
+		OpenSSL was patched, every web server certificate was replaced
+		Older certificates were moved to the CRL
+
+
+
+
+16
+Security+
+ISO 27101 deals with cybersecurity frameworks.
+ISO 27701 deals with privacy information management.
+
+
+
+
+17
+Security+
+Privacy impact assessment (PIA)
+	Almost everything can affect privacy
+		New business relationships, product updates, website features, service offerings
+	Privacy risk needs to be identified in each initiative
+		How could the process compromise customer privacy?
+
+
+
+
+18
+Security+
+PKI trust relationships
+	Single CA
+		Everyone receives their certificates from one authority
+	Hierarchical
+		Single CA issues certs to intermediate CAs
+		Distributes the cert management load
+		Easier to deal with the revocation of an intermediate CA than the root CA
 
 
 
 
 19
 UiPath Platform 2022.10
-The Connector Builder will be housed in the Integration Service. It enables you to:
+Cisco Webex Teams is a collaboration solution that keeps people and teamwork connected, bringing together messaging, file sharing, video meetings, white boarding, calling, and other tools used to streamline teamwork and achieve tangible results.
 
-Create and use a custom connector in Studio.
-Use custom connectors from the Studio Web.
-Publish custom connectors and share them among users
+Cisco Webex Teams Activities can be used to automate user and room management, messaging, file sharing, and other collaboration tasks.
 
 
 
@@ -72,45 +180,55 @@ With HubSpot Marketing Activities (Preview), you can create automated content cr
 
 21
 Security+
-Legal hold
-	A legal technique to preserve relevant information
-		Prepare for impending litigateion
-		Initiated by legal counsel
-	Hold notification
-		Custodians are instructed to preserve data
-	Separate repository for electronically stored information (ESI)
+DES uses 56-bits, and AES goes up to 256 bits. These are both weak. Asymmetric encryption starts at around 1,024 bits.
 
 
 
 
 22
 Security+
-Get revocation details to the browser
-	Online Certificate Status Protocol (OCSP)
-		The browser can check certificate revocation
-	Messages usually sent to an OCSP responder via HTTP
-		Easy to support over internet links
-		More efficient than downloading large CRLs
+Multi-party risk
+	May 2019 - American Medical Collection Agency
+		Provide debt collection for many different organizations
+		Data breach disclosed personal information on 24 million individuals
+		23 health care organizations affected by single breach
 
 
 
 
 23
-Accounting
-Corporations
-Businesses that are given the right to exist by an individual state in the US. With this right to exist, the corporation is then allowed to sell stock. Those buying this stock become owners of the corporation.
+Security+
+Continuous integration is the process whereby multiple software developers consolidate and test the code that they write to ensure that the different input codes do not conflict.
 
 
 
 
 24
 Accounting
-Verifiable Information: Information on the financial statements must be based on sufficient evidence that can be substantiated and provides a reliable basis for evaluating the firm and its management.
+Going Concern Principle: THis principle assumes that ac company will continue in business into the future. Without this assumption, most of the accounting information could not be presented in the Financial Statements since we are alwasy amking assumptions (e.g. what the life of a Long-Term Asset is).
 
 
 
 
 25
+Security+
+Commercial certificate authorities
+	Built into your browser
+		Any browser
+	Purchase your web site certificate
+		It will be trusted by everyone's browser
+
+
+
+
+26
+Security+
+The best way to destroy media (disks) is by shredding, followed by pulverizing, and then degaussing.
+
+
+
+
+27
 Security+
 Private certificate authorities
 	You are your own CA
@@ -123,20 +241,111 @@ Private certificate authorities
 
 
 
-26
+28
 Security+
-Registration authority (RA)
-	The entity requesting the certificate needs to be verified
-		The RA identifies and authenticate the requester
-	Approval or rejection
-		The foundation of trust in this model
-	Also responsible for revocation
-		Administratively revoked or by request
+Service accounts
+	Used exclusively by services running on a computer
+		No interactive/user access (ideally)
+		Web server, database server, etc
+	Access can be defined for a specific service
+		Web server rights and permissions will be different than those of a database server
 
 
 
 
-27
+29
+Security+
+Web server SSL certificates
+	Domain validation certificate (DV)
+		Owner of the certificate has some control over a DNS domain
+
+
+
+
+30
+Security+
+The key management lifecycle
+	Key Generation
+		Create a key with the requested strength using the proper cypher
+	Certificate Generation
+		Allocate the key to a user
+	Distribution
+		Make the key available to the user
+
+
+
+
+31
+Security+
+Data classifications
+	Sensitive
+		Intellectual property, PII, PHI
+	Confidential
+		Very sensitive, must be approved to view
+	Critical
+		Data should always be available
+
+
+
+
+32
+Security+
+Continuous validation is where the application meets the designed goals and is deemed fit for purpose.
+
+Continuous integration is the process where multiple software developers integrate their code to ensure that it is compatible.
+
+
+
+
+33
+Security+
+Credential management
+	Passwords must not be embedded int he application
+		Everything needs to reside on the server, not the client
+	Communication across the network should be encrypted
+		Authentication traffic should be impossible to see.
+
+
+
+
+34
+Security+
+Quantitative risk assessment
+	Annualized Loss Expectancy (ALE)
+		ARO x SLE
+		Seven laptops stolen per year (ARO) * $1000 (SLE) = $7k/year
+	THe business impact can be more than montetary
+		Quantitative vs Qualitative
+
+
+
+
+35
+Security+
+OpenSSL
+	A toolkit for crypto libraries for SSL/TLS
+		build certificates, manage SSL/TLS communication
+	Create X.509 certificates
+		Manage certificate signing requests (CSRs) and Certificate revocations lists (CRLs)
+
+
+
+
+36
+Security+
+A Cloud access security broker, or CASB, is cloud-hosted software or on-premises software or hardware that act as an intermediary between users and cloud service providers. The ability of a CASB to address gaps in security extends across software-as-a-service (SaaS), platform-as-a-service (PaaS), and infrastructure-as-a-service (IaaS) environments.
+
+
+
+
+37
+Security+
+Password spraying is where the attacker obtains the account name of company individuals by looking at the company’s website and then uses the same common passwords for each of them.
+
+
+
+
+38
 Security+
 Audit risk model
 	Inherent risk
@@ -149,7 +358,196 @@ Audit risk model
 
 
 
-28
+39
+Security+
+Evaluating risk
+	Risk matrix/risk heat map
+		View the results fo the risk assessment
+		Visually identify risk based on color
+		Combines the likely hood of an event with the potential impact
+		Assists with making strategic decisions
+
+
+
+
+40
+Security+
+ISO 27001 deals with security techniques for information security.
+ISO 28001 deals with security management for supply chains.
+
+
+
+
+41
+Security+
+Full-disk encryption (FDE) and self-encrypting drives (SED) encrypt data as it is written to the disk and decrypt data as it is read off the disk. FDE makes sense for laptops, which are highly susceptible to loss or theft. But FDE isn’t suitable for the most common risks faced in data center and cloud environments.
+
+
+
+
+42
+Security+
+With Self-encrypting drives (SEDs), the operation of the disk, and its encryption and decryption, is transparent to the users who are reading and writing data. This default encryption and decryption mode is referred to as secure erase mode. In secure erase mode, you do not need an authentication key or password to decrypt and read data.
+
+
+
+
+43
+Security+
+Registration authority (RA)
+	The entity requesting the certificate needs to be verified
+		The RA identifies and authenticate the requester
+	Approval or rejection
+		The foundation of trust in this model
+	Also responsible for revocation
+		Administratively revoked or by request
+
+
+
+
+44
+Security+
+Risky logins are where someone has logged in to a web application using a different device than the one that's normally used.
+
+
+
+
+45
+Security+
+Evaluating risk
+	Risk register
+		Every project has a plan, but also has risk
+		Identify and document the risk associated wtih every step
+		Apply possible solutions to identified risks
+		Monitor the results
+
+
+
+
+46
+Security+
+Salespeople connect to many different networks, including at events and hotels, therefore their laptops are connected to an air-gapped computer called a dirty computer to scan for malware. They also need to check that any presentation material that they obtained from events does not contain malware. This is done before they can connect to the network to ensure security and that they don't import malware into the company.
+
+
+
+
+47
+Accounting
+General Ledger Accounts (GLs) are account numbers used to categorize types of financial transactions. Most commonly used GLs are revenues, expenses and transfers.
+
+
+
+
+48
+Security+
+The data custodian is responsible for the storage, protection, and backing up of the data.
+
+The data owner is responsible for classifying data and deciding who can access the data.
+
+
+
+
+49
+Security+
+Security Orchestration, Automation and Response (SOAR) refers to technologies that enable organizations to collect inputs monitored by the security operations team. For example, alerts from the SIEM system and other security technologies — where incident analysis and triage can be performed by leveraging a combination of human and machine power — help define, prioritize and drive standardized incident response activities.
+
+
+
+
+50
+Security+
+Get revocation details to the browser
+	Online Certificate Status Protocol (OCSP)
+		The browser can check certificate revocation
+	Messages usually sent to an OCSP responder via HTTP
+		Easy to support over internet links
+		More efficient than downloading large CRLs
+
+
+
+
+51
+Security+
+Certificate file forms
+	There are many certificate file formats
+		You can convert between many of the forats
+		Use openssl or a siilar application to view the certificat contents
+
+
+
+
+52
+Security+
+A dictionary attack can be spotted because it (potentially) uses words from a dictionary in alphabetical order. The best way to prevent dictionary password attacks is to use multifactor authentication as the dictionary attack is only a single factor.
+
+
+
+
+53
+Security+
+The key management lifecycle
+	Storage
+		Securely store and protect against unauthorized use
+	Revocation
+		Manage keys that have been compromised
+	Experiation
+		A certificate mya only have a certain "shelf life"
+
+
+
+
+54
+Security+
+Legal hold
+	A legal technique to preserve relevant information
+		Prepare for impending litigateion
+		Initiated by legal counsel
+	Hold notification
+		Custodians are instructed to preserve data
+	Separate repository for electronically stored information (ESI)
+
+
+
+
+55
+Security+
+The security administrator is responsible for giving access to data.
+
+The data controller is responsible for investigating data breaches.
+
+
+
+
+56
+Accounting
+Corporations
+Businesses that are given the right to exist by an individual state in the US. With this right to exist, the corporation is then allowed to sell stock. Those buying this stock become owners of the corporation.
+
+
+
+
+57
+Security+
+The False Rejection Rate (FRR) is where authorized users cannot access the system.
+The False Acceptance Rate (FAR) is where unauthorized users access your biometric system.
+
+
+
+
+58
+Security+
+Distinguished Encoding Rules (DER)
+	Format designed to transfer syntax for data structures
+		A very specific encoding format
+		Perfect for an X.509 certificate
+	Binary format - Not human readable
+	A common format
+		Used across many platofrms, often with Java certificates
+
+
+
+
+59
 Security+
 Digital forensics
 	Collect and protect information relating to an intrusion
@@ -164,216 +562,55 @@ Digital forensics
 
 
 
-29
-Accounting
-General Ledger Accounts (GLs) are account numbers used to categorize types of financial transactions. Most commonly used GLs are revenues, expenses and transfers.
+60
+UiPath Platform 2022.10
+The Connector Builder will be housed in the Integration Service. It enables you to:
+
+Create and use a custom connector in Studio.
+Use custom connectors from the Studio Web.
+Publish custom connectors and share them among users
 
 
 
 
-30
+61
 Security+
-Credential management
-	Passwords must not be embedded int he application
-		Everything needs to reside on the server, not the client
-	Communication across the network should be encrypted
-		Authentication traffic should be impossible to see.
+Shadow IT is someone that puts a device on your network without consent.
+
+An insider threat is a disgruntled employee who feels that they have been treated badly by the company.
 
 
 
 
-31
+62
 Security+
-Multi-party risk
-	May 2019 - American Medical Collection Agency
-		Provide debt collection for many different organizations
-		Data breach disclosed personal information on 24 million individuals
-		23 health care organizations affected by single breach
+ Wireless deauthentication is like a denial of service for a WAP that forces the client to attach to an evil twin that looks like the legitimate WAP. Once connected, the attacker can capture all of the information being sent through it. A sign of an evil twin is that internet access is slow but you cannot connect to the corporate network.
 
 
 
 
-32
+63
 Security+
-Distinguished Encoding Rules (DER)
-	Format designed to transfer syntax for data structures
-		A very specific encoding format
-		Perfect for an X.509 certificate
-	Binary format - Not human readable
-	A common format
-		Used across many platofrms, often with Java certificates
+Moving laterally and attacking a host, virtual machine, or hypervisor is called VM escape. Moving laterally across a traditional network and attacking another host is called pivoting.
 
 
 
 
-33
+64
 Security+
-Key revocation
-	April 2014 - CVE-2014-0160
-		Heartbleed
-		OpenSSL flaw put the private key of affected web servers at risk
-		OpenSSL was patched, every web server certificate was replaced
-		Older certificates were moved to the CRL
+RAID 6 is a data storage approach that combines four or more hard drives into a single logical drive. Compared to individual data carriers, it boosts reliability of the system and read speeds. The basis for this is the combination of striping and parity, that also forms the basis of RAID level 5. It comes as little surprise then that RAID 6 is often referred to as “RAID 5 expansion”.
 
 
 
 
-34
+65
 Security+
-Quantitative risk assessment
-	Likelyhood
-		Annualized Rate of Occurrence (ARO)
-		How likely is it that a hurricane will hit? In Montana? Florida?
-	Single Loss Expectancy (SLE)
-		What is the monetary loss if a single event occurs?
+ In order, the best ways to destroy paper waste are burning, followed by pulping, then shredding.
 
 
 
 
-35
-Security+
-Certificate file forms
-	There are many certificate file formats
-		You can convert between many of the forats
-		Use openssl or a siilar application to view the certificat contents
-
-
-
-
-36
-Security+
-Data roles
-	Data controller
-		Manages the purposes and means by which personal data is processed
-	Data processor
-		Processes data on behalf of  the data controller
-		Often a third party or different group
-
-
-
-
-37
-Security+
-OpenSSL
-	A toolkit for crypto libraries for SSL/TLS
-		build certificates, manage SSL/TLS communication
-	Create X.509 certificates
-		Manage certificate signing requests (CSRs) and Certificate revocations lists (CRLs)
-
-
-
-
-38
-Security+
-Quantitative risk assessment
-	Annualized Loss Expectancy (ALE)
-		ARO x SLE
-		Seven laptops stolen per year (ARO) * $1000 (SLE) = $7k/year
-	THe business impact can be more than montetary
-		Quantitative vs Qualitative
-
-
-
-
-39
-Security+
-Service accounts
-	Used exclusively by services running on a computer
-		No interactive/user access (ideally)
-		Web server, database server, etc
-	Access can be defined for a specific service
-		Web server rights and permissions will be different than those of a database server
-
-
-
-
-40
-Security+
-Web server SSL certificates
-	Domain validation certificate (DV)
-		Owner of the certificate has some control over a DNS domain
-
-
-
-
-41
-Security+
-Privacy impact assessment (PIA)
-	Almost everything can affect privacy
-		New business relationships, product updates, website features, service offerings
-	Privacy risk needs to be identified in each initiative
-		How could the process compromise customer privacy?
-
-
-
-
-42
-Security+
-Commercial certificate authorities
-	Built into your browser
-		Any browser
-	Purchase your web site certificate
-		It will be trusted by everyone's browser
-
-
-
-
-43
-Security+
-Commercial certificate authorities
-	Create a key pair, send the public key to a CA to be signed
-		A certificate signing request (CSR)
-	May provide different levels of trust and additional feaures
-		Add a new "tag" to your website
-
-
-
-
-44
-Security+
-Fiber optic media is least susceptible to stealing information using wire taps. UTP and STP are the most susceptible to vampire taps.
-
-
-
-
-45
-Security+
-The key management lifecycle
-	Key Generation
-		Create a key with the requested strength using the proper cypher
-	Certificate Generation
-		Allocate the key to a user
-	Distribution
-		Make the key available to the user
-
-
-
-
-46
-Security+
-PKI trust relationships
-	Single CA
-		Everyone receives their certificates from one authority
-	Hierarchical
-		Single CA issues certs to intermediate CAs
-		Distributes the cert management load
-		Easier to deal with the revocation of an intermediate CA than the root CA
-
-
-
-
-47
-Security+
-OpenSSL
-	Message digests
-		support for many hashing protocols
-	Encryption/decryption
-		SSL/TLS for services
-
-
-
-
-48
+66
 Security+
 theHarvester
 	Gather OSINT
@@ -386,39 +623,37 @@ theHarvester
 
 
 
-49
+67
 Accounting
-Going Concern Principle: THis principle assumes that ac company will continue in business into the future. Without this assumption, most of the accounting information could not be presented in the Financial Statements since we are alwasy amking assumptions (e.g. what the life of a Long-Term Asset is).
+Verifiable Information: Information on the financial statements must be based on sufficient evidence that can be substantiated and provides a reliable basis for evaluating the firm and its management.
 
 
 
 
-50
+68
 Security+
-Evaluating risk
-	Risk register
-		Every project has a plan, but also has risk
-		Identify and document the risk associated wtih every step
-		Apply possible solutions to identified risks
-		Monitor the results
+Commercial certificate authorities
+	Create a key pair, send the public key to a CA to be signed
+		A certificate signing request (CSR)
+	May provide different levels of trust and additional feaures
+		Add a new "tag" to your website
 
 
 
 
-51
+69
 Security+
-The key management lifecycle
-	Storage
-		Securely store and protect against unauthorized use
-	Revocation
-		Manage keys that have been compromised
-	Experiation
-		A certificate mya only have a certain "shelf life"
+Quantitative risk assessment
+	Likelyhood
+		Annualized Rate of Occurrence (ARO)
+		How likely is it that a hurricane will hit? In Montana? Florida?
+	Single Loss Expectancy (SLE)
+		What is the monetary loss if a single event occurs?
 
 
 
 
-52
+70
 Security+
 Important certificate attributes
 	Expiration
@@ -428,262 +663,10 @@ Important certificate attributes
 
 
 
-53
-Security+
-Data classifications
-	Sensitive
-		Intellectual property, PII, PHI
-	Confidential
-		Very sensitive, must be approved to view
-	Critical
-		Data should always be available
-
-
-
-
-
-
-
-1
-Security+
-Continuous integration is the process whereby multiple software developers consolidate and test the code that they write to ensure that the different input codes do not conflict.
-
-
-
-
-
-
-2
-Security+
-Continuous monitoring is used to log any failures or security vulnerabilities suffered by the application so that steps can be taken to remedy them.
-
-
-
-
-
-3
-Security+
-Risky logins are where someone has logged in to a web application using a different device than the one that's normally used.
-
-
-
-
-4
-Security+
-Impossible time travel is where you are seen to log in in one location and then minutes later in another location that would be impossible to get to in time.
-
-
-
-
-
-5
-Security+
-Full-disk encryption (FDE) and self-encrypting drives (SED) encrypt data as it is written to the disk and decrypt data as it is read off the disk. FDE makes sense for laptops, which are highly susceptible to loss or theft. But FDE isn’t suitable for the most common risks faced in data center and cloud environments.
-
-
-
-
-6
-Security+
-A Cloud access security broker, or CASB, is cloud-hosted software or on-premises software or hardware that act as an intermediary between users and cloud service providers. The ability of a CASB to address gaps in security extends across software-as-a-service (SaaS), platform-as-a-service (PaaS), and infrastructure-as-a-service (IaaS) environments.
-
-
-
-
-7
-Security+
-Self-encrypting drives (SEDs) encrypt data as it is written to the disk. Each disk has a disk encryption key (DEK) that is set at the factory and stored on the disk. The disk uses the DEK to encrypt data as it writes, and then to decrypt the data as it is read from disk.
-
-
-
-
-8
-Security+
-With Self-encrypting drives (SEDs), the operation of the disk, and its encryption and decryption, is transparent to the users who are reading and writing data. This default encryption and decryption mode is referred to as secure erase mode. In secure erase mode, you do not need an authentication key or password to decrypt and read data. 
-
-
-
-
-9
-Security+
-Self-encrypting drives (SEDs) offer improved capabilities for an easy and speedy secure erase for situations when disks must be repurposed or returned for support or warranty reasons.
-
-
-
-
-
-
-10
-Security+
-ISO/IEC 27001 is the world’s best-known standard for information security management systems (ISMS) and their requirements. Additional best practice in data protection and cyber resilience are covered by more than a dozen standards in the ISO/IEC 27000 family.
-
-
-
-
-11
-Security+
-ISO 27101 deals with cybersecurity frameworks.
-ISO 27701 deals with privacy information management.
-
-
-
-
-12
-Security+
-ISO 27001 deals with security techniques for information security.
-ISO 28001 deals with security management for supply chains.
-
-
-
-
-13
-Security+
-Salespeople connect to many different networks, including at events and hotels, therefore their laptops are connected to an air-gapped computer called a dirty computer to scan for malware. They also need to check that any presentation material that they obtained from events does not contain malware. This is done before they can connect to the network to ensure security and that they don't import malware into the company.
-
-
-
-
-14
-Security+
-The Crossover Error Rate (CER) is where the False Rejection Rate (FRR) and the False Acceptance Rate (FAR) are equal. You would want to buy a biometric system with few errors.
-
-
-
-
-
-15
-Security+
-The False Rejection Rate (FRR) is where authorized users cannot access the system.
-The False Acceptance Rate (FAR) is where unauthorized users access your biometric system.
-
-
-
-
-16
-Security+
-Password spraying is where the attacker obtains the account name of company individuals by looking at the company’s website and then uses the same common passwords for each of them. 
-
-
-
-
-17
-Security+
-Shadow IT is someone that puts a device on your network without consent.
-
-An insider threat is a disgruntled employee who feels that they have been treated badly by the company.
-
-
-
-
-
-18
-Security+
-A dictionary attack can be spotted because it (potentially) uses words from a dictionary in alphabetical order. The best way to prevent dictionary password attacks is to use multifactor authentication as the dictionary attack is only a single factor.
-
-
-
-
-19
-Security+
-The data custodian is responsible for the storage, protection, and backing up of the data.
-
-The data owner is responsible for classifying data and deciding who can access the data.
-
-
-
-
-20
-Security+
-The data controller is responsible for investigating data breaches.
-
-The data steward is responsible for the quality and labeling of the data.
-
-
-
-
-21
-Security+
-The security administrator is responsible for giving access to data.
-
-The data controller is responsible for investigating data breaches.
-
-
-
-
-
-
-22
-Security+
-RAID 6 is a data storage approach that combines four or more hard drives into a single logical drive. Compared to individual data carriers, it boosts reliability of the system and read speeds. The basis for this is the combination of striping and parity, that also forms the basis of RAID level 5. It comes as little surprise then that RAID 6 is often referred to as “RAID 5 expansion”.
-
-
-
-
-
-
-23
-Security+
- Wireless deauthentication is like a denial of service for a WAP that forces the client to attach to an evil twin that looks like the legitimate WAP. Once connected, the attacker can capture all of the information being sent through it. A sign of an evil twin is that internet access is slow but you cannot connect to the corporate network.
-
-
-
-
-24
-Security+
-Security Orchestration, Automation and Response (SOAR) refers to technologies that enable organizations to collect inputs monitored by the security operations team. For example, alerts from the SIEM system and other security technologies — where incident analysis and triage can be performed by leveraging a combination of human and machine power — help define, prioritize and drive standardized incident response activities. 
-
-
-
-
-25
-Security+
-Continuous validation is where the application meets the designed goals and is deemed fit for purpose.
-
-Continuous integration is the process where multiple software developers integrate their code to ensure that it is compatible.
-
-
-
-
-26
-Security+
-ISO 27701 deals with data privacy, unlike ISO 27001 which deals with security.
-
-ISO 31000 deals with risk management guidelines.
-
-
-
-
-27
-Security+
- In order, the best ways to destroy paper waste are burning, followed by pulping, then shredding. 
-
-
-
-
-28
-Security+
-The best way to destroy media (disks) is by shredding, followed by pulverizing, and then degaussing.
-
-
-
-29
-Security+
-Moving laterally and attacking a host, virtual machine, or hypervisor is called VM escape. Moving laterally across a traditional network and attacking another host is called pivoting.
-
-
-
-
-30
+71
 Security+
 VM sprawl is where a virtual machine is running out of resources.
 Privilege escalation occurs when someone has been given too many permissions.
-
-
-
-
-31
-Security+
-DES uses 56-bits, and AES goes up to 256 bits. These are both weak. Asymmetric encryption starts at around 1,024 bits.
 
 
 
