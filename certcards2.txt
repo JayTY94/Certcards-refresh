@@ -398,3 +398,75 @@ Privilege escalation occurs when someone has been given too many permissions.
 
 
 
+1
+8879 project
+In the process a user is redirected to the Box web app in a browser where they log in and authorize the application access to their data before they are redirected back to the applications redirect_url. This last step requires the application to be running on a web server somewhere accessible to the user.
+
+
+
+
+2
+8879 project
+If you configured multiple redirect URIs for the application, the authorization URL must include the redirect_uri parameter matching one of the URIs configured in the Box developer console. If the parameter is not specified, the user will see a redirect_uri_missing error and will not be redirected back to the app after granting application access.
+
+
+
+
+
+
+3
+8879 project
+
+
+
+
+
+4
+8879 project
+
+
+
+
+
+5
+8879 project
+
+
+
+
+
+6
+8879 project
+
+
+
+
+
+7
+8879 project
+
+
+
+
+
+8
+8879 project
+
+
+
+
+
+9
+8879 project
+
+
+
+
+
+10
+8879 project
+
+
+
+
+
