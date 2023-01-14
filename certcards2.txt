@@ -470,7 +470,7 @@ When setting a Deadline or a Postpone date for an Orchestrator transaction, we r
 
 10
 8879 project
-
+In order to specify custom Item/Transaction fields for this project, I had to create a JSON schema document (on jsonschema.net/app/) to upload to the "Specific Data JSON Schema" field. There was a link to a web app for the creation of this document in the article "About Queues and Transactions".
 
 
 
