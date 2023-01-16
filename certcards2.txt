@@ -475,3 +475,9 @@ In order to specify custom Item/Transaction fields for this project, I had to cr
 
 
 
+89
+OneNote
+Add a new page at the end of the current section: [Ctrl] + N
+Add a new page under current page at same level of indentation: [Ctrl] + [Alt] + N
+Add a new subpage under the current page at the same level of indentation:
+[Ctrl] + [Alt] + [Shift] + N
