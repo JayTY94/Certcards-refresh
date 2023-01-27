@@ -230,12 +230,184 @@ Add a new subpage under the current page at the same level of indentation:
 [Ctrl] + [Alt] + [Shift] + N
 
 
-Managing Security (16:17)
 
-Attack Frameworks (7:21)
 
-Shoulder Surfing (2:25)
 
-Privilege Escalation (3:18)
+1
+Security+
+Response and recovery controls
+	Incident response plan should be established
+		Documentation is critical
+		Identify the attack
+		Contain the attack
+	Limit the impact of an attacker
+		Limit data exfiltration
+		Limit access to sensitive data
 
-Certificates (8:04)
+
+
+
+2
+Security+
+SSL/TLS inspection
+	Commonly used to examine outgoing SSL/TLS
+		Secure Sockets Layer/Transport Layer Security
+	TLS Inspection requires the set up of an internal CA to act as a proxy
+
+
+
+3
+Security+
+Hashing
+	Represent data as a short string of text
+		Referred to as a message digest
+	One-way Trip
+		Impossible to recover the original message from the digest
+		Used to store passwords/confidentiality
+
+
+
+
+4
+Security+
+Hashing
+	Verify a downloaded document is the same as the original
+		Website can offer a hash of the file they offer for download
+	Can be a digitial signature
+	Will not have a collision (hopefully)
+
+
+
+
+5
+Security+
+An attacker might see a bank transfer take place and then create their own API call that might transfer information into their account. This is called API injection and it’s another concern we have when making sure that our API applications are secure.
+
+
+
+
+6
+Security+
+If an API has not been properly developed or tested, an attacker may be able to find a vulnerability that wouldn’t be able to use the functionality of the application, but it might be able to cause the application to fail. This would be a denial of service attack, and it would then prevent anyone else from gaining access to that application
+
+
+
+
+7
+Security+
+One method used by attackers to be able to intercept and perhaps even change this API information, is an on-path attack. This is when the attacker sits in the middle of the conversation and is able to view all of the traffic going back and forth, and in many cases modify or replay some of the traffic it has seen in these API calls. This means that an attacker can sit in the middle of the conversation, get an understanding of the way the API operates, and then put their own data into the API flows.
+
+
+
+
+8
+Security+
+API security
+	Authentication
+		Limit API access to legitimate users over secure protocols
+	Authorization
+		API should not allow extended access
+		Each user has a limited role
+		A read-only user should not be able to make changes
+
+
+
+
+9
+Security+
+MITRE ATT&CK framework
+	From the MITRE corporation
+		US not-for-profit based in Massachusetts and Virginia
+		Supports several US governmental agencies
+	
+
+
+
+
+10
+Security+
+MITRE ATT&CK framework
+	Determine the actions of an attacker
+		Identify the point of intrusion
+		Understand methods used to move around
+		Identify potential security techniques to block future attacks.
+
+
+
+
+11
+Security+
+The theory of the Diamond Model
+This methodology underlines the relationships and characteristics of four components of the diamond—adversary, capability, infrastructure, and victim. These four core elements are connected to delineate the relationship between each other which can be analytically examined to further uncover insights and gain knowledge of malicious activities. 
+
+
+
+
+12
+Security+
+The diamond model
+                Adversary
+            /               \
+Infrastructure---------------Capability
+            \              /  
+                 Victim
+
+
+
+
+13
+Security+
+
+
+
+
+
+14
+Security+
+
+
+
+
+
+15
+Security+
+
+
+
+
+
+16
+Security+
+
+
+
+
+
+17
+Security+
+
+
+
+
+
+18
+Security+
+
+
+
+
+
+19
+Security+
+
+
+
+
+
+20
+Security+
+
+
+
+
+
