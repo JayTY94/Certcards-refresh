@@ -1,27 +1,61 @@
-
-
-57
+1
 Security+
-The False Rejection Rate (FRR) is where authorized users cannot access the system.
-The False Acceptance Rate (FAR) is where unauthorized users access your biometric system.
+The Diamond Model
+Adversary
+An adversary is an organization or threat actor responsible for leveraging a capability against a victim to fulfill its goals.
+
+Capability
+The capabilities refer to the tools and techniques used by an adversary in an event.
 
 
 
 
-58
+2
 Security+
-Distinguished Encoding Rules (DER)
-	Format designed to transfer syntax for data structures
-		A very specific encoding format
-		Perfect for an X.509 certificate
-	Binary format - Not human readable
-	A common format
-		Used across many platofrms, often with Java certificates
+SSL/TLS inspection
+	Commonly used to examine outgoing SSL/TLS
+		Secure Sockets Layer/Transport Layer Security
+	TLS Inspection requires the set up of an internal CA to act as a proxy
 
 
 
 
-59
+3
+Security+
+API security
+	Authentication
+		Limit API access to legitimate users over secure protocols
+	Authorization
+		API should not allow extended access
+		Each user has a limited role
+		A read-only user should not be able to make changes
+
+
+
+
+4
+Security+
+MITRE ATT&CK framework
+	From the MITRE corporation
+		US not-for-profit based in Massachusetts and Virginia
+		Supports several US governmental agencies
+
+
+
+
+5
+Security+
+Hashing
+	Represent data as a short string of text
+		Referred to as a message digest
+	One-way Trip
+		Impossible to recover the original message from the digest
+		Used to store passwords/confidentiality
+
+
+
+
+6
 Security+
 Digital forensics
 	Collect and protect information relating to an intrusion
@@ -36,7 +70,37 @@ Digital forensics
 
 
 
-60
+7
+8879 project
+In Orchestrator, newly created queues are empty by default. To populate them with items you can either use the upload functionality in Orchestrator, or Studio activities. The latter also enable you to change item statuses and process them. As soon as queue items are processed, they become transactions.
+
+
+
+
+8
+8879 project
+ If at least one queue item exceeds its deadline, Over Capacity is displayed in the Necessary Robots (SLA) column and predictions are no longer calculated.
+
+ Predictions are made for queue items with deadlines in the next 24 hours (can be changed using the Queue.SlaReadaheadTimeLimitHours, and do not take into account the items' defer dates.
+
+
+
+
+9
+8879 project
+In order to specify custom Item/Transaction fields for this project, I had to create a JSON schema document (on jsonschema.net/app/) to upload to the "Specific Data JSON Schema" field. There was a link to a web app for the creation of this document in the article "About Queues and Transactions".
+
+
+
+
+10
+Security+
+RAID 6 is a data storage approach that combines four or more hard drives into a single logical drive. Compared to individual data carriers, it boosts reliability of the system and read speeds. The basis for this is the combination of striping and parity, that also forms the basis of RAID level 5. It comes as little surprise then that RAID 6 is often referred to as “RAID 5 expansion”.
+
+
+
+
+11
 UiPath Platform 2022.10
 The Connector Builder will be housed in the Integration Service. It enables you to:
 
@@ -47,64 +111,114 @@ Publish custom connectors and share them among users
 
 
 
-61
+12
 Security+
-Shadow IT is someone that puts a device on your network without consent.
+Cyber Kill Chain
+	Seven phases of a cyber attack (Military Concept)
+		1. Reconnaissance
+		2. Weaponization
+		3. Delivery
+		4. Exploit
+		5. Installation
+		6. Command & Control
+		7. Actions on Objectives
 
-An insider threat is a disgruntled employee who feels that they have been treated badly by the company.
 
 
 
-
-62
+13
 Security+
  Wireless deauthentication is like a denial of service for a WAP that forces the client to attach to an evil twin that looks like the legitimate WAP. Once connected, the attacker can capture all of the information being sent through it. A sign of an evil twin is that internet access is slow but you cannot connect to the corporate network.
 
 
 
 
-63
+14
+8879 project
+Failed or abandoned queue items can be assigned to a reviewer, which can be changed or cleared at any point, if needed. Each of these changes are tracked in the History tab of the Audit Details window. The reviewer is in charge of assessing the current status of the transactions he is assigned to, and changing the review status.
+
+
+
+
+15
 Security+
-Moving laterally and attacking a host, virtual machine, or hypervisor is called VM escape. Moving laterally across a traditional network and attacking another host is called pivoting.
+An attacker might see a bank transfer take place and then create their own API call that might transfer information into their account. This is called API injection and it’s another concern we have when making sure that our API applications are secure.
 
 
 
 
-64
+16
+8879 project
+ The Priority of the items added in a queue after enabling SLA predictions is automatically set to High, regardless of how it was set in Studio or in the .csv file used for upload.
+
+ You cannot delete a process associated to a queue with enabled SLA predictions.
+
+
+
+
+17
+8879 project
+The Transactions page displays the transactions from a given queue. It also shows their statuses, the dates when they should be processed, the Robot that processed them, and the type of exception thrown or assigned reference, if any.
+
+
+
+
+18
 Security+
-RAID 6 is a data storage approach that combines four or more hard drives into a single logical drive. Compared to individual data carriers, it boosts reliability of the system and read speeds. The basis for this is the combination of striping and parity, that also forms the basis of RAID level 5. It comes as little surprise then that RAID 6 is often referred to as “RAID 5 expansion”.
+The Diamond Model
+Victim
+A victim is a target against whom attacks are initiated, vulnerabilities are exploited, or capabilities are used. It can be organizations, people, or assets, such as target email or IP addresses, domains, and so on.
 
 
 
 
-65
+19
+8879 project
+In the process a user is redirected to the Box web app in a browser where they log in and authorize the application access to their data before they are redirected back to the applications redirect_url. This last step requires the application to be running on a web server somewhere accessible to the user.
+
+
+
+
+20
 Security+
- In order, the best ways to destroy paper waste are burning, followed by pulping, then shredding.
+VM sprawl is where a virtual machine is running out of resources.
+Privilege escalation occurs when someone has been given too many permissions.
 
 
 
 
-66
+21
 Security+
-theHarvester
-	Gather OSINT
-		Open-Source Intelligence
-	Scrape information from google or bing
-		Find associated IP adresses
-	DNS brute force
-		Find those unknown hosts; vpn, chat, mail, partner, etc
+Important certificate attributes
+	Expiration
+		Limit exposure to compromise
+		398 day browser limit (13 months)
 
 
 
 
-67
-Accounting
-Verifiable Information: Information on the financial statements must be based on sufficient evidence that can be substantiated and provides a reliable basis for evaluating the firm and its management.
+22
+Security+
+The False Rejection Rate (FRR) is where authorized users cannot access the system.
+The False Acceptance Rate (FAR) is where unauthorized users access your biometric system.
 
 
 
 
-68
+23
+Security+
+Distinguished Encoding Rules (DER)
+	Format designed to transfer syntax for data structures
+		A very specific encoding format
+		Perfect for an X.509 certificate
+	Binary format - Not human readable
+	A common format
+		Used across many platofrms, often with Java certificates
+
+
+
+
+24
 Security+
 Commercial certificate authorities
 	Create a key pair, send the public key to a CA to be signed
@@ -115,7 +229,119 @@ Commercial certificate authorities
 
 
 
-69
+25
+Security+
+The Diamond Model
+Infrastructure
+The infrastructure includes the physical or logical communication structures such as IP or e-mail addresses, domain names, and others, employed by an adversary to deliver a capability.
+
+
+
+
+26
+Security+
+If an API has not been properly developed or tested, an attacker may be able to find a vulnerability that wouldn’t be able to use the functionality of the application, but it might be able to cause the application to fail. This would be a denial of service attack, and it would then prevent anyone else from gaining access to that application
+
+
+
+
+27
+OneNote
+Add a new page at the end of the current section: [Ctrl] + N
+Add a new page under current page at same level of indentation: [Ctrl] + [Alt] + N
+Add a new subpage under the current page at the same level of indentation:
+[Ctrl] + [Alt] + [Shift] + N
+
+
+
+
+28
+8879 project
+To achieve better control in terms of Orchestrator performance, the Specific Data size of queue items is limited to 1 MB with the help of the Queue.MaxSpecificDataSizeInKiloBytes app setting. Anything beyond this limit cannot be added to a queue, and it returns the 403 - Payload Too Large error code.
+
+
+
+
+29
+Security+
+Shadow IT is someone that puts a device on your network without consent.
+
+An insider threat is a disgruntled employee who feels that they have been treated badly by the company.
+
+
+
+
+30
+Security+
+MITRE ATT&CK framework
+	Determine the actions of an attacker
+		Identify the point of intrusion
+		Understand methods used to move around
+		Identify potential security techniques to block future attacks.
+
+
+
+
+31
+Accounting
+Verifiable Information: Information on the financial statements must be based on sufficient evidence that can be substantiated and provides a reliable basis for evaluating the firm and its management.
+
+
+
+
+32
+8879 project
+If you configured multiple redirect URIs for the application, the authorization URL must include the redirect_uri parameter matching one of the URIs configured in the Box developer console. If the parameter is not specified, the user will see a redirect_uri_missing error and will not be redirected back to the app after granting application access.
+
+
+
+
+33
+Security+
+ In order, the best ways to destroy paper waste are burning, followed by pulping, then shredding.
+
+
+
+
+34
+Security+
+One method used by attackers to be able to intercept and perhaps even change this API information, is an on-path attack. This is when the attacker sits in the middle of the conversation and is able to view all of the traffic going back and forth, and in many cases modify or replay some of the traffic it has seen in these API calls. This means that an attacker can sit in the middle of the conversation, get an understanding of the way the API operates, and then put their own data into the API flows.
+
+
+
+
+35
+Security+
+The theory of the Diamond Model
+This methodology underlines the relationships and characteristics of four components of the diamond—adversary, capability, infrastructure, and victim. These four core elements are connected to delineate the relationship between each other which can be analytically examined to further uncover insights and gain knowledge of malicious activities.
+
+
+
+
+36
+8879 project
+When setting a Deadline or a Postpone date for an Orchestrator transaction, we recommend populating the respective fields with relative dates. For example, DateTime.Now.AddHours(2), DateTime.Now.AddDays(10) and DateTime.Now.Add(New System.TimeSpan(5, 0, 0, 0)). Additionally, you can use the US notation to add an exact time, such as 10/10/2019 07:40:00. Automatic correction of this date is available, for example, if you write 12 10 2019 9:0, it is automatically transformed to 12/10/2019 09:00:00.
+
+
+
+
+37
+Security+
+Vertical Privilege Escalation
+Vertical privilege escalation, also known as privilege elevation, is a term used in cybersecurity that refers to an attack that starts from a point of lower privilege, then escalates privileges until it reaches the level of the user or process it targets.
+
+
+
+
+38
+Security+
+Horizontal Privilege Escalation
+Horizontal privilege escalation means that a user will achieve access permissions belonging to another user that owns the same access level as the user that has started the cyberattack. It is a bit more challenging compared to vertical ones since they require a deep understanding of how operating systems work.
+
+
+
+
+39
 Security+
 Quantitative risk assessment
 	Likelyhood
@@ -127,113 +353,7 @@ Quantitative risk assessment
 
 
 
-70
-Security+
-Important certificate attributes
-	Expiration
-		Limit exposure to compromise
-		398 day browser limit (13 months)
-
-
-
-
-71
-Security+
-VM sprawl is where a virtual machine is running out of resources.
-Privilege escalation occurs when someone has been given too many permissions.
-
-
-
-
-1
-8879 project
-In the process a user is redirected to the Box web app in a browser where they log in and authorize the application access to their data before they are redirected back to the applications redirect_url. This last step requires the application to be running on a web server somewhere accessible to the user.
-
-
-
-
-2
-8879 project
-If you configured multiple redirect URIs for the application, the authorization URL must include the redirect_uri parameter matching one of the URIs configured in the Box developer console. If the parameter is not specified, the user will see a redirect_uri_missing error and will not be redirected back to the app after granting application access.
-
-
-
-
-3
-8879 project
-In Orchestrator, newly created queues are empty by default. To populate them with items you can either use the upload functionality in Orchestrator, or Studio activities. The latter also enable you to change item statuses and process them. As soon as queue items are processed, they become transactions.
-
-
-
-
-4
-8879 project
-Failed or abandoned queue items can be assigned to a reviewer, which can be changed or cleared at any point, if needed. Each of these changes are tracked in the History tab of the Audit Details window. The reviewer is in charge of assessing the current status of the transactions he is assigned to, and changing the review status.
-
-
-
-
-5
-8879 project
-To achieve better control in terms of Orchestrator performance, the Specific Data size of queue items is limited to 1 MB with the help of the Queue.MaxSpecificDataSizeInKiloBytes app setting. Anything beyond this limit cannot be added to a queue, and it returns the 403 - Payload Too Large error code. 
-
-
-
-
-6
-8879 project
-The Transactions page displays the transactions from a given queue. It also shows their statuses, the dates when they should be processed, the Robot that processed them, and the type of exception thrown or assigned reference, if any.
-
-
-
-
-
-7
-8879 project
-When setting a Deadline or a Postpone date for an Orchestrator transaction, we recommend populating the respective fields with relative dates. For example, DateTime.Now.AddHours(2), DateTime.Now.AddDays(10) and DateTime.Now.Add(New System.TimeSpan(5, 0, 0, 0)). Additionally, you can use the US notation to add an exact time, such as 10/10/2019 07:40:00. Automatic correction of this date is available, for example, if you write 12 10 2019 9:0, it is automatically transformed to 12/10/2019 09:00:00.
-
-
-
-
-
-
-8
-8879 project
- The Priority of the items added in a queue after enabling SLA predictions is automatically set to High, regardless of how it was set in Studio or in the .csv file used for upload.
-
- You cannot delete a process associated to a queue with enabled SLA predictions.
-
-
-
-
-9
-8879 project
- If at least one queue item exceeds its deadline, Over Capacity is displayed in the Necessary Robots (SLA) column and predictions are no longer calculated.
-
- Predictions are made for queue items with deadlines in the next 24 hours (can be changed using the Queue.SlaReadaheadTimeLimitHours, and do not take into account the items' defer dates.
-
-
-
-
-10
-8879 project
-In order to specify custom Item/Transaction fields for this project, I had to create a JSON schema document (on jsonschema.net/app/) to upload to the "Specific Data JSON Schema" field. There was a link to a web app for the creation of this document in the article "About Queues and Transactions".
-
-
-
-
-89
-OneNote
-Add a new page at the end of the current section: [Ctrl] + N
-Add a new page under current page at same level of indentation: [Ctrl] + [Alt] + N
-Add a new subpage under the current page at the same level of indentation:
-[Ctrl] + [Alt] + [Shift] + N
-
-
-
-
-
-1
+40
 Security+
 Response and recovery controls
 	Incident response plan should be established
@@ -247,28 +367,27 @@ Response and recovery controls
 
 
 
-2
+41
 Security+
-SSL/TLS inspection
-	Commonly used to examine outgoing SSL/TLS
-		Secure Sockets Layer/Transport Layer Security
-	TLS Inspection requires the set up of an internal CA to act as a proxy
+Moving laterally and attacking a host, virtual machine, or hypervisor is called VM escape. Moving laterally across a traditional network and attacking another host is called pivoting.
 
 
 
-3
+
+42
 Security+
-Hashing
-	Represent data as a short string of text
-		Referred to as a message digest
-	One-way Trip
-		Impossible to recover the original message from the digest
-		Used to store passwords/confidentiality
+theHarvester
+	Gather OSINT
+		Open-Source Intelligence
+	Scrape information from google or bing
+		Find associated IP adresses
+	DNS brute force
+		Find those unknown hosts; vpn, chat, mail, partner, etc
 
 
 
 
-4
+43
 Security+
 Hashing
 	Verify a downloaded document is the same as the original
@@ -279,141 +398,14 @@ Hashing
 
 
 
-5
-Security+
-An attacker might see a bank transfer take place and then create their own API call that might transfer information into their account. This is called API injection and it’s another concern we have when making sure that our API applications are secure.
-
-
-
-
-6
-Security+
-If an API has not been properly developed or tested, an attacker may be able to find a vulnerability that wouldn’t be able to use the functionality of the application, but it might be able to cause the application to fail. This would be a denial of service attack, and it would then prevent anyone else from gaining access to that application
-
-
-
-
-7
-Security+
-One method used by attackers to be able to intercept and perhaps even change this API information, is an on-path attack. This is when the attacker sits in the middle of the conversation and is able to view all of the traffic going back and forth, and in many cases modify or replay some of the traffic it has seen in these API calls. This means that an attacker can sit in the middle of the conversation, get an understanding of the way the API operates, and then put their own data into the API flows.
-
-
-
-
-8
-Security+
-API security
-	Authentication
-		Limit API access to legitimate users over secure protocols
-	Authorization
-		API should not allow extended access
-		Each user has a limited role
-		A read-only user should not be able to make changes
-
-
-
-
-9
-Security+
-MITRE ATT&CK framework
-	From the MITRE corporation
-		US not-for-profit based in Massachusetts and Virginia
-		Supports several US governmental agencies
-	
-
-
-
-
-10
-Security+
-MITRE ATT&CK framework
-	Determine the actions of an attacker
-		Identify the point of intrusion
-		Understand methods used to move around
-		Identify potential security techniques to block future attacks.
-
-
-
-
-11
-Security+
-The theory of the Diamond Model
-This methodology underlines the relationships and characteristics of four components of the diamond—adversary, capability, infrastructure, and victim. These four core elements are connected to delineate the relationship between each other which can be analytically examined to further uncover insights and gain knowledge of malicious activities. 
-
-
-
-
-12
+44
 Security+
 The diamond model
                 Adversary
             /               \
 Infrastructure---------------Capability
-            \              /  
+            \              /
                  Victim
-
-
-
-
-13
-Security+
-The Diamond Model
-Adversary
-An adversary is an organization or threat actor responsible for leveraging a capability against a victim to fulfill its goals. 
-
-Capability
-The capabilities refer to the tools and techniques used by an adversary in an event. 
-
-
-
-
-14
-Security+
-The Diamond Model
-Infrastructure
-The infrastructure includes the physical or logical communication structures such as IP or e-mail addresses, domain names, and others, employed by an adversary to deliver a capability. 
-
-
-
-
-15
-Security+
-The Diamond Model 
-Victim
-A victim is a target against whom attacks are initiated, vulnerabilities are exploited, or capabilities are used. It can be organizations, people, or assets, such as target email or IP addresses, domains, and so on. 
-
-
-
-
-
-16
-Security+
-Cyber Kill Chain
-	Seven phases of a cyber attack (Military Concept)
-		1. Reconnaissance
-		2. Weaponization
-		3. Delivery 
-		4. Exploit
-		5. Installation
-		6. Command & Control
-		7. Actions on Objectives
-
-
-
-
-17
-Security+
-Vertical Privilege Escalation
-Vertical privilege escalation, also known as privilege elevation, is a term used in cybersecurity that refers to an attack that starts from a point of lower privilege, then escalates privileges until it reaches the level of the user or process it targets.
-
-
-
-
-18
-Security+
-Horizontal Privilege Escalation
-Horizontal privilege escalation means that a user will achieve access permissions belonging to another user that owns the same access level as the user that has started the cyberattack. It is a bit more challenging compared to vertical ones since they require a deep understanding of how operating systems work.
-
 
 
 
