@@ -357,20 +357,30 @@ Infrastructure---------------Capability
 
 13
 Security+
+The Diamond Model
+Adversary
+An adversary is an organization or threat actor responsible for leveraging a capability against a victim to fulfill its goals. 
 
+Capability
+The capabilities refer to the tools and techniques used by an adversary in an event. 
 
 
 
 
 14
 Security+
-
+The Diamond Model
+Infrastructure
+The infrastructure includes the physical or logical communication structures such as IP or e-mail addresses, domain names, and others, employed by an adversary to deliver a capability. 
 
 
 
 
 15
 Security+
+The Diamond Model 
+Victim
+A victim is a target against whom attacks are initiated, vulnerabilities are exploited, or capabilities are used. It can be organizations, people, or assets, such as target email or IP addresses, domains, and so on. 
 
 
 
@@ -378,34 +388,31 @@ Security+
 
 16
 Security+
-
+Cyber Kill Chain
+	Seven phases of a cyber attack (Military Concept)
+		1. Reconnaissance
+		2. Weaponization
+		3. Delivery 
+		4. Exploit
+		5. Installation
+		6. Command & Control
+		7. Actions on Objectives
 
 
 
 
 17
 Security+
-
+Vertical Privilege Escalation
+Vertical privilege escalation, also known as privilege elevation, is a term used in cybersecurity that refers to an attack that starts from a point of lower privilege, then escalates privileges until it reaches the level of the user or process it targets.
 
 
 
 
 18
 Security+
-
-
-
-
-
-19
-Security+
-
-
-
-
-
-20
-Security+
+Horizontal Privilege Escalation
+Horizontal privilege escalation means that a user will achieve access permissions belonging to another user that owns the same access level as the user that has started the cyberattack. It is a bit more challenging compared to vertical ones since they require a deep understanding of how operating systems work.
 
 
 
