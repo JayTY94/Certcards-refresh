@@ -310,8 +310,3 @@ Infrastructure---------------Capability
 
 
 
-On-Path Attacks (6:04)
-Incident Response Planning (12:09)
-Application Security (13:31)
-Cloud-based vs. On-Premises Attacks (3:32)
-Secure Deployments (6:26)
