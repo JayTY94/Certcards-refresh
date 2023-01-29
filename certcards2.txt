@@ -1,50 +1,5 @@
 
 
-6
-Security+
-Digital forensics
-	Collect and protect information relating to an intrusion
-		Many different data sources and protection mechanisms
-	RFC 3227 - Guidelines for Evidence Collection and Archiving
-		good set of best practices
-	3 stages
-		Acquisition
-		Analysis
-		Reporting
-
-
-
-
-7
-8879 project
-In Orchestrator, newly created queues are empty by default. To populate them with items you can either use the upload functionality in Orchestrator, or Studio activities. The latter also enable you to change item statuses and process them. As soon as queue items are processed, they become transactions.
-
-
-
-
-8
-8879 project
- If at least one queue item exceeds its deadline, Over Capacity is displayed in the Necessary Robots (SLA) column and predictions are no longer calculated.
-
- Predictions are made for queue items with deadlines in the next 24 hours (can be changed using the Queue.SlaReadaheadTimeLimitHours, and do not take into account the items' defer dates.
-
-
-
-
-9
-8879 project
-In order to specify custom Item/Transaction fields for this project, I had to create a JSON schema document (on jsonschema.net/app/) to upload to the "Specific Data JSON Schema" field. There was a link to a web app for the creation of this document in the article "About Queues and Transactions".
-
-
-
-
-10
-Security+
-RAID 6 is a data storage approach that combines four or more hard drives into a single logical drive. Compared to individual data carriers, it boosts reliability of the system and read speeds. The basis for this is the combination of striping and parity, that also forms the basis of RAID level 5. It comes as little surprise then that RAID 6 is often referred to as “RAID 5 expansion”.
-
-
-
-
 11
 UiPath Platform 2022.10
 The Connector Builder will be housed in the Integration Service. It enables you to:
