@@ -28,7 +28,7 @@ Cyber Kill Chain
 
 13
 Security+
- Wireless deauthentication is like a denial of service for a WAP that forces the client to attach to an evil twin that looks like the legitimate WAP. Once connected, the attacker can capture all of the information being sent through it. A sign of an evil twin is that internet access is slow but you cannot connect to the corporate network.
+Wireless deauthentication is like a denial of service for a WAP that forces the client to attach to an evil twin that looks like the legitimate WAP. Once connected, the attacker can capture all of the information being sent through it. A sign of an evil twin is that internet access is slow but you cannot connect to the corporate network.
 
 
 
