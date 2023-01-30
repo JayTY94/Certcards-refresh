@@ -263,3 +263,205 @@ Infrastructure---------------Capability
 
 
 
+
+
+1
+Security+
+A common on-path attack on a local IP subnet is an ARP poisoning. This is an Address Resolution Protocol poisoning. And that’s because ARP, as a protocol, does not have any type of security associated with it. Devices receive and modify ARP tables without any type of authentication or any type of encryption. This would allow an attacker to send ARPs to any device on the local subnet, and those local devices would interpret the ARPs as if they were coming from a legitimate source.
+
+
+
+
+
+
+2
+Security+
+Exercise
+	Test yourselves before an actual event
+		Scheduled updates sessions (annual, semi-annual, etc.)
+	Use well-defined rules of engagement
+		Do not touch teh production systems
+	Very specific scenario
+		Limited time to run an event
+
+
+
+
+3
+Security+
+Tabletop exercises
+	Many of the logistics can be determined through analysis
+		You don't physically have to go through a disaster to drill
+	Get key players together for a tabletop exercise
+		Talk through a simulated disaster
+
+
+
+
+4
+Security+
+There may be times when you want to go one step beyond a tabletop exercise, and have all of the players step through everything they would do if an incident occurred. This would be a walkthrough. It allows you to test all of your processes and procedures, not only with the management of your organization, but with everyone who would be responding to this particular incident.
+
+
+
+
+5
+Security+
+Walkthrough
+	Test processes and procedures before an event
+		Walk through each step
+		involve all groups
+		Reference actual response materials.
+	Identifies actual faults or missing steps
+		The walkthrough applies the concepts from the tabletop exercise
+
+
+
+
+6
+Security+
+An IT department doesn’t commonly operate in a vacuum. There are usually customers of IT that have applications, data, and other technical resources that the IT department is managing for them. These are the stakeholders in your organization, and when something is not working properly, it’s the stakeholders that are going to be suffering.
+
+
+
+
+7
+Security+
+Most of this relationship building, though, doesn’t occur when an event happens, it occurs prior to the event. Often years before an event would occur. There’s ongoing communication and meetings to make sure that everyone is involved in the process. And if you do have a security exercise, it’s important to involve all of your stakeholders. 
+
+
+
+
+8
+Security+
+When a disaster or security incident occurs, we need to find some other way to get our job done. And often, this will require continuity of operations planning (COOP). This is something that we would put together well before a disaster occurring, so that we know what to do if we don’t have our normal systems in place.
+
+
+
+
+9
+Security+
+Incident response team
+	Receives, reviews, and responds
+		A rpedefined group of professionals
+	Determine what type of events require a response
+		A virus infection? Ransomeware? DDoS?
+
+
+
+
+10
+Security+
+Incident Response Team
+	May or may not be part of the organizational structure
+		Pulled together on an as-needed basis
+	Focuses on incdient handling
+		Incident response
+		Incident analysis
+		Incident reporting
+
+
+
+
+11
+Security+
+Input validation
+	What is the expected input?
+		Validate actual vs expected
+	Document all input methods: Forms, fields, types
+	Check and correct all input (normalization)
+		A zip code should be only X characters long with a letter in the X column
+		Fix any data with improper input
+
+
+
+
+12
+Security+
+It’s important that the application developer understand exactly what input is being used, and how that input is being handled by the application. The attackers are going to use third party tools, such as fuzzers, to be able to constantly try to randomize input into the application to see if perhaps they can make the application perform unexpectedly or in a way that they could replicate later on.
+
+
+
+
+13
+Security+
+Dynamic analysis (fuzzing)
+	Send random input to an application
+	Also called
+		Falut-injection
+		Robustness Testing
+		Syntax Testing
+		Negative Testing
+
+
+
+
+14
+Security+
+Dynamic analysis (fuzzing)
+	Looking for something out of the ordinary
+		Application crash, server error, exception
+	1988 class project at the University of Wisconsin
+		"Operating System Utility Program Reliability"
+		Professor Barton Miller
+		The Fuzz Generator
+
+
+
+15
+Security+
+Fuzzing engines and frameworks
+	Very time and processsor resource heavy
+		Many, many different iterations to try
+		Many fuzzing engines use high-probability tests
+	Carnegie Mellon Computer Emergency Response Team (CERT)
+		CERT Basic Fuzzing Framework (BFF)
+
+
+
+
+16
+Security+
+Many of the cookies that are stored on our system are designated as secure cookies. Those cookies have an attribute on them that is marked as secure. This tells the browser that if this information is being sent across the network, it needs to be sent over an encrypted connection using HTTPS.
+
+
+
+
+17
+Security+
+HTTP Secure Headers
+	An additional layer of security
+		Add these to the web server configuration
+		You can't fix every bad application
+	Enforce HTTPS communication
+		Ensure encrypted communication
+
+
+
+
+18
+Security+
+HTTP Secure Headers
+	Can allow only scryptes, stylehseets, or images fromt eh lcoal site.
+		Prevents Cross-Site Scripting (XSS) attacks
+	PRevent data from laoding into an inline frame (iframe)
+		Also helps prevent XSS attacks 
+
+
+
+
+19
+Security+
+An inline frame (iframe) is a HTML element that loads another HTML page within the document. It essentially puts another webpage within the parent page. They are commonly used for advertisements, embedded videos, web analytics and interactive content.
+
+
+
+
+20
+Security+
+Code Signing is similar to the process we use to provide encryption certificates on web servers. We first need a trusted certificate authority who’s going to sign the developer’s public key. The developer will then use their private key to digitally sign any code that they happen to be deploying. That means that you can validate that this code is exactly what was deployed by the original developer, by validating it with their public key.
+
+
+
+
+
