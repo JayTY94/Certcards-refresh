@@ -491,56 +491,82 @@ Trusted Platform Module (TPM)
 
 8
 Security+
-
+UEFI BIOS Secure Boot
+	Secure Boot - Part of the UEFI specification
+	UEFI BIOS rpotections
+		BIOS includes the manufacturer's public key
+		Digital signature is checked during a BISO update
+		BIOS prevents unauthorized writes to the flash
 
 
 
 
 9
 Security+
-
+UEFI BIOS Secure Boot
+	Secure Boot verifies the bootloader
+		Checks the bootloader's digital signature
+		Bootloader must be signed with a trusted certificate
+		Or a manually approved digital signature
 
 
 
 
 10
 Security+
-
+Trusted Boot
+	Bootloader verifies digital signature of the OS Kernel
+		A corrupted kernel will halt the boot process
+	The kernel verifies all of hte toehr startup components
+		Boot drivers, startup files
 
 
 
 
 11
 Security+
-
+Trusted Boot	
+	Just before ladign the drivers, Early Launch Anti-Malware (ELAM) starts
+		Checks every driver to see if it's trusted
+		Windows won't load an untrusted driver
 
 
 
 
 12
 Security+
-
+Measured Boot
+	Checks that nothing on this computer has changed
+		There have been no malware infections
+	This is easy when it's just your computer, but much harder when there are 1000s
 
 
 
 
 13
 Security+
-
+Measured Boot
+	UEFI stores a hash of the firmware, boot drivers, and everything else loaded during the Secure Boot and Trusted Boot process.
+	These are stored in the TPM
 
 
 
 
 14
 Security+
-
+Measured Boot
+	Remote attestation
+		Device provides an operational reptor to a verification server
+		Encrypted and digitally signed with the TPM
+	Attestation server receives the boot report
+		Chagnes are identified and managed
 
 
 
 
 15
 Security+
-
+Once the QA team has performed their tests, and they feel that the software is ready to be released, there may still be an additional set of tests that need to be done before handing it over to the end users in the production environment. This would be the staging environment. It’s a chance to test the application in a real-world environment that really does test all of the capabilities that the production environment will call for.
 
 
 
