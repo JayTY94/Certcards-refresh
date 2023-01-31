@@ -424,4 +424,156 @@ Code Signing is similar to the process we use to provide encryption certificates
 
 
 
+1
+Security+
+This client-side encryption means that we will be encrypting the data locally, sending all of that encrypted data across the network in its secure form, and ultimately saving it as that encrypted data on the storage drive. This relies on our local applications to have this functionality built into the app itself.
+
+
+
+
+2
+Security+
+There are many different kinds of devices that you can purchase. And there are different options available depending on the model. Some have an auto shutdown capability. So when power is lost, it can send a signal to your computer to automatically power it down safely so that no information is lost.
+
+
+
+
+3
+Security+
+Once the power goes out, there’s usually a 10- or 15-second waiting period to see if the power happens to turn back on. And if it does not, the generator turns on and begins providing power to the building. During that 10 or 15 seconds, though, you will need some type of internal power in the building to make sure that all of your systems remain up and running, which is why you might combine both the UPS and the generator power.
+
+
+
+
+4
+Security+
+In this video, we’re going to look at secure boot, trusted boot, and measured boot, which are all different parts of the boot process. This is something called the chain of trust. And it’s incredibly important that these are in place to be able to protect our operating systems.
+
+
+
+
+5
+Security+
+Hardware root of trust
+	The trust has to start somewhere
+		Trusted Platform Module (TPM) or Hardware Security Module (HSM)
+		Designed ot be hte hardware root of the trust.
+	Difficult to change or avoid because it's hardware
+		Won't work without the hardware
+		Hard to change with software
+
+
+
+
+6
+Security+
+Trusted Platform Module (TPM)
+	A specificastion for cryptographic functions
+		Hardware to help wth encryption functions
+	Cryptographic processor
+		Random number generator, key generators
+	Persistent memory
+		Comes with unique keys burned in during production
+
+
+
+
+7
+Security+
+Trusted Platform Module (TPM)
+	Versatile mamory
+		Storage keys, hardware configuration information
+	Password protected
+		No dictionary attacks
+
+
+
+
+8
+Security+
+
+
+
+
+
+9
+Security+
+
+
+
+
+
+10
+Security+
+
+
+
+
+
+11
+Security+
+
+
+
+
+
+12
+Security+
+
+
+
+
+
+13
+Security+
+
+
+
+
+
+14
+Security+
+
+
+
+
+
+15
+Security+
+
+
+
+
+
+16
+Security+
+
+
+
+
+
+17
+Security+
+
+
+
+
+
+18
+Security+
+
+
+
+
+
+19
+Security+
+
+
+
+
+
+20
+Security+
+
 
