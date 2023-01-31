@@ -573,33 +573,35 @@ Once the QA team has performed their tests, and they feel that the software is r
 
 16
 Security+
-
+Broadcasts have a limited scope. They can only traverse the networks that are connected in a single broadcast domain. When we talk about using a VLAN on our network, that VLAN is a broadcast domain. And any broadcast sent to that VLAN will only be sent to other devices that are on that same VLAN.
 
 
 
 
 17
 Security+
-
+If you’ve done any work with IPv6, one of the things you’ll notice is that there’s no broadcasts. One of the things we did when we implemented IPv6 was focus on multicast, rather than broadcasts, which are much easier to manage.
 
 
 
 
 18
 Security+
-
+Many of our managed switches can be used to control broadcasts. There’s functionality within the software of the switch itself that allows us to limit the number of broadcasts that can be sent in any particular second. Some of these switches can even provide control of multicast, and unicast as well.
 
 
 
 
 19
 Security+
-
+One challenge we have with our layer 2 networks is there’s no mechanism built into layer 2 communication that is able to recognize and remove loops from the network. This makes it very easy for us to accidentally bring down the network by simply connecting two networks to each other into a loop configuration.
 
 
 
 
 20
 Security+
+It’s surprising how easy it is to cause a layer 2 loop, especially if you’re moving around a lot of cables inside of a wiring closet and you accidentally plug the wrong cable into the wrong interface. Fortunately, there is a standard for preventing loops on switch networks that is from the IEEE. It’s the standard called the 802.1D standard that was created by Radia Perlman to prevent loops on any type of switch network.
+
 
 
