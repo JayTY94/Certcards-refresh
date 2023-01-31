@@ -1,37 +1,90 @@
-
-
-21
+1
 Security+
-Important certificate attributes
-	Expiration
-		Limit exposure to compromise
-		398 day browser limit (13 months)
+theHarvester
+	Gather OSINT
+		Open-Source Intelligence
+	Scrape information from google or bing
+		Find associated IP adresses
+	DNS brute force
+		Find those unknown hosts; vpn, chat, mail, partner, etc
 
 
 
 
-22
+2
 Security+
-The False Rejection Rate (FRR) is where authorized users cannot access the system.
-The False Acceptance Rate (FAR) is where unauthorized users access your biometric system.
+Vertical Privilege Escalation
+Vertical privilege escalation, also known as privilege elevation, is a term used in cybersecurity that refers to an attack that starts from a point of lower privilege, then escalates privileges until it reaches the level of the user or process it targets.
 
 
 
 
-23
+3
 Security+
-Distinguished Encoding Rules (DER)
-	Format designed to transfer syntax for data structures
-		A very specific encoding format
-		Perfect for an X.509 certificate
-	Binary format - Not human readable
-	A common format
-		Used across many platofrms, often with Java certificates
+Horizontal Privilege Escalation
+Horizontal privilege escalation means that a user will achieve access permissions belonging to another user that owns the same access level as the user that has started the cyberattack. It is a bit more challenging compared to vertical ones since they require a deep understanding of how operating systems work.
 
 
 
 
-24
+4
+Security+
+Tabletop exercises
+	Many of the logistics can be determined through analysis
+		You don't physically have to go through a disaster to drill
+	Get key players together for a tabletop exercise
+		Talk through a simulated disaster
+
+
+
+
+5
+Security+
+ In order, the best ways to destroy paper waste are burning, followed by pulping, then shredding.
+
+
+
+
+6
+Security+
+HTTP Secure Headers
+	Can allow only scryptes, stylehseets, or images fromt eh lcoal site.
+		Prevents Cross-Site Scripting (XSS) attacks
+	PRevent data from laoding into an inline frame (iframe)
+		Also helps prevent XSS attacks
+
+
+
+
+7
+Security+
+There may be times when you want to go one step beyond a tabletop exercise, and have all of the players step through everything they would do if an incident occurred. This would be a walkthrough. It allows you to test all of your processes and procedures, not only with the management of your organization, but with everyone who would be responding to this particular incident.
+
+
+
+
+8
+Security+
+One method used by attackers to be able to intercept and perhaps even change this API information, is an on-path attack. This is when the attacker sits in the middle of the conversation and is able to view all of the traffic going back and forth, and in many cases modify or replay some of the traffic it has seen in these API calls. This means that an attacker can sit in the middle of the conversation, get an understanding of the way the API operates, and then put their own data into the API flows.
+
+
+
+
+9
+Security+
+When a disaster or security incident occurs, we need to find some other way to get our job done. And often, this will require continuity of operations planning (COOP). This is something that we would put together well before a disaster occurring, so that we know what to do if we don’t have our normal systems in place.
+
+
+
+
+10
+8879 project
+When setting a Deadline or a Postpone date for an Orchestrator transaction, we recommend populating the respective fields with relative dates. For example, DateTime.Now.AddHours(2), DateTime.Now.AddDays(10) and DateTime.Now.Add(New System.TimeSpan(5, 0, 0, 0)). Additionally, you can use the US notation to add an exact time, such as 10/10/2019 07:40:00. Automatic correction of this date is available, for example, if you write 12 10 2019 9:0, it is automatically transformed to 12/10/2019 09:00:00.
+
+
+
+
+11
 Security+
 Commercial certificate authorities
 	Create a key pair, send the public key to a CA to be signed
@@ -42,11 +95,134 @@ Commercial certificate authorities
 
 
 
+12
+Security+
+Measured Boot
+	UEFI stores a hash of the firmware, boot drivers, and everything else loaded during the Secure Boot and Trusted Boot process.
+	These are stored in the TPM
+
+
+
+
+13
+Security+
+Trusted Platform Module (TPM)
+	A specificastion for cryptographic functions
+		Hardware to help wth encryption functions
+	Cryptographic processor
+		Random number generator, key generators
+	Persistent memory
+		Comes with unique keys burned in during production
+
+
+
+
+14
+Security+
+An IT department doesn’t commonly operate in a vacuum. There are usually customers of IT that have applications, data, and other technical resources that the IT department is managing for them. These are the stakeholders in your organization, and when something is not working properly, it’s the stakeholders that are going to be suffering.
+
+
+
+
+15
+Security+
+MITRE ATT&CK framework
+	Determine the actions of an attacker
+		Identify the point of intrusion
+		Understand methods used to move around
+		Identify potential security techniques to block future attacks.
+
+
+
+
+16
+Security+
+HTTP Secure Headers
+	An additional layer of security
+		Add these to the web server configuration
+		You can't fix every bad application
+	Enforce HTTPS communication
+		Ensure encrypted communication
+
+
+
+
+17
+Security+
+Many of our managed switches can be used to control broadcasts. There’s functionality within the software of the switch itself that allows us to limit the number of broadcasts that can be sent in any particular second. Some of these switches can even provide control of multicast, and unicast as well.
+
+
+
+
+18
+Security+
+Many of the cookies that are stored on our system are designated as secure cookies. Those cookies have an attribute on them that is marked as secure. This tells the browser that if this information is being sent across the network, it needs to be sent over an encrypted connection using HTTPS.
+
+
+
+
+19
+Security+
+The False Rejection Rate (FRR) is where authorized users cannot access the system.
+The False Acceptance Rate (FAR) is where unauthorized users access your biometric system.
+
+
+
+
+20
+Security+
+Quantitative risk assessment
+	Likelyhood
+		Annualized Rate of Occurrence (ARO)
+		How likely is it that a hurricane will hit? In Montana? Florida?
+	Single Loss Expectancy (SLE)
+		What is the monetary loss if a single event occurs?
+
+
+
+
+21
+Security+
+A common on-path attack on a local IP subnet is an ARP poisoning. This is an Address Resolution Protocol poisoning. And that’s because ARP, as a protocol, does not have any type of security associated with it. Devices receive and modify ARP tables without any type of authentication or any type of encryption. This would allow an attacker to send ARPs to any device on the local subnet, and those local devices would interpret the ARPs as if they were coming from a legitimate source.
+
+
+
+
+22
+8879 project
+To achieve better control in terms of Orchestrator performance, the Specific Data size of queue items is limited to 1 MB with the help of the Queue.MaxSpecificDataSizeInKiloBytes app setting. Anything beyond this limit cannot be added to a queue, and it returns the 403 - Payload Too Large error code.
+
+
+
+
+23
+Security+
+Once the power goes out, there’s usually a 10- or 15-second waiting period to see if the power happens to turn back on. And if it does not, the generator turns on and begins providing power to the building. During that 10 or 15 seconds, though, you will need some type of internal power in the building to make sure that all of your systems remain up and running, which is why you might combine both the UPS and the generator power.
+
+
+
+
+24
+Security+
+Dynamic analysis (fuzzing)
+	Send random input to an application
+	Also called
+		Falut-injection
+		Robustness Testing
+		Syntax Testing
+		Negative Testing
+
+
+
+
 25
 Security+
-The Diamond Model
-Infrastructure
-The infrastructure includes the physical or logical communication structures such as IP or e-mail addresses, domain names, and others, employed by an adversary to deliver a capability.
+UEFI BIOS Secure Boot
+	Secure Boot - Part of the UEFI specification
+	UEFI BIOS rpotections
+		BIOS includes the manufacturer's public key
+		Digital signature is checked during a BISO update
+		BIOS prevents unauthorized writes to the flash
 
 
 
@@ -59,6 +235,249 @@ If an API has not been properly developed or tested, an attacker may be able to 
 
 
 27
+Security+
+Once the QA team has performed their tests, and they feel that the software is ready to be released, there may still be an additional set of tests that need to be done before handing it over to the end users in the production environment. This would be the staging environment. It’s a chance to test the application in a real-world environment that really does test all of the capabilities that the production environment will call for.
+
+
+
+
+28
+Security+
+Incident Response Team
+	May or may not be part of the organizational structure
+		Pulled together on an as-needed basis
+	Focuses on incdient handling
+		Incident response
+		Incident analysis
+		Incident reporting
+
+
+
+
+29
+Security+
+Measured Boot
+	Checks that nothing on this computer has changed
+		There have been no malware infections
+	This is easy when it's just your computer, but much harder when there are 1000s
+
+
+
+
+30
+Security+
+If you’ve done any work with IPv6, one of the things you’ll notice is that there’s no broadcasts. One of the things we did when we implemented IPv6 was focus on multicast, rather than broadcasts, which are much easier to manage.
+
+
+
+
+31
+Security+
+There are many different kinds of devices that you can purchase. And there are different options available depending on the model. Some have an auto shutdown capability. So when power is lost, it can send a signal to your computer to automatically power it down safely so that no information is lost.
+
+
+
+
+32
+Security+
+Most of this relationship building, though, doesn’t occur when an event happens, it occurs prior to the event. Often years before an event would occur. There’s ongoing communication and meetings to make sure that everyone is involved in the process. And if you do have a security exercise, it’s important to involve all of your stakeholders.
+
+
+
+
+33
+Security+
+Code Signing is similar to the process we use to provide encryption certificates on web servers. We first need a trusted certificate authority who’s going to sign the developer’s public key. The developer will then use their private key to digitally sign any code that they happen to be deploying. That means that you can validate that this code is exactly what was deployed by the original developer, by validating it with their public key.
+
+
+
+
+34
+Security+
+One challenge we have with our layer 2 networks is there’s no mechanism built into layer 2 communication that is able to recognize and remove loops from the network. This makes it very easy for us to accidentally bring down the network by simply connecting two networks to each other into a loop configuration.
+
+
+
+
+35
+Security+
+Measured Boot
+	Remote attestation
+		Device provides an operational reptor to a verification server
+		Encrypted and digitally signed with the TPM
+	Attestation server receives the boot report
+		Chagnes are identified and managed
+
+
+
+
+36
+Security+
+Hashing
+	Verify a downloaded document is the same as the original
+		Website can offer a hash of the file they offer for download
+	Can be a digitial signature
+	Will not have a collision (hopefully)
+
+
+
+
+37
+Security+
+It’s surprising how easy it is to cause a layer 2 loop, especially if you’re moving around a lot of cables inside of a wiring closet and you accidentally plug the wrong cable into the wrong interface. Fortunately, there is a standard for preventing loops on switch networks that is from the IEEE. It’s the standard called the 802.1D standard that was created by Radia Perlman to prevent loops on any type of switch network.
+
+
+
+
+38
+Security+
+Important certificate attributes
+	Expiration
+		Limit exposure to compromise
+		398 day browser limit (13 months)
+
+
+
+
+39
+Security+
+Input validation
+	What is the expected input?
+		Validate actual vs expected
+	Document all input methods: Forms, fields, types
+	Check and correct all input (normalization)
+		A zip code should be only X characters long with a letter in the X column
+		Fix any data with improper input
+
+
+
+
+40
+Security+
+Hardware root of trust
+	The trust has to start somewhere
+		Trusted Platform Module (TPM) or Hardware Security Module (HSM)
+		Designed ot be hte hardware root of the trust.
+	Difficult to change or avoid because it's hardware
+		Won't work without the hardware
+		Hard to change with software
+
+
+
+
+41
+Security+
+Incident response team
+	Receives, reviews, and responds
+		A rpedefined group of professionals
+	Determine what type of events require a response
+		A virus infection? Ransomeware? DDoS?
+
+
+
+
+42
+Security+
+Shadow IT is someone that puts a device on your network without consent.
+
+An insider threat is a disgruntled employee who feels that they have been treated badly by the company.
+
+
+
+
+43
+Security+
+This client-side encryption means that we will be encrypting the data locally, sending all of that encrypted data across the network in its secure form, and ultimately saving it as that encrypted data on the storage drive. This relies on our local applications to have this functionality built into the app itself.
+
+
+
+
+44
+8879 project
+If you configured multiple redirect URIs for the application, the authorization URL must include the redirect_uri parameter matching one of the URIs configured in the Box developer console. If the parameter is not specified, the user will see a redirect_uri_missing error and will not be redirected back to the app after granting application access.
+
+
+
+
+45
+Security+
+Broadcasts have a limited scope. They can only traverse the networks that are connected in a single broadcast domain. When we talk about using a VLAN on our network, that VLAN is a broadcast domain. And any broadcast sent to that VLAN will only be sent to other devices that are on that same VLAN.
+
+
+
+
+46
+Security+
+UEFI BIOS Secure Boot
+	Secure Boot verifies the bootloader
+		Checks the bootloader's digital signature
+		Bootloader must be signed with a trusted certificate
+		Or a manually approved digital signature
+
+
+
+
+47
+Security+
+Trusted Boot
+	Bootloader verifies digital signature of the OS Kernel
+		A corrupted kernel will halt the boot process
+	The kernel verifies all of hte toehr startup components
+		Boot drivers, startup files
+
+
+
+
+48
+Security+
+In this video, we’re going to look at secure boot, trusted boot, and measured boot, which are all different parts of the boot process. This is something called the chain of trust. And it’s incredibly important that these are in place to be able to protect our operating systems.
+
+
+
+
+49
+Security+
+Exercise
+	Test yourselves before an actual event
+		Scheduled updates sessions (annual, semi-annual, etc.)
+	Use well-defined rules of engagement
+		Do not touch teh production systems
+	Very specific scenario
+		Limited time to run an event
+
+
+
+
+50
+Security+
+An inline frame (iframe) is a HTML element that loads another HTML page within the document. It essentially puts another webpage within the parent page. They are commonly used for advertisements, embedded videos, web analytics and interactive content.
+
+
+
+
+51
+Security+
+The Diamond Model
+Infrastructure
+The infrastructure includes the physical or logical communication structures such as IP or e-mail addresses, domain names, and others, employed by an adversary to deliver a capability.
+
+
+
+
+52
+Security+
+Walkthrough
+	Test processes and procedures before an event
+		Walk through each step
+		involve all groups
+		Reference actual response materials.
+	Identifies actual faults or missing steps
+		The walkthrough applies the concepts from the tabletop exercise
+
+
+
+
+53
 OneNote
 Add a new page at the end of the current section: [Ctrl] + N
 Add a new page under current page at same level of indentation: [Ctrl] + [Alt] + N
@@ -68,105 +487,51 @@ Add a new subpage under the current page at the same level of indentation:
 
 
 
-28
-8879 project
-To achieve better control in terms of Orchestrator performance, the Specific Data size of queue items is limited to 1 MB with the help of the Queue.MaxSpecificDataSizeInKiloBytes app setting. Anything beyond this limit cannot be added to a queue, and it returns the 403 - Payload Too Large error code.
-
-
-
-
-29
+54
 Security+
-Shadow IT is someone that puts a device on your network without consent.
+Trusted Platform Module (TPM)
+	Versatile memory
+		Storage keys, hardware configuration information
+	Password protected
+		No dictionary attacks
 
-An insider threat is a disgruntled employee who feels that they have been treated badly by the company.
 
 
 
-
-30
+55
 Security+
-MITRE ATT&CK framework
-	Determine the actions of an attacker
-		Identify the point of intrusion
-		Understand methods used to move around
-		Identify potential security techniques to block future attacks.
+Moving laterally and attacking a host, virtual machine, or hypervisor is called VM escape. Moving laterally across a traditional network and attacking another host is called pivoting.
 
 
 
 
-31
-Accounting
-Verifiable Information: Information on the financial statements must be based on sufficient evidence that can be substantiated and provides a reliable basis for evaluating the firm and its management.
-
-
-
-
-32
-8879 project
-If you configured multiple redirect URIs for the application, the authorization URL must include the redirect_uri parameter matching one of the URIs configured in the Box developer console. If the parameter is not specified, the user will see a redirect_uri_missing error and will not be redirected back to the app after granting application access.
-
-
-
-
-33
+56
 Security+
- In order, the best ways to destroy paper waste are burning, followed by pulping, then shredding.
+Distinguished Encoding Rules (DER)
+	Format designed to transfer syntax for data structures
+		A very specific encoding format
+		Perfect for an X.509 certificate
+	Binary format - Not human readable
+	A common format
+		Used across many platofrms, often with Java certificates
 
 
 
 
-34
+57
 Security+
-One method used by attackers to be able to intercept and perhaps even change this API information, is an on-path attack. This is when the attacker sits in the middle of the conversation and is able to view all of the traffic going back and forth, and in many cases modify or replay some of the traffic it has seen in these API calls. This means that an attacker can sit in the middle of the conversation, get an understanding of the way the API operates, and then put their own data into the API flows.
+Dynamic analysis (fuzzing)
+	Looking for something out of the ordinary
+		Application crash, server error, exception
+	1988 class project at the University of Wisconsin
+		"Operating System Utility Program Reliability"
+		Professor Barton Miller
+		The Fuzz Generator
 
 
 
 
-35
-Security+
-The theory of the Diamond Model
-This methodology underlines the relationships and characteristics of four components of the diamond—adversary, capability, infrastructure, and victim. These four core elements are connected to delineate the relationship between each other which can be analytically examined to further uncover insights and gain knowledge of malicious activities.
-
-
-
-
-36
-8879 project
-When setting a Deadline or a Postpone date for an Orchestrator transaction, we recommend populating the respective fields with relative dates. For example, DateTime.Now.AddHours(2), DateTime.Now.AddDays(10) and DateTime.Now.Add(New System.TimeSpan(5, 0, 0, 0)). Additionally, you can use the US notation to add an exact time, such as 10/10/2019 07:40:00. Automatic correction of this date is available, for example, if you write 12 10 2019 9:0, it is automatically transformed to 12/10/2019 09:00:00.
-
-
-
-
-37
-Security+
-Vertical Privilege Escalation
-Vertical privilege escalation, also known as privilege elevation, is a term used in cybersecurity that refers to an attack that starts from a point of lower privilege, then escalates privileges until it reaches the level of the user or process it targets.
-
-
-
-
-38
-Security+
-Horizontal Privilege Escalation
-Horizontal privilege escalation means that a user will achieve access permissions belonging to another user that owns the same access level as the user that has started the cyberattack. It is a bit more challenging compared to vertical ones since they require a deep understanding of how operating systems work.
-
-
-
-
-39
-Security+
-Quantitative risk assessment
-	Likelyhood
-		Annualized Rate of Occurrence (ARO)
-		How likely is it that a hurricane will hit? In Montana? Florida?
-	Single Loss Expectancy (SLE)
-		What is the monetary loss if a single event occurs?
-
-
-
-
-40
+58
 Security+
 Response and recovery controls
 	Incident response plan should be established
@@ -180,38 +545,25 @@ Response and recovery controls
 
 
 
-41
+59
 Security+
-Moving laterally and attacking a host, virtual machine, or hypervisor is called VM escape. Moving laterally across a traditional network and attacking another host is called pivoting.
+Trusted Boot
+	Just before ladign the drivers, Early Launch Anti-Malware (ELAM) starts
+		Checks every driver to see if it's trusted
+		Windows won't load an untrusted driver
 
 
 
 
-42
+60
 Security+
-theHarvester
-	Gather OSINT
-		Open-Source Intelligence
-	Scrape information from google or bing
-		Find associated IP adresses
-	DNS brute force
-		Find those unknown hosts; vpn, chat, mail, partner, etc
+The theory of the Diamond Model
+This methodology underlines the relationships and characteristics of four components of the diamond—adversary, capability, infrastructure, and victim. These four core elements are connected to delineate the relationship between each other which can be analytically examined to further uncover insights and gain knowledge of malicious activities.
 
 
 
 
-43
-Security+
-Hashing
-	Verify a downloaded document is the same as the original
-		Website can offer a hash of the file they offer for download
-	Can be a digitial signature
-	Will not have a collision (hopefully)
-
-
-
-
-44
+61
 Security+
 The diamond model
                 Adversary
@@ -223,152 +575,7 @@ Infrastructure---------------Capability
 
 
 
-
-
-1
-Security+
-A common on-path attack on a local IP subnet is an ARP poisoning. This is an Address Resolution Protocol poisoning. And that’s because ARP, as a protocol, does not have any type of security associated with it. Devices receive and modify ARP tables without any type of authentication or any type of encryption. This would allow an attacker to send ARPs to any device on the local subnet, and those local devices would interpret the ARPs as if they were coming from a legitimate source.
-
-
-
-
-
-
-2
-Security+
-Exercise
-	Test yourselves before an actual event
-		Scheduled updates sessions (annual, semi-annual, etc.)
-	Use well-defined rules of engagement
-		Do not touch teh production systems
-	Very specific scenario
-		Limited time to run an event
-
-
-
-
-3
-Security+
-Tabletop exercises
-	Many of the logistics can be determined through analysis
-		You don't physically have to go through a disaster to drill
-	Get key players together for a tabletop exercise
-		Talk through a simulated disaster
-
-
-
-
-4
-Security+
-There may be times when you want to go one step beyond a tabletop exercise, and have all of the players step through everything they would do if an incident occurred. This would be a walkthrough. It allows you to test all of your processes and procedures, not only with the management of your organization, but with everyone who would be responding to this particular incident.
-
-
-
-
-5
-Security+
-Walkthrough
-	Test processes and procedures before an event
-		Walk through each step
-		involve all groups
-		Reference actual response materials.
-	Identifies actual faults or missing steps
-		The walkthrough applies the concepts from the tabletop exercise
-
-
-
-
-6
-Security+
-An IT department doesn’t commonly operate in a vacuum. There are usually customers of IT that have applications, data, and other technical resources that the IT department is managing for them. These are the stakeholders in your organization, and when something is not working properly, it’s the stakeholders that are going to be suffering.
-
-
-
-
-7
-Security+
-Most of this relationship building, though, doesn’t occur when an event happens, it occurs prior to the event. Often years before an event would occur. There’s ongoing communication and meetings to make sure that everyone is involved in the process. And if you do have a security exercise, it’s important to involve all of your stakeholders. 
-
-
-
-
-8
-Security+
-When a disaster or security incident occurs, we need to find some other way to get our job done. And often, this will require continuity of operations planning (COOP). This is something that we would put together well before a disaster occurring, so that we know what to do if we don’t have our normal systems in place.
-
-
-
-
-9
-Security+
-Incident response team
-	Receives, reviews, and responds
-		A rpedefined group of professionals
-	Determine what type of events require a response
-		A virus infection? Ransomeware? DDoS?
-
-
-
-
-10
-Security+
-Incident Response Team
-	May or may not be part of the organizational structure
-		Pulled together on an as-needed basis
-	Focuses on incdient handling
-		Incident response
-		Incident analysis
-		Incident reporting
-
-
-
-
-11
-Security+
-Input validation
-	What is the expected input?
-		Validate actual vs expected
-	Document all input methods: Forms, fields, types
-	Check and correct all input (normalization)
-		A zip code should be only X characters long with a letter in the X column
-		Fix any data with improper input
-
-
-
-
-12
-Security+
-It’s important that the application developer understand exactly what input is being used, and how that input is being handled by the application. The attackers are going to use third party tools, such as fuzzers, to be able to constantly try to randomize input into the application to see if perhaps they can make the application perform unexpectedly or in a way that they could replicate later on.
-
-
-
-
-13
-Security+
-Dynamic analysis (fuzzing)
-	Send random input to an application
-	Also called
-		Falut-injection
-		Robustness Testing
-		Syntax Testing
-		Negative Testing
-
-
-
-
-14
-Security+
-Dynamic analysis (fuzzing)
-	Looking for something out of the ordinary
-		Application crash, server error, exception
-	1988 class project at the University of Wisconsin
-		"Operating System Utility Program Reliability"
-		Professor Barton Miller
-		The Fuzz Generator
-
-
-
-15
+62
 Security+
 Fuzzing engines and frameworks
 	Very time and processsor resource heavy
@@ -380,228 +587,17 @@ Fuzzing engines and frameworks
 
 
 
-16
+63
+Accounting
+Verifiable Information: Information on the financial statements must be based on sufficient evidence that can be substantiated and provides a reliable basis for evaluating the firm and its management.
+
+
+
+
+64
 Security+
-Many of the cookies that are stored on our system are designated as secure cookies. Those cookies have an attribute on them that is marked as secure. This tells the browser that if this information is being sent across the network, it needs to be sent over an encrypted connection using HTTPS.
+It’s important that the application developer understand exactly what input is being used, and how that input is being handled by the application. The attackers are going to use third party tools, such as fuzzers, to be able to constantly try to randomize input into the application to see if perhaps they can make the application perform unexpectedly or in a way that they could replicate later on.
 
-
-
-
-17
-Security+
-HTTP Secure Headers
-	An additional layer of security
-		Add these to the web server configuration
-		You can't fix every bad application
-	Enforce HTTPS communication
-		Ensure encrypted communication
-
-
-
-
-18
-Security+
-HTTP Secure Headers
-	Can allow only scryptes, stylehseets, or images fromt eh lcoal site.
-		Prevents Cross-Site Scripting (XSS) attacks
-	PRevent data from laoding into an inline frame (iframe)
-		Also helps prevent XSS attacks 
-
-
-
-
-19
-Security+
-An inline frame (iframe) is a HTML element that loads another HTML page within the document. It essentially puts another webpage within the parent page. They are commonly used for advertisements, embedded videos, web analytics and interactive content.
-
-
-
-
-20
-Security+
-Code Signing is similar to the process we use to provide encryption certificates on web servers. We first need a trusted certificate authority who’s going to sign the developer’s public key. The developer will then use their private key to digitally sign any code that they happen to be deploying. That means that you can validate that this code is exactly what was deployed by the original developer, by validating it with their public key.
-
-
-
-
-1
-Security+
-This client-side encryption means that we will be encrypting the data locally, sending all of that encrypted data across the network in its secure form, and ultimately saving it as that encrypted data on the storage drive. This relies on our local applications to have this functionality built into the app itself.
-
-
-
-
-2
-Security+
-There are many different kinds of devices that you can purchase. And there are different options available depending on the model. Some have an auto shutdown capability. So when power is lost, it can send a signal to your computer to automatically power it down safely so that no information is lost.
-
-
-
-
-3
-Security+
-Once the power goes out, there’s usually a 10- or 15-second waiting period to see if the power happens to turn back on. And if it does not, the generator turns on and begins providing power to the building. During that 10 or 15 seconds, though, you will need some type of internal power in the building to make sure that all of your systems remain up and running, which is why you might combine both the UPS and the generator power.
-
-
-
-
-4
-Security+
-In this video, we’re going to look at secure boot, trusted boot, and measured boot, which are all different parts of the boot process. This is something called the chain of trust. And it’s incredibly important that these are in place to be able to protect our operating systems.
-
-
-
-
-5
-Security+
-Hardware root of trust
-	The trust has to start somewhere
-		Trusted Platform Module (TPM) or Hardware Security Module (HSM)
-		Designed ot be hte hardware root of the trust.
-	Difficult to change or avoid because it's hardware
-		Won't work without the hardware
-		Hard to change with software
-
-
-
-
-6
-Security+
-Trusted Platform Module (TPM)
-	A specificastion for cryptographic functions
-		Hardware to help wth encryption functions
-	Cryptographic processor
-		Random number generator, key generators
-	Persistent memory
-		Comes with unique keys burned in during production
-
-
-
-
-7
-Security+
-Trusted Platform Module (TPM)
-	Versatile memory
-		Storage keys, hardware configuration information
-	Password protected
-		No dictionary attacks
-
-
-
-
-8
-Security+
-UEFI BIOS Secure Boot
-	Secure Boot - Part of the UEFI specification
-	UEFI BIOS rpotections
-		BIOS includes the manufacturer's public key
-		Digital signature is checked during a BISO update
-		BIOS prevents unauthorized writes to the flash
-
-
-
-
-9
-Security+
-UEFI BIOS Secure Boot
-	Secure Boot verifies the bootloader
-		Checks the bootloader's digital signature
-		Bootloader must be signed with a trusted certificate
-		Or a manually approved digital signature
-
-
-
-
-10
-Security+
-Trusted Boot
-	Bootloader verifies digital signature of the OS Kernel
-		A corrupted kernel will halt the boot process
-	The kernel verifies all of hte toehr startup components
-		Boot drivers, startup files
-
-
-
-
-11
-Security+
-Trusted Boot	
-	Just before ladign the drivers, Early Launch Anti-Malware (ELAM) starts
-		Checks every driver to see if it's trusted
-		Windows won't load an untrusted driver
-
-
-
-
-12
-Security+
-Measured Boot
-	Checks that nothing on this computer has changed
-		There have been no malware infections
-	This is easy when it's just your computer, but much harder when there are 1000s
-
-
-
-
-13
-Security+
-Measured Boot
-	UEFI stores a hash of the firmware, boot drivers, and everything else loaded during the Secure Boot and Trusted Boot process.
-	These are stored in the TPM
-
-
-
-
-14
-Security+
-Measured Boot
-	Remote attestation
-		Device provides an operational reptor to a verification server
-		Encrypted and digitally signed with the TPM
-	Attestation server receives the boot report
-		Chagnes are identified and managed
-
-
-
-
-15
-Security+
-Once the QA team has performed their tests, and they feel that the software is ready to be released, there may still be an additional set of tests that need to be done before handing it over to the end users in the production environment. This would be the staging environment. It’s a chance to test the application in a real-world environment that really does test all of the capabilities that the production environment will call for.
-
-
-
-
-16
-Security+
-Broadcasts have a limited scope. They can only traverse the networks that are connected in a single broadcast domain. When we talk about using a VLAN on our network, that VLAN is a broadcast domain. And any broadcast sent to that VLAN will only be sent to other devices that are on that same VLAN.
-
-
-
-
-17
-Security+
-If you’ve done any work with IPv6, one of the things you’ll notice is that there’s no broadcasts. One of the things we did when we implemented IPv6 was focus on multicast, rather than broadcasts, which are much easier to manage.
-
-
-
-
-18
-Security+
-Many of our managed switches can be used to control broadcasts. There’s functionality within the software of the switch itself that allows us to limit the number of broadcasts that can be sent in any particular second. Some of these switches can even provide control of multicast, and unicast as well.
-
-
-
-
-19
-Security+
-One challenge we have with our layer 2 networks is there’s no mechanism built into layer 2 communication that is able to recognize and remove loops from the network. This makes it very easy for us to accidentally bring down the network by simply connecting two networks to each other into a loop configuration.
-
-
-
-
-20
-Security+
-It’s surprising how easy it is to cause a layer 2 loop, especially if you’re moving around a lot of cables inside of a wiring closet and you accidentally plug the wrong cable into the wrong interface. Fortunately, there is a standard for preventing loops on switch networks that is from the IEEE. It’s the standard called the 802.1D standard that was created by Radia Perlman to prevent loops on any type of switch network.
 
 
 
