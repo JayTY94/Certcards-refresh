@@ -481,7 +481,7 @@ Trusted Platform Module (TPM)
 7
 Security+
 Trusted Platform Module (TPM)
-	Versatile mamory
+	Versatile memory
 		Storage keys, hardware configuration information
 	Password protected
 		No dictionary attacks
