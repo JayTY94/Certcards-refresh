@@ -1,45 +1,5 @@
 
 
-16
-8879 project
-The Priority of the items added in a queue after enabling SLA predictions is automatically set to High, regardless of how it was set in Studio or in the .csv file used for upload.
-
-You cannot delete a process associated to a queue with enabled SLA predictions.
-
-
-
-
-17
-8879 project
-The Transactions page displays the transactions from a given queue. It also shows their statuses, the dates when they should be processed, the Robot that processed them, and the type of exception thrown or assigned reference, if any.
-
-
-
-
-18
-Security+
-The Diamond Model
-Victim
-A victim is a target against whom attacks are initiated, vulnerabilities are exploited, or capabilities are used. It can be organizations, people, or assets, such as target email or IP addresses, domains, and so on.
-
-
-
-
-19
-8879 project
-In the process a user is redirected to the Box web app in a browser where they log in and authorize the application access to their data before they are redirected back to the applications redirect_url. This last step requires the application to be running on a web server somewhere accessible to the user.
-
-
-
-
-20
-Security+
-VM sprawl is where a virtual machine is running out of resources.
-Privilege escalation occurs when someone has been given too many permissions.
-
-
-
-
 21
 Security+
 Important certificate attributes
