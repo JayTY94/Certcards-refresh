@@ -2,17 +2,6 @@
 
 
 
-15
-Security+
-HTTP Secure Headers
-	Can allow only scryptes, stylehseets, or images fromt eh lcoal site.
-		Prevents Cross-Site Scripting (XSS) attacks
-	PRevent data from laoding into an inline frame (iframe)
-		Also helps prevent XSS attacks
-
-
-
-
 16
 OneNote
 Add a new page at the end of the current section: [Ctrl] + N
