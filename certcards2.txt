@@ -1,49 +1,5 @@
 
 
-
-
-16
-OneNote
-Add a new page at the end of the current section: [Ctrl] + N
-Add a new page under current page at same level of indentation: [Ctrl] + [Alt] + N
-Add a new subpage under the current page at the same level of indentation:
-[Ctrl] + [Alt] + [Shift] + N
-
-
-
-
-17
-Security+
-The False Rejection Rate (FRR) is where authorized users cannot access the system.
-The False Acceptance Rate (FAR) is where unauthorized users access your biometric system.
-
-
-
-
-18
-Security+
-Measured Boot
-	Checks that nothing on this computer has changed
-		There have been no malware infections
-	This is easy when it's just your computer, but much harder when there are 1000s
-
-
-
-
-19
-Security+
-Many of the cookies that are stored on our system are designated as secure cookies. Those cookies have an attribute on them that is marked as secure. This tells the browser that if this information is being sent across the network, it needs to be sent over an encrypted connection using HTTPS.
-
-
-
-
-20
-Security+
-Broadcasts have a limited scope. They can only traverse the networks that are connected in a single broadcast domain. When we talk about using a VLAN on our network, that VLAN is a broadcast domain. And any broadcast sent to that VLAN will only be sent to other devices that are on that same VLAN.
-
-
-
-
 21
 8879 project
 To achieve better control in terms of Orchestrator performance, the Specific Data size of queue items is limited to 1 MB with the help of the Queue.MaxSpecificDataSizeInKiloBytes app setting. Anything beyond this limit cannot be added to a queue, and it returns the 403 - Payload Too Large error code.
