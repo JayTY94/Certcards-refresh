@@ -1,49 +1,5 @@
 
 
-21
-8879 project
-To achieve better control in terms of Orchestrator performance, the Specific Data size of queue items is limited to 1 MB with the help of the Queue.MaxSpecificDataSizeInKiloBytes app setting. Anything beyond this limit cannot be added to a queue, and it returns the 403 - Payload Too Large error code.
-
-
-
-
-22
-Security+
-If an API has not been properly developed or tested, an attacker may be able to find a vulnerability that wouldn’t be able to use the functionality of the application, but it might be able to cause the application to fail. This would be a denial of service attack, and it would then prevent anyone else from gaining access to that application
-
-
-
-
-23
-Security+
-Trusted Boot
-	Bootloader verifies digital signature of the OS Kernel
-		A corrupted kernel will halt the boot process
-	The kernel verifies all of hte toehr startup components
-		Boot drivers, startup files
-
-
-
-
-24
-Security+
-UEFI BIOS Secure Boot
-	Secure Boot - Part of the UEFI specification
-	UEFI BIOS rpotections
-		BIOS includes the manufacturer's public key
-		Digital signature is checked during a BISO update
-		BIOS prevents unauthorized writes to the flash
-
-
-
-
-25
-Security+
-If you’ve done any work with IPv6, one of the things you’ll notice is that there’s no broadcasts. One of the things we did when we implemented IPv6 was focus on multicast, rather than broadcasts, which are much easier to manage.
-
-
-
-
 26
 Security+
 Incident Response Team
