@@ -1,48 +1,5 @@
 
 
-26
-Security+
-Incident Response Team
-	May or may not be part of the organizational structure
-		Pulled together on an as-needed basis
-	Focuses on incdient handling
-		Incident response
-		Incident analysis
-		Incident reporting
-
-
-
-
-27
-Security+
-There are many different kinds of devices that you can purchase. And there are different options available depending on the model. Some have an auto shutdown capability. So when power is lost, it can send a signal to your computer to automatically power it down safely so that no information is lost.
-
-
-
-
-28
-Security+
-When a disaster or security incident occurs, we need to find some other way to get our job done. And often, this will require continuity of operations planning (COOP). This is something that we would put together well before a disaster occurring, so that we know what to do if we don’t have our normal systems in place.
-
-
-
-
-29
-Security+
-One challenge we have with our layer 2 networks is there’s no mechanism built into layer 2 communication that is able to recognize and remove loops from the network. This makes it very easy for us to accidentally bring down the network by simply connecting two networks to each other into a loop configuration.
-
-
-
-
-30
-Security+
-Incident response team
-	Receives, reviews, and responds
-		A rpedefined group of professionals
-	Determine what type of events require a response
-		A virus infection? Ransomeware? DDoS?
-
-
 
 
 31
