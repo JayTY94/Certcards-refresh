@@ -1,54 +1,5 @@
 
 
-
-
-31
-Security+
-Exercise
-	Test yourselves before an actual event
-		Scheduled updates sessions (annual, semi-annual, etc.)
-	Use well-defined rules of engagement
-		Do not touch teh production systems
-	Very specific scenario
-		Limited time to run an event
-
-
-
-
-32
-Security+
-A common on-path attack on a local IP subnet is an ARP poisoning. This is an Address Resolution Protocol poisoning. And that’s because ARP, as a protocol, does not have any type of security associated with it. Devices receive and modify ARP tables without any type of authentication or any type of encryption. This would allow an attacker to send ARPs to any device on the local subnet, and those local devices would interpret the ARPs as if they were coming from a legitimate source.
-
-
-
-
-33
-Security+
-Dynamic analysis (fuzzing)
-	Send random input to an application
-	Also called
-		Falut-injection
-		Robustness Testing
-		Syntax Testing
-		Negative Testing
-
-
-
-
-34
-Security+
-Once the QA team has performed their tests, and they feel that the software is ready to be released, there may still be an additional set of tests that need to be done before handing it over to the end users in the production environment. This would be the staging environment. It’s a chance to test the application in a real-world environment that really does test all of the capabilities that the production environment will call for.
-
-
-
-
-35
-Accounting
-Verifiable Information: Information on the financial statements must be based on sufficient evidence that can be substantiated and provides a reliable basis for evaluating the firm and its management.
-
-
-
-
 36
 Security+
 UEFI BIOS Secure Boot
