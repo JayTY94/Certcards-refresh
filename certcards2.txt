@@ -1,17 +1,4 @@
 
-
-
-38
-Security+
-Commercial certificate authorities
-	Create a key pair, send the public key to a CA to be signed
-		A certificate signing request (CSR)
-	May provide different levels of trust and additional feaures
-		Add a new "tag" to your website
-
-
-
-
 39
 Security+
 Trusted Platform Module (TPM)
