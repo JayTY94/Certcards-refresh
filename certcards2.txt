@@ -1,15 +1,4 @@
 
-37
-Security+
-Hardware root of trust
-	The trust has to start somewhere
-		Trusted Platform Module (TPM) or Hardware Security Module (HSM)
-		Designed ot be hte hardware root of the trust.
-	Difficult to change or avoid because it's hardware
-		Won't work without the hardware
-		Hard to change with software
-
-
 
 
 38
