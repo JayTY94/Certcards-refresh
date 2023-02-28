@@ -1,22 +1,4 @@
 
-39
-Security+
-Trusted Platform Module (TPM)
-	Versatile memory
-		Storage keys, hardware configuration information
-	Password protected
-		No dictionary attacks
-
-
-
-
-40
-8879 project
-If you configured multiple redirect URIs for the application, the authorization URL must include the redirect_uri parameter matching one of the URIs configured in the Box developer console. If the parameter is not specified, the user will see a redirect_uri_missing error and will not be redirected back to the app after granting application access.
-
-
-
-
 41
 Security+
 Horizontal Privilege Escalation
