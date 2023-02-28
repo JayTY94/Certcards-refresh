@@ -360,3 +360,6 @@ A keloid scar is a thick raised scar. It can occur wherever you have a skin inju
 
 
 
+1
+CPEbot
+I found on 2/28/23 while fixing CPE bot that the For Each Email activity's additional filters do not work. Use if statements applied to elements of the automatically created CurrentMail object instead.
