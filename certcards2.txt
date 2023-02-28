@@ -1,16 +1,4 @@
 
-
-36
-Security+
-UEFI BIOS Secure Boot
-	Secure Boot verifies the bootloader
-		Checks the bootloader's digital signature
-		Bootloader must be signed with a trusted certificate
-		Or a manually approved digital signature
-
-
-
-
 37
 Security+
 Hardware root of trust
