@@ -1,181 +1,18 @@
-
-41
-Security+
-Horizontal Privilege Escalation
-Horizontal privilege escalation means that a user will achieve access permissions belonging to another user that owns the same access level as the user that has started the cyberattack. It is a bit more challenging compared to vertical ones since they require a deep understanding of how operating systems work.
+1
+CPEbot
+I found on 2/28/23 while fixing CPE bot that the For Each Email activity's additional filters do not work. Use if statements applied to elements of the automatically created CurrentMail object instead.
 
 
 
 
-42
-Security+
-Tabletop exercises
-	Many of the logistics can be determined through analysis
-		You don't physically have to go through a disaster to drill
-	Get key players together for a tabletop exercise
-		Talk through a simulated disaster
-
-
-
-
-43
-Security+
-theHarvester
-	Gather OSINT
-		Open-Source Intelligence
-	Scrape information from google or bing
-		Find associated IP adresses
-	DNS brute force
-		Find those unknown hosts; vpn, chat, mail, partner, etc
-
-
-
-
-44
-Security+
-Code Signing is similar to the process we use to provide encryption certificates on web servers. We first need a trusted certificate authority who’s going to sign the developer’s public key. The developer will then use their private key to digitally sign any code that they happen to be deploying. That means that you can validate that this code is exactly what was deployed by the original developer, by validating it with their public key.
-
-
-
-
-45
+2
 Security+
 In this video, we’re going to look at secure boot, trusted boot, and measured boot, which are all different parts of the boot process. This is something called the chain of trust. And it’s incredibly important that these are in place to be able to protect our operating systems.
 
 
 
 
-46
-Security+
-Distinguished Encoding Rules (DER)
-	Format designed to transfer syntax for data structures
-		A very specific encoding format
-		Perfect for an X.509 certificate
-	Binary format - Not human readable
-	A common format
-		Used across many platofrms, often with Java certificates
-
-
-
-
-47
-Security+
-Hashing
-	Verify a downloaded document is the same as the original
-		Website can offer a hash of the file they offer for download
-	Can be a digitial signature
-	Will not have a collision (hopefully)
-
-
-
-
-48
-Security+
-An IT department doesn’t commonly operate in a vacuum. There are usually customers of IT that have applications, data, and other technical resources that the IT department is managing for them. These are the stakeholders in your organization, and when something is not working properly, it’s the stakeholders that are going to be suffering.
-
-
-
-
-49
-Security+
-Walkthrough
-	Test processes and procedures before an event
-		Walk through each step
-		involve all groups
-		Reference actual response materials.
-	Identifies actual faults or missing steps
-		The walkthrough applies the concepts from the tabletop exercise
-
-
-
-
-50
-Security+
-Input validation
-	What is the expected input?
-		Validate actual vs expected
-	Document all input methods: Forms, fields, types
-	Check and correct all input (normalization)
-		A zip code should be only X characters long with a letter in the X column
-		Fix any data with improper input
-
-
-
-
-51
-Security+
-Quantitative risk assessment
-	Likelyhood
-		Annualized Rate of Occurrence (ARO)
-		How likely is it that a hurricane will hit? In Montana? Florida?
-	Single Loss Expectancy (SLE)
-		What is the monetary loss if a single event occurs?
-
-
-
-
-52
-Security+
-Trusted Boot
-	Just before ladign the drivers, Early Launch Anti-Malware (ELAM) starts
-		Checks every driver to see if it's trusted
-		Windows won't load an untrusted driver
-
-
-
-
-53
-Security+
-It’s important that the application developer understand exactly what input is being used, and how that input is being handled by the application. The attackers are going to use third party tools, such as fuzzers, to be able to constantly try to randomize input into the application to see if perhaps they can make the application perform unexpectedly or in a way that they could replicate later on.
-
-
-
-
-54
-Security+
-Measured Boot
-	UEFI stores a hash of the firmware, boot drivers, and everything else loaded during the Secure Boot and Trusted Boot process.
-	These are stored in the TPM
-
-
-
-
-55
-Security+
-An inline frame (iframe) is a HTML element that loads another HTML page within the document. It essentially puts another webpage within the parent page. They are commonly used for advertisements, embedded videos, web analytics and interactive content.
-
-
-
-
-56
-8879 project
-When setting a Deadline or a Postpone date for an Orchestrator transaction, we recommend populating the respective fields with relative dates. For example, DateTime.Now.AddHours(2), DateTime.Now.AddDays(10) and DateTime.Now.Add(New System.TimeSpan(5, 0, 0, 0)). Additionally, you can use the US notation to add an exact time, such as 10/10/2019 07:40:00. Automatic correction of this date is available, for example, if you write 12 10 2019 9:0, it is automatically transformed to 12/10/2019 09:00:00.
-
-
-
-
-57
-Security+
-Moving laterally and attacking a host, virtual machine, or hypervisor is called VM escape. Moving laterally across a traditional network and attacking another host is called pivoting.
-
-
-
-
-58
-Security+
-Once the power goes out, there’s usually a 10- or 15-second waiting period to see if the power happens to turn back on. And if it does not, the generator turns on and begins providing power to the building. During that 10 or 15 seconds, though, you will need some type of internal power in the building to make sure that all of your systems remain up and running, which is why you might combine both the UPS and the generator power.
-
-
-
-
-59
-Security+
-Many of our managed switches can be used to control broadcasts. There’s functionality within the software of the switch itself that allows us to limit the number of broadcasts that can be sent in any particular second. Some of these switches can even provide control of multicast, and unicast as well.
-
-
-
-
-60
+3
 Security+
 MITRE ATT&CK framework
 	Determine the actions of an attacker
@@ -186,99 +23,26 @@ MITRE ATT&CK framework
 
 
 
-61
-Security+
-Fuzzing engines and frameworks
-	Very time and processsor resource heavy
-		Many, many different iterations to try
-		Many fuzzing engines use high-probability tests
-	Carnegie Mellon Computer Emergency Response Team (CERT)
-		CERT Basic Fuzzing Framework (BFF)
-
-
-
-
-62
+4
 Security+
 Most of this relationship building, though, doesn’t occur when an event happens, it occurs prior to the event. Often years before an event would occur. There’s ongoing communication and meetings to make sure that everyone is involved in the process. And if you do have a security exercise, it’s important to involve all of your stakeholders.
 
 
 
 
-63
-Security+
-HTTP Secure Headers
-	An additional layer of security
-		Add these to the web server configuration
-		You can't fix every bad application
-	Enforce HTTPS communication
-		Ensure encrypted communication
-
-
-
-
-64
-Security+
-Shadow IT is someone that puts a device on your network without consent.
-
-An insider threat is a disgruntled employee who feels that they have been treated badly by the company.
-
-
-
-
-1
-A Little Hatred
-paean
-	/ˈpēən/
-	noun
-	a song of praise or triumph.
-		"a paean of praise for the great poets"
-	a thing that expresses enthusiastic praise.
-		"his books are paeans to combat"
-
-
-
-
-2
-A Little Hatred
-dross
-	/drôs,dräs/
-	noun
-	something regarded as worthless; rubbish.
-		"there are bargains if you have the patience to sift through the dross"
-
-
-
-
-3
-Book Eaters
-Biblichor is the word that describes the particular smell that belongs to old books. Biblichor is a newly created word that combines the Greek words biblio (book) with ichor (the fluid that flows like blood in the veins of the gods), much the way petrichor was created.
-
-
-
-
-4
-Book Eaters
-The snow bunting is a sexually dimorphic, medium-sized passerine bird. This passerine is a ground-dwelling species that walks, runs and could potentially jump if needed.[7] It measures 15 cm with a wingspan of 32–38 cm (13–15 in) and weights 30 to 40 grams.[8][7][14] The bill is yellow with a black tip, and is all black in summer for males. 
-
-
-
-
 5
-Book Eaters
-A postern is a secondary door or gate in a fortification such as a city wall or castle curtain wall. Posterns were often located in a concealed location which allowed the occupants to come and go inconspicuously. In the event of a siege, a postern could act as a sally port, allowing defenders to make a sortie on the besiegers. 
+Security+
+Moving laterally and attacking a host, virtual machine, or hypervisor is called VM escape. Moving laterally across a traditional network and attacking another host is called pivoting.
 
 
 
 
 6
-Book Eaters
-doss around
-	phrasal verb with doss verb [ I usually + adv/prep ] UK slang
-		UK ( also doss about)
-	
-	to spend your time doing very little:
-	Come on, Peter, stop dossing around and get some work done.
+Security+
+Trusted Boot
+	Just before ladign the drivers, Early Launch Anti-Malware (ELAM) starts
+		Checks every driver to see if it's trusted
+		Windows won't load an untrusted driver
 
 
 
@@ -293,6 +57,22 @@ A substance made from morphine. Diamorphine hydrochloride is very addictive, and
 
 
 8
+Security+
+Shadow IT is someone that puts a device on your network without consent.
+
+An insider threat is a disgruntled employee who feels that they have been treated badly by the company.
+
+
+
+
+9
+Book Eaters
+Biblichor is the word that describes the particular smell that belongs to old books. Biblichor is a newly created word that combines the Greek words biblio (book) with ichor (the fluid that flows like blood in the veins of the gods), much the way petrichor was created.
+
+
+
+
+10
 Book Eaters
 peritoneal
 	(PAYR-ih-toh-NEE-ul)
@@ -301,14 +81,65 @@ peritoneal
 
 
 
-9
+11
+Security+
+Walkthrough
+	Test processes and procedures before an event
+		Walk through each step
+		involve all groups
+		Reference actual response materials.
+	Identifies actual faults or missing steps
+		The walkthrough applies the concepts from the tabletop exercise
+
+
+
+
+12
+Security+
+Input validation
+	What is the expected input?
+		Validate actual vs expected
+	Document all input methods: Forms, fields, types
+	Check and correct all input (normalization)
+		A zip code should be only X characters long with a letter in the X column
+		Fix any data with improper input
+
+
+
+
+13
+Security+
+Quantitative risk assessment
+	Likelyhood
+		Annualized Rate of Occurrence (ARO)
+		How likely is it that a hurricane will hit? In Montana? Florida?
+	Single Loss Expectancy (SLE)
+		What is the monetary loss if a single event occurs?
+
+
+
+
+14
 Book Eaters
 The Day Boy and Night Girl, also referred to as The Romance of Photogen and Nycteris, is an 1882 fairy tale novel by George MacDonald. It begins with a description of a witch named Watho who, in her pursuit of complete knowledge, undertook an experiment to mould two people from birth by strictly controlling their environments.
 
 
 
 
-1
+15
+Security+
+theHarvester
+	Gather OSINT
+		Open-Source Intelligence
+	Scrape information from google or bing
+		Find associated IP adresses
+	DNS brute force
+		Find those unknown hosts; vpn, chat, mail, partner, etc
+
+
+
+
+16
 The Fifth Season
 Axinite is a brown to violet-brown, or reddish-brown bladed group of minerals composed of calcium aluminium boro-silicate, (Ca,Fe,Mn)3Al2BO3Si4O12OH.
 	Color: Reddish brown to yellow to colorless. Blue, violet, grey.
@@ -317,14 +148,40 @@ Axinite is a brown to violet-brown, or reddish-brown bladed group of minerals co
 
 
 
-2
-General
-Thomas Andrew Lehrer (/ˈlɛərər/; born April 9, 1928) is an American musician, singer-songwriter, satirist, and mathematician. He recorded pithy and humorous songs that became popular in the 1950s and 1960s. His songs often parodied popular musical forms, though they usually had original melodies. An exception is "The Elements", in which he set the names of the chemical elements to the tune of the "Major-General's Song" from Gilbert and Sullivan's Pirates of Penzance.
+
+17
+A Little Hatred
+paean
+	/ˈpēən/
+	noun
+	a song of praise or triumph.
+		"a paean of praise for the great poets"
+	a thing that expresses enthusiastic praise.
+		"his books are paeans to combat"
 
 
 
 
-3
+18
+Security+
+Fuzzing engines and frameworks
+	Very time and processsor resource heavy
+		Many, many different iterations to try
+		Many fuzzing engines use high-probability tests
+	Carnegie Mellon Computer Emergency Response Team (CERT)
+		CERT Basic Fuzzing Framework (BFF)
+
+
+
+
+19
+8879 project
+When setting a Deadline or a Postpone date for an Orchestrator transaction, we recommend populating the respective fields with relative dates. For example, DateTime.Now.AddHours(2), DateTime.Now.AddDays(10) and DateTime.Now.Add(New System.TimeSpan(5, 0, 0, 0)). Additionally, you can use the US notation to add an exact time, such as 10/10/2019 07:40:00. Automatic correction of this date is available, for example, if you write 12 10 2019 9:0, it is automatically transformed to 12/10/2019 09:00:00.
+
+
+
+
+20
 The Fifth Season
 spav·ined  (spăv′ĭnd)
 	adj.
@@ -334,14 +191,161 @@ spav·ined  (spăv′ĭnd)
 
 
 
-4
+21
+Book Eaters
+A postern is a secondary door or gate in a fortification such as a city wall or castle curtain wall. Posterns were often located in a concealed location which allowed the occupants to come and go inconspicuously. In the event of a siege, a postern could act as a sally port, allowing defenders to make a sortie on the besiegers.
+
+
+
+
+22
+Security+
+Once the power goes out, there’s usually a 10- or 15-second waiting period to see if the power happens to turn back on. And if it does not, the generator turns on and begins providing power to the building. During that 10 or 15 seconds, though, you will need some type of internal power in the building to make sure that all of your systems remain up and running, which is why you might combine both the UPS and the generator power.
+
+
+
+
+23
+Security+
+An inline frame (iframe) is a HTML element that loads another HTML page within the document. It essentially puts another webpage within the parent page. They are commonly used for advertisements, embedded videos, web analytics and interactive content.
+
+
+
+
+24
+Security+
+Hashing
+	Verify a downloaded document is the same as the original
+		Website can offer a hash of the file they offer for download
+	Can be a digitial signature
+	Will not have a collision (hopefully)
+
+
+
+
+25
+Security+
+It’s important that the application developer understand exactly what input is being used, and how that input is being handled by the application. The attackers are going to use third party tools, such as fuzzers, to be able to constantly try to randomize input into the application to see if perhaps they can make the application perform unexpectedly or in a way that they could replicate later on.
+
+
+
+
+26
+General
+Thomas Andrew Lehrer (/ˈlɛərər/; born April 9, 1928) is an American musician, singer-songwriter, satirist, and mathematician. He recorded pithy and humorous songs that became popular in the 1950s and 1960s. His songs often parodied popular musical forms, though they usually had original melodies. An exception is "The Elements", in which he set the names of the chemical elements to the tune of the "Major-General's Song" from Gilbert and Sullivan's Pirates of Penzance.
+
+
+
+
+27
+Security+
+Distinguished Encoding Rules (DER)
+	Format designed to transfer syntax for data structures
+		A very specific encoding format
+		Perfect for an X.509 certificate
+	Binary format - Not human readable
+	A common format
+		Used across many platofrms, often with Java certificates
+
+
+
+
+28
 The Fifth Season
 A keloid scar is a thick raised scar. It can occur wherever you have a skin injury but usually forms on earlobes, shoulders, cheeks or the chest. If you're prone to developing keloids, you might get them in more than one place.
 
 
 
 
+29
+Security+
+Tabletop exercises
+	Many of the logistics can be determined through analysis
+		You don't physically have to go through a disaster to drill
+	Get key players together for a tabletop exercise
+		Talk through a simulated disaster
 
-1
-CPEbot
-I found on 2/28/23 while fixing CPE bot that the For Each Email activity's additional filters do not work. Use if statements applied to elements of the automatically created CurrentMail object instead.
+
+
+
+30
+Security+
+Measured Boot
+	UEFI stores a hash of the firmware, boot drivers, and everything else loaded during the Secure Boot and Trusted Boot process.
+	These are stored in the TPM
+
+
+
+
+31
+Security+
+Many of our managed switches can be used to control broadcasts. There’s functionality within the software of the switch itself that allows us to limit the number of broadcasts that can be sent in any particular second. Some of these switches can even provide control of multicast, and unicast as well.
+
+
+
+
+32
+Security+
+HTTP Secure Headers
+	An additional layer of security
+		Add these to the web server configuration
+		You can't fix every bad application
+	Enforce HTTPS communication
+		Ensure encrypted communication
+
+
+
+
+33
+A Little Hatred
+dross
+	/drôs,dräs/
+	noun
+	something regarded as worthless; rubbish.
+		"there are bargains if you have the patience to sift through the dross"
+
+
+
+
+34
+Book Eaters
+The snow bunting is a sexually dimorphic, medium-sized passerine bird. This passerine is a ground-dwelling species that walks, runs and could potentially jump if needed.[7] It measures 15 cm with a wingspan of 32–38 cm (13–15 in) and weights 30 to 40 grams.[8][7][14] The bill is yellow with a black tip, and is all black in summer for males.
+
+
+
+
+35
+Security+
+Code Signing is similar to the process we use to provide encryption certificates on web servers. We first need a trusted certificate authority who’s going to sign the developer’s public key. The developer will then use their private key to digitally sign any code that they happen to be deploying. That means that you can validate that this code is exactly what was deployed by the original developer, by validating it with their public key.
+
+
+
+
+36
+Book Eaters
+doss around
+	phrasal verb with doss verb [ I usually + adv/prep ] UK slang
+		UK ( also doss about)
+	
+	to spend your time doing very little:
+	Come on, Peter, stop dossing around and get some work done.
+
+
+
+
+37
+41
+Security+
+Horizontal Privilege Escalation
+Horizontal privilege escalation means that a user will achieve access permissions belonging to another user that owns the same access level as the user that has started the cyberattack. It is a bit more challenging compared to vertical ones since they require a deep understanding of how operating systems work.
+
+
+
+
+38
+Security+
+An IT department doesn’t commonly operate in a vacuum. There are usually customers of IT that have applications, data, and other technical resources that the IT department is managing for them. These are the stakeholders in your organization, and when something is not working properly, it’s the stakeholders that are going to be suffering.
+
+
+
+
