@@ -2,30 +2,6 @@
 
 
 
-3
-Security+
-MITRE ATT&CK framework
-	Determine the actions of an attacker
-		Identify the point of intrusion
-		Understand methods used to move around
-		Identify potential security techniques to block future attacks.
-
-
-
-
-4
-Security+
-Most of the DR relationship building doesn’t occur when an event happens, it occurs prior to the security event. Often years before a security event would occur. There’s ongoing communication and meetings to make sure that everyone is involved in the process. And if you do have a security exercise, it’s important to involve all of your stakeholders.
-
-
-
-
-5
-Security+
-Moving laterally and attacking a host, virtual machine, or hypervisor is called VM escape. Moving laterally across a traditional network and attacking another host is called pivoting.
-
-
-
 
 6
 Security+
