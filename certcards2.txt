@@ -1,52 +1,5 @@
 
 
-
-
-
-6
-Security+
-Trusted Boot
-	Just before ladign the drivers, Early Launch Anti-Malware (ELAM) starts
-		Checks every driver to see if it's trusted
-		Windows won't load an untrusted driver
-
-
-
-
-7
-Book Eaters
-diamorphine hydrochloride
-
-A substance made from morphine. Diamorphine hydrochloride is very addictive, and it is illegal to use or sell it in the United States. It may be used outside the United States to treat severe pain. It is a type of analgesic agent and a type of opiate. Also called diacetylmorphine hydrochloride and heroin.
-
-
-
-
-8
-Security+
-Shadow IT is someone that puts a device on your network without consent.
-
-An insider threat is a disgruntled employee who feels that they have been treated badly by the company.
-
-
-
-
-9
-Book Eaters
-Biblichor is the word that describes the particular smell that belongs to old books. Biblichor is a newly created word that combines the Greek words biblio (book) with ichor (the fluid that flows like blood in the veins of the gods), much the way petrichor was created.
-
-
-
-
-10
-Book Eaters
-peritoneal
-	(PAYR-ih-toh-NEE-ul)
-	Having to do with the parietal peritoneum (the tissue that lines the abdominal wall and pelvic cavity) and visceral peritoneum (the tissue that covers most of the organs in the abdomen, including the intestines).
-
-
-
-
 11
 Security+
 Walkthrough
