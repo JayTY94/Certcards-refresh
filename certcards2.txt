@@ -253,7 +253,6 @@ doss around
 
 
 37
-41
 Security+
 Horizontal Privilege Escalation
 Horizontal privilege escalation means that a user will achieve access permissions belonging to another user that owns the same access level as the user that has started the cyberattack. It is a bit more challenging compared to vertical ones since they require a deep understanding of how operating systems work.
