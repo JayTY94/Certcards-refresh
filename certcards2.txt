@@ -1,44 +1,4 @@
 
-
-21
-Book Eaters
-A postern is a secondary door or gate in a fortification such as a city wall or castle curtain wall. Posterns were often located in a concealed location which allowed the occupants to come and go inconspicuously. In the event of a siege, a postern could act as a sally port, allowing defenders to make a sortie on the besiegers.
-
-
-
-
-22
-Security+
-Once the power goes out, there’s usually a 10- or 15-second waiting period to see if the power happens to turn back on. And if it does not, the generator turns on and begins providing power to the building. During that 10 or 15 seconds, though, you will need some type of internal power in the building to make sure that all of your systems remain up and running, which is why you might combine both the UPS and the generator power.
-
-
-
-
-23
-Security+
-An inline frame (iframe) is a HTML element that loads another HTML page within the document. It essentially puts another webpage within the parent page. They are commonly used for advertisements, embedded videos, web analytics and interactive content.
-
-
-
-
-24
-Security+
-Hashing
-	Verify a downloaded document is the same as the original
-		Website can offer a hash of the file they offer for download
-	Can be a digitial signature
-	Will not have a collision (hopefully)
-
-
-
-
-25
-Security+
-It’s important that the application developer understand exactly what input is being used, and how that input is being handled by the application. The attackers are going to use third party tools, such as fuzzers, to be able to constantly try to randomize input into the application to see if perhaps they can make the application perform unexpectedly or in a way that they could replicate later on.
-
-
-
-
 26
 General
 Thomas Andrew Lehrer (/ˈlɛərər/; born April 9, 1928) is an American musician, singer-songwriter, satirist, and mathematician. He recorded pithy and humorous songs that became popular in the 1950s and 1960s. His songs often parodied popular musical forms, though they usually had original melodies. An exception is "The Elements", in which he set the names of the chemical elements to the tune of the "Major-General's Song" from Gilbert and Sullivan's Pirates of Penzance.
