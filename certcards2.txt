@@ -134,19 +134,18 @@ Assisted Task Mining is utilized when you know your task and want to learn more 
 
 3
 UiPath
-
-
+To record for Assisted Task Mining, you need to use the Assisted Task Mining Recorder. The Unassisted Task Mining Recorder isn't compatible with this version of Task Mining.
 
 
 4
 UiPath
-
+Task Mining Project names can contain only English characters, numbers, whitespaces and underscores. Names starting with whitespace or numbers are invalid.
 
 
 
 5
 UiPath
-
+In Unattended Task Mining, All data is encrypted before being sent to the service and remains encrypted until a model job-specific container is created for processing and then the results are again encrypted before being written to disk. It is likely the same with Assisted Task Mining.
 
 
 
