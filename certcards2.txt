@@ -1,49 +1,4 @@
 
-26
-General
-Thomas Andrew Lehrer (/ˈlɛərər/; born April 9, 1928) is an American musician, singer-songwriter, satirist, and mathematician. He recorded pithy and humorous songs that became popular in the 1950s and 1960s. His songs often parodied popular musical forms, though they usually had original melodies. An exception is "The Elements", in which he set the names of the chemical elements to the tune of the "Major-General's Song" from Gilbert and Sullivan's Pirates of Penzance.
-
-
-
-
-27
-Security+
-Distinguished Encoding Rules (DER)
-	Format designed to transfer syntax for data structures
-		A very specific encoding format
-		Perfect for an X.509 certificate
-	Binary format - Not human readable
-	A common format
-		Used across many platofrms, often with Java certificates
-
-
-
-
-28
-The Fifth Season
-A keloid scar is a thick raised scar. It can occur wherever you have a skin injury but usually forms on earlobes, shoulders, cheeks or the chest. If you're prone to developing keloids, you might get them in more than one place.
-
-
-
-
-29
-Security+
-Tabletop exercises
-	Many of the logistics can be determined through analysis
-		You don't physically have to go through a disaster to drill
-	Get key players together for a tabletop exercise
-		Talk through a simulated disaster
-
-
-
-
-30
-Security+
-Measured Boot
-	UEFI stores a hash of the firmware, boot drivers, and everything else loaded during the Secure Boot and Trusted Boot process.
-	These are stored in the TPM
-
-
 
 
 31
