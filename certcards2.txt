@@ -106,7 +106,7 @@ In Unattended Task Mining, All data is encrypted before being sent to the servic
 
 6
 UiPath
-
+In Unattended Task Mining, applications that require OS Administrator permissions to run won't be captured unless the user runs the Client App as Administrator.
 
 
 
@@ -134,62 +134,178 @@ UiPath
 
 
 
+1
+Security+
+Scavenging
+Searching through data residue in a system to gain unauthorized knowledge of sensitive data.
+
+
+
+
+
+2
+Security+
+Inetd (xinetd)
+Inetd (or Internet Daemon) is an application that controls smaller internet services like telnet, ftp, and POP.
+
+
+
+
+
+3
+Security+
+Null Session
+Known as Anonymous Logon, it is a way of letting an anonymous user retrieve information such as user names and shares over the network or connect without authentication. It is used by applications such as explorer.exe to enumerate shares on remote servers.
+
+
+
+
+
+4
+Security+
+Fragment Offset
+The fragment offset field tells the sender where a particular fragment falls in relation to other fragments in the original larger packet.
+
+
+
+
+
+5
+Security+
+Extensible Authentication Protocol (EAP)
+A framework that supports multiple, optional authentication mechanisms for PPP, including clear-text passwords, challenge-response, and arbitrary dialog sequences.
+
+
+
+
+
+6
+Security+
+Internet Standard
+A specification, approved by the IESG and published as an RFC, that is stable and well-understood, is technically competent, has multiple, independent, and interoperable implementations with substantial operational experience, enjoys significant public support, and is recognizably useful in some or all parts of the Internet.
+
+
+
+
+
+7
+Security+
+Fragmentation
+The process of storing a data file in several "chunks" or fragments rather than in a single contiguous sequence of bits in one place on the storage medium.
+
+
+
+
+8
+Security+
+Digest Authentication
+Digest Authentication allows a web client to compute MD5 hashes of the password to prove it has the password.
+
+
+
+
+9
+Security+
+Access Control Service
+A security service that provides protection of system resources against unauthorized access. The two basic mechanisms for implementing this service are ACLs and tickets.
+
+
+
+
+10
+Security+
+Daemon
+A program which is often started at the time the system boots and runs continuously without intervention from any of the users on the system. The daemon program forwards the requests to other programs (or processes) as appropriate. The term daemon is a Unix term, though many other operating systems provide support for daemons, though they're sometimes called other names. Windows, for example, refers to daemons and System Agents and services.
+
+
+
+
+
 11
-UiPath
+Security+
+Morris Worm
+A worm program written by Robert T. Morris, Jr. that flooded the ARPANET in November, 1988, causing problems for thousands of hosts.
+
 
 
 
 
 12
-UiPath
+Security+
+Ping of Death
+An attack that sends an improperly large ICMP echo request packet (a "ping") with the intent of overflowing the input buffers of the destination machine and causing it to crash.
+
 
 
 
 
 13
-UiPath
+Security+
+regression analysis
+The use of scripted tests which are used to test software for all possible input is should expect. Typically developers will create a set of regression tests that are executed before a new version of a software is released. Also see "fuzzing".
+
 
 
 
 
 14
-UiPath
+Security+
+Public Key Encryption
+The popular synonym for "asymmetric cryptography".
 
 
 
 
 15
-UiPath
+Security+
+Competitive Intelligence
+Competitive Intelligence is espionage using legal, or at least not obviously illegal, means.
+
 
 
 
 
 16
-UiPath
+Security+
+Reflexive ACLs (Cisco)
+Reflexive ACLs for Cisco routers are a step towards making the router act like a stateful firewall. The router will make filtering decisions based on whether connections are a part of established traffic or not.
+
 
 
 
 
 17
-UiPath
+Security+
+Measures of Effectiveness (MOE)
+Measures of Effectiveness is a probability model based on engineering concepts that allows one to approximate the impact a give action will have on an environment. In Information warfare it is the ability to attack or defend within an Internet environment.
+
 
 
 
 
 18
-UiPath
+Security+
+T1, T3
+A digital circuit using TDM (Time-Division Multiplexing).
+
 
 
 
 
 19
-UiPath
+Security+
+Store-and-Forward
+Store-and-Forward is a method of switching where the entire packet is read by a switch to determine if it is intact before forwarding it.
+
 
 
 
 
 20
-UiPath
+Security+
+Windump
+Windump is a freeware tool for Windows that is a protocol analyzer that can monitor network traffic on a wire.
+
 
 
 
