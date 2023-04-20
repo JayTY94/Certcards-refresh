@@ -1,39 +1,3 @@
-1
-Security+
-Measures of Effectiveness (MOE)
-Measures of Effectiveness is a probability model based on engineering concepts that allows one to approximate the impact a give action will have on an environment. In Information warfare it is the ability to attack or defend within an Internet environment.
-
-
-
-
-2
-UiPath
-In Unattended Task Mining, All data is encrypted before being sent to the service and remains encrypted until a model job-specific container is created for processing and then the results are again encrypted before being written to disk. It is likely the same with Assisted Task Mining.
-
-
-
-
-3
-Security+
-Fragment Offset
-The fragment offset field tells the sender where a particular fragment falls in relation to other fragments in the original larger packet.
-
-
-
-
-4
-Security+
-Store-and-Forward
-Store-and-Forward is a method of switching where the entire packet is read by a switch to determine if it is intact before forwarding it.
-
-
-
-
-5
-Security+
-regression analysis
-The use of scripted tests which are used to test software for all possible input is should expect. Typically developers will create a set of regression tests that are executed before a new version of a software is released. Also see "fuzzing".
-
 
 
 
