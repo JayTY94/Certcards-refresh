@@ -237,18 +237,21 @@ Where "quickdavinci" is the id/name of an existing openai deployment.
 
 
 2
-OpenAi
+UiPath Task Mining
+The raw data collected from the users needs to be processed before being updated to the Admin Console. The data metric displayed in the Dashboard and Team modules represents the amount of processed data and not the raw one (the size difference can be significant).
 
 
 
 3
-OpenAi
+UiPath Task Mining
+The telemetry gets updated every 15 minutes for each user individually if their Client App is running and is connected to the internet.
+Additionally, the data is updated whenever the user manually pauses or resumes the Client App.
 
 
 
 4
-OpenAi
-
+UiPath Task Mining
+When deleting a user account, the captured data is not deleted from the user's desktop storage. To delete captured data, you can reset a user before deletion or uninstall the Task Mining application on the user's desktop.
 
 
 5
