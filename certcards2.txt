@@ -219,7 +219,8 @@ When deleting a user account, the captured data is not deleted from the user's d
 
 
 5
-OpenAi
+Accuity
+A Planning Meeting is a meeting with Accity-only people to go over scope and what we know about an upcoming job.
 
 
 
