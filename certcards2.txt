@@ -1,44 +1,4 @@
 
-
-
-6
-Security+
-Public Key Encryption
-The popular synonym for "asymmetric cryptography".
-
-
-
-
-7
-UiPath
-To record for Assisted Task Mining, you need to use the Assisted Task Mining Recorder. The Unassisted Task Mining Recorder isn't compatible with this version of Task Mining.
-
-
-
-
-8
-Security+
-Reflexive ACLs (Cisco)
-Reflexive ACLs for Cisco routers are a step towards making the router act like a stateful firewall. The router will make filtering decisions based on whether connections are a part of established traffic or not.
-
-
-
-
-9
-Security+
-Ping of Death
-An attack that sends an improperly large ICMP echo request packet (a "ping") with the intent of overflowing the input buffers of the destination machine and causing it to crash.
-
-
-
-
-10
-UiPath
-In Unattended Task Mining, applications that require OS Administrator permissions to run won't be captured unless the user runs the Client App as Administrator.
-
-
-
-
 11
 Security+
 Competitive Intelligence
