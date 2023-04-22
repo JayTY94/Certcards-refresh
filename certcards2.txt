@@ -1,43 +1,4 @@
 
-11
-Security+
-Competitive Intelligence
-Competitive Intelligence is espionage using legal, or at least not obviously illegal, means.
-
-
-
-
-12
-Security+
-An IT department doesn’t commonly operate in a vacuum. There are usually customers of IT that have applications, data, and other technical resources that the IT department is managing for them. These are the stakeholders in your organization, and when something is not working properly, it’s the stakeholders that are going to be suffering.
-
-
-
-
-13
-Security+
-T1, T3
-A digital circuit using TDM (Time-Division Multiplexing).
-
-
-
-
-14
-Security+
-Scavenging
-Searching through data residue in a system to gain unauthorized knowledge of sensitive data.
-
-
-
-
-15
-Security+
-Inetd (xinetd)
-Inetd (or Internet Daemon) is an application that controls smaller internet services like telnet, ftp, and POP.
-
-
-
-
 16
 Security+
 Daemon
