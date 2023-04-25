@@ -1,42 +1,4 @@
 
-16
-Security+
-Daemon
-A program which is often started at the time the system boots and runs continuously without intervention from any of the users on the system. The daemon program forwards the requests to other programs (or processes) as appropriate. The term daemon is a Unix term, though many other operating systems provide support for daemons, though they're sometimes called other names. Windows, for example, refers to daemons and System Agents and services.
-
-
-
-
-17
-Security+
-Extensible Authentication Protocol (EAP)
-A framework that supports multiple, optional authentication mechanisms for PPP, including clear-text passwords, challenge-response, and arbitrary dialog sequences.
-
-
-
-
-18
-UiPath
-Assisted Task Mining is utilized when you know your task and want to learn more about its bottlenecks and variations to drive actionability.
-
-
-
-
-19
-Security+
-Internet Standard
-A specification, approved by the IESG and published as an RFC, that is stable and well-understood, is technically competent, has multiple, independent, and interoperable implementations with substantial operational experience, enjoys significant public support, and is recognizably useful in some or all parts of the Internet.
-
-
-
-
-20
-UiPath
-Task Mining Project names can contain only English characters, numbers, whitespaces and underscores. Names starting with whitespace or numbers are invalid.
-
-
-
-
 21
 Security+
 Digest Authentication
