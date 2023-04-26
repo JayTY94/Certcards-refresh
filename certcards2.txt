@@ -1,57 +1,24 @@
-
-
-
-
-26
-UiPath
-A browser modal window is a type of graphical user interface element that appears on top of the web page content in a browser and requires user interaction before the user can interact with the underlying page. It is usually used to present important information, ask for user input or confirmation, or to alert the user about an error or warning.
-
-
-
-
-27
-Security+
-Access Control Service
-A security service that provides protection of system resources against unauthorized access. The two basic mechanisms for implementing this service are ACLs and tickets.
-
-
-
-
-28
-Security+
-Windump
-Windump is a freeware tool for Windows that is a protocol analyzer that can monitor network traffic on a wire.
-
-
-
-
-29
-Security+
-Horizontal Privilege Escalation
-Horizontal privilege escalation means that a user will achieve access permissions belonging to another user that owns the same access level as the user that has started the cyberattack. It is a bit more challenging compared to vertical ones since they require a deep understanding of how operating systems work.
-
-
-
-
 1
-OpenAi
-Use the following command to delete a deployment in Azure OpenAI.
+UiPath Task Mining
+The telemetry gets updated every 15 minutes for each user individually if their Client App is running and is connected to the internet.
+Additionally, the data is updated whenever the user manually pauses or resumes the Client App.
 
-openai.Deployment.delete("quickdavinci")
 
-Where "quickdavinci" is the id/name of an existing openai deployment.
 
 
 2
-UiPath Task Mining
-The raw data collected from the users needs to be processed before being updated to the Admin Console. The data metric displayed in the Dashboard and Team modules represents the amount of processed data and not the raw one (the size difference can be significant).
+Security+
+Signals Analysis
+Gaining indirect knowledge of communicated data by monitoring and analyzing a signal that is emitted by a system and that contains the data but is not intended to communicate the data.
+
 
 
 
 3
-UiPath Task Mining
-The telemetry gets updated every 15 minutes for each user individually if their Client App is running and is connected to the internet.
-Additionally, the data is updated whenever the user manually pauses or resumes the Client App.
+Security+
+IP Flood
+A denial of service attack that sends a host more echo request ("ping") packets than the protocol implementation can handle.
+
 
 
 
@@ -60,85 +27,228 @@ UiPath Task Mining
 When deleting a user account, the captured data is not deleted from the user's desktop storage. To delete captured data, you can reset a user before deletion or uninstall the Task Mining application on the user's desktop.
 
 
+
+
 5
 Accuity
 A Planning Meeting is a meeting with Accity-only people to go over scope and what we know about an upcoming job.
 
 
 
+
 6
-General
-State Statute 27-43  Office of enterprise technology services; chief information officer; information technology steering committee; establishment; responsibilities - has an interesting line about the CIO taking donations
+Security+
+Password Authentication Protocol (PAP)
+Password Authentication Protocol is a simple, weak authentication mechanism where a user enters the password and it is then sent across the network, usually in the clear.
+
 
 
 
 7
-OpenAi
+Security+
+War Dialer
+A computer program that automatically dials a series of telephone numbers to find lines connected to computer systems, and catalogs those numbers so that a cracker can try to break into the systems.
+
 
 
 
 8
-OpenAi
+Security+
+Digital Signature Algorithm (DSA)
+An asymmetric cryptographic algorithm that produces a digital signature in the form of a pair of large numbers. The signature is computed using rules and parameters such that the identity of the signer and the integrity of the signed data can be verified.
+
 
 
 
 9
-OpenAi
+Security+
+One-Way Encryption
+Irreversible transformation of plaintext to cipher text, such that the plaintext cannot be recovered from the cipher text by other than exhaustive procedures even if the cryptographic key is known.
+
 
 
 
 10
-OpenAi
+Security+
+ITU-T
+International Telecommunications Union, Telecommunication Standardization Sector (formerly "CCITT"), a United Nations treaty organization that is composed mainly of postal, telephone, and telegraph authorities of the member countries and that publishes standards called "Recommendations."
+
 
 
 
 11
-OpenAi
+Security+
+Checksum
+A value that is computed by a function that is dependent on the contents of a data object and is stored or transmitted together with the object, for the purpose of detecting changes in the data.
+
 
 
 
 12
-OpenAi
+Security+
+Permutation
+Permutation keeps the same letters but changes the position within a text to scramble the message.
+
 
 
 
 13
-OpenAi
+UiPath Task Mining
+The raw data collected from the users needs to be processed before being updated to the Admin Console. The data metric displayed in the Dashboard and Team modules represents the amount of processed data and not the raw one (the size difference can be significant).
+
 
 
 
 14
-OpenAi
+Security+
+IP Spoofing
+The technique of supplying a false IP address.
+
 
 
 
 15
-OpenAi
+Security+
+Token Ring
+A token ring network is a local area network in which all computers are connected in a ring or star topology and a binary digit or token-passing scheme is used in order to prevent the collision of data between two computers that want to send messages at the same time.
+
 
 
 
 16
-OpenAi
+Security+
+Windump
+Windump is a freeware tool for Windows that is a protocol analyzer that can monitor network traffic on a wire.
+
 
 
 
 17
 OpenAi
+Use the following command to delete a deployment in Azure OpenAI.
+
+openai.Deployment.delete("quickdavinci")
+
+Where "quickdavinci" is the id/name of an existing openai deployment.
+
 
 
 
 18
-OpenAi
+Security+
+Fingerprinting
+Sending strange packets to a system in order to gauge how it responds to determine the operating system.
+
 
 
 
 19
-OpenAi
+Security+
+Transmission Control Protocol (TCP)
+A set of rules (protocol) used along with the Internet Protocol to send data in the form of message units between computers over the Internet. While IP takes care of handling the actual delivery of the data, TCP takes care of keeping track of the individual units of data (called packets) that a message is divided into for efficient routing through the Internet. Whereas the IP protocol deals only with packets, TCP enables two hosts to establish a connection and exchange streams of data. TCP guarantees delivery of data and also guarantees that packets will be delivered in the same order in which they were sent.
+
 
 
 
 20
-OpenAi
+Security+
+Multi-Homed
+You are "multi-homed" if your network is directly connected to two or more ISP's.
+
+
+
+
+21
+UiPath
+A browser modal window is a type of graphical user interface element that appears on top of the web page content in a browser and requires user interaction before the user can interact with the underlying page. It is usually used to present important information, ask for user input or confirmation, or to alert the user about an error or warning.
+
+
+
+
+22
+Security+
+WHOIS
+An internet protocol for finding information about resources on networks.
+
+
+
+
+23
+Security+
+Horizontal Privilege Escalation
+Horizontal privilege escalation means that a user will achieve access permissions belonging to another user that owns the same access level as the user that has started the cyberattack. It is a bit more challenging compared to vertical ones since they require a deep understanding of how operating systems work.
+
+
+
+
+24
+Security+
+Hybrid Attack
+A Hybrid Attack builds on the dictionary attack method by adding numerals and symbols to dictionary words.
+
+
+
+
+25
+Security+
+Standard ACLs (Cisco)
+Standard ACLs on Cisco routers make packet filtering decisions based on Source IP address only.
+
+
+
+
+26
+Security+
+Ingress Filtering
+Ingress Filtering is filtering inbound traffic.
+
+
+
+
+27
+Security+
+Border Gateway Protocol (BGP)
+An inter-autonomous system routing protocol. BGP is used to exchange routing information for the Internet and is the protocol used between Internet service providers (ISP).
+
+
+
+
+28
+Security+
+Echo Request
+An echo request is an ICMP message sent to a machine to determine if it is online and how long traffic takes to get to it.
+
+
+
+
+29
+Security+
+Access Control Service
+A security service that provides protection of system resources against unauthorized access. The two basic mechanisms for implementing this service are ACLs and tickets.
+
+
+
+
+30
+Security+
+Reverse Lookup
+Find out the hostname that corresponds to a particular IP address. Reverse lookup uses an IP (Internet Protocol) address to find a domain name.
+
+
+
+
+31
+Security+
+Cryptanalysis
+The mathematical science that deals with analysis of a cryptographic system in order to gain knowledge needed to break or circumvent the protection that the system is designed to provide. In other words, convert the cipher text to plaintext without knowing the key.
+
+
+
+
+32
+General
+State Statute 27-43  Office of enterprise technology services; chief information officer; information technology steering committee; establishment; responsibilities - has an interesting line about the CIO taking donations
+
 
 
 
