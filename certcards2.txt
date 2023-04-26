@@ -252,3 +252,9 @@ State Statute 27-43  Office of enterprise technology services; chief information
 
 
 
+398798
+General
+How to clear the cache for a specific website in Chrome:
+  1. Open the developer tools tab [F12] or [ctrl]+[shift]+[i]
+  2. [shift]+[r-click] the refresh button
+  3. Choose "Empty Cache and Hard Reload"
