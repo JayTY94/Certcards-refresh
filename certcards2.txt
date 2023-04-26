@@ -1,45 +1,4 @@
 
-21
-Security+
-Digest Authentication
-Digest Authentication allows a web client to compute MD5 hashes of the password to prove it has the password.
-
-
-
-
-22
-Security+
-Morris Worm
-A worm program written by Robert T. Morris, Jr. that flooded the ARPANET in November, 1988, causing problems for thousands of hosts.
-
-
-
-
-23
-Security+
-Null Session
-Known as Anonymous Logon, it is a way of letting an anonymous user retrieve information such as user names and shares over the network or connect without authentication. It is used by applications such as explorer.exe to enumerate shares on remote servers.
-
-
-
-
-24
-Security+
-Fragmentation
-The process of storing a data file in several "chunks" or fragments rather than in a single contiguous sequence of bits in one place on the storage medium.
-
-
-
-
-25
-Book Eaters
-doss around
-	phrasal verb with doss verb [ I usually + adv/prep ] UK slang
-		UK ( also doss about)
-	
-	to spend your time doing very little:
-	Come on, Peter, stop dossing around and get some work done.
-
 
 
 
