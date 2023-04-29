@@ -221,3 +221,15 @@ How to clear the cache for a specific website in Chrome:
   1. Open the developer tools tab [F12] or [ctrl]+[shift]+[i]
   2. [shift]+[r-click] the refresh button
   3. Choose "Empty Cache and Hard Reload"
+
+
+12
+Chess
+This is the Semi-Slav defense
+
+  1. d4 d5
+  2. c4 c6
+  3. Nf3 Nf6
+  4. Nc3 e6
+  5. Qc2 Bd6
+  6. Bd3 Now both sides have cool pyramids of pieces
