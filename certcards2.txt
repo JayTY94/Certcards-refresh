@@ -1,43 +1,4 @@
 
-6
-Security+
-Password Authentication Protocol (PAP)
-Password Authentication Protocol is a simple, weak authentication mechanism where a user enters the password and it is then sent across the network, usually in the clear.
-
-
-
-
-7
-Security+
-War Dialer
-A computer program that automatically dials a series of telephone numbers to find lines connected to computer systems, and catalogs those numbers so that a cracker can try to break into the systems.
-
-
-
-
-8
-Security+
-Digital Signature Algorithm (DSA)
-An asymmetric cryptographic algorithm that produces a digital signature in the form of a pair of large numbers. The signature is computed using rules and parameters such that the identity of the signer and the integrity of the signed data can be verified.
-
-
-
-
-9
-Security+
-One-Way Encryption
-Irreversible transformation of plaintext to cipher text, such that the plaintext cannot be recovered from the cipher text by other than exhaustive procedures even if the cryptographic key is known.
-
-
-
-
-10
-Security+
-ITU-T
-International Telecommunications Union, Telecommunication Standardization Sector (formerly "CCITT"), a United Nations treaty organization that is composed mainly of postal, telephone, and telegraph authorities of the member countries and that publishes standards called "Recommendations."
-
-
-
 
 11
 Security+
