@@ -264,9 +264,45 @@ latest security patches
 
 25
 Security+
-A24: DxB
+What kind of security control is associated with a login banner?
+The Answer: B. Deterrent
+A deterrent control does not directly stop an attack, but it may discourage
+an action.
 
 
+
+25
+Security+
+A. Preventive
+A preventive security control physically limits access to a device or area.
+
+
+
+
+
+25
+Security+
+D. Detective
+A detective security control may not prevent access, but it can identify and record
+any intrusion attempts.
+
+
+
+
+
+25
+Security+
+C. Corrective
+A corrective  security control can actively work to mitigate any damage.
+
+
+
+
+25
+Security+
+E. Compensating
+A compensating security control doesn’t prevent an attack, but it does
+restore from an attack using other means.
 
 
 
