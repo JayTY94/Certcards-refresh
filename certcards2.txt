@@ -157,3 +157,9 @@ This is the Semi-Slav defense
   4. Nc3 e6
   5. Qc2 Bd6
   6. Bd3 Now both sides have cool pyramids of pieces
+
+
+3214
+Report Formating
+In Excel, you can extend  selection to all cells in the current row(s) with the keyboard shortcut [shift] + [space].
+Similarly, you can extend selection to all cells in the column(s) with [ctrl]+[space]
