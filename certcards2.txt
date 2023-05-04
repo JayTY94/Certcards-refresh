@@ -211,15 +211,52 @@ Equivalent Privacy) was replaced with WPA (Wi-Fi Protected Access).
 
 25
 Security+
-A20: BxC
-
+EAP-TTLS (Extensible Authentication Protocol - Tunneled Transport
+Layer Security) allows the use of multiple authentication protocols
+transported inside of an encrypted TLS (Transport Layer Security) tunnel.
+This allows the use of any authentication while maintaining confidentiality
+with TLS.
 
 
 
 
 25
 Security+
-A21: EFxBE
+A. EAP-TLS
+EAP-TLS does not provide a mechanism for using multiple
+authentication types within a TLS tunnel.
+B. PEAP
+PEAP (Protected Extensible Authentication Protocol) encapsulates EAP
+within a TLS tunnel, but does not provide a method of encapsulating
+other authentication methods.
+
+
+
+
+25
+Security+
+A CASB (Cloud Access Security Broker) can be used to apply security
+policies to cloud-based implementations. Two common functions of a
+CASB are visibility into application use and data security policy use. Other
+common CASB functions are the verification of compliance with formal
+standards and the monitoring and identification of threats.
+
+
+
+
+25
+Security+
+Which of the following would be commonly provided
+by a CASB? (Select TWO)
+
+❍ B. List of applications in use
+❍ E. Verification of encrypted data transfers
+
+❍ A. List of all internal Windows devices that have not installed the
+latest security patches
+❍ C. Centralized log storage facility
+❍ D. List of network outages for the previous month
+❍ F. VPN connectivity for remote users
 
 
 
