@@ -1,43 +1,5 @@
 
 
-21
-UiPath
-A browser modal window is a type of graphical user interface element that appears on top of the web page content in a browser and requires user interaction before the user can interact with the underlying page. It is usually used to present important information, ask for user input or confirmation, or to alert the user about an error or warning.
-
-
-
-
-22
-Security+
-WHOIS
-An internet protocol for finding information about resources on networks.
-
-
-
-
-23
-Security+
-Horizontal Privilege Escalation
-Horizontal privilege escalation means that a user will achieve access permissions belonging to another user that owns the same access level as the user that has started the cyberattack. It is a bit more challenging compared to vertical ones since they require a deep understanding of how operating systems work.
-
-
-
-
-24
-Security+
-Hybrid Attack
-A Hybrid Attack builds on the dictionary attack method by adding numerals and symbols to dictionary words.
-
-
-
-
-25
-Security+
-Standard ACLs (Cisco)
-Standard ACLs on Cisco routers make packet filtering decisions based on Source IP address only.
-
-
-
 
 26
 Security+
