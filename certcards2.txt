@@ -272,7 +272,114 @@ restore from an attack using other means.
 
 25
 Security+
-A25: BCxC
+A security team has been provided with a non-credentialed vulnerability
+scan report created by a third-party. Which of the following would they
+expect to see on this report?
+The Answer: C. The version of web server software in use
+A scanner like Nmap can query services and determine version numbers
+without any special rights or permissions, which makes it well suited for
+non-credentialed scans.
+
+
+
+25
+Security+
+A security team has been provided with a non-credentialed vulnerability
+scan report created by a third-party. Which of the following would they
+expect to see on this report?
+INCORRECT: A summary of all files with invalid group assignments
+Viewing file permissions and rights requires authentication to the
+operating system, so you would not expect to see this information if the
+scan did not have credentials.
+
+
+
+25
+Security+
+A security team has been provided with a non-credentialed vulnerability
+scan report created by a third-party. Which of the following would they
+expect to see on this report?
+INCORRECT: A list of all unpatched operating system files
+Viewing detailed information about the operating system files requires
+authentication to the OS, and an uncredentialed scan does not have those
+permissions.
+
+
+
+25
+Security+
+A security team has been provided with a non-credentialed vulnerability
+scan report created by a third-party. Which of the following would they
+expect to see on this report?
+INCORRECT:. A list of local user accounts
+Local user accounts are usually protected by the operating system, so you
+would need to have credentials to view this information.
+
+
+
+
+25
+Security+
+A security administrator is concerned about data exfiltration resulting
+from the use of malicious phone charging stations. Which of the
+following would be the BEST way to protect against this threat?
+A. USB data blocker
+USB data blockers are physical USB cables that allow power connections
+but prevent data connections. With a USB data blocker attached, any
+power source can be used without a security concern.
+
+
+
+
+25
+Security+
+A security engineer runs a monthly vulnerability scan. The scan doesn’t
+list any vulnerabilities for Windows servers, but a significant vulnerability
+was announced last week and none of the servers are patched yet. Which
+of the following best describes this result?
+D. False negative
+A false negative is a result that fails to detect an issue when one
+actually exists.
+
+
+
+25
+Security+
+A security engineer runs a monthly vulnerability scan. The scan doesn’t
+list any vulnerabilities for Windows servers, but a significant vulnerability
+was announced last week and none of the servers are patched yet. Which
+of the following best describes this result?
+INCORRECT:C. Zero-day attack
+A zero-day attack focuses on previously unknown vulnerabilities. In this
+example, the vulnerability scan isn’t an attack, and the vulnerabilities are
+already known and patches are available
+
+
+
+
+25
+Security+
+A security administrator is adding additional authentication controls to
+the existing infrastructure. Which of the following should be added by
+the security administrator? (Select TWO)
+The Answer: A. TOTP and F. Smart Card
+TOTP (Time-based One-Time Passwords) and smart cards are
+useful authentication controls when used in conjunction with other
+authentication factors.
+
+
+
+
+25
+Security+
+A security administrator is adding additional authentication controls to
+the existing infrastructure. Which of the following should be added by
+the security administrator? (Select TWO)
+INCORRECT: B. Least privilege
+Least privilege is a security principle that limits access to resources based
+on a person’s job role. Least privilege is managed through security policy
+and is not an authentication control.
+
 
 
 
@@ -280,7 +387,80 @@ A25: BCxC
 
 25
 Security+
-A27: DxA
+Which of these cloud deployment models would share resources between
+a private virtualized data center and externally available cloud services?
+The Answer: C. Hybrid
+A hybrid cloud model combines both private and public cloud
+infrastructures.
+NOT community Cloud
+
+
+
+
+25
+Security+
+A company hires a large number of seasonal employees, and their
+system access should normally be disabled when the employee leaves
+the company. The security administrator would like to verify that their
+systems cannot be accessed by any of the former employees. Which of the
+following would be the BEST way to provide this verification?
+C. Validate the processes and procedures for all
+outgoing employees
+The disabling of an employee account is commonly part of the offboarding
+process. One way to validate an offboarding policy is to perform an audit
+of all accounts and compare active accounts with active employees.
+
+
+
+25
+Security+
+COPE
+COPE (Corporate Owned and Personally Enabled) devices are purchased
+by the company but are used as both a corporate device and a personal
+device. This would standardize the devices, but the corporate data would
+still be at-risk in the field
+
+
+25
+Security+
+COPE
+COPE (Corporate Owned and Personally Enabled) devices are purchased
+by the company but are used as both a corporate device and a personal
+device. This would standardize the devices, but the corporate data would
+still be at-risk in the field
+
+
+
+
+25
+Security+
+A company is deploying a new mobile application to all of its employees
+in the field. Some of the problems associated with this rollout include:
+• The company does not have a way to manage the mobile devices
+in the field
+• Company data on mobile devices in the field introduces additional risk
+• Team members have many different kinds of mobile devices
+Which of the following deployment models would address
+these concerns?
+C. VDI
+A VDI (Virtual Desktop Infrastructure) would allow the field teams to
+access their applications from many different types of devices without the
+requirement of a mobile device management or concern about corporate
+data on the devices.
+
+
+
+
+25
+Security+
+A manufacturing company would like to track the progress of parts as
+they are used on an assembly line. Which of the following technologies
+would be the BEST choice for this task?
+Blockchain
+The ledger functionality of a blockchain can be used to track or verify
+components, digital media, votes, and other physical or digital objects.
+
+
 
 
 
@@ -288,7 +468,10 @@ A27: DxA
 
 25
 Security+
-A31: AxD
+C. Hashing
+Cryptographic hashes are commonly used to provide integrity
+verifications, but they don't necessarily include any method of tracking
+components on an assembly line
 
 
 
@@ -296,7 +479,24 @@ A31: AxD
 
 25
 Security+
-A32: BFxAF
+A. Quantum computing
+Quantum computing uses quantum theory to perform high-speed
+calculations. Quantum computing doesn't inherently provide any tracking
+mechanisms.
+
+
+
+
+25
+Security+
+A Linux administrator is downloading an updated version of her Linux
+distribution. The download site shows a link to the ISO and a SHA256
+hash value. Which of these would describe the use of this hash value?
+A. Verifies that the file was not corrupted during
+the file transfer
+Once the file is downloaded, the administrator can calculate the file’s
+SHA256 hash and confirm that it matches the value on the website.
+
 
 
 
@@ -304,7 +504,12 @@ A32: BFxAF
 
 25
 Security+
-A36: BxD
+Which of the following risk management strategies would include the
+purchase and installation of an NGFW?
+The Answer: B. Mitigation
+Mitigation is a strategy that decreases the threat level. This is commonly
+done through the use of additional security systems and monitoring, such
+as an NGFW (Next-Generation Firewall)
 
 
 
@@ -312,7 +517,13 @@ A36: BxD
 
 25
 Security+
-A40: BxC
+ A member of the accounting team was out of the office for two weeks,
+and an important financial transfer was delayed until they returned.
+Which of the following would have prevented this delay?
+ C. Job rotation
+Job rotation moves employees through different job roles as part of their
+normal work environment. This policy limits the potential for fraud and
+allows others to cover responsibilities if someone is out of the office.
 
 
 
@@ -320,7 +531,29 @@ A40: BxC
 
 25
 Security+
-A41: DxC
+ A member of the accounting team was out of the office for two weeks,
+and an important financial transfer was delayed until they returned.
+Which of the following would have prevented this delay?
+INCORRECT A. Split knowledge
+The use of split knowledge limits the information that any one person
+would know. In this example, having knowledge of part of the process
+would not have helped with processing the financial transfer.
+
+
+
+
+25
+Security+
+A security analyst has identified a number of sessions from a single IP
+address with a TTL equal to zero. One of the sessions has a destination of
+the Internet firewall, and a session immediately after has a destination of
+your DMZ server. Which of the following BEST describes this
+log information?
+he Answer: D. Someone is performing a traceroute to the DMZ server
+A traceroute maps each hop by slowly incrementing the TTL (Time
+to Live) value during each request. When the TTL reaches zero, the
+receiving router drops the packet and sends an ICMP (Internet Control
+Message Protocol) TTL Exceeded message back to the original station.
 
 
 
@@ -328,7 +561,15 @@ A41: DxC
 
 25
 Security+
-A55: BxC
+A security administrator is designing an authentication process for a
+new remote site deployment. They would like the users to provide their
+credentials when they authenticate in the morning, and they do not want
+any additional authentication requests to appear during the rest of the
+day. Which of the following should be used to meet this requirement?
+The Answer: C. Kerberos
+Kerberos uses a ticket-based system to provide SSO (Single Sign-On)
+functionality. You only need to authenticate once with Kerberos to gain
+access to multiple resources.
 
 
 
@@ -336,7 +577,18 @@ A55: BxC
 
 25
 Security+
-A56: BxA
+A. TACACS+
+TACACS+ (Terminal Access Controller Access-Control System) is a
+common authentication method, but it does not provide any single sign-
+on functionality.
+
+
+
+25
+Security+
+ 802.1X
+802.1X is a standard for port-based network access control (PNAC), but it
+does not inherently provide any single sign-on functionality.
 
 
 
@@ -344,7 +596,15 @@ A56: BxA
 
 25
 Security+
-A57: BxA
+A manufacturing company would like to use an existing router to
+separate a corporate network and a manufacturing floor that use the same
+physical switch. The company does not want to install any additional
+hardware. Which of the following would be the BEST choice for this
+segmentation?
+. Create separate VLANs for the corporate network and
+the manufacturing floor
+Creating VLANs (Virtual Local Area Networks) will segment a network
+without requiring additional switches.
 
 
 
@@ -352,63 +612,35 @@ A57: BxA
 
 25
 Security+
-A59: DxA
-
-
-
-
-
-25
-Security+
-A63: DxB
-
-
+An organization maintains a large database of customer information for
+sales tracking and customer support. Which person in the organization
+would be responsible for managing the access rights to this data?
+The Answer: D. Data custodian
+The data custodian manages access rights and sets security controls
+to the data.
 
 
 
 25
 Security+
-A65: AxC
+B. Require the use of S/MIME
+S/MIME (Secure/Multipurpose Internet Mail Extensions) provides a way
+to integrate public key encryption and digital signatures into most modern
+email clients. This would encrypt all email information from client to
+client, regardless of the communication used between email servers.
 
 
 
 
 
-25
+34
 Security+
-A66: AxD
-
-
-
-
-
-25
-Security+
-A69: BxC
-
-
-
-
-
-25
-Security+
-A70: CxD
-
-
-
-
-
-25
-Security+
-A77: BxD
-
-
-
-
-
-25
-Security+
-A88: CxB
+A company's outgoing email server currently uses SMTP with no
+encryption. The security administrator would like to implement
+encryption between email clients without changing the existing
+server-to-server communication. Which of the following would be the
+BEST way to implement this requirement?
+B. Require the use of S/MIME
 
 
 
