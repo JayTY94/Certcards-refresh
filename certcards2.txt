@@ -1,46 +1,5 @@
 
 
-
-26
-Security+
-Ingress Filtering
-Ingress Filtering is filtering inbound traffic.
-
-
-
-
-27
-Security+
-Border Gateway Protocol (BGP)
-An inter-autonomous system routing protocol. BGP is used to exchange routing information for the Internet and is the protocol used between Internet service providers (ISP).
-
-
-
-
-28
-Security+
-Echo Request
-An echo request is an ICMP message sent to a machine to determine if it is online and how long traffic takes to get to it.
-
-
-
-
-29
-Security+
-Access Control Service
-A security service that provides protection of system resources against unauthorized access. The two basic mechanisms for implementing this service are ACLs and tickets.
-
-
-
-
-30
-Security+
-Reverse Lookup
-Find out the hostname that corresponds to a particular IP address. Reverse lookup uses an IP (Internet Protocol) address to find a domain name.
-
-
-
-
 31
 Security+
 Cryptanalysis
