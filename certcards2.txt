@@ -1,71 +1,5 @@
 
 
-11
-Security+
-Which of the following would be commonly provided
-by a CASB? (Select TWO)
-
-❍ B. List of applications in use
-❍ E. Verification of encrypted data transfers
-
-❍ A. List of all internal Windows devices that have not installed the
-latest security patches
-❍ C. Centralized log storage facility
-❍ D. List of network outages for the previous month
-❍ F. VPN connectivity for remote users
-
-
-
-
-12
-Security+
-COPE
-COPE (Corporate Owned and Personally Enabled) devices are purchased
-by the company but are used as both a corporate device and a personal
-device. This would standardize the devices, but the corporate data would
-still be at-risk in the field
-
-
-
-
-13
-Security+
-A security incident has occurred on a file server. Which of the following
-data sources should be gathered to address file storage volatility?
-
-Partition Data
-Temporary File Systems
-NOT
-Kernel Statistics
-ROM Data
-Temporary file systems
-Process Table
-
-
-
-
-14
-Security+
-A. Quantum computing
-Quantum computing uses quantum theory to perform high-speed
-calculations. Quantum computing doesn't inherently provide any tracking
-mechanisms.
-
-
-
-
-15
-Security+
-A Linux administrator is downloading an updated version of her Linux
-distribution. The download site shows a link to the ISO and a SHA256
-hash value. Which of these would describe the use of this hash value?
-A. Verifies that the file was not corrupted during
-the file transfer
-Once the file is downloaded, the administrator can calculate the file’s
-SHA256 hash and confirm that it matches the value on the website.
-
-
-
 
 16
 General
@@ -479,6 +413,16 @@ INCORRECT A. Split knowledge
 The use of split knowledge limits the information that any one person
 would know. In this example, having knowledge of part of the process
 would not have helped with processing the financial transfer.
+
+
+
+
+321
+Azure
+A designer-first integration service is a type of integration service that focuses on providing a user-friendly and design-centric interface for designers to connect different software tools and applications.
+
+This type of service typically allows designers to create custom workflows and integrations between various tools without requiring any coding or technical expertise. It often provides drag-and-drop functionality and pre-built templates to simplify the integration process.
+
 
 
 
