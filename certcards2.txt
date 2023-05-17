@@ -1,15 +1,6 @@
 
 
 
-20
-Security+
-A CASB (Cloud Access Security Broker) can be used to apply security
-policies to cloud-based implementations. Two common functions of a
-CASB are visibility into application use and data security policy use. Other
-common CASB functions are the verification of compliance with formal
-standards and the monitoring and identification of threats.
-
-
 
 
 21
