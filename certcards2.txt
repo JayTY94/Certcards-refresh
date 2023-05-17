@@ -1,51 +1,6 @@
 
 
 
-16
-General
-How to clear the cache for a specific website in Chrome:
-  1. Open the developer tools tab [F12] or [ctrl]+[shift]+[i]
-  2. [shift]+[r-click] the refresh button
-  3. Choose "Empty Cache and Hard Reload"
-
-
-
-
-17
-Security+
-A security team has been provided with a non-credentialed vulnerability
-scan report created by a third-party. Which of the following would they
-expect to see on this report?
-The Answer: C. The version of web server software in use
-A scanner like Nmap can query services and determine version numbers
-without any special rights or permissions, which makes it well suited for
-non-credentialed scans.
-
-
-
-
-18
-Security+
-What kind of security control is associated with a login banner?
-The Answer: B. Deterrent
-A deterrent control does not directly stop an attack, but it may discourage
-an action.
-
-
-
-
-19
-Security+
-An organization maintains a large database of customer information for
-sales tracking and customer support. Which person in the organization
-would be responsible for managing the access rights to this data?
-The Answer: D. Data custodian
-The data custodian manages access rights and sets security controls
-to the data.
-
-
-
-
 20
 Security+
 A CASB (Cloud Access Security Broker) can be used to apply security
