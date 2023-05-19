@@ -316,3 +316,17 @@ This type of service typically allows designers to create custom workflows and i
 
 
 
+
+22
+General
+Markdown is a lightweight markup language used in text editors and web applications to format and style text. It was created by John Gruber in 2004 with the goal of allowing people to write using an easy-to-read, plain-text format that could then be converted into HTML.
+
+Markdown uses simple syntax, such as asterisks for bold text and hyphens for lists, to indicate formatting. The resulting text is easy to read and write, making it a popular choice for technical documentation, blogging, and note-taking.
+
+
+
+
+
+23
+General
+In the context of IT, Markdown is often used in software development and documentation as a way to format and style text within code repositories and project documentation. It is also commonly used in collaboration tools and web-based editors, such as GitHub and Stack Overflow, for its ease of use and readability.
