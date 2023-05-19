@@ -3,63 +3,6 @@
 
 
 
-21
-Security+
-A security administrator is designing an authentication process for a
-new remote site deployment. They would like the users to provide their
-credentials when they authenticate in the morning, and they do not want
-any additional authentication requests to appear during the rest of the
-day. Which of the following should be used to meet this requirement?
-The Answer: C. Kerberos
-Kerberos uses a ticket-based system to provide SSO (Single Sign-On)
-functionality. You only need to authenticate once with Kerberos to gain
-access to multiple resources.
-
-
-
-
-22
-Security+
-A company's outgoing email server currently uses SMTP with no
-encryption. The security administrator would like to implement
-encryption between email clients without changing the existing
-server-to-server communication. Which of the following would be the
-BEST way to implement this requirement?
-B. Require the use of S/MIME
-
-
-
-
-23
-Security+
-A security administrator is adding additional authentication controls to
-the existing infrastructure. Which of the following should be added by
-the security administrator? (Select TWO)
-The Answer: A. TOTP and F. Smart Card
-TOTP (Time-based One-Time Passwords) and smart cards are
-useful authentication controls when used in conjunction with other
-authentication factors.
-
-
-
-
-24
-Security+
-TLS (Transport Layer Security) is a cryptographic protocol used to
-encrypt network communication. HTTPS is the Hypertext Transfer
-Protocol over TLS, and FTPS is the File Transfer Protocol over TLS.
-
-
-
-
-25
-Security+
-C. Corrective
-A corrective  security control can actively work to mitigate any damage.
-
-
-
-
 26
 Security+
 A security engineer runs a monthly vulnerability scan. The scan doesn’t
