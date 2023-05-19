@@ -330,3 +330,22 @@ Markdown uses simple syntax, such as asterisks for bold text and hyphens for lis
 23
 General
 In the context of IT, Markdown is often used in software development and documentation as a way to format and style text within code repositories and project documentation. It is also commonly used in collaboration tools and web-based editors, such as GitHub and Stack Overflow, for its ease of use and readability.
+
+
+
+
+
+24
+Security+
+S/MIME (Secure/Multipurpose internet Mail Extensions) is a widely accepted protocol for sending digitally signed and encrypted messages. S/MIME in Exchange Online provides the following services for email messages:
+
+Encryption: Protects the content of email messages.
+Digital signatures: Verifies the identity of the sender of an email message.
+
+
+
+
+
+25
+Security+
+S/MIME is widely used in IT to secure email communication, especially in organizations that deal with sensitive or confidential information. However, it is important to note that both the sender and receiver must have S/MIME support and have exchanged digital certificates for this to work.
