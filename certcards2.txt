@@ -282,3 +282,12 @@ Digital signatures: Verifies the identity of the sender of an email message.
 25
 Security+
 S/MIME is widely used in IT to secure email communication, especially in organizations that deal with sensitive or confidential information. However, it is important to note that both the sender and receiver must have S/MIME support and have exchanged digital certificates for this to work.
+
+
+
+
+
+654
+General
+adjective: eleemosynary
+relating to or dependent on charity; charitable.
