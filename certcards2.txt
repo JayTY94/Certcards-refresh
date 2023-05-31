@@ -107,3 +107,200 @@ S/MIME is widely used in IT to secure email communication, especially in organiz
 General
 adjective: eleemosynary
 relating to or dependent on charity; charitable.
+
+
+
+
+
+2
+Security+
+Star Property
+In Star Property, a user cannot write data to a lower classification level without logging in at that lower classification level.
+
+
+
+
+
+3
+Security+
+Domain
+A sphere of knowledge, or a collection of facts about some program entities or a number of network points or addresses, identified by a name. On the Internet, a domain consists of a set of network addresses. In the Internet's domain name system, a domain is a name with which name server records are associated that describe sub-domains or host. In Windows NT and Windows 2000, a domain is a set of network resources (applications, printers, and so forth) for a group of users. The user need only to log in to the domain to gain access to the resources, which may be located on a number of different servers in the network.
+
+
+
+
+
+4
+Security+
+Filtering Router
+An inter-network router that selectively prevents the passage of data packets according to a security policy. A filtering router may be used as a firewall or part of a firewall. A router usually receives a packet from a network and decides where to forward it on a second network. A filtering router does the same, but first decides whether the packet should be forwarded at all, according to some security policy. The policy is implemented by rules (packet filters) loaded into the router.
+
+
+
+
+
+5
+Security+
+Cache Poisoning
+Malicious or misleading data from a remote name server is saved [cached] by another name server. Typically used with DNS cache poisoning attacks.
+
+
+
+
+
+
+7
+Security+
+Disassembly
+The process of taking a binary program and deriving the source code from it.
+
+
+
+
+
+8
+Security+
+Forward Proxy
+Forward Proxies are designed to be the server through which all requests are made.
+
+
+
+
+
+11
+Security+
+Integrity Star Property
+In Integrity Star Property a user cannot read data of a lower integrity level then their own.
+
+
+
+
+
+
+
+
+14
+Security+
+Forward Lookup
+Forward lookup uses an Internet domain name to find an IP address
+
+
+
+
+
+
+17
+Security+
+Practical Extraction and Reporting Language (Perl)
+A script programming language that is similar in syntax to the C language and that includes a number of popular Unix facilities such as sed, awk, and tr.
+
+
+
+
+
+
+20
+Security+
+Incident Handling
+Incident Handling is an action plan for dealing with intrusions, cyber-theft, denial of service, fire, floods, and other security-related events. It is comprised of a six step process: Preparation, Identification, Containment, Eradication, Recovery, and Lessons Learned.
+
+
+
+
+
+21
+Security+
+Mandatory Access Control (MAC)
+Mandatory Access Control controls is where the system controls access to resources based on classification levels assigned to both the objects and the users. These controls cannot be changed by anyone.
+
+
+
+
+
+
+24
+Security+
+Autonomous System
+One network or series of networks that are all under one administrative control. An autonomous system is also sometimes referred to as a routing domain. An autonomous system is assigned a globally unique number, sometimes called an Autonomous System Number (ASN).
+
+
+
+
+
+26
+Security+
+Internet Message Access Protocol (IMAP)
+A protocol that defines how a client should fetch mail from and return mail to a mail server. IMAP is intended as a replacement for or extension to the Post Office Protocol (POP). It is defined in RFC 1203 (v3) and RFC 2060 (v4).
+
+
+
+
+
+27
+Security+
+Secure Electronic Transactions (SET)
+Secure Electronic Transactions is a protocol developed for credit card transactions in which all parties (customers, merchant, and bank) are authenticated using digital signatures, encryption protects the message and provides integrity, and provides end-to-end security for credit card transactions online.
+
+
+
+
+
+29
+Security+
+Triple-Wrapped
+S/MIME usage: data that has been signed with a digital signature, and then encrypted, and then signed again.
+
+
+
+
+
+
+
+34
+Security+
+Segment
+Segment is another name for TCP packets.
+
+
+
+
+
+
+37
+Security+
+Token-Based Devices
+A token-based device is triggered by the time of day, so every minute the password changes, requiring the user to have the token with them when they log in.
+
+
+
+
+
+
+42
+Security+
+Hyperlink
+In hypertext or hypermedia, an information object (such as a word, a phrase, or an image; usually highlighted by color or underscoring) that points (indicates how to connect) to related information that is located elsewhere and can be retrieved by activating the link.
+
+
+
+
+
+43
+Security+
+Loadable Kernel Modules (LKM)
+Loadable Kernel Modules allow for the adding of additional functionality directly into the kernel while the system is running.
+
+
+
+
+
+
+45
+Security+
+Split Key
+A cryptographic key that is divided into two or more separate data items that individually convey no knowledge of the whole key that results from combining the items.
+
+
+
+
+
