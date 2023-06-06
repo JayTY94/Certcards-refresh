@@ -1,54 +1,5 @@
 
 
-
-
-6
-General
-In the context of IT, Markdown is often used in software development and documentation as a way to format and style text within code repositories and project documentation. It is also commonly used in collaboration tools and web-based editors, such as GitHub and Stack Overflow, for its ease of use and readability.
-
-
-
-
-7
-Security+
-A security analyst has identified a number of sessions from a single IP
-address with a TTL equal to zero. One of the sessions has a destination of
-the Internet firewall, and a session immediately after has a destination of
-your DMZ server. Which of the following BEST describes this
-log information?
-he Answer: D. Someone is performing a traceroute to the DMZ server
-A traceroute maps each hop by slowly incrementing the TTL (Time
-to Live) value during each request. When the TTL reaches zero, the
-receiving router drops the packet and sends an ICMP (Internet Control
-Message Protocol) TTL Exceeded message back to the original station.
-
-
-
-
-8
-Security+
-Practical Extraction and Reporting Language (Perl)
-A script programming language that is similar in syntax to the C language and that includes a number of popular Unix facilities such as sed, awk, and tr.
-
-
-
-
-9
-Security+
-Internet Message Access Protocol (IMAP)
-A protocol that defines how a client should fetch mail from and return mail to a mail server. IMAP is intended as a replacement for or extension to the Post Office Protocol (POP). It is defined in RFC 1203 (v3) and RFC 2060 (v4).
-
-
-
-
-10
-Security+
-Star Property
-In Star Property, a user cannot write data to a lower classification level without logging in at that lower classification level.
-
-
-
-
 11
 General
 Markdown is a lightweight markup language used in text editors and web applications to format and style text. It was created by John Gruber in 2004 with the goal of allowing people to write using an easy-to-read, plain-text format that could then be converted into HTML.
