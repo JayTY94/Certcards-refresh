@@ -271,7 +271,6 @@ Use quick replies to provide default reply options to the customer.
 
 6
 Power Virtual Agents
-
 Entities
 
 Define and use entities to extract semantic information from what a customer types
@@ -280,13 +279,9 @@ Define and use entities to extract semantic information from what a customer typ
 
 7
 Power Virtual Agents
-Variables
+Variables - Use variables to track state.
 
-Use variables to track state.
-
-Power Fx
-
-Use Power Fx to create expressions.
+Power Fx - Use Power Fx to create expressions.
 
 
 
