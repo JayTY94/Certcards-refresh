@@ -238,92 +238,143 @@ Power Fx - Use Power Fx to create expressions.
 
 
 
+1
+Power Automate
+To create a custom form, deploy the Display custom form action and select Custom form designer button to open the form designer.
+
+On the left side of the designer, there's a list with all the available input elements you can add to the form, such as text, date, and file inputs, and some non-interactive elements, such as text and images.
+
+
+
+
+2
+Power Automate
+Simple data types represent single values, such as text and numbers. You can use these data types independently or use them to create more complex data structures, such as lists and datatables.
+
+
+
+
+3
+Power Automate
+
+
+
+
+
+4
+Power Automate
+
+
+
+
+
+5
+Power Automate
+
+
+
+
+
+6
+Power Automate
+
+
+
+
+
+7
+Power Automate
+
+
+
+
+
 8
-Power Virtual Agents
+Power Automate
 
 
 
 
 
 9
-Power Virtual Agents
+Power Automate
 
 
 
 
 
 10
-Power Virtual Agents
+Power Automate
 
 
 
 
 
 11
-Power Virtual Agents
+Power Automate
 
 
 
 
 
 12
-Power Virtual Agents
+Power Automate
 
 
 
 
 
 13
-Power Virtual Agents
+Power Automate
 
 
 
 
 
 14
-Power Virtual Agents
+Power Automate
 
 
 
 
 
 15
-Power Virtual Agents
+Power Automate
 
 
 
 
 
 16
-Power Virtual Agents
+Power Automate
 
 
 
 
 
 17
-Power Virtual Agents
+Power Automate
 
 
 
 
 
 18
-Power Virtual Agents
+Power Automate
 
 
 
 
 
 19
-Power Virtual Agents
+Power Automate
 
 
 
 
 
 20
-Power Virtual Agents
+Power Automate
 
 
 
