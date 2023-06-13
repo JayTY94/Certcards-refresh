@@ -264,13 +264,16 @@ a conversation, or starting a conversation over.
 
 4
 Power Virtual Agents
+Your bot needs 5 to 10 trigger phrases to train the AI to understand yourcustomers' responses. Make sure that each of the phrases in the Trigger phrases pane are on a separate line. 
 
+You can include punctuation in a trigger phrase, but it's best to use shortphrases rather than long sentences.
 
 
 
 
 5
-Power Virtual Agents
+Accuity
+Every morning, look at your schedule. Decide which meeting is the most important, and spend some time prepping for it.
 
 
 
