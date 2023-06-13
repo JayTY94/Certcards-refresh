@@ -222,111 +222,160 @@ Occasionally, the percentage sign should be used as a simple character, instead 
 
 5
 Accuity
-Remember to invite consulting people when I have an exam so they know why you're not at your desk.
+Remember to invite consulting people when you have an exam so they know why you're not at your desk.
+
+
+
+
+
+
+
+1
+Power Virtual Agents
+The Test bot pane shows how the bot conversation plays out at every step. You can use the Test bot pane to fine-tune a topic without having to exit the Power Virtual Agents portal.
+
+
+
+
+
+2
+Power Virtual Agents
+System topics are ones that support essential behaviors, such as a custom
+request to speak to a person or end the conversation. Some system topics
+have trigger phrases, which you can customize to fit your bot's needs.
+  You can't create system topics.
+  You can't delete system topics, but you can disable them.
+  You can make changes to system topics. 
+
+
+
+
+3
+Power Virtual Agents
+Custom topics cover common behaviors, such as greeting a customer, ending
+a conversation, or starting a conversation over.
+  You can make changes to the custom topics that your bot starts with or
+  remove them from your bot entirely.
+  All topics that you create are custom topics.
+
+
+
+
+
+4
+Power Virtual Agents
+
+
+
+
+
+5
+Power Virtual Agents
+
 
 
 
 
 6
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 7
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 8
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 9
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 10
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 11
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 12
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 13
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 14
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 15
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 16
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 17
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 18
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 19
-Power Automate
+Power Virtual Agents
 
 
 
 
 
 20
-Power Automate
+Power Virtual Agents
 
 
 
