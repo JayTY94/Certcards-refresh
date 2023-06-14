@@ -1,42 +1,4 @@
 
-16
-Security+
-Autonomous System
-One network or series of networks that are all under one administrative control. An autonomous system is also sometimes referred to as a routing domain. An autonomous system is assigned a globally unique number, sometimes called an Autonomous System Number (ASN).
-
-
-
-
-17
-Security+
-Integrity Star Property
-In Integrity Star Property a user cannot read data of a lower integrity level then their own.
-
-
-
-
-18
-Azure
-A designer-first integration service is a type of integration service that focuses on providing a user-friendly and design-centric interface for designers to connect different software tools and applications.
-
-This type of service typically allows designers to create custom workflows and integrations between various tools without requiring any coding or technical expertise. It often provides drag-and-drop functionality and pre-built templates to simplify the integration process.
-
-
-
-
-19
-Security+
-Forward Lookup
-Forward lookup uses an Internet domain name to find an IP address
-
-
-
-
-20
-Security+
-S/MIME is widely used in IT to secure email communication, especially in organizations that deal with sensitive or confidential information. However, it is important to note that both the sender and receiver must have S/MIME support and have exchanged digital certificates for this to work.
-
-
 
 
 21
@@ -281,14 +243,17 @@ Every morning, look at your schedule. Decide which meeting is the most important
 
 6
 Power Virtual Agents
+The Topics page lists all the topics defined in your bot, by name. A customer might see the topic name if the bot can't determine which topic matches the customer's message
 
+The Description is never shown to users. Use it to describe the purpose of the topic for yourself and other bot makers on the team.
 
 
 
 
 7
 Power Virtual Agents
-
+An entity can be thought of as a unit of information that represents a certain type of a
+real-world subject, like a phone number, zip code, city, or even a person's name.
 
 
 
