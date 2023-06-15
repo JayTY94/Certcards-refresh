@@ -277,3 +277,147 @@ Forward Proxies are designed to be the server through which all requests are mad
 
 
 
+1
+MS Teams
+Adaptive cards in MS Teams are a way to create and send interactive cards that can be viewed and interacted with directly within a Teams chat or channel. They allow developers to customize the look and behavior of the cards to suit their needs, and can include a range of content types such as text, images, buttons, and more. Adaptive cards can be used for a variety of purposes, such as displaying information, collecting data, and conducting surveys.
+
+
+
+
+2
+MS Teams
+App setup policies in Microsoft Teams allow administrators to customize which apps are available to users in the Teams app store. They can also control how those apps are used, such as whether they can be installed or used in channels.
+
+
+
+
+3
+MS Teams
+Use guest access and external access to collaborate with people outside your organization:
+
+External access - A feature that allows users to find, call, and chat with people who have Microsoft identities, including those from other organizations
+
+
+
+
+4
+MS Teams
+Use guest access and external access to collaborate with people outside your organization:
+
+Guest access - A feature that allows you to invite people from outside your organization to join a team. Guests can also call, chat, and meet with people in your organization and you can share files and folders with them. Invited people get an Azure AD B2B collaboration guest account in your directory.
+
+
+
+
+5
+MS Teams
+
+
+
+
+
+6
+MS Teams
+
+
+
+
+
+7
+MS Teams
+
+
+
+
+
+8
+MS Teams
+
+
+
+
+
+9
+MS Teams
+
+
+
+
+
+10
+MS Teams
+
+
+
+
+
+11
+MS Teams
+
+
+
+
+
+12
+MS Teams
+
+
+
+
+
+13
+MS Teams
+
+
+
+
+
+14
+MS Teams
+
+
+
+
+
+15
+MS Teams
+
+
+
+
+
+16
+MS Teams
+
+
+
+
+
+17
+MS Teams
+
+
+
+
+
+18
+MS Teams
+
+
+
+
+
+19
+MS Teams
+
+
+
+
+
+20
+MS Teams
+
+
+
+
+
