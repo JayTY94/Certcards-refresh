@@ -1,15 +1,4 @@
-
-
-
-21
-Security+
-Filtering Router
-An inter-network router that selectively prevents the passage of data packets according to a security policy. A filtering router may be used as a firewall or part of a firewall. A router usually receives a packet from a network and decides where to forward it on a second network. A filtering router does the same, but first decides whether the packet should be forwarded at all, according to some security policy. The policy is implemented by rules (packet filters) loaded into the router.
-
-
-
-
-22
+1
 General
 adjective: eleemosynary
 relating to or dependent on charity; charitable.
@@ -17,85 +6,12 @@ relating to or dependent on charity; charitable.
 
 
 
-23
-Security+
-Hyperlink
-In hypertext or hypermedia, an information object (such as a word, a phrase, or an image; usually highlighted by color or underscoring) that points (indicates how to connect) to related information that is located elsewhere and can be retrieved by activating the link.
-
-
-
-
-24
-Security+
-Domain
-A sphere of knowledge, or a collection of facts about some program entities or a number of network points or addresses, identified by a name. On the Internet, a domain consists of a set of network addresses. In the Internet's domain name system, a domain is a name with which name server records are associated that describe sub-domains or host. In Windows NT and Windows 2000, a domain is a set of network resources (applications, printers, and so forth) for a group of users. The user need only to log in to the domain to gain access to the resources, which may be located on a number of different servers in the network.
-
-
-
-
-25
-Security+
-Segment
-Segment is another name for TCP packets.
-
-
-
-
-26
-Security+
-Loadable Kernel Modules (LKM)
-Loadable Kernel Modules allow for the adding of additional functionality directly into the kernel while the system is running.
-
-
-
-
-27
-Security+
-Triple-Wrapped
-S/MIME usage: data that has been signed with a digital signature, and then encrypted, and then signed again.
-
-
-
-
-28
-Security+
-Secure Electronic Transactions (SET)
-Secure Electronic Transactions is a protocol developed for credit card transactions in which all parties (customers, merchant, and bank) are authenticated using digital signatures, encryption protects the message and provides integrity, and provides end-to-end security for credit card transactions online.
-
-
-
-
-29
-Security+
-Forward Proxy
-Forward Proxies are designed to be the server through which all requests are made.
-
-
-
-
-30
-Security+
-Disassembly
-The process of taking a binary program and deriving the source code from it.
-
-
-
-
-1
-Power Virtual Agents
-Topics
-
-Use topics to organize conversation flow or paths. A topic has a set of trigger phrases that indicate when the bot should start the topic and a set of nodes that describe the topic's conversation path.
-
-
-
-
 
 2
 Power Virtual Agents
-Trigger Phrases
+Quick Replies
 
-Add trigger phrases to a topic for the phrases, keywords, and questions that a customer is likely to type related to a specific issue. Power Virtual Agents uses natural language understanding to parse what a customer types and find the most appropriate topic.
+Use quick replies to provide default reply options to the customer.
 
 
 
@@ -103,9 +19,7 @@ Add trigger phrases to a topic for the phrases, keywords, and questions that a c
 
 3
 Power Virtual Agents
-Nodes
-
-Use nodes, such as messages, questions, and conditional branches, on the authoring canvas to create a conversation's conversation path.
+The Test bot pane shows how the bot conversation plays out at every step. You can use the Test bot pane to fine-tune a topic without having to exit the Power Virtual Agents portal.
 
 
 
@@ -122,18 +36,35 @@ Use response and question variations to add variety to your bot's messages and q
 
 
 5
-Power Virtual Agents
-Quick Replies
+Power Automate
+To create a custom form, deploy the Display custom form action and select Custom form designer button to open the form designer.
 
-Use quick replies to provide default reply options to the customer.
-
-
+On the left side of the designer, there's a list with all the available input elements you can add to the form, such as text, date, and file inputs, and some non-interactive elements, such as text and images.
 
 
 
 
 
 6
+Security+
+Filtering Router
+An inter-network router that selectively prevents the passage of data packets according to a security policy. A filtering router may be used as a firewall or part of a firewall. A router usually receives a packet from a network and decides where to forward it on a second network. A filtering router does the same, but first decides whether the packet should be forwarded at all, according to some security policy. The policy is implemented by rules (packet filters) loaded into the router.
+
+
+
+
+
+7
+Power Virtual Agents
+The Topics page lists all the topics defined in your bot, by name. A customer might see the topic name if the bot can't determine which topic matches the customer's message
+
+The Description is never shown to users. Use it to describe the purpose of the topic for yourself and other bot makers on the team.
+
+
+
+
+
+8
 Power Virtual Agents
 Entities
 
@@ -141,7 +72,75 @@ Define and use entities to extract semantic information from what a customer typ
 
 
 
-7
+
+
+9
+Accuity
+Remember to invite consulting people when you have an exam so they know why you're not at your desk.
+
+
+
+
+
+10
+Security+
+Secure Electronic Transactions (SET)
+Secure Electronic Transactions is a protocol developed for credit card transactions in which all parties (customers, merchant, and bank) are authenticated using digital signatures, encryption protects the message and provides integrity, and provides end-to-end security for credit card transactions online.
+
+
+
+
+
+11
+Power Virtual Agents
+System topics are ones that support essential behaviors, such as a custom
+request to speak to a person or end the conversation. Some system topics
+have trigger phrases, which you can customize to fit your bot's needs.
+  You can't create system topics.
+  You can't delete system topics, but you can disable them.
+  You can make changes to system topics.
+
+
+
+
+
+12
+Security+
+Domain
+A sphere of knowledge, or a collection of facts about some program entities or a number of network points or addresses, identified by a name. On the Internet, a domain consists of a set of network addresses. In the Internet's domain name system, a domain is a name with which name server records are associated that describe sub-domains or host. In Windows NT and Windows 2000, a domain is a set of network resources (applications, printers, and so forth) for a group of users. The user need only to log in to the domain to gain access to the resources, which may be located on a number of different servers in the network.
+
+
+
+
+
+13
+Power Virtual Agents
+Nodes
+
+Use nodes, such as messages, questions, and conditional branches, on the authoring canvas to create a conversation's conversation path.
+
+
+
+
+
+14
+Security+
+Hyperlink
+In hypertext or hypermedia, an information object (such as a word, a phrase, or an image; usually highlighted by color or underscoring) that points (indicates how to connect) to related information that is located elsewhere and can be retrieved by activating the link.
+
+
+
+
+
+15
+Power Automate
+Occasionally, the percentage sign should be used as a simple character, instead of denoting a calculation. In those cases, it should be escaped using another percentage character (%%).
+
+
+
+
+
+16
 Power Virtual Agents
 Variables - Use variables to track state.
 
@@ -151,68 +150,24 @@ Power Fx - Use Power Fx to create expressions.
 
 
 
-1
-Power Automate
-To create a custom form, deploy the Display custom form action and select Custom form designer button to open the form designer.
-
-On the left side of the designer, there's a list with all the available input elements you can add to the form, such as text, date, and file inputs, and some non-interactive elements, such as text and images.
-
-
-
-
-2
-Power Automate
-Simple data types represent single values, such as text and numbers. You can use these data types independently or use them to create more complex data structures, such as lists and datatables.
+17
+Power Virtual Agents
+An entity can be thought of as a unit of information that represents a certain type of a
+real-world subject, like a phone number, zip code, city, or even a person's name.
 
 
 
 
-3
+
+18
 Power Automate
 Variables are used within flows to store data for further processing. Every variable name must be enclosed by percentage signs. The percentage (%) sign is used as a special character to denote variables. Any expression between percentage signs should be evaluated.
 
 
 
 
-4
-Power Automate
-Occasionally, the percentage sign should be used as a simple character, instead of denoting a calculation. In those cases, it should be escaped using another percentage character (%%).
 
-
-
-
-
-5
-Accuity
-Remember to invite consulting people when you have an exam so they know why you're not at your desk.
-
-
-
-
-
-
-
-1
-Power Virtual Agents
-The Test bot pane shows how the bot conversation plays out at every step. You can use the Test bot pane to fine-tune a topic without having to exit the Power Virtual Agents portal.
-
-
-
-
-
-2
-Power Virtual Agents
-System topics are ones that support essential behaviors, such as a custom
-request to speak to a person or end the conversation. Some system topics
-have trigger phrases, which you can customize to fit your bot's needs.
-  You can't create system topics.
-  You can't delete system topics, but you can disable them.
-  You can make changes to system topics. 
-
-
-
-
-3
+19
 Power Virtual Agents
 Custom topics cover common behaviors, such as greeting a customer, ending
 a conversation, or starting a conversation over.
@@ -224,7 +179,44 @@ a conversation, or starting a conversation over.
 
 
 
-4
+20
+Power Virtual Agents
+Topics
+
+Use topics to organize conversation flow or paths. A topic has a set of trigger phrases that indicate when the bot should start the topic and a set of nodes that describe the topic's conversation path.
+
+
+
+
+
+21
+Power Virtual Agents
+Trigger Phrases
+
+Add trigger phrases to a topic for the phrases, keywords, and questions that a customer is likely to type related to a specific issue. Power Virtual Agents uses natural language understanding to parse what a customer types and find the most appropriate topic.
+
+
+
+
+
+22
+Security+
+Loadable Kernel Modules (LKM)
+Loadable Kernel Modules allow for the adding of additional functionality directly into the kernel while the system is running.
+
+
+
+
+
+23
+Power Automate
+Simple data types represent single values, such as text and numbers. You can use these data types independently or use them to create more complex data structures, such as lists and datatables.
+
+
+
+
+
+24
 Power Virtual Agents
 Your bot needs 5 to 10 trigger phrases to train the AI to understand yourcustomers' responses. Make sure that each of the phrases in the Trigger phrases pane are on a separate line. 
 
@@ -233,7 +225,33 @@ You can include punctuation in a trigger phrase, but it's best to use shortphras
 
 
 
-5
+
+25
+Security+
+Segment
+Segment is another name for TCP packets.
+
+
+
+
+
+26
+Power Virtual Agents
+
+
+
+
+
+27
+Security+
+Disassembly
+The process of taking a binary program and deriving the source code from it.
+
+
+
+
+
+28
 Accuity
 Every morning, look at your schedule. Decide which meeting is the most important, and spend some time prepping for it.
 
@@ -241,109 +259,19 @@ Every morning, look at your schedule. Decide which meeting is the most important
 
 
 
-6
-Power Virtual Agents
-The Topics page lists all the topics defined in your bot, by name. A customer might see the topic name if the bot can't determine which topic matches the customer's message
+29
+Security+
+Triple-Wrapped
+S/MIME usage: data that has been signed with a digital signature, and then encrypted, and then signed again.
 
-The Description is never shown to users. Use it to describe the purpose of the topic for yourself and other bot makers on the team.
 
 
 
 
-7
-Power Virtual Agents
-An entity can be thought of as a unit of information that represents a certain type of a
-real-world subject, like a phone number, zip code, city, or even a person's name.
-
-
-
-
-8
-Power Virtual Agents
-
-
-
-
-
-9
-Power Virtual Agents
-
-
-
-
-
-10
-Power Virtual Agents
-
-
-
-
-
-11
-Power Virtual Agents
-
-
-
-
-
-12
-Power Virtual Agents
-
-
-
-
-
-13
-Power Virtual Agents
-
-
-
-
-
-14
-Power Virtual Agents
-
-
-
-
-
-15
-Power Virtual Agents
-
-
-
-
-
-16
-Power Virtual Agents
-
-
-
-
-
-17
-Power Virtual Agents
-
-
-
-
-
-18
-Power Virtual Agents
-
-
-
-
-
-19
-Power Virtual Agents
-
-
-
-
-
-20
-Power Virtual Agents
+30
+Security+
+Forward Proxy
+Forward Proxies are designed to be the server through which all requests are made.
 
 
 
