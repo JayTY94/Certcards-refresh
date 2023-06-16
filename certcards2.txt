@@ -234,14 +234,6 @@ Segment is another name for TCP packets.
 
 
 
-
-26
-Power Virtual Agents
-
-
-
-
-
 27
 Security+
 Disassembly
@@ -311,7 +303,7 @@ Guest access - A feature that allows you to invite people from outside your orga
 
 5
 MS Teams
-
+Guests are added to your organization's Azure Active Directory as B2B collaboration users. They must sign in to Teams using their guest account. If the normally use Teams with another Microsoft 365 organization, they need to switch organizations in Teams to interact with your organization.
 
 
 
