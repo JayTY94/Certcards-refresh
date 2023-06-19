@@ -334,14 +334,14 @@ As an admin, you can add a new guest to the organization in a couple of ways:
 
 9
 MS Teams
-
+Guest access in Teams is an organization-wide setting and is turned on by default. You can control guest access to individual teams by using sensitivity labels.
 
 
 
 
 10
 MS Teams
-
+To collaborate with a partner organization that uses Azure Active Directory and allow guests to self-enroll for teams access, see Create a B2B extranet with managed guests.
 
 
 
