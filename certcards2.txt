@@ -348,28 +348,28 @@ To collaborate with a partner organization that uses Azure Active Directory and 
 
 11
 MS Teams
-
+In Teams, guests are clearly identified. A guest's name includes the label (Guest), and a channel includes an icon to indicate that there are guests on the team. For more details, see  the article "What the guest experience is like".
 
 
 
 
 12
 MS Teams
-
+Guests can leave the team at any time from within Teams. For details, see the article "How do I leave a team?". Leaving the team doesn't remove the guest account from our organization's directory. This must be done using a Microsoft 365 global admin or an Azure AD admin.
 
 
 
 
 13
 MS Teams
-
+You can track guest additions in Azure AD or the Microsoft 365 security center. Adding a guest in Teams is audited and logged as an Azure AD group administration activity "Added member to group". 
 
 
 
 
 14
 MS Teams
-
+You can perform a guest access review yourself, ask guests to review their own access, or ask an application owner or business decision maker to perform the access review. Reviews are done in Azure AD. For more information, see the article "Manage guest access with Azure AD access reviews".
 
 
 
