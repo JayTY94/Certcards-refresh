@@ -310,14 +310,14 @@ Guests are added to your organization's Azure Active Directory as B2B collaborat
 
 6
 MS Teams
-
+When you invite a guest to Teams, a guest account is created for them in Azure Active Directory and they are covered by the same compliance and auditing protection as other Microsoft 365 users. Guest access is subject to Azure AD and Microsoft 365 service limits.
 
 
 
 
 7
 MS Teams
-
+If you just want to find, call, chat, and set up meetings with people in other Microsoft 365 organizations, use external access.
 
 
 
