@@ -324,6 +324,9 @@ If you just want to find, call, chat, and set up meetings with people in other M
 
 8
 MS Teams
+As an admin, you can add a new guest to the organization in a couple of ways:
+    Global administrators or Teams administrators and team owners can add a guest to a team in the Teams clients or in the Teams admin center. 
+    Add guests to your organization through Azure Active Directory (Azure AD) B2B collaboration.
 
 
 
