@@ -377,6 +377,7 @@ You can perform a guest access review yourself, ask guests to review their own a
 
 1
 Microsoft 365
+Azure AD B2B collaboration – A feature that allows users to share files, folders, sites, groups, and teams with people from outside your organization. These people access shared resources by using guest accounts in your directory.
 
 
 
@@ -384,6 +385,7 @@ Microsoft 365
 
 2
 Microsoft 365
+Azure AD B2B direct connect – A feature that allows users to share resources in your organization with people from other Azure AD organizations. These people access the shared resources by using their own work or school account. No guest account is created in your organization.
 
 
 
@@ -391,6 +393,7 @@ Microsoft 365
 
 3
 Microsoft 365
+External participant – A person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.
 
 
 
@@ -398,6 +401,7 @@ Microsoft 365
 
 4
 Microsoft 365
+External organization – Another organization that you are sharing resources with.
 
 
 
@@ -405,6 +409,7 @@ Microsoft 365
 
 5
 Microsoft 365
+Guest – A person from outside your organization who accesses shared resources by signing in to a guest account in your directory.
 
 
 
@@ -412,6 +417,7 @@ Microsoft 365
 
 6
 Microsoft 365
+Host organization – The organization that is hosting a shared resource, such as a shared channel.
 
 
 
@@ -419,6 +425,7 @@ Microsoft 365
 
 7
 Microsoft 365
+Shared channel – A Teams channel that can be shared with people outside the team. These people can be inside your organization or from other Azure AD organizations.
 
 
 
@@ -426,6 +433,7 @@ Microsoft 365
 
 8
 Microsoft 365
+Sharing links – Links with permissions to a file or folder that are used to share that file or folder with others. The people being shared with can be inside or outside your organization.
 
 
 
