@@ -467,6 +467,7 @@ The organization-level settings for SharePoint determine the settings that will 
 
 17
 Microsoft 365
+Sharing in Microsoft 365 is governed at its highest level by the B2B external collaboration settings in Azure Active Directory. If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
 
 
@@ -474,14 +475,16 @@ Microsoft 365
 
 18
 Microsoft 365
+A Microsoft Teams team is built on top of a Microsoft 365 group. A Microsoft 365 group is a group of people who have common collaboration needs and can be used for email communication, file sharing, and calendaring.
 
+When you create a new team in Microsoft Teams, a new Microsoft 365 group is created for the team. This group is used for storing the team's files, managing the team's calendar, and enabling the team's email communication.
 
 
 
 
 19
 Microsoft 365
-
+There are some differences between Teams and 365 Groups. Teams is more focused on chat-based collaboration and video conferencing, while 365 Groups is more focused on email communication and file sharing. Additionally, Teams has its own unique features such as channels, tabs, and apps that are not available in 365 Groups.
 
 
 
