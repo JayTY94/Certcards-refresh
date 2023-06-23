@@ -440,50 +440,65 @@ Sharing links – Links with permissions to a file or folder that are used to sh
 
 
 9
-Microsoft 365
-
+General
+The Jaccard similarity algorithm is a measure used to compare the similarity of two sets. It is defined as the size of the intersection of two sets divided by the size of the union of the two sets. In other words, it measures how many elements are common to both sets out of the total number of distinct elements in both sets. The Jaccard similarity coefficient ranges from 0 to 1, with 0 meaning the sets are completely different and 1 meaning the sets are identical.
 
 
 
 
 10
 Microsoft 365
-
+Microsoft Purview is a cloud-based data governance solution that allows businesses to discover, classify, and manage data across various systems and sources. It provides a unified view of all the data assets in an organization, including on-premises, multi-cloud, and SaaS data. With Purview, businesses can understand their data landscape and ensure compliance with various regulatory requirements such as GDPR, CCPA, and HIPAA
 
 
 
 
 11
 Microsoft 365
-
+Admins can set policies to monitor content for all users in the channel. All messages content in channels, including shared channels, is covered by communication compliance policies. Shared channels inherit the policy of the host organization.
 
 
 
 
 12
 Microsoft 365
-
+Admins can apply Microsoft Purview DLP policies to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
 
 
 
 
 13
-Microsoft 365
-
+Python
+def get_client_name(namestring):
+    # Check if the namestring matches the pattern: <digits>.<word> - <client name>
+    if re.search(r'\d+\.\w+\s\-\s(.*)', namestring):
+        # If there is a match, extract the client name using a regular expression
+        # The group(1) returns the content within the parentheses in the regular expression pattern
+        return re.search(r'\s\-\s(.*)', namestring).group(1)
+    else:
+        # If there is no match, return NaN (a missing value indicator from the numpy library)
+        return np.NaN
 
 
 
 
 14
-Microsoft 365
+Python
+The group() method is a function provided by the re module in Python for working with regular expressions. It is used to extract portions of a matched pattern or capture groups.
+
+When a regular expression pattern contains parentheses (), it defines a capture group. The group() method allows you to access the content matched by a specific capture group within a regular expression pattern.
+
 
 
 
 
 
 15
-Microsoft 365
+Python
+Here's how the re.search(pattern, string).group() method works:
 
+group(0) or simply group(): It returns the entire matched string.
+group(n): It returns the content matched by the capture group with index n. The index starts from 1 for the leftmost capture group in the pattern.
 
 
 
