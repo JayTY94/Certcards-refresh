@@ -1,48 +1,3 @@
-1
-General
-adjective: eleemosynary
-relating to or dependent on charity; charitable.
-
-
-
-
-
-2
-Power Virtual Agents
-Quick Replies
-
-Use quick replies to provide default reply options to the customer.
-
-
-
-
-
-3
-Power Virtual Agents
-The Test bot pane shows how the bot conversation plays out at every step. You can use the Test bot pane to fine-tune a topic without having to exit the Power Virtual Agents portal.
-
-
-
-
-
-4
-Power Virtual Agents
-Response variations and question variations
-
-Use response and question variations to add variety to your bot's messages and questions.
-
-
-
-
-
-5
-Power Automate
-To create a custom form, deploy the Display custom form action and select Custom form designer button to open the form designer.
-
-On the left side of the designer, there's a list with all the available input elements you can add to the form, such as text, date, and file inputs, and some non-interactive elements, such as text and images.
-
-
-
 
 
 6
@@ -505,7 +460,7 @@ group(n): It returns the content matched by the capture group with index n. The 
 
 16
 Microsoft 365
-
+The organization-level settings for SharePoint determine the settings that will be available for individual SharePoint sites. Site settings cannot be more permissive than the organization-level settings. The organization-level setting for OneDrive determines the level of sharing that will be available in users' OneDrive libraries.
 
 
 
