@@ -1,47 +1,5 @@
 
 
-6
-Security+
-Filtering Router
-An inter-network router that selectively prevents the passage of data packets according to a security policy. A filtering router may be used as a firewall or part of a firewall. A router usually receives a packet from a network and decides where to forward it on a second network. A filtering router does the same, but first decides whether the packet should be forwarded at all, according to some security policy. The policy is implemented by rules (packet filters) loaded into the router.
-
-
-
-
-
-7
-Power Virtual Agents
-The Topics page lists all the topics defined in your bot, by name. A customer might see the topic name if the bot can't determine which topic matches the customer's message
-
-The Description is never shown to users. Use it to describe the purpose of the topic for yourself and other bot makers on the team.
-
-
-
-
-
-8
-Power Virtual Agents
-Entities
-
-Define and use entities to extract semantic information from what a customer types
-
-
-
-
-
-9
-Accuity
-Remember to invite consulting people when you have an exam so they know why you're not at your desk.
-
-
-
-
-
-10
-Security+
-Secure Electronic Transactions (SET)
-Secure Electronic Transactions is a protocol developed for credit card transactions in which all parties (customers, merchant, and bank) are authenticated using digital signatures, encryption protects the message and provides integrity, and provides end-to-end security for credit card transactions online.
-
 
 
 
