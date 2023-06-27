@@ -2,57 +2,6 @@
 
 
 
-
-
-11
-Power Virtual Agents
-System topics are ones that support essential behaviors, such as a custom
-request to speak to a person or end the conversation. Some system topics
-have trigger phrases, which you can customize to fit your bot's needs.
-  You can't create system topics.
-  You can't delete system topics, but you can disable them.
-  You can make changes to system topics.
-
-
-
-
-
-12
-Security+
-Domain
-A sphere of knowledge, or a collection of facts about some program entities or a number of network points or addresses, identified by a name. On the Internet, a domain consists of a set of network addresses. In the Internet's domain name system, a domain is a name with which name server records are associated that describe sub-domains or host. In Windows NT and Windows 2000, a domain is a set of network resources (applications, printers, and so forth) for a group of users. The user need only to log in to the domain to gain access to the resources, which may be located on a number of different servers in the network.
-
-
-
-
-
-13
-Power Virtual Agents
-Nodes
-
-Use nodes, such as messages, questions, and conditional branches, on the authoring canvas to create a conversation's conversation path.
-
-
-
-
-
-14
-Security+
-Hyperlink
-In hypertext or hypermedia, an information object (such as a word, a phrase, or an image; usually highlighted by color or underscoring) that points (indicates how to connect) to related information that is located elsewhere and can be retrieved by activating the link.
-
-
-
-
-
-15
-Power Automate
-Occasionally, the percentage sign should be used as a simple character, instead of denoting a calculation. In those cases, it should be escaped using another percentage character (%%).
-
-
-
-
-
 16
 Power Virtual Agents
 Variables - Use variables to track state.
