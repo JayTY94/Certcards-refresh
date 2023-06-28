@@ -1,46 +1,6 @@
 
 
 
-
-16
-Power Virtual Agents
-Variables - Use variables to track state.
-
-Power Fx - Use Power Fx to create expressions.
-
-
-
-
-
-17
-Power Virtual Agents
-An entity can be thought of as a unit of information that represents a certain type of a
-real-world subject, like a phone number, zip code, city, or even a person's name.
-
-
-
-
-
-18
-Power Automate
-Variables are used within flows to store data for further processing. Every variable name must be enclosed by percentage signs. The percentage (%) sign is used as a special character to denote variables. Any expression between percentage signs should be evaluated.
-
-
-
-
-
-19
-Power Virtual Agents
-Custom topics cover common behaviors, such as greeting a customer, ending
-a conversation, or starting a conversation over.
-  You can make changes to the custom topics that your bot starts with or
-  remove them from your bot entirely.
-  All topics that you create are custom topics.
-
-
-
-
-
 20
 Power Virtual Agents
 Topics
