@@ -1,16 +1,6 @@
 
 
 
-20
-Power Virtual Agents
-Topics
-
-Use topics to organize conversation flow or paths. A topic has a set of trigger phrases that indicate when the bot should start the topic and a set of nodes that describe the topic's conversation path.
-
-
-
-
-
 21
 Power Virtual Agents
 Trigger Phrases
