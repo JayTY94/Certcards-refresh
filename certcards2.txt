@@ -1,86 +1,3 @@
-
-
-
-21
-Power Virtual Agents
-Trigger Phrases
-
-Add trigger phrases to a topic for the phrases, keywords, and questions that a customer is likely to type related to a specific issue. Power Virtual Agents uses natural language understanding to parse what a customer types and find the most appropriate topic.
-
-
-
-
-
-22
-Security+
-Loadable Kernel Modules (LKM)
-Loadable Kernel Modules allow for the adding of additional functionality directly into the kernel while the system is running.
-
-
-
-
-
-23
-Power Automate
-Simple data types represent single values, such as text and numbers. You can use these data types independently or use them to create more complex data structures, such as lists and datatables.
-
-
-
-
-
-24
-Power Virtual Agents
-Your bot needs 5 to 10 trigger phrases to train the AI to understand yourcustomers' responses. Make sure that each of the phrases in the Trigger phrases pane are on a separate line. 
-
-You can include punctuation in a trigger phrase, but it's best to use shortphrases rather than long sentences.
-
-
-
-
-
-25
-Security+
-Segment
-Segment is another name for TCP packets.
-
-
-
-
-27
-Security+
-Disassembly
-The process of taking a binary program and deriving the source code from it.
-
-
-
-
-
-28
-Accuity
-Every morning, look at your schedule. Decide which meeting is the most important, and spend some time prepping for it.
-
-
-
-
-
-29
-Security+
-Triple-Wrapped
-S/MIME usage: data that has been signed with a digital signature, and then encrypted, and then signed again.
-
-
-
-
-
-30
-Security+
-Forward Proxy
-Forward Proxies are designed to be the server through which all requests are made.
-
-
-
-
-
 1
 MS Teams
 Adaptive cards in MS Teams are a way to create and send interactive cards that can be viewed and interacted with directly within a Teams chat or channel. They allow developers to customize the look and behavior of the cards to suit their needs, and can include a range of content types such as text, images, buttons, and more. Adaptive cards can be used for a variety of purposes, such as displaying information, collecting data, and conducting surveys.
@@ -88,138 +5,25 @@ Adaptive cards in MS Teams are a way to create and send interactive cards that c
 
 
 
+
 2
-MS Teams
-App setup policies in Microsoft Teams allow administrators to customize which apps are available to users in the Teams app store. They can also control how those apps are used, such as whether they can be installed or used in channels.
+Security+
+Segment
+Segment is another name for TCP packets.
+
 
 
 
 
 3
 MS Teams
-Use guest access and external access to collaborate with people outside your organization:
-
-External access - A feature that allows users to find, call, and chat with people who have Microsoft identities, including those from other organizations
-
-
-
-
-4
-MS Teams
-Use guest access and external access to collaborate with people outside your organization:
-
-Guest access - A feature that allows you to invite people from outside your organization to join a team. Guests can also call, chat, and meet with people in your organization and you can share files and folders with them. Invited people get an Azure AD B2B collaboration guest account in your directory.
-
-
-
-
-5
-MS Teams
-Guests are added to your organization's Azure Active Directory as B2B collaboration users. They must sign in to Teams using their guest account. If the normally use Teams with another Microsoft 365 organization, they need to switch organizations in Teams to interact with your organization.
-
-
-
-
-6
-MS Teams
-When you invite a guest to Teams, a guest account is created for them in Azure Active Directory and they are covered by the same compliance and auditing protection as other Microsoft 365 users. Guest access is subject to Azure AD and Microsoft 365 service limits.
-
-
-
-
-7
-MS Teams
-If you just want to find, call, chat, and set up meetings with people in other Microsoft 365 organizations, use external access.
-
-
-
-
-8
-MS Teams
-As an admin, you can add a new guest to the organization in a couple of ways:
-    Global administrators or Teams administrators and team owners can add a guest to a team in the Teams clients or in the Teams admin center. 
-    Add guests to your organization through Azure Active Directory (Azure AD) B2B collaboration.
-
-
-
-
-
-9
-MS Teams
-Guest access in Teams is an organization-wide setting and is turned on by default. You can control guest access to individual teams by using sensitivity labels.
-
-
-
-
-10
-MS Teams
-To collaborate with a partner organization that uses Azure Active Directory and allow guests to self-enroll for teams access, see Create a B2B extranet with managed guests.
-
-
-
-
-11
-MS Teams
-In Teams, guests are clearly identified. A guest's name includes the label (Guest), and a channel includes an icon to indicate that there are guests on the team. For more details, see  the article "What the guest experience is like".
-
-
-
-
-12
-MS Teams
-Guests can leave the team at any time from within Teams. For details, see the article "How do I leave a team?". Leaving the team doesn't remove the guest account from our organization's directory. This must be done using a Microsoft 365 global admin or an Azure AD admin.
-
-
-
-
-13
-MS Teams
-You can track guest additions in Azure AD or the Microsoft 365 security center. Adding a guest in Teams is audited and logged as an Azure AD group administration activity "Added member to group". 
-
-
-
-
-14
-MS Teams
-You can perform a guest access review yourself, ask guests to review their own access, or ask an application owner or business decision maker to perform the access review. Reviews are done in Azure AD. For more information, see the article "Manage guest access with Azure AD access reviews".
-
-
-
-
-
-1
-Microsoft 365
-Azure AD B2B collaboration – A feature that allows users to share files, folders, sites, groups, and teams with people from outside your organization. These people access shared resources by using guest accounts in your directory.
-
-
-
-
-
-2
-Microsoft 365
-Azure AD B2B direct connect – A feature that allows users to share resources in your organization with people from other Azure AD organizations. These people access the shared resources by using their own work or school account. No guest account is created in your organization.
-
-
-
-
-
-3
-Microsoft 365
-External participant – A person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.
+You can track guest additions in Azure AD or the Microsoft 365 security center. Adding a guest in Teams is audited and logged as an Azure AD group administration activity "Added member to group".
 
 
 
 
 
 4
-Microsoft 365
-External organization – Another organization that you are sharing resources with.
-
-
-
-
-
-5
 Microsoft 365
 Guest – A person from outside your organization who accesses shared resources by signing in to a guest account in your directory.
 
@@ -227,17 +31,26 @@ Guest – A person from outside your organization who accesses shared resources 
 
 
 
+5
+Power Automate
+Simple data types represent single values, such as text and numbers. You can use these data types independently or use them to create more complex data structures, such as lists and datatables.
+
+
+
+
+
 6
 Microsoft 365
-Host organization – The organization that is hosting a shared resource, such as a shared channel.
+Shared channel – A Teams channel that can be shared with people outside the team. These people can be inside your organization or from other Azure AD organizations.
 
 
 
 
 
 7
-Microsoft 365
-Shared channel – A Teams channel that can be shared with people outside the team. These people can be inside your organization or from other Azure AD organizations.
+Security+
+Forward Proxy
+Forward Proxies are designed to be the server through which all requests are made.
 
 
 
@@ -252,34 +65,168 @@ Sharing links – Links with permissions to a file or folder that are used to sh
 
 
 9
-General
-The Jaccard similarity algorithm is a measure used to compare the similarity of two sets. It is defined as the size of the intersection of two sets divided by the size of the union of the two sets. In other words, it measures how many elements are common to both sets out of the total number of distinct elements in both sets. The Jaccard similarity coefficient ranges from 0 to 1, with 0 meaning the sets are completely different and 1 meaning the sets are identical.
+Microsoft 365
+Sharing in Microsoft 365 is governed at its highest level by the B2B external collaboration settings in Azure Active Directory. If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+
 
 
 
 
 10
-Microsoft 365
-Microsoft Purview is a cloud-based data governance solution that allows businesses to discover, classify, and manage data across various systems and sources. It provides a unified view of all the data assets in an organization, including on-premises, multi-cloud, and SaaS data. With Purview, businesses can understand their data landscape and ensure compliance with various regulatory requirements such as GDPR, CCPA, and HIPAA
+Security+
+Disassembly
+The process of taking a binary program and deriving the source code from it.
+
 
 
 
 
 11
 Microsoft 365
-Admins can set policies to monitor content for all users in the channel. All messages content in channels, including shared channels, is covered by communication compliance policies. Shared channels inherit the policy of the host organization.
+Azure AD B2B direct connect – A feature that allows users to share resources in your organization with people from other Azure AD organizations. These people access the shared resources by using their own work or school account. No guest account is created in your organization.
+
 
 
 
 
 12
 Microsoft 365
-Admins can apply Microsoft Purview DLP policies to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
+Host organization – The organization that is hosting a shared resource, such as a shared channel.
+
 
 
 
 
 13
+Python
+The group() method is a function provided by the re module in Python for working with regular expressions. It is used to extract portions of a matched pattern or capture groups.
+
+When a regular expression pattern contains parentheses (), it defines a capture group. The group() method allows you to access the content matched by a specific capture group within a regular expression pattern.
+
+
+
+
+
+14
+MS Teams
+You can perform a guest access review yourself, ask guests to review their own access, or ask an application owner or business decision maker to perform the access review. Reviews are done in Azure AD. For more information, see the article "Manage guest access with Azure AD access reviews".
+
+
+
+
+
+15
+MS Teams
+Guests are added to your organization's Azure Active Directory as B2B collaboration users. They must sign in to Teams using their guest account. If the normally use Teams with another Microsoft 365 organization, they need to switch organizations in Teams to interact with your organization.
+
+
+
+
+
+16
+Microsoft 365
+There are some differences between Teams and 365 Groups. Teams is more focused on chat-based collaboration and video conferencing, while 365 Groups is more focused on email communication and file sharing. Additionally, Teams has its own unique features such as channels, tabs, and apps that are not available in 365 Groups.
+
+
+
+
+
+17
+Microsoft 365
+Microsoft Purview is a cloud-based data governance solution that allows businesses to discover, classify, and manage data across various systems and sources. It provides a unified view of all the data assets in an organization, including on-premises, multi-cloud, and SaaS data. With Purview, businesses can understand their data landscape and ensure compliance with various regulatory requirements such as GDPR, CCPA, and HIPAA
+
+
+
+
+
+18
+MS Teams
+If you just want to find, call, chat, and set up meetings with people in other Microsoft 365 organizations, use external access.
+
+
+
+
+
+19
+Power Virtual Agents
+Your bot needs 5 to 10 trigger phrases to train the AI to understand yourcustomers' responses. Make sure that each of the phrases in the Trigger phrases pane are on a separate line. 
+
+You can include punctuation in a trigger phrase, but it's best to use shortphrases rather than long sentences.
+
+
+
+
+
+20
+MS Teams
+As an admin, you can add a new guest to the organization in a couple of ways:
+    Global administrators or Teams administrators and team owners can add a guest to a team in the Teams clients or in the Teams admin center. 
+    Add guests to your organization through Azure Active Directory (Azure AD) B2B collaboration.
+
+
+
+
+
+21
+MS Teams
+Guests can leave the team at any time from within Teams. For details, see the article "How do I leave a team?". Leaving the team doesn't remove the guest account from our organization's directory. This must be done using a Microsoft 365 global admin or an Azure AD admin.
+
+
+
+
+
+22
+Hawaii Employer's Council
+Succession planning is a process that organizations use to identify and develop employees who have the potential to fill key leadership positions in the company. This process involves assessing the current and future needs of the organization and identifying high-potential employees who could eventually take on leadership roles.
+
+
+
+
+
+23
+Microsoft 365
+External organization – Another organization that you are sharing resources with.
+
+
+
+
+
+24
+Microsoft 365
+Admins can set policies to monitor content for all users in the channel. All messages content in channels, including shared channels, is covered by communication compliance policies. Shared channels inherit the policy of the host organization.
+
+
+
+
+
+25
+MS Teams
+Use guest access and external access to collaborate with people outside your organization:
+
+External access - A feature that allows users to find, call, and chat with people who have Microsoft identities, including those from other organizations
+
+
+
+
+
+26
+MS Teams
+To collaborate with a partner organization that uses Azure Active Directory and allow guests to self-enroll for teams access, see Create a B2B extranet with managed guests.
+
+
+
+
+
+27
+Security+
+Loadable Kernel Modules (LKM)
+Loadable Kernel Modules allow for the adding of additional functionality directly into the kernel while the system is running.
+
+
+
+
+
+28
 Python
 def get_client_name(namestring):
     # Check if the namestring matches the pattern: <digits>.<word> - <client name>
@@ -294,18 +241,16 @@ def get_client_name(namestring):
 
 
 
-14
-Python
-The group() method is a function provided by the re module in Python for working with regular expressions. It is used to extract portions of a matched pattern or capture groups.
 
-When a regular expression pattern contains parentheses (), it defines a capture group. The group() method allows you to access the content matched by a specific capture group within a regular expression pattern.
-
+29
+Accuity
+Every morning, look at your schedule. Decide which meeting is the most important, and spend some time prepping for it.
 
 
 
 
 
-15
+30
 Python
 Here's how the re.search(pattern, string).group() method works:
 
@@ -315,22 +260,26 @@ group(n): It returns the content matched by the capture group with index n. The 
 
 
 
-16
-Microsoft 365
-The organization-level settings for SharePoint determine the settings that will be available for individual SharePoint sites. Site settings cannot be more permissive than the organization-level settings. The organization-level setting for OneDrive determines the level of sharing that will be available in users' OneDrive libraries.
 
+31
+Power Virtual Agents
+Trigger Phrases
 
-
-
-17
-Microsoft 365
-Sharing in Microsoft 365 is governed at its highest level by the B2B external collaboration settings in Azure Active Directory. If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Add trigger phrases to a topic for the phrases, keywords, and questions that a customer is likely to type related to a specific issue. Power Virtual Agents uses natural language understanding to parse what a customer types and find the most appropriate topic.
 
 
 
 
 
-18
+32
+MS Teams
+App setup policies in Microsoft Teams allow administrators to customize which apps are available to users in the Teams app store. They can also control how those apps are used, such as whether they can be installed or used in channels.
+
+
+
+
+
+33
 Microsoft 365
 A Microsoft Teams team is built on top of a Microsoft 365 group. A Microsoft 365 group is a group of people who have common collaboration needs and can be used for email communication, file sharing, and calendaring.
 
@@ -339,16 +288,86 @@ When you create a new team in Microsoft Teams, a new Microsoft 365 group is crea
 
 
 
-19
+
+34
 Microsoft 365
-There are some differences between Teams and 365 Groups. Teams is more focused on chat-based collaboration and video conferencing, while 365 Groups is more focused on email communication and file sharing. Additionally, Teams has its own unique features such as channels, tabs, and apps that are not available in 365 Groups.
+External participant – A person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.
 
 
 
 
-20
-Hawaii Employer's Council
-Succession planning is a process that organizations use to identify and develop employees who have the potential to fill key leadership positions in the company. This process involves assessing the current and future needs of the organization and identifying high-potential employees who could eventually take on leadership roles. 
+
+35
+Microsoft 365
+Admins can apply Microsoft Purview DLP policies to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
+
+
+
+
+
+36
+MS Teams
+When you invite a guest to Teams, a guest account is created for them in Azure Active Directory and they are covered by the same compliance and auditing protection as other Microsoft 365 users. Guest access is subject to Azure AD and Microsoft 365 service limits.
+
+
+
+
+
+37
+MS Teams
+Guest access in Teams is an organization-wide setting and is turned on by default. You can control guest access to individual teams by using sensitivity labels.
+
+
+
+
+
+38
+General
+The Jaccard similarity algorithm is a measure used to compare the similarity of two sets. It is defined as the size of the intersection of two sets divided by the size of the union of the two sets. In other words, it measures how many elements are common to both sets out of the total number of distinct elements in both sets. The Jaccard similarity coefficient ranges from 0 to 1, with 0 meaning the sets are completely different and 1 meaning the sets are identical.
+
+
+
+
+
+39
+Microsoft 365
+The organization-level settings for SharePoint determine the settings that will be available for individual SharePoint sites. Site settings cannot be more permissive than the organization-level settings. The organization-level setting for OneDrive determines the level of sharing that will be available in users' OneDrive libraries.
+
+
+
+
+
+40
+MS Teams
+In Teams, guests are clearly identified. A guest's name includes the label (Guest), and a channel includes an icon to indicate that there are guests on the team. For more details, see  the article "What the guest experience is like".
+
+
+
+
+
+41
+Microsoft 365
+Azure AD B2B collaboration – A feature that allows users to share files, folders, sites, groups, and teams with people from outside your organization. These people access shared resources by using guest accounts in your directory.
+
+
+
+
+
+42
+Security+
+Triple-Wrapped
+S/MIME usage: data that has been signed with a digital signature, and then encrypted, and then signed again.
+
+
+
+
+
+43
+MS Teams
+Use guest access and external access to collaborate with people outside your organization:
+
+Guest access - A feature that allows you to invite people from outside your organization to join a team. Guests can also call, chat, and meet with people in your organization and you can share files and folders with them. Invited people get an Azure AD B2B collaboration guest account in your directory.
+
 
 
 
