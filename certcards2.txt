@@ -1,42 +1,3 @@
-1
-MS Teams
-Adaptive cards in MS Teams are a way to create and send interactive cards that can be viewed and interacted with directly within a Teams chat or channel. They allow developers to customize the look and behavior of the cards to suit their needs, and can include a range of content types such as text, images, buttons, and more. Adaptive cards can be used for a variety of purposes, such as displaying information, collecting data, and conducting surveys.
-
-
-
-
-
-2
-Security+
-Segment
-Segment is another name for TCP packets.
-
-
-
-
-
-3
-MS Teams
-You can track guest additions in Azure AD or the Microsoft 365 security center. Adding a guest in Teams is audited and logged as an Azure AD group administration activity "Added member to group".
-
-
-
-
-
-4
-Microsoft 365
-Guest – A person from outside your organization who accesses shared resources by signing in to a guest account in your directory.
-
-
-
-
-
-5
-Power Automate
-Simple data types represent single values, such as text and numbers. You can use these data types independently or use them to create more complex data structures, such as lists and datatables.
-
-
-
 
 
 6
@@ -374,7 +335,7 @@ Guest access - A feature that allows you to invite people from outside your orga
 
 1
 Dev AI Applications Book, Chang and Jefford
-
+Azure Cognitive Search works across many types of data to transform unstructured information into searchable content. Extract insights and structured information, discover patterns and relationships, reveal sentiment, and more.
 
 
 
