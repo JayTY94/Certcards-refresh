@@ -1,45 +1,5 @@
 
 
-6
-Microsoft 365
-Shared channel – A Teams channel that can be shared with people outside the team. These people can be inside your organization or from other Azure AD organizations.
-
-
-
-
-
-7
-Security+
-Forward Proxy
-Forward Proxies are designed to be the server through which all requests are made.
-
-
-
-
-
-8
-Microsoft 365
-Sharing links – Links with permissions to a file or folder that are used to share that file or folder with others. The people being shared with can be inside or outside your organization.
-
-
-
-
-
-9
-Microsoft 365
-Sharing in Microsoft 365 is governed at its highest level by the B2B external collaboration settings in Azure Active Directory. If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
-
-
-
-
-
-10
-Security+
-Disassembly
-The process of taking a binary program and deriving the source code from it.
-
-
-
 
 
 11
@@ -415,21 +375,24 @@ Level 200 is referred to as repeatable or managed. At this point on the maturity
 
 10
 Power BI
-
+Maturity level 300 – Defined
+Level 300 is referred to as defined. At this point on the maturity curve, a set of standardized data management processes are established and consistently applied across organizational boundaries.
 
 
 
 
 11
 Power BI
-
+Maturity level 400 – Capable
+Level 400 is known as capable or measured. At this point on the maturity curve, data is well-managed across its entire lifecycle.
 
 
 
 
 12
 Power BI
-
+Maturity level 500 – Efficient
+Level 500 is known as efficient or optimizing because at this point on the maturity curve, the emphasis is now on automation and continuous improvement.
 
 
 
