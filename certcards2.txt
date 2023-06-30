@@ -340,134 +340,151 @@ Azure Cognitive Search works across many types of data to transform unstructured
 
 
 
-2
-Dev AI Applications Book, Chang and Jefford
 
+
+1
+Power BI
+Content ownership and management: There are three primary strategies for how business intelligence (BI) content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the Center of Excellence (COE) operating model.
+
+
+
+
+
+2
+Power BI
+Content delivery scope: There are four primary strategies for content delivery including personal BI, team BI, departmental BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the COE operating model.
 
 
 
 
 3
-Dev AI Applications Book, Chang and Jefford
+Power BI
+Mentoring and user enablement: A critical objective for adoption efforts is to enable users to accomplish as much as they can within the guardrails established by governance guidelines and policies. The act of mentoring users is one of the most important responsibilities of the COE. It has a direct influence on adoption efforts.
 
 
 
 
 
 4
-Dev AI Applications Book, Chang and Jefford
+Power BI
+Community of practice: A community of practice comprises a group of people with a common interest, who interact with and help each other on a voluntary basis. An active community is an indicator of a healthy data culture. It can significantly advance adoption efforts.
 
 
 
 
 
 5
-Dev AI Applications Book, Chang and Jefford
-
+Power BI
+User adoption: user adoption is the extent to which consumers and creators continually increase their knowledge. It's concerned with whether they're actively using Power BI, and whether they're using it in the most effective way.
 
 
 
 
 6
-Dev AI Applications Book, Chang and Jefford
+Power BI
+Organizational adoption: Organizational adoption refers to the effectiveness of Power BI governance. It also refers to data management practices that support and enable business intelligence efforts.
 
 
 
 
 
 7
-Dev AI Applications Book, Chang and Jefford
+Power BI
+Solution adoption: Solution adoption refers to the impact and business value achieved for individual requirements and Power BI solutions.
 
 
 
 
 
 8
-Dev AI Applications Book, Chang and Jefford
-
+Power BI
+Maturity Level 100 is referred to as initial or performed. It's the starting point for new data-related investments that are new, undocumented, and without any process discipline.
 
 
 
 
 9
-Dev AI Applications Book, Chang and Jefford
+Power BI
+Maturity level 200 – Repeatable
+Level 200 is referred to as repeatable or managed. At this point on the maturity curve, data management is planned and executed. Data management is based on defined processes, though these processes may not apply uniformly throughout the organization.
+
 
 
 
 
 
 10
-Dev AI Applications Book, Chang and Jefford
+Power BI
 
 
 
 
 
 11
-Dev AI Applications Book, Chang and Jefford
+Power BI
 
 
 
 
 
 12
-Dev AI Applications Book, Chang and Jefford
+Power BI
 
 
 
 
 
 13
-Dev AI Applications Book, Chang and Jefford
+Power BI
 
 
 
 
 
 14
-Dev AI Applications Book, Chang and Jefford
+Power BI
 
 
 
 
 
 15
-Dev AI Applications Book, Chang and Jefford
+Power BI
 
 
 
 
 
 16
-Dev AI Applications Book, Chang and Jefford
+Power BI
 
 
 
 
 
 17
-Dev AI Applications Book, Chang and Jefford
+Power BI
 
 
 
 
 
 18
-Dev AI Applications Book, Chang and Jefford
+Power BI
 
 
 
 
 
 19
-Dev AI Applications Book, Chang and Jefford
+Power BI
 
 
 
 
 
 20
-Dev AI Applications Book, Chang and Jefford
+Power BI
 
 
 
