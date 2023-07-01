@@ -399,6 +399,162 @@ Level 500 is known as efficient or optimizing because at this point on the matur
 
 13
 Power BI
+After external users sign in, they can see the shared report or dashboard in its own browser window, not the usual Power BI portal. External recipients should bookmark the link to get back to this report or dashboard later.
+
+
+
+
+14
+Power BI
+People outside your organization can't edit any content in the shared report or dashboard. They can interact with the charts and change filters or slicers, but changes aren't saved. This assumes that the report or dashboard has been shared with them.
+
+
+
+
+
+15
+Power BI
+Use a security group, not a distribution group, to share with a group that includes people with external email addresses. People with external emails in a distribution group can't see the content you share, unless they're Azure Active Directory (Azure AD) B2B guest users. Learn more about Azure AD B2B guest users.
+
+
+
+
+
+16
+Power BI
+Your Power BI admin can allow external guest users to edit and manage content in your organization. If so, your external users won't have that consumption-only experience. They can edit and manage content within your organization. Learn more about distributing Power BI content to external guest users with Azure AD B2B.
+
+
+
+
+
+
+17
+Power BI
+Availability in Power BI Desktop and Power BI Service: Both reports and dashboards are available in Power BI Service. However, if you're using Power BI Desktop, you only get access to reports.
+
+
+
+
+18
+Power BI
+2.Data Sources for Reports and Dashboards: You use a single data set for report creation. However, dashboards use various data tables connected to provide an eagle-eye view of your business.
+
+
+
+
+
+19
+Power BI
+3.Page Layout in Reporting and Dashboarding: dashboards are single-page layouts, whereas reports are multi-page.
+
+
+
+
+
+20
+Power BI
+A Power BI dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to a single age, a well-designed dashboard contains only the most important elements of that story.
+
+
+
+
+
+1
+Power BI
+A Power BI dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story.
+
+
+
+
+
+
+2
+Power BI
+The visualizations on a Power Bi Dashboard are called tiles and are pined to the dashboard by report designers. In most cases, selecting a tile takes you to the report page where the visualization was created.
+
+
+
+
+3
+Power BI
+The visualizations on a dashboard come from reports, and each report is based on one dataset. You can think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
+
+
+
+
+
+
+4
+Power BI
+Think of data culture as what you do, not what you say. Your data culture is not a set of rules (that's governance). So, data culture is a somewhat abstract concept. It's the behaviors and norms that are allowed, rewarded, and encouraged—or those that are disallowed and discouraged.
+
+
+
+
+5
+Power BI
+The vision of a healthy data culture should
+
+	• Originate from the executive level
+	• Align with organizational objectives
+	• Directly influence your adoption strategy.
+    • Serve as the high-level guiding principles for enacting governance policies and guidelines.
+
+
+
+
+6
+Power BI
+
+
+
+
+
+7
+Power BI
+
+
+
+
+
+8
+Power BI
+
+
+
+
+
+9
+Power BI
+
+
+
+
+
+10
+Power BI
+
+
+
+
+
+11
+Power BI
+
+
+
+
+
+12
+Power BI
+
+
+
+
+
+13
+Power BI
 
 
 
