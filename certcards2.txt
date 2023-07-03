@@ -1,49 +1,6 @@
 
 
 
-
-11
-Microsoft 365
-Azure AD B2B direct connect – A feature that allows users to share resources in your organization with people from other Azure AD organizations. These people access the shared resources by using their own work or school account. No guest account is created in your organization.
-
-
-
-
-
-12
-Microsoft 365
-Host organization – The organization that is hosting a shared resource, such as a shared channel.
-
-
-
-
-
-13
-Python
-The group() method is a function provided by the re module in Python for working with regular expressions. It is used to extract portions of a matched pattern or capture groups.
-
-When a regular expression pattern contains parentheses (), it defines a capture group. The group() method allows you to access the content matched by a specific capture group within a regular expression pattern.
-
-
-
-
-
-14
-MS Teams
-You can perform a guest access review yourself, ask guests to review their own access, or ask an application owner or business decision maker to perform the access review. Reviews are done in Azure AD. For more information, see the article "Manage guest access with Azure AD access reviews".
-
-
-
-
-
-15
-MS Teams
-Guests are added to your organization's Azure Active Directory as B2B collaboration users. They must sign in to Teams using their guest account. If the normally use Teams with another Microsoft 365 organization, they need to switch organizations in Teams to interact with your organization.
-
-
-
-
-
 16
 Microsoft 365
 There are some differences between Teams and 365 Groups. Teams is more focused on chat-based collaboration and video conferencing, while 365 Groups is more focused on email communication and file sharing. Additionally, Teams has its own unique features such as channels, tabs, and apps that are not available in 365 Groups.
@@ -505,8 +462,8 @@ The vision of a healthy data culture should
 
 
 6
-Power BI
-
+General
+In OneNote, collapse or expand the ribbon using [ctrl]+[F1]
 
 
 
