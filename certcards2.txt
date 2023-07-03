@@ -470,6 +470,7 @@ In OneNote, collapse or expand the ribbon using [ctrl]+[F1]
 
 7
 Power BI
+If access to data or the ability to perform analytics is limited to a select number of individuals in an organization, that's typically a warning sign because the ability to work with data is a key characteristic of a data culture.
 
 
 
@@ -477,6 +478,8 @@ Power BI
 
 8
 Power BI
+SQL Server Reporting Services (SSRS) is a server-based report generation software system created by Microsoft. It allows users to create, manage, and deliver reports to be consumed by other applications or users. The reports can be created using various data sources such as SQL Server, Oracle, Excel, or other data sources.
+
 
 
 
@@ -484,7 +487,7 @@ Power BI
 
 9
 Power BI
-
+SQL Server Reporting Services (SSRS) supports a wide variety of report types, including tables, matrixes, charts, and maps, and it allows for the creation of custom report templates. The reports can be designed using a web-based report designer or using Microsoft Visual Studio.
 
 
 
