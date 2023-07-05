@@ -1,48 +1,6 @@
 
 
 
-16
-Microsoft 365
-There are some differences between Teams and 365 Groups. Teams is more focused on chat-based collaboration and video conferencing, while 365 Groups is more focused on email communication and file sharing. Additionally, Teams has its own unique features such as channels, tabs, and apps that are not available in 365 Groups.
-
-
-
-
-
-17
-Microsoft 365
-Microsoft Purview is a cloud-based data governance solution that allows businesses to discover, classify, and manage data across various systems and sources. It provides a unified view of all the data assets in an organization, including on-premises, multi-cloud, and SaaS data. With Purview, businesses can understand their data landscape and ensure compliance with various regulatory requirements such as GDPR, CCPA, and HIPAA
-
-
-
-
-
-18
-MS Teams
-If you just want to find, call, chat, and set up meetings with people in other Microsoft 365 organizations, use external access.
-
-
-
-
-
-19
-Power Virtual Agents
-Your bot needs 5 to 10 trigger phrases to train the AI to understand yourcustomers' responses. Make sure that each of the phrases in the Trigger phrases pane are on a separate line. 
-
-You can include punctuation in a trigger phrase, but it's best to use shortphrases rather than long sentences.
-
-
-
-
-
-20
-MS Teams
-As an admin, you can add a new guest to the organization in a couple of ways:
-    Global administrators or Teams administrators and team owners can add a guest to a team in the Teams clients or in the Teams admin center. 
-    Add guests to your organization through Azure Active Directory (Azure AD) B2B collaboration.
-
-
-
 
 
 21
