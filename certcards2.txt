@@ -2,58 +2,6 @@
 
 
 
-26
-MS Teams
-To collaborate with a partner organization that uses Azure Active Directory and allow guests to self-enroll for teams access, see Create a B2B extranet with managed guests.
-
-
-
-
-
-27
-Security+
-Loadable Kernel Modules (LKM)
-Loadable Kernel Modules allow for the adding of additional functionality directly into the kernel while the system is running.
-
-
-
-
-
-28
-Python
-def get_client_name(namestring):
-    # Check if the namestring matches the pattern: <digits>.<word> - <client name>
-    if re.search(r'\d+\.\w+\s\-\s(.*)', namestring):
-        # If there is a match, extract the client name using a regular expression
-        # The group(1) returns the content within the parentheses in the regular expression pattern
-        return re.search(r'\s\-\s(.*)', namestring).group(1)
-    else:
-        # If there is no match, return NaN (a missing value indicator from the numpy library)
-        return np.NaN
-
-
-
-
-
-29
-Accuity
-Every morning, look at your schedule. Decide which meeting is the most important, and spend some time prepping for it.
-
-
-
-
-
-30
-Python
-Here's how the re.search(pattern, string).group() method works:
-
-group(0) or simply group(): It returns the entire matched string.
-group(n): It returns the content matched by the capture group with index n. The index starts from 1 for the leftmost capture group in the pattern.
-
-
-
-
-
 31
 Power Virtual Agents
 Trigger Phrases
