@@ -1,40 +1,13 @@
-1
-Power BI
-SQL Server Reporting Services (SSRS) supports a wide variety of report types, including tables, matrixes, charts, and maps, and it allows for the creation of custom report templates. The reports can be designed using a web-based report designer or using Microsoft Visual Studio.
 
 
 
 
 
-2
-MS Teams
-Use guest access and external access to collaborate with people outside your organization:
-
-Guest access - A feature that allows you to invite people from outside your organization to join a team. Guests can also call, chat, and meet with people in your organization and you can share files and folders with them. Invited people get an Azure AD B2B collaboration guest account in your directory.
 
 
 
 
 
-3
-Power BI
-Mentoring and user enablement: A critical objective for adoption efforts is to enable users to accomplish as much as they can within the guardrails established by governance guidelines and policies. The act of mentoring users is one of the most important responsibilities of the COE. It has a direct influence on adoption efforts.
-
-
-
-
-
-4
-MS Teams
-In Teams, guests are clearly identified. A guest's name includes the label (Guest), and a channel includes an icon to indicate that there are guests on the team. For more details, see  the article "What the guest experience is like".
-
-
-
-
-
-5
-General
-In OneNote, collapse or expand the ribbon using [ctrl]+[F1]
 
 
 
