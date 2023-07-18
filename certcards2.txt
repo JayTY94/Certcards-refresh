@@ -1,49 +1,6 @@
 
 
 
-
-11
-Microsoft 365
-The organization-level settings for SharePoint determine the settings that will be available for individual SharePoint sites. Site settings cannot be more permissive than the organization-level settings. The organization-level setting for OneDrive determines the level of sharing that will be available in users' OneDrive libraries.
-
-
-
-
-
-12
-Power BI
-Content delivery scope: There are four primary strategies for content delivery including personal BI, team BI, departmental BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the COE operating model.
-
-
-
-
-
-13
-Power BI
-Organizational adoption: Organizational adoption refers to the effectiveness of Power BI governance. It also refers to data management practices that support and enable business intelligence efforts.
-
-
-
-
-
-14
-Power BI
-Maturity level 200 – Repeatable
-Level 200 is referred to as repeatable or managed. At this point on the maturity curve, data management is planned and executed. Data management is based on defined processes, though these processes may not apply uniformly throughout the organization.
-
-
-
-
-
-15
-Security+
-Triple-Wrapped
-S/MIME usage: data that has been signed with a digital signature, and then encrypted, and then signed again.
-
-
-
-
-
 16
 MS Teams
 Guest access in Teams is an organization-wide setting and is turned on by default. You can control guest access to individual teams by using sensitivity labels.
