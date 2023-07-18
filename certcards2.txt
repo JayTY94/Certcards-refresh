@@ -2,58 +2,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-6
-General
-The Jaccard similarity algorithm is a measure used to compare the similarity of two sets. It is defined as the size of the intersection of two sets divided by the size of the union of the two sets. In other words, it measures how many elements are common to both sets out of the total number of distinct elements in both sets. The Jaccard similarity coefficient ranges from 0 to 1, with 0 meaning the sets are completely different and 1 meaning the sets are identical.
-
-
-
-
-
-7
-Power BI
-Maturity Level 100 is referred to as initial or performed. It's the starting point for new data-related investments that are new, undocumented, and without any process discipline.
-
-
-
-
-
-8
-Power BI
-Maturity level 500 – Efficient
-Level 500 is known as efficient or optimizing because at this point on the maturity curve, the emphasis is now on automation and continuous improvement.
-
-
-
-
-
-9
-Power BI
-Think of data culture as what you do, not what you say. Your data culture is not a set of rules (that's governance). So, data culture is a somewhat abstract concept. It's the behaviors and norms that are allowed, rewarded, and encouraged—or those that are disallowed and discouraged.
-
-
-
-
-
-10
-Power BI
-If you are certifying a dataset and see a Make discoverable checkbox, it means you can make it possible for users who don't have access to the dataset to find it. See dataset discovery for more details.
-
-
-
-
-
 11
 Microsoft 365
 The organization-level settings for SharePoint determine the settings that will be available for individual SharePoint sites. Site settings cannot be more permissive than the organization-level settings. The organization-level setting for OneDrive determines the level of sharing that will be available in users' OneDrive libraries.
