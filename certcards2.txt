@@ -202,28 +202,32 @@ Use a security group, not a distribution group, to share with a group that inclu
 
 1
 Power BI
+Go to Admin portal > Tenant settings > Discovery settings and configure the following settings:
 
+Make promoted content discoverable: When you enable this setting, users you specify who have sufficient permissions to promote content can also mark that content as discoverable. You can also specify users and/or groups to exclude from the permitted, specified groups.
 
 
 
 
 2
 Power BI
-
+An app combines related content, like dashboards, spreadsheets, datasets, and reports, all in one place. An app has one or more of each content type bundled together. There are many ways a designer can share an app.
 
 
 
 
 3
 Power BI
-
+A Power BI app can have permissions that are different than the permissions set on a workspace. This capability makes it easier for designers to manage permissions on an app.
 
 
 
 
 4
 Power BI
+AppSource is a marketplace for cloud-based business applications. In the context of Power BI template apps, AppSource is a platform where you can find, download, and deploy pre-built Power BI solutions.
 
+Power BI template apps are pre-built solutions designed to help you quickly and easily deploy industry-specific solutions, such as financial reporting, sales analysis, and inventory management. These apps are created by Microsoft or by their partners and are available for download from AppSource.
 
 
 
