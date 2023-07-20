@@ -1,47 +1,6 @@
 
 
 
-16
-MS Teams
-Guest access in Teams is an organization-wide setting and is turned on by default. You can control guest access to individual teams by using sensitivity labels.
-
-
-
-
-
-17
-Power BI
-Availability in Power BI Desktop and Power BI Service: Both reports and dashboards are available in Power BI Service. However, if you're using Power BI Desktop, you only get access to reports.
-
-
-
-
-
-18
-Power BI
-People outside your organization can't edit any content in the shared report or dashboard. They can interact with the charts and change filters or slicers, but changes aren't saved. This assumes that the report or dashboard has been shared with them.
-
-
-
-
-
-19
-Power BI
-Maturity level 400 – Capable
-Level 400 is known as capable or measured. At this point on the maturity curve, data is well-managed across its entire lifecycle.
-
-
-
-
-
-20
-Microsoft 365
-Azure AD B2B collaboration – A feature that allows users to share files, folders, sites, groups, and teams with people from outside your organization. These people access shared resources by using guest accounts in your directory.
-
-
-
-
-
 21
 Power BI
 The visualizations on a Power Bi Dashboard are called tiles and are pined to the dashboard by report designers. In most cases, selecting a tile takes you to the report page where the visualization was created.
