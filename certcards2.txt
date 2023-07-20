@@ -192,29 +192,29 @@ Power BI template apps are pre-built solutions designed to help you quickly and 
 
 
 5
-Power BI
-
+Accounting
+The main difference between cash basis and accrual basis accounting comes down to timing. When do you record revenue or expenses? If you do it when you pay or receive money, it’s cash basis accounting. If you do it when you get a bill or raise an invoice, it’s accrual basis accounting1
 
 
 
 
 6
-Power BI
-
+Accounting
+Under the cash method, revenue is reported on the income statement only when cash is received. Expenses are recorded only when cash is paid out. The cash method is typically used by small businesses and for personal finances2
 
 
 
 
 7
-Power BI
-
+Accounting
+Under the accrual method, revenue is accounted for when it is earned. Unlike the cash method, the accrual method records revenue when a product or service is delivered to a customer with the expectation that money will be paid in the future. In other words, money is accounted for before it’s received. Likewise, expenses for goods and services are recorded before any cash is paid out for them2
 
 
 
 
 8
-Power BI
-
+Accounting
+The accrual method records accounts receivables and payables and, as a result, can provide a more accurate picture of the profitability of a company, particularly in the long term. For example, a company might have sales in the current quarter that wouldn’t be recorded under the cash method. The related revenue is expected in the following quarter. An investor might think the company is unprofitable when, in reality, the company is doing well
 
 
 
