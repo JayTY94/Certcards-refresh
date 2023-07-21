@@ -1,46 +1,6 @@
 
 
 
-21
-Power BI
-The visualizations on a Power Bi Dashboard are called tiles and are pined to the dashboard by report designers. In most cases, selecting a tile takes you to the report page where the visualization was created.
-
-
-
-
-
-22
-Power BI
-Your Power BI admin can allow external guest users to edit and manage content in your organization. If so, your external users won't have that consumption-only experience. They can edit and manage content within your organization. Learn more about distributing Power BI content to external guest users with Azure AD B2B.
-
-
-
-
-
-23
-Power BI
-If access to data or the ability to perform analytics is limited to a select number of individuals in an organization, that's typically a warning sign because the ability to work with data is a key characteristic of a data culture.
-
-
-
-
-
-24
-Power BI
-User adoption: user adoption is the extent to which consumers and creators continually increase their knowledge. It's concerned with whether they're actively using Power BI, and whether they're using it in the most effective way.
-
-
-
-
-
-25
-Power BI
-SQL Server Reporting Services (SSRS) is a server-based report generation software system created by Microsoft. It allows users to create, manage, and deliver reports to be consumed by other applications or users. The reports can be created using various data sources such as SQL Server, Oracle, Excel, or other data sources.
-
-
-
-
-
 26
 Power BI
 The visualizations on a dashboard come from reports, and each report is based on one dataset. You can think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
