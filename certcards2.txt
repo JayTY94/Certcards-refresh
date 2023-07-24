@@ -195,7 +195,9 @@ subset: column label or sequence of labels, optional
 
 
 10
-Power BI
+Data Science
+Wide-form data refers to a format for organizing data in which each row represents a single observation and each column represents a different variable. This is in contrast to long-form data, where each row represents a single observation for a single variable, and multiple rows are used to represent all the variables for a single observation.
+
 
 
 
