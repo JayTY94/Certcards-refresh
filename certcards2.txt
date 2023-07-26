@@ -223,7 +223,7 @@ Designers can bundle a collection of dashboards and reports into an app and dist
 
 1
 Azure Data Engineer
-
+In most organizations, a data engineer is the primary role responsible for integrating, transforming, and consolidating data from various structured and unstructured data systems into structures that are suitable for building analytics solutions
 
 
 
