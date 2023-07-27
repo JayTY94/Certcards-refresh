@@ -1,54 +1,6 @@
 
 
 
-26
-Power BI
-The visualizations on a dashboard come from reports, and each report is based on one dataset. You can think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
-
-
-
-
-
-27
-Dev AI Applications Book, Chang and Jefford
-Azure Cognitive Search works across many types of data to transform unstructured information into searchable content. Extract insights and structured information, discover patterns and relationships, reveal sentiment, and more.
-
-
-
-
-
-28
-Power BI
-Maturity level 300 – Defined
-Level 300 is referred to as defined. At this point on the maturity curve, a set of standardized data management processes are established and consistently applied across organizational boundaries.
-
-
-
-
-
-29
-Power BI
-A Power BI dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story.
-
-
-
-
-
-30
-Power BI
-Community of practice: A community of practice comprises a group of people with a common interest, who interact with and help each other on a voluntary basis. An active community is an indicator of a healthy data culture. It can significantly advance adoption efforts.
-
-
-
-
-
-31
-Power BI
-After external users sign in, they can see the shared report or dashboard in its own browser window, not the usual Power BI portal. External recipients should bookmark the link to get back to this report or dashboard later.
-
-
-
-
 
 32
 Power BI
