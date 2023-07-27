@@ -1,137 +1,4 @@
-
-
-
-
-32
-Power BI
-2.Data Sources for Reports and Dashboards: You use a single data set for report creation. However, dashboards use various data tables connected to provide an eagle-eye view of your business.
-
-
-
-
-
-33
-Power BI
-The vision of a healthy data culture should
-
-	• Originate from the executive level
-	• Align with organizational objectives
-	• Directly influence your adoption strategy.
-    • Serve as the high-level guiding principles for enacting governance policies and guidelines.
-
-
-
-
-
-34
-Power BI
-Solution adoption: Solution adoption refers to the impact and business value achieved for individual requirements and Power BI solutions.
-
-
-
-
-
-35
-Power BI
-A Power BI dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to a single age, a well-designed dashboard contains only the most important elements of that story.
-
-
-
-
-
-36
-Power BI
-Content ownership and management: There are three primary strategies for how business intelligence (BI) content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the Center of Excellence (COE) operating model.
-
-
-
-
-
-37
-Power BI
-3.Page Layout in Reporting and Dashboarding: dashboards are single-page layouts, whereas reports are multi-page.
-
-
-
-
-
-38
-MS Teams
-When you invite a guest to Teams, a guest account is created for them in Azure Active Directory and they are covered by the same compliance and auditing protection as other Microsoft 365 users. Guest access is subject to Azure AD and Microsoft 365 service limits.
-
-
-
-
-
-39
-Power BI
-Use a security group, not a distribution group, to share with a group that includes people with external email addresses. People with external emails in a distribution group can't see the content you share, unless they're Azure Active Directory (Azure AD) B2B guest users. Learn more about Azure AD B2B guest users.
-
-
-
-
-
 1
-Power BI
-Go to Admin portal > Tenant settings > Discovery settings and configure the following settings:
-
-Make promoted content discoverable: When you enable this setting, users you specify who have sufficient permissions to promote content can also mark that content as discoverable. You can also specify users and/or groups to exclude from the permitted, specified groups.
-
-
-
-
-2
-Power BI
-An app combines related content, like dashboards, spreadsheets, datasets, and reports, all in one place. An app has one or more of each content type bundled together. There are many ways a designer can share an app.
-
-
-
-
-3
-Power BI
-A Power BI app can have permissions that are different than the permissions set on a workspace. This capability makes it easier for designers to manage permissions on an app.
-
-
-
-
-4
-Power BI
-AppSource is a marketplace for cloud-based business applications. In the context of Power BI template apps, AppSource is a platform where you can find, download, and deploy pre-built Power BI solutions.
-
-Power BI template apps are pre-built solutions designed to help you quickly and easily deploy industry-specific solutions, such as financial reporting, sales analysis, and inventory management. These apps are created by Microsoft or by their partners and are available for download from AppSource.
-
-
-
-
-5
-Accounting
-The main difference between cash basis and accrual basis accounting comes down to timing. When do you record revenue or expenses? If you do it when you pay or receive money, it’s cash basis accounting. If you do it when you get a bill or raise an invoice, it’s accrual basis accounting1
-
-
-
-
-6
-Accounting
-Under the cash method, revenue is reported on the income statement only when cash is received. Expenses are recorded only when cash is paid out. The cash method is typically used by small businesses and for personal finances2
-
-
-
-
-7
-Accounting
-Under the accrual method, revenue is accounted for when it is earned. Unlike the cash method, the accrual method records revenue when a product or service is delivered to a customer with the expectation that money will be paid in the future. In other words, money is accounted for before it’s received. Likewise, expenses for goods and services are recorded before any cash is paid out for them2
-
-
-
-
-8
-Accounting
-The accrual method records accounts receivables and payables and, as a result, can provide a more accurate picture of the profitability of a company, particularly in the long term. For example, a company might have sales in the current quarter that wouldn’t be recorded under the cash method. The related revenue is expected in the following quarter. An investor might think the company is unprofitable when, in reality, the company is doing well
-
-
-
-
-9
 Python
 DataFrame.drop_duplicates(subset=None, *, keep='first', inplace=False, ignore_index=False)
 Return DataFrame with duplicate rows removed.
@@ -145,24 +12,15 @@ subset: column label or sequence of labels, optional
 
 
 
-
-10
-Data Science
-Wide-form data refers to a format for organizing data in which each row represents a single observation and each column represents a different variable. This is in contrast to long-form data, where each row represents a single observation for a single variable, and multiple rows are used to represent all the variables for a single observation.
-
-
-
-
-
-
-11
+2
 Power BI
-Workspaces are places to collaborate with colleagues on specific content. Workspaces are created by Power BI designers to hold collections of dashboards and reports. The designer can then share the workspace with colleagues
+Content ownership and management: There are three primary strategies for how business intelligence (BI) content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the Center of Excellence (COE) operating model.
 
 
 
 
-12
+
+3
 Power BI
 Designers can bundle a collection of dashboards and reports into an app and distribute it to the entire community, to their organization, or to specific people or groups. Certain types of apps, called template apps, create a workspace when the app is installed
 
@@ -170,12 +28,169 @@ Designers can bundle a collection of dashboards and reports into an app and dist
 
 
 
+4
+Power BI
+Workspaces are places to collaborate with colleagues on specific content. Workspaces are created by Power BI designers to hold collections of dashboards and reports. The designer can then share the workspace with colleagues
+
+
+
+
+
+5
+Power BI
+3.Page Layout in Reporting and Dashboarding: dashboards are single-page layouts, whereas reports are multi-page.
+
+
+
+
+
+6
+Power BI
+Solution adoption: Solution adoption refers to the impact and business value achieved for individual requirements and Power BI solutions.
+
+
+
+
+
+7
+Accounting
+The accrual method records accounts receivables and payables and, as a result, can provide a more accurate picture of the profitability of a company, particularly in the long term. For example, a company might have sales in the current quarter that wouldn’t be recorded under the cash method. The related revenue is expected in the following quarter. An investor might think the company is unprofitable when, in reality, the company is doing well
+
+
+
+
+
+8
+Data Science
+Wide-form data refers to a format for organizing data in which each row represents a single observation and each column represents a different variable. This is in contrast to long-form data, where each row represents a single observation for a single variable, and multiple rows are used to represent all the variables for a single observation.
+
+
+
+
+
+9
+Power BI
+The vision of a healthy data culture should
+
+	• Originate from the executive level
+	• Align with organizational objectives
+	• Directly influence your adoption strategy.
+    • Serve as the high-level guiding principles for enacting governance policies and guidelines.
+
+
+
+
+
+10
+Accounting
+The main difference between cash basis and accrual basis accounting comes down to timing. When do you record revenue or expenses? If you do it when you pay or receive money, it’s cash basis accounting. If you do it when you get a bill or raise an invoice, it’s accrual basis accounting1
+
+
+
+
+
+11
+Power BI
+A Power BI dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to a single age, a well-designed dashboard contains only the most important elements of that story.
+
+
+
+
+
+12
+Power BI
+A Power BI app can have permissions that are different than the permissions set on a workspace. This capability makes it easier for designers to manage permissions on an app.
+
+
+
+
+
+13
+Power BI
+Go to Admin portal > Tenant settings > Discovery settings and configure the following settings:
+
+Make promoted content discoverable: When you enable this setting, users you specify who have sufficient permissions to promote content can also mark that content as discoverable. You can also specify users and/or groups to exclude from the permitted, specified groups.
+
+
+
+
+
+14
+Power BI
+Use a security group, not a distribution group, to share with a group that includes people with external email addresses. People with external emails in a distribution group can't see the content you share, unless they're Azure Active Directory (Azure AD) B2B guest users. Learn more about Azure AD B2B guest users.
+
+
+
+
+
+15
+Azure Data Engineer
+
+
+
+
+
+16
+MS Teams
+When you invite a guest to Teams, a guest account is created for them in Azure Active Directory and they are covered by the same compliance and auditing protection as other Microsoft 365 users. Guest access is subject to Azure AD and Microsoft 365 service limits.
+
+
+
+
+
+17
+Power BI
+AppSource is a marketplace for cloud-based business applications. In the context of Power BI template apps, AppSource is a platform where you can find, download, and deploy pre-built Power BI solutions.
+
+Power BI template apps are pre-built solutions designed to help you quickly and easily deploy industry-specific solutions, such as financial reporting, sales analysis, and inventory management. These apps are created by Microsoft or by their partners and are available for download from AppSource.
+
+
+
+
+
+18
+Accounting
+Under the accrual method, revenue is accounted for when it is earned. Unlike the cash method, the accrual method records revenue when a product or service is delivered to a customer with the expectation that money will be paid in the future. In other words, money is accounted for before it’s received. Likewise, expenses for goods and services are recorded before any cash is paid out for them2
+
+
+
+
+
+19
+Accounting
+Under the cash method, revenue is reported on the income statement only when cash is received. Expenses are recorded only when cash is paid out. The cash method is typically used by small businesses and for personal finances2
+
+
+
+
+
+20
+Power BI
+An app combines related content, like dashboards, spreadsheets, datasets, and reports, all in one place. An app has one or more of each content type bundled together. There are many ways a designer can share an app.
+
+
+
+
+
+21
+Power BI
+2.Data Sources for Reports and Dashboards: You use a single data set for report creation. However, dashboards use various data tables connected to provide an eagle-eye view of your business.
+
+
+
+
+
+22
+Azure Data Engineer
+In most organizations, a data engineer is the primary role responsible for integrating, transforming, and consolidating data from various structured and unstructured data systems into structures that are suitable for building analytics solutions
+
+
 
 
 
 1
 Azure Data Engineer
-In most organizations, a data engineer is the primary role responsible for integrating, transforming, and consolidating data from various structured and unstructured data systems into structures that are suitable for building analytics solutions
+
 
 
 
@@ -308,6 +323,7 @@ Azure Data Engineer
 
 20
 Azure Data Engineer
+
 
 
 
