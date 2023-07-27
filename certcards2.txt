@@ -277,64 +277,141 @@ Azure Synapse Analytics includes functionality for pipelines, data lakes, and re
 
 
 
+1
+Microsoft Data Analyst
+
+
+
+
+
+2
+Microsoft Data Analyst
+
+
+
+
+
+3
+Microsoft Data Analyst
+
+
+
+
+
+4
+Microsoft Data Analyst
+
+
+
+
+
+5
+Microsoft Data Analyst
+
+
+
+
+
+6
+Microsoft Data Analyst
+
+
+
+
+
+7
+Microsoft Data Analyst
+
+
+
+
+
+8
+Microsoft Data Analyst
+
+
+
+
+
+9
+Microsoft Data Analyst
+
+
+
+
+
+10
+Microsoft Data Analyst
+
+
+
+
+
+11
+Microsoft Data Analyst
+
+
+
+
+
 12
-Azure Data Engineer
+Microsoft Data Analyst
 
 
 
 
 
 13
-Azure Data Engineer
+Microsoft Data Analyst
 
 
 
 
 
 14
-Azure Data Engineer
+Microsoft Data Analyst
 
 
 
 
 
 15
-Azure Data Engineer
+Microsoft Data Analyst
 
 
 
 
 
 16
-Azure Data Engineer
+Microsoft Data Analyst
 
 
 
 
 
 17
-Azure Data Engineer
+Microsoft Data Analyst
 
 
 
 
 
 18
-Azure Data Engineer
+Microsoft Data Analyst
 
 
 
 
 
 19
-Azure Data Engineer
+Microsoft Data Analyst
 
 
 
 
 
 20
-Azure Data Engineer
+Microsoft Data Analyst
 
 
 
