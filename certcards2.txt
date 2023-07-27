@@ -270,6 +270,8 @@ Eidetic memory, also known as photographic memory and total recall, is the abili
 
 11
 Azure Data Engineer
+Azure Synapse Analytics includes functionality for pipelines, data lakes, and relational data warehouses.
+
 
 
 
