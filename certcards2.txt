@@ -190,27 +190,29 @@ In most organizations, a data engineer is the primary role responsible for integ
 
 1
 Azure Data Engineer
-
+Data Integration involves establishing links between operational and analytical services and data sources to enable secure, reliable access to data across multiple systems
 
 
 
 
 2
 Azure Data Engineer
-
+Data Transformation: Operational data usually needs to be transformed into suitable structure and format for analysis, often as part of an extract, transform, and load (ETL) process; though increasingly a variation in which you extract, load, and transform (ELT) the data is used to quickly ingest the data into a data lake and then apply "big data" processing techniques to transform it
 
 
 
 
 3
 Azure Data Engineer
-
+Data consolidation is the process of combining data that has been extracted from multiple data sources into a consistent structure - usually to support analytics and reporting. 
 
 
 
 
 4
 Azure Data Engineer
+Operational data is usually transactional data that is generated and stored by applications, often in a relational or non-relational database. Analytical data is data that has been optimized for analysis and reporting, often in a data warehouse.
+
 
 
 
@@ -218,6 +220,8 @@ Azure Data Engineer
 
 5
 Azure Data Engineer
+Streaming data refers to perpetual sources of data that generate data values in real-time, often relating to specific events. Common sources of streaming data include internet-of-things (IoT) devices and social media feeds.
+
 
 
 
@@ -225,6 +229,8 @@ Azure Data Engineer
 
 6
 Azure Data Engineer
+Data pipelines are used to orchestrate activities that transfer and transform data. Pipelines are the primary way in which data engineers implement repeatable extract, transform, and load (ETL) solutions that can be triggered based on a schedule or in response to events.
+
 
 
 
@@ -232,13 +238,15 @@ Azure Data Engineer
 
 7
 Azure Data Engineer
-
+The idea with a data lake is to store everything in its original, untransformed state. This approach differs from a traditional data warehouse, which transforms and processes the data at the time of ingestion.
 
 
 
 
 8
 Azure Data Engineer
+A data warehouse is a centralized repository of integrated data from one or more disparate sources. Data warehouses store current and historical data in relational tables that are organized into a schema that optimizes performance for analytical queries.
+
 
 
 
@@ -246,14 +254,16 @@ Azure Data Engineer
 
 9
 Azure Data Engineer
+Apache Spark is a parallel processing framework that takes advantage of in-memory processing and a distributed file storage. It's a common open-source software (OSS) tool for big data scenarios.
+
 
 
 
 
 
 10
-Azure Data Engineer
-
+Gerneral
+Eidetic memory, also known as photographic memory and total recall, is the ability to recall an image from memory with high precision—at least for a brief period of time—after seeing it only once and without using a mnemonic device1. The term eidetic comes from the Greek word εἶδος (eidos) meaning "visible form"1.
 
 
 
