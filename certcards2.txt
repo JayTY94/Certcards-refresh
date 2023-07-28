@@ -1,47 +1,3 @@
-1
-Python
-DataFrame.drop_duplicates(subset=None, *, keep='first', inplace=False, ignore_index=False)
-Return DataFrame with duplicate rows removed.
-
-Considering certain columns is optional. Indexes, including time indexes are ignored.
-
-subset: column label or sequence of labels, optional
-	Only consider certain columns for identifying duplicates, by default use all of the columns.
-
-
-
-
-
-2
-Power BI
-Content ownership and management: There are three primary strategies for how business intelligence (BI) content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the Center of Excellence (COE) operating model.
-
-
-
-
-
-3
-Power BI
-Designers can bundle a collection of dashboards and reports into an app and distribute it to the entire community, to their organization, or to specific people or groups. Certain types of apps, called template apps, create a workspace when the app is installed
-
-
-
-
-
-4
-Power BI
-Workspaces are places to collaborate with colleagues on specific content. Workspaces are created by Power BI designers to hold collections of dashboards and reports. The designer can then share the workspace with colleagues
-
-
-
-
-
-5
-Power BI
-3.Page Layout in Reporting and Dashboarding: dashboards are single-page layouts, whereas reports are multi-page.
-
-
-
 
 
 6
@@ -279,6 +235,8 @@ Azure Synapse Analytics includes functionality for pipelines, data lakes, and re
 
 1
 Microsoft Data Analyst
+Data analysis is the process of identifying, cleaning, transforming, and modeling data to discover meaningful and useful information. The data is then crafted into a story through reports for analysis to support the critical decision-making process.
+
 
 
 
@@ -286,49 +244,63 @@ Microsoft Data Analyst
 
 2
 Microsoft Data Analyst
+To analyze data, core components of analytics are divided into the following categories:
 
+	Descriptive
+	Diagnostic
+	Predictive
+	Prescriptive
+	Cognitive
 
 
 
 
 3
 Microsoft Data Analyst
+Descriptive analytics help answer questions about what has happened based on historical data. Descriptive analytics techniques summarize large datasets to describe outcomes to stakeholders.
 
+By developing key performance indicators (KPIs), these strategies can help track the success or failure of key objectives.
 
 
 
 
 4
 Microsoft Data Analyst
+Generally, diagnostic analytics occurs in three steps:
 
+	Identify anomalies in the data. These anomalies might be unexpected changes in a metric or a particular market.
+
+	Collect data that's related to these anomalies.
+
+	Use statistical techniques to discover relationships and trends that explain these anomalies.
 
 
 
 
 5
 Microsoft Data Analyst
-
+Diagnostic analytics help answer questions about why events happened. Diagnostic analytics techniques supplement basic descriptive analytics, and they use the findings from descriptive analytics to discover the cause of these events. Then, performance indicators are further investigated to discover why these events improved or became worse.
 
 
 
 
 6
 Microsoft Data Analyst
-
+Predictive analytics help answer questions about what will happen in the future. Predictive analysis techniques use historical data to identify trends and determine if they are likely to recur.
 
 
 
 
 7
 Microsoft Data Analyst
-
+Prescriptive analytics help answer questions about which actions should be taken to achieve a goal or target. By using insights from prescriptive analytics, organizations can make data-driven decisions. 
 
 
 
 
 8
 Microsoft Data Analyst
-
+Prescriptive analytics techniques rely on machine learning as one of the strategies to find patterns in large datasets. By analyzing past decisions and events, organizations can estimate the likelihood of different outcomes.
 
 
 
