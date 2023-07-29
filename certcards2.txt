@@ -1,53 +1,8 @@
 
 
-6
-Power BI
-Solution adoption: Solution adoption refers to the impact and business value achieved for individual requirements and Power BI solutions.
-
-
-
-
-
-7
-Accounting
-The accrual method records accounts receivables and payables and, as a result, can provide a more accurate picture of the profitability of a company, particularly in the long term. For example, a company might have sales in the current quarter that wouldn’t be recorded under the cash method. The related revenue is expected in the following quarter. An investor might think the company is unprofitable when, in reality, the company is doing well
-
-
-
-
-
-8
-Data Science
-Wide-form data refers to a format for organizing data in which each row represents a single observation and each column represents a different variable. This is in contrast to long-form data, where each row represents a single observation for a single variable, and multiple rows are used to represent all the variables for a single observation.
-
-
-
-
-
-9
-Power BI
-The vision of a healthy data culture should
-
-	• Originate from the executive level
-	• Align with organizational objectives
-	• Directly influence your adoption strategy.
-    • Serve as the high-level guiding principles for enacting governance policies and guidelines.
-
-
-
-
-
-10
-Accounting
-The main difference between cash basis and accrual basis accounting comes down to timing. When do you record revenue or expenses? If you do it when you pay or receive money, it’s cash basis accounting. If you do it when you get a bill or raise an invoice, it’s accrual basis accounting1
-
-
-
-
-
 11
-Power BI
-A Power BI dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to a single age, a well-designed dashboard contains only the most important elements of that story.
+Azure Data Engineer
+In most organizations, a data engineer is the primary role responsible for integrating, transforming, and consolidating data from various structured and unstructured data systems into structures that are suitable for building analytics solutions
 
 
 
@@ -79,8 +34,11 @@ Use a security group, not a distribution group, to share with a group that inclu
 
 
 
+
 15
-Azure Data Engineer
+Power BI
+2.Data Sources for Reports and Dashboards: You use a single data set for report creation. However, dashboards use various data tables connected to provide an eagle-eye view of your business.
+
 
 
 
@@ -126,19 +84,6 @@ An app combines related content, like dashboards, spreadsheets, datasets, and re
 
 
 
-
-
-21
-Power BI
-2.Data Sources for Reports and Dashboards: You use a single data set for report creation. However, dashboards use various data tables connected to provide an eagle-eye view of your business.
-
-
-
-
-
-22
-Azure Data Engineer
-In most organizations, a data engineer is the primary role responsible for integrating, transforming, and consolidating data from various structured and unstructured data systems into structures that are suitable for building analytics solutions
 
 
 
