@@ -238,6 +238,162 @@ Data scientists perform advanced analytics to extract value from data. Their wor
 
 13
 Microsoft Data Analyst
+Five key areas that you'll engage in during the data analysis process.
+
+	1. Prepare
+	2. Model
+	3. Visualize
+	4. Analyze
+	5. Manage
+
+
+
+
+14
+Microsoft Data Analyst
+Data preparation is the process of taking raw data and turning it into information that is trusted and understandable. It involves, among other things, ensuring the integrity of the data, correcting wrong or inaccurate data, identifying missing data, converting data from one structure to another or from one type to another, or even a task as simple as making data more readable.
+
+
+
+
+
+
+15
+Microsoft Data Analyst
+When preparing data, privacy and security assurances are important. These assurances can include anonymizing data to avoid oversharing or preventing people from seeing personally identifiable information when it isn't needed. 
+
+
+
+
+16
+Microsoft Data Analyst
+Data modeling is the process of determining how your tables are related to each other. This process is done by defining and creating relationships between the tables. From that point, you can enhance the model by defining metrics and adding custom calculations to enrich your data.
+
+
+
+
+
+
+17
+Microsoft Data Analyst
+The reports that are created during the visualization task help businesses and decision makers understand what that data means so that accurate and vital decisions can be made. Reports drive the overall actions, decisions, and behaviors of an organization that is trusting and relying on the information that is discovered in the data.
+
+
+
+
+
+
+18
+Microsoft Data Analyst
+A key benefit of data analysis is the ability to gain valuable insights from a business's data assets to make timely and optimal business decisions.
+
+
+
+
+
+19
+Microsoft Data Analyst
+Apps can be a valuable distribution method for your content and allow easier management for large audiences. This feature also allows you to have custom navigation experiences and link to other assets within your organization to complement your reports.
+
+
+
+
+20
+Microsoft Data Analyst
+Proper management can also help reduce data silos within your organization. Data duplication can make managing and introducing data latency difficult when resources are overused. Power BI helps reduce data silos with the use of shared datasets, and it allows you to reuse data that you have prepared and modeled
+
+
+
+
+
+1
+Microsoft Data Analyst
+Power BI consists of a Microsoft Windows desktop application called Power BI Desktop, an online SaaS (Software as a Service) service called the Power BI service, and mobile Power BI apps that are available on any device, with native mobile BI apps for Windows, iOS, and Android.
+
+
+
+
+
+
+2
+Microsoft Data Analyst
+
+
+
+
+
+3
+Microsoft Data Analyst
+
+
+
+
+
+4
+Microsoft Data Analyst
+
+
+
+
+
+5
+Microsoft Data Analyst
+
+
+
+
+
+6
+Microsoft Data Analyst
+
+
+
+
+
+7
+Microsoft Data Analyst
+
+
+
+
+
+8
+Microsoft Data Analyst
+
+
+
+
+
+9
+Microsoft Data Analyst
+
+
+
+
+
+10
+Microsoft Data Analyst
+
+
+
+
+
+11
+Microsoft Data Analyst
+
+
+
+
+
+12
+Microsoft Data Analyst
+
+
+
+
+
+13
+Microsoft Data Analyst
 
 
 
