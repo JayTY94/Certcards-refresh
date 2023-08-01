@@ -1,45 +1,4 @@
 
-11
-Azure Data Engineer
-In most organizations, a data engineer is the primary role responsible for integrating, transforming, and consolidating data from various structured and unstructured data systems into structures that are suitable for building analytics solutions
-
-
-
-
-
-12
-Power BI
-A Power BI app can have permissions that are different than the permissions set on a workspace. This capability makes it easier for designers to manage permissions on an app.
-
-
-
-
-
-13
-Power BI
-Go to Admin portal > Tenant settings > Discovery settings and configure the following settings:
-
-Make promoted content discoverable: When you enable this setting, users you specify who have sufficient permissions to promote content can also mark that content as discoverable. You can also specify users and/or groups to exclude from the permitted, specified groups.
-
-
-
-
-
-14
-Power BI
-Use a security group, not a distribution group, to share with a group that includes people with external email addresses. People with external emails in a distribution group can't see the content you share, unless they're Azure Active Directory (Azure AD) B2B guest users. Learn more about Azure AD B2B guest users.
-
-
-
-
-
-
-15
-Power BI
-2.Data Sources for Reports and Dashboards: You use a single data set for report creation. However, dashboards use various data tables connected to provide an eagle-eye view of your business.
-
-
-
 
 
 
@@ -250,29 +209,29 @@ Prescriptive analytics techniques rely on machine learning as one of the strateg
 
 
 9
-Microsoft Data Analyst
-
+Python 
+shutil.move() is a function in the Python module shutil, which allows the user to perform advanced operations on system files and a collection of files. It moves a file or directory (source) to another location (destination) and returns the destination. It works by creating a copy of the source in the destination and deleting the original source, unless it is protected.
 
 
 
 
 10
 Microsoft Data Analyst
-
+Cognitive analytics attempt to draw inferences from existing data and patterns, derive conclusions based on existing knowledge bases, and then add these findings back into the knowledge base for future inferences, a self-learning feedback loop. 
 
 
 
 
 11
 Microsoft Data Analyst
-
+Effective cognitive analytics depend on machine learning algorithms, and will use several natural language processing concepts to make sense of previously untapped data sources, such as call center conversation logs and product reviews.
 
 
 
 
 12
 Microsoft Data Analyst
-
+Data scientists perform advanced analytics to extract value from data. Their work can vary from descriptive analytics to predictive analytics. Descriptive analytics evaluate data through a process known as exploratory data analysis (EDA). Predictive analytics are used in machine learning to apply modeling techniques that can detect anomalies or patterns.
 
 
 
