@@ -1,3 +1,125 @@
+1
+Power BI
+An app combines related content, like dashboards, spreadsheets, datasets, and reports, all in one place. An app has one or more of each content type bundled together. There are many ways a designer can share an app.
+
+
+
+
+
+2
+Accounting
+Under the accrual method, revenue is accounted for when it is earned. Unlike the cash method, the accrual method records revenue when a product or service is delivered to a customer with the expectation that money will be paid in the future. In other words, money is accounted for before it’s received. Likewise, expenses for goods and services are recorded before any cash is paid out for them2
+
+
+
+
+
+3
+Microsoft Data Analyst
+Data scientists perform advanced analytics to extract value from data. Their work can vary from descriptive analytics to predictive analytics. Descriptive analytics evaluate data through a process known as exploratory data analysis (EDA). Predictive analytics are used in machine learning to apply modeling techniques that can detect anomalies or patterns.
+
+
+
+
+
+4
+Microsoft Data Analyst
+Data modeling is the process of determining how your tables are related to each other. This process is done by defining and creating relationships between the tables. From that point, you can enhance the model by defining metrics and adding custom calculations to enrich your data.
+
+
+
+
+
+5
+Microsoft Data Analyst
+Prescriptive analytics help answer questions about which actions should be taken to achieve a goal or target. By using insights from prescriptive analytics, organizations can make data-driven decisions.
+
+
+
+
+
+6
+Microsoft Data Analyst
+To analyze data, core components of analytics are divided into the following categories:
+
+	Descriptive
+	Diagnostic
+	Predictive
+	Prescriptive
+	Cognitive
+
+
+
+
+
+7
+Azure Data Engineer
+Streaming data refers to perpetual sources of data that generate data values in real-time, often relating to specific events. Common sources of streaming data include internet-of-things (IoT) devices and social media feeds.
+
+
+
+
+
+8
+Python 
+shutil.move() is a function in the Python module shutil, which allows the user to perform advanced operations on system files and a collection of files. It moves a file or directory (source) to another location (destination) and returns the destination. It works by creating a copy of the source in the destination and deleting the original source, unless it is protected.
+
+
+
+
+
+9
+Microsoft Data Analyst
+Predictive analytics help answer questions about what will happen in the future. Predictive analysis techniques use historical data to identify trends and determine if they are likely to recur.
+
+
+
+
+
+10
+Microsoft Data Analyst
+Effective cognitive analytics depend on machine learning algorithms, and will use several natural language processing concepts to make sense of previously untapped data sources, such as call center conversation logs and product reviews.
+
+
+
+
+
+11
+Microsoft Data Analyst
+When preparing data, privacy and security assurances are important. These assurances can include anonymizing data to avoid oversharing or preventing people from seeing personally identifiable information when it isn't needed.
+
+
+
+
+
+12
+Microsoft Data Analyst
+A key benefit of data analysis is the ability to gain valuable insights from a business's data assets to make timely and optimal business decisions.
+
+
+
+
+
+13
+Accounting
+Under the cash method, revenue is reported on the income statement only when cash is received. Expenses are recorded only when cash is paid out. The cash method is typically used by small businesses and for personal finances2
+
+
+
+
+
+14
+Azure Data Engineer
+Operational data is usually transactional data that is generated and stored by applications, often in a relational or non-relational database. Analytical data is data that has been optimized for analysis and reporting, often in a data warehouse.
+
+
+
+
+
+15
+Microsoft Data Analyst
+Data preparation is the process of taking raw data and turning it into information that is trusted and understandable. It involves, among other things, ensuring the integrity of the data, correcting wrong or inaccurate data, identifying missing data, converting data from one structure to another or from one type to another, or even a task as simple as making data more readable.
+
 
 
 
@@ -11,82 +133,6 @@ When you invite a guest to Teams, a guest account is created for them in Azure A
 
 
 17
-Power BI
-AppSource is a marketplace for cloud-based business applications. In the context of Power BI template apps, AppSource is a platform where you can find, download, and deploy pre-built Power BI solutions.
-
-Power BI template apps are pre-built solutions designed to help you quickly and easily deploy industry-specific solutions, such as financial reporting, sales analysis, and inventory management. These apps are created by Microsoft or by their partners and are available for download from AppSource.
-
-
-
-
-
-18
-Accounting
-Under the accrual method, revenue is accounted for when it is earned. Unlike the cash method, the accrual method records revenue when a product or service is delivered to a customer with the expectation that money will be paid in the future. In other words, money is accounted for before it’s received. Likewise, expenses for goods and services are recorded before any cash is paid out for them2
-
-
-
-
-
-19
-Accounting
-Under the cash method, revenue is reported on the income statement only when cash is received. Expenses are recorded only when cash is paid out. The cash method is typically used by small businesses and for personal finances2
-
-
-
-
-
-20
-Power BI
-An app combines related content, like dashboards, spreadsheets, datasets, and reports, all in one place. An app has one or more of each content type bundled together. There are many ways a designer can share an app.
-
-
-
-
-
-
-
-
-1
-Azure Data Engineer
-Data Integration involves establishing links between operational and analytical services and data sources to enable secure, reliable access to data across multiple systems
-
-
-
-
-2
-Azure Data Engineer
-Data Transformation: Operational data usually needs to be transformed into suitable structure and format for analysis, often as part of an extract, transform, and load (ETL) process; though increasingly a variation in which you extract, load, and transform (ELT) the data is used to quickly ingest the data into a data lake and then apply "big data" processing techniques to transform it
-
-
-
-
-3
-Azure Data Engineer
-Data consolidation is the process of combining data that has been extracted from multiple data sources into a consistent structure - usually to support analytics and reporting. 
-
-
-
-
-4
-Azure Data Engineer
-Operational data is usually transactional data that is generated and stored by applications, often in a relational or non-relational database. Analytical data is data that has been optimized for analysis and reporting, often in a data warehouse.
-
-
-
-
-
-
-5
-Azure Data Engineer
-Streaming data refers to perpetual sources of data that generate data values in real-time, often relating to specific events. Common sources of streaming data include internet-of-things (IoT) devices and social media feeds.
-
-
-
-
-
-
-6
 Azure Data Engineer
 Data pipelines are used to orchestrate activities that transfer and transform data. Pipelines are the primary way in which data engineers implement repeatable extract, transform, and load (ETL) solutions that can be triggered based on a schedule or in response to events.
 
@@ -94,71 +140,31 @@ Data pipelines are used to orchestrate activities that transfer and transform da
 
 
 
-
-7
-Azure Data Engineer
-The idea with a data lake is to store everything in its original, untransformed state. This approach differs from a traditional data warehouse, which transforms and processes the data at the time of ingestion.
-
-
-
-
-8
-Azure Data Engineer
-A data warehouse is a centralized repository of integrated data from one or more disparate sources. Data warehouses store current and historical data in relational tables that are organized into a schema that optimizes performance for analytical queries.
-
-
-
-
-
-
-9
-Azure Data Engineer
-Apache Spark is a parallel processing framework that takes advantage of in-memory processing and a distributed file storage. It's a common open-source software (OSS) tool for big data scenarios.
-
-
-
-
-
-
-10
-Gerneral
-Eidetic memory, also known as photographic memory and total recall, is the ability to recall an image from memory with high precision—at least for a brief period of time—after seeing it only once and without using a mnemonic device1. The term eidetic comes from the Greek word εἶδος (eidos) meaning "visible form"1.
-
-
-
-
-11
-Azure Data Engineer
-Azure Synapse Analytics includes functionality for pipelines, data lakes, and relational data warehouses.
-
-
-
-
-
-
-1
+18
 Microsoft Data Analyst
-Data analysis is the process of identifying, cleaning, transforming, and modeling data to discover meaningful and useful information. The data is then crafted into a story through reports for analysis to support the critical decision-making process.
+The reports that are created during the visualization task help businesses and decision makers understand what that data means so that accurate and vital decisions can be made. Reports drive the overall actions, decisions, and behaviors of an organization that is trusting and relying on the information that is discovered in the data.
 
 
 
 
 
-
-2
+19
 Microsoft Data Analyst
-To analyze data, core components of analytics are divided into the following categories:
-
-	Descriptive
-	Diagnostic
-	Predictive
-	Prescriptive
-	Cognitive
+Cognitive analytics attempt to draw inferences from existing data and patterns, derive conclusions based on existing knowledge bases, and then add these findings back into the knowledge base for future inferences, a self-learning feedback loop.
 
 
 
 
-3
+
+20
+Microsoft Data Analyst
+Power BI consists of a Microsoft Windows desktop application called Power BI Desktop, an online SaaS (Software as a Service) service called the Power BI service, and mobile Power BI apps that are available on any device, with native mobile BI apps for Windows, iOS, and Android.
+
+
+
+
+
+21
 Microsoft Data Analyst
 Descriptive analytics help answer questions about what has happened based on historical data. Descriptive analytics techniques summarize large datasets to describe outcomes to stakeholders.
 
@@ -167,76 +173,24 @@ By developing key performance indicators (KPIs), these strategies can help track
 
 
 
-4
-Microsoft Data Analyst
-Generally, diagnostic analytics occurs in three steps:
 
-	Identify anomalies in the data. These anomalies might be unexpected changes in a metric or a particular market.
-
-	Collect data that's related to these anomalies.
-
-	Use statistical techniques to discover relationships and trends that explain these anomalies.
+22
+Azure Data Engineer
+A data warehouse is a centralized repository of integrated data from one or more disparate sources. Data warehouses store current and historical data in relational tables that are organized into a schema that optimizes performance for analytical queries.
 
 
 
 
-5
-Microsoft Data Analyst
-Diagnostic analytics help answer questions about why events happened. Diagnostic analytics techniques supplement basic descriptive analytics, and they use the findings from descriptive analytics to discover the cause of these events. Then, performance indicators are further investigated to discover why these events improved or became worse.
+
+23
+Azure Data Engineer
+Data Transformation: Operational data usually needs to be transformed into suitable structure and format for analysis, often as part of an extract, transform, and load (ETL) process; though increasingly a variation in which you extract, load, and transform (ELT) the data is used to quickly ingest the data into a data lake and then apply "big data" processing techniques to transform it
 
 
 
 
-6
-Microsoft Data Analyst
-Predictive analytics help answer questions about what will happen in the future. Predictive analysis techniques use historical data to identify trends and determine if they are likely to recur.
 
-
-
-
-7
-Microsoft Data Analyst
-Prescriptive analytics help answer questions about which actions should be taken to achieve a goal or target. By using insights from prescriptive analytics, organizations can make data-driven decisions. 
-
-
-
-
-8
-Microsoft Data Analyst
-Prescriptive analytics techniques rely on machine learning as one of the strategies to find patterns in large datasets. By analyzing past decisions and events, organizations can estimate the likelihood of different outcomes.
-
-
-
-
-9
-Python 
-shutil.move() is a function in the Python module shutil, which allows the user to perform advanced operations on system files and a collection of files. It moves a file or directory (source) to another location (destination) and returns the destination. It works by creating a copy of the source in the destination and deleting the original source, unless it is protected.
-
-
-
-
-10
-Microsoft Data Analyst
-Cognitive analytics attempt to draw inferences from existing data and patterns, derive conclusions based on existing knowledge bases, and then add these findings back into the knowledge base for future inferences, a self-learning feedback loop. 
-
-
-
-
-11
-Microsoft Data Analyst
-Effective cognitive analytics depend on machine learning algorithms, and will use several natural language processing concepts to make sense of previously untapped data sources, such as call center conversation logs and product reviews.
-
-
-
-
-12
-Microsoft Data Analyst
-Data scientists perform advanced analytics to extract value from data. Their work can vary from descriptive analytics to predictive analytics. Descriptive analytics evaluate data through a process known as exploratory data analysis (EDA). Predictive analytics are used in machine learning to apply modeling techniques that can detect anomalies or patterns.
-
-
-
-
-13
+24
 Microsoft Data Analyst
 Five key areas that you'll engage in during the data analysis process.
 
@@ -249,56 +203,71 @@ Five key areas that you'll engage in during the data analysis process.
 
 
 
-14
-Microsoft Data Analyst
-Data preparation is the process of taking raw data and turning it into information that is trusted and understandable. It involves, among other things, ensuring the integrity of the data, correcting wrong or inaccurate data, identifying missing data, converting data from one structure to another or from one type to another, or even a task as simple as making data more readable.
+
+25
+Azure Data Engineer
+Apache Spark is a parallel processing framework that takes advantage of in-memory processing and a distributed file storage. It's a common open-source software (OSS) tool for big data scenarios.
 
 
 
 
 
-
-15
-Microsoft Data Analyst
-When preparing data, privacy and security assurances are important. These assurances can include anonymizing data to avoid oversharing or preventing people from seeing personally identifiable information when it isn't needed. 
-
-
-
-
-16
-Microsoft Data Analyst
-Data modeling is the process of determining how your tables are related to each other. This process is done by defining and creating relationships between the tables. From that point, you can enhance the model by defining metrics and adding custom calculations to enrich your data.
+26
+Gerneral
+Eidetic memory, also known as photographic memory and total recall, is the ability to recall an image from memory with high precision—at least for a brief period of time—after seeing it only once and without using a mnemonic device1. The term eidetic comes from the Greek word εἶδος (eidos) meaning "visible form"1.
 
 
 
 
 
-
-17
-Microsoft Data Analyst
-The reports that are created during the visualization task help businesses and decision makers understand what that data means so that accurate and vital decisions can be made. Reports drive the overall actions, decisions, and behaviors of an organization that is trusting and relying on the information that is discovered in the data.
-
+27
+Azure Data Engineer
+Data Integration involves establishing links between operational and analytical services and data sources to enable secure, reliable access to data across multiple systems
 
 
 
 
 
-18
-Microsoft Data Analyst
-A key benefit of data analysis is the ability to gain valuable insights from a business's data assets to make timely and optimal business decisions.
-
-
-
-
-
-19
+28
 Microsoft Data Analyst
 Apps can be a valuable distribution method for your content and allow easier management for large audiences. This feature also allows you to have custom navigation experiences and link to other assets within your organization to complement your reports.
 
 
 
 
-20
+
+29
+Microsoft Data Analyst
+
+
+
+
+
+30
+Power BI
+AppSource is a marketplace for cloud-based business applications. In the context of Power BI template apps, AppSource is a platform where you can find, download, and deploy pre-built Power BI solutions.
+
+Power BI template apps are pre-built solutions designed to help you quickly and easily deploy industry-specific solutions, such as financial reporting, sales analysis, and inventory management. These apps are created by Microsoft or by their partners and are available for download from AppSource.
+
+
+
+
+
+31
+Microsoft Data Analyst
+Generally, diagnostic analytics occurs in three steps:
+
+	Identify anomalies in the data. These anomalies might be unexpected changes in a metric or a particular market.
+
+	Collect data that's related to these anomalies.
+
+	Use statistical techniques to discover relationships and trends that explain these anomalies.
+
+
+
+
+
+32
 Microsoft Data Analyst
 Proper management can also help reduce data silos within your organization. Data duplication can make managing and introducing data latency difficult when resources are overused. Power BI helps reduce data silos with the use of shared datasets, and it allows you to reuse data that you have prepared and modeled
 
@@ -306,10 +275,56 @@ Proper management can also help reduce data silos within your organization. Data
 
 
 
+33
+Azure Data Engineer
+Data consolidation is the process of combining data that has been extracted from multiple data sources into a consistent structure - usually to support analytics and reporting.
+
+
+
+
+
+34
+Azure Data Engineer
+The idea with a data lake is to store everything in its original, untransformed state. This approach differs from a traditional data warehouse, which transforms and processes the data at the time of ingestion.
+
+
+
+
+
+35
+Microsoft Data Analyst
+Diagnostic analytics help answer questions about why events happened. Diagnostic analytics techniques supplement basic descriptive analytics, and they use the findings from descriptive analytics to discover the cause of these events. Then, performance indicators are further investigated to discover why these events improved or became worse.
+
+
+
+
+
+36
+Azure Data Engineer
+Azure Synapse Analytics includes functionality for pipelines, data lakes, and relational data warehouses.
+
+
+
+
+
+37
+Microsoft Data Analyst
+Data analysis is the process of identifying, cleaning, transforming, and modeling data to discover meaningful and useful information. The data is then crafted into a story through reports for analysis to support the critical decision-making process.
+
+
+
+
+
+38
+Microsoft Data Analyst
+Prescriptive analytics techniques rely on machine learning as one of the strategies to find patterns in large datasets. By analyzing past decisions and events, organizations can estimate the likelihood of different outcomes.
+
+
+
+
+
 1
 Microsoft Data Analyst
-Power BI consists of a Microsoft Windows desktop application called Power BI Desktop, an online SaaS (Software as a Service) service called the Power BI service, and mobile Power BI apps that are available on any device, with native mobile BI apps for Windows, iOS, and Android.
-
 
 
 
