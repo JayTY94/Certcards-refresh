@@ -316,12 +316,6 @@ Data analysis is the process of identifying, cleaning, transforming, and modelin
 
 
 
-
-
-
-
-
-
 1
 Microsoft Data Analyst
 
