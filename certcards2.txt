@@ -238,6 +238,7 @@ Apps can be a valuable distribution method for your content and allow easier man
 
 29
 Microsoft Data Analyst
+Prescriptive analytics techniques rely on machine learning as one of the strategies to find patterns in large datasets. By analyzing past decisions and events, organizations can estimate the likelihood of different outcomes.
 
 
 
@@ -315,9 +316,7 @@ Data analysis is the process of identifying, cleaning, transforming, and modelin
 
 
 
-38
-Microsoft Data Analyst
-Prescriptive analytics techniques rely on machine learning as one of the strategies to find patterns in large datasets. By analyzing past decisions and events, organizations can estimate the likelihood of different outcomes.
+
 
 
 
