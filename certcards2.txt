@@ -3,36 +3,6 @@
 
 
 
-11
-Microsoft Data Analyst
-When preparing data, privacy and security assurances are important. These assurances can include anonymizing data to avoid oversharing or preventing people from seeing personally identifiable information when it isn't needed.
-
-
-
-
-
-12
-Microsoft Data Analyst
-A key benefit of data analysis is the ability to gain valuable insights from a business's data assets to make timely and optimal business decisions.
-
-
-
-
-
-13
-Accounting
-Under the cash method, revenue is reported on the income statement only when cash is received. Expenses are recorded only when cash is paid out. The cash method is typically used by small businesses and for personal finances2
-
-
-
-
-
-14
-Azure Data Engineer
-Operational data is usually transactional data that is generated and stored by applications, often in a relational or non-relational database. Analytical data is data that has been optimized for analysis and reporting, often in a data warehouse.
-
-
-
 
 
 15
@@ -227,45 +197,40 @@ Azure Synapse Analytics includes functionality for pipelines, data lakes, and re
 
 
 
-37
-Microsoft Data Analyst
-Data analysis is the process of identifying, cleaning, transforming, and modeling data to discover meaningful and useful information. The data is then crafted into a story through reports for analysis to support the critical decision-making process.
-
-
-
-
 
 1
-Microsoft Data Analyst
-
+Azure Pipelines
+A pipeline is made up of stages. A pipeline author can control whether a stage should run by defining conditions on the stage. Another way to control if and when a stage should run is through approvals and checks.
 
 
 
 
 2
-Microsoft Data Analyst
-
+Azure Pipelines
+Pipelines rely on resources such as environments, service connections, agent pools, variable groups, and secure files. Checks enable the resource owner to control if and when a stage in any pipeline can consume a resource. As an owner of a resource, you can define checks that must be satisfied before a stage consuming that resource can start. 
 
 
 
 
 3
-Microsoft Data Analyst
+Azure Pipelines
+An example of a Pipeline check is a manual approval check on an environment, which would ensure that deployment to that environment only happens after the designated user(s) has reviewed the changes being deployed.
+
 
 
 
 
 
 4
-Microsoft Data Analyst
-
+Azure Pipelines
+A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. 
 
 
 
 
 5
-Microsoft Data Analyst
-
+Azure Pipelines
+Approvals and other checks aren't defined in the yaml file. Users modifying the pipeline yaml file can't modify the checks performed before start of a stage. Administrators of resources manage checks using the web interface of Azure Pipelines.
 
 
 
