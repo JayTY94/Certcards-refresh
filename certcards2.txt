@@ -153,6 +153,184 @@ View and interact with shared dashboards and reports in Power BI Mobile apps.
 
 
 8
+General
+John Patrick De Sena (born December 6, 1987), better known by his stage name Jack DeSena, is an American actor. He is best known for his work on the sketch comedy series All That, and voicing Sokka on the Nickelodeon series Avatar: The Last Airbender and Callum on the Netflix series The Dragon Prince.
+
+
+
+
+
+
+9
+Microsoft Data Analyst
+An important and enabling part of Power BI is the multitude of data connectors that are included. Whether the data you want is in Excel or a Microsoft SQL Server database, in Azure or Oracle, or in a service like Facebook, Salesforce, or MailChimp, Power BI has built-in data connectors that let you easily connect to that data, filter it if necessary, and bring it into your dataset.
+
+
+
+
+
+
+10
+Microsoft Data Analyst
+When you're creating a dashboard in Power BI, you can move or arrange tiles however you want. You can make them bigger, change their height or width, and snuggle them up to other tiles.
+
+When you're viewing, or consuming, a dashboard or report—which means you're not the creator or owner, but the report or dashboard has been shared with you—you can interact with it, but you can't change the size of the tiles or their arrangement.
+
+
+
+
+
+
+11
+Microsoft Data Analyst
+An app is a collection of preset, ready-made visuals and reports that are shared with an entire organization. Using an app is like microwaving a TV dinner or ordering a fast-food value meal: you just have to press a few buttons or make a few comments, and you're quickly served a collection of entrees designed to go together, all presented in a tidy, ready-to-consume package.
+
+
+
+
+
+
+12
+Microsoft Data Analyst
+Your Excel files might exist in one of the following locations:
+Local - You can import data from a local file into Power BI. The file isn't moved into Power BI, and a link doesn't remain to it. Instead, a new dataset is created in Power BI, and data from the Excel file is loaded into it. Accordingly, changes to the original Excel file aren't reflected in your Power BI dataset. You can use local data import for data that doesn't change.
+
+
+
+
+
+
+13
+Microsoft Data Analyst
+Your Excel files might exist in one of the following locations:
+OneDrive for Business - You can pull data from OneDrive for Business into Power BI. This method is effective in keeping an Excel file and your dataset, reports, and dashboards in Power BI synchronized. Power BI connects regularly to your file on OneDrive. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI.
+
+
+
+
+
+
+
+14
+Microsoft Data Analyst
+Your Excel files might exist in one of the following locations:
+OneDrive - Personal - You can use data from files on a personal OneDrive account, and get many of the same benefits that you would with OneDrive for Business. However, you'll need to sign in with your personal OneDrive account, and select the Keep me signed in option. Check with your system administrator to determine whether this type of connection is allowed in your organization.
+
+
+
+
+
+
+
+15
+Microsoft Data Analyst
+Your Excel files might exist in one of the following locations:
+SharePoint - Team Sites - Saving your Power BI Desktop files to SharePoint Team Sites is similar to saving to OneDrive for Business. The main difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
+
+
+
+
+
+
+
+16
+Microsoft Data Analyst
+Authentication method(s) for SQL Server databases in Power BI:
+Windows - Use your Windows account (Azure Active Directory credentials).
+
+
+
+
+
+17
+Microsoft Data Analyst
+Authentication method(s) for SQL Server databases in Power BI:
+Microsoft account - Use your Microsoft account credentials. This option is often used for Azure services.
+
+
+
+
+
+18
+Microsoft Data Analyst
+Authentication method(s) for SQL Server databases in Power BI:
+Database - Use your database credentials. For instance, SQL Server has its own sign-in and authentication system that is sometimes used. If the database administrator gave you a unique sign-in to the database, you might need to enter those credentials on the Database tab.
+
+
+
+
+
+
+19
+Microsoft Data Analyst
+After the database has been connected to Power BI Desktop, the Navigator window displays the data that is available in your data source (the SQL database in this example). You can select a table or entity to preview its contents and make sure that the correct data will be loaded into the Power BI model.
+
+
+
+
+
+
+20
+Microsoft Data Analyst
+On the Home tab, select Transform data, and then select the Data source settings option.
+
+From the list of data sources that displays, select the data source that you want to update. Then, you can right-click that data source to view the available update options or you can use the update option buttons on the lower left of the window. Select the update option that you need, change the settings as required, and then apply your changes.
+
+
+
+
+
+
+1
+Microsoft Data Analyst
+
+
+
+
+
+2
+Microsoft Data Analyst
+
+
+
+
+
+3
+Microsoft Data Analyst
+
+
+
+
+
+4
+Microsoft Data Analyst
+
+
+
+
+
+5
+Microsoft Data Analyst
+
+
+
+
+
+6
+Microsoft Data Analyst
+
+
+
+
+
+7
+Microsoft Data Analyst
+
+
+
+
+
+8
 Microsoft Data Analyst
 
 
