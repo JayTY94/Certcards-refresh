@@ -2,53 +2,6 @@
 
 
 
-21
-Microsoft Data Analyst
-Descriptive analytics help answer questions about what has happened based on historical data. Descriptive analytics techniques summarize large datasets to describe outcomes to stakeholders.
-
-By developing key performance indicators (KPIs), these strategies can help track the success or failure of key objectives.
-
-
-
-
-
-22
-Azure Data Engineer
-A data warehouse is a centralized repository of integrated data from one or more disparate sources. Data warehouses store current and historical data in relational tables that are organized into a schema that optimizes performance for analytical queries.
-
-
-
-
-
-23
-Azure Data Engineer
-Data Transformation: Operational data usually needs to be transformed into suitable structure and format for analysis, often as part of an extract, transform, and load (ETL) process; though increasingly a variation in which you extract, load, and transform (ELT) the data is used to quickly ingest the data into a data lake and then apply "big data" processing techniques to transform it
-
-
-
-
-
-24
-Microsoft Data Analyst
-Five key areas that you'll engage in during the data analysis process.
-
-	1. Prepare
-	2. Model
-	3. Visualize
-	4. Analyze
-	5. Manage
-
-
-
-
-
-25
-Azure Data Engineer
-Apache Spark is a parallel processing framework that takes advantage of in-memory processing and a distributed file storage. It's a common open-source software (OSS) tool for big data scenarios.
-
-
-
-
 
 26
 Gerneral
@@ -138,10 +91,6 @@ Diagnostic analytics help answer questions about why events happened. Diagnostic
 
 
 
-36
-Azure Data Engineer
-Azure Synapse Analytics includes functionality for pipelines, data lakes, and relational data warehouses.
-
 
 
 
@@ -193,7 +142,12 @@ In private equity, funds and investors seek out underperforming or undervalued c
 
 7
 Microsoft Data Analyst
+The common flow of activity looks like this:
 
+Bring data into Power BI Desktop, and create a report.
+Publish to the Power BI service, where you can create new visualizations or build dashboards.
+Share dashboards with others, especially people who are on the go.
+View and interact with shared dashboards and reports in Power BI Mobile apps.
 
 
 
