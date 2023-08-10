@@ -2,49 +2,6 @@
 
 
 
-
-26
-Gerneral
-Eidetic memory, also known as photographic memory and total recall, is the ability to recall an image from memory with high precision—at least for a brief period of time—after seeing it only once and without using a mnemonic device1. The term eidetic comes from the Greek word εἶδος (eidos) meaning "visible form"1.
-
-
-
-
-
-27
-Azure Data Engineer
-Data Integration involves establishing links between operational and analytical services and data sources to enable secure, reliable access to data across multiple systems
-
-
-
-
-
-28
-Microsoft Data Analyst
-Apps can be a valuable distribution method for your content and allow easier management for large audiences. This feature also allows you to have custom navigation experiences and link to other assets within your organization to complement your reports.
-
-
-
-
-
-29
-Microsoft Data Analyst
-Prescriptive analytics techniques rely on machine learning as one of the strategies to find patterns in large datasets. By analyzing past decisions and events, organizations can estimate the likelihood of different outcomes.
-
-
-
-
-
-30
-Power BI
-AppSource is a marketplace for cloud-based business applications. In the context of Power BI template apps, AppSource is a platform where you can find, download, and deploy pre-built Power BI solutions.
-
-Power BI template apps are pre-built solutions designed to help you quickly and easily deploy industry-specific solutions, such as financial reporting, sales analysis, and inventory management. These apps are created by Microsoft or by their partners and are available for download from AppSource.
-
-
-
-
-
 31
 Microsoft Data Analyst
 Generally, diagnostic analytics occurs in three steps:
@@ -283,6 +240,7 @@ From the list of data sources that displays, select the data source that you wan
 
 1
 Microsoft Data Analyst
+When using an SQL query to import data, try to avoid using the wildcard character (*) in your query. If you use the wildcard character in your select statement, you import all columns from the specified table.
 
 
 
@@ -290,21 +248,26 @@ Microsoft Data Analyst
 
 2
 Microsoft Data Analyst
+SQL
+SELECT * FROM SALES
 
+The wildcard character (*) will import all characters from within the Sales table. This method isn't recommended because it will lead to redundant data in your model, which will cause performance issues and require extra steps to normalize your data for reporting.
 
 
 
 
 3
 Microsoft Data Analyst
-
+It's a best practice to avoid writing SQL queries directly in Power BI. Instead, consider writing a query like this in a view. A view is an object in a relational database, similar to a table. Views have rows and columns, and can contain almost every operator in the SQL language. If Power BI uses a view, when it retrieves data, it participates in query folding, a feature of Power Query.
 
 
 
 
 4
 Microsoft Data Analyst
+You can use parameters by determining the values that you want to see data for in the report, and the report updates accordingly by filtering the data for you.
 
+Creating dynamic reports allows you to give users more power over the data that is displayed in your reports; they can change the data source and filter the data by themselves.
 
 
 
