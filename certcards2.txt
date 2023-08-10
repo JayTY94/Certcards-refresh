@@ -274,70 +274,70 @@ Creating dynamic reports allows you to give users more power over the data that 
 
 5
 Microsoft Data Analyst
-
+Parameters allow you to create more flexible and dynamic reports and dashboards by allowing users to customize aspects of the report. For example, you can set up a parameter to allow users to select a specific date range to view data for.
 
 
 
 
 6
 Microsoft Data Analyst
-
+Parameters are created in the Power Query Editor and can be added to your data model as a query parameter. They can then be referenced in your report visuals, measures, and other calculations.
 
 
 
 
 7
 Microsoft Data Analyst
-
+Parameters can be created for a wide range of data types, including dates, numbers, and text. You can also set up a parameter to allow users to select from a list of predefined values.
 
 
 
 
 8
 Microsoft Data Analyst
-
+When a user selects a new value for a parameter, it triggers a refresh of the report, updating the visuals and calculations based on the new value. This can help users quickly and easily explore different scenarios and analyze data in more detail.
 
 
 
 
 9
 Microsoft Data Analyst
-
+It's important to note that while parameters can be a powerful tool for creating dynamic reports, they can also add complexity to your data model. You'll want to make sure you're using parameters effectively and efficiently to avoid performance issues. Additionally, not all data sources may support parameters, so it's important to check the documentation for your specific data source to see if parameters are supported.
 
 
 
 
 10
 Microsoft Data Analyst
-
+Functions are reusable blocks of code that can be used to automate repetitive tasks in Power Query. You can create custom functions to perform specific tasks and then reuse them across multiple queries.
 
 
 
 
 11
 Microsoft Data Analyst
-
+Parameters are variables that you can pass to a function to customize its behavior. For example, you can create a function that reads data from a specific file path, and then pass different file paths as parameters to the function to read data from different sources.
 
 
 
 
 12
 Microsoft Data Analyst
-
+You can create functions that take multiple parameters and use them to control various aspects of the function's behavior. For example, you can create a function that accepts a start date and an end date as parameters, and then use those parameters to filter data based on a date range.
 
 
 
 
 13
 Microsoft Data Analyst
-
+Functions can be nested within other functions, which can be useful for creating complex workflows. For example, you can create a function that performs data cleansing, and then nest that function within a function that performs data transformation.
 
 
 
 
 14
 Microsoft Data Analyst
-
+Power Query provides a library of built-in functions that you can use, such as text manipulation functions, date and time functions, and mathematical functions. You can also create your own custom functions to extend the functionality of Power Query.
 
 
 
