@@ -1,58 +1,6 @@
 
 
 
-
-31
-Microsoft Data Analyst
-Generally, diagnostic analytics occurs in three steps:
-
-	Identify anomalies in the data. These anomalies might be unexpected changes in a metric or a particular market.
-
-	Collect data that's related to these anomalies.
-
-	Use statistical techniques to discover relationships and trends that explain these anomalies.
-
-
-
-
-
-32
-Microsoft Data Analyst
-Proper management can also help reduce data silos within your organization. Data duplication can make managing and introducing data latency difficult when resources are overused. Power BI helps reduce data silos with the use of shared datasets, and it allows you to reuse data that you have prepared and modeled
-
-
-
-
-
-33
-Azure Data Engineer
-Data consolidation is the process of combining data that has been extracted from multiple data sources into a consistent structure - usually to support analytics and reporting.
-
-
-
-
-
-34
-Azure Data Engineer
-The idea with a data lake is to store everything in its original, untransformed state. This approach differs from a traditional data warehouse, which transforms and processes the data at the time of ingestion.
-
-
-
-
-
-35
-Microsoft Data Analyst
-Diagnostic analytics help answer questions about why events happened. Diagnostic analytics techniques supplement basic descriptive analytics, and they use the findings from descriptive analytics to discover the cause of these events. Then, performance indicators are further investigated to discover why these events improved or became worse.
-
-
-
-
-
-
-
-
-
-
 1
 Azure Pipelines
 A pipeline is made up of stages. A pipeline author can control whether a stage should run by defining conditions on the stage. Another way to control if and when a stage should run is through approvals and checks.
