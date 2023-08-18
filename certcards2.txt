@@ -1,51 +1,6 @@
 
 
 
-6
-Microsoft Data Analyst
-Power Query provides a library of built-in functions that you can use, such as text manipulation functions, date and time functions, and mathematical functions. You can also create your own custom functions to extend the functionality of Power Query.
-
-
-
-
-
-7
-Microsoft Data Analyst
-Your Excel files might exist in one of the following locations:
-OneDrive - Personal - You can use data from files on a personal OneDrive account, and get many of the same benefits that you would with OneDrive for Business. However, you'll need to sign in with your personal OneDrive account, and select the Keep me signed in option. Check with your system administrator to determine whether this type of connection is allowed in your organization.
-
-
-
-
-
-8
-Microsoft Data Analyst
-Your Excel files might exist in one of the following locations:
-Local - You can import data from a local file into Power BI. The file isn't moved into Power BI, and a link doesn't remain to it. Instead, a new dataset is created in Power BI, and data from the Excel file is loaded into it. Accordingly, changes to the original Excel file aren't reflected in your Power BI dataset. You can use local data import for data that doesn't change.
-
-
-
-
-
-9
-Microsoft Data Analyst
-Parameters are variables that you can pass to a function to customize its behavior. For example, you can create a function that reads data from a specific file path, and then pass different file paths as parameters to the function to read data from different sources.
-
-
-
-
-
-10
-Microsoft Data Analyst
-The common flow of activity looks like this:
-
-Bring data into Power BI Desktop, and create a report.
-Publish to the Power BI service, where you can create new visualizations or build dashboards.
-Share dashboards with others, especially people who are on the go.
-View and interact with shared dashboards and reports in Power BI Mobile apps.
-
-
-
 
 
 11
