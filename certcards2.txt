@@ -227,7 +227,7 @@ Dual (Composite)
 
 2
 Microsoft Data Analyst
-
+In Dual mode, you can identify some data to be directly imported and other data that must be queried. Any table that is brought in to your report is a product of both Import and DirectQuery modes. Using the Dual mode allows Power BI to choose the most efficient form of data retrieval.
 
 
 
