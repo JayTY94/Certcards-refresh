@@ -214,3 +214,147 @@ Microsoft account - Use your Microsoft account credentials. This option is often
 
 
 
+1
+Microsoft Data Analyst
+The three different types of storage modes you can choose from:
+
+Import
+DirectQuery
+Dual (Composite)
+
+
+
+
+2
+Microsoft Data Analyst
+
+
+
+
+
+3
+Microsoft Data Analyst
+
+
+
+
+
+4
+Microsoft Data Analyst
+
+
+
+
+
+5
+Microsoft Data Analyst
+
+
+
+
+
+6
+Microsoft Data Analyst
+
+
+
+
+
+7
+Microsoft Data Analyst
+
+
+
+
+
+8
+Microsoft Data Analyst
+
+
+
+
+
+9
+Microsoft Data Analyst
+
+
+
+
+
+10
+Microsoft Data Analyst
+
+
+
+
+
+11
+Microsoft Data Analyst
+
+
+
+
+
+12
+Microsoft Data Analyst
+
+
+
+
+
+13
+Microsoft Data Analyst
+
+
+
+
+
+14
+Microsoft Data Analyst
+
+
+
+
+
+15
+Microsoft Data Analyst
+
+
+
+
+
+16
+Microsoft Data Analyst
+
+
+
+
+
+17
+Microsoft Data Analyst
+
+
+
+
+
+18
+Microsoft Data Analyst
+
+
+
+
+
+19
+Microsoft Data Analyst
+
+
+
+
+
+20
+Microsoft Data Analyst
+
+
+
+
+
