@@ -379,14 +379,14 @@ A key step in the data shaping process is to remove unnecessary columns. It is m
 
 6
 Microsoft Data Analyst
-
+Unpivoting is a useful feature of Power BI. You can use this feature with data from any data source, but you would most often use it when importing data from Excel. Unpivoting streamlines the process of creating DAX measures on the data later. 
 
 
 
 
 7
 Microsoft Data Analyst
-
+You can use the Pivot Column feature to convert your flat data into a table that contains an aggregate value for each unique value in a column. For example, you might want to use this feature to summarize data by using different math functions such as Count, Minimum, Maximum, Median, Average, or Sum.
 
 
 
