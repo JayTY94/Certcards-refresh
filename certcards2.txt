@@ -297,13 +297,15 @@ Query folding is the process by which the transformations and edits that you mak
 
 11
 Microsoft Data Analyst
-
+All DirectQuery and Dual storage mode data sources must have the back-end server processing abilities to create a direct connection, which means that query folding is an automatic capability that you can use. If all transformations can be reduced to a single Select statement, then query folding can occur.
 
 
 
 
 12
 Microsoft Data Analyst
+A good guideline to remember is that if you can translate a transformation into a Select SQL statement, which includes operators and clauses such as GROUP BY, SORT BY, WHERE, UNION ALL, and JOIN, you can use query folding.
+
 
 
 
