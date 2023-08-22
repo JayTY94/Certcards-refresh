@@ -372,7 +372,7 @@ When working with generative answers, to learn more about how the question is in
 
 5
 Microsoft Data Analyst
-
+A key step in the data shaping process is to remove unnecessary columns. It is much better to remove columns as early as possible. One way to remove columns would be to limit the column when you get data from data source. For instance, if you are extracting data from a relational database by using SQL, you would want to limit the column that you extract by using a column list in the SELECT statement.
 
 
 
