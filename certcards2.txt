@@ -281,6 +281,8 @@ In Azure Analysis Services, the compatibility level refers to release-specific b
 
 9
 Microsoft Data Analyst
+Occasionally, organizations will need to address performance issues when running reports. Power BI provides the Performance Analyzer tool to help fix problems and streamline the process.
+
 
 
 
@@ -288,7 +290,7 @@ Microsoft Data Analyst
 
 10
 Microsoft Data Analyst
-
+Query folding is the process by which the transformations and edits that you make in Power Query Editor are simultaneously tracked as native queries, or simple Select SQL statements, while you're actively making transformations. 
 
 
 
