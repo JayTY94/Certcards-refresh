@@ -333,7 +333,7 @@ Correct. Always use the least amount of data needed for your project.
 
 
 1
-General
+Microsoft Data Analyst
 temerity
 
 noun
@@ -344,14 +344,20 @@ excessive confidence or boldness; audacity.
 
 
 2
-Microsoft Data Analyst
-
+Power Virtual Agents
+Generative answers in Power Virtual Agents allow your bot to find and present information from multiple sources (which may be internal or external) without requiring creation of topics. Generative answers can be used as primary information sources in your chatbot, or as fallback when authored topics are unable to address a user's query. 
 
 
 
 
 3
-Microsoft Data Analyst
+Power Virtual Agents
+Generative answers works well with a large variety of question types. However, there are certain types of questions that may produce less-helpful responses, including:
+
+personal questions
+questions that require authenticated access to content
+questions for each there's no related content at the specified URL
+
 
 
 
@@ -359,7 +365,7 @@ Microsoft Data Analyst
 
 4
 Microsoft Data Analyst
-
+When working with generative answers, to learn more about how the question is interpreted by Bing against the URL you specify, add "site: <your URL here>" to the end of your question to see the top Bing results for the question.
 
 
 
