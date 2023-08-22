@@ -2,51 +2,11 @@
 
 
 
-
-11
-Microsoft Data Analyst
-It's a best practice to avoid writing SQL queries directly in Power BI. Instead, consider writing a query like this in a view. A view is an object in a relational database, similar to a table. Views have rows and columns, and can contain almost every operator in the SQL language. If Power BI uses a view, when it retrieves data, it participates in query folding, a feature of Power Query.
-
-
-
-
-
-12
-Microsoft Data Analyst
-When you're creating a dashboard in Power BI, you can move or arrange tiles however you want. You can make them bigger, change their height or width, and snuggle them up to other tiles.
-
-When you're viewing, or consuming, a dashboard or report—which means you're not the creator or owner, but the report or dashboard has been shared with you—you can interact with it, but you can't change the size of the tiles or their arrangement.
-
-
-
-
-
-13
-Microsoft Data Analyst
-Parameters can be created for a wide range of data types, including dates, numbers, and text. You can also set up a parameter to allow users to select from a list of predefined values.
-
-
-
-
-
-14
-Microsoft Data Analyst
-When using an SQL query to import data, try to avoid using the wildcard character (*) in your query. If you use the wildcard character in your select statement, you import all columns from the specified table.
-
-
-
-
-
-15
-Microsoft Data Analyst
-It's important to note that while parameters can be a powerful tool for creating dynamic reports, they can also add complexity to your data model. You'll want to make sure you're using parameters effectively and efficiently to avoid performance issues. Additionally, not all data sources may support parameters, so it's important to check the documentation for your specific data source to see if parameters are supported.
-
-
-
-
-
 16
 Microsoft Data Analyst
+Authentication method(s) for SQL Server databases in Power BI:
+Microsoft account - Use your Microsoft account credentials. This option is often used for Azure services.
+
 
 
 
@@ -205,14 +165,6 @@ In private equity, funds and investors seek out underperforming or undervalued c
 
 
 
-35
-Microsoft Data Analyst
-Authentication method(s) for SQL Server databases in Power BI:
-Microsoft account - Use your Microsoft account credentials. This option is often used for Azure services.
-
-
-
-
 
 1
 Microsoft Data Analyst
@@ -313,6 +265,8 @@ A good guideline to remember is that if you can translate a transformation into 
 
 13
 Microsoft Data Analyst
+Another tool that you can use to study query performance is query diagnostics. You can determine what bottlenecks may exist while loading and transforming your data, refreshing your data in Power Query, running SQL statements in Query Editor, and so on.
+
 
 
 
@@ -320,6 +274,8 @@ Microsoft Data Analyst
 
 14
 Microsoft Data Analyst
+Power Query and Power Query Editor allow you to process the data; however, the processing power that is required to complete this task might lower performance in other areas of your reports. Generally, a good practice is to process, as much as possible, in the native data source.
+
 
 
 
@@ -327,14 +283,14 @@ Microsoft Data Analyst
 
 15
 Microsoft Data Analyst
-
+When using DirectQuery for SQL databases, such as the case for our scenario, make sure that you aren't pulling data from stored procedures or common table expressions (CTEs).
 
 
 
 
 16
 Microsoft Data Analyst
-
+ If any of your tables have columns that combine date and time, make sure that you separate them into distinct columns before importing them into Power BI. This approach will increase compression abilities.
 
 
 
