@@ -297,28 +297,37 @@ Microsoft Data Analyst
 
 17
 Microsoft Data Analyst
+Power BI Query Error: Timeout expired
 
+This error indicates that you've pulled too much data according to your organization's policies. Administrators incorporate this policy to avoid slowing down a different application or suite of applications that might also be using that database.
 
 
 
 
 18
 Microsoft Data Analyst
+Data type errors
 
+Sometimes, when you import data into Power BI, the columns appear blank. This situation happens because of an error in interpreting the data type in Power BI. The resolution to this error is unique to the data source. For instance, if you're importing data from SQL Server and see blank columns, you could try to convert to the correct data type in the query.
 
 
 
 
 19
 Microsoft Data Analyst
+When connecting to a SQL Server database to get data, what language should you use to extract data? 
 
+T-SQL is the query language that you would use for SQL Server.
 
 
 
 
 20
 Microsoft Data Analyst
+3. What can you do to improve performance when you're getting data in Power BI? 
 
+Remove unnecessary columns and rows
+Correct. Always use the least amount of data needed for your project.
 
 
 
