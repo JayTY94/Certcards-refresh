@@ -356,7 +356,7 @@ A good guideline to remember is that if you can translate a transformation into 
 
 1
 Microsoft Data Analyst
-
+It's good practice to change uncommon or unhelpful query names to names that are more obvious or that the user is more familiar with. For instance, if you import a view, the view might have a name that contains a prefix of v, such as vProduct. People might find this name unclear and confusing, so you might want to remove the prefix.
 
 
 
