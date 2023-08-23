@@ -362,7 +362,9 @@ It's good practice to change uncommon or unhelpful query names to names that are
 
 
 2
-Microsoft Data Analyst
+BillyBot
+A progress bill is a credit against WIP. The progress bill amount appears on the client’s invoice but does not relieve any WIP. Instead, it adds to the client’s balance due. When you finally bill the client’s WIP, you will apply the progress amount against the WIP to reach the net balance due.
+
 
 
 
@@ -370,7 +372,14 @@ Microsoft Data Analyst
 
 3
 Microsoft Data Analyst
+Occasionally, you might find that your data sources contain null values. For example, a freight amount on a sales order mgiht have a null value if it's synonymous with zero. If the value stays null, the averages will not calculate correctly. One solution would be to change the nulls to zero, which will produce the more accurate freight average.
 
+Replace Values
+Replace one value with another in the selected columns
+Value to find
+  null
+Replace with
+  0
 
 
 
