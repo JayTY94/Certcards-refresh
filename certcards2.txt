@@ -386,14 +386,14 @@ Replace with
 
 4
 Microsoft Data Analyst
-
+By removing prefixes or suffixes that you might use in table names and instead using them in a simple format, you will help avoid confusion.
 
 
 
 
 5
 Microsoft Data Analyst
-
+A best practice is to give your tables, columns, and measures descriptive business terms and underscores with space. Be consistent with abbreviations, prefixes, and words like "number" and "ID". 
 
 
 
