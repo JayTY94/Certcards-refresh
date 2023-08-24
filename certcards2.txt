@@ -400,13 +400,15 @@ A best practice is to give your tables, columns, and measures descriptive busine
 
 6
 Microsoft Data Analyst
-
+Incorrect data types will prevent you from creating certain calculations, deriving hierarchies, or creating proper relationships with other tables. For example, if you try to calculate the Quantity of Orders YTD, you'll get the following error stating that the OrderDate column data type isn't Date, which is required in time-based calculations.
 
 
 
 
 7
 Microsoft Data Analyst
+A best practice is to evaluate the column data types in Power Query Editor before you load the data into a Power BI data model. If you determine that a data type is incorrect, you can change it. You might also want to apply a format to the values in a column and change the summarization default for a column.
+
 
 
 
