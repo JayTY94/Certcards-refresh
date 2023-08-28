@@ -440,6 +440,7 @@ On the Home tab on the Power Query Editor ribbon, select the drop-down list for 
 
 
 
+
 11
 Microsoft Data Analyst
 
