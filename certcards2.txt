@@ -415,14 +415,19 @@ A best practice is to evaluate the column data types in Power Query Editor befor
 
 
 8
-Microsoft Data Analyst
-
+General
+To use the Visio addin in excel
+  Go to Home>Add ins>Visio
+  select the type you want
+  the basic table that corresponds to the flowchart is created.
 
 
 
 
 9
 Microsoft Data Analyst
+When you append queries, you'll be adding rows of data to another table or query. For example, you could have two tables, one with 300 rows and another with 100 rows, and when you append queries, you'll end up with 400 rows. When you merge queries, you'll be adding columns from one table (or query) into another. To merge two tables, you must have a column that is the key between the two tables.
+
 
 
 
@@ -430,7 +435,7 @@ Microsoft Data Analyst
 
 10
 Microsoft Data Analyst
-
+On the Home tab on the Power Query Editor ribbon, select the drop-down list for Append Queries. You can select Append Queries as New, which means that the output of appending will result in a new query or table, or you can select Append Queries, which will add the rows from an existing table into another.
 
 
 
