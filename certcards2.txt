@@ -1,42 +1,3 @@
-1
-Microsoft Data Analyst
-When connecting to a SQL Server database to get data, what language should you use to extract data? 
-
-T-SQL is the query language that you would use for SQL Server.
-
-
-
-
-
-2
-Microsoft Data Analyst
-Occasionally, organizations will need to address performance issues when running reports. Power BI provides the Performance Analyzer tool to help fix problems and streamline the process.
-
-
-
-
-
-3
-Microsoft Data Analyst
-Query folding is the process by which the transformations and edits that you make in Power Query Editor are simultaneously tracked as native queries, or simple Select SQL statements, while you're actively making transformations.
-
-
-
-
-
-4
-Microsoft Data Analyst
-If any of your tables have columns that combine date and time, make sure that you separate them into distinct columns before importing them into Power BI. This approach will increase compression abilities.
-
-
-
-
-
-5
-Microsoft Data Analyst
-Functions can be nested within other functions, which can be useful for creating complex workflows. For example, you can create a function that performs data cleansing, and then nest that function within a function that performs data transformation.
-
-
 
 
 
@@ -443,6 +404,8 @@ On the Home tab on the Power Query Editor ribbon, select the drop-down list for 
 
 11
 Microsoft Data Analyst
+Go to Home on the Power Query Editor ribbon and select the Merge Queries drop-down menu, where you can select Merge Queries as New. This selection will open a new window, where you can choose the tables that you want to merge from the drop-down list, and then select the column that is matching between the tables, which in the example case is orderid.
+
 
 
 
