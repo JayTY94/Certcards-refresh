@@ -429,13 +429,14 @@ Data anomalies are outliers within your data. Determining what those anomalies a
 
 14
 Microsoft Data Analyst
-
+Select View on the ribbon, and under Data Preview, you can choose from a few options. To understand data anomalies and statistics, select the Column Distribution, Column Quality, and Column Profile options.
 
 
 
 
 15
 Microsoft Data Analyst
+Column quality and Column distribution are shown in the graphs above the columns of data. Columns quality shows you the percentages of data that is valid, in error, or empty. In an ideal solution, you want 100 percent of the data to be valid.
 
 
 
