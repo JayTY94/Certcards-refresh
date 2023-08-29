@@ -413,7 +413,7 @@ Go to Home on the Power Query Editor ribbon and select the Merge Queries drop-do
 
 12
 Microsoft Data Analyst
-
+Profiling data is about studying the nuances of the data: determining anomalies, examining and developing the underlying data structures, and querying data statistics such as row counts, value distributions, minimum and maximum values, averages, and so on. 
 
 
 
