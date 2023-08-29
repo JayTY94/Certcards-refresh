@@ -420,6 +420,8 @@ Profiling data is about studying the nuances of the data: determining anomalies,
 
 13
 Microsoft Data Analyst
+Data anomalies are outliers within your data. Determining what those anomalies are can help you identify what the normal distribution of your data looks like and whether specific data points exist that you need to investigate further. Power Query Editor determines data anomalies by using the Column Distribution feature.
+
 
 
 
