@@ -480,6 +480,148 @@ Replace values that have integers with human readable results.
 
 19
 Microsoft Data Analyst
+An optimal model adheres to star schema design principles. Star schema refers to a design approach that's commonly used by relational data warehouse designers because it presents a user-friendly structure and it supports high-performance analytic queries.
+
+
+
+
+20
+Microsoft Data Analyst
+Generally, fact tables contain numerous rows. As time passes, fact table rows accumulate. In analytic queries (which will be defined later in this module), fact table data is summarized to produce values like sales and quantity.
+
+
+
+
+
+
+1
+Microsoft Data Analyst
+
+
+
+
+
+2
+Microsoft Data Analyst
+
+
+
+
+
+3
+Microsoft Data Analyst
+
+
+
+
+
+4
+Microsoft Data Analyst
+
+
+
+
+
+5
+Microsoft Data Analyst
+
+
+
+
+
+6
+Microsoft Data Analyst
+
+
+
+
+
+7
+Microsoft Data Analyst
+
+
+
+
+
+8
+Microsoft Data Analyst
+
+
+
+
+
+9
+Microsoft Data Analyst
+
+
+
+
+
+10
+Microsoft Data Analyst
+
+
+
+
+
+11
+Microsoft Data Analyst
+
+
+
+
+
+12
+Microsoft Data Analyst
+
+
+
+
+
+13
+Microsoft Data Analyst
+
+
+
+
+
+14
+Microsoft Data Analyst
+
+
+
+
+
+15
+Microsoft Data Analyst
+
+
+
+
+
+16
+Microsoft Data Analyst
+
+
+
+
+
+17
+Microsoft Data Analyst
+
+
+
+
+
+18
+Microsoft Data Analyst
+
+
+
+
+
+19
+Microsoft Data Analyst
 
 
 
