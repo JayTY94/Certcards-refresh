@@ -1,48 +1,6 @@
 
 
 
-
-11
-Microsoft Data Analyst
-An app is a collection of preset, ready-made visuals and reports that are shared with an entire organization. Using an app is like microwaving a TV dinner or ordering a fast-food value meal: you just have to press a few buttons or make a few comments, and you're quickly served a collection of entrees designed to go together, all presented in a tidy, ready-to-consume package.
-
-
-
-
-
-12
-Upside
-In private equity, funds and investors seek out underperforming or undervalued companies that they can take private and turn around, before going public years later. Buyout firms are involved in management buyouts (MBOs), in which the management of the company being purchased takes a stake. They often play key roles in leveraged buyouts, which are buyouts that are funded with borrowed money.
-
-
-
-
-
-13
-Microsoft Data Analyst
-Another tool that you can use to study query performance is query diagnostics. You can determine what bottlenecks may exist while loading and transforming your data, refreshing your data in Power Query, running SQL statements in Query Editor, and so on.
-
-
-
-
-
-14
-Microsoft Data Analyst
-Azure Analysis Services is a fully managed platform as a service (PaaS) that provides enterprise-grade data models in the cloud. Use advanced mashup and modeling features to combine data from multiple data sources, define metrics, and secure your data in a single, trusted tabular semantic data model
-
-
-
-
-
-15
-Microsoft Data Analyst
-Authentication method(s) for SQL Server databases in Power BI:
-Windows - Use your Windows account (Azure Active Directory credentials).
-
-
-
-
-
 16
 Microsoft Data Analyst
 In Dual mode, you can identify some data to be directly imported and other data that must be queried. Any table that is brought in to your report is a product of both Import and DirectQuery modes. Using the Dual mode allows Power BI to choose the most efficient form of data retrieval.
