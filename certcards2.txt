@@ -1,52 +1,6 @@
 
 
 
-6
-Microsoft Data Analyst
-SQL
-SELECT * FROM SALES
-
-The wildcard character (*) will import all characters from within the Sales table. This method isn't recommended because it will lead to redundant data in your model, which will cause performance issues and require extra steps to normalize your data for reporting.
-
-
-
-
-
-7
-Microsoft Data Analyst
-After the database has been connected to Power BI Desktop, the Navigator window displays the data that is available in your data source (the SQL database in this example). You can select a table or entity to preview its contents and make sure that the correct data will be loaded into the Power BI model.
-
-
-
-
-
-8
-Microsoft Data Analyst
-The three different types of storage modes you can choose from:
-
-Import
-DirectQuery
-Dual (Composite)
-
-
-
-
-
-9
-Power Virtual Agents
-When working with generative answers, to learn more about how the question is interpreted by Bing against the URL you specify, add "site: <your URL here>" to the end of your question to see the top Bing results for the question.
-
-
-
-
-
-10
-Microsoft Data Analyst
-A key step in the data shaping process is to remove unnecessary columns. It is much better to remove columns as early as possible. One way to remove columns would be to limit the column when you get data from data source. For instance, if you are extracting data from a relational database by using SQL, you would want to limit the column that you extract by using a column list in the SELECT statement.
-
-
-
-
 
 11
 Microsoft Data Analyst
@@ -164,7 +118,6 @@ A stage can consist of many jobs, and each job can consume several resources. Be
 
 
 25
-1
 Microsoft Data Analyst
 Unpivoting is a useful feature of Power BI. You can use this feature with data from any data source, but you would most often use it when importing data from Excel. Unpivoting streamlines the process of creating DAX measures on the data later.
 
@@ -496,7 +449,7 @@ Generally, fact tables contain numerous rows. As time passes, fact table rows ac
 
 1
 Microsoft Data Analyst
-
+Dimension tables describe your business entities, which commonly represent people, places, products, or concepts. A date dimension table, which contains one row for each date, is a common example of a concept dimension table. 
 
 
 
