@@ -1,45 +1,6 @@
 
 
 
-16
-Microsoft Data Analyst
-In Dual mode, you can identify some data to be directly imported and other data that must be queried. Any table that is brought in to your report is a product of both Import and DirectQuery modes. Using the Dual mode allows Power BI to choose the most efficient form of data retrieval.
-
-
-
-
-
-17
-Microsoft Data Analyst
-To connect with Azure Analysis Services, Power BI Desktop, Visual Studio, and SSMS support Active Directory Universal Authentication, an interactive method that also supports Azure AD Multi-Factor Authentication (MFA). Azure AD MFA helps safeguard access to data and applications while providing a simple sign in process.
-
-
-
-
-
-18
-Azure Pipelines
-Pipelines rely on resources such as environments, service connections, agent pools, variable groups, and secure files. Checks enable the resource owner to control if and when a stage in any pipeline can consume a resource. As an owner of a resource, you can define checks that must be satisfied before a stage consuming that resource can start.
-
-
-
-
-
-19
-Microsoft Data Analyst
-Power Query and Power Query Editor allow you to process the data; however, the processing power that is required to complete this task might lower performance in other areas of your reports. Generally, a good practice is to process, as much as possible, in the native data source.
-
-
-
-
-
-20
-Power Virtual Agents
-Generative answers in Power Virtual Agents allow your bot to find and present information from multiple sources (which may be internal or external) without requiring creation of topics. Generative answers can be used as primary information sources in your chatbot, or as fallback when authored topics are unable to address a user's query.
-
-
-
-
 
 21
 Azure Pipelines
@@ -446,29 +407,34 @@ In an Analytic Query, Summarizing produces a single value result. Typically, num
 
 
 6
-Microsoft Data Analyst
-
+General
+A fiscal year is a period of 12 consecutive months chosen by a business or organization for financial reporting purposes. It may or may not correspond to a calendar year. For example, a company might choose to have its fiscal year begin on July 1 and end on June 30 of the following year.
 
 
 
 
 7
-Microsoft Data Analyst
+General
+Fiscal years are commonly used by businesses, governments, and nonprofit organizations. They are used to keep track of financial performance, including revenue, expenses, and profits.
 
 
 
 
 
 8
-Microsoft Data Analyst
-
+General
+Some organizations use fiscal years for tax purposes. For example, the federal government's fiscal year runs from October 1 to September 30 of the following year. This means that when the government passes its annual budget, it is for the upcoming fiscal year, not the upcoming calendar year.
 
 
 
 
 9
 Microsoft Data Analyst
+Fields is a collective term that is used to describe a model resource that can be used to configure a visual. The three different model resources that are fields include:
 
+Columns
+Hierarchy levels
+Measures
 
 
 
