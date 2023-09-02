@@ -414,13 +414,18 @@ Dimension tables describe your business entities, which commonly represent peopl
 
 2
 Microsoft Data Analyst
-
+An analytic query is a query that produces a result from a data model. Each Power BI visual, in the background, submits an analytic query to Power BI to query the model. The analytic query is written as a Data Analysis Expressions (DAX) query statement.
 
 
 
 
 3
 Microsoft Data Analyst
+An analytic query has three phases that are implemented in the following order:
+
+Filter
+Group
+Summarize
 
 
 
@@ -428,14 +433,14 @@ Microsoft Data Analyst
 
 4
 Microsoft Data Analyst
-
+In an Analytic Query, filtering, or slicing, targets the data of relevance. In Power BI reports, filters can be applied to three different scopes: the entire report, a specific page, or a specific visual. Filtering is also applied in the background when row-level security (RLS) is enforced.
 
 
 
 
 5
 Microsoft Data Analyst
-
+In an Analytic Query, Summarizing produces a single value result. Typically, numeric columns are summarized by using summarization methods (sum, count, and many others). More complex summarizations, like a percent of grand total, can be achieved by defining measures that are written in DAX.
 
 
 
