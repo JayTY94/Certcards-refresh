@@ -441,21 +441,35 @@ Measures
 
 10
 Microsoft Data Analyst
+In what order does an analytic query implement its phases? 
 
+Filter, Group, Summarize
+Filter is used to first restrict the data to query. Group then divides the query result into groups. Summarize then produces single value aggregations for each group.
 
 
 
 
 11
 Microsoft Data Analyst
+In a Power BI Desktop model design, which type of object do you create to enforce row-level security? 
 
-
+  Role
+  A role consists of one or more rules, which are DAX formulas that are used to filter table rows. Roles define row-level security.
+  NOT
+  Table
+  Column
+  Measure
 
 
 
 12
 Microsoft Data Analyst
-
+Which of the following statements is correct regarding a star schema design? 
+  Fact tables store accumulations of business events.
+  Fact tables store accumulations of business events, like sales orders or currency exchange rates.
+  NOT
+  Fact tables store accumulations of business entities.
+  Fact tables must have a unique column.
 
 
 
