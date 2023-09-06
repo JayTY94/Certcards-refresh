@@ -465,7 +465,6 @@ In a Power BI Desktop model design, which type of object do you create to enforc
 12
 Microsoft Data Analyst
 Which of the following statements is correct regarding a star schema design? 
-  Fact tables store accumulations of business events.
   Fact tables store accumulations of business events, like sales orders or currency exchange rates.
   NOT
   Fact tables store accumulations of business entities.
