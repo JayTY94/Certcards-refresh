@@ -1,106 +1,74 @@
-
-
-
-
-21
-Azure Pipelines
-A pipeline is made up of stages. A pipeline author can control whether a stage should run by defining conditions on the stage. Another way to control if and when a stage should run is through approvals and checks.
-
-
-
-
-
-22
+1
 Microsoft Data Analyst
-Functions are reusable blocks of code that can be used to automate repetitive tasks in Power Query. You can create custom functions to perform specific tasks and then reuse them across multiple queries.
+Data anomalies are outliers within your data. Determining what those anomalies are can help you identify what the normal distribution of your data looks like and whether specific data points exist that you need to investigate further. Power Query Editor determines data anomalies by using the Column Distribution feature.
 
 
 
 
 
-23
+2
 Microsoft Data Analyst
-Data type errors
+1. What is a risk of having null values in a numeric column? 
 
-Sometimes, when you import data into Power BI, the columns appear blank. This situation happens because of an error in interpreting the data type in Power BI. The resolution to this error is unique to the data source. For instance, if you're importing data from SQL Server and see blank columns, you could try to convert to the correct data type in the query.
-
-
-
-
-
-24
-Azure Pipelines
-A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed.
+That function SUM of data are incorrect.
+That function MAX of data will be incorrect. 
+That function AVERAGE of data will be incorrect.
+  Correct. AVERAGE takes the total and divides by the number of non-null values. If NULL is synonymous with zero in the data, the average will be different from the accurate average.
 
 
 
 
 
-25
+3
 Microsoft Data Analyst
-Unpivoting is a useful feature of Power BI. You can use this feature with data from any data source, but you would most often use it when importing data from Excel. Unpivoting streamlines the process of creating DAX measures on the data later.
+Incorrect data types will prevent you from creating certain calculations, deriving hierarchies, or creating proper relationships with other tables. For example, if you try to calculate the Quantity of Orders YTD, you'll get the following error stating that the OrderDate column data type isn't Date, which is required in time-based calculations.
 
 
 
 
 
-26
+4
 Microsoft Data Analyst
-Azure Analysis Services uses Azure Active Directory (Azure AD) for identity management and user authentication. Any user creating, managing, or connecting to an Azure Analysis Services server must have a valid user identity in an Azure AD tenant in the same subscription.
+When a user selects a new value for a parameter, it triggers a refresh of the report, updating the visuals and calculations based on the new value. This can help users quickly and easily explore different scenarios and analyze data in more detail.
 
 
 
 
 
-27
+5
 Microsoft Data Analyst
-Your Excel files might exist in one of the following locations:
-SharePoint - Team Sites - Saving your Power BI Desktop files to SharePoint Team Sites is similar to saving to OneDrive for Business. The main difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
+3. Which of the following selections aren't best practices for naming conventions in Power BI? 
+
+Rename columns to have spaces in them.
+Abbreviate column names.
+  Correct. Abbreviations lead to confusion because they're often overused or not universally agreed on.
+Replace values that have integers with human readable results.
 
 
 
 
 
-28
-General
-temerity
-
-noun
-excessive confidence or boldness; audacity.
-"no one had the temerity to question his conclusions"
-
-
-
-
-
-29
+6
 Microsoft Data Analyst
-Connect live is an option for Azure Analysis Services. Azure Analysis Services uses the tabular model and DAX to build calculations, similar to Power BI. These models are compatible with one another. Using the Connect live option helps you keep the data and DAX calculations in their original location, without having to import them all into Power BI.
+An analytic query has three phases that are implemented in the following order:
+
+Filter
+Group
+Summarize
 
 
 
 
 
-30
+7
 Microsoft Data Analyst
-Azure Analysis Services is available in Developer, Basic, and Standard tiers. Within each tier, plan costs vary according to processing power, Query Processing Units (QPUs), and memory size. When you create a server, you select a plan within a tier. You can change plans up or down within the same tier, or upgrade to a higher tier, but you can't downgrade from a higher tier to a lower tier.
+By removing prefixes or suffixes that you might use in table names and instead using them in a simple format, you will help avoid confusion.
 
 
 
 
 
-31
-Microsoft Data Analyst
-3. What can you do to improve performance when you're getting data in Power BI? 
-
-Remove unnecessary columns and rows
-Correct. Always use the least amount of data needed for your project.
-
-
-
-
-
-32
+8
 Power Virtual Agents
 Generative answers works well with a large variety of question types. However, there are certain types of questions that may produce less-helpful responses, including:
 
@@ -112,31 +80,47 @@ questions for each there's no related content at the specified URL
 
 
 
-33
+9
 Microsoft Data Analyst
-When using DirectQuery for SQL databases, such as the case for our scenario, make sure that you aren't pulling data from stored procedures or common table expressions (CTEs).
+A good guideline to remember is that if you can translate a transformation into a Select SQL statement, which includes operators and clauses such as GROUP BY, SORT BY, WHERE, UNION ALL, and JOIN, you can use query folding.
 
 
 
 
 
-34
+10
 Microsoft Data Analyst
-When a user selects a new value for a parameter, it triggers a refresh of the report, updating the visuals and calculations based on the new value. This can help users quickly and easily explore different scenarios and analyze data in more detail.
+Go to Home on the Power Query Editor ribbon and select the Merge Queries drop-down menu, where you can select Merge Queries as New. This selection will open a new window, where you can choose the tables that you want to merge from the drop-down list, and then select the column that is matching between the tables, which in the example case is orderid.
 
 
 
 
 
-35
+11
+General
+Fiscal years are commonly used by businesses, governments, and nonprofit organizations. They are used to keep track of financial performance, including revenue, expenses, and profits.
+
+
+
+
+
+12
 Microsoft Data Analyst
-All DirectQuery and Dual storage mode data sources must have the back-end server processing abilities to create a direct connection, which means that query folding is an automatic capability that you can use. If all transformations can be reduced to a single Select statement, then query folding can occur.
+An optimal model adheres to star schema design principles. Star schema refers to a design approach that's commonly used by relational data warehouse designers because it presents a user-friendly structure and it supports high-performance analytic queries.
 
 
 
 
 
-36
+13
+Microsoft Data Analyst
+Generally, fact tables contain numerous rows. As time passes, fact table rows accumulate. In analytic queries (which will be defined later in this module), fact table data is summarized to produce values like sales and quantity.
+
+
+
+
+
+14
 Microsoft Data Analyst
 You can use the Pivot Column feature to convert your flat data into a table that contains an aggregate value for each unique value in a column. For example, you might want to use this feature to summarize data by using different math functions such as Count, Minimum, Maximum, Median, Average, or Sum.
 
@@ -144,24 +128,42 @@ You can use the Pivot Column feature to convert your flat data into a table that
 
 
 
-37
+15
 Microsoft Data Analyst
-In Azure Analysis Services, the compatibility level refers to release-specific behaviors in the Analysis Services engine. For example, DirectQuery and tabular object metadata have different implementations depending on the compatibility level. In-general, you should choose the latest compatibility level supported by your platform.
+All DirectQuery and Dual storage mode data sources must have the back-end server processing abilities to create a direct connection, which means that query folding is an automatic capability that you can use. If all transformations can be reduced to a single Select statement, then query folding can occur.
 
 
 
 
 
-38
+16
+General
+To use the Visio addin in excel
+  Go to Home>Add ins>Visio
+  select the type you want
+  the basic table that corresponds to the flowchart is created.
+
+
+
+
+
+17
 Microsoft Data Analyst
-Authentication method(s) for SQL Server databases in Power BI:
-Database - Use your database credentials. For instance, SQL Server has its own sign-in and authentication system that is sometimes used. If the database administrator gave you a unique sign-in to the database, you might need to enter those credentials on the Database tab.
+Dimension tables describe your business entities, which commonly represent people, places, products, or concepts. A date dimension table, which contains one row for each date, is a common example of a concept dimension table.
 
 
 
 
 
-39
+18
+Microsoft Data Analyst
+Select View on the ribbon, and under Data Preview, you can choose from a few options. To understand data anomalies and statistics, select the Column Distribution, Column Quality, and Column Profile options.
+
+
+
+
+
+19
 Microsoft Data Analyst
 An important and enabling part of Power BI is the multitude of data connectors that are included. Whether the data you want is in Excel or a Microsoft SQL Server database, in Azure or Oracle, or in a service like Facebook, Salesforce, or MailChimp, Power BI has built-in data connectors that let you easily connect to that data, filter it if necessary, and bring it into your dataset.
 
@@ -169,7 +171,8 @@ An important and enabling part of Power BI is the multitude of data connectors t
 
 
 
-40
+20
+1
 Microsoft Data Analyst
 Power BI Query Error: Timeout expired
 
@@ -179,31 +182,7 @@ This error indicates that you've pulled too much data according to your organiza
 
 
 
-41
-Microsoft Data Analyst
-A good guideline to remember is that if you can translate a transformation into a Select SQL statement, which includes operators and clauses such as GROUP BY, SORT BY, WHERE, UNION ALL, and JOIN, you can use query folding.
-
-
-
-
-
-1
-Microsoft Data Analyst
-It's good practice to change uncommon or unhelpful query names to names that are more obvious or that the user is more familiar with. For instance, if you import a view, the view might have a name that contains a prefix of v, such as vProduct. People might find this name unclear and confusing, so you might want to remove the prefix.
-
-
-
-
-2
-BillyBot
-A progress bill is a credit against WIP. The progress bill amount appears on the client’s invoice but does not relieve any WIP. Instead, it adds to the client’s balance due. When you finally bill the client’s WIP, you will apply the progress amount against the WIP to reach the net balance due.
-
-
-
-
-
-
-3
+21
 Microsoft Data Analyst
 Occasionally, you might find that your data sources contain null values. For example, a freight amount on a sales order mgiht have a null value if it's synonymous with zero. If the value stays null, the averages will not calculate correctly. One solution would be to change the nulls to zero, which will produce the more accurate freight average.
 
@@ -217,239 +196,24 @@ Replace with
 
 
 
-4
-Microsoft Data Analyst
-By removing prefixes or suffixes that you might use in table names and instead using them in a simple format, you will help avoid confusion.
 
-
-
-
-5
-Microsoft Data Analyst
-A best practice is to give your tables, columns, and measures descriptive business terms and underscores with space. Be consistent with abbreviations, prefixes, and words like "number" and "ID". 
-
-
-
-
-6
-Microsoft Data Analyst
-Incorrect data types will prevent you from creating certain calculations, deriving hierarchies, or creating proper relationships with other tables. For example, if you try to calculate the Quantity of Orders YTD, you'll get the following error stating that the OrderDate column data type isn't Date, which is required in time-based calculations.
-
-
-
-
-7
-Microsoft Data Analyst
-A best practice is to evaluate the column data types in Power Query Editor before you load the data into a Power BI data model. If you determine that a data type is incorrect, you can change it. You might also want to apply a format to the values in a column and change the summarization default for a column.
-
-
-
-
-
-
-8
-General
-To use the Visio addin in excel
-  Go to Home>Add ins>Visio
-  select the type you want
-  the basic table that corresponds to the flowchart is created.
-
-
-
-
-9
-Microsoft Data Analyst
-When you append queries, you'll be adding rows of data to another table or query. For example, you could have two tables, one with 300 rows and another with 100 rows, and when you append queries, you'll end up with 400 rows. When you merge queries, you'll be adding columns from one table (or query) into another. To merge two tables, you must have a column that is the key between the two tables.
-
-
-
-
-
-
-10
-Microsoft Data Analyst
-On the Home tab on the Power Query Editor ribbon, select the drop-down list for Append Queries. You can select Append Queries as New, which means that the output of appending will result in a new query or table, or you can select Append Queries, which will add the rows from an existing table into another.
-
-
-
-
-
-11
-Microsoft Data Analyst
-Go to Home on the Power Query Editor ribbon and select the Merge Queries drop-down menu, where you can select Merge Queries as New. This selection will open a new window, where you can choose the tables that you want to merge from the drop-down list, and then select the column that is matching between the tables, which in the example case is orderid.
-
-
-
-
-
-
-12
-Microsoft Data Analyst
-Profiling data is about studying the nuances of the data: determining anomalies, examining and developing the underlying data structures, and querying data statistics such as row counts, value distributions, minimum and maximum values, averages, and so on. 
-
-
-
-
-13
-Microsoft Data Analyst
-Data anomalies are outliers within your data. Determining what those anomalies are can help you identify what the normal distribution of your data looks like and whether specific data points exist that you need to investigate further. Power Query Editor determines data anomalies by using the Column Distribution feature.
-
-
-
-
-
-
-14
-Microsoft Data Analyst
-Select View on the ribbon, and under Data Preview, you can choose from a few options. To understand data anomalies and statistics, select the Column Distribution, Column Quality, and Column Profile options.
-
-
-
-
-15
-Microsoft Data Analyst
-Column quality and Column distribution are shown in the graphs above the columns of data. Columns quality shows you the percentages of data that is valid, in error, or empty. In an ideal solution, you want 100 percent of the data to be valid.
-
-
-
-
-
-16
-Microsoft Data Analyst
-1. What is a risk of having null values in a numeric column? 
-
-That function SUM of data are incorrect.
-That function MAX of data will be incorrect. 
-That function AVERAGE of data will be incorrect.
-  Correct. AVERAGE takes the total and divides by the number of non-null values. If NULL is synonymous with zero in the data, the average will be different from the accurate average.
-
-
-
-
-17
-Microsoft Data Analyst
-2. If you have two queries that have different data but the same column headers, and you want to combine both tables into one query with all the combined rows, which operation should you perform? 
-
-Append
-  Correct. Append will take two tables and combine it into one query. The combined query will have more rows while keeping the same number of columns.
-Merge
-Combine Column
-
-
-
-
-18
-Microsoft Data Analyst
-3. Which of the following selections aren't best practices for naming conventions in Power BI? 
-
-Rename columns to have spaces in them.
-Abbreviate column names.
-  Correct. Abbreviations lead to confusion because they're often overused or not universally agreed on.
-Replace values that have integers with human readable results.
-
-
-
-
-19
-Microsoft Data Analyst
-An optimal model adheres to star schema design principles. Star schema refers to a design approach that's commonly used by relational data warehouse designers because it presents a user-friendly structure and it supports high-performance analytic queries.
-
-
-
-
-20
-Microsoft Data Analyst
-Generally, fact tables contain numerous rows. As time passes, fact table rows accumulate. In analytic queries (which will be defined later in this module), fact table data is summarized to produce values like sales and quantity.
-
-
-
-
-
-
-1
-Microsoft Data Analyst
-Dimension tables describe your business entities, which commonly represent people, places, products, or concepts. A date dimension table, which contains one row for each date, is a common example of a concept dimension table. 
-
-
-
-
-2
+22
 Microsoft Data Analyst
 An analytic query is a query that produces a result from a data model. Each Power BI visual, in the background, submits an analytic query to Power BI to query the model. The analytic query is written as a Data Analysis Expressions (DAX) query statement.
 
 
 
 
-3
+
+23
 Microsoft Data Analyst
-An analytic query has three phases that are implemented in the following order:
-
-Filter
-Group
-Summarize
+Profiling data is about studying the nuances of the data: determining anomalies, examining and developing the underlying data structures, and querying data statistics such as row counts, value distributions, minimum and maximum values, averages, and so on.
 
 
 
 
 
-4
-Microsoft Data Analyst
-In an Analytic Query, filtering, or slicing, targets the data of relevance. In Power BI reports, filters can be applied to three different scopes: the entire report, a specific page, or a specific visual. Filtering is also applied in the background when row-level security (RLS) is enforced.
-
-
-
-
-5
-Microsoft Data Analyst
-In an Analytic Query, Summarizing produces a single value result. Typically, numeric columns are summarized by using summarization methods (sum, count, and many others). More complex summarizations, like a percent of grand total, can be achieved by defining measures that are written in DAX.
-
-
-
-
-6
-General
-A fiscal year is a period of 12 consecutive months chosen by a business or organization for financial reporting purposes. It may or may not correspond to a calendar year. For example, a company might choose to have its fiscal year begin on July 1 and end on June 30 of the following year.
-
-
-
-
-7
-General
-Fiscal years are commonly used by businesses, governments, and nonprofit organizations. They are used to keep track of financial performance, including revenue, expenses, and profits.
-
-
-
-
-
-8
-General
-Some organizations use fiscal years for tax purposes. For example, the federal government's fiscal year runs from October 1 to September 30 of the following year. This means that when the government passes its annual budget, it is for the upcoming fiscal year, not the upcoming calendar year.
-
-
-
-
-9
-Microsoft Data Analyst
-Fields is a collective term that is used to describe a model resource that can be used to configure a visual. The three different model resources that are fields include:
-
-Columns
-Hierarchy levels
-Measures
-
-
-
-
-10
-Microsoft Data Analyst
-In what order does an analytic query implement its phases? 
-
-Filter, Group, Summarize
-Filter is used to first restrict the data to query. Group then divides the query result into groups. Summarize then produces single value aggregations for each group.
-
-
-
-
-11
+24
 Microsoft Data Analyst
 In a Power BI Desktop model design, which type of object do you create to enforce row-level security? 
 
@@ -462,13 +226,259 @@ In a Power BI Desktop model design, which type of object do you create to enforc
 
 
 
-12
+
+
+25
+Microsoft Data Analyst
+Authentication method(s) for SQL Server databases in Power BI:
+Database - Use your database credentials. For instance, SQL Server has its own sign-in and authentication system that is sometimes used. If the database administrator gave you a unique sign-in to the database, you might need to enter those credentials on the Database tab.
+
+
+
+
+
+26
+Microsoft Data Analyst
+A best practice is to give your tables, columns, and measures descriptive business terms and underscores with space. Be consistent with abbreviations, prefixes, and words like "number" and "ID".
+
+
+
+
+
+27
+Microsoft Data Analyst
+When using DirectQuery for SQL databases, such as the case for our scenario, make sure that you aren't pulling data from stored procedures or common table expressions (CTEs).
+
+
+
+
+
+28
+Microsoft Data Analyst
+When you append queries, you'll be adding rows of data to another table or query. For example, you could have two tables, one with 300 rows and another with 100 rows, and when you append queries, you'll end up with 400 rows. When you merge queries, you'll be adding columns from one table (or query) into another. To merge two tables, you must have a column that is the key between the two tables.
+
+
+
+
+
+29
+Microsoft Data Analyst
+In what order does an analytic query implement its phases? 
+
+Filter, Group, Summarize
+Filter is used to first restrict the data to query. Group then divides the query result into groups. Summarize then produces single value aggregations for each group.
+
+
+
+
+
+30
 Microsoft Data Analyst
 Which of the following statements is correct regarding a star schema design? 
   Fact tables store accumulations of business events, like sales orders or currency exchange rates.
   NOT
   Fact tables store accumulations of business entities.
   Fact tables must have a unique column.
+
+
+
+
+
+31
+Microsoft Data Analyst
+Column quality and Column distribution are shown in the graphs above the columns of data. Columns quality shows you the percentages of data that is valid, in error, or empty. In an ideal solution, you want 100 percent of the data to be valid.
+
+
+
+
+
+32
+Microsoft Data Analyst
+Fields is a collective term that is used to describe a model resource that can be used to configure a visual. The three different model resources that are fields include:
+
+Columns
+Hierarchy levels
+Measures
+
+
+
+
+
+33
+Microsoft Data Analyst
+In Azure Analysis Services, the compatibility level refers to release-specific behaviors in the Analysis Services engine. For example, DirectQuery and tabular object metadata have different implementations depending on the compatibility level. In-general, you should choose the latest compatibility level supported by your platform.
+
+
+
+
+
+34
+Microsoft Data Analyst
+On the Home tab on the Power Query Editor ribbon, select the drop-down list for Append Queries. You can select Append Queries as New, which means that the output of appending will result in a new query or table, or you can select Append Queries, which will add the rows from an existing table into another.
+
+
+
+
+
+35
+Microsoft Data Analyst
+A best practice is to evaluate the column data types in Power Query Editor before you load the data into a Power BI data model. If you determine that a data type is incorrect, you can change it. You might also want to apply a format to the values in a column and change the summarization default for a column.
+
+
+
+
+
+36
+Microsoft Data Analyst
+3. What can you do to improve performance when you're getting data in Power BI? 
+
+Remove unnecessary columns and rows
+Correct. Always use the least amount of data needed for your project.
+
+
+
+
+
+37
+Microsoft Data Analyst
+In an Analytic Query, Summarizing produces a single value result. Typically, numeric columns are summarized by using summarization methods (sum, count, and many others). More complex summarizations, like a percent of grand total, can be achieved by defining measures that are written in DAX.
+
+
+
+
+
+38
+Microsoft Data Analyst
+In an Analytic Query, filtering, or slicing, targets the data of relevance. In Power BI reports, filters can be applied to three different scopes: the entire report, a specific page, or a specific visual. Filtering is also applied in the background when row-level security (RLS) is enforced.
+
+
+
+
+
+39
+Microsoft Data Analyst
+It's good practice to change uncommon or unhelpful query names to names that are more obvious or that the user is more familiar with. For instance, if you import a view, the view might have a name that contains a prefix of v, such as vProduct. People might find this name unclear and confusing, so you might want to remove the prefix.
+
+
+
+
+
+40
+General
+A fiscal year is a period of 12 consecutive months chosen by a business or organization for financial reporting purposes. It may or may not correspond to a calendar year. For example, a company might choose to have its fiscal year begin on July 1 and end on June 30 of the following year.
+
+
+
+
+
+41
+Microsoft Data Analyst
+2. If you have two queries that have different data but the same column headers, and you want to combine both tables into one query with all the combined rows, which operation should you perform? 
+
+Append
+  Correct. Append will take two tables and combine it into one query. The combined query will have more rows while keeping the same number of columns.
+Merge
+Combine Column
+
+
+
+
+
+42
+General
+Some organizations use fiscal years for tax purposes. For example, the federal government's fiscal year runs from October 1 to September 30 of the following year. This means that when the government passes its annual budget, it is for the upcoming fiscal year, not the upcoming calendar year.
+
+
+
+
+
+43
+BillyBot
+A progress bill is a credit against WIP. The progress bill amount appears on the client’s invoice but does not relieve any WIP. Instead, it adds to the client’s balance due. When you finally bill the client’s WIP, you will apply the progress amount against the WIP to reach the net balance due.
+
+
+
+
+1
+Microsoft Data Analyst
+
+
+
+
+
+2
+Microsoft Data Analyst
+
+
+
+
+
+3
+Microsoft Data Analyst
+
+
+
+
+
+4
+Microsoft Data Analyst
+
+
+
+
+
+5
+Microsoft Data Analyst
+
+
+
+
+
+6
+Microsoft Data Analyst
+
+
+
+
+
+7
+Microsoft Data Analyst
+
+
+
+
+
+8
+Microsoft Data Analyst
+
+
+
+
+
+9
+Microsoft Data Analyst
+
+
+
+
+
+10
+Microsoft Data Analyst
+
+
+
+
+
+11
+Microsoft Data Analyst
+
+
+
+
+
+12
+Microsoft Data Analyst
+
 
 
 
