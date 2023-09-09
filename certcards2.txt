@@ -1,52 +1,5 @@
 
 
-6
-Microsoft Data Analyst
-An analytic query has three phases that are implemented in the following order:
-
-Filter
-Group
-Summarize
-
-
-
-
-
-7
-Microsoft Data Analyst
-By removing prefixes or suffixes that you might use in table names and instead using them in a simple format, you will help avoid confusion.
-
-
-
-
-
-8
-Power Virtual Agents
-Generative answers works well with a large variety of question types. However, there are certain types of questions that may produce less-helpful responses, including:
-
-personal questions
-questions that require authenticated access to content
-questions for each there's no related content at the specified URL
-
-
-
-
-
-9
-Microsoft Data Analyst
-A good guideline to remember is that if you can translate a transformation into a Select SQL statement, which includes operators and clauses such as GROUP BY, SORT BY, WHERE, UNION ALL, and JOIN, you can use query folding.
-
-
-
-
-
-10
-Microsoft Data Analyst
-Go to Home on the Power Query Editor ribbon and select the Merge Queries drop-down menu, where you can select Merge Queries as New. This selection will open a new window, where you can choose the tables that you want to merge from the drop-down list, and then select the column that is matching between the tables, which in the example case is orderid.
-
-
-
-
 
 11
 General
