@@ -1,36 +1,6 @@
 
 
 
-11
-General
-Fiscal years are commonly used by businesses, governments, and nonprofit organizations. They are used to keep track of financial performance, including revenue, expenses, and profits.
-
-
-
-
-
-12
-Microsoft Data Analyst
-An optimal model adheres to star schema design principles. Star schema refers to a design approach that's commonly used by relational data warehouse designers because it presents a user-friendly structure and it supports high-performance analytic queries.
-
-
-
-
-
-13
-Microsoft Data Analyst
-Generally, fact tables contain numerous rows. As time passes, fact table rows accumulate. In analytic queries (which will be defined later in this module), fact table data is summarized to produce values like sales and quantity.
-
-
-
-
-
-14
-Microsoft Data Analyst
-You can use the Pivot Column feature to convert your flat data into a table that contains an aggregate value for each unique value in a column. For example, you might want to use this feature to summarize data by using different math functions such as Count, Minimum, Maximum, Median, Average, or Sum.
-
-
-
 
 
 15
@@ -306,6 +276,8 @@ A progress bill is a credit against WIP. The progress bill amount appears on the
 
 1
 Microsoft Data Analyst
+You develop a Power BI model in Power BI Desktop, and once published to a workspace in the Power BI service, it’s then known as a dataset. A dataset is a Power BI artifact that’s a source of data for visualizations in Power BI reports and dashboards.
+
 
 
 
@@ -313,6 +285,8 @@ Microsoft Data Analyst
 
 2
 Microsoft Data Analyst
+Not all datasets originate from models developed in Power BI Desktop. Some datasets represent connections to external-hosted models in AAS or SSAS. Others can represent real-time data structures, including push datasets, streaming datasets, or hybrid datasets. This module is concerned only with models developed in Power BI Desktop.
+
 
 
 
@@ -320,7 +294,11 @@ Microsoft Data Analyst
 
 3
 Microsoft Data Analyst
+Table storage mode settings determine the model framework, which can be either import, DirectQuery, or composite. The following units in this module describe each of these frameworks and provides guidance on their use.
 
+An import model comprises tables that have their storage mode property set to Import.
+A DirectQuery model comprises tables that have their storage mode property set to DirectQuery, and they belong to the same source group. Source group is described later in this module.
+A composite model comprises more than one source group.
 
 
 
