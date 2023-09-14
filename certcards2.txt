@@ -150,7 +150,7 @@ A best practice is to evaluate the column data types in Power Query Editor befor
 
 36
 Microsoft Data Analyst
-3. What can you do to improve performance when you're getting data in Power BI? 
+ What can you do to improve performance when you're getting data in Power BI? 
 
 Remove unnecessary columns and rows
 Correct. Always use the least amount of data needed for your project.
