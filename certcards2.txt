@@ -259,13 +259,13 @@ Power BI imposes limits on how often scheduled refresh operations can occur. Itâ
 
 5
 Microsoft Data Analyst
-
-
+Power BI imposes dataset size restrictions, which limit the size of a model. When you publish the model to a shared capacity, thereâ€™s a 1-GB limit per dataset. When this size limit is exceeded, the dataset will fail to refresh. 
 
 
 
 6
 Microsoft Data Analyst
+When you publish an import model to a dedicated capacity (also known as Premium capacities), it can grow beyond 10-GB, providing you enable the Large dataset storage format setting for the capacity.
 
 
 
