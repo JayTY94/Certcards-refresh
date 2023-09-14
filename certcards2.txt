@@ -250,6 +250,8 @@ A composite model comprises more than one source group.
 
 4
 Microsoft Data Analyst
+Power BI imposes limits on how often scheduled refresh operations can occur. It’s up to eight times per day in a shared capacity, and up to 48 times per day in a dedicated capacity.
+
 
 
 
