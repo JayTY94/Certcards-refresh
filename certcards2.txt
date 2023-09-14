@@ -273,7 +273,7 @@ When you publish an import model to a dedicated capacity (also known as Premium 
 
 7
 Microsoft Data Analyst
-
+By default, to refresh a table, Power BI removes all data and reloads it again. These operations can place an unacceptable burden on source systems, especially for large fact tables. To reduce this burden, you can set up the incremental refresh feature. Incremental refresh automates the creation and management of time-period partitions, and intelligently update only those partitions that require refresh.
 
 
 
