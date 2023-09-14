@@ -2,61 +2,6 @@
 
 
 
-
-15
-Microsoft Data Analyst
-All DirectQuery and Dual storage mode data sources must have the back-end server processing abilities to create a direct connection, which means that query folding is an automatic capability that you can use. If all transformations can be reduced to a single Select statement, then query folding can occur.
-
-
-
-
-
-16
-General
-To use the Visio addin in excel
-  Go to Home>Add ins>Visio
-  select the type you want
-  the basic table that corresponds to the flowchart is created.
-
-
-
-
-
-17
-Microsoft Data Analyst
-Dimension tables describe your business entities, which commonly represent people, places, products, or concepts. A date dimension table, which contains one row for each date, is a common example of a concept dimension table.
-
-
-
-
-
-18
-Microsoft Data Analyst
-Select View on the ribbon, and under Data Preview, you can choose from a few options. To understand data anomalies and statistics, select the Column Distribution, Column Quality, and Column Profile options.
-
-
-
-
-
-19
-Microsoft Data Analyst
-An important and enabling part of Power BI is the multitude of data connectors that are included. Whether the data you want is in Excel or a Microsoft SQL Server database, in Azure or Oracle, or in a service like Facebook, Salesforce, or MailChimp, Power BI has built-in data connectors that let you easily connect to that data, filter it if necessary, and bring it into your dataset.
-
-
-
-
-
-20
-1
-Microsoft Data Analyst
-Power BI Query Error: Timeout expired
-
-This error indicates that you've pulled too much data according to your organization's policies. Administrators incorporate this policy to avoid slowing down a different application or suite of applications that might also be using that database.
-
-
-
-
-
 21
 Microsoft Data Analyst
 Occasionally, you might find that your data sources contain null values. For example, a freight amount on a sales order mgiht have a null value if it's synonymous with zero. If the value stays null, the averages will not calculate correctly. One solution would be to change the nulls to zero, which will produce the more accurate freight average.
