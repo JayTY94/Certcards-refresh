@@ -228,13 +228,15 @@ By default, to refresh a table, Power BI removes all data and reloads it again. 
 
 8
 Microsoft Data Analyst
-
+An import model and a DirectQuery model only comprise a single source group. When there’s more than one source group, the model framework is known as a composite model. 
 
 
 
 
 9
 Microsoft Data Analyst
+DirectQuery is also useful when the source database enforces row-level security (RLS). Instead of replicating RLS rules in your Power BI model, the source data base can enforce its rules. This approach works only for some relational databases, and it involves setting up single sign-on for the dataset data source. For more information, see Azure SQL Database with DirectQuery.
+
 
 
 
