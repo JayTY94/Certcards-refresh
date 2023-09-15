@@ -2,58 +2,6 @@
 
 
 
-21
-Microsoft Data Analyst
-Occasionally, you might find that your data sources contain null values. For example, a freight amount on a sales order mgiht have a null value if it's synonymous with zero. If the value stays null, the averages will not calculate correctly. One solution would be to change the nulls to zero, which will produce the more accurate freight average.
-
-Replace Values
-Replace one value with another in the selected columns
-Value to find
-  null
-Replace with
-  0
-
-
-
-
-
-22
-Microsoft Data Analyst
-An analytic query is a query that produces a result from a data model. Each Power BI visual, in the background, submits an analytic query to Power BI to query the model. The analytic query is written as a Data Analysis Expressions (DAX) query statement.
-
-
-
-
-
-23
-Microsoft Data Analyst
-Profiling data is about studying the nuances of the data: determining anomalies, examining and developing the underlying data structures, and querying data statistics such as row counts, value distributions, minimum and maximum values, averages, and so on.
-
-
-
-
-
-24
-Microsoft Data Analyst
-In a Power BI Desktop model design, which type of object do you create to enforce row-level security? 
-
-  Role
-  A role consists of one or more rules, which are DAX formulas that are used to filter table rows. Roles define row-level security.
-  NOT
-  Table
-  Column
-  Measure
-
-
-
-
-
-25
-Microsoft Data Analyst
-Authentication method(s) for SQL Server databases in Power BI:
-Database - Use your database credentials. For instance, SQL Server has its own sign-in and authentication system that is sometimes used. If the database administrator gave you a unique sign-in to the database, you might need to enter those credentials on the Database tab.
-
-
 
 
 
