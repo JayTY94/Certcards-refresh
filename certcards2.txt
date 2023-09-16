@@ -1,57 +1,6 @@
 
 
 
-
-
-
-
-26
-Microsoft Data Analyst
-A best practice is to give your tables, columns, and measures descriptive business terms and underscores with space. Be consistent with abbreviations, prefixes, and words like "number" and "ID".
-
-
-
-
-
-27
-Microsoft Data Analyst
-When using DirectQuery for SQL databases, such as the case for our scenario, make sure that you aren't pulling data from stored procedures or common table expressions (CTEs).
-
-
-
-
-
-28
-Microsoft Data Analyst
-When you append queries, you'll be adding rows of data to another table or query. For example, you could have two tables, one with 300 rows and another with 100 rows, and when you append queries, you'll end up with 400 rows. When you merge queries, you'll be adding columns from one table (or query) into another. To merge two tables, you must have a column that is the key between the two tables.
-
-
-
-
-
-29
-Microsoft Data Analyst
-In what order does an analytic query implement its phases? 
-
-Filter, Group, Summarize
-Filter is used to first restrict the data to query. Group then divides the query result into groups. Summarize then produces single value aggregations for each group.
-
-
-
-
-
-30
-Microsoft Data Analyst
-Which of the following statements is correct regarding a star schema design? 
-  Fact tables store accumulations of business events, like sales orders or currency exchange rates.
-  NOT
-  Fact tables store accumulations of business entities.
-  Fact tables must have a unique column.
-
-
-
-
-
 31
 Microsoft Data Analyst
 Column quality and Column distribution are shown in the graphs above the columns of data. Columns quality shows you the percentages of data that is valid, in error, or empty. In an ideal solution, you want 100 percent of the data to be valid.
