@@ -240,14 +240,17 @@ It is now possible to view and edit the YAML file that defines a specific topic 
 
 7
 Power Virtual Agents
+Application Insights is an extension of Azure Monitor and provides application performance monitoring (APM) features. APM tools are useful to monitor applications from development, through test, and into production in the following ways:
 
+Proactively understand how an application is performing.
+Reactively review application execution data to determine the cause of an incident.
 
 
 
 
 8
 Power Virtual Agents
-
+Within Power Virtual Agents, administrators can connect their Power Virtual Agent bot to an instance of Application Insights within the settings area using a connection string, and specify to log incoming and outgoing messages, whether or not to log sensitive activity properties and node actions by default.
 
 
 
