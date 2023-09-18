@@ -193,20 +193,23 @@ DirectQuery is also useful when the source database enforces row-level security 
 
 1
 Power Virtual Agents
-
+To assist in the upgrade experience, at launch, there is a new clone feature that is now available on bots built using Power Virtual Agents (classic).
+This feature will clone the selected Power Virtual Agents classic bot and create a new bot that uses the latest unified authoring version
 
 
 
 
 2
 Power Virtual Agents
-
+Conversation Start: Previously, Bot makers had to customize the bot with additional code to automatically begin a conversation with Power Virtual Agents. This is no longer required, and the Conversation Start system topic begins the conversation automatically and is turned on by default today. 
 
 
 
 
 3
 Power Virtual Agents
+In Power Virtual Agents unified authoring release, you can now send an entire Object, whether that be a Dataverse record or a collection of Dataverse records, to send back using the text output of the Power Virtual Agents return statement.
+
 
 
 
@@ -214,13 +217,15 @@ Power Virtual Agents
 
 4
 Power Virtual Agents
-
+Dataverse lets you securely store and manage data that's used by business applications. Data within Dataverse is stored within a set of tables. A table is a set of rows (formerly referred to as records) and columns (formerly referred to as fields/attributes). 
 
 
 
 
 5
 Power Virtual Agents
+As a result of the new authoring capabilities in Power Virtual Agent, a bot author/maker can then retrieve that object from Power Automate, use the parse node feature and using the new variable features to extract the information from that object and format it as required (for example, within a custom Adaptive Card)
+
 
 
 
@@ -228,7 +233,7 @@ Power Virtual Agents
 
 6
 Power Virtual Agents
-
+It is now possible to view and edit the YAML file that defines a specific topic by switching to code view. Changes should update in real time, but this paragraph I'm reading is a mess, so I'm not sure on that last bit.
 
 
 
