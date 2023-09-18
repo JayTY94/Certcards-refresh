@@ -191,78 +191,141 @@ DirectQuery is also useful when the source database enforces row-level security 
 
 
 
+1
+Power Virtual Agents
+
+
+
+
+
+2
+Power Virtual Agents
+
+
+
+
+
+3
+Power Virtual Agents
+
+
+
+
+
+4
+Power Virtual Agents
+
+
+
+
+
+5
+Power Virtual Agents
+
+
+
+
+
+6
+Power Virtual Agents
+
+
+
+
+
+7
+Power Virtual Agents
+
+
+
+
+
+8
+Power Virtual Agents
+
+
+
+
+
+9
+Power Virtual Agents
+
+
+
+
+
 10
-Microsoft Data Analyst
+Power Virtual Agents
 
 
 
 
 
 11
-Microsoft Data Analyst
+Power Virtual Agents
 
 
 
 
 
 12
-Microsoft Data Analyst
+Power Virtual Agents
 
 
 
 
 
 13
-Microsoft Data Analyst
+Power Virtual Agents
 
 
 
 
 
 14
-Microsoft Data Analyst
+Power Virtual Agents
 
 
 
 
 
 15
-Microsoft Data Analyst
+Power Virtual Agents
 
 
 
 
 
 16
-Microsoft Data Analyst
+Power Virtual Agents
 
 
 
 
 
 17
-Microsoft Data Analyst
+Power Virtual Agents
 
 
 
 
 
 18
-Microsoft Data Analyst
+Power Virtual Agents
 
 
 
 
 
 19
-Microsoft Data Analyst
+Power Virtual Agents
 
 
 
 
 
 20
-Microsoft Data Analyst
+Power Virtual Agents
 
 
 
