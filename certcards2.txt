@@ -289,21 +289,25 @@ When you set up an import table with incremental refresh, you can enable the Get
 
 5
 MS Data Analyst
-
+Choose the import model framework whenever possible. This framework offers you the most options, design flexibility, and delivers fast performance. Be sure to apply data reduction techniques to ensure that Power BI loads the least amount of data possible.
 
 
 
 
 6
 MS Data Analyst
-
+ In Power BI Desktop, it’s always possible to convert a DirectQuery table to an import table. But it’s not possible to convert an import table to a DirectQuery table.
 
 
 
 
 7
 MS Data Analyst
+Choose the composite model framework to:
 
+  Boost the query performance of a DirectQuery model.
+  Deliver near real-time query results from an import model.
+  Extend a Power BI dataset (or AAS model) with additional data.
 
 
 
