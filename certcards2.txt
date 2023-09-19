@@ -314,13 +314,22 @@ Choose the composite model framework to:
 
 8
 MS Data Analyst
+Geoffrey is a data modeler at Adventure Works who developed a DirectQuery model that connects to the data warehouse. To improve the query performance of higher-grain sales queries, Geoffrey added an import aggregation table. What else should Geoffrey do to improve query performance of the higher-grain queries? 
 
+
+Set related dimension tables to dual storage mode.
+Correct. Setting the related dimension tables to dual storage mode will allow Power BI to satisfy higher-grain queries entirely from cache.
 
 
 
 
 9
 MS Data Analyst
+2. Breana is a data modeler at Adventure Works who developed a manufacturing model, which is an import model. Breana needs to ensure that manufacturing reports deliver real-time results. Which type of table should Breana create? 
+
+Hybrid table.
+Correct. A hybrid table includes a DirectQuery partition for the current period to deliver near-real time results.
+
 
 
 
@@ -328,6 +337,11 @@ MS Data Analyst
 
 10
 MS Data Analyst
+3. Mousef is a business analyst at Adventure Works who wants to create a new model by extending the sales dataset, which is delivered by IT. Mousef wants to add a new table of census population data sourced from a web page. Which model framework should Mousef use? 
+
+Composite.
+Correct. A composite model would comprise a DirectQuery source group containing the sales dataset tables, and an import source group containing the imported web page data.
+
 
 
 
