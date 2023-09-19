@@ -257,13 +257,15 @@ Within Power Virtual Agents, administrators can connect their Power Virtual Agen
 
 1
 MS Data Analyst
-
+You can add user-defined aggregation tables to a DirectQuery model. User-defined aggregation tables are special model tables that are hidden (from users, calculations, and RLS). They work best when they satisfy higher-grain analytic queries over large fact tables. 
 
 
 
 
 2
 MS Data Analyst
+A significant DirectQuery model limitation is that not all Power Query (M) transformations are possible because these queries must translate to native queries that are understood by source systems. So, for example, it’s not possible to use pivot or unpivot transformations.
+
 
 
 
