@@ -273,13 +273,15 @@ A significant DirectQuery model limitation is that not all Power Query (M) trans
 
 3
 MS Data Analyst
-
+Relationships between tables from different source groups are known as limited relationships. A model relationship is limited when the Power BI can’t determine a “one” side of a relationship. Limited relationships may result in different evaluations of model queries and calculations. 
 
 
 
 
 4
 MS Data Analyst
+When you set up an import table with incremental refresh, you can enable the Get the latest data in real-time with DirectQuery option. By enabling this option, Power BI automatically creates a table partition that uses DirectQuery storage mode. In this case, the table becomes a hybrid table, meaning it has import partitions to store older data, and a single DirectQuery partition for current data. This is a Premium feature.
+
 
 
 
