@@ -315,11 +315,8 @@ The Model view in Power BI desktop provides many options within the column prope
 Under the General tab, you can:
 
   Edit the name and description of the column.
-
   Add synonyms that can be used to identify the column when you are using the Q&A feature.
-
   Add a column into a folder to further organize the table structure.
-
   Hide or show the column.
 
 
@@ -330,7 +327,6 @@ The Model view in Power BI desktop provides many options within the column prope
 Under the Formatting tab, you can:
 
   Change the data type.
-
   Format the date.
 
 
@@ -341,11 +337,8 @@ The Model view in Power BI desktop provides many options within the column prope
 Under the Advanced tab, you can:
 
   Sort by a specific column.
-
   Assign a specific category to the data.
-
   Summarize the data.
-
   Determine if the column or table contains null values.
 
 
