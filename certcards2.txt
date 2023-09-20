@@ -1,45 +1,6 @@
 
 
 
-31
-Microsoft Data Analyst
-Column quality and Column distribution are shown in the graphs above the columns of data. Columns quality shows you the percentages of data that is valid, in error, or empty. In an ideal solution, you want 100 percent of the data to be valid.
-
-
-
-
-
-32
-Microsoft Data Analyst
-Fields is a collective term that is used to describe a model resource that can be used to configure a visual. The three different model resources that are fields include:
-
-Columns
-Hierarchy levels
-Measures
-
-
-
-
-
-33
-Microsoft Data Analyst
-In Azure Analysis Services, the compatibility level refers to release-specific behaviors in the Analysis Services engine. For example, DirectQuery and tabular object metadata have different implementations depending on the compatibility level. In-general, you should choose the latest compatibility level supported by your platform.
-
-
-
-
-
-34
-Microsoft Data Analyst
-On the Home tab on the Power Query Editor ribbon, select the drop-down list for Append Queries. You can select Append Queries as New, which means that the output of appending will result in a new query or table, or you can select Append Queries, which will add the rows from an existing table into another.
-
-
-
-
-
-35
-Microsoft Data Analyst
-A best practice is to evaluate the column data types in Power Query Editor before you load the data into a Power BI data model. If you determine that a data type is incorrect, you can change it. You might also want to apply a format to the values in a column and change the summarization default for a column.
 
 
 
