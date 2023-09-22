@@ -1,52 +1,6 @@
 
 
 
-6
-MS Data Analyst
-Breana is a data modeler at Adventure Works who developed a manufacturing model, which is an import model. Breana needs to ensure that manufacturing reports deliver real-time results. Which type of table should Breana create? 
-
-Hybrid table.
-Correct. A hybrid table includes a DirectQuery partition for the current period to deliver near-real time results.
-
-
-
-
-
-7
-MS Data Analyst
-Mousef is a business analyst at Adventure Works who wants to create a new model by extending the sales dataset, which is delivered by IT. Mousef wants to add a new table of census population data sourced from a web page. Which model framework should Mousef use? 
-
-Composite.
-Correct. A composite model would comprise a DirectQuery source group containing the sales dataset tables, and an import source group containing the imported web page data.
-
-
-
-
-
-8
-Microsoft Data Analyst
-DirectQuery is also useful when the source database enforces row-level security (RLS). Instead of replicating RLS rules in your Power BI model, the source data base can enforce its rules. This approach works only for some relational databases, and it involves setting up single sign-on for the dataset data source. For more information, see Azure SQL Database with DirectQuery.
-
-
-
-
-
-9
-Power Virtual Agents
-Conversation Start: Previously, Bot makers had to customize the bot with additional code to automatically begin a conversation with Power Virtual Agents. This is no longer required, and the Conversation Start system topic begins the conversation automatically and is turned on by default today.
-
-
-
-
-
-10
-MS Data Analyst
-Relationships between tables from different source groups are known as limited relationships. A model relationship is limited when the Power BI can’t determine a “one” side of a relationship. Limited relationships may result in different evaluations of model queries and calculations.
-
-
-
-
-
 11
 Power Virtual Agents
 As a result of the new authoring capabilities in Power Virtual Agent, a bot author/maker can then retrieve that object from Power Automate, use the parse node feature and using the new variable features to extract the information from that object and format it as required (for example, within a custom Adaptive Card)
