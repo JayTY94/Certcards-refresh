@@ -1,48 +1,6 @@
 
 
 
-11
-Power Virtual Agents
-As a result of the new authoring capabilities in Power Virtual Agent, a bot author/maker can then retrieve that object from Power Automate, use the parse node feature and using the new variable features to extract the information from that object and format it as required (for example, within a custom Adaptive Card)
-
-
-
-
-
-12
-Microsoft Data Analyst
-By default, to refresh a table, Power BI removes all data and reloads it again. These operations can place an unacceptable burden on source systems, especially for large fact tables. To reduce this burden, you can set up the incremental refresh feature. Incremental refresh automates the creation and management of time-period partitions, and intelligently update only those partitions that require refresh.
-
-
-
-
-
-13
-Power Virtual Agents
-Application Insights is an extension of Azure Monitor and provides application performance monitoring (APM) features. APM tools are useful to monitor applications from development, through test, and into production in the following ways:
-
-Proactively understand how an application is performing.
-Reactively review application execution data to determine the cause of an incident.
-
-
-
-
-
-14
-Microsoft Data Analyst
-It's good practice to change uncommon or unhelpful query names to names that are more obvious or that the user is more familiar with. For instance, if you import a view, the view might have a name that contains a prefix of v, such as vProduct. People might find this name unclear and confusing, so you might want to remove the prefix.
-
-
-
-
-
-15
-MS Data Analyst
-You can add user-defined aggregation tables to a DirectQuery model. User-defined aggregation tables are special model tables that are hidden (from users, calculations, and RLS). They work best when they satisfy higher-grain analytic queries over large fact tables.
-
-
-
-
 
 16
 Power Virtual Agents
@@ -258,14 +216,21 @@ Under the Advanced tab, you can:
 
 4
 MS Data Analyst
-
+Source data tables are mature and ready for immediate use. If you have a table as such, bring it into your data model and don't use any other methods that are outlined in this section. We recommend that you use a source date table because it is likely shared with other tools that you might be using in addition to Power BI.
 
 
 
 
 5
 MS Data Analyst
+To create a date table in Power Query:
 
+  New Query > Blank Query
+  = List.Dates(#date(2011,05,31), 365*10, #duration(1,0,0,0))
+    Makes a list of dates starting May 31, 2011, 1 day increment, ~10 years
+  Transform > Convert > To Table
+  Convert datatype of column to Date
+  Create additional columns for hierarchy
 
 
 
