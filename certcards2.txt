@@ -237,21 +237,21 @@ To create a date table in Power Query:
 
 6
 MS Data Analyst
-
+Normalization vs. denormalization: Normalization is the term used to describe data that’s stored in a way that reduces repetitious data. In contrast, denormalization refers to storing product details beyond the key in a sales table. Star schemas are typically denormalized to improve performance and ensure accurate results.
 
 
 
 
 7
 MS Data Analyst
-
+Creating a hierarchy in Power BI is straightforward. You can right-click on the field you want to set as level 1 of the hierarchy in the fields list and select "Create Hierarchy". You can then add additional levels to the hierarchy by dragging and dropping or using the “Add to hierarchy” option
 
 
 
 
 8
 MS Data Analyst
-
+A Power BI hierarchy is a collection of related fields within a dataset, arranged in a way that displays one element ranked over the other fields. It is a useful structure for drill-down and data exploration in reports.
 
 
 
