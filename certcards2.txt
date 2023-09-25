@@ -258,21 +258,23 @@ A Power BI hierarchy is a collection of related fields within a dataset, arrange
 
 9
 MS Data Analyst
-
+A hierarchy consists of multiple levels, where one level is the parent of another level. For example, a category, subcategory, and product can form a hierarchy. There is no limit on the number of levels; it can be one or more than ten levels.
 
 
 
 
 10
 MS Data Analyst
-
+You can use the PATH() function to return a string which contains a delimited list of IDs, starting with the top/root of a hierarchy and ending with the specified ID. For example, in an Employees table that contains employees, their managers, and their managers’ managers, you can return the path that connects an employee to his or her manager.
 
 
 
 
 11
 MS Data Analyst
+The PATH() function is used to convert a parent-child relationship in a delimited text format. The syntax of the PATH() function is 
 
+  PATH(<ID_columnName>, <parent_columnName>).
 
 
 
