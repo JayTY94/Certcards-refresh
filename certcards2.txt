@@ -281,7 +281,7 @@ The PATH() function is used to convert a parent-child relationship in a delimite
 
 12
 MS Data Analyst
-
+In the syntax of Power Query statements, the # character is not used as a special character or escape sequence. It is primarily used in M to represent special characters such as tabs, carriage returns, and line feeds.
 
 
 
