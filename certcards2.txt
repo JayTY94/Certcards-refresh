@@ -2,55 +2,6 @@
 
 
 
-16
-Power Virtual Agents
-It is now possible to view and edit the YAML file that defines a specific topic by switching to code view. Changes should update in real time, but this paragraph I'm reading is a mess, so I'm not sure on that last bit.
-
-
-
-
-
-17
-Microsoft Data Analyst
- What can you do to improve performance when you're getting data in Power BI? 
-
-Remove unnecessary columns and rows
-Correct. Always use the least amount of data needed for your project.
-
-
-
-
-
-18
-MS Data Analyst
-Choose the composite model framework to:
-
-  Boost the query performance of a DirectQuery model.
-  Deliver near real-time query results from an import model.
-  Extend a Power BI dataset (or AAS model) with additional data.
-
-
-
-
-
-19
-Microsoft Data Analyst
-You develop a Power BI model in Power BI Desktop, and once published to a workspace in the Power BI service, it’s then known as a dataset. A dataset is a Power BI artifact that’s a source of data for visualizations in Power BI reports and dashboards.
-
-
-
-
-
-20
-Microsoft Data Analyst
-2. If you have two queries that have different data but the same column headers, and you want to combine both tables into one query with all the combined rows, which operation should you perform? 
-
-Append
-  Correct. Append will take two tables and combine it into one query. The combined query will have more rows while keeping the same number of columns.
-Merge
-Combine Column
-
-
 
 
 
