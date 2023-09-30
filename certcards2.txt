@@ -2,53 +2,6 @@
 
 
 
-
-
-
-21
-Power Virtual Agents
-Within Power Virtual Agents, administrators can connect their Power Virtual Agent bot to an instance of Application Insights within the settings area using a connection string, and specify to log incoming and outgoing messages, whether or not to log sensitive activity properties and node actions by default.
-
-
-
-
-
-22
-Microsoft Data Analyst
-Power BI imposes limits on how often scheduled refresh operations can occur. It’s up to eight times per day in a shared capacity, and up to 48 times per day in a dedicated capacity.
-
-
-
-
-
-23
-MS Data Analyst
-When you set up an import table with incremental refresh, you can enable the Get the latest data in real-time with DirectQuery option. By enabling this option, Power BI automatically creates a table partition that uses DirectQuery storage mode. In this case, the table becomes a hybrid table, meaning it has import partitions to store older data, and a single DirectQuery partition for current data. This is a Premium feature.
-
-
-
-
-
-24
-MS Data Analyst
-Geoffrey is a data modeler at Adventure Works who developed a DirectQuery model that connects to the data warehouse. To improve the query performance of higher-grain sales queries, Geoffrey added an import aggregation table. What else should Geoffrey do to improve query performance of the higher-grain queries? 
-
-
-Set related dimension tables to dual storage mode.
-Correct. Setting the related dimension tables to dual storage mode will allow Power BI to satisfy higher-grain queries entirely from cache.
-
-
-
-
-
-25
-MS Data Analyst
- In Power BI Desktop, it’s always possible to convert a DirectQuery table to an import table. But it’s not possible to convert an import table to a DirectQuery table.
-
-
-
-
-
 26
 MS Data Analyst
 A significant DirectQuery model limitation is that not all Power Query (M) transformations are possible because these queries must translate to native queries that are understood by source systems. So, for example, it’s not possible to use pivot or unpivot transformations.
