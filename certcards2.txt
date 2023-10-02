@@ -2,47 +2,6 @@
 
 
 
-26
-MS Data Analyst
-A significant DirectQuery model limitation is that not all Power Query (M) transformations are possible because these queries must translate to native queries that are understood by source systems. So, for example, it’s not possible to use pivot or unpivot transformations.
-
-
-
-
-
-27
-General
-Some organizations use fiscal years for tax purposes. For example, the federal government's fiscal year runs from October 1 to September 30 of the following year. This means that when the government passes its annual budget, it is for the upcoming fiscal year, not the upcoming calendar year.
-
-
-
-
-
-28
-Power Virtual Agents
-Dataverse lets you securely store and manage data that's used by business applications. Data within Dataverse is stored within a set of tables. A table is a set of rows (formerly referred to as records) and columns (formerly referred to as fields/attributes).
-
-
-
-
-
-29
-Microsoft Data Analyst
-Not all datasets originate from models developed in Power BI Desktop. Some datasets represent connections to external-hosted models in AAS or SSAS. Others can represent real-time data structures, including push datasets, streaming datasets, or hybrid datasets. This module is concerned only with models developed in Power BI Desktop.
-
-
-
-
-
-30
-Power Virtual Agents
-To assist in the upgrade experience, at launch, there is a new clone feature that is now available on bots built using Power Virtual Agents (classic).
-This feature will clone the selected Power Virtual Agents classic bot and create a new bot that uses the latest unified authoring version
-
-
-
-
-
 31
 Microsoft Data Analyst
 Power BI imposes dataset size restrictions, which limit the size of a model. When you publish the model to a shared capacity, there’s a 1-GB limit per dataset. When this size limit is exceeded, the dataset will fail to refresh.
