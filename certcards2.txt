@@ -1,67 +1,16 @@
-
-
-
-
-31
-Microsoft Data Analyst
-Power BI imposes dataset size restrictions, which limit the size of a model. When you publish the model to a shared capacity, there’s a 1-GB limit per dataset. When this size limit is exceeded, the dataset will fail to refresh.
-
-
-
-
-
-32
-Power Virtual Agents
-In Power Virtual Agents unified authoring release, you can now send an entire Object, whether that be a Dataverse record or a collection of Dataverse records, to send back using the text output of the Power Virtual Agents return statement.
-
-
-
-
-
-33
-Microsoft Data Analyst
-In an Analytic Query, Summarizing produces a single value result. Typically, numeric columns are summarized by using summarization methods (sum, count, and many others). More complex summarizations, like a percent of grand total, can be achieved by defining measures that are written in DAX.
-
-
-
-
-
-34
-MS Data Analyst
-Choose the import model framework whenever possible. This framework offers you the most options, design flexibility, and delivers fast performance. Be sure to apply data reduction techniques to ensure that Power BI loads the least amount of data possible.
-
-
-
-
-
-35
-Microsoft Data Analyst
-In an Analytic Query, filtering, or slicing, targets the data of relevance. In Power BI reports, filters can be applied to three different scopes: the entire report, a specific page, or a specific visual. Filtering is also applied in the background when row-level security (RLS) is enforced.
-
-
-
-
-
-
 1
 MS Data Analyst
-The Model view in Power BI desktop provides many options within the column properties that you can view or update. A simple method to get to this menu to update the tables and fields is by Ctrl+clicking or Shift+clicking items on this page.
-Under the General tab, you can:
+Source data tables are mature and ready for immediate use. If you have a table as such, bring it into your data model and don't use any other methods that are outlined in this section. We recommend that you use a source date table because it is likely shared with other tools that you might be using in addition to Power BI.
 
-  Edit the name and description of the column.
-  Add synonyms that can be used to identify the column when you are using the Q&A feature.
-  Add a column into a folder to further organize the table structure.
-  Hide or show the column.
+
 
 
 
 2
 MS Data Analyst
-The Model view in Power BI desktop provides many options within the column properties that you can view or update. A simple method to get to this menu to update the tables and fields is by Ctrl+clicking or Shift+clicking items on this page.
-Under the Formatting tab, you can:
+Normalization vs. denormalization: Normalization is the term used to describe data that’s stored in a way that reduces repetitious data. In contrast, denormalization refers to storing product details beyond the key in a sales table. Star schemas are typically denormalized to improve performance and ensure accurate results.
 
-  Change the data type.
-  Format the date.
+
 
 
 
@@ -77,9 +26,18 @@ Under the Advanced tab, you can:
 
 
 
+
+
 4
 MS Data Analyst
-Source data tables are mature and ready for immediate use. If you have a table as such, bring it into your data model and don't use any other methods that are outlined in this section. We recommend that you use a source date table because it is likely shared with other tools that you might be using in addition to Power BI.
+The Model view in Power BI desktop provides many options within the column properties that you can view or update. A simple method to get to this menu to update the tables and fields is by Ctrl+clicking or Shift+clicking items on this page.
+Under the General tab, you can:
+
+  Edit the name and description of the column.
+  Add synonyms that can be used to identify the column when you are using the Q&A feature.
+  Add a column into a folder to further organize the table structure.
+  Hide or show the column.
+
 
 
 
@@ -98,37 +56,44 @@ To create a date table in Power Query:
 
 
 
+
 6
 MS Data Analyst
-Normalization vs. denormalization: Normalization is the term used to describe data that’s stored in a way that reduces repetitious data. In contrast, denormalization refers to storing product details beyond the key in a sales table. Star schemas are typically denormalized to improve performance and ensure accurate results.
+You can use the PATH() function to return a string which contains a delimited list of IDs, starting with the top/root of a hierarchy and ending with the specified ID. For example, in an Employees table that contains employees, their managers, and their managers’ managers, you can return the path that connects an employee to his or her manager.
+
 
 
 
 
 7
-MS Data Analyst
-Creating a hierarchy in Power BI is straightforward. You can right-click on the field you want to set as level 1 of the hierarchy in the fields list and select "Create Hierarchy". You can then add additional levels to the hierarchy by dragging and dropping or using the “Add to hierarchy” option
+1
+Microsoft Data Analyst
+In an Analytic Query, Summarizing produces a single value result. Typically, numeric columns are summarized by using summarization methods (sum, count, and many others). More complex summarizations, like a percent of grand total, can be achieved by defining measures that are written in DAX.
+
 
 
 
 
 8
-MS Data Analyst
-A Power BI hierarchy is a collection of related fields within a dataset, arranged in a way that displays one element ranked over the other fields. It is a useful structure for drill-down and data exploration in reports.
+Microsoft Data Analyst
+In an Analytic Query, filtering, or slicing, targets the data of relevance. In Power BI reports, filters can be applied to three different scopes: the entire report, a specific page, or a specific visual. Filtering is also applied in the background when row-level security (RLS) is enforced.
+
 
 
 
 
 9
 MS Data Analyst
-A hierarchy consists of multiple levels, where one level is the parent of another level. For example, a category, subcategory, and product can form a hierarchy. There is no limit on the number of levels; it can be one or more than ten levels.
+A Power BI hierarchy is a collection of related fields within a dataset, arranged in a way that displays one element ranked over the other fields. It is a useful structure for drill-down and data exploration in reports.
+
 
 
 
 
 10
-MS Data Analyst
-You can use the PATH() function to return a string which contains a delimited list of IDs, starting with the top/root of a hierarchy and ending with the specified ID. For example, in an Employees table that contains employees, their managers, and their managers’ managers, you can return the path that connects an employee to his or her manager.
+Power Virtual Agents
+In Power Virtual Agents unified authoring release, you can now send an entire Object, whether that be a Dataverse record or a collection of Dataverse records, to send back using the text output of the Power Virtual Agents return statement.
+
 
 
 
@@ -142,9 +107,139 @@ The PATH() function is used to convert a parent-child relationship in a delimite
 
 
 
+
 12
 MS Data Analyst
+Creating a hierarchy in Power BI is straightforward. You can right-click on the field you want to set as level 1 of the hierarchy in the fields list and select "Create Hierarchy". You can then add additional levels to the hierarchy by dragging and dropping or using the “Add to hierarchy” option
+
+
+
+
+
+13
+MS Data Analyst
+A hierarchy consists of multiple levels, where one level is the parent of another level. For example, a category, subcategory, and product can form a hierarchy. There is no limit on the number of levels; it can be one or more than ten levels.
+
+
+
+
+
+14
+Microsoft Data Analyst
+Power BI imposes dataset size restrictions, which limit the size of a model. When you publish the model to a shared capacity, there’s a 1-GB limit per dataset. When this size limit is exceeded, the dataset will fail to refresh.
+
+
+
+
+
+15
+MS Data Analyst
+Choose the import model framework whenever possible. This framework offers you the most options, design flexibility, and delivers fast performance. Be sure to apply data reduction techniques to ensure that Power BI loads the least amount of data possible.
+
+
+
+
+
+16
+MS Data Analyst
+The Model view in Power BI desktop provides many options within the column properties that you can view or update. A simple method to get to this menu to update the tables and fields is by Ctrl+clicking or Shift+clicking items on this page.
+Under the Formatting tab, you can:
+
+  Change the data type.
+  Format the date.
+
+
+
+
+
+17
+MS Data Analyst
 In the syntax of Power Query statements, the # character is not used as a special character or escape sequence. It is primarily used in M to represent special characters such as tabs, carriage returns, and line feeds.
+
+
+
+
+
+1
+MS Data Analyst
+
+
+
+
+
+2
+MS Data Analyst
+
+
+
+
+
+3
+MS Data Analyst
+
+
+
+
+
+4
+MS Data Analyst
+
+
+
+
+
+5
+MS Data Analyst
+
+
+
+
+
+6
+MS Data Analyst
+
+
+
+
+
+7
+MS Data Analyst
+
+
+
+
+
+8
+MS Data Analyst
+
+
+
+
+
+9
+MS Data Analyst
+
+
+
+
+
+10
+MS Data Analyst
+
+
+
+
+
+11
+MS Data Analyst
+
+
+
+
+
+12
+MS Data Analyst
+
 
 
 
@@ -200,9 +295,6 @@ MS Data Analyst
 
 20
 MS Data Analyst
-
-
-
 
 
 
