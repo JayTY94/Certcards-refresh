@@ -215,28 +215,32 @@ Cardinality is the measure of unique values in a table. An example of high cardi
 
 8
 MS Data Analyst
-
+You can use hierarchies to create drill-down reports, where users can navigate through the levels of the hierarchy to view more detailed information. They can also be used to create calculations and measures that aggregate data at different levels of the hierarchy 
 
 
 
 
 9
 MS Data Analyst
-
+To create a hierarchy in Power BI Desktop, go to the data view on your Power BI Desktop and select the top-level element. Right-click on that element and select ‘New hierarchy’. That will now create a new hierarchy with only the top-level element in it. To put the other elements on the hierarchy, simply drag them to the hierarchy 
 
 
 
 
 10
 MS Data Analyst
-
+Hierarchies are a way to organize data in a way where one element is ranked over the other. They allow you to drill up or down on your visual and reveal additional details.
 
 
 
 
 11
 MS Data Analyst
+There are specific considerations and limitations for hierarchies in Power BI Desktop:
 
+  Up to 10,000 items per hierarchy (across all datasets)
+  Up to five hierarchies
+  Up to five levels per hierarchy
 
 
 
