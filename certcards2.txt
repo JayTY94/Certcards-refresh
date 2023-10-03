@@ -4,23 +4,6 @@
 
 
 
-
-
-5
-MS Data Analyst
-To create a date table in Power Query:
-
-  New Query > Blank Query
-  = List.Dates(#date(2011,05,31), 365*10, #duration(1,0,0,0))
-    Makes a list of dates starting May 31, 2011, 1 day increment, ~10 years
-  Transform > Convert > To Table
-  Convert datatype of column to Date
-  Create additional columns for hierarchy
-
-
-
-
-
 6
 MS Data Analyst
 You can use the PATH() function to return a string which contains a delimited list of IDs, starting with the top/root of a hierarchy and ending with the specified ID. For example, in an Employees table that contains employees, their managers, and their managers’ managers, you can return the path that connects an employee to his or her manager.
