@@ -1,42 +1,6 @@
-1
-MS Data Analyst
-Source data tables are mature and ready for immediate use. If you have a table as such, bring it into your data model and don't use any other methods that are outlined in this section. We recommend that you use a source date table because it is likely shared with other tools that you might be using in addition to Power BI.
 
 
 
-
-
-2
-MS Data Analyst
-Normalization vs. denormalization: Normalization is the term used to describe data that’s stored in a way that reduces repetitious data. In contrast, denormalization refers to storing product details beyond the key in a sales table. Star schemas are typically denormalized to improve performance and ensure accurate results.
-
-
-
-
-
-3
-MS Data Analyst
-The Model view in Power BI desktop provides many options within the column properties that you can view or update. A simple method to get to this menu to update the tables and fields is by Ctrl+clicking or Shift+clicking items on this page.
-Under the Advanced tab, you can:
-
-  Sort by a specific column.
-  Assign a specific category to the data.
-  Summarize the data.
-  Determine if the column or table contains null values.
-
-
-
-
-
-4
-MS Data Analyst
-The Model view in Power BI desktop provides many options within the column properties that you can view or update. A simple method to get to this menu to update the tables and fields is by Ctrl+clicking or Shift+clicking items on this page.
-Under the General tab, you can:
-
-  Edit the name and description of the column.
-  Add synonyms that can be used to identify the column when you are using the Q&A feature.
-  Add a column into a folder to further organize the table structure.
-  Hide or show the column.
 
 
 
@@ -66,7 +30,6 @@ You can use the PATH() function to return a string which contains a delimited li
 
 
 7
-1
 Microsoft Data Analyst
 In an Analytic Query, Summarizing produces a single value result. Typically, numeric columns are summarized by using summarization methods (sum, count, and many others). More complex summarizations, like a percent of grand total, can be achieved by defining measures that are written in DAX.
 
