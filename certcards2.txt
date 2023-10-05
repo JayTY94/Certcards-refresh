@@ -1,49 +1,6 @@
 
 
 
-
-
-
-6
-MS Data Analyst
-You can use the PATH() function to return a string which contains a delimited list of IDs, starting with the top/root of a hierarchy and ending with the specified ID. For example, in an Employees table that contains employees, their managers, and their managers’ managers, you can return the path that connects an employee to his or her manager.
-
-
-
-
-
-7
-Microsoft Data Analyst
-In an Analytic Query, Summarizing produces a single value result. Typically, numeric columns are summarized by using summarization methods (sum, count, and many others). More complex summarizations, like a percent of grand total, can be achieved by defining measures that are written in DAX.
-
-
-
-
-
-8
-Microsoft Data Analyst
-In an Analytic Query, filtering, or slicing, targets the data of relevance. In Power BI reports, filters can be applied to three different scopes: the entire report, a specific page, or a specific visual. Filtering is also applied in the background when row-level security (RLS) is enforced.
-
-
-
-
-
-9
-MS Data Analyst
-A Power BI hierarchy is a collection of related fields within a dataset, arranged in a way that displays one element ranked over the other fields. It is a useful structure for drill-down and data exploration in reports.
-
-
-
-
-
-10
-Power Virtual Agents
-In Power Virtual Agents unified authoring release, you can now send an entire Object, whether that be a Dataverse record or a collection of Dataverse records, to send back using the text output of the Power Virtual Agents return statement.
-
-
-
-
-
 11
 MS Data Analyst
 The PATH() function is used to convert a parent-child relationship in a delimited text format. The syntax of the PATH() function is 
