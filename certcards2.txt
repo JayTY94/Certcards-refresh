@@ -164,13 +164,17 @@ I'm working with Jamie Asato on some Data visualizations. I think she prefers un
 
 14
 MS Data Analyst
+Power BI Desktop supports a feature called What-if parameters. When you create a what-if parameter, a calculated table is automatically added to your model.
 
+What-if parameters allow report users to select or filter by values that are stored in the calculated table. Measure formulas can use selected value(s) in a meaningful way. 
 
 
 
 
 15
 MS Data Analyst
+Notably, what-if calculated tables aren't related to other model tables because they're not used to propagate filters. For this reason, they're sometimes called disconnected tables.
+
 
 
 
@@ -178,15 +182,15 @@ MS Data Analyst
 
 16
 MS Data Analyst
-
+You can write a DAX formula to add a calculated column to any table in your model. The formula is evaluated for each table row and it returns a single value. When added to a DirectQuery storage mode table, the formula is evaluated by the underlying source database when the table is queried.
 
 
 
 
 17
 MS Data Analyst
-
-
+In the Fields pane, calculated columns have the following icon.
+https://i.ytimg.com/vi/ePPi1LLX0sA/maxresdefault.jpg
 
 
 
