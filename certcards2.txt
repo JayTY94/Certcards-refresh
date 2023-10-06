@@ -150,14 +150,14 @@ There are specific considerations and limitations for hierarchies in Power BI De
 
 12
 MS Data Analyst
-
+When two model tables have multiple relationships, it could be because your model has a role-playing dimension. For example, if you have a table named Sales that includes two date columns, OrderDateKey and ShipDateKey, both columns are related to the Date column in the Date table. In this case, the Date table is described as a role-playing dimension because it could play the role of order date or ship date.
 
 
 
 
 13
-MS Data Analyst
-
+General
+I'm working with Jamie Asato on some Data visualizations. I think she prefers unplanned calls to scheduled meetings.
 
 
 
