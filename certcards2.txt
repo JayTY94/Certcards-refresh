@@ -191,6 +191,7 @@ You can write a DAX formula to add a calculated column to any table in your mode
 MS Data Analyst
 In the Fields pane, calculated columns have the following icon.
 https://i.ytimg.com/vi/ePPi1LLX0sA/maxresdefault.jpg
+Draw it!
 
 
 
