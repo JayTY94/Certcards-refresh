@@ -204,6 +204,146 @@ A sovereign wealth fund is a state-owned investment fund that is typically estab
 
 
 19
+Azure DevOps
+A service connection in Azure DevOps is a secure way to connect external services and resources to your Azure DevOps projects. These external services can include Azure subscriptions, repositories hosted on other platforms (such as GitHub or Bitbucket), container registries, and more.
+
+
+
+
+20
+Azure Dev Ops
+You can create a service connection from Azure Pipelines to external and remote services for executing tasks in a job. Once you establish a connection, you can view, edit, and add security to the service connection. You can also manage different types of service connections with the az devops service-endpoint command3.
+
+
+
+
+1
+Azure DevOps
+The design of your service connections should meet your organization’s requirements. Some companies prefer to create service connections per subscription to control the exposure of any given service principal to a specific subscription. Having a proper design saves time and solves the problem of too many service connections.
+
+
+
+
+2
+MS Data Analyst
+
+
+
+
+
+3
+MS Data Analyst
+
+
+
+
+
+4
+MS Data Analyst
+
+
+
+
+
+5
+MS Data Analyst
+
+
+
+
+
+6
+MS Data Analyst
+
+
+
+
+
+7
+MS Data Analyst
+
+
+
+
+
+8
+MS Data Analyst
+
+
+
+
+
+9
+MS Data Analyst
+
+
+
+
+
+10
+MS Data Analyst
+
+
+
+
+
+11
+MS Data Analyst
+
+
+
+
+
+12
+MS Data Analyst
+
+
+
+
+
+13
+MS Data Analyst
+
+
+
+
+
+14
+MS Data Analyst
+
+
+
+
+
+15
+MS Data Analyst
+
+
+
+
+
+16
+MS Data Analyst
+
+
+
+
+
+17
+MS Data Analyst
+
+
+
+
+
+18
+MS Data Analyst
+
+
+
+
+
+19
 MS Data Analyst
 
 
