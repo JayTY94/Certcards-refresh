@@ -225,8 +225,8 @@ The design of your service connections should meet your organization’s require
 
 
 2
-MS Data Analyst
-
+Azure DevOps
+The connection in ADO to the UiPath orchestrator authenticates as an "External Application", not with Basic Authentication or Token Based Authentication.
 
 
 
