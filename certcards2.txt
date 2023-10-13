@@ -172,14 +172,22 @@ The connection in ADO to the UiPath orchestrator authenticates as an "External A
 
 3
 MS Data Analyst
+When you reference a table in a formula, officially, the table name is enclosed within single quotation marks. In the following calculated table definition, notice that the Date table is enclosed with single quotation marks.
 
+
+```
+Ship Date = 'Date'
+```
 
 
 
 
 4
 MS Data Analyst
+In DAX, single quotation marks around a table name can be omitted when both of the following conditions are true:
 
+  The table name does not include embedded spaces.
+  The table name isn't a reserved word that's used by DAX. All DAX function names and operators are reserved words.
 
 
 
