@@ -241,7 +241,16 @@ An excellent formatting tool from another source that can help you format your c
 
 10
 MS Data Analyst
+Model data types aren't the same as DAX data types, though a direct relationship exists between them. 
 
+Model data type         DAX data type
+Whole number            64-bit integer
+Decimal Number          64-bit real
+Boolean                 Boolean
+Text                    String
+Date                    Date/Time
+Currency                Currency
+N/A                     BLANK
 
 
 
