@@ -1,67 +1,6 @@
 
 
-
-11
-MS Data Analyst
-The PATH() function is used to convert a parent-child relationship in a delimited text format. The syntax of the PATH() function is 
-
-  PATH(<ID_columnName>, <parent_columnName>).
-
-
-
-
-
-12
-MS Data Analyst
-Creating a hierarchy in Power BI is straightforward. You can right-click on the field you want to set as level 1 of the hierarchy in the fields list and select "Create Hierarchy". You can then add additional levels to the hierarchy by dragging and dropping or using the “Add to hierarchy” option
-
-
-
-
-
-13
-MS Data Analyst
-A hierarchy consists of multiple levels, where one level is the parent of another level. For example, a category, subcategory, and product can form a hierarchy. There is no limit on the number of levels; it can be one or more than ten levels.
-
-
-
-
-
-14
-Microsoft Data Analyst
-Power BI imposes dataset size restrictions, which limit the size of a model. When you publish the model to a shared capacity, there’s a 1-GB limit per dataset. When this size limit is exceeded, the dataset will fail to refresh.
-
-
-
-
-
-15
-MS Data Analyst
-Choose the import model framework whenever possible. This framework offers you the most options, design flexibility, and delivers fast performance. Be sure to apply data reduction techniques to ensure that Power BI loads the least amount of data possible.
-
-
-
-
-
-16
-MS Data Analyst
-The Model view in Power BI desktop provides many options within the column properties that you can view or update. A simple method to get to this menu to update the tables and fields is by Ctrl+clicking or Shift+clicking items on this page.
-Under the Formatting tab, you can:
-
-  Change the data type.
-  Format the date.
-
-
-
-
-
-17
-MS Data Analyst
-In the syntax of Power Query statements, the # character is not used as a special character or escape sequence. It is primarily used in M to represent special characters such as tabs, carriage returns, and line feeds.
-
-
-
-
+\
 
 1
 MS Data Analyst
