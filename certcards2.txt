@@ -194,20 +194,27 @@ In DAX, single quotation marks around a table name can be omitted when both of t
 
 5
 MS Data Analyst
+When you reference a column in a formula, the column name must be enclosed within square brackets. Optionally, it can be preceded by its table name. For example, the following measure definition refers to the Sales Amount column.
 
+
+  Revenue = SUM([Sales Amount])
 
 
 
 
 6
 MS Data Analyst
-
+Because column names are unique within a table but not necessarily unique within the model, you can disambiguate the column reference by preceding it with its table name. This disambiguated column is known as a fully qualified column. Some DAX functions require passing in fully qualified columns.
 
 
 
 
 7
 MS Data Analyst
+It's possible to precede a measure reference with its table name. However, measures are a model-level object. While they're assigned to a home table, it's only a cosmetic relationship to logically organize measures in the Fields pane.
+
+Therefore, while we recommend that you always precede a column reference with its table name, the inverse is true for measures: We recommend that you never precede a measure reference with its table name.
+
 
 
 
@@ -215,14 +222,19 @@ MS Data Analyst
 
 8
 MS Data Analyst
+Whitespace is optional and it doesn't modify your formula logic or negatively impact performance. We strongly recommend that you adopt a format style and apply it consistently, and consider the following recommendations:
 
+  Use spaces between operators.
+  Use tabs to indent nested function calls.
+  Use carriage returns to separate function arguments, especially when it's too long to fit on a single line. Formatting in this way makes it simpler to troubleshoot, especially when the formula is missing a parenthesis.
+  Err on the side of too much whitespace than too little.
 
 
 
 
 9
 MS Data Analyst
-
+An excellent formatting tool from another source that can help you format your calculations is DAX Formatter. This tool allows you to paste in your calculation and format it. You can then copy the formatted calculation to the clipboard and paste it back into Power BI Desktop.
 
 
 
