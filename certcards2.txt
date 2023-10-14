@@ -257,6 +257,8 @@ N/A                     BLANK
 
 11
 MS Data Analyst
+Two DAX functions are related to the BLANK data type: the BLANK DAX function returns BLANK, while the ISBLANK DAX function tests whether an expression evaluates to BLANK.
+
 
 
 
@@ -264,42 +266,70 @@ MS Data Analyst
 
 12
 MS Data Analyst
+A DAX function argument is optional when documentation shows it enclosed within square brackets.
 
+  IF(<logical_test>, <value_if_true>[, <value_if_false>])
 
 
 
 
 13
 MS Data Analyst
-
+We recommend that you use the DIVIDE function whenever the denominator is an expression that could return zero or BLANK. In this case, the division is guaranteed to succeed and pass an alternative value, and your expression will perform better because it will avoid unnecessary testing.
 
 
 
 
 14
 MS Data Analyst
+Use the ampersand (&) character to connect, or concatenate, two text values to produce one continuous text value. For example, consider the following calculated column definition:
 
+DAX
+  Model Color = 'Product'[Model] & "-" & 'Product'[Color]
 
 
 
 
 15
 MS Data Analyst
+Logical Operators in DAX
 
+&&    And
+||    Or
+IN    Similar to "in" operator in python
+NOT   Inverts state of a Boolean
 
 
 
 
 16
 MS Data Analyst
+An example that uses the IN logical operator is the ANZ Revenue measure definition, which uses the CALCULATE DAX function to enforce a specific filter of two countries: Australia and New Zealand.
 
+  ANZ Revenue =
+  CALCULATE(
+      [Revenue],
+      Customer[Country-Region] IN {
+          "Australia",
+          "New Zealand"
+      }
+  )
 
 
 
 
 17
 MS Data Analyst
+When your DAX operator precedence
 
+Operator	        Description
+^	                Exponentiation
+-	                Sign (as in -1)
+* and /	          Multiplication and division
+NOT	              NOT
++ and -	          Addition and subtraction
+&	                Concatenation of two strings of text
+=,==,<,>,<=,>=,<>	Comparison
 
 
 
