@@ -1,45 +1,5 @@
 
 
-\
-
-1
-MS Data Analyst
-plays an important role in filtering data between multiple tables. When you load data, Power BI automatically looks for relationships that exist within the data by matching column names. You can also use Manage Relationships to edit these options manually.
-
-
-
-
-2
-MS Data Analyst
-Many-to-many (.) relationship:
-
-  Describes a relationship where many values are in common between two tables.
-  Does not require unique values in either table in a relationship.
-  Is not recommended; a lack of unique values introduces ambiguity and your users might not know which column of values is referring to what.
-
-
-
-
-3
-MS Data Analyst
-An example of a many-to-many relationship could be between the Sales and Order tables of a model on the OrderDate column because multiple sales can have multiple orders associated with them. Ambiguity is introduces because both tables can have the same order date.
-
-
-
-
-4
-MS Data Analyst
-A word of caution regarding bi-directional cross-filtering: You should not enable bi-directional cross-filtering relationships unless you fully understand the ramifications of doing so. Enabling it can lead to ambiguity, over-sampling, unexpected results, and potential performance degradation.Pa
-
-
-
-
-5
-MS Data Analyst
-To change the properties of data columns, go to the Model tab and select the columns you want to change. This will reveal the Properties pane, where you can do things like change the default summarization, hide the column, or set the number of decimal places to display.
-
-
-
 
 6
 MS Data Analyst
