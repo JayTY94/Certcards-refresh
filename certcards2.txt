@@ -348,9 +348,13 @@ Public cloud architectures are multi-tenant environments—users share a pool of
 
 5
 Workera.ai
+Which of the following are advantages of a public cloud? (Select all that apply)
 
-
-
+reliability
+scalability
+    NOT
+compliance
+customization
 
 
 6
