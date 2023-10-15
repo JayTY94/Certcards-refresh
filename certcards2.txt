@@ -317,6 +317,8 @@ Setup and management: With single tenancy, MSSPs need to deploy a single instanc
 
 1
 Workera.ai
+The public cloud is defined as computing services offered by third-party providers over the public Internet, making them available to anyone who wants to use or purchase them. They may be free or sold on-demand, allowing customers to pay only per usage for the CPU cycles, storage, or bandwidth they consume.
+
 
 
 
@@ -324,7 +326,7 @@ Workera.ai
 
 2
 Workera.ai
-
+Unlike private clouds, public clouds can save companies from the expensive costs of having to purchase, manage, and maintain on-premises hardware and application infrastructure - the cloud service provider (CSP) is held responsible for all management and maintenance of the system. 
 
 
 
