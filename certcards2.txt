@@ -357,30 +357,33 @@ compliance
 customization
 
 
+
+
+
 6
 Workera.ai
-
+Azure Monitor is a service in Azure that provides performance and availability monitoring for applications and services in Azure, other cloud environments, or on-premises. Azure Monitor collects data from multiple sources into a common data platform where it can be analyzed for trends and anomalies. 
 
 
 
 
 7
 Workera.ai
-
+In September 2018, Microsoft combined Azure Monitor, Log Analytics, and Application Insights into a single service to provide powerful end-to-end monitoring of your applications and the components they rely on. Features in Log Analytics and Application Insights haven't changed, although some features have been rebranded to Azure Monitor to better reflect their new scope. 
 
 
 
 
 8
 Workera.ai
-
+All Azure subscriptions have a trust relationship with a Microsoft Entra tenant. Subscriptions rely on this tenant (directory) to authenticate and authorize security principals and devices. When a subscription expires, the trusted instance remains, but the security principals lose access to Azure resources.
 
 
 
 
 9
 Workera.ai
-
+Azure Subscriptions can only trust a single directory while one Microsoft Entra tenant may be trusted by multiple subscriptions.
 
 
 
