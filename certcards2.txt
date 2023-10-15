@@ -333,13 +333,14 @@ Unlike private clouds, public clouds can save companies from the expensive costs
 
 3
 Workera.ai
-
+The public cloud provider owns and administers the data centers where customers’ workloads run. Service providers assume responsibility for all hardware and infrastructure maintenance and provides high-bandwidth network connectivity to ensure rapid access to applications and data. 
 
 
 
 
 4
 Workera.ai
+Public cloud architectures are multi-tenant environments—users share a pool of virtual resources that are automatically provisioned for and allocated to individual tenants through a self-service interface. This means that multiple tenants’ workloads might be running CPU instances running on shared physical server at the same time. 
 
 
 
