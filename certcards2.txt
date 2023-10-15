@@ -390,7 +390,7 @@ Azure Subscriptions can only trust a single directory while one Microsoft Entra 
 
 10
 Workera.ai
-
+When a subscription is associated with a different directory, users who have roles assigned using Azure role-based access control lose their access. Classic subscription administrators, including Service Administrator and Co-Administrators, also lose access.
 
 
 
