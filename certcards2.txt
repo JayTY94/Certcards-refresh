@@ -295,21 +295,91 @@ NOT	              NOT
 
 
 18
-MS Data Analyst
-
+Workera
+Managed security service providers (MSSPs) handle multiple customers within their technology stack. Therefore they need technology that makes them more efficient. Multitenancy is a critical capability that helps MSSPs improve efficiency. 
 
 
 
 
 19
-MS Data Analyst
-
+Workera.ai
+Software multitenancy is an architecture where a single instance of the software serves multiple tenants or groups of users. The multitenant architecture provides every tenant with a dedicated share of the instance, including configuration and data. For MSSPs, the tenants are typically separate customers
 
 
 
 
 20
-MS Data Analyst
+Workera.ai
+Setup and management: With single tenancy, MSSPs need to deploy a single instance for every new customer. Configurations and analytics are not easily shared among end customers, decreasing scalability.
+
+
+
+
+1
+Workera.ai
+
+
+
+
+
+2
+Workera.ai
+
+
+
+
+
+3
+Workera.ai
+
+
+
+
+
+4
+Workera.ai
+
+
+
+
+
+5
+Workera.ai
+
+
+
+
+
+6
+Workera.ai
+
+
+
+
+
+7
+Workera.ai
+
+
+
+
+
+8
+Workera.ai
+
+
+
+
+
+9
+Workera.ai
+
+
+
+
+
+10
+Workera.ai
 
 
 
