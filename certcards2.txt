@@ -415,13 +415,18 @@ RETURN
 
 5
 MS Data Analyst
+1. You're using Power BI Desktop to develop a model. It has a table named Sales, which includes a column named CustomerKey. In reports, you need a calculation to show the number of different customers who have placed orders. What type of DAX calculation will you add to the model? 
 
+You can add a measure to the Sales table by using the DISTINCTCOUNT DAX function.
 
 
 
 
 6
 MS Data Analyst
+2. You're using Power BI Desktop to develop a model. It has a table named Customer, which includes a column named DateOfBirth. In reports, you need to group customers by current age. What type of DAX calculation will you add to the Customer table? 
+
+A calculated column can store the current age for each customer. This column could then be used in reports to group customers by age.
 
 
 
@@ -429,6 +434,9 @@ MS Data Analyst
 
 7
 MS Data Analyst
+3. You're using Power BI Desktop to develop a model. It has a table named Geography, which has two relationships to the Sales table. One relationship filters by customer region and the other filters by sales region. You need to create a role-playing dimension so that both filters are possible. What type of DAX calculation will you add to the model? 
+
+A calculated table could create a table that duplicates the Geography table data. It could then have an active relationship to the Sales table. Both geography tables would have active relationships to allow report users to filter by customer region or sales region.
 
 
 
@@ -436,7 +444,10 @@ MS Data Analyst
 
 8
 MS Data Analyst
+4. You write a DAX formula that adds BLANK to the number 20. What will be the result? 
 
+The result will be 20.
+BLANK is converted to zero when added to a number.
 
 
 
