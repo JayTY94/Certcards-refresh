@@ -1,136 +1,12 @@
-
-
-
-6
-MS Data Analyst
-Data granularity indicates the level the detail within the data, so the higher the granularity, the more detail that is represented in the data.
-
-
-
-
-7
-MS Data Analyst
-Cardinality is the measure of unique values in a table. An example of high cardinality would be a Sales table as it has a high number of unique values.
-
-
-
-
-8
-MS Data Analyst
-You can use hierarchies to create drill-down reports, where users can navigate through the levels of the hierarchy to view more detailed information. They can also be used to create calculations and measures that aggregate data at different levels of the hierarchy 
-
-
-
-
-9
-MS Data Analyst
-To create a hierarchy in Power BI Desktop, go to the data view on your Power BI Desktop and select the top-level element. Right-click on that element and select ‘New hierarchy’. That will now create a new hierarchy with only the top-level element in it. To put the other elements on the hierarchy, simply drag them to the hierarchy 
-
-
-
-
-10
-MS Data Analyst
-Hierarchies are a way to organize data in a way where one element is ranked over the other. They allow you to drill up or down on your visual and reveal additional details.
-
-
-
-
-11
-MS Data Analyst
-There are specific considerations and limitations for hierarchies in Power BI Desktop:
-
-  Up to 10,000 items per hierarchy (across all datasets)
-  Up to five hierarchies
-  Up to five levels per hierarchy
-
-
-
-
-12
-MS Data Analyst
-When two model tables have multiple relationships, it could be because your model has a role-playing dimension. For example, if you have a table named Sales that includes two date columns, OrderDateKey and ShipDateKey, both columns are related to the Date column in the Date table. In this case, the Date table is described as a role-playing dimension because it could play the role of order date or ship date.
-
-
-
-
-13
-General
-I'm working with Jamie Asato on some Data visualizations. I think she prefers unplanned calls to scheduled meetings.
-
-
-
-
-14
-MS Data Analyst
-Power BI Desktop supports a feature called What-if parameters. When you create a what-if parameter, a calculated table is automatically added to your model.
-
-What-if parameters allow report users to select or filter by values that are stored in the calculated table. Measure formulas can use selected value(s) in a meaningful way. 
-
-
-
-
-15
-MS Data Analyst
-Notably, what-if calculated tables aren't related to other model tables because they're not used to propagate filters. For this reason, they're sometimes called disconnected tables.
-
-
-
-
-
-
-16
-MS Data Analyst
-You can write a DAX formula to add a calculated column to any table in your model. The formula is evaluated for each table row and it returns a single value. When added to a DirectQuery storage mode table, the formula is evaluated by the underlying source database when the table is queried.
-
-
-
-
-17
-MS Data Analyst
-In the Fields pane, calculated columns have the following icon.
-https://i.ytimg.com/vi/ePPi1LLX0sA/maxresdefault.jpg
-Draw it!
-
-
-
-18
-General
-A sovereign wealth fund is a state-owned investment fund that is typically established by countries with large amounts of surplus income from natural resources, trade, or other sources. The purpose of a sovereign wealth fund is to invest the surplus income to generate long-term financial returns that can be used for various purposes such as supporting future generations, stabilizing the economy, or funding social welfare programs. 
-
-
-
-
-
-19
-Azure DevOps
-A service connection in Azure DevOps is a secure way to connect external services and resources to your Azure DevOps projects. These external services can include Azure subscriptions, repositories hosted on other platforms (such as GitHub or Bitbucket), container registries, and more.
-
-
-
-
-20
-Azure Dev Ops
-You can create a service connection from Azure Pipelines to external and remote services for executing tasks in a job. Once you establish a connection, you can view, edit, and add security to the service connection. You can also manage different types of service connections with the az devops service-endpoint command3.
-
-
-
-
 1
-Azure DevOps
-The design of your service connections should meet your organization’s requirements. Some companies prefer to create service connections per subscription to control the exposure of any given service principal to a specific subscription. Having a proper design saves time and solves the problem of too many service connections.
+Workera.ai
+Setup and management: With single tenancy, MSSPs need to deploy a single instance for every new customer. Configurations and analytics are not easily shared among end customers, decreasing scalability.
+
 
 
 
 
 2
-Azure DevOps
-The connection in ADO to the UiPath orchestrator authenticates as an "External Application", not with Basic Authentication or Token Based Authentication.
-
-
-
-
-3
 MS Data Analyst
 When you reference a table in a formula, officially, the table name is enclosed within single quotation marks. In the following calculated table definition, notice that the Date table is enclosed with single quotation marks.
 
@@ -142,127 +18,40 @@ Ship Date = 'Date'
 
 
 
-4
-MS Data Analyst
-In DAX, single quotation marks around a table name can be omitted when both of the following conditions are true:
 
-  The table name does not include embedded spaces.
-  The table name isn't a reserved word that's used by DAX. All DAX function names and operators are reserved words.
+3
+MS Data Analyst
+You can write a DAX formula to add a calculated column to any table in your model. The formula is evaluated for each table row and it returns a single value. When added to a DirectQuery storage mode table, the formula is evaluated by the underlying source database when the table is queried.
+
+
+
+
+
+4
+Workera
+Managed security service providers (MSSPs) handle multiple customers within their technology stack. Therefore they need technology that makes them more efficient. Multitenancy is a critical capability that helps MSSPs improve efficiency.
+
 
 
 
 
 5
-MS Data Analyst
-When you reference a column in a formula, the column name must be enclosed within square brackets. Optionally, it can be preceded by its table name. For example, the following measure definition refers to the Sales Amount column.
+Workera.ai
+Azure Monitor is a service in Azure that provides performance and availability monitoring for applications and services in Azure, other cloud environments, or on-premises. Azure Monitor collects data from multiple sources into a common data platform where it can be analyzed for trends and anomalies.
 
-
-  Revenue = SUM([Sales Amount])
 
 
 
 
 6
-MS Data Analyst
-Because column names are unique within a table but not necessarily unique within the model, you can disambiguate the column reference by preceding it with its table name. This disambiguated column is known as a fully qualified column. Some DAX functions require passing in fully qualified columns.
+Azure DevOps
+The connection in ADO to the UiPath orchestrator authenticates as an "External Application", not with Basic Authentication or Token Based Authentication.
+
 
 
 
 
 7
-MS Data Analyst
-It's possible to precede a measure reference with its table name. However, measures are a model-level object. While they're assigned to a home table, it's only a cosmetic relationship to logically organize measures in the Fields pane.
-
-Therefore, while we recommend that you always precede a column reference with its table name, the inverse is true for measures: We recommend that you never precede a measure reference with its table name.
-
-
-
-
-
-
-8
-MS Data Analyst
-Whitespace is optional and it doesn't modify your formula logic or negatively impact performance. We strongly recommend that you adopt a format style and apply it consistently, and consider the following recommendations:
-
-  Use spaces between operators.
-  Use tabs to indent nested function calls.
-  Use carriage returns to separate function arguments, especially when it's too long to fit on a single line. Formatting in this way makes it simpler to troubleshoot, especially when the formula is missing a parenthesis.
-  Err on the side of too much whitespace than too little.
-
-
-
-
-9
-MS Data Analyst
-An excellent formatting tool from another source that can help you format your calculations is DAX Formatter. This tool allows you to paste in your calculation and format it. You can then copy the formatted calculation to the clipboard and paste it back into Power BI Desktop.
-
-
-
-
-10
-MS Data Analyst
-Model data types aren't the same as DAX data types, though a direct relationship exists between them. 
-
-Model data type         DAX data type
-Whole number            64-bit integer
-Decimal Number          64-bit real
-Boolean                 Boolean
-Text                    String
-Date                    Date/Time
-Currency                Currency
-N/A                     BLANK
-
-
-
-
-11
-MS Data Analyst
-Two DAX functions are related to the BLANK data type: the BLANK DAX function returns BLANK, while the ISBLANK DAX function tests whether an expression evaluates to BLANK.
-
-
-
-
-
-
-12
-MS Data Analyst
-A DAX function argument is optional when documentation shows it enclosed within square brackets.
-
-  IF(<logical_test>, <value_if_true>[, <value_if_false>])
-
-
-
-
-13
-MS Data Analyst
-We recommend that you use the DIVIDE function whenever the denominator is an expression that could return zero or BLANK. In this case, the division is guaranteed to succeed and pass an alternative value, and your expression will perform better because it will avoid unnecessary testing.
-
-
-
-
-14
-MS Data Analyst
-Use the ampersand (&) character to connect, or concatenate, two text values to produce one continuous text value. For example, consider the following calculated column definition:
-
-DAX
-  Model Color = 'Product'[Model] & "-" & 'Product'[Color]
-
-
-
-
-15
-MS Data Analyst
-Logical Operators in DAX
-
-&&    And
-||    Or
-IN    Similar to "in" operator in python
-NOT   Inverts state of a Boolean
-
-
-
-
-16
 MS Data Analyst
 An example that uses the IN logical operator is the ANZ Revenue measure definition, which uses the CALCULATE DAX function to enforce a specific filter of two countries: Australia and New Zealand.
 
@@ -278,7 +67,58 @@ An example that uses the IN logical operator is the ANZ Revenue measure definiti
 
 
 
-17
+
+8
+Workera.ai
+When a subscription is associated with a different directory, users who have roles assigned using Azure role-based access control lose their access. Classic subscription administrators, including Service Administrator and Co-Administrators, also lose access.
+
+
+
+
+
+9
+MS Data Analyst
+A DAX function argument is optional when documentation shows it enclosed within square brackets.
+
+  IF(<logical_test>, <value_if_true>[, <value_if_false>])
+
+
+
+
+
+10
+Workera.ai
+Software multitenancy is an architecture where a single instance of the software serves multiple tenants or groups of users. The multitenant architecture provides every tenant with a dedicated share of the instance, including configuration and data. For MSSPs, the tenants are typically separate customers
+
+
+
+
+
+11
+MS Data Analyst
+It's possible to precede a measure reference with its table name. However, measures are a model-level object. While they're assigned to a home table, it's only a cosmetic relationship to logically organize measures in the Fields pane.
+
+Therefore, while we recommend that you always precede a column reference with its table name, the inverse is true for measures: We recommend that you never precede a measure reference with its table name.
+
+
+
+
+
+12
+Workera.ai
+Which of the following are advantages of a public cloud? (Select all that apply)
+
+reliability
+scalability
+    NOT
+compliance
+customization
+
+
+
+
+
+13
 MS Data Analyst
 When your DAX operator precedence
 
@@ -294,28 +134,201 @@ NOT	              NOT
 
 
 
+
+14
+Workera.ai
+Public cloud architectures are multi-tenant environments—users share a pool of virtual resources that are automatically provisioned for and allocated to individual tenants through a self-service interface. This means that multiple tenants’ workloads might be running CPU instances running on shared physical server at the same time.
+
+
+
+
+
+15
+MS Data Analyst
+Use the ampersand (&) character to connect, or concatenate, two text values to produce one continuous text value. For example, consider the following calculated column definition:
+
+DAX
+  Model Color = 'Product'[Model] & "-" & 'Product'[Color]
+
+
+
+
+
+16
+MS Data Analyst
+In DAX, single quotation marks around a table name can be omitted when both of the following conditions are true:
+
+  The table name does not include embedded spaces.
+  The table name isn't a reserved word that's used by DAX. All DAX function names and operators are reserved words.
+
+
+
+
+
+17
+MS Data Analyst
+In the Fields pane, calculated columns have the following icon.
+https://i.ytimg.com/vi/ePPi1LLX0sA/maxresdefault.jpg
+Draw it!
+
+
+
+
+
 18
-Workera
-Managed security service providers (MSSPs) handle multiple customers within their technology stack. Therefore they need technology that makes them more efficient. Multitenancy is a critical capability that helps MSSPs improve efficiency. 
+MS Data Analyst
+Two DAX functions are related to the BLANK data type: the BLANK DAX function returns BLANK, while the ISBLANK DAX function tests whether an expression evaluates to BLANK.
+
 
 
 
 
 19
-Workera.ai
-Software multitenancy is an architecture where a single instance of the software serves multiple tenants or groups of users. The multitenant architecture provides every tenant with a dedicated share of the instance, including configuration and data. For MSSPs, the tenants are typically separate customers
+MS Data Analyst
+When you reference a column in a formula, the column name must be enclosed within square brackets. Optionally, it can be preceded by its table name. For example, the following measure definition refers to the Sales Amount column.
+
+
+  Revenue = SUM([Sales Amount])
+
 
 
 
 
 20
+Azure DevOps
+A service connection in Azure DevOps is a secure way to connect external services and resources to your Azure DevOps projects. These external services can include Azure subscriptions, repositories hosted on other platforms (such as GitHub or Bitbucket), container registries, and more.
+
+
+
+
+
+21
+MS Data Analyst
+Logical Operators in DAX
+
+&&    And
+||    Or
+IN    Similar to "in" operator in python
+NOT   Inverts state of a Boolean
+
+
+
+
+
+22
 Workera.ai
-Setup and management: With single tenancy, MSSPs need to deploy a single instance for every new customer. Configurations and analytics are not easily shared among end customers, decreasing scalability.
+The public cloud provider owns and administers the data centers where customers’ workloads run. Service providers assume responsibility for all hardware and infrastructure maintenance and provides high-bandwidth network connectivity to ensure rapid access to applications and data.
 
 
 
 
-1
+
+23
+MS Data Analyst
+Model data types aren't the same as DAX data types, though a direct relationship exists between them. 
+
+Model data type         DAX data type
+Whole number            64-bit integer
+Decimal Number          64-bit real
+Boolean                 Boolean
+Text                    String
+Date                    Date/Time
+Currency                Currency
+N/A                     BLANK
+
+
+
+
+
+24
+Workera.ai
+Azure Subscriptions can only trust a single directory while one Microsoft Entra tenant may be trusted by multiple subscriptions.
+
+
+
+
+
+25
+MS Data Analyst
+An excellent formatting tool from another source that can help you format your calculations is DAX Formatter. This tool allows you to paste in your calculation and format it. You can then copy the formatted calculation to the clipboard and paste it back into Power BI Desktop.
+
+
+
+
+
+26
+Workera.ai
+All Azure subscriptions have a trust relationship with a Microsoft Entra tenant. Subscriptions rely on this tenant (directory) to authenticate and authorize security principals and devices. When a subscription expires, the trusted instance remains, but the security principals lose access to Azure resources.
+
+
+
+
+
+27
+Azure Dev Ops
+You can create a service connection from Azure Pipelines to external and remote services for executing tasks in a job. Once you establish a connection, you can view, edit, and add security to the service connection. You can also manage different types of service connections with the az devops service-endpoint command3.
+
+
+
+
+
+28
+Azure DevOps
+The design of your service connections should meet your organization’s requirements. Some companies prefer to create service connections per subscription to control the exposure of any given service principal to a specific subscription. Having a proper design saves time and solves the problem of too many service connections.
+
+
+
+
+
+29
+MS Data Analyst
+Because column names are unique within a table but not necessarily unique within the model, you can disambiguate the column reference by preceding it with its table name. This disambiguated column is known as a fully qualified column. Some DAX functions require passing in fully qualified columns.
+
+
+
+
+
+30
+General
+I'm working with Jamie Asato on some Data visualizations. I think she prefers unplanned calls to scheduled meetings.
+
+
+
+
+
+31
+Workera.ai
+Unlike private clouds, public clouds can save companies from the expensive costs of having to purchase, manage, and maintain on-premises hardware and application infrastructure - the cloud service provider (CSP) is held responsible for all management and maintenance of the system.
+
+
+
+
+
+32
+General
+A sovereign wealth fund is a state-owned investment fund that is typically established by countries with large amounts of surplus income from natural resources, trade, or other sources. The purpose of a sovereign wealth fund is to invest the surplus income to generate long-term financial returns that can be used for various purposes such as supporting future generations, stabilizing the economy, or funding social welfare programs.
+
+
+
+
+
+33
+MS Data Analyst
+Notably, what-if calculated tables aren't related to other model tables because they're not used to propagate filters. For this reason, they're sometimes called disconnected tables.
+
+
+
+
+
+34
+Workera.ai
+In September 2018, Microsoft combined Azure Monitor, Log Analytics, and Application Insights into a single service to provide powerful end-to-end monitoring of your applications and the components they rely on. Features in Log Analytics and Application Insights haven't changed, although some features have been rebranded to Azure Monitor to better reflect their new scope.
+
+
+
+
+
+35
 Workera.ai
 The public cloud is defined as computing services offered by third-party providers over the public Internet, making them available to anyone who wants to use or purchase them. They may be free or sold on-demand, allowing customers to pay only per usage for the CPU cycles, storage, or bandwidth they consume.
 
@@ -323,143 +336,33 @@ The public cloud is defined as computing services offered by third-party provide
 
 
 
+36
+MS Data Analyst
+Whitespace is optional and it doesn't modify your formula logic or negatively impact performance. We strongly recommend that you adopt a format style and apply it consistently, and consider the following recommendations:
 
-2
-Workera.ai
-Unlike private clouds, public clouds can save companies from the expensive costs of having to purchase, manage, and maintain on-premises hardware and application infrastructure - the cloud service provider (CSP) is held responsible for all management and maintenance of the system. 
+  Use spaces between operators.
+  Use tabs to indent nested function calls.
+  Use carriage returns to separate function arguments, especially when it's too long to fit on a single line. Formatting in this way makes it simpler to troubleshoot, especially when the formula is missing a parenthesis.
+  Err on the side of too much whitespace than too little.
 
 
 
 
-3
-Workera.ai
-The public cloud provider owns and administers the data centers where customers’ workloads run. Service providers assume responsibility for all hardware and infrastructure maintenance and provides high-bandwidth network connectivity to ensure rapid access to applications and data. 
 
+37
+MS Data Analyst
+Power BI Desktop supports a feature called What-if parameters. When you create a what-if parameter, a calculated table is automatically added to your model.
 
+What-if parameters allow report users to select or filter by values that are stored in the calculated table. Measure formulas can use selected value(s) in a meaningful way.
 
 
-4
-Workera.ai
-Public cloud architectures are multi-tenant environments—users share a pool of virtual resources that are automatically provisioned for and allocated to individual tenants through a self-service interface. This means that multiple tenants’ workloads might be running CPU instances running on shared physical server at the same time. 
 
 
 
+38
+MS Data Analyst
+We recommend that you use the DIVIDE function whenever the denominator is an expression that could return zero or BLANK. In this case, the division is guaranteed to succeed and pass an alternative value, and your expression will perform better because it will avoid unnecessary testing.
 
-
-5
-Workera.ai
-Which of the following are advantages of a public cloud? (Select all that apply)
-
-reliability
-scalability
-    NOT
-compliance
-customization
-
-
-
-
-
-6
-Workera.ai
-Azure Monitor is a service in Azure that provides performance and availability monitoring for applications and services in Azure, other cloud environments, or on-premises. Azure Monitor collects data from multiple sources into a common data platform where it can be analyzed for trends and anomalies. 
-
-
-
-
-7
-Workera.ai
-In September 2018, Microsoft combined Azure Monitor, Log Analytics, and Application Insights into a single service to provide powerful end-to-end monitoring of your applications and the components they rely on. Features in Log Analytics and Application Insights haven't changed, although some features have been rebranded to Azure Monitor to better reflect their new scope. 
-
-
-
-
-8
-Workera.ai
-All Azure subscriptions have a trust relationship with a Microsoft Entra tenant. Subscriptions rely on this tenant (directory) to authenticate and authorize security principals and devices. When a subscription expires, the trusted instance remains, but the security principals lose access to Azure resources.
-
-
-
-
-9
-Workera.ai
-Azure Subscriptions can only trust a single directory while one Microsoft Entra tenant may be trusted by multiple subscriptions.
-
-
-
-
-10
-Workera.ai
-When a subscription is associated with a different directory, users who have roles assigned using Azure role-based access control lose their access. Classic subscription administrators, including Service Administrator and Co-Administrators, also lose access.
-
-
-
-
-1
-Workera.ai
-
-
-
-
-
-2
-Workera.ai
-
-
-
-
-
-3
-Workera.ai
-
-
-
-
-
-4
-Workera.ai
-
-
-
-
-
-5
-Workera.ai
-
-
-
-
-
-6
-Workera.ai
-
-
-
-
-
-7
-Workera.ai
-
-
-
-
-
-8
-Workera.ai
-
-
-
-
-
-9
-Workera.ai
-
-
-
-
-
-10
-Workera.ai
 
 
 
