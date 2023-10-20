@@ -411,8 +411,12 @@ BLANK is converted to zero when added to a number.
 
 
 9
-MS Data Analyst
+Azure DevOps Pipeline
+It was on 10/20/23 that Vijay showed me that the pipelines I was setting up were failing because I had forgotten that a pipeline needs the following to create the artifact.
 
+Uipath Platform install < forgot that one
+UiPath Pack
+Publish Artifact
 
 
 
