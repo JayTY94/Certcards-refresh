@@ -448,7 +448,7 @@ Implicit measures don't work when the model is queried by using Multidimensional
 
 13
 MS Data Analyst
-
+In tabular modeling, no such concept as a calculated measure exists. The word calculated is used to describe calculated tables and calculated columns. It distinguishes them from tables and columns that originate from Power Query, which doesn't have the concept of an explicit measure.
 
 
 
