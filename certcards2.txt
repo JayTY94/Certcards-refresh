@@ -423,6 +423,10 @@ Publish Artifact
 
 10
 MS Data Analyst
+In the Fields pane, a column that's shown with the sigma symbol ( ∑ ) indicates two facts:
+
+It's a numeric column.
+It will summarize column values when it is used in a visual (when added to a field well that supports summarization).
 
 
 
@@ -430,7 +434,7 @@ MS Data Analyst
 
 11
 MS Data Analyst
-
+Measures in Microsoft Power BI models are either implicit or explicit. Implicit measures are automatic behaviors that allow visuals to summarize model column data. Explicit measures, also known simply as measures, are calculations that you can add to your model. 
 
 
 
