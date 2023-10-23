@@ -465,6 +465,8 @@ Evaluation - Calculated columns are evaluated by using row context at data refre
 
 15
 MS Data Analyst
+The areas where calculated columns and measures differ include:
+Visual use - Calculated columns (like any column) can be used to filter, group, or summarize (as an implicit measure), whereas measures are designed to summarize.
 
 
 
