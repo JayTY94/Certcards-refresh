@@ -455,7 +455,10 @@ In tabular modeling, no such concept as a calculated measure exists. The word ca
 
 14
 MS Data Analyst
+The areas where calculated columns and measures differ include:
 
+Purpose - Calculated columns extend a table with a new column, while measures define how to summarize model data.
+Evaluation - Calculated columns are evaluated by using row context at data refresh time, while measures are evaluated by using filter context at query time.
 
 
 
