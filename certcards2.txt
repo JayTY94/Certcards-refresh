@@ -462,6 +462,8 @@ A calculated column can be summarized (implicit measure) and a measure always ac
 
 19
 MS Data Analyst
+A calculated table only duplicates data; it doesn't duplicate any model properties or objects like column visibility or hierarchies. You'll need to set them up for the new table, if required.
+
 
 
 
