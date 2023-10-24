@@ -462,7 +462,7 @@ A calculated column can be summarized (implicit measure) and a measure always ac
 
 19
 MS Data Analyst
-A calculated table only duplicates data; it doesn't duplicate any model properties or objects like column visibility or hierarchies. You'll need to set them up for the new table, if required.
+A calculated table defined as a duplicate of another table only duplicates data; it doesn't duplicate any model properties or objects like column visibility or hierarchies. You'll need to set them up for the new table, if required.
 
 
 
@@ -470,8 +470,8 @@ A calculated table only duplicates data; it doesn't duplicate any model properti
 
 
 20
-MS Data Analyst
-
+General
+Mergers and Acquisitions (M&A) advisory services are a type of financial service provided by intermediaries in the field of mergers and acquisitions1. 
 
 
 
