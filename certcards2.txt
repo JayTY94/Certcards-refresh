@@ -1,54 +1,6 @@
 
 
 
-6
-Azure DevOps
-The connection in ADO to the UiPath orchestrator authenticates as an "External Application", not with Basic Authentication or Token Based Authentication.
-
-
-
-
-
-7
-MS Data Analyst
-An example that uses the IN logical operator is the ANZ Revenue measure definition, which uses the CALCULATE DAX function to enforce a specific filter of two countries: Australia and New Zealand.
-
-  ANZ Revenue =
-  CALCULATE(
-      [Revenue],
-      Customer[Country-Region] IN {
-          "Australia",
-          "New Zealand"
-      }
-  )
-
-
-
-
-
-8
-Workera.ai
-When a subscription is associated with a different directory, users who have roles assigned using Azure role-based access control lose their access. Classic subscription administrators, including Service Administrator and Co-Administrators, also lose access.
-
-
-
-
-
-9
-MS Data Analyst
-A DAX function argument is optional when documentation shows it enclosed within square brackets.
-
-  IF(<logical_test>, <value_if_true>[, <value_if_false>])
-
-
-
-
-
-10
-Workera.ai
-Software multitenancy is an architecture where a single instance of the software serves multiple tenants or groups of users. The multitenant architecture provides every tenant with a dedicated share of the instance, including configuration and data. For MSSPs, the tenants are typically separate customers
-
-
 
 
 
@@ -474,20 +426,35 @@ Visual use - Calculated columns (like any column) can be used to filter, group, 
 
 16
 MS Data Analyst
+2. Which DAX function can summarize a table? 
 
+COUNTROWS
 
+NOT
+SUM
+AVERAGE
+DISTINCTCOUNT
+These summarize a column, not a table.
 
 
 
 17
 MS Data Analyst
+Which statement about measures is correct? 
 
+Measures can reference other measures directly.
+Measures can reference other measures. It's known as a compound measure.
+NOT
+Measures store values in the data model.
+Measures must be added to the data model to achieve summarization.
+Measures can reference columns directly.
 
 
 
 
 18
 MS Data Analyst
+A calculated column can be summarized (implicit measure) and a measure always achieves summarization.
 
 
 
