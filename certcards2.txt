@@ -449,7 +449,7 @@ I got access to the PracticePro 365 database using the following steps:
 
 5
 MS Data Analyst
-
+On the Model tab, if you want to pin the key columns to the top of each card, click the canvas (not a card), and the card property blade will appear. That allows you to toggle the setting.
 
 
 
