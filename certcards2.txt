@@ -456,7 +456,9 @@ On the Model tab, if you want to pin the key columns to the top of each card, cl
 
 6
 MS Data Analyst
+3. You're developing a Power BI desktop model that sources data from an Excel workbook. The workbook has an employee table that stores one row for each employee. Each row has a reference to the employee's manager, which is also a row in the employee table. You need to add several columns to the Employee table in your model to analyze payroll data within the organization hierarchy (like, executive level, manager level, and so on). Which technique will you use to add the columns? 
 
+You can use the DAX parent-child functions to naturalize the recursive (employee-manager) relationship into columns.
 
 
 
