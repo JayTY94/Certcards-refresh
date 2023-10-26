@@ -423,14 +423,14 @@ The DAX function FORMAT is used to convert numeric values to strings or dates to
 
 2
 MS Data Analyst
-
+If your formula needs to reference columns in other tables, and if the tables are related, directly or indirectly, you can use the RELATED or RELATEDTABLE DAX function. The RELATED function retrieves the value at the one-side of the relationship, while the RELATEDTABLE retrieves values on the many-side. The RELATEDTABLE function returns a table object.
 
 
 
 
 3
 MS Data Analyst
-
+If your formula needs to reference columns in other tbales and the tables aren't related, you can use the LOOKUPVALUE DAX function. Generally, try to use the RELATED function whenever possible. It will usually perform better than the LOOKUPVALUE function due to the ways that relationship and column data is stored and indexed.
 
 
 
