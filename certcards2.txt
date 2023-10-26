@@ -437,7 +437,12 @@ If your formula needs to reference columns in other tbales and the tables aren't
 
 4
 MS Data Analyst
-
+I got access to the PracticePro 365 database using the following steps:
+  Go to the dataset in the web app
+  downloaded the dataset as a .pbix
+  That dataset had all of the tables created as import objects
+  That means that I had the queries that created them.
+  I still don't have access to all of the tables, but it might be enough.
 
 
 
