@@ -465,7 +465,11 @@ You can use the DAX parent-child functions to naturalize the recursive (employee
 
 7
 MS Data Analyst
+Time intelligence calculations modify date filter contexts. They can help you answer these time-related questions:
 
+• What's the accumulation of revenue for the year, quarter, or month?
+• What revenue was produced for the same period last year?
+What growth in revenue has been achieved over the same period last year?
 
 
 
