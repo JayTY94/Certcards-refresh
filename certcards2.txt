@@ -506,14 +506,15 @@ DATESYTD - Returns a single-column table that contains dates for the year-to-dat
 
 11
 MS Data Analyst
-
+TOTALYTD - Evaluates an expression for YTD in the current filter context. The equivalent QTD and MTD DAX functions of TOTALQTD and TOTALMTD are also included.
 
 
 
 
 12
 MS Data Analyst
-
+DATESBETWEEN - Returns a table that contains a column of dates that begins with a given start date and continues until a given end date.
+DATESINPERIOD - Returns a table that contains a column of dates that begins with a given start date and continues for the specified number of intervals.
 
 
 
