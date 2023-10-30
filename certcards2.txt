@@ -498,6 +498,7 @@ Requirements for a date table
 
 10
 MS Data Analyst
+DATESYTD - Returns a single-column table that contains dates for the year-to-date (YTD) in the current filter context. This group also includes the DATESMTD and DATESQTD DAX functions for month-to-date (MTD) and quarter-to-date (QTD). You can pass these functions as filters into the CALCULATE DAX function.
 
 
 
