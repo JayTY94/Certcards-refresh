@@ -476,6 +476,8 @@ What growth in revenue has been achieved over the same period last year?
 
 8
 MS Data Analyst
+Many DAX time intelligence functions are concerned with standard date periods, specifically years, quarters, and months. If you have irregular time periods (for example, financial months that begin mid-way through the calendar month), or you need to work with weeks or time periods (hours, minutes, and so on), the DAX time intelligence functions won't be helpful. Instead, you'll need to use the CALCULATE function and pass in hand-crafted date or time filters.
+
 
 
 
@@ -483,7 +485,13 @@ MS Data Analyst
 
 9
 MS Data Analyst
-
+Requirements for a date table
+  It must have a column of data type Date (or date/time), known as the date column.
+  The date column must contain unique values.
+  The date column must not contain BLANKs.
+  The date column must not have any missing dates.
+  The date column must span full years. A year isn't necessarily a calendar year (January-December).
+  The date table must be indicated as a date table.
 
 
 
