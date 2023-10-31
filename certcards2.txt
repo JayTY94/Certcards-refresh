@@ -1,40 +1,3 @@
-1
-General
-A sovereign wealth fund is a state-owned investment fund that is typically established by countries with large amounts of surplus income from natural resources, trade, or other sources. The purpose of a sovereign wealth fund is to invest the surplus income to generate long-term financial returns that can be used for various purposes such as supporting future generations, stabilizing the economy, or funding social welfare programs.
-
-
-
-
-
-2
-MS Data Analyst
-Measures in Microsoft Power BI models are either implicit or explicit. Implicit measures are automatic behaviors that allow visuals to summarize model column data. Explicit measures, also known simply as measures, are calculations that you can add to your model.
-
-
-
-
-
-3
-Workera.ai
-Unlike private clouds, public clouds can save companies from the expensive costs of having to purchase, manage, and maintain on-premises hardware and application infrastructure - the cloud service provider (CSP) is held responsible for all management and maintenance of the system.
-
-
-
-
-
-4
-MS Data Analyst
-In tabular modeling, no such concept as a calculated measure exists. The word calculated is used to describe calculated tables and calculated columns. It distinguishes them from tables and columns that originate from Power Query, which doesn't have the concept of an explicit measure.
-
-
-
-
-
-5
-Azure DevOps
-A service connection in Azure DevOps is a secure way to connect external services and resources to your Azure DevOps projects. These external services can include Azure subscriptions, repositories hosted on other platforms (such as GitHub or Bitbucket), container registries, and more.
-
-
 
 
 
@@ -251,6 +214,7 @@ N/A                     BLANK
 
 27
 MS Data Analyst
+A calculated column can be summarized (implicit measure) and a measure always achieves summarization.
 
 
 
@@ -404,16 +368,6 @@ It will summarize column values when it is used in a visual (when added to a fie
 
 
 
-
-43
-MS Data Analyst
-A calculated column can be summarized (implicit measure) and a measure always achieves summarization.
-
-
-
-
-
-
 1
 MS Data Analyst
 The DAX function FORMAT is used to convert numeric values to strings or dates to strings. Check the documentation for specific patterns. There are many options.
@@ -521,6 +475,7 @@ DATESINPERIOD - Returns a table that contains a column of dates that begins with
 
 13
 MS Data Analyst
+DATEADD - Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current filter context.
 
 
 
@@ -528,6 +483,7 @@ MS Data Analyst
 
 14
 MS Data Analyst
+PARALLELPERIOD - Returns a table that contains a column of dates that represents a period that is parallel to the dates in the specified dates column, in the current filter context, with the dates shifted a number of intervals either forward in time or back in time.
 
 
 
@@ -535,6 +491,7 @@ MS Data Analyst
 
 15
 MS Data Analyst
+SAMEPERIODLASTYEAR - Returns a table that contains a column of dates that are shifted one year back in time from the dates in the specified dates column, in the current filter context.
 
 
 
@@ -542,6 +499,7 @@ MS Data Analyst
 
 16
 MS Data Analyst
+Many helper DAX functions for navigating backward or forward for specific time periods, all of which returns a table of dates. These helper functions include NEXTDAY, NEXTMONTH, NEXTQUARTER, NEXTYEAR, and PREVIOUSDAY, PREVIOUSMONTH, PREVIOUSQUARTER, and PREVIOUSYEAR.
 
 
 
