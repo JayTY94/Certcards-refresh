@@ -458,6 +458,8 @@ Many helper DAX functions for navigating backward or forward for specific time p
 
 17
 MS Data Analyst
+The FIRSTDATE and the LASTDATE DAX functions return the first and last date in the current filter context for the specified column of dates.
+
 
 
 
