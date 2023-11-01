@@ -467,7 +467,7 @@ The FIRSTDATE and the LASTDATE DAX functions return the first and last date in t
 
 18
 MS Data Analyst
-
+Life-To-Date (LTD) is a procurement term which measures the total amount of goods or services purchased from a vendor within a specified time period. LTD can be used to compare past spending to current spending, allowing companies to identify areas where they may be overspending and optimize their purchasing decisions. 
 
 
 
