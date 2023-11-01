@@ -1,55 +1,6 @@
 
 
 
-6
-MS Data Analyst
-Which statement about measures is correct? 
-
-Measures can reference other measures directly.
-Measures can reference other measures. It's known as a compound measure.
-NOT
-Measures store values in the data model.
-Measures must be added to the data model to achieve summarization.
-Measures can reference columns directly.
-
-
-
-
-
-7
-Azure DevOps
-The design of your service connections should meet your organization’s requirements. Some companies prefer to create service connections per subscription to control the exposure of any given service principal to a specific subscription. Having a proper design saves time and solves the problem of too many service connections.
-
-
-
-
-
-8
-MS Data Analyst
-When you reference a column in a formula, the column name must be enclosed within square brackets. Optionally, it can be preceded by its table name. For example, the following measure definition refers to the Sales Amount column.
-
-
-  Revenue = SUM([Sales Amount])
-
-
-
-
-
-9
-Workera.ai
-The public cloud provider owns and administers the data centers where customers’ workloads run. Service providers assume responsibility for all hardware and infrastructure maintenance and provides high-bandwidth network connectivity to ensure rapid access to applications and data.
-
-
-
-
-
-10
-MS Data Analyst
-We recommend that you use the DIVIDE function whenever the denominator is an expression that could return zero or BLANK. In this case, the division is guaranteed to succeed and pass an alternative value, and your expression will perform better because it will avoid unnecessary testing.
-
-
-
-
 
 11
 MS Data Analyst
