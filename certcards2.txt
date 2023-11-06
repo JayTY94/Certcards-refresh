@@ -424,7 +424,11 @@ Life-To-Date (LTD) is a procurement term which measures the total amount of good
 
 19
 MS Data Analyst
+LASTNONBLANK(<column>, <expression>)
 
+<column>: A column expression.
+<expression>: An expression evaluated for blanks for each value of column2.
+The function returns a table containing a single column and single row with the computed last value123. This function is particularly useful when you need to analyze and present data where the last non-blank value holds significant importance, such as tracking the latest sales figures or monitoring inventory levels5.
 
 
 
