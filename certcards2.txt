@@ -6,16 +6,6 @@
 
 
 
-20
-MS Data Analyst
-The areas where calculated columns and measures differ include:
-
-Purpose - Calculated columns extend a table with a new column, while measures define how to summarize model data.
-Evaluation - Calculated columns are evaluated by using row context at data refresh time, while measures are evaluated by using filter context at query time.
-
-
-
-
 
 21
 MS Data Analyst
@@ -403,6 +393,10 @@ The function returns a table containing a single column and single row with the 
 
 20
 MS Data Analyst
+1. In the context of semantic model calculations, which statement best describes time intelligence? 
+
+Time intelligence calculations modify date filter contexts.
+
 
 
 
@@ -411,6 +405,9 @@ MS Data Analyst
 
 1
 MS Data Analyst
+2. You're developing a semantic model in Power BI Desktop. You've just added a date table by using the CALENDARAUTO function. You've extended it with calculated columns, and you've related it to other model tables. What else should you do to ensure that DAX time intelligence calculations work correctly? 
+
+You must mark the date table so that Power BI can correctly filter its dates.
 
 
 
@@ -418,6 +415,9 @@ MS Data Analyst
 
 2
 MS Data Analyst
+3. You have a table that stores account balance snapshots for each date, excluding weekends. You need to ensure that your measure formula only filters by a single date. Also, if no record is on the last date of a time period, it should use the latest account balance. Which DAX time intelligence function should you use? 
+
+The LASTNONBLANK function will return the last date in the filter context where a snapshot record exists. This option will help you achieve the objective.
 
 
 
