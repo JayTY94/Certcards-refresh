@@ -425,6 +425,10 @@ The LASTNONBLANK function will return the last date in the filter context where 
 
 3
 MS Data Analyst
+Visual cache - When you load a visual, you can't clear this visual cache without closing Power BI Desktop and opening it again. To avoid any caching in play, you need to start your analysis with a clean visual cache.
+
+To ensure that you have a clear visual cache, add a blank page to your Power BI Desktop (.pbix) file and then, with that page selected, save and close the file. Reopen the Power BI Desktop (.pbix) file that you want to analyze. It will open on the blank page.
+
 
 
 
@@ -432,6 +436,10 @@ MS Data Analyst
 
 4
 MS Data Analyst
+Data engine cache - When a query is run, the results are cached, so the results of your analysis will be misleading. You need to clear the data cache before rerunning the visual.
+
+To clear the data cache, you can either restart Power BI Desktop or connect DAX Studio to the semantic model and then call Clear Cache.
+
 
 
 
