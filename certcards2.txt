@@ -456,7 +456,9 @@ Before you run Performance analyzer, to ensure you get the most accurate results
 
 6
 MS Data Analyst
+When you have cleared the caches and opened the Power BI Desktop file on the blank page, go to the View tab and select the Performance analyzer option.
 
+To begin the analysis process, select Start recording, select the page of the report that you want to analyze, and interact with the elements of the report that you want to measure. 
 
 
 
