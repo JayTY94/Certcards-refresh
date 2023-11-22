@@ -447,6 +447,8 @@ To clear the data cache, you can either restart Power BI Desktop or connect DAX 
 
 5
 MS Data Analyst
+Before you run Performance analyzer, to ensure you get the most accurate results in your analysis (test), make sure that you start with a clear visual cache and a clear data engine cache.
+
 
 
 
