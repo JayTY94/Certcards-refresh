@@ -465,13 +465,16 @@ To begin the analysis process, select Start recording, select the page of the re
 
 7
 MS Data Analyst
-
-
+Type of Performance Analyzer task:
+DAX query - The time it took for the visual to send the query, along with the time it took Analysis Services to return the results.
 
 
 
 8
 MS Data Analyst
+Type of Performance Analyzer task:
+Visual display - The time it took for the visual to render on the screen, including the time required to retrieve web images or geocoding.
+
 
 
 
@@ -479,6 +482,9 @@ MS Data Analyst
 
 9
 MS Data Analyst
+Type of Performance Analyzer task:
+Other - The time it took the visual to prepare queries, wait for other visuals to complete, or perform other background processing tasks. If this category displays a long duration, the only real way to reduce this duration is to optimize DAX queries for other visuals, or reduce the number of visuals in the report.
+
 
 
 
