@@ -1,13 +1,6 @@
 
 
 
-25
-MS Data Analyst
-When writing a DAX formula that uses operators to combine different data types, you don't need to explicitly convert types. Usually, DAX automatically identifies the data types of referenced model objects and performs implicit conversions where necessary to complete the specified operation.
-
-
-
-
 
 26
 MS Data Analyst
