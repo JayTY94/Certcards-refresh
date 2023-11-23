@@ -1,51 +1,6 @@
 
 
 
-
-
-
-
-
-
-21
-MS Data Analyst
-Because column names are unique within a table but not necessarily unique within the model, you can disambiguate the column reference by preceding it with its table name. This disambiguated column is known as a fully qualified column. Some DAX functions require passing in fully qualified columns.
-
-
-
-
-
-22
-MS Data Analyst
-Remembering how BLANK is handled can be challenging, especially for DAX beginners. Consequently, we recommend that you test your formulas thoroughly. When BLANKs create unexpected results, consider using the IF and ISBLANK DAX functions to test for BLANK, and then respond in an appropriate way.
-
-
-
-
-
-23
-MS Data Analyst
-Logical Operators in DAX
-
-&&    And
-||    Or
-IN    Similar to "in" operator in python
-NOT   Inverts state of a Boolean
-
-
-
-
-
-24
-MS Data Analyst
-In the Fields pane, calculated columns have the following icon.
-https://i.ytimg.com/vi/ePPi1LLX0sA/maxresdefault.jpg
-Draw it!
-
-
-
-
-
 25
 MS Data Analyst
 When writing a DAX formula that uses operators to combine different data types, you don't need to explicitly convert types. Usually, DAX automatically identifies the data types of referenced model objects and performs implicit conversions where necessary to complete the specified operation.
