@@ -487,6 +487,8 @@ Variables do not require the use of EARLIER or EARLIEST DAX functions, which are
 
 16
 MS Data Analyst
+Lower cardinality leads to more optimized performance, so you might need to reduce the number of high cardinally columns in your semantic model.
+
 
 
 
