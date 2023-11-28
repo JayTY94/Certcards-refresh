@@ -496,6 +496,8 @@ Lower cardinality leads to more optimized performance, so you might need to redu
 
 17
 MS Data Analyst
+Perhaps the most effective technique to reduce a model size is to use a summary table from the data source. Where a detail table might contain every transaction, a summary table would contain one record per day, per week, or per month. It might be an average of all of the transactions per day, for instance.
+
 
 
 
