@@ -550,99 +550,141 @@ When you execute a query with a parameter, in this case "@Color", DAX Studio wil
 
 
 
+1
+MS Data Analyst
+
+
+
+
+
+2
+MS Data Analyst
+
+
+
+
+
+3
+MS Data Analyst
+
+
+
+
+
+4
+MS Data Analyst
+
+
+
+
+
+5
+MS Data Analyst
+
+
+
+
+
+6
+MS Data Analyst
+
+
+
+
+
 7
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 8
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 9
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 10
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 11
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 12
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 13
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 14
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 15
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 16
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 17
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 18
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 19
-DAX Studio
+MS Data Analyst
 
 
 
 
 
 20
-DAX Studio
+MS Data Analyst
 
 
 
