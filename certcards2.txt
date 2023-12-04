@@ -503,22 +503,146 @@ Perhaps the most effective technique to reduce a model size is to use a summary 
 
 
 
+1
+DAX Studio
+Within a single batch, although you can have multiple EVALUATE statements you can only have a single DEFINE statement. So you would need to declare all your calculations in that one block.
+
+
+
+
+
+
+2
+DAX Studio
+The EVALUATE keyword is automatically included by Power BI in every query. It’s used to answer and create your visuals in Power BI. It’s also used to contain table expressions in a DAX query. You can’t pair EVALUATE with a scalar value such as a measure or a number. You can only use EVALUATE with table expressions.
+
+
+
+
+3
+DAX Studio
+To convert numbers or measures into a table, you need to place it between curly brackets { }. To create a table with two columns, use parenthesis ( ) and write another value separated by a comma. To add another row, you need to place another expression within a parenthesis inside the curly bracket.
+
+
+
+
+4
+DAX Studio
+Referencing Tables Using EVALUATE: You can also reference entire tables using EVALUATE. For example, if you want to return the Products Table, execute EVALUATE Products.
+
+
+
+
+5
+DAX Studio
+DEFINE Keyword: The DEFINE keyword defines entities applied to one or more EVALUATE statements in a DAX query. At least one definition is required in a DEFINE statement. Measure definitions for a query override model measures of the same name.
+
+
+
+
+6
+DAX Studio
+EVALUATE
+FILTER ( 'Product', 'Product'[Color] = @Color )
+
+When you execute a query with a parameter, in this case "@Color", DAX Studio will prompt you for the parameter to use
+
+
+
+
+7
+DAX Studio
+
+
+
+
+
+8
+DAX Studio
+
+
+
+
+
+9
+DAX Studio
+
+
+
+
+
+10
+DAX Studio
+
+
+
+
+
+11
+DAX Studio
+
+
+
+
+
+12
+DAX Studio
+
+
+
+
+
+13
+DAX Studio
+
+
+
+
+
+14
+DAX Studio
+
+
+
+
+
+15
+DAX Studio
+
+
+
+
+
+16
+DAX Studio
+
+
+
+
+
+17
+DAX Studio
+
+
+
+
+
 18
-MS Data Analyst
+DAX Studio
 
 
 
 
 
 19
-MS Data Analyst
+DAX Studio
 
 
 
 
 
 20
-MS Data Analyst
+DAX Studio
 
 
 
