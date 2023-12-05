@@ -566,6 +566,9 @@ You can open the Manage Aggregations window from any view in Power BI Desktop. I
 
 9
 MS Data Analyst
+1. What benefit do you get from analyzing the metadata? 
+The benefit of analyzing the metadata is that you can clearly identify data inconsistences with your semantic model.
+
 
 
 
@@ -573,6 +576,9 @@ MS Data Analyst
 
 10
 MS Data Analyst
+2. What can be achieved by removing unnecessary rows and columns? 
+Deleting unnecessary rows and columns will reduce a semantic model size and it's good practice to load only necessary data into your semantic model.
+
 
 
 
@@ -580,6 +586,10 @@ MS Data Analyst
 
 11
 MS Data Analyst
+3. Which of the following statements about relationships in Power BI Desktop is true? 
+Relationships can be created between tables that contain different types of data.
+A working relationship can be created as long as there is at least one common column between them.
+
 
 
 
