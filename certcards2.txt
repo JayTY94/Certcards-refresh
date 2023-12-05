@@ -548,13 +548,17 @@ Integration with Power BI: Power BI can connect to OLAP (Online Analytical Proce
 
 7
 MS Data Analyst
-
+To aggregate data to decrease the size of a semantic model for a particuarly large table in Power Query, use Choose Columns on the Home tab to limit the number of columns imported and then choose Group by in the Home tab. Then choose Adavnced and select Add Aggregation
 
 
 
 
 8
 MS Data Analyst
+When you have created aggregations, you can manage those aggregations in Power BI Desktop and make changes to their behavior, if required.
+
+You can open the Manage Aggregations window from any view in Power BI Desktop. In the Fields pane, right-click the table and then select Manage aggregations.
+
 
 
 
