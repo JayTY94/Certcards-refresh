@@ -2,54 +2,6 @@
 
 
 
-26
-MS Data Analyst
-Model data types aren't the same as DAX data types, though a direct relationship exists between them. 
-
-Model data type         DAX data type
-Whole number            64-bit integer
-Decimal Number          64-bit real
-Boolean                 Boolean
-Text                    String
-Date                    Date/Time
-Currency                Currency
-N/A                     BLANK
-
-
-
-
-
-27
-MS Data Analyst
-A calculated column can be summarized (implicit measure) and a measure always achieves summarization.
-
-
-
-
-
-28
-General
-I'm working with Jamie Asato on some Data visualizations. I think she prefers unplanned calls to scheduled meetings.
-
-
-
-
-
-29
-Workera.ai
-Azure Subscriptions can only trust a single directory while one Microsoft Entra tenant may be trusted by multiple subscriptions.
-
-
-
-
-
-30
-Azure Dev Ops
-You can create a service connection from Azure Pipelines to external and remote services for executing tasks in a job. Once you establish a connection, you can view, edit, and add security to the service connection. You can also manage different types of service connections with the az devops service-endpoint command3.
-
-
-
-
 
 31
 MS Data Analyst
@@ -552,27 +504,29 @@ When you execute a query with a parameter, in this case "@Color", DAX Studio wil
 
 1
 MS Data Analyst
-
+Meaningful Representation: Semantic models go beyond just structuring data; they aim to represent the data in a way that aligns with how business users think and talk about it. This user-oriented approach makes the data more accessible and understandable.
 
 
 
 
 2
 MS Data Analyst
-
+Enabling Business Intelligence: The main goal of semantic data models is to facilitate business intelligence. By presenting data in a business-friendly way, these models enable users to perform analysis, generate reports, and derive insights more efficiently.
 
 
 
 
 3
 MS Data Analyst
-
+Multidimensional Analysis: OLAP (Online Analytical Processing) databases are structured in a multidimensional format, which is ideal for complex calculations, trend analysis, and sophisticated data modeling. This format is great for slicing and dicing data, enabling users to view it from multiple perspectives.
 
 
 
 
 4
 MS Data Analyst
+Data Cubes: The core of an OLAP (Online Analytical Processing) database is the OLAP cube, organizing data into a multi-dimensional structure of dimensions (categories of analysis) and measures (quantitative metrics). This structure enhances data retrieval and analysis efficiency.
+
 
 
 
@@ -580,14 +534,14 @@ MS Data Analyst
 
 5
 MS Data Analyst
-
+Fast Query Performance: OLAP (Online Analytical Processing) is designed for rapid query performance, essential for business intelligence tools like Power BI. It can quickly aggregate large volumes of data and compute complex metrics.
 
 
 
 
 6
 MS Data Analyst
-
+Integration with Power BI: Power BI can connect to OLAP (Online Analytical Processing) databases as a data source, allowing users to import data from OLAP cubes and utilize Power BI's advanced visualization and reporting tools for data analysis.
 
 
 
