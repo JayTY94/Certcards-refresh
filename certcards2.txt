@@ -1,97 +1,190 @@
-
-
-
-
-
-31
+1
 MS Data Analyst
-2. Which DAX function can summarize a table? 
-
-COUNTROWS
-
-NOT
-SUM
-AVERAGE
-DISTINCTCOUNT
-These summarize a column, not a table.
+BLANK is handled differently, depending on the operator that is used. It's handled similar to how Excel treats BLANK, but differently to how databases (SQL) treat NULL. BLANK is treated as zero when acted on by arithmetic operators and as an empty string when concatenated to a string.
 
 
 
 
 
-32
+2
+MS Data Analyst
+DATESYTD - Returns a single-column table that contains dates for the year-to-date (YTD) in the current filter context. This group also includes the DATESMTD and DATESQTD DAX functions for month-to-date (MTD) and quarter-to-date (QTD). You can pass these functions as filters into the CALCULATE DAX function.
+
+
+
+
+
+3
+MS Data Analyst
+You can create, validate, and manage roles in Power BI Desktop. For Azure Analysis Services or SQL Server Analysis Services models, you can create, validate, and manage roles by using SQL Server Data Tools (SSDT).
+
+
+
+
+
+4
+MS Data Analyst
+Multidimensional Analysis: OLAP (Online Analytical Processing) databases are structured in a multidimensional format, which is ideal for complex calculations, trend analysis, and sophisticated data modeling. This format is great for slicing and dicing data, enabling users to view it from multiple perspectives.
+
+
+
+
+
+5
 Workera.ai
-The public cloud is defined as computing services offered by third-party providers over the public Internet, making them available to anyone who wants to use or purchase them. They may be free or sold on-demand, allowing customers to pay only per usage for the CPU cycles, storage, or bandwidth they consume.
+In September 2018, Microsoft combined Azure Monitor, Log Analytics, and Application Insights into a single service to provide powerful end-to-end monitoring of your applications and the components they rely on. Features in Log Analytics and Application Insights haven't changed, although some features have been rebranded to Azure Monitor to better reflect their new scope.
 
 
 
 
 
-33
+6
 MS Data Analyst
-1. You're using Power BI Desktop to develop a model. It has a table named Sales, which includes a column named CustomerKey. In reports, you need a calculation to show the number of different customers who have placed orders. What type of DAX calculation will you add to the model? 
+When you have created aggregations, you can manage those aggregations in Power BI Desktop and make changes to their behavior, if required.
 
-You can add a measure to the Sales table by using the DISTINCTCOUNT DAX function.
-
-
+You can open the Manage Aggregations window from any view in Power BI Desktop. In the Fields pane, right-click the table and then select Manage aggregations.
 
 
 
-34
+
+
+7
 MS Data Analyst
-DAX Variable definition sample
-Revenue YoY % =
-VAR RevenuePriorYear =
-    CALCULATE(
-        [Revenue],
-        SAMEPERIODLASTYEAR('Date'[Date])
-    )
-RETURN
-    DIVIDE(
-        [Revenue] - RevenuePriorYear,
-        RevenuePriorYear
-    )
+DATESBETWEEN - Returns a table that contains a column of dates that begins with a given start date and continues until a given end date.
+DATESINPERIOD - Returns a table that contains a column of dates that begins with a given start date and continues for the specified number of intervals.
 
 
 
 
 
-35
+8
 MS Data Analyst
-Power BI Desktop supports a feature called What-if parameters. When you create a what-if parameter, a calculated table is automatically added to your model.
-
-What-if parameters allow report users to select or filter by values that are stored in the calculated table. Measure formulas can use selected value(s) in a meaningful way.
+Fast Query Performance: OLAP (Online Analytical Processing) is designed for rapid query performance, essential for business intelligence tools like Power BI. It can quickly aggregate large volumes of data and compute complex metrics.
 
 
 
 
 
-36
-Workera.ai
-All Azure subscriptions have a trust relationship with a Microsoft Entra tenant. Subscriptions rely on this tenant (directory) to authenticate and authorize security principals and devices. When a subscription expires, the trusted instance remains, but the security principals lose access to Azure resources.
-
-
-
-
-
-37
+9
 MS Data Analyst
-The areas where calculated columns and measures differ include:
-Visual use - Calculated columns (like any column) can be used to filter, group, or summarize (as an implicit measure), whereas measures are designed to summarize.
+The more visuals you have on the report, the higher chance for performance issues. In addition, the more visuals, the more the report can appear crowded and lose clarity. The upper limit for visuals is 100 fields (measures or columns), so a visual with more than 100 fields will be slow to load.
 
 
 
 
 
-38
-General
-Mergers and Acquisitions (M&A) advisory services are a type of financial service provided by intermediaries in the field of mergers and acquisitions1.
+10
+MS Data Analyst
+When you have cleared the caches and opened the Power BI Desktop file on the blank page, go to the View tab and select the Performance analyzer option.
+
+To begin the analysis process, select Start recording, select the page of the report that you want to analyze, and interact with the elements of the report that you want to measure.
 
 
 
 
 
-39
+11
+MS Data Analyst
+Life-To-Date (LTD) is a procurement term which measures the total amount of goods or services purchased from a vendor within a specified time period. LTD can be used to compare past spending to current spending, allowing companies to identify areas where they may be overspending and optimize their purchasing decisions.
+
+
+
+
+
+12
+MS Data Analyst
+Perhaps the most effective technique to reduce a model size is to use a summary table from the data source. Where a detail table might contain every transaction, a summary table would contain one record per day, per week, or per month. It might be an average of all of the transactions per day, for instance.
+
+
+
+
+
+13
+MS Data Analyst
+PARALLELPERIOD - Returns a table that contains a column of dates that represents a period that is parallel to the dates in the specified dates column, in the current filter context, with the dates shifted a number of intervals either forward in time or back in time.
+
+
+
+
+
+14
+DAX Studio
+Within a single batch, although you can have multiple EVALUATE statements you can only have a single DEFINE statement. So you would need to declare all your calculations in that one block.
+
+
+
+
+
+15
+MS Data Analyst
+Other metadata that you should consider is the information about the semantic model as a whole, such as the file size and data refresh rates. You can find this metadata in the associated Power BI Desktop (.pbix) file. The data that you load into Power BI Desktop is compressed and stored to the disk by the VertiPaq storage engine.
+
+
+
+
+
+16
+MS Data Analyst
+The FIRSTDATE and the LASTDATE DAX functions return the first and last date in the current filter context for the specified column of dates.
+
+
+
+
+
+17
+MS Data Analyst
+SAMEPERIODLASTYEAR - Returns a table that contains a column of dates that are shifted one year back in time from the dates in the specified dates column, in the current filter context.
+
+
+
+
+
+18
+MS Data Analyst
+Meaningful Representation: Semantic models go beyond just structuring data; they aim to represent the data in a way that aligns with how business users think and talk about it. This user-oriented approach makes the data more accessible and understandable.
+
+
+
+
+
+19
+MS Data Analyst
+2. You're developing a semantic model in Power BI Desktop. You've just added a date table by using the CALENDARAUTO function. You've extended it with calculated columns, and you've related it to other model tables. What else should you do to ensure that DAX time intelligence calculations work correctly? 
+
+You must mark the date table so that Power BI can correctly filter its dates.
+
+
+
+
+
+20
+MS Data Analyst
+If your formula needs to reference columns in other tbales and the tables aren't related, you can use the LOOKUPVALUE DAX function. Generally, try to use the RELATED function whenever possible. It will usually perform better than the LOOKUPVALUE function due to the ways that relationship and column data is stored and indexed.
+
+
+
+
+
+21
+MS Data Analyst
+DATEADD - Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current filter context.
+
+
+
+
+
+22
+DAX Studio
+EVALUATE
+FILTER ( 'Product', 'Product'[Color] = @Color )
+
+When you execute a query with a parameter, in this case "@Color", DAX Studio will prompt you for the parameter to use
+
+
+
+
+
+23
 MS Data Analyst
 2. You're using Power BI Desktop to develop a model. It has a table named Customer, which includes a column named DateOfBirth. In reports, you need to group customers by current age. What type of DAX calculation will you add to the Customer table? 
 
@@ -101,9 +194,143 @@ A calculated column can store the current age for each customer. This column cou
 
 
 
+24
+General
+Mergers and Acquisitions (M&A) advisory services are a type of financial service provided by intermediaries in the field of mergers and acquisitions1.
+
+
+
+
+
+25
+MS Data Analyst
+The areas where calculated columns and measures differ include:
+Visual use - Calculated columns (like any column) can be used to filter, group, or summarize (as an implicit measure), whereas measures are designed to summarize.
+
+
+
+
+
+26
+MS Data Analyst
+To aggregate data to decrease the size of a semantic model for a particuarly large table in Power Query, use Choose Columns on the Home tab to limit the number of columns imported and then choose Group by in the Home tab. Then choose Adavnced and select Add Aggregation
+
+
+
+
+
+27
+MS Data Analyst
+Another item to consider when optimizing performance is the Auto date/time option in Power BI Desktop. By default, this feature is enabled globally, which means that Power BI Desktop automatically creates a hidden calculated table for each date column, provided that certain conditions are met.
+
+
+
+
+
+28
+MS Data Analyst
+Variables do not require the use of EARLIER or EARLIEST DAX functions, which are difficult to understand. These functions were required before variables were introduced, and were written in complex expressions that introduced new filter contexts. Now that you can use variables instead of those functions, you can write fewer complex formulas.
+
+
+
+
+
+29
+MS Data Analyst
+TOTALYTD - Evaluates an expression for YTD in the current filter context. The equivalent QTD and MTD DAX functions of TOTALQTD and TOTALMTD are also included.
+
+
+
+
+
+30
+MS Data Analyst
+Integration with Power BI: Power BI can connect to OLAP (Online Analytical Processing) databases as a data source, allowing users to import data from OLAP cubes and utilize Power BI's advanced visualization and reporting tools for data analysis.
+
+
+
+
+
+31
+DAX Studio
+The EVALUATE keyword is automatically included by Power BI in every query. It’s used to answer and create your visuals in Power BI. It’s also used to contain table expressions in a DAX query. You can’t pair EVALUATE with a scalar value such as a measure or a number. You can only use EVALUATE with table expressions.
+
+
+
+
+
+32
+MS Data Analyst
+It's possible to define a role that includes no rules. In this case, the role provides access to all rows of all model tables. This role set up would be suitable for an admin user who is allowed to view all data.
+
+
+
+
+
+33
+MS Data Analyst
+
+
+
+
+
+34
+MS Data Analyst
+As a data modeler, you set up RLS by creating one or more roles. A role has a unique name in the model, and it usually includes one or more rules. Rules enforce filters on model tables by using Data Analysis Expressions (DAX) filter expressions.
+
+
+
+
+
+35
+MS Data Analyst
+On the Model tab, if you want to pin the key columns to the top of each card, click the canvas (not a card), and the card property blade will appear. That allows you to toggle the setting.
+
+
+
+
+
+36
+MS Data Analyst
+The DAX function FORMAT is used to convert numeric values to strings or dates to strings. Check the documentation for specific patterns. There are many options.
+
+
+
+
+
+37
+DAX Studio
+Referencing Tables Using EVALUATE: You can also reference entire tables using EVALUATE. For example, if you want to return the Products Table, execute EVALUATE Products.
+
+
+
+
+
+38
+MS Data Analyst
+Enabling Business Intelligence: The main goal of semantic data models is to facilitate business intelligence. By presenting data in a business-friendly way, these models enable users to perform analysis, generate reports, and derive insights more efficiently.
+
+
+
+
+
+39
+MS Data Analyst
+Time intelligence calculations modify date filter contexts. They can help you answer these time-related questions:
+
+• What's the accumulation of revenue for the year, quarter, or month?
+• What revenue was produced for the same period last year?
+What growth in revenue has been achieved over the same period last year?
+
+
+
+
+
 40
-Workera.ai
-In September 2018, Microsoft combined Azure Monitor, Log Analytics, and Application Insights into a single service to provide powerful end-to-end monitoring of your applications and the components they rely on. Features in Log Analytics and Application Insights haven't changed, although some features have been rebranded to Azure Monitor to better reflect their new scope.
+MS Data Analyst
+Visual cache - When you load a visual, you can't clear this visual cache without closing Power BI Desktop and opening it again. To avoid any caching in play, you need to start your analysis with a clean visual cache.
+
+To ensure that you have a clear visual cache, add a blank page to your Power BI Desktop (.pbix) file and then, with that page selected, save and close the file. Reopen the Power BI Desktop (.pbix) file that you want to analyze. It will open on the blank page.
 
 
 
@@ -111,7 +338,7 @@ In September 2018, Microsoft combined Azure Monitor, Log Analytics, and Applicat
 
 41
 MS Data Analyst
-BLANK is handled differently, depending on the operator that is used. It's handled similar to how Excel treats BLANK, but differently to how databases (SQL) treat NULL. BLANK is treated as zero when acted on by arithmetic operators and as an empty string when concatenated to a string.
+Many DAX time intelligence functions are concerned with standard date periods, specifically years, quarters, and months. If you have irregular time periods (for example, financial months that begin mid-way through the calendar month), or you need to work with weeks or time periods (hours, minutes, and so on), the DAX time intelligence functions won't be helpful. Instead, you'll need to use the CALCULATE function and pass in hand-crafted date or time filters.
 
 
 
@@ -119,36 +346,40 @@ BLANK is handled differently, depending on the operator that is used. It's handl
 
 42
 MS Data Analyst
-In the Fields pane, a column that's shown with the sigma symbol ( ∑ ) indicates two facts:
-
-It's a numeric column.
-It will summarize column values when it is used in a visual (when added to a field well that supports summarization).
+Type of Performance Analyzer task:
+Other - The time it took the visual to prepare queries, wait for other visuals to complete, or perform other background processing tasks. If this category displays a long duration, the only real way to reduce this duration is to optimize DAX queries for other visuals, or reduce the number of visuals in the report.
 
 
 
 
-1
+
+43
 MS Data Analyst
-The DAX function FORMAT is used to convert numeric values to strings or dates to strings. Check the documentation for specific patterns. There are many options.
+Data engine cache - When a query is run, the results are cached, so the results of your analysis will be misleading. You need to clear the data cache before rerunning the visual.
+
+To clear the data cache, you can either restart Power BI Desktop or connect DAX Studio to the semantic model and then call Clear Cache.
 
 
 
 
-2
+
+44
 MS Data Analyst
-If your formula needs to reference columns in other tables, and if the tables are related, directly or indirectly, you can use the RELATED or RELATEDTABLE DAX function. The RELATED function retrieves the value at the one-side of the relationship, while the RELATEDTABLE retrieves values on the many-side. The RELATEDTABLE function returns a table object.
+Data Cubes: The core of an OLAP (Online Analytical Processing) database is the OLAP cube, organizing data into a multi-dimensional structure of dimensions (categories of analysis) and measures (quantitative metrics). This structure enhances data retrieval and analysis efficiency.
 
 
 
 
-3
+
+45
 MS Data Analyst
-If your formula needs to reference columns in other tbales and the tables aren't related, you can use the LOOKUPVALUE DAX function. Generally, try to use the RELATED function whenever possible. It will usually perform better than the LOOKUPVALUE function due to the ways that relationship and column data is stored and indexed.
+To analyze your queries in more detail, you can use DAX studio, which is a free, open-source tool that is provided by another service.
 
 
 
 
-4
+
+46
 MS Data Analyst
 I got access to the PracticePro 365 database using the following steps:
   Go to the dataset in the web app
@@ -160,43 +391,35 @@ I got access to the PracticePro 365 database using the following steps:
 
 
 
-5
+
+47
+DAX Studio
+To convert numbers or measures into a table, you need to place it between curly brackets { }. To create a table with two columns, use parenthesis ( ) and write another value separated by a comma. To add another row, you need to place another expression within a parenthesis inside the curly bracket.
+
+
+
+
+
+48
 MS Data Analyst
-On the Model tab, if you want to pin the key columns to the top of each card, click the canvas (not a card), and the card property blade will appear. That allows you to toggle the setting.
+3. You have a table that stores account balance snapshots for each date, excluding weekends. You need to ensure that your measure formula only filters by a single date. Also, if no record is on the last date of a time period, it should use the latest account balance. Which DAX time intelligence function should you use? 
+
+The LASTNONBLANK function will return the last date in the filter context where a snapshot record exists. This option will help you achieve the objective.
 
 
 
 
-6
+
+49
 MS Data Analyst
-3. You're developing a Power BI desktop model that sources data from an Excel workbook. The workbook has an employee table that stores one row for each employee. Each row has a reference to the employee's manager, which is also a row in the employee table. You need to add several columns to the Employee table in your model to analyze payroll data within the organization hierarchy (like, executive level, manager level, and so on). Which technique will you use to add the columns? 
-
-You can use the DAX parent-child functions to naturalize the recursive (employee-manager) relationship into columns.
-
-
-
-
-7
-MS Data Analyst
-Time intelligence calculations modify date filter contexts. They can help you answer these time-related questions:
-
-• What's the accumulation of revenue for the year, quarter, or month?
-• What revenue was produced for the same period last year?
-What growth in revenue has been achieved over the same period last year?
-
-
-
-
-8
-MS Data Analyst
-Many DAX time intelligence functions are concerned with standard date periods, specifically years, quarters, and months. If you have irregular time periods (for example, financial months that begin mid-way through the calendar month), or you need to work with weeks or time periods (hours, minutes, and so on), the DAX time intelligence functions won't be helpful. Instead, you'll need to use the CALCULATE function and pass in hand-crafted date or time filters.
+Type of Performance Analyzer task:
+DAX query - The time it took for the visual to send the query, along with the time it took Analysis Services to return the results.
 
 
 
 
 
-
-9
+50
 MS Data Analyst
 Requirements for a date table
   It must have a column of data type Date (or date/time), known as the date column.
@@ -209,54 +432,55 @@ Requirements for a date table
 
 
 
-10
+
+51
 MS Data Analyst
-DATESYTD - Returns a single-column table that contains dates for the year-to-date (YTD) in the current filter context. This group also includes the DATESMTD and DATESQTD DAX functions for month-to-date (MTD) and quarter-to-date (QTD). You can pass these functions as filters into the CALCULATE DAX function.
+Type of Performance Analyzer task:
+Visual display - The time it took for the visual to render on the screen, including the time required to retrieve web images or geocoding.
 
 
 
 
 
-11
+52
 MS Data Analyst
-TOTALYTD - Evaluates an expression for YTD in the current filter context. The equivalent QTD and MTD DAX functions of TOTALQTD and TOTALMTD are also included.
+1. In the context of semantic model calculations, which statement best describes time intelligence? 
+
+Time intelligence calculations modify date filter contexts.
 
 
 
 
-12
+
+53
 MS Data Analyst
-DATESBETWEEN - Returns a table that contains a column of dates that begins with a given start date and continues until a given end date.
-DATESINPERIOD - Returns a table that contains a column of dates that begins with a given start date and continues for the specified number of intervals.
+1. What benefit do you get from analyzing the metadata? 
+The benefit of analyzing the metadata is that you can clearly identify data inconsistences with your semantic model.
 
 
 
 
-13
+
+54
 MS Data Analyst
-DATEADD - Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current filter context.
+In the Fields pane, a column that's shown with the sigma symbol ( ∑ ) indicates two facts:
+
+It's a numeric column.
+It will summarize column values when it is used in a visual (when added to a field well that supports summarization).
 
 
 
 
 
-14
+55
 MS Data Analyst
-PARALLELPERIOD - Returns a table that contains a column of dates that represents a period that is parallel to the dates in the specified dates column, in the current filter context, with the dates shifted a number of intervals either forward in time or back in time.
+Lower cardinality leads to more optimized performance, so you might need to reduce the number of high cardinally columns in your semantic model.
 
 
 
 
 
-15
-MS Data Analyst
-SAMEPERIODLASTYEAR - Returns a table that contains a column of dates that are shifted one year back in time from the dates in the specified dates column, in the current filter context.
-
-
-
-
-
-16
+56
 MS Data Analyst
 Many helper DAX functions for navigating backward or forward for specific time periods, all of which returns a table of dates. These helper functions include NEXTDAY, NEXTMONTH, NEXTQUARTER, NEXTYEAR, and PREVIOUSDAY, PREVIOUSMONTH, PREVIOUSQUARTER, and PREVIOUSYEAR.
 
@@ -264,23 +488,41 @@ Many helper DAX functions for navigating backward or forward for specific time p
 
 
 
-17
+57
+Workera.ai
+All Azure subscriptions have a trust relationship with a Microsoft Entra tenant. Subscriptions rely on this tenant (directory) to authenticate and authorize security principals and devices. When a subscription expires, the trusted instance remains, but the security principals lose access to Azure resources.
+
+
+
+
+
+58
 MS Data Analyst
-The FIRSTDATE and the LASTDATE DAX functions return the first and last date in the current filter context for the specified column of dates.
+Suppose that you have an ID column with thousands of unique rows. You know that you won't use this particular column in a relationship, so it will not be used in a report. Therefore, you should consider this column as unnecessary and admit that it is wasting space in your semantic model.
 
 
 
 
 
-
-18
+59
 MS Data Analyst
-Life-To-Date (LTD) is a procurement term which measures the total amount of goods or services purchased from a vendor within a specified time period. LTD can be used to compare past spending to current spending, allowing companies to identify areas where they may be overspending and optimize their purchasing decisions. 
+3. You're developing a Power BI desktop model that sources data from an Excel workbook. The workbook has an employee table that stores one row for each employee. Each row has a reference to the employee's manager, which is also a row in the employee table. You need to add several columns to the Employee table in your model to analyze payroll data within the organization hierarchy (like, executive level, manager level, and so on). Which technique will you use to add the columns? 
+
+You can use the DAX parent-child functions to naturalize the recursive (employee-manager) relationship into columns.
 
 
 
 
-19
+
+60
+MS Data Analyst
+If your formula needs to reference columns in other tables, and if the tables are related, directly or indirectly, you can use the RELATED or RELATEDTABLE DAX function. The RELATED function retrieves the value at the one-side of the relationship, while the RELATEDTABLE retrieves values on the many-side. The RELATEDTABLE function returns a table object.
+
+
+
+
+
+61
 MS Data Analyst
 LASTNONBLANK(<column>, <expression>)
 
@@ -291,300 +533,8 @@ The function returns a table containing a single column and single row with the 
 
 
 
-20
-MS Data Analyst
-1. In the context of semantic model calculations, which statement best describes time intelligence? 
 
-Time intelligence calculations modify date filter contexts.
-
-
-
-
-
-
-
-1
-MS Data Analyst
-2. You're developing a semantic model in Power BI Desktop. You've just added a date table by using the CALENDARAUTO function. You've extended it with calculated columns, and you've related it to other model tables. What else should you do to ensure that DAX time intelligence calculations work correctly? 
-
-You must mark the date table so that Power BI can correctly filter its dates.
-
-
-
-
-
-2
-MS Data Analyst
-3. You have a table that stores account balance snapshots for each date, excluding weekends. You need to ensure that your measure formula only filters by a single date. Also, if no record is on the last date of a time period, it should use the latest account balance. Which DAX time intelligence function should you use? 
-
-The LASTNONBLANK function will return the last date in the filter context where a snapshot record exists. This option will help you achieve the objective.
-
-
-
-
-
-3
-MS Data Analyst
-Visual cache - When you load a visual, you can't clear this visual cache without closing Power BI Desktop and opening it again. To avoid any caching in play, you need to start your analysis with a clean visual cache.
-
-To ensure that you have a clear visual cache, add a blank page to your Power BI Desktop (.pbix) file and then, with that page selected, save and close the file. Reopen the Power BI Desktop (.pbix) file that you want to analyze. It will open on the blank page.
-
-
-
-
-
-
-4
-MS Data Analyst
-Data engine cache - When a query is run, the results are cached, so the results of your analysis will be misleading. You need to clear the data cache before rerunning the visual.
-
-To clear the data cache, you can either restart Power BI Desktop or connect DAX Studio to the semantic model and then call Clear Cache.
-
-
-
-
-
-
-5
-MS Data Analyst
-Before you run Performance analyzer, to ensure you get the most accurate results in your analysis (test), make sure that you start with a clear visual cache and a clear data engine cache.
-
-
-
-
-
-
-6
-MS Data Analyst
-When you have cleared the caches and opened the Power BI Desktop file on the blank page, go to the View tab and select the Performance analyzer option.
-
-To begin the analysis process, select Start recording, select the page of the report that you want to analyze, and interact with the elements of the report that you want to measure. 
-
-
-
-
-7
-MS Data Analyst
-Type of Performance Analyzer task:
-DAX query - The time it took for the visual to send the query, along with the time it took Analysis Services to return the results.
-
-
-
-8
-MS Data Analyst
-Type of Performance Analyzer task:
-Visual display - The time it took for the visual to render on the screen, including the time required to retrieve web images or geocoding.
-
-
-
-
-
-
-9
-MS Data Analyst
-Type of Performance Analyzer task:
-Other - The time it took the visual to prepare queries, wait for other visuals to complete, or perform other background processing tasks. If this category displays a long duration, the only real way to reduce this duration is to optimize DAX queries for other visuals, or reduce the number of visuals in the report.
-
-
-
-
-
-
-10
-MS Data Analyst
-To analyze your queries in more detail, you can use DAX studio, which is a free, open-source tool that is provided by another service.
-
-
-
-
-
-11
-MS Data Analyst
-The more visuals you have on the report, the higher chance for performance issues. In addition, the more visuals, the more the report can appear crowded and lose clarity. The upper limit for visuals is 100 fields (measures or columns), so a visual with more than 100 fields will be slow to load.
-
-
-
-
-12
-MS Data Analyst
-Suppose that you have an ID column with thousands of unique rows. You know that you won't use this particular column in a relationship, so it will not be used in a report. Therefore, you should consider this column as unnecessary and admit that it is wasting space in your semantic model.
-
-
-
-
-
-
-13
-MS Data Analyst
-Other metadata that you should consider is the information about the semantic model as a whole, such as the file size and data refresh rates. You can find this metadata in the associated Power BI Desktop (.pbix) file. The data that you load into Power BI Desktop is compressed and stored to the disk by the VertiPaq storage engine.
-
-
-
-
-14
-MS Data Analyst
-Another item to consider when optimizing performance is the Auto date/time option in Power BI Desktop. By default, this feature is enabled globally, which means that Power BI Desktop automatically creates a hidden calculated table for each date column, provided that certain conditions are met.
-
-
-
-
-15
-MS Data Analyst
-Variables do not require the use of EARLIER or EARLIEST DAX functions, which are difficult to understand. These functions were required before variables were introduced, and were written in complex expressions that introduced new filter contexts. Now that you can use variables instead of those functions, you can write fewer complex formulas.
-
-
-
-
-
-
-16
-MS Data Analyst
-Lower cardinality leads to more optimized performance, so you might need to reduce the number of high cardinally columns in your semantic model.
-
-
-
-
-
-
-17
-MS Data Analyst
-Perhaps the most effective technique to reduce a model size is to use a summary table from the data source. Where a detail table might contain every transaction, a summary table would contain one record per day, per week, or per month. It might be an average of all of the transactions per day, for instance.
-
-
-
-
-
-
-1
-DAX Studio
-Within a single batch, although you can have multiple EVALUATE statements you can only have a single DEFINE statement. So you would need to declare all your calculations in that one block.
-
-
-
-
-
-
-2
-DAX Studio
-The EVALUATE keyword is automatically included by Power BI in every query. It’s used to answer and create your visuals in Power BI. It’s also used to contain table expressions in a DAX query. You can’t pair EVALUATE with a scalar value such as a measure or a number. You can only use EVALUATE with table expressions.
-
-
-
-
-3
-DAX Studio
-To convert numbers or measures into a table, you need to place it between curly brackets { }. To create a table with two columns, use parenthesis ( ) and write another value separated by a comma. To add another row, you need to place another expression within a parenthesis inside the curly bracket.
-
-
-
-
-4
-DAX Studio
-Referencing Tables Using EVALUATE: You can also reference entire tables using EVALUATE. For example, if you want to return the Products Table, execute EVALUATE Products.
-
-
-
-
-5
-DAX Studio
-DEFINE Keyword: The DEFINE keyword defines entities applied to one or more EVALUATE statements in a DAX query. At least one definition is required in a DEFINE statement. Measure definitions for a query override model measures of the same name.
-
-
-
-
-6
-DAX Studio
-EVALUATE
-FILTER ( 'Product', 'Product'[Color] = @Color )
-
-When you execute a query with a parameter, in this case "@Color", DAX Studio will prompt you for the parameter to use
-
-
-
-
-1
-MS Data Analyst
-Meaningful Representation: Semantic models go beyond just structuring data; they aim to represent the data in a way that aligns with how business users think and talk about it. This user-oriented approach makes the data more accessible and understandable.
-
-
-
-
-2
-MS Data Analyst
-Enabling Business Intelligence: The main goal of semantic data models is to facilitate business intelligence. By presenting data in a business-friendly way, these models enable users to perform analysis, generate reports, and derive insights more efficiently.
-
-
-
-
-3
-MS Data Analyst
-Multidimensional Analysis: OLAP (Online Analytical Processing) databases are structured in a multidimensional format, which is ideal for complex calculations, trend analysis, and sophisticated data modeling. This format is great for slicing and dicing data, enabling users to view it from multiple perspectives.
-
-
-
-
-4
-MS Data Analyst
-Data Cubes: The core of an OLAP (Online Analytical Processing) database is the OLAP cube, organizing data into a multi-dimensional structure of dimensions (categories of analysis) and measures (quantitative metrics). This structure enhances data retrieval and analysis efficiency.
-
-
-
-
-
-
-5
-MS Data Analyst
-Fast Query Performance: OLAP (Online Analytical Processing) is designed for rapid query performance, essential for business intelligence tools like Power BI. It can quickly aggregate large volumes of data and compute complex metrics.
-
-
-
-
-6
-MS Data Analyst
-Integration with Power BI: Power BI can connect to OLAP (Online Analytical Processing) databases as a data source, allowing users to import data from OLAP cubes and utilize Power BI's advanced visualization and reporting tools for data analysis.
-
-
-
-
-7
-MS Data Analyst
-To aggregate data to decrease the size of a semantic model for a particuarly large table in Power Query, use Choose Columns on the Home tab to limit the number of columns imported and then choose Group by in the Home tab. Then choose Adavnced and select Add Aggregation
-
-
-
-
-8
-MS Data Analyst
-When you have created aggregations, you can manage those aggregations in Power BI Desktop and make changes to their behavior, if required.
-
-You can open the Manage Aggregations window from any view in Power BI Desktop. In the Fields pane, right-click the table and then select Manage aggregations.
-
-
-
-
-
-
-9
-MS Data Analyst
-1. What benefit do you get from analyzing the metadata? 
-The benefit of analyzing the metadata is that you can clearly identify data inconsistences with your semantic model.
-
-
-
-
-
-
-10
-MS Data Analyst
-2. What can be achieved by removing unnecessary rows and columns? 
-Deleting unnecessary rows and columns will reduce a semantic model size and it's good practice to load only necessary data into your semantic model.
-
-
-
-
-
-
-11
+62
 MS Data Analyst
 3. Which of the following statements about relationships in Power BI Desktop is true? 
 Relationships can be created between tables that contain different types of data.
@@ -594,65 +544,26 @@ A working relationship can be created as long as there is at least one common co
 
 
 
-
-12
+63
 MS Data Analyst
+2. What can be achieved by removing unnecessary rows and columns? 
+Deleting unnecessary rows and columns will reduce a semantic model size and it's good practice to load only necessary data into your semantic model.
 
 
 
 
 
-13
+64
 MS Data Analyst
+Before you run Performance analyzer, to ensure you get the most accurate results in your analysis (test), make sure that you start with a clear visual cache and a clear data engine cache.
 
 
 
 
 
-14
-MS Data Analyst
-
-
-
-
-
-15
-MS Data Analyst
-
-
-
-
-
-16
-MS Data Analyst
-
-
-
-
-
-17
-MS Data Analyst
-
-
-
-
-
-18
-MS Data Analyst
-
-
-
-
-
-19
-MS Data Analyst
-
-
-
-
-
-20
-MS Data Analyst
+65
+DAX Studio
+DEFINE Keyword: The DEFINE keyword defines entities applied to one or more EVALUATE statements in a DAX query. At least one definition is required in a DEFINE statement. Measure definitions for a query override model measures of the same name.
 
 
 
