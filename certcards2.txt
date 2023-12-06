@@ -650,6 +650,8 @@ Use the USERPRINCIPALNAME function instead of USERNAME function. It provides con
 
 10
 MS Data Analyst
+It’s efficient to apply rules to dimension tables. Power BI filters the dimension tables (that usually have a small number of rows) and uses model relationships to propagate those filters to fact tables (that contain millions of rows).
+
 
 
 
@@ -657,6 +659,10 @@ MS Data Analyst
 
 11
 MS Data Analyst
+Rupali is a data modeler at Adventure Works who is developing an import model to analyze employee timesheet data. The employee table stores the employee social security number (SSN) in a column. While the model will be available for all company managers, it will also be available to employees in the Payroll department. However, reports must only reveal employee SSNs to payroll employees. What feature should Rupali use to restrict access to the SSN column? 
+
+You can use OLS (object-level security) to secure the SSN column in the employee table.
+
 
 
 
@@ -664,7 +670,9 @@ MS Data Analyst
 
 12
 MS Data Analyst
+Kasper is a data modeler at Adventure Works who is developing a model that must enforce RLS. It must restrict access to only the sales regions assigned to the report consumer. The source database includes a table that stores employee usernames and their assigned region(s). What should Kasper do? 
 
+An RLS role with a dynamic rule that uses the USERPRINCIPALNAME (or USERNAME) function can filter model data to the report consumer’s assigned region(s).
 
 
 
