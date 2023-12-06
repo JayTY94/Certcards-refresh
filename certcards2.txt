@@ -571,13 +571,19 @@ DEFINE Keyword: The DEFINE keyword defines entities applied to one or more EVALU
 
 1
 MS Data Analyst
+Dynamic rules use specific DAX functions that return environmental values (as opposed to constants). Environmental values are returned from three specific DAX functions:
 
+USERNAME or USERPRINCIPALNAME – Returns the Power BI authenticated user as a text value.
+
+CUSTOMDATA - Returns the CustomData property passed in the connection string. Non-Power BI reporting tools that connect to the dataset by using a connection string can set this property, like Microsoft Excel.
 
 
 
 
 2
 MS Data Analyst
+When you create roles, it’s important to test them to ensure they apply the correct filters. For data models created in Power BI Desktop, there’s the View as function that allows you to see the report when different roles are enforced, and different username values are passed.
+
 
 
 
@@ -585,6 +591,8 @@ MS Data Analyst
 
 3
 MS Data Analyst
+Role mappings must be set up in advance of users accessing Power BI content. Role mapping involves assigning Microsoft Entra security objects to roles. Security objects can be user accounts or security groups.
+
 
 
 
@@ -592,6 +600,8 @@ MS Data Analyst
 
 4
 MS Data Analyst
+When possible, it’s a good practice to map roles to security groups. That way, there will be fewer mappings, and you can delegate the group membership management to the network administrators.
+
 
 
 
@@ -599,6 +609,8 @@ MS Data Analyst
 
 5
 MS Data Analyst
+you can consider restricting user access to Power BI model objects. Object-level security (OLS) can restrict access to specific tables and columns, and their metadata. Typically, you apply OLS to secure objects that store sensitive data, like employee personal data.
+
 
 
 
@@ -606,6 +618,8 @@ MS Data Analyst
 
 6
 MS Data Analyst
+When Power BI enforces OLS, not only does it restrict access to tables and columns, but it can also secure metadata. When you secure metadata, it’s not possible to retrieve information about secured tables and columns by using Dynamic Management Views (DMVs).
+
 
 
 
@@ -613,6 +627,8 @@ MS Data Analyst
 
 7
 MS Data Analyst
+OLS is a feature inherited from Azure Analysis Services (AAS) and SQL Server Analysis Services (SSAS). The feature is available in Power BI Premium to provide backward compatibility for models migrated to Power BI. For this reason, it’s not possible to completely set up OLS in Power BI Desktop.
+
 
 
 
@@ -620,14 +636,14 @@ MS Data Analyst
 
 8
 MS Data Analyst
-
+You can’t mix RLS and OLS in the same role. If you need to apply RLS and OLS in the same model, create separate roles dedicated to each type. Also, you can’t set table-level security if it breaks a relationship chain. For example, if there are relationships between tables A and B, and B and C, you can't secure table B.
 
 
 
 
 9
 MS Data Analyst
-
+Use the USERPRINCIPALNAME function instead of USERNAME function. It provides consistency when validating the roles in Power BI Desktop and the Power BI service.
 
 
 
