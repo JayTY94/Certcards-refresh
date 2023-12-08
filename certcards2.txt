@@ -728,6 +728,8 @@ An information worker is someone who uses data to help make decisions or take ac
 
 18
 MS Data Analyst
+A good example of a dashboard is an executive dashboard, which often presents high-level metrics that are displayed on a single page. Dashboards help answer questions such as "How are we doing?" or "Are we there yet?"
+
 
 
 
@@ -735,6 +737,8 @@ MS Data Analyst
 
 19
 MS Data Analyst
+The primary goal of an analytical report is to help report consumers discover answers to a broad array of questions by interacting with the report and its visuals. Analytical reports often have many slicers to filter report data, and they often contain complex visuals that expose in-depth detail of the data.
+
 
 
 
