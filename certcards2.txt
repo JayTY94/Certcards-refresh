@@ -679,13 +679,21 @@ An RLS role with a dynamic rule that uses the USERPRINCIPALNAME (or USERNAME) fu
 
 13
 MS Data Analyst
+The three broad report consumer audiences are:
 
+Executive
+
+Analyst
+
+Information worker
 
 
 
 
 14
 MS Data Analyst
+Some visuals in Power BI Desktop have the option to add dynamic reference lines through the use of the Analytics pane. It is worth noting that not all options are available for all visuals, and some visuals, such as combination charts like the line and clustered column chart, have no options available in the Analytics pane.
+
 
 
 
@@ -693,6 +701,8 @@ MS Data Analyst
 
 15
 MS Data Analyst
+An executive is a person who is charged with making plans and decisions that often involve a medium or long-term focus. Executives are responsible for making the business run smoothly. For example, the C-level executives at the Contoso Skateboard Store would be an executive audience.
+
 
 
 
@@ -700,6 +710,8 @@ MS Data Analyst
 
 16
 MS Data Analyst
+An analyst is a person who provides guidance to the organization. Analysts can be responsible for a range of tasks, often with goals of determining the effectiveness of business strategies, developing or improving processes, or implementing change. A business analyst (or data analyst) in the sales division of the Contoso Skateboard Store is an example of an analyst audience.
+
 
 
 
@@ -707,6 +719,8 @@ MS Data Analyst
 
 17
 MS Data Analyst
+An information worker is someone who uses data to help make decisions or take actions. Often, these decisions and actions are operational in that they are done on a daily basis. The inventory manager at the Contoso Skateboard Store, who needs up-to-date information about stock levels, is an example of an information worker audience.
+
 
 
 
