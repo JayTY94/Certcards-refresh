@@ -764,8 +764,12 @@ Occasionally, it might make sense to have a single report with many pages. Other
 
 
 
+
+
 10
 MS Data Analyst
+You can hide pages when they're not yet ready for use; they're a work in progress. However, you might commonly hide them because you want to control how they're accessed. You can provide report page navigation with buttons or by drilling through from a visual. It's also possible to design a page as a tooltip, which is revealed when a report consumer hovers over a visual.
+
 
 
 
@@ -773,6 +777,8 @@ MS Data Analyst
 
 11
 MS Data Analyst
+Good placement of report objects contributes to an ordered report design. Generally, you should place the most important information in the upper-left corner of the page and arrange the report elements from left to right and top to bottom.
+
 
 
 
