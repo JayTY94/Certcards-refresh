@@ -938,7 +938,9 @@ The quickest way to enforce consistency is to use a report theme. A report theme
 
 11
 MS Data Analyst
+You can use an external site like powerbi.tips to generate a theme. The site will guide you through building a color palette and setting property values for all core visual types.
 
+For more information, see Use report themes in Power BI Desktop.
 
 
 
