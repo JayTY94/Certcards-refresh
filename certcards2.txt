@@ -786,35 +786,35 @@ Good placement of report objects contributes to an ordered report design. Genera
 
 12
 MS Data Analyst
-
+Rule of Thirds, Grid Layout: The rule of thirds involves dividing your frame into nine equal boxes with two vertical and two horizontal lines. This grid layout serves as a guide for arranging elements in your visualization.
 
 
 
 
 13
 MS Data Analyst
-
+Rule of Thirds, Points of Interest: The four points where the lines intersect are considered the points of interest1. Placing your subjects or key data points at these intersections can create a more dynamic and engaging visualization1.
 
 
 
 
 14
 MS Data Analyst
-
+Rule of Thirds, Balance and Flow: The rule of thirds helps to achieve a balanced composition that’s pleasing to the eye1. It guides the viewer’s eyes to move naturally across the visualization, enhancing the storytelling aspect of your data1.
 
 
 
 
 15
 MS Data Analyst
-
+Rule of Thirds, Background and Foreground: By aligning your subjects along the grid lines, you can showcase more of the background, creating a sense of depth and context1. This can be particularly useful when you want to highlight relationships or contrasts between different data points.
 
 
 
 
 16
 MS Data Analyst
-
+Rule of Thirds, Viewer Connection: The rule of thirds can help you anticipate or control how viewers’ eyes will move from one part of the screen to another1. This can enhance the viewer’s connection with your data story and make your visualization more impactful.
 
 
 
