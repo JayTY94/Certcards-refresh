@@ -878,7 +878,7 @@ Line Width and Type: These are usually used to represent discrete data1. Differe
 
 4
 MS Data Analyst
-
+To change the size of the canvas in Power BI, deselect all visuals (possibly click on some empty canvas), and then go to the Visualizations > Format page pane, like changing the format or color options on a specific visual.
 
 
 
