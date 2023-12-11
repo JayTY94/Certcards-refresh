@@ -704,20 +704,32 @@ Text settings, including font selection, sizes, and color.
 
 4
 MS Data Analyst
+At the Contoso Skateboard Company, Sally is responsible for managing staff rosters to determine when the inventory employees are required to work. Sally relies on a report that forecasts sales order demand to determine the number of employees that are required at any time. It also includes a button to open a Human Resources app to assign employees to rosters. What type of report audience does Sally represent? 
 
+
+Information Worker
 
 
 
 
 5
 MS Data Analyst
+2. At the Contoso Skateboard Company, Sally is responsible for managing staff rosters to determine when the inventory employees are required to work. Sally relies on a report that forecasts sales order demand to determine the number of employees that are required at any time. It also includes a button to open a Human Resources app to assign employees to rosters. What type of report does Sally use? 
 
+Operational
 
 
 
 
 6
 MS Data Analyst
+3. Which user interface requirement is an example of an accessibility requirement? 
+
+Contrasting colors
+NOT
+Augmented Reality
+Organizational Colors
+Portrait Orientation
 
 
 
