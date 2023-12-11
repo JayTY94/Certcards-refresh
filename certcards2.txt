@@ -885,7 +885,9 @@ To change the size of the canvas in Power BI, deselect all visuals (possibly cli
 
 5
 MS Data Analyst
+Additionally, you can set custom dimensions that are larger than the available screen size so that the report consumer will need to interact with scrollbars to view the entire page.
 
+However, a large page size that is filled with visuals might take time to render, and visuals might not render in a top-to-bottom order.
 
 
 
