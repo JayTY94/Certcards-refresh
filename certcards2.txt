@@ -759,7 +759,7 @@ Elements - Provide visual interest but don't use semantic model data. Elements i
 
 9
 MS Data Analyst
-
+Occasionally, it might make sense to have a single report with many pages. Other times, it could make sense to separate pages into different reports. This scenario is especially true when you design those pages for a different audience or when you need to secure, share, or distribute them differently. Reports are a security and publication unit, and report pages belong to reports and can't be secured or published independently of the report.
 
 
 
