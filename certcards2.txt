@@ -746,6 +746,12 @@ You can design Microsoft Power BI reports in Power BI Desktop or Power BI servic
 
 8
 MS Data Analyst
+Structurally, a Power BI report connects to a single semantic model (semantic model), and it has at least one report page. However, it's common that reports have multiple pages. On each page, report objects are laid out. Report objects include:
+
+Visuals - Visualizations of semantic model data.
+
+Elements - Provide visual interest but don't use semantic model data. Elements include text boxes, buttons, shapes, and images.
+
 
 
 
