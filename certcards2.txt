@@ -926,8 +926,11 @@ Consistency should apply to everything in your report design, including spacing,
 
 
 
+
 10
 MS Data Analyst
+The quickest way to enforce consistency is to use a report theme. A report theme applies format settings to your entire report, ensuring consistent application of colors, fonts, pages, and visual format options, including the Filters pane styles.
+
 
 
 
