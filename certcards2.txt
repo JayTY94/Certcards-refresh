@@ -846,6 +846,150 @@ In a report layout, proximity is concerned with the nearness of report objects. 
 
 20
 MS Data Analyst
+Contrast can be used to combine two opposing objects. The use of contrasting colors, fonts, font properties, or lines can emphasize important objects of the report design. Use this principle to direct report consumers to where they should look or which data visual they should interact with first.
+
+
+
+
+
+
+1
+MS Data Analyst
+Margins include the border area, or edge, around each page. Having a consistently spaced border area frames the report objects.
+
+Because there isn't a report page property to set margins, it's up to you to lay out objects in way that results in a consistent border area. Margin sizes should be equal on the left and right, with possible variation on the top and bottom. Space across the top or bottom can show branding, titles, slicers, or other information that needs to be separated from the visuals.
+
+
+
+
+2
+MS Data Analyst
+Size and Shape: The size and shape of your visuals can also represent both continuous and discrete data1. The size of the visual should be proportional to its importance or the emphasis you want to place on it1.
+
+
+
+
+3
+MS Data Analyst
+Line Width and Type: These are usually used to represent discrete data1. Different line widths can represent different data magnitudes, while different line types (solid, dashed, dotted) can represent different data categories1.
+
+
+
+
+4
+MS Data Analyst
+
+
+
+
+
+5
+MS Data Analyst
+
+
+
+
+
+6
+MS Data Analyst
+
+
+
+
+
+7
+MS Data Analyst
+
+
+
+
+
+8
+MS Data Analyst
+
+
+
+
+
+9
+MS Data Analyst
+
+
+
+
+
+10
+MS Data Analyst
+
+
+
+
+
+11
+MS Data Analyst
+
+
+
+
+
+12
+MS Data Analyst
+
+
+
+
+
+13
+MS Data Analyst
+
+
+
+
+
+14
+MS Data Analyst
+
+
+
+
+
+15
+MS Data Analyst
+
+
+
+
+
+16
+MS Data Analyst
+
+
+
+
+
+17
+MS Data Analyst
+
+
+
+
+
+18
+MS Data Analyst
+
+
+
+
+
+19
+MS Data Analyst
+
+
+
+
+
+20
+MS Data Analyst
 
 
 
