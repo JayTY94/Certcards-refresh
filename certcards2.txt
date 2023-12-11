@@ -894,6 +894,8 @@ However, a large page size that is filled with visuals might take time to render
 
 6
 MS Data Analyst
+While report consumers can use focus mode to enlarge a single visual, the visual should still clearly communicate its data when viewed at actual size on the report page. Focus mode can help consumers better interpret the data or more easily interact with the visual, such as expanding into levels of a matrix or decomposition tree visual.
+
 
 
 
