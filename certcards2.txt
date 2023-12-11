@@ -821,20 +821,24 @@ Rule of Thirds, Viewer Connection: The rule of thirds can help you anticipate or
 
 17
 MS Data Analyst
-
+Another important consideration when you are laying out report objects is balance. Balance is concerned with stability and structure in design. In the context of a report layout, balance refers to the weight that is distributed across the report page by the placement of objects of the same or different sizes.
 
 
 
 
 18
 MS Data Analyst
+Balance can be symmetrical or asymmetrical. Symmetrical balance is achieved by distributing the weight evenly on both halves of the page. Asymmetrical balance is achieved through contrast.
 
+Consider using the golden ratio as a guide to produce asymmetrical balance.
 
 
 
 
 19
 MS Data Analyst
+In a report layout, proximity is concerned with the nearness of report objects. When a report page consists of multiple groups of related objects, you should use space to visually separate them.
+
 
 
 
