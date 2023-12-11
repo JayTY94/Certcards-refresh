@@ -737,6 +737,8 @@ Portrait Orientation
 
 7
 MS Data Analyst
+You can design Microsoft Power BI reports in Power BI Desktop or Power BI service (web portal). Power BI mobile apps don't support report design; they support only the report consumer experience.
+
 
 
 
