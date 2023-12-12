@@ -947,6 +947,12 @@ For more information, see Use report themes in Power BI Desktop.
 
 12
 MS Data Analyst
+Report objects are laid out on each report page and include:
+
+Visuals - Visualizations of semantic model data.
+
+Elements - Provide visual interest but don't use semantic model data.
+
 
 
 
@@ -954,6 +960,8 @@ MS Data Analyst
 
 13
 MS Data Analyst
+All report objects have some properties in common, which can be set in various sections of the Format options. Commonly applied settings include general properties (location, size, and alt text), title, background, border, and shadow.
+
 
 
 
