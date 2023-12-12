@@ -903,7 +903,7 @@ While report consumers can use focus mode to enlarge a single visual, the visual
 
 7
 MS Data Analyst
-Use the alignment commands on the Format tab, which will help you quickly and accurately align visuals.
+Use the alignment commands on the Format Pane, which will help you quickly and accurately align visuals.
 
 
 
@@ -1020,21 +1020,21 @@ Matrix, with conditional formatting
 
 19
 MS Data Analyst
-In the Background section of a visual's Format tab, you can set any color or image as the background for the visual. If you plan to use an image as a background, try to select an image that won't have lines or shapes that would make it difficult for the user to read the data. 
+In the Background section of a visual's Format Pane, you can set any color or image as the background for the visual. If you plan to use an image as a background, try to select an image that won't have lines or shapes that would make it difficult for the user to read the data. 
 
 
 
 
 20
 MS Data Analyst
-In the Data colors section of a visual's Format tab, you can set the colors that you want to use for the data values in the visual. You can use different colors for different fields, but always try to be consistent when it comes to selecting those colors. It is best to use the same color scheme throughout the report.
+In the Data colors section of a visual's Format Pane, you can set the colors that you want to use for the data values in the visual. You can use different colors for different fields, but always try to be consistent when it comes to selecting those colors. It is best to use the same color scheme throughout the report.
 
 
 
 
 1
 MS Data Analyst
- In the Data labels section of a visual's Format tab, you can change fonts, size, and colors for all labels in the visual. Try to use solid colors so the labels are clearly visible. For example, if the background is white, use a black or dark grey color to display your labels.
+In the Data labels section of a visual's Format Pane, you can change fonts, size, and colors for all labels in the visual. Try to use solid colors so the labels are clearly visible. For example, if the background is white, use a black or dark grey color to display your labels.
 
 
 
@@ -1043,7 +1043,7 @@ MS Data Analyst
 
 2
 MS Data Analyst
-The Tooltips section of a visual's Format tab allows you to add a customized tooltip that appears when you hover over the visual, based on report pages that you create in Power BI Desktop. Tooltips is a great feature because it provides more contextual information and detail to data points on a visual. The default tooltip displays the data point's value and category, but your custom tooltips can include visuals, images, and any other collection of items that you create in the report page. 
+The Tooltips section of a visual's Format Pane allows you to add a customized tooltip that appears when you hover over the visual, based on report pages that you create in Power BI Desktop. Tooltips is a great feature because it provides more contextual information and detail to data points on a visual. The default tooltip displays the data point's value and category, but your custom tooltips can include visuals, images, and any other collection of items that you create in the report page. 
 
 
 
