@@ -1050,6 +1050,14 @@ The Tooltips section of a visual's Format Pane allows you to add a customized to
 
 3
 MS Data Analyst
+Another way to use tooltips is to display graphical information. The process of adding this type of tooltip is not as straightforward, but it is worthwhile. You would begin by creating a new page in the report.
+
+Open the new page and then open the Format pane. Expand the Page Size section and then select Tooltip from the Type list.
+
+In the Page information section, turn the Tooltip slider to On so that Power BI registers this page as a tooltip page
+
+Tooltips have limited canvas space, so to ensure that your visuals appear in the tooltip, on the View tab, set the Page view option to Actual size.
+
 
 
 
@@ -1057,7 +1065,11 @@ MS Data Analyst
 
 4
 MS Data Analyst
+To use a KPI, you need three pieces of information:
 
+• A unit of measurement that you want to track, for instance total sales, number of employee hires, number of loans serviced, or number of students enrolled.
+• A goal for the measurement so that you can compare your progress with the goal.
+A time series, for instance daily, monthly, or yearly.
 
 
 
