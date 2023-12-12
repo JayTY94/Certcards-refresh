@@ -969,13 +969,15 @@ All report objects have some properties in common, which can be set in various s
 
 14
 MS Data Analyst
-
+Visuals are visualizations of semantic model data. Power BI includes over 30 core visuals, which are built in and available to all reports. You can access the core visuals in the first section of the Visualizations pane.
 
 
 
 
 15
 MS Data Analyst
+You can extend the core visuals with custom visuals. Custom visuals are sourced from Microsoft AppSource (an app store for business applications such as Microsoft Office 365, Microsoft Dynamics 365, Power BI, or separate Microsoft Azure web apps) or uploaded as a .pbviz file.
+
 
 
 
@@ -983,6 +985,8 @@ MS Data Analyst
 
 16
 MS Data Analyst
+Line charts work well with a consistent flow of data, such as when sales are recorded for every period. If no sales are recorded for some periods, the line chart visual will fill such gaps with a straight line that connects the values of the previous and next periods. If missing values are a possibility, a column chart might be a better visual choice because it will help to avoid the interpretation of a non-existent trend.
+
 
 
 
