@@ -1076,6 +1076,11 @@ A time series, for instance daily, monthly, or yearly.
 
 5
 MS Data Analyst
+1. At the Contoso Skateboard Company, Brandon is designing a dashboard report to show inventory stock levels over time. What type of report visual should Brandon choose to effectively show the stock levels? 
+
+
+A line chart is probably the most effective way to visualize a time series, such as stock inventory levels over time.
+
 
 
 
@@ -1083,6 +1088,10 @@ MS Data Analyst
 
 6
 MS Data Analyst
+2. At the Contoso Skateboard Company, Sakura is designing an analytical report. It must include a visual that allows report consumers to explore and discover detailed sales values over time and by store. What type of report visual should Sakura choose to support the report consumer requirement? 
+
+A matrix visual allows the report consumer to drill down on the columns and rows to reveal detailed values.
+
 
 
 
@@ -1090,8 +1099,11 @@ MS Data Analyst
 
 7
 MS Data Analyst
+3. At the Contoso Skateboard Company, James is designing a dashboard report. It must prominently show values of sales revenue, units sold, cost of goods sold, and profit, and each value should be compared to a target value. What type of report visual should James choose to support the report consumer requirement? 
 
-
+KPI
+NOT
+Card, Ribbon Chart, or Stacked Bar Chart.
 
 
 
