@@ -994,7 +994,9 @@ Line charts work well with a consistent flow of data, such as when sales are rec
 
 17
 MS Data Analyst
+Proportional visuals show data as part of a whole. They effectively communicate how a value is distributed across a dimension. Column and bar chart visuals work well for visualizing proportions across multiple dimensions.
 
+Proportional visuals can't plot a mix of positive and negative values. They should be used when all values are positive or all values are negative.
 
 
 
