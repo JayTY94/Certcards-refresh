@@ -1229,6 +1229,8 @@ The slicer layout is responsive to the data type of the field. Field data types 
 
 1
 MS Data Analyst
+Dropdown slicer layouts are common; they help minimize the size of the slicer to provide more room on the page for other visuals. An additional benefit when using dropdown slicers that might not be immediately apparent is that they only query the semantic model when expanded open. Therefore, they can also help expedite report page rendering.
+
 
 
 
