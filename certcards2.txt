@@ -1238,6 +1238,15 @@ Dropdown slicer layouts are common; they help minimize the size of the slicer to
 
 2
 MS Data Analyst
+Beyond filters and slicers, report authors can employ other filtering techniques, such as:
+
+Visual interactions
+Drillthrough
+Report tooltip
+Bookmarks
+Report options
+Query reduction options
+
 
 
 
@@ -1245,6 +1254,8 @@ MS Data Analyst
 
 3
 MS Data Analyst
+Cross filtering (and cross highlighting) works between any two visuals. However, at design time, you can edit visual interactions between any pair of visuals and in either direction. Additionally, you can disable cross filtering or modify the interaction to use cross highlighting instead.
+
 
 
 
