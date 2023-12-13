@@ -1122,34 +1122,41 @@ Measure
 
 9
 MS Data Analyst
-
+A measure is a model object that is designed to summarize data. Measure formulas, which are written in Data Analysis Expressions (DAX), can modify filter context by using the CALCULATE or CALCULATETABLE functions. These functions are powerful and provide you with the flexibility to add, remove, or modify filters. 
 
 
 
 
 10
 MS Data Analyst
-
+At report design time in Microsoft Power BI Desktop, you can create measures (except when the model is a live connection to SQL Server Analysis Services multidimensional model). These measures belong to the report, and so they're called report-level measures.
 
 
 
 
 11
 MS Data Analyst
-
+Unlike report and page-level filters, a visual-level filter can filter by using a measure. When a measure filters a visual, it's used to eliminate groups. For example, consider a column chart visual that groups by store. A measure filter could eliminate groups (stores) where the total store sales are less than a certain amount.
 
 
 
 
 12
 MS Data Analyst
+Filters apply to a single field and use one of following filter types:
 
+Basic
+Advanced
+Top N
+Relative date and Relative time
 
 
 
 
 13
 MS Data Analyst
+The Basic filter type allows you to select items from a list of distinct values that are found in the field. You can also restrict the filter to a single selection instead of multi-selection.
+
 
 
 
@@ -1157,13 +1164,19 @@ MS Data Analyst
 
 14
 MS Data Analyst
+The Advanced filter type allows you to create more complex conditions by using data type-specific operators:
 
+Text field operators - Test for conditions such as "contains," "starts with," "is blank," "is empty," and others.
+Numeric field operators - Test for conditions such as "is less than," "is less than or equal to," and others.
+Date field operators - Test for conditions such as "is after," "is on or after," and others.
 
 
 
 
 15
 MS Data Analyst
+The Top N filter type applies to text and date fields that are available only in visual-level filters. This filter type helps you filter by the top (or bottom) number of items, like the top five products by revenue. To configure the filter, you must pass in a field that's summarized, like sales revenue.
+
 
 
 
@@ -1171,6 +1184,8 @@ MS Data Analyst
 
 16
 MS Data Analyst
+The Relative date and Relative time filter types apply to date fields only, making it possible to filter by relative date or time. Relative filters allow the report consumer to filter by past, present, or future time periods based on the current date and time.
+
 
 
 
@@ -1178,6 +1193,8 @@ MS Data Analyst
 
 17
 MS Data Analyst
+You can lock filters to ensure that report consumers can't remove or modify them. It's a good idea to lock filters that are critical to the design of the report, page, or visual. Additionally, you can hide filters. A hidden filter isn't visible to report consumers. Consider hiding a filter when the report consumer doesn't need to know about it, such as when filters are cleaning up the data, perhaps by removing BLANKs.
+
 
 
 
