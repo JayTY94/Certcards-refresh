@@ -1202,6 +1202,8 @@ You can lock filters to ensure that report consumers can't remove or modify them
 
 18
 MS Data Analyst
+By default, slicers filter all other visuals on the page. However, you can edit visual interactions to restrict filtering between two visuals. We cover visual interactions later in this module. Sync slicers can also filter visuals on other pages.
+
 
 
 
