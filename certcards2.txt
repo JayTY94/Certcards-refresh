@@ -1355,7 +1355,7 @@ report consumers can't do the following to the report they are reading:
 
 13
 MS Data Analyst
-
+You can add or remove filters by adding query string parameters in the URL. For more information, see Filter a report using query string parameters in the URL. For embedded reports, the embedding app can use the client APIs to programmatically add or remove filters and change filter types to Top N or relative date or time. For more information, see Power BI embedded analytics Client APIs.
 
 
 
