@@ -1330,6 +1330,12 @@ Add an Apply button to the Filters pane. All filters will apply simultaneously w
 
 11
 MS Data Analyst
+When filters aren't locked, report consumers can modify them. Specifically, they can:
+
+	• Select the eraser icon to clear the filter
+	• Apply a new filter selection
+	• Change the filter type, such as from basic to advanced (unless disabled for the report).
+	• Use the search box to search for values to filter by (unless disabled for the report).
 
 
 
@@ -1337,7 +1343,12 @@ MS Data Analyst
 
 12
 MS Data Analyst
+report consumers can't do the following to the report they are reading:
 
+	• Add new filters
+	• Remove filters
+	• Change the filter type to Top N, or relative date or time (for date/time fields)
+  Enforce or disable single selection
 
 
 
