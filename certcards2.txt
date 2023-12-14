@@ -1310,14 +1310,20 @@ Remove the search  box in the Filters pane.
 
 9
 MS Data Analyst
+Report settings can:
 
+Disable cross highlighting/filtering by default. All visuals, except for slicers, don't propagate filters to other visuals unless they are explicitly added as a visual interaction.
+Add an Apply button to slicers. The slicer selection will only filter the report page when the report consumer selects the Apply button.
 
 
 
 
 10
 MS Data Analyst
+Report settings can:
 
+Add an Apply button to all basic filters in the Filters pane. A single filter will apply when the report consumer selects the Apply button in the filter card.
+Add an Apply button to the Filters pane. All filters will apply simultaneously when the report consumer selects the Apply button. This option is helpful when report consumers want to update many filters at the same time.
 
 
 
