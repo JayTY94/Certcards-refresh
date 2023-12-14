@@ -1371,6 +1371,176 @@ These filters appear in the Filters pane as filter cards titled Included or Excl
 
 15
 MS Data Analyst
+By default, cross filtering (or cross highlighting) works between any two visuals. However, the report author can edit visual interactions between any pair of visuals and in either direction. Then, they can disable cross filtering or modify the interaction to use cross highlighting instead.
+
+
+
+
+
+16
+MS Data Analyst
+Occasionally, report consumers want to know (or verify) what filters, if any, apply to a specific visual. They can complete that action by hovering the cursor over the Filter icon in the visual header. A pop-up window will appear, describing the filters that affect the visual. The pop-up window shows the accumulation of filters that are applied by slicers or filters, including any cross filters.
+
+
+
+
+17
+MS Data Analyst
+If the Filter icon isn't available for a visual, it could be because:
+	• The report settings disable visual headers for the entire report.
+	• The visual settings disable the visual header for the visual.
+The visual settings disable the visual header Filter icon for the visual.
+
+
+
+
+18
+MS Data Analyst
+Persistent filters is a feature that saves report consumer's slicer and filter settings. It automatically applies the settings when the report consumer reopens the report. That way, Power BI remembers previously applied filters. You can revert to default filters (that are saved in the report by the report author) by selecting Reset to default.
+
+
+
+
+19
+MS Data Analyst
+Advantages of Filters over Slicers
+Filters result in faster report rendering because no visual rendering is required.
+
+You can lock and/or hide filters.
+
+
+
+
+
+
+20
+MS Data Analyst
+Advantages of Filters over Slicers
+When the Apply button is enabled, you can submit all filter updates at once, resulting in fewer queries.
+
+You can filter by using measures (only at visual level).
+
+
+
+
+1
+MS Data Analyst
+Disadvantages of Filters vs Slicers
+The Filters pane offers less design flexibility, though you can style it by using specific fonts and colors.
+
+Careful consideration should be made to hide certain filters to avoid confusing report consumers.
+
+It can be easy to lose track of applied visual-level filters.
+
+
+
+
+2
+MS Data Analyst
+Advantages of slicers over filters:
+
+You can place slicers anywhere on the report page to produce an intuitive layout.
+
+Slicers are highly configurable to achieve the required functionality and style.
+
+You can configure hierarchical slicers (based on a hierarchy or by using multiple fields that are sourced from the same table).
+
+
+
+
+3
+MS Data Analyst
+Slicer filtering options are less complex than the advanced filter options that are possible in the Filters pane. For example, you can't configure a Top N slicer.
+
+
+
+
+
+4
+MS Data Analyst
+In the Filters pane, consider locking or hiding visual-level filters to avoid confusing report consumers. (Often, report consumer shouldn't modify or see visual-level filters.)
+
+
+
+
+
+
+5
+MS Data Analyst
+Create a bookmark to reset all slicers to default values. Then, add a button to the page to invoke the bookmark. For example, the button could be captioned as Reset slicers.
+
+
+
+
+
+
+6
+MS Data Analyst
+When a requirement is in place to lay out many slicers, consider creating a page that is dedicated to showing all slicers. For example, the page could be named Slicers. Sync the slicers to other pages and then set the slicers as hidden on those pages. This design technique will require that report consumers should always go to the Slicers page to modify slicer settings. 
+
+
+
+
+7
+MS Data Analyst
+Take care not to use horizontal orientation when many distinct values are present. Often, report consumers don't notice the scroll arrows that allow navigation to the following items. Consequently, they might think that the value they're looking for doesn't exist.
+
+
+
+
+
+
+8
+MS Data Analyst
+
+
+
+
+
+9
+MS Data Analyst
+
+
+
+
+
+10
+MS Data Analyst
+
+
+
+
+
+11
+MS Data Analyst
+
+
+
+
+
+12
+MS Data Analyst
+
+
+
+
+
+13
+MS Data Analyst
+
+
+
+
+
+14
+MS Data Analyst
+
+
+
+
+
+15
+MS Data Analyst
 
 
 
