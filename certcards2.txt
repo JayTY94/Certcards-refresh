@@ -1362,7 +1362,9 @@ You can add or remove filters by adding query string parameters in the URL. For 
 
 14
 MS Data Analyst
+Report consumers can include or exclude one or more groups in a visual. Include keeps the selection and removes all other groups. Exclude removes one or more groups from the visual.
 
+These filters appear in the Filters pane as filter cards titled Included or Excluded. The report consumer can use the Filters pane to view, modify, or remove them.
 
 
 
