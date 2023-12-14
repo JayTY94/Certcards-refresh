@@ -1290,14 +1290,20 @@ You can create a bookmark to capture the default state of slicers. A button on t
 
 7
 MS Data Analyst
+Report authors can configure report or visual settings to control filter options and behavior. With report options, you can:
 
-
+Disable persistent filters. (Persistent filters arecovered in unit 5.)
+Hide visual headers for all visuals or for a specific visual. When the visual header is hidden, report consumers can't hover the cursor over the Filter icon to determine the filters that are applied to the visual. (The Filter icon is covered in Unit 5).
 
 
 
 8
 MS Data Analyst
+Report authors can configure report or visual settings to control filter options and behavior. With report options, you can:
 
+Hide the Filter icon for a specific visual.
+Restrict report consumers from changing filter types (for example, basic to advanced) in the Filters pane
+Remove the search  box in the Filters pane.
 
 
 
