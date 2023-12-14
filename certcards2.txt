@@ -1263,13 +1263,17 @@ Cross filtering (and cross highlighting) works between any two visuals. However,
 
 4
 MS Data Analyst
+Bookmarks capture a specific view of a report, including filters, slicers, the page selection, and the state of visuals. Report authors and report consumers can create them.
 
+Bookmarks that are created by a report consumer are known as personal bookmarks
 
 
 
 
 5
 MS Data Analyst
+Because bookmarks can capture filter state, when invoked, they will apply that filter state. You can invoke bookmarks directly from the Bookmarks pane, or you can invoke them indirectly by selecting a button, image, or shape.
+
 
 
 
@@ -1277,6 +1281,8 @@ MS Data Analyst
 
 6
 MS Data Analyst
+You can create a bookmark to capture the default state of slicers. A button on the report page could have the text Reset slicers, and when invoked, it will use the bookmark.
+
 
 
 
