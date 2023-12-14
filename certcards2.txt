@@ -1492,7 +1492,7 @@ Take care not to use horizontal orientation when many distinct values are presen
 
 8
 MS Data Analyst
-
+When you're ready to deliver your report, it might be helpful to provide a demonstration (or video) to show how you intend report consumers to use the report. That approach will allow you to show how to apply filters and provide lessons on how to apply interactive filtering actions, such as include/exclude groups, cross filtering, report page drillthrough, and bookmarks.
 
 
 
