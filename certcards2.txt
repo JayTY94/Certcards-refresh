@@ -1582,6 +1582,8 @@ Make sure that you include bookmark requirements in all design decisions. For op
 
 7
 MS Data Analyst
+No performance is impacted by having hidden visuals on a page. Hidden visuals don't run queries. Swapping visuals will provide flexible consumption options to the report consumer while retaining optimal performance and making the most out of the report page space.
+
 
 
 
@@ -1589,6 +1591,8 @@ MS Data Analyst
 
 8
 MS Data Analyst
+Use buttons and bookmarks to overlay an image, shape, or text box. A good example of a pop-up overlay is one that provides built-in assistance. 
+
 
 
 
@@ -1596,6 +1600,15 @@ MS Data Analyst
 
 9
 MS Data Analyst
+Two bookmarks are required for creating a pop-up overlay:
+
+Configure the first bookmark to capture the Display state.
+Ensure that the overlay object is visible, and then update the bookmark.
+Assign the bookmark to a Help button action.
+Configure the second bookmark to capture the Display state.
+Ensure that the overlay object is hidden, and then update the bookmark.
+Assign the bookmark to the overlay object.
+
 
 
 
