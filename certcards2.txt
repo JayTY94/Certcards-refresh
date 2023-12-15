@@ -103,7 +103,10 @@ It's possible to define a role that includes no rules. In this case, the role pr
 
 
 33
-MS Data Analyst
+DAX Studio
+DEFINE Keyword: The DEFINE keyword defines entities applied to one or more EVALUATE statements in a DAX query. At least one definition is required in a DEFINE statement. Measure definitions for a query override model measures of the same name.
+
+
 
 
 
@@ -391,14 +394,6 @@ Deleting unnecessary rows and columns will reduce a semantic model size and it's
 64
 MS Data Analyst
 Before you run Performance analyzer, to ensure you get the most accurate results in your analysis (test), make sure that you start with a clear visual cache and a clear data engine cache.
-
-
-
-
-
-65
-DAX Studio
-DEFINE Keyword: The DEFINE keyword defines entities applied to one or more EVALUATE statements in a DAX query. At least one definition is required in a DEFINE statement. Measure definitions for a query override model measures of the same name.
 
 
 
