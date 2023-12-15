@@ -1616,6 +1616,8 @@ The Drillthrough action is assigned a target drillthrough destination page. The 
 
 1
 MS Data Analyst
+Consider using the Web URL action for numbersto create a bridge to resources that are commonly referenced in tandem. Web URL actions can be highly effective in prompting direct action in external systems.
+
 
 
 
