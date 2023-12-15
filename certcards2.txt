@@ -1499,6 +1499,8 @@ When you're ready to deliver your report, it might be helpful to provide a demon
 
 9
 MS Data Analyst
+The simplest way to show details is to use drillable visuals. The matrix visual is an excellent choice because it allows drilling on rows and/or columns. Therefore, by assigning hierarchies or multiple fields, report consumers can drill to the level of detail that they want. For example, the matrix rows could show years, and the report consumer could drill down to quarter, month, and date levels.
+
 
 
 
@@ -1506,6 +1508,8 @@ MS Data Analyst
 
 10
 MS Data Analyst
+Many Power BI visuals include a Tooltips well. Fields that are added to this well is summarized in a tooltip. For example, a column chart visual that shows sales revenue by month could include order quantity as a tooltip. While the height of the column reveals the monthly revenue amount, when a report consumer hovers over the column, a tooltip describes the order quantity for that month.
+
 
 
 
@@ -1513,6 +1517,8 @@ MS Data Analyst
 
 11
 MS Data Analyst
+Page tooltips allow your report consumers to gain deeper insights quickly and efficiently from visuals. As its name suggests, a page tooltip is a report page that receives the filter context of the source element. In this way, they are closely related to drillthrough pages, with the difference being that the page tooltip overlays a small page of visuals.
+
 
 
 
@@ -1520,6 +1526,8 @@ MS Data Analyst
 
 12
 MS Data Analyst
+Visuals - On a visual-by-visual basis, you can configure which visuals will reveal your page tooltip. For each visual, you can have the visual reveal no tooltip, default to the visual tooltips (which is configured in the visual Fields pane), or use a specific page tooltip.
+
 
 
 
@@ -1527,6 +1535,8 @@ MS Data Analyst
 
 13
 MS Data Analyst
+Visual headers - You can configure specific visuals to display a page tooltip. Your report users can reveal the page tooltip when they hover the cursor over the visual header icon. Make sure that you educate your users about this icon.
+
 
 
 
@@ -1534,6 +1544,8 @@ MS Data Analyst
 
 14
 MS Data Analyst
+Use the Paginated report visual to embed a Power BI paginated report in your report. Paginated reports can connect directly to source databases, providing you with the ability to present transaction-level detail that's not stored in the Power BI semantic model.
+
 
 
 
@@ -1541,6 +1553,8 @@ MS Data Analyst
 
 15
 MS Data Analyst
+In the visual format options, you can enable the toolbar so that report consumers can use the export command. This command can export the paginated report in many different formats, including Microsoft Excel, PDF, Accessible PDF, CSV, PowerPoint, Microsoft Word, MHTML, and XML. Also, unlike the 150,000-row limitation that is imposed by Power BI reports, paginated reports can export up to 1,000,000 rows to Excel while retaining all formatting of the paginated report.
+
 
 
 
