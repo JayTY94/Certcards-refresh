@@ -1573,6 +1573,8 @@ Bookmarks can apply to all page visuals or specific visuals that you select. The
 
 6
 MS Data Analyst
+Make sure that you include bookmark requirements in all design decisions. For optimal experiences, you should create bookmarks at the end of report development after you have added all report elements. This approach will help you avoid the complex and time-consuming updating of bookmarks when you're adding new elements.
+
 
 
 
