@@ -1564,7 +1564,9 @@ The Current page state of a bookmark determines whether the bookmark will direct
 
 5
 MS Data Analyst
+Bookmark scope
 
+Bookmarks can apply to all page visuals or specific visuals that you select. The All visuals scope is turned on by default, meaning that the bookmark applies to all report objects, even if hidden. The Selected Visuals scope will target only those visuals that are selected when the bookmark was updated.
 
 
 
