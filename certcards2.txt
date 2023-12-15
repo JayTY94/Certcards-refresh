@@ -1654,14 +1654,14 @@ Enable and enter the tooltip text in the Action section for the button.
 
 14
 MS Data Analyst
-
+Visual headers make many interactions available to report authors and consumers. All report objects, including visuals and elements (like buttons), have a visual header. The visual header appears when you hover the cursor over the report object, and they can launch actions like focus mode, drill up, or drill down. You can also access the More options menu by selecting the ellipsis (...) button. 
 
 
 
 
 15
 MS Data Analyst
-
+Visual headers might appear in the upper or lower part of the object. Power BI attempts to show visual headers in the upper right of the object if sufficient space is available between the upper part of the object and the edge of the page. If no space is available in the upper part, Power BI will place the visual headers in the lower-right corner of the visual. 
 
 
 
