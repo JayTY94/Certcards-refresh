@@ -1537,6 +1537,8 @@ Consider using the Web URL action for numbersto create a bridge to resources tha
 
 2
 MS Data Analyst
+The Data state captures anything that impacts the queries that Power BI sends to the semantic model. For example, if a slicer is included in the scope of the bookmark, the Data state retains the applied slicer items when the bookmark was created (or updated). It will also capture sort order and the drill depth of a visual because the query is impacted.
+
 
 
 
@@ -1544,6 +1546,8 @@ MS Data Analyst
 
 3
 MS Data Analyst
+The Display state of a bookmark is related to the visibility of a report object. Objects consist of visuals and also elements like text boxes, buttons, shapes, and images. By using the Selection pane, you can hide or unhide objects and groups of objects. Additionally, you can swap visuals on a report page by creating bookmarks that capture hidden and unhidden objects.
+
 
 
 
@@ -1551,6 +1555,8 @@ MS Data Analyst
 
 4
 MS Data Analyst
+The Current page state of a bookmark determines whether the bookmark will direct the report consumer to the bookmarked page or apply the current page. Disabling the Current page state is rare, but you should consider some creative use cases. For example, on a page tooltip, a bookmark can change the visuals without navigating from the page that the report consumer has selected.
+
 
 
 
