@@ -1562,6 +1562,165 @@ In the visual format options, you can enable the toolbar so that report consumer
 
 16
 MS Data Analyst
+Highlighting values in reports helps you to quickly communicate important and relevant facts about data. Power BI supports several techniques to highlight values:
+
+Conditional formatting
+Overlaid analytics
+Anomaly detection
+Specialized visuals
+
+
+
+
+
+17
+MS Data Analyst
+You can use conditional formatting to format table and matrix visuals. With this approach, you can apply rules to highlight specific cells by using:
+
+Background color
+Font color
+Data bars
+Icons
+
+
+
+
+18
+MS Data Analyst
+When a time series (date field) is on the X-axis, two additional analytic options are available. These options use AI to produce a forecast or find anomalies. The anomaly detection feature can help you highlight exceptional values. For more information, see Anomaly detection.
+
+
+
+
+
+
+
+
+19
+MS Data Analyst
+The button element can take your Power BI reports to the next level by making them behave like an app. Buttons support six different actions that take effect when the button is selected.
+
+
+
+
+
+
+20
+MS Data Analyst
+The Drillthrough action is assigned a target drillthrough destination page. The button remains disabled until drillthrough becomes a valid action, which is the case when you are interacting with a visual that can navigate to the drillthrough page. When the Drillthrough action is selected, Power BI navigates to the drillthrough page, propagating appropriate filters.
+
+
+
+
+
+
+1
+MS Data Analyst
+
+
+
+
+
+2
+MS Data Analyst
+
+
+
+
+
+3
+MS Data Analyst
+
+
+
+
+
+4
+MS Data Analyst
+
+
+
+
+
+5
+MS Data Analyst
+
+
+
+
+
+6
+MS Data Analyst
+
+
+
+
+
+7
+MS Data Analyst
+
+
+
+
+
+8
+MS Data Analyst
+
+
+
+
+
+9
+MS Data Analyst
+
+
+
+
+
+10
+MS Data Analyst
+
+
+
+
+
+11
+MS Data Analyst
+
+
+
+
+
+12
+MS Data Analyst
+
+
+
+
+
+13
+MS Data Analyst
+
+
+
+
+
+14
+MS Data Analyst
+
+
+
+
+
+15
+MS Data Analyst
+
+
+
+
+
+16
+MS Data Analyst
 
 
 
