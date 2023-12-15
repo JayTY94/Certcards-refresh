@@ -1616,6 +1616,8 @@ Assign the bookmark to the overlay object.
 
 10
 MS Data Analyst
+Buttons should be placed in relevant and consistent locations. A button is only valuable if it's easy to find. To promote ease of discovery, ensure that buttons are placed in a relevant and consistent location on the report page.
+
 
 
 
