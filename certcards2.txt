@@ -1625,6 +1625,8 @@ Buttons should be placed in relevant and consistent locations. A button is only 
 
 11
 MS Data Analyst
+Buttons need to be clearly interactive. If a button doesn't appear to be interactive, the report consumer might not notice it. To help in their discovery, you can apply two formatting options: on-hover formatting and descriptive tooltips.
+
 
 
 
@@ -1632,6 +1634,9 @@ MS Data Analyst
 
 12
 MS Data Analyst
+On-hover formatting
+You can configure buttons to change their state when a hover over is available. When the report consumer hovers the cursor over a button, the cursor icon changes to a pointing finger, which indicates that the button is selectable. In this example, the Tabular button text is light gray by default, but when they hover the cursor over, it darkens to black.
+
 
 
 
@@ -1639,7 +1644,10 @@ MS Data Analyst
 
 13
 MS Data Analyst
+Descriptive tooltips
+In addition to on-hover formatting, you can configure tooltips to concisely communicate what the button does.
 
+Enable and enter the tooltip text in the Action section for the button.
 
 
 
