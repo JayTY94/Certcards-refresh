@@ -1668,6 +1668,163 @@ Visual headers might appear in the upper or lower part of the object. Power BI a
 
 16
 MS Data Analyst
+A report setting is available for you as the report author to disable all visual headers. When visual headers are disabled they will still be visible when editing the report, but they will be hidden for report consumers (in reading view). However, situations might occur where enabling this option is a good idea because it limits most interactions. It might make sense to disable visual interactions when you are delivering a Power BI report to an audience that's unfamiliar with Power BI or when you don't expect them to interact with the report.
+
+
+
+
+17
+MS Data Analyst
+Several design techniques that can provide built-in assistance include:
+
+Information page
+Visual header tooltip icon
+Button with overlay
+
+
+
+
+18
+MS Data Analyst
+Information page
+Adding an information page is the most simplistic technique to make reports more user friendly. Dedicate an entire report page that includes instructions and definitions.
+
+
+
+
+
+
+19
+MS Data Analyst
+Within the visual header options, you can enable the visual header tooltip. It adds the Help (?) icon to the visual header. Then, you can assign a page tooltip or text. This technique is beneficial for providing visual-specific guidance, such as more detail that describes definitions, calculation logic, or the source of data.
+
+
+
+
+
+
+20
+MS Data Analyst
+To create a mobile-optimized version of your report, you can:
+
+Design a mobile layout view, where you can drag and drop certain visuals onto a phone emulator canvas.
+Use visuals and slicers that are suitable for use on small, mobile screens.
+
+
+
+
+
+
+
+1
+MS Data Analyst
+To publish a mobile-optimized version of your report, you can publish the main report as you did previously. The web and mobile versions are published at the same time.
+
+
+
+
+
+
+2
+MS Data Analyst
+
+
+
+
+
+3
+MS Data Analyst
+
+
+
+
+
+4
+MS Data Analyst
+
+
+
+
+
+5
+MS Data Analyst
+
+
+
+
+
+6
+MS Data Analyst
+
+
+
+
+
+7
+MS Data Analyst
+
+
+
+
+
+8
+MS Data Analyst
+
+
+
+
+
+9
+MS Data Analyst
+
+
+
+
+
+10
+MS Data Analyst
+
+
+
+
+
+11
+MS Data Analyst
+
+
+
+
+
+12
+MS Data Analyst
+
+
+
+
+
+13
+MS Data Analyst
+
+
+
+
+
+14
+MS Data Analyst
+
+
+
+
+
+15
+MS Data Analyst
+
+
+
+
+
+16
+MS Data Analyst
 
 
 
