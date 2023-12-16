@@ -1727,14 +1727,14 @@ To publish a mobile-optimized version of your report, you can publish the main r
 
 2
 MS Data Analyst
-
+By default, many visuals in Power BI are responsive, which means that they change dynamically to display the maximum amount of data and insight, regardless of the screen size. As a visual changes size, Power BI gives priority to the data and makes small changes, such as removing padding or repositioning the legend, so that the data remains visible.
 
 
 
 
 3
 MS Data Analyst
-
+When it comes to configuring visuals for mobile reports, Power BI does all the hard work for you. However, if you want to turn off this default responsiveness, you can do so in the General section of the visual's format settings.
 
 
 
