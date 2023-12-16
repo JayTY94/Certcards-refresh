@@ -1750,20 +1750,26 @@ For mobile reports, slicers should be vertical, horizontal, or responsive (respo
 
 5
 MS Data Analyst
+1. At the Contoso Skateboard Company, Sally is creating a report to show sales over time. Sally is aware that occasional spikes occur in sales revenue that could be attributed to many different reasons, such as a marketing campaign. Sally needs to ensure that supporting visuals provide explanation for the spikes. What type of visual should Sally use? 
 
+Line chart visual with anomaly detection
 
 
 
 
 6
 MS Data Analyst
+2. At the Contoso Skateboard Company, Sanjay is authoring a report that will be distributed to sales managers. The report contains some sensitive data that shouldn’t be exported. Which report design feature can Sanjay configure to ensure that data isn’t exported? 
 
+Visual header
 
 
 
 
 7
 MS Data Analyst
+The Display state captures the visibility of report objects, such as shapes, images, buttons, and text boxes.
+
 
 
 
