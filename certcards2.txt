@@ -1768,7 +1768,7 @@ Visual header
 
 7
 MS Data Analyst
-The Display state captures the visibility of report objects, such as shapes, images, buttons, and text boxes.
+The Display state for Bookmarks captures the visibility of report objects, such as shapes, images, buttons, and text boxes.
 
 
 
