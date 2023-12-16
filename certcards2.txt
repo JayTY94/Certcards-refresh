@@ -1741,6 +1741,8 @@ When it comes to configuring visuals for mobile reports, Power BI does all the h
 
 4
 MS Data Analyst
+For mobile reports, slicers should be vertical, horizontal, or responsive (responsive slicers must be horizontal). If you make the slicer responsive, as you change its size and shape, it shows more or fewer options. If you make the slicer small enough, it becomes a filter icon on the report page.
+
 
 
 
