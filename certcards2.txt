@@ -1852,6 +1852,8 @@ The best visual to use for identifying outliers is the scatter chart, which show
 
 17
 MS Data Analyst
+When you create visuals, Power BI Desktop aggregates your data into groups, based on the values that it finds in the underlying data. You can refine how those default groups are presented. You can also create new groups by grouping two or more data points in a visual or putting values into equal-sized groups (binning).
+
 
 
 
@@ -1859,6 +1861,8 @@ MS Data Analyst
 
 18
 MS Data Analyst
+Grouping is used for categories of data. Binning is similar to grouping, but it is used for grouping continuous fields, such as numbers and dates.
+
 
 
 
@@ -1866,7 +1870,7 @@ MS Data Analyst
 
 19
 MS Data Analyst
-
+To create the group, use Ctrl + click to select the data points on the visual that you want to group. For example, the states with sales greater than 500,000 dollars. Right-click one of those selected data points and then select the Group data option. When the group is created, notice that the visual updates to take into account the new group. The following image shows that the other states, which are the states with lower sales (less than 500,000 dollars) have been grouped together and are highlighted in a different shade.
 
 
 
