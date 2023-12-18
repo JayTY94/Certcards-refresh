@@ -1827,13 +1827,15 @@ Grouping Hierarchies: When you group data, you can create hierarchies that are u
 
 14
 MS Data Analyst
-
+The TOPN DAX function returns the top N rows of a specified table. The Top N analysis is a great way to present data that might be important, such as the top 10 selling products, top 10 performers in an organization, or top 10 customers.
 
 
 
 
 15
 MS Data Analyst
+The process of identifying outliers involves segmenting your data into two groups: one group is the outlier data and the other group is not. You could use calculated columns to identify outliers, but the results would be static until you refresh the data. A better way to identify outliers is to use a visualization or DAX formula because these methods will ensure that your results are dynamic.
+
 
 
 
