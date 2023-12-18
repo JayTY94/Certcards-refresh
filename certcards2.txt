@@ -1877,6 +1877,154 @@ To create the group, use Ctrl + click to select the data points on the visual th
 
 20
 MS Data Analyst
+Continuing with the previous example, you now want to edit the categories that make up your group. Right-click the group field in either the Legend bucket or the Fields pane, and then select Edit Groups.
+
+In the Groups window that displays is a list of the groups and the different items within those groups. The following image shows the States with Sales > 500k group and its members, along with the Other group (States with Sales < 500k) that contains all other values that have not been put into the first group. 
+
+
+
+
+1
+MS Data Analyst
+Clustering allows you to identify a segment (cluster) of data that is similar to each other but dissimilar to the rest of the data. The process of clustering is different to that of grouping, which you accomplished previously.
+
+To apply clustering to your scatter chart, select More options (...) in the upper-right corner of the visual and then select Automatically find clusters.
+
+
+
+
+
+
+2
+MS Data Analyst
+In the preceding example, when you applied clustering to the scatter chart, you could only use two measures. If you want to find clusters by using more than two measures, you can use a table visual instead, add all the fields you want to use, and then run the clustering algorithm by using the same process.
+
+
+
+
+
+
+3
+MS Data Analyst
+
+
+
+
+
+4
+MS Data Analyst
+
+
+
+
+
+5
+MS Data Analyst
+
+
+
+
+
+6
+MS Data Analyst
+
+
+
+
+
+7
+MS Data Analyst
+
+
+
+
+
+8
+MS Data Analyst
+
+
+
+
+
+9
+MS Data Analyst
+
+
+
+
+
+10
+MS Data Analyst
+
+
+
+
+
+11
+MS Data Analyst
+
+
+
+
+
+12
+MS Data Analyst
+
+
+
+
+
+13
+MS Data Analyst
+
+
+
+
+
+14
+MS Data Analyst
+
+
+
+
+
+15
+MS Data Analyst
+
+
+
+
+
+16
+MS Data Analyst
+
+
+
+
+
+17
+MS Data Analyst
+
+
+
+
+
+18
+MS Data Analyst
+
+
+
+
+
+19
+MS Data Analyst
+
+
+
+
+
+20
+MS Data Analyst
 
 
 
