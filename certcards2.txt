@@ -1906,6 +1906,7 @@ In the preceding example, when you applied clustering to the scatter chart, you 
 
 3
 MS Data Analyst
+Some organizations prefer not to use custom visuals for security or other reasons. Before you import custom visuals, check with your organization to see if they are allowed or not. If they are not allowed, you can instead use the Play Axis visual that is available for scatter chart visualizations within Power BI Desktop because it has similar functionality.
 
 
 
