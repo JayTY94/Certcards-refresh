@@ -1784,6 +1784,8 @@ Histograms and bell curves are the most common way to display statistics about y
 
 9
 MS Data Analyst
+Binning Basics: Binning is a method to group a number of more or less continuous values into a smaller number of "bins". For example, you can bin ages into groups like 0-20, 21-40, etc.
+
 
 
 
@@ -1791,6 +1793,8 @@ MS Data Analyst
 
 10
 MS Data Analyst
+Grouping Fundamentals: Grouping in Power BI allows you to combine data into sets, which can be useful when you have categorical data. For example, you can group various products into categories like electronics, clothing, etc.
+
 
 
 
@@ -1798,6 +1802,7 @@ MS Data Analyst
 
 11
 MS Data Analyst
+Custom Bins Creation: Power BI allows you to create custom bins. You can specify the size of each bin or let Power BI create bins based on the data's statistical properties.
 
 
 
@@ -1805,6 +1810,7 @@ MS Data Analyst
 
 12
 MS Data Analyst
+Dynamic Binning: Power BI supports dynamic binning which means the bins can adjust depending on the data or the filters applied. This is particularly useful for interactive reports.
 
 
 
@@ -1812,6 +1818,8 @@ MS Data Analyst
 
 13
 MS Data Analyst
+Grouping Hierarchies: When you group data, you can create hierarchies that are useful for drilling down into data in reports and visualizations.
+
 
 
 
