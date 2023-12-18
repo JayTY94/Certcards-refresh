@@ -1843,6 +1843,8 @@ The process of identifying outliers involves segmenting your data into two group
 
 16
 MS Data Analyst
+The best visual to use for identifying outliers is the scatter chart, which shows the relationship between two numerical values. Scatter charts display patterns in large sets of data and are, therefore, ideal for displaying outliers.
+
 
 
 
