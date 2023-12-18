@@ -1777,7 +1777,7 @@ The Display state for Bookmarks captures the visibility of report objects, such 
 
 8
 MS Data Analyst
-
+Histograms and bell curves are the most common way to display statistics about your semantic models. In Power BI terms, you can represent a histogram with one of the bar or column chart visuals and represent a bell curve with an area chart visual.
 
 
 
