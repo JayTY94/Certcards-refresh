@@ -1855,7 +1855,7 @@ The Q&A visual allows report consumers to ask questions of their data and receiv
 
 7
 MS Data Analyst
-
+If the Forecast section isn't available for a line chart, it’s probably because the visual hasn’t been correctly configured. Forecasting is only available when two conditions are met: the axis has a single field of type date, and there’s only one value field.
 
 
 
