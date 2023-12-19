@@ -1,89 +1,5 @@
 
 
-21
-MS Data Analyst
-DATEADD - Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current filter context.
-
-
-
-
-
-22
-DAX Studio
-EVALUATE
-FILTER ( 'Product', 'Product'[Color] = @Color )
-
-When you execute a query with a parameter, in this case "@Color", DAX Studio will prompt you for the parameter to use
-
-
-
-
-
-23
-MS Data Analyst
-2. You're using Power BI Desktop to develop a model. It has a table named Customer, which includes a column named DateOfBirth. In reports, you need to group customers by current age. What type of DAX calculation will you add to the Customer table? 
-
-A calculated column can store the current age for each customer. This column could then be used in reports to group customers by age.
-
-
-
-
-
-24
-General
-Mergers and Acquisitions (M&A) advisory services are a type of financial service provided by intermediaries in the field of mergers and acquisitions1.
-
-
-
-
-
-25
-MS Data Analyst
-The areas where calculated columns and measures differ include:
-Visual use - Calculated columns (like any column) can be used to filter, group, or summarize (as an implicit measure), whereas measures are designed to summarize.
-
-
-
-
-
-26
-MS Data Analyst
-To aggregate data to decrease the size of a semantic model for a particuarly large table in Power Query, use Choose Columns on the Home tab to limit the number of columns imported and then choose Group by in the Home tab. Then choose Adavnced and select Add Aggregation
-
-
-
-
-
-27
-MS Data Analyst
-Another item to consider when optimizing performance is the Auto date/time option in Power BI Desktop. By default, this feature is enabled globally, which means that Power BI Desktop automatically creates a hidden calculated table for each date column, provided that certain conditions are met.
-
-
-
-
-
-28
-MS Data Analyst
-Variables do not require the use of EARLIER or EARLIEST DAX functions, which are difficult to understand. These functions were required before variables were introduced, and were written in complex expressions that introduced new filter contexts. Now that you can use variables instead of those functions, you can write fewer complex formulas.
-
-
-
-
-
-29
-MS Data Analyst
-TOTALYTD - Evaluates an expression for YTD in the current filter context. The equivalent QTD and MTD DAX functions of TOTALQTD and TOTALMTD are also included.
-
-
-
-
-
-30
-MS Data Analyst
-Integration with Power BI: Power BI can connect to OLAP (Online Analytical Processing) databases as a data source, allowing users to import data from OLAP cubes and utilize Power BI's advanced visualization and reporting tools for data analysis.
-
-
-
 
 
 31
@@ -387,13 +303,6 @@ MS Data Analyst
 2. What can be achieved by removing unnecessary rows and columns? 
 Deleting unnecessary rows and columns will reduce a semantic model size and it's good practice to load only necessary data into your semantic model.
 
-
-
-
-
-64
-MS Data Analyst
-Before you run Performance analyzer, to ensure you get the most accurate results in your analysis (test), make sure that you start with a clear visual cache and a clear data engine cache.
 
 
 
