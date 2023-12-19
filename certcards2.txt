@@ -1816,7 +1816,12 @@ Customizing Suggested Visuals: Once a visual is suggested by the Analyze feature
 
 3
 MS Data Analyst
+The three main AI visuals are:
+  Key influencers
+  Decomposition tree
+  Q&A
 
+When adding an AI visual to your report, make sure that you size it to become as large as possible. That way, report consumers can fully interact with and explore the data in the visual.
 
 
 
