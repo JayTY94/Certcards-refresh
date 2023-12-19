@@ -1828,6 +1828,8 @@ When adding an AI visual to your report, make sure that you size it to become as
 
 4
 MS Data Analyst
+The Key influencers visual helps report consumers understand the factors that drive a particular metric, like sales revenue. By using AI, Power BI will analyze the data, rank the factors that matter, and then present them as key influencers.
+
 
 
 
@@ -1835,6 +1837,8 @@ MS Data Analyst
 
 5
 MS Data Analyst
+The Decomposition Tree visual helps report consumers visualize data across multiple dimensions. It automatically aggregates data and enables consumers to drill down into dimensions in any order. As a result, it's a valuable tool for ad hoc exploration and conducting root cause analysis. As an AI visual, a decomposition tree provides a guided exploration experience that helps by finding the next dimension for consumers to drill down into.
+
 
 
 
