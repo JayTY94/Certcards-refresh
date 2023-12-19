@@ -1846,6 +1846,8 @@ The Decomposition Tree visual helps report consumers visualize data across multi
 
 6
 MS Data Analyst
+The Q&A visual allows report consumers to ask questions of their data and receive responses as data visualizations. Similar to how web search engines parse and understand complex search requests, report consumers can write natural language questions (in English).
+
 
 
 
