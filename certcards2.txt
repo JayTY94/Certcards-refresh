@@ -1889,6 +1889,7 @@ Power BI paginated reports are not created in Power BI Desktop; they are built b
 
 11
 MS Data Analyst
+Getting data in a Power BI paginated report does not involve data cleaning steps. In fact, data is not stored in a Power BI paginated report dataset. When data is refreshed on the report, it is retrieved in an unaltered form from the data source, according to the query that was used to retrieve it.
 
 
 
@@ -1896,6 +1897,7 @@ MS Data Analyst
 
 12
 MS Data Analyst
+Power BI paginated reports can use a dataset from Power BI service. These datasets have used Power Query to clean and alter the dat. The difference is that this work was done in Power BI Desktop or SQL Server Data Tools prior to using Power BI Report Builder, which does not have that tool in the user interface.
 
 
 
