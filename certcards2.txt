@@ -1905,6 +1905,8 @@ Power BI paginated reports can use a dataset from Power BI service. These datase
 
 13
 MS Data Analyst
+RDL File Format: Paginated Reports are authored using the RDL (Report Definition Language) file format, the same format used in SSRS. You can import existing SSRS reports into Power BI to create Paginated Reports.
+
 
 
 
@@ -1912,6 +1914,8 @@ MS Data Analyst
 
 14
 MS Data Analyst
+Report Builder or Power BI Report Builder: To create Paginated Reports, you can use either SQL Server Report Builder or Power BI Report Builder, both of which are free authoring tools provided by Microsoft.
+
 
 
 
@@ -1919,6 +1923,8 @@ MS Data Analyst
 
 15
 MS Data Analyst
+Data Regions: These reports include data regions like tables, matrices, and charts that allow you to display data in a structured format. You can use expressions and formulas to manipulate data.
+
 
 
 
@@ -1926,6 +1932,8 @@ MS Data Analyst
 
 16
 MS Data Analyst
+Parameters and Filtering: Paginated Reports support parameters, allowing users to interact with the report by selecting values to filter data dynamically. Parameterized reports are useful for creating personalized reports.
+
 
 
 
@@ -1933,6 +1941,8 @@ MS Data Analyst
 
 17
 MS Data Analyst
+Subscriptions: You can set up email subscriptions for Paginated Reports, enabling scheduled delivery of reports to stakeholders or distribution lists in various formats such as PDF, Excel, or Word.
+
 
 
 
@@ -1940,6 +1950,8 @@ MS Data Analyst
 
 18
 MS Data Analyst
+Embedding and Sharing: Just like other Power BI content, you can embed Paginated Reports in Power BI dashboards, share them with specific users or groups, and control access using Power BI's security features.
+
 
 
 
@@ -1947,6 +1959,8 @@ MS Data Analyst
 
 19
 MS Data Analyst
+Licensing Considerations: While Power BI Pro and Premium Per User (PPU) licenses allow you to consume Paginated Reports, the ability to publish and manage them in a workspace may require a Power BI Premium capacity, either dedicated capacity or Power BI Premium Per Capacity (PPC) licensing.
+
 
 
 
