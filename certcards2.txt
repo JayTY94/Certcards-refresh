@@ -1959,7 +1959,7 @@ Embedding and Sharing: Just like other Power BI content, you can embed Paginated
 
 19
 MS Data Analyst
-Licensing Considerations: While Power BI Pro and Premium Per User (PPU) licenses allow you to consume Paginated Reports, the ability to publish and manage them in a workspace may require a Power BI Premium capacity, either dedicated capacity or Power BI Premium Per Capacity (PPC) licensing.
+
 
 
 
