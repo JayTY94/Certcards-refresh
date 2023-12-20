@@ -1968,6 +1968,158 @@ To customize or save a report theme in Power BI Desktop, go to View > theme drop
 
 20
 MS Data Analyst
+In a larger organization, it can be difficult to design a single report that meets everyone's needs, so one solution is using personalized visuals. These allow individual consumers to make minor design changes to best understand the data themselves.
+
+
+
+
+
+
+1
+MS Data Analyst
+Report consumers can make changes for the following items:
+
+Visualization type
+Swap measure or dimension
+Add/remove legend
+Compare multiple measures
+Change aggregations
+Consumers can create a personal bookmark to save their changes after personalizing a report, and even share changes with others. Best of all, they can always reset to default to restore the report view.
+
+
+
+
+2
+MS Data Analyst
+You can enable personalized visuals in Power BI Desktop or Power BI service.
+
+In Power BI Desktop, go to File > Options and settings > Options > Current file > Report settings. Make sure Personalize visuals is turned on.
+In Power BI service, go to Settings on the specific report, then toggle Personalize Visuals on, and Save.
+
+
+
+
+3
+MS Data Analyst
+
+
+
+
+
+4
+MS Data Analyst
+
+
+
+
+
+5
+MS Data Analyst
+
+
+
+
+
+6
+MS Data Analyst
+
+
+
+
+
+7
+MS Data Analyst
+
+
+
+
+
+8
+MS Data Analyst
+
+
+
+
+
+9
+MS Data Analyst
+
+
+
+
+
+10
+MS Data Analyst
+
+
+
+
+
+11
+MS Data Analyst
+
+
+
+
+
+12
+MS Data Analyst
+
+
+
+
+
+13
+MS Data Analyst
+
+
+
+
+
+14
+MS Data Analyst
+
+
+
+
+
+15
+MS Data Analyst
+
+
+
+
+
+16
+MS Data Analyst
+
+
+
+
+
+17
+MS Data Analyst
+
+
+
+
+
+18
+MS Data Analyst
+
+
+
+
+
+19
+MS Data Analyst
+
+
+
+
+
+20
+MS Data Analyst
 
 
 
