@@ -1959,7 +1959,7 @@ Embedding and Sharing: Just like other Power BI content, you can embed Paginated
 
 19
 MS Data Analyst
-
+To customize or save a report theme in Power BI Desktop, go to View > theme dropdown > Customize current theme.
 
 
 
