@@ -2061,6 +2061,8 @@ In the resulting Access window, you can add email addresses of individual users,
 
 17
 MS Data Analyst
+When publishing, there's a notification that it may take 5-10 minutes or longer to reflect changes, depending on your tenant and size of report. It's not possible to guarantee changes will be reflected in 10 minutes or less.
+
 
 
 
