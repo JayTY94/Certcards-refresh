@@ -2044,6 +2044,7 @@ Read data that's stored in workspace dataflows
 
 15
 MS Data Analyst
+An app is a published, read-only window into your data for mass distribution and viewing. When ready to share apps with your users, you can publish the app. This process requires a Power BI Pro license. Consuming and viewing the app also requires a Pro license, or the workspace must be hosted in a premium capacity.
 
 
 
@@ -2051,7 +2052,9 @@ MS Data Analyst
 
 16
 MS Data Analyst
+To assign these roles to users, go to the workspace that you've created and, in the upper-left corner of the ribbon, select Access.
 
+In the resulting Access window, you can add email addresses of individual users, mail-enabled security groups, distribution lists, Microsoft 365 groups, and regular security groups, and then assign them to their specific roles. You can also change the user's assigned role at the bottom of the page and delete the user from the workspace by selecting the ellipsis (…) next to their name.
 
 
 
