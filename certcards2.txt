@@ -1943,21 +1943,36 @@ To develop Python visuals, you need to have Python installed on your machine. Ma
 
 6
 MS Data Analyst
+What is the best way to share a custom theme?
 
+Save and share custom theme JSON file
+NOT
+Send the modified .pbix file
+Set the default theme for the organization
 
 
 
 
 7
 MS Data Analyst
+What elements can be changed with personalized visuals?
 
+Visualization type
+NOT
+Custom theme color
+Background images
 
 
 
 
 8
 MS Data Analyst
+What is an inclusive benefit of designing a report with accessibility features?
 
+Users can understand a report using a screen reader or keyboard.
+NOT
+Users don't have to auto-play videos slowing performance.
+Users will admire the bright colors and decorative images used for cohesiveness.
 
 
 
