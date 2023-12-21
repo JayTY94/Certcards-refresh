@@ -1916,6 +1916,8 @@ In Power BI service, go to Settings on the specific report, then toggle Personal
 
 3
 MS Data Analyst
+Screen readers will automatically read the title and type of visual, so add insight and context for low vision users, such as "Total sales by category, further broken down by product". If you want to include specific data points, instead of adding them to the static alt text, you can use DAX measures and conditional formatting to create dynamic alt text to enrich the user experience.
+
 
 
 
@@ -1923,13 +1925,17 @@ MS Data Analyst
 
 4
 MS Data Analyst
+In Power BI Desktop, you can set the tab order for how a keyboard user will experience your report. First, navigate to the View tab in the ribbon, then select Selection in the Show Panes section.
 
+You'll see Layer order and Tab order, with a list of report elements. Layer order allows you to stack elements, whereas tab order dictates which item will be accessed next when the keyboard user tabs to the next item. Use the up/down arrows to set the order.
 
 
 
 
 5
 MS Data Analyst
+To develop Python visuals, you need to have Python installed on your machine. Many Python packages are supported in Power BI, but not all. See Learn which Python packages are supported in Power BI for a complete list of supported packages and Python visual limitations.
+
 
 
 
