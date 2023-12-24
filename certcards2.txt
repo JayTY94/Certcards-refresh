@@ -1917,7 +1917,13 @@ Example sentence: The completion of the project required much travail, but the t
 
 1
 The Picture of Dorian Gray
+Espial (noun):
 
+The act of observing, detecting, or noticing; the action of catching sight of something.
+
+The state of being observed or discovered.
+
+Example sentence: The espial of the rare bird species in the urban park excited the birdwatching community.
 
 
 
