@@ -3,59 +3,6 @@
 
 
 
-11
-MS Data Analyst
-The Basic filter type allows you to select items from a list of distinct values that are found in the field. You can also restrict the filter to a single selection instead of multi-selection.
-
-
-
-
-
-12
-MS Data Analyst
-Power BI core visuals that you can use to show performance include:
-
-Gauge
-
-KPI
-
-Table, with conditional formatting
-
-Matrix, with conditional formatting
-
-
-
-
-
-13
-MS Data Analyst
-Use the USERPRINCIPALNAME function instead of USERNAME function. It provides consistency when validating the roles in Power BI Desktop and the Power BI service.
-
-
-
-
-
-14
-MS Data Analyst
-At the Contoso Skateboard Company, Sally is responsible for managing staff rosters to determine when the inventory employees are required to work. Sally relies on a report that forecasts sales order demand to determine the number of employees that are required at any time. It also includes a button to open a Human Resources app to assign employees to rosters. What type of report audience does Sally represent? 
-
-
-Information Worker
-
-
-
-
-
-15
-MS Data Analyst
-Visual cache - When you load a visual, you can't clear this visual cache without closing Power BI Desktop and opening it again. To avoid any caching in play, you need to start your analysis with a clean visual cache.
-
-To ensure that you have a clear visual cache, add a blank page to your Power BI Desktop (.pbix) file and then, with that page selected, save and close the file. Reopen the Power BI Desktop (.pbix) file that you want to analyze. It will open on the blank page.
-
-
-
-
-
 16
 MS Data Analyst
 Create a bookmark to reset all slicers to default values. Then, add a button to the page to invoke the bookmark. For example, the button could be captioned as Reset slicers.
