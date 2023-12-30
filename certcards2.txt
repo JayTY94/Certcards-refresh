@@ -1982,7 +1982,7 @@ Azure Resource Groups leverage Azure's Role-Based Access Control (RBAC) to assig
 
 14
 Workera.ai
-Azure Resource groups support the use of tags, which are name-value pairs that can be applied to resources for categorization and organization. Tags are valuable for tracking costs, managing compliance, and simplifying resource identification, especially in environments with a large number of resources.
+When you create a resource group, you need to specify the Azure region in which the resource group will reside. The region you choose determines the geographical location where the metadata for the resource group is stored. Resources within the group can be deployed to the same region or different regions, but the resource group itself has a home region.
 
 
 
@@ -1990,6 +1990,7 @@ Azure Resource groups support the use of tags, which are name-value pairs that c
 
 15
 Workera.ai
+Resources within a resource group can be deployed to the same or different regions. However, it's a best practice to deploy resources to the same region within a resource group whenever possible. Placing resources in the same region enhances performance and reduces latency, as they are located closer to each other in the datacenter.
 
 
 
@@ -1997,6 +1998,7 @@ Workera.ai
 
 16
 Workera.ai
+Some Azure resources, such as Azure Active Directory, subscriptions, and management groups, are global and are not confined to a specific region or resource group. Management groups are a way to manage access, policies, and compliance across multiple subscriptions, providing a hierarchical structure above resource groups.
 
 
 
