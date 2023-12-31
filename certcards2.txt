@@ -2006,6 +2006,184 @@ Some Azure resources, such as Azure Active Directory, subscriptions, and managem
 
 17
 Workera.ai
+Amazon Rekognition, Detecting Labels:
+
+The DetectLabels operation identifies objects, scenes, and concepts in an image.
+It can recognize common objects, such as people, animals, and everyday items.
+
+
+
+
+
+18
+Workera.ai
+Amazon Rekognition, Facial Analysis:
+
+The DetectFaces operation analyzes facial attributes in an image.
+It can detect faces, and provide information about facial features, emotions, and estimated age range.
+
+
+
+
+
+19
+Workera.ai
+Amazon Rekognition, Celebrity Recognition:
+
+The RecognizeCelebrities operation identifies celebrities in an image.
+It can recognize well-known people and return information about them.
+
+
+
+
+
+20
+Workera.ai
+Amazon Rekognition, Text Detection:
+
+The DetectText operation extracts text from images.
+It can identify and extract printed and handwritten text, supporting a variety of use cases.
+
+
+
+
+
+1
+Workera.ai
+Amazon Rekognition, Object and Scene Detection:
+
+The DetectModerationLabels operation detects unsafe content in an image, such as explicit content.
+It helps in content moderation by identifying potentially
+
+
+
+
+2
+Workera.ai
+Amazon Rekognition, Face Comparison:
+
+The CompareFaces operation compares two faces in images to determine if they are the same person.
+This is useful for face verification and identification scenarios.
+
+
+
+
+3
+Workera.ai
+Amazon Rekognition, Face Search:
+
+The SearchFaces operation allows you to search for faces in a collection.
+It is useful for building applications that require face recognition in a large set of images.
+
+
+
+
+
+4
+Workera.ai
+Amazon Rekognition, Custom Labels:
+
+Amazon Rekognition Custom Labels enables you to train a model to recognize custom objects and scenes.
+This allows you to create a more specialized and tailored solution for your specific use case.
+
+
+
+
+
+5
+Workera.ai
+Amazon Rekognition, Video Analysis:
+
+Amazon Rekognition can analyze videos by detecting and tracking people, faces, and objects over time.
+It provides insights into the content of videos, making it suitable for applications like content moderation and surveillance.
+
+
+
+
+
+6
+Workera.ai
+Amazon Rekognition, Stream Processing:
+
+Amazon Rekognition Video Stream allows real-time processing of video streams.
+It can be used for applications like live video analysis and monitoring.
+
+
+
+
+
+7
+Workera.ai
+
+
+
+
+
+8
+Workera.ai
+
+
+
+
+
+9
+Workera.ai
+
+
+
+
+
+10
+Workera.ai
+
+
+
+
+
+11
+Workera.ai
+
+
+
+
+
+12
+Workera.ai
+
+
+
+
+
+13
+Workera.ai
+
+
+
+
+
+14
+Workera.ai
+
+
+
+
+
+15
+Workera.ai
+
+
+
+
+
+16
+Workera.ai
+
+
+
+
+
+17
+Workera.ai
 
 
 
