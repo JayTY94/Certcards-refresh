@@ -2146,14 +2146,18 @@ Integration with SageMaker Neo: SageMaker Edge Manager Seamlessly integrates wit
 
 11
 Workera.ai
-
+Ezsmdeploy python SDK helps you easily deploy Machine learning models on SageMaker. It provides a rich set of features such as deploying models from hubs (like Huggingface or SageMaker Jumpstart), passing one or more model files (even with multi-model deployments), automatically choosing an instance based on model size or based on a budget, and load testing endpoints using an intuitive API
 
 
 
 
 12
 Workera.ai
+Ezsmdeploy uses the SageMaker Python SDK, which is an open source library for training and deploying machine learning models on Amazon SageMaker. This SDK however focuses on further simplifying deployment from existing models, and as such, this is for you if:
 
+you want to quickly deploy and try out foundational language models as an API powered by SageMaker (New in v 2.0)
+you have a serialized model (a pickle / joblib/ json/ TF saved model/ Pytorch .pth/ etc) file and you want to deploy and test your model as an API endpoint
+you have a model or multiple models stored as local files, in local folders, or in S3 as tar files (model.tar.gz)
 
 
 
