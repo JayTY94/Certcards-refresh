@@ -3,51 +3,6 @@
 
 
 
-16
-MS Data Analyst
-Create a bookmark to reset all slicers to default values. Then, add a button to the page to invoke the bookmark. For example, the button could be captioned as Reset slicers.
-
-
-
-
-
-17
-MS Data Analyst
-To assign these roles to users, go to the workspace that you've created and, in the upper-left corner of the ribbon, select Access.
-
-In the resulting Access window, you can add email addresses of individual users, mail-enabled security groups, distribution lists, Microsoft 365 groups, and regular security groups, and then assign them to their specific roles. You can also change the user's assigned role at the bottom of the page and delete the user from the workspace by selecting the ellipsis (…) next to their name.
-
-
-
-
-
-18
-MS Data Analyst
-When a time series (date field) is on the X-axis, two additional analytic options are available. These options use AI to produce a forecast or find anomalies. The anomaly detection feature can help you highlight exceptional values. For more information, see Anomaly detection.
-
-
-
-
-
-19
-MS Data Analyst
-Role in a Power BI workspace: Contributor
-
-Create, edit, and delete content, such as reports, in the workspace
-Publish reports to the workspace
-
-
-
-
-
-20
-MS Data Analyst
-Histograms and bell curves are the most common way to display statistics about your semantic models. In Power BI terms, you can represent a histogram with one of the bar or column chart visuals and represent a bell curve with an area chart visual.
-
-
-
-
-
 21
 MS Data Analyst
 you can consider restricting user access to Power BI model objects. Object-level security (OLS) can restrict access to specific tables and columns, and their metadata. Typically, you apply OLS to secure objects that store sensitive data, like employee personal data.
