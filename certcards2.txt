@@ -3,50 +3,6 @@
 
 
 
-21
-MS Data Analyst
-you can consider restricting user access to Power BI model objects. Object-level security (OLS) can restrict access to specific tables and columns, and their metadata. Typically, you apply OLS to secure objects that store sensitive data, like employee personal data.
-
-
-
-
-
-22
-MS Data Analyst
-Time intelligence calculations modify date filter contexts. They can help you answer these time-related questions:
-
-• What's the accumulation of revenue for the year, quarter, or month?
-• What revenue was produced for the same period last year?
-What growth in revenue has been achieved over the same period last year?
-
-
-
-
-
-23
-MS Data Analyst
-Educational reports assume that the report consumer is unfamiliar with the data or context. So the reports must provide clear narrative detail and guidance to help with understanding. This type of report is often used in journalism and by governments to disseminate information to large audiences that have varying levels of understanding of the subject.
-
-
-
-
-
-24
-MS Data Analyst
-Embedding and Sharing: Just like other Power BI content, you can embed Paginated Reports in Power BI dashboards, share them with specific users or groups, and control access using Power BI's security features.
-
-
-
-
-
-25
-MS Data Analyst
-Parameters and Filtering: Paginated Reports support parameters, allowing users to interact with the report by selecting values to filter data dynamically. Parameterized reports are useful for creating personalized reports.
-
-
-
-
-
 26
 MS Data Analyst
 An executive is a person who is charged with making plans and decisions that often involve a medium or long-term focus. Executives are responsible for making the business run smoothly. For example, the C-level executives at the Contoso Skateboard Store would be an executive audience.
