@@ -1,56 +1,6 @@
 
 
 
-
-
-26
-MS Data Analyst
-An executive is a person who is charged with making plans and decisions that often involve a medium or long-term focus. Executives are responsible for making the business run smoothly. For example, the C-level executives at the Contoso Skateboard Store would be an executive audience.
-
-
-
-
-
-27
-MS Data Analyst
-If your formula needs to reference columns in other tables, and if the tables are related, directly or indirectly, you can use the RELATED or RELATEDTABLE DAX function. The RELATED function retrieves the value at the one-side of the relationship, while the RELATEDTABLE retrieves values on the many-side. The RELATEDTABLE function returns a table object.
-
-
-
-
-
-28
-MS Data Analyst
-Additionally, you can set custom dimensions that are larger than the available screen size so that the report consumer will need to interact with scrollbars to view the entire page.
-
-However, a large page size that is filled with visuals might take time to render, and visuals might not render in a top-to-bottom order.
-
-
-
-
-
-29
-MS Data Analyst
-Power BI paginated reports are descendants of SQL Server Reporting Services (SSRS), which was first introduced in 2004. Power BI paginated reports and SSRS have a lot in common. If you're looking for information on paginated reports and can't find it, searching the internet and Microsoft documentation on SSRS is an excellent idea because you'll find numerous blog posts, videos, and documentation available to you.
-
-
-
-
-
-30
-MS Data Analyst
-3. Which user interface requirement is an example of an accessibility requirement? 
-
-Contrasting colors
-NOT
-Augmented Reality
-Organizational Colors
-Portrait Orientation
-
-
-
-
-
 31
 MS Data Analyst
 Good placement of report objects contributes to an ordered report design. Generally, you should place the most important information in the upper-left corner of the page and arrange the report elements from left to right and top to bottom.
