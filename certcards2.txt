@@ -2056,6 +2056,8 @@ Filters for date, so you can see how the performance changes according to the da
 
 4
 MS Data Analyst
+The deployment pipeline feature in Power BI manages content in dashboards, reports, and semantic models between different environments in the development life cycle. With this feature, you can develop and test Power BI content in one centralized location and streamline the process before deploying the final content to your users. This Power BI Premium feature requires you to be a Capacity admin.
+
 
 
 
