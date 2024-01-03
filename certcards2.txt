@@ -2023,57 +2023,146 @@ you have a model or multiple models stored as local files, in local folders, or 
 
 
 
+
+1
+MS Data Analyst
+Usage metric reports are available for Power BI Pro users and can only be accessed by users with the role types of Admin, Member, or Contributor.
+
+
+
+
+
+
+2
+MS Data Analyst
+To view usage metric reports, go to the pertinent workspace. Find the report or dashboard that you want to see usage metrics for. For example, if you want to see the usage metrics report for Sales Data, select the ellipsis (...), and then select View usage metrics report from the drop-down menu.
+
+
+
+
+
+
+3
+MS Data Analyst
+
+
+
+
+
+4
+MS Data Analyst
+
+
+
+
+
+5
+MS Data Analyst
+
+
+
+
+
+6
+MS Data Analyst
+
+
+
+
+
+7
+MS Data Analyst
+
+
+
+
+
+8
+MS Data Analyst
+
+
+
+
+
+9
+MS Data Analyst
+
+
+
+
+
+10
+MS Data Analyst
+
+
+
+
+
+11
+MS Data Analyst
+
+
+
+
+
+12
+MS Data Analyst
+
+
+
+
+
 13
-Workera.ai
+MS Data Analyst
 
 
 
 
 
 14
-Workera.ai
+MS Data Analyst
 
 
 
 
 
 15
-Workera.ai
+MS Data Analyst
 
 
 
 
 
 16
-Workera.ai
+MS Data Analyst
 
 
 
 
 
 17
-Workera.ai
+MS Data Analyst
 
 
 
 
 
 18
-Workera.ai
+MS Data Analyst
 
 
 
 
 
 19
-Workera.ai
+MS Data Analyst
 
 
 
 
 
 20
-Workera.ai
+MS Data Analyst
 
 
 
