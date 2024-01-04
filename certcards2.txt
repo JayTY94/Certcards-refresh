@@ -2065,6 +2065,10 @@ The deployment pipeline feature in Power BI manages content in dashboards, repor
 
 5
 MS Data Analyst
+Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
+Development - The location in which dashboard developers or semantic modelers can build new content with other developers. This stage is first in the deployment pipeline.
+
+
 
 
 
@@ -2072,6 +2076,11 @@ MS Data Analyst
 
 6
 MS Data Analyst
+Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
+Test - Where a small group of users and user acceptance testers can see and review new reports, provide feedback, and test the reports with larger semantic models for bugs and data inconsistencies before it goes into production.
+
+
+
 
 
 
@@ -2079,6 +2088,11 @@ MS Data Analyst
 
 7
 MS Data Analyst
+Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
+Production - Where an expansive user audience can use tested reports that are reliable and accurate. This stage is the final one of the deployment pipeline.
+
+
+
 
 
 
@@ -2086,6 +2100,8 @@ MS Data Analyst
 
 8
 MS Data Analyst
+The Lineage view is only accessible to Admin, Contributor, and Member roles. Additionally, it requires a Power BI Pro license and is only available for app workspaces. To access the Lineage view, go to the workspace, and then select Lineage from the View drop-down menu on the top ribbon.
+
 
 
 
@@ -2093,6 +2109,8 @@ MS Data Analyst
 
 9
 MS Data Analyst
+The Lineage view feature in Power BI allows you to quickly refresh semantic models and see the relationships between the artifacts in a workspace and their external dependencies.
+
 
 
 
