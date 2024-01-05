@@ -2106,6 +2106,11 @@ Incremental refresh should only be used on data sources and queries that support
 
 1
 MS Data Analyst
+Power BI provides two ways to endorse your semantic models:
+
+Promotion - Promote your semantic models when they're ready for broad usage.
+Certification - Request certification for a promoted semantic model. Certification can be a highly selective process, so only the truly reliable and authoritative semantic models are used across the organization.
+
 
 
 
@@ -2113,6 +2118,8 @@ MS Data Analyst
 
 2
 MS Data Analyst
+With the Query Caching feature, you can use the local caching services of Power BI to process query results. Instead of relying on the semantic model to calculate queries, you use cloud resources on your Premium capacities in the Power BI service to load your report. Query caching ensures constant performance instead of overloading the semantic model resources. Query Caching requires a Premium Capacity.
+
 
 
 
@@ -2120,6 +2127,9 @@ MS Data Analyst
 
 3
 MS Data Analyst
+What is the difference between Promotion and Certification when you are endorsing a semantic model? 
+Promotion does not need specific permissions while Certification requires permission from the semantic model owner to access to the semantic model.
+
 
 
 
