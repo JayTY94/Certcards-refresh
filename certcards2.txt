@@ -2152,6 +2152,13 @@ Sensitivity labels specify which data can be exported. These labels are configur
 
 13
 MS Data Analyst
+1. How is the Admin workspace role different from other types of workspace roles? 
+
+Admin is the only role that can remove any users.
+NOT
+Admin is the only role that can publish or update apps.
+Admin is the only role that can create, edit, or delete content in a workspace.
+Admin is the only role that can publish content to a workspace.
 
 
 
