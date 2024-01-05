@@ -2118,6 +2118,12 @@ The Lineage view feature in Power BI allows you to quickly refresh semantic mode
 
 10
 MS Data Analyst
+Additionally, if a semantic model or dataflow belongs to a different workspace (in this case, the Tailwind workspace), it will be indicated on the card, as shown in the following screenshot.
+
+Screenshot of semantic model from a different workspace.
+
+By double-clicking on any card, you can view the metadata, such as the sensitivity, by whom it was configured, the last refresh date, and the names and count of tables within this semantic model, as shown in the following figure.
+
 
 
 
@@ -2125,6 +2131,12 @@ MS Data Analyst
 
 11
 MS Data Analyst
+As enterprises grow, so does their data. Often, strict requirements and regulations must be applied to ensure that this sensitive data is secure. Power BI provides a few different ways to help you accomplish this task:
+
+Use Microsoft sensitivity labels to label dashboards, reports, semantic models, and dataflows by using the same taxonomy that is used to classify and protect files in Microsoft 365.
+Add more protection measures such as encryption and watermarks when you are exporting the data.
+Use Microsoft Cloud App Security to monitor and investigate activities in Power BI.
+
 
 
 
