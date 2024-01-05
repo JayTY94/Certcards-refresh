@@ -2166,6 +2166,10 @@ Admin is the only role that can publish content to a workspace.
 
 14
 MS Data Analyst
+Gateway software acts like a bridge; it allows organizations to retain databases and other data sources on their on-premises networks and access that on-premises data in cloud services, such as Power BI and Microsoft Azure Analysis Services.
+
+A gateway facilitates quick, behind-the-scenes communication that flows from a user in the cloud to your on-premises data source and then back again to the cloud.
+
 
 
 
@@ -2173,6 +2177,10 @@ MS Data Analyst
 
 15
 MS Data Analyst
+Two types of on-premises gateways are:
+
+Organization mode - Allows multiple users to connect to multiple on-premises data sources and is suitable for complex scenarios.
+Personal mode 
 
 
 
@@ -2180,6 +2188,11 @@ MS Data Analyst
 
 16
 MS Data Analyst
+Two types of on-premises gateways are:
+
+Organization mode 
+Personal mode - Allows one user to connect to data sources. This type of gateway can be used only with Power BI and it can't be shared with other users, so it is suitable in situations where you're the only one in your organization who creates reports. You will install the gateway on your local computer, which needs to stay online for the gateway to work.
+
 
 
 
