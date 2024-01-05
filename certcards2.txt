@@ -2144,6 +2144,7 @@ Use Microsoft Cloud App Security to monitor and investigate activities in Power 
 
 12
 MS Data Analyst
+Sensitivity labels specify which data can be exported. These labels are configured externally to Power BI, and Power BI allows you to quickly use them in your reports and dashboards. These labels allow you to define and protect content, even outside of Power BI. semantic models, dataflows, reports, and dashboards can use this mechanism, and all users in your corporation can use this feature unless exceptions have been defined.
 
 
 
