@@ -1,29 +1,5 @@
 
 
-46
-MS Data Analyst
-To publish a mobile-optimized version of your report, you can publish the main report as you did previously. The web and mobile versions are published at the same time.
-
-
-
-
-
-47
-MS Data Analyst
-Suppose that you have an ID column with thousands of unique rows. You know that you won't use this particular column in a relationship, so it will not be used in a report. Therefore, you should consider this column as unnecessary and admit that it is wasting space in your semantic model.
-
-
-
-
-
-48
-MS Data Analyst
-When Power BI enforces OLS, not only does it restrict access to tables and columns, but it can also secure metadata. When you secure metadata, it’s not possible to retrieve information about secured tables and columns by using Dynamic Management Views (DMVs).
-
-
-
-
-
 49
 MS Data Analyst
 Knowing how your report consumers are likely interacting with reports should influence your report designs. Consider the number of visuals that display together on the page, the complexity of visuals, spacing between visuals, and the use of interactive design elements such as tooltips, slicers, buttons, or filters.
