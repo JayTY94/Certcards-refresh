@@ -1,415 +1,83 @@
-
-
-49
+1
 MS Data Analyst
-Knowing how your report consumers are likely interacting with reports should influence your report designs. Consider the number of visuals that display together on the page, the complexity of visuals, spacing between visuals, and the use of interactive design elements such as tooltips, slicers, buttons, or filters.
+2. At the Contoso Skateboard Company, Sally is responsible for managing staff rosters to determine when the inventory employees are required to work. Sally relies on a report that forecasts sales order demand to determine the number of employees that are required at any time. It also includes a button to open a Human Resources app to assign employees to rosters. What type of report does Sally use? 
+
+Operational
 
 
 
 
-
-50
+2
 MS Data Analyst
-Workspaces offer the following benefits:
-
-  Focused collaboration efforts. You can use workspaces to house reports and dashboards for use by multiple teams.
-  Ability to share and present reports and dashboards in a single environment.
-  Assurance that the highest level of security is maintained by controlling who can access semantic models, reports, and dashboards.
+In the Background section of a visual's Format Pane, you can set any color or image as the background for the visual. If you plan to use an image as a background, try to select an image that won't have lines or shapes that would make it difficult for the user to read the data.
 
 
 
 
-
-51
+3
 MS Data Analyst
-Use the alignment commands on the Format Pane, which will help you quickly and accurately align visuals.
+Visual headers make many interactions available to report authors and consumers. All report objects, including visuals and elements (like buttons), have a visual header. The visual header appears when you hover the cursor over the report object, and they can launch actions like focus mode, drill up, or drill down. You can also access the More options menu by selecting the ellipsis (...) button.
 
 
 
 
-
-52
+4
 MS Data Analyst
-In Power BI Desktop, you can set the tab order for how a keyboard user will experience your report. First, navigate to the View tab in the ribbon, then select Selection in the Show Panes section.
-
-You'll see Layer order and Tab order, with a list of report elements. Layer order allows you to stack elements, whereas tab order dictates which item will be accessed next when the keyboard user tabs to the next item. Use the up/down arrows to set the order.
-
+Type of Performance Analyzer task:
+Other - The time it took the visual to prepare queries, wait for other visuals to complete, or perform other background processing tasks. If this category displays a long duration, the only real way to reduce this duration is to optimize DAX queries for other visuals, or reduce the number of visuals in the report.
 
 
 
 
-53
+5
 MS Data Analyst
-On the Model tab, if you want to pin the key columns to the top of each card, click the canvas (not a card), and the card property blade will appear. That allows you to toggle the setting.
+Grouping is used for categories of data. Binning is similar to grouping, but it is used for grouping continuous fields, such as numbers and dates.
 
 
 
 
-
-54
+6
 MS Data Analyst
-By default, cross filtering (or cross highlighting) works between any two visuals. However, the report author can edit visual interactions between any pair of visuals and in either direction. Then, they can disable cross filtering or modify the interaction to use cross highlighting instead.
+The deployment pipeline feature in Power BI manages content in dashboards, reports, and semantic models between different environments in the development life cycle. With this feature, you can develop and test Power BI content in one centralized location and streamline the process before deploying the final content to your users. This Power BI Premium feature requires you to be a Capacity admin.
 
 
 
 
-
-55
+7
 MS Data Analyst
-The Display state for Bookmarks captures the visibility of report objects, such as shapes, images, buttons, and text boxes.
+You can enable personalized visuals in Power BI Desktop or Power BI service.
+
+In Power BI Desktop, go to File > Options and settings > Options > Current file > Report settings. Make sure Personalize visuals is turned on.
+In Power BI service, go to Settings on the specific report, then toggle Personalize Visuals on, and Save.
 
 
 
 
-
-56
+8
 MS Data Analyst
-Because bookmarks can capture filter state, when invoked, they will apply that filter state. You can invoke bookmarks directly from the Bookmarks pane, or you can invoke them indirectly by selecting a button, image, or shape.
+Information page
+Adding an information page is the most simplistic technique to make reports more user friendly. Dedicate an entire report page that includes instructions and definitions.
 
 
 
 
-
-57
+9
 MS Data Analyst
-When publishing, there's a notification that it may take 5-10 minutes or longer to reflect changes, depending on your tenant and size of report. It's not possible to guarantee changes will be reflected in 10 minutes or less.
+Data engine cache - When a query is run, the results are cached, so the results of your analysis will be misleading. You need to clear the data cache before rerunning the visual.
+
+To clear the data cache, you can either restart Power BI Desktop or connect DAX Studio to the semantic model and then call Clear Cache.
 
 
 
 
-
-58
+10
 MS Data Analyst
-The Key influencers visual helps report consumers understand the factors that drive a particular metric, like sales revenue. By using AI, Power BI will analyze the data, rank the factors that matter, and then present them as key influencers.
+You can’t mix RLS and OLS in the same role. If you need to apply RLS and OLS in the same model, create separate roles dedicated to each type. Also, you can’t set table-level security if it breaks a relationship chain. For example, if there are relationships between tables A and B, and B and C, you can't secure table B.
 
 
 
 
-
-59
-MS Data Analyst
-Bookmarks capture a specific view of a report, including filters, slicers, the page selection, and the state of visuals. Report authors and report consumers can create them.
-
-Bookmarks that are created by a report consumer are known as personal bookmarks
-
-
-
-
-
-60
-MS Data Analyst
-No performance is impacted by having hidden visuals on a page. Hidden visuals don't run queries. Swapping visuals will provide flexible consumption options to the report consumer while retaining optimal performance and making the most out of the report page space.
-
-
-
-
-
-61
-MS Data Analyst
-The Data state captures anything that impacts the queries that Power BI sends to the semantic model. For example, if a slicer is included in the scope of the bookmark, the Data state retains the applied slicer items when the bookmark was created (or updated). It will also capture sort order and the drill depth of a visual because the query is impacted.
-
-
-
-
-
-62
-MS Data Analyst
-Enabling Business Intelligence: The main goal of semantic data models is to facilitate business intelligence. By presenting data in a business-friendly way, these models enable users to perform analysis, generate reports, and derive insights more efficiently.
-
-
-
-
-
-63
-MS Data Analyst
-Margins include the border area, or edge, around each page. Having a consistently spaced border area frames the report objects.
-
-Because there isn't a report page property to set margins, it's up to you to lay out objects in way that results in a consistent border area. Margin sizes should be equal on the left and right, with possible variation on the top and bottom. Space across the top or bottom can show branding, titles, slicers, or other information that needs to be separated from the visuals.
-
-
-
-
-
-64
-MS Data Analyst
-It's possible to define a role that includes no rules. In this case, the role provides access to all rows of all model tables. This role set up would be suitable for an admin user who is allowed to view all data.
-
-
-
-
-
-65
-MS Data Analyst
-Subscriptions: You can set up email subscriptions for Paginated Reports, enabling scheduled delivery of reports to stakeholders or distribution lists in various formats such as PDF, Excel, or Word.
-
-
-
-
-
-66
-MS Data Analyst
-What elements can be changed with personalized visuals?
-
-Visualization type
-NOT
-Custom theme color
-Background images
-
-
-
-
-
-67
-Workera.ai
-All Azure subscriptions have a trust relationship with a Microsoft Entra tenant. Subscriptions rely on this tenant (directory) to authenticate and authorize security principals and devices. When a subscription expires, the trusted instance remains, but the security principals lose access to Azure resources.
-
-
-
-
-
-68
-MS Data Analyst
-The quickest way to enforce consistency is to use a report theme. A report theme applies format settings to your entire report, ensuring consistent application of colors, fonts, pages, and visual format options, including the Filters pane styles.
-
-
-
-
-
-69
-MS Data Analyst
-Consistency should apply to everything in your report design, including spacing, margins, size, alignment, and especially to object format options. Format options include the selection of font, font size, font weight, colors, and many other styling options. Format options also include the enabling of visual features like axis labels and data labels.
-
-
-
-
-
-70
-MS Data Analyst
-Paginated reports give a pixel-perfect view of the data. Pixel perfect means that you have total control of how the report renders. If you want a footer on every sales receipt that you create, a paginated report is the appropriate solution. If you want a certain customer's name to always appear in green font on a report, you can do that in a paginated report.
-
-
-
-
-
-71
-MS Data Analyst
-If the Forecast section isn't available for a line chart, it’s probably because the visual hasn’t been correctly configured. Forecasting is only available when two conditions are met: the axis has a single field of type date, and there’s only one value field.
-
-
-
-
-
-72
-MS Data Analyst
-Buttons need to be clearly interactive. If a button doesn't appear to be interactive, the report consumer might not notice it. To help in their discovery, you can apply two formatting options: on-hover formatting and descriptive tooltips.
-
-
-
-
-
-73
-MS Data Analyst
-Make sure that you include bookmark requirements in all design decisions. For optimal experiences, you should create bookmarks at the end of report development after you have added all report elements. This approach will help you avoid the complex and time-consuming updating of bookmarks when you're adding new elements.
-
-
-
-
-
-74
-MS Data Analyst
-You can use conditional formatting to format table and matrix visuals. With this approach, you can apply rules to highlight specific cells by using:
-
-Background color
-Font color
-Data bars
-Icons
-
-
-
-
-
-75
-MS Data Analyst
-Getting data in a Power BI paginated report does not involve data cleaning steps. In fact, data is not stored in a Power BI paginated report dataset. When data is refreshed on the report, it is retrieved in an unaltered form from the data source, according to the query that was used to retrieve it.
-
-
-
-
-
-76
-MS Data Analyst
-For mobile reports, slicers should be vertical, horizontal, or responsive (responsive slicers must be horizontal). If you make the slicer responsive, as you change its size and shape, it shows more or fewer options. If you make the slicer small enough, it becomes a filter icon on the report page.
-
-
-
-
-
-77
-MS Data Analyst
-1. In the context of semantic model calculations, which statement best describes time intelligence? 
-
-Time intelligence calculations modify date filter contexts.
-
-
-
-
-
-78
-MS Data Analyst
-Grouping Hierarchies: When you group data, you can create hierarchies that are useful for drilling down into data in reports and visualizations.
-
-
-
-
-
-79
-MS Data Analyst
-2. At the Contoso Skateboard Company, Sakura is designing an analytical report. It must include a visual that allows report consumers to explore and discover detailed sales values over time and by store. What type of report visual should Sakura choose to support the report consumer requirement? 
-
-A matrix visual allows the report consumer to drill down on the columns and rows to reveal detailed values.
-
-
-
-
-
-80
-MS Data Analyst
-You can design Microsoft Power BI reports in Power BI Desktop or Power BI service (web portal). Power BI mobile apps don't support report design; they support only the report consumer experience.
-
-
-
-
-
-81
-MS Data Analyst
-Visual headers might appear in the upper or lower part of the object. Power BI attempts to show visual headers in the upper right of the object if sufficient space is available between the upper part of the object and the edge of the page. If no space is available in the upper part, Power BI will place the visual headers in the lower-right corner of the visual.
-
-
-
-
-
-82
-MS Data Analyst
-Take care not to use horizontal orientation when many distinct values are present. Often, report consumers don't notice the scroll arrows that allow navigation to the following items. Consequently, they might think that the value they're looking for doesn't exist.
-
-
-
-
-
-83
-MS Data Analyst
-Many helper DAX functions for navigating backward or forward for specific time periods, all of which returns a table of dates. These helper functions include NEXTDAY, NEXTMONTH, NEXTQUARTER, NEXTYEAR, and PREVIOUSDAY, PREVIOUSMONTH, PREVIOUSQUARTER, and PREVIOUSYEAR.
-
-
-
-
-
-84
-MS Data Analyst
-Unlike report and page-level filters, a visual-level filter can filter by using a measure. When a measure filters a visual, it's used to eliminate groups. For example, consider a column chart visual that groups by store. A measure filter could eliminate groups (stores) where the total store sales are less than a certain amount.
-
-
-
-
-
-85
-MS Data Analyst
-When filters aren't locked, report consumers can modify them. Specifically, they can:
-
-	• Select the eraser icon to clear the filter
-	• Apply a new filter selection
-	• Change the filter type, such as from basic to advanced (unless disabled for the report).
-	• Use the search box to search for values to filter by (unless disabled for the report).
-
-
-
-
-
-86
-MS Data Analyst
-An app is a published, read-only window into your data for mass distribution and viewing. When ready to share apps with your users, you can publish the app. This process requires a Power BI Pro license. Consuming and viewing the app also requires a Pro license, or the workspace must be hosted in a premium capacity.
-
-
-
-
-
-87
-MS Data Analyst
-report consumers can't do the following to the report they are reading:
-
-	• Add new filters
-	• Remove filters
-	• Change the filter type to Top N, or relative date or time (for date/time fields)
-  Enforce or disable single selection
-
-
-
-
-
-88
-MS Data Analyst
-The process of identifying outliers involves segmenting your data into two groups: one group is the outlier data and the other group is not. You could use calculated columns to identify outliers, but the results would be static until you refresh the data. A better way to identify outliers is to use a visualization or DAX formula because these methods will ensure that your results are dynamic.
-
-
-
-
-
-89
-MS Data Analyst
-Report authors can configure report or visual settings to control filter options and behavior. With report options, you can:
-
-Hide the Filter icon for a specific visual.
-Restrict report consumers from changing filter types (for example, basic to advanced) in the Filters pane
-Remove the search  box in the Filters pane.
-
-
-
-
-
-90
-MS Data Analyst
-You can hide pages when they're not yet ready for use; they're a work in progress. However, you might commonly hide them because you want to control how they're accessed. You can provide report page navigation with buttons or by drilling through from a visual. It's also possible to design a page as a tooltip, which is revealed when a report consumer hovers over a visual.
-
-
-
-
-
-91
-MS Data Analyst
-Use the Paginated report visual to embed a Power BI paginated report in your report. Paginated reports can connect directly to source databases, providing you with the ability to present transaction-level detail that's not stored in the Power BI semantic model.
-
-
-
-
-
-92
-MS Data Analyst
-Lower cardinality leads to more optimized performance, so you might need to reduce the number of high cardinally columns in your semantic model.
-
-
-
-
-
-93
-MS Data Analyst
-Report settings can:
-
-Add an Apply button to all basic filters in the Filters pane. A single filter will apply when the report consumer selects the Apply button in the filter card.
-Add an Apply button to the Filters pane. All filters will apply simultaneously when the report consumer selects the Apply button. This option is helpful when report consumers want to update many filters at the same time.
-
-
-
-
-
-94
-MS Data Analyst
-It might be tempting to think that slicers apply page-level filters because that's the default result. However, it's important to understand that a slicer is a visual that propagates filters to other visuals on the same page or (when synced) across other pages.
-
-
-
-
-
-95
+11
 MS Data Analyst
 Structurally, a Power BI report connects to a single semantic model (semantic model), and it has at least one report page. However, it's common that reports have multiple pages. On each page, report objects are laid out. Report objects include:
 
@@ -420,51 +88,35 @@ Elements - Provide visual interest but don't use semantic model data. Elements i
 
 
 
+12
+Workera.ai
+In the context of Kubernetes clusters on Azure, Azure Container Network Interface (CNI) plug-ins are crucial for handling networking between pods. These plug-ins define how network connectivity is established and managed within the Kubernetes cluster.
 
-96
+
+
+
+13
 MS Data Analyst
-When it comes to configuring visuals for mobile reports, Power BI does all the hard work for you. However, if you want to turn off this default responsiveness, you can do so in the General section of the visual's format settings.
+Sensitivity labels specify which data can be exported. These labels are configured externally to Power BI, and Power BI allows you to quickly use them in your reports and dashboards. These labels allow you to define and protect content, even outside of Power BI. semantic models, dataflows, reports, and dashboards can use this mechanism, and all users in your corporation can use this feature unless exceptions have been defined.
 
 
 
 
-
-97
+14
 MS Data Analyst
-When you're ready to deliver your report, it might be helpful to provide a demonstration (or video) to show how you intend report consumers to use the report. That approach will allow you to show how to apply filters and provide lessons on how to apply interactive filtering actions, such as include/exclude groups, cross filtering, report page drillthrough, and bookmarks.
+Power BI deactivates your refresh schedule after four consecutive failures or when the service detects an unrecoverable error that requires a configuration update, such as invalid or expired credentials. It is not possible to change the consecutive failures threshold.
 
 
 
 
-
-98
+15
 MS Data Analyst
-Descriptive tooltips
-In addition to on-hover formatting, you can configure tooltips to concisely communicate what the button does.
-
-Enable and enter the tooltip text in the Action section for the button.
+Take care not to use horizontal orientation when many distinct values are present. Often, report consumers don't notice the scroll arrows that allow navigation to the following items. Consequently, they might think that the value they're looking for doesn't exist.
 
 
 
 
-
-99
-MS Data Analyst
-When you create visuals, Power BI Desktop aggregates your data into groups, based on the values that it finds in the underlying data. You can refine how those default groups are presented. You can also create new groups by grouping two or more data points in a visual or putting values into equal-sized groups (binning).
-
-
-
-
-
-100
-MS Data Analyst
-Another important consideration when you are laying out report objects is balance. Balance is concerned with stability and structure in design. In the context of a report layout, balance refers to the weight that is distributed across the report page by the placement of objects of the same or different sizes.
-
-
-
-
-
-101
+16
 MS Data Analyst
 To use a KPI, you need three pieces of information:
 
@@ -475,42 +127,74 @@ A time series, for instance daily, monthly, or yearly.
 
 
 
+17
+Workera.ai
+Azure Container Network Interface (CNI) plug-ins are part of Azure's container networking solution. They enable communication between containers, and between containers and other resources in the Azure environment.
 
-102
+
+
+
+18
 MS Data Analyst
+The three broad report consumer audiences are:
+
+Executive
+
+Analyst
+
+Information worker
 
 
 
 
-
-103
+19
 MS Data Analyst
-Power BI paginated reports can use a dataset from Power BI service. These datasets have used Power Query to clean and alter the dat. The difference is that this work was done in Power BI Desktop or SQL Server Data Tools prior to using Power BI Report Builder, which does not have that tool in the user interface.
+On-hover formatting
+You can configure buttons to change their state when a hover over is available. When the report consumer hovers the cursor over a button, the cursor icon changes to a pointing finger, which indicates that the button is selectable. In this example, the Tabular button text is light gray by default, but when they hover the cursor over, it darkens to black.
 
 
 
 
-
-104
+20
 MS Data Analyst
-Advantages of Filters over Slicers
-Filters result in faster report rendering because no visual rendering is required.
-
-You can lock and/or hide filters.
+On the Model tab, if you want to pin the key columns to the top of each card, click the canvas (not a card), and the card property blade will appear. That allows you to toggle the setting.
 
 
 
 
-
-105
+21
 MS Data Analyst
-Custom Bins Creation: Power BI allows you to create custom bins. You can specify the size of each bin or let Power BI create bins based on the data's statistical properties.
+You can hide pages when they're not yet ready for use; they're a work in progress. However, you might commonly hide them because you want to control how they're accessed. You can provide report page navigation with buttons or by drilling through from a visual. It's also possible to design a page as a tooltip, which is revealed when a report consumer hovers over a visual.
 
 
 
 
+22
+MS Data Analyst
+Report authors can configure report or visual settings to control filter options and behavior. With report options, you can:
 
-106
+Hide the Filter icon for a specific visual.
+Restrict report consumers from changing filter types (for example, basic to advanced) in the Filters pane
+Remove the search  box in the Filters pane.
+
+
+
+
+23
+MS Data Analyst
+When you're ready to deliver your report, it might be helpful to provide a demonstration (or video) to show how you intend report consumers to use the report. That approach will allow you to show how to apply filters and provide lessons on how to apply interactive filtering actions, such as include/exclude groups, cross filtering, report page drillthrough, and bookmarks.
+
+
+
+
+24
+MS Data Analyst
+The Current page state of a bookmark determines whether the bookmark will direct the report consumer to the bookmarked page or apply the current page. Disabling the Current page state is rare, but you should consider some creative use cases. For example, on a page tooltip, a bookmark can change the visuals without navigating from the page that the report consumer has selected.
+
+
+
+
+25
 MS Data Analyst
 Filtering can occur at five different levels of a Microsoft Power BI report:
 
@@ -523,129 +207,406 @@ Measure
 
 
 
-
-107
+26
 MS Data Analyst
-You can’t mix RLS and OLS in the same role. If you need to apply RLS and OLS in the same model, create separate roles dedicated to each type. Also, you can’t set table-level security if it breaks a relationship chain. For example, if there are relationships between tables A and B, and B and C, you can't secure table B.
+Data Cubes: The core of an OLAP (Online Analytical Processing) database is the OLAP cube, organizing data into a multi-dimensional structure of dimensions (categories of analysis) and measures (quantitative metrics). This structure enhances data retrieval and analysis efficiency.
 
 
 
 
-
-108
+27
 MS Data Analyst
-To create the group, use Ctrl + click to select the data points on the visual that you want to group. For example, the states with sales greater than 500,000 dollars. Right-click one of those selected data points and then select the Group data option. When the group is created, notice that the visual updates to take into account the new group. The following image shows that the other states, which are the states with lower sales (less than 500,000 dollars) have been grouped together and are highlighted in a different shade.
 
 
 
 
-
-109
+28
 MS Data Analyst
-Report settings can:
-
-Disable cross highlighting/filtering by default. All visuals, except for slicers, don't propagate filters to other visuals unless they are explicitly added as a visual interaction.
-Add an Apply button to slicers. The slicer selection will only filter the report page when the report consumer selects the Apply button.
+Lower cardinality leads to more optimized performance, so you might need to reduce the number of high cardinally columns in your semantic model.
 
 
 
 
-
-110
+29
 MS Data Analyst
-An information worker is someone who uses data to help make decisions or take actions. Often, these decisions and actions are operational in that they are done on a daily basis. The inventory manager at the Contoso Skateboard Store, who needs up-to-date information about stock levels, is an example of an information worker audience.
+The Lineage view feature in Power BI allows you to quickly refresh semantic models and see the relationships between the artifacts in a workspace and their external dependencies.
 
 
 
 
-
-111
-MS Data Analyst
-Role in a Power BI workspace: Member
-
-Add members or others with lower permissions
-Publish, unpublish, and change permissions for an app
-
-
-
-
-
-112
-MS Data Analyst
-Data Regions: These reports include data regions like tables, matrices, and charts that allow you to display data in a structured format. You can use expressions and formulas to manipulate data.
-
-
-
-
-
-113
-MS Data Analyst
-To create a mobile-optimized version of your report, you can:
-
-Design a mobile layout view, where you can drag and drop certain visuals onto a phone emulator canvas.
-Use visuals and slicers that are suitable for use on small, mobile screens.
-
-
-
-
-
-114
-MS Data Analyst
-Workspace roles allow you to designate who can do what within a workspace.
-
-There are four roles for workspaces, and it's advised that you grant the minimum access necessary to collaborators. For consumers, skip workspace role assignment, and provide access through the app instead in the next section.
-
-
-
-
-
-115
-MS Data Analyst
-When a requirement is in place to lay out many slicers, consider creating a page that is dedicated to showing all slicers. For example, the page could be named Slicers. Sync the slicers to other pages and then set the slicers as hidden on those pages. This design technique will require that report consumers should always go to the Slicers page to modify slicer settings.
-
-
-
-
-
-116
-MS Data Analyst
-Dynamic rules use specific DAX functions that return environmental values (as opposed to constants). Environmental values are returned from three specific DAX functions:
-
-USERNAME or USERPRINCIPALNAME – Returns the Power BI authenticated user as a text value.
-
-CUSTOMDATA - Returns the CustomData property passed in the connection string. Non-Power BI reporting tools that connect to the dataset by using a connection string can set this property, like Microsoft Excel.
-
-
-
-
-
-117
+30
 MS Data Analyst
 To analyze your queries in more detail, you can use DAX studio, which is a free, open-source tool that is provided by another service.
 
 
 
 
+31
+MS Data Analyst
+Visual headers might appear in the upper or lower part of the object. Power BI attempts to show visual headers in the upper right of the object if sufficient space is available between the upper part of the object and the edge of the page. If no space is available in the upper part, Power BI will place the visual headers in the lower-right corner of the visual.
 
-118
+
+
+
+32
+MS Data Analyst
+Power BI provides two ways to endorse your semantic models:
+
+Promotion - Promote your semantic models when they're ready for broad usage.
+Certification - Request certification for a promoted semantic model. Certification can be a highly selective process, so only the truly reliable and authoritative semantic models are used across the organization.
+
+
+
+
+33
+Workera.ai
+Ezsmdeploy python SDK helps you easily deploy Machine learning models on SageMaker. It provides a rich set of features such as deploying models from hubs (like Huggingface or SageMaker Jumpstart), passing one or more model files (even with multi-model deployments), automatically choosing an instance based on model size or based on a budget, and load testing endpoints using an intuitive API
+
+
+
+
+34
 MS Data Analyst
 Rule of Thirds, Points of Interest: The four points where the lines intersect are considered the points of interest1. Placing your subjects or key data points at these intersections can create a more dynamic and engaging visualization1.
 
 
 
 
-
-119
+35
 MS Data Analyst
-Continuing with the previous example, you now want to edit the categories that make up your group. Right-click the group field in either the Legend bucket or the Fields pane, and then select Edit Groups.
+On the Report performance tab of a Report usage metric report, you can view metrics such as:
 
-In the Groups window that displays is a list of the groups and the different items within those groups. The following image shows the States with Sales > 500k group and its members, along with the Other group (States with Sales < 500k) that contains all other values that have not been put into the first group.
+Typical opening time - How long it takes, at the fiftieth percentile, to open the report.
+Opening time trend - How the typical opening time changes over time. This metric can tell you how the report is performing as the number of users starts to grow.
+Daily/7-Day Performance charts - Highlight the performance for 10, 50, and 90 percent of the open-report actions every day and over a seven-day period.
+Filters for date, so you can see how the performance changes according to the day.
 
 
 
 
+36
+MS Data Analyst
+Many helper DAX functions for navigating backward or forward for specific time periods, all of which returns a table of dates. These helper functions include NEXTDAY, NEXTMONTH, NEXTQUARTER, NEXTYEAR, and PREVIOUSDAY, PREVIOUSMONTH, PREVIOUSQUARTER, and PREVIOUSYEAR.
 
-120
+
+
+
+37
+MS Data Analyst
+It might be tempting to think that slicers apply page-level filters because that's the default result. However, it's important to understand that a slicer is a visual that propagates filters to other visuals on the same page or (when synced) across other pages.
+
+
+
+
+38
+MS Data Analyst
+1. How is the Admin workspace role different from other types of workspace roles? 
+
+Admin is the only role that can remove any users.
+NOT
+Admin is the only role that can publish or update apps.
+Admin is the only role that can create, edit, or delete content in a workspace.
+Admin is the only role that can publish content to a workspace.
+
+
+
+
+39
+MS Data Analyst
+The Relative date and Relative time filter types apply to date fields only, making it possible to filter by relative date or time. Relative filters allow the report consumer to filter by past, present, or future time periods based on the current date and time.
+
+
+
+
+40
+MS Data Analyst
+Filters apply to a single field and use one of following filter types:
+
+Basic
+Advanced
+Top N
+Relative date and Relative time
+
+
+
+
+41
+Workera.ai
+Amazon Rekognition, Face Search:
+
+The SearchFaces operation allows you to search for faces in a collection.
+It is useful for building applications that require face recognition in a large set of images.
+
+
+
+
+42
+MS Data Analyst
+Type of Performance Analyzer task:
+Visual display - The time it took for the visual to render on the screen, including the time required to retrieve web images or geocoding.
+
+
+
+
+43
+MS Data Analyst
+Create Visuals from Insights: When you use the Analyze feature to find insights, Power BI may suggest new visuals. You can add these suggested visuals directly to your report.
+
+Customizing Suggested Visuals: Once a visual is suggested by the Analyze feature, you can further customize it. This includes changing the visual type, modifying data fields, applying filters, and adjusting formatting options.
+
+
+
+
+44
+Workera.ai
+Model Versioning and A/B Testing: SageMaker Edge Manager Supports model versioning and A/B testing on edge devices, allowing for the deployment of multiple models and real-world performance comparison.
+
+
+
+
+45
+MS Data Analyst
+The Lineage view is only accessible to Admin, Contributor, and Member roles. Additionally, it requires a Power BI Pro license and is only available for app workspaces. To access the Lineage view, go to the workspace, and then select Lineage from the View drop-down menu on the top ribbon.
+
+
+
+
+46
+MS Data Analyst
+To use the Analyze feature, right-click a data point on the visual and then hover over the Analyze option to display two further options: Explain the increase and Find where the distribution is different. The options that are available will depend on the data point that you selected.
+
+
+
+
+47
+Workera.ai
+Amazon Rekognition, Face Comparison:
+
+The CompareFaces operation compares two faces in images to determine if they are the same person.
+This is useful for face verification and identification scenarios.
+
+
+
+
+48
+The Picture of Dorian Gray
+Laburnum (noun):
+
+A genus of deciduous trees and shrubs, belonging to the pea family (Fabaceae), known for its pendulous clusters of bright yellow flowers.
+
+The common name for certain species within this genus, notably the golden chain tree (Laburnum anagyroides), cultivated for its ornamental value in gardens and landscapes.
+
+
+
+
+49
+MS Data Analyst
+Advantages of slicers over filters:
+
+You can place slicers anywhere on the report page to produce an intuitive layout.
+
+Slicers are highly configurable to achieve the required functionality and style.
+
+You can configure hierarchical slicers (based on a hierarchy or by using multiple fields that are sourced from the same table).
+
+
+
+
+50
+Workera.ai
+Resources within a resource group can be deployed to the same or different regions. However, it's a best practice to deploy resources to the same region within a resource group whenever possible. Placing resources in the same region enhances performance and reduces latency, as they are located closer to each other in the datacenter.
+
+
+
+
+51
+Workera.ai
+When you create a resource group, you need to specify the Azure region in which the resource group will reside. The region you choose determines the geographical location where the metadata for the resource group is stored. Resources within the group can be deployed to the same region or different regions, but the resource group itself has a home region.
+
+
+
+
+52
+Workera.ai
+Amazon Rekognition, Facial Analysis:
+
+The DetectFaces operation analyzes facial attributes in an image.
+It can detect faces, and provide information about facial features, emotions, and estimated age range.
+
+
+
+
+53
+MS Data Analyst
+An information worker is someone who uses data to help make decisions or take actions. Often, these decisions and actions are operational in that they are done on a daily basis. The inventory manager at the Contoso Skateboard Store, who needs up-to-date information about stock levels, is an example of an information worker audience.
+
+
+
+
+54
+MS Data Analyst
+Margins include the border area, or edge, around each page. Having a consistently spaced border area frames the report objects.
+
+Because there isn't a report page property to set margins, it's up to you to lay out objects in way that results in a consistent border area. Margin sizes should be equal on the left and right, with possible variation on the top and bottom. Space across the top or bottom can show branding, titles, slicers, or other information that needs to be separated from the visuals.
+
+
+
+
+55
+Workera.ai
+Amazon Rekognition, Object and Scene Detection:
+
+The DetectModerationLabels operation detects unsafe content in an image, such as explicit content.
+It helps in content moderation by identifying potentially
+
+
+
+
+56
+MS Data Analyst
+Slicer filtering options are less complex than the advanced filter options that are possible in the Filters pane. For example, you can't configure a Top N slicer.
+
+
+
+
+57
+Workera.ai
+Ezsmdeploy uses the SageMaker Python SDK, which is an open source library for training and deploying machine learning models on Amazon SageMaker. This SDK however focuses on further simplifying deployment from existing models, and as such, this is for you if:
+
+you want to quickly deploy and try out foundational language models as an API powered by SageMaker (New in v 2.0)
+you have a serialized model (a pickle / joblib/ json/ TF saved model/ Pytorch .pth/ etc) file and you want to deploy and test your model as an API endpoint
+you have a model or multiple models stored as local files, in local folders, or in S3 as tar files (model.tar.gz)
+
+
+
+
+58
+MS Data Analyst
+Persistent filters is a feature that saves report consumer's slicer and filter settings. It automatically applies the settings when the report consumer reopens the report. That way, Power BI remembers previously applied filters. You can revert to default filters (that are saved in the report by the report author) by selecting Reset to default.
+
+
+
+
+59
+MS Data Analyst
+Getting data in a Power BI paginated report does not involve data cleaning steps. In fact, data is not stored in a Power BI paginated report dataset. When data is refreshed on the report, it is retrieved in an unaltered form from the data source, according to the query that was used to retrieve it.
+
+
+
+
+60
+MS Data Analyst
+Another important consideration when you are laying out report objects is balance. Balance is concerned with stability and structure in design. In the context of a report layout, balance refers to the weight that is distributed across the report page by the placement of objects of the same or different sizes.
+
+
+
+
+61
+MS Data Analyst
+Rupali is a data modeler at Adventure Works who is developing an import model to analyze employee timesheet data. The employee table stores the employee social security number (SSN) in a column. While the model will be available for all company managers, it will also be available to employees in the Payroll department. However, reports must only reveal employee SSNs to payroll employees. What feature should Rupali use to restrict access to the SSN column? 
+
+You can use OLS (object-level security) to secure the SSN column in the employee table.
+
+
+
+
+62
+MS Data Analyst
+Rule of Thirds, Viewer Connection: The rule of thirds can help you anticipate or control how viewers’ eyes will move from one part of the screen to another1. This can enhance the viewer’s connection with your data story and make your visualization more impactful.
+
+
+
+
+63
+MS Data Analyst
+2. At the Contoso Skateboard Company, Sakura is designing an analytical report. It must include a visual that allows report consumers to explore and discover detailed sales values over time and by store. What type of report visual should Sakura choose to support the report consumer requirement? 
+
+A matrix visual allows the report consumer to drill down on the columns and rows to reveal detailed values.
+
+
+
+
+64
+MS Data Analyst
+You can add or remove filters by adding query string parameters in the URL. For more information, see Filter a report using query string parameters in the URL. For embedded reports, the embedding app can use the client APIs to programmatically add or remove filters and change filter types to Top N or relative date or time. For more information, see Power BI embedded analytics Client APIs.
+
+
+
+
+65
+MS Data Analyst
+Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
+Production - Where an expansive user audience can use tested reports that are reliable and accurate. This stage is the final one of the deployment pipeline.
+
+
+
+
+66
+MS Data Analyst
+Make sure that you include bookmark requirements in all design decisions. For optimal experiences, you should create bookmarks at the end of report development after you have added all report elements. This approach will help you avoid the complex and time-consuming updating of bookmarks when you're adding new elements.
+
+
+
+
+67
+MS Data Analyst
+Unlike report and page-level filters, a visual-level filter can filter by using a measure. When a measure filters a visual, it's used to eliminate groups. For example, consider a column chart visual that groups by store. A measure filter could eliminate groups (stores) where the total store sales are less than a certain amount.
+
+
+
+
+68
+MS Data Analyst
+When you create roles, it’s important to test them to ensure they apply the correct filters. For data models created in Power BI Desktop, there’s the View as function that allows you to see the report when different roles are enforced, and different username values are passed.
+
+
+
+
+69
+MS Data Analyst
+Occasionally, it might make sense to have a single report with many pages. Other times, it could make sense to separate pages into different reports. This scenario is especially true when you design those pages for a different audience or when you need to secure, share, or distribute them differently. Reports are a security and publication unit, and report pages belong to reports and can't be secured or published independently of the report.
+
+
+
+
+70
+MS Data Analyst
+Visuals - On a visual-by-visual basis, you can configure which visuals will reveal your page tooltip. For each visual, you can have the visual reveal no tooltip, default to the visual tooltips (which is configured in the visual Fields pane), or use a specific page tooltip.
+
+
+
+
+71
+MS Data Analyst
+Grouping Fundamentals: Grouping in Power BI allows you to combine data into sets, which can be useful when you have categorical data. For example, you can group various products into categories like electronics, clothing, etc.
+
+
+
+
+72
+MS Data Analyst
+Because bookmarks can capture filter state, when invoked, they will apply that filter state. You can invoke bookmarks directly from the Bookmarks pane, or you can invoke them indirectly by selecting a button, image, or shape.
+
+
+
+
+73
+MS Data Analyst
+Consistency should apply to everything in your report design, including spacing, margins, size, alignment, and especially to object format options. Format options include the selection of font, font size, font weight, colors, and many other styling options. Format options also include the enabling of visual features like axis labels and data labels.
+
+
+
+
+74
+MS Data Analyst
+3. Which of the following statements about relationships in Power BI Desktop is true? 
+Relationships can be created between tables that contain different types of data.
+A working relationship can be created as long as there is at least one common column between them.
+
+
+
+
+75
 MS Data Analyst
 The three main AI visuals are:
   Key influencers
@@ -657,16 +618,773 @@ When adding an AI visual to your report, make sure that you size it to become as
 
 
 
+76
+MS Data Analyst
+report consumers can't do the following to the report they are reading:
+
+	• Add new filters
+	• Remove filters
+	• Change the filter type to Top N, or relative date or time (for date/time fields)
+  Enforce or disable single selection
+
+
+
+
+77
+MS Data Analyst
+Line Width and Type: These are usually used to represent discrete data1. Different line widths can represent different data magnitudes, while different line types (solid, dashed, dotted) can represent different data categories1.
+
+
+
+
+78
+MS Data Analyst
+You can design Microsoft Power BI reports in Power BI Desktop or Power BI service (web portal). Power BI mobile apps don't support report design; they support only the report consumer experience.
+
+
+
+
+79
+MS Data Analyst
+A measure is a model object that is designed to summarize data. Measure formulas, which are written in Data Analysis Expressions (DAX), can modify filter context by using the CALCULATE or CALCULATETABLE functions. These functions are powerful and provide you with the flexibility to add, remove, or modify filters.
+
+
+
+
+80
+MS Data Analyst
+Incremental refresh should only be used on data sources and queries that support query folding. If query folding isn't supported, incremental refresh could lead to a bad user experience because, while it will still issue the queries for the relevant partitions, it will pull all data, potentially multiple times.
+
+
+
+
+81
+Workera.ai
+Azure Container Network Interface (CNI) plug-ins play a role in implementing network policies and security within a Kubernetes cluster. Network policies define how pods can communicate with each other and with external resources, helping to enforce security rules and access controls.
+
+
+
+
+82
+MS Data Analyst
+Use the alignment commands on the Format Pane, which will help you quickly and accurately align visuals.
+
+
+
+
+83
+MS Data Analyst
+Paginated reports give a pixel-perfect view of the data. Pixel perfect means that you have total control of how the report renders. If you want a footer on every sales receipt that you create, a paginated report is the appropriate solution. If you want a certain customer's name to always appear in green font on a report, you can do that in a paginated report.
+
+
+
+
+84
+MS Data Analyst
+The Key influencers visual helps report consumers understand the factors that drive a particular metric, like sales revenue. By using AI, Power BI will analyze the data, rank the factors that matter, and then present them as key influencers.
+
+
+
+
+85
+MS Data Analyst
+1. In the context of semantic model calculations, which statement best describes time intelligence? 
+
+Time intelligence calculations modify date filter contexts.
+
+
+
+
+86
+MS Data Analyst
+Role in a Power BI workspace: Admin
+
+Update and delete the workspace
+Add or remove people, including other admins
+
+
+
+
+87
+Workera.ai
+Amazon Rekognition, Custom Labels:
+
+Amazon Rekognition Custom Labels enables you to train a model to recognize custom objects and scenes.
+This allows you to create a more specialized and tailored solution for your specific use case.
+
+
+
+
+88
+MS Data Analyst
+The Display state for Bookmarks captures the visibility of report objects, such as shapes, images, buttons, and text boxes.
+
+
+
+
+89
+MS Data Analyst
+The report theme should express your organizational branding or aim to complement it. At a minimum, the theme should include the following elements:
+
+A brand mark or logo symbol.
+
+A palette of colors that align to, or complement, organizational branding. The colors should also be sufficiently different so that, when applied to visuals, they provide appropriate contrast when appearing side by side.
+
+Text settings, including font selection, sizes, and color.
+
+
+
+
+90
+MS Data Analyst
+Workspace roles allow you to designate who can do what within a workspace.
+
+There are four roles for workspaces, and it's advised that you grant the minimum access necessary to collaborators. For consumers, skip workspace role assignment, and provide access through the app instead in the next section.
+
+
+
+
+91
+Workera.ai
+Amazon Rekognition, Text Detection:
+
+The DetectText operation extracts text from images.
+It can identify and extract printed and handwritten text, supporting a variety of use cases.
+
+
+
+
+92
+MS Data Analyst
+Usage metric reports are available for Power BI Pro users and can only be accessed by users with the role types of Admin, Member, or Contributor.
+
+
+
+
+93
+MS Data Analyst
+When you create visuals, Power BI Desktop aggregates your data into groups, based on the values that it finds in the underlying data. You can refine how those default groups are presented. You can also create new groups by grouping two or more data points in a visual or putting values into equal-sized groups (binning).
+
+
+
+
+94
+MS Data Analyst
+1. What benefit do you get from analyzing the metadata? 
+The benefit of analyzing the metadata is that you can clearly identify data inconsistences with your semantic model.
+
+
+
+
+95
+MS Data Analyst
+In the Fields pane, a column that's shown with the sigma symbol ( ∑ ) indicates two facts:
+
+It's a numeric column.
+It will summarize column values when it is used in a visual (when added to a field well that supports summarization).
+
+
+
+
+96
+MS Data Analyst
+Report settings can:
+
+Add an Apply button to all basic filters in the Filters pane. A single filter will apply when the report consumer selects the Apply button in the filter card.
+Add an Apply button to the Filters pane. All filters will apply simultaneously when the report consumer selects the Apply button. This option is helpful when report consumers want to update many filters at the same time.
+
+
+
+
+97
+MS Data Analyst
+Visuals are visualizations of semantic model data. Power BI includes over 30 core visuals, which are built in and available to all reports. You can access the core visuals in the first section of the Visualizations pane.
+
+
+
+
+98
+Workera.ai
+DevTest Labs includes an Artifact Library, a repository of pre-configured virtual machine images, formulas, and other artifacts. Users can leverage this library to quickly deploy development and test environments. Additionally, custom images can be created, capturing configurations and applications for reuse across multiple environments.
+
+
+
+
+99
+MS Data Analyst
+The Data state captures anything that impacts the queries that Power BI sends to the semantic model. For example, if a slicer is included in the scope of the bookmark, the Data state retains the applied slicer items when the bookmark was created (or updated). It will also capture sort order and the drill depth of a visual because the query is impacted.
+
+
+
+
+100
+MS Data Analyst
+Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
+Test - Where a small group of users and user acceptance testers can see and review new reports, provide feedback, and test the reports with larger semantic models for bugs and data inconsistencies before it goes into production.
+
+
+
+
+101
+MS Data Analyst
+Subscriptions: You can set up email subscriptions for Paginated Reports, enabling scheduled delivery of reports to stakeholders or distribution lists in various formats such as PDF, Excel, or Word.
+
+
+
+
+102
+MS Data Analyst
+What is the best way to share a custom theme?
+
+Save and share custom theme JSON file
+NOT
+Send the modified .pbix file
+Set the default theme for the organization
+
+
+
+
+103
+MS Data Analyst
+What is an inclusive benefit of designing a report with accessibility features?
+
+Users can understand a report using a screen reader or keyboard.
+NOT
+Users don't have to auto-play videos slowing performance.
+Users will admire the bright colors and decorative images used for cohesiveness.
+
+
+
+
+104
+MS Data Analyst
+When it comes to configuring visuals for mobile reports, Power BI does all the hard work for you. However, if you want to turn off this default responsiveness, you can do so in the General section of the visual's format settings.
+
+
+
+
+105
+MS Data Analyst
+At report design time in Microsoft Power BI Desktop, you can create measures (except when the model is a live connection to SQL Server Analysis Services multidimensional model). These measures belong to the report, and so they're called report-level measures.
+
+
+
+
+106
+MS Data Analyst
+Some visuals in Power BI Desktop have the option to add dynamic reference lines through the use of the Analytics pane. It is worth noting that not all options are available for all visuals, and some visuals, such as combination charts like the line and clustered column chart, have no options available in the Analytics pane.
+
+
+
+
+107
+MS Data Analyst
+You can use conditional formatting to format table and matrix visuals. With this approach, you can apply rules to highlight specific cells by using:
+
+Background color
+Font color
+Data bars
+Icons
+
+
+
+
+108
+MS Data Analyst
+It's possible to define a role that includes no rules. In this case, the role provides access to all rows of all model tables. This role set up would be suitable for an admin user who is allowed to view all data.
+
+
+
+
+109
+MS Data Analyst
+The primary goal of an analytical report is to help report consumers discover answers to a broad array of questions by interacting with the report and its visuals. Analytical reports often have many slicers to filter report data, and they often contain complex visuals that expose in-depth detail of the data.
+
+
+
+
+110
+MS Data Analyst
+Power BI paginated reports can use a dataset from Power BI service. These datasets have used Power Query to clean and alter the dat. The difference is that this work was done in Power BI Desktop or SQL Server Data Tools prior to using Power BI Report Builder, which does not have that tool in the user interface.
+
+
+
+
+111
+MS Data Analyst
+An analyst is a person who provides guidance to the organization. Analysts can be responsible for a range of tasks, often with goals of determining the effectiveness of business strategies, developing or improving processes, or implementing change. A business analyst (or data analyst) in the sales division of the Contoso Skateboard Store is an example of an analyst audience.
+
+
+
+
+112
+MS Data Analyst
+Advantages of Filters over Slicers
+Filters result in faster report rendering because no visual rendering is required.
+
+You can lock and/or hide filters.
+
+
+
+
+113
+MS Data Analyst
+When filters aren't locked, report consumers can modify them. Specifically, they can:
+
+	• Select the eraser icon to clear the filter
+	• Apply a new filter selection
+	• Change the filter type, such as from basic to advanced (unless disabled for the report).
+	• Use the search box to search for values to filter by (unless disabled for the report).
+
+
+
+
+114
+MS Data Analyst
+Dynamic rules use specific DAX functions that return environmental values (as opposed to constants). Environmental values are returned from three specific DAX functions:
+
+USERNAME or USERPRINCIPALNAME – Returns the Power BI authenticated user as a text value.
+
+CUSTOMDATA - Returns the CustomData property passed in the connection string. Non-Power BI reporting tools that connect to the dataset by using a connection string can set this property, like Microsoft Excel.
+
+
+
+
+115
+MS Data Analyst
+Buttons need to be clearly interactive. If a button doesn't appear to be interactive, the report consumer might not notice it. To help in their discovery, you can apply two formatting options: on-hover formatting and descriptive tooltips.
+
+
+
+
+116
+Workera.ai
+Azure Resources are typically deployed to Azure within the context of a resource group. When a resource group is deleted, all the resources contained within it are also deleted. This simplifies resource lifecycle management, making it easy to create, update, and delete entire environments as a single unit.
+
+
+
+
+117
+Workera.ai
+Azure Resource Groups leverage Azure's Role-Based Access Control (RBAC) to assign permissions to users, groups, or applications. This fine-grained access control ensures that only authorized individuals or processes can interact with and modify the resources within a resource group.
+
+
+
+
+118
+MS Data Analyst
+Grouping Hierarchies: When you group data, you can create hierarchies that are useful for drilling down into data in reports and visualizations.
+
+
+
+
+119
+MS Data Analyst
+The quickest way to enforce consistency is to use a report theme. A report theme applies format settings to your entire report, ensuring consistent application of colors, fonts, pages, and visual format options, including the Filters pane styles.
+
+
+
+
+120
+MS Data Analyst
+RDL File Format: Paginated Reports are authored using the RDL (Report Definition Language) file format, the same format used in SSRS. You can import existing SSRS reports into Power BI to create Paginated Reports.
+
+
+
 
 121
-MS Data Analyst
-A good example of an operational report is one that allows monitoring of a manufacturing production line. When an unexpected event arises, such as equipment malfunction, a button could allow workers to start a maintenance request.
-
+Workera.ai
+Azure Resource groups serve as a scope for applying consistent policies, permissions, and tags to a set of resources. This allows for efficient management of resources based on their lifecycle, ownership, or application within a specific project or environment.
 
 
 
 
 122
+MS Data Analyst
+The button element can take your Power BI reports to the next level by making them behave like an app. Buttons support six different actions that take effect when the button is selected.
+
+
+
+
+123
+MS Data Analyst
+Rule of Thirds, Grid Layout: The rule of thirds involves dividing your frame into nine equal boxes with two vertical and two horizontal lines. This grid layout serves as a guide for arranging elements in your visualization.
+
+
+
+
+124
+MS Data Analyst
+Another way to use tooltips is to display graphical information. The process of adding this type of tooltip is not as straightforward, but it is worthwhile. You would begin by creating a new page in the report.
+
+Open the new page and then open the Format pane. Expand the Page Size section and then select Tooltip from the Type list.
+
+In the Page information section, turn the Tooltip slider to On so that Power BI registers this page as a tooltip page
+
+Tooltips have limited canvas space, so to ensure that your visuals appear in the tooltip, on the View tab, set the Page view option to Actual size.
+
+
+
+
+125
+MS Data Analyst
+Size and Shape: The size and shape of your visuals can also represent both continuous and discrete data1. The size of the visual should be proportional to its importance or the emphasis you want to place on it1.
+
+
+
+
+126
+MS Data Analyst
+Enabling Business Intelligence: The main goal of semantic data models is to facilitate business intelligence. By presenting data in a business-friendly way, these models enable users to perform analysis, generate reports, and derive insights more efficiently.
+
+
+
+
+127
+MS Data Analyst
+No performance is impacted by having hidden visuals on a page. Hidden visuals don't run queries. Swapping visuals will provide flexible consumption options to the report consumer while retaining optimal performance and making the most out of the report page space.
+
+
+
+
+128
+MS Data Analyst
+Report consumers can include or exclude one or more groups in a visual. Include keeps the selection and removes all other groups. Exclude removes one or more groups from the visual.
+
+These filters appear in the Filters pane as filter cards titled Included or Excluded. The report consumer can use the Filters pane to view, modify, or remove them.
+
+
+
+
+129
+MS Data Analyst
+Requirements for a date table
+  It must have a column of data type Date (or date/time), known as the date column.
+  The date column must contain unique values.
+  The date column must not contain BLANKs.
+  The date column must not have any missing dates.
+  The date column must span full years. A year isn't necessarily a calendar year (January-December).
+  The date table must be indicated as a date table.
+
+
+
+
+130
+MS Data Analyst
+To create a mobile-optimized version of your report, you can:
+
+Design a mobile layout view, where you can drag and drop certain visuals onto a phone emulator canvas.
+Use visuals and slicers that are suitable for use on small, mobile screens.
+
+
+
+
+131
+MS Data Analyst
+Continuing with the previous example, you now want to edit the categories that make up your group. Right-click the group field in either the Legend bucket or the Fields pane, and then select Edit Groups.
+
+In the Groups window that displays is a list of the groups and the different items within those groups. The following image shows the States with Sales > 500k group and its members, along with the Other group (States with Sales < 500k) that contains all other values that have not been put into the first group.
+
+
+
+
+132
+MS Data Analyst
+Additionally, if a semantic model or dataflow belongs to a different workspace (in this case, the Tailwind workspace), it will be indicated on the card, as shown in the following screenshot.
+
+Screenshot of semantic model from a different workspace.
+
+By double-clicking on any card, you can view the metadata, such as the sensitivity, by whom it was configured, the last refresh date, and the names and count of tables within this semantic model, as shown in the following figure.
+
+
+
+
+133
+The Picture of Dorian Gray
+Espial (noun):
+
+The act of observing, detecting, or noticing; the action of catching sight of something.
+
+The state of being observed or discovered.
+
+Example sentence: The espial of the rare bird species in the urban park excited the birdwatching community.
+
+
+
+
+134
+Workera.ai
+Azure provides a variety of Azure Container Network Interface (CNI) plug-ins, allowing users to choose the one that best fits their requirements. These plug-ins include Azure CNI, Kubenet, and others. The choice of the Azure CNI plug-in can impact factors such as network performance, isolation, and integration with other Azure services.
+
+
+
+
+135
+MS Data Analyst
+3. You have a table that stores account balance snapshots for each date, excluding weekends. You need to ensure that your measure formula only filters by a single date. Also, if no record is on the last date of a time period, it should use the latest account balance. Which DAX time intelligence function should you use? 
+
+The LASTNONBLANK function will return the last date in the filter context where a snapshot record exists. This option will help you achieve the objective.
+
+
+
+
+136
+Workera.ai
+All Azure subscriptions have a trust relationship with a Microsoft Entra tenant. Subscriptions rely on this tenant (directory) to authenticate and authorize security principals and devices. When a subscription expires, the trusted instance remains, but the security principals lose access to Azure resources.
+
+
+
+
+137
+MS Data Analyst
+You can extend the core visuals with custom visuals. Custom visuals are sourced from Microsoft AppSource (an app store for business applications such as Microsoft Office 365, Microsoft Dynamics 365, Power BI, or separate Microsoft Azure web apps) or uploaded as a .pbviz file.
+
+
+
+
+138
+MS Data Analyst
+Custom Bins Creation: Power BI allows you to create custom bins. You can specify the size of each bin or let Power BI create bins based on the data's statistical properties.
+
+
+
+
+139
+MS Data Analyst
+Use the Paginated report visual to embed a Power BI paginated report in your report. Paginated reports can connect directly to source databases, providing you with the ability to present transaction-level detail that's not stored in the Power BI semantic model.
+
+
+
+
+140
+MS Data Analyst
+You can create a bookmark to capture the default state of slicers. A button on the report page could have the text Reset slicers, and when invoked, it will use the bookmark.
+
+
+
+
+141
+MS Data Analyst
+Highlighting values in reports helps you to quickly communicate important and relevant facts about data. Power BI supports several techniques to highlight values:
+
+Conditional formatting
+Overlaid analytics
+Anomaly detection
+Specialized visuals
+
+
+
+
+142
+MS Data Analyst
+The TOPN DAX function returns the top N rows of a specified table. The Top N analysis is a great way to present data that might be important, such as the top 10 selling products, top 10 performers in an organization, or top 10 customers.
+
+
+
+
+143
+MS Data Analyst
+Dropdown slicer layouts are common; they help minimize the size of the slicer to provide more room on the page for other visuals. An additional benefit when using dropdown slicers that might not be immediately apparent is that they only query the semantic model when expanded open. Therefore, they can also help expedite report page rendering.
+
+
+
+
+144
+MS Data Analyst
+The DAX function FORMAT is used to convert numeric values to strings or dates to strings. Check the documentation for specific patterns. There are many options.
+
+
+
+
+145
+MS Data Analyst
+Gateway software acts like a bridge; it allows organizations to retain databases and other data sources on their on-premises networks and access that on-premises data in cloud services, such as Power BI and Microsoft Azure Analysis Services.
+
+A gateway facilitates quick, behind-the-scenes communication that flows from a user in the cloud to your on-premises data source and then back again to the cloud.
+
+
+
+
+146
+MS Data Analyst
+Within the visual header options, you can enable the visual header tooltip. It adds the Help (?) icon to the visual header. Then, you can assign a page tooltip or text. This technique is beneficial for providing visual-specific guidance, such as more detail that describes definitions, calculation logic, or the source of data.
+
+
+
+
+147
+Workera.ai
+Amazon Rekognition, Stream Processing:
+
+Amazon Rekognition Video Stream allows real-time processing of video streams.
+It can be used for applications like live video analysis and monitoring.
+
+
+
+
+148
+MS Data Analyst
+To view usage metric reports, go to the pertinent workspace. Find the report or dashboard that you want to see usage metrics for. For example, if you want to see the usage metrics report for Sales Data, select the ellipsis (...), and then select View usage metrics report from the drop-down menu.
+
+
+
+
+149
+MS Data Analyst
+Knowing how your report consumers are likely interacting with reports should influence your report designs. Consider the number of visuals that display together on the page, the complexity of visuals, spacing between visuals, and the use of interactive design elements such as tooltips, slicers, buttons, or filters.
+
+
+
+
+150
+MS Data Analyst
+What elements can be changed with personalized visuals?
+
+Visualization type
+NOT
+Custom theme color
+Background images
+
+
+
+
+151
+MS Data Analyst
+In Power BI Desktop, you can set the tab order for how a keyboard user will experience your report. First, navigate to the View tab in the ribbon, then select Selection in the Show Panes section.
+
+You'll see Layer order and Tab order, with a list of report elements. Layer order allows you to stack elements, whereas tab order dictates which item will be accessed next when the keyboard user tabs to the next item. Use the up/down arrows to set the order.
+
+
+
+
+152
+MS Data Analyst
+3. At the Contoso Skateboard Company, James is designing a dashboard report. It must prominently show values of sales revenue, units sold, cost of goods sold, and profit, and each value should be compared to a target value. What type of report visual should James choose to support the report consumer requirement? 
+
+KPI
+NOT
+Card, Ribbon Chart, or Stacked Bar Chart.
+
+
+
+
+153
+Workera.ai
+Edge Device Fleet Management: SageMaker Edge Manager Efficiently manages machine learning models across a fleet of edge devices, simplifying updates and ensuring consistency in model versions.
+
+
+
+
+154
+MS Data Analyst
+2. What can be achieved by removing unnecessary rows and columns? 
+Deleting unnecessary rows and columns will reduce a semantic model size and it's good practice to load only necessary data into your semantic model.
+
+
+
+
+155
+Workera.ai
+Amazon Rekognition, Detecting Labels:
+
+The DetectLabels operation identifies objects, scenes, and concepts in an image.
+It can recognize common objects, such as people, animals, and everyday items.
+
+
+
+
+156
+MS Data Analyst
+Role in a Power BI workspace: Member
+
+Add members or others with lower permissions
+Publish, unpublish, and change permissions for an app
+
+
+
+
+157
+MS Data Analyst
+The process of identifying outliers involves segmenting your data into two groups: one group is the outlier data and the other group is not. You could use calculated columns to identify outliers, but the results would be static until you refresh the data. A better way to identify outliers is to use a visualization or DAX formula because these methods will ensure that your results are dynamic.
+
+
+
+
+158
+MS Data Analyst
+In a larger organization, it can be difficult to design a single report that meets everyone's needs, so one solution is using personalized visuals. These allow individual consumers to make minor design changes to best understand the data themselves.
+
+
+
+
+159
+Workera.ai
+Some Azure resources, such as Azure Active Directory, subscriptions, and management groups, are global and are not confined to a specific region or resource group. Management groups are a way to manage access, policies, and compliance across multiple subscriptions, providing a hierarchical structure above resource groups.
+
+
+
+
+160
+MS Data Analyst
+Descriptive tooltips
+In addition to on-hover formatting, you can configure tooltips to concisely communicate what the button does.
+
+Enable and enter the tooltip text in the Action section for the button.
+
+
+
+
+161
+MS Data Analyst
+By default, cross filtering (or cross highlighting) works between any two visuals. However, the report author can edit visual interactions between any pair of visuals and in either direction. Then, they can disable cross filtering or modify the interaction to use cross highlighting instead.
+
+
+
+
+162
+MS Data Analyst
+Report settings can:
+
+Disable cross highlighting/filtering by default. All visuals, except for slicers, don't propagate filters to other visuals unless they are explicitly added as a visual interaction.
+Add an Apply button to slicers. The slicer selection will only filter the report page when the report consumer selects the Apply button.
+
+
+
+
+163
+MS Data Analyst
+Consider using the Web URL action for numbersto create a bridge to resources that are commonly referenced in tandem. Web URL actions can be highly effective in prompting direct action in external systems.
+
+
+
+
+164
+Workera.ai
+Secure Model Deployment: SageMaker Edge Manager ensures secure deployment and management of machine learning models on edge devices, preserving data privacy and compliance.
+
+
+
+
+165
+MS Data Analyst
+Disadvantages of Filters vs Slicers
+The Filters pane offers less design flexibility, though you can style it by using specific fonts and colors.
+
+Careful consideration should be made to hide certain filters to avoid confusing report consumers.
+
+It can be easy to lose track of applied visual-level filters.
+
+
+
+
+166
+MS Data Analyst
+The Q&A visual allows report consumers to ask questions of their data and receive responses as data visualizations. Similar to how web search engines parse and understand complex search requests, report consumers can write natural language questions (in English).
+
+
+
+
+167
 MS Data Analyst
 Balance can be symmetrical or asymmetrical. Symmetrical balance is achieved by distributing the weight evenly on both halves of the page. Asymmetrical balance is achieved through contrast.
 
@@ -675,56 +1393,176 @@ Consider using the golden ratio as a guide to produce asymmetrical balance.
 
 
 
-
-123
+168
 MS Data Analyst
-I got access to the PracticePro 365 database using the following steps:
-  Go to the dataset in the web app
-  downloaded the dataset as a .pbix
-  That dataset had all of the tables created as import objects
-  That means that I had the queries that created them.
-  I still don't have access to all of the tables, but it might be enough.
+The Display state of a bookmark is related to the visibility of a report object. Objects consist of visuals and also elements like text boxes, buttons, shapes, and images. By using the Selection pane, you can hide or unhide objects and groups of objects. Additionally, you can swap visuals on a report page by creating bookmarks that capture hidden and unhidden objects.
 
 
 
 
-
-124
+169
 MS Data Analyst
-1. What benefit do you get from analyzing the metadata? 
-The benefit of analyzing the metadata is that you can clearly identify data inconsistences with your semantic model.
+What is the difference between Promotion and Certification when you are endorsing a semantic model? 
+Promotion does not need specific permissions while Certification requires permission from the semantic model owner to access to the semantic model.
 
 
 
 
-
-125
+170
 MS Data Analyst
-Grouping Fundamentals: Grouping in Power BI allows you to combine data into sets, which can be useful when you have categorical data. For example, you can group various products into categories like electronics, clothing, etc.
+Data Regions: These reports include data regions like tables, matrices, and charts that allow you to display data in a structured format. You can use expressions and formulas to manipulate data.
 
 
 
 
-
-126
+171
 MS Data Analyst
-Line Width and Type: These are usually used to represent discrete data1. Different line widths can represent different data magnitudes, while different line types (solid, dashed, dotted) can represent different data categories1.
+An app is a published, read-only window into your data for mass distribution and viewing. When ready to share apps with your users, you can publish the app. This process requires a Power BI Pro license. Consuming and viewing the app also requires a Pro license, or the workspace must be hosted in a premium capacity.
 
 
 
 
+172
+The Picture of Dorian Gray
+Panegyric (noun):
 
-127
+A formal or elaborate expression of praise, commendation, or admiration, often delivered in speech or writing.
+
+A eulogistic composition or oration that celebrates the virtues, achievements, or merits of a person, event, or subject.
+
+Example sentence: The speaker delivered a heartfelt panegyric honoring the contributions and legacy of the departed leader.
+
+
+
+
+173
 MS Data Analyst
-2. At the Contoso Skateboard Company, Sally is responsible for managing staff rosters to determine when the inventory employees are required to work. Sally relies on a report that forecasts sales order demand to determine the number of employees that are required at any time. It also includes a button to open a Human Resources app to assign employees to rosters. What type of report does Sally use? 
+Bookmarks capture a specific view of a report, including filters, slicers, the page selection, and the state of visuals. Report authors and report consumers can create them.
 
-Operational
-
-
+Bookmarks that are created by a report consumer are known as personal bookmarks
 
 
 
-128
+
+174
+MS Data Analyst
+For mobile reports, slicers should be vertical, horizontal, or responsive (responsive slicers must be horizontal). If you make the slicer responsive, as you change its size and shape, it shows more or fewer options. If you make the slicer small enough, it becomes a filter icon on the report page.
+
+
+
+
+175
+MS Data Analyst
+Report Builder or Power BI Report Builder: To create Paginated Reports, you can use either SQL Server Report Builder or Power BI Report Builder, both of which are free authoring tools provided by Microsoft.
+
+
+
+
+176
+MS Data Analyst
+Workspaces offer the following benefits:
+
+  Focused collaboration efforts. You can use workspaces to house reports and dashboards for use by multiple teams.
+  Ability to share and present reports and dashboards in a single environment.
+  Assurance that the highest level of security is maintained by controlling who can access semantic models, reports, and dashboards.
+
+
+
+
+177
+MS Data Analyst
+Occasionally, report consumers want to know (or verify) what filters, if any, apply to a specific visual. They can complete that action by hovering the cursor over the Filter icon in the visual header. A pop-up window will appear, describing the filters that affect the visual. The pop-up window shows the accumulation of filters that are applied by slicers or filters, including any cross filters.
+
+
+
+
+178
+DAX Studio
+DEFINE Keyword: The DEFINE keyword defines entities applied to one or more EVALUATE statements in a DAX query. At least one definition is required in a DEFINE statement. Measure definitions for a query override model measures of the same name.
+
+
+
+
+179
+MS Data Analyst
+When publishing, there's a notification that it may take 5-10 minutes or longer to reflect changes, depending on your tenant and size of report. It's not possible to guarantee changes will be reflected in 10 minutes or less.
+
+
+
+
+180
+MS Data Analyst
+You can use an external site like powerbi.tips to generate a theme. The site will guide you through building a color palette and setting property values for all core visual types.
+
+For more information, see Use report themes in Power BI Desktop.
+
+
+
+
+181
+MS Data Analyst
+Role in a Power BI workspace: Viewer
+
+View and interact with an item
+Read data that's stored in workspace dataflows
+
+
+
+
+182
+The Picture of Dorian Gray
+Collieries (noun):
+
+Mines or coal mines specifically, where coal is extracted from the earth.
+
+The collective term for a group of coal mines situated in a particular region or under common ownership.
+
+Example sentence: The region's economic growth was historically tied to the operation of collieries, which played a crucial role in coal production and mining activities.
+
+
+
+
+183
+MS Data Analyst
+While report consumers can use focus mode to enlarge a single visual, the visual should still clearly communicate its data when viewed at actual size on the report page. Focus mode can help consumers better interpret the data or more easily interact with the visual, such as expanding into levels of a matrix or decomposition tree visual.
+
+
+
+
+184
+MS Data Analyst
+To learn how to run a network port test, see Adjust communication settings for the on-premises data gateway.
+To get information on how to provide proxy information for your gateway, see Configure proxy settings for the on-premises data gateway.
+To find the current data center region that you're in, see Set the data center region.
+
+
+
+
+185
+MS Data Analyst
+Buttons should be placed in relevant and consistent locations. A button is only valuable if it's easy to find. To promote ease of discovery, ensure that buttons are placed in a relevant and consistent location on the report page.
+
+
+
+
+186
+MS Data Analyst
+The slicer layout is responsive to the data type of the field. Field data types are either text, numeric, or date. By default, a text field will produce a list slicer, a numeric field will produce a numeric range "between" filter, and a date field will produce a date range "between" filter, allowing value selection with calendar controls.
+
+
+
+
+187
+Workera.ai
+Amazon Rekognition, Celebrity Recognition:
+
+The RecognizeCelebrities operation identifies celebrities in an image.
+It can recognize well-known people and return information about them.
+
+
+
+
+188
 MS Data Analyst
 Two bookmarks are required for creating a pop-up overlay:
 
@@ -738,438 +1576,189 @@ Assign the bookmark to the overlay object.
 
 
 
+189
+Workera.ai
+Azure Container Network Interface (CNI) plug-ins in Azure are designed to seamlessly integrate with Azure networking services. This integration ensures that containers can communicate with other resources in the Azure environment and take advantage of features like virtual networks, load balancers, and security groups.
 
-129
-MS Data Analyst
-Dropdown slicer layouts are common; they help minimize the size of the slicer to provide more room on the page for other visuals. An additional benefit when using dropdown slicers that might not be immediately apparent is that they only query the semantic model when expanded open. Therefore, they can also help expedite report page rendering.
 
 
 
-
-
-130
-MS Data Analyst
-On-hover formatting
-You can configure buttons to change their state when a hover over is available. When the report consumer hovers the cursor over a button, the cursor icon changes to a pointing finger, which indicates that the button is selectable. In this example, the Tabular button text is light gray by default, but when they hover the cursor over, it darkens to black.
-
-
-
-
-
-131
-MS Data Analyst
-Report consumers can include or exclude one or more groups in a visual. Include keeps the selection and removes all other groups. Exclude removes one or more groups from the visual.
-
-These filters appear in the Filters pane as filter cards titled Included or Excluded. The report consumer can use the Filters pane to view, modify, or remove them.
-
-
-
-
-
-132
-MS Data Analyst
-The DAX function FORMAT is used to convert numeric values to strings or dates to strings. Check the documentation for specific patterns. There are many options.
-
-
-
-
-
-133
-MS Data Analyst
-2. At the Contoso Skateboard Company, Sanjay is authoring a report that will be distributed to sales managers. The report contains some sensitive data that shouldn’t be exported. Which report design feature can Sanjay configure to ensure that data isn’t exported? 
-
-Visual header
-
-
-
-
-
-134
-MS Data Analyst
-Rule of Thirds, Viewer Connection: The rule of thirds can help you anticipate or control how viewers’ eyes will move from one part of the screen to another1. This can enhance the viewer’s connection with your data story and make your visualization more impactful.
-
-
-
-
-
-135
-MS Data Analyst
-Highlighting values in reports helps you to quickly communicate important and relevant facts about data. Power BI supports several techniques to highlight values:
-
-Conditional formatting
-Overlaid analytics
-Anomaly detection
-Specialized visuals
-
-
-
-
-
-136
-MS Data Analyst
-Within the visual header options, you can enable the visual header tooltip. It adds the Help (?) icon to the visual header. Then, you can assign a page tooltip or text. This technique is beneficial for providing visual-specific guidance, such as more detail that describes definitions, calculation logic, or the source of data.
-
-
-
-
-
-137
-MS Data Analyst
-Requirements for a date table
-  It must have a column of data type Date (or date/time), known as the date column.
-  The date column must contain unique values.
-  The date column must not contain BLANKs.
-  The date column must not have any missing dates.
-  The date column must span full years. A year isn't necessarily a calendar year (January-December).
-  The date table must be indicated as a date table.
-
-
-
-
-
-138
-MS Data Analyst
-Data Cubes: The core of an OLAP (Online Analytical Processing) database is the OLAP cube, organizing data into a multi-dimensional structure of dimensions (categories of analysis) and measures (quantitative metrics). This structure enhances data retrieval and analysis efficiency.
-
-
-
-
-
-139
-MS Data Analyst
-In the Fields pane, a column that's shown with the sigma symbol ( ∑ ) indicates two facts:
-
-It's a numeric column.
-It will summarize column values when it is used in a visual (when added to a field well that supports summarization).
-
-
-
-
-
-140
-MS Data Analyst
-Type of Performance Analyzer task:
-Other - The time it took the visual to prepare queries, wait for other visuals to complete, or perform other background processing tasks. If this category displays a long duration, the only real way to reduce this duration is to optimize DAX queries for other visuals, or reduce the number of visuals in the report.
-
-
-
-
-
-141
-MS Data Analyst
-The TOPN DAX function returns the top N rows of a specified table. The Top N analysis is a great way to present data that might be important, such as the top 10 selling products, top 10 performers in an organization, or top 10 customers.
-
-
-
-
-
-142
-MS Data Analyst
-Clustering allows you to identify a segment (cluster) of data that is similar to each other but dissimilar to the rest of the data. The process of clustering is different to that of grouping, which you accomplished previously.
-
-To apply clustering to your scatter chart, select More options (...) in the upper-right corner of the visual and then select Automatically find clusters.
-
-
-
-
-
-143
-MS Data Analyst
-A measure is a model object that is designed to summarize data. Measure formulas, which are written in Data Analysis Expressions (DAX), can modify filter context by using the CALCULATE or CALCULATETABLE functions. These functions are powerful and provide you with the flexibility to add, remove, or modify filters.
-
-
-
-
-
-144
+190
 MS Data Analyst
 In the Data labels section of a visual's Format Pane, you can change fonts, size, and colors for all labels in the visual. Try to use solid colors so the labels are clearly visible. For example, if the background is white, use a black or dark grey color to display your labels.
 
 
 
 
+191
+MS Data Analyst
+When a requirement is in place to lay out many slicers, consider creating a page that is dedicated to showing all slicers. For example, the page could be named Slicers. Sync the slicers to other pages and then set the slicers as hidden on those pages. This design technique will require that report consumers should always go to the Slicers page to modify slicer settings.
 
-145
+
+
+
+192
+MS Data Analyst
+If the Forecast section isn't available for a line chart, it’s probably because the visual hasn’t been correctly configured. Forecasting is only available when two conditions are met: the axis has a single field of type date, and there’s only one value field.
+
+
+
+
+193
+MS Data Analyst
+To create the group, use Ctrl + click to select the data points on the visual that you want to group. For example, the states with sales greater than 500,000 dollars. Right-click one of those selected data points and then select the Group data option. When the group is created, notice that the visual updates to take into account the new group. The following image shows that the other states, which are the states with lower sales (less than 500,000 dollars) have been grouped together and are highlighted in a different shade.
+
+
+
+
+194
+MS Data Analyst
+The Top N filter type applies to text and date fields that are available only in visual-level filters. This filter type helps you filter by the top (or bottom) number of items, like the top five products by revenue. To configure the filter, you must pass in a field that's summarized, like sales revenue.
+
+
+
+
+195
+Workera.ai
+Azure Resource Groups provide a logical way to organize and manage resources within the Azure cloud. A resource group is a container that holds related resources for an Azure solution, such as virtual machines, storage accounts, and virtual networks.
+
+
+
+
+196
+DAX Studio
+The EVALUATE keyword is automatically included by Power BI in every query. It’s used to answer and create your visuals in Power BI. It’s also used to contain table expressions in a DAX query. You can’t pair EVALUATE with a scalar value such as a measure or a number. You can only use EVALUATE with table expressions.
+
+
+
+
+197
+Workera.ai
+Azure DevTest Labs enables quick provisioning of resources such as virtual machines, allowing development and testing teams to create environments on-demand. This is particularly useful for scenarios where teams need to replicate production environments for testing purposes.
+
+
+
+
+198
+MS Data Analyst
+Two types of on-premises gateways are:
+
+Organization mode 
+Personal mode - Allows one user to connect to data sources. This type of gateway can be used only with Power BI and it can't be shared with other users, so it is suitable in situations where you're the only one in your organization who creates reports. You will install the gateway on your local computer, which needs to stay online for the gateway to work.
+
+
+
+
+199
+The Picture of Doiran Gray
+Travail (noun):
+
+Painful or laborious effort; hard work, especially that which is physical or strenuous.
+
+The process of giving birth; labor or childbirth.
+
+Example sentence: The completion of the project required much travail, but the team's efforts ultimately led to its successful implementation.
+
+
+
+
+200
 MS Data Analyst
 Use buttons and bookmarks to overlay an image, shape, or text box. A good example of a pop-up overlay is one that provides built-in assistance.
 
 
 
 
-
-146
+201
 MS Data Analyst
-Grouping is used for categories of data. Binning is similar to grouping, but it is used for grouping continuous fields, such as numbers and dates.
+Use color sparingly and meaningfully because overusing it can be distracting. Stick to a few softer colors as a base, possibly aligned with corporate colors. Softer colors ensure that the data is the focus in your report. Reserve the use of bolder colors to highlight exceptions.
 
 
 
 
-
-147
-DAX Studio
-Referencing Tables Using EVALUATE: You can also reference entire tables using EVALUATE. For example, if you want to return the Products Table, execute EVALUATE Products.
-
-
-
-
-
-148
+202
 MS Data Analyst
-Visual headers make many interactions available to report authors and consumers. All report objects, including visuals and elements (like buttons), have a visual header. The visual header appears when you hover the cursor over the report object, and they can launch actions like focus mode, drill up, or drill down. You can also access the More options menu by selecting the ellipsis (...) button.
+To develop Python visuals, you need to have Python installed on your machine. Many Python packages are supported in Power BI, but not all. See Learn which Python packages are supported in Power BI for a complete list of supported packages and Python visual limitations.
 
 
 
 
-
-149
+203
 MS Data Analyst
-Create Visuals from Insights: When you use the Analyze feature to find insights, Power BI may suggest new visuals. You can add these suggested visuals directly to your report.
-
-Customizing Suggested Visuals: Once a visual is suggested by the Analyze feature, you can further customize it. This includes changing the visual type, modifying data fields, applying filters, and adjusting formatting options.
+While you can set a time for the refresh, be aware that the refresh might not take place at that exact time. Power BI starts scheduled refreshes on a best effort basis. The goal is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
 
 
 
 
-
-150
-MS Data Analyst
-Rule of Thirds, Grid Layout: The rule of thirds involves dividing your frame into nine equal boxes with two vertical and two horizontal lines. This grid layout serves as a guide for arranging elements in your visualization.
-
-
-
-
-
-151
-MS Data Analyst
-Rupali is a data modeler at Adventure Works who is developing an import model to analyze employee timesheet data. The employee table stores the employee social security number (SSN) in a column. While the model will be available for all company managers, it will also be available to employees in the Payroll department. However, reports must only reveal employee SSNs to payroll employees. What feature should Rupali use to restrict access to the SSN column? 
-
-You can use OLS (object-level security) to secure the SSN column in the employee table.
-
-
-
-
-
-152
-MS Data Analyst
-Filters apply to a single field and use one of following filter types:
-
-Basic
-Advanced
-Top N
-Relative date and Relative time
-
-
-
-
-
-153
-MS Data Analyst
-Power BI paginated reports are not created in Power BI Desktop; they are built by using Power BI Report Builder. You can share paginated reports with either a Power BI Pro or a Power BI premium license.
-
-
-
-
-
-154
-MS Data Analyst
-What is the best way to share a custom theme?
-
-Save and share custom theme JSON file
-NOT
-Send the modified .pbix file
-Set the default theme for the organization
-
-
-
-
-
-155
-MS Data Analyst
-An analyst is a person who provides guidance to the organization. Analysts can be responsible for a range of tasks, often with goals of determining the effectiveness of business strategies, developing or improving processes, or implementing change. A business analyst (or data analyst) in the sales division of the Contoso Skateboard Store is an example of an analyst audience.
-
-
-
-
-
-156
-MS Data Analyst
-You can enable personalized visuals in Power BI Desktop or Power BI service.
-
-In Power BI Desktop, go to File > Options and settings > Options > Current file > Report settings. Make sure Personalize visuals is turned on.
-In Power BI service, go to Settings on the specific report, then toggle Personalize Visuals on, and Save.
-
-
-
-
-
-157
+204
 MS Data Analyst
 In a report layout, proximity is concerned with the nearness of report objects. When a report page consists of multiple groups of related objects, you should use space to visually separate them.
 
 
 
 
-
-158
+205
 MS Data Analyst
-3. Which of the following statements about relationships in Power BI Desktop is true? 
-Relationships can be created between tables that contain different types of data.
-A working relationship can be created as long as there is at least one common column between them.
+I got access to the PracticePro 365 database using the following steps:
+  Go to the dataset in the web app
+  downloaded the dataset as a .pbix
+  That dataset had all of the tables created as import objects
+  That means that I had the queries that created them.
+  I still don't have access to all of the tables, but it might be enough.
 
 
 
 
-
-159
+206
 MS Data Analyst
-3. You have a table that stores account balance snapshots for each date, excluding weekends. You need to ensure that your measure formula only filters by a single date. Also, if no record is on the last date of a time period, it should use the latest account balance. Which DAX time intelligence function should you use? 
-
-The LASTNONBLANK function will return the last date in the filter context where a snapshot record exists. This option will help you achieve the objective.
+A good example of an operational report is one that allows monitoring of a manufacturing production line. When an unexpected event arises, such as equipment malfunction, a button could allow workers to start a maintenance request.
 
 
 
 
+207
+Workera.ai
+Azure DevTest Labs is a service in Microsoft Azure that allows you to create and manage environments for development and testing purposes. It provides a fast and easy way to set up environments in the cloud while optimizing cost management.
 
-160
+
+
+
+208
 MS Data Analyst
-The Relative date and Relative time filter types apply to date fields only, making it possible to filter by relative date or time. Relative filters allow the report consumer to filter by past, present, or future time periods based on the current date and time.
+Power BI paginated reports are not created in Power BI Desktop; they are built by using Power BI Report Builder. You can share paginated reports with either a Power BI Pro or a Power BI premium license.
 
 
 
 
-
-161
+209
 MS Data Analyst
-Occasionally, report consumers want to know (or verify) what filters, if any, apply to a specific visual. They can complete that action by hovering the cursor over the Filter icon in the visual header. A pop-up window will appear, describing the filters that affect the visual. The pop-up window shows the accumulation of filters that are applied by slicers or filters, including any cross filters.
+Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
+Development - The location in which dashboard developers or semantic modelers can build new content with other developers. This stage is first in the deployment pipeline.
 
 
 
 
+210
+Workera.ai
+Amazon Rekognition, Video Analysis:
 
-162
+Amazon Rekognition can analyze videos by detecting and tracking people, faces, and objects over time.
+It provides insights into the content of videos, making it suitable for applications like content moderation and surveillance.
+
+
+
+
+211
 MS Data Analyst
-The Current page state of a bookmark determines whether the bookmark will direct the report consumer to the bookmarked page or apply the current page. Disabling the Current page state is rare, but you should consider some creative use cases. For example, on a page tooltip, a bookmark can change the visuals without navigating from the page that the report consumer has selected.
+Two types of on-premises gateways are:
 
+Organization mode - Allows multiple users to connect to multiple on-premises data sources and is suitable for complex scenarios.
+Personal mode
 
 
 
 
-163
-MS Data Analyst
-The Display state of a bookmark is related to the visibility of a report object. Objects consist of visuals and also elements like text boxes, buttons, shapes, and images. By using the Selection pane, you can hide or unhide objects and groups of objects. Additionally, you can swap visuals on a report page by creating bookmarks that capture hidden and unhidden objects.
-
-
-
-
-
-164
-MS Data Analyst
-In the Background section of a visual's Format Pane, you can set any color or image as the background for the visual. If you plan to use an image as a background, try to select an image that won't have lines or shapes that would make it difficult for the user to read the data.
-
-
-
-
-
-165
-MS Data Analyst
-To use the Analyze feature, right-click a data point on the visual and then hover over the Analyze option to display two further options: Explain the increase and Find where the distribution is different. The options that are available will depend on the data point that you selected.
-
-
-
-
-
-166
-DAX Studio
-To convert numbers or measures into a table, you need to place it between curly brackets { }. To create a table with two columns, use parenthesis ( ) and write another value separated by a comma. To add another row, you need to place another expression within a parenthesis inside the curly bracket.
-
-
-
-
-
-167
-MS Data Analyst
-Buttons should be placed in relevant and consistent locations. A button is only valuable if it's easy to find. To promote ease of discovery, ensure that buttons are placed in a relevant and consistent location on the report page.
-
-
-
-
-
-168
-MS Data Analyst
-You can use an external site like powerbi.tips to generate a theme. The site will guide you through building a color palette and setting property values for all core visual types.
-
-For more information, see Use report themes in Power BI Desktop.
-
-
-
-
-
-169
-MS Data Analyst
-Report Builder or Power BI Report Builder: To create Paginated Reports, you can use either SQL Server Report Builder or Power BI Report Builder, both of which are free authoring tools provided by Microsoft.
-
-
-
-
-
-170
-MS Data Analyst
-Visuals - On a visual-by-visual basis, you can configure which visuals will reveal your page tooltip. For each visual, you can have the visual reveal no tooltip, default to the visual tooltips (which is configured in the visual Fields pane), or use a specific page tooltip.
-
-
-
-
-
-171
-MS Data Analyst
-2. What can be achieved by removing unnecessary rows and columns? 
-Deleting unnecessary rows and columns will reduce a semantic model size and it's good practice to load only necessary data into your semantic model.
-
-
-
-
-
-172
-MS Data Analyst
-Occasionally, it might make sense to have a single report with many pages. Other times, it could make sense to separate pages into different reports. This scenario is especially true when you design those pages for a different audience or when you need to secure, share, or distribute them differently. Reports are a security and publication unit, and report pages belong to reports and can't be secured or published independently of the report.
-
-
-
-
-
-173
-MS Data Analyst
-You can add or remove filters by adding query string parameters in the URL. For more information, see Filter a report using query string parameters in the URL. For embedded reports, the embedding app can use the client APIs to programmatically add or remove filters and change filter types to Top N or relative date or time. For more information, see Power BI embedded analytics Client APIs.
-
-
-
-
-
-174
-MS Data Analyst
-Data engine cache - When a query is run, the results are cached, so the results of your analysis will be misleading. You need to clear the data cache before rerunning the visual.
-
-To clear the data cache, you can either restart Power BI Desktop or connect DAX Studio to the semantic model and then call Clear Cache.
-
-
-
-
-
-175
-MS Data Analyst
-The three broad report consumer audiences are:
-
-Executive
-
-Analyst
-
-Information worker
-
-
-
-
-
-176
+212
 MS Data Analyst
 Report consumers can make changes for the following items:
 
@@ -1183,188 +1772,7 @@ Consumers can create a personal bookmark to save their changes after personalizi
 
 
 
-
-177
-MS Data Analyst
-The primary goal of an analytical report is to help report consumers discover answers to a broad array of questions by interacting with the report and its visuals. Analytical reports often have many slicers to filter report data, and they often contain complex visuals that expose in-depth detail of the data.
-
-
-
-
-
-178
-MS Data Analyst
-You can create a bookmark to capture the default state of slicers. A button on the report page could have the text Reset slicers, and when invoked, it will use the bookmark.
-
-
-
-
-
-179
-MS Data Analyst
-When you create roles, it’s important to test them to ensure they apply the correct filters. For data models created in Power BI Desktop, there’s the View as function that allows you to see the report when different roles are enforced, and different username values are passed.
-
-
-
-
-
-180
-MS Data Analyst
-Consider using the Web URL action for numbersto create a bridge to resources that are commonly referenced in tandem. Web URL actions can be highly effective in prompting direct action in external systems.
-
-
-
-
-
-181
-MS Data Analyst
-Persistent filters is a feature that saves report consumer's slicer and filter settings. It automatically applies the settings when the report consumer reopens the report. That way, Power BI remembers previously applied filters. You can revert to default filters (that are saved in the report by the report author) by selecting Reset to default.
-
-
-
-
-
-182
-MS Data Analyst
-Use color sparingly and meaningfully because overusing it can be distracting. Stick to a few softer colors as a base, possibly aligned with corporate colors. Softer colors ensure that the data is the focus in your report. Reserve the use of bolder colors to highlight exceptions.
-
-
-
-
-
-183
-MS Data Analyst
-To develop Python visuals, you need to have Python installed on your machine. Many Python packages are supported in Power BI, but not all. See Learn which Python packages are supported in Power BI for a complete list of supported packages and Python visual limitations.
-
-
-
-
-
-184
-MS Data Analyst
-Screen readers will automatically read the title and type of visual, so add insight and context for low vision users, such as "Total sales by category, further broken down by product". If you want to include specific data points, instead of adding them to the static alt text, you can use DAX measures and conditional formatting to create dynamic alt text to enrich the user experience.
-
-
-
-
-
-185
-MS Data Analyst
-Advantages of slicers over filters:
-
-You can place slicers anywhere on the report page to produce an intuitive layout.
-
-Slicers are highly configurable to achieve the required functionality and style.
-
-You can configure hierarchical slicers (based on a hierarchy or by using multiple fields that are sourced from the same table).
-
-
-
-
-
-186
-MS Data Analyst
-You can extend the core visuals with custom visuals. Custom visuals are sourced from Microsoft AppSource (an app store for business applications such as Microsoft Office 365, Microsoft Dynamics 365, Power BI, or separate Microsoft Azure web apps) or uploaded as a .pbviz file.
-
-
-
-
-
-187
-MS Data Analyst
-The button element can take your Power BI reports to the next level by making them behave like an app. Buttons support six different actions that take effect when the button is selected.
-
-
-
-
-
-188
-MS Data Analyst
-3. At the Contoso Skateboard Company, James is designing a dashboard report. It must prominently show values of sales revenue, units sold, cost of goods sold, and profit, and each value should be compared to a target value. What type of report visual should James choose to support the report consumer requirement? 
-
-KPI
-NOT
-Card, Ribbon Chart, or Stacked Bar Chart.
-
-
-
-
-
-189
-MS Data Analyst
-The Q&A visual allows report consumers to ask questions of their data and receive responses as data visualizations. Similar to how web search engines parse and understand complex search requests, report consumers can write natural language questions (in English).
-
-
-
-
-
-190
-MS Data Analyst
-The report theme should express your organizational branding or aim to complement it. At a minimum, the theme should include the following elements:
-
-A brand mark or logo symbol.
-
-A palette of colors that align to, or complement, organizational branding. The colors should also be sufficiently different so that, when applied to visuals, they provide appropriate contrast when appearing side by side.
-
-Text settings, including font selection, sizes, and color.
-
-
-
-
-
-191
-MS Data Analyst
-At report design time in Microsoft Power BI Desktop, you can create measures (except when the model is a live connection to SQL Server Analysis Services multidimensional model). These measures belong to the report, and so they're called report-level measures.
-
-
-
-
-
-192
-MS Data Analyst
-The slicer layout is responsive to the data type of the field. Field data types are either text, numeric, or date. By default, a text field will produce a list slicer, a numeric field will produce a numeric range "between" filter, and a date field will produce a date range "between" filter, allowing value selection with calendar controls.
-
-
-
-
-
-193
-MS Data Analyst
-Visuals are visualizations of semantic model data. Power BI includes over 30 core visuals, which are built in and available to all reports. You can access the core visuals in the first section of the Visualizations pane.
-
-
-
-
-
-194
-MS Data Analyst
-Type of Performance Analyzer task:
-Visual display - The time it took for the visual to render on the screen, including the time required to retrieve web images or geocoding.
-
-
-
-
-
-195
-MS Data Analyst
-Role in a Power BI workspace: Viewer
-
-View and interact with an item
-Read data that's stored in workspace dataflows
-
-
-
-
-
-196
-MS Data Analyst
-Size and Shape: The size and shape of your visuals can also represent both continuous and discrete data1. The size of the visual should be proportional to its importance or the emphasis you want to place on it1.
-
-
-
-
-
-197
+213
 MS Data Analyst
 Report authors can configure report or visual settings to control filter options and behavior. With report options, you can:
 
@@ -1374,111 +1782,14 @@ Hide visual headers for all visuals or for a specific visual. When the visual he
 
 
 
-
-198
+214
 MS Data Analyst
 The simplest way to show details is to use drillable visuals. The matrix visual is an excellent choice because it allows drilling on rows and/or columns. Therefore, by assigning hierarchies or multiple fields, report consumers can drill to the level of detail that they want. For example, the matrix rows could show years, and the report consumer could drill down to quarter, month, and date levels.
 
 
 
 
-
-199
-MS Data Analyst
-Another way to use tooltips is to display graphical information. The process of adding this type of tooltip is not as straightforward, but it is worthwhile. You would begin by creating a new page in the report.
-
-Open the new page and then open the Format pane. Expand the Page Size section and then select Tooltip from the Type list.
-
-In the Page information section, turn the Tooltip slider to On so that Power BI registers this page as a tooltip page
-
-Tooltips have limited canvas space, so to ensure that your visuals appear in the tooltip, on the View tab, set the Page view option to Actual size.
-
-
-
-
-
-200
-MS Data Analyst
-Slicer filtering options are less complex than the advanced filter options that are possible in the Filters pane. For example, you can't configure a Top N slicer.
-
-
-
-
-
-201
-MS Data Analyst
-In a larger organization, it can be difficult to design a single report that meets everyone's needs, so one solution is using personalized visuals. These allow individual consumers to make minor design changes to best understand the data themselves.
-
-
-
-
-
-202
-DAX Studio
-The EVALUATE keyword is automatically included by Power BI in every query. It’s used to answer and create your visuals in Power BI. It’s also used to contain table expressions in a DAX query. You can’t pair EVALUATE with a scalar value such as a measure or a number. You can only use EVALUATE with table expressions.
-
-
-
-
-
-203
-MS Data Analyst
-Some visuals in Power BI Desktop have the option to add dynamic reference lines through the use of the Analytics pane. It is worth noting that not all options are available for all visuals, and some visuals, such as combination charts like the line and clustered column chart, have no options available in the Analytics pane.
-
-
-
-
-
-204
-MS Data Analyst
-Information page
-Adding an information page is the most simplistic technique to make reports more user friendly. Dedicate an entire report page that includes instructions and definitions.
-
-
-
-
-
-205
-MS Data Analyst
-What is an inclusive benefit of designing a report with accessibility features?
-
-Users can understand a report using a screen reader or keyboard.
-NOT
-Users don't have to auto-play videos slowing performance.
-Users will admire the bright colors and decorative images used for cohesiveness.
-
-
-
-
-
-206
-MS Data Analyst
-RDL File Format: Paginated Reports are authored using the RDL (Report Definition Language) file format, the same format used in SSRS. You can import existing SSRS reports into Power BI to create Paginated Reports.
-
-
-
-
-
-207
-MS Data Analyst
-The Top N filter type applies to text and date fields that are available only in visual-level filters. This filter type helps you filter by the top (or bottom) number of items, like the top five products by revenue. To configure the filter, you must pass in a field that's summarized, like sales revenue.
-
-
-
-
-
-208
-MS Data Analyst
-Role in a Power BI workspace: Admin
-
-Update and delete the workspace
-Add or remove people, including other admins
-
-
-
-
-
-209
+215
 MS Data Analyst
 1. At the Contoso Skateboard Company, Sally is creating a report to show sales over time. Sally is aware that occasional spikes occur in sales revenue that could be attributed to many different reasons, such as a marketing campaign. Sally needs to ensure that supporting visuals provide explanation for the spikes. What type of visual should Sally use? 
 
@@ -1487,495 +1798,44 @@ Line chart visual with anomaly detection
 
 
 
-
-210
-MS Data Analyst
-While report consumers can use focus mode to enlarge a single visual, the visual should still clearly communicate its data when viewed at actual size on the report page. Focus mode can help consumers better interpret the data or more easily interact with the visual, such as expanding into levels of a matrix or decomposition tree visual.
-
-
-
-
-
-211
-MS Data Analyst
-Disadvantages of Filters vs Slicers
-The Filters pane offers less design flexibility, though you can style it by using specific fonts and colors.
-
-Careful consideration should be made to hide certain filters to avoid confusing report consumers.
-
-It can be easy to lose track of applied visual-level filters.
-
-
-
-
-
-212
+216
 DAX Studio
-DEFINE Keyword: The DEFINE keyword defines entities applied to one or more EVALUATE statements in a DAX query. At least one definition is required in a DEFINE statement. Measure definitions for a query override model measures of the same name.
+Referencing Tables Using EVALUATE: You can also reference entire tables using EVALUATE. For example, if you want to return the Products Table, execute EVALUATE Products.
 
 
 
 
-
-1
-The Picture of Dorian Gray
-Panegyric (noun):
-
-A formal or elaborate expression of praise, commendation, or admiration, often delivered in speech or writing.
-
-A eulogistic composition or oration that celebrates the virtues, achievements, or merits of a person, event, or subject.
-
-Example sentence: The speaker delivered a heartfelt panegyric honoring the contributions and legacy of the departed leader.
-
-
-
-
-2
-The Picture of Dorian Gray
-Laburnum (noun):
-
-A genus of deciduous trees and shrubs, belonging to the pea family (Fabaceae), known for its pendulous clusters of bright yellow flowers.
-
-The common name for certain species within this genus, notably the golden chain tree (Laburnum anagyroides), cultivated for its ornamental value in gardens and landscapes.
-
-
-
-
-
-
-3
-The Picture of Dorian Gray
-Collieries (noun):
-
-Mines or coal mines specifically, where coal is extracted from the earth.
-
-The collective term for a group of coal mines situated in a particular region or under common ownership.
-
-Example sentence: The region's economic growth was historically tied to the operation of collieries, which played a crucial role in coal production and mining activities.
-
-
-
-
-4
-The Picture of Doiran Gray
-Travail (noun):
-
-Painful or laborious effort; hard work, especially that which is physical or strenuous.
-
-The process of giving birth; labor or childbirth.
-
-Example sentence: The completion of the project required much travail, but the team's efforts ultimately led to its successful implementation.
-
-
-
-
-1
-The Picture of Dorian Gray
-Espial (noun):
-
-The act of observing, detecting, or noticing; the action of catching sight of something.
-
-The state of being observed or discovered.
-
-Example sentence: The espial of the rare bird species in the urban park excited the birdwatching community.
-
-
-
-
-
-1
-Workera.ai
-Azure Container Network Interface (CNI) plug-ins are part of Azure's container networking solution. They enable communication between containers, and between containers and other resources in the Azure environment.
-
-
-
-
-
-2
-Workera.ai
-Azure provides a variety of Azure Container Network Interface (CNI) plug-ins, allowing users to choose the one that best fits their requirements. These plug-ins include Azure CNI, Kubenet, and others. The choice of the Azure CNI plug-in can impact factors such as network performance, isolation, and integration with other Azure services.
-
-
-
-
-
-3
-Workera.ai
-In the context of Kubernetes clusters on Azure, Azure Container Network Interface (CNI) plug-ins are crucial for handling networking between pods. These plug-ins define how network connectivity is established and managed within the Kubernetes cluster.
-
-
-
-
-
-4
-Workera.ai
-Azure Container Network Interface (CNI) plug-ins in Azure are designed to seamlessly integrate with Azure networking services. This integration ensures that containers can communicate with other resources in the Azure environment and take advantage of features like virtual networks, load balancers, and security groups.
-
-
-
-
-
-5
-Workera.ai
-Azure Container Network Interface (CNI) plug-ins play a role in implementing network policies and security within a Kubernetes cluster. Network policies define how pods can communicate with each other and with external resources, helping to enforce security rules and access controls.
-
-
-
-
-
-6
+217
 General
 The convention of providing the full expansion of an acronym or initialism upon its first use in a document or text is commonly referred to as "acronym expansion" or "initialism expansion." This practice is employed to ensure that readers or audience members understand the meaning of the acronym before encountering it in its abbreviated form throughout the rest of the document.
 
 
 
 
+218
+MS Data Analyst
+Clustering allows you to identify a segment (cluster) of data that is similar to each other but dissimilar to the rest of the data. The process of clustering is different to that of grouping, which you accomplished previously.
 
-7
-Workera.ai
-Azure DevTest Labs is a service in Microsoft Azure that allows you to create and manage environments for development and testing purposes. It provides a fast and easy way to set up environments in the cloud while optimizing cost management.
+To apply clustering to your scatter chart, select More options (...) in the upper-right corner of the visual and then select Automatically find clusters.
 
 
 
 
+219
+MS Data Analyst
+Screen readers will automatically read the title and type of visual, so add insight and context for low vision users, such as "Total sales by category, further broken down by product". If you want to include specific data points, instead of adding them to the static alt text, you can use DAX measures and conditional formatting to create dynamic alt text to enrich the user experience.
 
-8
-Workera.ai
-Azure DevTest Labs enables quick provisioning of resources such as virtual machines, allowing development and testing teams to create environments on-demand. This is particularly useful for scenarios where teams need to replicate production environments for testing purposes.
 
 
 
-
-
-9
-Workera.ai
-DevTest Labs includes an Artifact Library, a repository of pre-configured virtual machine images, formulas, and other artifacts. Users can leverage this library to quickly deploy development and test environments. Additionally, custom images can be created, capturing configurations and applications for reuse across multiple environments.
-
-
-
-
-
-10
-Workera.ai
-Azure Resource Groups provide a logical way to organize and manage resources within the Azure cloud. A resource group is a container that holds related resources for an Azure solution, such as virtual machines, storage accounts, and virtual networks.
-
-
-
-
-
-11
-Workera.ai
-Azure Resource groups serve as a scope for applying consistent policies, permissions, and tags to a set of resources. This allows for efficient management of resources based on their lifecycle, ownership, or application within a specific project or environment.
-
-
-
-
-
-12
-Workera.ai
-Azure Resources are typically deployed to Azure within the context of a resource group. When a resource group is deleted, all the resources contained within it are also deleted. This simplifies resource lifecycle management, making it easy to create, update, and delete entire environments as a single unit.
-
-
-
-
-
-13
-Workera.ai
-Azure Resource Groups leverage Azure's Role-Based Access Control (RBAC) to assign permissions to users, groups, or applications. This fine-grained access control ensures that only authorized individuals or processes can interact with and modify the resources within a resource group.
-
-
-
-
-
-14
-Workera.ai
-When you create a resource group, you need to specify the Azure region in which the resource group will reside. The region you choose determines the geographical location where the metadata for the resource group is stored. Resources within the group can be deployed to the same region or different regions, but the resource group itself has a home region.
-
-
-
-
-
-15
-Workera.ai
-Resources within a resource group can be deployed to the same or different regions. However, it's a best practice to deploy resources to the same region within a resource group whenever possible. Placing resources in the same region enhances performance and reduces latency, as they are located closer to each other in the datacenter.
-
-
-
-
-
-16
-Workera.ai
-Some Azure resources, such as Azure Active Directory, subscriptions, and management groups, are global and are not confined to a specific region or resource group. Management groups are a way to manage access, policies, and compliance across multiple subscriptions, providing a hierarchical structure above resource groups.
-
-
-
-
-
-17
-Workera.ai
-Amazon Rekognition, Detecting Labels:
-
-The DetectLabels operation identifies objects, scenes, and concepts in an image.
-It can recognize common objects, such as people, animals, and everyday items.
-
-
-
-
-
-18
-Workera.ai
-Amazon Rekognition, Facial Analysis:
-
-The DetectFaces operation analyzes facial attributes in an image.
-It can detect faces, and provide information about facial features, emotions, and estimated age range.
-
-
-
-
-
-19
-Workera.ai
-Amazon Rekognition, Celebrity Recognition:
-
-The RecognizeCelebrities operation identifies celebrities in an image.
-It can recognize well-known people and return information about them.
-
-
-
-
-
-20
-Workera.ai
-Amazon Rekognition, Text Detection:
-
-The DetectText operation extracts text from images.
-It can identify and extract printed and handwritten text, supporting a variety of use cases.
-
-
-
-
-
-1
-Workera.ai
-Amazon Rekognition, Object and Scene Detection:
-
-The DetectModerationLabels operation detects unsafe content in an image, such as explicit content.
-It helps in content moderation by identifying potentially
-
-
-
-
-2
-Workera.ai
-Amazon Rekognition, Face Comparison:
-
-The CompareFaces operation compares two faces in images to determine if they are the same person.
-This is useful for face verification and identification scenarios.
-
-
-
-
-3
-Workera.ai
-Amazon Rekognition, Face Search:
-
-The SearchFaces operation allows you to search for faces in a collection.
-It is useful for building applications that require face recognition in a large set of images.
-
-
-
-
-
-4
-Workera.ai
-Amazon Rekognition, Custom Labels:
-
-Amazon Rekognition Custom Labels enables you to train a model to recognize custom objects and scenes.
-This allows you to create a more specialized and tailored solution for your specific use case.
-
-
-
-
-
-5
-Workera.ai
-Amazon Rekognition, Video Analysis:
-
-Amazon Rekognition can analyze videos by detecting and tracking people, faces, and objects over time.
-It provides insights into the content of videos, making it suitable for applications like content moderation and surveillance.
-
-
-
-
-
-6
-Workera.ai
-Amazon Rekognition, Stream Processing:
-
-Amazon Rekognition Video Stream allows real-time processing of video streams.
-It can be used for applications like live video analysis and monitoring.
-
-
-
-
-
-7
-Workera.ai
-Secure Model Deployment: SageMaker Edge Manager ensures secure deployment and management of machine learning models on edge devices, preserving data privacy and compliance.
-
-
-
-
-
-8
-Workera.ai
-Edge Device Fleet Management: SageMaker Edge Manager Efficiently manages machine learning models across a fleet of edge devices, simplifying updates and ensuring consistency in model versions.
-
-
-
-
-
-9
-Workera.ai
-Model Versioning and A/B Testing: SageMaker Edge Manager Supports model versioning and A/B testing on edge devices, allowing for the deployment of multiple models and real-world performance comparison.
-
-
-
-
-
-10
+220
 Workera.ai
 Integration with SageMaker Neo: SageMaker Edge Manager Seamlessly integrates with SageMaker Neo-optimized models, extending the benefits of automatic model optimization to edge deployments for enhanced performance.
 
 
 
 
-
-11
-Workera.ai
-Ezsmdeploy python SDK helps you easily deploy Machine learning models on SageMaker. It provides a rich set of features such as deploying models from hubs (like Huggingface or SageMaker Jumpstart), passing one or more model files (even with multi-model deployments), automatically choosing an instance based on model size or based on a budget, and load testing endpoints using an intuitive API
-
-
-
-
-12
-Workera.ai
-Ezsmdeploy uses the SageMaker Python SDK, which is an open source library for training and deploying machine learning models on Amazon SageMaker. This SDK however focuses on further simplifying deployment from existing models, and as such, this is for you if:
-
-you want to quickly deploy and try out foundational language models as an API powered by SageMaker (New in v 2.0)
-you have a serialized model (a pickle / joblib/ json/ TF saved model/ Pytorch .pth/ etc) file and you want to deploy and test your model as an API endpoint
-you have a model or multiple models stored as local files, in local folders, or in S3 as tar files (model.tar.gz)
-
-
-
-
-
-1
-MS Data Analyst
-Usage metric reports are available for Power BI Pro users and can only be accessed by users with the role types of Admin, Member, or Contributor.
-
-
-
-
-
-
-2
-MS Data Analyst
-To view usage metric reports, go to the pertinent workspace. Find the report or dashboard that you want to see usage metrics for. For example, if you want to see the usage metrics report for Sales Data, select the ellipsis (...), and then select View usage metrics report from the drop-down menu.
-
-
-
-
-
-
-3
-MS Data Analyst
-On the Report performance tab of a Report usage metric report, you can view metrics such as:
-
-Typical opening time - How long it takes, at the fiftieth percentile, to open the report.
-Opening time trend - How the typical opening time changes over time. This metric can tell you how the report is performing as the number of users starts to grow.
-Daily/7-Day Performance charts - Highlight the performance for 10, 50, and 90 percent of the open-report actions every day and over a seven-day period.
-Filters for date, so you can see how the performance changes according to the day.
-
-
-
-
-4
-MS Data Analyst
-The deployment pipeline feature in Power BI manages content in dashboards, reports, and semantic models between different environments in the development life cycle. With this feature, you can develop and test Power BI content in one centralized location and streamline the process before deploying the final content to your users. This Power BI Premium feature requires you to be a Capacity admin.
-
-
-
-
-
-
-5
-MS Data Analyst
-Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
-Development - The location in which dashboard developers or semantic modelers can build new content with other developers. This stage is first in the deployment pipeline.
-
-
-
-
-
-
-
-6
-MS Data Analyst
-Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
-Test - Where a small group of users and user acceptance testers can see and review new reports, provide feedback, and test the reports with larger semantic models for bugs and data inconsistencies before it goes into production.
-
-
-
-
-
-
-
-
-7
-MS Data Analyst
-Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
-Production - Where an expansive user audience can use tested reports that are reliable and accurate. This stage is the final one of the deployment pipeline.
-
-
-
-
-
-
-
-
-8
-MS Data Analyst
-The Lineage view is only accessible to Admin, Contributor, and Member roles. Additionally, it requires a Power BI Pro license and is only available for app workspaces. To access the Lineage view, go to the workspace, and then select Lineage from the View drop-down menu on the top ribbon.
-
-
-
-
-
-
-9
-MS Data Analyst
-The Lineage view feature in Power BI allows you to quickly refresh semantic models and see the relationships between the artifacts in a workspace and their external dependencies.
-
-
-
-
-
-
-10
-MS Data Analyst
-Additionally, if a semantic model or dataflow belongs to a different workspace (in this case, the Tailwind workspace), it will be indicated on the card, as shown in the following screenshot.
-
-Screenshot of semantic model from a different workspace.
-
-By double-clicking on any card, you can view the metadata, such as the sensitivity, by whom it was configured, the last refresh date, and the names and count of tables within this semantic model, as shown in the following figure.
-
-
-
-
-
-
-11
+221
 MS Data Analyst
 As enterprises grow, so does their data. Often, strict requirements and regulations must be applied to ensure that this sensitive data is secure. Power BI provides a few different ways to help you accomplish this task:
 
@@ -1986,246 +1846,25 @@ Use Microsoft Cloud App Security to monitor and investigate activities in Power 
 
 
 
-
-
-12
-MS Data Analyst
-Sensitivity labels specify which data can be exported. These labels are configured externally to Power BI, and Power BI allows you to quickly use them in your reports and dashboards. These labels allow you to define and protect content, even outside of Power BI. semantic models, dataflows, reports, and dashboards can use this mechanism, and all users in your corporation can use this feature unless exceptions have been defined.
-
-
-
-
-
-13
-MS Data Analyst
-1. How is the Admin workspace role different from other types of workspace roles? 
-
-Admin is the only role that can remove any users.
-NOT
-Admin is the only role that can publish or update apps.
-Admin is the only role that can create, edit, or delete content in a workspace.
-Admin is the only role that can publish content to a workspace.
-
-
-
-
-
-14
-MS Data Analyst
-Gateway software acts like a bridge; it allows organizations to retain databases and other data sources on their on-premises networks and access that on-premises data in cloud services, such as Power BI and Microsoft Azure Analysis Services.
-
-A gateway facilitates quick, behind-the-scenes communication that flows from a user in the cloud to your on-premises data source and then back again to the cloud.
-
-
-
-
-
-
-15
-MS Data Analyst
-Two types of on-premises gateways are:
-
-Organization mode - Allows multiple users to connect to multiple on-premises data sources and is suitable for complex scenarios.
-Personal mode 
-
-
-
-
-
-16
-MS Data Analyst
-Two types of on-premises gateways are:
-
-Organization mode 
-Personal mode - Allows one user to connect to data sources. This type of gateway can be used only with Power BI and it can't be shared with other users, so it is suitable in situations where you're the only one in your organization who creates reports. You will install the gateway on your local computer, which needs to stay online for the gateway to work.
-
-
-
-
-
-
-17
-MS Data Analyst
-To learn how to run a network port test, see Adjust communication settings for the on-premises data gateway.
-To get information on how to provide proxy information for your gateway, see Configure proxy settings for the on-premises data gateway.
-To find the current data center region that you're in, see Set the data center region.
-
-
-
-
-18
-MS Data Analyst
-While you can set a time for the refresh, be aware that the refresh might not take place at that exact time. Power BI starts scheduled refreshes on a best effort basis. The goal is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
-
-
-
-
-
-
-19
-MS Data Analyst
-Power BI deactivates your refresh schedule after four consecutive failures or when the service detects an unrecoverable error that requires a configuration update, such as invalid or expired credentials. It is not possible to change the consecutive failures threshold.
-
-
-
-
-
-
-20
-MS Data Analyst
-Incremental refresh should only be used on data sources and queries that support query folding. If query folding isn't supported, incremental refresh could lead to a bad user experience because, while it will still issue the queries for the relevant partitions, it will pull all data, potentially multiple times.
-
-
-
-
-
-
-1
-MS Data Analyst
-Power BI provides two ways to endorse your semantic models:
-
-Promotion - Promote your semantic models when they're ready for broad usage.
-Certification - Request certification for a promoted semantic model. Certification can be a highly selective process, so only the truly reliable and authoritative semantic models are used across the organization.
-
-
-
-
-
-
-2
+222
 MS Data Analyst
 With the Query Caching feature, you can use the local caching services of Power BI to process query results. Instead of relying on the semantic model to calculate queries, you use cloud resources on your Premium capacities in the Power BI service to load your report. Query caching ensures constant performance instead of overloading the semantic model resources. Query Caching requires a Premium Capacity.
 
 
 
 
-
-
-3
+223
 MS Data Analyst
-What is the difference between Promotion and Certification when you are endorsing a semantic model? 
-Promotion does not need specific permissions while Certification requires permission from the semantic model owner to access to the semantic model.
+2. At the Contoso Skateboard Company, Sanjay is authoring a report that will be distributed to sales managers. The report contains some sensitive data that shouldn’t be exported. Which report design feature can Sanjay configure to ensure that data isn’t exported? 
 
+Visual header
 
 
 
 
-
-4
-MS Data Analyst
-
-
-
-
-
-5
-MS Data Analyst
-
-
-
-
-
-6
-MS Data Analyst
-
-
-
-
-
-7
-MS Data Analyst
-
-
-
-
-
-8
-MS Data Analyst
-
-
-
-
-
-9
-MS Data Analyst
-
-
-
-
-
-10
-MS Data Analyst
-
-
-
-
-
-11
-MS Data Analyst
-
-
-
-
-
-12
-MS Data Analyst
-
-
-
-
-
-13
-MS Data Analyst
-
-
-
-
-
-14
-MS Data Analyst
-
-
-
-
-
-15
-MS Data Analyst
-
-
-
-
-
-16
-MS Data Analyst
-
-
-
-
-
-17
-MS Data Analyst
-
-
-
-
-
-18
-MS Data Analyst
-
-
-
-
-
-19
-MS Data Analyst
-
-
-
-
-
-20
-MS Data Analyst
-
+224
+DAX Studio
+To convert numbers or measures into a table, you need to place it between curly brackets { }. To create a table with two columns, use parenthesis ( ) and write another value separated by a comma. To add another row, you need to place another expression within a parenthesis inside the curly bracket.
 
 
 
