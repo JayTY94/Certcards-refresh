@@ -1,39 +1,3 @@
-1
-MS Data Analyst
-2. At the Contoso Skateboard Company, Sally is responsible for managing staff rosters to determine when the inventory employees are required to work. Sally relies on a report that forecasts sales order demand to determine the number of employees that are required at any time. It also includes a button to open a Human Resources app to assign employees to rosters. What type of report does Sally use? 
-
-Operational
-
-
-
-
-2
-MS Data Analyst
-In the Background section of a visual's Format Pane, you can set any color or image as the background for the visual. If you plan to use an image as a background, try to select an image that won't have lines or shapes that would make it difficult for the user to read the data.
-
-
-
-
-3
-MS Data Analyst
-Visual headers make many interactions available to report authors and consumers. All report objects, including visuals and elements (like buttons), have a visual header. The visual header appears when you hover the cursor over the report object, and they can launch actions like focus mode, drill up, or drill down. You can also access the More options menu by selecting the ellipsis (...) button.
-
-
-
-
-4
-MS Data Analyst
-Type of Performance Analyzer task:
-Other - The time it took the visual to prepare queries, wait for other visuals to complete, or perform other background processing tasks. If this category displays a long duration, the only real way to reduce this duration is to optimize DAX queries for other visuals, or reduce the number of visuals in the report.
-
-
-
-
-5
-MS Data Analyst
-Grouping is used for categories of data. Binning is similar to grouping, but it is used for grouping continuous fields, such as numbers and dates.
-
-
 
 
 6
