@@ -1810,9 +1810,11 @@ Use Microsoft Cloud App Security to monitor and investigate activities in Power 
 
 
 
+
 222
 MS Data Analyst
 With the Query Caching feature, you can use the local caching services of Power BI to process query results. Instead of relying on the semantic model to calculate queries, you use cloud resources on your Premium capacities in the Power BI service to load your report. Query caching ensures constant performance instead of overloading the semantic model resources. Query Caching requires a Premium Capacity.
+
 
 
 
@@ -1826,9 +1828,161 @@ Visual header
 
 
 
+
 224
 DAX Studio
 To convert numbers or measures into a table, you need to place it between curly brackets { }. To create a table with two columns, use parenthesis ( ) and write another value separated by a comma. To add another row, you need to place another expression within a parenthesis inside the curly bracket.
+
+
+
+
+
+1
+MS Data Analyst
+Configuring data alerts is a simple process to complete for a dashboard in Power BI. Data alerts can notify you or a user that a specific data point is above, below, or at a specific threshold that you can set. These alerts are features that are only available on Power BI service and they're available on such report elements such as KPI visuals, gauges, and cards.
+
+
+
+
+
+
+2
+MS Data Analyst
+Power BI dashboards are about having a user-friendly experience. When users first interact with data, they often have additional questions and reach out to you. A few questions might be manageable to answer, but this isn't sustainable.
+
+Power BI solves this problem with the Q&A visual. From the dashboard view, users can use the Ask a question about your data feature, which increases engagement between users and the dashboard.
+
+
+
+
+3
+MS Data Analyst
+Select View insights to open the Quick Insights page for the selected semantic model, and then view the insights that Power BI has found for you. The Quick Insights page contains up to 32 separate insight cards, and each card has a chart or graph plus a short description.
+
+
+
+
+
+
+4
+MS Data Analyst
+When building dashboards, you can create a cohesive picture by applying the same theme as in your reports. Or apply a specific theme to reports and dashboards so that all report elements or tiles are uniform.
+
+This consideration is important when you're building multiple dashboards. Power BI provides options to apply a theme directly to a dashboard as well as all visuals of a report.
+
+
+
+
+5
+MS Data Analyst
+The Pin a live page feature reflects real-time changes, ensuring that your reports always stay up-to-date.
+
+Pinning a report page is a simple way to pin all visuals at once. All slicers and filters still work and that the visuals have the same data as in the report. The visuals appear as a page, so there are no reformatting options.
+
+
+
+
+6
+MS Data Analyst
+Streaming data on dashboards is crucial for telling the story of your data and can greatly benefit your business. With Power BI's real-time streaming semantic models, you can stream data and update dashboards as soon as the data is logged.
+
+
+
+
+7
+MS Data Analyst
+
+
+
+
+
+8
+MS Data Analyst
+
+
+
+
+
+9
+MS Data Analyst
+
+
+
+
+
+10
+MS Data Analyst
+
+
+
+
+
+11
+MS Data Analyst
+
+
+
+
+
+12
+MS Data Analyst
+
+
+
+
+
+13
+MS Data Analyst
+
+
+
+
+
+14
+MS Data Analyst
+
+
+
+
+
+15
+MS Data Analyst
+
+
+
+
+
+16
+MS Data Analyst
+
+
+
+
+
+17
+MS Data Analyst
+
+
+
+
+
+18
+MS Data Analyst
+
+
+
+
+
+19
+MS Data Analyst
+
+
+
+
+
+20
+MS Data Analyst
+
 
 
 
