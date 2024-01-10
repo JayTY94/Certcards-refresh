@@ -1891,6 +1891,8 @@ Streaming data on dashboards is crucial for telling the story of your data and c
 
 7
 MS Data Analyst
+This phone view is customizable for each person who uses the dashboard; selecting Phone view will allow you to create a new view that you can see on your phone when signing in to Power BI service.
+
 
 
 
@@ -1898,7 +1900,7 @@ MS Data Analyst
 
 8
 MS Data Analyst
-
+In the Row-Level Security screen for a model, you can add Microsoft Entra ID users and security groups to the security role. When members are added to this role, the DAX filter that you previously defined will be applied to them. If members are not added to the role, but they have access to the report, RLS will not apply to them. 
 
 
 
