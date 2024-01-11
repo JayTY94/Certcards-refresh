@@ -1,15 +1,5 @@
 
 
-7
-MS Data Analyst
-You can enable personalized visuals in Power BI Desktop or Power BI service.
-
-In Power BI Desktop, go to File > Options and settings > Options > Current file > Report settings. Make sure Personalize visuals is turned on.
-In Power BI service, go to Settings on the specific report, then toggle Personalize Visuals on, and Save.
-
-
-
-
 8
 MS Data Analyst
 Information page
