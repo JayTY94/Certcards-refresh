@@ -3,98 +3,6 @@
 
 
 
-
-16
-MS Data Analyst
-To use a KPI, you need three pieces of information:
-
-• A unit of measurement that you want to track, for instance total sales, number of employee hires, number of loans serviced, or number of students enrolled.
-• A goal for the measurement so that you can compare your progress with the goal.
-A time series, for instance daily, monthly, or yearly.
-
-
-
-
-17
-Workera.ai
-Azure Container Network Interface (CNI) plug-ins are part of Azure's container networking solution. They enable communication between containers, and between containers and other resources in the Azure environment.
-
-
-
-
-18
-MS Data Analyst
-The three broad report consumer audiences are:
-
-Executive
-
-Analyst
-
-Information worker
-
-
-
-
-19
-MS Data Analyst
-On-hover formatting
-You can configure buttons to change their state when a hover over is available. When the report consumer hovers the cursor over a button, the cursor icon changes to a pointing finger, which indicates that the button is selectable. In this example, the Tabular button text is light gray by default, but when they hover the cursor over, it darkens to black.
-
-
-
-
-20
-MS Data Analyst
-On the Model tab, if you want to pin the key columns to the top of each card, click the canvas (not a card), and the card property blade will appear. That allows you to toggle the setting.
-
-
-
-
-21
-MS Data Analyst
-You can hide pages when they're not yet ready for use; they're a work in progress. However, you might commonly hide them because you want to control how they're accessed. You can provide report page navigation with buttons or by drilling through from a visual. It's also possible to design a page as a tooltip, which is revealed when a report consumer hovers over a visual.
-
-
-
-
-22
-MS Data Analyst
-Report authors can configure report or visual settings to control filter options and behavior. With report options, you can:
-
-Hide the Filter icon for a specific visual.
-Restrict report consumers from changing filter types (for example, basic to advanced) in the Filters pane
-Remove the search  box in the Filters pane.
-
-
-
-
-23
-MS Data Analyst
-When you're ready to deliver your report, it might be helpful to provide a demonstration (or video) to show how you intend report consumers to use the report. That approach will allow you to show how to apply filters and provide lessons on how to apply interactive filtering actions, such as include/exclude groups, cross filtering, report page drillthrough, and bookmarks.
-
-
-
-
-24
-MS Data Analyst
-The Current page state of a bookmark determines whether the bookmark will direct the report consumer to the bookmarked page or apply the current page. Disabling the Current page state is rare, but you should consider some creative use cases. For example, on a page tooltip, a bookmark can change the visuals without navigating from the page that the report consumer has selected.
-
-
-
-
-25
-MS Data Analyst
-Filtering can occur at five different levels of a Microsoft Power BI report:
-
-semantic model (RLS)
-Report
-Page
-Visual
-Measure
-
-
-
-
 26
 MS Data Analyst
 Data Cubes: The core of an OLAP (Online Analytical Processing) database is the OLAP cube, organizing data into a multi-dimensional structure of dimensions (categories of analysis) and measures (quantitative metrics). This structure enhances data retrieval and analysis efficiency.
@@ -102,8 +10,14 @@ Data Cubes: The core of an OLAP (Online Analytical Processing) database is the O
 
 
 
+
+
+
 27
 MS Data Analyst
+2. At the Contoso Skateboard Company, Sanjay is authoring a report that will be distributed to sales managers. The report contains some sensitive data that shouldn’t be exported. Which report design feature can Sanjay configure to ensure that data isn’t exported? 
+
+Visual header
 
 
 
@@ -1739,15 +1653,6 @@ Use Microsoft Cloud App Security to monitor and investigate activities in Power 
 MS Data Analyst
 With the Query Caching feature, you can use the local caching services of Power BI to process query results. Instead of relying on the semantic model to calculate queries, you use cloud resources on your Premium capacities in the Power BI service to load your report. Query caching ensures constant performance instead of overloading the semantic model resources. Query Caching requires a Premium Capacity.
 
-
-
-
-
-223
-MS Data Analyst
-2. At the Contoso Skateboard Company, Sanjay is authoring a report that will be distributed to sales managers. The report contains some sensitive data that shouldn’t be exported. Which report design feature can Sanjay configure to ensure that data isn’t exported? 
-
-Visual header
 
 
 
