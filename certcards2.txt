@@ -1,48 +1,6 @@
 
 
 
-
-
-26
-MS Data Analyst
-Data Cubes: The core of an OLAP (Online Analytical Processing) database is the OLAP cube, organizing data into a multi-dimensional structure of dimensions (categories of analysis) and measures (quantitative metrics). This structure enhances data retrieval and analysis efficiency.
-
-
-
-
-
-
-
-27
-MS Data Analyst
-2. At the Contoso Skateboard Company, Sanjay is authoring a report that will be distributed to sales managers. The report contains some sensitive data that shouldn’t be exported. Which report design feature can Sanjay configure to ensure that data isn’t exported? 
-
-Visual header
-
-
-
-
-28
-MS Data Analyst
-Lower cardinality leads to more optimized performance, so you might need to reduce the number of high cardinally columns in your semantic model.
-
-
-
-
-29
-MS Data Analyst
-The Lineage view feature in Power BI allows you to quickly refresh semantic models and see the relationships between the artifacts in a workspace and their external dependencies.
-
-
-
-
-30
-MS Data Analyst
-To analyze your queries in more detail, you can use DAX studio, which is a free, open-source tool that is provided by another service.
-
-
-
-
 31
 MS Data Analyst
 Visual headers might appear in the upper or lower part of the object. Power BI attempts to show visual headers in the upper right of the object if sufficient space is available between the upper part of the object and the edge of the page. If no space is available in the upper part, Power BI will place the visual headers in the lower-right corner of the visual.
