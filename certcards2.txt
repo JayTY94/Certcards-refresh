@@ -1,12 +1,6 @@
 
 
 
-31
-MS Data Analyst
-Visual headers might appear in the upper or lower part of the object. Power BI attempts to show visual headers in the upper right of the object if sufficient space is available between the upper part of the object and the edge of the page. If no space is available in the upper part, Power BI will place the visual headers in the lower-right corner of the visual.
-
-
-
 
 32
 MS Data Analyst
