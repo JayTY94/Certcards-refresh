@@ -1,23 +1,6 @@
 
 
 
-34
-MS Data Analyst
-Rule of Thirds, Points of Interest: The four points where the lines intersect are considered the points of interest1. Placing your subjects or key data points at these intersections can create a more dynamic and engaging visualization1.
-
-
-
-
-35
-MS Data Analyst
-On the Report performance tab of a Report usage metric report, you can view metrics such as:
-
-Typical opening time - How long it takes, at the fiftieth percentile, to open the report.
-Opening time trend - How the typical opening time changes over time. This metric can tell you how the report is performing as the number of users starts to grow.
-Daily/7-Day Performance charts - Highlight the performance for 10, 50, and 90 percent of the open-report actions every day and over a seven-day period.
-Filters for date, so you can see how the performance changes according to the day.
-
-
 
 
 36
