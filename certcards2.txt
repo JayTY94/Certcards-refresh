@@ -1,27 +1,4 @@
 
-
-
-
-38
-MS Data Analyst
-1. How is the Admin workspace role different from other types of workspace roles? 
-
-Admin is the only role that can remove any users.
-NOT
-Admin is the only role that can publish or update apps.
-Admin is the only role that can create, edit, or delete content in a workspace.
-Admin is the only role that can publish content to a workspace.
-
-
-
-
-39
-MS Data Analyst
-The Relative date and Relative time filter types apply to date fields only, making it possible to filter by relative date or time. Relative filters allow the report consumer to filter by past, present, or future time periods based on the current date and time.
-
-
-
-
 40
 MS Data Analyst
 Filters apply to a single field and use one of following filter types:
