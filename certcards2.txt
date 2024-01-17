@@ -1,17 +1,6 @@
 
 
 
-
-41
-Workera.ai
-Amazon Rekognition, Face Search:
-
-The SearchFaces operation allows you to search for faces in a collection.
-It is useful for building applications that require face recognition in a large set of images.
-
-
-
-
 42
 MS Data Analyst
 Type of Performance Analyzer task:
