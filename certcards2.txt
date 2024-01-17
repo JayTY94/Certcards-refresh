@@ -1,13 +1,4 @@
 
-40
-MS Data Analyst
-Filters apply to a single field and use one of following filter types:
-
-Basic
-Advanced
-Top N
-Relative date and Relative time
-
 
 
 
