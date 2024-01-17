@@ -1,10 +1,6 @@
 
 
 
-42
-MS Data Analyst
-Type of Performance Analyzer task:
-Visual display - The time it took for the visual to render on the screen, including the time required to retrieve web images or geocoding.
 
 
 
