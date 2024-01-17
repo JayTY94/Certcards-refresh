@@ -2,21 +2,6 @@
 
 
 
-
-36
-MS Data Analyst
-Many helper DAX functions for navigating backward or forward for specific time periods, all of which returns a table of dates. These helper functions include NEXTDAY, NEXTMONTH, NEXTQUARTER, NEXTYEAR, and PREVIOUSDAY, PREVIOUSMONTH, PREVIOUSQUARTER, and PREVIOUSYEAR.
-
-
-
-
-37
-MS Data Analyst
-It might be tempting to think that slicers apply page-level filters because that's the default result. However, it's important to understand that a slicer is a visual that propagates filters to other visuals on the same page or (when synced) across other pages.
-
-
-
-
 38
 MS Data Analyst
 1. How is the Admin workspace role different from other types of workspace roles? 
