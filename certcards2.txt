@@ -1,15 +1,6 @@
 
 
 
-
-
-45
-MS Data Analyst
-The Lineage view is only accessible to Admin, Contributor, and Member roles. Additionally, it requires a Power BI Pro license and is only available for app workspaces. To access the Lineage view, go to the workspace, and then select Lineage from the View drop-down menu on the top ribbon.
-
-
-
-
 46
 MS Data Analyst
 To use the Analyze feature, right-click a data point on the visual and then hover over the Analyze option to display two further options: Explain the increase and Find where the distribution is different. The options that are available will depend on the data point that you selected.
