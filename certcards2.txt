@@ -1,13 +1,6 @@
 
 
 
-46
-MS Data Analyst
-To use the Analyze feature, right-click a data point on the visual and then hover over the Analyze option to display two further options: Explain the increase and Find where the distribution is different. The options that are available will depend on the data point that you selected.
-
-
-
-
 47
 Workera.ai
 Amazon Rekognition, Face Comparison:
