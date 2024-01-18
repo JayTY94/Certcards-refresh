@@ -3,15 +3,6 @@
 
 
 
-
-
-44
-Workera.ai
-Model Versioning and A/B Testing: SageMaker Edge Manager supports model versioning and A/B testing on edge devices, allowing for the deployment of multiple models and real-world performance comparison.
-
-
-
-
 45
 MS Data Analyst
 The Lineage view is only accessible to Admin, Contributor, and Member roles. Additionally, it requires a Power BI Pro license and is only available for app workspaces. To access the Lineage view, go to the workspace, and then select Lineage from the View drop-down menu on the top ribbon.
