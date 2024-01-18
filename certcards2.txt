@@ -7,7 +7,7 @@
 
 44
 Workera.ai
-Model Versioning and A/B Testing: SageMaker Edge Manager Supports model versioning and A/B testing on edge devices, allowing for the deployment of multiple models and real-world performance comparison.
+Model Versioning and A/B Testing: SageMaker Edge Manager supports model versioning and A/B testing on edge devices, allowing for the deployment of multiple models and real-world performance comparison.
 
 
 
