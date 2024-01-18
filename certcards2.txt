@@ -5,15 +5,6 @@
 
 
 
-43
-MS Data Analyst
-Create Visuals from Insights: When you use the Analyze feature to find insights, Power BI may suggest new visuals. You can add these suggested visuals directly to your report.
-
-Customizing Suggested Visuals: Once a visual is suggested by the Analyze feature, you can further customize it. This includes changing the visual type, modifying data fields, applying filters, and adjusting formatting options.
-
-
-
-
 44
 Workera.ai
 Model Versioning and A/B Testing: SageMaker Edge Manager Supports model versioning and A/B testing on edge devices, allowing for the deployment of multiple models and real-world performance comparison.
