@@ -1,70 +1,7 @@
-1
-MS Data Analyst
-Streaming data on dashboards is crucial for telling the story of your data and can greatly benefit your business. With Power BI's real-time streaming semantic models, you can stream data and update dashboards as soon as the data is logged.
 
 
 
 
-
-2
-MS Data Analyst
-Dropdown slicer layouts are common; they help minimize the size of the slicer to provide more room on the page for other visuals. An additional benefit when using dropdown slicers that might not be immediately apparent is that they only query the semantic model when expanded open. Therefore, they can also help expedite report page rendering.
-
-
-
-
-
-3
-MS Data Analyst
-1. What benefit do you get from analyzing the metadata? 
-The benefit of analyzing the metadata is that you can clearly identify data inconsistences with your semantic model.
-
-
-
-
-
-4
-MS Data Analyst
-The quickest way to enforce consistency is to use a report theme. A report theme applies format settings to your entire report, ensuring consistent application of colors, fonts, pages, and visual format options, including the Filters pane styles.
-
-
-
-
-
-5
-MS Data Analyst
-Additionally, if a semantic model or dataflow belongs to a different workspace (in this case, the Tailwind workspace), it will be indicated on the card, as shown in the following screenshot.
-
-Screenshot of semantic model from a different workspace.
-
-By double-clicking on any card, you can view the metadata, such as the sensitivity, by whom it was configured, the last refresh date, and the names and count of tables within this semantic model, as shown in the following figure.
-
-
-
-
-
-6
-MS Data Analyst
-The Key influencers visual helps report consumers understand the factors that drive a particular metric, like sales revenue. By using AI, Power BI will analyze the data, rank the factors that matter, and then present them as key influencers.
-
-
-
-
-
-7
-Workera.ai
-Amazon Rekognition, Detecting Labels:
-
-The DetectLabels operation identifies objects, scenes, and concepts in an image.
-It can recognize common objects, such as people, animals, and everyday items.
-
-
-
-
-
-8
-MS Data Analyst
-This phone view is customizable for each person who uses the dashboard; selecting Phone view will allow you to create a new view that you can see on your phone when signing in to Power BI service.
 
 
 
