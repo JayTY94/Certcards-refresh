@@ -1701,7 +1701,7 @@ In HCL:
 
 7
 Azure VDI Project
-
+The HCL language uses configuration files that are named with the .pkr.hcl file extension. Configuration files must always use UTF-8 encoding, and by convention are usually maintained with Unix-style line endings (LF) rather than Windows-style line endings (CRLF), though both are accepted.
 
 
 
