@@ -1534,3 +1534,152 @@ Add an Apply button to slicers. The slicer selection will only filter the report
 
 
 
+1
+Azure Pipelines
+A typical pipeline will include the following stages: build automation and continuous integration, test automation, and deployment automation.
+
+
+
+
+
+
+2
+Azure Pipelines
+Use Azure Pipelines to deploy your code to multiple targets. Targets including:
+
+Container registries.
+Virtual machines.
+Azure services, or any on-premises or cloud target such:
+  Microsoft Azure.
+  Google Cloud.
+  Amazon Web Services (AWS).
+
+
+
+
+3
+Azure Pipelines
+
+
+
+
+
+4
+Azure Pipelines
+
+
+
+
+
+5
+Azure Pipelines
+
+
+
+
+
+6
+Azure Pipelines
+
+
+
+
+
+7
+Azure Pipelines
+
+
+
+
+
+8
+Azure Pipelines
+
+
+
+
+
+9
+Azure Pipelines
+
+
+
+
+
+10
+Azure Pipelines
+
+
+
+
+
+11
+Azure Pipelines
+
+
+
+
+
+12
+Azure Pipelines
+
+
+
+
+
+13
+Azure Pipelines
+
+
+
+
+
+14
+Azure Pipelines
+
+
+
+
+
+15
+Azure Pipelines
+
+
+
+
+
+16
+Azure Pipelines
+
+
+
+
+
+17
+Azure Pipelines
+
+
+
+
+
+18
+Azure Pipelines
+
+
+
+
+
+19
+Azure Pipelines
+
+
+
+
+
+20
+Azure Pipelines
+
+
+
+
+
