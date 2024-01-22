@@ -1708,6 +1708,8 @@ The HCL language uses configuration files that are named with the .pkr.hcl file 
 
 8
 Azure VDI Project
+In HCL, The ordering of root blocks is not significant. The order of provisioner or post-processor blocks within a build is the only major feature where block order matters.
+
 
 
 
