@@ -1790,7 +1790,7 @@ To provide the best experience for your Azure Virtual Desktop users, use FSLogix
 
 7
 Azure VDI Project
-
+To use FSLogix to separate user profiles from the session host virtual machines (VM), we’ll need to configure Azure Storage and create an FSLogix profile share. These steps vary depending on the storage type and whether you’re using Microsoft Entra Domain Services or Active Directory Domain Services (AD DS). 
 
 
 
