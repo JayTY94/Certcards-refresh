@@ -1739,3 +1739,146 @@ To save costs, you can configure your VMs for depth mode load balancing where us
 
 
 
+1
+Azure VDI Project
+Desktop - Remote Desktop application groups give users access to a full desktop. You can provide a desktop where the session host VM resources are shared or pooled. Or you can provide personal desktops to users that need to be able to add or remove programs without impacting other users.
+
+
+
+
+
+2
+Azure VDI Project
+App - RemoteApp applications groups provide users access to the applications you individually publish to the application group. You can create multiple RemoteApp app groups to accommodate different user scenarios. Use RemoteApp to virtualize an app that runs on a legacy OS or one that needs secured access to corporate resources.
+
+
+
+
+
+3
+Azure VDI Project
+Images - When you configure session hosts for application groups, you have your choice of images. Use a recommended image like Windows 10 Enterprise multi-session + Office 365. Or choose another image in your gallery or an image provided by Microsoft or other publishers. You can also use your own image built through Hyper-V or on an Azure VM.
+
+
+
+
+
+4
+Azure VDI Project
+
+
+
+
+
+5
+Azure VDI Project
+
+
+
+
+
+6
+Azure VDI Project
+
+
+
+
+
+7
+Azure VDI Project
+
+
+
+
+
+8
+Azure VDI Project
+
+
+
+
+
+9
+Azure VDI Project
+
+
+
+
+
+10
+Azure VDI Project
+
+
+
+
+
+11
+Azure VDI Project
+
+
+
+
+
+12
+Azure VDI Project
+
+
+
+
+
+13
+Azure VDI Project
+
+
+
+
+
+14
+Azure VDI Project
+
+
+
+
+
+15
+Azure VDI Project
+
+
+
+
+
+16
+Azure VDI Project
+
+
+
+
+
+17
+Azure VDI Project
+
+
+
+
+
+18
+Azure VDI Project
+
+
+
+
+
+19
+Azure VDI Project
+
+
+
+
+
+20
+Azure VDI Project
+
+
+
+
+
