@@ -1717,13 +1717,16 @@ In HCL, The ordering of root blocks is not significant. The order of provisioner
 
 9
 Azure VDI Project
-
+Type of HCL Block:
+build blocks contain configuration for a specific combination of builders, provisioners, and post-processors used to create a specific image artifact.
 
 
 
 
 10
 Azure VDI Project
+Type of HCL Block:
+source blocks contain configuration for builder plugins. Once defined, sources can be used and further configured by the "build" block.
 
 
 
@@ -1731,6 +1734,8 @@ Azure VDI Project
 
 11
 Azure VDI Project
+Type of HCL Block:
+provisioner blocks contain configuration for provisioner plugins. These blocks are nested inside of a build block.
 
 
 
@@ -1738,6 +1743,8 @@ Azure VDI Project
 
 12
 Azure VDI Project
+Type of HCL Block:
+post-processor and post-processors blocks contain configuration for post-processor plugins and post-processor plugin sequences. They are also nested within build blocks.
 
 
 
@@ -1745,6 +1752,8 @@ Azure VDI Project
 
 13
 Azure VDI Project
+Type of HCL Block:
+variable blocks contain configuration for variables that can either be defaulted in configuration or set by the user at runtime.
 
 
 
@@ -1752,6 +1761,8 @@ Azure VDI Project
 
 14
 Azure VDI Project
+Type of HCL Block:
+locals blocks contain configuration for variables that can be created using HCL functions or data sources, or composited from variables created in the variables blocks.
 
 
 
@@ -1759,13 +1770,15 @@ Azure VDI Project
 
 15
 Azure VDI Project
-
+It is important to use the correct type of quotes for your shell. In most shells, including PowerShell, single quotes and double quotes have different behavior. Single quotes preserve the literal value of all characters within the quotes, while double quotes allow for variable expansion and command substitution. So, if you are using PowerShell, you should use single quotes to enclose the value that you are assigning to the variable.
 
 
 
 
 16
 Azure VDI Project
+Azure Virtual Desktop on Microsoft Azure is a desktop and app virtualization service that runs on the cloud. Azure Virtual Desktop works across devices, like Windows, Mac, iOS, Android, and Linux, with apps that you can use to access remote desktops and apps. You can also use most modern browsers to access Azure Virtual Desktop-hosted experiences.
+
 
 
 
@@ -1773,6 +1786,8 @@ Azure VDI Project
 
 17
 Azure VDI Project
+User sign-in to Azure Virtual Desktop is extremely fast because user profiles are containerized by using FSLogix. At sign-in, the user profile container is dynamically attached to the computing environment. The user profile is immediately available and appears in the system exactly like a native user profile.
+
 
 
 
@@ -1780,21 +1795,21 @@ Azure VDI Project
 
 18
 Azure VDI Project
-
+Azure Virtual Desktop gives you options to load balance users on your VM host pools. Host pools are collections of VMs with the same configuration assigned to multiple users
 
 
 
 
 19
 Azure VDI Project
-
+ For the best performance, you can configure load balancing to occur as users sign in (breadth mode). With breadth mode, users are sequentially allocated across the host pool for your workload. 
 
 
 
 
 20
 Azure VDI Project
-
+To save costs, you can configure your VMs for depth mode load balancing where users are fully allocated on one VM before moving to the next. 
 
 
 
