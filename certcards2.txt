@@ -1774,6 +1774,8 @@ Use either Microsoft Entra Domain Services or Active Directory Domain Services (
 
 5
 Azure VDI Project
+A workspace is a logical grouping of application groups in Azure Virtual Desktop. When a user signs in to Azure Virtual Desktop, they see a workspace with a desktop or applications published to the application groups assigned to them.
+
 
 
 
@@ -1781,7 +1783,7 @@ Azure VDI Project
 
 6
 Azure VDI Project
-
+To provide the best experience for your Azure Virtual Desktop users, use FSLogix profiles. FSLogix is designed to roam profiles in remote computing environments, such as Azure Virtual Desktop. User profiles are stored in per-user VHD or VHDX files. At sign-in, this profile container is dynamically attached to the computing environment. The user profile is immediately available and appears in the system exactly like a native user profile.
 
 
 
