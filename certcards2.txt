@@ -1765,6 +1765,8 @@ Images - When you configure session hosts for application groups, you have your 
 
 4
 Azure VDI Project
+Use either Microsoft Entra Domain Services or Active Directory Domain Services (AD DS) to authenticate at the service layer of Azure Virtual Desktop. All VMs in Azure Virtual Desktop are domain-joined. Microsoft Entra Domain Services or AD DS is used to authenticate users to the VMs.
+
 
 
 
