@@ -1770,13 +1770,15 @@ Azure VDI Project
 
 6
 Azure VDI Project
-
+A scaling plan is an Azure Virtual Desktop object that acts as a container for your Autoscale schedules. Scaling plans are designed such that you can apply one to one or more pooled host pools and the associated schedules will take effect for all the assigned host pools. However, only one scaling plan can be assigned to a host pool. 
 
 
 
 
 7
 Azure VDI Project
+Schedules are Azure Virtual Desktop proxy resources for scaling plans that contain the information about the scaling configuration. In the schedule, you can configure the days it is applicable to and the start and end times. You can also configure the load balancing algorithm, capacity thresholds, and the minimum percentage of hosts for different points in the day, as well as your preferred ramp down strategy.
+
 
 
 
@@ -1784,6 +1786,9 @@ Azure VDI Project
 
 8
 Azure VDI Project
+3. What must you set up to grant Autoscale the necessary permissions to turn session host VMs on and off? 
+You must set up a custom RBAC role on the subscription to grant Autoscale the necessary permissions to turn session host VMs on and off.
+
 
 
 
@@ -1791,6 +1796,8 @@ Azure VDI Project
 
 9
 Azure VDI Project
+4. Which of the following statements are true? 
+Autoscale currently only turns session host VMs on and off, it does not create or delete them. Autoscale scales according to your defined schedule and metrics, it does not scale according to resource consumption.
 
 
 
