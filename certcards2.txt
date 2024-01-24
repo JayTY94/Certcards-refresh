@@ -1831,6 +1831,8 @@ This integration with Microsoft Entra ID is key in a layered Zero Trust security
 
 13
 Azure VDI Project
+A user profile is a collection of configurations that the user or administrator made to represent the state of a system. Various system components bind to a user's profile. These components include applications, registry entries, and other customized entries.
+
 
 
 
@@ -1838,21 +1840,24 @@ Azure VDI Project
 
 14
 Azure VDI Project
-
+Local user profile	A local user profile is stored on the disk of the device. If a different device is used, the customization isn't synchronized between devices.
 
 
 
 
 15
 Azure VDI Project
+Roaming user profile	
 
+A roaming user profile is a copy of the local user profile, stored on a shared folder. Any changes made locally to a roaming profile are synchronized to the file server's Server Message Block (SMB) shared folder when the user signs out. If the user signs in to a different device, the customizations follow the user as the roaming profile is downloaded to the new system.
 
 
 
 
 16
 Azure VDI Project
-
+Roaming user profile	
+It's not possible to roam all settings for Windows and applications. A performance and maintenance penalty is paid for the flexibility. The addition of FSLogix profile containers addressed the shortcomings of traditional roaming profiles. The next section describes FSLogix profile containers.
 
 
 
