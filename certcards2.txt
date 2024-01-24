@@ -1805,14 +1805,19 @@ Autoscale currently only turns session host VMs on and off, it does not create o
 
 10
 Azure VDI Project
-
+Components the customer is responsible for
+Scaling policies:	Session host pools integrated with Azure virtual machine scale sets manage a group of load-balanced VMs.
+Networking policies: The customer defines and assigns Network Security Groups (NSGs) to filter network traffic.
 
 
 
 
 11
 Azure VDI Project
-
+Components the customer is responsible for
+User profile management:	FSLogix and Azure Files provide a fast and stateful experience for users through containerized user profiles.
+User host access:	On the creation of a host pool, the type of load balancing is defined as either depth or breadth.
+Sizing and scaling policies for VM: VM sizing components include GPU-enabled VMs.
 
 
 
