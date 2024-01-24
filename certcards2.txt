@@ -1717,3 +1717,159 @@ Read data that's stored in workspace dataflows
 
 
 
+1
+Azure VDI Project
+1. You have a group of developers that need virtual desktops that they can manage. What type of host pool do you create for them? 
+
+With a personal host pool, each user has their own dedicated VM. They can be a local administrator for their VM to manage app installation.
+
+
+
+
+
+
+2
+Azure VDI Project
+2. If you create a pooled host pool, what VM image should you use? 
+
+We recommend you use Windows 10 Enterprise multi-session for most use cases but you can use an image you've built.
+
+
+
+
+
+3
+Azure VDI Project
+3. You want to allow your users access to both apps and a remote desktop. How do you give them access? 
+
+You can assign users to both a desktop application group and a RemoteApp application group in the same host pool. But users can only launch one type of application group per session.
+
+
+
+
+
+4
+Azure VDI Project
+4. Which of these steps is not part of creating an FSLogix profile? 
+
+Install FSLogix software in Azure Virtual Desktop gallery images
+FSLogix software is preinstalled in the Azure gallery images. If you use your own image, you'll need to install the FSLogix software yourself.
+
+
+
+
+
+5
+Azure VDI Project
+. Autoscale is Azure Virtual Desktop’s native scaling feature that allows you to input scaling configurations for different days of the week and times of the day. Given this scaling configuration, Autoscale automatically turns on VMs according to your schedule and turns them off so that you no longer have to pay for unnecessary compute costs.
+
+
+
+
+
+
+6
+Azure VDI Project
+
+
+
+
+
+7
+Azure VDI Project
+
+
+
+
+
+8
+Azure VDI Project
+
+
+
+
+
+9
+Azure VDI Project
+
+
+
+
+
+10
+Azure VDI Project
+
+
+
+
+
+11
+Azure VDI Project
+
+
+
+
+
+12
+Azure VDI Project
+
+
+
+
+
+13
+Azure VDI Project
+
+
+
+
+
+14
+Azure VDI Project
+
+
+
+
+
+15
+Azure VDI Project
+
+
+
+
+
+16
+Azure VDI Project
+
+
+
+
+
+17
+Azure VDI Project
+
+
+
+
+
+18
+Azure VDI Project
+
+
+
+
+
+19
+Azure VDI Project
+
+
+
+
+
+20
+Azure VDI Project
+
+
+
+
+
