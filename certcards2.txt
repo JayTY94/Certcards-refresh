@@ -1864,14 +1864,16 @@ It's not possible to roam all settings for Windows and applications. A performan
 
 17
 Azure VDI Project
-
+Mandatory profile	
+A mandatory profile is a roaming user profile that an administrator has preconfigured to specify settings for users. With mandatory user profiles, a user can modify their desktop, but the changes aren't saved when the user signs out. The next time the user signs in, the mandatory user profile that the administrator created is downloaded. Mandatory profiles are typically used in a kiosk environment.
 
 
 
 
 18
 Azure VDI Project
-
+Temporary profile	
+A fail-safe profile is created when a user's roaming profile has problems loading. It's discarded at sign-out.
 
 
 
