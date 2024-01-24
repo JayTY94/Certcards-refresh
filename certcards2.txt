@@ -1797,6 +1797,7 @@ To use FSLogix to separate user profiles from the session host virtual machines 
 
 8
 Azure VDI Project
+VHD stands for Virtual Hard Disk. It is a file format that represents a virtual hard disk drive. In cloud computing, VHDs are used to store the contents of virtual machines, allowing them to be easily moved, copied, and backed up. A VHD can be attached to a virtual machine to store application and system data, providing a highly durable and available solution while still being simple and scalable. 1
 
 
 
