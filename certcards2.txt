@@ -1824,7 +1824,7 @@ Sizing and scaling policies for VM: VM sizing components include GPU-enabled VMs
 
 12
 Azure VDI Project
-
+This integration with Microsoft Entra ID is key in a layered Zero Trust security model. The Zero Trust security model removes the concept of a "walled garden." This model assumes that every service, user, application, and system is open to the internet. This approach focuses on building strong authentication, authorization, and encryption, while also providing better operational agility.
 
 
 
