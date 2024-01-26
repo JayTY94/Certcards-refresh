@@ -1825,6 +1825,8 @@ All files that Azure Virtual Desktop uses in Azure NetApp Files are encrypted th
 
 20
 Azure VDI Project
+168.63.129.16 is a special public IP address that is owned by Microsoft for Azure. For more information, see What is IP address 168.63.129.16.
+
 
 
 
