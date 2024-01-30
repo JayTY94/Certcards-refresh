@@ -2,56 +2,6 @@
 
 
 
-9
-MS Data Analyst
-Gateway software acts like a bridge; it allows organizations to retain databases and other data sources on their on-premises networks and access that on-premises data in cloud services, such as Power BI and Microsoft Azure Analysis Services.
-
-A gateway facilitates quick, behind-the-scenes communication that flows from a user in the cloud to your on-premises data source and then back again to the cloud.
-
-
-
-
-
-10
-Workera.ai
-Amazon Rekognition, Text Detection:
-
-The DetectText operation extracts text from images.
-It can identify and extract printed and handwritten text, supporting a variety of use cases.
-
-
-
-
-
-11
-MS Data Analyst
-An analyst is a person who provides guidance to the organization. Analysts can be responsible for a range of tasks, often with goals of determining the effectiveness of business strategies, developing or improving processes, or implementing change. A business analyst (or data analyst) in the sales division of the Contoso Skateboard Store is an example of an analyst audience.
-
-
-
-
-
-12
-MS Data Analyst
-What is an inclusive benefit of designing a report with accessibility features?
-
-Users can understand a report using a screen reader or keyboard.
-NOT
-Users don't have to auto-play videos slowing performance.
-Users will admire the bright colors and decorative images used for cohesiveness.
-
-
-
-
-
-13
-MS Data Analyst
-Visuals are visualizations of semantic model data. Power BI includes over 30 core visuals, which are built in and available to all reports. You can access the core visuals in the first section of the Visualizations pane.
-
-
-
-
-
 14
 Azure Pipelines
 A typical pipeline will include the following stages: build automation and continuous integration, test automation, and deployment automation.
