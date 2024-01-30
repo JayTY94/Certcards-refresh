@@ -2,13 +2,6 @@
 
 
 
-14
-Azure Pipelines
-A typical pipeline will include the following stages: build automation and continuous integration, test automation, and deployment automation.
-
-
-
-
 
 15
 MS Data Analyst
