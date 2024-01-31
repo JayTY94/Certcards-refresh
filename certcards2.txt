@@ -1,96 +1,5 @@
 
 
-
-
-
-15
-MS Data Analyst
-Unlike report and page-level filters, a visual-level filter can filter by using a measure. When a measure filters a visual, it's used to eliminate groups. For example, consider a column chart visual that groups by store. A measure filter could eliminate groups (stores) where the total store sales are less than a certain amount.
-
-
-
-
-
-16
-Workera.ai
-Some Azure resources, such as Azure Active Directory, subscriptions, and management groups, are global and are not confined to a specific region or resource group. Management groups are a way to manage access, policies, and compliance across multiple subscriptions, providing a hierarchical structure above resource groups.
-
-
-
-
-
-17
-MS Data Analyst
-Visuals - On a visual-by-visual basis, you can configure which visuals will reveal your page tooltip. For each visual, you can have the visual reveal no tooltip, default to the visual tooltips (which is configured in the visual Fields pane), or use a specific page tooltip.
-
-
-
-
-
-18
-Workera.ai
-Amazon Rekognition, Object and Scene Detection:
-
-The DetectModerationLabels operation detects unsafe content in an image, such as explicit content.
-It helps in content moderation by identifying potentially
-
-
-
-
-
-19
-Azure VDI Project
-Azure Virtual Desktop gives you options to load balance users on your VM host pools. Host pools are collections of VMs with the same configuration assigned to multiple users
-
-
-
-
-
-20
-Workera.ai
-Integration with SageMaker Neo: SageMaker Edge Manager Seamlessly integrates with SageMaker Neo-optimized models, extending the benefits of automatic model optimization to edge deployments for enhanced performance.
-
-
-
-
-
-21
-Workera.ai
-Edge Device Fleet Management: SageMaker Edge Manager Efficiently manages machine learning models across a fleet of edge devices, simplifying updates and ensuring consistency in model versions.
-
-
-
-
-
-22
-MS Data Analyst
-While you can set a time for the refresh, be aware that the refresh might not take place at that exact time. Power BI starts scheduled refreshes on a best effort basis. The goal is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
-
-
-
-
-
-23
-MS Data Analyst
-Another important consideration when you are laying out report objects is balance. Balance is concerned with stability and structure in design. In the context of a report layout, balance refers to the weight that is distributed across the report page by the placement of objects of the same or different sizes.
-
-
-
-
-
-24
-MS Data Analyst
-I got access to the PracticePro 365 database using the following steps:
-  Go to the dataset in the web app
-  downloaded the dataset as a .pbix
-  That dataset had all of the tables created as import objects
-  That means that I had the queries that created them.
-  I still don't have access to all of the tables, but it might be enough.
-
-
-
-
-
 25
 Azure VDI Project
 A workspace is a logical grouping of application groups in Azure Virtual Desktop. When a user signs in to Azure Virtual Desktop, they see a workspace with a desktop or applications published to the application groups assigned to them.
@@ -1821,70 +1730,80 @@ GPEDIT.MSC Command: You can open the Local Group Policy Editor by running the "g
 
 
 6
-Azure VDI Project
-
+MS Data Analyst 
+The Workspace OneDrive setting allows you to configure a Microsoft 365 group whose SharePoint Online document library is available to workspace users once the workspace is created.
 
 
 
 
 7
-Azure VDI Project
+MS Data Analyst
+Admin users who have permissions to certify a dataset are defined in the Dataset Certification tenant admin setting.
+
 
 
 
 
 
 8
-Azure VDI Project
+MS Data Analyst
+Workspace apps can be installed automatically for any user in an organization, and without requiring notifications of installation. Deployment pipelines are used for moving artifacts between test, development, and production environments. Metrics are where you can create goals based off existing datasets. You can add members to a workspace, but they receive a notification that they’ve been added to the workspace.
+
 
 
 
 
 
 9
-Azure VDI Project
-
+MS Data Analyst
+Organization: Display folders allow you to organize measures, columns, and hierarchies into folders within a table in a Power BI report. This makes it easier for report users to find the fields they need.
 
 
 
 
 10
-Azure VDI Project
-
+MS Data Analyst
+Customization: You can customize the names and structure of display folders to fit the needs of your report. For example, you can create a display folder named "Sales Metrics" and move all sales-related measures into that folder.
 
 
 
 
 11
-Azure VDI Project
-
+MS Data Analyst
+Compatibility: Display folders are compatible with most Power BI data sources, including imported data, DirectQuery, and Live Connection. However, there are some limitations when using display folders with certain data sources, such as Analysis Services.
 
 
 
 
 12
-Azure VDI Project
-
+MS Data Analyst
+Creation: You can create display folders in Power BI Desktop by going to the Modeling tab and selecting the "Manage Display Folders" option. From there, you can create new folders and move fields into them. You can also create display folders using Tabular Editor or by editing the model.bim file.
 
 
 
 
 13
-Azure VDI Project
+MS Data Analyst
+When creating a quick measure in Power BI Desktop, you apply calculations to fields. You do not explicitly create a DAX query, but you choose calculations and fields, which result in automatic generation of a DAX query. 
+
 
 
 
 
 
 14
-Azure VDI Project
+MS Data Analyst
+Time intelligence functions have performance implications and are disabled for quick measures against DirectQuery tables. Mathematical operations, aggregate per category, and X-functions are all supported against DirectQuery.
+
 
 
 
 
 
 15
-Azure VDI Project
+MS Data Analyst
+Report page load times are primarily determined by number of visuals (objects) on the page, and DAX performance. Neither of which are impacted by unnecessary model columns.
+
 
 
 
