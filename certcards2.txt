@@ -1,10 +1,5 @@
 
 
-25
-Azure VDI Project
-A workspace is a logical grouping of application groups in Azure Virtual Desktop. When a user signs in to Azure Virtual Desktop, they see a workspace with a desktop or applications published to the application groups assigned to them.
-
-
 
 
 
