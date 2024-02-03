@@ -1,24 +1,5 @@
 
 
-
-
-
-29
-MS Data Analyst
-When you create roles, it’s important to test them to ensure they apply the correct filters. For data models created in Power BI Desktop, there’s the View as function that allows you to see the report when different roles are enforced, and different username values are passed.
-
-
-
-
-
-30
-MS Data Analyst
-Persistent filters is a feature that saves report consumer's slicer and filter settings. It automatically applies the settings when the report consumer reopens the report. That way, Power BI remembers previously applied filters. You can revert to default filters (that are saved in the report by the report author) by selecting Reset to default.
-
-
-
-
-
 31
 Azure VDI Project
 Type of HCL Block:
