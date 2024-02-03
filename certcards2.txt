@@ -1,21 +1,5 @@
 
 
-31
-Azure VDI Project
-Type of HCL Block:
-provisioner blocks contain configuration for provisioner plugins. These blocks are nested inside of a build block.
-
-
-
-
-
-32
-Azure Pipelines
-Build
-A build represents one execution of a pipeline. It collects the logs associated with running the steps and the test results.
-
-
-
 
 
 33
