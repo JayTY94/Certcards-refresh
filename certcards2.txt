@@ -3,31 +3,6 @@
 
 
 
-26
-Azure Pipelines
-Release
-When you use the visual designer, you can create a release or a build pipeline. A release is a term used to describe one execution of a release pipeline. It's made up of deployments to multiple stages.
-
-
-
-
-
-27
-MS Data Analyst
-The button element can take your Power BI reports to the next level by making them behave like an app. Buttons support six different actions that take effect when the button is selected.
-
-
-
-
-
-28
-MS Data Analyst
-Power BI paginated reports are not created in Power BI Desktop; they are built by using Power BI Report Builder. You can share paginated reports with either a Power BI Pro or a Power BI premium license.
-
-
-
-
-
 29
 MS Data Analyst
 When you create roles, it’s important to test them to ensure they apply the correct filters. For data models created in Power BI Desktop, there’s the View as function that allows you to see the report when different roles are enforced, and different username values are passed.
