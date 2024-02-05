@@ -2,14 +2,6 @@
 
 
 
-33
-Workera.ai
-Azure Container Network Interface (CNI) plug-ins play a role in implementing network policies and security within a Kubernetes cluster. Network policies define how pods can communicate with each other and with external resources, helping to enforce security rules and access controls.
-
-
-
-
-
 34
 MS Data Analyst
 Dynamic rules use specific DAX functions that return environmental values (as opposed to constants). Environmental values are returned from three specific DAX functions:
