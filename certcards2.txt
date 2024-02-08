@@ -1,27 +1,5 @@
 
 
-
-
-34
-MS Data Analyst
-Dynamic rules use specific DAX functions that return environmental values (as opposed to constants). Environmental values are returned from three specific DAX functions:
-
-USERNAME or USERPRINCIPALNAME – Returns the Power BI authenticated user as a text value.
-
-CUSTOMDATA - Returns the CustomData property passed in the connection string. Non-Power BI reporting tools that connect to the dataset by using a connection string can set this property, like Microsoft Excel.
-
-
-
-
-
-35
-Azure VDI Project
-VHD stands for Virtual Hard Disk. It is a file format that represents a virtual hard disk drive. In cloud computing, VHDs are used to store the contents of virtual machines, allowing them to be easily moved, copied, and backed up. A VHD can be attached to a virtual machine to store application and system data, providing a highly durable and available solution while still being simple and scalable. 1
-
-
-
-
-
 36
 MS Data Analyst
 RDL File Format: Paginated Reports are authored using the RDL (Report Definition Language) file format, the same format used in SSRS. You can import existing SSRS reports into Power BI to create Paginated Reports.
