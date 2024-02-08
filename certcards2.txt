@@ -1,15 +1,6 @@
 
 
 
-
-38
-Azure VDI Project
-To use FSLogix to separate user profiles from the session host virtual machines (VM), we’ll need to configure Azure Storage and create an FSLogix profile share. These steps vary depending on the storage type and whether you’re using Microsoft Entra Domain Services or Active Directory Domain Services (AD DS).
-
-
-
-
-
 39
 MS Data Analyst
 Enabling the script visuals option in the Visualization pane of Power BI Desktop is required before creating custom Python visuals in Power BI Desktop. Installing Python is not required. Configuring global Python scripting options in Power BI Desktop is not required to create Python visuals. The ability to create a custom Python visual by using Power BI Desktop has no dependency on enabling preview features.
