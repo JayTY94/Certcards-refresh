@@ -1,13 +1,6 @@
 
 
 
-37
-MS Data Analyst
-Consistency should apply to everything in your report design, including spacing, margins, size, alignment, and especially to object format options. Format options include the selection of font, font size, font weight, colors, and many other styling options. Format options also include the enabling of visual features like axis labels and data labels.
-
-
-
-
 
 38
 Azure VDI Project
