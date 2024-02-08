@@ -1,12 +1,5 @@
 
 
-36
-MS Data Analyst
-RDL File Format: Paginated Reports are authored using the RDL (Report Definition Language) file format, the same format used in SSRS. You can import existing SSRS reports into Power BI to create Paginated Reports.
-
-
-
-
 
 37
 MS Data Analyst
