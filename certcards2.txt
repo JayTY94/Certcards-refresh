@@ -1,62 +1,6 @@
 
 
 
-39
-MS Data Analyst
-Enabling the script visuals option in the Visualization pane of Power BI Desktop is required before creating custom Python visuals in Power BI Desktop. Installing Python is not required. Configuring global Python scripting options in Power BI Desktop is not required to create Python visuals. The ability to create a custom Python visual by using Power BI Desktop has no dependency on enabling preview features.
-
-
-
-
-
-40
-MS Data Analyst
-Time intelligence functions have performance implications and are disabled for quick measures against DirectQuery tables. Mathematical operations, aggregate per category, and X-functions are all supported against DirectQuery.
-
-
-
-
-
-41
-Azure VDI Project
- For the best performance, you can configure load balancing to occur as users sign in (breadth mode). With breadth mode, users are sequentially allocated across the host pool for your workload.
-
-
-
-
-
-42
-Azure VDI Project
-It is important to use the correct type of quotes for your shell. In most shells, including PowerShell, single quotes and double quotes have different behavior. Single quotes preserve the literal value of all characters within the quotes, while double quotes allow for variable expansion and command substitution. So, if you are using PowerShell, you should use single quotes to enclose the value that you are assigning to the variable.
-
-
-
-
-
-43
-MS Data Analyst
-Power BI paginated reports can use a dataset from Power BI service. These datasets have used Power Query to clean and alter the dat. The difference is that this work was done in Power BI Desktop or SQL Server Data Tools prior to using Power BI Report Builder, which does not have that tool in the user interface.
-
-
-
-
-
-44
-MS Data Analyst
-For mobile reports, slicers should be vertical, horizontal, or responsive (responsive slicers must be horizontal). If you make the slicer responsive, as you change its size and shape, it shows more or fewer options. If you make the slicer small enough, it becomes a filter icon on the report page.
-
-
-
-
-
-45
-MS Data Analyst
-Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
-Development - The location in which dashboard developers or semantic modelers can build new content with other developers. This stage is first in the deployment pipeline.
-
-
-
-
 
 46
 MS Data Analyst
