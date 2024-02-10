@@ -2,25 +2,6 @@
 
 
 
-46
-MS Data Analyst
-2. What can be achieved by removing unnecessary rows and columns? 
-Deleting unnecessary rows and columns will reduce a semantic model size and it's good practice to load only necessary data into your semantic model.
-
-
-
-
-
-47
-MS Data Analyst
-Clustering allows you to identify a segment (cluster) of data that is similar to each other but dissimilar to the rest of the data. The process of clustering is different to that of grouping, which you accomplished previously.
-
-To apply clustering to your scatter chart, select More options (...) in the upper-right corner of the visual and then select Automatically find clusters.
-
-
-
-
-
 48
 MS Data Analyst
 The Pin a live page feature reflects real-time changes, ensuring that your reports always stay up-to-date.
@@ -218,13 +199,6 @@ Grouping Hierarchies: When you group data, you can create hierarchies that are u
 MS Data Analyst
 The simplest way to show details is to use drillable visuals. The matrix visual is an excellent choice because it allows drilling on rows and/or columns. Therefore, by assigning hierarchies or multiple fields, report consumers can drill to the level of detail that they want. For example, the matrix rows could show years, and the report consumer could drill down to quarter, month, and date levels.
 
-
-
-
-
-69
-MS Data Analyst
-Configuring data alerts is a simple process to complete for a dashboard in Power BI. Data alerts can notify you or a user that a specific data point is above, below, or at a specific threshold that you can set. These alerts are features that are only available on Power BI service and they're available on such report elements such as KPI visuals, gauges, and cards.
 
 
 
