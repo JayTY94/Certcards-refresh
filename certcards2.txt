@@ -1,8 +1,3 @@
-1
-MS Data Analyst
-When you create visuals, Power BI Desktop aggregates your data into groups, based on the values that it finds in the underlying data. You can refine how those default groups are presented. You can also create new groups by grouping two or more data points in a visual or putting values into equal-sized groups (binning).
-
-
 
 
 
