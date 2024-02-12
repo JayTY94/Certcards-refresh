@@ -1624,3 +1624,145 @@ If the Forecast section isn't available for a line chart, it’s probably becaus
 
 
 
+1
+Info Assistant/OpenAI
+Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, be it .NET, .NET Core, Java, Node.js, PHP, and Python. Applications run and scale with ease on both Windows and Linux-based environments.
+
+
+
+
+2
+Info Assistant/OpenAI
+With App Service, you pay for the Azure compute resources you use. The compute resources you use are determined by the App Service plan that you run your apps on. For more information, see Azure App Service plans overview.
+
+
+
+
+
+
+3
+Info Assistant/OpenAI
+
+
+
+
+
+4
+Info Assistant/OpenAI
+
+
+
+
+
+5
+Info Assistant/OpenAI
+
+
+
+
+
+6
+Info Assistant/OpenAI
+
+
+
+
+
+7
+Info Assistant/OpenAI
+
+
+
+
+
+8
+Info Assistant/OpenAI
+
+
+
+
+
+9
+Info Assistant/OpenAI
+
+
+
+
+
+10
+Info Assistant/OpenAI
+
+
+
+
+
+11
+Info Assistant/OpenAI
+
+
+
+
+
+12
+Info Assistant/OpenAI
+
+
+
+
+
+13
+Info Assistant/OpenAI
+
+
+
+
+
+14
+Info Assistant/OpenAI
+
+
+
+
+
+15
+Info Assistant/OpenAI
+
+
+
+
+
+16
+Info Assistant/OpenAI
+
+
+
+
+
+17
+Info Assistant/OpenAI
+
+
+
+
+
+18
+Info Assistant/OpenAI
+
+
+
+
+
+19
+Info Assistant/OpenAI
+
+
+
+
+
+20
+Info Assistant/OpenAI
+
+
+
+
+
