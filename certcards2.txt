@@ -1618,7 +1618,8 @@ Terraform configurations must declare which providers they require so that Terra
 
 5
 Terraform
-
+The Terraform Registry is the main source for publicly available Terraform providers 3.
+The Terraform Registry offers a browsable and searchable interface for finding providers, and makes it possible for Terraform CLI to automatically install any of the providers it hosts 3.
 
 
 
