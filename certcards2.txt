@@ -1,13 +1,6 @@
 
 
 
-2
-MS Data Analyst
-Some visuals in Power BI Desktop have the option to add dynamic reference lines through the use of the Analytics pane. It is worth noting that not all options are available for all visuals, and some visuals, such as combination charts like the line and clustered column chart, have no options available in the Analytics pane.
-
-
-
-
 
 3
 MS Data Analyst
