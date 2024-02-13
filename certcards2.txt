@@ -2,11 +2,6 @@
 
 
 
-11
-MS Data Analyst
-In the Data labels section of a visual's Format Pane, you can change fonts, size, and colors for all labels in the visual. Try to use solid colors so the labels are clearly visible. For example, if the background is white, use a black or dark grey color to display your labels.
-
-
 
 
 
