@@ -1555,14 +1555,14 @@ With App Service, you pay for the Azure compute resources you use. The compute r
 
 3
 Info Assistant/OpenAI
-
+Terraform enables the definition, preview, and deployment of cloud infrastructure. Using Terraform, you create configuration files using HCL syntax. The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure. 
 
 
 
 
 4
 Info Assistant/OpenAI
-
+The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure. After you create your configuration files, you create an execution plan that allows you to preview your infrastructure changes before they're deployed. 
 
 
 
