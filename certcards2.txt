@@ -1638,10 +1638,12 @@ Bicep supports the use of modules to scope resources to a resource group and exp
 
 
 
+
 9
 Bicep
 Bicep can be used with the Azure CLI to build and deploy scripts to Azure 2.
 Bicep has a decompiler that can transform an existing ARM template into a Bicep file 2.
+
 
 
 
@@ -1652,8 +1654,12 @@ A Log Analytics workspace is a unique environment for log data from Azure Monito
 
 
 
+
+
+
+
 11
-Azure Analytics Workspaces
+Azure Log Analytics Workspaces
 Each workspace contains multiple tables that are organized into separate columns with multiple rows of data. Each table is defined by a unique set of columns. Rows of data provided by the data source share those columns. Log queries define columns of data to retrieve and provide output to different features of Azure Monitor and other services that use workspaces.
 
 
@@ -1663,7 +1669,7 @@ Each workspace contains multiple tables that are organized into separate columns
 
 
 12
-Azure Analytics Workspaces
+Azure Log Analytics Workspaces
 There's no direct cost for creating or maintaining a workspace. You're charged for the data sent to it, which is also known as data ingestion. You're charged for how long that data is stored, which is otherwise known as data retention. These costs might vary based on the log data plan of each table, as described in Log data plan.
 
 
