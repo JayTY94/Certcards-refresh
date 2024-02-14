@@ -1673,7 +1673,9 @@ There's no direct cost for creating or maintaining a workspace. You're charged f
 
 
 13
-Terraform
+Azure Firewall
+Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instances in Secured Virtual Hubs and Hub Virtual Networks. Policies work across regions and subscriptions.
+
 
 
 
@@ -1681,7 +1683,9 @@ Terraform
 
 
 14
-Terraform
+Azure Firewall
+New policies can be created from scratch or inherited from existing policies. Inheritance allows DevOps to create local firewall policies on top of organization mandated base policy.
+
 
 
 
@@ -1689,7 +1693,10 @@ Terraform
 
 
 15
-Terraform
+Azure Firewall
+Policies are billed based on firewall associations. A policy with zero or one firewall association is free of charge. A policy with multiple firewall associations is billed at a fixed rate. For more information, see Azure Firewall Manager Pricing.
+
+
 
 
 
