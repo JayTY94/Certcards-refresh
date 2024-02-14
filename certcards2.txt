@@ -4,7 +4,6 @@
 
 
 
-
 12
 MS Data Analyst
 Balance can be symmetrical or asymmetrical. Symmetrical balance is achieved by distributing the weight evenly on both halves of the page. Asymmetrical balance is achieved through contrast.
@@ -1625,29 +1624,34 @@ The Terraform Registry offers a browsable and searchable interface for finding p
 
 
 6
-Terraform
+Bicep
+Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources 1.
+Bicep transpiles into ARM templates, providing a more concise and readable alternative to JSON 2.
 
 
 
 
 
 7
-Terraform
-
+Bicep
+Bicep provides reliable type safety and support for code reuse 1.
+Bicep files define the infrastructure you want to deploy to Azure, and can be used throughout the development lifecycle to repeatedly deploy your infrastructure in a consistent manner 1.
 
 
 
 
 8
-Terraform
-
+Bicep
+Bicep has a Visual Studio Code extension that provides code snippets and a visualizer to see the graphical representation of the Bicep script and the dependencies between resources 2.
+Bicep supports the use of modules to scope resources to a resource group and expose variables 2.
 
 
 
 
 9
-Terraform
-
+Bicep
+Bicep can be used with the Azure CLI to build and deploy scripts to Azure 2.
+Bicep has a decompiler that can transform an existing ARM template into a Bicep file 2.
 
 
 
