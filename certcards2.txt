@@ -4,12 +4,6 @@
 
 
 
-13
-Azure VDI Project
-All files that Azure Virtual Desktop uses in Azure NetApp Files are encrypted through the Federal Information Processing Standards Publications (FIPS PUBS) 140-2 standard. The Azure NetApp Files service manages all keys and generates a unique XTS-AES-256 data encryption key for each volume.
-
-
-
 
 
 14
