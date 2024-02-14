@@ -1,19 +1,6 @@
 
 
 
-
-
-
-
-
-14
-MS Data Analyst
-You can add or remove filters by adding query string parameters in the URL. For more information, see Filter a report using query string parameters in the URL. For embedded reports, the embedding app can use the client APIs to programmatically add or remove filters and change filter types to Top N or relative date or time. For more information, see Power BI embedded analytics Client APIs.
-
-
-
-
-
 15
 MS Data Analyst
 Use the Paginated report visual to embed a Power BI paginated report in your report. Paginated reports can connect directly to source databases, providing you with the ability to present transaction-level detail that's not stored in the Power BI semantic model.
@@ -1732,6 +1719,8 @@ An en dash can also be used to show partnerships, competition, and directions 4.
 
 19
 Terraform
+Terraform must store state about your managed infrastructure and configuration. This state is used by Terraform to map real world resources to your configuration, keep track of metadata, and to improve performance for large infrastructures.
+
 
 
 
@@ -1739,6 +1728,152 @@ Terraform
 
 20
 Terraform
+This state is stored by default in a local file named "terraform.tfstate", but we recommend storing it in Terraform Cloud to version, encrypt, and securely share it with your team.
+
+
+
+
+1
+Terraform
+The primary purpose of Terraform state is to store bindings between objects in a remote system and resource instances declared in your configuration. When Terraform creates a remote object in response to a change of configuration, it will record the identity of that remote object against a particular resource instance, and then potentially update or delete that object in response to future configuration changes.
+
+
+
+
+2
+Terraform
+While the format of the state files are just JSON, direct file editing of the state is discouraged. Terraform provides the terraform state command to perform basic modifications of the state using the CLI.
+
+
+
+
+3
+Terraform
+For some providers like AWS, Terraform could theoretically use something like AWS tags. Early prototypes of Terraform actually had no state files and used this method. However, we quickly ran into problems. The first major issue was a simple one: not all resources support tags, and not all cloud providers support tags.
+
+
+
+
+4
+Terraform
+In addition to basic mapping, Terraform stores a cache of the attribute values for all resources in the state. This is the most optional feature of Terraform state and is done only as a performance improvement.
+
+
+
+
+
+
+5
+Terraform
+In the default configuration, Terraform stores the state in a file in the current working directory where Terraform was run. This is okay for getting started, but when using Terraform in a team it is important for everyone to be working with the same state so that operations will be applied to the same remote objects. Remote state is the recommended solution to this problem.
+
+
+
+
+
+
+6
+Terraform
+
+
+
+
+
+7
+Terraform
+
+
+
+
+
+8
+Terraform
+
+
+
+
+
+9
+Terraform
+
+
+
+
+
+10
+Terraform
+
+
+
+
+
+11
+Terraform
+
+
+
+
+
+12
+Terraform
+
+
+
+
+
+13
+Terraform
+
+
+
+
+
+14
+Terraform
+
+
+
+
+
+15
+Terraform
+
+
+
+
+
+16
+Terraform
+
+
+
+
+
+17
+Terraform
+
+
+
+
+
+18
+Terraform
+
+
+
+
+
+19
+Terraform
+
+
+
+
+
+20
+Terraform
+
+
 
 
 
