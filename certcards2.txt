@@ -1,34 +1,11 @@
 
 
 
-15
-MS Data Analyst
-Use the Paginated report visual to embed a Power BI paginated report in your report. Paginated reports can connect directly to source databases, providing you with the ability to present transaction-level detail that's not stored in the Power BI semantic model.
-
-
-
-
-
-16
-Workera.ai
-All Azure subscriptions have a trust relationship with a Microsoft Entra tenant. Subscriptions rely on this tenant (directory) to authenticate and authorize security principals and devices. When a subscription expires, the trusted instance remains, but the security principals lose access to Azure resources.
-
-
-
-
-
-17
-Azure VDI Project
-User sign-in to Azure Virtual Desktop is extremely fast because user profiles are containerized by using FSLogix. At sign-in, the user profile container is dynamically attached to the computing environment. The user profile is immediately available and appears in the system exactly like a native user profile.
-
-
-
 
 
 18
 MS Data Analyst
-Workspace apps can be installed automatically for any user in an organization, and without requiring notifications of installation. Deployment pipelines are used for moving artifacts between test, development, and production environments. Metrics are where you can create goals based off existing datasets. You can add members to a workspace, but they receive a notification that they’ve been added to the workspace.
-
+Workspace apps can be installed automatically for any user in an organization, and without requiring notifications of installation. Deployment pipelines are used for moving artifacts between test, development, and production environments. 
 
 
 
@@ -1790,13 +1767,16 @@ The terraform import CLI command can only import resources into the state. Impor
 
 8
 Terraform
+Use the import block to import existing infrastructure resources into Terraform, bringing them under Terraform's management. Unlike the terraform import command, configuration-driven import using import blocks is predictable, works with CICD pipelines, and lets you preview an import operation before modifying state.
+
 
 
 
 
 
 9
-Terraform
+MS Data Analyst
+Metrics are where you can create goals based off existing datasets. You can add members to a workspace, but they receive a notification that they’ve been added to the workspace.
 
 
 
