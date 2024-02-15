@@ -1810,8 +1810,11 @@ Main commands:
 
 
 
+
 13
 Terraform
+The Terraform CLI commands interact with the HashiCorp service Checkpoint to check for the availability of new versions and for critical security bulletins about the current version.
+
 
 
 
@@ -1819,6 +1822,8 @@ Terraform
 
 14
 Terraform
+Terraform expects to be invoked from a working directory that contains configuration files written in the Terraform language. Terraform uses configuration content from this directory, and also uses the directory to store settings, cached plugins and modules, and sometimes state data.
+
 
 
 
@@ -1826,7 +1831,9 @@ Terraform
 
 15
 Terraform
+A working directory must be initialized before Terraform can perform any operations in it (like provisioning infrastructure or modifying state).
 
+terraform init
 
 
 
