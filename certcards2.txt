@@ -1839,8 +1839,8 @@ Run the terraform init command to initialize a working directory that contains a
 
 
 16
-Terraform
-
+General
+Idempotence is the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application.
 
 
 
