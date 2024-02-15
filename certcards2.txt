@@ -1831,9 +1831,9 @@ Terraform expects to be invoked from a working directory that contains configura
 
 15
 Terraform
-A working directory must be initialized before Terraform can perform any operations in it (like provisioning infrastructure or modifying state).
+Run the terraform init command to initialize a working directory that contains a Terraform configuration. After initialization, you will be able to perform other commands, like terraform plan and terraform apply.
 
-terraform init
+
 
 
 
