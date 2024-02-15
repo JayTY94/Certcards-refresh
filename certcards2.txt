@@ -1847,6 +1847,154 @@ Idempotence is the property of certain operations in mathematics and computer sc
 
 17
 Terraform
+Most Terraform providers are published separately from Terraform as plugins. During init, Terraform searches the configuration for both direct and indirect references to providers and attempts to install the plugins for those providers.
+
+
+
+
+
+
+18
+Terraform
+During init, the configuration is searched for module blocks, and the source code for referenced modules is retrieved from the locations given in their source arguments.
+
+
+
+
+
+
+19
+Terraform
+The terraform plan command evaluates a Terraform configuration to determine the desired state of all the resources it declares, then compares that desired state to the real infrastructure objects being managed with the current working directory and workspace. 
+
+
+
+20
+Terraform
+Terraform plan uses state data to determine which real objects correspond to which declared resources, and checks the current state of each resource using the relevant infrastructure provider's API.
+
+
+
+
+
+
+
+1
+Terraform
+The terraform apply command performs a plan just like terraform plan does, but then actually carries out the planned changes to each resource using the relevant infrastructure provider's API.
+
+
+
+
+2
+Terraform
+By default, terraform apply performs a fresh plan right before applying changes, and displays the plan to the user when asking for confirmation. However, it can also accept a plan file produced by terraform plan in lieu of running a new plan.
+
+
+
+
+3
+Terraform
+The terraform destroy command destroys all of the resources being managed by the current working directory and workspace, using state data to determine which real world objects correspond to managed resources. Like terraform apply, it asks for confirmation before proceeding.
+
+
+
+
+4
+Terraform
+A destroy behaves exactly like deleting every resource from the configuration and then running an apply, except that it doesn't require editing the configuration. This is more convenient if you intend to provision similar resources at a later date.
+
+
+
+
+
+
+5
+Terraform
+
+
+
+
+
+6
+Terraform
+
+
+
+
+
+7
+Terraform
+
+
+
+
+
+8
+Terraform
+
+
+
+
+
+9
+Terraform
+
+
+
+
+
+10
+Terraform
+
+
+
+
+
+11
+Terraform
+
+
+
+
+
+12
+Terraform
+
+
+
+
+
+13
+Terraform
+
+
+
+
+
+14
+Terraform
+
+
+
+
+
+15
+Terraform
+
+
+
+
+
+16
+Terraform
+
+
+
+
+
+17
+Terraform
 
 
 
@@ -1868,8 +2016,6 @@ Terraform
 
 20
 Terraform
-
-
 
 
 
