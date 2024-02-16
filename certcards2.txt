@@ -1,25 +1,4 @@
 
-
-
-
-
-20
-Azure VDI Project
-4. Which of the following statements are true? 
-Autoscale currently only turns session host VMs on and off, it does not create or delete them. Autoscale scales according to your defined schedule and metrics, it does not scale according to resource consumption.
-
-
-
-
-
-21
-MS Data Analyst
-Time intelligence functions have performance implications and are disabled for quick measures against DirectQuery tables. Mathematical operations, aggregate per category, and X-functions are all supported against DirectQuery.
-
-
-
-
-
 22
 Azure VDI Project
 Caution with Changes: Be careful when making changes in the Local Group Policy Editor, as incorrect settings can potentially disrupt your system or make it less secure. Always read the descriptions and instructions associated with each policy setting before making changes.
