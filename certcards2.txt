@@ -3,21 +3,6 @@
 
 
 
-18
-MS Data Analyst
-Workspace apps can be installed automatically for any user in an organization, and without requiring notifications of installation. Deployment pipelines are used for moving artifacts between test, development, and production environments. 
-
-
-
-
-19
-MS Data Analyst
-Occasionally, report consumers want to know (or verify) what filters, if any, apply to a specific visual. They can complete that action by hovering the cursor over the Filter icon in the visual header. A pop-up window will appear, describing the filters that affect the visual. The pop-up window shows the accumulation of filters that are applied by slicers or filters, including any cross filters.
-
-
-
-
-
 20
 Azure VDI Project
 4. Which of the following statements are true? 
