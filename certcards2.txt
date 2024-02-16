@@ -1911,7 +1911,11 @@ A destroy behaves exactly like deleting every resource from the configuration an
 
 5
 Terraform
+By default, when Terraform creates a plan it:
 
+	• Reads the current state of any already-existing remote objects to make sure that the Terraform state is up-to-date.
+	• Compares the current configuration to the prior state by noting any differences.
+Proposes a set of change actions that should, if applied, make the remote objects match the configuration.
 
 
 
