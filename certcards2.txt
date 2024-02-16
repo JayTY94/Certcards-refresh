@@ -1942,6 +1942,8 @@ When you pass a saved plan file to terraform apply, Terraform takes the actions 
 
 10
 Terraform
+While you will typically not want to destroy long-lived objects in a production environment, Terraform is sometimes used to manage ephemeral infrastructure for development purposes, in which case you can use terraform destroy to conveniently clean up all of those temporary objects once you are finished with your work.
+
 
 
 
@@ -1949,27 +1951,35 @@ Terraform
 
 11
 Terraform
+Usage: terraform destroy [options]
 
+This command is just a convenience alias for the following command:
+
+terraform apply -destroy
 
 
 
 
 12
 Terraform
+You can also create a speculative destroy plan, to see what the effect of destroying would be, by running the following command:
 
+terraform plan -destroy
 
 
 
 
 13
 Terraform
-
+Terraform Cloud and Terraform Enterprise are platforms that perform Terraform runs to provision infrastructure, offering a collaboration-focused environment that makes it easier for teams to use Terraform together.
 
 
 
 
 14
 Terraform
+The best way to handle CLI authentication in Terraform Cloud is with the login and logout commands, which help automate the process of getting an API token for your Terraform Cloud user account.
+
 
 
 
