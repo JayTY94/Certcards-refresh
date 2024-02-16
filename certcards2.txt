@@ -2022,6 +2022,8 @@ The terraform state show command can print all of the attributes of a given reso
 
 20
 Terraform
+The graph output uses the DOT language, which is a machine-readable graph description language which originated in Graphviz. You can use the Graphviz dot command to present the resulting graph description as an image. There are also various third-party online graph rendering services which accept this format.
+
 
 
 
