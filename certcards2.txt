@@ -1987,35 +1987,35 @@ The best way to handle CLI authentication in Terraform Cloud is with the login a
 
 15
 Terraform
-
+The terraform graph command creates a visual representation of a configuration or a set of planned changes.
 
 
 
 
 16
 Terraform
-
+The terraform output command can get the values for the top-level output values of a configuration, which are often helpful when making use of the infrastructure Terraform has provisioned.
 
 
 
 
 17
 Terraform
-
+The terraform show command can generate human-readable versions of a state file or plan file, or generate machine-readable versions that can be integrated with other tools.
 
 
 
 
 18
 Terraform
-
+The terraform state list command can list the resources being managed by the current working directory and workspace, providing a complete or filtered list.
 
 
 
 
 19
 Terraform
-
+The terraform state show command can print all of the attributes of a given resource being managed by the current working directory and workspace, including generated read-only attributes like the unique ID assigned by the cloud provider.
 
 
 
