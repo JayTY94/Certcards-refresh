@@ -1915,6 +1915,8 @@ Resource Targeting is one particular special planning option that has some impor
 
 7
 Terraform
+Refresh-only mode: creates a plan whose goal is only to update the Terraform state and any root module output values to match changes made to remote objects outside of Terraform. This can be useful if you've intentionally changed one or more remote objects outside of the usual workflow (e.g. while responding to an incident) and you now need to reconcile Terraform's records with those changes.
+
 
 
 
@@ -1922,13 +1924,17 @@ Terraform
 
 8
 Terraform
+When using Terraform on Windows, we recommend using the Windows Command Prompt (cmd.exe). When you pass a variable value to Terraform from the Windows Command Prompt, use double quotes " around the argument:
 
+terraform plan -var "name=value"
 
 
 
 
 9
 Terraform
+When you pass a saved plan file to terraform apply, Terraform takes the actions in the saved plan without prompting you for confirmation. Use terraform show to inspect a saved plan file before applying it.
+
 
 
 
