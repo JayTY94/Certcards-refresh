@@ -1907,7 +1907,8 @@ Proposes a set of change actions that should, if applied, make the remote object
 
 6
 Terraform
-
+Planning Options: Alongside the special planning modes, there are also some options you can set in order to customize the planning process for unusual needs.
+Resource Targeting is one particular special planning option that has some important caveats associated with it.
 
 
 
