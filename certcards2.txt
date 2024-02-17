@@ -1,17 +1,4 @@
 
-22
-Azure VDI Project
-Caution with Changes: Be careful when making changes in the Local Group Policy Editor, as incorrect settings can potentially disrupt your system or make it less secure. Always read the descriptions and instructions associated with each policy setting before making changes.
-
-
-
-
-
-23
-Azure VDI Project
-Type of HCL Block:
-post-processor and post-processors blocks contain configuration for post-processor plugins and post-processor plugin sequences. They are also nested within build blocks.
-
 
 
 
