@@ -3,19 +3,6 @@
 
 
 
-24
-Workera.ai
-Azure Resources are typically deployed to Azure within the context of a resource group. When a resource group is deleted, all the resources contained within it are also deleted. This simplifies resource lifecycle management, making it easy to create, update, and delete entire environments as a single unit.
-
-
-
-
-
-25
-MS Data Analyst
-The TOPN DAX function returns the top N rows of a specified table. The Top N analysis is a great way to present data that might be important, such as the top 10 selling products, top 10 performers in an organization, or top 10 customers.
-
-
 
 
 
