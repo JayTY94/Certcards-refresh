@@ -1994,4 +1994,144 @@ The graph output uses the DOT language, which is a machine-readable graph descri
 
 
 
+1
+Azure Naming Convention
+A good name for a resource helps you to quickly identify its type, its associated workload, its environment, and the Azure region where it runs. To do so, names should follow a consistent format—a naming convention—that is composed of important information about each resource. 
+
+
+
+
+2
+Child Services AWS Review
+A Validation Print is a color-accurate print according to ISO 12647-8. The Validation Print has higher color tolerances than the contract proof according to ISO 12647-7 and, unlike the contract proof, is NOT color- and legally binding.
+
+
+
+
+
+3
+Child Services AWS Review
+Batch printing refers to the process of printing multiple files in a single print job. This means that instead of printing each document individually, businesses can group multiple documents into one print job and have them printed at once.
+
+
+
+4
+Child Services AWS Review
+Mainframe-as-a-Service (MFaaS) is a subscription-based model that addresses the challenges of an aging mainframe while providing flexibility and scalability for future growth. MFaaS is hosted at a provider’s data center or partners’, offering a cloud-like experience.
+
+
+
+
+5
+Azure Naming Convention
+
+
+
+
+
+6
+Azure Naming Convention
+
+
+
+
+
+7
+Azure Naming Convention
+
+
+
+
+
+8
+Azure Naming Convention
+
+
+
+
+
+9
+Azure Naming Convention
+
+
+
+
+
+10
+Azure Naming Convention
+
+
+
+
+
+11
+Azure Naming Convention
+
+
+
+
+
+12
+Azure Naming Convention
+
+
+
+
+
+13
+Azure Naming Convention
+
+
+
+
+
+14
+Azure Naming Convention
+
+
+
+
+
+15
+Azure Naming Convention
+
+
+
+
+
+16
+Azure Naming Convention
+
+
+
+
+
+17
+Azure Naming Convention
+
+
+
+
+
+18
+Azure Naming Convention
+
+
+
+
+
+19
+Azure Naming Convention
+
+
+
+
+
+20
+Azure Naming Convention
+
+
+
+
+
 
