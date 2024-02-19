@@ -2042,7 +2042,9 @@ A VM name in Azure can be longer than the OS naming restrictions. Keeping Azure 
 
 5
 Azure Naming Convention
+Some of these example names use a three-digit padding scheme (###), such as mktg-prod-001.
 
+Padding improves readability and sorting of assets when those assets are managed in a configuration management database (CMDB), IT Asset Management tool, or traditional accounting tools. 
 
 
 
