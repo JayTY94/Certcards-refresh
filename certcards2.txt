@@ -1,22 +1,3 @@
-1
-MS Data Analyst
-You can create a bookmark to capture the default state of slicers. A button on the report page could have the text Reset slicers, and when invoked, it will use the bookmark.
-
-
-
-
-
-2
-Terraform
-Run the terraform init command to initialize a working directory that contains a Terraform configuration. After initialization, you will be able to perform other commands, like terraform plan and terraform apply.
-
-
-
-
-
-3
-MS Data Analyst
-The process of identifying outliers involves segmenting your data into two groups: one group is the outlier data and the other group is not. You could use calculated columns to identify outliers, but the results would be static until you refresh the data. A better way to identify outliers is to use a visualization or DAX formula because these methods will ensure that your results are dynamic.
 
 
 
@@ -2001,6 +1982,7 @@ MS Data Analyst
 KPI
 NOT
 Card, Ribbon Chart, or Stacked Bar Chart.
+
 
 
 
