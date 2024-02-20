@@ -3,29 +3,6 @@
 
 
 
-4
-MS Data Analyst
-Rule of Thirds, Grid Layout: The rule of thirds involves dividing your frame into nine equal boxes with two vertical and two horizontal lines. This grid layout serves as a guide for arranging elements in your visualization.
-
-
-
-
-
-5
-Azure VDI Project
-Local user profile	A local user profile is stored on the disk of the device. If a different device is used, the customization isn't synchronized between devices.
-
-
-
-
-
-6
-Terraform
-The terraform destroy command destroys all of the resources being managed by the current working directory and workspace, using state data to determine which real world objects correspond to managed resources. Like terraform apply, it asks for confirmation before proceeding.
-
-
-
-
 
 7
 Azure VDI Project
