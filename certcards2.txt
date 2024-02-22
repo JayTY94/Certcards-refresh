@@ -2028,7 +2028,14 @@ OAuth: This is an open standard for authorization that allows users to grant thi
 
 
 10
-Azure Naming Convention
+Web Scraping
+from datetime import datetime
+# Get the current time
+now = datetime.now()
+# Format the time as a string
+time_string = now.strftime('%Y-%m-%d_%H-%M-%S')
+# Generate a new filename using the time string
+filename = f'my_file_{time_string}.txt'
 
 
 
