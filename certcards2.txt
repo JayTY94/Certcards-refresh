@@ -4,24 +4,6 @@
 
 
 
-7
-Azure VDI Project
-In HCL: 
-	  Arguments assign a value to a name. They appear within blocks.
-    Expressions represent a value, either literally or by referencing and combining other values. They appear as values for arguments, or within other expressions.
-
-
-
-
-
-8
-Terraform
-A destroy behaves exactly like deleting every resource from the configuration and then running an apply, except that it doesn't require editing the configuration. This is more convenient if you intend to provision similar resources at a later date.
-
-
-
-
-
 9
 MS Data Analyst
 The Data state captures anything that impacts the queries that Power BI sends to the semantic model. For example, if a slicer is included in the scope of the bookmark, the Data state retains the applied slicer items when the bookmark was created (or updated). It will also capture sort order and the drill depth of a visual because the query is impacted.
@@ -2008,8 +1990,12 @@ Padding improves readability and sorting of assets when those assets are managed
 
 
 
+
+
 6
 Azure Naming Convention
+
+
 
 
 
