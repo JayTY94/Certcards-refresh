@@ -2053,6 +2053,8 @@ Querying can happen once an index is populated with searchable content, when you
 
 6
 Azure AI Search
+Semantic ranking is an extension of query execution. It adds language understanding to search results processing, promoting the most semantically relevant results to the top.
+
 
 
 
