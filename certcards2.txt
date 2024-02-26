@@ -3,14 +3,6 @@
 
 
 
-12
-Azure VDI Project
-Azure Virtual Desktop on Microsoft Azure is a desktop and app virtualization service that runs on the cloud. Azure Virtual Desktop works across devices, like Windows, Mac, iOS, Android, and Linux, with apps that you can use to access remote desktops and apps. You can also use most modern browsers to access Azure Virtual Desktop-hosted experiences.
-
-
-
-
-
 13
 Terraform
 Main commands:
