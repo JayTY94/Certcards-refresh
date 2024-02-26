@@ -2008,72 +2008,149 @@ filename = f'my_file_{time_string}.txt'
 
 
 
+1
+Azure AI Search
+Azure AI Search (formerly known as "Azure Cognitive Search") provides secure information retrieval at scale over user-owned content in traditional and conversational search applications.
+
+
+
+
+
+
+2
+Azure AI Search
+Architecturally, a search service sits between the external data stores that contain your un-indexed data, and your client app that sends query requests to a search index and handles the response.
+
+
+
+
+
+
+3
+Azure AI Search
+In your client app, the search experience is defined using APIs from Azure AI Search, and can include relevance tuning, semantic ranking, autocomplete, synonym matching, fuzzy matching, pattern matching, filter, and sort.
+
+
+
+
+
+
+4
+Azure AI Search
+Indexing is an intake process that loads content into your search service and makes it searchable. Internally, inbound text is processed into tokens and stored in inverted indexes, and inbound vectors are stored in vector indexes. The document format that Azure AI Search can index is JSON.
+
+
+
+
+5
+Azure AI Search
+Querying can happen once an index is populated with searchable content, when your client app sends query requests to a search service and handles responses. All query execution is over a search index that you control.
+
+
+
+
+
+
+6
+Azure AI Search
+
+
+
+
+
+7
+Azure AI Search
+
+
+
+
+
+8
+Azure AI Search
+
+
+
+
+
+9
+Azure AI Search
+
+
+
+
+
+10
+Azure AI Search
+
+
+
+
+
 11
-Azure Naming Convention
+Azure AI Search
 
 
 
 
 
 12
-Azure Naming Convention
+Azure AI Search
 
 
 
 
 
 13
-Azure Naming Convention
+Azure AI Search
 
 
 
 
 
 14
-Azure Naming Convention
+Azure AI Search
 
 
 
 
 
 15
-Azure Naming Convention
+Azure AI Search
 
 
 
 
 
 16
-Azure Naming Convention
+Azure AI Search
 
 
 
 
 
 17
-Azure Naming Convention
+Azure AI Search
 
 
 
 
 
 18
-Azure Naming Convention
+Azure AI Search
 
 
 
 
 
 19
-Azure Naming Convention
+Azure AI Search
 
 
 
 
 
 20
-Azure Naming Convention
-
+Azure AI Search
 
 
 
