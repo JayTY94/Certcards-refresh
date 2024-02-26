@@ -3,31 +3,6 @@
 
 
 
-
-9
-MS Data Analyst
-The Data state captures anything that impacts the queries that Power BI sends to the semantic model. For example, if a slicer is included in the scope of the bookmark, the Data state retains the applied slicer items when the bookmark was created (or updated). It will also capture sort order and the drill depth of a visual because the query is impacted.
-
-
-
-
-
-10
-MS Data Analyst
-Enabling Business Intelligence: The main goal of semantic data models is to facilitate business intelligence. By presenting data in a business-friendly way, these models enable users to perform analysis, generate reports, and derive insights more efficiently.
-
-
-
-
-
-11
-Terraform
-When you pass a saved plan file to terraform apply, Terraform takes the actions in the saved plan without prompting you for confirmation. Use terraform show to inspect a saved plan file before applying it.
-
-
-
-
-
 12
 Azure VDI Project
 Azure Virtual Desktop on Microsoft Azure is a desktop and app virtualization service that runs on the cloud. Azure Virtual Desktop works across devices, like Windows, Mac, iOS, Android, and Linux, with apps that you can use to access remote desktops and apps. You can also use most modern browsers to access Azure Virtual Desktop-hosted experiences.
