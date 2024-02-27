@@ -2074,7 +2074,7 @@ Finish with Search Explorer, using a portal client to query the search index you
 
 8
 Azure AI Search
-
+An index is defined by a schema and saved to the search service, with data import following as a second step. This content exists within your search service, apart from your primary data stores, which is necessary for the millisecond response times expected in modern search applications. 
 
 
 
