@@ -2079,6 +2079,8 @@ An index is defined by a schema and saved to the search service, with data impor
 
 
 
+
+
 9
 Azure AI Search
 
