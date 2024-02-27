@@ -2062,7 +2062,12 @@ Semantic ranking is an extension of query execution. It adds language understand
 
 7
 Azure AI Search
+An end-to-end exploration of core search features can be accomplished in four steps:
 
+Decide on a tier and region. One free search service is allowed per subscription. All quickstarts can be completed on the free tier. For more capacity and capabilities, you'll need a billable tier.
+Create a search service in the Azure portal.
+Start with Import data wizard. Choose a built-in sample or a supported data source to create, load, and query an index in minutes.
+Finish with Search Explorer, using a portal client to query the search index you just created.
 
 
 
