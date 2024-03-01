@@ -2,11 +2,6 @@
 
 
 
-22
-DAX Studio
-The EVALUATE keyword is automatically included by Power BI in every query. It’s used to answer and create your visuals in Power BI. It’s also used to contain table expressions in a DAX query. You can’t pair EVALUATE with a scalar value such as a measure or a number. You can only use EVALUATE with table expressions.
-
-
 
 
 
