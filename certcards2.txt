@@ -2080,6 +2080,8 @@ GraphSearch in Azure is a service that allows users to query and analyze large-s
 
 
 
+
+
 11
 Microsoft Copilot Studio
 GraphSearch is designed to integrate seamlessly with other Azure services, allowing users to leverage the full capabilities of the Azure ecosystem. This includes integration with Azure Active Directory for authentication and access control, Azure Data Lake Storage for storing large volumes of graph data, and Azure Synapse Analytics for advanced analytics and data processing.
@@ -2087,9 +2089,13 @@ GraphSearch is designed to integrate seamlessly with other Azure services, allow
 
 
 
+
+
 12
 Microsoft Copilot Studio
 GraphSearch is built to scale horizontally, allowing users to handle large volumes of graph data and queries efficiently. It leverages distributed computing and storage to achieve high performance, enabling users to process complex graph queries in real-time or near real-time.
+
+
 
 
 
