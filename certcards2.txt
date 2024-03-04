@@ -2030,20 +2030,35 @@ Custom data (internal or external): supply your own source, such as a Power Auto
 
 6
 Microsoft Copilot Studio
+The URL used in your copilot represents the scope of content for generating responses. There are requirements and restrictions on some URLs.
+
+If the URL provided redirects to another top-level site, the content isn't included in results:
+
+For example, if www.fabrikam.com redirects to www.contoso.fabrikam.com, your copilot doesn't generate responses from content on either of those URLs.
 
 
 
 
+t
 
 7
 Microsoft Copilot Studio
+The URL used in your copilot represents the scope of content for generating responses. There are requirements and restrictions on some URLs.
 
+URLs that point to a website, requiring authentication or ones not indexed by Bing.
+
+For example, wikis and SharePoint sites require authentication, therefore can't be used:
+
+fabrikam.visualstudio.com/project/_wiki
+fabrikam.sharepoint.com
 
 
 
 
 8
 Microsoft Copilot Studio
+Your copilot has difficulty answering questions that require calculations, comparisons, or form submissions. Your copilot might not understand comparative and superlative terms such as better or best, latest, or cheapest in a question.
+
 
 
 
@@ -2051,6 +2066,8 @@ Microsoft Copilot Studio
 
 9
 Microsoft Copilot Studio
+Within a copilot's topic, you can add a Create generative answers node. This node allows you to specify more sources that the node searches based on your inputs. Information sources defined in the Generative answers node override sources you specified at the copilot level, which functions as a fallback.
+
 
 
 
@@ -2058,21 +2075,21 @@ Microsoft Copilot Studio
 
 10
 Microsoft Copilot Studio
-
+GraphSearch in Azure is a service that allows users to query and analyze large-scale graph data. It enables users to discover connections and relationships within complex datasets, such as social networks, recommendation systems, and knowledge graphs.
 
 
 
 
 11
 Microsoft Copilot Studio
-
+GraphSearch is designed to integrate seamlessly with other Azure services, allowing users to leverage the full capabilities of the Azure ecosystem. This includes integration with Azure Active Directory for authentication and access control, Azure Data Lake Storage for storing large volumes of graph data, and Azure Synapse Analytics for advanced analytics and data processing.
 
 
 
 
 12
 Microsoft Copilot Studio
-
+GraphSearch is built to scale horizontally, allowing users to handle large volumes of graph data and queries efficiently. It leverages distributed computing and storage to achieve high performance, enabling users to process complex graph queries in real-time or near real-time.
 
 
 
