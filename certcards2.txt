@@ -1977,3 +1977,147 @@ Azure DevTest Labs is a service in Microsoft Azure that allows you to create and
 
 
 
+1
+Microsoft Copilot Studio
+Sometimes, a copilot user asks a question that has no built topic. By default, the copilot prompts the user to rephrase their query. After two prompts, if the copilot still can't determine the user's intent, the copilot escalates to a live agent through the system Escalate topic.
+
+
+
+
+2
+Microsoft Copilot Studio
+The Boost conversations option in Copilot Studio helps solve that issue by using the natural language processing capabilities of Azure OpenAI. OpenAI's GPT technology with the AI already in Copilot Studio include transformer-based natural language understanding that helps the copilot to:
+
+Understand a user's intent by parsing what they type and determining what they're asking.
+Find, collate, and parse relevant information from a URL you specify.
+Create a plain language response for the copilot user.
+
+
+
+
+3
+Microsoft Copilot Studio
+
+
+
+
+
+4
+Microsoft Copilot Studio
+
+
+
+
+
+5
+Microsoft Copilot Studio
+
+
+
+
+
+6
+Microsoft Copilot Studio
+
+
+
+
+
+7
+Microsoft Copilot Studio
+
+
+
+
+
+8
+Microsoft Copilot Studio
+
+
+
+
+
+9
+Microsoft Copilot Studio
+
+
+
+
+
+10
+Microsoft Copilot Studio
+
+
+
+
+
+11
+Microsoft Copilot Studio
+
+
+
+
+
+12
+Microsoft Copilot Studio
+
+
+
+
+
+13
+Microsoft Copilot Studio
+
+
+
+
+
+14
+Microsoft Copilot Studio
+
+
+
+
+
+15
+Microsoft Copilot Studio
+
+
+
+
+
+16
+Microsoft Copilot Studio
+
+
+
+
+
+17
+Microsoft Copilot Studio
+
+
+
+
+
+18
+Microsoft Copilot Studio
+
+
+
+
+
+19
+Microsoft Copilot Studio
+
+
+
+
+
+20
+Microsoft Copilot Studio
+
+
+
+
+
