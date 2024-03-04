@@ -1,23 +1,3 @@
-1
-Azure VDI Project
-Packer uses the HashiCorp Configuration Language - HCL - designed to allow concise descriptions of the required steps to get to a build file. The main purpose of the HCL language is defining builds and sources. All other language features exist only to make the definition of builds more flexible and convenient.
-
-
-
-
-
-2
-Azure AI Search
-Indexing is an intake process that loads content into your search service and makes it searchable. Internally, inbound text is processed into tokens and stored in inverted indexes, and inbound vectors are stored in vector indexes. The document format that Azure AI Search can index is JSON.
-
-
-
-
-
-3
-Azure Pipelines
-Artifact
-An artifact is a collection of files or packages published by a build. Artifacts are made available for the tasks, such as distribution or deployment.
 
 
 
