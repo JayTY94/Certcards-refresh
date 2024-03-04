@@ -1997,6 +1997,8 @@ Create a plain language response for the copilot user.
 
 3
 Microsoft Copilot Studio
+When a copilot can't find a matching intent (topic) for the user's query, it uses generative answers and tries to answer a question. This behavior is called "Generative Answers for fallback." If the user's intent isn't matched to topics or generative answers, the fallback system topic is used. System topics can escalate a query for the copilot.
+
 
 
 
@@ -2004,14 +2006,24 @@ Microsoft Copilot Studio
 
 4
 Microsoft Copilot Studio
+Generative answers can use these sources:
 
+External resources:
+Bing Web Search—doesn't require external configuration
+Bing Custom Search—requires external configuration
 
 
 
 
 5
 Microsoft Copilot Studio
+Generative answers can use these sources:
 
+Internal resources:
+SharePoint (.aspx pages aren't supported)
+OneDrive for Business
+Documents uploaded to Dataverse
+Custom data (internal or external): supply your own source, such as a Power Automate Flow or from Skill.
 
 
 
