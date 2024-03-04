@@ -2096,6 +2096,9 @@ GraphSearch is built to scale horizontally, allowing users to handle large volum
 
 13
 Microsoft Copilot Studio
+Some sources require authentication, since the copilot makes calls on behalf of the user in the chat window. Calls use the account credentials from powerva.microsoft.com. The authentication settings configured in the copilot need manual authentication with the Service Provider type of Microsoft Entra ID.
+
+
 
 
 
