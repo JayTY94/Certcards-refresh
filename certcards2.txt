@@ -2106,14 +2106,14 @@ You can upload your own documents for your copilot to generate answers with gene
 
 16
 Microsoft Copilot Studio
-
+Due to memory limits, generative answers can only use SharePoint files that are under 3 MB. If a file is larger than 3 MB, consider splitting it into multiple smaller files.
 
 
 
 
 17
 Microsoft Copilot Studio
-
+Use content on SharePoint or OneDrive for Business for generative answers works by pairing your copilot with a URL, such as contoso.sharepoint.com/sites/policies. When a copilot user asks a question and the copilot doesn't have a topic to use for an answer, the copilot searches the URL and all sub-paths. For example, a URL such as contoso.sharepoint.com/sites also includes subpaths like contoso.sharepoint.com/sites/policies. 
 
 
 
