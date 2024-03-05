@@ -2,32 +2,6 @@
 
 
 
-
-4
-Bicep
-Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources 1.
-Bicep transpiles into ARM templates, providing a more concise and readable alternative to JSON 2.
-
-
-
-
-
-5
-MS Data Analyst
-The simplest way to show details is to use drillable visuals. The matrix visual is an excellent choice because it allows drilling on rows and/or columns. Therefore, by assigning hierarchies or multiple fields, report consumers can drill to the level of detail that they want. For example, the matrix rows could show years, and the report consumer could drill down to quarter, month, and date levels.
-
-
-
-
-
-6
-Azure VDI Project
-To save costs, you can configure your VMs for depth mode load balancing where users are fully allocated on one VM before moving to the next.
-
-
-
-
-
 7
 MS Data Analyst
 Usage metric reports are available for Power BI Pro users and can only be accessed by users with the role types of Admin, Member, or Contributor.
