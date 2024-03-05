@@ -2120,6 +2120,10 @@ Use content on SharePoint or OneDrive for Business for generative answers works 
 
 18
 Microsoft Copilot Studio
+When using SharePoint or OneDrive as a datasource, a best practice is to omit https:// from the URL. Recognized SharePoint URLs will be from the sharepoint.com domain.
+Sharepoint site URLs cannot be more than two levels deep.
+Content from aspx files on SharePoint won't be used to generate answers.
+
 
 
 
