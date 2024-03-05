@@ -2,14 +2,6 @@
 
 
 
-7
-MS Data Analyst
-Usage metric reports are available for Power BI Pro users and can only be accessed by users with the role types of Admin, Member, or Contributor.
-
-
-
-
-
 8
 Web Scraping
 HTTP request concept:
