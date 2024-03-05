@@ -2092,14 +2092,14 @@ Some sources require authentication, since the copilot makes calls on behalf of 
 
 14
 Microsoft Copilot Studio
-
+Prompt modification allows you to expand the capabilities of generative answers, or boosted conversations, by adding custom instructions. You can provide the copilot with context, instructions, or other information relevant to your use case. This is the system message that can be included at the start of a conversation with a generative AI model.
 
 
 
 
 15
 Microsoft Copilot Studio
-
+You can upload your own documents for your copilot to generate answers with generative AI. The documents are used across your copilot, but you can specify individual nodes that shouldn't use uploaded documents. Uploaded documents are stored securely in Dataverse. The number of documents you can upload is only limited by the available file storage for your Dataverse environment.
 
 
 
