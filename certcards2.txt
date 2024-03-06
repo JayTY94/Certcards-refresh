@@ -2126,7 +2126,10 @@ This returns a list of all <img> tags in the HTML document parsed by the beautif
 
 5
 Site Scraping
+One of the features of Beautiful Soup is the ability to search for specific kinds of tags whose attributes match certain values. For example, if you want to find all the <img> tags that have a src attribute equal to the value /static/dionysus.jpg, then you can provide the following additional argument to .find_all():
 
+>>> soup.find_all("img", src="/static/dionysus.jpg")
+[<img src="/static/dionysus.jpg"/>]
 
 
 
