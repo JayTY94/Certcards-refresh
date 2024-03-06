@@ -2,22 +2,6 @@
 
 
 
-8
-Web Scraping
-HTTP request concept:
-Basic authentication: This method involves sending the username and password as part of the request header. The credentials are encoded using Base64 and sent in the Authorization header with the Basic keyword. This method is simple to implement but is not very secure, as the credentials are sent in clear text.
-
-
-
-
-
-9
-MS Data Analyst
-Report Builder or Power BI Report Builder: To create Paginated Reports, you can use either SQL Server Report Builder or Power BI Report Builder, both of which are free authoring tools provided by Microsoft.
-
-
-
-
 
 10
 MS Data Analyst
