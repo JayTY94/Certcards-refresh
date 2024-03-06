@@ -2086,3 +2086,151 @@ SharePoint uses ASPX pages for its master pages and page layouts. Master pages d
 
 
 
+1
+Site Scraping
+Often, you use re.search() to search for a particular pattern inside a string. This function is somewhat more complicated than re.findall() because it returns an object called MatchObject that stores different groups of data. This is because there might be matches inside other matches, and re.search() returns every possible result.
+
+
+
+
+
+
+2
+Site Scraping
+There’s one more function in the re module that’s useful for parsing out text. re.sub(), which is short for substitute, allows you to replace the text in a string that matches a regular expression with new text. It behaves sort of like the .replace() string method.
+
+
+
+
+3
+Site Scraping
+>>> string = "Everything is <replaced> if it's in <tags>."
+>>> string = re.sub("<.*>", "ELEPHANTS", string)
+>>> string
+'Everything is ELEPHANTS.'
+re.sub() uses the regular expression "<.*>" to find and replace everything between the first < and the last >, which spans from the beginning of <replaced> to the end of <tags>. This is because Python’s regular expressions are greedy, meaning they try to find the longest possible match when characters like * are used.
+
+
+
+
+
+
+4
+Site Scraping
+
+
+
+
+
+5
+Site Scraping
+
+
+
+
+
+6
+Site Scraping
+
+
+
+
+
+7
+Site Scraping
+
+
+
+
+
+8
+Site Scraping
+
+
+
+
+
+9
+Site Scraping
+
+
+
+
+
+10
+Site Scraping
+
+
+
+
+
+11
+Site Scraping
+
+
+
+
+
+12
+Site Scraping
+
+
+
+
+
+13
+Site Scraping
+
+
+
+
+
+14
+Site Scraping
+
+
+
+
+
+15
+Site Scraping
+
+
+
+
+
+16
+Site Scraping
+
+
+
+
+
+17
+Site Scraping
+
+
+
+
+
+18
+Site Scraping
+
+
+
+
+
+19
+Site Scraping
+
+
+
+
+
+20
+Site Scraping
+
+
+
+
+
