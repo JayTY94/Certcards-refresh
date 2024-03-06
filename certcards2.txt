@@ -2117,7 +2117,9 @@ re.sub() uses the regular expression "<.*>" to find and replace everything betwe
 
 4
 Site Scraping
-
+>>> soup.find_all("img")
+[<img src="/static/dionysus.jpg"/>, <img src="/static/grapes.png"/>]
+This returns a list of all <img> tags in the HTML document parsed by the beautifulsoup object soup. The objects in the list look like they might be strings representing the tags, but they’re actually instances of the Tag object provided by Beautiful Soup. Tag objects provide a simple interface for working with the information they contain.
 
 
 
