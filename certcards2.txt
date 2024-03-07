@@ -3,55 +3,6 @@
 
 
 
-
-
-
-11
-Terraform
-For some providers like AWS, Terraform could theoretically use something like AWS tags. Early prototypes of Terraform actually had no state files and used this method. However, we quickly ran into problems. The first major issue was a simple one: not all resources support tags, and not all cloud providers support tags.
-
-
-
-
-
-12
-MS Data Analyst
-Line Width and Type: These are usually used to represent discrete data1. Different line widths can represent different data magnitudes, while different line types (solid, dashed, dotted) can represent different data categories1.
-
-
-
-
-
-13
-The Picture of Doiran Gray
-Travail (noun):
-
-Painful or laborious effort; hard work, especially that which is physical or strenuous.
-
-The process of giving birth; labor or childbirth.
-
-Example sentence: The completion of the project required much travail, but the team's efforts ultimately led to its successful implementation.
-
-
-
-
-
-14
-MS Data Analyst
-To view usage metric reports, go to the pertinent workspace. Find the report or dashboard that you want to see usage metrics for. For example, if you want to see the usage metrics report for Sales Data, select the ellipsis (...), and then select View usage metrics report from the drop-down menu.
-
-
-
-
-
-15
-MS Data Analyst
-Grouping Hierarchies: When you group data, you can create hierarchies that are useful for drilling down into data in reports and visualizations.
-
-
-
-
-
 16
 Azure VDI Project
 Organization of Policies: Policies in the Local Group Policy Editor are organized into two main categories: Computer Configuration and User Configuration. Under these categories, you'll find three subcategories: Software Settings, Windows Settings, and Administrative Templates. These sections allow you to configure a wide range of system settings.
