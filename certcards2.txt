@@ -2136,14 +2136,14 @@ One of the features of Beautiful Soup is the ability to search for specific kind
 
 6
 Site Scraping
-
+Asynchronous: AJAX, which stands for Asynchronous JavaScript and XML, allows web pages to send and retrieve data from a server asynchronously, without interfering with the display and behavior of the existing page. This means that the user can continue to interact with the page while data is being exchanged in the background.
 
 
 
 
 7
 Site Scraping
-
+Dynamic content: AJAX, which stands for Asynchronous JavaScript and XML, techniques can be used to dynamically update the content of a web page without requiring a full page refresh. This can improve the user experience by providing faster and more seamless updates.
 
 
 
