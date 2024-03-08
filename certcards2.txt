@@ -1,49 +1,6 @@
 
 
 
-
-
-16
-Azure VDI Project
-Organization of Policies: Policies in the Local Group Policy Editor are organized into two main categories: Computer Configuration and User Configuration. Under these categories, you'll find three subcategories: Software Settings, Windows Settings, and Administrative Templates. These sections allow you to configure a wide range of system settings.
-
-
-
-
-
-17
-MS Data Analyst
-Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
-Production - Where an expansive user audience can use tested reports that are reliable and accurate. This stage is the final one of the deployment pipeline.
-
-
-
-
-
-18
-Azure VDI Project
-The HCL language uses configuration files that are named with the .pkr.hcl file extension. Configuration files must always use UTF-8 encoding, and by convention are usually maintained with Unix-style line endings (LF) rather than Windows-style line endings (CRLF), though both are accepted.
-
-
-
-
-
-19
-MS Data Analyst
-Admin users who have permissions to certify a dataset are defined in the Dataset Certification tenant admin setting.
-
-
-
-
-
-20
-MS Data Analyst
-Select View insights to open the Quick Insights page for the selected semantic model, and then view the insights that Power BI has found for you. The Quick Insights page contains up to 32 separate insight cards, and each card has a chart or graph plus a short description.
-
-
-
-
-
 21
 Azure AI Search
 An index is defined by a schema and saved to the search service, with data import following as a second step. This content exists within your search service, apart from your primary data stores, which is necessary for the millisecond response times expected in modern search applications.
