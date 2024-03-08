@@ -2101,13 +2101,28 @@ Dynamic content: AJAX, which stands for Asynchronous JavaScript and XML, techniq
 
 8
 Site Scraping
-
+This project involved me writing and then freezing a Python script that would:
+    Navigate to a specific website
+    Use Selenium to authenticate
+    Use Selenium to navigate to desirable data
+    Use Selenium to extract row data
+    Use Pandas to save row data to an excel file
+    Use win32com.client to email excel sheet to self
 
 
 
 
 9
 Site Scraping
+Navigate to a specific website with Selenium
+
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+
+site_url = "https://basec.sicomm.net/vendorlogin/"
+driver = webdriver.Chrome()
+driver.get(site_url)
 
 
 
@@ -2115,20 +2130,38 @@ Site Scraping
 
 10
 Site Scraping
-
+Use Selenium to authenticate
+Need to find elements By.ID and then send keys to type into those boxes. Then submit form.
+  username_field = driver.find_element(By.ID, 'inputUserId')
+  password_field = driver.find_element(By.ID, 'inputPassword')
+  username_field.send_keys('Username')
+  password_field.send_keys('Password')
+  sleep(3)
+  password_field.submit()
 
 
 
 
 11
 Site Scraping
-
-
+Use Selenium to navigate to desirable data - this involved moving the driver focus to iframes and then interacting with elements there
+  iframe = driver.find_elements(By.ID, 'tool')[0]
+  driver.switch_to.frame(iframe)
+  ...
+  driver.switch_to.parent_frame()
+  driver.switch_to.frame('data')
+  sleep(3)
 
 
 
 12
 Site Scraping
+Use Selenium to extract row data - I did this by creating a list of all tr elements and filtering that list down to what I wanted.
+
+  # Get all rows of all tables
+  all_table_rows = driver.find_elements(By.TAG_NAME, 'tr')
+  # Identify data rows desired
+  solicitation_rows = [row for row in all_table_rows if 'solicitation' in row.get_attribute('id')]
 
 
 
@@ -2136,6 +2169,12 @@ Site Scraping
 
 13
 Site Scraping
+Use win32com.client to email excel sheet to self
+  import win32com.client as win32
+  ...
+  # Open up an outlook email
+  outlook = win32.gencache.EnsureDispatch('Outlook.Application')
+  newmail = outlook.CreateItem(0)
 
 
 
@@ -2143,6 +2182,11 @@ Site Scraping
 
 14
 Site Scraping
+I had to use the os.path abspath function to get the absolute path of the file I created for the sake of sending it as an email attachment.
+  from os.path import abspath
+  ...
+  newmail.Attachments.Add(Source = abspath(relative_output_path))
+  newmail.Send()
 
 
 
