@@ -1,11 +1,3 @@
-1
-Microsoft Copilot Studio
-Generative answers can use these sources:
-
-External resources:
-Bing Web Search—doesn't require external configuration
-Bing Custom Search—requires external configuration
-
 
 
 
