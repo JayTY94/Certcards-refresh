@@ -2150,7 +2150,12 @@ I had to use the os.path abspath function to get the absolute path of the file I
 
 
 15
-Site Scraping
+Power BI
+DAX Function
+HASONEVALUE(<columnName>)  
+Returns TRUE when the context for columnName has been filtered down to one distinct value only. Otherwise is FALSE.
+
+
 
 
 
