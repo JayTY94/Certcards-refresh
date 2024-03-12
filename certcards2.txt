@@ -2,14 +2,6 @@
 
 
 
-
-
-
-
-
-
-
-
 12
 MS Data Analyst
 Report consumers can include or exclude one or more groups in a visual. Include keeps the selection and removes all other groups. Exclude removes one or more groups from the visual.
