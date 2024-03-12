@@ -4,17 +4,7 @@
 
 
 
-10
-MS Data Analyst
-The Reduce number of queries sent by Query reduction setting disables the default behavior that automatically applies cross highlighting and filtering of visuals within the same report. The Slicers Query reduction settings allow you to instantly apply slicer changes and add an Apply button to each slicer. The Filters Query reduction settings allow you to instantly apply basic filter changes. The Persistent filters of Report settings allow you to prevent users from saving filters in the Power BI service.
 
-
-
-
-
-11
-Terraform
-Terraform expects to be invoked from a working directory that contains configuration files written in the Terraform language. Terraform uses configuration content from this directory, and also uses the directory to store settings, cached plugins and modules, and sometimes state data.
 
 
 
@@ -2078,3 +2068,6 @@ A trigger is set up to tell the pipeline when to run. You can configure a pipeli
 
 
 
+234
+MS Data Analyst
+The Filters Query reduction settings allow you to instantly apply basic filter changes. The Persistent filters of Report settings allow you to prevent users from saving filters in the Power BI service.
