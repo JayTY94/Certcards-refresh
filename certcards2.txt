@@ -4,32 +4,6 @@
 
 
 
-
-7
-Terraform
-During init, the configuration is searched for module blocks, and the source code for referenced modules is retrieved from the locations given in their source arguments.
-
-
-
-
-
-8
-Workera.ai
-Azure DevTest Labs is a service in Microsoft Azure that allows you to create and manage environments for development and testing purposes. It provides a fast and easy way to set up environments in the cloud while optimizing cost management.
-
-
-
-
-
-9
-Web Scraping
-HTTP request concept:
-Digest authentication: This method is similar to basic authentication but adds an extra layer of security by hashing the credentials before sending them. The server sends a nonce value to the client, which is used to create a hash of the username, password, and nonce. This hash is then sent in the Authorization header with the Digest keyword.
-
-
-
-
-
 10
 MS Data Analyst
 The Reduce number of queries sent by Query reduction setting disables the default behavior that automatically applies cross highlighting and filtering of visuals within the same report. The Slicers Query reduction settings allow you to instantly apply slicer changes and add an Apply button to each slicer. The Filters Query reduction settings allow you to instantly apply basic filter changes. The Persistent filters of Report settings allow you to prevent users from saving filters in the Power BI service.
