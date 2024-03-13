@@ -4,20 +4,6 @@
 
 
 
-
-
-
-
-15
-Azure Naming Convention
-All Azure resource types have a scope that defines the level of that resource. Also, A resource must have a unique name within its scope.
-
-For example, a virtual network has the scope of a resource group, which means that there can be only one network named vnet-prod-westus-001 in a specific resource group.
-
-
-
-
-
 16
 MS Data Analyst
 The slicer layout is responsive to the data type of the field. Field data types are either text, numeric, or date. By default, a text field will produce a list slicer, a numeric field will produce a numeric range "between" filter, and a date field will produce a date range "between" filter, allowing value selection with calendar controls.
