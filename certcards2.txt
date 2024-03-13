@@ -4,9 +4,6 @@
 
 
 
-16
-MS Data Analyst
-The slicer layout is responsive to the data type of the field. Field data types are either text, numeric, or date. By default, a text field will produce a list slicer, a numeric field will produce a numeric range "between" filter, and a date field will produce a date range "between" filter, allowing value selection with calendar controls.
 
 
 
@@ -2024,3 +2021,18 @@ A trigger is set up to tell the pipeline when to run. You can configure a pipeli
 234
 MS Data Analyst
 The Filters Query reduction settings allow you to instantly apply basic filter changes. The Persistent filters of Report settings allow you to prevent users from saving filters in the Power BI service.
+
+
+
+
+
+
+235
+General
+To comment a line out in SQL, start it with "--".
+
+Otherwise "/* comment text, including line breaks */" works, like in Java.
+
+
+
+
