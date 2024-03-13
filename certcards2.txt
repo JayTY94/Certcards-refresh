@@ -2,27 +2,7 @@
 
 
 
-12
-MS Data Analyst
-Report consumers can include or exclude one or more groups in a visual. Include keeps the selection and removes all other groups. Exclude removes one or more groups from the visual.
 
-These filters appear in the Filters pane as filter cards titled Included or Excluded. The report consumer can use the Filters pane to view, modify, or remove them.
-
-
-
-
-
-13
-Azure VDI Project
-3. What must you set up to grant Autoscale the necessary permissions to turn session host VMs on and off? 
-You must set up a custom RBAC role on the subscription to grant Autoscale the necessary permissions to turn session host VMs on and off.
-
-
-
-
-
-14
-Azure Naming Convention
 
 
 
