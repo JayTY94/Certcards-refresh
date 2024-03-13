@@ -30,11 +30,6 @@ A working relationship can be created as long as there is at least one common co
 
 
 
-19
-Azure VDI Project
-
-
-
 
 
 20
