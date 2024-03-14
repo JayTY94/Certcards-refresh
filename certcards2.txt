@@ -2029,3 +2029,6 @@ Otherwise "/* comment text, including line breaks */" works, like in Java.
 
 
 
+222
+General
+Gists are lightweight and convenient for sharing small pieces of code or content, while regular Git repositories are more comprehensive and suitable for hosting larger projects with multiple contributors and complex structures.
