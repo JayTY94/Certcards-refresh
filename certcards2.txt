@@ -2,13 +2,6 @@
 
 
 
-
-
-
-
-
-
-
 17
 Azure VDI Project
 Administrative Privileges: To access and make changes using the Local Group Policy Editor, you need administrative privileges on your computer. Without these privileges, you won't be able to modify most settings.
