@@ -2,22 +2,6 @@
 
 
 
-17
-Azure VDI Project
-Administrative Privileges: To access and make changes using the Local Group Policy Editor, you need administrative privileges on your computer. Without these privileges, you won't be able to modify most settings.
-
-
-
-
-
-18
-MS Data Analyst
-3. Which of the following statements about relationships in Power BI Desktop is true? 
-Relationships can be created between tables that contain different types of data.
-A working relationship can be created as long as there is at least one common column between them.
-
-
-
 
 
 
