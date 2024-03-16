@@ -2,53 +2,6 @@
 
 
 
-
-
-
-
-
-26
-Terraform
-Most providers configure a specific infrastructure platform (either cloud or self-hosted).
-Terraform configurations must declare which providers they require so that Terraform can install and use them.
-
-
-
-
-
-27
-Terraform
-The primary purpose of Terraform state is to store bindings between objects in a remote system and resource instances declared in your configuration. When Terraform creates a remote object in response to a change of configuration, it will record the identity of that remote object against a particular resource instance, and then potentially update or delete that object in response to future configuration changes.
-
-
-
-
-
-28
-Terraform
-Most Terraform providers are published separately from Terraform as plugins. During init, Terraform searches the configuration for both direct and indirect references to providers and attempts to install the plugins for those providers.
-
-
-
-
-
-29
-Azure VDI Project
-Type of HCL Block:
-locals blocks contain configuration for variables that can be created using HCL functions or data sources, or composited from variables created in the variables blocks.
-
-
-
-
-
-30
-Microsoft Copilot Studio
-When a copilot can't find a matching intent (topic) for the user's query, it uses generative answers and tries to answer a question. This behavior is called "Generative Answers for fallback." If the user's intent isn't matched to topics or generative answers, the fallback system topic is used. System topics can escalate a query for the copilot.
-
-
-
-
-
 31
 MS Data Analyst
 When filters aren't locked, report consumers can modify them. Specifically, they can:
