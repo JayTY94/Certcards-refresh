@@ -1957,3 +1957,31 @@ Customer-managed keys (CMK), on the other hand, are keys read, created, deleted,
 34
 Azure Key Vault
 The Azure Key Vault Standard and Premium tiers are billed on a transactional basis, with an additional monthly per-key charge for premium hardware-backed keys. Managed HSM, Dedicated HSM, and Payments HSM don't charge on a transactional basis; instead they are always-in-use devices that are billed at a fixed hourly rate.
+
+
+
+
+
+
+60
+Azure Key Vault
+Key sovereignty is when the customer's organization has full and exclusive control of their keys, including control over what users and services can access the keys and key management policies.
+
+
+
+
+
+
+60
+Azure Key Vault
+Single tenancy refers to a single dedicated instance of an application deployed for each customer, rather than a shared instance amongst multiple customers. The need for single tenant products is often found as an internal compliance requirement in financial service industries.
+
+
+
+
+60
+Azure Key Vault
+Do you have a requirement for FIPS 140 in hardware level 2 or 3? If No, Azure Key Vault Standard
+If Yes, Possible Key Vault Premium or an HSM option.
+
+
