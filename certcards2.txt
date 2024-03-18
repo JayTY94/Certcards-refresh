@@ -1,63 +1,8 @@
-1
-MS Data Analyst
-When filters aren't locked, report consumers can modify them. Specifically, they can:
-
-	• Select the eraser icon to clear the filter
-	• Apply a new filter selection
-	• Change the filter type, such as from basic to advanced (unless disabled for the report).
-	• Use the search box to search for values to filter by (unless disabled for the report).
 
 
 
 
 
-2
-MS Data Analyst
-Report authors can configure report or visual settings to control filter options and behavior. With report options, you can:
-
-Disable persistent filters. (Persistent filters arecovered in unit 5.)
-Hide visual headers for all visuals or for a specific visual. When the visual header is hidden, report consumers can't hover the cursor over the Filter icon to determine the filters that are applied to the visual. (The Filter icon is covered in Unit 5).
-
-
-
-
-
-3
-Terraform
-The Terraform Registry is the main source for publicly available Terraform providers 3.
-The Terraform Registry offers a browsable and searchable interface for finding providers, and makes it possible for Terraform CLI to automatically install any of the providers it hosts 3.
-
-
-
-
-
-4
-Site Scraping
-Use win32com.client to email excel sheet to self
-  import win32com.client as win32
-  ...
-  # Open up an outlook email
-  outlook = win32.gencache.EnsureDispatch('Outlook.Application')
-  newmail = outlook.CreateItem(0)
-
-
-
-
-
-5
-Workera.ai
-Amazon Rekognition, Video Analysis:
-
-Amazon Rekognition can analyze videos by detecting and tracking people, faces, and objects over time.
-It provides insights into the content of videos, making it suitable for applications like content moderation and surveillance.
-
-
-
-
-
-6
-MS Data Analyst
-If the Forecast section isn't available for a line chart, it’s probably because the visual hasn’t been correctly configured. Forecasting is only available when two conditions are met: the axis has a single field of type date, and there’s only one value field.
 
 
 
