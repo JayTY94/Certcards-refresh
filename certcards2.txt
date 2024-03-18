@@ -1956,3 +1956,36 @@ Key Vault also supports a contentType field for secrets. Clients may specify the
 
 34
 Azure Key Vault Secrets
+When dealing with REST APIs or SDKs for Azure Key Vault, you'll commonly encounter date-time strings in ISO 8601 format, which look something like YYYY-MM-DDTHH:MM:SSZ for Coordinated Universal Time (UTC), or Unix timestamps which count the seconds since the Unix epoch (00:00:00 UTC on 1 January 1970). 
+
+
+
+
+
+66
+Azure Key Vault
+Azure Key Vault enables Microsoft Azure applications and users to store and use several types of secret/key data: keys, secrets, and certificates. Keys, secrets, and certificates are collectively referred to as "objects".
+
+
+
+
+
+66
+Azure Key Vault
+Objects are uniquely identified within Key Vault using a case-insensitive identifier called the object identifier. No two objects in the system have the same identifier, regardless of geo-location. The identifier consists of a prefix that identifies the key vault, object type, user provided object name, and an object version.
+
+
+
+
+
+66
+Azure Key Vault
+Objects are uniquely identified within Key Vault using a case-insensitive identifier called the object identifier. Identifiers that don't include the object version are referred to as "base identifiers". Key Vault object identifiers are also valid URLs, but should always be compared as case-insensitive strings.
+
+
+
+
+
+66
+Azure Key Vault
+
