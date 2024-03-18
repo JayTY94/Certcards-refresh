@@ -1931,6 +1931,29 @@ Objects are uniquely identified within Key Vault using a case-insensitive identi
 
 
 
-66
-Azure Key Vault
 
+
+
+34
+Azure Key Vault
+Platform-managed keys (PMKs) are encryption keys generated, stored, and managed entirely by Azure. Customers do not interact with PMKs. The keys used for Azure Data Encryption-at-Rest, for instance, are PMKs by default.
+
+
+
+
+
+
+
+
+34
+Azure Key Vault
+Customer-managed keys (CMK), on the other hand, are keys read, created, deleted, updated, and/or administered by one or more customers. Keys stored in a customer-owned key vault or hardware security module (HSM) are CMKs. Bring Your Own Key (BYOK) is a CMK scenario in which a customer imports (brings) keys from an outside storage location into an Azure key management service
+
+
+
+
+
+
+34
+Azure Key Vault
+The Azure Key Vault Standard and Premium tiers are billed on a transactional basis, with an additional monthly per-key charge for premium hardware-backed keys. Managed HSM, Dedicated HSM, and Payments HSM don't charge on a transactional basis; instead they are always-in-use devices that are billed at a fixed hourly rate.
