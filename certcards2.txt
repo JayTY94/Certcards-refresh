@@ -2013,7 +2013,13 @@ These items must be reset to their default settings before you capture an image.
 
 2
 Azure VM Image Builder
+Use the Sysprep.exe tool to generalize a Windows VM. Follow these steps:
 
+Sign in to the Windows VM.
+Open an elevated Command Prompt.
+Navigate to the C:\windows\system32\sysprep folder.
+Run sysprep.exe.
+In the System Preparation Tool dialog box, select the settings in the following table, and then select OK.
 
 
 
