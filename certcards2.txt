@@ -2012,6 +2012,8 @@ In the System Preparation Tool dialog box, select the settings in the following 
 
 3
 Azure VM Image Builder
+Azure Stack HCI (Hyper-Converged Infrastructure) is a hybrid cloud solution provided by Microsoft that combines on-premises infrastructure with Azure services. Azure Stack HCI provides seamless integration with Azure services, enabling organizations to leverage features like Azure Backup, Azure Site Recovery, Azure Monitor, and more. 
+
 
 
 
@@ -2019,6 +2021,8 @@ Azure VM Image Builder
 
 4
 Azure VM Image Builder
+Hyper-Converged Infrastructure: Azure Stack HCI is built on hyper-converged infrastructure principles, which means it combines compute, storage, and networking functionalities in a single software-defined solution. This consolidation simplifies management, reduces hardware costs, and improves scalability compared to traditional infrastructure setups.
+
 
 
 
@@ -2026,6 +2030,11 @@ Azure VM Image Builder
 
 5
 Azure VM Image Builder
+Hybrid Cloud Capabilities: Azure Stack HCI extends the capabilities of on-premises infrastructure by seamlessly connecting to Azure services. It allows organizations to build and manage applications across both on-premises environments and the cloud, providing a consistent platform for development, deployment, and management. 
+
+
+
+
 
 
 
