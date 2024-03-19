@@ -1985,3 +1985,162 @@ Do you have a requirement for FIPS 140 in hardware level 2 or 3? If No, Azure Ke
 If Yes, Possible Key Vault Premium or an HSM option.
 
 
+
+
+
+91
+Azure Key Vault
+SSL/TLS Offload is supported on Azure Managed HSM and Azure Dedicated HSM. Customers have improved high availability, security, and best price point on Azure Managed HSM for F5 and Nginx.
+
+
+
+
+
+
+1
+Azure VM Image Builder
+when you create a VM the operating system data is updated with several items, including:
+
+The host name of your VM.
+The administrator username and credentials.
+Log files.
+Security identifiers for various operating system services.
+
+These items must be reset to their default settings before you capture an image. When you reset these items in a VM, you generalize the VM.
+
+
+
+
+2
+Azure VM Image Builder
+
+
+
+
+
+3
+Azure VM Image Builder
+
+
+
+
+
+4
+Azure VM Image Builder
+
+
+
+
+
+5
+Azure VM Image Builder
+
+
+
+
+
+6
+Azure VM Image Builder
+
+
+
+
+
+7
+Azure VM Image Builder
+
+
+
+
+
+8
+Azure VM Image Builder
+
+
+
+
+
+9
+Azure VM Image Builder
+
+
+
+
+
+10
+Azure VM Image Builder
+
+
+
+
+
+11
+Azure VM Image Builder
+
+
+
+
+
+12
+Azure VM Image Builder
+
+
+
+
+
+13
+Azure VM Image Builder
+
+
+
+
+
+14
+Azure VM Image Builder
+
+
+
+
+
+15
+Azure VM Image Builder
+
+
+
+
+
+16
+Azure VM Image Builder
+
+
+
+
+
+17
+Azure VM Image Builder
+
+
+
+
+
+18
+Azure VM Image Builder
+
+
+
+
+
+19
+Azure VM Image Builder
+
+
+
+
+
+20
+Azure VM Image Builder
+
+
+
+
+
