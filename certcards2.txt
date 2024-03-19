@@ -8,22 +8,6 @@
 
 
 
-7
-MS Data Analyst
-When a requirement is in place to lay out many slicers, consider creating a page that is dedicated to showing all slicers. For example, the page could be named Slicers. Sync the slicers to other pages and then set the slicers as hidden on those pages. This design technique will require that report consumers should always go to the Slicers page to modify slicer settings.
-
-
-
-
-
-8
-MS Data Analyst
-The Top N filter type applies to text and date fields that are available only in visual-level filters. This filter type helps you filter by the top (or bottom) number of items, like the top five products by revenue. To configure the filter, you must pass in a field that's summarized, like sales revenue.
-
-
-
-
-
 9
 MS Data Analyst
 Slicer filtering options are less complex than the advanced filter options that are possible in the Filters pane. For example, you can't configure a Top N slicer.
@@ -2020,6 +2004,8 @@ Open an elevated Command Prompt.
 Navigate to the C:\windows\system32\sysprep folder.
 Run sysprep.exe.
 In the System Preparation Tool dialog box, select the settings in the following table, and then select OK.
+
+
 
 
 
