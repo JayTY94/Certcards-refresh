@@ -2042,6 +2042,9 @@ Hybrid Cloud Capabilities: Azure Stack HCI extends the capabilities of on-premis
 
 6
 Azure VM Image Builder
+Integrate image build pipelines from your own organization.
+
+Enables integration with your existing image build procedures (pipelines). You can link to Azure Image Builder from your pipeline, or use the simple Preview Image Builder Azure DevOps Task.
 
 
 
@@ -2049,13 +2052,19 @@ Azure VM Image Builder
 
 7
 Azure VM Image Builder
+Azure Image Builder is a fully managed Azure service that you can access through an Azure resource provider. The Azure Image Builder process has three main parts:
 
+Source
+Customizer
+Distribute
 
 
 
 
 8
 Azure VM Image Builder
+Azure Resource Providers are essentially services within the Azure ecosystem that manage specific types of Azure resources. When you interact with Azure, whether through the Azure Portal, Azure CLI, Azure PowerShell, REST APIs, or SDKs, you're often dealing with these resources. Each resource provider specializes in a particular category of resources, such as virtual machines, storage accounts, databases, etc.
+
 
 
 
@@ -2063,6 +2072,8 @@ Azure VM Image Builder
 
 9
 Azure VM Image Builder
+Resource Management: Resource Providers are responsible for managing the lifecycle of Azure resources within their domain. This includes creating, updating, deleting, and querying resources.
+
 
 
 
@@ -2070,28 +2081,34 @@ Azure VM Image Builder
 
 10
 Azure VM Image Builder
+Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
 
+Microsoft.Compute manages resources related to virtual machines, virtual machine scale sets, and related components.
+Microsoft.Storage manages resources related to storage accounts and storage services.
 
 
 
 
 11
 Azure VM Image Builder
+Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
 
+Microsoft.Network manages resources such as virtual networks, public IP addresses, and network security groups.
+Microsoft.KeyVault manages resources related to secure key management and secrets storage.
 
 
 
 
 12
 Azure VM Image Builder
-
+Registration: Some Azure Resource Providers may need to be registered before you can use their resources. Registration is typically required for preview features or services that are not enabled by default. The registrationState property you saw in the commands indicates whether a provider is registered or not.
 
 
 
 
 13
 Azure VM Image Builder
-
+Role-Based Access Control (RBAC): Azure Resource Providers adhere to Azure's RBAC model, allowing administrators to grant permissions at a granular level. This means you can control who has access to which resources and what actions they can perform.
 
 
 
