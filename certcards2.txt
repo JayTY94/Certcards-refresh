@@ -2114,14 +2114,18 @@ Role-Based Access Control (RBAC): Azure Resource Providers adhere to Azure's RBA
 
 
 14
-Azure VM Image Builder
+General
+You can use Ctrl+U to clear up to the beginning of a line in a Bash command line.
+
 
 
 
 
 
 15
-Azure VM Image Builder
+General
+SED command in UNIX stands for stream editor and it can perform lots of functions on file like searching, find and replace, insertion or deletion. Though most common use of SED command in UNIX is for substitution or for find and replace. By using SED you can edit files even without opening them, which is much quicker way to find and replace something in file, than first opening that file in VI Editor and then changing it.
+
 
 
 
@@ -2129,21 +2133,31 @@ Azure VM Image Builder
 
 16
 Azure VM Image Builder
+1. Which of the following procedures should an administrator employ to generalize a Windows VM in preparation for creating a managed image in Azure? 
 
+Run Sysprep.exe, select the Generalize check box, and then in the Shutdown Options list, select Shutdown.
 
 
 
 
 17
 Azure VM Image Builder
+2. What is the first step an administrator needs to perform when creating a managed image from a generalized VM that is in the Stopped (deallocated) status? 
 
+Capture the image.
+That's correct. The administrator must capture the image after it's been generalized and is stopped and deallocated.
 
 
 
 
 18
 Azure VM Image Builder
+3. Which of the following Azure CLI commands should an administrator run to start an image build using Azure Image Builder? 
 
+az resource invoke-action.
+NOT
+az resource create.
+az vm create.
 
 
 
