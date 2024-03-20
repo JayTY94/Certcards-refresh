@@ -3,27 +3,6 @@
 
 
 
-
-
-
-
-11
-Azure Pipelines
-Stage
-Stages are the primary divisions in a pipeline: "build the app," "run integration tests," and "deploy to user acceptance testing" are good examples of stages.
-
-
-
-
-
-12
-Azure Naming Convention
-Some resource names have a global scope, such as a name for a Platform as a Service (PaaS) that has a public endpoint or a virtual machine DNS label. A resource in a global scope must have a name that's unique across the entire Azure platform.
-
-
-
-
-
 13
 Azure AI Search
 Architecturally, a search service sits between the external data stores that contain your un-indexed data, and your client app that sends query requests to a search index and handles the response.
