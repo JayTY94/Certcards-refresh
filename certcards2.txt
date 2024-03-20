@@ -3,30 +3,6 @@
 
 
 
-13
-Azure AI Search
-Architecturally, a search service sits between the external data stores that contain your un-indexed data, and your client app that sends query requests to a search index and handles the response.
-
-
-
-
-
-14
-Terraform
-Refresh-only mode: creates a plan whose goal is only to update the Terraform state and any root module output values to match changes made to remote objects outside of Terraform. This can be useful if you've intentionally changed one or more remote objects outside of the usual workflow (e.g. while responding to an incident) and you now need to reconcile Terraform's records with those changes.
-
-
-
-
-
-15
-Microsoft Copilot Studio
-Some sources require authentication, since the copilot makes calls on behalf of the user in the chat window. Calls use the account credentials from powerva.microsoft.com. The authentication settings configured in the copilot need manual authentication with the Service Provider type of Microsoft Entra ID.
-
-
-
-
-
 16
 Terraform
 When using Terraform on Windows, we recommend using the Windows Command Prompt (cmd.exe). When you pass a variable value to Terraform from the Windows Command Prompt, use double quotes " around the argument:
