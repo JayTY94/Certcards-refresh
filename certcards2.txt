@@ -3,13 +3,6 @@
 
 
 
-16
-Terraform
-When using Terraform on Windows, we recommend using the Windows Command Prompt (cmd.exe). When you pass a variable value to Terraform from the Windows Command Prompt, use double quotes " around the argument:
-
-terraform plan -var "name=value"
-
-
 
 
 
@@ -2102,13 +2095,20 @@ az vm create.
 
 19
 Azure VM Image Builder
+There are limits, per subscription, for deploying resources using Azure Compute Galleries:
 
+100 shared image galleries, per subscription, per region.
+1,000 image definitions, per subscription, per region.
+10,000 image versions, per subscription, per region.
+10 image version replicas, per subscription, per region.
+Any disk attached to the image must be less than or equal to 1TB in size.
 
 
 
 
 20
 Azure VM Image Builder
+	• For non-Virtual Machine Scale Set deployments - For every 20 VMs that you create concurrently, we recommend that you keep at least one replica. For example, if you're creating 120 VMs concurrently using the same image in a region, we suggest you keep at least 6 replicas for your image.
 
 
 
