@@ -1,41 +1,6 @@
 
 
 
-18
-Azure VDI Project
-Schedules are Azure Virtual Desktop proxy resources for scaling plans that contain the information about the scaling configuration. In the schedule, you can configure the days it is applicable to and the start and end times. You can also configure the load balancing algorithm, capacity thresholds, and the minimum percentage of hosts for different points in the day, as well as your preferred ramp down strategy.
-
-
-
-
-
-19
-Terraform
-Usage: terraform destroy [options]
-
-This command is just a convenience alias for the following command:
-
-terraform apply -destroy
-
-
-
-
-
-20
-MS Data Analyst
-Bookmarks capture a specific view of a report, including filters, slicers, the page selection, and the state of visuals. Report authors and report consumers can create them.
-
-Bookmarks that are created by a report consumer are known as personal bookmarks
-
-
-
-
-
-21
-Microsoft Copilot Studio
-Sometimes, a copilot user asks a question that has no built topic. By default, the copilot prompts the user to rephrase their query. After two prompts, if the copilot still can't determine the user's intent, the copilot escalates to a live agent through the system Escalate topic.
-
-
 
 
 
