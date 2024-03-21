@@ -2066,3 +2066,15 @@ Azure VM Image Builder
 
 
 
+21
+Azure VDA
+DON'T DO THIS AGAIN (3/20/24)
+  Capture a specialized image
+  deploy it in the same subnet (hostname collision!)
+  make changes
+  sysprep new VM
+  Capture Generalized image from it
+It was probably the deployment in the same subnet that broke things.
+
+
+
