@@ -1,26 +1,3 @@
-1
-Terraform
-You can also create a speculative destroy plan, to see what the effect of destroying would be, by running the following command:
-
-terraform plan -destroy
-
-
-
-
-
-2
-Azure VDI Project
-Type of HCL Block:
-source blocks contain configuration for builder plugins. Once defined, sources can be used and further configured by the "build" block.
-
-
-
-
-
-3
-General
-The en dash is slightly wider than a hyphen, but smaller than an em dash 1.
-It gets its name from being the same width as a capital N 1.
 
 
 
