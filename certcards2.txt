@@ -1,4 +1,192 @@
+1
+MS Data Analyst
+When filters aren't locked, report consumers can modify them. Specifically, they can:
 
+	• Select the eraser icon to clear the filter
+	• Apply a new filter selection
+	• Change the filter type, such as from basic to advanced (unless disabled for the report).
+	• Use the search box to search for values to filter by (unless disabled for the report).
+
+
+
+
+
+2
+MS Data Analyst
+Report authors can configure report or visual settings to control filter options and behavior. With report options, you can:
+
+Disable persistent filters. (Persistent filters arecovered in unit 5.)
+Hide visual headers for all visuals or for a specific visual. When the visual header is hidden, report consumers can't hover the cursor over the Filter icon to determine the filters that are applied to the visual. (The Filter icon is covered in Unit 5).
+
+
+
+
+
+3
+Terraform
+The Terraform Registry is the main source for publicly available Terraform providers 3.
+The Terraform Registry offers a browsable and searchable interface for finding providers, and makes it possible for Terraform CLI to automatically install any of the providers it hosts 3.
+
+
+
+
+
+4
+Site Scraping
+Use win32com.client to email excel sheet to self
+  import win32com.client as win32
+  ...
+  # Open up an outlook email
+  outlook = win32.gencache.EnsureDispatch('Outlook.Application')
+  newmail = outlook.CreateItem(0)
+
+
+
+
+
+5
+Workera.ai
+Amazon Rekognition, Video Analysis:
+
+Amazon Rekognition can analyze videos by detecting and tracking people, faces, and objects over time.
+It provides insights into the content of videos, making it suitable for applications like content moderation and surveillance.
+
+
+
+
+
+6
+MS Data Analyst
+If the Forecast section isn't available for a line chart, it’s probably because the visual hasn’t been correctly configured. Forecasting is only available when two conditions are met: the axis has a single field of type date, and there’s only one value field.
+
+
+
+
+
+7
+MS Data Analyst
+When a requirement is in place to lay out many slicers, consider creating a page that is dedicated to showing all slicers. For example, the page could be named Slicers. Sync the slicers to other pages and then set the slicers as hidden on those pages. This design technique will require that report consumers should always go to the Slicers page to modify slicer settings.
+
+
+
+
+
+8
+MS Data Analyst
+The Top N filter type applies to text and date fields that are available only in visual-level filters. This filter type helps you filter by the top (or bottom) number of items, like the top five products by revenue. To configure the filter, you must pass in a field that's summarized, like sales revenue.
+
+
+
+
+
+9
+MS Data Analyst
+Slicer filtering options are less complex than the advanced filter options that are possible in the Filters pane. For example, you can't configure a Top N slicer.
+
+
+
+
+
+10
+MS Data Analyst
+Getting data in a Power BI paginated report does not involve data cleaning steps. In fact, data is not stored in a Power BI paginated report dataset. When data is refreshed on the report, it is retrieved in an unaltered form from the data source, according to the query that was used to retrieve it.
+
+
+
+
+
+11
+Azure Pipelines
+Stage
+Stages are the primary divisions in a pipeline: "build the app," "run integration tests," and "deploy to user acceptance testing" are good examples of stages.
+
+
+
+
+
+12
+Azure Naming Convention
+Some resource names have a global scope, such as a name for a Platform as a Service (PaaS) that has a public endpoint or a virtual machine DNS label. A resource in a global scope must have a name that's unique across the entire Azure platform.
+
+
+
+
+
+13
+Azure AI Search
+Architecturally, a search service sits between the external data stores that contain your un-indexed data, and your client app that sends query requests to a search index and handles the response.
+
+
+
+
+
+14
+Terraform
+Refresh-only mode: creates a plan whose goal is only to update the Terraform state and any root module output values to match changes made to remote objects outside of Terraform. This can be useful if you've intentionally changed one or more remote objects outside of the usual workflow (e.g. while responding to an incident) and you now need to reconcile Terraform's records with those changes.
+
+
+
+
+
+15
+Microsoft Copilot Studio
+Some sources require authentication, since the copilot makes calls on behalf of the user in the chat window. Calls use the account credentials from powerva.microsoft.com. The authentication settings configured in the copilot need manual authentication with the Service Provider type of Microsoft Entra ID.
+
+
+
+
+
+16
+Terraform
+When using Terraform on Windows, we recommend using the Windows Command Prompt (cmd.exe). When you pass a variable value to Terraform from the Windows Command Prompt, use double quotes " around the argument:
+
+terraform plan -var "name=value"
+
+
+
+
+
+17
+Workera.ai
+Azure Resource Groups leverage Azure's Role-Based Access Control (RBAC) to assign permissions to users, groups, or applications. This fine-grained access control ensures that only authorized individuals or processes can interact with and modify the resources within a resource group.
+
+
+
+
+
+18
+Azure VDI Project
+Schedules are Azure Virtual Desktop proxy resources for scaling plans that contain the information about the scaling configuration. In the schedule, you can configure the days it is applicable to and the start and end times. You can also configure the load balancing algorithm, capacity thresholds, and the minimum percentage of hosts for different points in the day, as well as your preferred ramp down strategy.
+
+
+
+
+
+19
+Terraform
+Usage: terraform destroy [options]
+
+This command is just a convenience alias for the following command:
+
+terraform apply -destroy
+
+
+
+
+
+20
+MS Data Analyst
+Bookmarks capture a specific view of a report, including filters, slicers, the page selection, and the state of visuals. Report authors and report consumers can create them.
+
+Bookmarks that are created by a report consumer are known as personal bookmarks
+
+
+
+
+
+21
+Microsoft Copilot Studio
+Sometimes, a copilot user asks a question that has no built topic. By default, the copilot prompts the user to rephrase their query. After two prompts, if the copilot still can't determine the user's intent, the copilot escalates to a live agent through the system Escalate topic.
 
 
 
@@ -1719,362 +1907,6 @@ Azure VDI Project
 Images - When you configure session hosts for application groups, you have your choice of images. Use a recommended image like Windows 10 Enterprise multi-session + Office 365. Or choose another image in your gallery or an image provided by Microsoft or other publishers. You can also use your own image built through Hyper-V or on an Azure VM.
 
 
-
-
-
-31
-Azure DevOps Access Levels
-Adding a user or group to a team or project gives them automatic access to the features of the default access level and security group. Most users can access most features by being assigned to the Basic access level and Contributors security group.
-
-
-
-
-
-
-31
-Azure DevOps Access Levels
-Advanced DevOps Integration: Visual Studio Enterprise integrates seamlessly with Microsoft's Azure cloud platform and provides robust DevOps capabilities. It offers features like Azure Pipelines for continuous integration and continuous delivery (CI/CD), Azure DevOps for project management and collaboration, and Azure Monitor for application performance monitoring. 
-
-
-
-
-31
-Azure DevOps Access Levels
-Feature-Rich IDE: Visual Studio Enterprise offers a wide range of features tailored to professional developers. These include advanced debugging tools, code navigation and analysis capabilities, integrated testing tools, and support for various programming languages and frameworks such as C#, C++, Python, and JavaScript. It also provides built-in support for version control systems like Git and Azure DevOps.
-
-
-
-
-34
-Azure Key Vault Secrets
-From a developer's perspective, Key Vault APIs accept and return secret values as strings. Internally, Key Vault stores and manages secrets as sequences of octets (8-bit bytes), with a maximum size of 25k bytes each. 
-
-
-
-
-34
-Azure Key Vault Secrets
-The Key Vault service doesn't provide semantics for secrets. It merely accepts the data, encrypts it, stores it, and returns a secret identifier (id). The identifier can be used to retrieve the secret at a later time.
-
-
-
-
-34
-Azure Key Vault Secrets
-Key Vault also supports a contentType field for secrets. Clients may specify the content type of a secret to help interpreting the secret data when it's retrieved. The maximum length of this field is 255 characters. The suggested usage is as a hint for interpreting the secret data. For instance, an implementation may store both passwords and certificates as secrets, then use this field to differentiate.
-
-
-
-
-34
-Azure Key Vault Secrets
-When dealing with REST APIs or SDKs for Azure Key Vault, you'll commonly encounter date-time strings in ISO 8601 format, which look something like YYYY-MM-DDTHH:MM:SSZ for Coordinated Universal Time (UTC), or Unix timestamps which count the seconds since the Unix epoch (00:00:00 UTC on 1 January 1970). 
-
-
-
-
-
-66
-Azure Key Vault
-Azure Key Vault enables Microsoft Azure applications and users to store and use several types of secret/key data: keys, secrets, and certificates. Keys, secrets, and certificates are collectively referred to as "objects".
-
-
-
-
-
-66
-Azure Key Vault
-Objects are uniquely identified within Key Vault using a case-insensitive identifier called the object identifier. No two objects in the system have the same identifier, regardless of geo-location. The identifier consists of a prefix that identifies the key vault, object type, user provided object name, and an object version.
-
-
-
-
-
-66
-Azure Key Vault
-Objects are uniquely identified within Key Vault using a case-insensitive identifier called the object identifier. Identifiers that don't include the object version are referred to as "base identifiers". Key Vault object identifiers are also valid URLs, but should always be compared as case-insensitive strings.
-
-
-
-
-
-
-
-
-34
-Azure Key Vault
-Platform-managed keys (PMKs) are encryption keys generated, stored, and managed entirely by Azure. Customers do not interact with PMKs. The keys used for Azure Data Encryption-at-Rest, for instance, are PMKs by default.
-
-
-
-
-
-
-
-
-34
-Azure Key Vault
-Customer-managed keys (CMK), on the other hand, are keys read, created, deleted, updated, and/or administered by one or more customers. Keys stored in a customer-owned key vault or hardware security module (HSM) are CMKs. Bring Your Own Key (BYOK) is a CMK scenario in which a customer imports (brings) keys from an outside storage location into an Azure key management service
-
-
-
-
-
-
-34
-Azure Key Vault
-The Azure Key Vault Standard and Premium tiers are billed on a transactional basis, with an additional monthly per-key charge for premium hardware-backed keys. Managed HSM, Dedicated HSM, and Payments HSM don't charge on a transactional basis; instead they are always-in-use devices that are billed at a fixed hourly rate.
-
-
-
-
-
-
-60
-Azure Key Vault
-Key sovereignty is when the customer's organization has full and exclusive control of their keys, including control over what users and services can access the keys and key management policies.
-
-
-
-
-
-
-60
-Azure Key Vault
-Single tenancy refers to a single dedicated instance of an application deployed for each customer, rather than a shared instance amongst multiple customers. The need for single tenant products is often found as an internal compliance requirement in financial service industries.
-
-
-
-
-60
-Azure Key Vault
-Do you have a requirement for FIPS 140 in hardware level 2 or 3? If No, Azure Key Vault Standard
-If Yes, Possible Key Vault Premium or an HSM option.
-
-
-
-
-
-91
-Azure Key Vault
-SSL/TLS Offload is supported on Azure Managed HSM and Azure Dedicated HSM. Customers have improved high availability, security, and best price point on Azure Managed HSM for F5 and Nginx.
-
-
-
-
-
-
-1
-Azure VM Image Builder
-when you create a VM the operating system data is updated with several items, including:
-
-The host name of your VM.
-The administrator username and credentials.
-Log files.
-Security identifiers for various operating system services.
-
-These items must be reset to their default settings before you capture an image. When you reset these items in a VM, you generalize the VM.
-
-
-
-
-2
-Azure VM Image Builder
-Use the Sysprep.exe tool to generalize a Windows VM. Follow these steps:
-
-Sign in to the Windows VM.
-Open an elevated Command Prompt.
-Navigate to the C:\windows\system32\sysprep folder.
-Run sysprep.exe.
-In the System Preparation Tool dialog box, select the settings in the following table, and then select OK.
-
-
-
-
-
-
-3
-Azure VM Image Builder
-Azure Stack HCI (Hyper-Converged Infrastructure) is a hybrid cloud solution provided by Microsoft that combines on-premises infrastructure with Azure services. Azure Stack HCI provides seamless integration with Azure services, enabling organizations to leverage features like Azure Backup, Azure Site Recovery, Azure Monitor, and more. 
-
-
-
-
-
-
-4
-Azure VM Image Builder
-Hyper-Converged Infrastructure: Azure Stack HCI is built on hyper-converged infrastructure principles, which means it combines compute, storage, and networking functionalities in a single software-defined solution. This consolidation simplifies management, reduces hardware costs, and improves scalability compared to traditional infrastructure setups.
-
-
-
-
-
-
-5
-Azure VM Image Builder
-Hybrid Cloud Capabilities: Azure Stack HCI extends the capabilities of on-premises infrastructure by seamlessly connecting to Azure services. It allows organizations to build and manage applications across both on-premises environments and the cloud, providing a consistent platform for development, deployment, and management. 
-
-
-
-
-
-
-
-
-
-6
-Azure VM Image Builder
-Integrate image build pipelines from your own organization.
-
-Enables integration with your existing image build procedures (pipelines). You can link to Azure Image Builder from your pipeline, or use the simple Preview Image Builder Azure DevOps Task.
-
-
-
-
-
-7
-Azure VM Image Builder
-Azure Image Builder is a fully managed Azure service that you can access through an Azure resource provider. The Azure Image Builder process has three main parts:
-
-Source
-Customizer
-Distribute
-
-
-
-
-8
-Azure VM Image Builder
-Azure Resource Providers are essentially services within the Azure ecosystem that manage specific types of Azure resources. When you interact with Azure, whether through the Azure Portal, Azure CLI, Azure PowerShell, REST APIs, or SDKs, you're often dealing with these resources. Each resource provider specializes in a particular category of resources, such as virtual machines, storage accounts, databases, etc.
-
-
-
-
-
-
-9
-Azure VM Image Builder
-Resource Management: Resource Providers are responsible for managing the lifecycle of Azure resources within their domain. This includes creating, updating, deleting, and querying resources.
-
-
-
-
-
-
-10
-Azure VM Image Builder
-Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
-
-Microsoft.Compute manages resources related to virtual machines, virtual machine scale sets, and related components.
-Microsoft.Storage manages resources related to storage accounts and storage services.
-
-
-
-
-11
-Azure VM Image Builder
-Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
-
-Microsoft.Network manages resources such as virtual networks, public IP addresses, and network security groups.
-Microsoft.KeyVault manages resources related to secure key management and secrets storage.
-
-
-
-
-12
-Azure VM Image Builder
-Registration: Some Azure Resource Providers may need to be registered before you can use their resources. Registration is typically required for preview features or services that are not enabled by default. The registrationState property you saw in the commands indicates whether a provider is registered or not.
-
-
-
-
-13
-Azure VM Image Builder
-Role-Based Access Control (RBAC): Azure Resource Providers adhere to Azure's RBAC model, allowing administrators to grant permissions at a granular level. This means you can control who has access to which resources and what actions they can perform.
-
-
-
-
-14
-General
-You can use Ctrl+U to clear up to the beginning of a line in a Bash command line.
-
-
-
-
-
-
-15
-General
-SED command in UNIX stands for stream editor and it can perform lots of functions on file like searching, find and replace, insertion or deletion. Though most common use of SED command in UNIX is for substitution or for find and replace. By using SED you can edit files even without opening them, which is much quicker way to find and replace something in file, than first opening that file in VI Editor and then changing it.
-
-
-
-
-
-
-16
-Azure VM Image Builder
-1. Which of the following procedures should an administrator employ to generalize a Windows VM in preparation for creating a managed image in Azure? 
-
-Run Sysprep.exe, select the Generalize check box, and then in the Shutdown Options list, select Shutdown.
-
-
-
-
-17
-Azure VM Image Builder
-2. What is the first step an administrator needs to perform when creating a managed image from a generalized VM that is in the Stopped (deallocated) status? 
-
-Capture the image.
-That's correct. The administrator must capture the image after it's been generalized and is stopped and deallocated.
-
-
-
-
-18
-Azure VM Image Builder
-3. Which of the following Azure CLI commands should an administrator run to start an image build using Azure Image Builder? 
-
-az resource invoke-action.
-NOT
-az resource create.
-az vm create.
-
-
-
-
-19
-Azure VM Image Builder
-There are limits, per subscription, for deploying resources using Azure Compute Galleries:
-
-100 shared image galleries, per subscription, per region.
-1,000 image definitions, per subscription, per region.
-10,000 image versions, per subscription, per region.
-10 image version replicas, per subscription, per region.
-Any disk attached to the image must be less than or equal to 1TB in size.
-
-
-
-
-20
-Azure VM Image Builder
-	• For non-Virtual Machine Scale Set deployments - For every 20 VMs that you create concurrently, we recommend that you keep at least one replica. For example, if you're creating 120 VMs concurrently using the same image in a region, we suggest you keep at least 6 replicas for your image.
-
-
-
-
-
-21
-Azure VDA
-DON'T DO THIS AGAIN (3/20/24)
-  Capture a specialized image
-  deploy it in the same subnet (hostname collision!)
-  make changes
-  sysprep new VM
-  Capture Generalized image from it
-It was probably the deployment in the same subnet that broke things.
 
 
 
