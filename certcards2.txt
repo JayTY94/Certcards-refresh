@@ -2073,3 +2073,41 @@ Knowing how your report consumers are likely interacting with reports should inf
 
 
 
+224
+General
+On the surface, pipx resembles pip because it also lets you install Python packages from PyPI or another package index. However, unlike pip, it doesn’t install packages into your system-wide Python interpreter or even an activated virtual environment. Instead, it automatically creates and manages virtual environments for you to isolate the dependencies of every package that you install.
+
+
+
+
+
+224
+General
+Additionally, pipx adds symbolic links to your PATH variable for every command-line script exposed by the installed packages. As a result, you can invoke those scripts directly from the command line without explicitly running them through the Python interpreter.
+
+
+
+
+
+
+224
+General
+Think of pipx as Python’s equivalent of npx in the JavaScript ecosystem. Both tools let you install and execute third-party modules in the command line just as if they were standalone applications. However, not all modules are created equal.
+
+
+
+
+
+
+224
+General
+Making a distribution package runnable or hybrid involves defining one or more entry points in the corresponding configuration file. Historically, these would be setup.py or setup.cfg, but modern build systems in Python should generally rely on the pyproject.toml file and define their entry points in the [project.scripts] TOML table.
+
+
+
+
+
+
+
+
+
