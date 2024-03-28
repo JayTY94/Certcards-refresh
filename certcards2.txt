@@ -3,44 +3,6 @@
 
 
 
-4
-Azure Key Vault
-SSL/TLS Offload is supported on Azure Managed HSM and Azure Dedicated HSM. Customers have improved high availability, security, and best price point on Azure Managed HSM for F5 and Nginx.
-
-
-
-
-
-5
-Azure Key Vault
-Objects are uniquely identified within Key Vault using a case-insensitive identifier called the object identifier. Identifiers that don't include the object version are referred to as "base identifiers". Key Vault object identifiers are also valid URLs, but should always be compared as case-insensitive strings.
-
-
-
-
-
-6
-Azure Naming Convention
-Azure naming rules vary depending on the resource type. When you define a naming convention, it's important to understand Azure naming rules for the resource type to avoid confusion and delay deployments.
-
-
-
-
-
-7
-Azure VDI Project
-2. If you create a pooled host pool, what VM image should you use? 
-
-We recommend you use Windows 10 Enterprise multi-session for most use cases but you can use an image you've built.
-
-
-
-
-
-8
-Azure Key Vault Secrets
-From a developer's perspective, Key Vault APIs accept and return secret values as strings. Internally, Key Vault stores and manages secrets as sequences of octets (8-bit bytes), with a maximum size of 25k bytes each.
-
 
 
 
