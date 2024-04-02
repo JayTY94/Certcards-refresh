@@ -4,24 +4,6 @@
 
 
 
-11
-Azure Key Vault
-Objects are uniquely identified within Key Vault using a case-insensitive identifier called the object identifier. No two objects in the system have the same identifier, regardless of geo-location. The identifier consists of a prefix that identifies the key vault, object type, user provided object name, and an object version.
-
-
-
-
-
-12
-MS Data Analyst
-The report theme should express your organizational branding or aim to complement it. At a minimum, the theme should include the following elements:
-
-A brand mark or logo symbol.
-
-A palette of colors that align to, or complement, organizational branding. The colors should also be sufficiently different so that, when applied to visuals, they provide appropriate contrast when appearing side by side.
-
-Text settings, including font selection, sizes, and color.
-
 
 
 
