@@ -15,17 +15,6 @@ If Yes, Possible Key Vault Premium or an HSM option.
 
 
 
-20
-MS Data Analyst
-Report settings can:
-
-Disable cross highlighting/filtering by default. All visuals, except for slicers, don't propagate filters to other visuals unless they are explicitly added as a visual interaction.
-Add an Apply button to slicers. The slicer selection will only filter the report page when the report consumer selects the Apply button.
-
-
-
-
-
 21
 MS Data Analyst
 Organization: Display folders allow you to organize measures, columns, and hierarchies into folders within a table in a Power BI report. This makes it easier for report users to find the fields they need.
