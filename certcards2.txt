@@ -5,16 +5,6 @@
 
 
 
-
-
-17
-Azure Log Analytics Workspaces
-A Log Analytics workspace is a unique environment for log data from Azure Monitor and other Azure services, such as Microsoft Sentinel and Microsoft Defender for Cloud. Each workspace has its own data repository and configuration but might combine data from multiple services.
-
-
-
-
-
 18
 Azure Key Vault
 Do you have a requirement for FIPS 140 in hardware level 2 or 3? If No, Azure Key Vault Standard
