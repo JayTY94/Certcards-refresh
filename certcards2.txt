@@ -7,43 +7,6 @@
 
 
 
-
-13
-MS Data Analyst
-With the Query Caching feature, you can use the local caching services of Power BI to process query results. Instead of relying on the semantic model to calculate queries, you use cloud resources on your Premium capacities in the Power BI service to load your report. Query caching ensures constant performance instead of overloading the semantic model resources. Query Caching requires a Premium Capacity.
-
-
-
-
-
-14
-Azure VDI Project
-To provide the best experience for your Azure Virtual Desktop users, use FSLogix profiles. FSLogix is designed to roam profiles in remote computing environments, such as Azure Virtual Desktop. User profiles are stored in per-user VHD or VHDX files. At sign-in, this profile container is dynamically attached to the computing environment. The user profile is immediately available and appears in the system exactly like a native user profile.
-
-
-
-
-
-15
-Microsoft Copilot Studio
-When using SharePoint or OneDrive as a datasource, a best practice is to omit https:// from the URL. Recognized SharePoint URLs will be from the sharepoint.com domain.
-Sharepoint site URLs cannot be more than two levels deep.
-Content from aspx files on SharePoint won't be used to generate answers.
-
-
-
-
-
-16
-Azure VM Image Builder
-Integrate image build pipelines from your own organization.
-
-Enables integration with your existing image build procedures (pipelines). You can link to Azure Image Builder from your pipeline, or use the simple Preview Image Builder Azure DevOps Task.
-
-
-
-
-
 17
 Azure Log Analytics Workspaces
 A Log Analytics workspace is a unique environment for log data from Azure Monitor and other Azure services, such as Microsoft Sentinel and Microsoft Defender for Cloud. Each workspace has its own data repository and configuration but might combine data from multiple services.
@@ -57,16 +20,6 @@ Azure Key Vault
 Do you have a requirement for FIPS 140 in hardware level 2 or 3? If No, Azure Key Vault Standard
 If Yes, Possible Key Vault Premium or an HSM option.
 
-
-
-
-
-19
-shared image galleries, per subscription, per region.
-1,000 image definitions, per subscription, per region.
-10,000 image versions, per subscription, per region.
-10 image version replicas, per subscription, per region.
-Any disk attached to the image must be less than or equal to 1TB in size.
 
 
 
