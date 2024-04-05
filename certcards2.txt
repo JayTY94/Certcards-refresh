@@ -2,54 +2,6 @@
 
 
 
-
-
-
-18
-Azure Key Vault
-Do you have a requirement for FIPS 140 in hardware level 2 or 3? If No, Azure Key Vault Standard
-If Yes, Possible Key Vault Premium or an HSM option.
-
-
-
-
-
-
-21
-MS Data Analyst
-Organization: Display folders allow you to organize measures, columns, and hierarchies into folders within a table in a Power BI report. This makes it easier for report users to find the fields they need.
-
-
-
-
-
-22
-Terraform
-The terraform output command can get the values for the top-level output values of a configuration, which are often helpful when making use of the infrastructure Terraform has provisioned.
-
-
-
-
-
-23
-MS Data Analyst
-Power BI dashboards are about having a user-friendly experience. When users first interact with data, they often have additional questions and reach out to you. A few questions might be manageable to answer, but this isn't sustainable.
-
-Power BI solves this problem with the Q&A visual. From the dashboard view, users can use the Ask a question about your data feature, which increases engagement between users and the dashboard.
-
-
-
-
-
-24
-Azure Pipelines
-Task
-A task is the building block of a pipeline. For example, a build pipeline might consist of build and test tasks. A release pipeline consists of deployment tasks. Each task runs a specific job in the pipeline.
-
-
-
-
-
 25
 Azure Firewall
 Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instances in Secured Virtual Hubs and Hub Virtual Networks. Policies work across regions and subscriptions.
