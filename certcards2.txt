@@ -10,15 +10,6 @@ Firewall Policy is the recommended method to configure your Azure Firewall. It's
 
 
 
-26
-MS Data Analyst
-2. What can be achieved by removing unnecessary rows and columns? 
-Deleting unnecessary rows and columns will reduce a semantic model size and it's good practice to load only necessary data into your semantic model.
-
-
-
-
-
 27
 Microsoft Copilot Studio
 The URL used in your copilot represents the scope of content for generating responses. There are requirements and restrictions on some URLs.
