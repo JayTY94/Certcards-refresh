@@ -1,38 +1,6 @@
 
 
 
-2
-Azure VDI Project
-In HCL, Blocks are containers for other content and usually represent the same kind of object, like a source. Blocks have a block type, can have zero or more labels, and have a body that contains any number of arguments and nested blocks. Most of Packer's features are controlled by top-level blocks in a configuration file.
-
-
-
-
-
-3
-Terraform
-Terraform expects that each remote object is bound to a single resource address. You should import each remote object to one Terraform resource address. If you import the same object multiple times, Terraform may exhibit unwanted behavior.
-
-
-
-
-
-4
-Site Scraping
->>> string = "Everything is <replaced> if it's in <tags>."
->>> string = re.sub("<.*>", "ELEPHANTS", string)
->>> string
-'Everything is ELEPHANTS.'
-re.sub() uses the regular expression "<.*>" to find and replace everything between the first < and the last >, which spans from the beginning of <replaced> to the end of <tags>. This is because Python’s regular expressions are greedy, meaning they try to find the longest possible match when characters like * are used.
-
-
-
-
-
-5
-Azure VDI Project
-168.63.129.16 is a special public IP address that is owned by Microsoft for Azure. For more information, see What is IP address 168.63.129.16.
-
 
 
 
