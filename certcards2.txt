@@ -1,39 +1,339 @@
 
 
 
+2
+Azure VDI Project
+In HCL, Blocks are containers for other content and usually represent the same kind of object, like a source. Blocks have a block type, can have zero or more labels, and have a body that contains any number of arguments and nested blocks. Most of Packer's features are controlled by top-level blocks in a configuration file.
+
+
+
+
+
+3
+Terraform
+Terraform expects that each remote object is bound to a single resource address. You should import each remote object to one Terraform resource address. If you import the same object multiple times, Terraform may exhibit unwanted behavior.
+
+
+
+
+
+4
+Site Scraping
+>>> string = "Everything is <replaced> if it's in <tags>."
+>>> string = re.sub("<.*>", "ELEPHANTS", string)
+>>> string
+'Everything is ELEPHANTS.'
+re.sub() uses the regular expression "<.*>" to find and replace everything between the first < and the last >, which spans from the beginning of <replaced> to the end of <tags>. This is because Python’s regular expressions are greedy, meaning they try to find the longest possible match when characters like * are used.
+
+
+
+
+
+5
+Azure VDI Project
+168.63.129.16 is a special public IP address that is owned by Microsoft for Azure. For more information, see What is IP address 168.63.129.16.
+
+
+
+
+
+6
+Azure VM Image Builder
+Resource Management: Resource Providers are responsible for managing the lifecycle of Azure resources within their domain. This includes creating, updating, deleting, and querying resources.
+
+
+
+
+
+7
+Terraform
+By default, when Terraform creates a plan it:
+
+	• Reads the current state of any already-existing remote objects to make sure that the Terraform state is up-to-date.
+	• Compares the current configuration to the prior state by noting any differences.
+Proposes a set of change actions that should, if applied, make the remote objects match the configuration.
+
+
+
+
+
+8
+General
+An en dash can be used to show different types of ranges in academic writing and mathematical writing 4.
+An en dash can be used as a replacement for versus 4.
+An en dash can also be used to show partnerships, competition, and directions 4.
+
+
+
+
+
+9
+MS Data Analyst
+The three main AI visuals are:
+  Key influencers
+  Decomposition tree
+  Q&A
+
+When adding an AI visual to your report, make sure that you size it to become as large as possible. That way, report consumers can fully interact with and explore the data in the visual.
+
+
+
+
+
+10
+Azure VM Image Builder
+Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
+
+Microsoft.Network manages resources such as virtual networks, public IP addresses, and network security groups.
+Microsoft.KeyVault manages resources related to secure key management and secrets storage.
+
+
+
+
+
+11
+MS Data Analyst
+Within the visual header options, you can enable the visual header tooltip. It adds the Help (?) icon to the visual header. Then, you can assign a page tooltip or text. This technique is beneficial for providing visual-specific guidance, such as more detail that describes definitions, calculation logic, or the source of data.
+
+
+
+
+
+12
+General
+Gists are lightweight and convenient for sharing small pieces of code or content, while regular Git repositories are more comprehensive and suitable for hosting larger projects with multiple contributors and complex structures.
+
+
+
+
+
+13
+Site Scraping
+Dynamic content: AJAX, which stands for Asynchronous JavaScript and XML, techniques can be used to dynamically update the content of a web page without requiring a full page refresh. This can improve the user experience by providing faster and more seamless updates.
+
+
+
+
+
+14
+Child Services AWS Review
+A Validation Print is a color-accurate print according to ISO 12647-8. The Validation Print has higher color tolerances than the contract proof according to ISO 12647-7 and, unlike the contract proof, is NOT color- and legally binding.
+
+
+
+
+
+15
+Azure VDI Project
+A scaling plan is an Azure Virtual Desktop object that acts as a container for your Autoscale schedules. Scaling plans are designed such that you can apply one to one or more pooled host pools and the associated schedules will take effect for all the assigned host pools. However, only one scaling plan can be assigned to a host pool.
+
+
+
+
+
+16
+Site Scraping
+Asynchronous: AJAX, which stands for Asynchronous JavaScript and XML, allows web pages to send and retrieve data from a server asynchronously, without interfering with the display and behavior of the existing page. This means that the user can continue to interact with the page while data is being exchanged in the background.
+
+
+
+
+
+17
+General
+Think of pipx as Python’s equivalent of npx in the JavaScript ecosystem. Both tools let you install and execute third-party modules in the command line just as if they were standalone applications. However, not all modules are created equal.
+
+
+
+
+
+18
+Terraform
+Planning Options: Alongside the special planning modes, there are also some options you can set in order to customize the planning process for unusual needs.
+Resource Targeting is one particular special planning option that has some important caveats associated with it.
+
+
+
+
+
+19
+MS Data Analyst
+When it comes to configuring visuals for mobile reports, Power BI does all the hard work for you. However, if you want to turn off this default responsiveness, you can do so in the General section of the visual's format settings.
+
+
+
+
+
+20
+MS Data Analyst
+As enterprises grow, so does their data. Often, strict requirements and regulations must be applied to ensure that this sensitive data is secure. Power BI provides a few different ways to help you accomplish this task:
+
+Use Microsoft sensitivity labels to label dashboards, reports, semantic models, and dataflows by using the same taxonomy that is used to classify and protect files in Microsoft 365.
+Add more protection measures such as encryption and watermarks when you are exporting the data.
+Use Microsoft Cloud App Security to monitor and investigate activities in Power BI.
+
+
+
+
+
+21
+Site Scraping
+Use Selenium to authenticate
+Need to find elements By.ID and then send keys to type into those boxes. Then submit form.
+  username_field = driver.find_element(By.ID, 'inputUserId')
+  password_field = driver.find_element(By.ID, 'inputPassword')
+  username_field.send_keys('Username')
+  password_field.send_keys('Password')
+  sleep(3)
+  password_field.submit()
+
+
+
+
+
+22
+MS Data Analyst
+It's possible to define a role that includes no rules. In this case, the role provides access to all rows of all model tables. This role set up would be suitable for an admin user who is allowed to view all data.
+
+
+
+
+
+23
+Terraform
+The terraform plan command evaluates a Terraform configuration to determine the desired state of all the resources it declares, then compares that desired state to the real infrastructure objects being managed with the current working directory and workspace.
+
+
+
+
+
+24
+MS Data Analyst
+Customization: You can customize the names and structure of display folders to fit the needs of your report. For example, you can create a display folder named "Sales Metrics" and move all sales-related measures into that folder.
+
+
+
+
 
 25
-Azure Firewall
-Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instances in Secured Virtual Hubs and Hub Virtual Networks. Policies work across regions and subscriptions.
+Microsoft Copilot Studio
+Within a copilot's topic, you can add a Create generative answers node. This node allows you to specify more sources that the node searches based on your inputs. Information sources defined in the Generative answers node override sources you specified at the copilot level, which functions as a fallback.
+
+
+
+
+
+26
+Terraform
+A provider in Terraform is a plugin that enables interaction with an API.
+Providers are specified in the Terraform configuration code and tell Terraform which services it needs to interact with.
 
 
 
 
 
 27
-Microsoft Copilot Studio
-The URL used in your copilot represents the scope of content for generating responses. There are requirements and restrictions on some URLs.
-
-URLs that point to a website, requiring authentication or ones not indexed by Bing.
-
-For example, wikis and SharePoint sites require authentication, therefore can't be used:
-
-fabrikam.visualstudio.com/project/_wiki
-fabrikam.sharepoint.com
+Azure
+To create an empty text file in PowerShell, you can use the New-Item command with the -ItemType and -Path parameters:
+New-Item -ItemType File -Name "filename.txt".
+This will create a new empty text file named “filename.txt” in the current directory.
 
 
 
 
 
 28
-Azure VDI Project
-Desktop - Remote Desktop application groups give users access to a full desktop. You can provide a desktop where the session host VM resources are shared or pooled. Or you can provide personal desktops to users that need to be able to add or remove programs without impacting other users.
+MS Data Analyst
+The Q&A visual allows report consumers to ask questions of their data and receive responses as data visualizations. Similar to how web search engines parse and understand complex search requests, report consumers can write natural language questions (in English).
 
 
 
 
 
 29
+Azure VM Image Builder
+3. Which of the following Azure CLI commands should an administrator run to start an image build using Azure Image Builder? 
+
+az resource invoke-action.
+NOT
+az resource create.
+az vm create.
+
+
+
+
+
+30
+Azure VM Image Builder
+Hyper-Converged Infrastructure: Azure Stack HCI is built on hyper-converged infrastructure principles, which means it combines compute, storage, and networking functionalities in a single software-defined solution. This consolidation simplifies management, reduces hardware costs, and improves scalability compared to traditional infrastructure setups.
+
+
+
+
+
+31
+Azure VM Image Builder
+Azure Image Builder is a fully managed Azure service that you can access through an Azure resource provider. The Azure Image Builder process has three main parts:
+
+Source
+Customizer
+Distribute
+
+
+
+
+
+32
+Azure VM Image Builder
+Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
+
+Microsoft.Compute manages resources related to virtual machines, virtual machine scale sets, and related components.
+Microsoft.Storage manages resources related to storage accounts and storage services.
+
+
+
+
+
+33
+MS Data Analyst
+You can use an external site like powerbi.tips to generate a theme. The site will guide you through building a color palette and setting property values for all core visual types.
+
+For more information, see Use report themes in Power BI Desktop.
+
+
+
+
+
+34
+MS Data Analyst
+Disadvantages of Filters vs Slicers
+The Filters pane offers less design flexibility, though you can style it by using specific fonts and colors.
+
+Careful consideration should be made to hide certain filters to avoid confusing report consumers.
+
+It can be easy to lose track of applied visual-level filters.
+
+
+
+
+
+35
+MS Data Analyst
+Report page load times are primarily determined by number of visuals (objects) on the page, and DAX performance. Neither of which are impacted by unnecessary model columns.
+
+
+
+
+
+36
+Azure VDI Project
+Use either Microsoft Entra Domain Services or Active Directory Domain Services (AD DS) to authenticate at the service layer of Azure Virtual Desktop. All VMs in Azure Virtual Desktop are domain-joined. Microsoft Entra Domain Services or AD DS is used to authenticate users to the VMs.
+
+
+
+
+
+37
 Child Services AWS Review
 Mainframe-as-a-Service (MFaaS) is a subscription-based model that addresses the challenges of an aging mainframe while providing flexibility and scalability for future growth. MFaaS is hosted at a provider’s data center or partners’, offering a cloud-like experience.
 
@@ -41,39 +341,7 @@ Mainframe-as-a-Service (MFaaS) is a subscription-based model that addresses the 
 
 
 
-30
-Azure Key Vault
-Key sovereignty is when the customer's organization has full and exclusive control of their keys, including control over what users and services can access the keys and key management policies.
-
-
-
-
-
-31
-Site Scraping
-Use Selenium to navigate to desirable data - this involved moving the driver focus to iframes and then interacting with elements there
-  iframe = driver.find_elements(By.ID, 'tool')[0]
-  driver.switch_to.frame(iframe)
-  ...
-  driver.switch_to.parent_frame()
-  driver.switch_to.frame('data')
-  sleep(3)
-
-
-
-
-
-32
-Azure VDI Project
-1. You have a group of developers that need virtual desktops that they can manage. What type of host pool do you create for them? 
-
-With a personal host pool, each user has their own dedicated VM. They can be a local administrator for their VM to manage app installation.
-
-
-
-
-
-33
+38
 MS Data Analyst
 What elements can be changed with personalized visuals?
 
@@ -86,66 +354,75 @@ Background images
 
 
 
-34
-Azure AI Search
-Azure AI Search (formerly known as "Azure Cognitive Search") provides secure information retrieval at scale over user-owned content in traditional and conversational search applications.
-
-
-
-
-
-35
-Site Scraping
-Navigate to a specific website with Selenium
-
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-
-site_url = "https://basec.sicomm.net/vendorlogin/"
-driver = webdriver.Chrome()
-driver.get(site_url)
-
-
-
-
-
-36
-Microsoft Copilot Studio
-Your copilot has difficulty answering questions that require calculations, comparisons, or form submissions. Your copilot might not understand comparative and superlative terms such as better or best, latest, or cheapest in a question.
-
-
-
-
-
-37
-MS Data Analyst
-Role in a Power BI workspace: Member
-
-Add members or others with lower permissions
-Publish, unpublish, and change permissions for an app
-
-
-
-
-
-38
-MS Data Analyst
-Customization: You can customize the names and structure of display folders to fit the needs of your report. For example, you can create a display folder named "Sales Metrics" and move all sales-related measures into that folder.
-
-
-
-
-
 39
-Terraform
-Terraform Cloud and Terraform Enterprise are platforms that perform Terraform runs to provision infrastructure, offering a collaboration-focused environment that makes it easier for teams to use Terraform together.
+MS Data Analyst
+Report settings can:
+
+Add an Apply button to all basic filters in the Filters pane. A single filter will apply when the report consumer selects the Apply button in the filter card.
+Add an Apply button to the Filters pane. All filters will apply simultaneously when the report consumer selects the Apply button. This option is helpful when report consumers want to update many filters at the same time.
 
 
 
 
 
 40
+Azure Pipelines
+Agent
+When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs a build or deployment job.
+
+
+
+
+
+41
+Terraform
+The command line interface to Terraform is the terraform command, which accepts a variety of subcommands such as terraform init or terraform plan.
+
+
+
+
+
+42
+Azure Key Vault
+Key sovereignty is when the customer's organization has full and exclusive control of their keys, including control over what users and services can access the keys and key management policies.
+
+
+
+
+
+43
+Azure DevOps Access Levels
+Feature-Rich IDE: Visual Studio Enterprise offers a wide range of features tailored to professional developers. These include advanced debugging tools, code navigation and analysis capabilities, integrated testing tools, and support for various programming languages and frameworks such as C#, C++, Python, and JavaScript. It also provides built-in support for version control systems like Git and Azure DevOps.
+
+
+
+
+
+44
+Microsoft Copilot Studio
+You can upload your own documents for your copilot to generate answers with generative AI. The documents are used across your copilot, but you can specify individual nodes that shouldn't use uploaded documents. Uploaded documents are stored securely in Dataverse. The number of documents you can upload is only limited by the available file storage for your Dataverse environment.
+
+
+
+
+
+45
+Terraform
+The terraform state show command can print all of the attributes of a given resource being managed by the current working directory and workspace, including generated read-only attributes like the unique ID assigned by the cloud provider.
+
+
+
+
+
+46
+Azure VM Image Builder
+Registration: Some Azure Resource Providers may need to be registered before you can use their resources. Registration is typically required for preview features or services that are not enabled by default. The registrationState property you saw in the commands indicates whether a provider is registered or not.
+
+
+
+
+
+47
 MS Data Analyst
 Another way to use tooltips is to display graphical information. The process of adding this type of tooltip is not as straightforward, but it is worthwhile. You would begin by creating a new page in the report.
 
@@ -154,62 +431,6 @@ Open the new page and then open the Format pane. Expand the Page Size section an
 In the Page information section, turn the Tooltip slider to On so that Power BI registers this page as a tooltip page
 
 Tooltips have limited canvas space, so to ensure that your visuals appear in the tooltip, on the View tab, set the Page view option to Actual size.
-
-
-
-
-
-41
-MS Data Analyst
-Compatibility: Display folders are compatible with most Power BI data sources, including imported data, DirectQuery, and Live Connection. However, there are some limitations when using display folders with certain data sources, such as Analysis Services.
-
-
-
-
-
-42
-Azure VM Image Builder
-Role-Based Access Control (RBAC): Azure Resource Providers adhere to Azure's RBAC model, allowing administrators to grant permissions at a granular level. This means you can control who has access to which resources and what actions they can perform.
-
-
-
-
-
-43
-Terraform
-Use the import block to import existing infrastructure resources into Terraform, bringing them under Terraform's management. Unlike the terraform import command, configuration-driven import using import blocks is predictable, works with CICD pipelines, and lets you preview an import operation before modifying state.
-
-
-
-
-
-44
-Child Services AWS Review
-A Validation Print is a color-accurate print according to ISO 12647-8. The Validation Print has higher color tolerances than the contract proof according to ISO 12647-7 and, unlike the contract proof, is NOT color- and legally binding.
-
-
-
-
-
-45
-Azure VM Image Builder
-Hyper-Converged Infrastructure: Azure Stack HCI is built on hyper-converged infrastructure principles, which means it combines compute, storage, and networking functionalities in a single software-defined solution. This consolidation simplifies management, reduces hardware costs, and improves scalability compared to traditional infrastructure setups.
-
-
-
-
-
-46
-Microsoft Copilot Studio
-Prompt modification allows you to expand the capabilities of generative answers, or boosted conversations, by adding custom instructions. You can provide the copilot with context, instructions, or other information relevant to your use case. This is the system message that can be included at the start of a conversation with a generative AI model.
-
-
-
-
-
-47
-MS Data Analyst
-When it comes to configuring visuals for mobile reports, Power BI does all the hard work for you. However, if you want to turn off this default responsiveness, you can do so in the General section of the visual's format settings.
 
 
 
@@ -225,57 +446,6 @@ Every resource type is implemented by a provider; without providers, Terraform c
 
 
 49
-Terraform
-While you will typically not want to destroy long-lived objects in a production environment, Terraform is sometimes used to manage ephemeral infrastructure for development purposes, in which case you can use terraform destroy to conveniently clean up all of those temporary objects once you are finished with your work.
-
-
-
-
-
-50
-Microsoft Copilot Studio
-GraphSearch in Azure is a service that allows users to query and analyze large-scale graph data. It enables users to discover connections and relationships within complex datasets, such as social networks, recommendation systems, and knowledge graphs.
-
-
-
-
-
-51
-MS Data Analyst
-Report settings can:
-
-Add an Apply button to all basic filters in the Filters pane. A single filter will apply when the report consumer selects the Apply button in the filter card.
-Add an Apply button to the Filters pane. All filters will apply simultaneously when the report consumer selects the Apply button. This option is helpful when report consumers want to update many filters at the same time.
-
-
-
-
-
-52
-Terraform
-In addition to basic mapping, Terraform stores a cache of the attribute values for all resources in the state. This is the most optional feature of Terraform state and is done only as a performance improvement.
-
-
-
-
-
-53
-Terraform
-Terraform must store state about your managed infrastructure and configuration. This state is used by Terraform to map real world resources to your configuration, keep track of metadata, and to improve performance for large infrastructures.
-
-
-
-
-
-54
-Azure DevOps Access Levels
-Adding a user or group to a team or project gives them automatic access to the features of the default access level and security group. Most users can access most features by being assigned to the Basic access level and Contributors security group.
-
-
-
-
-
-55
 Azure AI Search
 An end-to-end exploration of core search features can be accomplished in four steps:
 
@@ -288,78 +458,56 @@ Finish with Search Explorer, using a portal client to query the search index you
 
 
 
-56
-Azure
-To create an empty text file in PowerShell, you can use the New-Item command with the -ItemType and -Path parameters:
-New-Item -ItemType File -Name "filename.txt".
-This will create a new empty text file named “filename.txt” in the current directory.
+50
+Azure Firewall
+Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instances in Secured Virtual Hubs and Hub Virtual Networks. Policies work across regions and subscriptions.
 
 
 
 
 
-57
+51
 MS Data Analyst
-Highlighting values in reports helps you to quickly communicate important and relevant facts about data. Power BI supports several techniques to highlight values:
-
-Conditional formatting
-Overlaid analytics
-Anomaly detection
-Specialized visuals
+Rule of Thirds, Viewer Connection: The rule of thirds can help you anticipate or control how viewers’ eyes will move from one part of the screen to another1. This can enhance the viewer’s connection with your data story and make your visualization more impactful.
 
 
 
 
 
-58
-MS Data Analyst
-Consider using the Web URL action for numbersto create a bridge to resources that are commonly referenced in tandem. Web URL actions can be highly effective in prompting direct action in external systems.
-
-
-
-
-
-59
-Workera.ai
-Azure Resource Groups provide a logical way to organize and manage resources within the Azure cloud. A resource group is a container that holds related resources for an Azure solution, such as virtual machines, storage accounts, and virtual networks.
-
-
-
-
-
-60
+52
 Azure VDI Project
-Components the customer is responsible for
-User profile management:	FSLogix and Azure Files provide a fast and stateful experience for users through containerized user profiles.
-User host access:	On the creation of a host pool, the type of load balancing is defined as either depth or breadth.
-Sizing and scaling policies for VM: VM sizing components include GPU-enabled VMs.
+Temporary profile	
+A fail-safe profile is created when a user's roaming profile has problems loading. It's discarded at sign-out.
 
 
 
 
 
-61
-Terraform
-The terraform graph command creates a visual representation of a configuration or a set of planned changes.
-
-
-
-
-
-62
+53
 Azure VM Image Builder
-3. Which of the following Azure CLI commands should an administrator run to start an image build using Azure Image Builder? 
-
-az resource invoke-action.
-NOT
-az resource create.
-az vm create.
+Azure Stack HCI (Hyper-Converged Infrastructure) is a hybrid cloud solution provided by Microsoft that combines on-premises infrastructure with Azure services. Azure Stack HCI provides seamless integration with Azure services, enabling organizations to leverage features like Azure Backup, Azure Site Recovery, Azure Monitor, and more.
 
 
 
 
 
-63
+54
+Terraform
+This state is stored by default in a local file named "terraform.tfstate", but we recommend storing it in Terraform Cloud to version, encrypt, and securely share it with your team.
+
+
+
+
+
+55
+Terraform
+The Terraform CLI commands interact with the HashiCorp service Checkpoint to check for the availability of new versions and for critical security bulletins about the current version.
+
+
+
+
+
+56
 Azure VDI Project
 App - RemoteApp applications groups provide users access to the applications you individually publish to the application group. You can create multiple RemoteApp app groups to accommodate different user scenarios. Use RemoteApp to virtualize an app that runs on a legacy OS or one that needs secured access to corporate resources.
 
@@ -367,158 +515,23 @@ App - RemoteApp applications groups provide users access to the applications you
 
 
 
-64
-Microsoft Copilot Studio
-Due to memory limits, generative answers can only use SharePoint files that are under 3 MB. If a file is larger than 3 MB, consider splitting it into multiple smaller files.
-
-
-
-
-
-65
-Azure AI Search
-Querying can happen once an index is populated with searchable content, when your client app sends query requests to a search service and handles responses. All query execution is over a search index that you control.
-
-
-
-
-
-66
-MS Data Analyst
-At report design time in Microsoft Power BI Desktop, you can create measures (except when the model is a live connection to SQL Server Analysis Services multidimensional model). These measures belong to the report, and so they're called report-level measures.
-
-
-
-
-
-67
-Bicep
-Bicep provides reliable type safety and support for code reuse 1.
-Bicep files define the infrastructure you want to deploy to Azure, and can be used throughout the development lifecycle to repeatedly deploy your infrastructure in a consistent manner 1.
-
-
-
-
-
-68
-Azure Key Vault Secrets
-Key Vault also supports a contentType field for secrets. Clients may specify the content type of a secret to help interpreting the secret data when it's retrieved. The maximum length of this field is 255 characters. The suggested usage is as a hint for interpreting the secret data. For instance, an implementation may store both passwords and certificates as secrets, then use this field to differentiate.
-
-
-
-
-
-69
-Child Services AWS Review
-Batch printing refers to the process of printing multiple files in a single print job. This means that instead of printing each document individually, businesses can group multiple documents into one print job and have them printed at once.
-
-
-
-
-
-70
-Azure VM Image Builder
-There are limits, per subscription, for deploying resources using Azure Compute Galleries:
-
-
-
-
-
-71
-Workera.ai
-Amazon Rekognition, Celebrity Recognition:
-
-The RecognizeCelebrities operation identifies celebrities in an image.
-It can recognize well-known people and return information about them.
-
-
-
-
-
-72
-MS Data Analyst
-Clustering allows you to identify a segment (cluster) of data that is similar to each other but dissimilar to the rest of the data. The process of clustering is different to that of grouping, which you accomplished previously.
-
-To apply clustering to your scatter chart, select More options (...) in the upper-right corner of the visual and then select Automatically find clusters.
-
-
-
-
-
-73
+57
 Terraform
-A provider in Terraform is a plugin that enables interaction with an API.
-Providers are specified in the Terraform configuration code and tell Terraform which services it needs to interact with.
+While the format of the state files are just JSON, direct file editing of the state is discouraged. Terraform provides the terraform state command to perform basic modifications of the state using the CLI.
 
 
 
 
 
-74
-Workera.ai
-Azure DevTest Labs enables quick provisioning of resources such as virtual machines, allowing development and testing teams to create environments on-demand. This is particularly useful for scenarios where teams need to replicate production environments for testing purposes.
-
-
-
-
-
-75
+58
 MS Data Analyst
-The Filters Query reduction settings allow you to instantly apply basic filter changes. The Persistent filters of Report settings allow you to prevent users from saving filters in the Power BI service.
+In a larger organization, it can be difficult to design a single report that meets everyone's needs, so one solution is using personalized visuals. These allow individual consumers to make minor design changes to best understand the data themselves.
 
 
 
 
 
-76
-General
-The convention of providing the full expansion of an acronym or initialism upon its first use in a document or text is commonly referred to as "acronym expansion" or "initialism expansion." This practice is employed to ensure that readers or audience members understand the meaning of the acronym before encountering it in its abbreviated form throughout the rest of the document.
-
-
-
-
-
-77
-Azure Pipelines
-Agent
-When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs a build or deployment job.
-
-
-
-
-
-78
-MS Data Analyst
-Role in a Power BI workspace: Viewer
-
-View and interact with an item
-Read data that's stored in workspace dataflows
-
-
-
-
-
-79
-Azure VDI Project
-To build images, you create a template as a JSON file. In the template, you define builders and provisioners that carry out the actual build process. Packer has a builder for Azure that allows you to define Azure resources, such as the service principal credentials created in the preceding step.
-
-
-
-
-
-80
-MS Data Analyst
-3. At the Contoso Skateboard Company, James is designing a dashboard report. It must prominently show values of sales revenue, units sold, cost of goods sold, and profit, and each value should be compared to a target value. What type of report visual should James choose to support the report consumer requirement? 
-
-KPI
-NOT
-Card, Ribbon Chart, or Stacked Bar Chart.
-
-
-
-
-
-81
+59
 Web Scraping
 from datetime import datetime
 # Get the current time
@@ -532,74 +545,286 @@ filename = f'my_file_{time_string}.txt'
 
 
 
-82
+60
 MS Data Analyst
-Paginated reports give a pixel-perfect view of the data. Pixel perfect means that you have total control of how the report renders. If you want a footer on every sales receipt that you create, a paginated report is the appropriate solution. If you want a certain customer's name to always appear in green font on a report, you can do that in a paginated report.
+The Filters Query reduction settings allow you to instantly apply basic filter changes. The Persistent filters of Report settings allow you to prevent users from saving filters in the Power BI service.
+
+
+
+
+
+61
+MS Data Analyst
+Knowing how your report consumers are likely interacting with reports should influence your report designs. Consider the number of visuals that display together on the page, the complexity of visuals, spacing between visuals, and the use of interactive design elements such as tooltips, slicers, buttons, or filters.
+
+
+
+
+
+62
+Azure VDI Project
+Packer authenticates with Azure using a service principal. An Azure service principal is a security identity that you can use with apps, services, and automation tools like Packer. You control and define the permissions as to what operations the service principal can perform in Azure.
+
+
+
+
+
+63
+Azure VDI Project
+Mandatory profile	
+A mandatory profile is a roaming user profile that an administrator has preconfigured to specify settings for users. With mandatory user profiles, a user can modify their desktop, but the changes aren't saved when the user signs out. The next time the user signs in, the mandatory user profile that the administrator created is downloaded. Mandatory profiles are typically used in a kiosk environment.
+
+
+
+
+
+64
+General
+Additionally, pipx adds symbolic links to your PATH variable for every command-line script exposed by the installed packages. As a result, you can invoke those scripts directly from the command line without explicitly running them through the Python interpreter.
+
+
+
+
+
+65
+Site Scraping
+Navigate to a specific website with Selenium
+
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+
+site_url = "https://basec.sicomm.net/vendorlogin/"
+driver = webdriver.Chrome()
+driver.get(site_url)
+
+
+
+
+
+66
+Workera.ai
+Amazon Rekognition, Celebrity Recognition:
+
+The RecognizeCelebrities operation identifies celebrities in an image.
+It can recognize well-known people and return information about them.
+
+
+
+
+
+67
+Terraform
+The best way to handle CLI authentication in Terraform Cloud is with the login and logout commands, which help automate the process of getting an API token for your Terraform Cloud user account.
+
+
+
+
+
+68
+MS Data Analyst
+The Pin a live page feature reflects real-time changes, ensuring that your reports always stay up-to-date.
+
+Pinning a report page is a simple way to pin all visuals at once. All slicers and filters still work and that the visuals have the same data as in the report. The visuals appear as a page, so there are no reformatting options.
+
+
+
+
+
+69
+MS Data Analyst
+Use the alignment commands on the Format Pane, which will help you quickly and accurately align visuals.
+
+
+
+
+
+70
+Azure VDI Project
+4. Which of these steps is not part of creating an FSLogix profile? 
+
+Install FSLogix software in Azure Virtual Desktop gallery images
+FSLogix software is preinstalled in the Azure gallery images. If you use your own image, you'll need to install the FSLogix software yourself.
+
+
+
+
+
+71
+Azure VDI Project
+To build images, you create a template as a JSON file. In the template, you define builders and provisioners that carry out the actual build process. Packer has a builder for Azure that allows you to define Azure resources, such as the service principal credentials created in the preceding step.
+
+
+
+
+
+72
+Site Scraping
+There’s one more function in the re module that’s useful for parsing out text. re.sub(), which is short for substitute, allows you to replace the text in a string that matches a regular expression with new text. It behaves sort of like the .replace() string method.
+
+
+
+
+
+73
+Web Scraping
+HTTP request concept:
+Token-based authentication: This method involves sending a token, such as a JSON Web Token (JWT), as part of the request header. The token is generated by the server after the user has successfully authenticated and contains information about the user and their permissions. The token is sent in the Authorization header with the Bearer keyword.
+
+
+
+
+
+74
+Bicep
+Bicep has a Visual Studio Code extension that provides code snippets and a visualizer to see the graphical representation of the Bicep script and the dependencies between resources 2.
+Bicep supports the use of modules to scope resources to a resource group and expose variables 2.
+
+
+
+
+
+75
+General
+You can use Ctrl+U to clear up to the beginning of a line in a Bash command line.
+
+
+
+
+
+76
+Terraform
+The terraform apply command performs a plan just like terraform plan does, but then actually carries out the planned changes to each resource using the relevant infrastructure provider's API.
+
+
+
+
+
+77
+MS Data Analyst
+Occasionally, it might make sense to have a single report with many pages. Other times, it could make sense to separate pages into different reports. This scenario is especially true when you design those pages for a different audience or when you need to secure, share, or distribute them differently. Reports are a security and publication unit, and report pages belong to reports and can't be secured or published independently of the report.
+
+
+
+
+
+78
+Azure Key Vault
+The Azure Key Vault Standard and Premium tiers are billed on a transactional basis, with an additional monthly per-key charge for premium hardware-backed keys. Managed HSM, Dedicated HSM, and Payments HSM don't charge on a transactional basis; instead they are always-in-use devices that are billed at a fixed hourly rate.
+
+
+
+
+
+79
+Azure Key Vault
+Single tenancy refers to a single dedicated instance of an application deployed for each customer, rather than a shared instance amongst multiple customers. The need for single tenant products is often found as an internal compliance requirement in financial service industries.
+
+
+
+
+
+80
+MS Data Analyst
+By default, cross filtering (or cross highlighting) works between any two visuals. However, the report author can edit visual interactions between any pair of visuals and in either direction. Then, they can disable cross filtering or modify the interaction to use cross highlighting instead.
+
+
+
+
+
+81
+General
+The convention of providing the full expansion of an acronym or initialism upon its first use in a document or text is commonly referred to as "acronym expansion" or "initialism expansion." This practice is employed to ensure that readers or audience members understand the meaning of the acronym before encountering it in its abbreviated form throughout the rest of the document.
+
+
+
+
+
+82
+Terraform
+Terraform Cloud and Terraform Enterprise are platforms that perform Terraform runs to provision infrastructure, offering a collaboration-focused environment that makes it easier for teams to use Terraform together.
 
 
 
 
 
 83
-Azure Naming Convention
-A good name for a resource helps you to quickly identify its type, its associated workload, its environment, and the Azure region where it runs. To do so, names should follow a consistent format—a naming convention—that is composed of important information about each resource.
+Azure VDI Project
+In HCL, The ordering of root blocks is not significant. The order of provisioner or post-processor blocks within a build is the only major feature where block order matters.
 
 
 
 
 
 84
-Terraform
-The command line interface to Terraform is the terraform command, which accepts a variety of subcommands such as terraform init or terraform plan.
+MS Data Analyst
+What is the best way to share a custom theme?
+
+Save and share custom theme JSON file
+NOT
+Send the modified .pbix file
+Set the default theme for the organization
 
 
 
 
 
 85
-Azure Pipelines
-Pipeline
-A pipeline defines the continuous integration and deployment process for your app. It's made up of steps called tasks.
-
-It can be thought of as a script that describes how your test, build, and deployment steps are run.
+Azure Naming Convention
+A VM name in Azure can be longer than the OS naming restrictions. Keeping Azure VM names shorter than the naming restrictions of the OS helps create consistency, improve communication when discussing resources, and reduce confusion when you're working in the Azure portal while being signed in to the VM itself.
 
 
 
 
 
 86
-Terraform
-The terraform plan command evaluates a Terraform configuration to determine the desired state of all the resources it declares, then compares that desired state to the real infrastructure objects being managed with the current working directory and workspace.
+Microsoft Copilot Studio
+The URL used in your copilot represents the scope of content for generating responses. There are requirements and restrictions on some URLs.
+
+URLs that point to a website, requiring authentication or ones not indexed by Bing.
+
+For example, wikis and SharePoint sites require authentication, therefore can't be used:
+
+fabrikam.visualstudio.com/project/_wiki
+fabrikam.sharepoint.com
 
 
 
 
 
 87
-Azure Key Vault
-Platform-managed keys (PMKs) are encryption keys generated, stored, and managed entirely by Azure. Customers do not interact with PMKs. The keys used for Azure Data Encryption-at-Rest, for instance, are PMKs by default.
+Azure Key Vault Secrets
+When dealing with REST APIs or SDKs for Azure Key Vault, you'll commonly encounter date-time strings in ISO 8601 format, which look something like YYYY-MM-DDTHH:MM:SSZ for Coordinated Universal Time (UTC), or Unix timestamps which count the seconds since the Unix epoch (00:00:00 UTC on 1 January 1970).
 
 
 
 
 
 88
-MS Data Analyst
-Incremental refresh should only be used on data sources and queries that support query folding. If query folding isn't supported, incremental refresh could lead to a bad user experience because, while it will still issue the queries for the relevant partitions, it will pull all data, potentially multiple times.
+Azure Key Vault
+Customer-managed keys (CMK), on the other hand, are keys read, created, deleted, updated, and/or administered by one or more customers. Keys stored in a customer-owned key vault or hardware security module (HSM) are CMKs. Bring Your Own Key (BYOK) is a CMK scenario in which a customer imports (brings) keys from an outside storage location into an Azure key management service
 
 
 
 
 
 89
-Workera.ai
-Azure Container Network Interface (CNI) plug-ins in Azure are designed to seamlessly integrate with Azure networking services. This integration ensures that containers can communicate with other resources in the Azure environment and take advantage of features like virtual networks, load balancers, and security groups.
+Terraform
+In the default configuration, Terraform stores the state in a file in the current working directory where Terraform was run. This is okay for getting started, but when using Terraform in a team it is important for everyone to be working with the same state so that operations will be applied to the same remote objects. Remote state is the recommended solution to this problem.
 
 
 
 
 
 90
+General
+Idempotence is the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application.
+
+
+
+
+
+91
 Site Scraping
 Often, you use re.search() to search for a particular pattern inside a string. This function is somewhat more complicated than re.findall() because it returns an object called MatchObject that stores different groups of data. This is because there might be matches inside other matches, and re.search() returns every possible result.
 
@@ -607,15 +832,70 @@ Often, you use re.search() to search for a particular pattern inside a string. T
 
 
 
-91
-Azure Firewall
-New policies can be created from scratch or inherited from existing policies. Inheritance allows DevOps to create local firewall policies on top of organization mandated base policy.
-
-
-
-
-
 92
+MS Data Analyst
+Incremental refresh should only be used on data sources and queries that support query folding. If query folding isn't supported, incremental refresh could lead to a bad user experience because, while it will still issue the queries for the relevant partitions, it will pull all data, potentially multiple times.
+
+
+
+
+
+93
+Workera.ai
+Azure Resource Groups provide a logical way to organize and manage resources within the Azure cloud. A resource group is a container that holds related resources for an Azure solution, such as virtual machines, storage accounts, and virtual networks.
+
+
+
+
+
+94
+Azure DevOps Access Levels
+Adding a user or group to a team or project gives them automatic access to the features of the default access level and security group. Most users can access most features by being assigned to the Basic access level and Contributors security group.
+
+
+
+
+
+95
+MS Data Analyst 
+The Workspace OneDrive setting allows you to configure a Microsoft 365 group whose SharePoint Online document library is available to workspace users once the workspace is created.
+
+
+
+
+
+96
+Azure VDI Project
+Desktop - Remote Desktop application groups give users access to a full desktop. You can provide a desktop where the session host VM resources are shared or pooled. Or you can provide personal desktops to users that need to be able to add or remove programs without impacting other users.
+
+
+
+
+
+97
+MS Data Analyst
+Highlighting values in reports helps you to quickly communicate important and relevant facts about data. Power BI supports several techniques to highlight values:
+
+Conditional formatting
+Overlaid analytics
+Anomaly detection
+Specialized visuals
+
+
+
+
+
+98
+Azure Naming Convention
+Some of these example names use a three-digit padding scheme (###), such as mktg-prod-001.
+
+Padding improves readability and sorting of assets when those assets are managed in a configuration management database (CMDB), IT Asset Management tool, or traditional accounting tools.
+
+
+
+
+
+99
 Azure VM Image Builder
 when you create a VM the operating system data is updated with several items, including:
 
@@ -630,96 +910,7 @@ These items must be reset to their default settings before you capture an image.
 
 
 
-93
-Azure VDI Project
-In HCL, Blocks are containers for other content and usually represent the same kind of object, like a source. Blocks have a block type, can have zero or more labels, and have a body that contains any number of arguments and nested blocks. Most of Packer's features are controlled by top-level blocks in a configuration file.
-
-
-
-
-
-94
-MS Data Analyst
-Report page load times are primarily determined by number of visuals (objects) on the page, and DAX performance. Neither of which are impacted by unnecessary model columns.
-
-
-
-
-
-95
-Terraform
-The terraform state show command can print all of the attributes of a given resource being managed by the current working directory and workspace, including generated read-only attributes like the unique ID assigned by the cloud provider.
-
-
-
-
-
-96
-Microsoft Copilot Studio
-You can upload your own documents for your copilot to generate answers with generative AI. The documents are used across your copilot, but you can specify individual nodes that shouldn't use uploaded documents. Uploaded documents are stored securely in Dataverse. The number of documents you can upload is only limited by the available file storage for your Dataverse environment.
-
-
-
-
-
-97
-Azure Pipelines
-Job
-A build contains one or more jobs. Most jobs run on an agent. A job represents an execution boundary of a set of steps. All the steps run together on the same agent.
-
-For example, you might build two configurations - x86 and x64. In this case, you have one build and two jobs.
-
-
-
-
-
-98
-Azure VM Image Builder
-Use the Sysprep.exe tool to generalize a Windows VM. Follow these steps:
-
-Sign in to the Windows VM.
-Open an elevated Command Prompt.
-Navigate to the C:\windows\system32\sysprep folder.
-Run sysprep.exe.
-In the System Preparation Tool dialog box, select the settings in the following table, and then select OK.
-
-
-
-
-
-99
-MS Data Analyst
-Creation: You can create display folders in Power BI Desktop by going to the Modeling tab and selecting the "Manage Display Folders" option. From there, you can create new folders and move fields into them. You can also create display folders using Tabular Editor or by editing the model.bim file.
-
-
-
-
-
 100
-MS Data Analyst
-In the Row-Level Security screen for a model, you can add Microsoft Entra ID users and security groups to the security role. When members are added to this role, the DAX filter that you previously defined will be applied to them. If members are not added to the role, but they have access to the report, RLS will not apply to them.
-
-
-
-
-
-101
-Azure VDI Project
-A user profile is a collection of configurations that the user or administrator made to represent the state of a system. Various system components bind to a user's profile. These components include applications, registry entries, and other customized entries.
-
-
-
-
-
-102
-Terraform
-This state is stored by default in a local file named "terraform.tfstate", but we recommend storing it in Terraform Cloud to version, encrypt, and securely share it with your team.
-
-
-
-
-
-103
 MS Data Analyst
 Role in a Power BI workspace: Admin
 
@@ -730,114 +921,31 @@ Add or remove people, including other admins
 
 
 
-104
-Azure Pipelines
-Trigger
-A trigger is set up to tell the pipeline when to run. You can configure a pipeline to run upon a push to a repository at scheduled times or upon completing another build. All these actions are known as triggers.
-
-
-
-
-
-105
-Site Scraping
-Use Selenium to authenticate
-Need to find elements By.ID and then send keys to type into those boxes. Then submit form.
-  username_field = driver.find_element(By.ID, 'inputUserId')
-  password_field = driver.find_element(By.ID, 'inputPassword')
-  username_field.send_keys('Username')
-  password_field.send_keys('Password')
-  sleep(3)
-  password_field.submit()
-
-
-
-
-
-106
+101
 Azure VDI Project
-Roaming user profile	
-It's not possible to roam all settings for Windows and applications. A performance and maintenance penalty is paid for the flexibility. The addition of FSLogix profile containers addressed the shortcomings of traditional roaming profiles. The next section describes FSLogix profile containers.
+Local vs. Group Policy: The Local Group Policy Editor is used to configure settings on a single Windows computer, whereas the Group Policy Editor (GPO) is used to manage policies for multiple computers in a domain network. The Local Group Policy Editor is primarily for individual system customization.
 
 
 
 
 
-107
-Microsoft Copilot Studio
-Generative answers can use these sources:
-
-Internal resources:
-SharePoint (.aspx pages aren't supported)
-OneDrive for Business
-Documents uploaded to Dataverse
-Custom data (internal or external): supply your own source, such as a Power Automate Flow or from Skill.
+102
+Azure Naming Convention
+A good name for a resource helps you to quickly identify its type, its associated workload, its environment, and the Azure region where it runs. To do so, names should follow a consistent format—a naming convention—that is composed of important information about each resource.
 
 
 
 
 
-108
-Power BI
-DAX Function
-HASONEVALUE(<columnName>)  
-Returns TRUE when the context for columnName has been filtered down to one distinct value only. Otherwise is FALSE.
-
-
-
-
-
-109
-MS Data Analyst
-The three main AI visuals are:
-  Key influencers
-  Decomposition tree
-  Q&A
-
-When adding an AI visual to your report, make sure that you size it to become as large as possible. That way, report consumers can fully interact with and explore the data in the visual.
-
-
-
-
-
-110
+103
 Azure VM Image Builder
-Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
-
-Microsoft.Network manages resources such as virtual networks, public IP addresses, and network security groups.
-Microsoft.KeyVault manages resources related to secure key management and secrets storage.
+Azure Resource Providers are essentially services within the Azure ecosystem that manage specific types of Azure resources. When you interact with Azure, whether through the Azure Portal, Azure CLI, Azure PowerShell, REST APIs, or SDKs, you're often dealing with these resources. Each resource provider specializes in a particular category of resources, such as virtual machines, storage accounts, databases, etc.
 
 
 
 
 
-111
-DAX Studio
-Referencing Tables Using EVALUATE: You can also reference entire tables using EVALUATE. For example, if you want to return the Products Table, execute EVALUATE Products.
-
-
-
-
-
-112
-MS Data Analyst
-The Q&A visual allows report consumers to ask questions of their data and receive responses as data visualizations. Similar to how web search engines parse and understand complex search requests, report consumers can write natural language questions (in English).
-
-
-
-
-
-113
-MS Data Analyst
-To learn how to run a network port test, see Adjust communication settings for the on-premises data gateway.
-To get information on how to provide proxy information for your gateway, see Configure proxy settings for the on-premises data gateway.
-To find the current data center region that you're in, see Set the data center region.
-
-
-
-
-
-114
+104
 MS Data Analyst
 Requirements for a date table
   It must have a column of data type Date (or date/time), known as the date column.
@@ -851,21 +959,50 @@ Requirements for a date table
 
 
 
-115
-Site Scraping
-This project involved me writing and then freezing a Python script that would:
-    Navigate to a specific website
-    Use Selenium to authenticate
-    Use Selenium to navigate to desirable data
-    Use Selenium to extract row data
-    Use Pandas to save row data to an excel file
-    Use win32com.client to email excel sheet to self
+105
+MS Data Analyst
+Creation: You can create display folders in Power BI Desktop by going to the Modeling tab and selecting the "Manage Display Folders" option. From there, you can create new folders and move fields into them. You can also create display folders using Tabular Editor or by editing the model.bim file.
 
 
 
 
 
-116
+106
+MS Data Analyst
+Consider using the Web URL action for numbersto create a bridge to resources that are commonly referenced in tandem. Web URL actions can be highly effective in prompting direct action in external systems.
+
+
+
+
+
+107
+DAX Studio
+Referencing Tables Using EVALUATE: You can also reference entire tables using EVALUATE. For example, if you want to return the Products Table, execute EVALUATE Products.
+
+
+
+
+
+108
+Microsoft Copilot Studio
+GraphSearch is designed to integrate seamlessly with other Azure services, allowing users to leverage the full capabilities of the Azure ecosystem. This includes integration with Azure Active Directory for authentication and access control, Azure Data Lake Storage for storing large volumes of graph data, and Azure Synapse Analytics for advanced analytics and data processing.
+
+
+
+
+
+109
+Azure VDI Project
+Components the customer is responsible for
+User profile management:	FSLogix and Azure Files provide a fast and stateful experience for users through containerized user profiles.
+User host access:	On the creation of a host pool, the type of load balancing is defined as either depth or breadth.
+Sizing and scaling policies for VM: VM sizing components include GPU-enabled VMs.
+
+
+
+
+
+110
 Azure VDI Project
 Type of HCL Block:
 build blocks contain configuration for a specific combination of builders, provisioners, and post-processors used to create a specific image artifact.
@@ -874,64 +1011,179 @@ build blocks contain configuration for a specific combination of builders, provi
 
 
 
-117
+111
+Terraform
+We refer to the terraform command line tool as "Terraform CLI" elsewhere in the documentation. This terminology is often used to distinguish it from other components you might use in the Terraform product family, such as Terraform Cloud or the various Terraform providers, which are developed and released separately from Terraform CLI.
+
+
+
+
+
+112
+MS Data Analyst
+In Power BI Desktop, you can set the tab order for how a keyboard user will experience your report. First, navigate to the View tab in the ribbon, then select Selection in the Show Panes section.
+
+You'll see Layer order and Tab order, with a list of report elements. Layer order allows you to stack elements, whereas tab order dictates which item will be accessed next when the keyboard user tabs to the next item. Use the up/down arrows to set the order.
+
+
+
+
+
+113
+Azure AI Search
+An index is defined by a schema and saved to the search service, with data import following as a second step. This content exists within your search service, apart from your primary data stores, which is necessary for the millisecond response times expected in modern search applications.
+
+
+
+
+
+114
 Azure VM Image Builder
-Azure Resource Providers are essentially services within the Azure ecosystem that manage specific types of Azure resources. When you interact with Azure, whether through the Azure Portal, Azure CLI, Azure PowerShell, REST APIs, or SDKs, you're often dealing with these resources. Each resource provider specializes in a particular category of resources, such as virtual machines, storage accounts, databases, etc.
+Hybrid Cloud Capabilities: Azure Stack HCI extends the capabilities of on-premises infrastructure by seamlessly connecting to Azure services. It allows organizations to build and manage applications across both on-premises environments and the cloud, providing a consistent platform for development, deployment, and management.
+
+
+
+
+
+115
+MS Data Analyst
+At report design time in Microsoft Power BI Desktop, you can create measures (except when the model is a live connection to SQL Server Analysis Services multidimensional model). These measures belong to the report, and so they're called report-level measures.
+
+
+
+
+
+116
+Azure Key Vault
+Platform-managed keys (PMKs) are encryption keys generated, stored, and managed entirely by Azure. Customers do not interact with PMKs. The keys used for Azure Data Encryption-at-Rest, for instance, are PMKs by default.
+
+
+
+
+
+117
+Azure VDI Project
+Images - When you configure session hosts for application groups, you have your choice of images. Use a recommended image like Windows 10 Enterprise multi-session + Office 365. Or choose another image in your gallery or an image provided by Microsoft or other publishers. You can also use your own image built through Hyper-V or on an Azure VM.
 
 
 
 
 
 118
-MS Data Analyst
-Metrics are where you can create goals based off existing datasets. You can add members to a workspace, but they receive a notification that they’ve been added to the workspace.
+Azure VM Image Builder
+Use the Sysprep.exe tool to generalize a Windows VM. Follow these steps:
+
+Sign in to the Windows VM.
+Open an elevated Command Prompt.
+Navigate to the C:\windows\system32\sysprep folder.
+Run sysprep.exe.
+In the System Preparation Tool dialog box, select the settings in the following table, and then select OK.
 
 
 
 
 
 119
-Azure VDI Project
-Mandatory profile	
-A mandatory profile is a roaming user profile that an administrator has preconfigured to specify settings for users. With mandatory user profiles, a user can modify their desktop, but the changes aren't saved when the user signs out. The next time the user signs in, the mandatory user profile that the administrator created is downloaded. Mandatory profiles are typically used in a kiosk environment.
+MS Data Analyst
+A good example of an operational report is one that allows monitoring of a manufacturing production line. When an unexpected event arises, such as equipment malfunction, a button could allow workers to start a maintenance request.
 
 
 
 
 
 120
-Azure projects
-The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure. After you create your configuration files, you create an execution plan that allows you to preview your infrastructure changes before they're deployed.
+Web Scraping
+HTTP request concept:
+OAuth: This is an open standard for authorization that allows users to grant third-party applications access to their resources without sharing their credentials. The user is redirected to the authorization server, where they grant access to the third-party application. The application then receives an access token, which is used to authenticate requests to the resource server.
 
 
 
 
 
 121
-MS Data Analyst 
-The Workspace OneDrive setting allows you to configure a Microsoft 365 group whose SharePoint Online document library is available to workspace users once the workspace is created.
+MS Data Analyst
+To develop Python visuals, you need to have Python installed on your machine. Many Python packages are supported in Power BI, but not all. See Learn which Python packages are supported in Power BI for a complete list of supported packages and Python visual limitations.
 
 
 
 
 
 122
-Site Scraping
-Dynamic content: AJAX, which stands for Asynchronous JavaScript and XML, techniques can be used to dynamically update the content of a web page without requiring a full page refresh. This can improve the user experience by providing faster and more seamless updates.
+Azure VM Image Builder
+	• For non-Virtual Machine Scale Set deployments - For every 20 VMs that you create concurrently, we recommend that you keep at least one replica. For example, if you're creating 120 VMs concurrently using the same image in a region, we suggest you keep at least 6 replicas for your image.
 
 
 
 
 
 123
-Site Scraping
-Asynchronous: AJAX, which stands for Asynchronous JavaScript and XML, allows web pages to send and retrieve data from a server asynchronously, without interfering with the display and behavior of the existing page. This means that the user can continue to interact with the page while data is being exchanged in the background.
+Microsoft Copilot Studio
+The Boost conversations option in Copilot Studio helps solve that issue by using the natural language processing capabilities of Azure OpenAI. OpenAI's GPT technology with the AI already in Copilot Studio include transformer-based natural language understanding that helps the copilot to:
+
+Understand a user's intent by parsing what they type and determining what they're asking.
+Find, collate, and parse relevant information from a URL you specify.
+Create a plain language response for the copilot user.
 
 
 
 
 
 124
+Azure VDI Project
+Roaming user profile	
+It's not possible to roam all settings for Windows and applications. A performance and maintenance penalty is paid for the flexibility. The addition of FSLogix profile containers addressed the shortcomings of traditional roaming profiles. The next section describes FSLogix profile containers.
+
+
+
+
+
+125
+MS Data Analyst
+Two bookmarks are required for creating a pop-up overlay:
+
+Configure the first bookmark to capture the Display state.
+Ensure that the overlay object is visible, and then update the bookmark.
+Assign the bookmark to a Help button action.
+Configure the second bookmark to capture the Display state.
+Ensure that the overlay object is hidden, and then update the bookmark.
+Assign the bookmark to the overlay object.
+
+
+
+
+
+126
+MS Data Analyst
+Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
+Test - Where a small group of users and user acceptance testers can see and review new reports, provide feedback, and test the reports with larger semantic models for bugs and data inconsistencies before it goes into production.
+
+
+
+
+
+127
+Info Assistant/OpenAI
+With App Service, you pay for the Azure compute resources you use. The compute resources you use are determined by the App Service plan that you run your apps on. For more information, see Azure App Service plans overview.
+
+
+
+
+
+128
+Microsoft Copilot Studio
+Generative answers can use these sources:
+
+Internal resources:
+SharePoint (.aspx pages aren't supported)
+OneDrive for Business
+Documents uploaded to Dataverse
+Custom data (internal or external): supply your own source, such as a Power Automate Flow or from Skill.
+
+
+
+
+
+129
 Azure VDA
 DON'T DO THIS AGAIN (3/20/24)
   Capture a specialized image
@@ -945,292 +1197,58 @@ It was probably the deployment in the same subnet that broke things.
 
 
 
-125
-Terraform
-By default, when Terraform creates a plan it:
-
-	• Reads the current state of any already-existing remote objects to make sure that the Terraform state is up-to-date.
-	• Compares the current configuration to the prior state by noting any differences.
-Proposes a set of change actions that should, if applied, make the remote objects match the configuration.
-
-
-
-
-
-126
-Azure VM Image Builder
-Registration: Some Azure Resource Providers may need to be registered before you can use their resources. Registration is typically required for preview features or services that are not enabled by default. The registrationState property you saw in the commands indicates whether a provider is registered or not.
-
-
-
-
-
-127
-General
-You can use Ctrl+U to clear up to the beginning of a line in a Bash command line.
-
-
-
-
-
-128
-MS Data Analyst
-To develop Python visuals, you need to have Python installed on your machine. Many Python packages are supported in Power BI, but not all. See Learn which Python packages are supported in Power BI for a complete list of supported packages and Python visual limitations.
-
-
-
-
-
-129
-Terraform
-The terraform show command can generate human-readable versions of a state file or plan file, or generate machine-readable versions that can be integrated with other tools.
-
-
-
-
-
 130
 Microsoft Copilot Studio
-GraphSearch is designed to integrate seamlessly with other Azure services, allowing users to leverage the full capabilities of the Azure ecosystem. This includes integration with Azure Active Directory for authentication and access control, Azure Data Lake Storage for storing large volumes of graph data, and Azure Synapse Analytics for advanced analytics and data processing.
+Your copilot has difficulty answering questions that require calculations, comparisons, or form submissions. Your copilot might not understand comparative and superlative terms such as better or best, latest, or cheapest in a question.
 
 
 
 
 
 131
-Azure VM Image Builder
-Resource Management: Resource Providers are responsible for managing the lifecycle of Azure resources within their domain. This includes creating, updating, deleting, and querying resources.
+Azure Pipelines
+Job
+A build contains one or more jobs. Most jobs run on an agent. A job represents an execution boundary of a set of steps. All the steps run together on the same agent.
+
+For example, you might build two configurations - x86 and x64. In this case, you have one build and two jobs.
 
 
 
 
 
 132
-Info Assistant/OpenAI
-With App Service, you pay for the Azure compute resources you use. The compute resources you use are determined by the App Service plan that you run your apps on. For more information, see Azure App Service plans overview.
+Terraform
+While you will typically not want to destroy long-lived objects in a production environment, Terraform is sometimes used to manage ephemeral infrastructure for development purposes, in which case you can use terraform destroy to conveniently clean up all of those temporary objects once you are finished with your work.
 
 
 
 
 
 133
-Web Scraping
-HTTP request concept:
-Token-based authentication: This method involves sending a token, such as a JSON Web Token (JWT), as part of the request header. The token is generated by the server after the user has successfully authenticated and contains information about the user and their permissions. The token is sent in the Authorization header with the Bearer keyword.
+Site Scraping
+This project involved me writing and then freezing a Python script that would:
+    Navigate to a specific website
+    Use Selenium to authenticate
+    Use Selenium to navigate to desirable data
+    Use Selenium to extract row data
+    Use Pandas to save row data to an excel file
+    Use win32com.client to email excel sheet to self
 
 
 
 
 
 134
-Workera.ai
-Amazon Rekognition, Custom Labels:
-
-Amazon Rekognition Custom Labels enables you to train a model to recognize custom objects and scenes.
-This allows you to create a more specialized and tailored solution for your specific use case.
+MS Data Analyst
+To learn how to run a network port test, see Adjust communication settings for the on-premises data gateway.
+To get information on how to provide proxy information for your gateway, see Configure proxy settings for the on-premises data gateway.
+To find the current data center region that you're in, see Set the data center region.
 
 
 
 
 
 135
-Azure VM Image Builder
-Hybrid Cloud Capabilities: Azure Stack HCI extends the capabilities of on-premises infrastructure by seamlessly connecting to Azure services. It allows organizations to build and manage applications across both on-premises environments and the cloud, providing a consistent platform for development, deployment, and management.
-
-
-
-
-
-136
-MS Data Analyst
-When creating a quick measure in Power BI Desktop, you apply calculations to fields. You do not explicitly create a DAX query, but you choose calculations and fields, which result in automatic generation of a DAX query.
-
-
-
-
-
-137
-MS Data Analyst
-Rule of Thirds, Viewer Connection: The rule of thirds can help you anticipate or control how viewers’ eyes will move from one part of the screen to another1. This can enhance the viewer’s connection with your data story and make your visualization more impactful.
-
-
-
-
-
-138
-Azure VM Image Builder
-Azure Image Builder is a fully managed Azure service that you can access through an Azure resource provider. The Azure Image Builder process has three main parts:
-
-Source
-Customizer
-Distribute
-
-
-
-
-
-139
-Workera.ai
-Azure Resource groups serve as a scope for applying consistent policies, permissions, and tags to a set of resources. This allows for efficient management of resources based on their lifecycle, ownership, or application within a specific project or environment.
-
-
-
-
-
-140
-Site Scraping
-There’s one more function in the re module that’s useful for parsing out text. re.sub(), which is short for substitute, allows you to replace the text in a string that matches a regular expression with new text. It behaves sort of like the .replace() string method.
-
-
-
-
-
-141
-MS Data Analyst
-What is the best way to share a custom theme?
-
-Save and share custom theme JSON file
-NOT
-Send the modified .pbix file
-Set the default theme for the organization
-
-
-
-
-
-142
-General
-SED command in UNIX stands for stream editor and it can perform lots of functions on file like searching, find and replace, insertion or deletion. Though most common use of SED command in UNIX is for substitution or for find and replace. By using SED you can edit files even without opening them, which is much quicker way to find and replace something in file, than first opening that file in VI Editor and then changing it.
-
-
-
-
-
-143
-Azure Naming Convention
-Some of these example names use a three-digit padding scheme (###), such as mktg-prod-001.
-
-Padding improves readability and sorting of assets when those assets are managed in a configuration management database (CMDB), IT Asset Management tool, or traditional accounting tools.
-
-
-
-
-
-144
-Terraform
-The terraform state list command can list the resources being managed by the current working directory and workspace, providing a complete or filtered list.
-
-
-
-
-
-145
-MS Data Analyst
-As enterprises grow, so does their data. Often, strict requirements and regulations must be applied to ensure that this sensitive data is secure. Power BI provides a few different ways to help you accomplish this task:
-
-Use Microsoft sensitivity labels to label dashboards, reports, semantic models, and dataflows by using the same taxonomy that is used to classify and protect files in Microsoft 365.
-Add more protection measures such as encryption and watermarks when you are exporting the data.
-Use Microsoft Cloud App Security to monitor and investigate activities in Power BI.
-
-
-
-
-
-146
-Azure Key Vault Secrets
-The Key Vault service doesn't provide semantics for secrets. It merely accepts the data, encrypts it, stores it, and returns a secret identifier (id). The identifier can be used to retrieve the secret at a later time.
-
-
-
-
-
-147
-Azure VM Image Builder
-1. Which of the following procedures should an administrator employ to generalize a Windows VM in preparation for creating a managed image in Azure? 
-
-Run Sysprep.exe, select the Generalize check box, and then in the Shutdown Options list, select Shutdown.
-
-
-
-
-
-148
-MS Data Analyst
-You can use an external site like powerbi.tips to generate a theme. The site will guide you through building a color palette and setting property values for all core visual types.
-
-For more information, see Use report themes in Power BI Desktop.
-
-
-
-
-
-149
-Site Scraping
-I had to use the os.path abspath function to get the absolute path of the file I created for the sake of sending it as an email attachment.
-  from os.path import abspath
-  ...
-  newmail.Attachments.Add(Source = abspath(relative_output_path))
-  newmail.Send()
-
-
-
-
-
-150
-Azure VM Image Builder
-Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
-
-Microsoft.Compute manages resources related to virtual machines, virtual machine scale sets, and related components.
-Microsoft.Storage manages resources related to storage accounts and storage services.
-
-
-
-
-
-151
-Terraform
-While the format of the state files are just JSON, direct file editing of the state is discouraged. Terraform provides the terraform state command to perform basic modifications of the state using the CLI.
-
-
-
-
-
-152
-Azure AI Search
-An index is defined by a schema and saved to the search service, with data import following as a second step. This content exists within your search service, apart from your primary data stores, which is necessary for the millisecond response times expected in modern search applications.
-
-
-
-
-
-153
-Terraform
-The terraform import CLI command can only import resources into the state. Importing via the CLI does not generate configuration. If you want to generate the accompanying configuration for imported resources, use the import block instead.
-
-
-
-
-
-154
-MS Data Analyst
-To create a mobile-optimized version of your report, you can:
-
-Design a mobile layout view, where you can drag and drop certain visuals onto a phone emulator canvas.
-Use visuals and slicers that are suitable for use on small, mobile screens.
-
-
-
-
-
-155
-Terraform
-The graph output uses the DOT language, which is a machine-readable graph description language which originated in Graphviz. You can use the Graphviz dot command to present the resulting graph description as an image. There are also various third-party online graph rendering services which accept this format.
-
-
-
-
-
-156
 Azure VM Image Builder
 2. What is the first step an administrator needs to perform when creating a managed image from a generalized VM that is in the Stopped (deallocated) status? 
 
@@ -1241,15 +1259,112 @@ That's correct. The administrator must capture the image after it's been general
 
 
 
-157
-General
-Idempotence is the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application.
+136
+Microsoft Copilot Studio
+Prompt modification allows you to expand the capabilities of generative answers, or boosted conversations, by adding custom instructions. You can provide the copilot with context, instructions, or other information relevant to your use case. This is the system message that can be included at the start of a conversation with a generative AI model.
 
 
 
 
 
-158
+137
+Microsoft Copilot Studio
+Due to memory limits, generative answers can only use SharePoint files that are under 3 MB. If a file is larger than 3 MB, consider splitting it into multiple smaller files.
+
+
+
+
+
+138
+Azure Pipelines
+Trigger
+A trigger is set up to tell the pipeline when to run. You can configure a pipeline to run upon a push to a repository at scheduled times or upon completing another build. All these actions are known as triggers.
+
+
+
+
+
+139
+Azure DevOps Access Levels
+Advanced DevOps Integration: Visual Studio Enterprise integrates seamlessly with Microsoft's Azure cloud platform and provides robust DevOps capabilities. It offers features like Azure Pipelines for continuous integration and continuous delivery (CI/CD), Azure DevOps for project management and collaboration, and Azure Monitor for application performance monitoring.
+
+
+
+
+
+140
+MS Data Analyst
+When creating a quick measure in Power BI Desktop, you apply calculations to fields. You do not explicitly create a DAX query, but you choose calculations and fields, which result in automatic generation of a DAX query.
+
+
+
+
+
+141
+Site Scraping
+Use Selenium to navigate to desirable data - this involved moving the driver focus to iframes and then interacting with elements there
+  iframe = driver.find_elements(By.ID, 'tool')[0]
+  driver.switch_to.frame(iframe)
+  ...
+  driver.switch_to.parent_frame()
+  driver.switch_to.frame('data')
+  sleep(3)
+
+
+
+
+
+142
+MS Data Analyst
+Metrics are where you can create goals based off existing datasets. You can add members to a workspace, but they receive a notification that they’ve been added to the workspace.
+
+
+
+
+
+143
+Terraform
+The terraform show command can generate human-readable versions of a state file or plan file, or generate machine-readable versions that can be integrated with other tools.
+
+
+
+
+
+144
+Microsoft Copilot Studio
+GraphSearch in Azure is a service that allows users to query and analyze large-scale graph data. It enables users to discover connections and relationships within complex datasets, such as social networks, recommendation systems, and knowledge graphs.
+
+
+
+
+
+145
+MS Data Analyst
+Clustering allows you to identify a segment (cluster) of data that is similar to each other but dissimilar to the rest of the data. The process of clustering is different to that of grouping, which you accomplished previously.
+
+To apply clustering to your scatter chart, select More options (...) in the upper-right corner of the visual and then select Automatically find clusters.
+
+
+
+
+
+146
+Workera.ai
+Azure DevTest Labs enables quick provisioning of resources such as virtual machines, allowing development and testing teams to create environments on-demand. This is particularly useful for scenarios where teams need to replicate production environments for testing purposes.
+
+
+
+
+
+147
+Azure VM Image Builder
+Role-Based Access Control (RBAC): Azure Resource Providers adhere to Azure's RBAC model, allowing administrators to grant permissions at a granular level. This means you can control who has access to which resources and what actions they can perform.
+
+
+
+
+
+148
 Microsoft Copilot Studio
 The URL used in your copilot represents the scope of content for generating responses. There are requirements and restrictions on some URLs.
 
@@ -1261,42 +1376,145 @@ For example, if www.fabrikam.com redirects to www.contoso.fabrikam.com, your cop
 
 
 
+149
+Workera.ai
+Azure Resource groups serve as a scope for applying consistent policies, permissions, and tags to a set of resources. This allows for efficient management of resources based on their lifecycle, ownership, or application within a specific project or environment.
+
+
+
+
+
+150
+Azure Log Analytics Workspaces
+Each workspace contains multiple tables that are organized into separate columns with multiple rows of data. Each table is defined by a unique set of columns. Rows of data provided by the data source share those columns. Log queries define columns of data to retrieve and provide output to different features of Azure Monitor and other services that use workspaces.
+
+
+
+
+
+151
+Azure AI Search
+Azure AI Search (formerly known as "Azure Cognitive Search") provides secure information retrieval at scale over user-owned content in traditional and conversational search applications.
+
+
+
+
+
+152
+Microsoft Copilot Studio
+SharePoint uses ASPX pages for its master pages and page layouts. Master pages define the overall look and feel of a SharePoint site, including its branding, navigation, and page structure. Page layouts, on the other hand, define the layout and content structure of individual pages within a site.
+
+
+
+
+
+153
+Workera.ai
+Azure Container Network Interface (CNI) plug-ins in Azure are designed to seamlessly integrate with Azure networking services. This integration ensures that containers can communicate with other resources in the Azure environment and take advantage of features like virtual networks, load balancers, and security groups.
+
+
+
+
+
+154
+Azure VDI Project
+1. You have a group of developers that need virtual desktops that they can manage. What type of host pool do you create for them? 
+
+With a personal host pool, each user has their own dedicated VM. They can be a local administrator for their VM to manage app installation.
+
+
+
+
+
+155
+Azure Key Vault
+Azure Key Vault enables Microsoft Azure applications and users to store and use several types of secret/key data: keys, secrets, and certificates. Keys, secrets, and certificates are collectively referred to as "objects".
+
+
+
+
+
+156
+Azure Key Vault Secrets
+Key Vault also supports a contentType field for secrets. Clients may specify the content type of a secret to help interpreting the secret data when it's retrieved. The maximum length of this field is 255 characters. The suggested usage is as a hint for interpreting the secret data. For instance, an implementation may store both passwords and certificates as secrets, then use this field to differentiate.
+
+
+
+
+
+157
+Terraform
+Use the import block to import existing infrastructure resources into Terraform, bringing them under Terraform's management. Unlike the terraform import command, configuration-driven import using import blocks is predictable, works with CICD pipelines, and lets you preview an import operation before modifying state.
+
+
+
+
+
+158
+General
+SED command in UNIX stands for stream editor and it can perform lots of functions on file like searching, find and replace, insertion or deletion. Though most common use of SED command in UNIX is for substitution or for find and replace. By using SED you can edit files even without opening them, which is much quicker way to find and replace something in file, than first opening that file in VI Editor and then changing it.
+
+
+
+
+
 159
 Terraform
-In the default configuration, Terraform stores the state in a file in the current working directory where Terraform was run. This is okay for getting started, but when using Terraform in a team it is important for everyone to be working with the same state so that operations will be applied to the same remote objects. Remote state is the recommended solution to this problem.
+The terraform import CLI command can only import resources into the state. Importing via the CLI does not generate configuration. If you want to generate the accompanying configuration for imported resources, use the import block instead.
 
 
 
 
 
 160
-MS Data Analyst
-3. You have a table that stores account balance snapshots for each date, excluding weekends. You need to ensure that your measure formula only filters by a single date. Also, if no record is on the last date of a time period, it should use the latest account balance. Which DAX time intelligence function should you use? 
-
-The LASTNONBLANK function will return the last date in the filter context where a snapshot record exists. This option will help you achieve the objective.
+Terraform
+Terraform must store state about your managed infrastructure and configuration. This state is used by Terraform to map real world resources to your configuration, keep track of metadata, and to improve performance for large infrastructures.
 
 
 
 
 
 161
-Bicep
-Bicep has a Visual Studio Code extension that provides code snippets and a visualizer to see the graphical representation of the Bicep script and the dependencies between resources 2.
-Bicep supports the use of modules to scope resources to a resource group and expose variables 2.
+MS Data Analyst
+3. At the Contoso Skateboard Company, James is designing a dashboard report. It must prominently show values of sales revenue, units sold, cost of goods sold, and profit, and each value should be compared to a target value. What type of report visual should James choose to support the report consumer requirement? 
+
+KPI
+NOT
+Card, Ribbon Chart, or Stacked Bar Chart.
 
 
 
 
 
 162
-Azure Key Vault
-Single tenancy refers to a single dedicated instance of an application deployed for each customer, rather than a shared instance amongst multiple customers. The need for single tenant products is often found as an internal compliance requirement in financial service industries.
+Site Scraping
+>>> soup.find_all("img")
+[<img src="/static/dionysus.jpg"/>, <img src="/static/grapes.png"/>]
+This returns a list of all <img> tags in the HTML document parsed by the beautifulsoup object soup. The objects in the list look like they might be strings representing the tags, but they’re actually instances of the Tag object provided by Beautiful Soup. Tag objects provide a simple interface for working with the information they contain.
 
 
 
 
 
 163
+Workera.ai
+DevTest Labs includes an Artifact Library, a repository of pre-configured virtual machine images, formulas, and other artifacts. Users can leverage this library to quickly deploy development and test environments. Additionally, custom images can be created, capturing configurations and applications for reuse across multiple environments.
+
+
+
+
+
+164
+Power BI
+DAX Function
+HASONEVALUE(<columnName>)  
+Returns TRUE when the context for columnName has been filtered down to one distinct value only. Otherwise is FALSE.
+
+
+
+
+
+165
 Bicep
 Bicep can be used with the Azure CLI to build and deploy scripts to Azure 2.
 Bicep has a decompiler that can transform an existing ARM template into a Bicep file 2.
@@ -1305,39 +1523,20 @@ Bicep has a decompiler that can transform an existing ARM template into a Bicep 
 
 
 
-164
-Microsoft Copilot Studio
-The Boost conversations option in Copilot Studio helps solve that issue by using the natural language processing capabilities of Azure OpenAI. OpenAI's GPT technology with the AI already in Copilot Studio include transformer-based natural language understanding that helps the copilot to:
-
-Understand a user's intent by parsing what they type and determining what they're asking.
-Find, collate, and parse relevant information from a URL you specify.
-Create a plain language response for the copilot user.
-
-
-
-
-
-165
-Azure VDI Project
-Images - When you configure session hosts for application groups, you have your choice of images. Use a recommended image like Windows 10 Enterprise multi-session + Office 365. Or choose another image in your gallery or an image provided by Microsoft or other publishers. You can also use your own image built through Hyper-V or on an Azure VM.
-
-
-
-
-
 166
-Microsoft Copilot Studio
-Within a copilot's topic, you can add a Create generative answers node. This node allows you to specify more sources that the node searches based on your inputs. Information sources defined in the Generative answers node override sources you specified at the copilot level, which functions as a fallback.
+MS Data Analyst
+Role in a Power BI workspace: Viewer
+
+View and interact with an item
+Read data that's stored in workspace dataflows
 
 
 
 
 
 167
-MS Data Analyst
-In Power BI Desktop, you can set the tab order for how a keyboard user will experience your report. First, navigate to the View tab in the ribbon, then select Selection in the Show Panes section.
-
-You'll see Layer order and Tab order, with a list of report elements. Layer order allows you to stack elements, whereas tab order dictates which item will be accessed next when the keyboard user tabs to the next item. Use the up/down arrows to set the order.
+General
+Making a distribution package runnable or hybrid involves defining one or more entry points in the corresponding configuration file. Historically, these would be setup.py or setup.cfg, but modern build systems in Python should generally rely on the pyproject.toml file and define their entry points in the [project.scripts] TOML table.
 
 
 
@@ -1354,155 +1553,30 @@ In the Groups window that displays is a list of the groups and the different ite
 
 
 169
-Terraform
-By default, terraform apply performs a fresh plan right before applying changes, and displays the plan to the user when asking for confirmation. However, it can also accept a plan file produced by terraform plan in lieu of running a new plan.
+Azure VDI Project
+A user profile is a collection of configurations that the user or administrator made to represent the state of a system. Various system components bind to a user's profile. These components include applications, registry entries, and other customized entries.
 
 
 
 
 
 170
-Terraform
-The terraform apply command performs a plan just like terraform plan does, but then actually carries out the planned changes to each resource using the relevant infrastructure provider's API.
+Azure Firewall
+New policies can be created from scratch or inherited from existing policies. Inheritance allows DevOps to create local firewall policies on top of organization mandated base policy.
 
 
 
 
 
 171
-MS Data Analyst
-The primary goal of an analytical report is to help report consumers discover answers to a broad array of questions by interacting with the report and its visuals. Analytical reports often have many slicers to filter report data, and they often contain complex visuals that expose in-depth detail of the data.
+Terraform
+The graph output uses the DOT language, which is a machine-readable graph description language which originated in Graphviz. You can use the Graphviz dot command to present the resulting graph description as an image. There are also various third-party online graph rendering services which accept this format.
 
 
 
 
 
 172
-Terraform
-The best way to handle CLI authentication in Terraform Cloud is with the login and logout commands, which help automate the process of getting an API token for your Terraform Cloud user account.
-
-
-
-
-
-173
-Azure VDI Project
-Local vs. Group Policy: The Local Group Policy Editor is used to configure settings on a single Windows computer, whereas the Group Policy Editor (GPO) is used to manage policies for multiple computers in a domain network. The Local Group Policy Editor is primarily for individual system customization.
-
-
-
-
-
-174
-Azure VDI Project
-Components the customer is responsible for
-Scaling policies:	Session host pools integrated with Azure virtual machine scale sets manage a group of load-balanced VMs.
-Networking policies: The customer defines and assigns Network Security Groups (NSGs) to filter network traffic.
-
-
-
-
-
-175
-Azure VDI Project
-In HCL, The ordering of root blocks is not significant. The order of provisioner or post-processor blocks within a build is the only major feature where block order matters.
-
-
-
-
-
-176
-MS Data Analyst
-The Pin a live page feature reflects real-time changes, ensuring that your reports always stay up-to-date.
-
-Pinning a report page is a simple way to pin all visuals at once. All slicers and filters still work and that the visuals have the same data as in the report. The visuals appear as a page, so there are no reformatting options.
-
-
-
-
-
-177
-MS Data Analyst
-In a larger organization, it can be difficult to design a single report that meets everyone's needs, so one solution is using personalized visuals. These allow individual consumers to make minor design changes to best understand the data themselves.
-
-
-
-
-
-178
-Web Scraping
-HTTP request concept:
-OAuth: This is an open standard for authorization that allows users to grant third-party applications access to their resources without sharing their credentials. The user is redirected to the authorization server, where they grant access to the third-party application. The application then receives an access token, which is used to authenticate requests to the resource server.
-
-
-
-
-
-179
-General
-The en dash is omitted when the sentence contains a “from … to” or “between … and” formulation 2.
-In these contexts, the en dash is read as “through” or “to” 2.
-
-
-
-
-
-180
-Azure VDI Project
-4. Which of these steps is not part of creating an FSLogix profile? 
-
-Install FSLogix software in Azure Virtual Desktop gallery images
-FSLogix software is preinstalled in the Azure gallery images. If you use your own image, you'll need to install the FSLogix software yourself.
-
-
-
-
-
-181
-Azure DevOps Access Levels
-Advanced DevOps Integration: Visual Studio Enterprise integrates seamlessly with Microsoft's Azure cloud platform and provides robust DevOps capabilities. It offers features like Azure Pipelines for continuous integration and continuous delivery (CI/CD), Azure DevOps for project management and collaboration, and Azure Monitor for application performance monitoring.
-
-
-
-
-
-182
-MS Data Analyst
-2. At the Contoso Skateboard Company, Sakura is designing an analytical report. It must include a visual that allows report consumers to explore and discover detailed sales values over time and by store. What type of report visual should Sakura choose to support the report consumer requirement? 
-
-A matrix visual allows the report consumer to drill down on the columns and rows to reveal detailed values.
-
-
-
-
-
-183
-Azure AI Search
-In your client app, the search experience is defined using APIs from Azure AI Search, and can include relevance tuning, semantic ranking, autocomplete, synonym matching, fuzzy matching, pattern matching, filter, and sort.
-
-
-
-
-
-184
-General
-An en dash can be used to show different types of ranges in academic writing and mathematical writing 4.
-An en dash can be used as a replacement for versus 4.
-An en dash can also be used to show partnerships, competition, and directions 4.
-
-
-
-
-
-185
-Azure VDI Project
-. Autoscale is Azure Virtual Desktop’s native scaling feature that allows you to input scaling configurations for different days of the week and times of the day. Given this scaling configuration, Autoscale automatically turns on VMs according to your schedule and turns them off so that you no longer have to pay for unnecessary compute costs.
-
-
-
-
-
-186
 Azure Pipelines
 Use Azure Pipelines to deploy your code to multiple targets. Targets including:
 
@@ -1517,7 +1591,221 @@ Azure services, or any on-premises or cloud target such:
 
 
 
+173
+Azure projects
+The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure. After you create your configuration files, you create an execution plan that allows you to preview your infrastructure changes before they're deployed.
+
+
+
+
+
+174
+Azure Key Vault Secrets
+The Key Vault service doesn't provide semantics for secrets. It merely accepts the data, encrypts it, stores it, and returns a secret identifier (id). The identifier can be used to retrieve the secret at a later time.
+
+
+
+
+
+175
+Microsoft Copilot Studio
+GraphSearch is built to scale horizontally, allowing users to handle large volumes of graph data and queries efficiently. It leverages distributed computing and storage to achieve high performance, enabling users to process complex graph queries in real-time or near real-time.
+
+
+
+
+
+176
+MS Data Analyst
+Paginated reports give a pixel-perfect view of the data. Pixel perfect means that you have total control of how the report renders. If you want a footer on every sales receipt that you create, a paginated report is the appropriate solution. If you want a certain customer's name to always appear in green font on a report, you can do that in a paginated report.
+
+
+
+
+
+177
+Microsoft Copilot Studio
+Use content on SharePoint or OneDrive for Business for generative answers works by pairing your copilot with a URL, such as contoso.sharepoint.com/sites/policies. When a copilot user asks a question and the copilot doesn't have a topic to use for an answer, the copilot searches the URL and all sub-paths. For example, a URL such as contoso.sharepoint.com/sites also includes subpaths like contoso.sharepoint.com/sites/policies.
+
+
+
+
+
+178
+Terraform
+The terraform state list command can list the resources being managed by the current working directory and workspace, providing a complete or filtered list.
+
+
+
+
+
+179
+Terraform
+By default, terraform apply performs a fresh plan right before applying changes, and displays the plan to the user when asking for confirmation. However, it can also accept a plan file produced by terraform plan in lieu of running a new plan.
+
+
+
+
+
+180
+MS Data Analyst
+Role in a Power BI workspace: Member
+
+Add members or others with lower permissions
+Publish, unpublish, and change permissions for an app
+
+
+
+
+
+181
+Terraform
+The terraform graph command creates a visual representation of a configuration or a set of planned changes.
+
+
+
+
+
+182
+Azure VDI Project
+3. You want to allow your users access to both apps and a remote desktop. How do you give them access? 
+
+You can assign users to both a desktop application group and a RemoteApp application group in the same host pool. But users can only launch one type of application group per session.
+
+
+
+
+
+183
+Terraform
+To add text to a file using PowerShell, you can use the “Add-Content” cmdlet. Here’s an example of how to write data to a file:
+Add-Content -Path "C:\Folder\MyFile.txt" -Value "This is some new text."
+
+
+
+
+
+184
+MS Data Analyst
+To create a mobile-optimized version of your report, you can:
+
+Design a mobile layout view, where you can drag and drop certain visuals onto a phone emulator canvas.
+Use visuals and slicers that are suitable for use on small, mobile screens.
+
+
+
+
+
+185
+Site Scraping
+I had to use the os.path abspath function to get the absolute path of the file I created for the sake of sending it as an email attachment.
+  from os.path import abspath
+  ...
+  newmail.Attachments.Add(Source = abspath(relative_output_path))
+  newmail.Send()
+
+
+
+
+
+186
+MS Data Analyst
+In the Row-Level Security screen for a model, you can add Microsoft Entra ID users and security groups to the security role. When members are added to this role, the DAX filter that you previously defined will be applied to them. If members are not added to the role, but they have access to the report, RLS will not apply to them.
+
+
+
+
+
 187
+MS Data Analyst
+2. At the Contoso Skateboard Company, Sakura is designing an analytical report. It must include a visual that allows report consumers to explore and discover detailed sales values over time and by store. What type of report visual should Sakura choose to support the report consumer requirement? 
+
+A matrix visual allows the report consumer to drill down on the columns and rows to reveal detailed values.
+
+
+
+
+
+188
+Azure AI Search
+Querying can happen once an index is populated with searchable content, when your client app sends query requests to a search service and handles responses. All query execution is over a search index that you control.
+
+
+
+
+
+189
+MS Data Analyst
+The primary goal of an analytical report is to help report consumers discover answers to a broad array of questions by interacting with the report and its visuals. Analytical reports often have many slicers to filter report data, and they often contain complex visuals that expose in-depth detail of the data.
+
+
+
+
+
+190
+General
+On the surface, pipx resembles pip because it also lets you install Python packages from PyPI or another package index. However, unlike pip, it doesn’t install packages into your system-wide Python interpreter or even an activated virtual environment. Instead, it automatically creates and manages virtual environments for you to isolate the dependencies of every package that you install.
+
+
+
+
+
+191
+MS Data Analyst
+3. You have a table that stores account balance snapshots for each date, excluding weekends. You need to ensure that your measure formula only filters by a single date. Also, if no record is on the last date of a time period, it should use the latest account balance. Which DAX time intelligence function should you use? 
+
+The LASTNONBLANK function will return the last date in the filter context where a snapshot record exists. This option will help you achieve the objective.
+
+
+
+
+
+192
+Terraform
+In addition to basic mapping, Terraform stores a cache of the attribute values for all resources in the state. This is the most optional feature of Terraform state and is done only as a performance improvement.
+
+
+
+
+
+193
+Child Services AWS Review
+Batch printing refers to the process of printing multiple files in a single print job. This means that instead of printing each document individually, businesses can group multiple documents into one print job and have them printed at once.
+
+
+
+
+
+194
+Azure VDI Project
+Components the customer is responsible for
+Scaling policies:	Session host pools integrated with Azure virtual machine scale sets manage a group of load-balanced VMs.
+Networking policies: The customer defines and assigns Network Security Groups (NSGs) to filter network traffic.
+
+
+
+
+
+195
+MS Data Analyst
+Compatibility: Display folders are compatible with most Power BI data sources, including imported data, DirectQuery, and Live Connection. However, there are some limitations when using display folders with certain data sources, such as Analysis Services.
+
+
+
+
+
+196
+Workera.ai
+Amazon Rekognition, Custom Labels:
+
+Amazon Rekognition Custom Labels enables you to train a model to recognize custom objects and scenes.
+This allows you to create a more specialized and tailored solution for your specific use case.
+
+
+
+
+
+197
 Site Scraping
 One of the features of Beautiful Soup is the ability to search for specific kinds of tags whose attributes match certain values. For example, if you want to find all the <img> tags that have a src attribute equal to the value /static/dionysus.jpg, then you can provide the following additional argument to .find_all():
 
@@ -1528,359 +1816,53 @@ One of the features of Beautiful Soup is the ability to search for specific kind
 
 
 
-188
-Azure Key Vault Secrets
-When dealing with REST APIs or SDKs for Azure Key Vault, you'll commonly encounter date-time strings in ISO 8601 format, which look something like YYYY-MM-DDTHH:MM:SSZ for Coordinated Universal Time (UTC), or Unix timestamps which count the seconds since the Unix epoch (00:00:00 UTC on 1 January 1970).
-
-
-
-
-
-189
-MS Data Analyst
-Occasionally, it might make sense to have a single report with many pages. Other times, it could make sense to separate pages into different reports. This scenario is especially true when you design those pages for a different audience or when you need to secure, share, or distribute them differently. Reports are a security and publication unit, and report pages belong to reports and can't be secured or published independently of the report.
-
-
-
-
-
-190
-Site Scraping
->>> string = "Everything is <replaced> if it's in <tags>."
->>> string = re.sub("<.*>", "ELEPHANTS", string)
->>> string
-'Everything is ELEPHANTS.'
-re.sub() uses the regular expression "<.*>" to find and replace everything between the first < and the last >, which spans from the beginning of <replaced> to the end of <tags>. This is because Python’s regular expressions are greedy, meaning they try to find the longest possible match when characters like * are used.
-
-
-
-
-
-191
-MS Data Analyst
-Within the visual header options, you can enable the visual header tooltip. It adds the Help (?) icon to the visual header. Then, you can assign a page tooltip or text. This technique is beneficial for providing visual-specific guidance, such as more detail that describes definitions, calculation logic, or the source of data.
-
-
-
-
-
-192
-MS Data Analyst
-Power BI Development Pipelines include the following possible stages: Development, Test, and Production.
-Test - Where a small group of users and user acceptance testers can see and review new reports, provide feedback, and test the reports with larger semantic models for bugs and data inconsistencies before it goes into production.
-
-
-
-
-
-193
-Terraform
-Planning Options: Alongside the special planning modes, there are also some options you can set in order to customize the planning process for unusual needs.
-Resource Targeting is one particular special planning option that has some important caveats associated with it.
-
-
-
-
-
-194
-MS Data Analyst
-Two bookmarks are required for creating a pop-up overlay:
-
-Configure the first bookmark to capture the Display state.
-Ensure that the overlay object is visible, and then update the bookmark.
-Assign the bookmark to a Help button action.
-Configure the second bookmark to capture the Display state.
-Ensure that the overlay object is hidden, and then update the bookmark.
-Assign the bookmark to the overlay object.
-
-
-
-
-
-195
-Azure VDI Project
-168.63.129.16 is a special public IP address that is owned by Microsoft for Azure. For more information, see What is IP address 168.63.129.16.
-
-
-
-
-
-196
-Azure Key Vault
-The Azure Key Vault Standard and Premium tiers are billed on a transactional basis, with an additional monthly per-key charge for premium hardware-backed keys. Managed HSM, Dedicated HSM, and Payments HSM don't charge on a transactional basis; instead they are always-in-use devices that are billed at a fixed hourly rate.
-
-
-
-
-
-197
-Azure Naming Convention
-A VM name in Azure can be longer than the OS naming restrictions. Keeping Azure VM names shorter than the naming restrictions of the OS helps create consistency, improve communication when discussing resources, and reduce confusion when you're working in the Azure portal while being signed in to the VM itself.
-
-
-
-
-
 198
-Workera.ai
-DevTest Labs includes an Artifact Library, a repository of pre-configured virtual machine images, formulas, and other artifacts. Users can leverage this library to quickly deploy development and test environments. Additionally, custom images can be created, capturing configurations and applications for reuse across multiple environments.
+Bicep
+Bicep provides reliable type safety and support for code reuse 1.
+Bicep files define the infrastructure you want to deploy to Azure, and can be used throughout the development lifecycle to repeatedly deploy your infrastructure in a consistent manner 1.
 
 
 
 
 
 199
-Azure VDI Project
-Packer authenticates with Azure using a service principal. An Azure service principal is a security identity that you can use with apps, services, and automation tools like Packer. You control and define the permissions as to what operations the service principal can perform in Azure.
+Azure AI Search
+In your client app, the search experience is defined using APIs from Azure AI Search, and can include relevance tuning, semantic ranking, autocomplete, synonym matching, fuzzy matching, pattern matching, filter, and sort.
 
 
 
 
 
 200
-Azure VDI Project
-3. You want to allow your users access to both apps and a remote desktop. How do you give them access? 
-
-You can assign users to both a desktop application group and a RemoteApp application group in the same host pool. But users can only launch one type of application group per session.
+Azure VM Image Builder
+There are limits, per subscription, for deploying resources using Azure Compute Galleries:
 
 
 
 
 
 201
-MS Data Analyst
-Use the alignment commands on the Format Pane, which will help you quickly and accurately align visuals.
+Azure VM Image Builder
+1. Which of the following procedures should an administrator employ to generalize a Windows VM in preparation for creating a managed image in Azure? 
+
+Run Sysprep.exe, select the Generalize check box, and then in the Shutdown Options list, select Shutdown.
 
 
 
 
 
 202
-MS Data Analyst
-Disadvantages of Filters vs Slicers
-The Filters pane offers less design flexibility, though you can style it by using specific fonts and colors.
-
-Careful consideration should be made to hide certain filters to avoid confusing report consumers.
-
-It can be easy to lose track of applied visual-level filters.
+Azure VDI Project
+. Autoscale is Azure Virtual Desktop’s native scaling feature that allows you to input scaling configurations for different days of the week and times of the day. Given this scaling configuration, Autoscale automatically turns on VMs according to your schedule and turns them off so that you no longer have to pay for unnecessary compute costs.
 
 
 
 
 
 203
-Azure DevOps Access Levels
-Feature-Rich IDE: Visual Studio Enterprise offers a wide range of features tailored to professional developers. These include advanced debugging tools, code navigation and analysis capabilities, integrated testing tools, and support for various programming languages and frameworks such as C#, C++, Python, and JavaScript. It also provides built-in support for version control systems like Git and Azure DevOps.
-
-
-
-
-
-204
-Microsoft Copilot Studio
-SharePoint uses ASPX pages for its master pages and page layouts. Master pages define the overall look and feel of a SharePoint site, including its branding, navigation, and page structure. Page layouts, on the other hand, define the layout and content structure of individual pages within a site.
-
-
-
-
-
-205
-Terraform
-To add text to a file using PowerShell, you can use the “Add-Content” cmdlet. Here’s an example of how to write data to a file:
-Add-Content -Path "C:\Folder\MyFile.txt" -Value "This is some new text."
-
-
-
-
-
-206
-Terraform
-We refer to the terraform command line tool as "Terraform CLI" elsewhere in the documentation. This terminology is often used to distinguish it from other components you might use in the Terraform product family, such as Terraform Cloud or the various Terraform providers, which are developed and released separately from Terraform CLI.
-
-
-
-
-
-207
-Azure Key Vault
-Customer-managed keys (CMK), on the other hand, are keys read, created, deleted, updated, and/or administered by one or more customers. Keys stored in a customer-owned key vault or hardware security module (HSM) are CMKs. Bring Your Own Key (BYOK) is a CMK scenario in which a customer imports (brings) keys from an outside storage location into an Azure key management service
-
-
-
-
-
-208
-Azure VM Image Builder
-Azure Stack HCI (Hyper-Converged Infrastructure) is a hybrid cloud solution provided by Microsoft that combines on-premises infrastructure with Azure services. Azure Stack HCI provides seamless integration with Azure services, enabling organizations to leverage features like Azure Backup, Azure Site Recovery, Azure Monitor, and more.
-
-
-
-
-
-209
-Azure VDI Project
-A scaling plan is an Azure Virtual Desktop object that acts as a container for your Autoscale schedules. Scaling plans are designed such that you can apply one to one or more pooled host pools and the associated schedules will take effect for all the assigned host pools. However, only one scaling plan can be assigned to a host pool.
-
-
-
-
-
-210
-Terraform
-Terraform expects that each remote object is bound to a single resource address. You should import each remote object to one Terraform resource address. If you import the same object multiple times, Terraform may exhibit unwanted behavior.
-
-
-
-
-
-211
-Azure VDI Project
-Temporary profile	
-A fail-safe profile is created when a user's roaming profile has problems loading. It's discarded at sign-out.
-
-
-
-
-
-212
-MS Data Analyst
-By default, cross filtering (or cross highlighting) works between any two visuals. However, the report author can edit visual interactions between any pair of visuals and in either direction. Then, they can disable cross filtering or modify the interaction to use cross highlighting instead.
-
-
-
-
-
-213
-Azure VM Image Builder
-	• For non-Virtual Machine Scale Set deployments - For every 20 VMs that you create concurrently, we recommend that you keep at least one replica. For example, if you're creating 120 VMs concurrently using the same image in a region, we suggest you keep at least 6 replicas for your image.
-
-
-
-
-
-214
-Site Scraping
->>> soup.find_all("img")
-[<img src="/static/dionysus.jpg"/>, <img src="/static/grapes.png"/>]
-This returns a list of all <img> tags in the HTML document parsed by the beautifulsoup object soup. The objects in the list look like they might be strings representing the tags, but they’re actually instances of the Tag object provided by Beautiful Soup. Tag objects provide a simple interface for working with the information they contain.
-
-
-
-
-
-215
-Azure VDI Project
-Use either Microsoft Entra Domain Services or Active Directory Domain Services (AD DS) to authenticate at the service layer of Azure Virtual Desktop. All VMs in Azure Virtual Desktop are domain-joined. Microsoft Entra Domain Services or AD DS is used to authenticate users to the VMs.
-
-
-
-
-
-216
-Azure Log Analytics Workspaces
-Each workspace contains multiple tables that are organized into separate columns with multiple rows of data. Each table is defined by a unique set of columns. Rows of data provided by the data source share those columns. Log queries define columns of data to retrieve and provide output to different features of Azure Monitor and other services that use workspaces.
-
-
-
-
-
-217
-Azure Key Vault
-Azure Key Vault enables Microsoft Azure applications and users to store and use several types of secret/key data: keys, secrets, and certificates. Keys, secrets, and certificates are collectively referred to as "objects".
-
-
-
-
-
-218
 General
-Gists are lightweight and convenient for sharing small pieces of code or content, while regular Git repositories are more comprehensive and suitable for hosting larger projects with multiple contributors and complex structures.
-
-
-
-
-
-219
-MS Data Analyst
-It's possible to define a role that includes no rules. In this case, the role provides access to all rows of all model tables. This role set up would be suitable for an admin user who is allowed to view all data.
-
-
-
-
-
-220
-Microsoft Copilot Studio
-Use content on SharePoint or OneDrive for Business for generative answers works by pairing your copilot with a URL, such as contoso.sharepoint.com/sites/policies. When a copilot user asks a question and the copilot doesn't have a topic to use for an answer, the copilot searches the URL and all sub-paths. For example, a URL such as contoso.sharepoint.com/sites also includes subpaths like contoso.sharepoint.com/sites/policies.
-
-
-
-
-
-221
-Microsoft Copilot Studio
-GraphSearch is built to scale horizontally, allowing users to handle large volumes of graph data and queries efficiently. It leverages distributed computing and storage to achieve high performance, enabling users to process complex graph queries in real-time or near real-time.
-
-
-
-
-
-222
-MS Data Analyst
-A good example of an operational report is one that allows monitoring of a manufacturing production line. When an unexpected event arises, such as equipment malfunction, a button could allow workers to start a maintenance request.
-
-
-
-
-
-223
-Terraform
-The Terraform CLI commands interact with the HashiCorp service Checkpoint to check for the availability of new versions and for critical security bulletins about the current version.
-
-
-
-
-
-224
-MS Data Analyst
-Knowing how your report consumers are likely interacting with reports should influence your report designs. Consider the number of visuals that display together on the page, the complexity of visuals, spacing between visuals, and the use of interactive design elements such as tooltips, slicers, buttons, or filters.
-
-
-
-
-
-224
-General
-On the surface, pipx resembles pip because it also lets you install Python packages from PyPI or another package index. However, unlike pip, it doesn’t install packages into your system-wide Python interpreter or even an activated virtual environment. Instead, it automatically creates and manages virtual environments for you to isolate the dependencies of every package that you install.
-
-
-
-
-
-224
-General
-Additionally, pipx adds symbolic links to your PATH variable for every command-line script exposed by the installed packages. As a result, you can invoke those scripts directly from the command line without explicitly running them through the Python interpreter.
-
-
-
-
-
-
-224
-General
-Think of pipx as Python’s equivalent of npx in the JavaScript ecosystem. Both tools let you install and execute third-party modules in the command line just as if they were standalone applications. However, not all modules are created equal.
-
-
-
-
-
-
-224
-General
-Making a distribution package runnable or hybrid involves defining one or more entry points in the corresponding configuration file. Historically, these would be setup.py or setup.cfg, but modern build systems in Python should generally rely on the pyproject.toml file and define their entry points in the [project.scripts] TOML table.
-
-
-
-
+The en dash is omitted when the sentence contains a “from … to” or “between … and” formulation 2.
+In these contexts, the en dash is read as “through” or “to” 2.
 
 
 
