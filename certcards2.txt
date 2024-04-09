@@ -4,28 +4,6 @@
 
 
 
-9
-MS Data Analyst
-The three main AI visuals are:
-  Key influencers
-  Decomposition tree
-  Q&A
-
-When adding an AI visual to your report, make sure that you size it to become as large as possible. That way, report consumers can fully interact with and explore the data in the visual.
-
-
-
-
-
-10
-Azure VM Image Builder
-Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
-
-Microsoft.Network manages resources such as virtual networks, public IP addresses, and network security groups.
-Microsoft.KeyVault manages resources related to secure key management and secrets storage.
-
-
-
 
 
 11
