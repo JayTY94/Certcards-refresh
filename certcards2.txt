@@ -4,29 +4,6 @@
 
 
 
-
-7
-Terraform
-By default, when Terraform creates a plan it:
-
-	• Reads the current state of any already-existing remote objects to make sure that the Terraform state is up-to-date.
-	• Compares the current configuration to the prior state by noting any differences.
-Proposes a set of change actions that should, if applied, make the remote objects match the configuration.
-
-
-
-
-
-8
-General
-An en dash can be used to show different types of ranges in academic writing and mathematical writing 4.
-An en dash can be used as a replacement for versus 4.
-An en dash can also be used to show partnerships, competition, and directions 4.
-
-
-
-
-
 9
 MS Data Analyst
 The three main AI visuals are:
