@@ -5,14 +5,6 @@
 
 
 
-6
-Azure VM Image Builder
-Resource Management: Resource Providers are responsible for managing the lifecycle of Azure resources within their domain. This includes creating, updating, deleting, and querying resources.
-
-
-
-
-
 7
 Terraform
 By default, when Terraform creates a plan it:
