@@ -7,18 +7,6 @@
 
 
 
-21
-Site Scraping
-Use Selenium to authenticate
-Need to find elements By.ID and then send keys to type into those boxes. Then submit form.
-  username_field = driver.find_element(By.ID, 'inputUserId')
-  password_field = driver.find_element(By.ID, 'inputPassword')
-  username_field.send_keys('Username')
-  password_field.send_keys('Password')
-  sleep(3)
-  password_field.submit()
-
-
 
 
 
@@ -28,11 +16,6 @@ It's possible to define a role that includes no rules. In this case, the role pr
 
 
 
-
-
-23
-Terraform
-The terraform plan command evaluates a Terraform configuration to determine the desired state of all the resources it declares, then compares that desired state to the real infrastructure objects being managed with the current working directory and workspace.
 
 
 
