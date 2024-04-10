@@ -1681,4 +1681,63 @@ In these contexts, the en dash is read as “through” or “to” 2.
 
 
 
+203
+General
+Automatic VM guest patching: This refers to the automated process of updating the operating system of virtual machines hosted on Azure to ensure security and compliance with the latest patches. 
+
+
+
+203
+General
+Hotpatching: A feature that allows for installing updates on virtual machines without the need for a reboot, minimizing downtime and disruption. 
+
+
+
+203
+General
+Azure Automation: A cloud-based automation service that helps to automate repetitive tasks across Azure and third-party services, enhancing efficiency and reducing the potential for human error. 
+
+
+
+203
+General
+Azure Monitor Logs: A feature within Azure Monitor that collects and organizes log and performance data from monitored resources, providing insights and analytics to maintain performance and availability. 
+
+
+
+203
+General
+Azure Arc: A service that extends Azure management capabilities to Linux and Windows servers, Kubernetes clusters, and Azure data services across on-premises, multi-cloud, and edge environments. 
+
+
+
+203
+General
+Azure Resource Graph: A service that provides an efficient way to query and explore Azure resources across multiple subscriptions, enabling complex querying and analysis.
+
+
+
+203
+General
+Patch orchestration: The coordination and management of the deployment of patches across multiple systems and applications within an Azure environment.
+
+
+
+203
+General
+Automatic OS image upgrades on Azure Machine Scale Set: A feature that automatically updates the OS disk image used in an Azure Virtual Machine Scale Set to the latest version, ensuring VMs are running the most recent OS. 
+
+
+
+203
+General
+Application Health Extension: An add-on for Azure virtual machines that monitors the health of applications and automatically performs corrective actions if an unhealthy state is detected.
+
+
+
+203
+General
+
+
+
 
