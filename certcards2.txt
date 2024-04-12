@@ -1,34 +1,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-22
-MS Data Analyst
-It's possible to define a role that includes no rules. In this case, the role provides access to all rows of all model tables. This role set up would be suitable for an admin user who is allowed to view all data.
-
-
-
-
-
-
-
-
-24
-MS Data Analyst
-Customization: You can customize the names and structure of display folders to fit the needs of your report. For example, you can create a display folder named "Sales Metrics" and move all sales-related measures into that folder.
-
-
-
-
-
 25
 Microsoft Copilot Studio
 Within a copilot's topic, you can add a Create generative answers node. This node allows you to specify more sources that the node searches based on your inputs. Information sources defined in the Generative answers node override sources you specified at the copilot level, which functions as a fallback.
