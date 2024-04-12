@@ -1,57 +1,9 @@
 
 
 
-25
-Microsoft Copilot Studio
-Within a copilot's topic, you can add a Create generative answers node. This node allows you to specify more sources that the node searches based on your inputs. Information sources defined in the Generative answers node override sources you specified at the copilot level, which functions as a fallback.
 
 
 
-
-
-26
-Terraform
-A provider in Terraform is a plugin that enables interaction with an API.
-Providers are specified in the Terraform configuration code and tell Terraform which services it needs to interact with.
-
-
-
-
-
-27
-Azure
-To create an empty text file in PowerShell, you can use the New-Item command with the -ItemType and -Path parameters:
-New-Item -ItemType File -Name "filename.txt".
-This will create a new empty text file named “filename.txt” in the current directory.
-
-
-
-
-
-28
-MS Data Analyst
-The Q&A visual allows report consumers to ask questions of their data and receive responses as data visualizations. Similar to how web search engines parse and understand complex search requests, report consumers can write natural language questions (in English).
-
-
-
-
-
-29
-Azure VM Image Builder
-3. Which of the following Azure CLI commands should an administrator run to start an image build using Azure Image Builder? 
-
-az resource invoke-action.
-NOT
-az resource create.
-az vm create.
-
-
-
-
-
-30
-Azure VM Image Builder
-Hyper-Converged Infrastructure: Azure Stack HCI is built on hyper-converged infrastructure principles, which means it combines compute, storage, and networking functionalities in a single software-defined solution. This consolidation simplifies management, reduces hardware costs, and improves scalability compared to traditional infrastructure setups.
 
 
 
