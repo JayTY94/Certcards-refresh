@@ -1,10 +1,6 @@
 
 
 
-2
-Azure Key Vault Secrets
-The Key Vault service doesn't provide semantics for secrets. It merely accepts the data, encrypts it, stores it, and returns a secret identifier (id). The identifier can be used to retrieve the secret at a later time.
-
 
 
 
