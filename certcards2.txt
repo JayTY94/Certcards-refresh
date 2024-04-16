@@ -1707,3 +1707,176 @@ Querying can happen once an index is populated with searchable content, when you
 
 
 
+
+
+3
+Maths
+One/two sample mean tests are statistical methods used to determine if there are significant differences between the mean(s) of one or two samples compared to a hypothesized mean or between each other.
+
+
+
+
+
+
+
+3
+Maths
+Compositional data refers to vectors of positive measurements which carry relative information, commonly analyzed in parts-per-whole relationships.
+
+
+
+
+
+
+
+3
+Maths
+Microbiome research in mathematics often involves statistical analysis of the composition and function of microorganisms within a given environment, such as the human gut.
+
+
+
+
+
+
+
+3
+Maths
+Max-type test statistics are used in hypothesis testing and involve the maximum value of a set of statistics calculated from data, often used when testing multiple hypotheses simultaneously.
+
+
+
+
+
+
+
+3
+Maths
+Sum-type test statistics are created by summing individual test statistics from multiple tests or studies, commonly used in meta-analysis or combined significance testing.
+
+
+
+
+
+
+
+3
+Maths
+Sparse signals vs dense signals: Sparse signals have most elements as zero or near zero, while dense signals have most elements as non-zero, which is important in signal processing and data analysis.
+
+
+
+
+
+
+
+3
+Maths
+Generalized likelihood ratio test (GLRT) is a statistical test to compare the fit of two models, one of which is a special case of the other (nested models).
+
+
+
+
+
+
+
+3
+Maths
+Sparse alternative hypotheses refer to hypotheses in statistical tests that assume non-zero effects are rare (sparse) among many possible effects being tested.
+
+
+
+
+
+
+
+3
+Maths
+Sum-type Hotelling’s statistic is a multivariate test statistic that sums the squared deviations of sample means from a hypothesized mean vector, used to test the equality of multivariate means.
+
+
+
+
+
+
+
+3
+Maths
+Regularity conditions are mathematical conditions or assumptions required for certain statistical methods to be valid, like smoothness and boundedness of functions involved in estimation or hypothesis testing.
+
+
+
+
+
+
+3
+Maths
+Derive the null distribution: This involves calculating the expected probability distribution of a test statistic under the null hypothesis, which assumes no effect or no difference.
+
+
+
+
+3
+Maths
+Asymptotic independence between test statistics: This refers to the property that as the sample size increases indefinitely, the test statistics become independent of each other.
+
+
+
+
+3
+Maths
+Centered log-ratio transformation: A technique used in compositional data analysis to allow the application of standard statistical techniques by transforming component proportions to log-scale relative to the geometric mean.
+
+
+
+
+
+3
+Maths
+Trace of a matrix: The sum of the elements on the main diagonal (from the top left to the bottom right) of a square matrix.
+
+
+
+
+
+3
+Maths
+Norms of a matrix: Functions that assign a strictly positive length or size to each matrix in a vector space, except for the zero matrix.
+
+
+
+
+
+3
+Maths
+Diagonal matrix of a matrix: A square matrix in which the entries outside the main diagonal are all zero.
+
+
+
+
+
+3
+Maths
+1-dimensional simplex: The simplest example of a simplex, represented by a line segment in one-dimensional space, typically used in reference to probabilistic and optimization contexts.
+
+
+
+
+
+3
+Maths
+Unit-sum constraint: A condition applied to elements of a vector or the rows/columns of a matrix that requires them to add up to one, commonly used in the context of probabilities or compositions.
+
+
+
+
+
+3
+Maths
+Covariance-based multivariate analysis methods: Statistical techniques that analyze the covariance structure between multiple variables to understand the relationships and variabilities among them.
+
+
+
+
+
+
+
