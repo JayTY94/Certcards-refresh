@@ -6,25 +6,6 @@
 
 
 
-
-12
-Terraform
-By default, terraform apply performs a fresh plan right before applying changes, and displays the plan to the user when asking for confirmation. However, it can also accept a plan file produced by terraform plan in lieu of running a new plan.
-
-
-
-
-
-13
-Azure VDI Project
-3. You want to allow your users access to both apps and a remote desktop. How do you give them access? 
-
-You can assign users to both a desktop application group and a RemoteApp application group in the same host pool. But users can only launch one type of application group per session.
-
-
-
-
-
 14
 MS Data Analyst
 Occasionally, it might make sense to have a single report with many pages. Other times, it could make sense to separate pages into different reports. This scenario is especially true when you design those pages for a different audience or when you need to secure, share, or distribute them differently. Reports are a security and publication unit, and report pages belong to reports and can't be secured or published independently of the report.
