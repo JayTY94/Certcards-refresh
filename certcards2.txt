@@ -1799,13 +1799,10 @@ Python’s unittest package supports several key concepts that facilitate test c
 
 3
 Python
+In Python’s unittest module, you can write test cases by subclassing the TestCase class and adding methods whose names should begin with test.
 
+These methods test a given unit of code using different inputs and check for the expected results.
 
-
-
-
-3
-Python
 
 
 
@@ -1813,6 +1810,41 @@ Python
 
 3
 Python
+To make a test module executable in unittest, you can add the following code to the end of the module:
+
+if __name__ == "__main__":
+    unittest.main()
+
+The main() function from unittest allows you to load and run a set of tests. You can also use this function to make the test module executable.
+
+
+
+
+3
+Python
+The @unittest.skipUnless(condition, reason) decorator in Python’s unittest framework skips the decorated test unless the condition is true. This is useful for conditionally skipping tests based on dynamic conditions, such as a platform or a Python version.
+
+
+
+
+3
+Python
+In Python’s unittest package, you can check the type of an object using the .assertIsInstance(a, b) and .assertNotIsInstance(a, b) methods. These methods are based on the built-in isinstance() function, which checks whether the input object a is of a given type b.
+
+
+
+
+3
+Python
+The TestSuite class in Python’s unittest framework allows you to create groups of tests and run them selectively. This can be particularly useful in complex projects with many features, different testing levels, selective testing, and environment-specific testing. You can learn more about it in the section on grouping your tests.
+
+
+
+
+3
+Python
+The load_tests() function in Python’s unittest framework is a hook for customizing test loading and suite creation. It takes three arguments: a test loader, a series of tests, and a test discovery pattern. When you call unittest.main(), load_tests() gets called automatically.
+
 
 
 
@@ -1820,48 +1852,8 @@ Python
 
 3
 Python
+In Python’s unittest package, you can use fixtures to set up and tear down test environments for each test method. To do this, you can use the setUp() and tearDown() method, respectively. These methods are automatically called before and after each test method.
 
-
-
-
-
-3
-Python
-
-
-
-
-
-3
-Python
-
-
-
-
-
-3
-Python
-
-
-
-
-
-3
-Python
-
-
-
-
-
-3
-Python
-
-
-
-
-
-3
-Python
 
 
 
