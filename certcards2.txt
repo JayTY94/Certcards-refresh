@@ -6,14 +6,6 @@
 
 
 
-14
-MS Data Analyst
-Occasionally, it might make sense to have a single report with many pages. Other times, it could make sense to separate pages into different reports. This scenario is especially true when you design those pages for a different audience or when you need to secure, share, or distribute them differently. Reports are a security and publication unit, and report pages belong to reports and can't be secured or published independently of the report.
-
-
-
-
-
 15
 MS Data Analyst
 Report settings can:
@@ -1783,6 +1775,93 @@ Covariance-based multivariate analysis methods: Statistical techniques that anal
 
 
 
+
+
+3
+Python
+Python’s unittest package supports several key concepts that facilitate test creation, organization, preparation, and automation:
+
+  Test case: This is an individual unit of testing. It checks the output for a given input set.
+  Test suite: This is a collection of test cases, test suites, or both. They’re grouped and executed together.
+
+
+
+
+
+3
+Python
+Python’s unittest package supports several key concepts that facilitate test creation, organization, preparation, and automation:
+
+  Test fixtures: A test fixture refers to a group of actions required to set up an environment for testing. They also include the teardown processes after the tests run.
+  Test runner: This is a component that handles the execution of tests and communicates the results to the user.
+
+
+
+3
+Python
+
+
+
+
+
+3
+Python
+
+
+
+
+
+3
+Python
+
+
+
+
+
+3
+Python
+
+
+
+
+
+3
+Python
+
+
+
+
+
+3
+Python
+
+
+
+
+
+3
+Python
+
+
+
+
+
+3
+Python
+
+
+
+
+
+3
+Python
+
+
+
+
+
+3
+Python
 
 
 
