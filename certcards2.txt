@@ -1857,3 +1857,15 @@ In Python’s unittest package, you can use fixtures to set up and tear down tes
 
 
 
+
+61
+Windows 10
+You can increase or decrease the size of icons on your desktop by selecting the desktop, holding [ctrl], and using the scroll wheel.
+
+
+
+
+
+
+
+
