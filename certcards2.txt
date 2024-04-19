@@ -1740,3 +1740,38 @@ You can increase or decrease the size of icons on your desktop by selecting the 
 
 
 
+31
+General
+NPS stands for Net Promoter Score, which is a common metric used in customer experience programs. An NPS score measures customer loyalty by looking at their likelihood of recommending a given business.
+
+Your NPS score is measured with a single-question survey and reported with a number ranging from -100 to +100, where a higher score is desirable.
+
+
+
+
+
+31
+General
+NPS measures customer perception based on one simple question:
+“How likely is it that you would recommend [Organization X/Product Y/Service Z] to a friend or colleague?”
+
+
+
+
+
+31
+General
+
+
+
+
+
+
+31
+General
+
+
+
+
+
+
