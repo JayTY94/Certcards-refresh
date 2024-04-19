@@ -5,42 +5,6 @@
 
 
 
-26
-Azure Naming Convention
-A good name for a resource helps you to quickly identify its type, its associated workload, its environment, and the Azure region where it runs. To do so, names should follow a consistent format—a naming convention—that is composed of important information about each resource.
-
-
-
-
-
-27
-Terraform
-The terraform import CLI command can only import resources into the state. Importing via the CLI does not generate configuration. If you want to generate the accompanying configuration for imported resources, use the import block instead.
-
-
-
-
-
-28
-Terraform
-The terraform state show command can print all of the attributes of a given resource being managed by the current working directory and workspace, including generated read-only attributes like the unique ID assigned by the cloud provider.
-
-
-
-
-
-29
-MS Data Analyst
-Consider using the Web URL action for numbersto create a bridge to resources that are commonly referenced in tandem. Web URL actions can be highly effective in prompting direct action in external systems.
-
-
-
-
-
-30
-General
-Making a distribution package runnable or hybrid involves defining one or more entry points in the corresponding configuration file. Historically, these would be setup.py or setup.cfg, but modern build systems in Python should generally rely on the pyproject.toml file and define their entry points in the [project.scripts] TOML table.
-
 
 
 
