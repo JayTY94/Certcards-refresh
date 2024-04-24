@@ -1905,14 +1905,25 @@ You use templates for importing many types of records such as accounts, leads, o
 
 
 827
-Power Platform
-
+Python
+Remember that the initialization function in a class is named __init__() with 2 underscores before and after the word init. I tried to declare a class with 3 once, and it was embarrassing.
 
 
 
 
 827
-Power Platform
+Python
+When declaring a function, follow arguments with a colon and the desired type to designate a required type for that argument. For example
+
+def get_engagement_names(schedules: pd.DataFrame):
+    engagement_names = [
+        ' - '.join(row[['Account Name', 'EngagementName', 'Engagement Number']])
+        for _, row in schedules.iterrows()
+    ]
+    engagement_names = "\n".join(engagement_names)
+    return engagement_names
+
+
 
 
 
