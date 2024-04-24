@@ -1,24 +1,5 @@
 
 
-7
-General
-Azure Monitor Logs: A feature within Azure Monitor that collects and organizes log and performance data from monitored resources, providing insights and analytics to maintain performance and availability.
-
-
-
-
-
-8
-General
-On the surface, pipx resembles pip because it also lets you install Python packages from PyPI or another package index. However, unlike pip, it doesn’t install packages into your system-wide Python interpreter or even an activated virtual environment. Instead, it automatically creates and manages virtual environments for you to isolate the dependencies of every package that you install.
-
-
-
-
-
-9
-Maths
-Sparse signals vs dense signals: Sparse signals have most elements as zero or near zero, while dense signals have most elements as non-zero, which is important in signal processing and data analysis.
 
 
 
@@ -1801,8 +1782,124 @@ Power Automate is a cloud-based service that lets you create automated flows bet
 
 
 827
-Power Platform
+Python
+In Python, a sequence is a category of data types that has certain characteristics and supports specific operations.
 
+
+
+
+
+827
+Python
+Python sequences have three common characteristics:
+
+  They are iterable, which means you can iterate through them.
+  They have a length, which means you can pass them to len() to get the number of elements it contains.
+  An element of a sequence can be accessed based on its position in the sequence using an integer index.
+
+
+
+
+
+
+827
+Python
+In Python, you generally can’t concatenate sequences of different types. If you try to add a list and a tuple, Python raises a TypeError:
+
+>>> [1, 2, 3] + (4, 5, 6)
+Traceback (most recent call last):
+  ...
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate list (not "tuple") to list
+
+
+
+
+
+827
+Python
+In Python, you can compare sequences of the same type. When comparing two sequences, the first 
+non-equal
+ value determines the outcome.
+
+For example, consider the following lists:
+
+numbers = [1, 2, 3, 4, 5]
+more_numbers = [1, 2, 2, 10, 20]
+When you compare these lists, you’ll find that numbers is greater than more_numbers.
+
+
+
+
+
+827
+Python
+To make a class indexable in Python, you can add the 
+.__getitem__()
+ special method to the class. This method should accept 
+an index
+ and return the item at that position.
+
+
+
+
+
+827
+Python
+A sized object in Python is an object that has a defined length. You can access this length using the built-in len() function.
+
+You can make an object sized by adding the .__len__() special method to the class definition. This method must return an integer.
+
+
+
+
+
+827
+Python
+To make a class iterable, you need to define the .__iter__() special method in the class. This method must return an iterator, which Python uses in its iteration protocol.
+
+
+
+
+
+827
+Python
+When you try to create an instance of a class that inherits from the Sequence abstract base class, but doesn’t implement .__getitem__() and .__len__(), then Python raises a TypeError:
+
+The Sequence abstract base class requires that any class that inherits from it must implement the .__getitem__() and .__len__() methods.
+
+
+
+
+
+827
+Python
+In Python, an immutable sequence is one that you can’t change once it’s been created. Immutable built-in sequences include tuples and strings.
+
+
+
+
+
+
+827
+Power Platform
+Visualizations
+Chart
+  A single Graphic visualization that can be displayed within a view, on a form, or be added to a dashboard
+
+Dashboard
+  Functions as a palate for one or more graphic visualizations that provide an overview of actionable business data
+
+Embedded Power BI
+  Add embedded Power BI tiles and dashboards  to your app. Power BI is a cloud-based service that provides business intelligence and insight.
+
+
+
+
+
+827
+Power Platform
+You use templates for importing many types of records such as accounts, leads, or cases. There is a complete list in the Templates for Data Import Wizard.
 
 
 
@@ -1837,4 +1934,8 @@ Power Platform
 
 827
 Power Platform
+
+
+
+
 
