@@ -5,46 +5,6 @@
 
 
 
-10
-Azure Key Vault
-Key sovereignty is when the customer's organization has full and exclusive control of their keys, including control over what users and services can access the keys and key management policies.
-
-
-
-
-
-11
-Terraform
-In addition to basic mapping, Terraform stores a cache of the attribute values for all resources in the state. This is the most optional feature of Terraform state and is done only as a performance improvement.
-
-
-
-
-
-12
-MS Data Analyst
-Highlighting values in reports helps you to quickly communicate important and relevant facts about data. Power BI supports several techniques to highlight values:
-
-Conditional formatting
-Overlaid analytics
-Anomaly detection
-Specialized visuals
-
-
-
-
-
-13
-MS Data Analyst
-What elements can be changed with personalized visuals?
-
-Visualization type
-NOT
-Custom theme color
-Background images
-
-
-
 
 
 14
