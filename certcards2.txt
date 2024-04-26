@@ -1890,22 +1890,75 @@ def get_engagement_names(schedules: pd.DataFrame):
 
 
 827
-Power Platform
+Power BI
+The purpose of the Data Privacy Firewall is simple: it exists to prevent Power Query from unintentionally leaking data between sources.
 
 
-
-
-
-827
-Power Platform
 
 
 
 
 
 827
-Power Platform
+Power BI
+Formula.Firewall errors are the result of Power Query's Data Privacy Firewall (also known as the Firewall), which at times may seem like it exists solely to frustrate data analysts the world over. 
 
+
+
+
+
+827
+Power BI
+A huge part of Power Query's power comes from the fact that PQ can convert the operations a user performs via its user interface into complex SQL or other backend data source languages, without the user having to know said languages. Users get the performance benefit of native data source operations, with the ease of use of a UI where all data sources can be transformed using a common set of commands.
+
+
+
+
+
+
+
+827
+Power BI
+At its most basic level, a partition is just a collection of one or more query steps. The most granular partition possible (at least in the current implementation) is a single step. The largest partitions can sometimes encompass multiple queries.
+
+
+
+
+
+827
+Power BI
+When a query is evaluated with the Firewall on, the Firewall divides the query and all its dependencies into partitions (that is, groups of steps). Anytime one partition references something in another partition, the Firewall replaces the reference with a call to a special function called Value.Firewall. 
+
+
+
+
+
+827
+Power BI
+In order for your single-partition-but-two-data-sources query to be allowed to run, its two data sources must be "compatible". In other words, it needs to be okay for data to be shared bidirectionally between them. This means that the privacy levels of both sources need to be Public, or both be Organizational, since these are the only two combinations that allow sharing in both directions. 
+
+
+
+
+
+827
+Power BI
+
+
+
+
+
+
+827
+Power BI
+
+
+
+
+
+
+827
+Power BI
 
 
 
