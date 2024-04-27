@@ -1414,10 +1414,7 @@ Azure services, or any on-premises or cloud target such:
 
 
 
-
-168
-Workera.ai
-Azure Resource groups serve as a scope for applying consistent policies, permissions, and tags to a set of resources. This allows for efficient management of resources based on their lifecycle, ownership, or application within a specific project or environment.
+on their lifecycle, ownership, or application within a specific project or environment.
 
 
 
@@ -1943,7 +1940,7 @@ In order for your single-partition-but-two-data-sources query to be allowed to r
 
 827
 Power BI
-
+If there are data sources being accessed within the partition, and data flowing in from other partitions, the Firewall loses its ability to be the gatekeeper, since the data flowing in could be leaked to one of the internally accessed data sources without it knowing about it. Thus the Firewall prevents a partition that accesses other partitions from being allowed to directly access any data sources.
 
 
 
@@ -1951,13 +1948,72 @@ Power BI
 
 827
 Power BI
+With Query Diagnostics, you can achieve a better understanding of what Power Query is doing at authoring and at refresh time in Power BI Desktop. At this time you can use it to understand what sort of queries you're emitting, what slowdowns you might run into during authoring refresh, and what kind of background events are happening.
 
 
 
 
 
 
-827
+
+959
+Power BI
+Returns a single value: The SELECTEDVALUE function returns the value of an expression evaluated in the context of a single cell. It is commonly used in scenarios where you expect only one value to be present in the current context, such as when filtering a column in a visual or when using a slicer. 
+
+
+
+
+
+959
+Power BI
+Error handling: If there are multiple values or if the context is ambiguous (e.g., no filter applied, multiple selections), SELECTEDVALUE will return an error by default. To handle this situation, you can provide an optional second argument to specify a default value to return if SELECTEDVALUE encounters an error. This allows you to gracefully handle scenarios where the expected condition is not met.
+
+
+
+
+
+
+959
+Power BI
+
+
+
+
+
+
+959
+Power BI
+
+
+
+
+
+
+959
+Power BI
+
+
+
+
+
+
+959
+Power BI
+
+
+
+
+
+
+959
+Power BI
+
+
+
+
+
+
+959
 Power BI
 
 
