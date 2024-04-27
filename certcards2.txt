@@ -1,58 +1,5 @@
 
 
-
-
-
-
-
-
-
-14
-Terraform
-The terraform graph command creates a visual representation of a configuration or a set of planned changes.
-
-
-
-
-
-15
-General
-Azure Arc: A service that extends Azure management capabilities to Linux and Windows servers, Kubernetes clusters, and Azure data services across on-premises, multi-cloud, and edge environments.
-
-
-
-
-
-16
-MS Data Analyst
-Report page load times are primarily determined by number of visuals (objects) on the page, and DAX performance. Neither of which are impacted by unnecessary model columns.
-
-
-
-
-
-17
-Site Scraping
-One of the features of Beautiful Soup is the ability to search for specific kinds of tags whose attributes match certain values. For example, if you want to find all the <img> tags that have a src attribute equal to the value /static/dionysus.jpg, then you can provide the following additional argument to .find_all():
-
->>> soup.find_all("img", src="/static/dionysus.jpg")
-[<img src="/static/dionysus.jpg"/>]
-
-
-
-
-
-18
-General
-To round a float to two decimal places within a Python f-string, you use the format specifier .2f. The .2 indicates the precision, which is the number of decimal places, and the f is the presentation type for fixed-point number, which displays the number as a float:
-
->>> f"One third, rounded to two decimal places is: {1 / 3:.2f}"
-'One third, rounded to two decimal places is: 0.33'
-
-
-
-
-
 19
 Azure AI Search
 An end-to-end exploration of core search features can be accomplished in four steps:
@@ -1975,6 +1922,15 @@ Error handling: If there are multiple values or if the context is ambiguous (e.g
 
 959
 Power BI
+Error Handling: IFERROR is used to handle errors that occur during the evaluation of an expression. It takes two arguments: the expression to evaluate and the value to return if the expression results in an error. If the expression returns an error, IFERROR returns the specified value; otherwise, it returns the result of the expression.
+
+
+
+
+
+959
+Power BI
+Preventing Error Propagation: One of the primary purposes of IFERROR is to prevent error propagation in DAX calculations. If an error occurs in a calculation without error handling, it can propagate through other calculations, leading to unexpected results or errors in downstream calculations. IFERROR helps to mitigate this by replacing errors with specified values or expressions.
 
 
 
@@ -1983,14 +1939,7 @@ Power BI
 
 959
 Power BI
-
-
-
-
-
-
-959
-Power BI
+Handling Different Types of Errors: IFERROR can handle various types of errors, including divide by zero errors (#DIV/0!), reference errors (#REF!), and other calculation errors (#VALUE!, #NUM!, #NAME?, etc.). It's a versatile function for handling a wide range of potential errors in DAX calculations.
 
 
 
