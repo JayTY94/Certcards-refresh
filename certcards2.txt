@@ -1948,6 +1948,17 @@ Handling Different Types of Errors: IFERROR can handle various types of errors, 
 
 959
 Power BI
+By default, Query Diagnostics might require administrative rights to run (depending on IT policy). If you find yourself unable to run Query Diagnostics, open the Power BI options page, and in the Diagnostics tab, select Enable in Query Editor (does not require running as admin). 
+
+
+
+
+
+959
+Power BI
+The first type of Query Diagnostics are the primary diagnostics, which have a detailed view and a summarized view. The summarized view is aimed to give you an immediate insight into where time is being spent in your query. The detailed view is much deeper, line by line, and is, in general, only needed for serious diagnosing by power users.
+
+
 
 
 
@@ -1956,6 +1967,63 @@ Power BI
 
 959
 Power BI
+Power Query might perform evaluations that you may not have directly triggered. Some of these evaluations are performed in order to retrieve metadata so we can best optimize our queries or to provide a better user experience (such as retrieving the list of distinct values within a column that are displayed in the Filter Rows experience)
+
+
+
+
+
+
+959
+Power BI
+When refreshing in the Power Query editor, there's a lot done behind the scenes to attempt to give you a fluent user experience. As an example, when you Refresh Preview, the evaluator will execute the final step of each given Query. But then in the background it sequentially runs n-1 steps, n-2, steps, and so on, so that if you step back through your steps, it's already available.
+
+
+
+
+
+
+
+
+959
+Power BI
+
+
+
+
+
+
+
+959
+Power BI
+
+
+
+
+
+
+
+959
+Power BI
+
+
+
+
+
+
+
+959
+Power BI
+
+
+
+
+
+
+
+959
+Power BI
+
 
 
 
