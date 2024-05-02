@@ -1913,3 +1913,88 @@ UI Component: Custom page (preview)
 
 
 
+
+
+918
+Python
+To display a full year’s calendar for a specific year using Python’s calendar module, you can pass the year as an argument to the python -m calendar command. For example:
+
+$ python -m calendar 1989
+
+
+
+
+
+
+918
+Python
+To display the same calendar programmatically in your script, you can use one of the following methods:
+
+>>> import calendar
+>>> text_calendar = calendar.TextCalendar()
+>>> print(text_calendar.formatyear(1989))
+>>> text_calendar.pryear(1989)
+>>> calendar.prcal(1989)
+
+
+
+
+
+918
+Python
+To print a calendar for a specific month, you first need to create an instance of calendar.TextCalendar. Then, you can call the .prmonth() method on this instance, passing the year and month as arguments.
+
+Here’s how you do it:
+
+import calendar
+
+text_cal = calendar.TextCalendar()
+text_cal.prmonth(2024, 5)
+
+
+
+
+
+918
+Python
+The calendar.HTMLCalendar class has a method called .formatyearpage() which allows you to include a CSS stylesheet for styling the calendar. This method has an optional parameter named css that defaults to 'calendar.css'. This parameter refers to the name of the CSS file that will include the custom styles.
+
+
+
+
+
+918
+Python
+To change the first day of the week to Sunday for a TextCalendar in Python, you use the .setfirstweekday() method and pass calendar.SUNDAY as the argument:
+
+import calendar
+
+text_calendar = calendar.TextCalendar()
+text_calendar.setfirstweekday(calendar.SUNDAY)
+
+
+
+
+
+918
+Python
+The most practical way to display the calendar in a foreign language involves creating the calendar.LocaleTextCalendar object:
+
+>>> locale_calendar = calendar.LocaleTextCalendar(locale="de_DE.UTF-8")
+>>> locale_calendar.prmonth(2024, 1)
+    Januar 2024
+Mo Di Mi Do Fr Sa So
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31
+
+
+
+
+
+
+918
+Python
+The TextCalendar.iterweekdays() method returns an iterator for weekday numbers, which begins with the day specified by the TextCalendar.setfirstweekday() method. These methods are part of the lower-level functions provided by the calendar module to work with calendar data.
