@@ -3,14 +3,6 @@
 
 
 
-13
-Terraform
-The terraform apply command performs a plan just like terraform plan does, but then actually carries out the planned changes to each resource using the relevant infrastructure provider's API.
-
-
-
-
-
 14
 MS Data Analyst 
 The Workspace OneDrive setting allows you to configure a Microsoft 365 group whose SharePoint Online document library is available to workspace users once the workspace is created.
