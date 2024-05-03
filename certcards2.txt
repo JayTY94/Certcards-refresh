@@ -2,67 +2,6 @@
 
 
 
-7
-MS Data Analyst
-Metrics are where you can create goals based off existing datasets. You can add members to a workspace, but they receive a notification that they’ve been added to the workspace.
-
-
-
-
-
-8
-Microsoft Copilot Studio
-Generative answers can use these sources:
-
-Internal resources:
-SharePoint (.aspx pages aren't supported)
-OneDrive for Business
-Documents uploaded to Dataverse
-Custom data (internal or external): supply your own source, such as a Power Automate Flow or from Skill.
-
-
-
-
-
-9
-Microsoft Copilot Studio
-Due to memory limits, generative answers can only use SharePoint files that are under 3 MB. If a file is larger than 3 MB, consider splitting it into multiple smaller files.
-
-
-
-
-
-10
-General
-SED command in UNIX stands for stream editor and it can perform lots of functions on file like searching, find and replace, insertion or deletion. Though most common use of SED command in UNIX is for substitution or for find and replace. By using SED you can edit files even without opening them, which is much quicker way to find and replace something in file, than first opening that file in VI Editor and then changing it.
-
-
-
-
-
-11
-Power Platform
-Visualizations
-Chart
-  A single Graphic visualization that can be displayed within a view, on a form, or be added to a dashboard
-
-Dashboard
-  Functions as a palate for one or more graphic visualizations that provide an overview of actionable business data
-
-Embedded Power BI
-  Add embedded Power BI tiles and dashboards  to your app. Power BI is a cloud-based service that provides business intelligence and insight.
-
-
-
-
-
-12
-Microsoft Copilot Studio
-GraphSearch in Azure is a service that allows users to query and analyze large-scale graph data. It enables users to discover connections and relationships within complex datasets, such as social networks, recommendation systems, and knowledge graphs.
-
-
-
-
 
 13
 Terraform
