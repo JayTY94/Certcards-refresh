@@ -3,20 +3,6 @@
 
 
 
-14
-MS Data Analyst 
-The Workspace OneDrive setting allows you to configure a Microsoft 365 group whose SharePoint Online document library is available to workspace users once the workspace is created.
-
-
-
-
-
-15
-Azure VDI Project
-Components the customer is responsible for
-Scaling policies:	Session host pools integrated with Azure virtual machine scale sets manage a group of load-balanced VMs.
-Networking policies: The customer defines and assigns Network Security Groups (NSGs) to filter network traffic.
-
 
 
 
