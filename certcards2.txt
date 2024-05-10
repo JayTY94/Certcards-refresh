@@ -1,19 +1,3 @@
-1
-Child Services AWS Review
-Batch printing refers to the process of printing multiple files in a single print job. This means that instead of printing each document individually, businesses can group multiple documents into one print job and have them printed at once.
-
-
-
-
-
-2
-Bicep
-Bicep has a Visual Studio Code extension that provides code snippets and a visualizer to see the graphical representation of the Bicep script and the dependencies between resources 2.
-Bicep supports the use of modules to scope resources to a resource group and expose variables 2.
-
-
-
-
 
 3
 Azure VDI Project
