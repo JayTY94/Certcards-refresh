@@ -1,104 +1,6 @@
 
 
 
-
-
-
-
-
-
-16
-MS Data Analyst
-The Filters Query reduction settings allow you to instantly apply basic filter changes. The Persistent filters of Report settings allow you to prevent users from saving filters in the Power BI service.
-
-
-
-
-
-17
-General
-The convention of providing the full expansion of an acronym or initialism upon its first use in a document or text is commonly referred to as "acronym expansion" or "initialism expansion." This practice is employed to ensure that readers or audience members understand the meaning of the acronym before encountering it in its abbreviated form throughout the rest of the document.
-
-
-
-
-
-18
-Site Scraping
-Often, you use re.search() to search for a particular pattern inside a string. This function is somewhat more complicated than re.findall() because it returns an object called MatchObject that stores different groups of data. This is because there might be matches inside other matches, and re.search() returns every possible result.
-
-
-
-
-
-19
-Power Platform
-UI Component: App 
-Determines the application fundamentals such as components, properties, client type, and URL for your app.
-
-
-
-
-
-20
-MS Data Analyst
-Incremental refresh should only be used on data sources and queries that support query folding. If query folding isn't supported, incremental refresh could lead to a bad user experience because, while it will still issue the queries for the relevant partitions, it will pull all data, potentially multiple times.
-
-
-
-
-
-21
-MS Data Analyst
-Role in a Power BI workspace: Admin
-
-Update and delete the workspace
-Add or remove people, including other admins
-
-
-
-
-
-22
-Azure VM Image Builder
-There are limits, per subscription, for deploying resources using Azure Compute Galleries:
-
-
-
-
-
-23
-Power BI
-Preventing Error Propagation: One of the primary purposes of IFERROR is to prevent error propagation in DAX calculations. If an error occurs in a calculation without error handling, it can propagate through other calculations, leading to unexpected results or errors in downstream calculations. IFERROR helps to mitigate this by replacing errors with specified values or expressions.
-
-
-
-
-
-24
-General
-Azure Resource Graph: A service that provides an efficient way to query and explore Azure resources across multiple subscriptions, enabling complex querying and analysis.
-
-
-
-
-
-25
-Azure VDI Project
-Desktop - Remote Desktop application groups give users access to a full desktop. You can provide a desktop where the session host VM resources are shared or pooled. Or you can provide personal desktops to users that need to be able to add or remove programs without impacting other users.
-
-
-
-
-
-26
-Power BI
-With Query Diagnostics, you can achieve a better understanding of what Power Query is doing at authoring and at refresh time in Power BI Desktop. At this time you can use it to understand what sort of queries you're emitting, what slowdowns you might run into during authoring refresh, and what kind of background events are happening.
-
-
-
-
-
 27
 Azure Key Vault
 Azure Key Vault enables Microsoft Azure applications and users to store and use several types of secret/key data: keys, secrets, and certificates. Keys, secrets, and certificates are collectively referred to as "objects".
@@ -1915,3 +1817,74 @@ Mo Di Mi Do Fr Sa So
 918
 Python
 The TextCalendar.iterweekdays() method returns an iterator for weekday numbers, which begins with the day specified by the TextCalendar.setfirstweekday() method. These methods are part of the lower-level functions provided by the calendar module to work with calendar data.
+
+
+
+
+
+
+
+925
+Power BI
+To start Query Diagnostics, go to the Tools tab in the Power Query editor ribbon. You're presented here with a few different options.
+
+There are two primary options here, 'Diagnose Step' and 'Start Diagnostics' (paired with 'Stop Diagnostics'). The former will give you information on a query up to a selected step, and is most useful for understanding what operations are being performed locally or remotely in a query. The latter gives you more insight into a variety of other cases, discussed below.
+
+
+
+
+
+925
+Power BI
+It's important to note that just because you see a resource (database, web endpoint, etc.) or a data source query in your diagnostics, it doesn't mean that it's necessarily performing network activity. Power Query may retrieve this information from its cache. In future updates, we will indicate whether or not information is being retrieved from the cache for easier diagnosis.
+
+
+
+
+
+
+
+925
+Power BI
+In Power Query Diagnostics, 'Diagnose Step' is more useful for getting an insight into what evaluations are happening up to a single step, which can help you identify, up to that step, what performance is like as well as what parts of your query are being performed locally or remotely.
+
+
+
+
+
+
+
+925
+Power BI
+
+
+
+
+
+
+925
+Power BI
+
+
+
+
+
+
+925
+Power BI
+
+
+
+
+
+
+925
+Power BI
+
+
+
+
+
+
+925
+Power BI
