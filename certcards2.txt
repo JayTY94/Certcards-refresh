@@ -1,45 +1,4 @@
 
-3
-Azure VDI Project
-Components the customer is responsible for
-User profile management:	FSLogix and Azure Files provide a fast and stateful experience for users through containerized user profiles.
-User host access:	On the creation of a host pool, the type of load balancing is defined as either depth or breadth.
-Sizing and scaling policies for VM: VM sizing components include GPU-enabled VMs.
-
-
-
-
-
-4
-MS Data Analyst
-Another way to use tooltips is to display graphical information. The process of adding this type of tooltip is not as straightforward, but it is worthwhile. You would begin by creating a new page in the report.
-
-Open the new page and then open the Format pane. Expand the Page Size section and then select Tooltip from the Type list.
-
-In the Page information section, turn the Tooltip slider to On so that Power BI registers this page as a tooltip page
-
-Tooltips have limited canvas space, so to ensure that your visuals appear in the tooltip, on the View tab, set the Page view option to Actual size.
-
-
-
-
-
-5
-Terraform
-We refer to the terraform command line tool as "Terraform CLI" elsewhere in the documentation. This terminology is often used to distinguish it from other components you might use in the Terraform product family, such as Terraform Cloud or the various Terraform providers, which are developed and released separately from Terraform CLI.
-
-
-
-
-
-6
-Power BI
-To start Query Diagnostics, go to the Tools tab in the Power Query editor ribbon. You're presented here with a few different options.
-
-There are two primary options here, 'Diagnose Step' and 'Start Diagnostics' (paired with 'Stop Diagnostics'). The former will give you information on a query up to a selected step, and is most useful for understanding what operations are being performed locally or remotely in a query. The latter gives you more insight into a variety of other cases, discussed below.
-
-
-
 
 
 7
@@ -1821,6 +1780,58 @@ Types of Logic Components:
   Business rule
   Power Automate Flow
 
+
+
+
+
+
+197
+Power BI
+A warning with query diagnostics, as mentioned elsewhere, is that you'll see drastically different capabilities depending on the connector. For example, many ODBC based connectors won't have an accurate recording of what query is send to the actual backend system, as Power Query only sees what it sends to the ODBC driver.
+
+
+
+
+
+
+197
+Power BI
+One of the most common reasons to use Query Diagnostics is to have a better understanding of what operations were 'pushed down' by Power Query to be performed by the back-end data source, which is also known as 'folding'. If we want to see what folded, we can look at what is the 'most specific' query, or queries, that get sent to the back-end data source.
+
+
+
+
+
+
+197
+Power BI
+
+
+
+
+
+
+
+197
+Power BI
+
+
+
+
+
+
+
+197
+Power BI
+
+
+
+
+
+
+
+197
+Power BI
 
 
 
