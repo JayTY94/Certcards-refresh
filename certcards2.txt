@@ -1805,15 +1805,8 @@ One of the most common reasons to use Query Diagnostics is to have a better unde
 
 197
 Power BI
+Multiple requests to the same data source can occur if multiple queries pull from that data source. These requests can happen even in a case where only one query references the data source. If that query is referenced by one or more other queries, then each query—along with all the queries it depends on—is evaluated independently.
 
-
-
-
-
-
-
-197
-Power BI
 
 
 
@@ -1823,7 +1816,28 @@ Power BI
 
 197
 Power BI
+Power Query provides two easy ways to create parameters:
 
+From an existing query: Right-click a query whose value is a simple non-structured constant, such as a date, text, or number, and then select Convert to Parameter.
+Using the Manage Parameters window: Select the New Parameter option from the dropdown menu of Manage Parameters in the Home tab. Or launch the Manage Parameters window and select New on the top to create a parameter. Fill in this form, and then select OK to create a new parameter.
+
+
+
+
+
+
+
+197
+Power BI
+A parameter stores a value that can be used for transformations in Power Query. Apart from the name of the parameter and the value that it stores, it also has other properties that provide metadata to it. The properties of a parameter are:
+
+	• Name
+	• Description
+	• Required
+	• Type
+	• Suggested values
+	• Query
+  • Current Value
 
 
 
