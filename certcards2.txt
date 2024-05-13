@@ -1846,7 +1846,110 @@ A parameter stores a value that can be used for transformations in Power Query. 
 
 197
 Power BI
+Many transformations in Power Query let you select your parameter from a dropdown. We recommend that you always look for it and take advantage of what parameters can offer you.
 
 
 
 
+
+
+
+
+197
+Power BI
+As an alternative approach, you can also enter the formula try [Standard Rate] catch ()=> [Special Rate], which is equivalent to the previous formula, but using the catch keyword with a function that requires no parameters.
+
+The catch keyword was introduced to Power Query in May of 2022.
+
+
+
+
+
+
+1869
+Power BI
+To create a new custom column, go to the Add column menu and select Custom column. In the Custom column window, enter the formula 
+
+=try [Standard Rate] otherwise [Special Rate]
+
+Name this new column Final Rate. The formula above will try to evaluate the Standard Rate column and will output its value if no errors are found. If errors are found in the Standard Rate column, then the output will be the value defined after the otherwise statement, which in this case is the special rate.
+
+
+
+
+
+
+1869
+Power BI
+
+
+
+
+
+
+
+1869
+Power BI
+
+
+
+
+
+
+
+1869
+Power BI
+
+
+
+
+
+
+
+1869
+Power BI
+
+
+
+
+
+
+
+1869
+Power BI
+
+
+
+
+
+
+
+1869
+Power BI
+
+
+
+
+
+
+
+1869
+Power BI
+
+
+
+
+
+
+
+1869
+Power BI
+
+
+
+
+
+
+
+1869
+Power BI
