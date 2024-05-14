@@ -1,22 +1,6 @@
 
 
 
-7
-Power BI
-The purpose of the Data Privacy Firewall is simple: it exists to prevent Power Query from unintentionally leaking data between sources.
-
-
-
-
-
-8
-MS Data Analyst
-By default, cross filtering (or cross highlighting) works between any two visuals. However, the report author can edit visual interactions between any pair of visuals and in either direction. Then, they can disable cross filtering or modify the interaction to use cross highlighting instead.
-
-
-
-
-
 9
 Azure VM Image Builder
 Use the Sysprep.exe tool to generalize a Windows VM. Follow these steps:
@@ -1881,6 +1865,22 @@ Name this new column Final Rate. The formula above will try to evaluate the Stan
 
 1869
 Power BI
+When trying to diagnose #REF errors in a Power Query column, consider adding a new custom column with the formula 
+
+= try [column_name]
+
+This will add a column with custom records, giving Error reason, Error message, and Error detail for each row. Very helpful.
+
+
+
+
+
+
+1895
+Power Apps
+Model-driven app design is an approach that focuses on adding components such as forms, views, and charts and dashboards to tables using an app designer tool. Additionally, relationships connect tables together in a way that permits navigation between them and ensures that data is not repeated unnecessarily.
+
+Using the app designer with little or no code, you can build apps that are simple or very complex.
 
 
 
@@ -1888,8 +1888,10 @@ Power BI
 
 
 
-1869
-Power BI
+
+1895
+Power Apps
+While they're called model-driven apps, it is often easier to think of them as data model driven apps. This is because, without a data model housed within Microsoft Dataverse, you can't create a model-driven app.
 
 
 
@@ -1897,8 +1899,9 @@ Power BI
 
 
 
-1869
-Power BI
+1895
+Power Apps
+Unlike canvas app development where the designer has complete control over app layout, with model-driven apps much of the user interface is determined for you and is largely designated by the components you add to the app.
 
 
 
@@ -1906,50 +1909,48 @@ Power BI
 
 
 
-1869
-Power BI
+1895
+Power Apps
+Application lifecycle management is the way in which we develop an app from conception to end of life.
+
+Solutions are used to act as wrappers for all the elements required to deliver a product for use within a business.
+
+
+
+
+
+1895
+Power Apps
+As a minimum, a model-driven app requires a single table, a site map, plus the app itself. However, model-driven apps generally include a considerable amount more, and this includes canvas apps, security roles, environment variables, and much more.
 
 
 
 
 
 
-
-1869
-Power BI
-
-
+1895
+Power Apps
+For some reason, when I was trying to update C&Y's Billing Managers and Project Managers, I was getting a partial failure when trying to use the Import feature from the Power Apps table. I ended up having to write a Power Automate script to edit the records.
 
 
 
 
 
-1869
-Power BI
+1895
+Power Apps
 
 
 
 
 
 
-
-1869
-Power BI
-
+1895
+Power Apps
 
 
 
 
 
 
-1869
-Power BI
-
-
-
-
-
-
-
-1869
-Power BI
+1895
+Power Apps
