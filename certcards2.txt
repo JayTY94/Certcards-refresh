@@ -1938,14 +1938,8 @@ For some reason, when I was trying to update C&Y's Billing Managers and Project 
 
 1895
 Power Apps
+The Microsoft Trust Center is the primary resource for Power Platform compliance information. Learn more at Microsoft Compliance Offerings.
 
-
-
-
-
-
-1895
-Power Apps
 
 
 
@@ -1954,3 +1948,122 @@ Power Apps
 
 1895
 Power Apps
+Security concepts that are common to all Power Platform services include:
+
+The Power Platform service architecture
+Authenticating to Power Platform services
+Connecting and authenticating to data sources
+Data storage in Power Platform
+
+
+
+
+
+1895
+Power Apps
+Power Platform services are built on Azure, Microsoft's cloud computing platform. The Power Platform service architecture is composed of four components:
+
+Web front-end cluster
+Back-end cluster
+Premium infrastructure
+Mobile platforms
+
+
+
+
+
+1895
+Power Apps
+A web front-end cluster consists of an ASP.NET website that runs in the Azure App Service Environment. When a user visits a Power Platform service or application, the client's DNS service may get the most appropriate (usually nearest) datacenter from the Azure Traffic Manager. For more information, see Performance traffic-routing method for Azure Traffic Manager.
+
+
+
+
+
+1895
+Power Apps
+Back-end clusters are stateful. A back-end cluster hosts all the data of all the tenants assigned to it. The cluster that contains the data of a specific tenant is referred to as the tenant’s home cluster. Information about an authenticated user's home cluster is provided by the Power Platform global back-end service to the web front-end cluster.
+
+
+
+
+
+1991
+Power BI
+When you display the usage metrics report, Power BI generates a pre-built report. It contains usage metrics for that content for the last 30 days. The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, and so on.
+
+
+
+
+
+
+
+1991
+Power BI
+Usage metrics reports don't show up in Recent, Workspaces, Favorites, or other content lists. They can't be added to an app. If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
+
+
+
+
+
+
+
+1991
+Power BI
+The improved usage metrics report includes the following report pages:
+
+Report usage Provides information about report views and report viewers, such as how many users viewed the report by date.
+Report performance Shows the typical report opening times broken down by consumption method and browser types.
+FAQ Provides answers to frequently asked questions, such as What is a "Viewer" and what is a "View"?
+
+
+
+
+
+1991
+Power BI
+The Usage Metrics Report semantic model contains usage data for the last 30 days. It can take up to 24 hours for new usage data to be imported. You can't trigger a manual refresh by using the Power BI user interface.
+
+
+
+
+
+
+
+1991
+Power BI
+Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they're On by default for all users in the organization. See Audit and usage metrics in the Admin portal article for details on these settings.
+
+
+
+
+
+
+
+1991
+Power BI
+
+
+
+
+
+
+1991
+Power BI
+
+
+
+
+
+
+1991
+Power BI
+
+
+
+
+
+
+1991
+Power BI
+
