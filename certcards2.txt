@@ -1,80 +1,5 @@
 
 
-
-
-11
-Microsoft Copilot Studio
-GraphSearch is built to scale horizontally, allowing users to handle large volumes of graph data and queries efficiently. It leverages distributed computing and storage to achieve high performance, enabling users to process complex graph queries in real-time or near real-time.
-
-
-
-
-
-12
-MS Data Analyst
-A good example of an operational report is one that allows monitoring of a manufacturing production line. When an unexpected event arises, such as equipment malfunction, a button could allow workers to start a maintenance request.
-
-
-
-
-
-13
-Maths
-Asymptotic independence between test statistics: This refers to the property that as the sample size increases indefinitely, the test statistics become independent of each other.
-
-
-
-
-
-14
-General
-When you want to display a sign against all numbers, regardless of whether they are positive or negative, you use the plus sign (+) in the format specifier. This is demonstrated in the example where both negative and positive numbers show their signs:
-
-
-
-
-
-15
-Terraform
-Terraform Cloud and Terraform Enterprise are platforms that perform Terraform runs to provision infrastructure, offering a collaboration-focused environment that makes it easier for teams to use Terraform together.
-
-
-
-
-
-16
-Maths
-1-dimensional simplex: The simplest example of a simplex, represented by a line segment in one-dimensional space, typically used in reference to probabilistic and optimization contexts.
-
-
-
-
-
-17
-Power Platform
-UI Component: Site map 
-Specifies the navigation for your app.
-
-
-
-
-
-18
-Site Scraping
-Navigate to a specific website with Selenium
-
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-
-site_url = "https://basec.sicomm.net/vendorlogin/"
-driver = webdriver.Chrome()
-driver.get(site_url)
-
-
-
-
-
 19
 Windows 10
 You can increase or decrease the size of icons on your desktop by selecting the desktop, holding [ctrl], and using the scroll wheel.
@@ -2019,30 +1944,78 @@ Usage metrics reports are a feature that the Power BI or global administrator ca
 
 
 
-1991
-Power BI
+1947
+Python
+CRUD stands for Create, Read, Update, and Delete. Every time you interact with an application, you’re likely engaging in one of the four CRUD operations.
 
 
 
 
 
 
-1991
-Power BI
+
+
+1947
+Python
+CRUD operations are an essential concept that are independent of specific programming languages. CRUD describes the steps that data takes from creation to deletion, regardless of what programming language you use.
 
 
 
 
 
 
-1991
-Power BI
+1947
+Python
+The CRUD operations correspond almost one-to-one with SQL commands:
+
+Create: INSERT
+Read: SELECT
+Update: UPDATE
+Delete: DELETE
+So, to modify existing data in SQL, you would use the UPDATE command.
 
 
 
 
 
 
-1991
-Power BI
+1947
+Python
+SQLAlchemy is a popular Object Relational Mapper (ORM) for Python. It allows you to interact with a database using Python objects instead of writing raw SQL queries.
+
+To create a new database entry with SQLAlchemy, you can use the 
+.add()
+ method of Session.
+
+To retrieve database items, you use 
+.execute()
+ with a query as the argument.
+
+
+
+
+
+
+1947
+Python
+SQLAlchemy is a popular Object Relational Mapper (ORM) for Python. It allows you to interact with a database using Python objects instead of writing raw SQL queries.
+
+To update an entry, you can change an object’s property.
+
+To delete an entry, you need to call the session’s 
+.delete()
+ method.
+
+
+
+
+
+1947
+Python
+CRUD operations correspond to HTTP request methods as follows:
+
+Create corresponds to POST
+Read corresponds to GET
+Update corresponds to PUT or PATCH
+Delete corresponds to DELETE
 
