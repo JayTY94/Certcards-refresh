@@ -1,27 +1,6 @@
 
 
 
-9
-Azure VM Image Builder
-Use the Sysprep.exe tool to generalize a Windows VM. Follow these steps:
-
-Sign in to the Windows VM.
-Open an elevated Command Prompt.
-Navigate to the C:\windows\system32\sysprep folder.
-Run sysprep.exe.
-In the System Preparation Tool dialog box, select the settings in the following table, and then select OK.
-
-
-
-
-
-10
-MS Data Analyst
-When creating a quick measure in Power BI Desktop, you apply calculations to fields. You do not explicitly create a DAX query, but you choose calculations and fields, which result in automatic generation of a DAX query.
-
-
-
-
 
 11
 Microsoft Copilot Studio
