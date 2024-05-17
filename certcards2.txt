@@ -1892,3 +1892,125 @@ Sum-type test statistics are created by summing individual test statistics from 
 
 
 
+
+
+
+1898
+Power BI
+Report Page Views rely on client telemetry and can be affected by undercounting and overcounting of activities due to inconsistent network connections, ad blockers, or other client-side issues. Report View metrics relies on activity data collected from Power BI service, and matches the aggregate counts of activities in audit logs and activity logs.
+
+
+
+
+
+
+
+
+
+1898
+Power BI
+Certain types of views aren't included in performance measurements. For example, when a user selects a link to a report in an email message, the Report View is accounted for in the report usage but there is no event in the performance metrics.
+
+
+
+
+
+
+
+
+
+1898
+Power BI
+User masking isn't working as expected when using nested groups. Nested groups (subgroups) are groups that are members of existing groups. If your organization has disabled Per-user data in usage metrics for content creators in the Power BI admin portal tenant settings, only the members on the top level are being masked. Members of subgroups are still visible.
+
+
+
+
+
+
+
+
+
+1898
+Power BI
+If your organization is using Azure Private Link in Power BI, because client-telemetry is not available the usage metrics reports will only contain Report Open events.
+
+
+
+
+
+
+
+
+
+1898
+Power BI
+Both GUID and ObjectsIDs may be used interchangeably. Each Report ObjectId is uniquely represented by a 32 hexadecimal GUID (a globally unique identifier).
+
+
+
+
+
+
+
+
+
+1898
+Power BI
+
+
+
+
+
+
+
+
+1898
+Power BI
+
+
+
+
+
+
+
+
+1898
+Power BI
+
+
+
+
+
+
+
+
+1898
+Power BI
+
+
+
+
+
+
+
+
+1898
+Power BI
+
+
+
+
+
+
+
+
+1898
+Power BI
+
+
+
+
+
+
+
