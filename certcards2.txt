@@ -1957,6 +1957,18 @@ Both GUID and ObjectsIDs may be used interchangeably. Each Report ObjectId is un
 
 1898
 Power BI
+Troubleshoot refresh issues
+If you suspect data consistency or refresh issues, it might make sense to delete the existing Usage Metrics Report semantic model. Then you can run View Usage Metrics again to generate a new semantic model with its associated usage metrics reports.
+
+
+
+
+
+
+
+1969
+PP365
+Environments can have zero or one Microsoft Dataverse database. The process for adding users to environments that have no Dataverse database differs from the process for environments that have one Dataverse database. For an overview of environments, see Environments overview.
 
 
 
@@ -1965,8 +1977,9 @@ Power BI
 
 
 
-1898
-Power BI
+1969
+PP365
+The system also supports just-in-time (JIT) user provisioning. In this scenario, when users access an environment URL, access requirements are checked at the time of sign-in and qualified users are added to the environment.
 
 
 
@@ -1975,8 +1988,27 @@ Power BI
 
 
 
-1898
-Power BI
+1969
+PP365
+In most cases, adding users to an environment only gives users access to the environment itself, not to any resources (apps and data) in the environment. You need to configure access to resources by assigning security roles to users.
+
+
+
+
+
+
+1969
+PP365
+Users who have been assigned service admin roles or the Global admin role, assigned through the Microsoft 365 admin center, will get the System Administrator role by default. They will have admin privileges to the environment's resources when they get added to the environment.
+
+
+
+
+
+
+1969
+PP365
+You can set a sandbox, production, or trial (subscription-based) environment in administration mode so that only users with System Administrator or System Customizer security roles will be able to sign in to that environment. Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect end users (non-admins).
 
 
 
@@ -1985,8 +2017,28 @@ Power BI
 
 
 
-1898
-Power BI
+1969
+PP365
+Background operations (optional)	Select to disable all asynchronous operations (see Asynchronous service) such as workflows and synchronization with Exchange. Emails will not be sent and server-side synchronization for appointments, contacts, and tasks are disabled. Note: Administration mode must be enabled to disable background operations.
+
+
+
+
+
+
+1969
+PP365
+After taking the environment out of admin mode, flows may not trigger as expected until caches have been cleared; this can take up to 24 hours.
+
+
+
+
+
+
+
+1969
+PP365
+Using the Microsoft Power Platform admin center, you can create environments of multiple types. Using trial environments, companies and customers can try out new features and solutions. There are two types of trial environments: trial (standard) and trial (subscription-based).
 
 
 
@@ -1995,8 +2047,35 @@ Power BI
 
 
 
-1898
-Power BI
+1969
+PP365
+Trial (standard): This is the type of trial environment that companies can use to allow users and department managers to try new features and quickly build low-code and no-code applications and processes. Organization (tenant) admins can enable all users to create trials, or only tenant admins. If allowed for users, any user from that organization who has a suitable license can create a 30-day trial environment. 
+
+
+ 
+
+
+
+1969
+PP365
+Trial (subscription-based): This is the type of trial environment that companies can use to develop larger, multiuser and multiple-department solutions and perform proof-of-concept reviews. Tenant admins can add a trial (subscription-based) environment to their tenant, or new customers can sign up for a new tenant and become the Global admin. 
+
+
+
+
+
+
+1969
+PP365
+Neither type of environment consumes paid capacity. You can convert either type of trial environment to a production environment by switching it to consume from paid capacity, which will keep it from being disabled and deleted. After it becomes a production environment, it will follow the paid license lifecycle.
+
+
+
+
+
+
+1969
+PP365
 
 
 
@@ -2004,13 +2083,5 @@ Power BI
 
 
 
-
-1898
-Power BI
-
-
-
-
-
-
-
+1969
+PP365
