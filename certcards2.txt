@@ -2076,6 +2076,7 @@ Neither type of environment consumes paid capacity. You can convert either type 
 
 1969
 PP365
+Power Apps data exports have a 12 minute time limit. If the volume of data exported exceeds 12 minutes the export will fail. If this occurs, export data in smaller segments.
 
 
 
@@ -2083,5 +2084,151 @@ PP365
 
 
 
-1969
+
+2088
+PP365
+You can help ensure that people enter data consistently and follow the same steps every time they work with a customer by creating a business process flow. For example, you might want to create a business process flow to have everyone handle customer service requests the same way, or to require that people get approval for an invoice before submitting an order.
+
+
+
+
+
+
+
+2088
+PP365
+Engagements follow a Businesss Process flow. Business process flows provide a guide for people to get work done. They provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to a conclusion of some kind.
+
+
+
+
+
+
+
+2088
+PP365
+With Businesss Process Flows, you can make a step required so that people must enter data for a corresponding column before they can proceed to the next stage. This is commonly called ”stage-gating”. If you are adding a business-required or system-required column to a business process flow stage, we recommend that you add this column to your form as well.
+
+
+
+
+
+
+
+
+
+2088
+PP365
+Although the business process flow control in the form does not provide any direct client-side programmability, changes applied by business rules or form scripts are automatically applied to business process flow controls. 
+
+
+
+
+
+
+2088
+PP365
+The following business process flows are included. To understand how business process flows work, review these system business process flows:
+
+Lead to Opportunity Sales Process
+Opportunity Sales Process
+Phone to Case Process
+
+
+
+
+
+
+
+2088
+PP365
+You can design business process flows that tie together the rows for up to five different tables into a single process so that people using the app can focus on the flow of their process rather than on which table they are working in. They can more easily navigate between related table rows.
+
+
+
+
+
+
+
+
+
+2088
+PP365
+You can design business process flows that tie together the rows for up to five different tables into a single process so that people using the app can focus on the flow of their process rather than on which table they are working in. They can more easily navigate between related table rows.
+
+
+
+
+
+
+
+
+
+2088
+PP365
+You can call on-demand workflows from inside a business process flow. You can configure this from the new business process flow designer by dragging a workflow component to a process stage or to the Global Workflows section.
+
+
+
+
+
+
+
+2088
+PP365
+Solution Explorer is a feature within Microsoft Dataverse and Power Apps that allows users to manage the components of their applications. It provides a centralized interface to view, add, modify, and remove components such as entities, fields, forms, views, charts, dashboards, plugins, workflows, and more. 
+
+
+
+
+
+
+
+2088
+PP365
+Grids: Grids are tabular representations of data within a model-driven app in Power Apps. They allow users to view and interact with rows of data from a table. Grids can be configured to show specific columns and can be customized to include features like sorting, filtering, and pagination.
+
+
+
+
+
+
+
+2088
+PP365
+Workflow in the context of Microsoft Dataverse and Power Apps refers to the automation of business processes and tasks. Workflows are a series of steps and rules that define how data is processed and managed within the system. Workflows can be triggered by events such as record creation, update, or deletion, and can perform actions like sending emails, updating records, creating tasks, and more.
+
+
+
+
+
+
+2088
+PP365
+Power Apps Offline Use enables users to continue working with their apps even when they are not connected to the internet. This feature is crucial for scenarios where consistent internet access is not guaranteed, such as in remote locations or fieldwork. 
+
+
+
+
+
+
+2088
+PP365
+To support offline use, Power Apps allows data to be cached locally on the device. Users can create, update, and delete records while offline, and these changes are synchronized with the Dataverse database once the device reconnects to the internet. This must all be configured ahead of time.
+
+
+
+
+
+
+2088
+PP365
+
+
+
+
+
+
+
+2088
 PP365
