@@ -2186,13 +2186,101 @@ When you select Dual and Import tables in Data view, they show cached data. Dire
 
 
 2224
-Power BI Desktop
+Accounting
+a single audit is more specialized and focused on compliance with federal funding, while an audit by a public accounting firm is more comprehensive and focused on the overall financial health and reporting of an entity.
 
 
 
 
 
 
+2197
+Python
 
-2224
-Power BI Desktop
+
+
+
+
+
+2197
+Python
+
+
+
+
+
+
+2197
+Python
+
+
+
+
+
+
+2197
+Python
+
+
+
+
+
+
+2197
+Python
+
+
+
+
+
+
+2197
+Python
+
+
+
+
+
+
+2197
+Python
+
+
+
+
+
+
+2197
+Python
+
+
+
+
+
+
+2197
+Python
+
+
+
+
+
+
+2197
+Python
+
+
+
+
+
+
+2197
+Python
+
+
+
+
+
+
+2197
+Python
