@@ -2196,15 +2196,7 @@ a single audit is more specialized and focused on compliance with federal fundin
 
 2197
 Python
-
-
-
-
-
-
-2197
-Python
-
+A Session object is a class for running TensorFlow operations. It contains the environment in which Tensor objects are evaluated and Operation objects are executed, and it can own resources like tf.Variable objects. The most common way to use a Session is as a context manager.
 
 
 
@@ -2212,7 +2204,7 @@ Python
 
 2197
 Python
-
+If your use case doesn’t fall into one of the Core API applications, like building tools on top of TensorFlow or developing your own high-performance platform, you should prefer Keras.
 
 
 
@@ -2220,6 +2212,16 @@ Python
 
 2197
 Python
+Many popular machine learning algorithms and datasets are built into TensorFlow and are ready to use. In addition to the built-in datasets, you can access Google Research Datasets or use Google’s Dataset Search to find even more.
+
+
+
+
+
+2197
+Python
+PyTorch was developed by Facebook and was first publicly released in 2016. Because Python programmers found it so natural to use, PyTorch rapidly gained users, inspiring the TensorFlow team to adopt many of PyTorch’s most popular features in TensorFlow 2.0.
+
 
 
 
