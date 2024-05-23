@@ -2225,6 +2225,26 @@ When it comes to pre-trained models, TensorFlow Hub steps in with models that yo
 
 2316
 MS Dataverse
+The Dataverse Web API provides a development experience that can be used across a wide variety of programming languages, platforms, and devices. The Web API implements the OData (Open Data Protocol), version 4.0, an OASIS standard for building and consuming RESTful APIs over rich data sources.
+
+
+
+
+
+
+2316
+MS Dataverse
+It is valuable to recognize that the organization service is what defines the platform. The Web API provides a RESTful programming experience but ultimately all data operations go through the underlying organization service.
+
+
+
+
+
+
+2316
+MS Dataverse
+The capability to extend the default behavior of Microsoft Dataverse depends on detecting when events occur on the server. The Event Framework provides the capability to register custom code to be run in response to specific events.
+
 
 
 
@@ -2234,16 +2254,7 @@ MS Dataverse
 
 2316
 MS Dataverse
-
-
-
-
-
-
-
-2316
-MS Dataverse
-
+As a developer, you will use the Plug-in Registration tool to configure plug-ins, Azure integrations, virtual table data providers, and Webhooks to respond to events that are provided by the event framework.
 
 
 
@@ -2252,16 +2263,7 @@ MS Dataverse
 
 2316
 MS Dataverse
-
-
-
-
-
-
-
-2316
-MS Dataverse
-
+As described in Use messages with the SDK for .NET, data operations in the Dataverse platform are based on messages and every message has a name. There are Create, Retrieve, RetrieveMultiple, Update, Delete, Associate and Disassociate messages that cover the basic data operations that happen with tables. 
 
 
 
