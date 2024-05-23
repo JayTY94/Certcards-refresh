@@ -2,96 +2,6 @@
 
 
 
-
-21
-Power BI
-One of the most common reasons to use Query Diagnostics is to have a better understanding of what operations were 'pushed down' by Power Query to be performed by the back-end data source, which is also known as 'folding'. If we want to see what folded, we can look at what is the 'most specific' query, or queries, that get sent to the back-end data source.
-
-
-
-
-
-22
-MS Data Analyst
-You can use an external site like powerbi.tips to generate a theme. The site will guide you through building a color palette and setting property values for all core visual types.
-
-For more information, see Use report themes in Power BI Desktop.
-
-
-
-
-
-23
-Microsoft Copilot Studio
-SharePoint uses ASPX pages for its master pages and page layouts. Master pages define the overall look and feel of a SharePoint site, including its branding, navigation, and page structure. Page layouts, on the other hand, define the layout and content structure of individual pages within a site.
-
-
-
-
-
-24
-Power Apps
-Back-end clusters are stateful. A back-end cluster hosts all the data of all the tenants assigned to it. The cluster that contains the data of a specific tenant is referred to as the tenant’s home cluster. Information about an authenticated user's home cluster is provided by the Power Platform global back-end service to the web front-end cluster.
-
-
-
-
-
-25
-Maths
-Norms of a matrix: Functions that assign a strictly positive length or size to each matrix in a vector space, except for the zero matrix.
-
-
-
-
-
-26
-MS Data Analyst
-In the Row-Level Security screen for a model, you can add Microsoft Entra ID users and security groups to the security role. When members are added to this role, the DAX filter that you previously defined will be applied to them. If members are not added to the role, but they have access to the report, RLS will not apply to them.
-
-
-
-
-
-27
-Python
-Python’s unittest package supports several key concepts that facilitate test creation, organization, preparation, and automation:
-
-  Test case: This is an individual unit of testing. It checks the output for a given input set.
-  Test suite: This is a collection of test cases, test suites, or both. They’re grouped and executed together.
-
-
-
-
-
-28
-Power BI
-As an alternative approach, you can also enter the formula try [Standard Rate] catch ()=> [Special Rate], which is equivalent to the previous formula, but using the catch keyword with a function that requires no parameters.
-
-The catch keyword was introduced to Power Query in May of 2022.
-
-
-
-
-
-29
-Power Platform
-UI Component: Form
-A set of data-entry columns for a given table that matches the items that your organization tracks for the table. For example, a set of data-entry columns where users input relevant information to track a customer's previous orders along with specific requested reorder dates.
-
-
-
-
-
-30
-Power Platform
-Type of Logic Component: Actions
-Actions are a type of process that let you manually invoke actions, including custom actions, directly from a workflow.
-
-
-
-
-
 31
 General
 NPS measures customer perception based on one simple question:
@@ -2230,6 +2140,18 @@ PyTorch was developed by Facebook and was first publicly released in 2016. Becau
 
 2197
 Python
+PyTorch is based on Torch, a framework for doing fast computation that is written in C. Torch has a Lua wrapper for constructing models.
+
+PyTorch wraps the same C back end in a Python interface. But it’s more than just a wrapper. Developers built it from the ground up to make models easy to write for Python programmers.
+
+
+
+
+
+2197
+Python
+The most important difference between a torch.Tensor object and a numpy.array object is that the torch.Tensor class has different methods and attributes, such as backward() which computes the gradient, and CUDA compatibility.
+
 
 
 
@@ -2238,14 +2160,8 @@ Python
 
 2197
 Python
+One of the main special features of PyTorch is that it adds a C++ module for autodifferentiation to the Torch backend. Autodifferentiation automatically calculates the gradient of the functions defined in torch.nn during backpropagation.
 
-
-
-
-
-
-2197
-Python
 
 
 
@@ -2254,14 +2170,8 @@ Python
 
 2197
 Python
+By default, PyTorch uses eager mode computation. You can run a neural net as you build it, line by line, which makes it easier to debug. It also makes it possible to construct neural nets with conditional execution. This dynamic execution is more intuitive for most Python programmers.
 
-
-
-
-
-
-2197
-Python
 
 
 
@@ -2270,6 +2180,16 @@ Python
 
 2197
 Python
+More coding languages are supported in TensorFlow than in PyTorch, which has a C++ API. You can use TensorFlow in both JavaScript and Swift. If you don’t want to write much low-level code, then Keras abstracts away a lot of the details for common use cases so you can build TensorFlow models without sweating the details.
+
+
+
+
+
+2197
+Python
+If you want to use a specific pre-trained model, like BERT or DeepDream, then you should research what it’s compatible with. Some pre-trained models are available in only one library or the other, and some are available in both. The Model Garden and the PyTorch and TensorFlow hubs are also good resources to check.
+
 
 
 
@@ -2278,7 +2198,9 @@ Python
 
 2197
 Python
+TorchText is part of the PyTorch ecosystem and is designed to handle text data for natural language processing tasks. It offers tools for managing data loading, applying text transformations, and integrating with datasets.
 
+This library simplifies tasks like text classification and language modeling by making vocabulary creation and tokenization more straightforward. 
 
 
 
@@ -2286,3 +2208,101 @@ Python
 
 2197
 Python
+With TensorFlow’s TF Image, part of TensorFlow’s core, you get all the basics for resizing, cropping, and flipping images to get them ready for your models. Then there’s TensorFlow Datasets (TFDS), which offers a huge selection of real-world image datasets that are easy to plug into your projects.
+
+
+
+
+
+2197
+Python
+When it comes to pre-trained models, TensorFlow Hub steps in with models that you can use right away, like ResNet and MobileNet. You can save time by using these models to recognize patterns or objects in images so you don’t have to start from scratch.
+
+
+
+
+
+
+2316
+MS Dataverse
+
+
+
+
+
+
+
+2316
+MS Dataverse
+
+
+
+
+
+
+
+2316
+MS Dataverse
+
+
+
+
+
+
+
+2316
+MS Dataverse
+
+
+
+
+
+
+
+2316
+MS Dataverse
+
+
+
+
+
+
+
+2316
+MS Dataverse
+
+
+
+
+
+
+
+2316
+MS Dataverse
+
+
+
+
+
+
+
+2316
+MS Dataverse
+
+
+
+
+
+
+
+2316
+MS Dataverse
+
+
+
+
+
+
+
+2316
+MS Dataverse
