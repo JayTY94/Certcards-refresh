@@ -2206,5 +2206,61 @@ Pito Salas is a Curaçaoan-American Cambridge, Massachusetts-based software deve
 
 
 
-2222
-Python
+2210
+Power BI
+The SUMMARIZE function in DAX is a powerful function used to create summary tables or groupings of data based on specified columns and expressions. It essentially performs a GROUP BY operation similar to SQL.
+
+
+
+
+
+
+2210
+Power BI
+SUMMARIZE ( <table>, <group_by_column1>, ..., <group_by_columnN>, <expression1>, ..., <expressionN> )
+Arguments:
+<table>: The table or table expression from which to retrieve data.
+<group_by_column1>, ..., <group_by_columnN>: Columns to group the data by. Each unique combination of values in these columns defines a group.
+<expression1>, ..., <expressionN>: Optional expressions to compute values for each group. These expressions could be aggregations, calculations, or any other DAX expressions.
+
+
+
+
+
+
+2210
+Power BI
+SUMMARIZE generates a summary table that includes unique combinations of values from the specified group by columns.
+For each group, it computes the values specified in the expressions. If no expressions are provided, SUMMARIZE simply returns the distinct combinations of group by columns.
+It returns a table with columns specified in both group by columns and expressions.
+
+
+
+
+
+2210
+Power BI
+
+
+
+
+
+
+2210
+Power BI
+
+
+
+
+
+
+2210
+Power BI
+
+
+
+
+
+
+2210
+Power BI
