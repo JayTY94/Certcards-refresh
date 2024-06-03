@@ -2238,29 +2238,183 @@ It returns a table with columns specified in both group by columns and expressio
 
 
 
-2210
-Power BI
+2241
+Python
+String interpolation in Python involves inserting objects into a string. The primary tools for this are:
+
+f-strings: Provide a way to embed expressions inside string literals using curly braces {}.
+
+str.format() method: Allows for complex variable substitutions and value formatting.
+
+modulo operator (%): An older method for string formatting using format specifiers like %s and %d.
 
 
 
 
 
 
-2210
-Power BI
+2241
+Python
+F-strings are evaluated at runtime, meaning that the expressions inside the curly braces are inserted when the code that defines the string runs.
+
+
+
+
+
+2241
+Python
+Adding an equal sign after a variable or expression in an f-string creates a self-documenting expression. This feature is particularly useful for debugging because it not only shows the result of the expression but also the expression itself, making what is being evaluated clear. For example, print(f"{value = }") would output value = Suspicious value, showing both the variable name and its value.
 
 
 
 
 
 
-2210
-Power BI
+
+2241
+Python
+In Python f-strings, the flags !s and !r allow you to control how objects are converted into strings. The !s flag uses the object’s .__str__() method, which is intended to return a user-friendly string representation. The !r flag uses the object’s .__repr__() method, which should return a developer-friendly string representation that could be used to re-create the object.
 
 
 
 
 
 
-2210
-Power BI
+
+2241
+Python
+The .format() method in Python supports different configurations for string interpolation:
+
+Empty replacement fields use the default order of arguments.
+Zero-based indices allow you to specify the order of arguments.
+Named replacement fields improve readability by matching the arguments’ names in the method call.
+
+
+
+
+
+2241
+Python
+The !r flag in Python’s .format() method uses the repr() function to provide a developer-friendly string representation of an object.
+
+Conversely, the !s flag uses the str() function to produce a user-friendly string representation, which is generally more readable and concise.
+
+
+
+
+
+2241
+Python
+Named replacement fields allow you to insert values from a dictionary into a string by using keys. This method is more readable and intuitive than using positional arguments with tuples.
+
+
+
+
+
+
+
+2241
+Python
+The .format() method is recommended for lazy string interpolation, where you need to create a reusable string template that can be interpolated later. This is useful when you don’t have all the data available when creating the string, or when the same format is used multiple times with different data.
+
+
+
+
+
+
+
+2241
+Python
+In contrast, f-strings perform eager interpolation and are not suitable for these scenarios. You can learn more about the differences and use cases for these methods in the Using F-strings vs .format() vs % section in the tutorial.
+
+
+
+
+
+
+
+2241
+Python
+In a Python Template string, placeholders consist of two parts: a dollar sign ($) followed by a valid Python identifier. This is different from other string interpolation methods that might use curly braces or percentage symbols. Valid identifiers are those that can be used as variable names in Python, which include letters, underscores, and digits but can’t start with a digit or be a Python keyword.
+
+
+
+
+
+
+2241
+Python
+The correct syntax for unpacking a dictionary into keyword arguments in Python is the ** operator. This operator unpacks the key-value pairs from the dictionary, allowing them to be used as keyword arguments in functions or methods.
+
+
+
+
+
+
+2241
+Python
+When you use the .safe_substitute() method from the Template class with a dictionary that doesn’t match all placeholders, it returns the string with the missing placeholders shown as is. This method doesn’t raise a KeyError like the .format() method does when faced with missing keys.
+
+
+
+
+
+
+
+
+2241
+Python
+
+
+
+
+
+
+
+2241
+Python
+
+
+
+
+
+
+
+2241
+Python
+
+
+
+
+
+
+
+2241
+Python
+
+
+
+
+
+
+
+2241
+Python
+
+
+
+
+
+
+
+2241
+Python
+
+
+
+
+
+
+
+2241
+Python
