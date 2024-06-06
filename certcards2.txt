@@ -2,58 +2,6 @@
 
 
 
-11
-Site Scraping
-This project involved me writing and then freezing a Python script that would:
-    Navigate to a specific website
-    Use Selenium to authenticate
-    Use Selenium to navigate to desirable data
-    Use Selenium to extract row data
-    Use Pandas to save row data to an excel file
-    Use win32com.client to email excel sheet to self
-
-
-
-
-
-12
-Power BI
-Error handling: If there are multiple values or if the context is ambiguous (e.g., no filter applied, multiple selections), SELECTEDVALUE will return an error by default. To handle this situation, you can provide an optional second argument to specify a default value to return if SELECTEDVALUE encounters an error. This allows you to gracefully handle scenarios where the expected condition is not met.
-
-
-
-
-
-13
-Power BI
-Error Handling: IFERROR is used to handle errors that occur during the evaluation of an expression. It takes two arguments: the expression to evaluate and the value to return if the expression results in an error. If the expression returns an error, IFERROR returns the specified value; otherwise, it returns the result of the expression.
-
-
-
-
-
-14
-Workera.ai
-Amazon Rekognition, Custom Labels:
-
-Amazon Rekognition Custom Labels enables you to train a model to recognize custom objects and scenes.
-This allows you to create a more specialized and tailored solution for your specific use case.
-
-
-
-
-
-15
-Power Platform
-Data components are either designed at a table level within an environment, or within a solution contained within the environment.
-They can be: 
-  Table
-  Relationship
-  Column
-  Choice column
-
-
-
 
 
 16
@@ -2419,6 +2367,8 @@ On the user profile page you can view and make changes to important user profile
 
 2365
 Power Platform administration
+To disable a user account, remove a license from the user or remove the user from the security group that's associated with an environment. Removing a user from the security group doesn't remove the user's license. If you want to make the license available to another user, you have to remove the license from the user account that was disabled.
+
 
 
 
