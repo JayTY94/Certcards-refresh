@@ -2379,8 +2379,15 @@ To disable a user account, remove a license from the user or remove the user fro
 
 
 2365
-Power Platform administration
-
+Power BI
+The following query will output a table that is essentially just 3 columns of the dimstaff table renamed.
+EVALUATE
+SELECTCOLUMNS (
+    DimStaff,
+    "name", DimStaff[Staff],
+    "start_date", DimStaff[HireDate],
+    "term_date", DimStaff[TerminationDate]
+)
 
 
 
@@ -2391,6 +2398,8 @@ Power Platform administration
 
 2365
 Power Platform administration
+In DAX, when you use SUMX or similar functions that iterate over a table, the context within which the function operates changes to the row context of that table. This means each row of the table becomes the current context for the calculation during each iteration of the function. Because of this row context, you don’t need to explicitly reference the table name when accessing its columns within the function.
+
 
 
 
