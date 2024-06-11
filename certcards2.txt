@@ -2461,7 +2461,9 @@ A stub user is a user record that has been created as a placeholder. For example
 
 2365
 Power Platform administration
+We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Microsoft Power Platform admin center to quickly view adoption and user metrics for your organization.
 
+I can see these! They don't say much about what individuals are looking at, from what I saw when glancing at the reports.
 
 
 
