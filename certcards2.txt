@@ -2513,6 +2513,18 @@ Security and Performance: When developing and deploying plug-ins, it’s importa
 
 2514
 Power Platform Administration
+Why is my storage consumption decreasing in database and growing in file?
+We are constantly optimizing the Dataverse for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as “Annotation” and “Attachment” is moving from database to file storage. This leads to decreased usage of database capacity and an increase in file capacity.
+
+
+
+
+
+
+2514
+Power Platform Administration
+Optimized Searching: Quick Find is designed to provide fast and efficient searching across Dataverse records. It uses indexed columns to improve search performance, allowing users to quickly retrieve relevant records based on the search criteria. This means that the fields you want to search need to be indexed for optimal performance.
+
 
 
 
@@ -2522,6 +2534,7 @@ Power Platform Administration
 
 2514
 Power Platform Administration
+Relevance Search Integration: Quick Find can be integrated with Dataverse's Relevance Search feature, which leverages Azure Search to provide more advanced search capabilities. This includes full-text search, relevance scoring, and the ability to search across multiple entities at once. Relevance Search enhances the Quick Find experience by providing more powerful and flexible search options, making it easier to locate records across the Dataverse environment.
 
 
 
@@ -2529,8 +2542,18 @@ Power Platform Administration
 
 
 
-2514
-Power Platform Administration
+
+2546
+Power BI
+There are a few limitations for this release of relationships with a many-to-many cardinality and composite models.
+
+The following Live Connect (multidimensional) sources can't be used with composite models:
+
+SAP HANA
+SAP Business Warehouse
+SQL Server Analysis Services
+Power BI semantic models
+Azure Analysis Services
 
 
 
@@ -2538,8 +2561,9 @@ Power Platform Administration
 
 
 
-2514
-Power Platform Administration
+2546
+Azure Functions
+Don't mix local development and portal development for a single function app. When you publish from a local project to a function app, the deployment process overwrites any functions that you developed in the portal.
 
 
 
@@ -2547,8 +2571,22 @@ Power Platform Administration
 
 
 
-2514
-Power Platform Administration
+
+2546
+Azure Functions
+The Azure Functions extension to VS Code provides these benefits
+
+	• Edit, Build, and run functions on your local development computer.
+	• Publish your Azure functions project directly to Azure.
+Write your functions in various languages while taking advantage of the benefit of Visual Studio Code.
+
+
+
+
+
+
+2546
+Azure Functions
 
 
 
@@ -2556,8 +2594,8 @@ Power Platform Administration
 
 
 
-2514
-Power Platform Administration
+2546
+Azure Functions
 
 
 
@@ -2565,8 +2603,8 @@ Power Platform Administration
 
 
 
-2514
-Power Platform Administration
+2546
+Azure Functions
 
 
 
@@ -2574,23 +2612,5 @@ Power Platform Administration
 
 
 
-2514
-Power Platform Administration
-
-
-
-
-
-
-
-2514
-Power Platform Administration
-
-
-
-
-
-
-
-2514
-Power Platform Administration
+2546
+Azure Functions
