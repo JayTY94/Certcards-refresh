@@ -2,65 +2,6 @@
 
 
 
-
-
-16
-Power BI Desktop
-Many-to-many relationships: With composite models, you can establish many-to-many relationships between tables. In a many-to-many relationship, requirements are removed for unique values in tables. It also removes prior workarounds, such as introducing new tables only to establish relationships
-
-
-
-
-
-17
-Python
-To make a test module executable in unittest, you can add the following code to the end of the module:
-
-if __name__ == "__main__":
-    unittest.main()
-
-The main() function from unittest allows you to load and run a set of tests. You can also use this function to make the test module executable.
-
-
-
-
-
-18
-Azure VM Image Builder
-when you create a VM the operating system data is updated with several items, including:
-
-The host name of your VM.
-The administrator username and credentials.
-Log files.
-Security identifiers for various operating system services.
-
-These items must be reset to their default settings before you capture an image. When you reset these items in a VM, you generalize the VM.
-
-
-
-
-
-19
-MS Data Analyst
-In Power BI Desktop, you can set the tab order for how a keyboard user will experience your report. First, navigate to the View tab in the ribbon, then select Selection in the Show Panes section.
-
-You'll see Layer order and Tab order, with a list of report elements. Layer order allows you to stack elements, whereas tab order dictates which item will be accessed next when the keyboard user tabs to the next item. Use the up/down arrows to set the order.
-
-
-
-
-
-20
-MS Data Analyst
-Role in a Power BI workspace: Member
-
-Add members or others with lower permissions
-Publish, unpublish, and change permissions for an app
-
-
-
-
-
 21
 Azure Pipelines
 Use Azure Pipelines to deploy your code to multiple targets. Targets including:
