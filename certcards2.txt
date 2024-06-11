@@ -2460,7 +2460,7 @@ A stub user is a user record that has been created as a placeholder. For example
 
 
 2365
-Power Platform administration
+Dataverse 
 We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Microsoft Power Platform admin center to quickly view adoption and user metrics for your organization.
 
 I can see these! They don't say much about what individuals are looking at, from what I saw when glancing at the reports.
@@ -2473,4 +2473,124 @@ I can see these! They don't say much about what individuals are looking at, from
 
 
 2365
-Power Platform administration
+Dataverse
+Extend Functionality: Plug-ins in Dataverse are designed to extend the platform's functionality. They allow users to add new features or customize existing ones to better meet specific needs. This can include data integration, automation of tasks, or enhanced user interfaces.
+
+
+
+
+
+
+
+
+
+
+2365
+Dataverse
+Event-Driven Architecture: Plug-ins operate on an event-driven architecture, meaning they are triggered by specific events within the Dataverse environment. These events can be actions like data creation, update, or deletion. Understanding the event model is crucial for effectively implementing and managing plug-ins.
+
+
+
+
+
+
+
+
+
+
+2365
+Dataverse
+Security and Performance: When developing and deploying plug-ins, it’s important to consider both security and performance. Plug-ins should be thoroughly tested to ensure they do not introduce vulnerabilities or degrade system performance. Proper error handling, efficient code, and adhering to best practices for security and optimization are essential.
+
+
+
+
+
+
+
+
+
+
+2514
+Power Platform Administration
+
+
+
+
+
+
+
+2514
+Power Platform Administration
+
+
+
+
+
+
+
+2514
+Power Platform Administration
+
+
+
+
+
+
+
+2514
+Power Platform Administration
+
+
+
+
+
+
+
+2514
+Power Platform Administration
+
+
+
+
+
+
+
+2514
+Power Platform Administration
+
+
+
+
+
+
+
+2514
+Power Platform Administration
+
+
+
+
+
+
+
+2514
+Power Platform Administration
+
+
+
+
+
+
+
+2514
+Power Platform Administration
+
+
+
+
+
+
+
+2514
+Power Platform Administration
