@@ -2588,47 +2588,103 @@ def get_length(item: Union[str, list]) -> int:
 
 
 
-2466
-Azure Functions Quickstart
+2591
+Dataverse
+To successfully connect to your Dataverse, you must first register an app with Entra ID, which you can complete in the Azure portal. Depending on the type of app that you want to make, a few different settings are available for you to configure (web apps versus native apps that are installed natively on a device). For more information on settings required for each type, see Types of app registration.
+
+
+
+
+
+2591
+Python
+String interpolation allows you to create strings by inserting objects into specific places in a target string template. Python has several tools for string interpolation, including f-strings, the str.format() method, and the modulo operator (%). Python’s string module also provides the Template class, which you can use for string interpolation.
 
 
 
 
 
 
+2591
+Python
+The modulo operator (%) came to make the syntax a bit better:
 
-2466
-Azure Functions Quickstart
+>>> "Hello, %s! Today is %s." % (name, day)
+'Hello, Pythonista! Today is Friday.'
 
-
-
-
-
-
-
-2466
-Azure Functions Quickstart
+In this example, you use the modulo operator to insert the name and day variables into the string literals. The process of creating strings by inserting other strings into them, as you did here, is known as string interpolation.
 
 
 
 
-
-
-
-2466
-Azure Functions Quickstart
-
-
+2591
+Python
+In eager string interpolation, Python inserts the values into the string at execution time in the same place where you define the string. In lazy string interpolation, Python delays the insertion until the string is actually needed. In this latter case, you create string templates at one point in your code and fill the template with values at another point.
 
 
 
 
+2591
+Python
+>>> "Hello, {}! Today is {}.".format(name, day)
+'Hello, Pythonista! Today is Friday.'
 
-2466
-Azure Functions Quickstart
+The method interpolates its arguments into the target string using replacement fields limited by curly brackets. Even though this method can produce hard-to-read code, it represents a significant advance over the modulo operator: it supports the string formatting mini-language.
 
 
 
 
 
 
+2591
+Python
+Another consideration to keep in mind is security. Because f-strings evaluate at runtime, they could potentially expose your application to code injection attacks if you don’t carefully sanitize users’ input before interpolatation.
+
+
+
+
+
+
+2591
+Python
+With f-strings, you can use a feature known as self-documenting expressions that adds an equal sign after the interpolated variable or expression. This feature can help you debug your code. 
+
+>>> value = "Suspicious value"
+
+>>> print(f"{value = }")
+variable = 'Suspicious value'
+
+
+
+
+
+2591
+Python
+
+
+
+
+
+2591
+Python
+
+
+
+
+
+2591
+Python
+
+
+
+
+
+2591
+Python
+
+
+
+
+
+2591
+Python
