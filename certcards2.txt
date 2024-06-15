@@ -2617,9 +2617,11 @@ In this example, you use the modulo operator to insert the name and day variable
 
 
 
+
 2591
 Python
 In eager string interpolation, Python inserts the values into the string at execution time in the same place where you define the string. In lazy string interpolation, Python delays the insertion until the string is actually needed. In this latter case, you create string templates at one point in your code and fill the template with values at another point.
+
 
 
 
@@ -2660,31 +2662,231 @@ variable = 'Suspicious value'
 
 2591
 Python
+The modulo operator (%) is the oldest tool for performing string interpolation in Python. Even though you can use this operator for both eager and lazy string interpolation, the syntax could be more readable and clean.
 
+You need to insert conversion specifiers into your strings and then use the modulo operator to interpolate the desired values:
 
-
-
-
-2591
-Python
-
-
-
-
-
-2591
-Python
-
+>>> x = 5
+>>> y = 10
+>>> "The sum of %d and %d is %d." % (x, y, x + y)
+'The sum of 5 and 10 is 15.'
 
 
 
 
 2591
 Python
+You can also use dictionaries and named replacement fields:
 
+>>> jane = {"name": "Jane", "job": "Python Dev"}
+
+>>> "My name is %(name)s. I'm a %(job)s." % jane
+"My name is Jane. I'm a Python Dev."
+
+In this example, the modulo operator inserts each value using the corresponding key, which is way more readable and intuitive. To build the named replacement fields, you need to insert the name in parentheses between the % sign and the format specifier.
 
 
 
 
 2591
 Python
+>>> import math
+>>> math.pi
+3.141592653589793
+>>> f"{math.pi:.4f}"
+'3.1416'
+>>> "{pi:.4f}".format(pi=math.pi)
+'3.1416'
+
+
+
+
+2704
+Workera.ai
+Serverless and Functions-as-a-Service (FaaS) are often conflated with one another but the truth is that FaaS is actually a subset of serverless.
+
+Serverless is focused on any service category, be it compute, storage, database, messaging and api gateways where configuration, management and billing of servers are invisible to the user.
+
+
+
+
+
+2704
+Workera.ai
+Function as a service (FaaS) is a cloud-computing service that allows customers to run code in response to events, without managing the complex infrastructure typically associated with building and launching microservices applications.
+
+
+
+
+
+2704
+Workera.ai
+To ensure that a cloud-based web application can handle sudden spikes in traffic, which metric of the load balancer should be used to set an alert?
+Queue Length
+
+
+
+
+
+2704
+Workera.ai
+Software-Defined Networking (SDN) is an approach to networking that uses software-based controllers or application programming interfaces (APIs) to communicate with underlying hardware infrastructure and direct traffic on a network.
+
+
+
+
+
+
+2704
+Workera.ai
+Software-Defined Networking (SDN)  differs from that of traditional networks, which use dedicated hardware devices (i.e., routers and switches) to control network traffic. SDN can create and control a virtual network – or control a traditional hardware – via software.
+
+
+
+
+2704
+Workera.ai
+Cold start in computing refers to a problem where a system or its part was created or restarted and is not working at its normal operation. The problem can be related to initialising internal objects or populating cache or starting up subsystems.
+
+
+
+
+
+
+2704
+Workera.ai
+Azure DDoS Network Protection, combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network.
+
+
+
+
+
+2704
+Workera.ai
+DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains the same core engineering features as DDoS Network Protection, but will differ in the following value-added services: DDoS rapid response support, cost protection, and discounts on WAF. 
+
+
+
+
+
+2704
+Workera.ai
+High Availability: By deploying applications across multiple Availability Zones, you can achieve higher availability and uptime. Azure guarantees a 99.99% uptime for Virtual Machines deployed in two or more Availability Zones, making it a reliable choice for mission-critical applications.
+
+
+
+
+
+
+2704
+Workera.ai
+Low Latency: Availability Zones within the same region are connected through high-speed, low-latency networking. This ensures that applications distributed across multiple zones can communicate efficiently, providing both redundancy and high performance.
+
+
+
+
+
+
+
+2704
+Workera.ai
+Geographical Separation: Azure Region Pairs consist of two regions within the same geography but separated by a significant distance to protect against regional disasters. This ensures that in the event of a natural disaster or significant outage in one region, the paired region remains operational, thereby providing enhanced disaster recovery capabilities.
+
+
+
+
+
+
+2704
+Workera.ai
+Automatic Replication and Failover: Certain services, such as Azure Storage, automatically replicate data between region pairs. This replication helps ensure that your data is always available, even if one region experiences an outage. Additionally, Azure prioritizes the restoration of services in region pairs to ensure a quicker recovery time.
+
+
+
+
+
+
+2704
+Workera.ai
+Azure Data Lake Analytics: Best for on-demand analytics jobs with a serverless model, utilizing U-SQL.
+
+
+
+
+2704
+Workera.ai
+Azure HDInsight: Suitable for diverse big data processing needs with open-source frameworks but requires infrastructure management.
+
+
+
+
+
+2704
+Workera.ai
+Azure Databricks: Optimized for advanced analytics and machine learning with a collaborative, Apache Spark-based environment.
+
+
+
+
+2704
+Workera.ai
+Azure Synapse Analytics: Comprehensive platform for integrating data warehousing and big data analytics with flexible resource options and extensive feature sets.
+
+
+
+
+
+
+2704
+Workera.ai
+Persisted parameter values are stored in the working directory of the Azure storage account used by Azure Cloud Shell. If you are using a local install of the Azure CLI, values are stored in the working directory on your machine. 
+
+
+
+
+
+2704
+Workera.ai
+Azure IoT Hub
+Purpose and Use Cases:
+
+Core IoT Service: Azure IoT Hub is a foundational service designed to provide the connectivity and messaging infrastructure required for building sophisticated IoT solutions.
+Customization: It's ideal for developers who need a highly customizable solution and have the expertise to build and manage the IoT application layer themselves.
+
+
+
+
+
+2704
+Workera.ai
+Azure IoT Central
+Purpose and Use Cases:
+
+Managed IoT Application Platform: Azure IoT Central is a fully managed IoT SaaS (Software as a Service) offering that simplifies the creation and management of IoT solutions.
+Ease of Use: Designed for business users and those who need to quickly deploy and manage IoT solutions without deep technical knowledge.
+
+
+
+2704
+Workera.ai
+A workload is a distinct capability or task that's logically separated from other tasks, in terms of business logic and data storage requirements. Each workload defines a set of requirements for availability, scalability, data consistency, and disaster recovery
+
+
+
+
+
+2704
+Workera.ai
+Azure Service Health notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime. Configure customizable cloud alerts and use your personalized dashboard to analyze health issues, monitor the impact to your cloud resources, get guidance and support, and share details and updates.
+
+
+
+2704
+Workera.ai
+
+
+
+
+2704
+Workera.ai
+
