@@ -2867,6 +2867,8 @@ Ease of Use: Designed for business users and those who need to quickly deploy an
 
 
 
+
+
 2704
 Workera.ai
 A workload is a distinct capability or task that's logically separated from other tasks, in terms of business logic and data storage requirements. Each workload defines a set of requirements for availability, scalability, data consistency, and disaster recovery
