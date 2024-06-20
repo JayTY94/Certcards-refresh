@@ -4,56 +4,6 @@
 
 
 
-6
-Power BI
-User masking isn't working as expected when using nested groups. Nested groups (subgroups) are groups that are members of existing groups. If your organization has disabled Per-user data in usage metrics for content creators in the Power BI admin portal tenant settings, only the members on the top level are being masked. Members of subgroups are still visible.
-
-
-
-
-
-7
-Power BI Desktop
-Dual tables have the same functional constraints as DirectQuery tables. These constraints include limited M transformations and restricted DAX functions in calculated columns. For more information, see DirectQuery limitations.
-
-
-
-
-
-8
-Azure Pipelines
-Use Azure Pipelines to deploy your code to multiple targets. Targets including:
-
-Container registries.
-Virtual machines.
-Azure services, or any on-premises or cloud target such:
-  Microsoft Azure.
-  Google Cloud.
-  Amazon Web Services (AWS).
-
-
-
-
-on their lifecycle, ownership, or application within a specific project or environment.
-
-
-
-
-
-9
-Microsoft Fabric Administration
-Audit logs allow you to track user activities in Fabric. You can search the logs and see which operations were performed in your organization. Reviewing the logs can have many uses in your organization, such as making sure policies are followed and debugging unexpected system behavior.
-
-
-
-
-
-10
-PP365
-You can help ensure that people enter data consistently and follow the same steps every time they work with a customer by creating a business process flow. For example, you might want to create a business process flow to have everyone handle customer service requests the same way, or to require that people get approval for an invoice before submitting an order.
-
-
-
 
 
 11
