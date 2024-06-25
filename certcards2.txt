@@ -136,12 +136,6 @@ Platform-managed keys (PMKs) are encryption keys generated, stored, and managed 
 
 
 
-17
-Microsoft Fabric Administration
-
-
-
-
 
 18
 Python
