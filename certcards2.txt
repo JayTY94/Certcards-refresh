@@ -1,185 +1,73 @@
+1
+Power Platform administration
+You can use server-to-server (S2S) authentication to securely and seamlessly communicate between Dataverse and your web applications and services. S2S authentication is the common way that apps registered on Microsoft AppSource use to access the Dataverse data of their subscribers.
 
 
 
 
 
-
-
-
-11
-Bicep
-Bicep provides reliable type safety and support for code reuse 1.
-Bicep files define the infrastructure you want to deploy to Azure, and can be used throughout the development lifecycle to repeatedly deploy your infrastructure in a consistent manner 1.
-
-
-
-
-
-12
-Python
-To print a calendar for a specific month, you first need to create an instance of calendar.TextCalendar. Then, you can call the .prmonth() method on this instance, passing the year and month as arguments.
-
-Here’s how you do it:
-
-import calendar
-
-text_cal = calendar.TextCalendar()
-text_cal.prmonth(2024, 5)
-
-
-
-
-
-13
-Python
-The @unittest.skipUnless(condition, reason) decorator in Python’s unittest framework skips the decorated test unless the condition is true. This is useful for conditionally skipping tests based on dynamic conditions, such as a platform or a Python version.
-
-
-
-
-
-14
-Azure Key Vault
-Azure Key Vault enables Microsoft Azure applications and users to store and use several types of secret/key data: keys, secrets, and certificates. Keys, secrets, and certificates are collectively referred to as "objects".
-
-
-
-
-
-15
-Python
-The .format() method is recommended for lazy string interpolation, where you need to create a reusable string template that can be interpolated later. This is useful when you don’t have all the data available when creating the string, or when the same format is used multiple times with different data.
-
-
-
-
-
-16
-MS Dataverse
-When you update the StateCode column, it is important to always set the desired StatusCode.
-
-StateCode and StatusCode have dependent values. There can be multiple valid StatusCode values for a given StateCode value, but each StateCode column has a single DefaultStatus value configured. When you update StateCode without specifying a StatusCode, the default status value will be set by the system.
-
-
-
-
-
-17
-Azure VM Image Builder
-Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
-
-Microsoft.Compute manages resources related to virtual machines, virtual machine scale sets, and related components.
-Microsoft.Storage manages resources related to storage accounts and storage services.
-
-
-
-
-
-18
-MS Dataverse
-The capability to extend the default behavior of Microsoft Dataverse depends on detecting when events occur on the server. The Event Framework provides the capability to register custom code to be run in response to specific events.
-
-
-
-
-
-19
-MS Data Analyst
-At report design time in Microsoft Power BI Desktop, you can create measures (except when the model is a live connection to SQL Server Analysis Services multidimensional model). These measures belong to the report, and so they're called report-level measures.
-
-
-
-
-
-20
+2
 PP365
-Engagements follow a Businesss Process flow. Business process flows provide a guide for people to get work done. They provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to a conclusion of some kind.
+The following business process flows are included. To understand how business process flows work, review these system business process flows:
+
+Lead to Opportunity Sales Process
+Opportunity Sales Process
+Phone to Case Process
 
 
 
 
 
-21
+3
 Python
-CRUD operations correspond to HTTP request methods as follows:
-
-Create corresponds to POST
-Read corresponds to GET
-Update corresponds to PUT or PATCH
-Delete corresponds to DELETE
+The correct syntax for unpacking a dictionary into keyword arguments in Python is the ** operator. This operator unpacks the key-value pairs from the dictionary, allowing them to be used as keyword arguments in functions or methods.
 
 
 
 
 
-22
-PP365
-Workflow in the context of Microsoft Dataverse and Power Apps refers to the automation of business processes and tasks. Workflows are a series of steps and rules that define how data is processed and managed within the system. Workflows can be triggered by events such as record creation, update, or deletion, and can perform actions like sending emails, updating records, creating tasks, and more.
+4
+Azure projects
+The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure. After you create your configuration files, you create an execution plan that allows you to preview your infrastructure changes before they're deployed.
 
 
 
 
 
-23
+5
+Workera.ai
+Software-Defined Networking (SDN)  differs from that of traditional networks, which use dedicated hardware devices (i.e., routers and switches) to control network traffic. SDN can create and control a virtual network – or control a traditional hardware – via software.
+
+
+
+
+
+6
+Power Platform
+Type of Logic Component: Workflow	
+Workflows automate business processes without a user interface. Designers use workflows to initiate automation that doesn't require any user interaction.
+
+
+
+
+
+7
 Power BI
-Certain types of views aren't included in performance measurements. For example, when a user selects a link to a report in an email message, the Report View is accounted for in the report usage but there is no event in the performance metrics.
+Formula.Firewall errors are the result of Power Query's Data Privacy Firewall (also known as the Firewall), which at times may seem like it exists solely to frustrate data analysts the world over.
 
 
 
 
 
-24
-Power BI
-Power Query provides two easy ways to create parameters:
-
-From an existing query: Right-click a query whose value is a simple non-structured constant, such as a date, text, or number, and then select Convert to Parameter.
-Using the Manage Parameters window: Select the New Parameter option from the dropdown menu of Manage Parameters in the Home tab. Or launch the Manage Parameters window and select New on the top to create a parameter. Fill in this form, and then select OK to create a new parameter.
-
-
-
-
-
-25
-Azure VDI Project
-Type of HCL Block:
-build blocks contain configuration for a specific combination of builders, provisioners, and post-processors used to create a specific image artifact.
-
-
-
-
-
-26
-Microsoft Fabric Administration
-
-
-
-
-
-27
+8
 Python
-F-strings are evaluated at runtime, meaning that the expressions inside the curly braces are inserted when the code that defines the string runs.
+In Python f-strings, the flags !s and !r allow you to control how objects are converted into strings. The !s flag uses the object’s .__str__() method, which is intended to return a user-friendly string representation. The !r flag uses the object’s .__repr__() method, which should return a developer-friendly string representation that could be used to re-create the object.
 
 
 
 
 
-28
-Python
-If your use case doesn’t fall into one of the Core API applications, like building tools on top of TensorFlow or developing your own high-performance platform, you should prefer Keras.
-
-
-
-
-
-29
-Azure Key Vault Secrets
-Key Vault also supports a contentType field for secrets. Clients may specify the content type of a secret to help interpreting the secret data when it's retrieved. The maximum length of this field is 255 characters. The suggested usage is as a hint for interpreting the secret data. For instance, an implementation may store both passwords and certificates as secrets, then use this field to differentiate.
-
-
-
-
-
-30
+9
 General
 You can use Ctrl+U to clear up to the beginning of a line in a Bash command line.
 
@@ -187,151 +75,60 @@ You can use Ctrl+U to clear up to the beginning of a line in a Bash command line
 
 
 
-31
-MS Dataverse
-It is valuable to recognize that the organization service is what defines the platform. The Web API provides a RESTful programming experience but ultimately all data operations go through the underlying organization service.
+10
+Python
+If you want to use a specific pre-trained model, like BERT or DeepDream, then you should research what it’s compatible with. Some pre-trained models are available in only one library or the other, and some are available in both. The Model Garden and the PyTorch and TensorFlow hubs are also good resources to check.
 
 
 
 
 
-32
-Terraform
-Use the import block to import existing infrastructure resources into Terraform, bringing them under Terraform's management. Unlike the terraform import command, configuration-driven import using import blocks is predictable, works with CICD pipelines, and lets you preview an import operation before modifying state.
+11
+Power Platform administration
+By default, all licensed users are created with an access mode of Read-Write. This access mode provides full access rights to the user based on the security privileges that are assigned.
 
 
 
 
 
-33
+12
+MS Data Analyst
+Continuing with the previous example, you now want to edit the categories that make up your group. Right-click the group field in either the Legend bucket or the Fields pane, and then select Edit Groups.
+
+In the Groups window that displays is a list of the groups and the different items within those groups. The following image shows the States with Sales > 500k group and its members, along with the Other group (States with Sales < 500k) that contains all other values that have not been put into the first group.
+
+
+
+
+
+13
+Python
+The !r flag in Python’s .format() method uses the repr() function to provide a developer-friendly string representation of an object.
+
+Conversely, the !s flag uses the str() function to produce a user-friendly string representation, which is generally more readable and concise.
+
+
+
+
+
+14
 General
-Automatic OS image upgrades on Azure Machine Scale Set: A feature that automatically updates the OS disk image used in an Azure Virtual Machine Scale Set to the latest version, ensuring VMs are running the most recent OS.
+The en dash is omitted when the sentence contains a “from … to” or “between … and” formulation 2.
+In these contexts, the en dash is read as “through” or “to” 2.
 
 
 
 
 
-34
-MS Dataverse
-Fiddler is a web debugging proxy used to view HTTP traffic on your computer. Viewing this data is useful when debugging scripts. By default, HTTP requests and responses sent using Invoke-RestMethod cmdlet won't be visible using Fiddler
+15
+Maths
+Generalized likelihood ratio test (GLRT) is a statistical test to compare the fit of two models, one of which is a special case of the other (nested models).
 
 
 
 
 
-35
-Python
-By default, PyTorch uses eager mode computation. You can run a neural net as you build it, line by line, which makes it easier to debug. It also makes it possible to construct neural nets with conditional execution. This dynamic execution is more intuitive for most Python programmers.
-
-
-
-
-
-36
-Python
-The calendar.HTMLCalendar class has a method called .formatyearpage() which allows you to include a CSS stylesheet for styling the calendar. This method has an optional parameter named css that defaults to 'calendar.css'. This parameter refers to the name of the CSS file that will include the custom styles.
-
-
-
-
-
-37
-PP365
-Neither type of environment consumes paid capacity. You can convert either type of trial environment to a production environment by switching it to consume from paid capacity, which will keep it from being disabled and deleted. After it becomes a production environment, it will follow the paid license lifecycle.
-
-
-
-
-
-38
-General
-The locale.setlocale() function is used to set the locale explicitly in your code, while the locale.currency() function formats currency values according to the specified locale.
-
-
-
-
-
-39
-Workera.ai
-Amazon Rekognition, Celebrity Recognition:
-
-The RecognizeCelebrities operation identifies celebrities in an image.
-It can recognize well-known people and return information about them.
-
-
-
-
-
-40
-Power BI
-DAX Function
-HASONEVALUE(<columnName>)  
-Returns TRUE when the context for columnName has been filtered down to one distinct value only. Otherwise is FALSE.
-
-
-
-
-
-41
-Python
-PyTorch was developed by Facebook and was first publicly released in 2016. Because Python programmers found it so natural to use, PyTorch rapidly gained users, inspiring the TensorFlow team to adopt many of PyTorch’s most popular features in TensorFlow 2.0.
-
-
-
-
-
-42
-Child Services AWS Review
-Mainframe-as-a-Service (MFaaS) is a subscription-based model that addresses the challenges of an aging mainframe while providing flexibility and scalability for future growth. MFaaS is hosted at a provider’s data center or partners’, offering a cloud-like experience.
-
-
-
-
-
-43
-General
-To format the imaginary part of a complex number to one decimal place using f-strings, you use the .imag property of the complex number and apply the format specifier .1f:
-
-value = 3.474 + 2.323j
-formatted_imaginary = f"{value.imag:.1f}"
-
-
-
-
-
-44
-Python
-To display the same calendar programmatically in your script, you can use one of the following methods:
-
->>> import calendar
->>> text_calendar = calendar.TextCalendar()
->>> print(text_calendar.formatyear(1989))
->>> text_calendar.pryear(1989)
->>> calendar.prcal(1989)
-
-
-
-
-
-45
-Python
-According to the Python documentation, which format presentation type will display a fixed amount of decimal places—NAN for missing data and INF for infinite data?
-
-F
-
-
-
-
-
-46
-Python
-Named replacement fields allow you to insert values from a dictionary into a string by using keys. This method is more readable and intuitive than using positional arguments with tuples.
-
-
-
-
-
-47
+16
 Azure Key Vault
 Platform-managed keys (PMKs) are encryption keys generated, stored, and managed entirely by Azure. Customers do not interact with PMKs. The keys used for Azure Data Encryption-at-Rest, for instance, are PMKs by default.
 
@@ -339,41 +136,355 @@ Platform-managed keys (PMKs) are encryption keys generated, stored, and managed 
 
 
 
-48
+17
+Microsoft Fabric Administration
+
+
+
+
+
+18
+Python
+F-strings are evaluated at runtime, meaning that the expressions inside the curly braces are inserted when the code that defines the string runs.
+
+
+
+
+
+19
+MS Dataverse
+The Dataverse Web API provides a development experience that can be used across a wide variety of programming languages, platforms, and devices. The Web API implements the OData (Open Data Protocol), version 4.0, an OASIS standard for building and consuming RESTful APIs over rich data sources.
+
+
+
+
+
+20
+MS Dataverse
+It is valuable to recognize that the organization service is what defines the platform. The Web API provides a RESTful programming experience but ultimately all data operations go through the underlying organization service.
+
+
+
+
+
+21
+General
+The locale.setlocale() function is used to set the locale explicitly in your code, while the locale.currency() function formats currency values according to the specified locale.
+
+
+
+
+
+22
 Power BI
-Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they're On by default for all users in the organization. See Audit and usage metrics in the Admin portal article for details on these settings.
+A parameter stores a value that can be used for transformations in Power Query. Apart from the name of the parameter and the value that it stores, it also has other properties that provide metadata to it. The properties of a parameter are:
+
+	• Name
+	• Description
+	• Required
+	• Type
+	• Suggested values
+	• Query
+  • Current Value
+
+
+
+
+
+23
+Power Apps
+For some reason, when I was trying to update C&Y's Billing Managers and Project Managers, I was getting a partial failure when trying to use the Import feature from the Power Apps table. I ended up having to write a Power Automate script to edit the records.
+
+
+
+
+
+24
+Python
+Pito Salas is a Curaçaoan-American Cambridge, Massachusetts-based software developer. While working with Lotus' Advanced Technology Group in 1986, Salas invented the pivot table, a "next-generation" spreadsheet concept that was released by Lotus in 1989, as Lotus Improv.
+
+
+
+
+
+25
+Microsoft Fabric Administration
+To distribute management across the organization, you can also use domains. With a domain, you create a logical grouping of workspaces. For example, your organization can create domains according to functions such as sales and marketing. Designated users can become admins and oversee Fabric functions related to the data in each domain.
+
+
+
+
+
+26
+Python
+When declaring a function, follow arguments with a colon and the desired type to designate a required type for that argument. For example
+
+def get_engagement_names(schedules: pd.DataFrame):
+    engagement_names = [
+        ' - '.join(row[['Account Name', 'EngagementName', 'Engagement Number']])
+        for _, row in schedules.iterrows()
+    ]
+    engagement_names = "\n".join(engagement_names)
+    return engagement_names
+
+
+
+
+
+27
+Terraform
+To add text to a file using PowerShell, you can use the “Add-Content” cmdlet. Here’s an example of how to write data to a file:
+Add-Content -Path "C:\Folder\MyFile.txt" -Value "This is some new text."
+
+
+
+
+
+28
+PP365
+You can set a sandbox, production, or trial (subscription-based) environment in administration mode so that only users with System Administrator or System Customizer security roles will be able to sign in to that environment. Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect end users (non-admins).
+
+
+
+
+
+29
+Maths
+Trace of a matrix: The sum of the elements on the main diagonal (from the top left to the bottom right) of a square matrix.
+
+
+
+
+
+30
+MS Data Analyst
+To learn how to run a network port test, see Adjust communication settings for the on-premises data gateway.
+To get information on how to provide proxy information for your gateway, see Configure proxy settings for the on-premises data gateway.
+To find the current data center region that you're in, see Set the data center region.
+
+
+
+
+
+31
+Workera.ai
+Azure Service Health notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime. Configure customizable cloud alerts and use your personalized dashboard to analyze health issues, monitor the impact to your cloud resources, get guidance and support, and share details and updates.
+
+
+
+
+
+32
+Python
+PyTorch is based on Torch, a framework for doing fast computation that is written in C. Torch has a Lua wrapper for constructing models.
+
+PyTorch wraps the same C back end in a Python interface. But it’s more than just a wrapper. Developers built it from the ground up to make models easy to write for Python programmers.
+
+
+
+
+
+33
+Azure Functions Quickstart
+We recommend setting up continuous deployment so that your function app in Azure is updated when you update source files in the connected source location. You can also deploy your project files from Visual Studio Code. When you publish from Visual Studio Code, you can take advantage of the Zip deploy technology.
+
+
+
+
+
+34
+Powershell
+Get-Service | Format-List
+This command formats information about services on the computer as a list. By default, the services are formatted as a table. The Get-Service cmdlet gets objects representing the services on the computer. The pipeline operator (|) passes the results through the pipeline to Format-List. Then, the Format-List command formats the service information in a list and sends it to the default output cmdlet for display.
+
+
+
+
+
+35
+Power BI
+Certain types of views aren't included in performance measurements. For example, when a user selects a link to a report in an email message, the Report View is accounted for in the report usage but there is no event in the performance metrics.
+
+
+
+
+
+36
+Power BI
+If your organization is using Azure Private Link in Power BI, because client-telemetry is not available the usage metrics reports will only contain Report Open events.
+
+
+
+
+
+37
+Workera.ai
+High Availability: By deploying applications across multiple Availability Zones, you can achieve higher availability and uptime. Azure guarantees a 99.99% uptime for Virtual Machines deployed in two or more Availability Zones, making it a reliable choice for mission-critical applications.
+
+
+
+
+
+38
+Python
+String interpolation allows you to create strings by inserting objects into specific places in a target string template. Python has several tools for string interpolation, including f-strings, the str.format() method, and the modulo operator (%). Python’s string module also provides the Template class, which you can use for string interpolation.
+
+
+
+
+
+39
+Workera.ai
+DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains the same core engineering features as DDoS Network Protection, but will differ in the following value-added services: DDoS rapid response support, cost protection, and discounts on WAF.
+
+
+
+
+
+40
+Python
+When you pass a list of columns to the values parameter in a pandas pivot table, the columns are displayed alphabetically in the output. That’s regardless of the order they were passed in.
+
+
+
+
+
+41
+Python
+In Python, you generally can’t concatenate sequences of different types. If you try to add a list and a tuple, Python raises a TypeError:
+
+>>> [1, 2, 3] + (4, 5, 6)
+Traceback (most recent call last):
+  ...
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate list (not "tuple") to list
+
+
+
+
+
+42
+Terraform
+Use the import block to import existing infrastructure resources into Terraform, bringing them under Terraform's management. Unlike the terraform import command, configuration-driven import using import blocks is predictable, works with CICD pipelines, and lets you preview an import operation before modifying state.
+
+
+
+
+
+43
+MS Data Analyst
+The Pin a live page feature reflects real-time changes, ensuring that your reports always stay up-to-date.
+
+Pinning a report page is a simple way to pin all visuals at once. All slicers and filters still work and that the visuals have the same data as in the report. The visuals appear as a page, so there are no reformatting options.
+
+
+
+
+
+44
+Power BI
+SUMMARIZE ( <table>, <group_by_column1>, ..., <group_by_columnN>, <expression1>, ..., <expressionN> )
+Arguments:
+<table>: The table or table expression from which to retrieve data.
+<group_by_column1>, ..., <group_by_columnN>: Columns to group the data by. Each unique combination of values in these columns defines a group.
+<expression1>, ..., <expressionN>: Optional expressions to compute values for each group. These expressions could be aggregations, calculations, or any other DAX expressions.
+
+
+
+
+
+45
+Python
+In pandas, you have several methods at your disposal for data aggregation:
+
+.pivot_table() is great for creating pivot tables that summarize data.
+.groupby() is used to group data according to the values in one or more columns.
+crosstab() is used to compute a cross-tabulation of two (or more) factors.
+
+
+
+
+
+46
+Terraform
+The graph output uses the DOT language, which is a machine-readable graph description language which originated in Graphviz. You can use the Graphviz dot command to present the resulting graph description as an image. There are also various third-party online graph rendering services which accept this format.
+
+
+
+
+
+47
+Python
+In Python’s unittest package, you can use fixtures to set up and tear down test environments for each test method. To do this, you can use the setUp() and tearDown() method, respectively. These methods are automatically called before and after each test method.
+
+
+
+
+
+48
+Python
+If your use case doesn’t fall into one of the Core API applications, like building tools on top of TensorFlow or developing your own high-performance platform, you should prefer Keras.
 
 
 
 
 
 49
-MS Data Analyst
-Clustering allows you to identify a segment (cluster) of data that is similar to each other but dissimilar to the rest of the data. The process of clustering is different to that of grouping, which you accomplished previously.
-
-To apply clustering to your scatter chart, select More options (...) in the upper-right corner of the visual and then select Automatically find clusters.
+Python
+The TextCalendar.iterweekdays() method returns an iterator for weekday numbers, which begins with the day specified by the TextCalendar.setfirstweekday() method. These methods are part of the lower-level functions provided by the calendar module to work with calendar data.
 
 
 
 
 
 50
-PP365
-Trial (standard): This is the type of trial environment that companies can use to allow users and department managers to try new features and quickly build low-code and no-code applications and processes. Organization (tenant) admins can enable all users to create trials, or only tenant admins. If allowed for users, any user from that organization who has a suitable license can create a 30-day trial environment.
+Power Apps
+Application lifecycle management is the way in which we develop an app from conception to end of life.
+
+Solutions are used to act as wrappers for all the elements required to deliver a product for use within a business.
 
 
 
 
 
 51
-Python
-A Session object is a class for running TensorFlow operations. It contains the environment in which Tensor objects are evaluated and Operation objects are executed, and it can own resources like tf.Variable objects. The most common way to use a Session is as a context manager.
+Azure AI Search
+Querying can happen once an index is populated with searchable content, when your client app sends query requests to a search service and handles responses. All query execution is over a search index that you control.
 
 
 
 
 
 52
+Power BI
+SUMMARIZE generates a summary table that includes unique combinations of values from the specified group by columns.
+For each group, it computes the values specified in the expressions. If no expressions are provided, SUMMARIZE simply returns the distinct combinations of group by columns.
+It returns a table with columns specified in both group by columns and expressions.
+
+
+
+
+
+53
+Workera.ai
+To ensure that a cloud-based web application can handle sudden spikes in traffic, which metric of the load balancer should be used to set an alert?
+Queue Length
+
+
+
+
+
+54
+Power BI Desktop
+If at least one table in the semantic model has its storage mode set to either import or Dual, the Data view tab is displayable. 
+
+When you select Dual and Import tables in Data view, they show cached data. DirectQuery tables don't show data, and a message is displayed that states that DirectQuery tables can't be shown.
+
+
+
+
+
+55
 Python
 String interpolation in Python involves inserting objects into a string. The primary tools for this are:
 
@@ -387,226 +498,35 @@ modulo operator (%): An older method for string formatting using format specifie
 
 
 
-53
-PP365
-Although the business process flow control in the form does not provide any direct client-side programmability, changes applied by business rules or form scripts are automatically applied to business process flow controls.
-
-
-
-
-
-54
-Microsoft Fabric Administration
-Admins can enable and disable global platform settings by controlling the Tenant settings. If your organization has one tenant, you can enable and disable settings for the entire organization from that tenant. Organizations with multiple tenants require an admin for each tenant
-
-
-
-
-
-55
-Maths
-Regularity conditions are mathematical conditions or assumptions required for certain statistical methods to be valid, like smoothness and boundedness of functions involved in estimation or hypothesis testing.
-
-
-
-
-
 56
-MS Data Analyst
-Creation: You can create display folders in Power BI Desktop by going to the Modeling tab and selecting the "Manage Display Folders" option. From there, you can create new folders and move fields into them. You can also create display folders using Tabular Editor or by editing the model.bim file.
+Python
+In Python’s unittest package, you can check the type of an object using the .assertIsInstance(a, b) and .assertNotIsInstance(a, b) methods. These methods are based on the built-in isinstance() function, which checks whether the input object a is of a given type b.
 
 
 
 
 
 57
-MS Data Analyst
-To develop Python visuals, you need to have Python installed on your machine. Many Python packages are supported in Power BI, but not all. See Learn which Python packages are supported in Power BI for a complete list of supported packages and Python visual limitations.
+Power BI
+To create a new custom column, go to the Add column menu and select Custom column. In the Custom column window, enter the formula 
+
+=try [Standard Rate] otherwise [Special Rate]
+
+Name this new column Final Rate. The formula above will try to evaluate the Standard Rate column and will output its value if no errors are found. If errors are found in the Standard Rate column, then the output will be the value defined after the otherwise statement, which in this case is the special rate.
 
 
 
 
 
 58
-PP365
-Power Apps data exports have a 12 minute time limit. If the volume of data exported exceeds 12 minutes the export will fail. If this occurs, export data in smaller segments.
+Azure AI Search
+In your client app, the search experience is defined using APIs from Azure AI Search, and can include relevance tuning, semantic ranking, autocomplete, synonym matching, fuzzy matching, pattern matching, filter, and sort.
 
 
 
 
 
 59
-Power BI
-Troubleshoot refresh issues
-If you suspect data consistency or refresh issues, it might make sense to delete the existing Usage Metrics Report semantic model. Then you can run View Usage Metrics again to generate a new semantic model with its associated usage metrics reports.
-
-
-
-
-
-60
-Python
-If you want to use a specific pre-trained model, like BERT or DeepDream, then you should research what it’s compatible with. Some pre-trained models are available in only one library or the other, and some are available in both. The Model Garden and the PyTorch and TensorFlow hubs are also good resources to check.
-
-
-
-
-
-61
-General
-Patch orchestration: The coordination and management of the deployment of patches across multiple systems and applications within an Azure environment.
-
-
-
-
-
-62
-Microsoft Fabric Administration
-Consumption in Fabric is measured using capacity units (CUs). Using the Capacity Metrics app admins can view consumption in their organization. This report enables you to make informed decisions regarding the use of your organizational resources.
-
-
-
-
-
-63
-Power BI
-The Usage Metrics Report semantic model contains usage data for the last 30 days. It can take up to 24 hours for new usage data to be imported. You can't trigger a manual refresh by using the Power BI user interface.
-
-
-
-
-
-64
-Site Scraping
-I had to use the os.path abspath function to get the absolute path of the file I created for the sake of sending it as an email attachment.
-  from os.path import abspath
-  ...
-  newmail.Attachments.Add(Source = abspath(relative_output_path))
-  newmail.Send()
-
-
-
-
-
-65
-Maths
-Trace of a matrix: The sum of the elements on the main diagonal (from the top left to the bottom right) of a square matrix.
-
-
-
-
-
-66
-Python
-In a Python Template string, placeholders consist of two parts: a dollar sign ($) followed by a valid Python identifier. This is different from other string interpolation methods that might use curly braces or percentage symbols. Valid identifiers are those that can be used as variable names in Python, which include letters, underscores, and digits but can’t start with a digit or be a Python keyword.
-
-
-
-
-
-67
-MS Data Analyst
-Rule of Thirds, Viewer Connection: The rule of thirds can help you anticipate or control how viewers’ eyes will move from one part of the screen to another1. This can enhance the viewer’s connection with your data story and make your visualization more impactful.
-
-
-
-
-
-68
-Azure VDI Project
-To build images, you create a template as a JSON file. In the template, you define builders and provisioners that carry out the actual build process. Packer has a builder for Azure that allows you to define Azure resources, such as the service principal credentials created in the preceding step.
-
-
-
-
-
-69
-Terraform
-The terraform state list command can list the resources being managed by the current working directory and workspace, providing a complete or filtered list.
-
-
-
-
-
-70
-PP365
-The following business process flows are included. To understand how business process flows work, review these system business process flows:
-
-Lead to Opportunity Sales Process
-Opportunity Sales Process
-Phone to Case Process
-
-
-
-
-
-71
-Python
-When you use the .safe_substitute() method from the Template class with a dictionary that doesn’t match all placeholders, it returns the string with the missing placeholders shown as is. This method doesn’t raise a KeyError like the .format() method does when faced with missing keys.
-
-
-
-
-
-72
-Azure DevOps Access Levels
-Feature-Rich IDE: Visual Studio Enterprise offers a wide range of features tailored to professional developers. These include advanced debugging tools, code navigation and analysis capabilities, integrated testing tools, and support for various programming languages and frameworks such as C#, C++, Python, and JavaScript. It also provides built-in support for version control systems like Git and Azure DevOps.
-
-
-
-
-
-73
-Power Platform
-UI Component: View
-Views define how a list of rows for a specific table is displayed in your application. A view defines the columns to display, width of each column, sort behavior, and the default filters.
-
-
-
-
-
-74
-Power Platform administration
-When you create a user and assign a license in the Microsoft 365 admin center, the user is also created in customer engagement apps. It can take a few minutes to complete the synchronization process between the Microsoft 365 admin center and customer engagement apps.
-
-
-
-
-
-75
-Power BI
-The improved usage metrics report includes the following report pages:
-
-Report usage Provides information about report views and report viewers, such as how many users viewed the report by date.
-Report performance Shows the typical report opening times broken down by consumption method and browser types.
-FAQ Provides answers to frequently asked questions, such as What is a "Viewer" and what is a "View"?
-
-
-
-
-
-76
-Azure VDI Project
-Temporary profile	
-A fail-safe profile is created when a user's roaming profile has problems loading. It's discarded at sign-out.
-
-
-
-
-
-77
-Microsoft Copilot Studio
-The URL used in your copilot represents the scope of content for generating responses. There are requirements and restrictions on some URLs.
-
-If the URL provided redirects to another top-level site, the content isn't included in results:
-
-For example, if www.fabrikam.com redirects to www.contoso.fabrikam.com, your copilot doesn't generate responses from content on either of those URLs.
-
-
-
-
-
-78
 Terraform
 The command line interface to Terraform is the terraform command, which accepts a variety of subcommands such as terraform init or terraform plan.
 
@@ -614,114 +534,81 @@ The command line interface to Terraform is the terraform command, which accepts 
 
 
 
-79
-Azure Functions
-Don't mix local development and portal development for a single function app. When you publish from a local project to a function app, the deployment process overwrites any functions that you developed in the portal.
-
-
-
-
-
-80
+60
 Python
-The CRUD operations correspond almost one-to-one with SQL commands:
+With f-strings, you can use a feature known as self-documenting expressions that adds an equal sign after the interpolated variable or expression. This feature can help you debug your code. 
 
-Create: INSERT
-Read: SELECT
-Update: UPDATE
-Delete: DELETE
-So, to modify existing data in SQL, you would use the UPDATE command.
+>>> value = "Suspicious value"
 
-
-
-
-
-81
-PP365
-Grids: Grids are tabular representations of data within a model-driven app in Power Apps. They allow users to view and interact with rows of data from a table. Grids can be configured to show specific columns and can be customized to include features like sorting, filtering, and pagination.
+>>> print(f"{value = }")
+variable = 'Suspicious value'
 
 
 
 
 
-82
+61
 Python
-In pandas, you have several methods at your disposal for data aggregation:
-
-.pivot_table() is great for creating pivot tables that summarize data.
-.groupby() is used to group data according to the values in one or more columns.
-crosstab() is used to compute a cross-tabulation of two (or more) factors.
+In a Python Template string, placeholders consist of two parts: a dollar sign ($) followed by a valid Python identifier. This is different from other string interpolation methods that might use curly braces or percentage symbols. Valid identifiers are those that can be used as variable names in Python, which include letters, underscores, and digits but can’t start with a digit or be a Python keyword.
 
 
 
 
 
-83
-Bicep
-Bicep can be used with the Azure CLI to build and deploy scripts to Azure 2.
-Bicep has a decompiler that can transform an existing ARM template into a Bicep file 2.
-
-
-
-
-
-84
-Terraform
-This state is stored by default in a local file named "terraform.tfstate", but we recommend storing it in Terraform Cloud to version, encrypt, and securely share it with your team.
-
-
-
-
-
-85
+62
 Python
-With TensorFlow’s TF Image, part of TensorFlow’s core, you get all the basics for resizing, cropping, and flipping images to get them ready for your models. Then there’s TensorFlow Datasets (TFDS), which offers a huge selection of real-world image datasets that are easy to plug into your projects.
+In Python, you can compare sequences of the same type. When comparing two sequences, the first 
+non-equal
+ value determines the outcome.
+
+For example, consider the following lists:
+
+numbers = [1, 2, 3, 4, 5]
+more_numbers = [1, 2, 2, 10, 20]
+When you compare these lists, you’ll find that numbers is greater than more_numbers.
 
 
 
 
 
-86
-Python
-The TestSuite class in Python’s unittest framework allows you to create groups of tests and run them selectively. This can be particularly useful in complex projects with many features, different testing levels, selective testing, and environment-specific testing. You can learn more about it in the section on grouping your tests.
+63
+General
+Benchmarking Tool: As a key benchmark, the European Stoxx 600 is extensively utilized by fund managers and institutional investors to assess the health of the European stock market. It serves as a crucial reference for evaluating performance and making informed asset allocation decisions within European equities.
 
 
 
 
 
-87
-PP365
-To support offline use, Power Apps allows data to be cached locally on the device. Users can create, update, and delete records while offline, and these changes are synchronized with the Dataverse database once the device reconnects to the internet. This must all be configured ahead of time.
+64
+Power Platform administration
+When you create a user and assign a license in the Microsoft 365 admin center, the user is also created in customer engagement apps. It can take a few minutes to complete the synchronization process between the Microsoft 365 admin center and customer engagement apps.
 
 
 
 
 
-88
-Python
-More coding languages are supported in TensorFlow than in PyTorch, which has a C++ API. You can use TensorFlow in both JavaScript and Swift. If you don’t want to write much low-level code, then Keras abstracts away a lot of the details for common use cases so you can build TensorFlow models without sweating the details.
+65
+Power Platform
+Types of Logic Components:
+  Business process flow
+  Workflow
+  Actions
+  Business rule
+  Power Automate Flow
 
 
 
 
 
-89
-PP365
-You can set a sandbox, production, or trial (subscription-based) environment in administration mode so that only users with System Administrator or System Customizer security roles will be able to sign in to that environment. Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect end users (non-admins).
+66
+Power BI
+Returns a single value: The SELECTEDVALUE function returns the value of an expression evaluated in the context of a single cell. It is commonly used in scenarios where you expect only one value to be present in the current context, such as when filtering a column in a visual or when using a slicer.
 
 
 
 
 
-90
-Maths
-Covariance-based multivariate analysis methods: Statistical techniques that analyze the covariance structure between multiple variables to understand the relationships and variabilities among them.
-
-
-
-
-
-91
+67
 Python
 The most practical way to display the calendar in a foreign language involves creating the calendar.LocaleTextCalendar object:
 
@@ -739,252 +626,25 @@ Mo Di Mi Do Fr Sa So
 
 
 
-92
-Power BI
-When you display the usage metrics report, Power BI generates a pre-built report. It contains usage metrics for that content for the last 30 days. The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, and so on.
+68
+DAX Studio
+Referencing Tables Using EVALUATE: You can also reference entire tables using EVALUATE. For example, if you want to return the Products Table, execute EVALUATE Products.
 
 
 
 
 
-93
-Workera.ai
-DevTest Labs includes an Artifact Library, a repository of pre-configured virtual machine images, formulas, and other artifacts. Users can leverage this library to quickly deploy development and test environments. Additionally, custom images can be created, capturing configurations and applications for reuse across multiple environments.
+69
+MS Dataverse
+The ParentContext provides information about any operation that triggers the plug-in or custom workflow activity to run.
 
+Except for specific documented cases, you should avoid taking a dependency on values that you find in the ParentContext to apply your business logic. The specific order in which operations occur is not guaranteed and may change over time.
 
 
 
 
-94
-Maths
-Max-type test statistics are used in hypothesis testing and involve the maximum value of a set of statistics calculated from data, often used when testing multiple hypotheses simultaneously.
 
-
-
-
-
-95
-Power BI
-The following query will output a table that is essentially just 3 columns of the dimstaff table renamed.
-EVALUATE
-SELECTCOLUMNS (
-    DimStaff,
-    "name", DimStaff[Staff],
-    "start_date", DimStaff[HireDate],
-    "term_date", DimStaff[TerminationDate]
-)
-
-
-
-
-
-96
-Azure projects
-The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure. After you create your configuration files, you create an execution plan that allows you to preview your infrastructure changes before they're deployed.
-
-
-
-
-
-97
-Python
-When it comes to pre-trained models, TensorFlow Hub steps in with models that you can use right away, like ResNet and MobileNet. You can save time by using these models to recognize patterns or objects in images so you don’t have to start from scratch.
-
-
-
-
-
-98
-Dataverse
-Security and Performance: When developing and deploying plug-ins, it’s important to consider both security and performance. Plug-ins should be thoroughly tested to ensure they do not introduce vulnerabilities or degrade system performance. Proper error handling, efficient code, and adhering to best practices for security and optimization are essential.
-
-
-
-
-
-99
-Power Platform administration
-In DAX, when you use SUMX or similar functions that iterate over a table, the context within which the function operates changes to the row context of that table. This means each row of the table becomes the current context for the calculation during each iteration of the function. Because of this row context, you don’t need to explicitly reference the table name when accessing its columns within the function.
-
-
-
-
-
-100
-Terraform
-The best way to handle CLI authentication in Terraform Cloud is with the login and logout commands, which help automate the process of getting an API token for your Terraform Cloud user account.
-
-
-
-
-
-101
-Python
-PyTorch is based on Torch, a framework for doing fast computation that is written in C. Torch has a Lua wrapper for constructing models.
-
-PyTorch wraps the same C back end in a Python interface. But it’s more than just a wrapper. Developers built it from the ground up to make models easy to write for Python programmers.
-
-
-
-
-
-102
-Python
-In Python f-strings, the flags !s and !r allow you to control how objects are converted into strings. The !s flag uses the object’s .__str__() method, which is intended to return a user-friendly string representation. The !r flag uses the object’s .__repr__() method, which should return a developer-friendly string representation that could be used to re-create the object.
-
-
-
-
-
-103
-Power BI
-A parameter stores a value that can be used for transformations in Power Query. Apart from the name of the parameter and the value that it stores, it also has other properties that provide metadata to it. The properties of a parameter are:
-
-	• Name
-	• Description
-	• Required
-	• Type
-	• Suggested values
-	• Query
-  • Current Value
-
-
-
-
-
-104
-Maths
-Compositional data refers to vectors of positive measurements which carry relative information, commonly analyzed in parts-per-whole relationships.
-
-
-
-
-
-105
-Terraform
-To add text to a file using PowerShell, you can use the “Add-Content” cmdlet. Here’s an example of how to write data to a file:
-Add-Content -Path "C:\Folder\MyFile.txt" -Value "This is some new text."
-
-
-
-
-
-106
-Python
-In contrast, f-strings perform eager interpolation and are not suitable for these scenarios. You can learn more about the differences and use cases for these methods in the Using F-strings vs .format() vs % section in the tutorial.
-
-
-
-
-
-107
-Azure VDI Project
-4. Which of these steps is not part of creating an FSLogix profile? 
-
-Install FSLogix software in Azure Virtual Desktop gallery images
-FSLogix software is preinstalled in the Azure gallery images. If you use your own image, you'll need to install the FSLogix software yourself.
-
-
-
-
-
-108
-Microsoft Fabric Administration
-The monitoring hub lets you review Fabric activities per experience. Using the hub, you can spot failed activities and see who submitted the activity and how long it lasted. The hub can expose many other details regarding each activity, and you can also filter and search it as needed.
-
-
-
-
-
-109
-Accounting
-a single audit is more specialized and focused on compliance with federal funding, while an audit by a public accounting firm is more comprehensive and focused on the overall financial health and reporting of an entity.
-
-
-
-
-
-110
-General
-Automatic VM guest patching: This refers to the automated process of updating the operating system of virtual machines hosted on Azure to ensure security and compliance with the latest patches.
-
-
-
-
-
-111
-MS Data Analyst
-Compatibility: Display folders are compatible with most Power BI data sources, including imported data, DirectQuery, and Live Connection. However, there are some limitations when using display folders with certain data sources, such as Analysis Services.
-
-
-
-
-
-112
-Python
-In Python’s unittest package, you can check the type of an object using the .assertIsInstance(a, b) and .assertNotIsInstance(a, b) methods. These methods are based on the built-in isinstance() function, which checks whether the input object a is of a given type b.
-
-
-
-
-
-113
-Maths
-Generalized likelihood ratio test (GLRT) is a statistical test to compare the fit of two models, one of which is a special case of the other (nested models).
-
-
-
-
-
-114
-Python
-TorchText is part of the PyTorch ecosystem and is designed to handle text data for natural language processing tasks. It offers tools for managing data loading, applying text transformations, and integrating with datasets.
-
-This library simplifies tasks like text classification and language modeling by making vocabulary creation and tokenization more straightforward.
-
-
-
-
-
-115
-Azure Naming Convention
-Some of these example names use a three-digit padding scheme (###), such as mktg-prod-001.
-
-Padding improves readability and sorting of assets when those assets are managed in a configuration management database (CMDB), IT Asset Management tool, or traditional accounting tools.
-
-
-
-
-
-116
-Python
-Python sequences have three common characteristics:
-
-  They are iterable, which means you can iterate through them.
-  They have a length, which means you can pass them to len() to get the number of elements it contains.
-  An element of a sequence can be accessed based on its position in the sequence using an integer index.
-
-
-
-
-
-117
-Power Platform Administration
-Optimized Searching: Quick Find is designed to provide fast and efficient searching across Dataverse records. It uses indexed columns to improve search performance, allowing users to quickly retrieve relevant records based on the search criteria. This means that the fields you want to search need to be indexed for optimal performance.
-
-
-
-
-
-118
-Workera.ai
-Azure Resource Groups provide a logical way to organize and manage resources within the Azure cloud. A resource group is a container that holds related resources for an Azure solution, such as virtual machines, storage accounts, and virtual networks.
-
-
-
-
-
-119
+70
 PP365
 Background operations (optional)	Select to disable all asynchronous operations (see Asynchronous service) such as workflows and synchronization with Exchange. Emails will not be sent and server-side synchronization for appointments, contacts, and tasks are disabled. Note: Administration mode must be enabled to disable background operations.
 
@@ -992,40 +652,58 @@ Background operations (optional)	Select to disable all asynchronous operations (
 
 
 
-120
-Terraform
-The terraform show command can generate human-readable versions of a state file or plan file, or generate machine-readable versions that can be integrated with other tools.
+71
+Workera.ai
+DevTest Labs includes an Artifact Library, a repository of pre-configured virtual machine images, formulas, and other artifacts. Users can leverage this library to quickly deploy development and test environments. Additionally, custom images can be created, capturing configurations and applications for reuse across multiple environments.
 
 
 
 
 
-121
-Python
-The correct syntax for unpacking a dictionary into keyword arguments in Python is the ** operator. This operator unpacks the key-value pairs from the dictionary, allowing them to be used as keyword arguments in functions or methods.
+72
+Microsoft Fabric Administration
+As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization. You can take over a purchase or trial subscription, and then assign or unassign licenses.
 
 
 
 
 
-122
+73
+PP365
+With Businesss Process Flows, you can make a step required so that people must enter data for a corresponding column before they can proceed to the next stage. This is commonly called ”stage-gating”. If you are adding a business-required or system-required column to a business process flow stage, we recommend that you add this column to your form as well.
+
+
+
+
+
+74
+Microsoft Fabric Administration
+Consumption in Fabric is measured using capacity units (CUs). Using the Capacity Metrics app admins can view consumption in their organization. This report enables you to make informed decisions regarding the use of your organizational resources.
+
+
+
+
+
+75
 MS Dataverse
-As a developer, you will use the Plug-in Registration tool to configure plug-ins, Azure integrations, virtual table data providers, and Webhooks to respond to events that are provided by the event framework.
+As described in Use messages with the SDK for .NET, data operations in the Dataverse platform are based on messages and every message has a name. There are Create, Retrieve, RetrieveMultiple, Update, Delete, Associate and Disassociate messages that cover the basic data operations that happen with tables.
 
 
 
 
 
-123
-Power Platform
-Type of Logic Component: Business rule
-Used to apply rule or recommendation logic to a form, such as to set column requirements, hide columns, or validate data. App designers use a simple interface to implement and maintain fast-changing and commonly used rules.
+76
+Azure VM Image Builder
+Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
+
+Microsoft.Compute manages resources related to virtual machines, virtual machine scale sets, and related components.
+Microsoft.Storage manages resources related to storage accounts and storage services.
 
 
 
 
 
-124
+77
 Workera.ai
 Azure Container Network Interface (CNI) plug-ins in Azure are designed to seamlessly integrate with Azure networking services. This integration ensures that containers can communicate with other resources in the Azure environment and take advantage of features like virtual networks, load balancers, and security groups.
 
@@ -1033,64 +711,144 @@ Azure Container Network Interface (CNI) plug-ins in Azure are designed to seamle
 
 
 
-125
+78
+General
+Sectoral Diversity: Within the European Stoxx 600, there is a rich mix of sectors represented, including financial services, healthcare, industrials, technology, and consumer goods. This diversity not only mitigates investment risk but also offers investors comprehensive exposure to the varied economic sectors across Europe.
+
+
+
+
+
+79
+Terraform
+This state is stored by default in a local file named "terraform.tfstate", but we recommend storing it in Terraform Cloud to version, encrypt, and securely share it with your team.
+
+
+
+
+
+80
+Azure Functions
+Don't mix local development and portal development for a single function app. When you publish from a local project to a function app, the deployment process overwrites any functions that you developed in the portal.
+
+
+
+
+
+81
+Workera.ai
+Software-Defined Networking (SDN) is an approach to networking that uses software-based controllers or application programming interfaces (APIs) to communicate with underlying hardware infrastructure and direct traffic on a network.
+
+
+
+
+
+82
 Power BI
-The SUMMARIZE function in DAX is a powerful function used to create summary tables or groupings of data based on specified columns and expressions. It essentially performs a GROUP BY operation similar to SQL.
+Troubleshoot refresh issues
+If you suspect data consistency or refresh issues, it might make sense to delete the existing Usage Metrics Report semantic model. Then you can run View Usage Metrics again to generate a new semantic model with its associated usage metrics reports.
 
 
 
 
 
-126
-Azure VDI Project
-Mandatory profile	
-A mandatory profile is a roaming user profile that an administrator has preconfigured to specify settings for users. With mandatory user profiles, a user can modify their desktop, but the changes aren't saved when the user signs out. The next time the user signs in, the mandatory user profile that the administrator created is downloaded. Mandatory profiles are typically used in a kiosk environment.
+83
+MS Data Analyst
+Clustering allows you to identify a segment (cluster) of data that is similar to each other but dissimilar to the rest of the data. The process of clustering is different to that of grouping, which you accomplished previously.
+
+To apply clustering to your scatter chart, select More options (...) in the upper-right corner of the visual and then select Automatically find clusters.
 
 
 
 
 
-127
+84
+Power Apps
+Unlike canvas app development where the designer has complete control over app layout, with model-driven apps much of the user interface is determined for you and is largely designated by the components you add to the app.
+
+
+
+
+
+85
+Workera.ai
+Azure Synapse Analytics: Comprehensive platform for integrating data warehousing and big data analytics with flexible resource options and extensive feature sets.
+
+
+
+
+
+86
+Python
+The load_tests() function in Python’s unittest framework is a hook for customizing test loading and suite creation. It takes three arguments: a test loader, a series of tests, and a test discovery pattern. When you call unittest.main(), load_tests() gets called automatically.
+
+
+
+
+
+87
+Power Apps
+Model-driven app design is an approach that focuses on adding components such as forms, views, and charts and dashboards to tables using an app designer tool. Additionally, relationships connect tables together in a way that permits navigation between them and ensures that data is not repeated unnecessarily.
+
+Using the app designer with little or no code, you can build apps that are simple or very complex.
+
+
+
+
+
+88
+General
+Automatic OS image upgrades on Azure Machine Scale Set: A feature that automatically updates the OS disk image used in an Azure Virtual Machine Scale Set to the latest version, ensuring VMs are running the most recent OS.
+
+
+
+
+
+89
+Power BI Desktop
+The Dual storage mode is a performance optimization. It should be used only in ways that don't compromise the ability to meet business requirements. For alternative behavior, consider using the techniques described in the Many-to-many relationships in Power BI Desktop.
+
+
+
+
+
+90
+Azure Functions Quickstart
+You can connect your function to other Azure services by adding input and output bindings. Bindings connect your function to other services without you having to write the connection code.
+
+
+
+
+
+91
+Power Platform
+Type of Logic Component: Power Automate Flow
+Power Automate is a cloud-based service that lets you create automated flows between apps and services to get notifications, synchronize files, collect data, and more.
+
+
+
+
+
+92
 PP365
-The system also supports just-in-time (JIT) user provisioning. In this scenario, when users access an environment URL, access requirements are checked at the time of sign-in and qualified users are added to the environment.
+Engagements follow a Businesss Process flow. Business process flows provide a guide for people to get work done. They provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to a conclusion of some kind.
 
 
 
 
 
-128
-Power BI
-Multiple requests to the same data source can occur if multiple queries pull from that data source. These requests can happen even in a case where only one query references the data source. If that query is referenced by one or more other queries, then each query—along with all the queries it depends on—is evaluated independently.
+93
+Workera.ai
+Amazon Rekognition, Celebrity Recognition:
+
+The RecognizeCelebrities operation identifies celebrities in an image.
+It can recognize well-known people and return information about them.
 
 
 
 
 
-129
-Maths
-Sum-type test statistics are created by summing individual test statistics from multiple tests or studies, commonly used in meta-analysis or combined significance testing.
-
-
-
-
-
-130
-Power BI
-When a query is evaluated with the Firewall on, the Firewall divides the query and all its dependencies into partitions (that is, groups of steps). Anytime one partition references something in another partition, the Firewall replaces the reference with a call to a special function called Value.Firewall.
-
-
-
-
-
-131
-MS Dataverse
-There are several deprecated specialized messages that perform update operations. In earlier versions it was required to use these messages, but now the same operations should be performed using IOrganizationService.Update or UpdateRequest class with IOrganizationService.Execute
-
-
-
-
-
-132
+94
 Power BI
 By default, Query Diagnostics might require administrative rights to run (depending on IT policy). If you find yourself unable to run Query Diagnostics, open the Power BI options page, and in the Diagnostics tab, select Enable in Query Editor (does not require running as admin).
 
@@ -1098,278 +856,31 @@ By default, Query Diagnostics might require administrative rights to run (depend
 
 
 
-133
-Power Apps
-While they're called model-driven apps, it is often easier to think of them as data model driven apps. This is because, without a data model housed within Microsoft Dataverse, you can't create a model-driven app.
-
-
-
-
-
-134
-Power Platform Administration
-Relevance Search Integration: Quick Find can be integrated with Dataverse's Relevance Search feature, which leverages Azure Search to provide more advanced search capabilities. This includes full-text search, relevance scoring, and the ability to search across multiple entities at once. Relevance Search enhances the Quick Find experience by providing more powerful and flexible search options, making it easier to locate records across the Dataverse environment.
-
-
-
-
-
-135
-Power BI Desktop
-Storage mode: With storage mode, you can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, initiated queries that were sent to back-end sources.
-
-
-
-
-
-136
-Power BI
-A huge part of Power Query's power comes from the fact that PQ can convert the operations a user performs via its user interface into complex SQL or other backend data source languages, without the user having to know said languages. Users get the performance benefit of native data source operations, with the ease of use of a UI where all data sources can be transformed using a common set of commands.
-
-
-
-
-
-137
-Power BI
-SUMMARIZE generates a summary table that includes unique combinations of values from the specified group by columns.
-For each group, it computes the values specified in the expressions. If no expressions are provided, SUMMARIZE simply returns the distinct combinations of group by columns.
-It returns a table with columns specified in both group by columns and expressions.
-
-
-
-
-
-138
-Azure VM Image Builder
-	• For non-Virtual Machine Scale Set deployments - For every 20 VMs that you create concurrently, we recommend that you keep at least one replica. For example, if you're creating 120 VMs concurrently using the same image in a region, we suggest you keep at least 6 replicas for your image.
-
-
-
-
-
-139
-Python
-When you need to apply multiple aggregation functions to the same data in a pivot table, you pass them in a list to the 
-aggfunc
- parameter.
-
-
-
-
-
-140
-Microsoft Fabric Administration
-Power BI Premium - A capacity that was bought as part of a Power BI Premium subscription. These capacities use P SKUs.
-
- Note
-Power BI capacities are transitioning to Fabric. For more information, see Power BI Premium transition to Microsoft Fabric.
-
-
-
-
-
-141
-Python
-The TextCalendar.iterweekdays() method returns an iterator for weekday numbers, which begins with the day specified by the TextCalendar.setfirstweekday() method. These methods are part of the lower-level functions provided by the calendar module to work with calendar data.
-
-
-
-
-
-142
-Python
-To make a class iterable, you need to define the .__iter__() special method in the class. This method must return an iterator, which Python uses in its iteration protocol.
-
-
-
-
-
-143
-MS Dataverse
-The Dataverse Web API provides a development experience that can be used across a wide variety of programming languages, platforms, and devices. The Web API implements the OData (Open Data Protocol), version 4.0, an OASIS standard for building and consuming RESTful APIs over rich data sources.
-
-
-
-
-
-144
-Azure Key Vault
-Single tenancy refers to a single dedicated instance of an application deployed for each customer, rather than a shared instance amongst multiple customers. The need for single tenant products is often found as an internal compliance requirement in financial service industries.
-
-
-
-
-
-145
-PP365
-Power Apps Offline Use enables users to continue working with their apps even when they are not connected to the internet. This feature is crucial for scenarios where consistent internet access is not guaranteed, such as in remote locations or fieldwork.
-
-
-
-
-
-146
-General
-The getcontext() function from the decimal module is used to obtain the context object, which manages the properties of Decimal objects, including precision. You can set the precision by modifying the .prec attribute of the context object.
-
-
-
-
-
-147
-Power Platform
-A well-designed model-driven app consists of several components you select using the designer to build the appearance and functionality of the finished app. The components and component properties that makers use to create an app become the metadata.
-
-
-
-
-
-148
-Python
-One of the main special features of PyTorch is that it adds a C++ module for autodifferentiation to the Torch backend. Autodifferentiation automatically calculates the gradient of the functions defined in torch.nn during backpropagation.
-
-
-
-
-
-149
-Azure VDA
-DON'T DO THIS AGAIN (3/20/24)
-  Capture a specialized image
-  deploy it in the same subnet (hostname collision!)
-  make changes
-  sysprep new VM
-  Capture Generalized image from it
-It was probably the deployment in the same subnet that broke things.
-
-
-
-
-
-150
-Azure Key Vault
-The Azure Key Vault Standard and Premium tiers are billed on a transactional basis, with an additional monthly per-key charge for premium hardware-backed keys. Managed HSM, Dedicated HSM, and Payments HSM don't charge on a transactional basis; instead they are always-in-use devices that are billed at a fixed hourly rate.
-
-
-
-
-
-151
-PP365
-Users who have been assigned service admin roles or the Global admin role, assigned through the Microsoft 365 admin center, will get the System Administrator role by default. They will have admin privileges to the environment's resources when they get added to the environment.
-
-
-
-
-
-152
-Power Apps
-Power Platform services are built on Azure, Microsoft's cloud computing platform. The Power Platform service architecture is composed of four components:
-
-Web front-end cluster
-Back-end cluster
-Premium infrastructure
-Mobile platforms
-
-
-
-
-
-153
+95
 Terraform
-The graph output uses the DOT language, which is a machine-readable graph description language which originated in Graphviz. You can use the Graphviz dot command to present the resulting graph description as an image. There are also various third-party online graph rendering services which accept this format.
+While the format of the state files are just JSON, direct file editing of the state is discouraged. Terraform provides the terraform state command to perform basic modifications of the state using the CLI.
 
 
 
 
 
-154
+96
 Microsoft Fabric Administration
-Fabric is composed of tenants, capacities, and workspaces. Your organization might have one or more tenants, each with at least one capacity. Workspaces reside in capacities, and are where data is created, transformed, and consumed.
+The monitoring hub lets you review Fabric activities per experience. Using the hub, you can spot failed activities and see who submitted the activity and how long it lasted. The hub can expose many other details regarding each activity, and you can also filter and search it as needed.
 
 
 
 
 
-155
-Power BI
-If your organization is using Azure Private Link in Power BI, because client-telemetry is not available the usage metrics reports will only contain Report Open events.
+97
+MS Data Analyst
+Creation: You can create display folders in Power BI Desktop by going to the Modeling tab and selecting the "Manage Display Folders" option. From there, you can create new folders and move fields into them. You can also create display folders using Tabular Editor or by editing the model.bim file.
 
 
 
 
 
-156
-Power BI
-Returns a single value: The SELECTEDVALUE function returns the value of an expression evaluated in the context of a single cell. It is commonly used in scenarios where you expect only one value to be present in the current context, such as when filtering a column in a visual or when using a slicer.
-
-
-
-
-
-157
-Workera.ai
-Azure DevTest Labs enables quick provisioning of resources such as virtual machines, allowing development and testing teams to create environments on-demand. This is particularly useful for scenarios where teams need to replicate production environments for testing purposes.
-
-
-
-
-
-158
-Power Apps
-For some reason, when I was trying to update C&Y's Billing Managers and Project Managers, I was getting a partial failure when trying to use the Import feature from the Power Apps table. I ended up having to write a Power Automate script to edit the records.
-
-
-
-
-
-159
-Python
-Python’s unittest package supports several key concepts that facilitate test creation, organization, preparation, and automation:
-
-  Test fixtures: A test fixture refers to a group of actions required to set up an environment for testing. They also include the teardown processes after the tests run.
-  Test runner: This is a component that handles the execution of tests and communicates the results to the user.
-
-
-
-
-
-160
-Azure VM Image Builder
-1. Which of the following procedures should an administrator employ to generalize a Windows VM in preparation for creating a managed image in Azure? 
-
-Run Sysprep.exe, select the Generalize check box, and then in the Shutdown Options list, select Shutdown.
-
-
-
-
-
-161
-Power BI
-There are a few limitations for this release of relationships with a many-to-many cardinality and composite models.
-
-The following Live Connect (multidimensional) sources can't be used with composite models:
-
-SAP HANA
-SAP Business Warehouse
-SQL Server Analysis Services
-Power BI semantic models
-Azure Analysis Services
-
-
-
-
-
-162
-Azure VM Image Builder
-Azure Resource Providers are essentially services within the Azure ecosystem that manage specific types of Azure resources. When you interact with Azure, whether through the Azure Portal, Azure CLI, Azure PowerShell, REST APIs, or SDKs, you're often dealing with these resources. Each resource provider specializes in a particular category of resources, such as virtual machines, storage accounts, databases, etc.
-
-
-
-
-
-163
+98
 Power BI Desktop
 If you connect SQL Profiler to the diagnostics port for Power BI Desktop, you can see which queries hit or miss the in-memory cache by performing a trace that's based on the following events:
 
@@ -1381,25 +892,131 @@ Query Processing\DirectQuery Begin
 
 
 
-164
+99
+Power BI Desktop
+Storage mode: With storage mode, you can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, initiated queries that were sent to back-end sources.
+
+
+
+
+
+100
 Python
-The standard deviation is the square root of the variance, so replacing the "var" function with "std" is the best approach.
-
-You could calculate the square roots of the existing pivot table data, but this complicates the code.
+CRUD stands for Create, Read, Update, and Delete. Every time you interact with an application, you’re likely engaging in one of the four CRUD operations.
 
 
 
 
 
-165
-Azure AI Search
-Azure AI Search (formerly known as "Azure Cognitive Search") provides secure information retrieval at scale over user-owned content in traditional and conversational search applications.
+101
+MS Data Analyst
+The primary goal of an analytical report is to help report consumers discover answers to a broad array of questions by interacting with the report and its visuals. Analytical reports often have many slicers to filter report data, and they often contain complex visuals that expose in-depth detail of the data.
 
 
 
 
 
-166
+102
+Maths
+One/two sample mean tests are statistical methods used to determine if there are significant differences between the mean(s) of one or two samples compared to a hypothesized mean or between each other.
+
+
+
+
+
+103
+Python
+Python’s unittest package supports several key concepts that facilitate test creation, organization, preparation, and automation:
+
+  Test fixtures: A test fixture refers to a group of actions required to set up an environment for testing. They also include the teardown processes after the tests run.
+  Test runner: This is a component that handles the execution of tests and communicates the results to the user.
+
+
+
+
+
+104
+Azure Key Vault
+Single tenancy refers to a single dedicated instance of an application deployed for each customer, rather than a shared instance amongst multiple customers. The need for single tenant products is often found as an internal compliance requirement in financial service industries.
+
+
+
+
+
+105
+PP365
+To support offline use, Power Apps allows data to be cached locally on the device. Users can create, update, and delete records while offline, and these changes are synchronized with the Dataverse database once the device reconnects to the internet. This must all be configured ahead of time.
+
+
+
+
+
+106
+MS Dataverse
+When you update the StateCode column, it is important to always set the desired StatusCode.
+
+StateCode and StatusCode have dependent values. There can be multiple valid StatusCode values for a given StateCode value, but each StateCode column has a single DefaultStatus value configured. When you update StateCode without specifying a StatusCode, the default status value will be set by the system.
+
+
+
+
+
+107
+Maths
+Max-type test statistics are used in hypothesis testing and involve the maximum value of a set of statistics calculated from data, often used when testing multiple hypotheses simultaneously.
+
+
+
+
+
+108
+Python
+More coding languages are supported in TensorFlow than in PyTorch, which has a C++ API. You can use TensorFlow in both JavaScript and Swift. If you don’t want to write much low-level code, then Keras abstracts away a lot of the details for common use cases so you can build TensorFlow models without sweating the details.
+
+
+
+
+
+109
+Terraform
+The terraform state list command can list the resources being managed by the current working directory and workspace, providing a complete or filtered list.
+
+
+
+
+
+110
+Azure VDI Project
+4. Which of these steps is not part of creating an FSLogix profile? 
+
+Install FSLogix software in Azure Virtual Desktop gallery images
+FSLogix software is preinstalled in the Azure gallery images. If you use your own image, you'll need to install the FSLogix software yourself.
+
+
+
+
+
+111
+Workera.ai
+Azure IoT Central
+Purpose and Use Cases:
+
+Managed IoT Application Platform: Azure IoT Central is a fully managed IoT SaaS (Software as a Service) offering that simplifies the creation and management of IoT solutions.
+Ease of Use: Designed for business users and those who need to quickly deploy and manage IoT solutions without deep technical knowledge.
+
+
+
+
+
+112
+Python
+With TensorFlow’s TF Image, part of TensorFlow’s core, you get all the basics for resizing, cropping, and flipping images to get them ready for your models. Then there’s TensorFlow Datasets (TFDS), which offers a huge selection of real-world image datasets that are easy to plug into your projects.
+
+
+
+
+
+113
 Power Platform administration
 To view and edit a user's profile in the Power Platform admin center:
 
@@ -1411,785 +1028,89 @@ On the user profile page you can view and make changes to important user profile
 
 
 
-167
-Power Platform Administration
-Why is my storage consumption decreasing in database and growing in file?
-We are constantly optimizing the Dataverse for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as “Annotation” and “Attachment” is moving from database to file storage. This leads to decreased usage of database capacity and an increase in file capacity.
-
-
-
-
-
-168
-Site Scraping
-Use Selenium to navigate to desirable data - this involved moving the driver focus to iframes and then interacting with elements there
-  iframe = driver.find_elements(By.ID, 'tool')[0]
-  driver.switch_to.frame(iframe)
-  ...
-  driver.switch_to.parent_frame()
-  driver.switch_to.frame('data')
-  sleep(3)
-
-
-
-
-
-169
-Dataverse 
-We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Microsoft Power Platform admin center to quickly view adoption and user metrics for your organization.
-
-I can see these! They don't say much about what individuals are looking at, from what I saw when glancing at the reports.
-
-
-
-
-
-170
-PP365
-Trial (subscription-based): This is the type of trial environment that companies can use to develop larger, multiuser and multiple-department solutions and perform proof-of-concept reviews. Tenant admins can add a trial (subscription-based) environment to their tenant, or new customers can sign up for a new tenant and become the Global admin.
-
-
-
-
-
-171
-Power Platform administration
-A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user doesn't exist in customer engagement apps. This user can't sign in, can't be enabled, and can't be synchronized to Microsoft 365. This type of user can only be created through data import.
-
-
-
-
-
-172
-Maths
-Derive the null distribution: This involves calculating the expected probability distribution of a test statistic under the null hypothesis, which assumes no effect or no difference.
-
-
-
-
-
-173
-MS Data Analyst
-Disadvantages of Filters vs Slicers
-The Filters pane offers less design flexibility, though you can style it by using specific fonts and colors.
-
-Careful consideration should be made to hide certain filters to avoid confusing report consumers.
-
-It can be easy to lose track of applied visual-level filters.
-
-
-
-
-
-174
-Microsoft Copilot Studio
-Use content on SharePoint or OneDrive for Business for generative answers works by pairing your copilot with a URL, such as contoso.sharepoint.com/sites/policies. When a copilot user asks a question and the copilot doesn't have a topic to use for an answer, the copilot searches the URL and all sub-paths. For example, a URL such as contoso.sharepoint.com/sites also includes subpaths like contoso.sharepoint.com/sites/policies.
-
-
-
-
-
-175
+114
 Python
-In Python, you can compare sequences of the same type. When comparing two sequences, the first 
-non-equal
- value determines the outcome.
-
-For example, consider the following lists:
-
-numbers = [1, 2, 3, 4, 5]
-more_numbers = [1, 2, 2, 10, 20]
-When you compare these lists, you’ll find that numbers is greater than more_numbers.
+To make a class iterable, you need to define the .__iter__() special method in the class. This method must return an iterator, which Python uses in its iteration protocol.
 
 
 
 
 
-176
-Maths
-One/two sample mean tests are statistical methods used to determine if there are significant differences between the mean(s) of one or two samples compared to a hypothesized mean or between each other.
-
-
-
-
-
-177
-Power BI
-Formula.Firewall errors are the result of Power Query's Data Privacy Firewall (also known as the Firewall), which at times may seem like it exists solely to frustrate data analysts the world over.
-
-
-
-
-
-178
-Power BI
-At its most basic level, a partition is just a collection of one or more query steps. The most granular partition possible (at least in the current implementation) is a single step. The largest partitions can sometimes encompass multiple queries.
-
-
-
-
-
-179
-Azure Functions
-
-
-
-
-
-180
-Power Apps
-Model-driven app design is an approach that focuses on adding components such as forms, views, and charts and dashboards to tables using an app designer tool. Additionally, relationships connect tables together in a way that permits navigation between them and ensures that data is not repeated unnecessarily.
-
-Using the app designer with little or no code, you can build apps that are simple or very complex.
-
-
-
-
-
-181
-Maths
-Diagonal matrix of a matrix: A square matrix in which the entries outside the main diagonal are all zero.
-
-
-
-
-
-182
-Azure AI Search
-An end-to-end exploration of core search features can be accomplished in four steps:
-
-Decide on a tier and region. One free search service is allowed per subscription. All quickstarts can be completed on the free tier. For more capacity and capabilities, you'll need a billable tier.
-Create a search service in the Azure portal.
-Start with Import data wizard. Choose a built-in sample or a supported data source to create, load, and query an index in minutes.
-Finish with Search Explorer, using a portal client to query the search index you just created.
-
-
-
-
-
-183
-Python
-When you try to create an instance of a class that inherits from the Sequence abstract base class, but doesn’t implement .__getitem__() and .__len__(), then Python raises a TypeError:
-
-The Sequence abstract base class requires that any class that inherits from it must implement the .__getitem__() and .__len__() methods.
-
-
-
-
-
-184
+115
 PP365
-You can design business process flows that tie together the rows for up to five different tables into a single process so that people using the app can focus on the flow of their process rather than on which table they are working in. They can more easily navigate between related table rows.
+Neither type of environment consumes paid capacity. You can convert either type of trial environment to a production environment by switching it to consume from paid capacity, which will keep it from being disabled and deleted. After it becomes a production environment, it will follow the paid license lifecycle.
 
 
 
 
 
-185
-Power Platform administration
-To disable a user account, remove a license from the user or remove the user from the security group that's associated with an environment. Removing a user from the security group doesn't remove the user's license. If you want to make the license available to another user, you have to remove the license from the user account that was disabled.
-
-
-
-
-
-186
+116
 Azure VM Image Builder
-2. What is the first step an administrator needs to perform when creating a managed image from a generalized VM that is in the Stopped (deallocated) status? 
+	• For non-Virtual Machine Scale Set deployments - For every 20 VMs that you create concurrently, we recommend that you keep at least one replica. For example, if you're creating 120 VMs concurrently using the same image in a region, we suggest you keep at least 6 replicas for your image.
 
-Capture the image.
-That's correct. The administrator must capture the image after it's been generalized and is stopped and deallocated.
 
 
 
 
-
-187
-Power Apps
-Unlike canvas app development where the designer has complete control over app layout, with model-driven apps much of the user interface is determined for you and is largely designated by the components you add to the app.
-
-
-
-
-
-188
-Azure Functions
-The Azure Functions extension to VS Code provides these benefits
-
-	• Edit, Build, and run functions on your local development computer.
-	• Publish your Azure functions project directly to Azure.
-Write your functions in various languages while taking advantage of the benefit of Visual Studio Code.
-
-
-
-
-
-189
-Azure Pipelines
-Trigger
-A trigger is set up to tell the pipeline when to run. You can configure a pipeline to run upon a push to a repository at scheduled times or upon completing another build. All these actions are known as triggers.
-
-
-
-
-
-190
-Power BI
-Both GUID and ObjectsIDs may be used interchangeably. Each Report ObjectId is uniquely represented by a 32 hexadecimal GUID (a globally unique identifier).
-
-
-
-
-
-191
-Power BI Desktop
-If at least one table in the semantic model has its storage mode set to either import or Dual, the Data view tab is displayable. 
-
-When you select Dual and Import tables in Data view, they show cached data. DirectQuery tables don't show data, and a message is displayed that states that DirectQuery tables can't be shown.
-
-
-
-
-
-192
-General
-The en dash is omitted when the sentence contains a “from … to” or “between … and” formulation 2.
-In these contexts, the en dash is read as “through” or “to” 2.
-
-
-
-
-
-193
-Python
-When you pass a list of columns to the values parameter in a pandas pivot table, the columns are displayed alphabetically in the output. That’s regardless of the order they were passed in.
-
-
-
-
-
-194
-DAX Studio
-Referencing Tables Using EVALUATE: You can also reference entire tables using EVALUATE. For example, if you want to return the Products Table, execute EVALUATE Products.
-
-
-
-
-
-195
-Python
-In Python, a sequence is a category of data types that has certain characteristics and supports specific operations.
-
-
-
-
-
-196
-General
-Application Health Extension: An add-on for Azure virtual machines that monitors the health of applications and automatically performs corrective actions if an unhealthy state is detected.
-
-
-
-
-
-197
-Windows 10
-You can increase or decrease the size of icons on your desktop by selecting the desktop, holding [ctrl], and using the scroll wheel.
-
-
-
-
-
-198
-PP365
-Solution Explorer is a feature within Microsoft Dataverse and Power Apps that allows users to manage the components of their applications. It provides a centralized interface to view, add, modify, and remove components such as entities, fields, forms, views, charts, dashboards, plugins, workflows, and more.
-
-
-
-
-
-199
-Azure AI Search
-In your client app, the search experience is defined using APIs from Azure AI Search, and can include relevance tuning, semantic ranking, autocomplete, synonym matching, fuzzy matching, pattern matching, filter, and sort.
-
-
-
-
-
-200
-Power Apps
-Application lifecycle management is the way in which we develop an app from conception to end of life.
-
-Solutions are used to act as wrappers for all the elements required to deliver a product for use within a business.
-
-
-
-
-
-201
-Python
-The load_tests() function in Python’s unittest framework is a hook for customizing test loading and suite creation. It takes three arguments: a test loader, a series of tests, and a test discovery pattern. When you call unittest.main(), load_tests() gets called automatically.
-
-
-
-
-
-202
-Power Platform
-Type of Logic Component: Power Automate Flow
-Power Automate is a cloud-based service that lets you create automated flows between apps and services to get notifications, synchronize files, collect data, and more.
-
-
-
-
-
-203
-Python
-The .format() method in Python supports different configurations for string interpolation:
-
-Empty replacement fields use the default order of arguments.
-Zero-based indices allow you to specify the order of arguments.
-Named replacement fields improve readability by matching the arguments’ names in the method call.
-
-
-
-
-
-204
-Maths
-Centered log-ratio transformation: A technique used in compositional data analysis to allow the application of standard statistical techniques by transforming component proportions to log-scale relative to the geometric mean.
-
-
-
-
-
-205
-Power BI
-To create a new custom column, go to the Add column menu and select Custom column. In the Custom column window, enter the formula 
-
-=try [Standard Rate] otherwise [Special Rate]
-
-Name this new column Final Rate. The formula above will try to evaluate the Standard Rate column and will output its value if no errors are found. If errors are found in the Standard Rate column, then the output will be the value defined after the otherwise statement, which in this case is the special rate.
-
-
-
-
-
-206
-Microsoft Copilot Studio
-Prompt modification allows you to expand the capabilities of generative answers, or boosted conversations, by adding custom instructions. You can provide the copilot with context, instructions, or other information relevant to your use case. This is the system message that can be included at the start of a conversation with a generative AI model.
-
-
-
-
-
-207
-Power BI
-If there are data sources being accessed within the partition, and data flowing in from other partitions, the Firewall loses its ability to be the gatekeeper, since the data flowing in could be leaked to one of the internally accessed data sources without it knowing about it. Thus the Firewall prevents a partition that accesses other partitions from being allowed to directly access any data sources.
-
-
-
-
-
-208
-Azure VDI Project
-1. You have a group of developers that need virtual desktops that they can manage. What type of host pool do you create for them? 
-
-With a personal host pool, each user has their own dedicated VM. They can be a local administrator for their VM to manage app installation.
-
-
-
-
-
-209
-MS Data Analyst
-The primary goal of an analytical report is to help report consumers discover answers to a broad array of questions by interacting with the report and its visuals. Analytical reports often have many slicers to filter report data, and they often contain complex visuals that expose in-depth detail of the data.
-
-
-
-
-
-210
-General
-NPS stands for Net Promoter Score, which is a common metric used in customer experience programs. An NPS score measures customer loyalty by looking at their likelihood of recommending a given business.
-
-Your NPS score is measured with a single-question survey and reported with a number ranging from -100 to +100, where a higher score is desirable.
-
-
-
-
-
-211
-Power Platform
-Type of Logic Component: Workflow	
-Workflows automate business processes without a user interface. Designers use workflows to initiate automation that doesn't require any user interaction.
-
-
-
-
-
-212
-Power BI Desktop
-Writeback: Writeback enables business users to explore what-if scenarios by changing cell values. Custom applications can apply changes to the data source. Tables that aren't cached can display changes immediately, which allows instant analysis of the effects.
-
-
-
-
-
-213
-MS Data Analyst
-Continuing with the previous example, you now want to edit the categories that make up your group. Right-click the group field in either the Legend bucket or the Fields pane, and then select Edit Groups.
-
-In the Groups window that displays is a list of the groups and the different items within those groups. The following image shows the States with Sales > 500k group and its members, along with the Other group (States with Sales < 500k) that contains all other values that have not been put into the first group.
-
-
-
-
-
-214
-MS Dataverse
-As described in Use messages with the SDK for .NET, data operations in the Dataverse platform are based on messages and every message has a name. There are Create, Retrieve, RetrieveMultiple, Update, Delete, Associate and Disassociate messages that cover the basic data operations that happen with tables.
-
-
-
-
-
-215
-Power BI
-SUMMARIZE ( <table>, <group_by_column1>, ..., <group_by_columnN>, <expression1>, ..., <expressionN> )
-Arguments:
-<table>: The table or table expression from which to retrieve data.
-<group_by_column1>, ..., <group_by_columnN>: Columns to group the data by. Each unique combination of values in these columns defines a group.
-<expression1>, ..., <expressionN>: Optional expressions to compute values for each group. These expressions could be aggregations, calculations, or any other DAX expressions.
-
-
-
-
-
-216
-Azure AI Search
-Querying can happen once an index is populated with searchable content, when your client app sends query requests to a search service and handles responses. All query execution is over a search index that you control.
-
-
-
-
-
-217
-General
-Azure Automation: A cloud-based automation service that helps to automate repetitive tasks across Azure and third-party services, enhancing efficiency and reducing the potential for human error.
-
-
-
-
-
-218
-Dataverse
-Extend Functionality: Plug-ins in Dataverse are designed to extend the platform's functionality. They allow users to add new features or customize existing ones to better meet specific needs. This can include data integration, automation of tasks, or enhanced user interfaces.
-
-
-
-
-
-219
-Azure VDI Project
-A user profile is a collection of configurations that the user or administrator made to represent the state of a system. Various system components bind to a user's profile. These components include applications, registry entries, and other customized entries.
-
-
-
-
-
-220
-Python
-In Python, you generally can’t concatenate sequences of different types. If you try to add a list and a tuple, Python raises a TypeError:
-
->>> [1, 2, 3] + (4, 5, 6)
-Traceback (most recent call last):
-  ...
-  File "<stdin>", line 1, in <module>
-TypeError: can only concatenate list (not "tuple") to list
-
-
-
-
-
-221
-MS Dataverse
-The Event Execution Pipeline passes registered plug-ins a wealth of data about the current operation being processed and your custom code's execution environment.
-
-
-
-
-
-222
-Python
-CRUD stands for Create, Read, Update, and Delete. Every time you interact with an application, you’re likely engaging in one of the four CRUD operations.
-
-
-
-
-
-223
-Python
-In Python, an immutable sequence is one that you can’t change once it’s been created. Immutable built-in sequences include tuples and strings.
-
-
-
-
-
-224
-Power Platform
-You use templates for importing many types of records such as accounts, leads, or cases. There is a complete list in the Templates for Data Import Wizard.
-
-
-
-
-
-225
+117
 Microsoft Fabric Administration
-To distribute management across the organization, you can also use domains. With a domain, you create a logical grouping of workspaces. For example, your organization can create domains according to functions such as sales and marketing. Designated users can become admins and oversee Fabric functions related to the data in each domain.
+Fabric is composed of tenants, capacities, and workspaces. Your organization might have one or more tenants, each with at least one capacity. Workspaces reside in capacities, and are where data is created, transformed, and consumed.
 
 
 
 
 
-226
+118
 Python
-Pito Salas is a Curaçaoan-American Cambridge, Massachusetts-based software developer. While working with Lotus' Advanced Technology Group in 1986, Salas invented the pivot table, a "next-generation" spreadsheet concept that was released by Lotus in 1989, as Lotus Improv.
+Type hints in Python are purely optional and are not enforced by the Python interpreter. This means that adding type hints to your code does not affect its runtime behavior; they are used for static type checking, documentation, and code completion in development environments. Tools like mypy or integrated development environments (IDEs) can use these hints to catch type errors before runtime.
 
 
 
 
 
-227
-Maths
-Microbiome research in mathematics often involves statistical analysis of the composition and function of microorganisms within a given environment, such as the human gut.
-
-
-
-
-
-228
-Fabric Administration
-You can also assign users to roles by using PowerShell. Users are managed in Microsoft Graph PowerShell. If you don't already have the Microsoft Graph PowerShell SDK, download and install the latest version.
-
-
-
-
-
-229
-PP365
-You can call on-demand workflows from inside a business process flow. You can configure this from the new business process flow designer by dragging a workflow component to a process stage or to the Global Workflows section.
-
-
-
-
-
-230
-MS Data Analyst
-The Pin a live page feature reflects real-time changes, ensuring that your reports always stay up-to-date.
-
-Pinning a report page is a simple way to pin all visuals at once. All slicers and filters still work and that the visuals have the same data as in the report. The visuals appear as a page, so there are no reformatting options.
-
-
-
-
-
-231
-Terraform
-While the format of the state files are just JSON, direct file editing of the state is discouraged. Terraform provides the terraform state command to perform basic modifications of the state using the CLI.
-
-
-
-
-
-232
-Microsoft Copilot Studio
-The URL used in your copilot represents the scope of content for generating responses. There are requirements and restrictions on some URLs.
-
-URLs that point to a website, requiring authentication or ones not indexed by Bing.
-
-For example, wikis and SharePoint sites require authentication, therefore can't be used:
-
-fabrikam.visualstudio.com/project/_wiki
-fabrikam.sharepoint.com
-
-
-
-
-
-233
+119
 Power BI
-A warning with query diagnostics, as mentioned elsewhere, is that you'll see drastically different capabilities depending on the connector. For example, many ODBC based connectors won't have an accurate recording of what query is send to the actual backend system, as Power Query only sees what it sends to the ODBC driver.
+DAX Function
+HASONEVALUE(<columnName>)  
+Returns TRUE when the context for columnName has been filtered down to one distinct value only. Otherwise is FALSE.
 
 
 
 
 
-234
-PP365
-With Businesss Process Flows, you can make a step required so that people must enter data for a corresponding column before they can proceed to the next stage. This is commonly called ”stage-gating”. If you are adding a business-required or system-required column to a business process flow stage, we recommend that you add this column to your form as well.
+120
+Power Platform
+A well-designed model-driven app consists of several components you select using the designer to build the appearance and functionality of the finished app. The components and component properties that makers use to create an app become the metadata.
 
 
 
 
 
-235
-PP365
-Environments can have zero or one Microsoft Dataverse database. The process for adding users to environments that have no Dataverse database differs from the process for environments that have one Dataverse database. For an overview of environments, see Environments overview.
+121
+Power BI
+The improved usage metrics report includes the following report pages:
 
+Report usage Provides information about report views and report viewers, such as how many users viewed the report by date.
+Report performance Shows the typical report opening times broken down by consumption method and browser types.
+FAQ Provides answers to frequently asked questions, such as What is a "Viewer" and what is a "View"?
 
 
 
 
-236
-Power BI Desktop
-The Dual storage mode is a performance optimization. It should be used only in ways that don't compromise the ability to meet business requirements. For alternative behavior, consider using the techniques described in the Many-to-many relationships in Power BI Desktop.
 
+122
+Workera.ai
+Azure IoT Hub
+Purpose and Use Cases:
 
+Core IoT Service: Azure IoT Hub is a foundational service designed to provide the connectivity and messaging infrastructure required for building sophisticated IoT solutions.
+Customization: It's ideal for developers who need a highly customizable solution and have the expertise to build and manage the IoT application layer themselves.
 
 
 
-237
-PP365
-In most cases, adding users to an environment only gives users access to the environment itself, not to any resources (apps and data) in the environment. You need to configure access to resources by assigning security roles to users.
 
 
-
-
-
-238
-MS Data Analyst
-To create a mobile-optimized version of your report, you can:
-
-Design a mobile layout view, where you can drag and drop certain visuals onto a phone emulator canvas.
-Use visuals and slicers that are suitable for use on small, mobile screens.
-
-
-
-
-
-239
-Azure Pipelines
-Job
-A build contains one or more jobs. Most jobs run on an agent. A job represents an execution boundary of a set of steps. All the steps run together on the same agent.
-
-For example, you might build two configurations - x86 and x64. In this case, you have one build and two jobs.
-
-
-
-
-
-240
-MS Data Analyst
-To learn how to run a network port test, see Adjust communication settings for the on-premises data gateway.
-To get information on how to provide proxy information for your gateway, see Configure proxy settings for the on-premises data gateway.
-To find the current data center region that you're in, see Set the data center region.
-
-
-
-
-
-241
-Azure VDI Project
-. Autoscale is Azure Virtual Desktop’s native scaling feature that allows you to input scaling configurations for different days of the week and times of the day. Given this scaling configuration, Autoscale automatically turns on VMs according to your schedule and turns them off so that you no longer have to pay for unnecessary compute costs.
-
-
-
-
-
-242
-Microsoft Fabric Administration
-When you delete a capacity, the workspaces associated with the capacity are retained for seven days before they're deleted. If you have defined a workspace retention policy your workspaces are retained for the period specified. For more information about what happens to your files when you delete a capacity, see Fabric capacity deletion.
-
-
-
-
-
-243
-MS Dataverse
-The ParentContext provides information about any operation that triggers the plug-in or custom workflow activity to run.
-
-Except for specific documented cases, you should avoid taking a dependency on values that you find in the ParentContext to apply your business logic. The specific order in which operations occur is not guaranteed and may change over time.
-
-
-
-
-
-244
-Azure VM Image Builder
-Azure Stack HCI (Hyper-Converged Infrastructure) is a hybrid cloud solution provided by Microsoft that combines on-premises infrastructure with Azure services. Azure Stack HCI provides seamless integration with Azure services, enabling organizations to leverage features like Azure Backup, Azure Site Recovery, Azure Monitor, and more.
-
-
-
-
-
-245
-Azure Firewall
-Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instances in Secured Virtual Hubs and Hub Virtual Networks. Policies work across regions and subscriptions.
-
-
-
-
-
-246
-Python
-Remember that the initialization function in a class is named __init__() with 2 underscores before and after the word init. I tried to declare a class with 3 once, and it was embarrassing.
-
-
-
-
-
-247
-Python
-The !r flag in Python’s .format() method uses the repr() function to provide a developer-friendly string representation of an object.
-
-Conversely, the !s flag uses the str() function to produce a user-friendly string representation, which is generally more readable and concise.
-
-
-
-
-
-248
-Python
-Adding an equal sign after a variable or expression in an f-string creates a self-documenting expression. This feature is particularly useful for debugging because it not only shows the result of the expression but also the expression itself, making what is being evaluated clear. For example, print(f"{value = }") would output value = Suspicious value, showing both the variable name and its value.
-
-
-
-
-
-249
-Power Platform administration
-You use the Microsoft 365 admin center to create user accounts for every user who needs access to apps, flows, or chatbots. The user account registers the user with Microsoft Online Services environment.
-
-
-
-
-
-250
-Python
-When declaring a function, follow arguments with a colon and the desired type to designate a required type for that argument. For example
-
-def get_engagement_names(schedules: pd.DataFrame):
-    engagement_names = [
-        ' - '.join(row[['Account Name', 'EngagementName', 'Engagement Number']])
-        for _, row in schedules.iterrows()
-    ]
-    engagement_names = "\n".join(engagement_names)
-    return engagement_names
-
-
-
-
-
-251
-Power Platform administration
-You can use server-to-server (S2S) authentication to securely and seamlessly communicate between Dataverse and your web applications and services. S2S authentication is the common way that apps registered on Microsoft AppSource use to access the Dataverse data of their subscribers.
-
-
-
-
-
-252
+123
 Power Apps
 The Microsoft Trust Center is the primary resource for Power Platform compliance information. Learn more at Microsoft Compliance Offerings.
 
@@ -2197,45 +1118,34 @@ The Microsoft Trust Center is the primary resource for Power Platform compliance
 
 
 
-253
-Power Platform administration
-An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the functionality. Use this account to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, and so on). Because an administrative user doesn't have access to customer data nor any functionality, the user doesn't require a license (after setup).
+124
+Maths
+Microbiome research in mathematics often involves statistical analysis of the composition and function of microorganisms within a given environment, such as the human gut.
 
 
 
 
 
-254
-Power Platform
-Types of Logic Components:
-  Business process flow
-  Workflow
-  Actions
-  Business rule
-  Power Automate Flow
+125
+PP365
+The system also supports just-in-time (JIT) user provisioning. In this scenario, when users access an environment URL, access requirements are checked at the time of sign-in and qualified users are added to the environment.
 
 
 
 
 
-255
-Azure Key Vault Secrets
-When dealing with REST APIs or SDKs for Azure Key Vault, you'll commonly encounter date-time strings in ISO 8601 format, which look something like YYYY-MM-DDTHH:MM:SSZ for Coordinated Universal Time (UTC), or Unix timestamps which count the seconds since the Unix epoch (00:00:00 UTC on 1 January 1970).
+126
+Python
+>>> "Hello, {}! Today is {}.".format(name, day)
+'Hello, Pythonista! Today is Friday.'
+
+The method interpolates its arguments into the target string using replacement fields limited by curly brackets. Even though this method can produce hard-to-read code, it represents a significant advance over the modulo operator: it supports the string formatting mini-language.
 
 
 
 
 
-256
-Power Platform
-Type of Logic Component: Business process flow
-An online process that walks users through a standard business process. For example, use a business process flow if you want everyone to handle customer service requests the same way, or to require staff to gain approval for an invoice before submitting an order.
-
-
-
-
-
-257
+127
 Power BI
 In Power Query Diagnostics, 'Diagnose Step' is more useful for getting an insight into what evaluations are happening up to a single step, which can help you identify, up to that step, what performance is like as well as what parts of your query are being performed locally or remotely.
 
@@ -2243,245 +1153,7 @@ In Power Query Diagnostics, 'Diagnose Step' is more useful for getting an insigh
 
 
 
-258
-MS Data Analyst
-3. You have a table that stores account balance snapshots for each date, excluding weekends. You need to ensure that your measure formula only filters by a single date. Also, if no record is on the last date of a time period, it should use the latest account balance. Which DAX time intelligence function should you use? 
-
-The LASTNONBLANK function will return the last date in the filter context where a snapshot record exists. This option will help you achieve the objective.
-
-
-
-
-
-259
-Power BI
-In order for your single-partition-but-two-data-sources query to be allowed to run, its two data sources must be "compatible". In other words, it needs to be okay for data to be shared bidirectionally between them. This means that the privacy levels of both sources need to be Public, or both be Organizational, since these are the only two combinations that allow sharing in both directions.
-
-
-
-
-
-260
-Azure Naming Convention
-A VM name in Azure can be longer than the OS naming restrictions. Keeping Azure VM names shorter than the naming restrictions of the OS helps create consistency, improve communication when discussing resources, and reduce confusion when you're working in the Azure portal while being signed in to the VM itself.
-
-
-
-
-
-261
-General
-Hotpatching: A feature that allows for installing updates on virtual machines without the need for a reboot, minimizing downtime and disruption.
-
-
-
-
-
-262
-Python
-In Python’s unittest package, you can use fixtures to set up and tear down test environments for each test method. To do this, you can use the setUp() and tearDown() method, respectively. These methods are automatically called before and after each test method.
-
-
-
-
-
-263
-Python
-Many popular machine learning algorithms and datasets are built into TensorFlow and are ready to use. In addition to the built-in datasets, you can access Google Research Datasets or use Google’s Dataset Search to find even more.
-
-
-
-
-
-264
-Power Platform
-UI Component: Custom page (preview)
-	A canvas based page which allows flexible layout, low-code Fx functions, and Power Apps connector data. For more information, see Model-driven app custom page overview (preview)
-
-
-
-
-
-265
-Microsoft Fabric Administration
-As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization. You can take over a purchase or trial subscription, and then assign or unassign licenses.
-
-
-
-
-
-266
-Power Platform administration
-By default, all licensed users are created with an access mode of Read-Write. This access mode provides full access rights to the user based on the security privileges that are assigned.
-
-
-
-
-
-267
-Dataverse
-Event-Driven Architecture: Plug-ins operate on an event-driven architecture, meaning they are triggered by specific events within the Dataverse environment. These events can be actions like data creation, update, or deletion. Understanding the event model is crucial for effectively implementing and managing plug-ins.
-
-
-
-
-
-268
-MS Data Analyst
-Knowing how your report consumers are likely interacting with reports should influence your report designs. Consider the number of visuals that display together on the page, the complexity of visuals, spacing between visuals, and the use of interactive design elements such as tooltips, slicers, buttons, or filters.
-
-
-
-
-
-269
-Power Apps
-A web front-end cluster consists of an ASP.NET website that runs in the Azure App Service Environment. When a user visits a Power Platform service or application, the client's DNS service may get the most appropriate (usually nearest) datacenter from the Azure Traffic Manager. For more information, see Performance traffic-routing method for Azure Traffic Manager.
-
-
-
-
-
-
-
-270
-General
-Comprehensive Coverage: The European Stoxx 600 is renowned for its broad representation, encompassing large, mid, and small-cap companies from 17 different European countries. This extensive coverage makes it an essential indicator of the overall performance of the European equity markets.
-
-
-
-
-
-
-
-270
-General
-Sectoral Diversity: Within the European Stoxx 600, there is a rich mix of sectors represented, including financial services, healthcare, industrials, technology, and consumer goods. This diversity not only mitigates investment risk but also offers investors comprehensive exposure to the varied economic sectors across Europe.
-
-
-
-
-
-
-
-270
-General
-Benchmarking Tool: As a key benchmark, the European Stoxx 600 is extensively utilized by fund managers and institutional investors to assess the health of the European stock market. It serves as a crucial reference for evaluating performance and making informed asset allocation decisions within European equities.
-
-
-
-
-
-
-2466
-Azure Functions Quickstart
-The issue was an attempt to install the deprecated azure meta-package, which is no longer supported. The resolution involved installing the azure-functions package specifically for Python Azure Functions, enabling the successful setup and execution of the Azure Functions Python application.
-
-
-
-
-
-
-2466
-Azure Functions Quickstart
-Definition: A meta-package is a type of Python package that doesn't contain actual modules or libraries itself but is a collection of dependencies on other packages. It simplifies installation by grouping related packages under a single installable entity.
-
-
-
-
-
-
-
-2466
-Azure Functions Quickstart
-Purpose: Meta-packages are often used to provide a convenient way to install a set of packages that are commonly used together. This can be particularly useful in complex environments where multiple packages are needed to provide full functionality.
-
-
-
-
-
-
-
-2466
-Azure Functions Quickstart
-Example of Deprecation: As seen with the azure meta-package, meta-packages can be deprecated if the maintainer decides to focus on more granular packages or if the meta-package becomes unwieldy or unnecessary. Users must then switch to individual packages.
-
-
-
-
-
-
-2466
-Azure Functions Quickstart
-Checking Dependencies: You can view the dependencies of a meta-package by using tools like pip show or looking up the package on PyPI, which will list the included dependencies and their versions.
-
-
-
-
-
-
-
-2466
-Azure Functions Quickstart
-Maintenance: Meta-packages need to be maintained just like any other package. They should be updated to point to the latest, stable releases of their dependencies. If not properly maintained, they might pin outdated versions or lead to dependency conflicts.
-
-
-
-
-
-
-
-2466
-Azure Functions Quickstart
-You can connect your function to other Azure services by adding input and output bindings. Bindings connect your function to other services without you having to write the connection code.
-
-
-
-
-
-
-
-2466
-Azure Functions Quickstart
-Before you can publish your Functions project to Azure, you must have a function app and related resources in your Azure subscription to run your code. The function app provides an execution context for your functions. When you publish from Visual Studio Code to a function app in Azure, the project is packaged and deployed to the selected function app in your Azure subscription.
-
-
-
-
-
-
-
-2466
-Azure Functions Quickstart
-To call an HTTP-triggered function from a client, you need the function's URL, which is available after deployment to your function app. This URL includes any required function keys. You can use the extension to get these URLs for your deployed functions. If you just want to run the remote function in Azure, use the Execute function now functionality of the extension.
-
-
-
-
-
-
-
-2466
-Azure Functions Quickstart
-We recommend setting up continuous deployment so that your function app in Azure is updated when you update source files in the connected source location. You can also deploy your project files from Visual Studio Code. When you publish from Visual Studio Code, you can take advantage of the Zip deploy technology.
-
-
-
-
-
-
-
-
-2466
-Python
-Type hints in Python are purely optional and are not enforced by the Python interpreter. This means that adding type hints to your code does not affect its runtime behavior; they are used for static type checking, documentation, and code completion in development environments. Tools like mypy or integrated development environments (IDEs) can use these hints to catch type errors before runtime. 
-
-
-
-
-
-
-2466
+128
 Python
 3. Using type hints with dynamic or complex types
 Sometimes the type of a variable might not be straightforward, such as when it can be one of several types or when the type is not known until runtime. Python's typing module provides tools to handle these cases:
@@ -2497,58 +1169,39 @@ def get_length(item: Union[str, list]) -> int:
 
 
 
-
-2591
-Dataverse
-To successfully connect to your Dataverse, you must first register an app with Entra ID, which you can complete in the Azure portal. Depending on the type of app that you want to make, a few different settings are available for you to configure (web apps versus native apps that are installed natively on a device). For more information on settings required for each type, see Types of app registration.
-
-
-
-
-
-2591
-Python
-String interpolation allows you to create strings by inserting objects into specific places in a target string template. Python has several tools for string interpolation, including f-strings, the str.format() method, and the modulo operator (%). Python’s string module also provides the Template class, which you can use for string interpolation.
+129
+Power BI
+Multiple requests to the same data source can occur if multiple queries pull from that data source. These requests can happen even in a case where only one query references the data source. If that query is referenced by one or more other queries, then each query—along with all the queries it depends on—is evaluated independently.
 
 
 
 
 
-
-2591
-Python
-The modulo operator (%) came to make the syntax a bit better:
-
->>> "Hello, %s! Today is %s." % (name, day)
-'Hello, Pythonista! Today is Friday.'
-
-In this example, you use the modulo operator to insert the name and day variables into the string literals. The process of creating strings by inserting other strings into them, as you did here, is known as string interpolation.
+130
+Workera.ai
+Azure DDoS Network Protection, combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network.
 
 
 
 
 
-2591
-Python
-In eager string interpolation, Python inserts the values into the string at execution time in the same place where you define the string. In lazy string interpolation, Python delays the insertion until the string is actually needed. In this latter case, you create string templates at one point in your code and fill the template with values at another point.
+131
+Maths
+Centered log-ratio transformation: A technique used in compositional data analysis to allow the application of standard statistical techniques by transforming component proportions to log-scale relative to the geometric mean.
 
 
 
 
 
-2591
-Python
->>> "Hello, {}! Today is {}.".format(name, day)
-'Hello, Pythonista! Today is Friday.'
-
-The method interpolates its arguments into the target string using replacement fields limited by curly brackets. Even though this method can produce hard-to-read code, it represents a significant advance over the modulo operator: it supports the string formatting mini-language.
+132
+Workera.ai
+Low Latency: Availability Zones within the same region are connected through high-speed, low-latency networking. This ensures that applications distributed across multiple zones can communicate efficiently, providing both redundancy and high performance.
 
 
 
 
 
-
-2591
+133
 Python
 Another consideration to keep in mind is security. Because f-strings evaluate at runtime, they could potentially expose your application to code injection attacks if you don’t carefully sanitize users’ input before interpolatation.
 
@@ -2556,21 +1209,701 @@ Another consideration to keep in mind is security. Because f-strings evaluate at
 
 
 
+134
+Azure Pipelines
+Trigger
+A trigger is set up to tell the pipeline when to run. You can configure a pipeline to run upon a push to a repository at scheduled times or upon completing another build. All these actions are known as triggers.
 
-2591
+
+
+
+
+135
+Bicep
+Bicep can be used with the Azure CLI to build and deploy scripts to Azure 2.
+Bicep has a decompiler that can transform an existing ARM template into a Bicep file 2.
+
+
+
+
+
+136
+PP365
+You can call on-demand workflows from inside a business process flow. You can configure this from the new business process flow designer by dragging a workflow component to a process stage or to the Global Workflows section.
+
+
+
+
+
+137
+General
+Automatic VM guest patching: This refers to the automated process of updating the operating system of virtual machines hosted on Azure to ensure security and compliance with the latest patches.
+
+
+
+
+
+138
+Workera.ai
+Azure Resource Groups provide a logical way to organize and manage resources within the Azure cloud. A resource group is a container that holds related resources for an Azure solution, such as virtual machines, storage accounts, and virtual networks.
+
+
+
+
+
+139
+Site Scraping
+Use Selenium to navigate to desirable data - this involved moving the driver focus to iframes and then interacting with elements there
+  iframe = driver.find_elements(By.ID, 'tool')[0]
+  driver.switch_to.frame(iframe)
+  ...
+  driver.switch_to.parent_frame()
+  driver.switch_to.frame('data')
+  sleep(3)
+
+
+
+
+
+140
+PP365
+Environments can have zero or one Microsoft Dataverse database. The process for adding users to environments that have no Dataverse database differs from the process for environments that have one Dataverse database. For an overview of environments, see Environments overview.
+
+
+
+
+
+141
+General
+Patch orchestration: The coordination and management of the deployment of patches across multiple systems and applications within an Azure environment.
+
+
+
+
+
+142
 Python
-With f-strings, you can use a feature known as self-documenting expressions that adds an equal sign after the interpolated variable or expression. This feature can help you debug your code. 
+CRUD operations correspond to HTTP request methods as follows:
 
->>> value = "Suspicious value"
-
->>> print(f"{value = }")
-variable = 'Suspicious value'
-
-
+Create corresponds to POST
+Read corresponds to GET
+Update corresponds to PUT or PATCH
+Delete corresponds to DELETE
 
 
 
-2591
+
+
+143
+Maths
+Covariance-based multivariate analysis methods: Statistical techniques that analyze the covariance structure between multiple variables to understand the relationships and variabilities among them.
+
+
+
+
+
+144
+Azure Key Vault Secrets
+When dealing with REST APIs or SDKs for Azure Key Vault, you'll commonly encounter date-time strings in ISO 8601 format, which look something like YYYY-MM-DDTHH:MM:SSZ for Coordinated Universal Time (UTC), or Unix timestamps which count the seconds since the Unix epoch (00:00:00 UTC on 1 January 1970).
+
+
+
+
+
+145
+Dataverse
+Event-Driven Architecture: Plug-ins operate on an event-driven architecture, meaning they are triggered by specific events within the Dataverse environment. These events can be actions like data creation, update, or deletion. Understanding the event model is crucial for effectively implementing and managing plug-ins.
+
+
+
+
+
+146
+Python
+One of the main special features of PyTorch is that it adds a C++ module for autodifferentiation to the Torch backend. Autodifferentiation automatically calculates the gradient of the functions defined in torch.nn during backpropagation.
+
+
+
+
+
+147
+Python
+To display the same calendar programmatically in your script, you can use one of the following methods:
+
+>>> import calendar
+>>> text_calendar = calendar.TextCalendar()
+>>> print(text_calendar.formatyear(1989))
+>>> text_calendar.pryear(1989)
+>>> calendar.prcal(1989)
+
+
+
+
+
+148
+MS Data Analyst
+To develop Python visuals, you need to have Python installed on your machine. Many Python packages are supported in Power BI, but not all. See Learn which Python packages are supported in Power BI for a complete list of supported packages and Python visual limitations.
+
+
+
+
+
+149
+Workera.ai
+Automatic Replication and Failover: Certain services, such as Azure Storage, automatically replicate data between region pairs. This replication helps ensure that your data is always available, even if one region experiences an outage. Additionally, Azure prioritizes the restoration of services in region pairs to ensure a quicker recovery time.
+
+
+
+
+
+150
+Azure Functions Quickstart
+Purpose: Meta-packages are often used to provide a convenient way to install a set of packages that are commonly used together. This can be particularly useful in complex environments where multiple packages are needed to provide full functionality.
+
+
+
+
+
+151
+Terraform
+The terraform show command can generate human-readable versions of a state file or plan file, or generate machine-readable versions that can be integrated with other tools.
+
+
+
+
+
+152
+Azure Functions Quickstart
+Definition: A meta-package is a type of Python package that doesn't contain actual modules or libraries itself but is a collection of dependencies on other packages. It simplifies installation by grouping related packages under a single installable entity.
+
+
+
+
+
+153
+Power Platform Administration
+Relevance Search Integration: Quick Find can be integrated with Dataverse's Relevance Search feature, which leverages Azure Search to provide more advanced search capabilities. This includes full-text search, relevance scoring, and the ability to search across multiple entities at once. Relevance Search enhances the Quick Find experience by providing more powerful and flexible search options, making it easier to locate records across the Dataverse environment.
+
+
+
+
+
+154
+Python
+In contrast, f-strings perform eager interpolation and are not suitable for these scenarios. You can learn more about the differences and use cases for these methods in the Using F-strings vs .format() vs % section in the tutorial.
+
+
+
+
+
+155
+Python
+By default, PyTorch uses eager mode computation. You can run a neural net as you build it, line by line, which makes it easier to debug. It also makes it possible to construct neural nets with conditional execution. This dynamic execution is more intuitive for most Python programmers.
+
+
+
+
+
+156
+Microsoft Copilot Studio
+The URL used in your copilot represents the scope of content for generating responses. There are requirements and restrictions on some URLs.
+
+URLs that point to a website, requiring authentication or ones not indexed by Bing.
+
+For example, wikis and SharePoint sites require authentication, therefore can't be used:
+
+fabrikam.visualstudio.com/project/_wiki
+fabrikam.sharepoint.com
+
+
+
+
+
+157
+General
+Comprehensive Coverage: The European Stoxx 600 is renowned for its broad representation, encompassing large, mid, and small-cap companies from 17 different European countries. This extensive coverage makes it an essential indicator of the overall performance of the European equity markets.
+
+
+
+
+
+158
+Python
+In Python, a sequence is a category of data types that has certain characteristics and supports specific operations.
+
+
+
+
+
+159
+PP365
+In most cases, adding users to an environment only gives users access to the environment itself, not to any resources (apps and data) in the environment. You need to configure access to resources by assigning security roles to users.
+
+
+
+
+
+160
+Power BI
+Both GUID and ObjectsIDs may be used interchangeably. Each Report ObjectId is uniquely represented by a 32 hexadecimal GUID (a globally unique identifier).
+
+
+
+
+
+161
+MS Data Analyst
+Rule of Thirds, Viewer Connection: The rule of thirds can help you anticipate or control how viewers’ eyes will move from one part of the screen to another1. This can enhance the viewer’s connection with your data story and make your visualization more impactful.
+
+
+
+
+
+162
+Microsoft Copilot Studio
+The URL used in your copilot represents the scope of content for generating responses. There are requirements and restrictions on some URLs.
+
+If the URL provided redirects to another top-level site, the content isn't included in results:
+
+For example, if www.fabrikam.com redirects to www.contoso.fabrikam.com, your copilot doesn't generate responses from content on either of those URLs.
+
+
+
+
+
+163
+Workera.ai
+Function as a service (FaaS) is a cloud-computing service that allows customers to run code in response to events, without managing the complex infrastructure typically associated with building and launching microservices applications.
+
+
+
+
+
+164
+Dataverse
+Security and Performance: When developing and deploying plug-ins, it’s important to consider both security and performance. Plug-ins should be thoroughly tested to ensure they do not introduce vulnerabilities or degrade system performance. Proper error handling, efficient code, and adhering to best practices for security and optimization are essential.
+
+
+
+
+
+165
+Microsoft Fabric Administration
+Admins can enable and disable global platform settings by controlling the Tenant settings. If your organization has one tenant, you can enable and disable settings for the entire organization from that tenant. Organizations with multiple tenants require an admin for each tenant
+
+
+
+
+
+166
+Azure VDI Project
+Temporary profile	
+A fail-safe profile is created when a user's roaming profile has problems loading. It's discarded at sign-out.
+
+
+
+
+
+167
+Microsoft Fabric Administration
+Power BI Premium - A capacity that was bought as part of a Power BI Premium subscription. These capacities use P SKUs.
+
+ Note
+Power BI capacities are transitioning to Fabric. For more information, see Power BI Premium transition to Microsoft Fabric.
+
+
+
+
+
+168
+Fabric Administration
+You can also assign users to roles by using PowerShell. Users are managed in Microsoft Graph PowerShell. If you don't already have the Microsoft Graph PowerShell SDK, download and install the latest version.
+
+
+
+
+
+169
+General
+To format the imaginary part of a complex number to one decimal place using f-strings, you use the .imag property of the complex number and apply the format specifier .1f:
+
+value = 3.474 + 2.323j
+formatted_imaginary = f"{value.imag:.1f}"
+
+
+
+
+
+170
+Python
+TorchText is part of the PyTorch ecosystem and is designed to handle text data for natural language processing tasks. It offers tools for managing data loading, applying text transformations, and integrating with datasets.
+
+This library simplifies tasks like text classification and language modeling by making vocabulary creation and tokenization more straightforward.
+
+
+
+
+
+171
+Azure VDI Project
+To build images, you create a template as a JSON file. In the template, you define builders and provisioners that carry out the actual build process. Packer has a builder for Azure that allows you to define Azure resources, such as the service principal credentials created in the preceding step.
+
+
+
+
+
+172
+Azure Functions Quickstart
+Maintenance: Meta-packages need to be maintained just like any other package. They should be updated to point to the latest, stable releases of their dependencies. If not properly maintained, they might pin outdated versions or lead to dependency conflicts.
+
+
+
+
+
+173
+PP365
+Users who have been assigned service admin roles or the Global admin role, assigned through the Microsoft 365 admin center, will get the System Administrator role by default. They will have admin privileges to the environment's resources when they get added to the environment.
+
+
+
+
+
+174
+Python
+In Python, an immutable sequence is one that you can’t change once it’s been created. Immutable built-in sequences include tuples and strings.
+
+
+
+
+
+175
+MS Data Analyst
+3. You have a table that stores account balance snapshots for each date, excluding weekends. You need to ensure that your measure formula only filters by a single date. Also, if no record is on the last date of a time period, it should use the latest account balance. Which DAX time intelligence function should you use? 
+
+The LASTNONBLANK function will return the last date in the filter context where a snapshot record exists. This option will help you achieve the objective.
+
+
+
+
+
+176
+Python
+You don’t need to use a dedicated tool to create a README file for your project. You can use any plain text editor for this task. However, there are many tools available that can help automate the README creation process. You can read more about this in the section on tools for README creation.
+
+
+
+
+
+177
+MS Dataverse
+There are several deprecated specialized messages that perform update operations. In earlier versions it was required to use these messages, but now the same operations should be performed using IOrganizationService.Update or UpdateRequest class with IOrganizationService.Execute
+
+
+
+
+
+178
+Azure Functions Quickstart
+Example of Deprecation: As seen with the azure meta-package, meta-packages can be deprecated if the maintainer decides to focus on more granular packages or if the meta-package becomes unwieldy or unnecessary. Users must then switch to individual packages.
+
+
+
+
+
+179
+Azure VDI Project
+Mandatory profile	
+A mandatory profile is a roaming user profile that an administrator has preconfigured to specify settings for users. With mandatory user profiles, a user can modify their desktop, but the changes aren't saved when the user signs out. The next time the user signs in, the mandatory user profile that the administrator created is downloaded. Mandatory profiles are typically used in a kiosk environment.
+
+
+
+
+
+180
+Python
+The two most commonly used markup languages for README files are Markdown and reStructuredText. Markdown is a lightweight markup language that allows you to style a plain text file using formatting techniques like headings, emphasis, lists, images, and links. reStructuredText is an easy-to-read, what-you-see-is-what-you-get plain text markup language that uses intuitive constructs to indicate a document’s structure.
+
+
+
+
+
+181
+Maths
+Regularity conditions are mathematical conditions or assumptions required for certain statistical methods to be valid, like smoothness and boundedness of functions involved in estimation or hypothesis testing.
+
+
+
+
+
+182
+Python
+The calendar.HTMLCalendar class has a method called .formatyearpage() which allows you to include a CSS stylesheet for styling the calendar. This method has an optional parameter named css that defaults to 'calendar.css'. This parameter refers to the name of the CSS file that will include the custom styles.
+
+
+
+
+
+183
+Azure VDI Project
+Type of HCL Block:
+build blocks contain configuration for a specific combination of builders, provisioners, and post-processors used to create a specific image artifact.
+
+
+
+
+
+184
+Python
+The .format() method in Python supports different configurations for string interpolation:
+
+Empty replacement fields use the default order of arguments.
+Zero-based indices allow you to specify the order of arguments.
+Named replacement fields improve readability by matching the arguments’ names in the method call.
+
+
+
+
+
+185
+Maths
+Compositional data refers to vectors of positive measurements which carry relative information, commonly analyzed in parts-per-whole relationships.
+
+
+
+
+
+186
+Azure Functions Quickstart
+To call an HTTP-triggered function from a client, you need the function's URL, which is available after deployment to your function app. This URL includes any required function keys. You can use the extension to get these URLs for your deployed functions. If you just want to run the remote function in Azure, use the Execute function now functionality of the extension.
+
+
+
+
+
+187
+Power BI
+The following query will output a table that is essentially just 3 columns of the dimstaff table renamed.
+EVALUATE
+SELECTCOLUMNS (
+    DimStaff,
+    "name", DimStaff[Staff],
+    "start_date", DimStaff[HireDate],
+    "term_date", DimStaff[TerminationDate]
+)
+
+
+
+
+
+188
+Power Platform administration
+A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user doesn't exist in customer engagement apps. This user can't sign in, can't be enabled, and can't be synchronized to Microsoft 365. This type of user can only be created through data import.
+
+
+
+
+
+189
+Python
+Most README files include common sections like the project’s name, setup instructions, and contributing guidelines.
+
+These sections help users understand what the project is about, how to get it running, and how they can contribute.
+
+
+
+
+
+190
+Python
+Remember that the initialization function in a class is named __init__() with 2 underscores before and after the word init. I tried to declare a class with 3 once, and it was embarrassing.
+
+
+
+
+
+191
+Power Platform
+Type of Logic Component: Business process flow
+An online process that walks users through a standard business process. For example, use a business process flow if you want everyone to handle customer service requests the same way, or to require staff to gain approval for an invoice before submitting an order.
+
+
+
+
+
+192
+Python
+Named replacement fields allow you to insert values from a dictionary into a string by using keys. This method is more readable and intuitive than using positional arguments with tuples.
+
+
+
+
+
+193
+Power BI
+When a query is evaluated with the Firewall on, the Firewall divides the query and all its dependencies into partitions (that is, groups of steps). Anytime one partition references something in another partition, the Firewall replaces the reference with a call to a special function called Value.Firewall.
+
+
+
+
+
+194
+Workera.ai
+Azure Databricks: Optimized for advanced analytics and machine learning with a collaborative, Apache Spark-based environment.
+
+
+
+
+
+195
+Power Platform Administration
+Why is my storage consumption decreasing in database and growing in file?
+We are constantly optimizing the Dataverse for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as “Annotation” and “Attachment” is moving from database to file storage. This leads to decreased usage of database capacity and an increase in file capacity.
+
+
+
+
+
+196
+Maths
+Derive the null distribution: This involves calculating the expected probability distribution of a test statistic under the null hypothesis, which assumes no effect or no difference.
+
+
+
+
+
+197
+Azure Naming Convention
+A VM name in Azure can be longer than the OS naming restrictions. Keeping Azure VM names shorter than the naming restrictions of the OS helps create consistency, improve communication when discussing resources, and reduce confusion when you're working in the Azure portal while being signed in to the VM itself.
+
+
+
+
+
+198
+Python
+>>> import math
+>>> math.pi
+3.141592653589793
+>>> f"{math.pi:.4f}"
+'3.1416'
+>>> "{pi:.4f}".format(pi=math.pi)
+'3.1416'
+
+
+
+
+
+199
+Azure Naming Convention
+Some of these example names use a three-digit padding scheme (###), such as mktg-prod-001.
+
+Padding improves readability and sorting of assets when those assets are managed in a configuration management database (CMDB), IT Asset Management tool, or traditional accounting tools.
+
+
+
+
+
+200
+Azure VDI Project
+. Autoscale is Azure Virtual Desktop’s native scaling feature that allows you to input scaling configurations for different days of the week and times of the day. Given this scaling configuration, Autoscale automatically turns on VMs according to your schedule and turns them off so that you no longer have to pay for unnecessary compute costs.
+
+
+
+
+
+201
+Python
+When you try to create an instance of a class that inherits from the Sequence abstract base class, but doesn’t implement .__getitem__() and .__len__(), then Python raises a TypeError:
+
+The Sequence abstract base class requires that any class that inherits from it must implement the .__getitem__() and .__len__() methods.
+
+
+
+
+
+202
+Python
+PyTorch was developed by Facebook and was first publicly released in 2016. Because Python programmers found it so natural to use, PyTorch rapidly gained users, inspiring the TensorFlow team to adopt many of PyTorch’s most popular features in TensorFlow 2.0.
+
+
+
+
+
+203
+Dataverse 
+We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Microsoft Power Platform admin center to quickly view adoption and user metrics for your organization.
+
+I can see these! They don't say much about what individuals are looking at, from what I saw when glancing at the reports.
+
+
+
+
+
+204
+Azure Functions Quickstart
+Checking Dependencies: You can view the dependencies of a meta-package by using tools like pip show or looking up the package on PyPI, which will list the included dependencies and their versions.
+
+
+
+
+
+205
+MS Data Analyst
+Disadvantages of Filters vs Slicers
+The Filters pane offers less design flexibility, though you can style it by using specific fonts and colors.
+
+Careful consideration should be made to hide certain filters to avoid confusing report consumers.
+
+It can be easy to lose track of applied visual-level filters.
+
+
+
+
+
+206
+PP365
+Although the business process flow control in the form does not provide any direct client-side programmability, changes applied by business rules or form scripts are automatically applied to business process flow controls.
+
+
+
+
+
+207
+Power Apps
+A web front-end cluster consists of an ASP.NET website that runs in the Azure App Service Environment. When a user visits a Power Platform service or application, the client's DNS service may get the most appropriate (usually nearest) datacenter from the Azure Traffic Manager. For more information, see Performance traffic-routing method for Azure Traffic Manager.
+
+
+
+
+
+208
+Power BI
+Power Query provides two easy ways to create parameters:
+
+From an existing query: Right-click a query whose value is a simple non-structured constant, such as a date, text, or number, and then select Convert to Parameter.
+Using the Manage Parameters window: Select the New Parameter option from the dropdown menu of Manage Parameters in the Home tab. Or launch the Manage Parameters window and select New on the top to create a parameter. Fill in this form, and then select OK to create a new parameter.
+
+
+
+
+
+209
+Power BI
+A warning with query diagnostics, as mentioned elsewhere, is that you'll see drastically different capabilities depending on the connector. For example, many ODBC based connectors won't have an accurate recording of what query is send to the actual backend system, as Power Query only sees what it sends to the ODBC driver.
+
+
+
+
+
+210
+Child Services AWS Review
+Mainframe-as-a-Service (MFaaS) is a subscription-based model that addresses the challenges of an aging mainframe while providing flexibility and scalability for future growth. MFaaS is hosted at a provider’s data center or partners’, offering a cloud-like experience.
+
+
+
+
+
+211
 Python
 The modulo operator (%) is the oldest tool for performing string interpolation in Python. Even though you can use this operator for both eager and lazy string interpolation, the syntax could be more readable and clean.
 
@@ -2584,7 +1917,243 @@ You need to insert conversion specifiers into your strings and then use the modu
 
 
 
-2591
+
+212
+Power BI
+When you display the usage metrics report, Power BI generates a pre-built report. It contains usage metrics for that content for the last 30 days. The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, and so on.
+
+
+
+
+
+213
+MS Dataverse
+Fiddler is a web debugging proxy used to view HTTP traffic on your computer. Viewing this data is useful when debugging scripts. By default, HTTP requests and responses sent using Invoke-RestMethod cmdlet won't be visible using Fiddler
+
+
+
+
+
+214
+Power Platform administration
+To disable a user account, remove a license from the user or remove the user from the security group that's associated with an environment. Removing a user from the security group doesn't remove the user's license. If you want to make the license available to another user, you have to remove the license from the user account that was disabled.
+
+
+
+
+
+215
+Workera.ai
+Persisted parameter values are stored in the working directory of the Azure storage account used by Azure Cloud Shell. If you are using a local install of the Azure CLI, values are stored in the working directory on your machine.
+
+
+
+
+
+216
+Python
+In eager string interpolation, Python inserts the values into the string at execution time in the same place where you define the string. In lazy string interpolation, Python delays the insertion until the string is actually needed. In this latter case, you create string templates at one point in your code and fill the template with values at another point.
+
+
+
+
+
+217
+Azure VM Image Builder
+1. Which of the following procedures should an administrator employ to generalize a Windows VM in preparation for creating a managed image in Azure? 
+
+Run Sysprep.exe, select the Generalize check box, and then in the Shutdown Options list, select Shutdown.
+
+
+
+
+
+218
+PP365
+Trial (standard): This is the type of trial environment that companies can use to allow users and department managers to try new features and quickly build low-code and no-code applications and processes. Organization (tenant) admins can enable all users to create trials, or only tenant admins. If allowed for users, any user from that organization who has a suitable license can create a 30-day trial environment.
+
+
+
+
+
+219
+Python
+Adding an equal sign after a variable or expression in an f-string creates a self-documenting expression. This feature is particularly useful for debugging because it not only shows the result of the expression but also the expression itself, making what is being evaluated clear. For example, print(f"{value = }") would output value = Suspicious value, showing both the variable name and its value.
+
+
+
+
+
+220
+PP365
+Power Apps Offline Use enables users to continue working with their apps even when they are not connected to the internet. This feature is crucial for scenarios where consistent internet access is not guaranteed, such as in remote locations or fieldwork.
+
+
+
+
+
+221
+Python
+A Session object is a class for running TensorFlow operations. It contains the environment in which Tensor objects are evaluated and Operation objects are executed, and it can own resources like tf.Variable objects. The most common way to use a Session is as a context manager.
+
+
+
+
+
+222
+Power BI Desktop
+Writeback: Writeback enables business users to explore what-if scenarios by changing cell values. Custom applications can apply changes to the data source. Tables that aren't cached can display changes immediately, which allows instant analysis of the effects.
+
+
+
+
+
+223
+Workera.ai
+Serverless and Functions-as-a-Service (FaaS) are often conflated with one another but the truth is that FaaS is actually a subset of serverless.
+
+Serverless is focused on any service category, be it compute, storage, database, messaging and api gateways where configuration, management and billing of servers are invisible to the user.
+
+
+
+
+
+224
+Azure VM Image Builder
+Azure Stack HCI (Hyper-Converged Infrastructure) is a hybrid cloud solution provided by Microsoft that combines on-premises infrastructure with Azure services. Azure Stack HCI provides seamless integration with Azure services, enabling organizations to leverage features like Azure Backup, Azure Site Recovery, Azure Monitor, and more.
+
+
+
+
+
+225
+PP365
+Solution Explorer is a feature within Microsoft Dataverse and Power Apps that allows users to manage the components of their applications. It provides a centralized interface to view, add, modify, and remove components such as entities, fields, forms, views, charts, dashboards, plugins, workflows, and more.
+
+
+
+
+
+226
+Azure VDI Project
+A user profile is a collection of configurations that the user or administrator made to represent the state of a system. Various system components bind to a user's profile. These components include applications, registry entries, and other customized entries.
+
+
+
+
+
+227
+Workera.ai
+Azure Data Lake Analytics: Best for on-demand analytics jobs with a serverless model, utilizing U-SQL.
+
+
+
+
+
+228
+Power Platform
+Type of Logic Component: Business rule
+Used to apply rule or recommendation logic to a form, such as to set column requirements, hide columns, or validate data. App designers use a simple interface to implement and maintain fast-changing and commonly used rules.
+
+
+
+
+
+229
+Workera.ai
+Geographical Separation: Azure Region Pairs consist of two regions within the same geography but separated by a significant distance to protect against regional disasters. This ensures that in the event of a natural disaster or significant outage in one region, the paired region remains operational, thereby providing enhanced disaster recovery capabilities.
+
+
+
+
+
+230
+Python
+The primary purpose of a README file is to help users and developers understand the project’s purpose, how to use it, and how to contribute to it. It’s often the first piece of documentation that people see and serves as a short guide to the project. For more detailed documentation, wikis or dedicated documentation pages are recommended.
+
+
+
+
+
+231
+Power BI
+If there are data sources being accessed within the partition, and data flowing in from other partitions, the Firewall loses its ability to be the gatekeeper, since the data flowing in could be leaked to one of the internally accessed data sources without it knowing about it. Thus the Firewall prevents a partition that accesses other partitions from being allowed to directly access any data sources.
+
+
+
+
+
+232
+Azure DevOps Access Levels
+Feature-Rich IDE: Visual Studio Enterprise offers a wide range of features tailored to professional developers. These include advanced debugging tools, code navigation and analysis capabilities, integrated testing tools, and support for various programming languages and frameworks such as C#, C++, Python, and JavaScript. It also provides built-in support for version control systems like Git and Azure DevOps.
+
+
+
+
+
+233
+Workera.ai
+A workload is a distinct capability or task that's logically separated from other tasks, in terms of business logic and data storage requirements. Each workload defines a set of requirements for availability, scalability, data consistency, and disaster recovery
+
+
+
+
+
+234
+Dataverse
+Extend Functionality: Plug-ins in Dataverse are designed to extend the platform's functionality. They allow users to add new features or customize existing ones to better meet specific needs. This can include data integration, automation of tasks, or enhanced user interfaces.
+
+
+
+
+
+235
+Power BI
+In order for your single-partition-but-two-data-sources query to be allowed to run, its two data sources must be "compatible". In other words, it needs to be okay for data to be shared bidirectionally between them. This means that the privacy levels of both sources need to be Public, or both be Organizational, since these are the only two combinations that allow sharing in both directions.
+
+
+
+
+
+236
+MS Dataverse
+As a developer, you will use the Plug-in Registration tool to configure plug-ins, Azure integrations, virtual table data providers, and Webhooks to respond to events that are provided by the event framework.
+
+
+
+
+
+237
+MS Dataverse
+The capability to extend the default behavior of Microsoft Dataverse depends on detecting when events occur on the server. The Event Framework provides the capability to register custom code to be run in response to specific events.
+
+
+
+
+
+238
+General
+NPS stands for Net Promoter Score, which is a common metric used in customer experience programs. An NPS score measures customer loyalty by looking at their likelihood of recommending a given business.
+
+Your NPS score is measured with a single-question survey and reported with a number ranging from -100 to +100, where a higher score is desirable.
+
+
+
+
+
+239
+Azure Functions
+The Azure Functions extension to VS Code provides these benefits
+
+	• Edit, Build, and run functions on your local development computer.
+	• Publish your Azure functions project directly to Azure.
+Write your functions in various languages while taking advantage of the benefit of Visual Studio Code.
+
+
+
+
+
+240
 Python
 You can also use dictionaries and named replacement fields:
 
@@ -2598,132 +2167,57 @@ In this example, the modulo operator inserts each value using the corresponding 
 
 
 
-2591
-Python
->>> import math
->>> math.pi
-3.141592653589793
->>> f"{math.pi:.4f}"
-'3.1416'
->>> "{pi:.4f}".format(pi=math.pi)
-'3.1416'
 
+241
+MS Data Analyst
+At report design time in Microsoft Power BI Desktop, you can create measures (except when the model is a live connection to SQL Server Analysis Services multidimensional model). These measures belong to the report, and so they're called report-level measures.
 
 
 
-2704
-Workera.ai
-Serverless and Functions-as-a-Service (FaaS) are often conflated with one another but the truth is that FaaS is actually a subset of serverless.
 
-Serverless is focused on any service category, be it compute, storage, database, messaging and api gateways where configuration, management and billing of servers are invisible to the user.
 
+242
+PP365
+Power Apps data exports have a 12 minute time limit. If the volume of data exported exceeds 12 minutes the export will fail. If this occurs, export data in smaller segments.
 
 
 
 
-2704
-Workera.ai
-Function as a service (FaaS) is a cloud-computing service that allows customers to run code in response to events, without managing the complex infrastructure typically associated with building and launching microservices applications.
 
+243
+Azure Functions Quickstart
+The issue was an attempt to install the deprecated azure meta-package, which is no longer supported. The resolution involved installing the azure-functions package specifically for Python Azure Functions, enabling the successful setup and execution of the Azure Functions Python application.
 
 
 
 
-2704
-Workera.ai
-To ensure that a cloud-based web application can handle sudden spikes in traffic, which metric of the load balancer should be used to set an alert?
-Queue Length
 
+244
+General
+Application Health Extension: An add-on for Azure virtual machines that monitors the health of applications and automatically performs corrective actions if an unhealthy state is detected.
 
 
 
 
-2704
-Workera.ai
-Software-Defined Networking (SDN) is an approach to networking that uses software-based controllers or application programming interfaces (APIs) to communicate with underlying hardware infrastructure and direct traffic on a network.
 
+245
+Power Platform
+UI Component: Custom page (preview)
+	A canvas based page which allows flexible layout, low-code Fx functions, and Power Apps connector data. For more information, see Model-driven app custom page overview (preview)
 
 
 
 
 
-2704
-Workera.ai
-Software-Defined Networking (SDN)  differs from that of traditional networks, which use dedicated hardware devices (i.e., routers and switches) to control network traffic. SDN can create and control a virtual network – or control a traditional hardware – via software.
+246
+Maths
+Diagonal matrix of a matrix: A square matrix in which the entries outside the main diagonal are all zero.
 
 
 
 
-2704
-Workera.ai
-Cold start in computing refers to a problem where a system or its part was created or restarted and is not working at its normal operation. The problem can be related to initialising internal objects or populating cache or starting up subsystems.
 
-
-
-
-
-
-2704
-Workera.ai
-Azure DDoS Network Protection, combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network.
-
-
-
-
-
-2704
-Workera.ai
-DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains the same core engineering features as DDoS Network Protection, but will differ in the following value-added services: DDoS rapid response support, cost protection, and discounts on WAF. 
-
-
-
-
-
-2704
-Workera.ai
-High Availability: By deploying applications across multiple Availability Zones, you can achieve higher availability and uptime. Azure guarantees a 99.99% uptime for Virtual Machines deployed in two or more Availability Zones, making it a reliable choice for mission-critical applications.
-
-
-
-
-
-
-2704
-Workera.ai
-Low Latency: Availability Zones within the same region are connected through high-speed, low-latency networking. This ensures that applications distributed across multiple zones can communicate efficiently, providing both redundancy and high performance.
-
-
-
-
-
-
-
-2704
-Workera.ai
-Geographical Separation: Azure Region Pairs consist of two regions within the same geography but separated by a significant distance to protect against regional disasters. This ensures that in the event of a natural disaster or significant outage in one region, the paired region remains operational, thereby providing enhanced disaster recovery capabilities.
-
-
-
-
-
-
-2704
-Workera.ai
-Automatic Replication and Failover: Certain services, such as Azure Storage, automatically replicate data between region pairs. This replication helps ensure that your data is always available, even if one region experiences an outage. Additionally, Azure prioritizes the restoration of services in region pairs to ensure a quicker recovery time.
-
-
-
-
-
-
-2704
-Workera.ai
-Azure Data Lake Analytics: Best for on-demand analytics jobs with a serverless model, utilizing U-SQL.
-
-
-
-
-2704
+247
 Workera.ai
 Azure HDInsight: Suitable for diverse big data processing needs with open-source frameworks but requires infrastructure management.
 
@@ -2731,112 +2225,411 @@ Azure HDInsight: Suitable for diverse big data processing needs with open-source
 
 
 
-2704
-Workera.ai
-Azure Databricks: Optimized for advanced analytics and machine learning with a collaborative, Apache Spark-based environment.
-
-
-
-
-2704
-Workera.ai
-Azure Synapse Analytics: Comprehensive platform for integrating data warehousing and big data analytics with flexible resource options and extensive feature sets.
+248
+MS Data Analyst
+Compatibility: Display folders are compatible with most Power BI data sources, including imported data, DirectQuery, and Live Connection. However, there are some limitations when using display folders with certain data sources, such as Analysis Services.
 
 
 
 
 
-
-2704
-Workera.ai
-Persisted parameter values are stored in the working directory of the Azure storage account used by Azure Cloud Shell. If you are using a local install of the Azure CLI, values are stored in the working directory on your machine. 
-
-
-
-
-
-2704
-Workera.ai
-Azure IoT Hub
-Purpose and Use Cases:
-
-Core IoT Service: Azure IoT Hub is a foundational service designed to provide the connectivity and messaging infrastructure required for building sophisticated IoT solutions.
-Customization: It's ideal for developers who need a highly customizable solution and have the expertise to build and manage the IoT application layer themselves.
+249
+PP365
+You can design business process flows that tie together the rows for up to five different tables into a single process so that people using the app can focus on the flow of their process rather than on which table they are working in. They can more easily navigate between related table rows.
 
 
 
 
 
-2704
-Workera.ai
-Azure IoT Central
-Purpose and Use Cases:
-
-Managed IoT Application Platform: Azure IoT Central is a fully managed IoT SaaS (Software as a Service) offering that simplifies the creation and management of IoT solutions.
-Ease of Use: Designed for business users and those who need to quickly deploy and manage IoT solutions without deep technical knowledge.
-
-
-
-
-
-2704
-Workera.ai
-A workload is a distinct capability or task that's logically separated from other tasks, in terms of business logic and data storage requirements. Each workload defines a set of requirements for availability, scalability, data consistency, and disaster recovery
-
-
-
-
-
-2704
-Workera.ai
-Azure Service Health notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime. Configure customizable cloud alerts and use your personalized dashboard to analyze health issues, monitor the impact to your cloud resources, get guidance and support, and share details and updates.
-
-
-
-
-
-2704
-Powershell
-Get-Service | Format-List
-This command formats information about services on the computer as a list. By default, the services are formatted as a table. The Get-Service cmdlet gets objects representing the services on the computer. The pipeline operator (|) passes the results through the pipeline to Format-List. Then, the Format-List command formats the service information in a list and sends it to the default output cmdlet for display.
-
-
-
-
-
-2804
+250
 Python
-The primary purpose of a README file is to help users and developers understand the project’s purpose, how to use it, and how to contribute to it. It’s often the first piece of documentation that people see and serves as a short guide to the project. For more detailed documentation, wikis or dedicated documentation pages are recommended.
+When it comes to pre-trained models, TensorFlow Hub steps in with models that you can use right away, like ResNet and MobileNet. You can save time by using these models to recognize patterns or objects in images so you don’t have to start from scratch.
 
 
 
 
-2804
+
+251
+Power BI
+Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they're On by default for all users in the organization. See Audit and usage metrics in the Admin portal article for details on these settings.
+
+
+
+
+
+252
+Power Apps
+While they're called model-driven apps, it is often easier to think of them as data model driven apps. This is because, without a data model housed within Microsoft Dataverse, you can't create a model-driven app.
+
+
+
+
+
+253
+MS Data Analyst
+Knowing how your report consumers are likely interacting with reports should influence your report designs. Consider the number of visuals that display together on the page, the complexity of visuals, spacing between visuals, and the use of interactive design elements such as tooltips, slicers, buttons, or filters.
+
+
+
+
+
+254
+Azure AI Search
+An end-to-end exploration of core search features can be accomplished in four steps:
+
+Decide on a tier and region. One free search service is allowed per subscription. All quickstarts can be completed on the free tier. For more capacity and capabilities, you'll need a billable tier.
+Create a search service in the Azure portal.
+Start with Import data wizard. Choose a built-in sample or a supported data source to create, load, and query an index in minutes.
+Finish with Search Explorer, using a portal client to query the search index you just created.
+
+
+
+
+
+255
+Power BI
+At its most basic level, a partition is just a collection of one or more query steps. The most granular partition possible (at least in the current implementation) is a single step. The largest partitions can sometimes encompass multiple queries.
+
+
+
+
+
+256
+Azure VM Image Builder
+Azure Resource Providers are essentially services within the Azure ecosystem that manage specific types of Azure resources. When you interact with Azure, whether through the Azure Portal, Azure CLI, Azure PowerShell, REST APIs, or SDKs, you're often dealing with these resources. Each resource provider specializes in a particular category of resources, such as virtual machines, storage accounts, databases, etc.
+
+
+
+
+
+257
+Site Scraping
+I had to use the os.path abspath function to get the absolute path of the file I created for the sake of sending it as an email attachment.
+  from os.path import abspath
+  ...
+  newmail.Attachments.Add(Source = abspath(relative_output_path))
+  newmail.Send()
+
+
+
+
+
+258
+Azure VDI Project
+1. You have a group of developers that need virtual desktops that they can manage. What type of host pool do you create for them? 
+
+With a personal host pool, each user has their own dedicated VM. They can be a local administrator for their VM to manage app installation.
+
+
+
+
+
+259
+General
+The getcontext() function from the decimal module is used to obtain the context object, which manages the properties of Decimal objects, including precision. You can set the precision by modifying the .prec attribute of the context object.
+
+
+
+
+
+260
+PP365
+Workflow in the context of Microsoft Dataverse and Power Apps refers to the automation of business processes and tasks. Workflows are a series of steps and rules that define how data is processed and managed within the system. Workflows can be triggered by events such as record creation, update, or deletion, and can perform actions like sending emails, updating records, creating tasks, and more.
+
+
+
+
+
+261
 Python
-Most README files include common sections like the project’s name, setup instructions, and contributing guidelines.
+The standard deviation is the square root of the variance, so replacing the "var" function with "std" is the best approach.
 
-These sections help users understand what the project is about, how to get it running, and how they can contribute.
-
-
+You could calculate the square roots of the existing pivot table data, but this complicates the code.
 
 
-2804
+
+
+
+262
+MS Dataverse
+The Event Execution Pipeline passes registered plug-ins a wealth of data about the current operation being processed and your custom code's execution environment.
+
+
+
+
+
+263
+Microsoft Copilot Studio
+Use content on SharePoint or OneDrive for Business for generative answers works by pairing your copilot with a URL, such as contoso.sharepoint.com/sites/policies. When a copilot user asks a question and the copilot doesn't have a topic to use for an answer, the copilot searches the URL and all sub-paths. For example, a URL such as contoso.sharepoint.com/sites also includes subpaths like contoso.sharepoint.com/sites/policies.
+
+
+
+
+
+264
+Azure Pipelines
+Job
+A build contains one or more jobs. Most jobs run on an agent. A job represents an execution boundary of a set of steps. All the steps run together on the same agent.
+
+For example, you might build two configurations - x86 and x64. In this case, you have one build and two jobs.
+
+
+
+
+
+265
+Azure Key Vault Secrets
+Key Vault also supports a contentType field for secrets. Clients may specify the content type of a secret to help interpreting the secret data when it's retrieved. The maximum length of this field is 255 characters. The suggested usage is as a hint for interpreting the secret data. For instance, an implementation may store both passwords and certificates as secrets, then use this field to differentiate.
+
+
+
+
+
+266
+Power BI
+The Usage Metrics Report semantic model contains usage data for the last 30 days. It can take up to 24 hours for new usage data to be imported. You can't trigger a manual refresh by using the Power BI user interface.
+
+
+
+
+
+267
+Power Platform
+You use templates for importing many types of records such as accounts, leads, or cases. There is a complete list in the Templates for Data Import Wizard.
+
+
+
+
+
+268
 Python
-The two most commonly used markup languages for README files are Markdown and reStructuredText. Markdown is a lightweight markup language that allows you to style a plain text file using formatting techniques like headings, emphasis, lists, images, and links. reStructuredText is an easy-to-read, what-you-see-is-what-you-get plain text markup language that uses intuitive constructs to indicate a document’s structure.
+The CRUD operations correspond almost one-to-one with SQL commands:
+
+Create: INSERT
+Read: SELECT
+Update: UPDATE
+Delete: DELETE
+So, to modify existing data in SQL, you would use the UPDATE command.
 
 
 
 
 
-
-2804
+269
 Python
-You don’t need to use a dedicated tool to create a README file for your project. You can use any plain text editor for this task. However, there are many tools available that can help automate the README creation process. You can read more about this in the section on tools for README creation.
+The modulo operator (%) came to make the syntax a bit better:
+
+>>> "Hello, %s! Today is %s." % (name, day)
+'Hello, Pythonista! Today is Friday.'
+
+In this example, you use the modulo operator to insert the name and day variables into the string literals. The process of creating strings by inserting other strings into them, as you did here, is known as string interpolation.
 
 
 
 
-2804
+
+270
+PP365
+Grids: Grids are tabular representations of data within a model-driven app in Power Apps. They allow users to view and interact with rows of data from a table. Grids can be configured to show specific columns and can be customized to include features like sorting, filtering, and pagination.
+
+
+
+
+
+271
+PP365
+Trial (subscription-based): This is the type of trial environment that companies can use to develop larger, multiuser and multiple-department solutions and perform proof-of-concept reviews. Tenant admins can add a trial (subscription-based) environment to their tenant, or new customers can sign up for a new tenant and become the Global admin.
+
+
+
+
+
+272
+Power BI
+A huge part of Power Query's power comes from the fact that PQ can convert the operations a user performs via its user interface into complex SQL or other backend data source languages, without the user having to know said languages. Users get the performance benefit of native data source operations, with the ease of use of a UI where all data sources can be transformed using a common set of commands.
+
+
+
+
+
+273
+MS Data Analyst
+To create a mobile-optimized version of your report, you can:
+
+Design a mobile layout view, where you can drag and drop certain visuals onto a phone emulator canvas.
+Use visuals and slicers that are suitable for use on small, mobile screens.
+
+
+
+
+
+274
+General
+Azure Automation: A cloud-based automation service that helps to automate repetitive tasks across Azure and third-party services, enhancing efficiency and reducing the potential for human error.
+
+
+
+
+
+275
+Power Platform administration
+An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the functionality. Use this account to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, and so on). Because an administrative user doesn't have access to customer data nor any functionality, the user doesn't require a license (after setup).
+
+
+
+
+
+276
+Power BI
+There are a few limitations for this release of relationships with a many-to-many cardinality and composite models.
+
+The following Live Connect (multidimensional) sources can't be used with composite models:
+
+SAP HANA
+SAP Business Warehouse
+SQL Server Analysis Services
+Power BI semantic models
+Azure Analysis Services
+
+
+
+
+
+277
+Power Apps
+Power Platform services are built on Azure, Microsoft's cloud computing platform. The Power Platform service architecture is composed of four components:
+
+Web front-end cluster
+Back-end cluster
+Premium infrastructure
+Mobile platforms
+
+
+
+
+
+278
+Azure Key Vault
+The Azure Key Vault Standard and Premium tiers are billed on a transactional basis, with an additional monthly per-key charge for premium hardware-backed keys. Managed HSM, Dedicated HSM, and Payments HSM don't charge on a transactional basis; instead they are always-in-use devices that are billed at a fixed hourly rate.
+
+
+
+
+
+279
+Maths
+Sum-type test statistics are created by summing individual test statistics from multiple tests or studies, commonly used in meta-analysis or combined significance testing.
+
+
+
+
+
+280
+Power Platform administration
+In DAX, when you use SUMX or similar functions that iterate over a table, the context within which the function operates changes to the row context of that table. This means each row of the table becomes the current context for the calculation during each iteration of the function. Because of this row context, you don’t need to explicitly reference the table name when accessing its columns within the function.
+
+
+
+
+
+281
+Python
+The TestSuite class in Python’s unittest framework allows you to create groups of tests and run them selectively. This can be particularly useful in complex projects with many features, different testing levels, selective testing, and environment-specific testing. You can learn more about it in the section on grouping your tests.
+
+
+
+
+
+282
+Power Platform administration
+You use the Microsoft 365 admin center to create user accounts for every user who needs access to apps, flows, or chatbots. The user account registers the user with Microsoft Online Services environment.
+
+
+
+
+
+283
+Workera.ai
+Azure DevTest Labs enables quick provisioning of resources such as virtual machines, allowing development and testing teams to create environments on-demand. This is particularly useful for scenarios where teams need to replicate production environments for testing purposes.
+
+
+
+
+
+284
+Windows 10
+You can increase or decrease the size of icons on your desktop by selecting the desktop, holding [ctrl], and using the scroll wheel.
+
+
+
+
+
+285
+Python
+When you need to apply multiple aggregation functions to the same data in a pivot table, you pass them in a list to the 
+aggfunc
+ parameter.
+
+
+
+
+
+286
+Azure Functions Quickstart
+Before you can publish your Functions project to Azure, you must have a function app and related resources in your Azure subscription to run your code. The function app provides an execution context for your functions. When you publish from Visual Studio Code to a function app in Azure, the project is packaged and deployed to the selected function app in your Azure subscription.
+
+
+
+
+
+287
+Python
+When you use the .safe_substitute() method from the Template class with a dictionary that doesn’t match all placeholders, it returns the string with the missing placeholders shown as is. This method doesn’t raise a KeyError like the .format() method does when faced with missing keys.
+
+
+
+
+
+288
+Power BI
+The SUMMARIZE function in DAX is a powerful function used to create summary tables or groupings of data based on specified columns and expressions. It essentially performs a GROUP BY operation similar to SQL.
+
+
+
+
+
+289
+Microsoft Copilot Studio
+Prompt modification allows you to expand the capabilities of generative answers, or boosted conversations, by adding custom instructions. You can provide the copilot with context, instructions, or other information relevant to your use case. This is the system message that can be included at the start of a conversation with a generative AI model.
+
+
+
+
+
+290
+Azure VDA
+DON'T DO THIS AGAIN (3/20/24)
+  Capture a specialized image
+  deploy it in the same subnet (hostname collision!)
+  make changes
+  sysprep new VM
+  Capture Generalized image from it
+It was probably the deployment in the same subnet that broke things.
+
+
+
+
+
+291
+Power Platform
+UI Component: View
+Views define how a list of rows for a specific table is displayed in your application. A view defines the columns to display, width of each column, sort behavior, and the default filters.
+
+
+
+
+
+292
 Python
 Using a predefined template can streamline the process of creating README files for your Python projects. Templates provide a structured format that ensures you include all necessary information, such as project description, installation instructions, usage guidelines, and more.
 
@@ -2845,19 +2638,117 @@ You can find good README templates and guidelines in the section about README te
 
 
 
-2804
+
+293
+Accounting
+a single audit is more specialized and focused on compliance with federal funding, while an audit by a public accounting firm is more comprehensive and focused on the overall financial health and reporting of an entity.
+
+
+
+
+
+294
+Azure VM Image Builder
+2. What is the first step an administrator needs to perform when creating a managed image from a generalized VM that is in the Stopped (deallocated) status? 
+
+Capture the image.
+That's correct. The administrator must capture the image after it's been generalized and is stopped and deallocated.
+
+
+
+
+
+295
+Azure AI Search
+Azure AI Search (formerly known as "Azure Cognitive Search") provides secure information retrieval at scale over user-owned content in traditional and conversational search applications.
+
+
+
+
+
+296
+General
+Hotpatching: A feature that allows for installing updates on virtual machines without the need for a reboot, minimizing downtime and disruption.
+
+
+
+
+
+297
+Workera.ai
+Cold start in computing refers to a problem where a system or its part was created or restarted and is not working at its normal operation. The problem can be related to initialising internal objects or populating cache or starting up subsystems.
+
+
+
+
+
+298
 Python
+Python sequences have three common characteristics:
+
+  They are iterable, which means you can iterate through them.
+  They have a length, which means you can pass them to len() to get the number of elements it contains.
+  An element of a sequence can be accessed based on its position in the sequence using an integer index.
 
 
 
 
 
-2804
+299
+Power Platform Administration
+Optimized Searching: Quick Find is designed to provide fast and efficient searching across Dataverse records. It uses indexed columns to improve search performance, allowing users to quickly retrieve relevant records based on the search criteria. This means that the fields you want to search need to be indexed for optimal performance.
+
+
+
+
+
+300
+Dataverse
+To successfully connect to your Dataverse, you must first register an app with Entra ID, which you can complete in the Azure portal. Depending on the type of app that you want to make, a few different settings are available for you to configure (web apps versus native apps that are installed natively on a device). For more information on settings required for each type, see Types of app registration.
+
+
+
+
+
+301
 Python
+Many popular machine learning algorithms and datasets are built into TensorFlow and are ready to use. In addition to the built-in datasets, you can access Google Research Datasets or use Google’s Dataset Search to find even more.
 
 
 
 
 
-2804
+302
+Azure Firewall
+Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instances in Secured Virtual Hubs and Hub Virtual Networks. Policies work across regions and subscriptions.
+
+
+
+
+
+303
 Python
+According to the Python documentation, which format presentation type will display a fixed amount of decimal places—NAN for missing data and INF for infinite data?
+
+F
+
+
+
+
+
+304
+Terraform
+The best way to handle CLI authentication in Terraform Cloud is with the login and logout commands, which help automate the process of getting an API token for your Terraform Cloud user account.
+
+
+
+
+
+305
+Microsoft Fabric Administration
+When you delete a capacity, the workspaces associated with the capacity are retained for seven days before they're deleted. If you have defined a workspace retention policy your workspaces are retained for the period specified. For more information about what happens to your files when you delete a capacity, see Fabric capacity deletion.
+
+
+
+
+
