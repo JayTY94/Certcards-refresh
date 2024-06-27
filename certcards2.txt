@@ -1,44 +1,6 @@
 
 
 
-7
-Power BI
-Formula.Firewall errors are the result of Power Query's Data Privacy Firewall (also known as the Firewall), which at times may seem like it exists solely to frustrate data analysts the world over.
-
-
-
-
-
-8
-Python
-In Python f-strings, the flags !s and !r allow you to control how objects are converted into strings. The !s flag uses the object’s .__str__() method, which is intended to return a user-friendly string representation. The !r flag uses the object’s .__repr__() method, which should return a developer-friendly string representation that could be used to re-create the object.
-
-
-
-
-
-9
-General
-You can use Ctrl+U to clear up to the beginning of a line in a Bash command line.
-
-
-
-
-
-10
-Python
-If you want to use a specific pre-trained model, like BERT or DeepDream, then you should research what it’s compatible with. Some pre-trained models are available in only one library or the other, and some are available in both. The Model Garden and the PyTorch and TensorFlow hubs are also good resources to check.
-
-
-
-
-
-11
-Power Platform administration
-By default, all licensed users are created with an access mode of Read-Write. This access mode provides full access rights to the user based on the security privileges that are assigned.
-
-
-
 
 
 12
