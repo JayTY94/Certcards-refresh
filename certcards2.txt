@@ -104,9 +104,7 @@ This state is stored by default in a local file named "terraform.tfstate", but w
 
 13
 Python
-When you need to apply multiple aggregation functions to the same data in a pivot table, you pass them in a list to the 
-aggfunc
- parameter.
+When you need to apply multiple aggregation functions to the same data in a pivot table, you pass them in a list to the aggfunc parameter.
 
 
 
