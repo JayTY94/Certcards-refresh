@@ -2650,3 +2650,192 @@ To find the current data center region that you're in, see Set the data center r
 
 
 
+2653
+Python
+Magic methods, also known as special methods or dunder methods, are methods in Python whose names start and end with a double underscore.
+
+These methods have special meanings and are automatically called by Python in response to certain operations, such as instantiation, sequence indexing, and attribute management.
+
+
+
+
+
+
+
+2653
+Python
+The purpose of the .__init__() method in a Python class is to initialize instance attributes.
+
+When you create an instance of a class, Python automatically calls .__init__() using the same arguments that you’ve passed to the constructor. This method sets up the initial state of the object by assigning values to instance attributes.
+
+
+
+
+
+
+
+
+2653
+Python
+The purpose of the .__new__() method in Python is to create and return a new empty object of the underlying class.
+
+This method is implicitly called when you construct a new instance of a class. After .__new__() creates the object, Python passes it to .__init__() for initialization.
+
+
+
+
+
+
+2653
+Python
+The .__repr__() method is designed to provide a string representation of an object that is useful for developers. The goal is to create a string that you can use to reconstruct an identical object.
+
+This is particularly useful for debugging and logging, as it provides a clear and unambiguous description of the object.
+
+
+
+
+
+
+2653
+Python
+Operator overloading in Python allows you to provide additional functionality to operators. You can do this by defining special methods, such as .__add__() that Python uses when you work with the plus operator (+).
+
+You can use these special methods to support operators in your custom classes, not just built-in types.
+
+
+
+
+
+
+2653
+Python
+In Python, arithmetic operators are supported by corresponding magic methods. For example, the + operator is supported by .__add__(), and the - operator is supported by .__sub__().
+
+These methods allow you to define custom behavior for these operators in your classes.
+
+
+
+
+
+
+2653
+Python
+In Python, if the left-hand operand doesn’t support an operator, then Python calls the right-hand version of the operator method, which is prefixed with __r.
+
+For example, the right-hand version of .__add__() is .__radd__(). This allows the right-hand operand to handle the operation.
+
+
+
+
+
+
+2653
+Python
+In Python, special methods support comparison operators.
+
+For example, the .__lt__() method supports the < operator, .__gt__() supports >, and the .__eq__() method supports the == operator.
+
+These methods allow you to define custom behavior for comparison operations in your custom classes.
+
+
+
+
+
+
+2653
+Python
+To support the in and not in operators in a custom class, you need to implement .__contains__(). This method takes an argument representing the value you want to check for and returns True or False based on whether the value is in the collection.
+
+
+
+
+
+
+2653
+Python
+Augmented assignment operators provide a more concise way to update the value of a variable. For example, counter += 1 is a shorthand for counter = counter + 1.
+
+These operators rely on special methods like .__iadd__() for in-place operations. If the data type is mutable, then Python performs the operation in place. If the data type is immutable, Python returns a new object with the updated value.
+
+
+
+
+
+
+2653
+Python
+Python supports augmented assignment operators for both arithmetic and bitwise operations. For example, &=, |=, and ^= are augmented bitwise operators that rely on methods such as .__iand__(), .__ior__(), and .__ixor__().
+
+
+
+
+
+
+2653
+Python
+You can use magic methods like .__dir__() and .__hasattr__() for object introspection in Python.
+
+.__dir__() returns a list of attributes and methods of an object.
+.__hasattr__() checks whether an object has a specific attribute.
+These methods allow you to control how your objects behave when someone inspects them using built-in functions like dir() and hasattr().
+
+
+
+
+
+2653
+Python
+The .__setattr__() method allows you to customize the behavior of attribute assignment in your class.
+
+By overriding this method, you can add custom logic, such as validation, before setting the attribute’s value.
+
+For example, you can check if the value assigned to an attribute is a positive number and raise an exception if it isn’t.
+
+
+
+
+
+2653
+Python
+The .__delattr__() magic method gives you fine control over how attributes are deleted in a class. By overriding this method, you can customize the behavior when an attribute is deleted using del.
+
+
+
+
+
+2653
+Python
+The full descriptor protocol in Python includes four methods:
+
+.__get__()
+.__set__()
+.__delete__()
+.__set_name__()
+
+
+
+
+
+2653
+Python
+To create an iterator in Python, you need to implement .__iter__() and .__next__().
+
+The .__iter__() special method initializes the iterator and must return an iterator object, typically self.
+
+The .__next__() method retrieves the next value in the data stream and must raise a StopIteration exception when the data stream is exhausted.
+
+
+
+
+
+2653
+Python
+
+
+
+
+
+
+2653
+Python
