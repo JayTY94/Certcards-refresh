@@ -2751,7 +2751,10 @@ The .__next__() method retrieves the next value in the data stream and must rais
 
 
 2653
-Python
+General
+Tranch
+a portion of something, especially money.
+"they released the first tranche of the loan"
 
 
 
