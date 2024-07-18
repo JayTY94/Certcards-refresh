@@ -2,55 +2,6 @@
 
 
 
-16
-Microsoft Fabric Administration
-Power BI Premium - A capacity that was bought as part of a Power BI Premium subscription. These capacities use P SKUs.
-
- Note
-Power BI capacities are transitioning to Fabric. For more information, see Power BI Premium transition to Microsoft Fabric.
-
-
-
-
-
-17
-Power Platform
-Type of Logic Component: Power Automate Flow
-Power Automate is a cloud-based service that lets you create automated flows between apps and services to get notifications, synchronize files, collect data, and more.
-
-
-
-
-
-18
-Terraform
-The best way to handle CLI authentication in Terraform Cloud is with the login and logout commands, which help automate the process of getting an API token for your Terraform Cloud user account.
-
-
-
-
-
-19
-Azure Naming Convention
-A VM name in Azure can be longer than the OS naming restrictions. Keeping Azure VM names shorter than the naming restrictions of the OS helps create consistency, improve communication when discussing resources, and reduce confusion when you're working in the Azure portal while being signed in to the VM itself.
-
-
-
-
-
-20
-Python
-String interpolation in Python involves inserting objects into a string. The primary tools for this are:
-
-f-strings: Provide a way to embed expressions inside string literals using curly braces {}.
-
-str.format() method: Allows for complex variable substitutions and value formatting.
-
-modulo operator (%): An older method for string formatting using format specifiers like %s and %d.
-
-
-
-
 
 21
 Workera.ai
