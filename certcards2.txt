@@ -1,56 +1,6 @@
 
 
 
-11
-Python
-In Python, you generally can’t concatenate sequences of different types. If you try to add a list and a tuple, Python raises a TypeError:
-
->>> [1, 2, 3] + (4, 5, 6)
-Traceback (most recent call last):
-  ...
-  File "<stdin>", line 1, in <module>
-TypeError: can only concatenate list (not "tuple") to list
-
-
-
-
-
-12
-Terraform
-This state is stored by default in a local file named "terraform.tfstate", but we recommend storing it in Terraform Cloud to version, encrypt, and securely share it with your team.
-
-
-
-
-
-13
-Python
-When you need to apply multiple aggregation functions to the same data in a pivot table, you pass them in a list to the aggfunc parameter.
-
-
-
-
-
-14
-Azure AI Search
-An end-to-end exploration of core search features can be accomplished in four steps:
-
-Decide on a tier and region. One free search service is allowed per subscription. All quickstarts can be completed on the free tier. For more capacity and capabilities, you'll need a billable tier.
-Create a search service in the Azure portal.
-Start with Import data wizard. Choose a built-in sample or a supported data source to create, load, and query an index in minutes.
-Finish with Search Explorer, using a portal client to query the search index you just created.
-
-
-
-
-
-15
-Python
-CRUD stands for Create, Read, Update, and Delete. Every time you interact with an application, you’re likely engaging in one of the four CRUD operations.
-
-
-
-
 
 16
 Microsoft Fabric Administration
