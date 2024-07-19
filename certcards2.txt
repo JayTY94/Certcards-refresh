@@ -1,34 +1,6 @@
 
 
 
-
-
-21
-Workera.ai
-Cold start in computing refers to a problem where a system or its part was created or restarted and is not working at its normal operation. The problem can be related to initialising internal objects or populating cache or starting up subsystems.
-
-
-
-
-
-22
-MS Data Analyst
-To develop Python visuals, you need to have Python installed on your machine. Many Python packages are supported in Power BI, but not all. See Learn which Python packages are supported in Power BI for a complete list of supported packages and Python visual limitations.
-
-
-
-
-
-23
-General
-NPS stands for Net Promoter Score, which is a common metric used in customer experience programs. An NPS score measures customer loyalty by looking at their likelihood of recommending a given business.
-
-Your NPS score is measured with a single-question survey and reported with a number ranging from -100 to +100, where a higher score is desirable.
-
-
-
-
-
 24
 Azure VDI Project
 A user profile is a collection of configurations that the user or administrator made to represent the state of a system. Various system components bind to a user's profile. These components include applications, registry entries, and other customized entries.
@@ -2662,5 +2634,231 @@ a portion of something, especially money.
 
 
 
-2653
-Python
+2665
+Azure Functions
+ 
+
+2665
+Azure Functions
+Bindings comes in two flavors, input, and output. Input bindings can be used to pass data to your function from a data source different than the one that triggered the function.
+
+
+
+
+2665
+Azure Functions
+The context in which your functions run is called a function app. A function app is a unit of deployment, management, and scale for your functions. All functions in a function app share the same settings and connections.
+
+
+
+
+
+
+2665
+Azure Functions
+Function runtime	Azure Functions currently supports several versions of the runtime host. Functions also support many different runtimes such as .NET Core, Node.js, Java, PowerShell and Python. During development, you can install the Functions runtime on your local computer and run functions locally by using the Azure Functions Core Tools.
+
+
+
+
+
+
+2665
+Azure Functions
+API Management	APIM provides security and routing for your HTTP triggered function endpoints as a way to expose them as a true REST API.
+
+
+
+
+
+2665
+Azure Functions
+Deployment slots	Azure Functions deployment slots allow your function app to run different instances called "slots". Slots are different environments exposed via a publicly available endpoint. Slots provide a way for you to test a new version of your functions in Azure in a safe environment and then seamlessly swap the new version into production.
+
+
+
+
+
+2665
+Azure Functions
+Function app configuration	Connection strings, environment variables, and other application settings are defined separately for each function app. The function app settings values can be read in the code as environment variables.
+
+
+
+
+
+
+2665
+Azure Functions
+Function triggers	Triggers are what cause a function to run. A trigger defines how a function is invoked and a function must have exactly one trigger.
+
+
+
+
+
+2665
+Azure Functions
+Experimental APIs. If you use the Consumption plan, with Functions, you can make millions of calls and pay very little. One thing to keep in mind is that any type of storage incurs a cost.
+
+An example is writing to a database with a function. This plan is ideal to use for prototyping or for Start-ups. In the latter case, if you have so many calls to your functions that most likely means you have paying customers. Hence, Azure Functions scales with your business. As your business grows, you might consider other hosting plans as well.
+
+
+
+
+
+
+
+2665
+Azure Functions
+Irregular but important business flows. Getting a new customer and onboarding that customer is an example where your code has a good reason to run. Such a flow likely consists of operations like interacting with a data store, sending out emails, and more.
+
+
+
+
+
+
+
+2665
+Azure Functions
+Serverless workflow. A series of functions can be chained together, and you can introduce state which makes it possible to devise complex long running workflows via Durable Functions. Another choice for workflows is Logic apps that can monitor external events, perform branching logic and invoke functions as a result.
+
+
+
+
+
+
+
+2665
+Azure Functions
+Business processes modeled in software are often called workflows. Azure includes four different technologies that you can use to build and implement workflows that integrate multiple systems:
+
+Logic Apps
+Microsoft Power Automate
+WebJobs
+Azure Functions
+
+
+
+
+
+2665
+Azure Functions
+When business analysts discuss and plan a business process, they may draw a flow diagram on paper. With Logic Apps and Microsoft Power Automate, you can take a similar approach to designing a workflow. They both include user interfaces where you can draw out the workflow. We call this approach a design-first approach.
+
+
+
+
+
+
+
+2665
+Azure Functions
+The Azure App Service is a cloud-based hosting service for web applications, mobile back-ends, and RESTful APIs. These applications often need to perform some kind of background task. For example, in your bike rental system, when a user uploads a photo of a bike, you may need to generate a smaller thumbnail photograph.
+
+
+
+
+
+
+
+2665
+Azure Functions
+WebJobs are a part of the Azure App Service that you can use to run a program or script automatically. There are two kinds of WebJob:
+
+Continuous. Starts immediately when the WebJob is created and runs in a continuous loop. For example, you could use a continuous WebJob to check a shared folder for a new photo.
+Triggered. Starts based on a binding event, on a schedule, or when you trigger it manually (on demand).
+
+
+
+
+
+
+2665
+Azure Functions
+Because of the extra features that are included with Azure Functions, including wider ranges of trigger events and supported languages, the ability to develop test code in the browser, and the pay-per-use price model, consider Azure Functions to be your default choice. There are a few situations in which WebJobs might be a better choice:
+
+You have an existing Azure App Service application, and you want to model the workflow within the application.
+
+
+
+
+
+
+2665
+Azure Functions
+Reasons to choose WebJobs over Azure Functions
+
+You have specific customizations that you want to make to the JobHost that aren't supported by Azure Functions.
+You want to control your app's retry policies.
+WebJobs only supports C# on Microsoft Windows.
+
+
+
+
+
+
+2665
+Azure Functions
+
+
+
+
+
+
+
+2665
+Azure Functions
+
+
+
+
+
+
+
+2665
+Azure Functions
+
+
+
+
+
+
+
+2665
+Azure Functions
+
+
+
+
+
+
+
+2665
+Azure Functions
+
+
+
+
+
+
+
+2665
+Azure Functions
+
+
+
+
+
+
+
+2665
+Azure Functions
+
+
+
+
+
+
+
+2665
+Azure Functions
