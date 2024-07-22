@@ -2799,15 +2799,8 @@ WebJobs only supports C# on Microsoft Windows.
 
 2665
 Azure Functions
+Functions are event driven. They run only in response to an event (called a "trigger"), such as receiving an HTTP request, or a message being added to a queue. You configure a trigger as part of the function definition. This approach simplifies your code by allowing you to declare where the data comes from (trigger/input binding) and where it goes (output binding). You don't need to write code to watch queues, blobs, hubs, and so on. You can focus purely on the business logic.
 
-
-
-
-
-
-
-2665
-Azure Functions
 
 
 
@@ -2817,7 +2810,7 @@ Azure Functions
 
 2665
 Azure Functions
-
+By default, functions have a timeout of five (5) minutes. This timeout is configurable to a maximum of 10 minutes. If your function requires more than 10 minutes to execute, you can host it on a VM. Additionally, if your service is initiated through an HTTP request and you expect that value as an HTTP response, the timeout is further restricted to 2.5 minutes. 
 
 
 
@@ -2826,6 +2819,17 @@ Azure Functions
 
 2665
 Azure Functions
+When your function scales, only one function app instance can be created every 10 seconds, for up to 200 total instances. Keep in mind, each instance can service multiple concurrent executions, so there's no set limit about how much traffic a single instance can handle.
+
+
+
+
+
+
+2665
+Azure Functions
+Different types of triggers have different scaling requirements, so research your choice of trigger and investigate its limits.
+
 
 
 
