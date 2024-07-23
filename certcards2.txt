@@ -1,31 +1,6 @@
 
 
 
-24
-Azure VDI Project
-A user profile is a collection of configurations that the user or administrator made to represent the state of a system. Various system components bind to a user's profile. These components include applications, registry entries, and other customized entries.
-
-
-
-
-
-25
-Azure VM Image Builder
-2. What is the first step an administrator needs to perform when creating a managed image from a generalized VM that is in the Stopped (deallocated) status? 
-
-Capture the image.
-That's correct. The administrator must capture the image after it's been generalized and is stopped and deallocated.
-
-
-
-
-
-26
-PP365
-Neither type of environment consumes paid capacity. You can convert either type of trial environment to a production environment by switching it to consume from paid capacity, which will keep it from being disabled and deleted. After it becomes a production environment, it will follow the paid license lifecycle.
-
-
-
 
 
 27
