@@ -2839,7 +2839,58 @@ Different types of triggers have different scaling requirements, so research you
 
 2665
 Azure Functions
+When you create a function app, it must be linked to a storage account. You can select an existing account or create a new one. The function app uses this storage account for internal operations, such as logging function executions and managing execution triggers. On the consumption plan, this storage account is also where the function code and configuration files are stored.
 
+
+
+
+
+
+
+2665
+Azure Functions
+Each binding has a direction: your code reads data from input bindings and writes data to output bindings. Each function can have zero or more bindings to manage the input and output data processed by the function
+
+
+
+
+
+
+2665
+Azure Functions
+A binding is a declarative way to connect data and services to your function.  Bindings interact with various data sources, which means you don't have to write the code in your function to connect to data sources and manage connections. The platform takes care of that complexity for you as a part of the binding code. 
+
+
+
+
+
+
+2665
+Azure Functions
+The ability to monitor your functions is critical during development and in production. The Azure portal provides a monitoring dashboard, which you turn on by enabling Application Insights integration. In the Function App menu, under Settings, select Application Insights, select Turn on Application Insights, and then select Apply. In the dialog box, select Yes. 
+
+
+
+
+
+2665
+Azure Functions
+HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the authorization level. By default, it's set to Function, which requires a function-specific API key. It can also be set to Admin to use a global "master" key, or Anonymous to indicate that no key is required. You can also change the authorization level through the function properties after creation.
+
+
+
+
+
+2665
+Azure Functions
+Because you specified Function when you created this function, you need to supply the key when you send the HTTP request. You can send it as a query string parameter named code. Or, use the preferred method and pass it as an HTTP header named x-functions-key.
+
+
+
+
+
+2665
+Azure Functions
 
 
 
@@ -2854,10 +2905,40 @@ Azure Functions
 
 
 
+2665
+Azure Functions
+
+
+
+
+
 
 2665
 Azure Functions
 
+
+
+
+
+
+2665
+Azure Functions
+
+
+
+
+
+
+2665
+Azure Functions
+
+
+
+
+
+
+2665
+Azure Functions
 
 
 
