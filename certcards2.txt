@@ -2726,3 +2726,66 @@ Microsoft.Storage manages resources related to storage accounts and storage serv
 
 
 
+2729
+General
+jq is a powerful command-line tool for parsing, filtering, and transforming JSON data. It allows you to navigate through JSON structures with ease using a simple and expressive query language.
+To extract a specific field from a JSON object, you can use the . operator followed by the field name:
+
+sh
+jq '.fieldName' file.json
+
+This command will output the value of fieldName from file.json.
+
+
+
+
+
+2729
+General
+jq can format (pretty-print) JSON data, making it easier to read and debug. This is particularly useful when dealing with large or complex JSON structures.
+To format a JSON file for readability:
+
+sh
+jq '.' file.json
+
+This command will take the JSON content from file.json and print it in a human-readable format.
+
+
+
+
+2729
+General
+jq supports complex data transformations, allowing you to map, filter, and reduce JSON data. You can perform operations such as selecting specific fields, modifying values, or even restructuring JSON objects.
+To extract specific fields from each object in an array and create a new JSON array with these fields:
+
+sh
+jq '[.[] | {field1: .field1, field2: .field2}]' file.json
+
+This command will take an array of JSON objects from file.json and create a new array containing only field1 and field2 from each object.
+
+
+
+
+2729
+General
+
+
+
+
+
+2729
+General
+
+
+
+
+
+2729
+General
+
+
+
+
+
+2729
+General
