@@ -2669,3 +2669,6 @@ The issue was an attempt to install the deprecated azure meta-package, which is 
 
 
 
+2672
+Azure CLI
+Add the flag --validate to keep the Azure CLI command (Bash!) to keep from actually deploying.
