@@ -1,51 +1,3 @@
-1
-Azure Functions
-WebJobs are a part of the Azure App Service that you can use to run a program or script automatically. There are two kinds of WebJob:
-
-Continuous. Starts immediately when the WebJob is created and runs in a continuous loop. For example, you could use a continuous WebJob to check a shared folder for a new photo.
-Triggered. Starts based on a binding event, on a schedule, or when you trigger it manually (on demand).
-
-
-
-
-
-2
-Power BI
-The following query will output a table that is essentially just 3 columns of the dimstaff table renamed.
-EVALUATE
-SELECTCOLUMNS (
-    DimStaff,
-    "name", DimStaff[Staff],
-    "start_date", DimStaff[HireDate],
-    "term_date", DimStaff[TerminationDate]
-)
-
-
-
-
-
-3
-Power BI
-In order for your single-partition-but-two-data-sources query to be allowed to run, its two data sources must be "compatible". In other words, it needs to be okay for data to be shared bidirectionally between them. This means that the privacy levels of both sources need to be Public, or both be Organizational, since these are the only two combinations that allow sharing in both directions.
-
-
-
-
-
-4
-Python
-The !r flag in Python’s .format() method uses the repr() function to provide a developer-friendly string representation of an object.
-
-Conversely, the !s flag uses the str() function to produce a user-friendly string representation, which is generally more readable and concise.
-
-
-
-
-
-5
-Python
-Adding an equal sign after a variable or expression in an f-string creates a self-documenting expression. This feature is particularly useful for debugging because it not only shows the result of the expression but also the expression itself, making what is being evaluated clear. For example, print(f"{value = }") would output value = Suspicious value, showing both the variable name and its value.
-
 
 
 
@@ -2672,3 +2624,107 @@ The issue was an attempt to install the deprecated azure meta-package, which is 
 2672
 Azure CLI
 Add the flag --validate to keep the Azure CLI command (Bash!) to keep from actually deploying.
+
+
+
+
+
+2672
+General
+Sideloading involves installing apps on a device using methods other than official app stores, often for accessing region-restricted apps or testing development versions.
+
+
+
+
+
+
+2672
+General
+Sideloading bypasses app store vetting, increasing the risk of malware and security vulnerabilities. IT must implement strict measures to ensure app safety from trusted sources.
+
+
+
+
+
+
+2672
+General
+Organizations must establish clear sideloading policies to comply with legal and regulatory standards. Unauthorized sideloading can lead to software licensing and regulatory violations.
+
+
+
+
+
+
+2672
+General
+Sideloading benefits include testing new app features, deploying custom enterprise apps, and accessing legacy applications critical to business operations, despite not being available in app stores.
+
+
+
+
+
+
+
+
+
+
+
+2672
+General
+
+
+
+
+
+2672
+General
+
+
+
+
+
+2672
+General
+
+
+
+
+
+2672
+General
+
+
+
+
+
+2672
+General
+
+
+
+
+
+2672
+General
+
+
+
+
+
+2672
+General
+
+
+
+
+
+2672
+General
+
+
+
+
+
+2672
+General
