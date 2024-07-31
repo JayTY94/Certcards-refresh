@@ -2,50 +2,6 @@
 
 
 
-6
-PP365
-Solution Explorer is a feature within Microsoft Dataverse and Power Apps that allows users to manage the components of their applications. It provides a centralized interface to view, add, modify, and remove components such as entities, fields, forms, views, charts, dashboards, plugins, workflows, and more.
-
-
-
-
-
-7
-Power BI
-Returns a single value: The SELECTEDVALUE function returns the value of an expression evaluated in the context of a single cell. It is commonly used in scenarios where you expect only one value to be present in the current context, such as when filtering a column in a visual or when using a slicer.
-
-
-
-
-
-8
-Terraform
-The command line interface to Terraform is the terraform command, which accepts a variety of subcommands such as terraform init or terraform plan.
-
-
-
-
-
-9
-Python
-The modulo operator (%) came to make the syntax a bit better:
-
->>> "Hello, %s! Today is %s." % (name, day)
-'Hello, Pythonista! Today is Friday.'
-
-In this example, you use the modulo operator to insert the name and day variables into the string literals. The process of creating strings by inserting other strings into them, as you did here, is known as string interpolation.
-
-
-
-
-
-10
-Azure Functions Quickstart
-To call an HTTP-triggered function from a client, you need the function's URL, which is available after deployment to your function app. This URL includes any required function keys. You can use the extension to get these URLs for your deployed functions. If you just want to run the remote function in Azure, use the Execute function now functionality of the extension.
-
-
-
-
 
 11
 Python
