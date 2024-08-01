@@ -3,51 +3,6 @@
 
 
 
-11
-Python
-To support the in and not in operators in a custom class, you need to implement .__contains__(). This method takes an argument representing the value you want to check for and returns True or False based on whether the value is in the collection.
-
-
-
-
-
-12
-Python
-To display the same calendar programmatically in your script, you can use one of the following methods:
-
->>> import calendar
->>> text_calendar = calendar.TextCalendar()
->>> print(text_calendar.formatyear(1989))
->>> text_calendar.pryear(1989)
->>> calendar.prcal(1989)
-
-
-
-
-
-13
-Power BI
-Multiple requests to the same data source can occur if multiple queries pull from that data source. These requests can happen even in a case where only one query references the data source. If that query is referenced by one or more other queries, then each query—along with all the queries it depends on—is evaluated independently.
-
-
-
-
-
-14
-Azure Key Vault
-Single tenancy refers to a single dedicated instance of an application deployed for each customer, rather than a shared instance amongst multiple customers. The need for single tenant products is often found as an internal compliance requirement in financial service industries.
-
-
-
-
-
-15
-Python
-PyTorch was developed by Facebook and was first publicly released in 2016. Because Python programmers found it so natural to use, PyTorch rapidly gained users, inspiring the TensorFlow team to adopt many of PyTorch’s most popular features in TensorFlow 2.0.
-
-
-
-
 
 16
 Workera.ai
