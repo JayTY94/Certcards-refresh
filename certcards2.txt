@@ -20,12 +20,6 @@ Python supports augmented assignment operators for both arithmetic and bitwise o
 
 
 
-23
-Python
-In contrast, f-strings perform eager interpolation and are not suitable for these scenarios. You can learn more about the differences and use cases for these methods in the Using F-strings vs .format() vs % section in the tutorial.
-
-
-
 
 
 24
