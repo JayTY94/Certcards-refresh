@@ -3,47 +3,6 @@
 
 
 
-
-16
-Workera.ai
-High Availability: By deploying applications across multiple Availability Zones, you can achieve higher availability and uptime. Azure guarantees a 99.99% uptime for Virtual Machines deployed in two or more Availability Zones, making it a reliable choice for mission-critical applications.
-
-
-
-
-
-17
-Maths
-Microbiome research in mathematics often involves statistical analysis of the composition and function of microorganisms within a given environment, such as the human gut.
-
-
-
-
-
-18
-Python
-String interpolation allows you to create strings by inserting objects into specific places in a target string template. Python has several tools for string interpolation, including f-strings, the str.format() method, and the modulo operator (%). Python’s string module also provides the Template class, which you can use for string interpolation.
-
-
-
-
-
-19
-Python
-When you use the .safe_substitute() method from the Template class with a dictionary that doesn’t match all placeholders, it returns the string with the missing placeholders shown as is. This method doesn’t raise a KeyError like the .format() method does when faced with missing keys.
-
-
-
-
-
-20
-Azure Functions
-Function runtime	Azure Functions currently supports several versions of the runtime host. Functions also support many different runtimes such as .NET Core, Node.js, Java, PowerShell and Python. During development, you can install the Functions runtime on your local computer and run functions locally by using the Azure Functions Core Tools.
-
-
-
-
-
 21
 Powershell
 Get-Service | Format-List
