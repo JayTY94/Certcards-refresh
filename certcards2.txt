@@ -2447,66 +2447,237 @@ Sideloading benefits include testing new app features, deploying custom enterpri
 
 
 
+2450
+DNS
+• Non-authoritative Answer:
+A DNS response from a server that is not the original source of the data but has cached the information from another server.
 
 
 
 
 
-2672
-General
+
+2450
+DNS
+• DNS Server:
+A server that resolves domain names into IP addresses. Examples include Cloudflare's 1.1.1.1 or Google's 8.8.8.8.
 
 
 
 
 
-2672
-General
+2450
+DNS
+• DNS Hijacking:
+A malicious activity where DNS queries are intercepted and redirected to unauthorized servers, potentially leading to phishing sites or other malicious destinations.
 
 
 
 
 
-2672
-General
+2450
+DNS
+• Split-Horizon DNS:
+A DNS configuration where different responses are given to queries depending on the source of the query (e.g., internal vs. external network users).
 
 
 
 
 
-2672
-General
+2450
+DNS
+• DNS Filtering:
+A security practice where DNS queries are monitored and filtered to block access to harmful or unauthorized domains.
 
 
 
 
 
-2672
-General
+2450
+DNS
+• Transparent DNS Proxy:
+A network setup where DNS queries are intercepted and automatically redirected to a designated DNS server without the user’s explicit configuration.
 
 
 
 
 
-2672
-General
+2450
+DNS
+• DNS Forwarding:
+The process of forwarding DNS queries from one DNS server to another, often used in corporate networks to ensure that all DNS traffic passes through a specific DNS server.
 
 
 
 
 
-2672
-General
+2450
+DNS
+• Domain Spoofing:
+The act of falsifying DNS records or domain names to make one domain appear as another, often used in phishing or other deceptive practices.
 
 
 
 
 
-2672
-General
+2450
+DNS
+• Security Appliance:
+A dedicated hardware device designed to protect a network by filtering traffic, detecting intrusions, or performing other security functions.
 
 
 
 
 
-2672
-General
+2450
+DNS
+• DNS Interception:
+The DNS Interception feature intercepts and replaces DNS queries matching the configured patterns. You can also allow-list domains. Allow-listed domains always take precedence over the DNS Interception policies. Subdomains of intercepted domains must be explicitly added. They are not intercepted automatically. You must run a caching DNS server to use DNS interception.
+
+
+
+
+
+
+2450
+DNS
+• DNS Rebinding:
+A technique used by attackers to bypass the same-origin policy in browsers, allowing them to interact with private networks by making the DNS response point to a local IP address after an initial resolution to a public IP.
+
+
+
+
+
+2450
+DNS
+- Same-Origin Policy (SOP)
+Web browsers use the same-origin policy as a defense mechanism to restrict how websites from one origin can interact with other origins. The origin of a website is defined by the protocol (e.g., http://), domain (e.g., paloaltonetworks.com), and port (e.g., :80). 
+
+
+
+
+
+2450
+DNS
+- Same-Origin Policy (SOP)
+Websites with the same-origin policy restrict cross-policy interactions. Code (e.g., JavaScript) that originates from http://www[.]badactor[.]com/home.html and sends an HTTP request to http://www[.]yourname[.]com/news[.]html will be restricted. 
+
+
+
+
+
+2450
+DNS
+• DNS Tunneling:
+A method of encapsulating data within DNS queries and responses to bypass network firewalls and restrictions, often used in data exfiltration or command-and-control channels.
+
+
+
+
+
+2450
+DNS
+• DNS Sinkholing:
+A defense mechanism where DNS queries for malicious domains are redirected to a controlled IP address (a sinkhole) to prevent users from accessing harmful content and to capture traffic for analysis.
+
+
+
+
+2450
+DNS
+• DNSSEC (Domain Name System Security Extensions):
+A suite of extensions to DNS that add a layer of security by enabling DNS responses to be cryptographically signed, ensuring the authenticity and integrity of the DNS data.
+
+
+
+
+
+2450
+DNS
+• Content Delivery Network (CDN) DNS:
+A network of distributed servers that provide content to users based on their geographic location, with DNS being used to direct users to the closest server, enhancing speed and reliability.
+
+
+
+
+
+2450
+DNS
+• DNS Amplification Attack:
+A type of DDoS attack that exploits DNS servers by sending small queries with spoofed IP addresses, leading to large responses that overwhelm the target.
+
+
+
+
+
+2450
+DNS
+• DNS Filtering and Security Policies:
+Advanced configurations and rules applied at the DNS level to enforce security policies, including blocking or redirecting traffic to prevent access to unauthorized or malicious sites.
+
+
+
+
+
+2450
+DNS
+• Certificate Transparency Logs:
+Public logs of digital certificates, including those used in DNS-based SSL/TLS connections, that provide a mechanism to detect and respond to fraudulent certificates.
+
+
+
+
+
+2450
+DNS
+• DNS over HTTPS (DoH):
+A protocol that encrypts DNS queries using HTTPS, preventing eavesdropping and man-in-the-middle attacks, and ensuring privacy of DNS traffic.
+
+
+
+
+
+2450
+DNS
+• Recursive Resolver:
+A DNS server that receives a query and then performs all necessary queries to other DNS servers to return the final IP address to the client, often used in conjunction with DNS caching.
+
+
+
+
+
+2450
+DNS
+• DNS TTL (Time to Live):
+The duration that a DNS record is cached by a resolver before it must be discarded or refreshed, playing a critical role in controlling DNS propagation and load.
+
+
+
+
+
+2450
+DNS
+
+
+
+
+
+
+2450
+DNS
+
+
+
+
+
+
+2450
+DNS
+
+
+
+
+
+
+2450
+DNS
