@@ -3,40 +3,6 @@
 
 
 
-
-32
-Azure Functions
-The context in which your functions run is called a function app. A function app is a unit of deployment, management, and scale for your functions. All functions in a function app share the same settings and connections.
-
-
-
-
-
-33
-Power BI Desktop
-Writeback: Writeback enables business users to explore what-if scenarios by changing cell values. Custom applications can apply changes to the data source. Tables that aren't cached can display changes immediately, which allows instant analysis of the effects.
-
-
-
-
-
-34
-Azure Key Vault
-The Azure Key Vault Standard and Premium tiers are billed on a transactional basis, with an additional monthly per-key charge for premium hardware-backed keys. Managed HSM, Dedicated HSM, and Payments HSM don't charge on a transactional basis; instead they are always-in-use devices that are billed at a fixed hourly rate.
-
-
-
-
-
-35
-Power BI
-Troubleshoot refresh issues
-If you suspect data consistency or refresh issues, it might make sense to delete the existing Usage Metrics Report semantic model. Then you can run View Usage Metrics again to generate a new semantic model with its associated usage metrics reports.
-
-
-
-
-
 36
 General
 Application Health Extension: An add-on for Azure virtual machines that monitors the health of applications and automatically performs corrective actions if an unhealthy state is detected.
