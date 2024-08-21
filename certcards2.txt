@@ -2656,15 +2656,9 @@ The duration that a DNS record is cached by a resolver before it must be discard
 
 
 2450
-DNS
+Azure Storage
+Semi-structured data is defined by a data serialization language. In data classification, serialization is the process of converting data into a format that can be transmitted or stored. Three common serialization languages are XML, JSON, and YAML.
 
-
-
-
-
-
-2450
-DNS
 
 
 
@@ -2672,7 +2666,8 @@ DNS
 
 
 2450
-DNS
+Azure Storage
+If a change to one piece of data must result in a change to another piece of data, an application needs to group together a series of data updates. You can use transactions to group these updates. In a transaction, if one event in a series of updates fails, the entire series can be rolled back or undone.
 
 
 
@@ -2680,4 +2675,166 @@ DNS
 
 
 2450
-DNS
+Azure Storage
+Transactional databases are often called online transaction processing (OLTP) systems. OLTP systems commonly support many users, have quick response times, and handle large volumes of data. They also are highly available, which means they have minimal downtime. OLTP systems typically handle small transactions or relatively simple transactions.
+An example of an Azure service that supports OLTP is Azure SQL Database.
+
+
+
+
+
+
+
+2450
+Azure Storage
+Online analytical processing (OLAP) systems commonly support fewer users, have longer response times, can be less available, and typically handle large transactions or complex transactions.
+An example of an Azure service that supports OLAP is Azure Analysis Services.
+
+
+
+
+
+
+
+2450
+Azure Storage
+A storage account is a container that groups a set of Azure Storage services together. Only data services from Azure Storage can be included in a storage account (Azure Blobs, Azure Files, Azure Queues, and Azure Tables). The following illustration shows a storage account containing several data services.
+
+
+
+
+
+
+2450
+Azure Storage
+Replication: Determines the strategy used to make copies of your data to protect against hardware failure or natural disaster. At a minimum, Azure automatically maintains three copies of your data within the datacenter associated with the storage account. The minimum replication is called locally redundant storage (LRS), and guards against hardware failure but doesn't protect you from an event that incapacitates the entire datacenter. 
+
+
+
+
+2450
+Azure Storage
+A storage account represents a collection of settings like location, replication strategy, and subscription owner. You need one storage account for each group of settings that you want to apply to your data. The following illustration shows two storage accounts that differ in one setting (region); that one difference is enough to require separate storage accounts.
+
+
+
+
+
+2450
+Azure Storage
+Do you have some data that is proprietary and some for public consumption? If so, you could enable virtual networks for the proprietary data and not for the public data. Separating proprietary data and public data requires separate storage accounts.
+
+
+
+
+
+
+2450
+Azure Storage
+Each storage account requires some time and attention from an administrator to create and maintain. It also increases complexity for anyone who adds data to your cloud storage. Everyone in an administrator role needs to understand the purpose of each storage account so they add new data to the correct account.
+
+
+
+
+
+2450
+Azure Storage
+Most Azure resources only work with Resource Manager, which makes it easy to decide which model to choose. However, storage accounts, virtual machines, and virtual networks support both, so you must choose one or the other when you create your storage account. The Resource Manager model adds the concept of a resource group, which isn't available in the classic model. 
+
+
+
+
+
+
+2450
+Azure Storage
+Storage account kind is a set of policies that determine which data services you can include in the account and the pricing of those services. There are four kinds of storage accounts:
+
+Standard - StorageV2 (general purpose v2): the current offering that supports all storage types and all of the latest features
+Premium - Page blobs: Premium storage account type for page blobs only
+Premium - Block blobs: Premium storage account type for block blobs and append blobs
+Premium - File shares: Premium storage account type for file shares only
+
+
+
+
+
+
+
+2450
+Azure Storage
+The storage account name is used as part of the URI for API access, so it must be globally unique.
+
+
+
+
+
+
+
+2450
+Azure Storage
+
+
+
+
+
+
+2450
+Azure Storage
+
+
+
+
+
+
+2450
+Azure Storage
+
+
+
+
+
+
+2450
+Azure Storage
+
+
+
+
+
+
+2450
+Azure Storage
+
+
+
+
+
+
+2450
+Azure Storage
+
+
+
+
+
+
+2450
+Azure Storage
+
+
+
+
+
+
+2450
+Azure Storage
+
+
+
+
+
+
+2450
+Azure Storage
+
