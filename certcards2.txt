@@ -1,48 +1,6 @@
 
 
 
-
-
-36
-General
-Application Health Extension: An add-on for Azure virtual machines that monitors the health of applications and automatically performs corrective actions if an unhealthy state is detected.
-
-
-
-
-
-37
-Azure Key Vault
-Platform-managed keys (PMKs) are encryption keys generated, stored, and managed entirely by Azure. Customers do not interact with PMKs. The keys used for Azure Data Encryption-at-Rest, for instance, are PMKs by default.
-
-
-
-
-
-38
-General
-Azure Automation: A cloud-based automation service that helps to automate repetitive tasks across Azure and third-party services, enhancing efficiency and reducing the potential for human error.
-
-
-
-
-
-39
-Azure Functions
-When you create a function app, it must be linked to a storage account. You can select an existing account or create a new one. The function app uses this storage account for internal operations, such as logging function executions and managing execution triggers. On the consumption plan, this storage account is also where the function code and configuration files are stored.
-
-
-
-
-
-40
-Power BI
-Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they're On by default for all users in the organization. See Audit and usage metrics in the Admin portal article for details on these settings.
-
-
-
-
-
 41
 Python
 You can also use dictionaries and named replacement fields:
