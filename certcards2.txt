@@ -1,69 +1,6 @@
 
 
 
-41
-Python
-You can also use dictionaries and named replacement fields:
-
->>> jane = {"name": "Jane", "job": "Python Dev"}
-
->>> "My name is %(name)s. I'm a %(job)s." % jane
-"My name is Jane. I'm a Python Dev."
-
-In this example, the modulo operator inserts each value using the corresponding key, which is way more readable and intuitive. To build the named replacement fields, you need to insert the name in parentheses between the % sign and the format specifier.
-
-
-
-
-
-42
-Azure VDI Project
-Type of HCL Block:
-build blocks contain configuration for a specific combination of builders, provisioners, and post-processors used to create a specific image artifact.
-
-
-
-
-
-43
-Python
-The modulo operator (%) is the oldest tool for performing string interpolation in Python. Even though you can use this operator for both eager and lazy string interpolation, the syntax could be more readable and clean.
-
-You need to insert conversion specifiers into your strings and then use the modulo operator to interpolate the desired values:
-
->>> x = 5
->>> y = 10
->>> "The sum of %d and %d is %d." % (x, y, x + y)
-'The sum of 5 and 10 is 15.'
-
-
-
-
-
-44
-Power BI
-A parameter stores a value that can be used for transformations in Power Query. Apart from the name of the parameter and the value that it stores, it also has other properties that provide metadata to it. The properties of a parameter are:
-
-	• Name
-	• Description
-	• Required
-	• Type
-	• Suggested values
-	• Query
-  • Current Value
-
-
-
-
-
-45
-Python
-The .__delattr__() magic method gives you fine control over how attributes are deleted in a class. By overriding this method, you can customize the behavior when an attribute is deleted using del.
-
-
-
-
-
 46
 Workera.ai
 To ensure that a cloud-based web application can handle sudden spikes in traffic, which metric of the load balancer should be used to set an alert?
