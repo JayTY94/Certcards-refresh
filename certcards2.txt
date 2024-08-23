@@ -2698,6 +2698,7 @@ Stuff like App name, App id, IP address, Device identifier, Device Platform,
 
 2450
 Conditional Access
+Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within Microsoft Defender for Cloud Apps portal to further refine filters and set actions to be taken on a user.
 
 
 
@@ -2707,8 +2708,8 @@ Conditional Access
 
 
 2450
-Conditional Access
-
+General
+[Win] + [ctrl] + [v] opens the windows audio device selection menu in Windows 11. Very helpful.
 
 
 
