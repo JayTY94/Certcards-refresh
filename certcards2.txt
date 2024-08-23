@@ -1,22 +1,6 @@
 
 
 
-46
-Workera.ai
-To ensure that a cloud-based web application can handle sudden spikes in traffic, which metric of the load balancer should be used to set an alert?
-Queue Length
-
-
-
-
-
-47
-Power Apps
-Unlike canvas app development where the designer has complete control over app layout, with model-driven apps much of the user interface is determined for you and is largely designated by the components you add to the app.
-
-
-
-
 
 48
 PP365
@@ -2719,16 +2703,9 @@ General
 
 2450
 Conditional Access
+With the access and session policies, you can:
+Monitor user sessions for compliance: Risky users are monitored when they sign into apps and their actions are logged from within the session. You can investigate and analyze user behavior to understand where, and under what conditions, session policies should be applied in the future.
 
-
-
-
-
-
-
-
-2450
-Conditional Access
 
 
 
@@ -2739,6 +2716,42 @@ Conditional Access
 
 2450
 Conditional Access
+Conditional Access: Client certificates can be used in conditional access policies to control access based on device compliance. This adds an extra layer of security by ensuring that only compliant devices can access sensitive data.
+
+
+
+
+
+
+
+2450
+Conditional Access
+A persistent browser session allows users to remain signed in after closing and reopening their browser window. The Microsoft Entra ID default for browser session persistence allows users on personal devices to choose whether to persist the session by showing a “Stay signed in?” prompt after successful authentication.
+
+
+
+
+
+
+
+2450
+Conditional Access
+There are several key benefits to continuous access evaluation (CAE).
+
+User termination or password change/reset: User session revocation will be enforced in near real time.
+Network location change: Conditional Access location policies will be enforced in near real time.
+
+
+
+
+
+
+
+2450
+Conditional Access
+Token Renewal: Refresh tokens are used to obtain new access and refresh token pairs when the current access token expires.
+Token Lifetime: The default lifetime for refresh tokens is 24 hours for single-page applications and 90 days for other scenarios.
+
 
 
 
@@ -2749,27 +2762,8 @@ Conditional Access
 
 2450
 Conditional Access
-
-
-
-
-
-
-
-
-2450
-Conditional Access
-
-
-
-
-
-
-
-
-2450
-Conditional Access
-
+Token Binding: Refresh tokens are bound to a combination of user and client, allowing access across any combination of resource and tenant where permission is granted.
+Token Replacement: Refresh tokens replace themselves with a fresh token upon every use, and old tokens should be securely deleted after acquiring a new one.
 
 
 
