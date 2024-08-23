@@ -2696,15 +2696,11 @@ The storage account name is used as part of the URI for API access, so it must b
 
 
 2450
-Azure Storage
+Conditional Access
+Organizations with Microsoft Entra ID Premium P2 licenses can create Conditional Access policies incorporating Microsoft Entra Identity Protection sign-in risk detections. (Accuity doesn't have this type of license).
 
+This policy can be assigned either through Conditional Access itself or through Microsoft Entra Identity Protection. 
 
-
-
-
-
-2450
-Azure Storage
 
 
 
@@ -2712,23 +2708,14 @@ Azure Storage
 
 
 2450
-Azure Storage
+Conditional Access
+Organizations that have deployed Microsoft Intune can use the information returned from their devices to identify devices that meet compliance requirements, such as:
 
+Requiring a PIN to unlock.
+Requiring device encryption.
+Requiring a minimum or maximum operating system version.
+Requiring a device is not jailbroken or rooted.
 
-
-
-
-
-2450
-Azure Storage
-
-
-
-
-
-
-2450
-Azure Storage
 
 
 
@@ -2736,23 +2723,13 @@ Azure Storage
 
 
 2450
-Azure Storage
+Conditional Access
+Conditional Access policies are powerful tools. We recommend excluding the following accounts from your policy:
+
+Emergency access or break-glass accounts to prevent tenant-wide account lockout. In the unlikely scenario that all administrators are locked out of your tenant, your emergency-access administrative account can be used to sign into the tenant and take steps to recover access.
 
 
 
-
-
-
-2450
-Azure Storage
-
-
-
-
-
-
-2450
-Azure Storage
 
 
 
@@ -2760,5 +2737,128 @@ Azure Storage
 
 
 2450
-Azure Storage
+Conditional Access
+Require app protection policy - This access-blocking policy also has the potential to block access for all users in your organization if you don't have an Intune policy. If you're an administrator without a client application that has an Intune app protection policy, this policy blocks you from getting back into portals such as Intune and Azure.
+
+
+
+
+
+
+
+
+2450
+Conditional Access
+Find more information about the problem by clicking More Details in the initial error page. Clicking More Details will reveal troubleshooting information that's helpful when searching the Microsoft Entra sign-in events for the specific failure event the user saw or when opening a support incident with Microsoft.
+Stuff like App name, App id, IP address, Device identifier, Device Platform, 
+
+
+
+
+
+
+
+
+2450
+Conditional Access
+
+
+
+
+
+
+
+
+2450
+Conditional Access
+
+
+
+
+
+
+
+
+2450
+Conditional Access
+
+
+
+
+
+
+
+
+2450
+Conditional Access
+
+
+
+
+
+
+
+
+2450
+Conditional Access
+
+
+
+
+
+
+
+
+2450
+Conditional Access
+
+
+
+
+
+
+
+
+2450
+Conditional Access
+
+
+
+
+
+
+
+
+2450
+Conditional Access
+
+
+
+
+
+
+
+
+2450
+Conditional Access
+
+
+
+
+
+
+
+
+2450
+Conditional Access
+
+
+
+
+
+
+
+
+2450
+Conditional Access
 
