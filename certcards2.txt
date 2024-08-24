@@ -2729,3 +2729,12 @@ Named replacement fields improve readability by matching the arguments’ names 
 
 
 
+2732
+Azure
+I figured out how to export the sign-in logs! I need to create a diagnostic setting from the sign in log page in the Entra admin center and point it at an azure log analytics resource. It looks like there was about a 5 minute delay.
+
+
+
+
+
+
