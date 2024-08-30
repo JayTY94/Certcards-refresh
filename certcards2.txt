@@ -2770,7 +2770,13 @@ In Lesson 1, we engineered our time dummy in Pandas directly. From now on, howev
 
 2741
 Kaggle
+To create a moving average, first use the rolling method to begin a windowed computation. Follow this by the mean method to compute the average over the window. As we can see, the trend of Tunnel Traffic appears to be about linear.
 
+moving_average = tunnel.rolling(
+    window=365,       # 365-day window
+    center=True,      # puts the average at the center of the window
+    min_periods=183,  # choose about half the window size
+).mean()              # compute the mean (could also do median, std, min, max, ...)
 
 
 
@@ -2778,7 +2784,15 @@ Kaggle
 
 2741
 Kaggle
+Syntax for creating a deterministic process. This helps with common data transforms for time-series calculations.
+from statsmodels.tsa.deterministic import DeterministicProcess
 
+dp = DeterministicProcess(
+    index=tunnel.index,  # dates from the training data
+    constant=True,       # dummy feature for the bias (y_intercept)
+    order=1,             # the time dummy (trend)
+    drop=True,           # drop terms if necessary to avoid collinearity
+)
 
 
 
