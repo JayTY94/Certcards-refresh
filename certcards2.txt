@@ -2741,7 +2741,7 @@ I figured out how to export the sign-in logs! I need to create a diagnostic sett
 2741
 Kaggle
 Moving Average Plots
-To see what kind of trend a time series might have, we can use a moving average plot. To compute a moving average of a time series, we compute the average of the values within a sliding window of some defined width. Each point on the graph represents the average of all the values in the series that fall within the window on either side. The idea is to smooth out any short-term fluctuations in the series so that only long-term changes remain.
+To see what kind of trend a time series might have, we can use a moving average plot. To compute a moving average of a time series, we compute the average of the values within a sliding window of some defined width. The idea is to smooth out any short-term fluctuations in the series so that only long-term changes remain.
 
 
 
