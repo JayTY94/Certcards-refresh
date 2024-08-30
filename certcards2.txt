@@ -2750,7 +2750,11 @@ To see what kind of trend a time series might have, we can use a moving average 
 
 2741
 Kaggle
+Once we've identified the shape of the trend, we can attempt to model it using a time-step feature. We've already seen how using the time dummy itself will model a linear trend:
+target = a * time + b
 
+We can fit many other kinds of trend through transformations of the time dummy. If the trend appears to be quadratic (a parabola), we just need to add the square of the time dummy to the feature set, giving us:
+target = a * time ** 2 + b * time + c
 
 
 
@@ -2758,7 +2762,7 @@ Kaggle
 
 2741
 Kaggle
-
+In Lesson 1, we engineered our time dummy in Pandas directly. From now on, however, we'll use a function from the statsmodels library called DeterministicProcess. Using this function will help us avoid some tricky failure cases that can arise with time series and linear regression. The order argument refers to polynomial order: 1 for linear, 2 for quadratic, 3 for cubic, and so on.
 
 
 
