@@ -2800,7 +2800,43 @@ dp = DeterministicProcess(
 
 2741
 Kaggle
+Functionality: The reset_index() method of a DataFrame is used to reset its index, converting one or more index levels back into columns. This helps when you need to work with index data as regular DataFrame columns.
 
+
+
+
+
+
+
+2741
+Kaggle
+Level Selection: As a method of the DataFrame, reset_index(level=...) allows you to specify which index levels to reset when dealing with multiindex DataFrames. You can reset a specific level or multiple levels by passing their names or positions.
+
+
+
+
+
+2741
+Kaggle
+Drop Index Levels: Using reset_index(drop=True), you can remove the specified index levels without adding them as columns. This method parameter is useful when you want to discard index information from the DataFrame.
+
+
+
+
+
+2741
+Kaggle
+Named Index Handling: When applying the reset_index() method, any named index levels will be added as columns with their respective names. If the index level is unnamed, it will default to 'index' as the column name.
+
+
+
+
+
+2741
+Kaggle
+I created a shifted, lag feature for my time series using the following syntax. Turns out the pandas shift() function will respect the groupby() groups, in this case the different engagements.
+
+df['cumulative_hours_lag'] = df.groupby('EngagementID')['cumulative_hours'].shift(1)
 
 
 
@@ -2813,10 +2849,22 @@ Kaggle
 
 
 
+2741
+Kaggle
+
+
+
+
 
 2741
 Kaggle
 
+
+
+
+
+2741
+Kaggle
 
 
 
