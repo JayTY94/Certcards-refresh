@@ -1,28 +1,3 @@
-1
-DNS
-• Certificate Transparency Logs:
-Public logs of digital certificates, including those used in DNS-based SSL/TLS connections, that provide a mechanism to detect and respond to fraudulent certificates.
-
-
-
-
-
-2
-Power BI Desktop
-If you connect SQL Profiler to the diagnostics port for Power BI Desktop, you can see which queries hit or miss the in-memory cache by performing a trace that's based on the following events:
-
-Queries Events\Query Begin
-Query Processing\Vertipaq SE Query Begin
-Query Processing\DirectQuery Begin
-
-
-
-
-
-3
-Microsoft Copilot Studio
-Prompt modification allows you to expand the capabilities of generative answers, or boosted conversations, by adding custom instructions. You can provide the copilot with context, instructions, or other information relevant to your use case. This is the system message that can be included at the start of a conversation with a generative AI model.
-
 
 
 
