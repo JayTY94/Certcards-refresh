@@ -2817,33 +2817,107 @@ df['cumulative_hours_lag'] = df.groupby('EngagementID')['cumulative_hours'].shif
 
 
 
-2741
-Kaggle
+2820
+Python
+The common practice is to use lists for homogeneous objects and tuples for heterogeneous objects. Lists are typically used when all elements are of the same type, while tuples are used when elements are of different types.
 
 
 
 
 
-2741
-Kaggle
+
+
+2820
+Pythons
 
 
 
 
 
-2741
-Kaggle
+
+2820
+Python
 
 
 
 
 
-2741
-Kaggle
+
+2820
+Python
 
 
 
 
 
-2741
-Kaggle
+
+2820
+Python
+
+
+
+
+
+
+2820
+Python
+
+
+
+
+
+
+2820
+Python
+
+
+
+
+
+
+2820
+Python
+
+
+
+
+
+
+2820
+Python
+
+
+
+
+
+
+2820
+Python
+
+
+
+
+
+
+2820
+Python
+
+
+
+
+
+
+2820
+Python
+
+
+
+
+
+
+2820
+Python
+
+
+
+
