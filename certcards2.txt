@@ -1,39 +1,5 @@
 
 
-
-
-4
-Power Platform Administration
-Optimized Searching: Quick Find is designed to provide fast and efficient searching across Dataverse records. It uses indexed columns to improve search performance, allowing users to quickly retrieve relevant records based on the search criteria. This means that the fields you want to search need to be indexed for optimal performance.
-
-
-
-
-
-5
-Power Platform administration
-In DAX, when you use SUMX or similar functions that iterate over a table, the context within which the function operates changes to the row context of that table. This means each row of the table becomes the current context for the calculation during each iteration of the function. Because of this row context, you don’t need to explicitly reference the table name when accessing its columns within the function.
-
-
-
-
-
-6
-Power Apps
-For some reason, when I was trying to update C&Y's Billing Managers and Project Managers, I was getting a partial failure when trying to use the Import feature from the Power Apps table. I ended up having to write a Power Automate script to edit the records.
-
-
-
-
-
-7
-Azure Functions
-Don't mix local development and portal development for a single function app. When you publish from a local project to a function app, the deployment process overwrites any functions that you developed in the portal.
-
-
-
-
-
 8
 PP365
 With Businesss Process Flows, you can make a step required so that people must enter data for a corresponding column before they can proceed to the next stage. This is commonly called ”stage-gating”. If you are adding a business-required or system-required column to a business process flow stage, we recommend that you add this column to your form as well.
