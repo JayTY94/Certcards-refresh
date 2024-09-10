@@ -2827,97 +2827,164 @@ The common practice is to use lists for homogeneous objects and tuples for heter
 
 
 
-2820
-Pythons
+2830
+Git
+git init: This command initializes a new Git repository in your current directory. It creates a hidden .git directory that tracks all changes to your project.
 
 
 
 
 
 
-2820
-Python
 
+2830
+Git
+git clone: This command copies an existing Git repository from a remote server to your local machine. It's often used to get a working copy of a project.
 
 
 
 
 
-2820
-Python
 
 
+2830
+Git
+git add: This command stages changes in your working directory for the next commit. You can add specific files or use git add . to stage all changes.
 
 
 
 
-2820
-Python
 
 
 
+2830
+Git
+git commit: This command records changes to the repository with a descriptive message. It's like taking a snapshot of your project at a specific point in time.
 
 
 
-2820
-Python
 
 
 
 
+2830
+Git
+git status: This command shows the current state of your working directory and staging area. It helps you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
 
 
-2820
-Python
 
 
 
 
 
+2830
+Git
+git push: This command uploads your local repository changes to a remote repository. It's used to share your changes with others.
 
-2820
-Python
 
 
 
 
 
 
-2820
-Python
+2830
+Git
+git pull: This command fetches and integrates changes from a remote repository into your local repository. It's a combination of git fetch and git merge.
 
 
 
 
 
 
-2820
-Python
 
+2830
+Git
+git branch: This command lists, creates, or deletes branches. Branches are used to develop features, fix bugs, or experiment without affecting the main codebase.
 
 
 
 
 
-2820
-Python
 
 
+2830
+Git
+git merge: This command integrates changes from one branch into another. It's commonly used to combine feature branches into the main branch.
 
 
 
 
-2820
-Python
 
 
 
+2830
+Git
+git checkout: This command switches between branches or restores working directory files. It's used to navigate between different versions of your project.
 
 
 
-2820
-Python
 
 
 
 
+2830
+Git
+git log: This command shows the commit history for the repository. It helps you see what changes were made, when, and by whom.
+
+
+
+
+
+
+
+2830
+Git
+git diff: This command shows the differences between commits, branches, or your working directory and the staging area. It's useful for reviewing changes before committing them.
+
+
+
+
+
+
+
+2830
+Git
+git stash: This command temporarily saves changes in your working directory that you aren't ready to commit. You can later apply or discard these changes.
+
+
+
+
+
+
+
+2830
+Git
+git remote: This command manages the set of remote repositories. It allows you to add, remove, and list remote repositories.
+
+
+
+
+
+
+
+2830
+Git
+git rebase: This command reapplies commits on top of another base tip. It's used to keep a linear project history.
+
+
+
+
+
+
+
+2830
+Git
+
+
+
+
+
+
+
+2830
+Git
