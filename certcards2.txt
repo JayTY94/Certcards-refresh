@@ -2881,7 +2881,8 @@ git rebase: This command reapplies commits on top of another base tip. It's used
 
 
 2830
-Git
+Python
+The re.sub function replaces all occurrences of a specified pattern in a string with a given replacement by default. If you want to replace only the first instance, you can use the count parameter and set it to 1.
 
 
 
