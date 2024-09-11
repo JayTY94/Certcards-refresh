@@ -2891,4 +2891,75 @@ The re.sub function replaces all occurrences of a specified pattern in a string 
 
 
 2830
-Git
+Python
+import re
+
+def replace_punctuations_and_spaces(input_string):
+    # Define the pattern to match all punctuations and spaces
+    pattern = r'[^\w]'
+    # Replace all matched characters with an empty string
+    result = re.sub(pattern, '', input_string)
+    return result
+
+
+
+
+
+
+
+2830
+Python
+
+
+
+
+
+
+
+2830
+Python
+
+
+
+
+
+
+
+2830
+Python
+
+
+
+
+
+
+
+2830
+Python
+
+
+
+
+
+
+
+2830
+Python
+
+
+
+
+
+
+
+2830
+Python
+
+
+
+
+
+
+
+2830
+Python
