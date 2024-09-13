@@ -2812,7 +2812,7 @@ def replace_punctuations_and_spaces(input_string):
 
 2830
 Python
-
+The transform method in pandas is used to perform operations on a group level and return a result that is the same size as the original group. It is particularly useful for creating new columns in a DataFrame based on group-wise calculations.
 
 
 
@@ -2821,7 +2821,7 @@ Python
 
 2830
 Python
-
+The transform method allows you to apply a function to each group of a DataFrame and return a DataFrame with the same shape as the original. This is particularly useful for creating new columns based on group-level calculations while preserving the original DataFrame's structure.
 
 
 
