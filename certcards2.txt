@@ -1,73 +1,4 @@
 
-36
-MS Dataverse
-The Event Execution Pipeline passes registered plug-ins a wealth of data about the current operation being processed and your custom code's execution environment.
-
-
-
-
-
-37
-Azure VDI Project
-Mandatory profile	
-A mandatory profile is a roaming user profile that an administrator has preconfigured to specify settings for users. With mandatory user profiles, a user can modify their desktop, but the changes aren't saved when the user signs out. The next time the user signs in, the mandatory user profile that the administrator created is downloaded. Mandatory profiles are typically used in a kiosk environment.
-
-
-
-
-
-38
-MS Data Analyst
-Clustering allows you to identify a segment (cluster) of data that is similar to each other but dissimilar to the rest of the data. The process of clustering is different to that of grouping, which you accomplished previously.
-
-To apply clustering to your scatter chart, select More options (...) in the upper-right corner of the visual and then select Automatically find clusters.
-
-
-
-
-
-39
-Python
-If your use case doesn’t fall into one of the Core API applications, like building tools on top of TensorFlow or developing your own high-performance platform, you should prefer Keras.
-
-
-
-
-
-40
-Dataverse 
-We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Microsoft Power Platform admin center to quickly view adoption and user metrics for your organization.
-
-I can see these! They don't say much about what individuals are looking at, from what I saw when glancing at the reports.
-
-
-
-
-
-41
-General
-Automatic OS image upgrades on Azure Machine Scale Set: A feature that automatically updates the OS disk image used in an Azure Virtual Machine Scale Set to the latest version, ensuring VMs are running the most recent OS.
-
-
-
-
-
-42
-General
-Organizations must establish clear sideloading policies to comply with legal and regulatory standards. Unauthorized sideloading can lead to software licensing and regulatory violations.
-
-
-
-
-
-43
-Azure Storage
-Semi-structured data is defined by a data serialization language. In data classification, serialization is the process of converting data into a format that can be transmitted or stored. Three common serialization languages are XML, JSON, and YAML.
-
-
-
-
-
 44
 Workera.ai
 Geographical Separation: Azure Region Pairs consist of two regions within the same geography but separated by a significant distance to protect against regional disasters. This ensures that in the event of a natural disaster or significant outage in one region, the paired region remains operational, thereby providing enhanced disaster recovery capabilities.
@@ -2742,6 +2673,20 @@ The API key can be included as a query string parameter named code, or as an HTT
 
 2732
 Azure Functions
+A trigger is an object that defines a specific function. For example, if you want a function to execute every 10 minutes, you could use a timer trigger.
+
+Every function must have exactly one trigger associated with it. If you want to execute a piece of logic that runs under multiple conditions, you need to create multiple functions that share the same core function code.
+
+
+
+
+
+2732
+Azure Functions
+Trigger types and purpose:
+Queue:Execute a function when a message is added to an Azure Storage queue
+Azure Cosmos DB:	Execute a function when a document changes in a collection
+Azure SQL:	Execute a function when a row changes in a table
 
 
 
@@ -2750,16 +2695,9 @@ Azure Functions
 
 2732
 Azure Functions
-
-
-
-
-
-
-2732
-Azure Functions
-
-
+Trigger types and purpose:
+Event Hub: Execute a function when an event hub receives a new event
+Event Grid:	Execute a function based on Event Grid subscriptions
 
 
 
