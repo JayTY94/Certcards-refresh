@@ -1,18 +1,6 @@
 
 
 
-
-
-1
-Azure Functions
-Trigger types and purpose:
-Queue:Execute a function when a message is added to an Azure Storage queue
-Azure Cosmos DB:	Execute a function when a document changes in a collection
-Azure SQL:	Execute a function when a row changes in a table
-
-
-
-
 2
 Azure Functions
 When business analysts discuss and plan a business process, they may draw a flow diagram on paper. With Logic Apps and Microsoft Power Automate, you can take a similar approach to designing a workflow. They both include user interfaces where you can draw out the workflow. We call this approach a design-first approach.
