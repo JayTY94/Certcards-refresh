@@ -1,4 +1,7 @@
 
+
+
+
 44
 Workera.ai
 Geographical Separation: Azure Region Pairs consist of two regions within the same geography but separated by a significant distance to protect against regional disasters. This ensures that in the event of a natural disaster or significant outage in one region, the paired region remains operational, thereby providing enhanced disaster recovery capabilities.
