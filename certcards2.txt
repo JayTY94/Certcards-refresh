@@ -1,22 +1,6 @@
 
 
 
-2
-Azure Functions
-When business analysts discuss and plan a business process, they may draw a flow diagram on paper. With Logic Apps and Microsoft Power Automate, you can take a similar approach to designing a workflow. They both include user interfaces where you can draw out the workflow. We call this approach a design-first approach.
-
-
-
-
-3
-Python
-According to the Python documentation, which format presentation type will display a fixed amount of decimal places—NAN for missing data and INF for infinite data?
-
-F
-
-
-
-
 4
 Azure Functions Quickstart
 Checking Dependencies: You can view the dependencies of a meta-package by using tools like pip show or looking up the package on PyPI, which will list the included dependencies and their versions.
