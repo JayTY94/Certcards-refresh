@@ -1,34 +1,6 @@
 
 
 
-4
-Azure Functions Quickstart
-Checking Dependencies: You can view the dependencies of a meta-package by using tools like pip show or looking up the package on PyPI, which will list the included dependencies and their versions.
-
-
-
-
-5
-Workera.ai
-Azure Data Lake Analytics: Best for on-demand analytics jobs with a serverless model, utilizing U-SQL.
-
-
-
-
-6
-Kaggle
-Functionality: The reset_index() method of a DataFrame is used to reset its index, converting one or more index levels back into columns. This helps when you need to work with index data as regular DataFrame columns.
-
-
-
-
-7
-Azure Key Vault Secrets
-When dealing with REST APIs or SDKs for Azure Key Vault, you'll commonly encounter date-time strings in ISO 8601 format, which look something like YYYY-MM-DDTHH:MM:SSZ for Coordinated Universal Time (UTC), or Unix timestamps which count the seconds since the Unix epoch (00:00:00 UTC on 1 January 1970).
-
-
-
-
 8
 Git
 git merge: This command integrates changes from one branch into another. It's commonly used to combine feature branches into the main branch.
