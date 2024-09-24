@@ -1,19 +1,6 @@
 
 
 
-8
-Git
-git merge: This command integrates changes from one branch into another. It's commonly used to combine feature branches into the main branch.
-
-
-
-
-9
-Python
-The TestSuite class in Python’s unittest framework allows you to create groups of tests and run them selectively. This can be particularly useful in complex projects with many features, different testing levels, selective testing, and environment-specific testing. You can learn more about it in the section on grouping your tests.
-
-
-
 
 10
 Python
