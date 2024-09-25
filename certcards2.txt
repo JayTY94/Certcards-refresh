@@ -2,24 +2,6 @@
 
 
 
-10
-Python
-The .__setattr__() method allows you to customize the behavior of attribute assignment in your class.
-
-By overriding this method, you can add custom logic, such as validation, before setting the attribute’s value.
-
-For example, you can check if the value assigned to an attribute is a positive number and raise an exception if it isn’t.
-
-
-
-
-11
-Python
-One of the main special features of PyTorch is that it adds a C++ module for autodifferentiation to the Torch backend. Autodifferentiation automatically calculates the gradient of the functions defined in torch.nn during backpropagation.
-
-
-
-
 12
 Maths
 Diagonal matrix of a matrix: A square matrix in which the entries outside the main diagonal are all zero.
