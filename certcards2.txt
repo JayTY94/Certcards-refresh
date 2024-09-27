@@ -2,29 +2,6 @@
 
 
 
-12
-Maths
-Diagonal matrix of a matrix: A square matrix in which the entries outside the main diagonal are all zero.
-
-
-
-
-13
-Power Platform
-Type of Logic Component: Business rule
-Used to apply rule or recommendation logic to a form, such as to set column requirements, hide columns, or validate data. App designers use a simple interface to implement and maintain fast-changing and commonly used rules.
-
-
-
-
-14
-MS Dataverse
-When you update the StateCode column, it is important to always set the desired StatusCode.
-
-StateCode and StatusCode have dependent values. There can be multiple valid StatusCode values for a given StateCode value, but each StateCode column has a single DefaultStatus value configured. When you update StateCode without specifying a StatusCode, the default status value will be set by the system.
-
-
-
 
 15
 Git
@@ -2279,3 +2256,56 @@ A DNS configuration where different responses are given to queries depending on 
 294
 Power Apps
 The Microsoft Trust Center is the primary resource for Power Platform compliance information. Learn more at Microsoft Compliance Offerings.
+
+
+
+
+294
+General
+Kurtosis measures the tails of a distribution, indicating how much of the data is concentrated in the extremes versus the center.
+
+
+
+
+
+294
+General
+Leptokurtic distributions (high kurtosis) have sharper peaks and fatter tails, suggesting a higher likelihood of extreme values or outliers.
+
+
+
+
+
+294
+General
+Platykurtic distributions (low kurtosis) are flatter with thinner tails, meaning data is more spread out with fewer extreme values.
+
+
+
+
+
+294
+General
+A normal distribution is mesokurtic, serving as a baseline with moderate tails and a kurtosis value of 0 (excess kurtosis) or 3 (raw kurtosis).
+
+
+
+
+
+
+
+
+294
+General
+
+
+
+
+294
+General
+
+
+
+
+294
+General
