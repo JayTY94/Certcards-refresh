@@ -1,37 +1,5 @@
 
 
-
-
-
-15
-Git
-git checkout: This command switches between branches or restores working directory files. It's used to navigate between different versions of your project.
-
-
-
-
-16
-Python
-Another consideration to keep in mind is security. Because f-strings evaluate at runtime, they could potentially expose your application to code injection attacks if you don’t carefully sanitize users’ input before interpolatation.
-
-
-
-
-17
-Python
-3. Using type hints with dynamic or complex types
-Sometimes the type of a variable might not be straightforward, such as when it can be one of several types or when the type is not known until runtime. Python's typing module provides tools to handle these cases:
-
-Union: When a value can be one of multiple types.
-
-from typing import Union
-
-def get_length(item: Union[str, list]) -> int:
-    return len(item)
-
-
-
-
 18
 Azure VDI Project
 . Autoscale is Azure Virtual Desktop’s native scaling feature that allows you to input scaling configurations for different days of the week and times of the day. Given this scaling configuration, Autoscale automatically turns on VMs according to your schedule and turns them off so that you no longer have to pay for unnecessary compute costs.
