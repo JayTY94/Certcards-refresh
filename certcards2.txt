@@ -1,12 +1,6 @@
 
 
 
-19
-Azure Functions
-The ability to monitor your functions is critical during development and in production. The Azure portal provides a monitoring dashboard, which you turn on by enabling Application Insights integration. In the Function App menu, under Settings, select Application Insights, select Turn on Application Insights, and then select Apply. In the dialog box, select Yes.
-
-
-
 
 20
 Azure VM Image Builder
