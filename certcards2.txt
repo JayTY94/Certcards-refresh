@@ -1,29 +1,5 @@
 
 
-
-
-
-1
-Maths
-Centered log-ratio transformation: A technique used in compositional data analysis to allow the application of standard statistical techniques by transforming component proportions to log-scale relative to the geometric mean.
-
-
-
-
-2
-Azure Functions
-The Azure App Service is a cloud-based hosting service for web applications, mobile back-ends, and RESTful APIs. These applications often need to perform some kind of background task. For example, in your bike rental system, when a user uploads a photo of a bike, you may need to generate a smaller thumbnail photograph.
-
-
-
-
-3
-Python
-The two most commonly used markup languages for README files are Markdown and reStructuredText. Markdown is a lightweight markup language that allows you to style a plain text file using formatting techniques like headings, emphasis, lists, images, and links. reStructuredText is an easy-to-read, what-you-see-is-what-you-get plain text markup language that uses intuitive constructs to indicate a document’s structure.
-
-
-
-
 4
 sklearn
 The principle behind nearest neighbor methods is to find a predefined number of training samples closest in distance to the new point, and predict the label from these. The number of samples can be a user-defined constant (k-nearest neighbor learning), or vary based on the local density of points (radius-based neighbor learning).
