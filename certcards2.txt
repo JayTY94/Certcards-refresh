@@ -1,34 +1,6 @@
 
 
 
-
-
-1
-Workera.ai
-Amazon Rekognition, Celebrity Recognition:
-
-The RecognizeCelebrities operation identifies celebrities in an image.
-It can recognize well-known people and return information about them.
-
-
-
-
-2
-General
-Tranch
-a portion of something, especially money.
-"they released the first tranche of the loan"
-
-
-
-
-3
-Azure Functions
-Because you specified Function when you created this function, you need to supply the key when you send the HTTP request. You can send it as a query string parameter named code. Or, use the preferred method and pass it as an HTTP header named x-functions-key.
-
-
-
-
 4
 Conditional Access
 Organizations that have deployed Microsoft Intune can use the information returned from their devices to identify devices that meet compliance requirements, such as:
