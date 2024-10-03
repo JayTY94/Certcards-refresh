@@ -1,48 +1,11 @@
 
 
 
-4
-Conditional Access
-Organizations that have deployed Microsoft Intune can use the information returned from their devices to identify devices that meet compliance requirements, such as:
-
-Requiring a PIN to unlock.
-Requiring device encryption.
-Requiring a minimum or maximum operating system version.
-Requiring a device is not jailbroken or rooted.
-
-
-
-
-5
-Power BI
-DAX Function
-HASONEVALUE(<columnName>)  
-Returns TRUE when the context for columnName has been filtered down to one distinct value only. Otherwise is FALSE.
-
-
-
-
-6
-Power BI
-To create a new custom column, go to the Add column menu and select Custom column. In the Custom column window, enter the formula 
-
-=try [Standard Rate] otherwise [Special Rate]
-
-Name this new column Final Rate. The formula above will try to evaluate the Standard Rate column and will output its value if no errors are found. If errors are found in the Standard Rate column, then the output will be the value defined after the otherwise statement, which in this case is the special rate.
-
-
-
 
 7
 General
 Benchmarking Tool: As a key benchmark, the European Stoxx 600 is extensively utilized by fund managers and institutional investors to assess the health of the European stock market. It serves as a crucial reference for evaluating performance and making informed asset allocation decisions within European equities.
 
-
-
-
-8
-Python
-The calendar.HTMLCalendar class has a method called .formatyearpage() which allows you to include a CSS stylesheet for styling the calendar. This method has an optional parameter named css that defaults to 'calendar.css'. This parameter refers to the name of the CSS file that will include the custom styles.
 
 
 
@@ -2310,14 +2273,9 @@ on 9/30, when I was trying to upload a report for HEC, I was noticing that Power
 
 287
 sklearn
+In mathematics, a manifold is a topological space that locally resembles Euclidean space near each point. More precisely, an n-dimensional manifold, or n-manifold for short, is a topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of n-dimensional Euclidean space.
 
 
-
-
-
-
-287
-sklearn
 
 
 
@@ -2326,14 +2284,8 @@ sklearn
 
 287
 sklearn
+One-dimensional manifolds include lines and circles, but not self-crossing curves such as a figure 8. Two-dimensional manifolds are also called surfaces. Examples include the plane, the sphere, and the torus, and also the Klein bottle and real projective plane.
 
-
-
-
-
-
-287
-sklearn
 
 
 
@@ -2342,27 +2294,103 @@ sklearn
 
 287
 sklearn
-
-
-
-
-
-
-287
-sklearn
-
+Given enough time, K-means will always converge, however this may be to a local minimum. This is highly dependent on the initialization of the centroids. As a result, the computation is often done several times, with different initializations of the centroids. One method to help address this issue is the k-means++ initialization scheme, which has been implemented in scikit-learn (use the init='k-means++' parameter). 
 
 
 
 
 
 287
-sklearn
+Dataverse
+Bearer Token:
 
+Definition: A type of token used in OAuth2 that authorizes access to resources like APIs.
+Context: The token obtained from Azure AD that you include in the Authorization header for your API requests.
 
 
 
 
 
 287
-sklearn
+Dataverse
+Authorization Code Flow:
+
+Definition: An OAuth2 flow used by public clients (like single-page apps or mobile apps) where the user signs in interactively, providing credentials, and possibly undergoing multi-factor authentication (MFA).
+Context: We discussed this flow as an alternative to the Client Credentials Flow because you wanted MFA to be required.
+
+
+
+
+
+287
+Dataverse
+Device Code Flow:
+
+Definition: A type of OAuth2 flow designed for devices with limited input capabilities, where the user is prompted to visit a URL on another device and authenticate by entering a code.
+Context: We used this in MSAL to allow for interactive authentication and MFA.
+
+
+
+
+287
+Dataverse
+Public Client:
+
+Definition: An application type in OAuth2 that does not require a client secret because it runs on devices that cannot securely store credentials (like mobile or desktop apps).
+Context: We configured your app as a public client so it could authenticate without a client secret
+
+
+
+
+287
+Dataverse
+Confidential Client:
+
+Definition: An application type in OAuth2 that requires a client secret or assertion, typically used by server-based or service applications.
+Context: Initially, your app was likely configured as a confidential client, which caused the error when we tried using Device Code Flow.
+
+
+
+
+
+287
+Dataverse
+MSAL (Microsoft Authentication Library):
+
+Definition: A Microsoft library for handling authentication and obtaining tokens using OAuth2. It simplifies the process of integrating OAuth2 with applications.
+Context: We used MSAL in Python to implement the Device Code Flow and authenticate interactively with MFA.
+
+
+
+
+
+287
+Dataverse
+
+
+
+
+
+287
+Dataverse
+
+
+
+
+
+287
+Dataverse
+
+
+
+
+
+287
+Dataverse
+
+
+
+
+
+287
+Dataverse
