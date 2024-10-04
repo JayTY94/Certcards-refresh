@@ -2300,3 +2300,90 @@ moving_average = tunnel.rolling(
     center=True,      # puts the average at the center of the window
     min_periods=183,  # choose about half the window size
 ).mean()              # compute the mean (could also do median, std, min, max, ...)
+
+
+
+
+
+286
+pandas
+Flattening Nested JSON Structures with json_normalize: The json_normalize function converts nested JSON data into a flat table. By using json_normalize, you can handle nested dictionaries and lists by creating columns for each nested key, effectively unnesting the data into a tabular format.
+
+
+
+
+
+
+286
+pandas
+Control Over Record Path and Metadata in json_normalize: With json_normalize, you can specify the path to the records you want to normalize using the record_path parameter. The meta parameter in json_normalize allows you to include metadata from parent levels, ensuring hierarchical data is accurately represented.
+
+
+
+
+
+
+286
+pandas
+Custom Separators and Maximum Depth in json_normalize: The sep parameter in json_normalize lets you define a custom separator for nested keys, defaulting to a dot (.). The max_level parameter allows you to limit how deeply json_normalize flattens nested data, providing control over the normalization process.
+
+
+
+
+
+
+286
+pandas
+Error Handling and Performance with json_normalize: Using the errors parameter in json_normalize, you can manage parsing errors with options like 'raise' or 'ignore'. Efficient handling of large JSON datasets with json_normalize improves performance, making it valuable for big data applications.
+
+
+
+
+
+
+286
+pandas
+Expanding List-Like Elements into Rows using explode: The explode method transforms each element of a list-like column into separate rows by applying DataFrame.explode. This allows you to analyze each list element individually in a row-wise fashion.
+
+
+
+
+
+
+286
+pandas
+Column-Specific Operation with explode: You can apply explode to a specific column by passing the column name to DataFrame.explode. Other columns remain unaffected, with their values duplicated alongside the new rows, maintaining the DataFrame's structural integrity.
+
+
+
+
+
+
+286
+pandas
+Exploding Multiple Columns using explode: Starting from pandas version 1.3.0, DataFrame.explode allows you to explode multiple columns simultaneously by passing a list of column names to explode. This is useful when you have multiple list-like columns that need to be expanded in parallel.
+
+
+
+
+
+
+286
+pandas
+Handling Empty Lists and Missing Data in explode: The explode method gracefully handles empty lists and missing values (NaN) when you use DataFrame.explode. Empty lists result in no additional rows, while NaN values are propagated, ensuring DataFrame consistency after the operation.
+
+
+
+
+
+
+
+286
+pandas
+
+
+
+
+
+286
+pandas
