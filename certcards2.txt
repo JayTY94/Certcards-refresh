@@ -1,34 +1,6 @@
 
 
 
-
-
-1
-General
-Platykurtic distributions (low kurtosis) are flatter with thinner tails, meaning data is more spread out with fewer extreme values.
-
-
-
-
-2
-Python
-You can use magic methods like .__dir__() and .__hasattr__() for object introspection in Python.
-
-.__dir__() returns a list of attributes and methods of an object.
-.__hasattr__() checks whether an object has a specific attribute.
-These methods allow you to control how your objects behave when someone inspects them using built-in functions like dir() and hasattr().
-
-
-
-
-3
-DNS
-- Same-Origin Policy (SOP)
-Websites with the same-origin policy restrict cross-policy interactions. Code (e.g., JavaScript) that originates from http://www[.]badactor[.]com/home.html and sends an HTTP request to http://www[.]yourname[.]com/news[.]html will be restricted.
-
-
-
-
 4
 Azure Storage
 Do you have some data that is proprietary and some for public consumption? If so, you could enable virtual networks for the proprietary data and not for the public data. Separating proprietary data and public data requires separate storage accounts.
