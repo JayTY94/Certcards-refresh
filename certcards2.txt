@@ -1,30 +1,6 @@
 
 
 
-4
-Azure Storage
-Do you have some data that is proprietary and some for public consumption? If so, you could enable virtual networks for the proprietary data and not for the public data. Separating proprietary data and public data requires separate storage accounts.
-
-
-
-
-5
-General
-Leptokurtic distributions (high kurtosis) have sharper peaks and fatter tails, suggesting a higher likelihood of extreme values or outliers.
-
-
-
-
-6
-Power BI Desktop
-If at least one table in the semantic model has its storage mode set to either import or Dual, the Data view tab is displayable. 
-
-Whle
-
-en you select Dual and Import tables in Data view, they show cached data. DirectQuery tables don't show data, and a message is displayed that states that DirectQuery tables can't be shown.
-
-
-
 
 7
 sklearn
@@ -2351,11 +2327,88 @@ Handling Empty Lists and Missing Data in explode: The explode method gracefully 
 
 
 286
-pandas
+Conditional Access
+During sign-in, policies in report-only mode are evaluated but not enforced.
+Results are logged in the Conditional Access and Report-only tabs of the Sign-in log details.
+Customers with an Azure Monitor subscription can monitor the impact of their Conditional Access policies using the Conditional Access insights workbook.
+
+
+
 
 
 
 
 
 286
-pandas
+Conditional Access
+Report-only: Success	
+All configured policy conditions, required non-interactive grant controls, and session controls were satisfied. For example, a multifactor authentication requirement is satisfied by an MFA claim already present in the token, or a compliant device policy is satisfied by performing a device check on a compliant device.
+
+
+
+
+
+
+
+286
+Conditional Access
+Report-only: Failure	
+All configured policy conditions were satisfied but not all the required non-interactive grant controls or session controls were satisfied. For example, a policy applies to a user where a block control is configured, or a device fails a compliant device policy.
+
+
+
+
+
+
+
+286
+Conditional Access
+Report-only: User action required	
+All configured policy conditions were satisfied but user action would be required to satisfy the required grant controls or session controls. With report-only mode, the user isn't prompted to satisfy the required controls. For example, users aren't prompted for multifactor authentication challenges or terms of use.
+
+
+
+
+
+
+
+286
+Conditional Access
+Report-only: Not applied	
+Not all configured policy conditions were satisfied. For example, the user is excluded from the policy or the policy only applies to certain trusted named locations.
+
+
+
+
+
+
+
+286
+Conditional Access
+
+
+
+
+
+
+
+286
+Conditional Access
+
+
+
+
+
+
+
+286
+Conditional Access
+
+
+
+
+
+
+
+286
+Conditional Access
