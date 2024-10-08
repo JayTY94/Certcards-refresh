@@ -2568,3 +2568,118 @@ Python
 When a request fails, you may want your application to retry the same request. However, Requests won’t do this for you by default. To apply this functionality, you need to implement a custom transport adapter.
 
 Transport adapters let you define a set of configurations for each service that you’re interacting with.
+
+
+
+
+
+
+303
+Power BI
+Power BI and API Calls: Power BI supports REST API calls, allowing data import from web services. The built-in Web connector is used for API integration but primarily supports GET requests. More complex methods like POST require manual M code configuration to handle the request body and headers.
+
+
+
+
+
+
+
+303
+Power BI
+API Request Configuration in Power BI: When integrating the BLS Public Data API, you need the API endpoint URL, HTTP request type (GET or POST), and payload with series IDs, date ranges, and optional parameters. Requests for multiple series or additional features like calculations are often handled via POST requests with a JSON body.
+
+
+
+
+
+
+
+303
+Power BI
+Power BI Web Connector Limitation: The "From Web" connector supports only GET requests by default. To use POST requests or include a body/payload in the request, you must manually edit the Power Query M code. The connector does not provide an interface for specifying request types or payloads in the UI.
+
+
+
+
+
+
+
+303
+Power BI
+Creating POST Requests in Power Query: You can modify Power Query M code to create a POST request by specifying the endpoint URL, headers (such as Content-Type: application/json), and request body. The body is structured as JSON using Json.FromValue(), converted to binary with Text.ToBinary(), and passed to the Web.Contents() function.
+
+
+
+
+
+
+
+303
+Power BI
+Error Handling: Type Conversion: When formatting API request bodies in Power Query, errors like "Expression.Error: Cannot convert Record to Text" occur if the payload isn’t correctly formatted. The solution is to ensure the payload is properly serialized into text using Text.FromBinary(Json.FromValue(...)) before passing it to the API call.
+
+
+
+
+
+
+
+303
+Power BI
+Power Query Response Parsing: After receiving the API response, Power BI parses the data using Json.Document(). You can expand and transform nested records and lists within the Power Query Editor. This enables you to prepare the data for visualizations or further analysis within Power BI.
+
+
+
+
+
+
+
+303
+Power BI
+Handling Optional API Parameters: For more advanced API requests, parameters such as catalog, calculations, annual averages, and aspects can be added in the payload. These allow for more control over the data returned. Adding these parameters will depend on the API’s available options as per its documentation.
+
+
+
+
+
+
+
+303
+Power BI
+Transforming API Data into Usable Tables: API responses often contain nested structures (e.g., records, lists). In Power BI, you use the Expand functionality to convert these structures into tables, making the data easier to manipulate. Data transformation may include renaming columns, changing data types, or removing unnecessary fields.
+
+
+
+
+
+
+
+
+
+
+303
+Power BI
+
+
+
+
+
+
+303
+Power BI
+
+
+
+
+
+
+303
+Power BI
+
+
+
+
+
+
+303
+Power BI
