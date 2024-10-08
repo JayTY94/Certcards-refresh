@@ -2462,3 +2462,109 @@ Azure Functions
 A trigger is an object that defines a specific function. For example, if you want a function to execute every 10 minutes, you could use a timer trigger.
 
 Every function must have exactly one trigger associated with it. If you want to execute a piece of logic that runs under multiple conditions, you need to create multiple functions that share the same core function code.
+
+
+
+
+303
+Python
+When you make a request, the Requests library prepares the request before actually sending it to the destination server. Request preparation includes things like validating headers and serializing JSON content.
+
+You can view the PreparedRequest object by accessing .request on a Response object:
+
+
+
+
+
+303
+Python
+Authentication helps a service understand who you are. Typically, you provide your credentials to a server by passing data through the Authorization header or a custom header defined by the service. All the functions of Requests that you’ve seen to this point provide a parameter called auth, which allows you to pass your credentials:
+
+>>> import requests
+
+>>> response = requests.get(
+...     "https://httpbin.org/basic-auth/user/passwd",
+...     auth=("user", "passwd")
+... )
+
+
+
+
+
+303
+Python
+To make a request to GitHub’s authenticated user API, you first need to generate a personal access token with the read:user scope. Then you can pass this token as the second element in a tuple to get():
+
+>>> import requests
+>>> token = "<YOUR_GITHUB_PA_TOKEN>"
+>>> response = requests.get(
+...     "https://api.github.com/user",
+...     auth=("", token)
+... )
+
+
+
+
+303
+Python
+Bad authentication mechanisms can lead to security vulnerabilities. Unless a service requires a custom authentication mechanism for some reason, you’ll always want to use a tried-and-true auth scheme like the built-in Basic authentication or OAuth, for example through Requests-OAuthlib.
+
+
+
+
+
+303
+Python
+Anytime the data that you’re trying to send or receive is sensitive, security is important. The way that you communicate with secure sites over HTTP is by establishing an encrypted connection using SSL, which means that verifying the target server’s SSL certificate is critical.  
+
+The good news is that Requests does this for you by default. However, there are some cases where you might want to change this behavior. If you want to disable SSL certificate verification, then you pass False to the verify parameter of the request function:
+
+
+
+
+
+
+
+
+303
+Python
+Note: Requests uses a package called certifi to provide certificate authorities. This lets Requests know which authorities it can trust. Therefore, you should update certifi frequently to keep your connections as secure as possible.
+
+
+
+
+
+303
+Python
+By default, Requests will wait indefinitely on the response, so you should almost always specify a timeout duration to prevent these issues from happening. To set the request’s timeout, use the timeout parameter. timeout can be an integer or float representing the number of seconds to wait on a response before timing out:
+
+requests.get("https://api.github.com", timeout=1)
+requests.get("https://api.github.com", timeout=3.05)
+
+
+
+
+303
+Python
+Sessions are used to persist parameters across requests. For example, if you want to use the same authentication across multiple requests, then you can use a session:
+
+import requests
+
+TOKEN = "<YOUR_GITHUB_PA_TOKEN>"
+
+with requests.Session() as session:
+    session.auth = TokenAuth(TOKEN)
+
+    first_response = session.get("https://api.github.com/user")
+    second_response = session.get("https://api.github.com/user")
+
+
+
+
+
+
+303
+Python
+When a request fails, you may want your application to retry the same request. However, Requests won’t do this for you by default. To apply this functionality, you need to implement a custom transport adapter.
+
+Transport adapters let you define a set of configurations for each service that you’re interacting with.
