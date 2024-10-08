@@ -2,27 +2,6 @@
 
 
 
-
-1
-Python
-The transform method in pandas is used to perform operations on a group level and return a result that is the same size as the original group. It is particularly useful for creating new columns in a DataFrame based on group-wise calculations.
-
-
-
-
-2
-Python
-If you take a look at the response, then you’ll see that it’s actually serialized JSON content. To get a dictionary, you could take the str that you retrieved from .text and deserialize it using json.loads(). However, a simpler way to accomplish this task is to use .json():
-
->>> response.json()
-{'current_user_url': 'https://api.github.com/user', ...}
-
->>> type(response.json())
-<class 'dict'>
-
-
-
-
 3
 Dataverse
 Extend Functionality: Plug-ins in Dataverse are designed to extend the platform's functionality. They allow users to add new features or customize existing ones to better meet specific needs. This can include data integration, automation of tasks, or enhanced user interfaces.
