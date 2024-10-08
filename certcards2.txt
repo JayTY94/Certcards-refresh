@@ -2,23 +2,6 @@
 
 
 
-7
-sklearn
-A ball tree recursively divides the data into nodes defined by a centroid C and a radius R, such that each point in the node lies within the hyper-sphere defined by r and C. the number of candidate points for a neighbor search is reduced through use of the triangle inequality.
-
-|x + y| <= |x| + |y|
-
-
-
-
-8
-Power Platform
-Type of Logic Component: Business process flow
-An online process that walks users through a standard business process. For example, use a business process flow if you want everyone to handle customer service requests the same way, or to require staff to gain approval for an invoice before submitting an order.
-
-
-
-
 9
 Conditional Access
 There are several key benefits to continuous access evaluation (CAE).
@@ -2384,7 +2367,36 @@ Not all configured policy conditions were satisfied. For example, the user is ex
 
 
 286
-Conditional Access
+Python
+The first bit of information that you can gather from Response is the status code. A status code informs you of the status of the request.
+
+For example, a 200 OK status means that your request was successful, whereas a 404 NOT FOUND status means that the resource you were looking for wasn’t found. There are many other possible status codes as well to give you specific insights into what happened with your request.
+
+
+
+
+
+
+286
+Python
+Requests goes one step further in simplifying this process for you. If you use a Response instance in a conditional expression, then it’ll evaluate to True if the status code was smaller than 400, and False otherwise.
+
+Therefore, you can simplify the last example by rewriting the if statement:
+
+if response:
+    print("Success!")
+else:
+    raise Exception(f"Non-success status code: {response.status_code}")
+
+
+
+
+
+
+286
+Python
+If you invoke Response.raise_for_status(), then Requests will raise an HTTPError for status codes between 400 and 600. If the status code indicates a successful request, then the program will proceed without raising that exception.
+
 
 
 
@@ -2393,7 +2405,12 @@ Conditional Access
 
 
 286
-Conditional Access
+Python
+Because the decoding of bytes to a str requires an encoding scheme, Requests will try to guess the encoding based on the response’s headers if you don’t specify one. You can provide an explicit encoding by setting .encoding before accessing .text:
+
+>>> response.encoding = "utf-8"  # Optional: Requests infers this.
+>>> response.text
+'{"current_user_url":"https://api.github.com/user", ...}'
 
 
 
@@ -2402,7 +2419,14 @@ Conditional Access
 
 
 286
-Conditional Access
+Python
+If you take a look at the response, then you’ll see that it’s actually serialized JSON content. To get a dictionary, you could take the str that you retrieved from .text and deserialize it using json.loads(). However, a simpler way to accomplish this task is to use .json():
+
+>>> response.json()
+{'current_user_url': 'https://api.github.com/user', ...}
+
+>>> type(response.json())
+<class 'dict'>
 
 
 
@@ -2411,4 +2435,86 @@ Conditional Access
 
 
 286
-Conditional Access
+Python
+If you take a look at the response, then you’ll see that it’s actually serialized JSON content. To get a dictionary, you could take the str that you retrieved from .text and deserialize it using json.loads(). However, a simpler way to accomplish this task is to use .json():
+
+>>> response.json()
+{'current_user_url': 'https://api.github.com/user', ...}
+
+
+
+
+
+
+286
+Python
+The response headers can give you useful information, such as the content type of the response payload and a time limit on how long to cache the response. To view these headers, access .headers:
+
+>>> import requests
+
+>>> response = requests.get("https://api.github.com")
+>>> response.headers
+{'Server': 'GitHub.com',
+...
+'X-GitHub-Request-Id': 'AE83:3F40:2151C46:438A840:65C38178'}
+
+
+
+
+
+
+
+286
+Python
+.headers returns a dictionary-like object, allowing you to access header values by key. For example, to see the content type of the response payload, you can access "Content-Type":
+
+>>> response.headers["Content-Type"]
+'application/json; charset=utf-8'
+
+There’s something special about this dictionary-like headers object, though. The HTTP specification defines headers as case-insensitive, which means that you’re able to access these headers without worrying about their capitalization:
+
+
+
+
+
+
+
+
+286
+Python
+One common way to customize a GET request is to pass values through query string parameters in the URL. To do this using get(), you pass data to params. For example, you can use GitHub’s repository search API to look for popular Python repositories:
+
+import requests
+
+# Search GitHub's repositories for popular Python projects
+response = requests.get(
+    "https://api.github.com/search/repositories",
+    params={"q": "language:python", "sort": "stars", "order": "desc"},
+)
+
+
+
+
+
+
+
+286
+Python
+To customize headers, you pass a dictionary of HTTP headers to get() using the headers parameter. For example, you can change your previous search request to highlight matching search terms in the results by specifying the text-match media type in the Accept header:
+
+import requests
+
+response = requests.get(
+    "https://api.github.com/search/repositories",
+    params={"q": '"real python"'},
+    headers={"Accept": "application/vnd.github.text-match+json"},
+)
+
+
+
+
+
+
+
+286
+Python
