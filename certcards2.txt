@@ -2,32 +2,6 @@
 
 
 
-7
-MS Dataverse
-It is valuable to recognize that the organization service is what defines the platform. The Web API provides a RESTful programming experience but ultimately all data operations go through the underlying organization service.
-
-
-
-
-8
-Python
-The full descriptor protocol in Python includes four methods:
-
-.__get__()
-.__set__()
-.__delete__()
-.__set_name__()
-
-
-
-
-9
-Microsoft Fabric Administration
-Admins can enable and disable global platform settings by controlling the Tenant settings. If your organization has one tenant, you can enable and disable settings for the entire organization from that tenant. Organizations with multiple tenants require an admin for each tenant
-
-
-
-
 10
 Git
 git clone: This command copies an existing Git repository from a remote server to your local machine. It's often used to get a working copy of a project.
