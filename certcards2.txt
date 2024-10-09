@@ -2,28 +2,6 @@
 
 
 
-5
-Azure Functions
-Experimental APIs. If you use the Consumption plan, with Functions, you can make millions of calls and pay very little. One thing to keep in mind is that any type of storage incurs a cost.
-
-An example is writing to a database with a function. This plan is ideal to use for prototyping or for Start-ups. In the latter case, if you have so many calls to your functions that most likely means you have paying customers. Hence, Azure Functions scales with your business. As your business grows, you might consider other hosting plans as well.
-
-
-
-
-6
-Kaggle
-To create a moving average, first use the rolling method to begin a windowed computation. Follow this by the mean method to compute the average over the window. As we can see, the trend of Tunnel Traffic appears to be about linear.
-
-moving_average = tunnel.rolling(
-    window=365,       # 365-day window
-    center=True,      # puts the average at the center of the window
-    min_periods=183,  # choose about half the window size
-).mean()              # compute the mean (could also do median, std, min, max, ...)
-
-
-
-
 7
 MS Dataverse
 It is valuable to recognize that the organization service is what defines the platform. The Web API provides a RESTful programming experience but ultimately all data operations go through the underlying organization service.
@@ -2622,7 +2600,8 @@ Transforming API Data into Usable Tables: API responses often contain nested str
 
 
 303
-Power BI
+OAuth2.0
+The Oauth 2.0 authorization code grant type, or auth code flow, enables a client application to obtain authorized access to protected resources like web APIs. The auth code flow requires a user-agent that supports redirection from the authorization server (the Microsoft identity platform) back to your application. 
 
 
 
@@ -2630,7 +2609,12 @@ Power BI
 
 
 303
-Power BI
+OAuth2.0
+Use the auth code flow paired with Proof Key for Code Exchange (PKCE) and OpenID Connect (OIDC) to get access tokens and ID tokens in these types of apps:
+
+Single-page web application (SPA)
+Standard (server-based) web application
+Desktop and mobile apps
 
 
 
@@ -2638,7 +2622,10 @@ Power BI
 
 
 303
-Power BI
+OAuth2.0
+The spa redirect type is backward-compatible with the implicit flow. Apps currently using the implicit flow to get tokens can move to the spa redirect URI type without issues and continue using the implicit flow. Despite this backward compatibility, we recommend that you use the auth code flow with PKCE for SPAs.
+
+
 
 
 
@@ -2646,4 +2633,54 @@ Power BI
 
 
 303
-Power BI
+OAuth2.0
+To learn who the user is before redeeming an authorization code, it's common for applications to also request an ID token when they request the authorization code. This approach is called the hybrid flow because it mixes OIDC with the OAuth2 authorization code flow.
+
+
+
+
+
+
+
+
+303
+OAuth2.0
+client_secret	required for confidential web apps	
+The application secret that you created in the app registration portal for your app. Don't use the application secret in a native app or single page app because a client_secret can't be reliably stored on devices or web pages. It's required for web apps and web APIs, which can store the client_secret securely on the server side. Like all parameters here, the client secret must be URL-encoded before being sent. This step is done by the SDK.
+
+
+
+
+
+
+303
+OAuth2.0
+Access tokens are short lived. Refresh them after they expire to continue accessing resources. You can do so by submitting another POST request to the /token endpoint. Provide the refresh_token instead of the code. Refresh tokens are valid for all permissions that your client has already received consent for.
+
+
+
+
+
+
+
+
+303
+OAuth2.0
+
+
+
+
+
+
+
+303
+OAuth2.0
+
+
+
+
+
+
+
+303
+OAuth2.0
