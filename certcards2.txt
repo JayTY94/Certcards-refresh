@@ -2639,16 +2639,10 @@ Access tokens are short lived. Refresh them after they expire to continue access
 
 
 303
-OAuth2.0
+OData
+2. Entity
+An entity in OData represents a single piece of data, like a row in a database table. Each entity has a unique identifier (key) and contains various properties, which represent the individual attributes or fields of the data, such as name, age, or status.
 
-
-
-
-
-
-
-303
-OAuth2.0
 
 
 
@@ -2657,4 +2651,158 @@ OAuth2.0
 
 
 303
-OAuth2.0
+OData
+Entity Set
+An entity set in OData is a collection of entities of the same type, similar to a table in a database. For example, a collection of customers or products. The entity set acts as a container and can be queried to retrieve or manipulate multiple entities.
+
+
+
+
+
+
+
+
+303
+OData
+Service Document
+The service document is the entry point for an OData service. It provides metadata about the available entity sets and other resources that the client can interact with. The document acts as a map, allowing the client to discover what data is exposed via the OData service.
+
+
+
+
+
+
+
+
+303
+OData
+Metadata Document
+In OData, the metadata document describes the structure of the OData service, including the entity types, relationships, and properties. It is expressed in an XML format and allows developers and tools to understand the underlying schema of the OData service for integration purposes.
+
+
+
+
+
+
+
+
+303
+OData
+Key
+A key is a unique identifier for an entity within an entity set. In OData, keys are used to locate and identify individual entities, much like primary keys in relational databases. They are essential for accessing specific resources via URLs.
+
+
+
+
+
+
+
+
+303
+OData
+$filter
+The $filter query option allows clients to filter or narrow down the data returned from an OData service. It enables the use of conditions to specify which entities should be included in the response, for example, selecting customers whose age is greater than 30.
+
+
+
+
+
+
+303
+OData
+ $orderby
+The $orderby query option lets clients specify the order in which the data should be returned. For instance, you can use it to sort a list of entities in ascending or descending order based on specific properties, such as sorting products by price.
+
+
+
+
+
+
+303
+OData
+$select
+The $select query option allows clients to specify which properties of the entities should be included in the response. Instead of retrieving all properties of an entity, $select enables fetching only the required fields, reducing the amount of data transferred.
+
+
+
+
+
+
+303
+OData
+$expand
+The $expand query option is used to include related entities in the response. For example, if you are querying a customer entity, you can use $expand to retrieve their associated orders or addresses in the same query, enabling easier navigation of related data.
+
+
+
+
+
+
+303
+OData
+Navigation Property
+A navigation property defines the relationship between two entity types in OData, such as a one-to-many or many-to-many relationship. It allows clients to navigate from one entity to another, like retrieving all orders for a specific customer.
+
+
+
+
+
+
+
+
+303
+OData
+Edm (Entity Data Model)
+The Entity Data Model (Edm) is a core concept in OData. It defines the structure of data exposed by an OData service, including entity types, relationships, and properties. Edm is used to describe the schema of the data and how entities relate to one another.
+
+
+
+
+
+
+
+
+303
+OData
+ $top
+The $top query option allows clients to limit the number of results returned from a query. For example, $top=10 will only return the first 10 entities from the query result. This is useful for paginating large datasets or limiting data size.
+
+
+
+
+
+
+303
+OData
+$skip
+The $skip query option is used to skip a specified number of results from the start of the result set. It is commonly used in combination with $top to paginate through large data sets, allowing clients to retrieve data in chunks.
+
+
+
+
+
+
+303
+OData
+Function
+A function in OData is an operation that can be invoked on data but does not modify the data itself. Functions are used for read-only operations, such as calculating values or retrieving specific data. They can be defined in the OData metadata.
+
+
+
+
+
+
+303
+OData
+Action
+Actions in OData are operations that can perform modifications on the data, such as updating entities, triggering workflows, or processing business logic. Unlike functions, actions can alter the data or system state and are invoked through POST requests.
+
+
+
+
+
+
+303
+OData
+Batch Request
+A batch request allows clients to send multiple OData operations in a single HTTP request. This reduces the number of HTTP calls and is particularly useful when performing a series of related operations, such as inserting, updating, or deleting multiple entities in one go.
