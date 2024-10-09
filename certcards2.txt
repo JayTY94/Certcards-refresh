@@ -2,21 +2,6 @@
 
 
 
-3
-Dataverse
-Extend Functionality: Plug-ins in Dataverse are designed to extend the platform's functionality. They allow users to add new features or customize existing ones to better meet specific needs. This can include data integration, automation of tasks, or enhanced user interfaces.
-
-
-
-
-4
-DNS
-• Recursive Resolver:
-A DNS server that receives a query and then performs all necessary queries to other DNS servers to return the final IP address to the client, often used in conjunction with DNS caching.
-
-
-
-
 5
 Azure Functions
 Experimental APIs. If you use the Consumption plan, with Functions, you can make millions of calls and pay very little. One thing to keep in mind is that any type of storage incurs a cost.
