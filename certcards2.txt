@@ -1,43 +1,6 @@
 
 
 
-
-
-1
-Power Apps
-A web front-end cluster consists of an ASP.NET website that runs in the Azure App Service Environment. When a user visits a Power Platform service or application, the client's DNS service may get the most appropriate (usually nearest) datacenter from the Azure Traffic Manager. For more information, see Performance traffic-routing method for Azure Traffic Manager.
-
-
-
-
-2
-sklearn
-The principle behind nearest neighbor methods is to find a predefined number of training samples closest in distance to the new point, and predict the label from these. The number of samples can be a user-defined constant (k-nearest neighbor learning), or vary based on the local density of points (radius-based neighbor learning).
-
-
-
-
-3
-Python
-Requests goes one step further in simplifying this process for you. If you use a Response instance in a conditional expression, then it’ll evaluate to True if the status code was smaller than 400, and False otherwise.
-
-Therefore, you can simplify the last example by rewriting the if statement:
-
-if response:
-    print("Success!")
-else:
-    raise Exception(f"Non-success status code: {response.status_code}")
-
-
-
-
-4
-Fabric Administration
-You can also assign users to roles by using PowerShell. Users are managed in Microsoft Graph PowerShell. If you don't already have the Microsoft Graph PowerShell SDK, download and install the latest version.
-
-
-
-
 5
 Python
 Bad authentication mechanisms can lead to security vulnerabilities. Unless a service requires a custom authentication mechanism for some reason, you’ll always want to use a tried-and-true auth scheme like the built-in Basic authentication or OAuth, for example through Requests-OAuthlib.
@@ -2662,3 +2625,98 @@ A fail-safe profile is created when a user's roaming profile has problems loadin
 327
 Python
 You don’t need to use a dedicated tool to create a README file for your project. You can use any plain text editor for this task. However, there are many tools available that can help automate the README creation process. You can read more about this in the section on tools for README creation.
+
+
+
+
+327
+Dataverse Queries
+Lookup Field
+Definition: A special type of field in Dataverse that references a record from another entity (table). It creates a relationship between two entities.
+Example: ts_engagementid is a lookup field that points to a record in the ts_engagement entity.
+
+
+
+
+327
+Dataverse Queries
+_ts_engagementid_value
+Definition: A field representing the GUID of a record referenced by a lookup field. In this case, it holds the unique identifier of the related ts_engagement record.
+
+
+
+327
+Dataverse Queries
+_ts_engagementid_value@Microsoft.Dynamics.CRM.lookuplogicalname
+Definition: A field that contains the logical name of the entity that the lookup field points to. This helps identify the type of entity related to the GUID in the _ts_engagementid_value field.
+Example: The value "ts_engagement" indicates that the lookup points to the ts_engagement entity.
+
+
+
+327
+Dataverse Queries
+Filter Query
+Definition: A part of the OData query that allows filtering of data based on specific conditions. In this case, filtering was used to select rows where ts_engagementid equals a certain GUID.
+Example: $filter=ts_engagementid/Id eq {engagement_id}
+
+
+
+327
+Dataverse Queries
+Change Tracking
+Definition: A feature that allows the tracking of changes made to data in Dataverse entities. The Web API exposes a mechanism to track when records have been created, updated, or deleted.
+Relevance: Useful for scenarios like synchronizing data between systems or auditing changes in your data. The $deltatoken query parameter is used to fetch only the changes since the last request, improving efficiency.
+
+
+
+
+327
+Dataverse Queries
+$expand
+Definition: An OData query option that allows retrieving related data in a single query by expanding related entities.
+Relevance: The $expand option is highly useful when you need to retrieve related data (e.g., including a parent entity's information in the same query). It reduces the number of separate API calls required to retrieve related data, optimizing performance.
+
+
+
+
+327
+Dataverse Queries
+FetchXML
+Definition: A proprietary query language used in Dataverse for more advanced querying capabilities. Although the Web API primarily supports OData queries, FetchXML can be used for complex querying scenarios such as joins, aggregates, and advanced filtering.
+Relevance: FetchXML is particularly useful for scenarios where OData query limitations are encountered. It can be executed using the Web API through the RetrieveMultiple message.
+
+
+
+
+327
+Dataverse Queries
+Entity Bound Actions
+Definition: These are custom or system-defined actions that are tied to a specific entity and can be invoked via the Web API to perform tasks or trigger workflows.
+Relevance: Entity-bound actions are useful for performing more complex business logic or automation that is triggered based on a record in an entity. For example, triggering a workflow on an engagement task when it's completed.
+
+
+
+
+327
+Dataverse Queries
+Pagination and $top
+Definition: Pagination refers to breaking down large sets of data into smaller, more manageable chunks. The $top query parameter controls how many records are returned in a single request.
+Relevance: For performance reasons, Dataverse limits the number of records returned in a single API request. Pagination, along with $top, helps in retrieving large datasets incrementally without overwhelming the system.
+
+
+
+
+327
+Dataverse Queries
+Optimistic Concurrency
+Definition: A method of ensuring that data integrity is maintained when multiple users or processes are updating the same record. It checks if the record has been modified since it was last retrieved before allowing updates.
+Relevance: This is useful for preventing conflicts in multi-user environments. The Web API uses the If-Match header to implement this mechanism, ensuring that updates happen only if the record has not been altered by another process.
+
+
+
+
+327
+Dataverse Queries
+Alternate Keys
+Definition: In addition to the primary key (usually a GUID), Dataverse allows you to define alternate keys that can be used to uniquely identify records.
+Relevance: Alternate keys allow you to perform updates or retrieves based on natural keys (like an email or employee ID), avoiding the need to work directly with GUIDs.
