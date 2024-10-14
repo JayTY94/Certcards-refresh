@@ -2,38 +2,6 @@
 
 
 
-
-1
-OData
-$select
-The $select query option allows clients to specify which properties of the entities should be included in the response. Instead of retrieving all properties of an entity, $select enables fetching only the required fields, reducing the amount of data transferred.
-
-
-
-
-2
-Python
-In eager string interpolation, Python inserts the values into the string at execution time in the same place where you define the string. In lazy string interpolation, Python delays the insertion until the string is actually needed. In this latter case, you create string templates at one point in your code and fill the template with values at another point.
-
-
-
-
-3
-Python
-Operator overloading in Python allows you to provide additional functionality to operators. You can do this by defining special methods, such as .__add__() that Python uses when you work with the plus operator (+).
-
-You can use these special methods to support operators in your custom classes, not just built-in types.
-
-
-
-
-4
-Power Platform administration
-A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user doesn't exist in customer engagement apps. This user can't sign in, can't be enabled, and can't be synchronized to Microsoft 365. This type of user can only be created through data import.
-
-
-
-
 5
 Python
 In pandas, you have several methods at your disposal for data aggregation:
@@ -2680,3 +2648,157 @@ Function app configuration	Connection strings, environment variables, and other 
 329
 pandas
 Column-Specific Operation with explode: You can apply explode to a specific column by passing the column name to DataFrame.explode. Other columns remain unaffected, with their values duplicated alongside the new rows, maintaining the DataFrame's structural integrity.
+
+
+
+
+
+
+
+329
+sklearn
+A Hyperparameter search consists of:
+
+    an estimator (regressor or classifier such as sklearn.svm.SVC());
+    a parameter space;
+    a method for searching or sampling candidates;
+    a cross-validation scheme; and
+    a score function.
+
+
+
+
+
+
+329
+sklearn
+It is possible and recommended to search the hyper-parameter space for the best cross validation score.
+
+Any parameter provided when constructing an estimator may be optimized in this manner. Specifically, to find the names and current values for all parameters for a given estimator, use:
+
+estimator.get_params()
+
+
+
+
+
+
+
+329
+sklearn
+Two generic approaches to parameter search are provided in scikit-learn: for given values, GridSearchCV exhaustively considers all parameter combinations, while RandomizedSearchCV can sample a given number of candidates from a parameter space with a specified distribution. Both these tools have successive halving counterparts HalvingGridSearchCV and HalvingRandomSearchCV, which can be much faster at finding a good parameter combination.
+
+
+
+
+
+
+
+
+329
+RandomizedSearchCV implements a randomized search over parameters, where each setting is sampled from a distribution over possible parameter values. This has two main benefits over an exhaustive search:
+
+A budget can be chosen independent of the number of parameters and possible values.
+Adding parameters that do not influence the performance does not decrease efficiency.
+
+
+
+
+
+
+
+
+329
+sklearn
+Scikit-learn also provides the HalvingGridSearchCV and HalvingRandomSearchCV estimators that can be used to search a parameter space using successive halving [1] [2]. Successive halving (SH) is like a tournament among candidate parameter combinations. SH is an iterative selection process where all candidates (the parameter combinations) are evaluated with a small amount of resources at the first iteration. 
+
+
+
+
+
+
+329
+sklearn
+The cv_results_ attribute contains useful information for analyzing the results of a search. It can be converted to a pandas dataframe with df = pd.DataFrame(est.cv_results_). The cv_results_ attribute of HalvingGridSearchCV and HalvingRandomSearchCV is similar to that of GridSearchCV and RandomizedSearchCV, with additional information related to the successive halving process.
+
+
+
+
+
+
+329
+sklearn
+By default, parameter search uses the score function of the estimator to evaluate a parameter setting. These are the sklearn.metrics.accuracy_score for classification and sklearn.metrics.r2_score for regression. For some applications, other scoring functions are better suited (for example in unbalanced classification, the accuracy score is often uninformative). An alternative scoring function can be specified via the scoring parameter of most parameter search tools.
+
+
+
+
+
+
+329
+sklearn
+When evaluating the resulting model it is important to do it on held-out samples that were not seen during the grid search process: it is recommended to split the data into a development set (to be fed to the GridSearchCV instance) and an evaluation set to compute performance metrics.
+
+
+
+
+
+
+
+
+329
+sklearn
+
+
+
+
+
+
+
+329
+sklearn
+
+
+
+
+
+
+
+329
+sklearn
+
+
+
+
+
+
+
+329
+sklearn
+
+
+
+
+
+
+
+329
+sklearn
+
+
+
+
+
+
+
+329
+sklearn
+
+
+
+
+
+
+
+329
+sklearn
