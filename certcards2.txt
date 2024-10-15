@@ -2747,8 +2747,18 @@ When evaluating the resulting model it is important to do it on held-out samples
 
 
 329
-sklearn
+OData Requests
+HTTP Status Code 400 (Bad Request):
+A client-side error indicating that the server cannot process the request due to incorrect syntax or an invalid request, typically caused by improperly formatted payloads, missing fields, or incorrect data types.
 
+
+
+
+
+329
+OData Requests
+Edm.Decimal:
+A data type used in OData protocols to represent decimal numbers. Conflicts can occur when values are formatted incorrectly or incompatible with API settings, such as IEEE754Compatible, which controls floating-point number representation.
 
 
 
@@ -2756,17 +2766,9 @@ sklearn
 
 
 329
-sklearn
-
-
-
-
-
-
-
-329
-sklearn
-
+OData Requests
+IEEE754Compatible:
+A setting in web APIs that controls how floating-point numbers are handled. If set to true, numbers are represented in string format to avoid precision loss, otherwise, they are treated as typical decimal numbers.
 
 
 
@@ -2774,17 +2776,9 @@ sklearn
 
 
 329
-sklearn
-
-
-
-
-
-
-
-329
-sklearn
-
+OData Requests
+@odata.bind:
+A special syntax used in OData API requests to associate lookup fields with related entity records. It requires specifying the related entity's logical name and GUID to establish the relationship.
 
 
 
@@ -2792,8 +2786,9 @@ sklearn
 
 
 329
-sklearn
-
+OData Requests
+JSON null:
+The JSON equivalent of Python's None, used to represent missing or undefined data. It’s essential to replace invalid values like NaN with null in JSON payloads to avoid request errors.
 
 
 
@@ -2801,4 +2796,184 @@ sklearn
 
 
 329
-sklearn
+OData Requests
+PATCH Request:
+A type of HTTP request used to update partial resources in an API. Unlike PUT, which replaces an entire resource, PATCH only modifies specified fields, allowing for more efficient updates.
+
+
+
+
+
+
+329
+OData Requests
+Logical Name (Entity):
+The system name used to refer to an entity in Dynamics 365. It is different from the display name and is used when interacting with the API, such as in @odata.bind syntax for lookups.
+
+
+
+
+
+329
+OData Requests
+CrmODataEntityDeserializer:
+A specific component in Dynamics 365 that handles deserialization of OData-based API requests. It applies structural properties to entities based on incoming payloads, raising errors if there are invalid fields or data types.
+
+
+
+
+
+
+329
+OData Requests
+Deserialization in APIs:
+The process of converting data from a JSON or serialized format into a usable object in the API server. Errors can arise if the input data does not match the expected schema or types during deserialization.
+
+
+
+
+
+329
+OData Requests
+CrmODataEntityDeserializer:
+A specific component in Dynamics 365 that handles deserialization of OData-based API requests. It applies structural properties to entities based on incoming payloads, raising errors if there are invalid fields or data types.
+
+
+
+
+
+
+329
+OData Requests
+Form Data in HTTP Requests:
+A method of sending key-value pairs through HTTP requests, typically used when submitting form-like data. In JSON-based APIs, form data is less common, with JSON payloads being the standard.
+
+
+
+
+
+
+329
+UHero Requests
+Angular (Framework):
+Angular is a JavaScript framework for building dynamic, single-page web applications. It uses components, custom HTML tags, and extensive client-side scripting to render content dynamically without needing to reload the entire webpage.
+
+
+
+
+329
+UHero Requests
+XPath:
+XPath is a language used to navigate through elements and attributes in an XML or HTML document. In Selenium, it's commonly used to locate elements on a webpage using their position in the document hierarchy.
+
+
+
+
+329
+UHero Requests
+XHR (XMLHttpRequest):
+XHR is a JavaScript object that allows websites to make requests to servers asynchronously, loading data (e.g., JSON or HTML fragments) without requiring a page reload. Many modern web apps use this to dynamically update content.
+
+
+
+
+329
+UHero Requests
+CSS Selectors:
+CSS selectors are patterns used to select and style HTML elements on a webpage. In web scraping with Selenium, CSS selectors are used to target and extract specific elements based on their class, ID, or other attributes.
+
+
+
+
+329
+UHero Requests
+WebDriverWait:
+WebDriverWait is a Selenium function that pauses execution until a certain condition is met (e.g., waiting for an element to load). It's useful when dealing with dynamic websites where elements take time to appear after a page load.
+
+
+
+
+329
+UHero Requests
+Custom Components (Angular):
+Custom components are reusable blocks of code in frameworks like Angular that define new HTML elements. They encapsulate logic, styling, and behavior, making it difficult to scrape using traditional methods like targeting <table> or <div> tags.
+
+
+
+
+329
+UHero Requests
+Network Tab (in DevTools):
+The Network tab in browser DevTools tracks all network activity, including API calls (XHR, Fetch requests), CSS, and JavaScript loading. It's especially useful for identifying where data comes from and if an API can be used for scraping.
+
+
+
+
+329
+UHero Requests
+Dynamic Content:
+Dynamic content is webpage content that is loaded or updated after the initial page load, usually via JavaScript. It often requires additional tools (like Selenium) to capture because the data doesn't appear in the raw HTML source.
+
+
+
+
+329
+UHero Requests
+lib-geo-selector / Custom HTML Tags:
+In Angular and similar frameworks, custom HTML tags like <lib-geo-selector> are used to represent components with built-in functionality. These tags can be harder to scrape since they aren't standard HTML elements like <select> or <table>.
+
+
+
+
+329
+UHero Requests
+execute_script (Selenium):
+execute_script is a Selenium method that allows you to execute raw JavaScript code within the browser being controlled. It’s often used to retrieve hidden variables or perform actions not directly available through Selenium commands.
+
+
+
+
+329
+UHero Requests
+
+
+
+
+
+329
+UHero Requests
+
+
+
+
+
+329
+UHero Requests
+
+
+
+
+
+329
+UHero Requests
+
+
+
+
+
+329
+UHero Requests
+
+
+
+
+
+329
+UHero Requests
+
+
+
+
+
+329
+UHero Requests
