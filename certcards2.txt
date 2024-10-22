@@ -1,55 +1,6 @@
 
 
 
-
-
-1
-Workera.ai
-Azure DDoS Network Protection, combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network.
-
-
-
-
-2
-MS Data Analyst
-Continuing with the previous example, you now want to edit the categories that make up your group. Right-click the group field in either the Legend bucket or the Fields pane, and then select Edit Groups.
-
-In the Groups window that displays is a list of the groups and the different items within those groups. The following image shows the States with Sales > 500k group and its members, along with the Other group (States with Sales < 500k) that contains all other values that have not been put into the first group.
-
-
-
-
-3
-General
-Patch orchestration: The coordination and management of the deployment of patches across multiple systems and applications within an Azure environment.
-
-
-
-
-4
-Power BI
-At its most basic level, a partition is just a collection of one or more query steps. The most granular partition possible (at least in the current implementation) is a single step. The largest partitions can sometimes encompass multiple queries.
-
-
-
-
-5
-Python
-Instance variables in a class: these are called fields or attributes of an object
-Local Variables: Variables in a method or block of code
-Parameters: Variables in method declarations
-Class variables: This variable is shared between all objects of a class
-
-
-
-
-6
-Power Platform administration
-To disable a user account, remove a license from the user or remove the user from the security group that's associated with an environment. Removing a user from the security group doesn't remove the user's license. If you want to make the license available to another user, you have to remove the license from the user account that was disabled.
-
-
-
-
 7
 Python
 A Session object is a class for running TensorFlow operations. It contains the environment in which Tensor objects are evaluated and Operation objects are executed, and it can own resources like tf.Variable objects. The most common way to use a Session is as a context manager.
@@ -2856,3 +2807,243 @@ A fail-safe profile is created when a user's roaming profile has problems loadin
 351
 Python
 The common practice is to use lists for homogeneous objects and tuples for heterogeneous objects. Lists are typically used when all elements are of the same type, while tuples are used when elements are of different types.
+
+
+
+
+
+
+351
+MS Identity Platform
+OAuth versus OpenID Connect: The platform uses OAuth for authorization and OpenID Connect (OIDC) for authentication. OpenID Connect is built on top of OAuth 2.0, so the terminology and flow are similar between the two. You can even both authenticate a user (through OpenID Connect) and get authorization to access a protected resource that the user owns (through OAuth 2.0) in one request.
+
+
+
+
+
+351
+MS Identity Platform
+OpenID Connect versus SAML: The platform uses both OpenID Connect and SAML to authenticate a user and enable single sign-on. SAML authentication is commonly used with identity providers such as Active Directory Federation Services (AD FS) federated to Microsoft Entra ID, so it's often used in enterprise applications.
+
+
+
+
+
+351
+MS Identity Platform
+Four parties are generally involved in an OAuth 2.0 and OpenID Connect authentication and authorization exchange. These exchanges are often called authentication flows or auth flows.
+    Authentication server 
+    Client 
+    Resource owner 
+    Resource server 
+
+
+
+
+
+351
+MS Identity Platform
+Authorization server - The Microsoft identity platform is the authorization server. Also called an identity provider or IdP, it securely handles the end-user's information, their access, and the trust relationships between the parties in the auth flow. The authorization server issues the security tokens your apps and APIs use for granting, denying, or revoking access to resources (authorization) after the user has signed in (authenticated).
+
+
+
+
+
+
+
+351
+MS Identity Platform
+Client - The client in an OAuth exchange is the application requesting access to a protected resource. The client could be a web app running on a server, a single-page web app running in a user's web browser, or a web API that calls another web API. You'll often see the client referred to as client application, application, or app.
+
+
+
+
+
+
+
+351
+MS Identity Platform
+Resource owner - The resource owner in an auth flow is usually the application user, or end-user in OAuth terminology. The end-user "owns" the protected resource (their data) which your app accesses on their behalf. The resources owners can grant or deny your app (the client) access to the resources they own. For example, your app might call an external system's API to get a user's email address from their profile on that system. 
+
+
+
+
+
+351
+MS Identity Platform
+Resource server - The resource server hosts or provides access to a resource owner's data. Most often, the resource server is a web API fronting a data store. The resource server relies on the authorization server to perform authentication and uses information in bearer tokens issued by the authorization server to grant or deny access to resources.
+
+
+
+
+
+
+
+351
+MS Identity Platform
+The parties in an authentication flow use bearer tokens to assure, verify, and authenticate a principal (user, host, or service) and to grant or deny access to protected resources (authorization). Bearer tokens in the Microsoft identity platform are formatted as JSON Web Tokens (JWT).
+
+
+
+
+
+
+
+351
+MS Identity Platform
+Authentication scenarios involve two activities:
+
+Acquiring security tokens for a protected web API: We recommend that you use the Microsoft Authentication Library (MSAL), developed and supported by Microsoft.
+Protecting a web API or a web app: One challenge of protecting these resources is validating the security token. On some platforms, Microsoft offers middleware libraries.
+
+
+
+
+
+351
+MS Identity Platform
+Single-page applications: Also known as SPAs, these are web apps in which tokens are acquired by a JavaScript or TypeScript app running in the browser. Many modern apps have a single-page application at the front end that's primarily written in JavaScript. The application often uses a framework like Angular, React, or Vue. MSAL.js is the only Microsoft Authentication Library that supports single-page applications.
+
+
+
+
+
+
+
+351
+MS Identity Platform
+Public client applications: Apps in this category, like the following types, always sign in users:
+
+Desktop apps that call web APIs on behalf of signed-in users
+Mobile apps
+Apps running on devices that don't have a browser, like those running on IoT
+
+
+
+
+
+
+
+351
+MS Identity Platform
+Confidential client applications: Apps in this category include:
+
+Web apps that call a web API
+Web APIs that call a web API
+Daemon apps, even when implemented as a console service like a Linux daemon or a Windows service
+
+
+
+
+
+
+351
+MS Identity Platform
+Though we don't recommend that you use it, the username/password flow is available in public client applications. This flow is still needed in some scenarios like DevOps.
+
+Using the username/password flow constrains your applications. For instance, applications can't sign in a user who needs to use multifactor authentication or the Conditional Access tool in Microsoft Entra ID. 
+
+
+
+
+
+
+
+
+351
+MS Identity Platform
+You can use the Microsoft identity platform endpoint to secure web services like your app's RESTful API. A protected web API is called through an access token. The token helps secure the API's data and authenticate incoming requests. The caller of a web API appends an access token in the authorization header of an HTTP request.
+
+
+
+
+
+
+
+
+351
+MS Identity Platform
+For your protected web API to call another web API on behalf of a user, your app needs to acquire a token for the downstream web API. Such calls are sometimes referred to as service-to-service calls. Web APIs that call other web APIs need to provide custom cache serialization.
+
+
+
+
+
+
+
+
+351
+MS Identity Platform
+ID token - ID tokens are sent to the client application as part of an OpenID Connect flow. They can be sent alongside or instead of an access token. ID tokens are used by the client to authenticate the user. To learn more about how the Microsoft identity platform issues ID tokens, see ID tokens in the Microsoft identity platform.
+
+
+
+
+
+
+
+351
+MS Identity Platform
+The Microsoft identity platform implements security tokens as JSON Web Tokens (JWTs) that contain claims. Since JWTs are used as security tokens, this form of authentication is sometimes called JWT authentication.
+
+
+
+
+
+
+
+
+351
+MS Identity Platform
+Integrated Windows Authentication has been replaced with a more reliable way of getting tokens silently - WAM. WAM can login the current windows user silently. This workflow does not require complex setup and it even works for personal (Microsoft) accounts. Internally, the Windows Broker (WAM) will try several strategies to get a token for the current Windows user, including IWA and redeeming the PRT. This eliminates most of the limitations with IWA.
+
+
+
+
+
+
+
+
+351
+MS Identity Platform
+If your desktop or mobile application runs on Windows and on a machine connected to a Windows domain (Active Directory or Microsoft Entra joined) it is possible to use the Integrated Windows Authentication (IWA) to acquire a token silently. No UI is required when using the application.
+
+
+
+
+
+
+
+
+351
+MS Identity Platform
+The redirect URIs to use in a desktop application depend on the flow you want to use.
+
+Specify the redirect URI for your app by configuring the platform settings for the app in App registrations in the Microsoft Entra admin center.
+
+For apps that use Web Authentication Manager (WAM), redirect URIs need not be configured in MSAL, but they must be configured in the app registration.
+
+
+
+
+
+
+
+
+351
+MS Identity Platform
+URIs for certain apps:
+○ Apps that use embedded browsers: https://login.microsoft.com/common/oauth2/nativeclient (Note: if your app would pop up a window which typically contains no address bar, it is using the "embedded browser")
+Apps that would use system browsers: http://loclahost (Note: If your app would bring your system's default browser (such as edge, chrome, firefox, and so on) to visit Microsoft login portal, it is using the "system browser".)
+
+
+
+
+
+
+
+351
+MS Identity Platform
+To distinguish device code flow, integrated Windows authentication, and a username and a password from a confidential client application using a client credential flow used in daemon applications, none of which requires a redirect URI, configure it as a public client application. To achieve this configuration:
+
+In the Microsoft Entra admin center, select your app in App registrations, and then select Authentication.
