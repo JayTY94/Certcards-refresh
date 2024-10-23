@@ -2942,3 +2942,104 @@ Grids: Grids are tabular representations of data within a model-driven app in Po
 363
 IW Migration
 I was having trouble when creating the account records because I didn't have programmatic access to the fields of address2 (billing addrees). It turns out that they were protected with Column Security Profiles, and I needed to add "Billing Profile - Full Access" to my app registration user to get access to it. I could have probably added sys admin to the user instead, but decided not to.
+
+
+
+
+
+
+363
+Azure Functions 
+A timer trigger is a trigger that executes a function at a consistent interval. To create a timer trigger, you need to supply two pieces of information:
+
+A Timestamp parameter name, which is simply an identifier to access the trigger in code.
+A Schedule, which is a CRON expression that sets the interval for the timer.
+
+
+
+
+
+
+363
+Azure Functions 
+Just like the other triggers we've seen so far, you can create a blob trigger in the Azure portal. Inside your Azure function, select Blob trigger from the list of predefined trigger types. Then, enter the logic that you want to execute when a blob is created or updated.
+
+One setting that's important to understand is the Path. The Path tells the blob trigger which blob container to monitor to see if a blob is uploaded or updated. By default, the Path value is:
+
+samples-workitems/{name}
+
+
+
+
+
+
+363
+Azure Functions 
+Every Azure Function must have exactly one trigger associated with it. If you want to use multiple triggers, you must create multiple functions.
+
+
+
+
+
+
+
+363
+Azure Functions 
+2. Suppose your Azure Function has a blob trigger associated with it and you want it to execute only when png images are uploaded. Which of the following blob trigger Path values should you use? 
+
+samples-workitems/{name}.png
+The Path tells the blob trigger where it should monitor for changes, and if there are any filters applied. Adding a file extension to the Path specifies that uploaded files must have that file extension in order for the trigger to invoke the function.
+
+
+
+
+363
+Azure Functions 
+
+
+
+
+
+
+363
+Azure Functions 
+
+
+
+
+
+
+363
+Azure Functions 
+
+
+
+
+
+
+363
+Azure Functions 
+
+
+
+
+
+
+363
+Azure Functions 
+
+
+
+
+
+
+363
+Azure Functions 
+
+
+
+
+
+
+363
+Azure Functions 
