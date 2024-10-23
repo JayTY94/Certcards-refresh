@@ -1,32 +1,6 @@
 
 
 
-
-
-1
-Conditional Access
-Creating a policy for each app isn’t efficient and leads to difficult administration. Conditional Access has a limit of 195 policies per-tenant. This 195 policy limit includes Conditional Access policies in any state including report-only mode, on, or off.
-
-
-
-
-2
-Python
-Anytime the data that you’re trying to send or receive is sensitive, security is important. The way that you communicate with secure sites over HTTP is by establishing an encrypted connection using SSL, which means that verifying the target server’s SSL certificate is critical.  
-
-The good news is that Requests does this for you by default. However, there are some cases where you might want to change this behavior. If you want to disable SSL certificate verification, then you pass False to the verify parameter of the request function:
-
-
-
-
-3
-UHero Requests
-Dynamic Content:
-Dynamic content is webpage content that is loaded or updated after the initial page load, usually via JavaScript. It often requires additional tools (like Selenium) to capture because the data doesn't appear in the raw HTML source.
-
-
-
-
 4
 Git
 git remote: This command manages the set of remote repositories. It allows you to add, remove, and list remote repositories.
@@ -2959,3 +2933,12 @@ You don’t need to use a dedicated tool to create a README file for your projec
 363
 PP365
 Grids: Grids are tabular representations of data within a model-driven app in Power Apps. They allow users to view and interact with rows of data from a table. Grids can be configured to show specific columns and can be customized to include features like sorting, filtering, and pagination.
+
+
+
+
+
+
+363
+IW Migration
+I was having trouble when creating the account records because I didn't have programmatic access to the fields of address2 (billing addrees). It turns out that they were protected with Column Security Profiles, and I needed to add "Billing Profile - Full Access" to my app registration user to get access to it. I could have probably added sys admin to the user instead, but decided not to.
