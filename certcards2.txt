@@ -1,13 +1,4 @@
 
-
-
-4
-Git
-git remote: This command manages the set of remote repositories. It allows you to add, remove, and list remote repositories.
-
-
-
-
 5
 Azure VM Image Builder
 Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
