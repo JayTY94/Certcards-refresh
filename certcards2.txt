@@ -1,47 +1,4 @@
 
-5
-Azure VM Image Builder
-Resource Types: Each Azure Resource Provider is associated with a specific type or category of resources. For example:
-
-Microsoft.Compute manages resources related to virtual machines, virtual machine scale sets, and related components.
-Microsoft.Storage manages resources related to storage accounts and storage services.
-
-
-
-
-6
-Conditional Access
-Organizations with Microsoft Entra ID Premium P2 licenses can create Conditional Access policies incorporating Microsoft Entra Identity Protection sign-in risk detections. (Accuity doesn't have this type of license).
-
-This policy can be assigned either through Conditional Access itself or through Microsoft Entra Identity Protection.
-
-
-
-
-7
-Azure Storage
-Most Azure resources only work with Resource Manager, which makes it easy to decide which model to choose. However, storage accounts, virtual machines, and virtual networks support both, so you must choose one or the other when you create your storage account. The Resource Manager model adds the concept of a resource group, which isn't available in the classic model.
-
-
-
-
-8
-sklearn
-Two generic approaches to parameter search are provided in scikit-learn: for given values, GridSearchCV exhaustively considers all parameter combinations, while RandomizedSearchCV can sample a given number of candidates from a parameter space with a specified distribution. Both these tools have successive halving counterparts HalvingGridSearchCV and HalvingRandomSearchCV, which can be much faster at finding a good parameter combination.
-
-
-
-
-9
-Maths
-Generalized likelihood ratio test (GLRT) is a statistical test to compare the fit of two models, one of which is a special case of the other (nested models).
-
-
-
-
-10
-Git
-git push: This command uploads your local repository changes to a remote repository. It's used to share your changes with others.
 
 
 
@@ -66,21 +23,6 @@ Power BI
 In Power Query Diagnostics, 'Diagnose Step' is more useful for getting an insight into what evaluations are happening up to a single step, which can help you identify, up to that step, what performance is like as well as what parts of your query are being performed locally or remotely.
 
 
-
-
-14
-Python
-The most practical way to display the calendar in a foreign language involves creating the calendar.LocaleTextCalendar object:
-
->>> locale_calendar = calendar.LocaleTextCalendar(locale="de_DE.UTF-8")
->>> locale_calendar.prmonth(2024, 1)
-    Januar 2024
-Mo Di Mi Do Fr Sa So
- 1  2  3  4  5  6  7
- 8  9 10 11 12 13 14
-15 16 17 18 19 20 21
-22 23 24 25 26 27 28
-29 30 31
 
 
 
