@@ -1,13 +1,6 @@
 
 
 
-12
-pandas
-Column-Specific Operation with explode: You can apply explode to a specific column by passing the column name to DataFrame.explode. Other columns remain unaffected, with their values duplicated alongside the new rows, maintaining the DataFrame's structural integrity.
-
-
-
-
 13
 Power BI
 In Power Query Diagnostics, 'Diagnose Step' is more useful for getting an insight into what evaluations are happening up to a single step, which can help you identify, up to that step, what performance is like as well as what parts of your query are being performed locally or remotely.
