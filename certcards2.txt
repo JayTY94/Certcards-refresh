@@ -1,161 +1,55 @@
 
 
-
-
-
-1
-RAG
-Tools in a Prompt Flow may include:
-Running custom Python code
-Looking up data values in an index
-Creating prompt variants - enabling you to define multiple versions of a prompt for a large language model (LLM), varying system messages or prompt wording, and compare and evaluate the results from each variant.
-Submitting a prompt to an LLM to generate results.
-
-
-
-
-2
-Git
-git rebase: This command reapplies commits on top of another base tip. It's used to keep a linear project history.
-
-
-
-
-3
-Microsoft Copilot Studio
-The URL used in your copilot represents the scope of content for generating responses. There are requirements and restrictions on some URLs.
-
-URLs that point to a website, requiring authentication or ones not indexed by Bing.
-
-For example, wikis and SharePoint sites require authentication, therefore can't be used:
-
-fabrikam.visualstudio.com/project/_wiki
-fabrikam.sharepoint.com
-
-
-
-
-4
-Python
-By default, Requests will wait indefinitely on the response, so you should almost always specify a timeout duration to prevent these issues from happening. To set the request’s timeout, use the timeout parameter. timeout can be an integer or float representing the number of seconds to wait on a response before timing out:
-
-requests.get("https://api.github.com", timeout=1)
-requests.get("https://api.github.com", timeout=3.05)
-
-
-
-
-5
-Azure VDI Project
-Terraform state file locking is a mechanism to prevent concurrent operations that might corrupt the state file. When using remote backends like AWS S3 with DynamoDB or Azure Storage, state file locking ensures that multiple users or processes don’t interfere with each other while running Terraform commands.
-
-
-
-
-6
-Conditional Access
-Report-only: Failure	
-All configured policy conditions were satisfied but not all the required non-interactive grant controls or session controls were satisfied. For example, a policy applies to a user where a block control is configured, or a device fails a compliant device policy.
-
-
-
-
-7
-sklearn
-One-dimensional manifolds include lines and circles, but not self-crossing curves such as a figure 8. Two-dimensional manifolds are also called surfaces. Examples include the plane, the sphere, and the torus, and also the Klein bottle and real projective plane.
-
-
-
-
-8
-MS Identity Platform
-Four parties are generally involved in an OAuth 2.0 and OpenID Connect authentication and authorization exchange. These exchanges are often called authentication flows or auth flows.
-    Authentication server 
-    Client 
-    Resource owner 
-    Resource server
-
-
-
-
-9
-Azure VM Image Builder
-Azure Stack HCI (Hyper-Converged Infrastructure) is a hybrid cloud solution provided by Microsoft that combines on-premises infrastructure with Azure services. Azure Stack HCI provides seamless integration with Azure services, enabling organizations to leverage features like Azure Backup, Azure Site Recovery, Azure Monitor, and more.
-
-
-
-
-10
-General
-jq is a powerful command-line tool for parsing, filtering, and transforming JSON data. It allows you to navigate through JSON structures with ease using a simple and expressive query language.
-To extract a specific field from a JSON object, you can use the . operator followed by the field name:
-
-sh
-jq '.fieldName' file.json
-
-This command will output the value of fieldName from file.json.
-
-
-
-
-11
-UHero Requests
-XPath:
-XPath is a language used to navigate through elements and attributes in an XML or HTML document. In Selenium, it's commonly used to locate elements on a webpage using their position in the document hierarchy.
-
-
-
-
-12
-Python
-Type hints in Python are purely optional and are not enforced by the Python interpreter. This means that adding type hints to your code does not affect its runtime behavior; they are used for static type checking, documentation, and code completion in development environments. Tools like mypy or integrated development environments (IDEs) can use these hints to catch type errors before runtime.
-
-
-
-
 13
-MS Data Analyst
-3. You have a table that stores account balance snapshots for each date, excluding weekends. You need to ensure that your measure formula only filters by a single date. Also, if no record is on the last date of a time period, it should use the latest account balance. Which DAX time intelligence function should you use? 
-
-The LASTNONBLANK function will return the last date in the filter context where a snapshot record exists. This option will help you achieve the objective.
+Power BI
+In Power Query Diagnostics, 'Diagnose Step' is more useful for getting an insight into what evaluations are happening up to a single step, which can help you identify, up to that step, what performance is like as well as what parts of your query are being performed locally or remotely.
 
 
 
 
 14
-Azure DevOps Access Levels
-Feature-Rich IDE: Visual Studio Enterprise offers a wide range of features tailored to professional developers. These include advanced debugging tools, code navigation and analysis capabilities, integrated testing tools, and support for various programming languages and frameworks such as C#, C++, Python, and JavaScript. It also provides built-in support for version control systems like Git and Azure DevOps.
+Python
+The most practical way to display the calendar in a foreign language involves creating the calendar.LocaleTextCalendar object:
+
+>>> locale_calendar = calendar.LocaleTextCalendar(locale="de_DE.UTF-8")
+>>> locale_calendar.prmonth(2024, 1)
+    Januar 2024
+Mo Di Mi Do Fr Sa So
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31
 
 
 
 
 15
-PP365
-Power Apps Offline Use enables users to continue working with their apps even when they are not connected to the internet. This feature is crucial for scenarios where consistent internet access is not guaranteed, such as in remote locations or fieldwork.
+General
+Kurtosis measures the tails of a distribution, indicating how much of the data is concentrated in the extremes versus the center.
 
 
 
 
 16
-Azure Naming Convention
-Some of these example names use a three-digit padding scheme (###), such as mktg-prod-001.
-
-Padding improves readability and sorting of assets when those assets are managed in a configuration management database (CMDB), IT Asset Management tool, or traditional accounting tools.
+MS Identity Platform
+OAuth versus OpenID Connect: The platform uses OAuth for authorization and OpenID Connect (OIDC) for authentication. OpenID Connect is built on top of OAuth 2.0, so the terminology and flow are similar between the two. You can even both authenticate a user (through OpenID Connect) and get authorization to access a protected resource that the user owns (through OAuth 2.0) in one request.
 
 
 
 
 17
-OData
-Entity Set
-An entity set in OData is a collection of entities of the same type, similar to a table in a database. For example, a collection of customers or products. The entity set acts as a container and can be queried to retrieve or manipulate multiple entities.
+Azure CLI
+Add the flag --validate to keep the Azure CLI command (Bash!) to keep from actually deploying.
 
 
 
 
 18
-MS Identity Platform
-For your protected web API to call another web API on behalf of a user, your app needs to acquire a token for the downstream web API. Such calls are sometimes referred to as service-to-service calls. Web APIs that call other web APIs need to provide custom cache serialization.
+sklearn
+RandomizedSearchCV implements a randomized search over parameters, where each setting is sampled from a distribution over possible parameter values. This has two main benefits over an exhaustive search:
+A budget can be chosen independent of the number of parameters and possible values.
+Adding parameters that do not influence the performance does not decrease efficiency.
 
 
 
@@ -192,35 +86,62 @@ When it comes to pre-trained models, TensorFlow Hub steps in with models that yo
 
 
 23
-Python
-The primary purpose of a README file is to help users and developers understand the project’s purpose, how to use it, and how to contribute to it. It’s often the first piece of documentation that people see and serves as a short guide to the project. For more detailed documentation, wikis or dedicated documentation pages are recommended.
+OData Requests
+JSON null:
+The JSON equivalent of Python's None, used to represent missing or undefined data. It’s essential to replace invalid values like NaN with null in JSON payloads to avoid request errors.
 
 
 
 
 24
-Azure VDI Project
-To build images, you create a template as a JSON file. In the template, you define builders and provisioners that carry out the actual build process. Packer has a builder for Azure that allows you to define Azure resources, such as the service principal credentials created in the preceding step.
+Azure Functions
+Function triggers	Triggers are what cause a function to run. A trigger defines how a function is invoked and a function must have exactly one trigger.
 
 
 
 
 25
-Conditional Access
-Report-only: User action required	
-All configured policy conditions were satisfied but user action would be required to satisfy the required grant controls or session controls. With report-only mode, the user isn't prompted to satisfy the required controls. For example, users aren't prompted for multifactor authentication challenges or terms of use.
+Azure Functions Quickstart
+Maintenance: Meta-packages need to be maintained just like any other package. They should be updated to point to the latest, stable releases of their dependencies. If not properly maintained, they might pin outdated versions or lead to dependency conflicts.
 
 
 
 
 26
-Kaggle
-Named Index Handling: When applying the reset_index() method, any named index levels will be added as columns with their respective names. If the index level is unnamed, it will default to 'index' as the column name.
+Azure Storage
+Online analytical processing (OLAP) systems commonly support fewer users, have longer response times, can be less available, and typically handle large transactions or complex transactions.
+An example of an Azure service that supports OLAP is Azure Analysis Services.
 
 
 
 
 27
+Python
+When you try to create an instance of a class that inherits from the Sequence abstract base class, but doesn’t implement .__getitem__() and .__len__(), then Python raises a TypeError:
+
+The Sequence abstract base class requires that any class that inherits from it must implement the .__getitem__() and .__len__() methods.
+
+
+
+
+28
+Dataverse Queries
+Entity Bound Actions
+Definition: These are custom or system-defined actions that are tied to a specific entity and can be invoked via the Web API to perform tasks or trigger workflows.
+Relevance: Entity-bound actions are useful for performing more complex business logic or automation that is triggered based on a record in an entity. For example, triggering a workflow on an engagement task when it's completed.
+
+
+
+
+29
+OData
+Batch Request
+A batch request allows clients to send multiple OData operations in a single HTTP request. This reduces the number of HTTP calls and is particularly useful when performing a series of related operations, such as inserting, updating, or deleting multiple entities in one go.
+
+
+
+
+30
 Power Platform
 UI Component: Custom page (preview)
 	A canvas based page which allows flexible layout, low-code Fx functions, and Power Apps connector data. For more information, see Model-driven app custom page overview (preview)
