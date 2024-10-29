@@ -2,47 +2,9 @@
 
 
 
-
-1
-OData Requests
-CrmODataEntityDeserializer:
-A specific component in Dynamics 365 that handles deserialization of OData-based API requests. It applies structural properties to entities based on incoming payloads, raising errors if there are invalid fields or data types.
-
-
-
-
-2
-pandas
-Flattening Nested JSON Structures with json_normalize: The json_normalize function converts nested JSON data into a flat table. By using json_normalize, you can handle nested dictionaries and lists by creating columns for each nested key, effectively unnesting the data into a tabular format.
-
-
-
-
-3
-OData
-Batch Request
-A batch request allows clients to send multiple OData operations in a single HTTP request. This reduces the number of HTTP calls and is particularly useful when performing a series of related operations, such as inserting, updating, or deleting multiple entities in one go.
-
-
-
-
-4
-Terraform
-While the format of the state files are just JSON, direct file editing of the state is discouraged. Terraform provides the terraform state command to perform basic modifications of the state using the CLI.
-
-
-
-
-5
-General
-Kurtosis measures the tails of a distribution, indicating how much of the data is concentrated in the extremes versus the center.
-
-
-
-
 6
 sklearn
-An early approach to taking advantage of this aggregate information was the KD tree data structure (short for K-dimensional tree), which generalizes two-dimensional Quad-trees and 3-dimensional Oct-trees to an arbitrary number of dimensions. The KD tree is a binary tree structure which recursively partitions the parameter space along the data axes, dividing it into nested orthotropic regions into which data points are filed.
+The KD tree (K-Dimensional tree) is a binary tree structure which recursively partitions the parameter space along the data axes, dividing it into nested orthotropic regions into which data points are filed.
 
 
 
@@ -2830,3 +2792,174 @@ A suite of extensions to DNS that add a layer of security by enabling DNS respon
 349
 Kaggle
 In Lesson 1, we engineered our time dummy in Pandas directly. From now on, however, we'll use a function from the statsmodels library called DeterministicProcess. Using this function will help us avoid some tricky failure cases that can arise with time series and linear regression. The order argument refers to polynomial order: 1 for linear, 2 for quadratic, 3 for cubic, and so on.
+
+
+
+
+
+
+
+832
+sklearn 
+In the basic approach of cross-validation, called k-fold CV, the training set is split into k smaller sets. The following procedure is followed for each of the k “folds”:
+
+A model is trained using k-1 of the folds as training data;
+the resulting model is validated on the remaining part of the data (i.e., it is used as a test set to compute a performance measure such as accuracy).
+
+
+
+
+
+
+832
+sklearn 
+The simplest way to use cross-validation is to call the cross_val_score helper function on the estimator and the dataset.
+
+from sklearn.model_selection import cross_val_score
+clf = svm.SVC(kernel='linear', C=1, random_state=42)
+scores = cross_val_score(clf, X, y, cv=5)
+scores
+
+
+
+
+
+
+832
+sklearn 
+When the cv argument is an integer, cross_val_score uses the KFold or StratifiedKFold strategies by default, the latter being used if the estimator derives from ClassifierMixin.
+
+from sklearn import metrics
+scores = cross_val_score(
+    clf, X, y, cv=5, scoring='f1_macro')
+scores
+array([0.96..., 1.  ..., 0.96..., 0.96..., 1.        ])
+
+
+
+
+
+
+
+832
+sklearn 
+Assuming that some data is Independent and Identically Distributed (i.i.d.) is making the assumption that all samples stem from the same generative process and that the generative process is assumed to have no memory of past generated samples.
+
+
+
+
+
+
+
+832
+sklearn 
+Generalization Error: Generalization error is the measure of a model’s ability to accurately predict outcomes for new, unseen data. Lower generalization error indicates a model that performs well beyond its training data, whereas high error suggests overfitting or poor predictive power.
+
+
+
+
+
+
+
+
+832
+sklearn 
+KFold: KFold splits data into k consecutive folds (typically 5 or 10) for cross-validation, ensuring each fold is used as both a training and validation set. It’s widely used for balanced datasets, providing reliable estimates of a model’s performance on unseen data.
+
+
+
+
+
+
+
+
+832
+sklearn 
+RepeatedKFold: This extends KFold by repeating the cross-validation process several times with different random shuffles, which offers more robust estimates of model performance, especially useful for small datasets where variability in results could be high.
+
+
+
+
+
+
+
+
+832
+sklearn 
+LeaveOneOut: This cross-validation technique uses every single observation as its own test set, leaving all other points as the training set. While it provides precise model evaluation, it is computationally expensive, particularly for large datasets.
+
+
+
+
+
+
+
+
+832
+sklearn 
+LeavePOut: In LeavePOut, each combination of p observations is used as a test set while the rest of the data serves as the training set. This method gives a very thorough validation but quickly becomes computationally infeasible with larger p values or datasets.
+
+
+
+
+
+
+
+
+832
+sklearn 
+ShuffleSplit: ShuffleSplit randomly splits the data multiple times into training and test sets, allowing control over the number of splits, training/test set sizes, and randomization. It’s versatile and works well for datasets with no inherent ordering or stratification needs.
+
+
+
+
+
+
+
+
+832
+sklearn 
+LeavePGroupsOut: This cross-validation technique splits data based on group labels, leaving out all data points with a specific group label in each fold. Useful for datasets with naturally grouped data, where each group should either entirely be in training or test sets.
+
+
+
+
+
+
+
+
+
+832
+sklearn 
+TimeSeriesSplit: TimeSeriesSplit performs cross-validation on time series data, keeping temporal ordering intact by using only past data to predict future data in each fold. It’s designed for forecasting, where future information should not be included in training.
+
+
+
+
+
+
+
+832
+sklearn 
+permutation_test_score: This function assesses model performance by computing a baseline distribution of scores via label permutation, creating a null hypothesis benchmark. Comparing the model’s score to this distribution reveals whether its performance is significant or due to random chance.
+
+
+
+
+
+
+
+832
+sklearn 
+Data leakage occurs when information from the test set inadvertently influences the model during training, leading to overly optimistic performance. Cross-validation methods that respect data structure, like LeavePGroupsOut or TimeSeriesSplit, help prevent this risk.
+
+
+
+
+
+
+
+
+832
+sklearn 
+An alternative to cross-validation, bootstrapping involves repeatedly sampling data with replacement and evaluating model performance across these samples. It’s effective for small datasets, providing robust estimates of model variance but may not reflect real test distributions as accurately as cross-validation.
