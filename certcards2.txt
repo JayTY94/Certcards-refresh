@@ -2,57 +2,7 @@
 
 
 
-6
-sklearn
-The KD tree (K-Dimensional tree) is a binary tree structure which recursively partitions the parameter space along the data axes, dividing it into nested orthotropic regions into which data points are filed.
 
-
-
-
-7
-MS Identity Platform
-Public client applications: Apps in this category, like the following types, always sign in users:
-
-Desktop apps that call web APIs on behalf of signed-in users
-Mobile apps
-Apps running on devices that don't have a browser, like those running on IoT
-
-
-
-
-8
-Azure Functions
-Deployment slots	Azure Functions deployment slots allow your function app to run different instances called "slots". Slots are different environments exposed via a publicly available endpoint. Slots provide a way for you to test a new version of your functions in Azure in a safe environment and then seamlessly swap the new version into production.
-
-
-
-
-9
-sklearn
-Despite its simplicity, nearest neighbors has been successful in a large number of classification and regression problems, including handwritten digits and satellite image scenes. Being a non-parametric method, it is often successful in classification situations where the decision boundary is very irregular.
-
-
-
-
-10
-UHero Requests
-CSS Selectors:
-CSS selectors are patterns used to select and style HTML elements on a webpage. In web scraping with Selenium, CSS selectors are used to target and extract specific elements based on their class, ID, or other attributes.
-
-
-
-
-11
-Kaggle
-Syntax for creating a deterministic process. This helps with common data transforms for time-series calculations.
-from statsmodels.tsa.deterministic import DeterministicProcess
-
-dp = DeterministicProcess(
-    index=tunnel.index,  # dates from the training data
-    constant=True,       # dummy feature for the bias (y_intercept)
-    order=1,             # the time dummy (trend)
-    drop=True,           # drop terms if necessary to avoid collinearity
-)
 
 
 
