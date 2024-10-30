@@ -2913,3 +2913,60 @@ Data leakage occurs when information from the test set inadvertently influences 
 832
 sklearn 
 An alternative to cross-validation, bootstrapping involves repeatedly sampling data with replacement and evaluating model performance across these samples. It’s effective for small datasets, providing robust estimates of model variance but may not reflect real test distributions as accurately as cross-validation.
+
+
+
+
+
+
+
+923
+pandas
+Code to quickly filter down the columns on a df that has too many columns to see on one screen based on substrings. Looking at you, Dynamics 365.
+
+substrings = ['first', 'last', 'staff', 'user']
+pattern = '|'.join(substrings)
+
+filtered_columns = user_df.columns[user_df.columns.str.contains(pattern)]
+user_df[filtered_columns]
+
+
+
+
+
+
+923
+PP365
+Syntax for using the web api to get specific staff records based on a substring in the name column
+
+FActs_endpoint = "ts_staffs?$filter=contains(ts_name, 'Manu')"
+staff_records = make_api_request(FActs_endpoint, method='Get')
+
+ts_staffs: table name (pluralized)
+filter=contains(ts_name, 'Manu'): filter on specific field based on containing a substring
+
+
+
+
+
+
+923
+pandas
+
+
+
+
+
+
+
+923
+pandas
+
+
+
+
+
+
+
+923
+pandas
