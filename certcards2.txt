@@ -2847,3 +2847,12 @@ Authorization Code Flow:
 
 Definition: An OAuth2 flow used by public clients (like single-page apps or mobile apps) where the user signs in interactively, providing credentials, and possibly undergoing multi-factor authentication (MFA).
 Context: We discussed this flow as an alternative to the Client Credentials Flow because you wanted MFA to be required.
+
+
+
+
+
+885
+Python
+Python fully supports arithmetic between ints and floats. It will convert narrower numbers to match their less narrow counterparts when used with the binary arithmetic operators (+, -, *, /, //, and %). When division with /, // returns the quotient and % returns the remainder. Python considers ints narrower than floats. So, using a float in an expression ensures the result will be a float too. However, when doing division, the result will always be a float, even if only integers are used.
+
