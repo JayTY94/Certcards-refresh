@@ -2825,26 +2825,49 @@ Tax stuff
 
 
 
-873
-PP365
-
-
-
-
 
 873
-PP365
+GitHub codespaces
+The configuration files for a dev container are contained in a .devcontainer directory in your repository. You can use Visual Studio Code to add configuration files for you. You can choose from a selection of predefined configurations for various project types
 
 
 
 
 
 873
-PP365
+GitHub codespaces
+The primary file in a dev container configuration is the devcontainer.json file. You can use this file to determine the environment of codespaces created for your repository. The contents of this file define a dev container that can include frameworks, tools, extensions, and port forwarding. The devcontainer.json file usually contains a reference to a Dockerfile, which is typically located alongside the devcontainer.json file.
+
+
+
+
+873
+GitHub codespaces
 
 
 
 
 
 873
-PP365
+GitHub codespaces
+
+
+
+
+
+873
+GitHub codespaces
+
+
+
+
+
+873
+GitHub codespaces
+
+
+
+
+
+873
+GitHub codespaces
