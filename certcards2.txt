@@ -2,45 +2,6 @@
 
 
 
-3
-sklearn
-The k-neighbors classification in KNeighborsClassifier is the most commonly used technique. The optimal choice of the value is highly data-dependent: in general a larger k suppresses the effects of noise, but makes the classification boundaries less distinct.
-
-
-
-
-4
-Python
-When declaring a function, follow arguments with a colon and the desired type to designate a required type for that argument. For example
-
-def get_engagement_names(schedules: pd.DataFrame):
-    engagement_names = [
-        ' - '.join(row[['Account Name', 'EngagementName', 'Engagement Number']])
-        for _, row in schedules.iterrows()
-    ]
-    engagement_names = "\n".join(engagement_names)
-    return engagement_names
-
-
-
-
-5
-Power Apps
-The Microsoft Trust Center is the primary resource for Power Platform compliance information. Learn more at Microsoft Compliance Offerings.
-
-
-
-
-6
-Azure VDI Project
-4. Which of these steps is not part of creating an FSLogix profile? 
-
-Install FSLogix software in Azure Virtual Desktop gallery images
-FSLogix software is preinstalled in the Azure gallery images. If you use your own image, you'll need to install the FSLogix software yourself.
-
-
-
-
 7
 Python
 The TextCalendar.iterweekdays() method returns an iterator for weekday numbers, which begins with the day specified by the TextCalendar.setfirstweekday() method. These methods are part of the lower-level functions provided by the calendar module to work with calendar data.
@@ -2852,3 +2813,38 @@ NewColumn = COALESCE([Column1], [Column2])
 873
 PP365
 When making the role acc_caseUser, I was having trouble making sure that the users were correctly inheriting the role from the teams I assigned them to. This can be checked by looking at one of the records you're checking access to in the GUI, then choosing (...) > Check access > Pick the desired user
+
+
+
+
+
+873
+Tax stuff
+"TA-2" refers to the Transient Accommodations Tax Annual Return and Reconciliation form used in Hawaii. This form is utilized by operators of transient accommodations, such as hotels and vacation rentals, to report and reconcile their annual transient accommodations tax obligations. The TA-2 form is filed in addition to periodic tax returns and serves to summarize the total gross rental proceeds and taxes due for the taxable year
+
+
+
+
+873
+PP365
+
+
+
+
+
+873
+PP365
+
+
+
+
+
+873
+PP365
+
+
+
+
+
+873
+PP365
