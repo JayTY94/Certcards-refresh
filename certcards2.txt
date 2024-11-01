@@ -2843,6 +2843,8 @@ The primary file in a dev container configuration is the devcontainer.json file.
 
 873
 GitHub codespaces
+You can use a dotfiles repository and Settings Sync to personalize aspects of the codespace environment for any codespace that you create. Personalization can include shell preferences and additional tools. For more information, see "Personalizing GitHub Codespaces for your account."
+
 
 
 
@@ -2850,6 +2852,8 @@ GitHub codespaces
 
 873
 GitHub codespaces
+You can forward ports in your codespace to test and debug your application. You can also manage the port protocol and share the port within your organization or publicly. For more information, see "Forwarding ports in your codespace."
+
 
 
 
