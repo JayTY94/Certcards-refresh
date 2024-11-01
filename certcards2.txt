@@ -2856,3 +2856,20 @@ Context: We discussed this flow as an alternative to the Client Credentials Flow
 Python
 Python fully supports arithmetic between ints and floats. It will convert narrower numbers to match their less narrow counterparts when used with the binary arithmetic operators (+, -, *, /, //, and %). When division with /, // returns the quotient and % returns the remainder. Python considers ints narrower than floats. So, using a float in an expression ensures the result will be a float too. However, when doing division, the result will always be a float, even if only integers are used.
 
+
+
+
+
+885
+Power BI
+To define a column in Power BI (DAX) that takes the non-blank value between two existing columns, or remains blank if both are blank, you can use the COALESCE function. Here's an example of how you can achieve this:
+
+NewColumn = COALESCE([Column1], [Column2])
+
+
+
+
+
+873
+PP365
+When making the role acc_caseUser, I was having trouble making sure that the users were correctly inheriting the role from the teams I assigned them to. This can be checked by looking at one of the records you're checking access to in the GUI, then choosing (...) > Check access > Pick the desired user
