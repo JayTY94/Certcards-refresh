@@ -2,27 +2,6 @@
 
 
 
-
-1
-Azure VDI Project
-Terraform import
-The import command in Terraform allows you to bring existing resources under Terraform management without modifying them. This links the existing resource to Terraform's state file. Resources can then be managed and updated through Terraform, ensuring consistency between actual infrastructure and the configuration.
-
-
-
-
-2
-MS Data Analyst
-Disadvantages of Filters vs Slicers
-The Filters pane offers less design flexibility, though you can style it by using specific fonts and colors.
-
-Careful consideration should be made to hide certain filters to avoid confusing report consumers.
-
-It can be easy to lose track of applied visual-level filters.
-
-
-
-
 3
 sklearn
 The k-neighbors classification in KNeighborsClassifier is the most commonly used technique. The optimal choice of the value is highly data-dependent: in general a larger k suppresses the effects of noise, but makes the classification boundaries less distinct.
