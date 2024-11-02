@@ -3,36 +3,6 @@
 
 
 
-1
-PP365
-Although the business process flow control in the form does not provide any direct client-side programmability, changes applied by business rules or form scripts are automatically applied to business process flow controls.
-
-
-
-
-2
-Azure Functions
-Function	Triggers are what cause a function to run. A trigger defines how a function is invoked and a function must have exactly one trigger.
-
-
-
-
-3
-OData
-$filter
-The $filter query option allows clients to filter or narrow down the data returned from an OData service. It enables the use of conditions to specify which entities should be included in the response, for example, selecting customers whose age is greater than 30.
-
-
-
-
-4
-OData Requests
-HTTP Status Code 400 (Bad Request):
-A client-side error indicating that the server cannot process the request due to incorrect syntax or an invalid request, typically caused by improperly formatted payloads, missing fields, or incorrect data types.
-
-
-
-
 5
 Azure Functions Quickstart
 Example of Deprecation: As seen with the azure meta-package, meta-packages can be deprecated if the maintainer decides to focus on more granular packages or if the meta-package becomes unwieldy or unnecessary. Users must then switch to individual packages.
