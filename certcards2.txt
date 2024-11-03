@@ -3,52 +3,6 @@
 
 
 
-5
-Azure Functions Quickstart
-Example of Deprecation: As seen with the azure meta-package, meta-packages can be deprecated if the maintainer decides to focus on more granular packages or if the meta-package becomes unwieldy or unnecessary. Users must then switch to individual packages.
-
-
-
-
-6
-MS Data Analyst
-Creation: You can create display folders in Power BI Desktop by going to the Modeling tab and selecting the "Manage Display Folders" option. From there, you can create new folders and move fields into them. You can also create display folders using Tabular Editor or by editing the model.bim file.
-
-
-
-
-7
-Power BI
-Both GUID and ObjectsIDs may be used interchangeably. Each Report ObjectId is uniquely represented by a 32 hexadecimal GUID (a globally unique identifier).
-
-
-
-
-8
-Git
-git branch: This command lists, creates, or deletes branches. Branches are used to develop features, fix bugs, or experiment without affecting the main codebase.
-
-
-
-
-9
-Azure Functions
-A binding is a declarative way to connect data and services to your function.  Bindings interact with various data sources, which means you don't have to write the code in your function to connect to data sources and manage connections. The platform takes care of that complexity for you as a part of the binding code.
-
-
-
-
-10
-Azure Functions
-Function triggers	Triggers are what cause a function to run. A trigger defines how a function is invoked and a function must have exactly one trigger.
-
-
-
-
-11
-Azure VDI Project
-The terraform refresh command updates the Terraform state with the real-time configuration of the infrastructure. It checks the current state of the resources in the cloud and synchronizes the state file, ensuring Terraform has an accurate view of the infrastructure before making changes.
-
 
 
 
@@ -2884,3 +2838,9 @@ Actions in OData are operations that can perform modifications on the data, such
 362
 Power Platform administration
 You use the Microsoft 365 admin center to create user accounts for every user who needs access to apps, flows, or chatbots. The user account registers the user with Microsoft Online Services environment.
+
+
+
+
+
+
