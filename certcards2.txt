@@ -3,38 +3,6 @@
 
 
 
-
-
-
-12
-Azure VDI Project
-The AzureFirewallSubnet is a dedicated subnet where Azure Firewall must reside. It is mandatory when deploying an Azure Firewall, as it requires an isolated subnet to control and filter network traffic. This subnet typically has no associated Network Security Group (NSG) because firewall rules control traffic.
-
-
-
-
-13
-OData
-2. Entity
-An entity in OData represents a single piece of data, like a row in a database table. Each entity has a unique identifier (key) and contains various properties, which represent the individual attributes or fields of the data, such as name, age, or status.
-
-
-
-
-14
-GitHub codespaces
-You can forward ports in your codespace to test and debug your application. You can also manage the port protocol and share the port within your organization or publicly. For more information, see "Forwarding ports in your codespace."
-
-
-
-
-15
-Azure VDI Project
-Terraform uses resource dependencies to determine the order in which resources should be created or modified. By default, Terraform infers dependencies through resource references (e.g., subnet_id in a VM). You can also manually declare dependencies using the depends_on attribute when implicit dependencies aren’t sufficient.
-
-
-
-
 16
 UHero Requests
 lib-geo-selector / Custom HTML Tags:
@@ -2844,3 +2812,70 @@ You use the Microsoft 365 admin center to create user accounts for every user wh
 
 
 
+815
+Diffusers Library
+There are three main components of the library to know about:
+The DiffusionPipeline is a high-level end-to-end class designed to rapidly generate samples from pretrained diffusion models for inference.
+
+
+
+
+
+
+
+815
+Diffusers Library
+There are three main components of the library to know about:
+Popular pretrained model architectures and modules that can be used as building blocks for creating diffusion systems.
+
+
+
+
+
+
+
+815
+Diffusers Library
+There are three main components of the library to know about:
+Many different schedulers - algorithms that control how noise is added for training, and how to generate denoised images during inference.
+
+
+
+
+
+
+
+815
+Diffusers Library
+
+
+
+
+
+
+815
+Diffusers Library
+
+
+
+
+
+
+815
+Diffusers Library
+
+
+
+
+
+
+815
+Diffusers Library
+
+
+
+
+
+
+815
+Diffusers Library
