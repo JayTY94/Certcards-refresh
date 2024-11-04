@@ -3,33 +3,6 @@
 
 
 
-1
-Azure Functions 
-A timer trigger is a trigger that executes a function at a consistent interval. To create a timer trigger, you need to supply two pieces of information:
-
-A Timestamp parameter name, which is simply an identifier to access the trigger in code.
-A Schedule, which is a CRON expression that sets the interval for the timer.
-
-
-
-
-2
-Python
-CRUD operations correspond to HTTP request methods as follows:
-
-Create corresponds to POST
-Read corresponds to GET
-Update corresponds to PUT or PATCH
-Delete corresponds to DELETE
-
-
-
-
-3
-GitHub codespaces
-The primary file in a dev container configuration is the devcontainer.json file. You can use this file to determine the environment of codespaces created for your repository. The contents of this file define a dev container that can include frameworks, tools, extensions, and port forwarding. The devcontainer.json file usually contains a reference to a Dockerfile, which is typically located alongside the devcontainer.json file.
-
-
 
 
 4
