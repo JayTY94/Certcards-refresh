@@ -2847,7 +2847,10 @@ Many different schedulers - algorithms that control how noise is added for train
 
 815
 Diffusers Library
-
+Unconditional Image Generation: Generate an image from Gaussian noise
+    Pipeline: unconditional_image_generation 
+Text-Guided Image Generation: Generate an image given a text prompt
+    Pipeline: conditional_image_generation
 
 
 
@@ -2855,7 +2858,10 @@ Diffusers Library
 
 815
 Diffusers Library
-
+Text-Guided Image-to-Image Translation: Adapt an image guided by a text prompt
+    Pipeline: img2img
+Text-Guided Image-Inpainting: Fill the masked part of an image given the image, the mask, and a text prompt
+    Pipeline: inpaint
 
 
 
@@ -2863,7 +2869,10 @@ Diffusers Library
 
 815
 Diffusers Library
+Text-Guided Depth-to-Image Translation: adapt parts of an image guided by a text prompt while preserving structure via depth estimation
+    pipeline: depth2img
 
+Start by creating an instance of a DiffusionPipeline and specify which pipeline checkpoint you would like to download.
 
 
 
