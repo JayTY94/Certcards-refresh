@@ -3,22 +3,6 @@
 
 
 
-
-
-4
-sklearn
-Scikit-learn also provides the HalvingGridSearchCV and HalvingRandomSearchCV estimators that can be used to search a parameter space using successive halving [1] [2]. Successive halving (SH) is like a tournament among candidate parameter combinations. SH is an iterative selection process where all candidates (the parameter combinations) are evaluated with a small amount of resources at the first iteration.
-
-
-
-
-5
-Azure AI Search
-Combining Multiple Rankings: Reciprocal Rank Fusion (RRF) is an ensemble technique used to merge multiple ranked lists from different search algorithms. In Azure AI Search, this enhances overall search relevance by leveraging the strengths of each individual ranking system.
-
-
-
-
 6
 Dataverse
 Security and Performance: When developing and deploying plug-ins, it’s important to consider both security and performance. Plug-ins should be thoroughly tested to ensure they do not introduce vulnerabilities or degrade system performance. Proper error handling, efficient code, and adhering to best practices for security and optimization are essential.
@@ -3032,3 +3016,108 @@ When you compare these lists, you’ll find that numbers is greater than more_nu
 377
 sklearn 
 RepeatedKFold: This extends KFold by repeating the cross-validation process several times with different random shuffles, which offers more robust estimates of model performance, especially useful for small datasets where variability in results could be high.
+
+
+
+
+
+3040
+MS Dataverse 
+Code to query engagement task table for tasks that belong to a specific engagement based on that engagement's engagement id. Note the underscores and _value suffix to indicate that the field we're looking up will be a GUID.
+
+endpoint_tasks = "ts_engagementtasks?$filter=_ts_engagementid_value eq '9054359c-9270-40c8-8fcf-xxxxxxxxxxxx'"
+gui_made_tasks = make_api_request(endpoint=endpoint_tasks, method='GET')
+
+
+
+
+
+3040
+numpy
+You would typically use np.where() when you have an array and need to analyze its elements differently depending on their values. For example, you might need to replace negative numbers with zeros or replace missing values such as None or np.nan with something more meaningful. When you run where(), you’ll produce a new array containing the results of your analysis.
+
+
+
+
+3040
+numpy
+For example, you could have created your own randomized version of test_array using the following:
+
+>>> test_array = np.random.uniform(low=-10, high=10, size=(3, 4))
+>>> test_array
+array([[-2.71697178, -2.49701546, -7.57662054, -9.41817892],
+       [ 2.43095102,  0.7143025 ,  0.25938839, -4.78215376],
+       [-7.13802191, -5.47446998, -0.47173589, -0.36727671]])
+
+
+
+
+3040
+numpy
+Two arrays are broadcast compatible if their rightmost dimensions are identical, or either of these dimensions is 1. Once your arrays are broadcast compatible, you can use them together with the where() function.
+
+
+
+
+3040
+numpy
+numpy.where(condition, [x, y, ]/)
+
+First of all, the definition ends with a forward slash (/) character. You might think this represents a division or line continuation symbol, but it’s neither. By placing the forward slash special parameter at the end, the documentation is telling you that each parameter passed must be passed by position and not by keyword.
+
+
+
+
+
+
+3040
+numpy
+
+
+
+
+
+3040
+numpy
+
+
+
+
+
+3040
+numpy
+
+
+
+
+
+3040
+numpy
+
+
+
+
+
+3040
+numpy
+
+
+
+
+
+3040
+numpy
+
+
+
+
+
+3040
+numpy
+
+
+
+
+
+3040
+numpy
