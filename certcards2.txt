@@ -4,36 +4,6 @@
 
 
 
-11
-Python
-The standard deviation is the square root of the variance, so replacing the "var" function with "std" is the best approach.
-
-You could calculate the square roots of the existing pivot table data, but this complicates the code.
-
-
-
-
-12
-pandas
-Code to quickly filter down the columns on a df that has too many columns to see on one screen based on substrings. Looking at you, Dynamics 365.
-
-substrings = ['first', 'last', 'staff', 'user']
-pattern = '|'.join(substrings)
-
-filtered_columns = user_df.columns[user_df.columns.str.contains(pattern)]
-user_df[filtered_columns]
-
-
-
-
-13
-Azure Storage
-Online analytical processing (OLAP) systems commonly support fewer users, have longer response times, can be less available, and typically handle large transactions or complex transactions.
-An example of an Azure service that supports OLAP is Azure Analysis Services.
-
-
-
-
 14
 PP365
 You can design business process flows that tie together the rows for up to five different tables into a single process so that people using the app can focus on the flow of their process rather than on which table they are working in. They can more easily navigate between related table rows.
