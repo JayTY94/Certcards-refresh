@@ -3,42 +3,6 @@
 
 
 
-6
-Dataverse
-Security and Performance: When developing and deploying plug-ins, it’s important to consider both security and performance. Plug-ins should be thoroughly tested to ensure they do not introduce vulnerabilities or degrade system performance. Proper error handling, efficient code, and adhering to best practices for security and optimization are essential.
-
-
-
-
-7
-Power BI
-When a query is evaluated with the Firewall on, the Firewall divides the query and all its dependencies into partitions (that is, groups of steps). Anytime one partition references something in another partition, the Firewall replaces the reference with a call to a special function called Value.Firewall.
-
-
-
-
-8
-Azure Storage
-The storage account name is used as part of the URI for API access, so it must be globally unique.
-
-
-
-
-9
-Dataverse Queries
-Alternate Keys
-Definition: In addition to the primary key (usually a GUID), Dataverse allows you to define alternate keys that can be used to uniquely identify records.
-Relevance: Alternate keys allow you to perform updates or retrieves based on natural keys (like an email or employee ID), avoiding the need to work directly with GUIDs.
-
-
-
-
-10
-PP365
-Users who have been assigned service admin roles or the Global admin role, assigned through the Microsoft 365 admin center, will get the System Administrator role by default. They will have admin privileges to the environment's resources when they get added to the environment.
-
-
-
 
 11
 Python
