@@ -3,21 +3,6 @@
 
 
 
-
-14
-PP365
-You can design business process flows that tie together the rows for up to five different tables into a single process so that people using the app can focus on the flow of their process rather than on which table they are working in. They can more easily navigate between related table rows.
-
-
-
-
-15
-Dataverse
-To successfully connect to your Dataverse, you must first register an app with Entra ID, which you can complete in the Azure portal. Depending on the type of app that you want to make, a few different settings are available for you to configure (web apps versus native apps that are installed natively on a device). For more information on settings required for each type, see Types of app registration.
-
-
-
-
 16
 Python
 One common way to customize a GET request is to pass values through query string parameters in the URL. To do this using get(), you pass data to params. For example, you can use GitHub’s repository search API to look for popular Python repositories:
