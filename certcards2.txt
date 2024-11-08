@@ -3,47 +3,6 @@
 
 
 
-16
-Python
-One common way to customize a GET request is to pass values through query string parameters in the URL. To do this using get(), you pass data to params. For example, you can use GitHub’s repository search API to look for popular Python repositories:
-
-import requests
-
-# Search GitHub's repositories for popular Python projects
-response = requests.get(
-    "https://api.github.com/search/repositories",
-    params={"q": "language:python", "sort": "stars", "order": "desc"},
-)
-
-
-
-
-17
-MS Identity Platform
-You can use the Microsoft identity platform endpoint to secure web services like your app's RESTful API. A protected web API is called through an access token. The token helps secure the API's data and authenticate incoming requests. The caller of a web API appends an access token in the authorization header of an HTTP request.
-
-
-
-
-18
-Azure Functions
-Business processes modeled in software are often called workflows. Azure includes four different technologies that you can use to build and implement workflows that integrate multiple systems:
-
-Logic Apps
-Microsoft Power Automate
-WebJobs
-Azure Functions
-
-
-
-
-19
-DNS
-• Non-authoritative Answer:
-A DNS response from a server that is not the original source of the data but has cached the information from another server.
-
-
-
 
 20
 Azure Functions
@@ -2140,12 +2099,6 @@ Given enough time, K-means will always converge, however this may be to a local 
 
 
 
-280
-DNS
-• DNS over HTTPS (DoH):
-A protocol that encrypts DNS queries using HTTPS, preventing eavesdropping and man-in-the-middle attacks, and ensuring privacy of DNS traffic.
-
-
 
 
 281
@@ -2990,53 +2943,118 @@ First of all, the definition ends with a forward slash (/) character. You might 
 
 
 3040
-numpy
+python
+Using globals and locals
+Explanation: The globals function returns a dictionary representing the current global symbol table, while locals returns a dictionary of the current local symbol table. They are useful for dynamic code execution and introspection.
+
+a, b = 1, 2
+def my_func():
+    c = 3
+    print("Globals:", globals())
+    print("Locals:", locals())
+
+my_func()
 
 
 
 
 
-3040
-numpy
+2979
+Azure OpenAI
+Assistants, a new feature of Azure OpenAI Service, is now available in public preview. Assistants API makes it easier for developers to create applications with sophisticated copilot-like experiences that can sift through data, suggest solutions, and automate tasks.
 
 
 
 
 
-3040
-numpy
+
+2979
+Azure OpenAI
+Assistants can call Azure OpenAI’s models with specific instructions to tune their personality and capabilities.
+Assistants can access multiple tools in parallel. These can be both Azure OpenAI-hosted tools like code interpreter and file search, or tools you build, host, and access through function calling.
 
 
 
 
 
-3040
-numpy
+2979
+Azure OpenAI
+Assistants can access persistent Threads. Threads simplify AI application development by storing message history and truncating it when the conversation gets too long for the model's context length. You create a Thread once, and simply append Messages to it as your users reply.
 
 
 
 
 
-3040
-numpy
+
+2979
+Azure OpenAI
+Assistants can access files in several formats. Either as part of their creation or as part of Threads between Assistants and users. When using tools, Assistants can also create files (such as images or spreadsheets) and cite files they reference in the Messages they create.
 
 
 
 
 
-3040
-numpy
+
+2979
+Azure OpenAI
+Assistants API supports persistent automatically managed threads. This means that as a developer you no longer need to develop conversation state management systems and work around a model’s context window constraints. The Assistants API will automatically handle the optimizations to keep the thread below the max context window of your chosen model.
 
 
 
 
 
-3040
-numpy
+2979
+Azure OpenAI
+Assistant 
+Custom AI that uses Azure OpenAI models in conjunction with tools.
+
+Message
+A message created by an Assistant or user. Messages can include text, images, and other files. Messages are stored as a list on the Thread.
 
 
 
 
 
-3040
-numpy
+
+
+2979
+Azure OpenAI
+Thread
+A conversation session between an Assistant and a user. Threads store Messages and automatically handle truncation to fit content into a model's context.
+
+
+
+
+
+
+2979
+Azure OpenAI
+Run
+Activation of an Assistant to begin running based on the contents of the Thread.
+
+Run Step
+A detailed list of steps the Assistant took as part of a Run. An Assistant can call tools or create messages during its run. Examining Run Steps allows you to understand how the Assistant is getting to its final results.
+
+
+
+
+
+
+2979
+Azure OpenAI
+
+
+
+
+
+
+2979
+Azure OpenAI
+
+
+
+
+
+
+2979
+Azure OpenAI
