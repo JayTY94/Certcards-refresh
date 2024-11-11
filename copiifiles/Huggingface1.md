@@ -114,4 +114,173 @@ block_out_channels: the number of output channels of the downsampling blocks; al
 
 layers_per_block: the number of ResNet blocks present in each UNet block.
 
-TO use the model for inference, create teh image shape with random Gaussian noise. It should have a batch axis because the model can receive multiple random noises, a channel axis corresponsding to the number of input channels
+TO use the model for inference, create teh image shape with random Gaussian noise. It should have a batch axis because the model can receive multiple random noises, a channel axis corresponsding to the number of input channels, and a sample_size axis for the height and width of the image:
+
+For inference, pass the noisy image and a timestep to the model. The timestep indicates how noisy the input image is, with the more noise at the beginning and less at the end. This helps the model determine its position in the diffusion process, whether it is closer to the start or the end. Use teh sample method to get the model output.
+
+Schedulers
+
+Schedulers manage going from a noisy sample to a less noisy sample given the model output - in this case, it is the noisy_residual.
+
+Diffusers is a toolbox for building diffusion systems. While the Diffusion Pipeline is a convenient way to get started with a pre-built diffusion system, you can also choose your own model and scheduler components separately to build a custom diffusion system.
+
+For the quicktour, you'll instantiate the DPPMScheduler with its from_config() method:
+
+Unlike a model, a scheduler does not have trainable weights and is parameter-free!
+
+Some of the most important parameters are:
+
+num_train_timestamps: the length of the denoising process or, in other words, the number of timesteps required to process random Gaussian noise into a data sample.
+
+beta_schedule: the type of noise schedule to use for inference and training.
+
+beta_start and beta_end: the start and end noise values for the noise schedule.
+
+To predict a slightly less noisy image, pass the followign to the scheduler's step() method: model output, timestep, and current sample.
+
+The less_noisy_sample can be passed to the next timestep where it'll get even less noisy! Let's bring it all together now and visualize the entire denoising process.
+
+First, create a function that postprocesses and displays the denoised image as a PIL.Image.
+
+To speed up the denoising process, move the input and model to a GPU: [code]
+
+Now create a denoising loop that predicts the residual of the less noisy smaple, and computes the less noisy sample with the scheduler:
+
+Next Steps
+
+Hopefully, you generated some cool images with Diffusers in this quicktour! For your next steps, you can 
+
+    Train or finetune a model to generate your own images in this training tutorial
+    See official and community training or finetuning scripts for a variety of use cases.
+
+    Learn more about loading, accessing, changing, and comparing schedulers in the Using different Schedulers guide.
+
+    Explore prompt engineering, speed, and memory optimizations, and tips and tricks for generating higher-quality images with the Stable Diffusion guide.
+
+    Dive deeper into speeding up Diffusers with guides on optimized PyTorch on a GPU, and inference guides for running Stable Diffusion on Apple Silicon (M1/M2) and ONNX Runtime.
+
+https://huggingface.co/docs/diffusers/en/stable_diffusion#effective-and-efficient-diffusion:~:text=and%20efficient%20diffusion-,Effective%20and%20efficient%20diffusion,-Getting%20the%20DiffusionPipeline
+
+Getting the DiffusionPipeline to generate images in a certain style or include what you want can be tricky. Often times, you have to run the DiffusionPipeline several times before you end up with an image you're happy with. But generating something out of nothing is a computationally intensive process, especially if you're running inference over and over again.
+
+This is why it's important to get the most computational speed and memory (GPU vRAM) efficiency from the pipelien to reduce the time between inference cycles so you can iterate faster.
+
+This tutorial walks you through how to generate faster and better with the DiffusionPipeline.
+
+The example prompt you'll use is a portrait of an old warrior chief, but feel free to use your own prompt:
+
+prompt = "portrait photo of an old warrior chief"
+
+Speed
+
+If you don't have access to a GPU, you can use one for free from a GPU provider like Colab!
+
+One of the simplest ways to speed up  inference is to place the pipeline on a GPU the same way you would with any PyTorch module:
+
+pipeline = pipeline.to("cuda")
+
+To make sure you can use the same image and improve on it, use a Geneartor and set a speed for reproducability:
+
+import torch
+
+generator = torch.Generator("cuda").manual_seed(0)
+
+Now you can generate an image:
+
+image = pipeline(prompt, geneartor=generator).images[0]
+image
+
+This process took ~30 seconds on a T4 GPU (it might be faster if your allocated GPU is better than a T4). By Default, the DiffusionPipeline runs inference with full float32 precision for 50 inference steps. 
+
+Let's start by loading the model in float16 and generate an image.
+
+import torch
+
+pipeline = DiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float16, use_safetensors=True)
+pipeline = pipeline.to("cuda")
+generator = torch.Generator("cuda").manual_seed(0)
+image = pipeline(prompt, generator=generator).images[0]
+image
+
+This time, it took only ~11 seconds to generate the image, which is almost 3x faster than before!
+
+We strongly suggest always running your pipelines in float16, and so far, we've rarely seen any degredation in ouput quality.
+
+Another option is to reduce the number of inference steps. Choosing a more efficient scheduler could help decrease the number of steps without sacrificing output quality. You can find which schedulers are compatible with a different model in the DiffusionPipeline by calling the compatibles method:
+
+pipeline.scheduler.compatibles
+
+The Stable Diffusion model uses PNDMScheduler by default which usually requires ~50 inference steps, but more performant schedulers like DPMSolverMultistepScheduler require only ~20 or ~25 inference steps. Use the from_config() method to load a new scheduler:
+
+from diffusers import DPMSolverMultistepScheduler
+
+pipeline.scheduler = DPMSolverMultistepScheduler.from_config(pipeline.scheduler.config) 
+
+Now set the num_inference_steps to 20:
+
+generator = torch.Generator("cuda").manual_seed(0)
+image = pipeline(prompt, generator=generator, num_inference_steps=20).images[0]
+image
+
+Great, you've managed to cut the inference time to just 4 seconds!
+
+Memory
+
+The other key to improving pipeline performance is consuming less memory, which indirectly implies more speed, since you're often trying to maximize the number of images generated per second. The easiest way to see how many images you can generate at once is to try different batch sizes until you get an OutOfMemoryError(OOM).
+
+Create a function that'll generate a batch of images from a list of prompts and Generators. Make sure to assign each Generator a seed so you can reuse it if it prodcues a good result.
+
+def get_inputs(batch_size=1):
+    generator = [torch.Generator("cuda").manual_seed(i) for i in range(batch_size)]
+    prompts = batch_size * [prompt]
+    num_inference_steps = 20
+
+    return {"prompt": prompts, "generator": generator, "num_inference_steps": num_inference_steps}
+
+Start with batch_size=4 and see how much memory you've consumed:
+
+from diffusers.utils import make_image_grid 
+
+images = pipeline(**get_inputs(batch_size=4)).images
+make_image_grid(images, 2,2)
+
+Unelss you have a GPU with more vRAM, the code above probably returned an OOM error! Most of the memory is taken up by the cross-attention layers. Instead of running this operation in a batch, you can run it sequentially to save a significant amount of memory. All you have to do is configure the pipelient o use the enable_attention_slicing() function.
+
+...
+
+Better prompt engineering
+
+The text prompt you use to generate an image is super important, so much so that it is called prompt engineering. Some considerations to keep during prompt engineering are:
+
+    How is the image or similar images of the oen I want to generate stored on the internet?
+    What additional detail can I give that steers the model towards teh style I want?
+
+With this in mind, let's improve the prompt to include color and higher quality details:
+
+prompt += ", tribal panther make up, blue on red, side profile, looking away, serious eyes"
+prompt += " 50mm portrait photography, hard rim lighting photography--beta --ar 2:3  --beta --upbeta"
+
+Generate a batch of images with the new prompt: images=pipeline(**getinputs(batch_size = 8)).images
+make_images_grid(image, rows=2, cols=4)
+
+Prety impressive! Let's tweak the second image - corresepondding to Geneartor with a seed of 1 - a bit more by adding some text about hte age of the subject.
+
+prompts = [
+    "portrait photo of the oldest warrior chief, tribal panther make up, blue on red, side profile, looking away, serious eyes 50mm portrait photography, hard rim lighting photography--beta --ar 2:3  --beta --upbeta",
+    "portrait photo of an old warrior chief, tribal panther make up, blue on red, side profile, looking away, serious eyes 50mm portrait photography, hard rim lighting photography--beta --ar 2:3  --beta --upbeta",
+    "portrait photo of a warrior chief, tribal panther make up, blue on red, side profile, looking away, serious eyes 50mm portrait photography, hard rim lighting photography--beta --ar 2:3  --beta --upbeta",
+    "portrait photo of a young warrior chief, tribal panther make up, blue on red, side profile, looking away, serious eyes 50mm portrait photography, hard rim lighting photography--beta --ar 2:3  --beta --upbeta",
+]
+
+generator = [torch.Generator("cuda").manual_seed(1) for _ in range(len(prompts))]
+images = pipeline(prompt=prompts, generator=generator, num_inference_steps=25).images
+make_image_grid(images, 2, 2)
+
+Next steps
+
+In this tutorial, you learned how to optimize a DiffusionPipeline for computational and memory efficiency as well as improving the quality of generated outputs. If you're interested in making your pipeline even faster, take a look at the folowing resources: 
+
+    Learn how PyTorch2.0 and torch.compile can yield 5-300% faster inference seped. On an A100 GPU, inference can be up to 50% faster!
+    If you can't use PyTorch 2, we recommend you install xFormers. Its memory-efficient attention mechanism works great with PyTorch 1.13.1. for faster speed and reduced memroy consumption.
+    Other optimization techniques, such as model offloading, are covered in this guide.
+

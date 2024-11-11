@@ -3056,8 +3056,18 @@ Input bindings allow you to connect your function to a data source. You can conn
 
 
 
-3023
-Azure Functions 
+3059
+Diffusers Documentation
+Schedulers manage going from a noisy sample to a less noisy sample given the model output - in this case, it is the noisy_residual.
+
+
+
+
+
+
+3059
+Diffusers Documentation
+On Windows, pip relies on a small launcher executable that links to the correct Python interpreter and pip package. If Python was uninstalled and reinstalled in a new location, the link in that launcher may be broken or still pointing to the old installation path, even if the correct paths are in the Path variable. This causes pip alone to fail, as it tries to find the old, non-existent Python.
 
 
 
@@ -3065,8 +3075,11 @@ Azure Functions
 
 
 
-3023
-Azure Functions 
+
+
+3059
+Diffusers Documentation
+Sometimes, old environment paths can linger in the registry or elsewhere in the system’s path cache, causing confusion about which Python executable should be used. Running python -m pip explicitly tells the Python interpreter itself to find the correct pip module, sidestepping any possible confusion from old, broken pip links.
 
 
 
@@ -3074,5 +3087,111 @@ Azure Functions
 
 
 
-3023
-Azure Functions 
+3059
+Diffusers Documentation
+The Scripts\ folder contains the pip executable. If there’s any issue in the way Path variables are processed (which can occasionally happen if multiple Python versions are installed), running python -m pip ensures the right pip is used with the right Python version.
+
+
+
+
+
+
+
+3059
+Diffusers Documentation
+Choosing a more efficient scheduler could help decrease the number of steps without sacrificing output quality. You can find which schedulers are compatible with a different model in the DiffusionPipeline by calling the compatibles method:
+
+pipeline.scheduler.compatibles
+
+
+
+
+
+
+
+3059
+Diffusers Documentation
+The Stable Diffusion model is a good starting point, and since its official launch, several improved versions have also been released. However, using a newer version doesn’t automatically mean you’ll get better results. You’ll still have to experiment with different checkpoints yourself, and do a little research (such as using negative prompts) to get the best results.
+
+
+
+
+
+
+
+3059
+Developer Mode
+Developer Mode replaces the Windows 8.1 requirements for a developer license. In addition to sideloading, the Developer Mode setting enables debugging and additional deployment options. This includes starting an SSH service to allow deployment to this device. In order to stop this service, you need to disable Developer Mode.
+
+
+
+
+
+
+
+
+3059
+Developer Mode
+You can go to the For developers settings page at any time to enable or disable Developer Mode. Simply enter for developers into the search box in the taskbar.
+
+
+
+
+
+
+
+
+3059
+Developer Mode
+When you enable Developer Mode on desktop, a package of features is installed, including:
+
+Windows Device Portal: Device Portal is only enabled (and firewall rules are only configured for it) when the Enable Device Portal option is turned on.
+Installs and configures firewall rules for SSH services that allow remote installation of apps. Enabling Device Discovery will turn on the SSH server.
+
+
+
+
+
+
+3059
+Developer Mode
+The Windows SDK provides access to all of the APIs and development features exposed by the Windows OS. The Windows SDK is required for building Windows apps as well as other types of components (such as services and drivers). The latest Windows SDK is installed with Visual Studio 2019 and Visual Studio 2022 by default.
+
+
+
+
+
+
+
+
+3059
+Developer Mode
+The Windows App SDK was previously known by the code name Project Reunion. Some SDK assets (such as the VSIX extension and certain NuGet packages) still use this name, but these assets will be renamed in a future release. Some documentation still uses Project Reunion when referring to an existing asset or a specified earlier release.
+
+
+
+
+
+
+
+
+3059
+Developer Mode
+
+
+
+
+
+
+
+3059
+Developer Mode
+
+
+
+
+
+
+
+3059
+Developer Mode
