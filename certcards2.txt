@@ -3,60 +3,6 @@
 
 
 
-9
-MS Dataverse
-The ParentContext provides information about any operation that triggers the plug-in or custom workflow activity to run.
-
-Except for specific documented cases, you should avoid taking a dependency on values that you find in the ParentContext to apply your business logic. The specific order in which operations occur is not guaranteed and may change over time.
-
-
-
-
-10
-Azure OpenAI
-Assistants, a new feature of Azure OpenAI Service, is now available in public preview. Assistants API makes it easier for developers to create applications with sophisticated copilot-like experiences that can sift through data, suggest solutions, and automate tasks.
-
-
-
-
-11
-Python
-Remember that the initialization function in a class is named __init__() with 2 underscores before and after the word init. I tried to declare a class with 3 once, and it was embarrassing.
-
-
-
-
-12
-python
-Using globals and locals
-Explanation: The globals function returns a dictionary representing the current global symbol table, while locals returns a dictionary of the current local symbol table. They are useful for dynamic code execution and introspection.
-
-a, b = 1, 2
-def my_func():
-    c = 3
-    print("Globals:", globals())
-    print("Locals:", locals())
-
-my_func()
-
-
-
-
-13
-Git
-git commit: This command records changes to the repository with a descriptive message. It's like taking a snapshot of your project at a specific point in time.
-
-
-
-
-14
-OData Requests
-CrmODataEntityDeserializer:
-A specific component in Dynamics 365 that handles deserialization of OData-based API requests. It applies structural properties to entities based on incoming payloads, raising errors if there are invalid fields or data types.
-
-
-
-
 15
 Power BI
 By default, Query Diagnostics might require administrative rights to run (depending on IT policy). If you find yourself unable to run Query Diagnostics, open the Power BI options page, and in the Diagnostics tab, select Enable in Query Editor (does not require running as admin).
@@ -3175,8 +3121,9 @@ The Windows App SDK was previously known by the code name Project Reunion. Some 
 
 
 
-3059
-Developer Mode
+3178
+HuggingFace diffusers
+safetensors is an alternative file format developed for securely and efficiently storing large deep learning model weights, especially for use in frameworks like PyTorch. Here are its key benefits:
 
 
 
@@ -3184,8 +3131,11 @@ Developer Mode
 
 
 
-3059
-Developer Mode
+
+
+3178
+HuggingFace diffusers
+Unlike standard .pt or .bin files, which can execute arbitrary Python code and are therefore vulnerable to malicious modifications, safetensors files contain only tensor data and metadata, with no executable code. This makes them safer for sharing and loading model weights directly from untrusted sources.
 
 
 
@@ -3193,5 +3143,97 @@ Developer Mode
 
 
 
-3059
-Developer Mode
+3178
+HuggingFace diffusers
+safetensors are designed to be memory-mapped, allowing faster data loading, particularly when working with large models. This can improve performance, as only the necessary portions of data are loaded into memory rather than the entire file.
+
+
+
+
+
+
+
+
+
+3178
+HuggingFace diffusers
+safetensors is supported by the Hugging Face transformers and diffusers libraries, making it accessible for various deep learning applications. Models in the safetensors format can usually be loaded with minimal changes to code.
+
+
+
+
+
+
+
+3178
+HuggingFace diffusers
+
+
+
+
+
+
+
+
+3178
+HuggingFace diffusers
+
+
+
+
+
+
+
+
+3178
+HuggingFace diffusers
+
+
+
+
+
+
+
+
+3178
+HuggingFace diffusers
+
+
+
+
+
+
+
+
+3178
+HuggingFace diffusers
+
+
+
+
+
+
+
+
+3178
+HuggingFace diffusers
+
+
+
+
+
+
+
+
+3178
+HuggingFace diffusers
+
+
+
+
+
+
+
+
+3178
+HuggingFace diffusers
