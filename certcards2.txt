@@ -1,3 +1,8 @@
+170
+Dataverse Queries
+Entity Bound Actions
+Definition: These are custom or system-defined actions that are tied to a specific entity and can be invoked via the Web API to perform tasks or trigger workflows.
+Relevance: Entity-bound actions are useful for performing more complex business logic or automation that is triggered based on a record in an entity. For example, triggering a workflow on an engagement task when it's completed.
 
 
 
@@ -1375,14 +1380,6 @@ There’s something special about this dictionary-like headers object, though. T
 Workera.ai
 Automatic Replication and Failover: Certain services, such as Azure Storage, automatically replicate data between region pairs. This replication helps ensure that your data is always available, even if one region experiences an outage. Additionally, Azure prioritizes the restoration of services in region pairs to ensure a quicker recovery time.
 
-
-
-
-170
-Dataverse Queries
-Entity Bound Actions
-Definition: These are custom or system-defined actions that are tied to a specific entity and can be invoked via the Web API to perform tasks or trigger workflows.
-Relevance: Entity-bound actions are useful for performing more complex business logic or automation that is triggered based on a record in an entity. For example, triggering a workflow on an engagement task when it's completed.
 
 
 
