@@ -1,15 +1,6 @@
 
 
 
-
-
-1
-Python
-Aside from GET, other popular HTTP methods include POST, PUT, DELETE, HEAD, PATCH, and OPTIONS. For each of these HTTP methods, Requests provides a function, with a similar signature to get().
-
-
-
-
 2
 Dataverse
 Device Code Flow:
@@ -2975,3 +2966,139 @@ A method to train models by estimating the gradient of data probability density 
 Diffusers Library
 Classifier-Free Guidance
 A technique allowing diffusion models to generate images without an external classifier, enhancing flexibility in output. This guidance uses the model's own internal structure to fine-tune the output, improving realism without the need for additional label constraints.
+
+
+
+
+
+
+
+2985
+Kali Linux
+Kali Linux is maintained by Offsec, the company responsible for the OSCP (Offsec Security Certified Professional) certification exam. Its first version 1.0.0 "moto" was released in March 2013.
+
+
+
+
+
+
+2985
+Kali Linux
+The first step is to visit the official Kali Linux website and navigate to the download page. You can choose the platform to install it on, such as virtual machines or a bootable USB drive.
+
+Kali allows you to install it in many different environments, including in the cloud, on arm-based devices such as Raspberry Pi, and even through Windows Subsystem for Linux (WSL).
+
+
+
+
+
+
+
+
+2985
+Kali Linux
+The rockyou.txt file is a renowned wordlist frequently used as a default for various password-cracking tools. It is conveniently located in the /usr/share/wordlists/ directory on Kali.
+
+It's a compressed archive containing over 14 million plaintext passwords exposed in the infamous 2009 data breach at the social platform RockYou. This massive password list remains highly valuable for penetration testing efforts despite being over a decade old.
+
+
+
+
+
+
+
+
+2985
+Kali Linux
+We’ll show you how to install the open-source code editor code-oss, which was built from Microsoft Visual Studio Code.
+
+Head to the terminal and enter:
+
+sudo apt install code-oss
+
+
+
+
+
+
+
+
+2985
+Kali Linux
+The chmod (change mode) command is used to change the access permissions of files and directories. Permissions determine who can read, write, or execute a file. Changing the owner of a file is done using the chown command, not chmod.
+
+
+
+
+
+
+
+
+2985
+Kali Linux
+apt (Advanced Package Tool) is the package manager used in Debian-based distributions, including Kali Linux. It simplifies the process of installing, updating, and removing software packages.
+
+
+
+
+
+
+
+
+
+2985
+Kali Linux
+The apt-get update command updates the local package index with the latest information about available packages and their versions from the repositories. In contrast, apt-get upgrade upgrades all the installed packages to their latest versions based on the updated package list.
+
+
+
+
+
+
+
+
+
+2985
+Kali Linux
+As of the latest releases, Kali Linux uses XFCE as its default desktop environment. XFCE is chosen for its lightweight nature and speed, making it ideal for performance-sensitive tasks common in cybersecurity work.
+
+
+
+
+
+
+
+
+
+2985
+Kali Linux
+Hydra is a popular password-cracking tool in Kali Linux, designed for conducting rapid dictionary attacks against various protocols to discover weak passwords. Another notable tool for password cracking in Kali is John the Ripper, which focuses on cracking hashed passwords.
+
+
+
+
+
+
+
+
+
+2985
+Kali Linux
+The man (manual) command displays the manual pages for other commands, providing detailed information about their usage, options, and functionalities. While some shells offer a help command, it typically provides limited information and is not as comprehensive as man.
+
+
+
+
+
+
+
+
+
+2985
+Kali Linux
+The /etc/shadow file stores secure user account information, including encrypted passwords. This file is readable only by the root user for security reasons. In contrast, /etc/passwd contains user account details like usernames and user IDs but does not store encrypted passwords.
+
+
+
+
+
