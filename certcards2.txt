@@ -1,11 +1,6 @@
 
 
-3
-Azure Pipelines
-Job
-A build contains one or more jobs. Most jobs run on an agent. A job represents an execution boundary of a set of steps. All the steps run together on the same agent.
 
-For example, you might build two configurations - x86 and x64. In this case, you have one build and two jobs.
 
 
 
