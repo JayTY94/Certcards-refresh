@@ -1,17 +1,6 @@
 
 
 
-
-
-
-
-4
-MS Identity Platform
-Single-page applications: Also known as SPAs, these are web apps in which tokens are acquired by a JavaScript or TypeScript app running in the browser. Many modern apps have a single-page application at the front end that's primarily written in JavaScript. The application often uses a framework like Angular, React, or Vue. MSAL.js is the only Microsoft Authentication Library that supports single-page applications.
-
-
-
-
 5
 Azure Functions Quickstart
 Before you can publish your Functions project to Azure, you must have a function app and related resources in your Azure subscription to run your code. The function app provides an execution context for your functions. When you publish from Visual Studio Code to a function app in Azure, the project is packaged and deployed to the selected function app in your Azure subscription.
@@ -3179,7 +3168,71 @@ Guidance Scale: A float controlling adherence to the prompt, with higher values 
 
 
 2985
-Diffusers from Hugging Face
+Dataverse Plugins
+Plugins are custom business logic components that execute in response to specific events within Dataverse, such as record creation or updates. Written in .NET, plugins can enforce business rules, validate data, or integrate with external systems. They are registered against specific messages (like Create, Update) and entities, allowing for granular control over when and how custom logic is triggered within the Dataverse environment.
+
+
+
+
+
+
+
+2985
+Dataverse Plugins
+Filtering Attributes are specific fields defined during the registration of a plugin that determine when the plugin should execute. For instance, a plugin might be set to trigger only when certain attributes of an entity are updated. By specifying these attributes, Dataverse optimizes performance by invoking the plugin only when relevant data changes occur, rather than on every update to the entity.
+
+
+
+
+
+
+
+2985
+Dataverse Plugins
+SDK Message Processing Steps represent the registration details of a plugin within Dataverse. Each step defines when (which message and stage) and how a plugin executes. Key properties include the message (e.g., Update), primary entity, execution pipeline stage (Pre-validation, Pre-operation, Post-operation), and filtering attributes. These steps orchestrate the plugin's behavior in response to data operations.
+
+
+
+
+
+
+
+2985
+Dataverse Plugins
+The PluginType entity in Dataverse stores metadata about registered plugins. It includes information such as the plugin's unique identifier (plugintypeid), name, assembly details, and the class implementing the plugin logic. By querying the plugintypes entity via the Web API, developers can retrieve information about specific plugins, facilitating management and debugging of custom business logic.
+
+
+
+
+
+
+
+2985
+Dataverse Plugins
+The Plugin Execution Pipeline defines the sequence of events where plugins can be triggered in Dataverse. The primary stages include:
+
+Pre-validation: Executes before the main system operation, allowing for early validation.
+Pre-operation: Runs after the main operation is validated but before it's committed to the database.
+Post-operation: Occurs after the main operation has been completed and committed. Understanding these stages is crucial for placing plugins at the appropriate point in the data processing workflow, ensuring optimal performance and data integrity.
+
+
+
+
+
+2985
+Dataverse Plugins
+Error Handling in Dataverse involves interpreting and managing error messages returned by the system during operations. Errors can arise from validation failures, plugin restrictions, permission issues, or data conflicts. Effective error handling requires understanding error codes, messages, and contextual details provided by the system. This enables developers to debug issues, enforce business rules, and provide meaningful feedback to users or calling applications.
+
+
+
+
+
+
+
+2985
+Dataverse Plugins
+API Permissions and Scopes define what operations an application can perform and what data it can access within an API like Dataverse Web API. During Azure AD application registration, permissions are granted (e.g., user_impersonation) to control access levels. Scopes specify the exact permissions requested during the authentication process. Proper configuration ensures that applications have the necessary access without over-privileging, adhering to the principle of least privilege for security.
+
 
 
 
