@@ -1,16 +1,5 @@
 
 
-
-2
-Dataverse
-Device Code Flow:
-
-Definition: A type of OAuth2 flow designed for devices with limited input capabilities, where the user is prompted to visit a URL on another device and authenticate by entering a code.
-Context: We used this in MSAL to allow for interactive authentication and MFA.
-
-
-
-
 3
 Azure Pipelines
 Job
