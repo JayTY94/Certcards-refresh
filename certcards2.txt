@@ -2,22 +2,6 @@
 
 
 
-
-
-7
-MS Dataverse
-Fiddler is a web debugging proxy used to view HTTP traffic on your computer. Viewing this data is useful when debugging scripts. By default, HTTP requests and responses sent using Invoke-RestMethod cmdlet won't be visible using Fiddler
-
-
-
-
-8
-Azure Firewall
-Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instances in Secured Virtual Hubs and Hub Virtual Networks. Policies work across regions and subscriptions.
-
-
-
-
 9
 Azure AI Search
 Hierarchical Data Understanding: Matryoshka Representation Learning (MRL) employs a nested, layered approach to representation learning, enabling Azure AI Search to capture complex, multi-level relationships within data. This hierarchical structure improves the model’s ability to understand and represent intricate data patterns effectively.
