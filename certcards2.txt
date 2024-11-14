@@ -1,17 +1,6 @@
 
 
 
-5
-Azure Functions Quickstart
-Before you can publish your Functions project to Azure, you must have a function app and related resources in your Azure subscription to run your code. The function app provides an execution context for your functions. When you publish from Visual Studio Code to a function app in Azure, the project is packaged and deployed to the selected function app in your Azure subscription.
-
-
-
-
-6
-PP365
-Grids: Grids are tabular representations of data within a model-driven app in Power Apps. They allow users to view and interact with rows of data from a table. Grids can be configured to show specific columns and can be customized to include features like sorting, filtering, and pagination.
-
 
 
 
