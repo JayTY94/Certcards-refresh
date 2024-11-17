@@ -2925,3 +2925,293 @@ MS Data Analyst
 To learn how to run a network port test, see Adjust communication settings for the on-premises data gateway.
 To get information on how to provide proxy information for your gateway, see Configure proxy settings for the on-premises data gateway.
 To find the current data center region that you're in, see Set the data center region.
+
+
+
+
+
+2933
+AKS 
+Azure Container Apps is a fully managed Kubernetes-based application platform that helps you deploy HTTP and non-HTTP apps from code or containers without orchestrating infrastructure. For more information, see Azure Container Apps documentation.
+
+
+
+
+
+2933
+AKS 
+Azure Kubernetes Service (AKS) is a managed Kubernetes service for running containerized applications. With AKS, you can take advantage of managed add-ons and extensions for additional capabilities while preserving the broadest level of configurability. For more information, see AKS documentation.
+
+
+
+
+
+
+
+2933
+AKS 
+Web App for Containers is a feature of Azure App Service, a fully managed service for hosting HTTP-based web apps with built-in infrastructure maintenance, security patching, scaling, and diagnostic tooling. For more information, see App Service documentation.
+
+
+
+
+
+
+
+2933
+AKS 
+AKS also provides access to the Kubernetes API server, which enables you to customize the container orchestration and thus deploy projects from the Cloud Native Computing Foundation (CNCF). Consequently, there's a significant learning curve for workload teams that are new to Kubernetes.
+
+
+
+
+
+2933
+AKS 
+AKS is commonly used to host multiple workloads or disparate workload components. You can isolate these workloads and components by using Kubernetes native functionality, like namespaces, access controls, and network controls, to meet security requirements.
+
+
+
+
+
+
+
+2933
+AKS 
+Although AKS offers the most customization, it demands greater operational input. In contrast, PaaS solutions like Container Apps and Web App for Containers let Azure handle tasks like OS updates.
+
+
+
+
+
+2933
+AKS 
+Application scalability in AKS is the sole responsibility of the customer. Container Apps and Web App for Containers offer more streamlined approaches.
+
+
+
+
+
+2933
+AKS 
+Web App for Containers and Container Apps health probe configurations are more streamlined than those of AKS, given that they use the familiar Azure Resource Manager API. AKS requires the use of the Kubernetes API.
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+The Docker Engine consists of several components configured as a client-server implementation where the client and server run simultaneously on the same host. The client communicates with the server using a REST API, which enables the client to also communicate with a remote server instance.
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+There are two alternatives for Docker client: A command-line application named docker, or a Graphical User Interface (GUI) based application called Docker Desktop. Both the CLI and Docker Desktop interact with a Docker server. The docker commands from the CLI or Docker Desktop use the Docker REST API to send instructions to either a local or remote server and function as the primary interface we use to manage our containers.
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+The Docker server is a daemon named dockerd. The dockerd daemon responds to client requests via the Docker REST API and can interact with other daemons. The Docker server is also responsible for tracking the lifecycle of our containers.
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+There are several objects that you'll create and configure to support your container deployments. These include networks, storage volumes, plugins, and other service objects. We won't cover all of these objects here, but it's good to keep in mind that these objects are items that we can create and deploy as needed.
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+Docker Hub is a Software as a Service (SaaS) Docker container registry. Docker registries are repositories that we use to store and distribute the container images we create. Docker Hub is the default public registry Docker uses for image management.
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+A container image is a portable package that contains software. It's this image that, when run, becomes our container. The container is an image's in-memory instance.
+
+A container image is immutable. Once you've built an image, you can't change it. The only way to change an image is to create a new image. 
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+Docker containers running on Linux share the host OS kernel, and don't require a container OS as long as the binary can access the OS kernel directly.
+
+However, Windows containers need a container OS. The container depends on the OS kernel to manage services such as the file system, network management, process scheduling, and memory management.
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+We use Unionfs to create Docker images. Unionfs is a filesystem that allows you to stack several directories—called branches—in such a way that it appears as if the content is merged. However, the content is physically kept separate. Unionfs allows you to add and remove branches as you build out your file system.
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+A base image is an image that uses the Docker scratch image. The scratch image is an empty container image that doesn't create a filesystem layer. This image assumes that the application you're going to run can directly use the host OS kernel.
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+A parent image is a container image from which you create your images.
+
+For example, instead of creating an image from scratch and then installing Ubuntu, we'll use an image already based on Ubuntu. We can even use an image that already has nginx installed. A parent image usually includes a container OS.
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+Base images allow us more control over the final image contents. Recall from earlier that an image is immutable; you can only add to an image and not subtract.
+
+On Windows, you can only create container images that are based on Windows base container images. Microsoft provides and services these Windows base container images.
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+A Dockerfile is a text file that contains the instructions we use to build and run a Docker image. It defines the following aspects of the image:
+
+The base or parent image we use to create the new image
+Commands to update the base OS and install additional software
+Build artifacts to include, such as a developed application
+Services to expose, such as storage and network configuration
+Command to run when the container is launched
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+The ENTRYPOINT in the Dockerfileile indicates which process will execute once we run a container from an image. If there's no ENTRYPOINT or another process to be executed, Docker will interpret that as there's nothing for the container to do, and the container will exit.
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+Docker images are large files that are initially stored on your PC, and we need tools to manage these files.
+
+The Docker CLI and Docker Desktop allow us to manage images by building, listing, removing, and running them. We manage Docker images by using the docker client. The client doesn't execute the commands directly, and sends all queries to the dockerd daemon.
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+We use the docker build command to build Docker images. Let's assume we use the Dockerfile definition from earlier to build an image. Here's an example that shows the build command:
+
+Bash
+docker build -t temp-ubuntu .
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+A single image can have multiple tags assigned to it. By convention, the most recent version of an image is assigned the latest tag and a tag that describes the image version number. When you release a new version of an image, you can reassign the latest tag to reference the new image.
+
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+The Docker software automatically configures a local image registry on your machine. You can view the images in this registry with the docker images command.
+
+Console
+docker images
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+You can remove an image from the local docker registry with the docker rmi command. This is useful if you need to save space on the container host disk, because container image layers add up to the total space available.
+
+code
+docker rmi temp-ubuntu:version-1.0
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+docker rmi temp-ubuntu:version-1.0
+
+You can't remove an image if a container is still using the image. The docker rmi command returns an error message, which lists the container that relies on the image.
+
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
+
+
+
+
+
+
+2933
+Azure Kubernetes Learning Path
