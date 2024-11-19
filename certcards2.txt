@@ -3,11 +3,6 @@
 
 
 
-1
-Azure Functions Quickstart
-Purpose: Meta-packages are often used to provide a convenient way to install a set of packages that are commonly used together. This can be particularly useful in complex environments where multiple packages are needed to provide full functionality.
-
-
 
 
 2
