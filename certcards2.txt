@@ -5,24 +5,7 @@
 
 
 
-2
-Power BI
-API Request Configuration in Power BI: When integrating the BLS Public Data API, you need the API endpoint URL, HTTP request type (GET or POST), and payload with series IDs, date ranges, and optional parameters. Requests for multiple series or additional features like calculations are often handled via POST requests with a JSON body.
 
-
-
-
-3
-sklearn
-The k-means algorithm divides a set of N samples into X an K disjoint clusters C, each described with the mean mu_j of the samples in the cluster. The means are commonly called the cluster "centroids"; note that they are not, in general, points from X, although they live in the same space.
-
-
-
-
-4
-Conditional Access
-With the access and session policies, you can:
-Monitor user sessions for compliance: Risky users are monitored when they sign into apps and their actions are logged from within the session. You can investigate and analyze user behavior to understand where, and under what conditions, session policies should be applied in the future.
 
 
 
