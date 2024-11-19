@@ -11,6 +11,15 @@ Azure Resource Providers are essentially services within the Azure ecosystem tha
 
 
 
+
+2
+MS Dataverse
+The capability to extend the default behavior of Microsoft Dataverse depends on detecting when events occur on the server. The Event Framework provides the capability to register custom code to be run in response to specific events.
+
+
+
+
+
 3
 Terraform
 The graph output uses the DOT language, which is a machine-readable graph description language which originated in Graphviz. You can use the Graphviz dot command to present the resulting graph description as an image. There are also various third-party online graph rendering services which accept this format.
@@ -29,12 +38,6 @@ Tax stuff
 Windows
 You can increase or decrease the size of icons on your desktop by selecting the desktop, holding [ctrl], and using the scroll wheel.
 
-
-
-
-6
-MS Dataverse
-The capability to extend the default behavior of Microsoft Dataverse depends on detecting when events occur on the server. The Event Framework provides the capability to register custom code to be run in response to specific events.
 
 
 
