@@ -107,10 +107,6 @@ Regularity conditions are mathematical conditions or assumptions required for ce
 
 
 
-12
-Maths
-Generalized likelihood ratio test (GLRT) is a statistical test to compare the fit of two models, one of which is a special case of the other (nested models).
-
 
 
 
