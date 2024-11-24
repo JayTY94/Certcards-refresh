@@ -104,3 +104,5 @@ docker build -t temp-ubuntu
 ...
 
 https://learn.microsoft.com/en-us/training/modules/intro-to-docker-containers/4-how-docker-containers-work
+
+Earlier, you discovered the container becomes the unit you'll use to distribute your apps. You also learned the container is in a standardized format both yoru developer and operation teams use.
