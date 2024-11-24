@@ -52,12 +52,6 @@ execute_script is a Selenium method that allows you to execute raw JavaScript co
 
 
 
-7
-Azure Storage
-A storage account is a container that groups a set of Azure Storage services together. Only data services from Azure Storage can be included in a storage account (Azure Blobs, Azure Files, Azure Queues, and Azure Tables). The following illustration shows a storage account containing several data services.
-
-
-
 
 
 8
@@ -3375,6 +3369,175 @@ Transforming API Data into Usable Tables: API responses often contain nested str
 
 3407
 Azure Kubernetes Learning Path
+To place a container in the run state, use the run command. You can also restart a container that's already running. When restarting a container, the container receives a termination signal to enable any running processes to shut down gracefully before the container's kernel terminates.
+
+
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+If you need to terminate the container, use the kill command to send a kill signal. The container's kernel captures the kill signal, but the running process doesn't. This command forcefully terminates the working process in the container.
+
+Lastly, to remove containers that are in a stopped state, use the remove command. After removing a container, all data stored in the container gets destroyed.
+
+
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+To pause a running container, use the pause command. This command suspends all processes in the container.
+
+To stop a running container, use the stop command. The stop command enables the working process to shut down gracefully by sending it a termination signal. The container's kernel terminates after the process shuts down.
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+Container storage drives are less performant.
+
+Containers implement a storage driver to allow your apps to write data. This driver introduces an extra abstraction to communicate with the host OS kernel, and is less performant than writing directly to a host filesystem.
+
+Containers can make use of two options to persist data. The first option is to make use of volumes, and the second is bind mounts.
+
+
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+A volume is stored on the host filesystem at a specific folder location. Choose a folder where you know the data won't be modified by non-Docker processes.
+
+Docker creates and manages the new volume by running the docker volume create command. This command can form part of our Dockerfile definition, which means that you can create volumes as part of the container-creation process. Docker creates the volume if it doesn't exist when you try to mount the volume into a container the first time.
+
+
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+The bridge network is the default configuration applied to containers when launched without specifying any other network configuration. This network is an internal, private network used by the container, and it isolates the container network from the Docker host network.
+
+
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+The host network enables you to run the container on the host network directly. This configuration effectively removes the isolation between the host and the container at a network level.
+
+Keep in mind that the container can use only ports the host isn't already using.
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+For more advanced scenarios, both Linux and Windows provide additional network options. For example, the overlay option creates a virtual switch from the host network, so containers on that network can get IP addresses from DHCP servers or operate with IP addresses from that network segment. Furthermore, Docker allows third-party vendors to create network plugins.
+
+
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+1. A container is launched using the --publish 8080:80 flag. Which of the following options is the most likely network configuration used for the container? 
+The Bridge network configuration is an internal, private network used by the container and isolates the container network from the Docker host network. We use the publish flag to map ports between the container and host ports.
+
+
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+2. Which storage option is the best choice that allows the host and container to share a file to manage name server resolution; for example, the resolve.conf file on Linux? 
+A bind mount, like a volume, is stored on the host filesystem at a specific folder location. However, the host is expected to update bind mount data. The resolve.conf contents is expected to change by the host and used by both the container and host.
+
+
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+Docker containers provide security features to run multiple containers simultaneously on the same host without affecting each other. As we learned, we can configure both data storage and network configuration to isolate our containers or share data and connectivity between specific containers.
+
+
+
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+Docker containers are the default container architecture the Azure containerization services use, and many other cloud platforms also support them.
+
+For instance, you can deploy Docker containers to Azure Container Instances, Azure App Service, and Azure Kubernetes Services. Each of these options provides you with different features and capabilities.
+
+
+
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+Docker provides us with the docker stats command. This command returns information for the container such as percentage CPU usage, percentage memory usage, I/O written to disk, network data sent and received, and process IDs assigned. This information is useful as an immediate data stream; however, no aggregation is done, because the data isn't stored. We'd have to install third-party software for meaningful data capture over a period of time.
+
+
+
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+Docker images are stored and made available in registries. A registry is a web service to which Docker can connect to upload and download container images. The most well-known registry is Docker Hub, which is a public registry. Many individuals and organizations publish images to Docker Hub, and you can download and run these images using Docker running on your desktop, on a server, or in the cloud. 
+
+
+
+
+
+
+
+3407
+Azure Kubernetes Learning Path
+A registry is organized as a series of repositories. Each repository contains multiple Docker images that share a common name and generally the same purpose and functionality. These images normally have different versions, identified with a tag. This mechanism enables you to publish and retain multiple versions of images for compatibility reasons. 
 
 
 
@@ -3391,26 +3554,10 @@ Azure Kubernetes Learning Path
 
 
 
-3407
-Azure Kubernetes Learning Path
-
-
-
-
-
-
 
 3407
 Azure Kubernetes Learning Path
 
-
-
-
-
-
-
-3407
-Azure Kubernetes Learning Path
 
 
 
@@ -3427,17 +3574,10 @@ Azure Kubernetes Learning Path
 
 
 
-3407
-Azure Kubernetes Learning Path
-
-
-
-
-
-
 
 3407
 Azure Kubernetes Learning Path
+
 
 
 
@@ -3449,10 +3589,3 @@ Azure Kubernetes Learning Path
 Azure Kubernetes Learning Path
 
 
-
-
-
-
-
-3407
-Azure Kubernetes Learning Path

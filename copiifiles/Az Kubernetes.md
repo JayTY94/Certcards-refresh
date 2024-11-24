@@ -106,3 +106,80 @@ docker build -t temp-ubuntu
 https://learn.microsoft.com/en-us/training/modules/intro-to-docker-containers/4-how-docker-containers-work
 
 Earlier, you discovered the container becomes the unit you'll use to distribute your apps. You also learned the container is in a standardized format both yoru developer and operation teams use.
+
+In this example, you're developing an order-tracking portal for your company's various outlets to use. With the Docker image built, your operations team is now responsible for deploying, rolling out updates, and managing your order tracking portal.
+
+In the previous unit, you looked at how a Docker image is built. Here, you'll look a bit at a Docker container's lifecycle and how to manage contianers. You'll also learn about configuring data storage and the network options for your containers.
+
+How to manage Docker containers.
+
+A Docker container has a lifecycle that you can use to manage and track the state of a container.
+
+To place a container in the run state, you use the run command. You can also restart a container that is already running. When restarting a container, the container receives a termination signal to enable any running processes to shut down gracefully before the container's kernel terminates.
+
+A container is considered in a running state until it's either paused, stopped, or killed. A container, however, can also exit from the running state by itself.
+
+...
+
+Docker container network configuration
+
+The default Docker network configuration allows for isolating containers on the Docker host. This feature allows you to build and configure apps that can communicate securely with each other.
+
+Docker provides different network settings for Linux and Windows.
+
+For linux, there are six preconfigured network options:
+    Bridget
+    Host
+    Overlay
+    IPvLan
+    MACvLan
+    None
+
+For Windows, there are six preconfigured network options:
+    NAT
+    Transparent
+    Overlay
+    L2Bridge
+    L2Tunnel
+    None
+
+You can choose which of these network configurations to apply to your container depending on its network requirements.
+
+What is the bridge network?
+
+The bridge network is the default configuration applied to containers when launched without specifying any other network configuration. This network has an internal, private network used by the container, and it isolates teh container network from the Docker host network.
+
+Each container in the bridge network is assigned an IP address and a subnet mask, with the hostname defaulting to the container name. Containers connected to the default .
+
+...
+
+https://learn.microsoft.com/en-us/training/modules/intro-to-docker-containers/5-when-use-docker-containers
+
+...
+
+Application delivery
+
+With Docker, the container becomes the unit we use to distribute applications. This concept ensures that we have a standardized container format both our developer and operations teams use. Our developers can focus on developing software, and the operations team can focus on deploying and managing software.
+
+We can use the container in every step of our deployment system once our development team releases a build of our application. Containers are ideal for continuous integration, and speed up the time from build to production.
+
+Managing hosting environments
+
+We configure our application's environment internally to the container. This containment provides flexibility for our operations team to manage hte application's environment much closer. Our team can monitor OS updates, apply security patches once, and roll out he updated container as needed.
+
+Our team can also manage which applications to install, update, and remove without affecting other containers. Each container is isolated and has its resource limits assinged separately from other containers.
+
+Cloud deployments
+
+...
+
+https://learn.microsoft.com/en-us/training/modules/intro-to-containers/1-introduction
+Introduction
+
+Rapid deployment is the key to business agility. Modern organizations must be able to release apps quickly to attract and retain business. Containerization saves time and reduces costs. You don't have to configure hardware and spend time installing operating systems and software to host a deployment. Multiple apps can run in their isolated containers on the same hardware. You can scale out quickly by starting more instances of containers. The images that run in containers are extensible; you can start with a working base image and alyer more functionality on top to create a new image.
+
+Suppose you work for an online clothing retailer that's planning to deploy a handful of internal apps, but it hasn't yet decided how to host them. You're looking for maximum compatibility, and the apps could be hosted on-premises, in Azure, or in another cloud provider. Some fo teh apps might share IaaS infrastructure. In these cases, the company requires the apps to be isolated from each other. Apps can share the hardware resources, but an app shouldn't be able to interfere
+
+...
+
+You use the docker pull command with the image name to retrieve an image. By default, Docker will download the image tagged latest from that repository on Docker Hub if you specify only the repository name.
