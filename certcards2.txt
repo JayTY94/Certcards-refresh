@@ -6,14 +6,6 @@
 
 
 
-2
-Python
-Magic methods, also known as special methods or dunder methods, are methods in Python whose names start and end with a double underscore.
-
-These methods have special meanings and are automatically called by Python in response to certain operations, such as instantiation, sequence indexing, and attribute management.
-
-
-
 
 
 3
