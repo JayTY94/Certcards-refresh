@@ -4,30 +4,6 @@
 
 
 
-1
-Diffusers Library
-Energy-Based Models (EBMs)
-A framework where probability distributions are modeled as energy functions, allowing the model to assign lower energy to more realistic data samples. Diffusion models leverage EBMs to learn a smoother denoising process by associating lower energy states with cleaner images.
-
-
-
-
-3
-Kaggle
-Moving Average Plots
-To see what kind of trend a time series might have, we can use a moving average plot. To compute a moving average of a time series, we compute the average of the values within a sliding window of some defined width. The idea is to smooth out any short-term fluctuations in the series so that only long-term changes remain.
-
-
-
-
-
-4
-Search Engine Optimization
-Off-page SEO refers to actions taken outside of your own website to impact your rankings within search engine results. It primarily involves backlink building, social media marketing, and influencer outreach to enhance the site’s authority and reputation.
-
-
-
-
 
 5
 Azure Functions Quickstart
@@ -480,10 +456,6 @@ git init: This command initializes a new Git repository in your current director
 
 
 
-
-55
-pandas
-Expanding List-Like Elements into Rows using explode: The explode method transforms each element of a list-like column into separate rows by applying DataFrame.explode. This allows you to analyze each list element individually in a row-wise fashion.
 
 
 
