@@ -222,3 +222,36 @@ By default, Docker doesn't allow inbound network requests to reach your containe
 https://learn.microsoft.com/en-us/training/modules/intro-to-containers/3-exercise-deploy-docker-image-locally
 
 Exercise - Retrieve an existing Docker image and deploy it locally
+
+https://learn.microsoft.com/en-us/training/modules/intro-to-containers/4-create-custom-docker-image
+
+Customize a Docker image to run your own web app
+
+Docker Hub is an excellent source of images to get you started building your own containerized apps. You can download an image that provides the basic functionality you require, then layer your own application on top of it to create a new custom image. You can automate the steps for this process by writing a Dockerfile.
+
+In the online clothing store scenario, the company decided that Docker is the way forward. The next step is to determine the best way to containerize your web applications. The company plans to build many of the apps using ASP.NET Core. You've noticed that Docker Hub contains a base image that includes this framework. As a proof of concept, you want to start with this base image and add the code for one of the web apps to create a new custom image. yoU also want this process to be easily repeatable, so it can bea utomated whenever you release a new version of the web app.
+
+In this unit, you'll learn how to create a custom Docker image and how you can automate the process by writing a Dockerfile.
+
+Create a custom image with a Dockerfile
+
+To create a Docker Image containing your application, you typically begin by identifying a base image, to which you add fiels and configuration information. The process of identifying a suitable base image usually starts with an image search on Docker Hub. You want an image that already contains an application framework and all the utilities and tools of a Linux distribution, like Ubuntu or Alpine. For rexample, 
+
+...
+
+Command - Action
+
+From - Downloads the specified image and creates a new container based on this image
+WORKDIR - Sets the current working directory in the contianer; used by subsequent commands 
+COPY - Copies files from the host computer to the container. The first argument (myapp_code) is a file or folder on the host computer. The second argument (.) specifies the name of the file or folder to act as the destination in the container. In this case, the destination is the current working directory (/app).
+RUN - Executes a command in the container. Arguments to the RUN command are command-line like commands.
+EXPOSE - Creates a configuration in the new image that specifies which ports to open when the container runs. If the container is running a web ap, it's common to EXPOSE port 80
+ENTRYPOINT - Specifies the operation the container should run when it starts. In this example, it runs the newly built app. You specify the command you want to run and each of its arguments as a string array.
+
+By convention, applications meant to be packaged as Docker images typically have a Dockerfile located in teh root of their sourcecode, and it's almost always named Dockerfile.
+
+The docker build command
+
+...
+
+https://learn.microsoft.com/en-us/training/modules/intro-to-containers/5-exercise-create-custom-docker-image

@@ -3598,6 +3598,72 @@ docker image rm mcr.microsoft.com/dotnet/core/samples:aspnetapp
 
 52
 Azure Kubernetes Learning Path
+Enter the following code to start the sample app. The -d flag is to run it as a background, non-interactive app. The -p flag is to map port 8080 in the container that's created to port 8080 locally. This setting is intended to avoid conflicts with any web apps already running on your computer. The command will respond with a lengthy hexadecimal identifier for the instance.
+
+Bash
+docker run -d -p 8080:8080 mcr.microsoft.com/dotnet/samples:aspnetapp
+
+
+
+
+52
+Azure Kubernetes Learning Path
+To create a Docker image containing your application, you typically begin by identifying a base image, to which you add files and configuration information. The process of identifying a suitable base image usually starts with an image search on Docker Hub. You want an image that already contains an application framework and all the utilities and tools of a Linux distribution, like Ubuntu or Alpine.
+
+
+
+
+
+52
+Azure Kubernetes Learning Path
+Dockerfile Example:
+FROM mcr.microsoft.com/dotnet/sdk:6.0
+WORKDIR /app
+COPY myapp_code .
+RUN dotnet build -c Release -o /rel
+EXPOSE 80
+WORKDIR /rel
+ENTRYPOINT ["dotnet", "myapp.dll"]
+
+
+
+
+52
+Azure Kubernetes Learning Path
+Command in DockerFile
+EXPOSE	Creates a configuration in the new image that specifies which ports to open when the container runs. If the container is running a web app, it's common to EXPOSE port 80.
+
+
+
+
+
+52
+Azure Kubernetes Learning Path
+Command in DockerFile
+RUN	Executes a command in the container. Arguments to the RUN command are command-line commands.
+
+
+
+
+52
+Azure Kubernetes Learning Path
+Command in DockerFile
+ENTRYPOINT	Specifies the operation the container should run when it starts. In this example, it runs the newly built app. You specify the command you want to run and each of its arguments as a string array.
+
+
+
+
+
+
+
+52
+Azure Kubernetes Learning Path
+The docker build command creates a new image by running a Dockerfile. This command's syntax has several parameters:
+
+The -f flag indicates the name of the Dockerfile to use.
+The -t flag specifies the name of the image to be created; in this example, myapp:v1.
+The final parameter, ., provides the build context for the source files for the COPY command: the set of files on the host computer needed during the build process.
+
 
 
 
@@ -3610,11 +3676,6 @@ Azure Kubernetes Learning Path
 
 
 
-52
-Azure Kubernetes Learning Path
-
-
-
 
 
 52
@@ -3624,8 +3685,12 @@ Azure Kubernetes Learning Path
 
 
 
+
+
 52
 Azure Kubernetes Learning Path
+
+
 
 
 
