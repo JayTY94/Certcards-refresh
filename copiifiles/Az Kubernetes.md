@@ -182,4 +182,43 @@ Suppose you work for an online clothing retailer that's planning to deploy a han
 
 ...
 
-You use the docker pull command with the image name to retrieve an image. By default, Docker will download the image tagged latest from that repository on Docker Hub if you specify only the repository name.
+You use the docker pull command with the image name to retrieve an image. By default, Docker will download the image tagged latest from that repository on Docker Hub if you specify only the repository name. Keep in mind htat you can modify the command to pull different tags and from different repositories. This example fetches the image with the tag aspnetapp from mcr.microsoft.com/dotnet/samples:aspnetapp repository. This image contains a simple ASP.NET Core web app.
+
+Note
+The examples in this unit are intended to show the syntax of various Docker commands. You don't need to run these commands while reading this unit. The exercises that follow this unit will guide you through working with Docker Directly.
+
+docker pull mcr.microsoft.com/dotnet/samples:aspnetapp 
+
+When you fetch an image, Docker stores it locally and makes it available for running containers. You can view the images in your local repository with the docker image list command.
+
+docker image list
+
+The output looks like the following example:
+REPOSITORY TAG IMAGE ID CREATED SIZE
+mcr.microsoft.com/dotnet/samples   aspnetapp           6e2737d83726        6 days ago          263MB
+
+You can use the image name ID to reference the image in many other Docker commands.
+
+Run a Docker container
+
+Use the docker run command to start a container. Specify the image to run with its name or ID. If you haven't run docker pull already, Docker will do it for you.
+
+docker run mcr.microsoft.com/dotnet/samples:aspnetapp
+
+In this example, the command responds with teh following message:
+warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
+ No XML encryptor configured. Key {d8e1e1ea-126a-4383-add9-d9ab0b56520d} may be persisted to storage in unencrypted form.
+Hosting environment: Production
+Content root path: /app
+Now listening on: http://[::]:80
+Application started. Press Ctrl+C to shut down.
+
+This image contains a web app, so it's now listening for requests to arrive on HTTP port 80. However, if you open a web browser and navigate to http://localhost:80, you won't see the app.
+
+By default, Docker doesn't allow inbound network requests to reach your container. YOu need to tell Docker
+
+...
+
+https://learn.microsoft.com/en-us/training/modules/intro-to-containers/3-exercise-deploy-docker-image-locally
+
+Exercise - Retrieve an existing Docker image and deploy it locally
