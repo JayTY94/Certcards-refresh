@@ -13,16 +13,6 @@
 
 
 
-3
-Azure Kubernetes Learning Path
-docker rmi temp-ubuntu:version-1.0
-
-You can't remove an image if a container is still using the image. The docker rmi command returns an error message, which lists the container that relies on the image.
-
-
-
-
-
 4
 Azure Kubernetes Learning Path
 A container image is a portable package that contains software. It's this image that, when run, becomes our container. The container is an image's in-memory instance.
