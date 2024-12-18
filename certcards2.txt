@@ -8,9 +8,6 @@
 
 
 
-3
-OData
-Serialization is the process of converting objects or data structures into a format like JSON or XML for transmission or storage. In OData, serialization ensures that data sent over the Web API is standardized, enabling clients to understand and process it effectively.
 
 
 
