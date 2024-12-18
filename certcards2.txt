@@ -4,20 +4,6 @@
 
 
 
-1
-OData
-$expand
-The $expand query option is used to include related entities in the response. For example, if you are querying a customer entity, you can use $expand to retrieve their associated orders or addresses in the same query, enabling easier navigation of related data.
-
-
-
-
-
-2
-OData
-Metadata Document
-In OData, the metadata document describes the structure of the OData service, including the entity types, relationships, and properties. It is expressed in an XML format and allows developers and tools to understand the underlying schema of the OData service for integration purposes.
-
 
 
 
