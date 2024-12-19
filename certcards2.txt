@@ -5,10 +5,6 @@
 
 
 
-2
-CDK Global Ransomeware, June 2024
-The NVD is continuously updated as new vulnerabilities are discovered and published. Vendors often link their advisories and patches to CVE entries, enabling users to quickly find official remediation information. This near-real-time feed of vulnerability data helps maintain a dynamic and current understanding of the threat landscape.
-
 
 
 
