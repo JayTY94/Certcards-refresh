@@ -4,13 +4,6 @@
 
 
 
-1
-CDK Global Ransomeware, June 2024
-The National Vulnerability Database (NVD) is a comprehensive, U.S. government-maintained repository of standardized vulnerability information. It’s managed by the National Institute of Standards and Technology (NIST) and serves as a key resource for organizations, researchers, and security professionals worldwide
-
-
-
-
 
 2
 CDK Global Ransomeware, June 2024
