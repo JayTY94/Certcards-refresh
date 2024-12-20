@@ -255,3 +255,59 @@ The docker build command
 ...
 
 https://learn.microsoft.com/en-us/training/modules/intro-to-containers/5-exercise-create-custom-docker-image
+
+A Dockerfile contains the steps for building a custom Docker image.
+
+You decide to deploy one of your organization's web apps using Docker. You select a simple web app that implements a web API for a hotel reservations website. The web API exposes HTTP POST and GET operations that create and retrieve customers' bookings.
+
+Note In this version of the web app, the bookings aren't actually persisted, and queries return dummy data.
+
+In this exercise, you'll create a Dockerfile for an app that doesn't have one. Then, you'll build the image and run it locally.
+
+Create a Dockerfile for the web app
+
+1. If it's not already running, start Docker on your computer.
+
+2. In a command prompt window on your local computer, run the following command to download the source code for the web app.
+
+[code]
+
+3. Enter the following command to open the src directory 
+
+cd mslearn-hote...
+
+2. Run the following command to verify that the image has been created and stored in the local registry:
+
+docker image list
+
+The image will have the name reservationsystem. You'll also have an image named microsoft/dotnet.
+
+Test the web app
+
+1. Enter the following code to run a container using the reservationsystem imiage. Docker will return a lengthy string of hex digits. The container runs in the background without any UE. Port 80 in the container is mapped to port 8080 on the host machine. The container is named reservations.
+
+2. Start a web browser and navigate to http://localhost:8080/api/reservations/1. You should see a JSON object containing the data for reservation number 1 similar to the following output:
+
+Replace the "1" at the end of the localhost URL with a different reservation number, like 2 or 20, to view the corresponding reservation details.
+
+3. Run the following command to view the container's status:
+
+docker ps -a
+
+...
+
+https://learn.microsoft.com/en-us/training/modules/intro-to-containers/6-deploy-docker-image-to-container-instance
+
+...
+
+Different SKUs provide varying levels of scalability and storage
+
+Azure Container Registry repositories are private, meaning they don't support unauthenticated access. To pull images from an Azure Container Registry repository, use the docker login command and specify the URL of the login server for the registry. The login server URL for a registry in Azure Container Registry has the form <registry_name>.azurecr.io
+
+docker login myregistry.azurecr.io
+
+Docker login will prompt you for a username and password. To find this information, go to the Azure portal and look up the access keys for the registry or run the following command.
+
+az acr credential show --name myregistry --resource-group mygroup
+
+You push an image from your local computer to a Docker registry by using the docker push command. Before you push an image, you must create an alias for the image that specifies the repository and tag that the Docker registry creates.

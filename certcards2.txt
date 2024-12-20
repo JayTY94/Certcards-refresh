@@ -3559,3 +3559,393 @@ Home Network Project
 Front: How does Pi-hole utilize DNS Sinkholing to block ads?
 
 Back: Pi-hole intercepts DNS queries for domains listed in its blocklists. Instead of resolving these domains to their legitimate IP addresses, Pi-hole returns a non-routable IP address (e.g., 0.0.0.0), preventing the ad content from loading on the client devices.
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+Azure Container Instance is a service that loads and runs Docker images on demand. The Azure Container Instance service can retrieve an image from a registry, such as Docker Hub or Azure Container Registry.
+
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+Azure Container Registry is a registry-hosting service provided by Azure. Each Azure Container Registry resource you create is a separate registry with a unique URL. These registries are private, meaning they require authentication to push or pull images
+
+
+
+
+
+383
+Powershell
+Invoke-WebRequest
+Sends HTTP or HTTPS requests to retrieve web content, like files or API data. Commonly used for downloading installers or fetching resources directly into a script.
+
+
+
+
+
+
+
+383
+Powershell
+Start-Service
+Starts a Windows service by name. For example, it can start Docker Desktop’s backend services without launching the GUI, ensuring background processes are operational.
+
+
+
+
+
+
+
+383
+Powershell
+Get-Service
+Displays the status of Windows services. Useful for checking if a service (e.g., Docker Desktop) is running, stopped, or paused.
+
+
+
+
+
+383
+Powershell
+Start-Process
+Runs an executable or script as a new process. Often used with arguments to control behavior, such as running installers or launching applications in a specific mode.
+
+
+
+
+
+
+383
+Powershell
+-ArgumentList
+Specifies parameters to pass to a new process. For example, msiexec arguments like /quiet ensure installations run silently without user input.
+
+
+
+
+
+
+383
+Powershell
+Remove-Item
+Deletes files, directories, or other items. Commonly used to clean up temporary files or outdated resources in automated scripts.
+
+
+
+
+
+
+383
+Powershell
+New-Item
+Creates new files, directories, or registry entries. For example, New-Item -Name Dockerfile creates an empty Dockerfile to define a container configuration.
+
+
+
+
+
+
+383
+Powershell
+Set-Content
+Writes or replaces the content of a file. Useful for creating files with specific content or initializing an empty file.
+
+
+
+
+
+
+383
+Powershell
+cmd /c
+Runs a Command Prompt command from PowerShell. Allows use of legacy commands, like copy NUL, for operations not natively supported in PowerShell.
+
+
+
+
+
+
+383
+Powershell
+az
+The Azure CLI command-line tool for managing Azure resources like VMs, storage, and networks. It's cross-platform and integrates with scripting tools like PowerShell.
+
+
+
+
+
+
+
+
+383
+Powershell
+Install-Module
+Installs PowerShell modules from the PowerShell Gallery, such as AzureRM or PowerShellGet. Often used to add functionality or manage cloud resources.
+
+
+
+
+
+
+
+
+383
+Powershell
+/i (msiexec argument)
+Indicates installation mode for .msi files when using msiexec. Required for executing software setups from command-line tools or scripts.
+
+
+
+
+
+
+
+
+
+383
+Powershell
+/quiet (msiexec argument)
+Suppresses all installer prompts and runs the setup silently. Ideal for automated or non-interactive installations.
+
+
+
+
+
+
+
+
+
+383
+Powershell
+-Force
+Overrides warnings or confirmation prompts, ensuring the command proceeds without manual intervention. Common in scripting for reliability.
+
+
+
+
+
+
+
+
+
+383
+Powershell
+-Wait
+Pauses execution until a specified process finishes. Ensures sequential steps in scripts are executed in the correct order.
+
+
+
+
+
+
+
+
+
+383
+Powershell
+-AllowClobber
+Allows overwriting of existing aliases or functions during module installation, preventing conflicts with pre-existing definitions.
+
+
+
+
+
+
+
+
+
+383
+Powershell
+docker build
+Creates a Docker image from a Dockerfile and dependencies. This image can be used to run containerized applications on any compatible host.
+
+
+
+
+
+
+
+
+
+383
+Powershell
+docker build -t <name>
+Tags a Docker image with a specified name, making it easier to reference and organize in local or remote repositories.
+
+
+
+
+
+
+
+
+
+383
+Powershell
+error during connect
+Indicates the Docker CLI failed to connect to the Docker daemon, often due to the service not running or incorrect configuration.
+
+//./pipe/dockerDesktopLinuxEngine
+Refers to the Windows named pipe used for communicating with Docker Desktop's Linux container engine. Errors suggest the service isn’t available.
+
+
+
+
+
+
+
+
+
+383
+Powershell
+NUL
+A virtual file in Windows that discards written data. Commonly used in Command Prompt, NOT POWERSHELL to create empty files (e.g., copy NUL filename).
+
+
+
+
+
+
+
+
+
+383
+Powershell
+Service Manager (services.msc)
+A GUI tool for managing Windows services. You can start, stop, or restart services like Docker Desktop directly from this interface.
+
+
+
+
+
+
+
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+Azure Container Registry repositories are private, meaning they don't support unauthenticated access. To pull images from an Azure Container Registry repository, use the docker login command and specify the URL of the login server for the registry.
+
+docker login myregistry.azurecr.io
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+Docker login will prompt you for a username and password. To find this information, go to the Azure portal and look up the access keys for the registry or run the following command.
+
+Azure CLI
+az acr credential show --name myregistry --resource-group mygroup
+
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+You push an image from your local computer to a Docker registry by using the docker push command. Before you push an image, you must create an alias for the image that specifies the repository and tag that the Docker registry creates. The repository name must be of the form *<login_server>/<image_name>:<tag/>. Use the docker tag command to perform this operation. 
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+The following example creates an alias for the reservationsystem image.
+
+Bash
+docker tag reservationsystem myregistry.azurecr.io/reservationsystem:v2
+
+If you run docker image ls, you'll see two entries for the image: one with the original name and the second with the new alias.
+
+
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
+
+
+
+
+
+
+
+383
+Azure Kubernetes Learning Path
