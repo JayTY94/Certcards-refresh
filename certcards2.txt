@@ -103,6 +103,60 @@ The Mobile-Friendly Test is a tool by Google that assesses how easily a visitor 
 
 
 11
+Home Network Project
+Front: What is pfSense and what are its primary uses?
+
+Back: pfSense is an open-source firewall and router software based on FreeBSD. It provides advanced networking features such as traffic shaping, VPN support, intrusion detection and prevention, load balancing, and more. It's commonly used for securing and managing both home and enterprise networks.
+
+
+
+
+
+12
+Home Network Project
+Front: What is DNS over HTTPS (DoH) and its advantages?
+
+Back: DNS over HTTPS (DoH) is a protocol that encrypts DNS queries by sending them over HTTPS. Advantages include:
+
+Privacy: Prevents eavesdropping and manipulation of DNS traffic.
+Security: Protects against DNS spoofing and man-in-the-middle attacks.
+Censorship Resistance: Makes it harder for third parties to block or redirect DNS queries.
+
+
+
+
+
+13
+Home Network Project
+Front: What is Service Mesh and how does it enhance microservices architecture?
+
+Back: A Service Mesh is a dedicated infrastructure layer that manages service-to-service communication within a microservices architecture. It provides features like load balancing, service discovery, traffic management, security (encryption and authentication), and observability (monitoring and tracing), enhancing the reliability and efficiency of microservices interactions.
+
+
+
+
+
+14
+Home Network Project
+Front: What is Fail2Ban and how does it protect a network?
+
+Back: Fail2Ban is an intrusion prevention software that monitors log files for suspicious activity, such as repeated failed login attempts. When such patterns are detected, Fail2Ban automatically updates firewall rules to temporarily or permanently ban offending IP addresses, protecting the network from brute-force attacks and unauthorized access.
+
+
+
+
+
+15
+Home Network Project
+Front: What is Prometheus and what is its role in network monitoring?
+
+Back: Prometheus is an open-source monitoring and alerting toolkit designed for reliability and scalability. It collects and stores metrics from various services and systems, allowing users to query and analyze performance data to monitor the health and performance of their network and applications.
+
+
+
+
+
+16
 Diffusers Library
 There are three main components of the library to know about:
 Popular pretrained model architectures and modules that can be used as building blocks for creating diffusion systems.
@@ -111,27 +165,7 @@ Popular pretrained model architectures and modules that can be used as building 
 
 
 
-12
-Diffusers Library
-Text-Guided Image-to-Image Translation: Adapt an image guided by a text prompt
-    Pipeline: img2img
-Text-Guided Image-Inpainting: Fill the masked part of an image given the image, the mask, and a text prompt
-    Pipeline: inpaint
-
-
-
-
-
-13
-Diffusers Library
-Stochastic Differential Equations (SDEs)
-These equations describe how noise evolves over continuous time in diffusion models. By defining the noise dynamics, SDEs allow for modeling both forward (adding noise) and reverse (removing noise) processes as smooth, differential transformations.
-
-
-
-
-
-14
+17
 Diffusers Library
 Unconditional Image Generation: Generate an image from Gaussian noise
     Pipeline: unconditional_image_generation 
@@ -142,64 +176,30 @@ Text-Guided Image Generation: Generate an image given a text prompt
 
 
 
-15
-Diffusers Library
-Running pip install within a Jupyter notebook is straightforward: you prefix the command with an exclamation mark (!). This tells the notebook to execute the command as a shell command rather than Python code. For example:
-
-python
-!pip install ipywidgets
-
-After installing, remember to restart the kernel to ensure the notebook recognizes the new packages.
-
-
-
-
-
-16
-Home Network Project
-Front: What is Service Mesh and how does it enhance microservices architecture?
-
-Back: A Service Mesh is a dedicated infrastructure layer that manages service-to-service communication within a microservices architecture. It provides features like load balancing, service discovery, traffic management, security (encryption and authentication), and observability (monitoring and tracing), enhancing the reliability and efficiency of microservices interactions.
-
-
-
-
-
-17
-Home Network Project
-Front: What is pfSense and what are its primary uses?
-
-Back: pfSense is an open-source firewall and router software based on FreeBSD. It provides advanced networking features such as traffic shaping, VPN support, intrusion detection and prevention, load balancing, and more. It's commonly used for securing and managing both home and enterprise networks.
-
-
-
-
-
 18
-Home Network Project
-Front: What is Prometheus and what is its role in network monitoring?
-
-Back: Prometheus is an open-source monitoring and alerting toolkit designed for reliability and scalability. It collects and stores metrics from various services and systems, allowing users to query and analyze performance data to monitor the health and performance of their network and applications.
+Diffusers Library
+Stochastic Differential Equations (SDEs)
+These equations describe how noise evolves over continuous time in diffusion models. By defining the noise dynamics, SDEs allow for modeling both forward (adding noise) and reverse (removing noise) processes as smooth, differential transformations.
 
 
 
 
 
 19
-Home Network Project
-Front: What is Fail2Ban and how does it protect a network?
-
-Back: Fail2Ban is an intrusion prevention software that monitors log files for suspicious activity, such as repeated failed login attempts. When such patterns are detected, Fail2Ban automatically updates firewall rules to temporarily or permanently ban offending IP addresses, protecting the network from brute-force attacks and unauthorized access.
+Diffusers Library
+Forward and Reverse Processes
+In diffusion, the forward process gradually adds noise to data, following a fixed probabilistic schedule, and the reverse process learns to denoise the noisy data. Mathematically, the forward process models q(x_t | x_{t-1}), while the reverse learns p(x_{t-1} | x_t) to reconstruct images.
 
 
 
 
 
 20
-Home Network Project
-Front: How does Docker Networking facilitate communication between containers?
-
-Back: Docker Networking allows containers to communicate with each other and with external networks through virtual networks. Docker provides several network drivers (e.g., bridge, host, overlay) that define how containers connect and interact. Custom networks can be created to isolate groups of containers or enable specific communication patterns.
+Diffusers Library
+Text-Guided Image-to-Image Translation: Adapt an image guided by a text prompt
+    Pipeline: img2img
+Text-Guided Image-Inpainting: Fill the masked part of an image given the image, the mask, and a text prompt
+    Pipeline: inpaint
 
 
 
@@ -215,7 +215,7 @@ The Docker Engine consists of several components configured as a client-server i
 
 22
 Azure Kubernetes Learning Path
-A base image is an image that uses the Docker scratch image. The scratch image is an empty container image that doesn't create a filesystem layer. This image assumes that the application you're going to run can directly use the host OS kernel.
+We use Unionfs to create Docker images. Unionfs is a filesystem that allows you to stack several directories—called branches—in such a way that it appears as if the content is merged. However, the content is physically kept separate. Unionfs allows you to add and remove branches as you build out your file system.
 
 
 
@@ -223,7 +223,7 @@ A base image is an image that uses the Docker scratch image. The scratch image i
 
 23
 Azure Kubernetes Learning Path
-We use Unionfs to create Docker images. Unionfs is a filesystem that allows you to stack several directories—called branches—in such a way that it appears as if the content is merged. However, the content is physically kept separate. Unionfs allows you to add and remove branches as you build out your file system.
+A base image is an image that uses the Docker scratch image. The scratch image is an empty container image that doesn't create a filesystem layer. This image assumes that the application you're going to run can directly use the host OS kernel.
 
 
 
@@ -231,7 +231,7 @@ We use Unionfs to create Docker images. Unionfs is a filesystem that allows you 
 
 24
 Azure Kubernetes Learning Path
-A single image can have multiple tags assigned to it. By convention, the most recent version of an image is assigned the latest tag and a tag that describes the image version number. When you release a new version of an image, you can reassign the latest tag to reference the new image.
+The ENTRYPOINT in the Dockerfileile indicates which process will execute once we run a container from an image. If there's no ENTRYPOINT or another process to be executed, Docker will interpret that as there's nothing for the container to do, and the container will exit.
 
 
 
@@ -239,7 +239,9 @@ A single image can have multiple tags assigned to it. By convention, the most re
 
 25
 Azure Kubernetes Learning Path
-The ENTRYPOINT in the Dockerfileile indicates which process will execute once we run a container from an image. If there's no ENTRYPOINT or another process to be executed, Docker will interpret that as there's nothing for the container to do, and the container will exit.
+Docker images are large files that are initially stored on your PC, and we need tools to manage these files.
+
+The Docker CLI and Docker Desktop allow us to manage images by building, listing, removing, and running them. We manage Docker images by using the docker client. The client doesn't execute the commands directly, and sends all queries to the dockerd daemon.
 
 
 
@@ -342,14 +344,6 @@ Event Grid:	Execute a function based on Event Grid subscriptions
 
 36
 PP365
-Background operations (optional)	Select to disable all asynchronous operations (see Asynchronous service) such as workflows and synchronization with Exchange. Emails will not be sent and server-side synchronization for appointments, contacts, and tasks are disabled. Note: Administration mode must be enabled to disable background operations.
-
-
-
-
-
-37
-PP365
 Syntax for using the web api to get specific staff records based on a substring in the name column
 
 FActs_endpoint = "ts_staffs?$filter=contains(ts_name, 'Manu')"
@@ -362,9 +356,17 @@ filter=contains(ts_name, 'Manu'): filter on specific field based on containing a
 
 
 
+37
+PP365
+Background operations (optional)	Select to disable all asynchronous operations (see Asynchronous service) such as workflows and synchronization with Exchange. Emails will not be sent and server-side synchronization for appointments, contacts, and tasks are disabled. Note: Administration mode must be enabled to disable background operations.
+
+
+
+
+
 38
 PP365
-Workflow in the context of Microsoft Dataverse and Power Apps refers to the automation of business processes and tasks. Workflows are a series of steps and rules that define how data is processed and managed within the system. Workflows can be triggered by events such as record creation, update, or deletion, and can perform actions like sending emails, updating records, creating tasks, and more.
+To support offline use, Power Apps allows data to be cached locally on the device. Users can create, update, and delete records while offline, and these changes are synchronized with the Dataverse database once the device reconnects to the internet. This must all be configured ahead of time.
 
 
 
@@ -372,7 +374,7 @@ Workflow in the context of Microsoft Dataverse and Power Apps refers to the auto
 
 39
 PP365
-To support offline use, Power Apps allows data to be cached locally on the device. Users can create, update, and delete records while offline, and these changes are synchronized with the Dataverse database once the device reconnects to the internet. This must all be configured ahead of time.
+Workflow in the context of Microsoft Dataverse and Power Apps refers to the automation of business processes and tasks. Workflows are a series of steps and rules that define how data is processed and managed within the system. Workflows can be triggered by events such as record creation, update, or deletion, and can perform actions like sending emails, updating records, creating tasks, and more.
 
 
 
@@ -425,7 +427,7 @@ Protecting a web API or a web app: One challenge of protecting these resources i
 
 45
 MS Identity Platform
-The parties in an authentication flow use bearer tokens to assure, verify, and authenticate a principal (user, host, or service) and to grant or deny access to protected resources (authorization). Bearer tokens in the Microsoft identity platform are formatted as JSON Web Tokens (JWT).
+ID token - ID tokens are sent to the client application as part of an OpenID Connect flow. They can be sent alongside or instead of an access token. ID tokens are used by the client to authenticate the user. To learn more about how the Microsoft identity platform issues ID tokens, see ID tokens in the Microsoft identity platform.
 
 
 
@@ -471,7 +473,13 @@ array([0.96..., 1.  ..., 0.96..., 0.96..., 1.        ])
 
 50
 sklearn
-Assuming that some data is Independent and Identically Distributed (i.i.d.) is making the assumption that all samples stem from the same generative process and that the generative process is assumed to have no memory of past generated samples.
+A Hyperparameter search consists of:
+
+    an estimator (regressor or classifier such as sklearn.svm.SVC());
+    a parameter space;
+    a method for searching or sampling candidates;
+    a cross-validation scheme; and
+    a score function.
 
 
 
@@ -479,8 +487,8 @@ Assuming that some data is Independent and Identically Distributed (i.i.d.) is m
 
 51
 Jane Eyre
-Gytrash (JAI-trash)
-A mythical creature from English folklore, typically appearing as a ghostly, shape-shifting animal such as a horse, dog, or mule. Known for haunting travelers on lonely roads, it often carries a mysterious or ominous aura.
+Dun and Sere
+"Dun" refers to a dull grayish-brown color, often describing animals or landscapes. "Sere" means dry or withered, typically describing vegetation. Together, the phrase evokes an autumnal or barren scene.
 
 
 
@@ -488,8 +496,8 @@ A mythical creature from English folklore, typically appearing as a ghostly, sha
 
 52
 Jane Eyre
-Dun and Sere
-"Dun" refers to a dull grayish-brown color, often describing animals or landscapes. "Sere" means dry or withered, typically describing vegetation. Together, the phrase evokes an autumnal or barren scene.
+Gytrash (JAI-trash)
+A mythical creature from English folklore, typically appearing as a ghostly, shape-shifting animal such as a horse, dog, or mule. Known for haunting travelers on lonely roads, it often carries a mysterious or ominous aura.
 
 
 
@@ -515,8 +523,8 @@ Loud, uncontrollable laughter, often with a connotation of being excessive, mock
 
 55
 Jane Eyre
-Prenomen (pree-NO-men)
-A person's first or given name, distinguishing them within a family or community. Derived from Latin, the term historically referred to the personal name in ancient Roman naming conventions.
+Canzonette (kan-zoh-NET)
+A short, light, and often playful Italian song, typically sung in a simple style. Originating during the Renaissance, canzonettes were precursors to madrigals, characterized by their charming melodies and accessible lyrics.
 
 
 
@@ -532,7 +540,9 @@ Kali Linux is maintained by Offsec, the company responsible for the OSCP (Offsec
 
 57
 Kali Linux
-As of the latest releases, Kali Linux uses XFCE as its default desktop environment. XFCE is chosen for its lightweight nature and speed, making it ideal for performance-sensitive tasks common in cybersecurity work.
+The first step is to visit the official Kali Linux website and navigate to the download page. You can choose the platform to install it on, such as virtual machines or a bootable USB drive.
+
+Kali allows you to install it in many different environments, including in the cloud, on arm-based devices such as Raspberry Pi, and even through Windows Subsystem for Linux (WSL).
 
 
 
@@ -540,9 +550,7 @@ As of the latest releases, Kali Linux uses XFCE as its default desktop environme
 
 58
 Kali Linux
-The first step is to visit the official Kali Linux website and navigate to the download page. You can choose the platform to install it on, such as virtual machines or a bootable USB drive.
-
-Kali allows you to install it in many different environments, including in the cloud, on arm-based devices such as Raspberry Pi, and even through Windows Subsystem for Linux (WSL).
+As of the latest releases, Kali Linux uses XFCE as its default desktop environment. XFCE is chosen for its lightweight nature and speed, making it ideal for performance-sensitive tasks common in cybersecurity work.
 
 
 
@@ -610,8 +618,8 @@ Prompt Embedding and Conditioning: transformers’ CLIPTokenizer and CLIPTextMod
 
 66
 IW Migration
-SSMS Object Explorer
-A navigation pane in SQL Server Management Studio that organizes database objects—tables, views, stored procedures, and security settings—into a hierarchical structure. It provides quick access to browse, modify, and manage all database components.
+SSIS (SQL Server Integration Services)
+A platform for building enterprise-level data integration, transformation, and migration workflows. While not directly in SSMS, SSIS packages can orchestrate complex ETL operations, complementing Access-to-SQL-Server migrations and ongoing data maintenance.
 
 
 
@@ -619,8 +627,8 @@ A navigation pane in SQL Server Management Studio that organizes database object
 
 67
 IW Migration
-SSIS (SQL Server Integration Services)
-A platform for building enterprise-level data integration, transformation, and migration workflows. While not directly in SSMS, SSIS packages can orchestrate complex ETL operations, complementing Access-to-SQL-Server migrations and ongoing data maintenance.
+SSMS Object Explorer
+A navigation pane in SQL Server Management Studio that organizes database objects—tables, views, stored procedures, and security settings—into a hierarchical structure. It provides quick access to browse, modify, and manage all database components.
 
 
 
@@ -637,8 +645,8 @@ Automated actions or sequences of commands within Access. They enable non-progra
 
 69
 IW Migration
-Locking and Concurrency Control (SQL Server)
-Techniques to manage simultaneous data access, preventing conflicts and ensuring consistency. Locks, isolation levels, and optimistic concurrency are tools that balance performance with data correctness when multiple users edit data simultaneously.
+Property Sheets (Access)
+Panels that display and allow editing of properties for forms, reports, and controls. Users can customize appearance, behavior, event triggers, and data sources to tailor the interface and user experience to specific business requirements.
 
 
 
@@ -646,8 +654,8 @@ Techniques to manage simultaneous data access, preventing conflicts and ensuring
 
 70
 IW Migration
-Property Sheets (Access)
-Panels that display and allow editing of properties for forms, reports, and controls. Users can customize appearance, behavior, event triggers, and data sources to tailor the interface and user experience to specific business requirements.
+Locking and Concurrency Control (SQL Server)
+Techniques to manage simultaneous data access, preventing conflicts and ensuring consistency. Locks, isolation levels, and optimistic concurrency are tools that balance performance with data correctness when multiple users edit data simultaneously.
 
 
 
@@ -691,11 +699,11 @@ Assists in enforcing DMARC policies effectively.
 
 74
 Email Auth and Security
-SPF (Sender Policy Framework)
+p=none
 
-A DNS-based email authentication method.
-Specifies which mail servers are authorized to send emails on behalf of a domain.
-Helps prevent email spoofing by verifying the sender's IP address against the domain's SPF record.
+A DMARC policy action.
+Requests no specific action be taken on unauthenticated emails.
+Used for monitoring and gathering data without affecting email delivery.
 
 
 
@@ -703,11 +711,11 @@ Helps prevent email spoofing by verifying the sender's IP address against the do
 
 75
 Email Auth and Security
-SMTP (Simple Mail Transfer Protocol)
+MUA (Mail User Agent)
 
-The standard protocol used for sending emails across the internet.
-Facilitates the transmission of email messages from senders to recipients via mail servers.
-Includes commands like HELO/EHLO, MAIL FROM, RCPT TO, DATA, and QUIT.
+An email client used by end-users to send, receive, and manage their emails.
+Provides the interface for users to interact with their email accounts.
+Examples include Microsoft Outlook, Mozilla Thunderbird, and Gmail.
 
 
 
@@ -715,7 +723,7 @@ Includes commands like HELO/EHLO, MAIL FROM, RCPT TO, DATA, and QUIT.
 
 76
 OData
-Delta Queries allow clients to track changes (additions, deletions, updates) and synchronize data efficiently without retrieving the entire dataset each time. This feature optimizes performance and reduces bandwidth usage by enabling incremental data synchronization.
+A Polymorphic Association is a relationship where an entity can be associated with multiple types of other entities. It requires the use of @odata.type to identify the specific type of related entities, enabling flexible and dynamic associations within the data model.
 
 
 
@@ -723,7 +731,7 @@ Delta Queries allow clients to track changes (additions, deletions, updates) and
 
 77
 OData
-Inheritance Hierarchies allow entities to derive properties and behaviors from parent entities, enabling reuse and polymorphism. Managed in Dataverse using OData's @odata.type, they allow clients to interact with a hierarchy of related entity types effectively.
+Delta Queries allow clients to track changes (additions, deletions, updates) and synchronize data efficiently without retrieving the entire dataset each time. This feature optimizes performance and reduces bandwidth usage by enabling incremental data synchronization.
 
 
 
@@ -731,7 +739,7 @@ Inheritance Hierarchies allow entities to derive properties and behaviors from p
 
 78
 OData
-A Polymorphic Association is a relationship where an entity can be associated with multiple types of other entities. It requires the use of @odata.type to identify the specific type of related entities, enabling flexible and dynamic associations within the data model.
+Inheritance Hierarchies allow entities to derive properties and behaviors from parent entities, enabling reuse and polymorphism. Managed in Dataverse using OData's @odata.type, they allow clients to interact with a hierarchy of related entity types effectively.
 
 
 
@@ -739,7 +747,7 @@ A Polymorphic Association is a relationship where an entity can be associated wi
 
 79
 OData
-Type Casting converts an entity from one type to another within inheritance hierarchies. In OData, it is facilitated by the @odata.type annotation, which specifies the target type for the cast, ensuring accurate data interpretation and processing.
+Annotations provide additional metadata about entities, properties, or relationships in the OData model. They enrich the data with information like display names, validation rules, and formatting instructions, enhancing both data semantics and client-side interactions.
 
 
 
@@ -747,7 +755,7 @@ Type Casting converts an entity from one type to another within inheritance hier
 
 80
 OData
-Annotations provide additional metadata about entities, properties, or relationships in the OData model. They enrich the data with information like display names, validation rules, and formatting instructions, enhancing both data semantics and client-side interactions.
+Type Casting converts an entity from one type to another within inheritance hierarchies. In OData, it is facilitated by the @odata.type annotation, which specifies the target type for the cast, ensuring accurate data interpretation and processing.
 
 
 
@@ -765,14 +773,6 @@ Customers with an Azure Monitor subscription can monitor the impact of their Con
 
 82
 Conditional Access
-Conditional Access: Client certificates can be used in conditional access policies to control access based on device compliance. This adds an extra layer of security by ensuring that only compliant devices can access sensitive data.
-
-
-
-
-
-83
-Conditional Access
 Report-only: Not applied	
 Not all configured policy conditions were satisfied. For example, the user is excluded from the policy or the policy only applies to certain trusted named locations.
 
@@ -780,10 +780,18 @@ Not all configured policy conditions were satisfied. For example, the user is ex
 
 
 
-84
+83
 Conditional Access
 Token Renewal: Refresh tokens are used to obtain new access and refresh token pairs when the current access token expires.
 Token Lifetime: The default lifetime for refresh tokens is 24 hours for single-page applications and 90 days for other scenarios.
+
+
+
+
+
+84
+Conditional Access
+Conditional Access: Client certificates can be used in conditional access policies to control access based on device compliance. This adds an extra layer of security by ensuring that only compliant devices can access sensitive data.
 
 
 
@@ -864,7 +872,7 @@ Web App for Containers is a feature of Azure App Service, a fully managed servic
 
 94
 AKS
-Azure Container Apps is a fully managed Kubernetes-based application platform that helps you deploy HTTP and non-HTTP apps from code or containers without orchestrating infrastructure. For more information, see Azure Container Apps documentation.
+Azure Kubernetes Service (AKS) is a managed Kubernetes service for running containerized applications. With AKS, you can take advantage of managed add-ons and extensions for additional capabilities while preserving the broadest level of configurability. For more information, see AKS documentation.
 
 
 
@@ -872,7 +880,7 @@ Azure Container Apps is a fully managed Kubernetes-based application platform th
 
 95
 AKS
-Azure Kubernetes Service (AKS) is a managed Kubernetes service for running containerized applications. With AKS, you can take advantage of managed add-ons and extensions for additional capabilities while preserving the broadest level of configurability. For more information, see AKS documentation.
+Azure Container Apps is a fully managed Kubernetes-based application platform that helps you deploy HTTP and non-HTTP apps from code or containers without orchestrating infrastructure. For more information, see Azure Container Apps documentation.
 
 
 
@@ -923,46 +931,6 @@ Plugins are custom business logic components that execute in response to specifi
 
 
 101
-Dataverse Queries
-Optimistic Concurrency
-Definition: A method of ensuring that data integrity is maintained when multiple users or processes are updating the same record. It checks if the record has been modified since it was last retrieved before allowing updates.
-Relevance: This is useful for preventing conflicts in multi-user environments. The Web API uses the If-Match header to implement this mechanism, ensuring that updates happen only if the record has not been altered by another process.
-
-
-
-
-
-102
-Dataverse Queries
-_ts_engagementid_value@Microsoft.Dynamics.CRM.lookuplogicalname
-Definition: A field that contains the logical name of the entity that the lookup field points to. This helps identify the type of entity related to the GUID in the _ts_engagementid_value field.
-Example: The value "ts_engagement" indicates that the lookup points to the ts_engagement entity.
-
-
-
-
-
-103
-Dataverse Queries
-Change Tracking
-Definition: A feature that allows the tracking of changes made to data in Dataverse entities. The Web API exposes a mechanism to track when records have been created, updated, or deleted.
-Relevance: Useful for scenarios like synchronizing data between systems or auditing changes in your data. The $deltatoken query parameter is used to fetch only the changes since the last request, improving efficiency.
-
-
-
-
-
-104
-Dataverse Queries
-Lookup Field
-Definition: A special type of field in Dataverse that references a record from another entity (table). It creates a relationship between two entities.
-Example: ts_engagementid is a lookup field that points to a record in the ts_engagement entity.
-
-
-
-
-
-105
 Azure AI Foundry
 Azure OpenAI: Provides access to the latest Open AI models. You can create secure deployments, try playgrounds, fine tune models, content filters, and batch jobs. The Azure OpenAI resource provider is Microsoft.CognitiveServices/account and the kind of resource is OpenAI.
 
@@ -970,7 +938,7 @@ Azure OpenAI: Provides access to the latest Open AI models. You can create secur
 
 
 
-106
+102
 Azure AI Foundry
 When using Azure AI Foundry portal, you can directly work with Azure OpenAI without an Azure Studio project or you can use Azure OpenAI through a project.
 
@@ -978,7 +946,7 @@ When using Azure AI Foundry portal, you can directly work with Azure OpenAI with
 
 
 
-107
+103
 Azure AI Foundry
 AI Foundry hub: The hub is the top-level resource in AI Foundry portal and is based on the Azure Machine Learning service. The Azure resource provider for a hub is Microsoft.MachineLearningServices/workspaces, and the kind of resource is Hub.
 
@@ -986,7 +954,7 @@ AI Foundry hub: The hub is the top-level resource in AI Foundry portal and is ba
 
 
 
-108
+104
 Azure AI Foundry
 AI Foundry project: A project is a child resource of the hub. The Azure resource provider for a project is Microsoft.MachineLearningServices/workspaces, and the kind of resource is Project. The project provides the following features:
     Access to development tools for building and customizing AI applications.
@@ -997,9 +965,49 @@ AI Foundry project: A project is a child resource of the hub. The Azure resource
 
 
 
-109
+105
 Azure AI Foundry
 To reduce the complexity of Azure RBAC management, AI Foundry provides a control plane proxy that allows you to perform operations on connected Azure AI services and Azure OpenAI resources. Performing operations on these resources through the control plane proxy only requires Azure RBAC permissions on the hub.
+
+
+
+
+
+106
+Dataverse Queries
+Optimistic Concurrency
+Definition: A method of ensuring that data integrity is maintained when multiple users or processes are updating the same record. It checks if the record has been modified since it was last retrieved before allowing updates.
+Relevance: This is useful for preventing conflicts in multi-user environments. The Web API uses the If-Match header to implement this mechanism, ensuring that updates happen only if the record has not been altered by another process.
+
+
+
+
+
+107
+Dataverse Queries
+_ts_engagementid_value@Microsoft.Dynamics.CRM.lookuplogicalname
+Definition: A field that contains the logical name of the entity that the lookup field points to. This helps identify the type of entity related to the GUID in the _ts_engagementid_value field.
+Example: The value "ts_engagement" indicates that the lookup points to the ts_engagement entity.
+
+
+
+
+
+108
+Dataverse Queries
+Change Tracking
+Definition: A feature that allows the tracking of changes made to data in Dataverse entities. The Web API exposes a mechanism to track when records have been created, updated, or deleted.
+Relevance: Useful for scenarios like synchronizing data between systems or auditing changes in your data. The $deltatoken query parameter is used to fetch only the changes since the last request, improving efficiency.
+
+
+
+
+
+109
+Dataverse Queries
+Lookup Field
+Definition: A special type of field in Dataverse that references a record from another entity (table). It creates a relationship between two entities.
+Example: ts_engagementid is a lookup field that points to a record in the ts_engagement entity.
 
 
 
@@ -1077,7 +1085,7 @@ Regulatory Purpose of AT1 Bond: Introduced under Basel III, an AT1 Bond is desig
 
 118
 CDK Global Ransomeware, June 2024
-Many security solutions—such as vulnerability scanners, SIEM (Security Information and Event Management) systems, and GRC (Governance, Risk, and Compliance) platforms—integrate with the NVD’s data feeds. This integration provides automated vulnerability detection, reporting, and risk scoring within existing security infrastructures.
+BlackSuit, a rebrand of Royal ransomware linked to Conti, showcases adversary adaptability. Security professionals must track evolving TTP (Tactics, Techniques, and Procedures) and leverage CTI (Cyber Threat Intelligence) solutions to defend against reemerging groups reusing familiar encryption and extortion methods.
 
 
 
@@ -1085,7 +1093,7 @@ Many security solutions—such as vulnerability scanners, SIEM (Security Informa
 
 119
 CDK Global Ransomeware, June 2024
-BlackSuit, a rebrand of Royal ransomware linked to Conti, showcases adversary adaptability. Security professionals must track evolving TTP (Tactics, Techniques, and Procedures) and leverage CTI (Cyber Threat Intelligence) solutions to defend against reemerging groups reusing familiar encryption and extortion methods.
+Many security solutions—such as vulnerability scanners, SIEM (Security Information and Event Management) systems, and GRC (Governance, Risk, and Compliance) platforms—integrate with the NVD’s data feeds. This integration provides automated vulnerability detection, reporting, and risk scoring within existing security infrastructures.
 
 
 
@@ -1118,6 +1126,54 @@ Example Implementation: NVD (National Vulnerability Database) – Uses CVSS to r
 
 
 123
+Powershell
+Start-Service
+Starts a Windows service by name. For example, it can start Docker Desktop’s backend services without launching the GUI, ensuring background processes are operational.
+
+
+
+
+
+124
+Powershell
+docker build
+Creates a Docker image from a Dockerfile and dependencies. This image can be used to run containerized applications on any compatible host.
+
+
+
+
+
+125
+Powershell
+error during connect
+Indicates the Docker CLI failed to connect to the Docker daemon, often due to the service not running or incorrect configuration.
+
+//./pipe/dockerDesktopLinuxEngine
+Refers to the Windows named pipe used for communicating with Docker Desktop's Linux container engine. Errors suggest the service isn’t available.
+
+
+
+
+
+126
+Powershell
+Start-Process
+Runs an executable or script as a new process. Often used with arguments to control behavior, such as running installers or launching applications in a specific mode.
+
+
+
+
+
+127
+Powershell
+Get-Service
+Displays the status of Windows services. Useful for checking if a service (e.g., Docker Desktop) is running, stopped, or paused.
+
+
+
+
+
+128
 Python
 Authentication helps a service understand who you are. Typically, you provide your credentials to a server by passing data through the Authorization header or a custom header defined by the service. All the functions of Requests that you’ve seen to this point provide a parameter called auth, which allows you to pass your credentials:
 
@@ -1132,7 +1188,19 @@ Authentication helps a service understand who you are. Typically, you provide yo
 
 
 
-124
+129
+Python
+To create an iterator in Python, you need to implement .__iter__() and .__next__().
+
+The .__iter__() special method initializes the iterator and must return an iterator object, typically self.
+
+The .__next__() method retrieves the next value in the data stream and must raise a StopIteration exception when the data stream is exhausted.
+
+
+
+
+
+130
 Python
 The CRUD operations correspond almost one-to-one with SQL commands:
 
@@ -1146,7 +1214,7 @@ So, to modify existing data in SQL, you would use the UPDATE command.
 
 
 
-125
+131
 Python
 import re
 
@@ -1161,7 +1229,7 @@ def replace_punctuations_and_spaces(input_string):
 
 
 
-126
+132
 Python
 The response headers can give you useful information, such as the content type of the response payload and a time limit on how long to cache the response. To view these headers, access .headers:
 
@@ -1177,27 +1245,7 @@ The response headers can give you useful information, such as the content type o
 
 
 
-127
-Python
-To create an iterator in Python, you need to implement .__iter__() and .__next__().
-
-The .__iter__() special method initializes the iterator and must return an iterator object, typically self.
-
-The .__next__() method retrieves the next value in the data stream and must raise a StopIteration exception when the data stream is exhausted.
-
-
-
-
-
-128
-Search Engine Optimization
-Answer The Public is a keyword research tool that visualizes search questions and autocomplete suggestions. It helps users generate content ideas by uncovering what questions and topics people are searching for related to specific keywords.
-
-
-
-
-
-129
+133
 Search Engine Optimization
 Content quality refers to the overall value and relevance of the information provided on a website. High-quality content engages users, addresses their needs, and is essential for improving SEO rankings by demonstrating authority and expertise to search engines.
 
@@ -1205,15 +1253,15 @@ Content quality refers to the overall value and relevance of the information pro
 
 
 
-130
+134
 Search Engine Optimization
-Keyword density is the percentage of times a keyword appears on a webpage compared to the total number of words. It is used to optimize content for relevant keywords without overstuffing, ensuring that the content remains natural and readable while signaling relevance to search engines.
+Answer The Public is a keyword research tool that visualizes search questions and autocomplete suggestions. It helps users generate content ideas by uncovering what questions and topics people are searching for related to specific keywords.
 
 
 
 
 
-131
+135
 Search Engine Optimization
 Link Explorer by Moz is a tool for analyzing a website’s backlink profile and domain authority. It helps users identify linking opportunities, monitor backlink quality, and understand the overall strength of their site’s SEO through detailed backlink data.
 
@@ -1221,54 +1269,17 @@ Link Explorer by Moz is a tool for analyzing a website’s backlink profile and 
 
 
 
-132
-Search Engine Optimization
-Ahrefs is a comprehensive SEO toolset used for backlink analysis, keyword research, competitor analysis, and site audits. It helps users identify backlink opportunities, monitor website performance, and gain insights into competitors' strategies to enhance their own SEO efforts.
-
-
-
-
-
-133
-Diffusers Library
-Forward and Reverse Processes
-In diffusion, the forward process gradually adds noise to data, following a fixed probabilistic schedule, and the reverse process learns to denoise the noisy data. Mathematically, the forward process models q(x_t | x_{t-1}), while the reverse learns p(x_{t-1} | x_t) to reconstruct images.
-
-
-
-
-
-134
-Diffusers Library
-ELBO (Evidence Lower Bound)
-A loss function that diffusion models optimize to maximize the likelihood of generating realistic data. ELBO breaks down the generative process into manageable steps, penalizing differences between real and generated data distributions, balancing reconstruction quality and computational efficiency.
-
-
-
-
-
-135
-Diffusers Library
-Variational Inference
-A technique for approximating complex probability distributions by simpler ones. In diffusion models, variational inference approximates the posterior distribution of the reverse process, enabling computationally feasible training by simplifying the diffusion and denoising steps.
-
-
-
-
-
 136
-Diffusers Library
-Markov Chain
-A sequence of random variables where each state depends only on the previous one. In diffusion models, the noise addition process is modeled as a Markov chain, allowing controlled transitions from clear images to noisy ones and vice versa, simplifying the math for training.
+Search Engine Optimization
+Keyword density is the percentage of times a keyword appears on a webpage compared to the total number of words. It is used to optimize content for relevant keywords without overstuffing, ensuring that the content remains natural and readable while signaling relevance to search engines.
 
 
 
 
 
 137
-Diffusers Library
-There are three main components of the library to know about:
-Many different schedulers - algorithms that control how noise is added for training, and how to generate denoised images during inference.
+Search Engine Optimization
+Yoast SEO is a WordPress plugin that assists in optimizing website content for better SEO. It provides tools for managing meta tags, generating sitemaps, and improving content readability, helping users enhance their site’s search engine visibility and performance.
 
 
 
@@ -1286,19 +1297,25 @@ Back: QoS refers to the set of technologies and techniques used to manage networ
 
 139
 Home Network Project
-Front: What is DNS over HTTPS (DoH) and its advantages?
+Front: What is SSL Certificate and why is it important for web services?
 
-Back: DNS over HTTPS (DoH) is a protocol that encrypts DNS queries by sending them over HTTPS. Advantages include:
-
-Privacy: Prevents eavesdropping and manipulation of DNS traffic.
-Security: Protects against DNS spoofing and man-in-the-middle attacks.
-Censorship Resistance: Makes it harder for third parties to block or redirect DNS queries.
+Back: An SSL Certificate is a digital certificate that authenticates the identity of a website and enables encrypted connections via SSL/TLS protocols. It ensures secure data transmission between the user's browser and the web server, protecting sensitive information from interception and tampering.
 
 
 
 
 
 140
+Home Network Project
+Front: How does Docker Networking facilitate communication between containers?
+
+Back: Docker Networking allows containers to communicate with each other and with external networks through virtual networks. Docker provides several network drivers (e.g., bridge, host, overlay) that define how containers connect and interact. Custom networks can be created to isolate groups of containers or enable specific communication patterns.
+
+
+
+
+
+141
 Home Network Project
 Front: Define Reverse Proxy and its common uses.
 
@@ -1308,27 +1325,74 @@ Back: A Reverse Proxy is a server that sits between client devices and backend s
 
 
 
-141
-Home Network Project
-Front: What is a Prometheus Exporter?
-
-Back: A Prometheus Exporter is an application or service that collects and exposes metrics from a system, application, or service in a format that Prometheus can scrape and store. Examples include node_exporter for system metrics and cAdvisor for container metrics.
-
-
-
-
-
 142
 Home Network Project
-Front: What is a Peer in WireGuard terminology?
+Front: What is Snort and how is it used in network security?
 
-Back: In WireGuard, a peer is an endpoint in the VPN network. Each peer has its own public and private keys and a configuration that specifies allowed IPs and connection details. Peers communicate directly with each other once the VPN is established, forming a secure mesh network.
+Back: Snort is an open-source network intrusion detection and prevention system (IDS/IPS). It analyzes network traffic in real-time, using predefined rules to detect malicious activities such as exploits, port scans, and unauthorized access attempts. Snort can be integrated into pfSense to enhance network security by identifying and responding to potential threats.
 
 
 
 
 
 143
+Diffusers Library
+Running pip install within a Jupyter notebook is straightforward: you prefix the command with an exclamation mark (!). This tells the notebook to execute the command as a shell command rather than Python code. For example:
+
+python
+!pip install ipywidgets
+
+After installing, remember to restart the kernel to ensure the notebook recognizes the new packages.
+
+
+
+
+
+144
+Diffusers Library
+ELBO (Evidence Lower Bound)
+A loss function that diffusion models optimize to maximize the likelihood of generating realistic data. ELBO breaks down the generative process into manageable steps, penalizing differences between real and generated data distributions, balancing reconstruction quality and computational efficiency.
+
+
+
+
+
+145
+Diffusers Library
+Variational Inference
+A technique for approximating complex probability distributions by simpler ones. In diffusion models, variational inference approximates the posterior distribution of the reverse process, enabling computationally feasible training by simplifying the diffusion and denoising steps.
+
+
+
+
+
+146
+Diffusers Library
+Markov Chain
+A sequence of random variables where each state depends only on the previous one. In diffusion models, the noise addition process is modeled as a Markov chain, allowing controlled transitions from clear images to noisy ones and vice versa, simplifying the math for training.
+
+
+
+
+
+147
+Diffusers Library
+Denoising Process
+The step-by-step refinement in diffusion models where the model removes noise from a random input, progressing towards an image. At each step, the model estimates the noise in the image and subtracts it, gradually enhancing coherence and detail.
+
+
+
+
+
+148
+Azure Kubernetes Learning Path
+A single image can have multiple tags assigned to it. By convention, the most recent version of an image is assigned the latest tag and a tag that describes the image version number. When you release a new version of an image, you can reassign the latest tag to reference the new image.
+
+
+
+
+
+149
 Azure Kubernetes Learning Path
 Container storage drives are less performant.
 
@@ -1340,17 +1404,7 @@ Containers can make use of two options to persist data. The first option is to m
 
 
 
-144
-Azure Kubernetes Learning Path
-Docker images are large files that are initially stored on your PC, and we need tools to manage these files.
-
-The Docker CLI and Docker Desktop allow us to manage images by building, listing, removing, and running them. We manage Docker images by using the docker client. The client doesn't execute the commands directly, and sends all queries to the dockerd daemon.
-
-
-
-
-
-145
+150
 Azure Kubernetes Learning Path
 For more advanced scenarios, both Linux and Windows provide additional network options. For example, the overlay option creates a virtual switch from the host network, so containers on that network can get IP addresses from DHCP servers or operate with IP addresses from that network segment. Furthermore, Docker allows third-party vendors to create network plugins.
 
@@ -1358,7 +1412,15 @@ For more advanced scenarios, both Linux and Windows provide additional network o
 
 
 
-146
+151
+Azure Kubernetes Learning Path
+The bridge network is the default configuration applied to containers when launched without specifying any other network configuration. This network is an internal, private network used by the container, and it isolates the container network from the Docker host network.
+
+
+
+
+
+152
 Azure Kubernetes Learning Path
 A registry is organized as a series of repositories. Each repository contains multiple Docker images that share a common name and generally the same purpose and functionality. These images normally have different versions, identified with a tag. This mechanism enables you to publish and retain multiple versions of images for compatibility reasons.
 
@@ -1366,44 +1428,7 @@ A registry is organized as a series of repositories. Each repository contains mu
 
 
 
-147
-Azure Kubernetes Learning Path
-The host network enables you to run the container on the host network directly. This configuration effectively removes the isolation between the host and the container at a network level.
-
-Keep in mind that the container can use only ports the host isn't already using.
-
-
-
-
-
-148
-DNS
-Zone Transfers
-The process of copying DNS zone data from a primary DNS server to secondary DNS servers. Zone transfers ensure DNS data consistency and redundancy across multiple DNS servers, enhancing reliability and load distribution.
-
-
-
-
-
-149
-DNS
-TSIG (Transaction SIGnature)
-A security mechanism used to authenticate DNS messages, ensuring that zone transfers and other DNS communications are from trusted sources. TSIG uses shared secret keys and cryptographic signatures to verify the authenticity of DNS transactions.
-
-
-
-
-
-150
-DNS
-Reverse Lookup Zones
-DNS zones that translate IP addresses back to hostnames. They are used for reverse DNS lookups, allowing clients to determine the hostname associated with a given IP address, which is useful for troubleshooting and security.
-
-
-
-
-
-151
+153
 DNS
 Stub Zone
 A DNS zone that contains only essential information about another zone's authoritative DNS servers. It facilitates efficient DNS resolution by allowing a DNS server to know where to forward queries for that specific zone without storing all DNS records.
@@ -1412,26 +1437,43 @@ A DNS zone that contains only essential information about another zone's authori
 
 
 
-152
+154
+DNS
+Reverse Lookup Zones
+DNS zones that translate IP addresses back to hostnames. They are used for reverse DNS lookups, allowing clients to determine the hostname associated with a given IP address, which is useful for troubleshooting and security.
+
+
+
+
+
+155
+DNS
+Forward Lookup Zones
+DNS zones that translate hostnames to IP addresses. They are the most common type of DNS zones, enabling clients to resolve domain names to their corresponding IPv4 or IPv6 addresses.
+
+
+
+
+
+156
+DNS
+Zone Transfers
+The process of copying DNS zone data from a primary DNS server to secondary DNS servers. Zone transfers ensure DNS data consistency and redundancy across multiple DNS servers, enhancing reliability and load distribution.
+
+
+
+
+
+157
 DNS
 TSIG (Transaction SIGnature)
-A security protocol used to authenticate DNS zone transfers between servers. TSIG employs shared secret keys and cryptographic signatures to ensure that only authorized servers can perform zone transfers, enhancing DNS security.
+A security mechanism used to authenticate DNS messages, ensuring that zone transfers and other DNS communications are from trusted sources. TSIG uses shared secret keys and cryptographic signatures to verify the authenticity of DNS transactions.
 
 
 
 
 
-153
-Azure Functions
-In an blob input binding definition:
-      "path": "thumbnail-images/{filename}",
-Provide the path, which specifies the container and the item name that goes in it. The path property is required when using the blob trigger, and should be provided in the style shown here, with curly braces around the filename portion of the path. This syntax creates a binding expression that allows you to reference the blob's name in other bindings, and in your function's code.
-
-
-
-
-
-154
+158
 Azure Functions
 Three properties are required in all bindings, though you might have to supply more properties based on the type of binding and storage you're using.
 
@@ -1443,15 +1485,17 @@ Direction - Indicates the direction data is flowing. For example, is it an input
 
 
 
-155
+159
 Azure Functions
-By default, functions have a timeout of five (5) minutes. This timeout is configurable to a maximum of 10 minutes. If your function requires more than 10 minutes to execute, you can host it on a VM. Additionally, if your service is initiated through an HTTP request and you expect that value as an HTTP response, the timeout is further restricted to 2.5 minutes.
+In an blob input binding definition:
+      "path": "thumbnail-images/{filename}",
+Provide the path, which specifies the container and the item name that goes in it. The path property is required when using the blob trigger, and should be provided in the style shown here, with curly braces around the filename portion of the path. This syntax creates a binding expression that allows you to reference the blob's name in other bindings, and in your function's code.
 
 
 
 
 
-156
+160
 Azure Functions
 API Management	APIM provides security and routing for your HTTP triggered function endpoints as a way to expose them as a true REST API.
 
@@ -1459,15 +1503,23 @@ API Management	APIM provides security and routing for your HTTP triggered functi
 
 
 
-157
+161
 Azure Functions
-Monitor: This pattern implements a recurring process in a workflow, possibly looking for a change in state. For example, you could use this pattern to poll until specific conditions are met.
+By default, functions have a timeout of five (5) minutes. This timeout is configurable to a maximum of 10 minutes. If your function requires more than 10 minutes to execute, you can host it on a VM. Additionally, if your service is initiated through an HTTP request and you expect that value as an HTTP response, the timeout is further restricted to 2.5 minutes.
 
 
 
 
 
-158
+162
+Azure Functions
+Human interaction: This pattern combines automated processes that also involve some human interaction. A manual process within an automated process is tricky because people aren't as highly available and as responsive as most computers. You can incorporate human interaction using timeouts and compensation logic that runs if the human fails to interact correctly within a specified response time.
+
+
+
+
+
+163
 PP365
 You can call on-demand workflows from inside a business process flow. You can configure this from the new business process flow designer by dragging a workflow component to a process stage or to the Global Workflows section.
 
@@ -1475,7 +1527,7 @@ You can call on-demand workflows from inside a business process flow. You can co
 
 
 
-159
+164
 PP365
 To reassign (ownership) of all records for a user, the option is in the admin portal > settings > user > select user > somewhere on that blade.
 
@@ -1483,7 +1535,7 @@ To reassign (ownership) of all records for a user, the option is in the admin po
 
 
 
-160
+165
 PP365
 API Management (APIM)
 A fully managed Azure service that enables organizations to publish, secure, transform, maintain, and monitor APIs. APIM provides features like rate limiting, API gateways, developer portals, and analytics, helping manage the full lifecycle of APIs and ensuring secure and scalable access to backend services.
@@ -1492,7 +1544,7 @@ A fully managed Azure service that enables organizations to publish, secure, tra
 
 
 
-161
+166
 PP365
 Managed Identities
 A feature in Azure that provides Azure services with an automatically managed identity in Azure Active Directory (Azure AD). Managed identities simplify authentication to other Azure services by eliminating the need to manage credentials manually, enhancing security and ease of use.
@@ -1501,23 +1553,24 @@ A feature in Azure that provides Azure services with an automatically managed id
 
 
 
-162
+167
 PP365
-I had a ticket with Lauren Kawamoto going back to 11/22/24 about her permissions in the sandbox. It turns out that she needed the "TS - Recur Engagement" role to recur engagements. I thought that "system administrator" would be enough, but I was not able to do that myself with the sysadmin role. Strange.
+Azure Managed Identity
+Another term for Managed Identities in Azure. It refers to the feature that provides Azure services with an automatically managed identity in Azure AD, facilitating secure authentication to other Azure resources without the need to handle credentials manually.
 
 
 
 
 
-163
+168
 MS Identity Platform
-ID token - ID tokens are sent to the client application as part of an OpenID Connect flow. They can be sent alongside or instead of an access token. ID tokens are used by the client to authenticate the user. To learn more about how the Microsoft identity platform issues ID tokens, see ID tokens in the Microsoft identity platform.
+The parties in an authentication flow use bearer tokens to assure, verify, and authenticate a principal (user, host, or service) and to grant or deny access to protected resources (authorization). Bearer tokens in the Microsoft identity platform are formatted as JSON Web Tokens (JWT).
 
 
 
 
 
-164
+169
 MS Identity Platform
 OAuth versus OpenID Connect: The platform uses OAuth for authorization and OpenID Connect (OIDC) for authentication. OpenID Connect is built on top of OAuth 2.0, so the terminology and flow are similar between the two. You can even both authenticate a user (through OpenID Connect) and get authorization to access a protected resource that the user owns (through OAuth 2.0) in one request.
 
@@ -1525,15 +1578,7 @@ OAuth versus OpenID Connect: The platform uses OAuth for authorization and OpenI
 
 
 
-165
-MS Identity Platform
-Client - The client in an OAuth exchange is the application requesting access to a protected resource. The client could be a web app running on a server, a single-page web app running in a user's web browser, or a web API that calls another web API. You'll often see the client referred to as client application, application, or app.
-
-
-
-
-
-166
+170
 MS Identity Platform
 If your desktop or mobile application runs on Windows and on a machine connected to a Windows domain (Active Directory or Microsoft Entra joined) it is possible to use the Integrated Windows Authentication (IWA) to acquire a token silently. No UI is required when using the application.
 
@@ -1541,7 +1586,15 @@ If your desktop or mobile application runs on Windows and on a machine connected
 
 
 
-167
+171
+MS Identity Platform
+Client - The client in an OAuth exchange is the application requesting access to a protected resource. The client could be a web app running on a server, a single-page web app running in a user's web browser, or a web API that calls another web API. You'll often see the client referred to as client application, application, or app.
+
+
+
+
+
+172
 MS Identity Platform
 Resource owner - The resource owner in an auth flow is usually the application user, or end-user in OAuth terminology. The end-user "owns" the protected resource (their data) which your app accesses on their behalf. The resources owners can grant or deny your app (the client) access to the resources they own. For example, your app might call an external system's API to get a user's email address from their profile on that system.
 
@@ -1549,21 +1602,15 @@ Resource owner - The resource owner in an auth flow is usually the application u
 
 
 
-168
+173
 sklearn
-A Hyperparameter search consists of:
-
-    an estimator (regressor or classifier such as sklearn.svm.SVC());
-    a parameter space;
-    a method for searching or sampling candidates;
-    a cross-validation scheme; and
-    a score function.
+Assuming that some data is Independent and Identically Distributed (i.i.d.) is making the assumption that all samples stem from the same generative process and that the generative process is assumed to have no memory of past generated samples.
 
 
 
 
 
-169
+174
 sklearn
 NearestNeighbors implements unsupervised nearest neighbors learning. It acts as a uniform interface to three different nearest neighbors algorithms: BallTree, KDTree, and a brute-force algorithm based on routines in sklearn.metrics.pairwise.
 
@@ -1571,7 +1618,7 @@ NearestNeighbors implements unsupervised nearest neighbors learning. It acts as 
 
 
 
-170
+175
 sklearn
 permutation_test_score: This function assesses model performance by computing a baseline distribution of scores via label permutation, creating a null hypothesis benchmark. Comparing the model’s score to this distribution reveals whether its performance is significant or due to random chance.
 
@@ -1579,7 +1626,7 @@ permutation_test_score: This function assesses model performance by computing a 
 
 
 
-171
+176
 sklearn
 When evaluating the resulting model it is important to do it on held-out samples that were not seen during the grid search process: it is recommended to split the data into a development set (to be fed to the GridSearchCV instance) and an evaluation set to compute performance metrics.
 
@@ -1587,7 +1634,7 @@ When evaluating the resulting model it is important to do it on held-out samples
 
 
 
-172
+177
 sklearn
 The classes in sklearn.neighbors can handle either NumPy arrays or scipy.sparse matrices as input. For dense matrices, a large number of possible distance metrics are supported. For sparse matrices, arbitrary Minkowski metrics are supported for searches.
 
@@ -1595,7 +1642,16 @@ The classes in sklearn.neighbors can handle either NumPy arrays or scipy.sparse 
 
 
 
-173
+178
+Jane Eyre
+Prenomen (pree-NO-men)
+A person's first or given name, distinguishing them within a family or community. Derived from Latin, the term historically referred to the personal name in ancient Roman naming conventions.
+
+
+
+
+
+179
 Jane Eyre
 Efface
 To erase or remove something, especially from a surface or memory, making it less visible or prominent. Often used figuratively to describe fading memories or diminishing the impact of an event or object.
@@ -1604,16 +1660,7 @@ To erase or remove something, especially from a surface or memory, making it les
 
 
 
-174
-Jane Eyre
-Propitious (pruh-PISH-uhs)
-Favorable or advantageous, indicating circumstances or timing that are likely to lead to success or good outcomes. Often used to describe auspicious events or benevolent actions.
-
-
-
-
-
-175
+180
 Jane Eyre
 Merino (muh-REE-noh)
 A breed of sheep prized for its soft, fine wool, ideal for high-quality textiles. The term also refers to fabrics or garments made from this wool, valued for their warmth and luxurious texture.
@@ -1622,16 +1669,16 @@ A breed of sheep prized for its soft, fine wool, ideal for high-quality textiles
 
 
 
-176
+181
 Jane Eyre
-Canzonette (kan-zoh-NET)
-A short, light, and often playful Italian song, typically sung in a simple style. Originating during the Renaissance, canzonettes were precursors to madrigals, characterized by their charming melodies and accessible lyrics.
+Propitious (pruh-PISH-uhs)
+Favorable or advantageous, indicating circumstances or timing that are likely to lead to success or good outcomes. Often used to describe auspicious events or benevolent actions.
 
 
 
 
 
-177
+182
 Jane Eyre
 Hips and Haws
 Fruits of wild roses (hips) and hawthorn trees (haws), commonly seen in hedgerows. These red or orange berries are associated with autumn and are used in herbal remedies and preserves.
@@ -1640,7 +1687,7 @@ Fruits of wild roses (hips) and hawthorn trees (haws), commonly seen in hedgerow
 
 
 
-178
+183
 Kali Linux
 The rockyou.txt file is a renowned wordlist frequently used as a default for various password-cracking tools. It is conveniently located in the /usr/share/wordlists/ directory on Kali.
 
@@ -1650,15 +1697,7 @@ It's a compressed archive containing over 14 million plaintext passwords exposed
 
 
 
-179
-Kali Linux
-The /etc/shadow file stores secure user account information, including encrypted passwords. This file is readable only by the root user for security reasons. In contrast, /etc/passwd contains user account details like usernames and user IDs but does not store encrypted passwords.
-
-
-
-
-
-180
+184
 Kali Linux
 Hydra is a popular password-cracking tool in Kali Linux, designed for conducting rapid dictionary attacks against various protocols to discover weak passwords. Another notable tool for password cracking in Kali is John the Ripper, which focuses on cracking hashed passwords.
 
@@ -1666,7 +1705,15 @@ Hydra is a popular password-cracking tool in Kali Linux, designed for conducting
 
 
 
-181
+185
+Kali Linux
+The /etc/shadow file stores secure user account information, including encrypted passwords. This file is readable only by the root user for security reasons. In contrast, /etc/passwd contains user account details like usernames and user IDs but does not store encrypted passwords.
+
+
+
+
+
+186
 Kali Linux
 The chmod (change mode) command is used to change the access permissions of files and directories. Permissions determine who can read, write, or execute a file. Changing the owner of a file is done using the chown command, not chmod.
 
@@ -1674,7 +1721,7 @@ The chmod (change mode) command is used to change the access permissions of file
 
 
 
-182
+187
 Kali Linux
 apt (Advanced Package Tool) is the package manager used in Debian-based distributions, including Kali Linux. It simplifies the process of installing, updating, and removing software packages.
 
@@ -1682,7 +1729,7 @@ apt (Advanced Package Tool) is the package manager used in Debian-based distribu
 
 
 
-183
+188
 Diffusers from Hugging Face
 Batch Size: In torch, batch size (len(prompt)) controls the number of prompts processed together. For single-prompt processing, it’s set to 1, impacting memory and processing speed.
 
@@ -1690,7 +1737,7 @@ Batch Size: In torch, batch size (len(prompt)) controls the number of prompts pr
 
 
 
-184
+189
 Diffusers from Hugging Face
 Latent Space and Latent Noise: The initial noise, generated with torch.randn, creates latents that represent the starting point in the latent space. This noise is progressively denoised to form the final image.
 
@@ -1698,15 +1745,7 @@ Latent Space and Latent Noise: The initial noise, generated with torch.randn, cr
 
 
 
-185
-Diffusers from Hugging Face
-Scheduler (UniPCMultistepScheduler): A diffusers module that controls the denoising steps of the diffusion process, determining how the image progressively refines with each step toward the prompt.
-
-
-
-
-
-186
+190
 Diffusers from Hugging Face
 Tokenizer (CLIPTokenizer): Provided by transformers, it converts input text into token IDs. These numerical representations allow the model to process the prompt and understand its meaning.
 
@@ -1714,7 +1753,15 @@ Tokenizer (CLIPTokenizer): Provided by transformers, it converts input text into
 
 
 
-187
+191
+Diffusers from Hugging Face
+Scheduler (UniPCMultistepScheduler): A diffusers module that controls the denoising steps of the diffusion process, determining how the image progressively refines with each step toward the prompt.
+
+
+
+
+
+192
 Diffusers from Hugging Face
 UNet (UNet2DConditionModel): In diffusers, UNet iteratively removes noise from the latent representation, gradually shaping random noise into an image aligned with the text prompt.
 
@@ -1722,43 +1769,7 @@ UNet (UNet2DConditionModel): In diffusers, UNet iteratively removes noise from t
 
 
 
-188
-IW Migration
-Syntax to find files that contain a substring. Needed this when trying to remember where I made certain files when working on IW files.
-Get-ChildItem -Recurse | Select-String "account_edit" -List | Select Path
-
-
-
-
-
-189
-IW Migration
-VBA Modules (Access)
-Visual Basic for Applications code libraries integrated within Access. Modules let developers write custom functions, event handlers, and business logic to enhance functionality beyond what macros offer, enabling more advanced data manipulation and validation.
-
-
-
-
-
-190
-IW Migration
-Database Backup and Restore (SSMS)
-Built-in wizards and features in SQL Server Management Studio to safeguard data. They allow administrators to create full, differential, or transaction log backups and restore databases to a previous state, ensuring data recovery after failures.
-
-
-
-
-
-191
-IW Migration
-Template Explorer (SSMS)
-A feature in SQL Server Management Studio providing ready-made SQL code templates for common database tasks. Developers can quickly insert standardized scripts for creating tables, views, or procedures, streamlining development and enforcing coding standards.
-
-
-
-
-
-192
+193
 IW Migration
 Forms (Access)
 User-friendly interfaces for entering, displaying, and editing data in tables. They can incorporate buttons, dropdowns, and validation rules, making data input more efficient and consistent, and often serve as the primary user interaction layer.
@@ -1767,43 +1778,43 @@ User-friendly interfaces for entering, displaying, and editing data in tables. T
 
 
 
-193
-Email Auth and Security
-DKIM (DomainKeys Identified Mail)
-
-An email authentication method using cryptographic signatures.
-Adds a digital signature to email headers to verify the email's authenticity and integrity.
-Ensures that the email content has not been altered during transit.
-
-
-
-
-
 194
-Email Auth and Security
-p=none
-
-A DMARC policy action.
-Requests no specific action be taken on unauthenticated emails.
-Used for monitoring and gathering data without affecting email delivery.
+IW Migration
+Template Explorer (SSMS)
+A feature in SQL Server Management Studio providing ready-made SQL code templates for common database tasks. Developers can quickly insert standardized scripts for creating tables, views, or procedures, streamlining development and enforcing coding standards.
 
 
 
 
 
 195
-Email Auth and Security
-Identifier Alignment
-
-Ensuring that the domains used in SPF and DKIM authentication align with the domain in the email's "From" header.
-Critical for DMARC to function correctly.
-Can be achieved through relaxed alignment (subdomains are allowed) or strict alignment (exact match required).
+IW Migration
+Syntax to find files that contain a substring. Needed this when trying to remember where I made certain files when working on IW files.
+Get-ChildItem -Recurse | Select-String "account_edit" -List | Select Path
 
 
 
 
 
 196
+IW Migration
+VBA Modules (Access)
+Visual Basic for Applications code libraries integrated within Access. Modules let developers write custom functions, event handlers, and business logic to enhance functionality beyond what macros offer, enabling more advanced data manipulation and validation.
+
+
+
+
+
+197
+IW Migration
+Database Diagrams (SSMS)
+Graphical representations of a database’s schema. They visually display tables, columns, keys, and relationships, aiding comprehension of complex data models, enhancing communication among developers, and assisting in planning changes or migrations to other systems.
+
+
+
+
+
+198
 Email Auth and Security
 Aggregate Reports
 
@@ -1815,7 +1826,43 @@ Typically formatted in XML, containing data on email sources, authentication out
 
 
 
-197
+199
+Email Auth and Security
+SPF (Sender Policy Framework)
+
+A DNS-based email authentication method.
+Specifies which mail servers are authorized to send emails on behalf of a domain.
+Helps prevent email spoofing by verifying the sender's IP address against the domain's SPF record.
+
+
+
+
+
+200
+Email Auth and Security
+SMTP (Simple Mail Transfer Protocol)
+
+The standard protocol used for sending emails across the internet.
+Facilitates the transmission of email messages from senders to recipients via mail servers.
+Includes commands like HELO/EHLO, MAIL FROM, RCPT TO, DATA, and QUIT.
+
+
+
+
+
+201
+Email Auth and Security
+DKIM (DomainKeys Identified Mail)
+
+An email authentication method using cryptographic signatures.
+Adds a digital signature to email headers to verify the email's authenticity and integrity.
+Ensures that the email content has not been altered during transit.
+
+
+
+
+
+202
 Email Auth and Security
 Email Spoofing
 
@@ -1827,7 +1874,7 @@ Commonly used in phishing attacks to trick users.
 
 
 
-198
+203
 OData
 Metadata in OData describes the structure, data types, relationships, and other aspects of the data model. The $metadata endpoint provides the service’s data model and schema definitions using CSDL, essential for understanding available entities and their relationships.
 
@@ -1835,7 +1882,7 @@ Metadata in OData describes the structure, data types, relationships, and other 
 
 
 
-199
+204
 OData
 Complex Types are structured data types in OData that group multiple related properties into a single reusable structure. They allow for more organized and modular data models by encapsulating related data, such as addresses or contact information.
 
@@ -1843,7 +1890,7 @@ Complex Types are structured data types in OData that group multiple related pro
 
 
 
-200
+205
 OData
 Navigation Links are URLs that provide access to related entities or collections within an OData service. They facilitate navigation between related entities, enabling clients to traverse relationships and retrieve associated data seamlessly.
 
@@ -1851,15 +1898,7 @@ Navigation Links are URLs that provide access to related entities or collections
 
 
 
-201
-OData
-Formatting Instructions are guidelines that specify how data should be presented or displayed. Defined using annotations, they help client applications render data appropriately, such as formatting dates, numbers, or currencies in a user-friendly manner.
-
-
-
-
-
-202
+206
 OData
 The @odata.type annotation specifies the exact entity type or derived type being referenced in an OData payload. It is crucial for handling inheritance and polymorphism by informing clients about the specific type of an entity for correct deserialization and processing.
 
@@ -1867,7 +1906,15 @@ The @odata.type annotation specifies the exact entity type or derived type being
 
 
 
-203
+207
+OData
+Formatting Instructions are guidelines that specify how data should be presented or displayed. Defined using annotations, they help client applications render data appropriately, such as formatting dates, numbers, or currencies in a user-friendly manner.
+
+
+
+
+
+208
 Conditional Access
 Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within Microsoft Defender for Cloud Apps portal to further refine filters and set actions to be taken on a user.
 
@@ -1875,7 +1922,7 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 
 
-204
+209
 Conditional Access
 Report-only: Success	
 All configured policy conditions, required non-interactive grant controls, and session controls were satisfied. For example, a multifactor authentication requirement is satisfied by an MFA claim already present in the token, or a compliant device policy is satisfied by performing a device check on a compliant device.
@@ -1884,7 +1931,7 @@ All configured policy conditions, required non-interactive grant controls, and s
 
 
 
-205
+210
 pandas
 There is an attribute on a dataframe column to check if each row has a unique value:
 
@@ -1894,7 +1941,7 @@ df['colname'].isunique
 
 
 
-206
+211
 pandas
 DataFrame.nunique(axis=0, dropna=True)
     Count number of distinct elements in specified axis.
@@ -1907,7 +1954,7 @@ dropna: bool, default True, Don’t include NaN in the counts.
 
 
 
-207
+212
 pandas
 # Drop columns with only one unique value
 df = df.loc[:, df.nunique() > 1]
@@ -1916,7 +1963,7 @@ df = df.loc[:, df.nunique() > 1]
 
 
 
-208
+213
 AKS
 AKS also provides access to the Kubernetes API server, which enables you to customize the container orchestration and thus deploy projects from the Cloud Native Computing Foundation (CNCF). Consequently, there's a significant learning curve for workload teams that are new to Kubernetes.
 
@@ -1924,7 +1971,7 @@ AKS also provides access to the Kubernetes API server, which enables you to cust
 
 
 
-209
+214
 AKS
 Application scalability in AKS is the sole responsibility of the customer. Container Apps and Web App for Containers offer more streamlined approaches.
 
@@ -1932,7 +1979,7 @@ Application scalability in AKS is the sole responsibility of the customer. Conta
 
 
 
-210
+215
 AKS
 Web App for Containers and Container Apps health probe configurations are more streamlined than those of AKS, given that they use the familiar Azure Resource Manager API. AKS requires the use of the Kubernetes API.
 
@@ -1940,7 +1987,7 @@ Web App for Containers and Container Apps health probe configurations are more s
 
 
 
-211
+216
 Dataverse Plugins
 The PluginType entity in Dataverse stores metadata about registered plugins. It includes information such as the plugin's unique identifier (plugintypeid), name, assembly details, and the class implementing the plugin logic. By querying the plugintypes entity via the Web API, developers can retrieve information about specific plugins, facilitating management and debugging of custom business logic.
 
@@ -1948,7 +1995,7 @@ The PluginType entity in Dataverse stores metadata about registered plugins. It 
 
 
 
-212
+217
 Dataverse Plugins
 Error Handling in Dataverse involves interpreting and managing error messages returned by the system during operations. Errors can arise from validation failures, plugin restrictions, permission issues, or data conflicts. Effective error handling requires understanding error codes, messages, and contextual details provided by the system. This enables developers to debug issues, enforce business rules, and provide meaningful feedback to users or calling applications.
 
@@ -1956,7 +2003,7 @@ Error Handling in Dataverse involves interpreting and managing error messages re
 
 
 
-213
+218
 Azure AI Foundry
 Azure AI Studio is now Azure AI Foundry portal. We're updating the documentation to reflect this change. In the meantime, you might see references to Azure AI Studio.
 
@@ -1964,7 +2011,7 @@ Azure AI Studio is now Azure AI Foundry portal. We're updating the documentation
 
 
 
-214
+219
 Azure AI Foundry
 Hubs provide a central way for a team to govern security, connectivity, and computing resources across playgrounds and projects. Projects that are created using a hub inherit the same security settings and shared resource access. Teams can create as many projects as needed to organize work, isolate data, and/or restrict access.
 
@@ -1972,7 +2019,7 @@ Hubs provide a central way for a team to govern security, connectivity, and comp
 
 
 
-215
+220
 Azure AI Foundry
 Connections let you access objects in AI Foundry that are managed outside of your hub. For example, uploaded data on an Azure storage account, or model deployments on an existing Azure OpenAI resource. A connection can be shared with every project or made accessible to one specific project
 
@@ -1980,7 +2027,7 @@ Connections let you access objects in AI Foundry that are managed outside of you
 
 
 
-216
+221
 Azure AI Foundry
 Project workspaces that are created using a hub inherit the same security settings and shared resource access. Teams can create project workspaces as needed to organize their work, isolate data, and/or restrict access.
 
@@ -1988,7 +2035,7 @@ Project workspaces that are created using a hub inherit the same security settin
 
 
 
-217
+222
 Azure AI Foundry
 Each hub you create has a default storage account. Each child project of the hub inherits the storage account of the hub. The storage account is used to store data and artifacts.
 
@@ -1998,7 +2045,7 @@ To secure the shared storage account, Azure AI Foundry uses both Azure RBAC and 
 
 
 
-218
+223
 Finance Junk
 Loss-Absorption Trigger in AT1 Bond: An AT1 Bond includes a trigger (often a bank’s Core Equity Tier 1 ratio falling below around 5.125%–7%) that, when reached, forces conversion into equity or a principal write-down.
 
@@ -2006,7 +2053,7 @@ Loss-Absorption Trigger in AT1 Bond: An AT1 Bond includes a trigger (often a ban
 
 
 
-219
+224
 Finance Junk
 Subordination of AT1 Bond: An AT1 Bond is deeply subordinated, sitting just above common equity in a liquidation hierarchy, resulting in higher risk and higher yields compared to more senior debt.
 
@@ -2014,7 +2061,7 @@ Subordination of AT1 Bond: An AT1 Bond is deeply subordinated, sitting just abov
 
 
 
-220
+225
 Finance Junk
 Market Characteristics of AT1 Bond: An AT1 Bond, commonly issued by European and global banks, appeals to investors seeking yield, but involves complex regulatory considerations and credit risks.
 
@@ -2022,7 +2069,7 @@ Market Characteristics of AT1 Bond: An AT1 Bond, commonly issued by European and
 
 
 
-221
+226
 CDK Global Ransomeware, June 2024
 Integrating CTI (Cyber Threat Intelligence) within SOAR (Security Orchestration, Automation, and Response) platforms helps anticipate attacker moves. By aligning defenses with known TTP (Tactics, Techniques, and Procedures), organizations achieve earlier detection, improved response, and neutralize evolving ransomware variants before damage.
 
@@ -2030,7 +2077,52 @@ Integrating CTI (Cyber Threat Intelligence) within SOAR (Security Orchestration,
 
 
 
-222
+227
+Powershell
+cmd /c
+Runs a Command Prompt command from PowerShell. Allows use of legacy commands, like copy NUL, for operations not natively supported in PowerShell.
+
+
+
+
+
+228
+Powershell
+-Force
+Overrides warnings or confirmation prompts, ensuring the command proceeds without manual intervention. Common in scripting for reliability.
+
+
+
+
+
+229
+Powershell
+New-Item
+Creates new files, directories, or registry entries. For example, New-Item -Name Dockerfile creates an empty Dockerfile to define a container configuration.
+
+
+
+
+
+230
+Powershell
+/i (msiexec argument)
+Indicates installation mode for .msi files when using msiexec. Required for executing software setups from command-line tools or scripts.
+
+
+
+
+
+231
+Powershell
+Install-Module
+Installs PowerShell modules from the PowerShell Gallery, such as AzureRM or PowerShellGet. Often used to add functionality or manage cloud resources.
+
+
+
+
+
+232
 Python
 More coding languages are supported in TensorFlow than in PyTorch, which has a C++ API. You can use TensorFlow in both JavaScript and Swift. If you don’t want to write much low-level code, then Keras abstracts away a lot of the details for common use cases so you can build TensorFlow models without sweating the details.
 
@@ -2038,7 +2130,7 @@ More coding languages are supported in TensorFlow than in PyTorch, which has a C
 
 
 
-223
+233
 Python
 In Python, special methods support comparison operators.
 
@@ -2050,7 +2142,7 @@ These methods allow you to define custom behavior for comparison operations in y
 
 
 
-224
+234
 Python
 According to the HTTP specification, POST, PUT, and the less common PATCH requests pass their data through the message body rather than through parameters in the query string. Using Requests, you’ll pass the payload to the corresponding function’s data parameter.
 
@@ -2060,7 +2152,7 @@ data takes a dictionary, a list of tuples, bytes, or a file-like object.
 
 
 
-225
+235
 Python
 When you make a request, the Requests library prepares the request before actually sending it to the destination server. Request preparation includes things like validating headers and serializing JSON content.
 
@@ -2070,7 +2162,7 @@ You can view the PreparedRequest object by accessing .request on a Response obje
 
 
 
-226
+236
 Python
 Because the decoding of bytes to a str requires an encoding scheme, Requests will try to guess the encoding based on the response’s headers if you don’t specify one. You can provide an explicit encoding by setting .encoding before accessing .text:
 
@@ -2082,15 +2174,23 @@ Because the decoding of bytes to a str requires an encoding scheme, Requests wil
 
 
 
-227
+237
 Search Engine Optimization
-Robots.txt is a text file placed in the root directory of a website that instructs search engine crawlers on which pages or sections to crawl or avoid. It helps manage crawler access, preventing the indexing of certain parts of a website to control search engine visibility.
+Ahrefs is a comprehensive SEO toolset used for backlink analysis, keyword research, competitor analysis, and site audits. It helps users identify backlink opportunities, monitor website performance, and gain insights into competitors' strategies to enhance their own SEO efforts.
 
 
 
 
 
-228
+238
+Search Engine Optimization
+Google Keyword Planner is a free tool within Google Ads that assists in discovering keywords and providing search volume data. It is used for keyword research and planning SEO strategies by identifying relevant and high-performing keywords to target.
+
+
+
+
+
+239
 Search Engine Optimization
 Domain Authority (DA), developed by Moz, is a metric that predicts how well a website will rank on search engine result pages (SERPs). It is based on various factors, including the quality and quantity of backlinks, and helps gauge a site’s overall SEO strength.
 
@@ -2098,15 +2198,15 @@ Domain Authority (DA), developed by Moz, is a metric that predicts how well a we
 
 
 
-229
+240
 Search Engine Optimization
-Crawl errors are issues that prevent search engine bots from accessing or indexing certain pages on a website. Identifying and fixing these errors improves website visibility in search results by ensuring that all important pages are accessible to search engines.
+Robots.txt is a text file placed in the root directory of a website that instructs search engine crawlers on which pages or sections to crawl or avoid. It helps manage crawler access, preventing the indexing of certain parts of a website to control search engine visibility.
 
 
 
 
 
-230
+241
 Search Engine Optimization
 A canonical tag is an HTML element that specifies the preferred version of a webpage to prevent duplicate content issues. By indicating the canonical URL, it helps consolidate ranking signals and ensures search engines index the correct page.
 
@@ -2114,60 +2214,17 @@ A canonical tag is an HTML element that specifies the preferred version of a web
 
 
 
-231
-Search Engine Optimization
-Yoast SEO is a WordPress plugin that assists in optimizing website content for better SEO. It provides tools for managing meta tags, generating sitemaps, and improving content readability, helping users enhance their site’s search engine visibility and performance.
+242
+Home Network Project
+Front: What is a Prometheus Exporter?
+
+Back: A Prometheus Exporter is an application or service that collects and exposes metrics from a system, application, or service in a format that Prometheus can scrape and store. Examples include node_exporter for system metrics and cAdvisor for container metrics.
 
 
 
 
 
-232
-Diffusers Library
-Reverse Diffusion
-The inverse process where an image is generated by removing noise, step-by-step, from an initial noisy state. This approach is essential in diffusion models, reconstructing data by "reversing" the diffusion process and achieving high-quality image outputs.
-
-
-
-
-
-233
-Diffusers Library
-Classifier-Free Guidance
-A technique allowing diffusion models to generate images without an external classifier, enhancing flexibility in output. This guidance uses the model's own internal structure to fine-tune the output, improving realism without the need for additional label constraints.
-
-
-
-
-
-234
-Diffusers Library
-Score Matching
-A method to train models by estimating the gradient of data probability density (the "score") at each noise level. By approximating this gradient, the model learns to shift noisy data towards regions of higher probability, ultimately leading to denoised, realistic images.
-
-
-
-
-
-235
-Diffusers Library
-Denoising Process
-The step-by-step refinement in diffusion models where the model removes noise from a random input, progressing towards an image. At each step, the model estimates the noise in the image and subtracts it, gradually enhancing coherence and detail.
-
-
-
-
-
-236
-Diffusers Library
-Likelihood Estimation
-The process of calculating the probability of the data under the model's parameters. In diffusion models, maximizing this likelihood means finding parameters that make the observed data most probable, allowing for a better approximation of complex data distributions.
-
-
-
-
-
-237
+243
 Home Network Project
 Front: What is Port Mapping in Docker and why is it important?
 
@@ -2177,7 +2234,28 @@ Back: Port Mapping in Docker connects a port on the host machine to a port insid
 
 
 
-238
+244
+Home Network Project
+Front: What is a Peer in WireGuard terminology?
+
+Back: In WireGuard, a peer is an endpoint in the VPN network. Each peer has its own public and private keys and a configuration that specifies allowed IPs and connection details. Peers communicate directly with each other once the VPN is established, forming a secure mesh network.
+
+
+
+
+
+245
+Home Network Project
+Front: What command is used to generate a new SSH key pair?
+
+bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+
+
+
+
+246
 Home Network Project
 Front: What is TLS Termination and why is it used in reverse proxies?
 
@@ -2187,40 +2265,62 @@ Back: TLS Termination refers to the process of decrypting incoming TLS/SSL encry
 
 
 
-239
-Home Network Project
-Front: What is Bandwidth and how does it differ from Throughput?
-
-Back:
-
-Bandwidth: The maximum rate of data transfer across a network path, typically measured in Mbps or Gbps. It represents the network's capacity.
-Throughput: The actual rate of successful data transfer achieved, often lower than the bandwidth due to factors like network congestion and protocol overhead.
+247
+Diffusers Library
+There are three main components of the library to know about:
+Many different schedulers - algorithms that control how noise is added for training, and how to generate denoised images during inference.
 
 
 
 
 
-240
-Home Network Project
-Front: What is Snort and how is it used in network security?
-
-Back: Snort is an open-source network intrusion detection and prevention system (IDS/IPS). It analyzes network traffic in real-time, using predefined rules to detect malicious activities such as exploits, port scans, and unauthorized access attempts. Snort can be integrated into pfSense to enhance network security by identifying and responding to potential threats.
-
-
-
-
-
-241
-Home Network Project
-Front: How can you whitelist a domain in Pi-hole, and why would you do it?
-
-Back: To whitelist a domain in Pi-hole, you add the domain to the whitelist through the Pi-hole admin interface or using command-line tools. Whitelisting ensures that Pi-hole allows DNS resolution for that domain, which is useful for preventing the blocking of legitimate services or applications that rely on specific domains.
+248
+Diffusers Library
+Classifier-Free Guidance
+A technique allowing diffusion models to generate images without an external classifier, enhancing flexibility in output. This guidance uses the model's own internal structure to fine-tune the output, improving realism without the need for additional label constraints.
 
 
 
 
 
-242
+249
+Diffusers Library
+Reverse Diffusion
+The inverse process where an image is generated by removing noise, step-by-step, from an initial noisy state. This approach is essential in diffusion models, reconstructing data by "reversing" the diffusion process and achieving high-quality image outputs.
+
+
+
+
+
+250
+Diffusers Library
+Score Matching
+A method to train models by estimating the gradient of data probability density (the "score") at each noise level. By approximating this gradient, the model learns to shift noisy data towards regions of higher probability, ultimately leading to denoised, realistic images.
+
+
+
+
+
+251
+Diffusers Library
+Likelihood Estimation
+The process of calculating the probability of the data under the model's parameters. In diffusion models, maximizing this likelihood means finding parameters that make the observed data most probable, allowing for a better approximation of complex data distributions.
+
+
+
+
+
+252
+Azure Kubernetes Learning Path
+The host network enables you to run the container on the host network directly. This configuration effectively removes the isolation between the host and the container at a network level.
+
+Keep in mind that the container can use only ports the host isn't already using.
+
+
+
+
+
+253
 Azure Kubernetes Learning Path
 Docker images are stored and made available in registries. A registry is a web service to which Docker can connect to upload and download container images. The most well-known registry is Docker Hub, which is a public registry. Many individuals and organizations publish images to Docker Hub, and you can download and run these images using Docker running on your desktop, on a server, or in the cloud.
 
@@ -2228,25 +2328,7 @@ Docker images are stored and made available in registries. A registry is a web s
 
 
 
-243
-Azure Kubernetes Learning Path
-The bridge network is the default configuration applied to containers when launched without specifying any other network configuration. This network is an internal, private network used by the container, and it isolates the container network from the Docker host network.
-
-
-
-
-
-244
-Azure Kubernetes Learning Path
-A volume is stored on the host filesystem at a specific folder location. Choose a folder where you know the data won't be modified by non-Docker processes.
-
-Docker creates and manages the new volume by running the docker volume create command. This command can form part of our Dockerfile definition, which means that you can create volumes as part of the container-creation process. Docker creates the volume if it doesn't exist when you try to mount the volume into a container the first time.
-
-
-
-
-
-245
+254
 Azure Kubernetes Learning Path
 If you need to terminate the container, use the kill command to send a kill signal. The container's kernel captures the kill signal, but the running process doesn't. This command forcefully terminates the working process in the container.
 
@@ -2256,7 +2338,17 @@ Lastly, to remove containers that are in a stopped state, use the remove command
 
 
 
-246
+255
+Azure Kubernetes Learning Path
+A volume is stored on the host filesystem at a specific folder location. Choose a folder where you know the data won't be modified by non-Docker processes.
+
+Docker creates and manages the new volume by running the docker volume create command. This command can form part of our Dockerfile definition, which means that you can create volumes as part of the container-creation process. Docker creates the volume if it doesn't exist when you try to mount the volume into a container the first time.
+
+
+
+
+
+256
 Azure Kubernetes Learning Path
 To place a container in the run state, use the run command. You can also restart a container that's already running. When restarting a container, the container receives a termination signal to enable any running processes to shut down gracefully before the container's kernel terminates.
 
@@ -2264,34 +2356,16 @@ To place a container in the run state, use the run command. You can also restart
 
 
 
-247
+257
 DNS
-DNS Manager
-A graphical administrative tool in Windows Server used to manage DNS settings and zones. DNS Manager provides interfaces for creating and modifying DNS records, configuring zone properties, setting up forwarders, and implementing security measures.
+TSIG (Transaction SIGnature)
+A security protocol used to authenticate DNS zone transfers between servers. TSIG employs shared secret keys and cryptographic signatures to ensure that only authorized servers can perform zone transfers, enhancing DNS security.
 
 
 
 
 
-248
-DNS
-SRV (Service) Records
-DNS records that specify the location (hostname and port) of servers for particular services within a domain. Essential for services like SIP (VoIP) or LDAP, they enable clients to discover service endpoints automatically.
-
-
-
-
-
-249
-DNS
-DNS Forwarders
-DNS servers configured to forward queries they cannot resolve locally to external DNS servers. Forwarders help improve DNS resolution efficiency and reduce latency by directing unresolved queries to designated upstream servers.
-
-
-
-
-
-250
+258
 DNS
 Add-DnsServerResourceRecordA (PowerShell Cmdlet)
 A PowerShell command used to create a new A (Address) record in a Windows DNS Server. It maps a hostname to its corresponding IPv4 address, enabling automated and script-based DNS record management.
@@ -2300,24 +2374,42 @@ A PowerShell command used to create a new A (Address) record in a Windows DNS Se
 
 
 
-251
+259
 DNS
-Forward Lookup Zones
-DNS zones that translate hostnames to IP addresses. They are the most common type of DNS zones, enabling clients to resolve domain names to their corresponding IPv4 or IPv6 addresses.
+DNS Manager
+A graphical administrative tool in Windows Server used to manage DNS settings and zones. DNS Manager provides interfaces for creating and modifying DNS records, configuring zone properties, setting up forwarders, and implementing security measures.
 
 
 
 
 
-252
+260
+DNS
+DNS Forwarders
+DNS servers configured to forward queries they cannot resolve locally to external DNS servers. Forwarders help improve DNS resolution efficiency and reduce latency by directing unresolved queries to designated upstream servers.
+
+
+
+
+
+261
+DNS
+SRV (Service) Records
+DNS records that specify the location (hostname and port) of servers for particular services within a domain. Essential for services like SIP (VoIP) or LDAP, they enable clients to discover service endpoints automatically.
+
+
+
+
+
+262
 Azure Functions
-Human interaction: This pattern combines automated processes that also involve some human interaction. A manual process within an automated process is tricky because people aren't as highly available and as responsive as most computers. You can incorporate human interaction using timeouts and compensation logic that runs if the human fails to interact correctly within a specified response time.
+Monitor: This pattern implements a recurring process in a workflow, possibly looking for a change in state. For example, you could use this pattern to poll until specific conditions are met.
 
 
 
 
 
-253
+263
 Azure Functions
 Async HTTP APIs: This pattern addresses the problem of coordinating state of long-running operations with external clients. An HTTP call can trigger the long-running action, then redirect the client to a status endpoint. The client can learn when the operation is finished by polling this endpoint.
 
@@ -2325,7 +2417,7 @@ Async HTTP APIs: This pattern addresses the problem of coordinating state of lon
 
 
 
-254
+264
 Azure Functions
 2. Suppose your Azure Function has a blob trigger associated with it and you want it to execute only when png images are uploaded. Which of the following blob trigger Path values should you use? 
 
@@ -2339,26 +2431,23 @@ The Path tells the blob trigger where it should monitor for changes, and if ther
 
 
 
-255
+265
 Azure Functions
-Durable Functions allows you to define stateful workflows using an orchestration function. An orchestration function provides these extra benefits:
-You can define the workflows in code. You don't need to write a JSON description or use a workflow design tool.
-Functions can be called both synchronously and asynchronously. Output from the called functions is saved locally in variables and used in subsequent function calls.
+Function chaining: In this pattern, the workflow executes a sequence of functions in a specified order. One function's output is applied to the next function's input in the sequence. The final function's output is used to generate a result.
 
 
 
 
 
-256
+266
 Azure Functions
-You can use three durable function types: Client, Orchestrator, and Activity.
-Client functions are the entry point for creating an instance of a Durable Functions orchestration. They can run in response to an event from many sources, such as a new HTTP request arriving, a message being posted to a message queue, an event arriving in an event stream. You can write them in any of the supported languages.
+Durable Functions is an extension of Azure Functions that lets you perform long-lasting, stateful operations in Azure. Using this approach, you get all the benefits of a serverless hosting model while letting the Durable Functions framework take care of activity monitoring, synchronization, and runtime concerns.
 
 
 
 
 
-257
+267
 PP365
 Plugin Registration Tool
 A utility provided by Microsoft for registering plugins, custom workflows, and webhooks in Dynamics 365. It allows developers to deploy and manage custom server-side code that executes in response to events within Dynamics 365, facilitating integration and customization.
@@ -2367,7 +2456,15 @@ A utility provided by Microsoft for registering plugins, custom workflows, and w
 
 
 
-258
+268
+PP365
+I had a ticket with Lauren Kawamoto going back to 11/22/24 about her permissions in the sandbox. It turns out that she needed the "TS - Recur Engagement" role to recur engagements. I thought that "system administrator" would be enough, but I was not able to do that myself with the sysadmin role. Strange.
+
+
+
+
+
+269
 PP365
 User-Assigned Managed Identity
 A managed identity in Azure that exists as a separate Azure resource and can be assigned to multiple Azure services. Unlike system-assigned identities, user-assigned identities are independent of any single resource’s lifecycle, offering flexibility and reusability across different services.
@@ -2376,7 +2473,7 @@ A managed identity in Azure that exists as a separate Azure resource and can be 
 
 
 
-259
+270
 PP365
 Ribbon
 The toolbar interface in Dynamics 365 where users interact with commands and actions. Customizing the ribbon allows administrators to add, remove, or modify buttons and actions, enhancing the user experience and enabling integration with external services like Azure Functions without altering the core application code.
@@ -2385,7 +2482,7 @@ The toolbar interface in Dynamics 365 where users interact with commands and act
 
 
 
-260
+271
 PP365
 Webhooks
 HTTP callbacks triggered by specific events in applications like Dynamics 365. When an event occurs, the application sends an HTTP request to a predefined URL (e.g., an Azure Function), allowing external systems to respond in real-time without constant polling.
@@ -2394,16 +2491,7 @@ HTTP callbacks triggered by specific events in applications like Dynamics 365. W
 
 
 
-261
-PP365
-Azure Managed Identity
-Another term for Managed Identities in Azure. It refers to the feature that provides Azure services with an automatically managed identity in Azure AD, facilitating secure authentication to other Azure resources without the need to handle credentials manually.
-
-
-
-
-
-262
+272
 MS Identity Platform
 Confidential client applications: Apps in this category include:
 
@@ -2415,7 +2503,7 @@ Daemon apps, even when implemented as a console service like a Linux daemon or a
 
 
 
-263
+273
 sklearn
 The cv_results_ attribute contains useful information for analyzing the results of a search. It can be converted to a pandas dataframe with df = pd.DataFrame(est.cv_results_). The cv_results_ attribute of HalvingGridSearchCV and HalvingRandomSearchCV is similar to that of GridSearchCV and RandomizedSearchCV, with additional information related to the successive halving process.
 
@@ -2423,7 +2511,7 @@ The cv_results_ attribute contains useful information for analyzing the results 
 
 
 
-264
+274
 sklearn
 Data leakage occurs when information from the test set inadvertently influences the model during training, leading to overly optimistic performance. Cross-validation methods that respect data structure, like LeavePGroupsOut or TimeSeriesSplit, help prevent this risk.
 
@@ -2437,7 +2525,7 @@ array([0.96..., 1.  ..., 0.96..., 0.96..., 1.        ])
 
 
 
-265
+275
 Jane Eyre
 Arrogate
 (AIR-uh-gate) To seize or assume rights or privileges without justification, often in an overbearing or presumptuous manner.
@@ -2446,7 +2534,7 @@ Arrogate
 
 
 
-266
+276
 Jane Eyre
 Battledore and Shuttlecock
 (BAT-uhl-door and SHUT-l-kok) A predecessor to badminton, where players use paddles to hit a feathered object (shuttlecock) back and forth without letting it fall.
@@ -2455,16 +2543,16 @@ Battledore and Shuttlecock
 
 
 
-267
+277
 Jane Eyre
-Basin and Ewer
-(BAY-sin and YOO-er) A bowl (basin) and jug (ewer) used together for hand or face washing, commonly found before the advent of modern plumbing.
+Croquant
+(kroh-KAHN) A crispy or crunchy French dessert, often made with caramelized sugar and nuts, adding texture to pastries or served on its own.
 
 
 
 
 
-268
+278
 Jane Eyre
 Spoony
 (SPOO-nee) Foolishly or overly sentimental, especially in matters of love or infatuation, often appearing naïve or overly romantic.
@@ -2473,34 +2561,25 @@ Spoony
 
 
 
-269
+279
 Jane Eyre
-Habergeon
-(HAB-er-juhn) A sleeveless, lightweight coat of mail armor, typically covering the torso and sometimes the upper arms, used for protection in medieval combat.
+Basin and Ewer
+(BAY-sin and YOO-er) A bowl (basin) and jug (ewer) used together for hand or face washing, commonly found before the advent of modern plumbing.
 
 
 
 
 
-270
+280
 IW Migration
-Database Diagrams (SSMS)
-Graphical representations of a database’s schema. They visually display tables, columns, keys, and relationships, aiding comprehension of complex data models, enhancing communication among developers, and assisting in planning changes or migrations to other systems.
+Database Backup and Restore (SSMS)
+Built-in wizards and features in SQL Server Management Studio to safeguard data. They allow administrators to create full, differential, or transaction log backups and restore databases to a previous state, ensuring data recovery after failures.
 
 
 
 
 
-271
-IW Migration
-Refactoring and Normalization (Access/SQL Server)
-The process of reorganizing tables and fields to reduce redundancy and improve data integrity. Higher normalization forms minimize duplicate data and anomalies. This often improves long-term maintainability and eases migration to other systems.
-
-
-
-
-
-272
+281
 IW Migration
 Functions (User-Defined Functions) (SQL Server)
 Reusable routines returning a scalar value or a table. They allow encapsulation of logic into named units, improving code maintainability. However, careful use is required as certain functions can impact query performance if not optimized.
@@ -2509,7 +2588,7 @@ Reusable routines returning a scalar value or a table. They allow encapsulation 
 
 
 
-273
+282
 IW Migration
 Check Constraints and Computed Columns (SQL Server)
 Check constraints enforce custom rules on column values, ensuring data integrity at the database level. Computed columns derive their values from an expression referencing other columns, reducing redundant storage and improving data consistency.
@@ -2518,52 +2597,37 @@ Check constraints enforce custom rules on column values, ensuring data integrity
 
 
 
-274
+283
 IW Migration
-Execution Plans (SQL Server)
-Visual or textual representations of how the SQL Engine executes queries. They identify steps taken—like table scans, index seeks, or joins—helping developers and DBAs optimize performance, tune queries, and refine indexing strategies.
+Refactoring and Normalization (Access/SQL Server)
+The process of reorganizing tables and fields to reduce redundancy and improve data integrity. Higher normalization forms minimize duplicate data and anomalies. This often improves long-term maintainability and eases migration to other systems.
 
 
 
 
 
-275
+284
+IW Migration
+Linked Table Manager (in Access)
+A feature in MS Access that helps you manage and refresh connections to external data sources. If a database is split, this tool reconnects front-end objects to back-end tables, ensuring smooth data retrieval and updates.
+
+
+
+
+
+285
 Email Auth and Security
-MUA (Mail User Agent)
+Identifier Alignment
 
-An email client used by end-users to send, receive, and manage their emails.
-Provides the interface for users to interact with their email accounts.
-Examples include Microsoft Outlook, Mozilla Thunderbird, and Gmail.
-
-
-
-
-
-276
-Email Auth and Security
-ARC (Authenticated Received Chain)
-
-Preserves email authentication results as messages pass through multiple intermediary services.
-Helps maintain the integrity of authentication information when emails are forwarded or processed by third parties.
-Prevents legitimate emails from being marked as unauthenticated.
+Ensuring that the domains used in SPF and DKIM authentication align with the domain in the email's "From" header.
+Critical for DMARC to function correctly.
+Can be achieved through relaxed alignment (subdomains are allowed) or strict alignment (exact match required).
 
 
 
 
 
-277
-Email Auth and Security
-PGP (Pretty Good Privacy)
-
-A data encryption and decryption program that provides cryptographic privacy and authentication.
-Used for securing emails through encryption and digital signatures.
-Combines symmetric and asymmetric encryption for robust security.
-
-
-
-
-
-278
+286
 Email Auth and Security
 Forensic Reports (Failure Reports)
 
@@ -2575,7 +2639,31 @@ May include original email headers and details about the failure reasons.
 
 
 
-279
+287
+Email Auth and Security
+ARC (Authenticated Received Chain)
+
+Preserves email authentication results as messages pass through multiple intermediary services.
+Helps maintain the integrity of authentication information when emails are forwarded or processed by third parties.
+Prevents legitimate emails from being marked as unauthenticated.
+
+
+
+
+
+288
+Email Auth and Security
+PGP (Pretty Good Privacy)
+
+A data encryption and decryption program that provides cryptographic privacy and authentication.
+Used for securing emails through encryption and digital signatures.
+Combines symmetric and asymmetric encryption for robust security.
+
+
+
+
+
+289
 Email Auth and Security
 Feedback Loops (FBL)
 
@@ -2587,7 +2675,7 @@ Implemented through services like Return Path and Feedback Loop (FBL) agreements
 
 
 
-280
+290
 OData
 A Delta Token is a marker used in Delta Queries to track changes since the last query. Clients use delta tokens to request only the changes (additions, deletions, updates) that have occurred since their last synchronization, optimizing data retrieval.
 
@@ -2595,7 +2683,7 @@ A Delta Token is a marker used in Delta Queries to track changes since the last 
 
 
 
-281
+291
 OData
 An ETag is a mechanism for concurrency control in OData, representing a version identifier for a resource. It ensures that updates or deletions are performed on the correct version of a record, preventing conflicts and maintaining data integrity.
 
@@ -2603,7 +2691,7 @@ An ETag is a mechanism for concurrency control in OData, representing a version 
 
 
 
-282
+292
 OData
 While not directly related to OData or Dataverse, yield is a programming concept used in iterators to return values one at a time. It is useful in broader API interactions and data processing but is not a primary term in the OData/Dataverse context.
 
@@ -2611,7 +2699,7 @@ While not directly related to OData or Dataverse, yield is a programming concept
 
 
 
-283
+293
 Azure AI Foundry
 While most of the resources used by Azure AI Foundry live in your Azure subscription, some resources are in an Azure subscription managed by Microsoft. The cost for these managed resources shows on your Azure bill as a line item under the Azure Machine Learning resource provider.
 
@@ -2619,7 +2707,7 @@ While most of the resources used by Azure AI Foundry live in your Azure subscrip
 
 
 
-284
+294
 Azure AI Foundry
 Compute and quota allocation is managed as shared capacity for all projects in AI Foundry portal that share the same hub. This quota includes compute instance as managed cloud-based workstation for an individual. The same user can use a compute instance across projects.
 
@@ -2627,7 +2715,7 @@ Compute and quota allocation is managed as shared capacity for all projects in A
 
 
 
-285
+295
 Azure AI Foundry
 If you want to use a virtual network to secure communications between your clients and the hub or project, you must use an Azure Virtual Network that you create and manage. For example, an Azure Virtual Network that uses a VPN or ExpressRoute connection to your on-premises network.
 
@@ -2635,15 +2723,7 @@ If you want to use a virtual network to secure communications between your clien
 
 
 
-286
-Azure AI Foundry
-AI services access keys to endpoints for prebuilt AI models are managed on the hub scope. Use these endpoints to access foundation models from Azure OpenAI, Speech, Vision, and Content Safety with one API key
-
-
-
-
-
-287
+296
 Azure AI Foundry
 Managed compute resources and managed virtual networks exist in the Microsoft subscription, but you manage them. For example, you control which VM sizes are used for compute resources, and which outbound rules are configured for the managed virtual network.
 
@@ -2651,7 +2731,60 @@ Managed compute resources and managed virtual networks exist in the Microsoft su
 
 
 
-288
+297
+Azure AI Foundry
+AI services access keys to endpoints for prebuilt AI models are managed on the hub scope. Use these endpoints to access foundation models from Azure OpenAI, Speech, Vision, and Content Safety with one API key
+
+
+
+
+
+298
+Powershell
+NUL
+A virtual file in Windows that discards written data. Commonly used in Command Prompt, NOT POWERSHELL to create empty files (e.g., copy NUL filename).
+
+
+
+
+
+299
+Powershell
+Set-Content
+Writes or replaces the content of a file. Useful for creating files with specific content or initializing an empty file.
+
+
+
+
+
+300
+Powershell
+Service Manager (services.msc)
+A GUI tool for managing Windows services. You can start, stop, or restart services like Docker Desktop directly from this interface.
+
+
+
+
+
+301
+Powershell
+/quiet (msiexec argument)
+Suppresses all installer prompts and runs the setup silently. Ideal for automated or non-interactive installations.
+
+
+
+
+
+302
+Powershell
+-ArgumentList
+Specifies parameters to pass to a new process. For example, msiexec arguments like /quiet ensure installations run silently without user input.
+
+
+
+
+
+303
 Python
 You can enhance the input functionality by importing the readline module.
 
@@ -2661,15 +2794,7 @@ This module provides advanced input capabilities, such as command-line editing a
 
 
 
-289
-Python
-In computer programming jargon, a heisenbug is a software bug that seems to disappear or alter its behavior when one attempts to study it.[1] The term is a pun on the name of Werner Heisenberg, the physicist who first asserted the observer effect of quantum mechanics, which states that the act of observing a system inevitably alters its state.
-
-
-
-
-
-290
+304
 Python
 The print() function allows you to control the format of the output using keyword arguments like sep and end.
 
@@ -2679,7 +2804,15 @@ The sep argument determines how to separate multiple objects, while the end argu
 
 
 
-291
+305
+Python
+In computer programming jargon, a heisenbug is a software bug that seems to disappear or alter its behavior when one attempts to study it.[1] The term is a pun on the name of Werner Heisenberg, the physicist who first asserted the observer effect of quantum mechanics, which states that the act of observing a system inevitably alters its state.
+
+
+
+
+
+306
 Python
 On UNIX-like systems, readline is part of Python’s standard library, so you don’t need to install anything. On modern Windows versions, you don’t even need to work with readline because these advanced editing capabilities are already built into the console natively.
 
@@ -2687,7 +2820,7 @@ On UNIX-like systems, readline is part of Python’s standard library, so you do
 
 
 
-292
+307
 Python
 If you invoke Response.raise_for_status(), then Requests will raise an HTTPError for status codes between 400 and 600. If the status code indicates a successful request, then the program will proceed without raising that exception.
 
@@ -2699,7 +2832,7 @@ The .__next__() method retrieves the next value in the data stream and must rais
 
 
 
-293
+308
 Search Engine Optimization
 A backlink is an incoming hyperlink from one webpage to another website. Backlinks are crucial for SEO as they signal authority and trustworthiness to search engines, thereby improving a website’s search engine rankings and visibility.
 
@@ -2707,15 +2840,15 @@ A backlink is an incoming hyperlink from one webpage to another website. Backlin
 
 
 
-294
+309
 Search Engine Optimization
-Google Keyword Planner is a free tool within Google Ads that assists in discovering keywords and providing search volume data. It is used for keyword research and planning SEO strategies by identifying relevant and high-performing keywords to target.
+Crawl errors are issues that prevent search engine bots from accessing or indexing certain pages on a website. Identifying and fixing these errors improves website visibility in search results by ensuring that all important pages are accessible to search engines.
 
 
 
 
 
-295
+310
 Search Engine Optimization
 On-page SEO involves optimizing individual web pages to rank higher and earn more relevant traffic in search engines. This includes optimizing content, HTML elements, and internal links to improve the page’s visibility and relevance for targeted keywords.
 
@@ -2723,7 +2856,7 @@ On-page SEO involves optimizing individual web pages to rank higher and earn mor
 
 
 
-296
+311
 Search Engine Optimization
 Duplicate content refers to identical or very similar content appearing on multiple webpages or across different websites. It can negatively impact SEO by causing confusion for search engines about which page to rank, potentially diluting search rankings.
 
@@ -2731,7 +2864,7 @@ Duplicate content refers to identical or very similar content appearing on multi
 
 
 
-297
+312
 Search Engine Optimization
 Link equity refers to the value or authority passed from one page to another through hyperlinks. It influences the ranking potential of linked pages, helping them to perform better in search engine results by distributing authority throughout the website.
 
@@ -2739,7 +2872,60 @@ Link equity refers to the value or authority passed from one page to another thr
 
 
 
-298
+313
+Home Network Project
+Front: What is Bandwidth and how does it differ from Throughput?
+
+Back:
+
+Bandwidth: The maximum rate of data transfer across a network path, typically measured in Mbps or Gbps. It represents the network's capacity.
+Throughput: The actual rate of successful data transfer achieved, often lower than the bandwidth due to factors like network congestion and protocol overhead.
+
+
+
+
+
+314
+Home Network Project
+Front: How can you whitelist a domain in Pi-hole, and why would you do it?
+
+Back: To whitelist a domain in Pi-hole, you add the domain to the whitelist through the Pi-hole admin interface or using command-line tools. Whitelisting ensures that Pi-hole allows DNS resolution for that domain, which is useful for preventing the blocking of legitimate services or applications that rely on specific domains.
+
+
+
+
+
+315
+Home Network Project
+Front: What are Service Discovery and its importance in containerized environments?
+
+Back: Service Discovery is the process of automatically detecting and locating services within a network, particularly in dynamic environments like container orchestration platforms. It enables containers to find and communicate with each other without manual configuration, facilitating scalability and efficient resource management.
+
+
+
+
+
+316
+Home Network Project
+Front: What is Docker Swarm and how does it differ from Kubernetes?
+
+Back: Docker Swarm is Docker’s native clustering and orchestration tool for managing a group of Docker engines (nodes) as a single virtual system. It simplifies deploying and managing containerized applications across multiple hosts. Kubernetes, on the other hand, is a more feature-rich and widely adopted container orchestration platform developed by Google, offering advanced features like automated scaling, rolling updates, and self-healing, but with a steeper learning curve.
+
+
+
+
+
+317
+Home Network Project
+Front: What is WireGuard and how does it differ from traditional VPN protocols?
+
+Back: WireGuard is a modern, open-source VPN protocol known for its simplicity, high performance, and strong security. Unlike traditional VPN protocols like OpenVPN or IPSec, WireGuard has a smaller codebase, making it easier to audit and less prone to vulnerabilities. It uses state-of-the-art cryptography to provide secure and efficient encrypted connections.
+
+
+
+
+
+318
 Diffusers Library
 Text-Guided Depth-to-Image Translation: adapt parts of an image guided by a text prompt while preserving structure via depth estimation
     pipeline: depth2img
@@ -2750,60 +2936,15 @@ Start by creating an instance of a DiffusionPipeline and specify which pipeline 
 
 
 
-299
-Home Network Project
-Front: What command is used to generate a new SSH key pair?
-
-bash
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+319
+Azure Kubernetes Learning Path
+Docker containers provide security features to run multiple containers simultaneously on the same host without affecting each other. As we learned, we can configure both data storage and network configuration to isolate our containers or share data and connectivity between specific containers.
 
 
 
 
 
-300
-Home Network Project
-Front: What are Service Discovery and its importance in containerized environments?
-
-Back: Service Discovery is the process of automatically detecting and locating services within a network, particularly in dynamic environments like container orchestration platforms. It enables containers to find and communicate with each other without manual configuration, facilitating scalability and efficient resource management.
-
-
-
-
-
-301
-Home Network Project
-Front: What is Docker Swarm and how does it differ from Kubernetes?
-
-Back: Docker Swarm is Docker’s native clustering and orchestration tool for managing a group of Docker engines (nodes) as a single virtual system. It simplifies deploying and managing containerized applications across multiple hosts. Kubernetes, on the other hand, is a more feature-rich and widely adopted container orchestration platform developed by Google, offering advanced features like automated scaling, rolling updates, and self-healing, but with a steeper learning curve.
-
-
-
-
-
-302
-Home Network Project
-Front: What is WireGuard and how does it differ from traditional VPN protocols?
-
-Back: WireGuard is a modern, open-source VPN protocol known for its simplicity, high performance, and strong security. Unlike traditional VPN protocols like OpenVPN or IPSec, WireGuard has a smaller codebase, making it easier to audit and less prone to vulnerabilities. It uses state-of-the-art cryptography to provide secure and efficient encrypted connections.
-
-
-
-
-
-303
-Home Network Project
-Front: Explain the difference between a Docker Image and a Docker Container.
-
-Back:
-Docker Image: A read-only template that contains the application and all its dependencies required to run it. Images are built from Dockerfiles and serve as the blueprint for containers.
-Docker Container: A runnable instance of a Docker image. Containers are created from images and can be started, stopped, moved, and deleted independently.
-
-
-
-
-
-304
+320
 Azure Kubernetes Learning Path
 Docker containers are the default container architecture the Azure containerization services use, and many other cloud platforms also support them.
 
@@ -2813,15 +2954,7 @@ For instance, you can deploy Docker containers to Azure Container Instances, Azu
 
 
 
-305
-Azure Kubernetes Learning Path
-Docker containers provide security features to run multiple containers simultaneously on the same host without affecting each other. As we learned, we can configure both data storage and network configuration to isolate our containers or share data and connectivity between specific containers.
-
-
-
-
-
-306
+321
 Azure Kubernetes Learning Path
 Docker provides us with the docker stats command. This command returns information for the container such as percentage CPU usage, percentage memory usage, I/O written to disk, network data sent and received, and process IDs assigned. This information is useful as an immediate data stream; however, no aggregation is done, because the data isn't stored. We'd have to install third-party software for meaningful data capture over a period of time.
 
@@ -2829,7 +2962,7 @@ Docker provides us with the docker stats command. This command returns informati
 
 
 
-307
+322
 Azure Kubernetes Learning Path
 1. A container is launched using the --publish 8080:80 flag. Which of the following options is the most likely network configuration used for the container? 
 The Bridge network configuration is an internal, private network used by the container and isolates the container network from the Docker host network. We use the publish flag to map ports between the container and host ports.
@@ -2838,7 +2971,7 @@ The Bridge network configuration is an internal, private network used by the con
 
 
 
-308
+323
 Azure Kubernetes Learning Path
 To pause a running container, use the pause command. This command suspends all processes in the container.
 
@@ -2848,7 +2981,7 @@ To stop a running container, use the stop command. The stop command enables the 
 
 
 
-309
+324
 DNS
 Conditional Forwarders vs. DNS Policies
 Conditional Forwarders direct specific domain queries to designated DNS servers, while DNS Policies allow for more granular control based on various criteria like client IP ranges. Both enhance DNS management but serve different operational needs.
@@ -2857,7 +2990,7 @@ Conditional Forwarders direct specific domain queries to designated DNS servers,
 
 
 
-310
+325
 DNS
 Group Policy Management for DNS
 Using Group Policy in Windows to enforce DNS settings and configurations across multiple servers and clients. It enables centralized management of DNS policies, security settings, and zone configurations, ensuring consistency and compliance.
@@ -2866,16 +2999,7 @@ Using Group Policy in Windows to enforce DNS settings and configurations across 
 
 
 
-311
-DNS
-Refresh Interval
-The period following the No-Refresh Interval during which the timestamp on a DNS record can be updated. If a record is refreshed within this interval, it remains active; otherwise, it becomes eligible for scavenging.
-
-
-
-
-
-312
+326
 DNS
 Root Hints
 A list of authoritative DNS servers for the root zone. Root hints are used by DNS servers to initiate recursive queries when resolving domain names, especially when no forwarders are configured.
@@ -2884,7 +3008,16 @@ A list of authoritative DNS servers for the root zone. Root hints are used by DN
 
 
 
-313
+327
+DNS
+Refresh Interval
+The period following the No-Refresh Interval during which the timestamp on a DNS record can be updated. If a record is refreshed within this interval, it remains active; otherwise, it becomes eligible for scavenging.
+
+
+
+
+
+328
 DNS
 No-Refresh Interval
 In DNS scavenging, the period during which the timestamp on a DNS record cannot be updated. It prevents excessive DNS updates, helping determine when a record becomes stale and eligible for removal during scavenging.
@@ -2893,7 +3026,17 @@ In DNS scavenging, the period during which the timestamp on a DNS record cannot 
 
 
 
-314
+329
+Azure Functions
+Durable Functions allows you to define stateful workflows using an orchestration function. An orchestration function provides these extra benefits:
+You can define the workflows in code. You don't need to write a JSON description or use a workflow design tool.
+Functions can be called both synchronously and asynchronously. Output from the called functions is saved locally in variables and used in subsequent function calls.
+
+
+
+
+
+330
 Azure Functions
 Fan out/fan in: This pattern runs multiple functions in parallel and waits for all the functions to finish. You can aggregate the results of the parallel executions or use them to compute a final result.
 
@@ -2901,7 +3044,16 @@ Fan out/fan in: This pattern runs multiple functions in parallel and waits for a
 
 
 
-315
+331
+Azure Functions
+You can use three durable function types: Client, Orchestrator, and Activity.
+Client functions are the entry point for creating an instance of a Durable Functions orchestration. They can run in response to an event from many sources, such as a new HTTP request arriving, a message being posted to a message queue, an event arriving in an event stream. You can write them in any of the supported languages.
+
+
+
+
+
+332
 Azure Functions
 What is the name of the file that contains function configuration data? 
 The configuration is named function.json, which contains JSON configuration data such as binding declarations.
@@ -2910,24 +3062,7 @@ The configuration is named function.json, which contains JSON configuration data
 
 
 
-316
-Azure Functions
-Function chaining: In this pattern, the workflow executes a sequence of functions in a specified order. One function's output is applied to the next function's input in the sequence. The final function's output is used to generate a result.
-
-
-
-
-
-317
-Azure Functions
-2. Which of the following best describes the role of the Orchestrator function in a workflow? 
-The Orchestrator Function is written in code. The function is used for describing how actions are executed and the order in which actions are executed.
-
-
-
-
-
-318
+333
 Azure Functions
 You can use three durable function types: Client, Orchestrator, and Activity.
 
@@ -2935,16 +3070,7 @@ You can use three durable function types: Client, Orchestrator, and Activity.
 
 
 
-319
-PP365
-System-Assigned Managed Identity
-A type of managed identity in Azure that is directly tied to an individual Azure resource, such as an Azure Function. The lifecycle of a system-assigned managed identity is bound to the resource; it is automatically created when enabled and deleted when the resource is removed.
-
-
-
-
-
-320
+334
 PP365
 CORS (Cross-Origin Resource Sharing)
 A security feature implemented in web browsers that restricts web pages from making requests to a different domain than the one that served the web page. Configuring CORS in Azure Functions allows specific domains (e.g., Dynamics 365) to interact with the function securely.
@@ -2953,25 +3079,16 @@ A security feature implemented in web browsers that restricts web pages from mak
 
 
 
-321
-Jane Eyre
-Girandole
-(JEER-un-dohl) A decorative branched candlestick or lighting fixture, sometimes adorned with mirrors, often used in opulent interiors.
+335
+PP365
+System-Assigned Managed Identity
+A type of managed identity in Azure that is directly tied to an individual Azure resource, such as an Azure Function. The lifecycle of a system-assigned managed identity is bound to the resource; it is automatically created when enabled and deleted when the resource is removed.
 
 
 
 
 
-322
-Jane Eyre
-Contumacy
-(CON-too-muh-see) Stubborn defiance of authority or refusal to comply with orders, particularly in legal or ecclesiastical settings.
-
-
-
-
-
-323
+336
 Jane Eyre
 Salubrious
 (suh-LOO-bree-uhs) Describing something beneficial to health or well-being, such as a pleasant climate, nutritious food, or healthy lifestyle.
@@ -2980,34 +3097,43 @@ Salubrious
 
 
 
-324
+337
 Jane Eyre
-Croquant
-(kroh-KAHN) A crispy or crunchy French dessert, often made with caramelized sugar and nuts, adding texture to pastries or served on its own.
+Girandole
+(JEER-un-dohl) A decorative branched candlestick or lighting fixture, sometimes adorned with mirrors, often used in opulent interiors.
 
 
 
 
 
-325
+338
 Jane Eyre
-Piquant
-(PEE-kahnt) Having a pleasantly sharp or spicy taste; can also describe something intellectually stimulating or excitingly provocative.
+Contumacy
+(CON-too-muh-see) Stubborn defiance of authority or refusal to comply with orders, particularly in legal or ecclesiastical settings.
 
 
 
 
 
-326
-IW Migration
-Transaction Handling (SQL Server)
-A mechanism to ensure that a series of database operations either all succeed or all fail, maintaining data integrity. Using commands like BEGIN TRAN, COMMIT, and ROLLBACK, developers control atomic operations and safeguard against partial updates.
+339
+Jane Eyre
+Habergeon
+(HAB-er-juhn) A sleeveless, lightweight coat of mail armor, typically covering the torso and sometimes the upper arms, used for protection in medieval combat.
 
 
 
 
 
-327
+340
+Jane Eyre
+Fillip
+(FIL-ip) A small but impactful boost or stimulus; also refers to a flicking motion made by snapping fingers.
+
+
+
+
+
+341
 IW Migration
 Security (SSMS)
 Tools and configurations for managing user access, roles, and permissions within SQL Server Management Studio. Administrators can control who can view, modify, or delete data, maintain compliance with policies, and ensure the database’s overall integrity.
@@ -3016,16 +3142,25 @@ Tools and configurations for managing user access, roles, and permissions within
 
 
 
-328
+342
 IW Migration
-SSMS Query Editor
-A text-based interface in SQL Server Management Studio where you can write, run, and optimize SQL queries. It supports syntax highlighting, IntelliSense, and execution plans, helping users test logic, retrieve data, and troubleshoot issues efficiently.
+Execution Plans (SQL Server)
+Visual or textual representations of how the SQL Engine executes queries. They identify steps taken—like table scans, index seeks, or joins—helping developers and DBAs optimize performance, tune queries, and refine indexing strategies.
 
 
 
 
 
-329
+343
+IW Migration
+Transaction Handling (SQL Server)
+A mechanism to ensure that a series of database operations either all succeed or all fail, maintaining data integrity. Using commands like BEGIN TRAN, COMMIT, and ROLLBACK, developers control atomic operations and safeguard against partial updates.
+
+
+
+
+
+344
 IW Migration
 Linked Server (SQL Server)
 A configuration that allows SQL Server to run queries against remote data sources as if they were local tables. This enables federated queries, joining data across different servers and even different database platforms.
@@ -3034,16 +3169,16 @@ A configuration that allows SQL Server to run queries against remote data source
 
 
 
-330
+345
 IW Migration
-Pass-Through Queries (Access)
-A type of query that sends SQL commands directly to an external database (e.g., SQL Server). Bypassing Access’s query engine, they offer better performance and exploit native database features, ideal when dealing with large datasets or complex logic.
+SSMS Query Editor
+A text-based interface in SQL Server Management Studio where you can write, run, and optimize SQL queries. It supports syntax highlighting, IntelliSense, and execution plans, helping users test logic, retrieve data, and troubleshoot issues efficiently.
 
 
 
 
 
-331
+346
 Email Auth and Security
 p=quarantine
 
@@ -3055,43 +3190,7 @@ Typically places such emails in the spam or junk folder.
 
 
 
-332
-Email Auth and Security
-MX Toolbox
-
-An online suite of tools for diagnosing and analyzing DNS records.
-Checks SPF, DKIM, and DMARC configurations.
-Helps administrators verify the correctness of their email authentication setups.
-
-
-
-
-
-333
-Email Auth and Security
-Email Deliverability
-
-The ability of an email to successfully reach the recipient's inbox.
-Influenced by factors like email authentication, sender reputation, and content quality.
-Ensures that legitimate emails are accessible to recipients without being marked as spam.
-
-
-
-
-
-334
-Email Auth and Security
-DMARC (Domain-based Message Authentication, Reporting & Conformance)
-
-Builds on SPF and DKIM to provide domain owners with policies for handling unauthenticated emails.
-Enables reporting on email authentication status and issues.
-Protects against unauthorized use of a domain in email communications.
-
-
-
-
-
-335
+347
 Email Auth and Security
 BIMI (Brand Indicators for Message Identification)
 
@@ -3103,7 +3202,88 @@ Requires proper implementation of SPF, DKIM, and DMARC.
 
 
 
-336
+348
+Email Auth and Security
+MX Toolbox
+
+An online suite of tools for diagnosing and analyzing DNS records.
+Checks SPF, DKIM, and DMARC configurations.
+Helps administrators verify the correctness of their email authentication setups.
+
+
+
+
+
+349
+Email Auth and Security
+Email Deliverability
+
+The ability of an email to successfully reach the recipient's inbox.
+Influenced by factors like email authentication, sender reputation, and content quality.
+Ensures that legitimate emails are accessible to recipients without being marked as spam.
+
+
+
+
+
+350
+Email Auth and Security
+DMARC (Domain-based Message Authentication, Reporting & Conformance)
+
+Builds on SPF and DKIM to provide domain owners with policies for handling unauthenticated emails.
+Enables reporting on email authentication status and issues.
+Protects against unauthorized use of a domain in email communications.
+
+
+
+
+
+351
+Powershell
+docker build -t <name>
+Tags a Docker image with a specified name, making it easier to reference and organize in local or remote repositories.
+
+
+
+
+
+352
+Powershell
+-Wait
+Pauses execution until a specified process finishes. Ensures sequential steps in scripts are executed in the correct order.
+
+
+
+
+
+353
+Powershell
+az
+The Azure CLI command-line tool for managing Azure resources like VMs, storage, and networks. It's cross-platform and integrates with scripting tools like PowerShell.
+
+
+
+
+
+354
+Powershell
+-AllowClobber
+Allows overwriting of existing aliases or functions during module installation, preventing conflicts with pre-existing definitions.
+
+
+
+
+
+355
+Powershell
+Remove-Item
+Deletes files, directories, or other items. Commonly used to clean up temporary files or outdated resources in automated scripts.
+
+
+
+
+
+356
 Search Engine Optimization
 Crawling is the process by which search engine bots systematically browse the web to discover and index content. It is essential for search engines to include webpages in their search results, ensuring that new and updated content is recognized.
 
@@ -3111,7 +3291,7 @@ Crawling is the process by which search engine bots systematically browse the we
 
 
 
-337
+357
 Search Engine Optimization
 An XML sitemap is a file that lists all the important pages of a website, helping search engines crawl the site more effectively. It improves the discoverability of webpages, ensures all content is indexed, and can include additional metadata about each URL.
 
@@ -3119,7 +3299,7 @@ An XML sitemap is a file that lists all the important pages of a website, helpin
 
 
 
-338
+358
 Search Engine Optimization
 Link building is the practice of acquiring backlinks from other websites to improve a site's authority and search rankings. It is critical for enhancing a website’s SEO performance by increasing the number and quality of inbound links from reputable sources.
 
@@ -3127,7 +3307,7 @@ Link building is the practice of acquiring backlinks from other websites to impr
 
 
 
-339
+359
 Search Engine Optimization
 Google PageSpeed Insights analyzes the content of a web page and provides suggestions to make it faster. It evaluates both desktop and mobile performance, offering recommendations to improve load times and overall website performance for better user experience.
 
@@ -3135,7 +3315,7 @@ Google PageSpeed Insights analyzes the content of a web page and provides sugges
 
 
 
-340
+360
 Search Engine Optimization
 Google Analytics is a free web analytics service that tracks and reports website traffic. It provides insights into user behavior, traffic sources, and conversion metrics, enabling users to understand how visitors interact with their site and measure the effectiveness of their marketing efforts.
 
@@ -3143,7 +3323,40 @@ Google Analytics is a free web analytics service that tracks and reports website
 
 
 
-341
+361
+Home Network Project
+Front: What command starts a Docker container for Prometheus using the official image?
+
+bash
+docker run -d --name=prometheus -p 9090:9090 prom/prometheus
+
+
+
+
+
+362
+Home Network Project
+Front: How do Firewall Rules work in pfSense?
+
+Back: Firewall rules in pfSense define how incoming and outgoing network traffic is handled. They are based on criteria like source/destination IP addresses, ports, and protocols. Rules can allow, block, or reject traffic, and are processed in a specific order to control access and protect the network from unauthorized activities.
+
+
+
+
+
+363
+Home Network Project
+Front: Explain the difference between a Docker Image and a Docker Container.
+
+Back:
+Docker Image: A read-only template that contains the application and all its dependencies required to run it. Images are built from Dockerfiles and serve as the blueprint for containers.
+Docker Container: A runnable instance of a Docker image. Containers are created from images and can be started, stopped, moved, and deleted independently.
+
+
+
+
+
+364
 Home Network Project
 How do you install Docker on a Raspberry Pi?
 
@@ -3156,48 +3369,18 @@ sudo usermod -aG docker pi
 
 
 
-342
+365
 Home Network Project
-Front: What command starts a Docker container for Prometheus using the official image?
+What is the command to update and upgrade packages on a Debian-based system like Raspberry Pi OS?
 
 bash
-docker run -d --name=prometheus -p 9090:9090 prom/prometheus
+sudo apt update && sudo apt upgrade -y
 
 
 
 
 
-343
-Home Network Project
-Front: What is SSL Certificate and why is it important for web services?
-
-Back: An SSL Certificate is a digital certificate that authenticates the identity of a website and enables encrypted connections via SSL/TLS protocols. It ensures secure data transmission between the user's browser and the web server, protecting sensitive information from interception and tampering.
-
-
-
-
-
-344
-Home Network Project
-Front: How do Firewall Rules work in pfSense?
-
-Back: Firewall rules in pfSense define how incoming and outgoing network traffic is handled. They are based on criteria like source/destination IP addresses, ports, and protocols. Rules can allow, block, or reject traffic, and are processed in a specific order to control access and protect the network from unauthorized activities.
-
-
-
-
-
-345
-Home Network Project
-Front: What is Rate Limiting and how does it help in preventing attacks?
-
-Back: Rate Limiting restricts the number of requests a user or IP address can make to a service within a specific time frame. It helps prevent various attacks, such as brute-force attacks, denial-of-service (DoS) attacks, and abuse of APIs, by limiting the potential impact of malicious activities.
-
-
-
-
-
-346
+366
 Azure Kubernetes Learning Path
 Enter the following code to start the sample app. The -d flag is to run it as a background, non-interactive app. The -p flag is to map port 8080 in the container that's created to port 8080 locally. This setting is intended to avoid conflicts with any web apps already running on your computer. The command will respond with a lengthy hexadecimal identifier for the instance.
 
@@ -3208,7 +3391,7 @@ docker run -d -p 8080:8080 mcr.microsoft.com/dotnet/samples:aspnetapp
 
 
 
-347
+367
 Azure Kubernetes Learning Path
 To create a Docker image containing your application, you typically begin by identifying a base image, to which you add files and configuration information. The process of identifying a suitable base image usually starts with an image search on Docker Hub. You want an image that already contains an application framework and all the utilities and tools of a Linux distribution, like Ubuntu or Alpine.
 
@@ -3216,7 +3399,7 @@ To create a Docker image containing your application, you typically begin by ide
 
 
 
-348
+368
 Azure Kubernetes Learning Path
 Command in DockerFile
 RUN	Executes a command in the container. Arguments to the RUN command are command-line commands.
@@ -3225,7 +3408,15 @@ RUN	Executes a command in the container. Arguments to the RUN command are comman
 
 
 
-349
+369
+Azure Kubernetes Learning Path
+By default, Docker doesn't allow inbound network requests to reach your container. You need to tell Docker to assign a specific port number from your computer to a specific port number in the container by adding the -p option to docker run. This instruction enables network requests to the container on the specified port.
+
+
+
+
+
+370
 Azure Kubernetes Learning Path
 Dockerfile Example:
 FROM mcr.microsoft.com/dotnet/sdk:6.0
@@ -3240,24 +3431,7 @@ ENTRYPOINT ["dotnet", "myapp.dll"]
 
 
 
-350
-Azure Kubernetes Learning Path
-By default, Docker doesn't allow inbound network requests to reach your container. You need to tell Docker to assign a specific port number from your computer to a specific port number in the container by adding the -p option to docker run. This instruction enables network requests to the container on the specified port.
-
-
-
-
-
-351
-DNS
-DNS Scavenging
-An automated process in Windows DNS that removes stale or outdated DNS records. It helps maintain DNS integrity by deleting records no longer valid, such as those from devices removed from the network or with changed IP addresses.
-
-
-
-
-
-352
+371
 DNS
 DNS Zone Types
 Different types of DNS zones include Primary, Secondary, Stub, and Active Directory-Integrated zones. Each type serves distinct roles in DNS management, such as data storage, redundancy, delegation, and integration with directory services.
@@ -3266,7 +3440,16 @@ Different types of DNS zones include Primary, Secondary, Stub, and Active Direct
 
 
 
-353
+372
+DNS
+DNS Scavenging
+An automated process in Windows DNS that removes stale or outdated DNS records. It helps maintain DNS integrity by deleting records no longer valid, such as those from devices removed from the network or with changed IP addresses.
+
+
+
+
+
+373
 DNS
 Securing Zone Transfers
 Measures taken to protect DNS zone data during transfers between DNS servers. This includes restricting transfers to authorized IP addresses and using security protocols like TSIG or IPsec to authenticate and encrypt the data, ensuring integrity and confidentiality.
@@ -3275,7 +3458,7 @@ Measures taken to protect DNS zone data during transfers between DNS servers. Th
 
 
 
-354
+374
 DNS
 Active Directory-Integrated Zones
 DNS zones that store their data within the Active Directory database. This integration allows for secure dynamic updates and automatic replication of DNS data across all domain controllers, enhancing security and redundancy.
@@ -3284,7 +3467,7 @@ DNS zones that store their data within the Active Directory database. This integ
 
 
 
-355
+375
 DNS
 DNS Policies
 A feature in Windows DNS Server that allows administrators to define rules for how DNS queries are handled. Policies can filter queries or provide different responses based on criteria like client IP addresses, enabling scenarios like split-brain DNS.
@@ -3293,7 +3476,16 @@ A feature in Windows DNS Server that allows administrators to define rules for h
 
 
 
-356
+376
+Azure Functions
+2. Which of the following best describes the role of the Orchestrator function in a workflow? 
+The Orchestrator Function is written in code. The function is used for describing how actions are executed and the order in which actions are executed.
+
+
+
+
+
+377
 Azure Functions
 You can use three durable function types: Client, Orchestrator, and Activity.
 Orchestrator functions describe how actions are executed and the order in which they're run. You write the orchestration logic in code (C# or JavaScript).
@@ -3302,7 +3494,7 @@ Orchestrator functions describe how actions are executed and the order in which 
 
 
 
-357
+378
 Azure Functions
 Activity functions are the basic units of work in a Durable Functions orchestration. An activity function contains the actual work performed by the tasks being orchestrated.
 
@@ -3310,15 +3502,16 @@ Activity functions are the basic units of work in a Durable Functions orchestrat
 
 
 
-358
-Azure Functions
-Durable Functions is an extension of Azure Functions that lets you perform long-lasting, stateful operations in Azure. Using this approach, you get all the benefits of a serverless hosting model while letting the Durable Functions framework take care of activity monitoring, synchronization, and runtime concerns.
+379
+Jane Eyre
+Piquant
+(PEE-kahnt) Having a pleasantly sharp or spicy taste; can also describe something intellectually stimulating or excitingly provocative.
 
 
 
 
 
-359
+380
 Jane Eyre
 Blackaviced
 (BLACK-uh-vist) Having a dark or swarthy complexion, typically used descriptively in older literary works.
@@ -3327,16 +3520,7 @@ Blackaviced
 
 
 
-360
-Jane Eyre
-Fillip
-(FIL-ip) A small but impactful boost or stimulus; also refers to a flicking motion made by snapping fingers.
-
-
-
-
-
-361
+381
 Jane Eyre
 Worsted
 (WUH-stid) A tightly spun yarn made from long-staple wool, creating smooth, durable fabrics often used in making suits, coats, and upholstery.
@@ -3345,7 +3529,7 @@ Worsted
 
 
 
-362
+382
 Jane Eyre
 Contumelious Epithet
 (con-too-MEE-lee-uhs EP-uh-thet) An insult or scornful nickname intended to express contempt, often delivered with arrogance.
@@ -3354,7 +3538,7 @@ Contumelious Epithet
 
 
 
-363
+383
 Jane Eyre
 Post-chaise
 (POST-shayz) A lightweight, horse-drawn carriage used for long-distance travel, designed for speed and efficiency, popular in the 18th and 19th centuries.
@@ -3363,7 +3547,16 @@ Post-chaise
 
 
 
-364
+384
+IW Migration
+Pass-Through Queries (Access)
+A type of query that sends SQL commands directly to an external database (e.g., SQL Server). Bypassing Access’s query engine, they offer better performance and exploit native database features, ideal when dealing with large datasets or complex logic.
+
+
+
+
+
+385
 IW Migration
 Stored Procedures and Triggers
 Database components that contain reusable SQL code and logic. Stored procedures perform complex queries or transformations. Triggers automatically run when certain table events occur (like insert, update, delete), enforcing rules or updating related data behind the scenes.
@@ -3372,7 +3565,7 @@ Database components that contain reusable SQL code and logic. Stored procedures 
 
 
 
-365
+386
 IW Migration
 Indexing (Access/SQL Server)
 A strategy for improving data retrieval speeds by creating data structures (indexes) on certain fields. Proper indexing balances query performance gains against the overhead of maintaining those indexes during inserts, updates, and deletions.
@@ -3381,16 +3574,7 @@ A strategy for improving data retrieval speeds by creating data structures (inde
 
 
 
-366
-IW Migration
-Linked Table Manager (in Access)
-A feature in MS Access that helps you manage and refresh connections to external data sources. If a database is split, this tool reconnects front-end objects to back-end tables, ensuring smooth data retrieval and updates.
-
-
-
-
-
-367
+387
 IW Migration
 Linked Table Manager (Access)
 A utility in Access to manage external data connections. It allows refreshing, updating, or changing the source of linked tables, ensuring that front-end objects always correctly reference tables in the back-end or external databases.
@@ -3399,19 +3583,7 @@ A utility in Access to manage external data connections. It allows refreshing, u
 
 
 
-368
-Email Auth and Security
-Email Authentication Alignment
-
-Ensuring that SPF and DKIM align with the domain specified in the email's "From" header.
-Critical for DMARC to function correctly.
-Provides consistent authentication results and improves email deliverability.
-
-
-
-
-
-369
+388
 Email Auth and Security
 p=reject
 
@@ -3423,7 +3595,38 @@ Provides the strictest protection against fraudulent emails.
 
 
 
-370
+389
+Email Auth and Security
+Email Authentication Alignment
+
+Ensuring that SPF and DKIM align with the domain specified in the email's "From" header.
+Critical for DMARC to function correctly.
+Provides consistent authentication results and improves email deliverability.
+
+
+
+
+
+390
+Powershell
+Invoke-WebRequest
+Sends HTTP or HTTPS requests to retrieve web content, like files or API data. Commonly used for downloading installers or fetching resources directly into a script.
+
+
+
+
+
+391
+Home Network Project
+Front: What is Rate Limiting and how does it help in preventing attacks?
+
+Back: Rate Limiting restricts the number of requests a user or IP address can make to a service within a specific time frame. It helps prevent various attacks, such as brute-force attacks, denial-of-service (DoS) attacks, and abuse of APIs, by limiting the potential impact of malicious activities.
+
+
+
+
+
+392
 Home Network Project
 Front: What is Port Forwarding and how is it configured on a router?
 
@@ -3433,7 +3636,7 @@ Back: Port Forwarding is the process of directing incoming traffic on specific p
 
 
 
-371
+393
 Home Network Project
 Front: How can you view the current DNS settings on a Linux system?
 
@@ -3444,18 +3647,7 @@ cat /etc/resolv.conf
 
 
 
-372
-Home Network Project
-What is the command to update and upgrade packages on a Debian-based system like Raspberry Pi OS?
-
-bash
-sudo apt update && sudo apt upgrade -y
-
-
-
-
-
-373
+394
 Home Network Project
 Front: What is a Docker Compose file and what is it used for?
 
@@ -3465,7 +3657,7 @@ Back: A Docker Compose file (docker-compose.yml) is a YAML file that defines and
 
 
 
-374
+395
 Home Network Project
 Front: What is Network Latency and how can it affect network performance?
 
@@ -3475,7 +3667,7 @@ Back: Network Latency refers to the time it takes for data to travel from the so
 
 
 
-375
+396
 Azure Kubernetes Learning Path
 You can remove an image from the local computer with the docker image rm command. Specify the image ID of the image to remove. The following example removes the image for the sample web app.
 
@@ -3486,7 +3678,7 @@ docker image rm mcr.microsoft.com/dotnet/core/samples:aspnetapp
 
 
 
-376
+397
 Azure Kubernetes Learning Path
 The docker build command creates a new image by running a Dockerfile. This command's syntax has several parameters:
 
@@ -3494,7 +3686,41 @@ The docker build command creates a new image by running a Dockerfile. This comma
 
 
 
-377
+398
+Azure Kubernetes Learning Path
+Docker login will prompt you for a username and password. To find this information, go to the Azure portal and look up the access keys for the registry or run the following command.
+
+Azure CLI
+az acr credential show --name myregistry --resource-group mygroup
+
+
+
+
+
+399
+Azure Kubernetes Learning Path
+The following example creates an alias for the reservationsystem image.
+
+Bash
+docker tag reservationsystem myregistry.azurecr.io/reservationsystem:v2
+
+If you run docker image ls, you'll see two entries for the image: one with the original name and the second with the new alias.
+
+
+
+
+
+400
+Azure Kubernetes Learning Path
+Azure Container Registry repositories are private, meaning they don't support unauthenticated access. To pull images from an Azure Container Registry repository, use the docker login command and specify the URL of the login server for the registry.
+
+docker login myregistry.azurecr.io
+
+
+
+
+
+401
 Jane Eyre
 Beldame
 (BEL-dame) An old woman, sometimes used respectfully for a grandmother, or pejoratively to describe a hag or crone.
@@ -3503,25 +3729,7 @@ Beldame
 
 
 
-378
-Jane Eyre
-Palliate
-(PAL-ee-ate) To alleviate pain or lessen the severity of something, especially symptoms or distress, without removing the cause; can also mean to downplay faults or mistakes.
-
-
-
-
-
-379
-Jane Eyre
-Lachrymose
-(LAK-rih-mohs) Tearful, prone to crying, or causing sadness, often describing an emotional person, moment, or story.
-
-
-
-
-
-380
+402
 Jane Eyre
 Diablerie
 (dee-AH-bluh-ree) Mischievous, devilish behavior or sorcery; also refers to artwork, literature, or activities evoking dark, supernatural themes.
@@ -3530,7 +3738,25 @@ Diablerie
 
 
 
-381
+403
+Jane Eyre
+Palliate
+(PAL-ee-ate) To alleviate pain or lessen the severity of something, especially symptoms or distress, without removing the cause; can also mean to downplay faults or mistakes.
+
+
+
+
+
+404
+Jane Eyre
+Lachrymose
+(LAK-rih-mohs) Tearful, prone to crying, or causing sadness, often describing an emotional person, moment, or story.
+
+
+
+
+
+405
 Home Network Project
 Front: Describe the primary function of Grafana in a monitoring stack.
 
@@ -3540,7 +3766,7 @@ Back: Grafana is an open-source platform for data visualization and analytics. I
 
 
 
-382
+406
 Home Network Project
 Front: Explain the purpose of AllowedIPs in WireGuard configuration.
 
@@ -3554,7 +3780,7 @@ The final parameter, ., provides the build context for the source files for the 
 
 
 
-383
+407
 Home Network Project
 Front: How does Pi-hole utilize DNS Sinkholing to block ads?
 
@@ -3564,8 +3790,7 @@ Back: Pi-hole intercepts DNS queries for domains listed in its blocklists. Inste
 
 
 
-
-383
+408
 Azure Kubernetes Learning Path
 Azure Container Instance is a service that loads and runs Docker images on demand. The Azure Container Instance service can retrieve an image from a registry, such as Docker Hub or Azure Container Registry.
 
@@ -3573,379 +3798,14 @@ Azure Container Instance is a service that loads and runs Docker images on deman
 
 
 
+409
+Azure Kubernetes Learning Path
+You push an image from your local computer to a Docker registry by using the docker push command. Before you push an image, you must create an alias for the image that specifies the repository and tag that the Docker registry creates. The repository name must be of the form *<login_server>/<image_name>:<tag/>. Use the docker tag command to perform this operation.
 
 
-383
+
+
+
+410
 Azure Kubernetes Learning Path
 Azure Container Registry is a registry-hosting service provided by Azure. Each Azure Container Registry resource you create is a separate registry with a unique URL. These registries are private, meaning they require authentication to push or pull images
-
-
-
-
-
-383
-Powershell
-Invoke-WebRequest
-Sends HTTP or HTTPS requests to retrieve web content, like files or API data. Commonly used for downloading installers or fetching resources directly into a script.
-
-
-
-
-
-
-
-383
-Powershell
-Start-Service
-Starts a Windows service by name. For example, it can start Docker Desktop’s backend services without launching the GUI, ensuring background processes are operational.
-
-
-
-
-
-
-
-383
-Powershell
-Get-Service
-Displays the status of Windows services. Useful for checking if a service (e.g., Docker Desktop) is running, stopped, or paused.
-
-
-
-
-
-383
-Powershell
-Start-Process
-Runs an executable or script as a new process. Often used with arguments to control behavior, such as running installers or launching applications in a specific mode.
-
-
-
-
-
-
-383
-Powershell
--ArgumentList
-Specifies parameters to pass to a new process. For example, msiexec arguments like /quiet ensure installations run silently without user input.
-
-
-
-
-
-
-383
-Powershell
-Remove-Item
-Deletes files, directories, or other items. Commonly used to clean up temporary files or outdated resources in automated scripts.
-
-
-
-
-
-
-383
-Powershell
-New-Item
-Creates new files, directories, or registry entries. For example, New-Item -Name Dockerfile creates an empty Dockerfile to define a container configuration.
-
-
-
-
-
-
-383
-Powershell
-Set-Content
-Writes or replaces the content of a file. Useful for creating files with specific content or initializing an empty file.
-
-
-
-
-
-
-383
-Powershell
-cmd /c
-Runs a Command Prompt command from PowerShell. Allows use of legacy commands, like copy NUL, for operations not natively supported in PowerShell.
-
-
-
-
-
-
-383
-Powershell
-az
-The Azure CLI command-line tool for managing Azure resources like VMs, storage, and networks. It's cross-platform and integrates with scripting tools like PowerShell.
-
-
-
-
-
-
-
-
-383
-Powershell
-Install-Module
-Installs PowerShell modules from the PowerShell Gallery, such as AzureRM or PowerShellGet. Often used to add functionality or manage cloud resources.
-
-
-
-
-
-
-
-
-383
-Powershell
-/i (msiexec argument)
-Indicates installation mode for .msi files when using msiexec. Required for executing software setups from command-line tools or scripts.
-
-
-
-
-
-
-
-
-
-383
-Powershell
-/quiet (msiexec argument)
-Suppresses all installer prompts and runs the setup silently. Ideal for automated or non-interactive installations.
-
-
-
-
-
-
-
-
-
-383
-Powershell
--Force
-Overrides warnings or confirmation prompts, ensuring the command proceeds without manual intervention. Common in scripting for reliability.
-
-
-
-
-
-
-
-
-
-383
-Powershell
--Wait
-Pauses execution until a specified process finishes. Ensures sequential steps in scripts are executed in the correct order.
-
-
-
-
-
-
-
-
-
-383
-Powershell
--AllowClobber
-Allows overwriting of existing aliases or functions during module installation, preventing conflicts with pre-existing definitions.
-
-
-
-
-
-
-
-
-
-383
-Powershell
-docker build
-Creates a Docker image from a Dockerfile and dependencies. This image can be used to run containerized applications on any compatible host.
-
-
-
-
-
-
-
-
-
-383
-Powershell
-docker build -t <name>
-Tags a Docker image with a specified name, making it easier to reference and organize in local or remote repositories.
-
-
-
-
-
-
-
-
-
-383
-Powershell
-error during connect
-Indicates the Docker CLI failed to connect to the Docker daemon, often due to the service not running or incorrect configuration.
-
-//./pipe/dockerDesktopLinuxEngine
-Refers to the Windows named pipe used for communicating with Docker Desktop's Linux container engine. Errors suggest the service isn’t available.
-
-
-
-
-
-
-
-
-
-383
-Powershell
-NUL
-A virtual file in Windows that discards written data. Commonly used in Command Prompt, NOT POWERSHELL to create empty files (e.g., copy NUL filename).
-
-
-
-
-
-
-
-
-
-383
-Powershell
-Service Manager (services.msc)
-A GUI tool for managing Windows services. You can start, stop, or restart services like Docker Desktop directly from this interface.
-
-
-
-
-
-
-
-
-
-
-
-
-
-383
-Azure Kubernetes Learning Path
-Azure Container Registry repositories are private, meaning they don't support unauthenticated access. To pull images from an Azure Container Registry repository, use the docker login command and specify the URL of the login server for the registry.
-
-docker login myregistry.azurecr.io
-
-
-
-
-
-
-383
-Azure Kubernetes Learning Path
-Docker login will prompt you for a username and password. To find this information, go to the Azure portal and look up the access keys for the registry or run the following command.
-
-Azure CLI
-az acr credential show --name myregistry --resource-group mygroup
-
-
-
-
-
-
-
-383
-Azure Kubernetes Learning Path
-You push an image from your local computer to a Docker registry by using the docker push command. Before you push an image, you must create an alias for the image that specifies the repository and tag that the Docker registry creates. The repository name must be of the form *<login_server>/<image_name>:<tag/>. Use the docker tag command to perform this operation. 
-
-
-
-
-
-
-383
-Azure Kubernetes Learning Path
-The following example creates an alias for the reservationsystem image.
-
-Bash
-docker tag reservationsystem myregistry.azurecr.io/reservationsystem:v2
-
-If you run docker image ls, you'll see two entries for the image: one with the original name and the second with the new alias.
-
-
-
-
-
-
-
-
-383
-Azure Kubernetes Learning Path
-
-
-
-
-
-
-
-383
-Azure Kubernetes Learning Path
-
-
-
-
-
-
-
-383
-Azure Kubernetes Learning Path
-
-
-
-
-
-
-
-383
-Azure Kubernetes Learning Path
-
-
-
-
-
-
-
-383
-Azure Kubernetes Learning Path
-
-
-
-
-
-
-
-383
-Azure Kubernetes Learning Path
-
-
-
-
-
-
-
-383
-Azure Kubernetes Learning Path
-
-
-
-
-
-
-
-383
-Azure Kubernetes Learning Path
