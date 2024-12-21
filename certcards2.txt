@@ -7,24 +7,6 @@
 
 
 
-2
-DNS
-Dynamic Updates
-A DNS feature that allows DNS records to be automatically updated in response to changes in IP addresses or other network configurations. Dynamic updates simplify DNS management by reducing the need for manual record adjustments.
-
-
-
-
-
-3
-DNS
-Split-Brain DNS
-A DNS configuration strategy where different DNS records are served based on the client's network location. Internal users receive private IP addresses, while external users receive public-facing addresses for the same domain, enhancing security and functionality.
-
-
-
-
-
 4
 Email Auth and Security
 HELO/EHLO
