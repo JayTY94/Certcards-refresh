@@ -7,10 +7,7 @@
 
 
 
-3
-Azure OpenAI
-Assistants can call Azure OpenAI’s models with specific instructions to tune their personality and capabilities.
-Assistants can access multiple tools in parallel. These can be both Azure OpenAI-hosted tools like code interpreter and file search, or tools you build, host, and access through function calling.
+
 
 
 
