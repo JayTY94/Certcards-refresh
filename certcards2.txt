@@ -4,39 +4,19 @@
 
 
 
-1
-Dataverse Queries
-Change Tracking
-Definition: A feature that allows the tracking of changes made to data in Dataverse entities. The Web API exposes a mechanism to track when records have been created, updated, or deleted.
-Relevance: Useful for scenarios like synchronizing data between systems or auditing changes in your data. The $deltatoken query parameter is used to fetch only the changes since the last request, improving efficiency.
 
 
 
 
 
-2
-Dataverse Queries
-Lookup Field
-Definition: A special type of field in Dataverse that references a record from another entity (table). It creates a relationship between two entities.
-Example: ts_engagementid is a lookup field that points to a record in the ts_engagement entity.
 
 
 
 
 
-3
-Conditional Access
-Report-only: Not applied	
-Not all configured policy conditions were satisfied. For example, the user is excluded from the policy or the policy only applies to certain trusted named locations.
 
 
 
-
-
-4
-Conditional Access
-Find more information about the problem by clicking More Details in the initial error page. Clicking More Details will reveal troubleshooting information that's helpful when searching the Microsoft Entra sign-in events for the specific failure event the user saw or when opening a support incident with Microsoft.
-Stuff like App name, App id, IP address, Device identifier, Device Platform,
 
 
 
