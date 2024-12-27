@@ -22,10 +22,6 @@
 
 
 
-5
-Conditional Access
-Conditional Access: Client certificates can be used in conditional access policies to control access based on device compliance. This adds an extra layer of security by ensuring that only compliant devices can access sensitive data.
-
 
 
 
@@ -33,6 +29,18 @@ Conditional Access: Client certificates can be used in conditional access polici
 6
 Conditional Access
 Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within Microsoft Defender for Cloud Apps portal to further refine filters and set actions to be taken on a user.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
