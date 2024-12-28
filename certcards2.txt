@@ -4,21 +4,8 @@
 
 
 
-1
-Home Network Project
-Front: How does Docker Networking facilitate communication between containers?
-
-Back: Docker Networking allows containers to communicate with each other and with external networks through virtual networks. Docker provides several network drivers (e.g., bridge, host, overlay) that define how containers connect and interact. Custom networks can be created to isolate groups of containers or enable specific communication patterns.
 
 
-
-
-
-2
-Home Network Project
-Front: What is pfSense and what are its primary uses?
-
-Back: pfSense is an open-source firewall and router software based on FreeBSD. It provides advanced networking features such as traffic shaping, VPN support, intrusion detection and prevention, load balancing, and more. It's commonly used for securing and managing both home and enterprise networks.
 
 
 
