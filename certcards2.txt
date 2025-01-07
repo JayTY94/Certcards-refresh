@@ -10,9 +10,7 @@
 
 
 
-2
-AKS
-AKS is commonly used to host multiple workloads or disparate workload components. You can isolate these workloads and components by using Kubernetes native functionality, like namespaces, access controls, and network controls, to meet security requirements.
+
 
 
 
