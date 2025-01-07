@@ -4,9 +4,7 @@
 
 
 
-1
-AKS
-Web App for Containers is a feature of Azure App Service, a fully managed service for hosting HTTP-based web apps with built-in infrastructure maintenance, security patching, scaling, and diagnostic tooling. For more information, see App Service documentation.
+
 
 
 
@@ -3925,3 +3923,297 @@ A backlink is an incoming hyperlink from one webpage to another website. Backlin
 421
 Search Engine Optimization
 Google PageSpeed Insights analyzes the content of a web page and provides suggestions to make it faster. It evaluates both desktop and mobile performance, offering recommendations to improve load times and overall website performance for better user experience.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+ARP Spoofing (Address Resolution Protocol Spoofing)
+
+Definition: A Man-in-the-Middle attack where an attacker sends falsified ARP messages on a local network, associating their MAC address with a legitimate IP address to intercept or manipulate traffic.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Buffer Overflow
+
+Definition: A vulnerability where an application writes more data to a buffer than it can hold, causing adjacent memory to be overwritten, potentially allowing arbitrary code execution or system crashes.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+CDP (Cisco Discovery Protocol)
+
+Definition: A Cisco proprietary protocol that enables network devices to share information about themselves and their connected neighbors, aiding in network mapping and management.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Control Plane (in SDN)
+
+Definition: The centralized component in Software-Defined Networking responsible for maintaining a global network view and making routing decisions, communicating instructions to the Data Plane.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Dependency Graph
+
+Definition: A visual representation within a Service Map that illustrates the relationships and dependencies between various network services, essential for understanding service impacts and troubleshooting.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Exploit Buffers
+
+Definition: Memory buffers within applications susceptible to buffer overflow attacks, allowing attackers to inject and execute malicious code by overwriting adjacent memory areas.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+IEEE 802.1Q
+
+Definition: The standard protocol for VLAN tagging, enabling multiple Virtual Local Area Networks to share a single physical network link by inserting VLAN tags into Ethernet frames.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+IEEE 802.15.4
+
+Definition: A standard for low-rate wireless personal area networks (LR-WPANs), forming the basis for protocols like Zigbee and Thread, commonly used in IoT and home automation.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Logical Topology (Service Map)
+
+Definition: An abstract representation within a Service Map showing how services interact and depend on each other, focusing on data flow and service relationships rather than physical connections.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Metasploit Framework
+
+Definition: An open-source penetration testing platform that provides a wide range of exploit modules, payloads, and auxiliary tools for developing, testing, and executing exploits against target systems.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Metasploit Exploit Modules
+
+Definition: Components of the Metasploit Framework designed to exploit specific vulnerabilities in target systems, enabling unauthorized access or execution of malicious actions.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+NetFlow
+
+Definition: A network protocol developed by Cisco for collecting and monitoring IP traffic data, providing insights into bandwidth usage, traffic patterns, and network performance.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Network Access Control (NAC)
+
+Definition: A security solution enforcing policies on devices attempting network access, ensuring only authorized and compliant devices can connect through authentication, authorization, and compliance checks.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Passive Network Mapping
+
+Definition: The process of creating a network map by observing and analyzing existing traffic without actively probing or interacting with network devices, ensuring stealth and non-intrusiveness.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Payload (Metasploit)
+
+Definition: Code that runs on a target system after a successful exploit, performing actions like opening a command shell, creating a reverse connection, or executing other malicious activities.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Persistence Modules (Metasploit)
+
+Definition: Metasploit modules designed to maintain ongoing access to a compromised system even after a reboot, typically by installing backdoors or modifying system configurations.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Polymorphic Shellcode
+
+Definition: Shellcode that alters its code structure each time it is executed to evade detection by signature-based security systems like antivirus software, enhancing stealth.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+RADIUS Server (Remote Authentication Dial-In User Service)
+
+Definition: A networking protocol providing centralized Authentication, Authorization, and Accounting (AAA) for users accessing network services, commonly integrated with NAC solutions.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Service Map
+
+Definition: A visual representation illustrating the relationships, dependencies, and interactions between various network services and applications within an organization, aiding in management and troubleshooting.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Shellcode Injection
+
+Definition: A technique where an attacker injects shellcode—a small piece of code providing control over a compromised system—into a vulnerable application to execute arbitrary commands or establish unauthorized access.
+
+
+
+
+
+
+
+
+
+422
+Network Mapping 
+Stack Canary
+
+Definition: A security mechanism placed between buffers and control data on the stack to detect buffer overflows by checking if the canary value has been altered before function returns, preventing unauthorized code execution.
