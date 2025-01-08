@@ -4,13 +4,6 @@
 
 
 
-1
-Diffusers Library
-Variational Inference
-A technique for approximating complex probability distributions by simpler ones. In diffusion models, variational inference approximates the posterior distribution of the reverse process, enabling computationally feasible training by simplifying the diffusion and denoising steps.
-
-
-
 
 
 2
