@@ -4,9 +4,6 @@
 
 
 
-1
-MS Identity Platform
-ID token - ID tokens are sent to the client application as part of an OpenID Connect flow. They can be sent alongside or instead of an access token. ID tokens are used by the client to authenticate the user. To learn more about how the Microsoft identity platform issues ID tokens, see ID tokens in the Microsoft identity platform.
 
 
 
