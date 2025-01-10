@@ -9,20 +9,11 @@ A JavaScript API used to send HTTP or HTTPS requests directly from a web page. W
 Fetch API
 A modern JavaScript interface for making HTTP requests. Compared to XMLHttpRequest, the Fetch API provides a more powerful and flexible feature set for handling requests and responses, often used in custom scripts within Dynamics 365 to interact with services like Azure Functions securely.
 
-Azure Portal
-See Azure Portal above. (Note: Included for completeness; no additional entry needed.)
-
 Function Key
 A secret key used to authenticate requests to an Azure Function. Function keys are part of the access control mechanism, allowing authorized clients to invoke the function. While easy to implement, they pose security risks if exposed, making Azure AD-based authentication a more secure alternative.
 
-Azure Managed Identity
-See Managed Identities above. (Note: Included for completeness; no additional entry needed.)
-
 Azure Service Principal
 An identity created for use with applications, hosted services, and automated tools to access Azure resources. Service principals enable secure, programmatic access to Azure services, acting as non-human users with specific permissions, essential for authenticating applications like Power Automate and Azure Functions.
-
-Azure Subscription
-An agreement with Microsoft to use Azure services, tied to billing and resource management. Each subscription has a unique ID and can contain multiple resource groups, providing a way to organize and manage Azure resources, permissions, and access for different projects or departments.
 
 Function App Name
 The unique identifier assigned to an Azure Function App during creation. The Function App Name is used to access and manage the Function App within the Azure Portal, forming part of the default domain for deployed functions (e.g., https://<functionappname>.azurewebsites.net).
