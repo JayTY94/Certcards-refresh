@@ -575,14 +575,6 @@ You can run indexers on demand or on a recurring data refresh schedule that runs
 
 66
 Azure AI Search
-Push model is an approach that uses APIs to upload documents into an existing search index. You can upload documents in batches of up to 1000 per batch, or 16 MB per batch, whichever limit comes first.
-
-
-
-
-
-67
-Azure AI Search
 After the first indexer run, you can rerun it on demand or set up a schedule.
 
 You can monitor indexer status in the Azure portal or through Get Indexer Status API. You should also run queries on the index to verify the result is what you expected.
@@ -591,11 +583,17 @@ You can monitor indexer status in the Azure portal or through Get Indexer Status
 
 
 
+67
+Azure AI Search
+Push model is an approach that uses APIs to upload documents into an existing search index. You can upload documents in batches of up to 1000 per batch, or 16 MB per batch, whichever limit comes first.
+
+
+
+
+
 68
 Azure AI Search
-Depending on the data source, the indexer will try different operations to extract potentially indexable content:
-
-When the document is a file with embedded images, such as a PDF, the indexer extracts text, images, and metadata. Indexers can open files from Azure Blob Storage, Azure Data Lake Storage Gen2, and SharePoint.
+If you include a skillset, you'll need to specify output field mappings in the indexer definition. The output of a skillset is manifested internally as a tree structure referred to as an enriched document. Output field mappings allow you to select which parts of this tree to map into fields in your index.
 
 
 
@@ -603,7 +601,9 @@ When the document is a file with embedded images, such as a PDF, the indexer ext
 
 69
 Azure AI Search
-If you include a skillset, you'll need to specify output field mappings in the indexer definition. The output of a skillset is manifested internally as a tree structure referred to as an enriched document. Output field mappings allow you to select which parts of this tree to map into fields in your index.
+Depending on the data source, the indexer will try different operations to extract potentially indexable content:
+
+When the document is a file with embedded images, such as a PDF, the indexer extracts text, images, and metadata. Indexers can open files from Azure Blob Storage, Azure Data Lake Storage Gen2, and SharePoint.
 
 
 
@@ -620,7 +620,7 @@ The explorer lets you query an index without having to write any code. The searc
 
 71
 Azure AI Search
-If AI enrichment or integrated vectorization are solution requirements, you must use the pull model (indexers) to load an index. Skillsets are attached to indexers and don't run independently.
+Indexers don't have dedicated processing resources. Based on this, indexers' status may show as idle before running (depending on other jobs in the queue) and run times may not be predictable. Other factors define indexer performance as well, such as document size, document complexity, image analysis, among others.
 
 
 
@@ -628,7 +628,7 @@ If AI enrichment or integrated vectorization are solution requirements, you must
 
 72
 Azure AI Search
-Indexers don't have dedicated processing resources. Based on this, indexers' status may show as idle before running (depending on other jobs in the queue) and run times may not be predictable. Other factors define indexer performance as well, such as document size, document complexity, image analysis, among others.
+If AI enrichment or integrated vectorization are solution requirements, you must use the pull model (indexers) to load an index. Skillsets are attached to indexers and don't run independently.
 
 
 
@@ -733,7 +733,7 @@ Azure OpenAI: Provides access to the latest Open AI models. You can create secur
 
 84
 Azure AI Foundry
-If you want to use a virtual network to secure communications between your clients and the hub or project, you must use an Azure Virtual Network that you create and manage. For example, an Azure Virtual Network that uses a VPN or ExpressRoute connection to your on-premises network.
+AI services access keys to endpoints for prebuilt AI models are managed on the hub scope. Use these endpoints to access foundation models from Azure OpenAI, Speech, Vision, and Content Safety with one API key
 
 
 
@@ -741,7 +741,7 @@ If you want to use a virtual network to secure communications between your clien
 
 85
 Azure AI Foundry
-While most of the resources used by Azure AI Foundry live in your Azure subscription, some resources are in an Azure subscription managed by Microsoft. The cost for these managed resources shows on your Azure bill as a line item under the Azure Machine Learning resource provider.
+If you want to use a virtual network to secure communications between your clients and the hub or project, you must use an Azure Virtual Network that you create and manage. For example, an Azure Virtual Network that uses a VPN or ExpressRoute connection to your on-premises network.
 
 
 
@@ -749,7 +749,7 @@ While most of the resources used by Azure AI Foundry live in your Azure subscrip
 
 86
 Azure AI Foundry
-AI services access keys to endpoints for prebuilt AI models are managed on the hub scope. Use these endpoints to access foundation models from Azure OpenAI, Speech, Vision, and Content Safety with one API key
+While most of the resources used by Azure AI Foundry live in your Azure subscription, some resources are in an Azure subscription managed by Microsoft. The cost for these managed resources shows on your Azure bill as a line item under the Azure Machine Learning resource provider.
 
 
 
@@ -805,11 +805,11 @@ Combines symmetric and asymmetric encryption for robust security.
 
 92
 Email Auth and Security
-DMARC (Domain-based Message Authentication, Reporting & Conformance)
+Identifier Alignment
 
-Builds on SPF and DKIM to provide domain owners with policies for handling unauthenticated emails.
-Enables reporting on email authentication status and issues.
-Protects against unauthorized use of a domain in email communications.
+Ensuring that the domains used in SPF and DKIM authentication align with the domain in the email's "From" header.
+Critical for DMARC to function correctly.
+Can be achieved through relaxed alignment (subdomains are allowed) or strict alignment (exact match required).
 
 
 
@@ -817,11 +817,11 @@ Protects against unauthorized use of a domain in email communications.
 
 93
 Email Auth and Security
-Identifier Alignment
+DMARC (Domain-based Message Authentication, Reporting & Conformance)
 
-Ensuring that the domains used in SPF and DKIM authentication align with the domain in the email's "From" header.
-Critical for DMARC to function correctly.
-Can be achieved through relaxed alignment (subdomains are allowed) or strict alignment (exact match required).
+Builds on SPF and DKIM to provide domain owners with policies for handling unauthenticated emails.
+Enables reporting on email authentication status and issues.
+Protects against unauthorized use of a domain in email communications.
 
 
 
@@ -1009,7 +1009,7 @@ A website crawler is a tool that systematically browses the web to index and ana
 
 110
 Search Engine Optimization
-Link building is the practice of acquiring backlinks from other websites to improve a site's authority and search rankings. It is critical for enhancing a website’s SEO performance by increasing the number and quality of inbound links from reputable sources.
+Google Keyword Planner is a free tool within Google Ads that assists in discovering keywords and providing search volume data. It is used for keyword research and planning SEO strategies by identifying relevant and high-performing keywords to target.
 
 
 
@@ -1017,7 +1017,7 @@ Link building is the practice of acquiring backlinks from other websites to impr
 
 111
 Search Engine Optimization
-Google Keyword Planner is a free tool within Google Ads that assists in discovering keywords and providing search volume data. It is used for keyword research and planning SEO strategies by identifying relevant and high-performing keywords to target.
+Link building is the practice of acquiring backlinks from other websites to improve a site's authority and search rankings. It is critical for enhancing a website’s SEO performance by increasing the number and quality of inbound links from reputable sources.
 
 
 
@@ -1049,7 +1049,7 @@ Yoast SEO is a WordPress plugin that assists in optimizing website content for b
 
 115
 Search Engine Optimization
-Answer The Public is a keyword research tool that visualizes search questions and autocomplete suggestions. It helps users generate content ideas by uncovering what questions and topics people are searching for related to specific keywords.
+Link equity refers to the value or authority passed from one page to another through hyperlinks. It influences the ranking potential of linked pages, helping them to perform better in search engine results by distributing authority throughout the website.
 
 
 
@@ -1057,7 +1057,7 @@ Answer The Public is a keyword research tool that visualizes search questions an
 
 116
 Search Engine Optimization
-Link equity refers to the value or authority passed from one page to another through hyperlinks. It influences the ranking potential of linked pages, helping them to perform better in search engine results by distributing authority throughout the website.
+Answer The Public is a keyword research tool that visualizes search questions and autocomplete suggestions. It helps users generate content ideas by uncovering what questions and topics people are searching for related to specific keywords.
 
 
 
@@ -1065,7 +1065,7 @@ Link equity refers to the value or authority passed from one page to another thr
 
 117
 Search Engine Optimization
-Domain Authority (DA), developed by Moz, is a metric that predicts how well a website will rank on search engine result pages (SERPs). It is based on various factors, including the quality and quantity of backlinks, and helps gauge a site’s overall SEO strength.
+On-page SEO involves optimizing individual web pages to rank higher and earn more relevant traffic in search engines. This includes optimizing content, HTML elements, and internal links to improve the page’s visibility and relevance for targeted keywords.
 
 
 
@@ -1073,7 +1073,7 @@ Domain Authority (DA), developed by Moz, is a metric that predicts how well a we
 
 118
 Search Engine Optimization
-Link Explorer by Moz is a tool for analyzing a website’s backlink profile and domain authority. It helps users identify linking opportunities, monitor backlink quality, and understand the overall strength of their site’s SEO through detailed backlink data.
+Domain Authority (DA), developed by Moz, is a metric that predicts how well a website will rank on search engine result pages (SERPs). It is based on various factors, including the quality and quantity of backlinks, and helps gauge a site’s overall SEO strength.
 
 
 
@@ -1081,7 +1081,7 @@ Link Explorer by Moz is a tool for analyzing a website’s backlink profile and 
 
 119
 Search Engine Optimization
-On-page SEO involves optimizing individual web pages to rank higher and earn more relevant traffic in search engines. This includes optimizing content, HTML elements, and internal links to improve the page’s visibility and relevance for targeted keywords.
+Link Explorer by Moz is a tool for analyzing a website’s backlink profile and domain authority. It helps users identify linking opportunities, monitor backlink quality, and understand the overall strength of their site’s SEO through detailed backlink data.
 
 
 
@@ -1129,18 +1129,6 @@ Uploading large files (typically over 4MB) requires a chunked upload approach. S
 
 125
 SharePoint
-To access SharePoint resources using REST, construct a RESTful HTTP request by using the OData standard, which corresponds to the desired client object model API. For example:
-
-GET https://{site_url}/_api/lists/getbytitle('{list_name}')/items
-Authorization: "Bearer " + accessToken
-Accept: "application/json;odata=verbose"
-
-
-
-
-
-126
-SharePoint
 For more advanced scenarios or to leverage modern authentication libraries, you can use the Microsoft Authentication Library (MSAL) in PowerShell. This approach provides enhanced security features and easier token management.
 
 a. Install MSAL.PS Module
@@ -1151,7 +1139,36 @@ powershell
 
 
 
+126
+SharePoint
+To access SharePoint resources using REST, construct a RESTful HTTP request by using the OData standard, which corresponds to the desired client object model API. For example:
+
+GET https://{site_url}/_api/lists/getbytitle('{list_name}')/items
+Authorization: "Bearer " + accessToken
+Accept: "application/json;odata=verbose"
+
+
+
+
+
 127
+SharePoint
+The SharePoint REST API can return data in both JSON and XML formats. By default, it often returns JSON, but you can specify the desired format using the Accept header.
+
+
+
+
+
+128
+SharePoint
+Authentication and Authorization
+OAuth is commonly used. When building client applications, you'll typically register your app in Azure Active Directory to obtain the necessary credentials and permissions to interact with SharePoint.
+
+
+
+
+
+129
 SharePoint
 Whenever possible, the URI for these REST endpoints closely mimics the API signature of the resource in the SharePoint client object model. The main entry points for the REST service represent the site collection and site of the specified context. 
 
@@ -1163,7 +1180,7 @@ https://{site_url}/_api/web
 
 
 
-128
+130
 SharePoint
 To retrieve the actual content of the file, you append /$value to the REST API endpoint. This instructs SharePoint to return the binary content of the file instead of its metadata.
 
@@ -1175,7 +1192,7 @@ Headers:
 
 
 
-129
+131
 SharePoint
 When checking if a file exists, which HTTP status code indicates that the file was found?
 
@@ -1188,34 +1205,7 @@ A 200 OK status code indicates that the request was successful and the file exis
 
 
 
-130
-SharePoint
-The SharePoint REST API can return data in both JSON and XML formats. By default, it often returns JSON, but you can specify the desired format using the Accept header.
-
-
-
-
-
-131
-SharePoint
-Authentication and Authorization
-OAuth is commonly used. When building client applications, you'll typically register your app in Azure Active Directory to obtain the necessary credentials and permissions to interact with SharePoint.
-
-
-
-
-
 132
-SharePoint
-How can you retrieve the metadata of a specific file, including its properties, using the SharePoint REST API?
-
-GET /_api/web/GetFileByServerRelativeUrl('/Documents/Report.docx')?$expand=ListItemAllFields
-
-
-
-
-
-133
 SharePoint
 Which REST API endpoint would you use to check if a file named "Report.docx" exists in the "Documents" library of a SharePoint site?
 
@@ -1225,9 +1215,22 @@ Which REST API endpoint would you use to check if a file named "Report.docx" exi
 
 
 
+133
+SharePoint
+Application Permissions (App-Only)
+Definition: Permissions granted directly to the application, without user context. The app operates independently of any user.
+Use Case: Ideal for background services, daemons, or automated scripts that need to run without user interaction.
+Authentication Flow: Utilizes the Client Credentials Flow with client ID and client secret or certificate.
+
+
+
+
+
 134
 SharePoint
-The __metadata property specifies the type information of the item being created or updated. This helps SharePoint understand the schema of the item, ensuring that the correct fields and data types are used.
+How can you retrieve the metadata of a specific file, including its properties, using the SharePoint REST API?
+
+GET /_api/web/GetFileByServerRelativeUrl('/Documents/Report.docx')?$expand=ListItemAllFields
 
 
 
@@ -1235,10 +1238,7 @@ The __metadata property specifies the type information of the item being created
 
 135
 SharePoint
-Application Permissions (App-Only)
-Definition: Permissions granted directly to the application, without user context. The app operates independently of any user.
-Use Case: Ideal for background services, daemons, or automated scripts that need to run without user interaction.
-Authentication Flow: Utilizes the Client Credentials Flow with client ID and client secret or certificate.
+The __metadata property specifies the type information of the item being created or updated. This helps SharePoint understand the schema of the item, ensuring that the correct fields and data types are used.
 
 
 
@@ -1257,7 +1257,7 @@ Authentication Flow: Typically involves interactive authentication methods like 
 
 137
 SharePoint
-The Content-Type header specifies the media type of the resource being sent to the server. When uploading a file, setting the correct Content-Type ensures that SharePoint correctly interprets the file type. For example, for a Word document, you might use application/vnd.openxmlformats-officedocument.wordprocessingml.document.
+SharePoint REST API adheres to REST (Representational State Transfer) principles, which means it uses standard HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources identified by URLs.
 
 
 
@@ -1265,7 +1265,7 @@ The Content-Type header specifies the media type of the resource being sent to t
 
 138
 SharePoint
-SharePoint REST API adheres to REST (Representational State Transfer) principles, which means it uses standard HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources identified by URLs.
+The Content-Type header specifies the media type of the resource being sent to the server. When uploading a file, setting the correct Content-Type ensures that SharePoint correctly interprets the file type. For example, for a Word document, you might use application/vnd.openxmlformats-officedocument.wordprocessingml.document.
 
 
 
@@ -1446,9 +1446,12 @@ To stop a running container, use the stop command. The stop command enables the 
 
 157
 Azure Kubernetes Learning Path
-Azure Container Registry repositories are private, meaning they don't support unauthenticated access. To pull images from an Azure Container Registry repository, use the docker login command and specify the URL of the login server for the registry.
+The following example creates an alias for the reservationsystem image.
 
-docker login myregistry.azurecr.io
+Bash
+docker tag reservationsystem myregistry.azurecr.io/reservationsystem:v2
+
+If you run docker image ls, you'll see two entries for the image: one with the original name and the second with the new alias.
 
 
 
@@ -1456,12 +1459,9 @@ docker login myregistry.azurecr.io
 
 158
 Azure Kubernetes Learning Path
-The following example creates an alias for the reservationsystem image.
+Azure Container Registry repositories are private, meaning they don't support unauthenticated access. To pull images from an Azure Container Registry repository, use the docker login command and specify the URL of the login server for the registry.
 
-Bash
-docker tag reservationsystem myregistry.azurecr.io/reservationsystem:v2
-
-If you run docker image ls, you'll see two entries for the image: one with the original name and the second with the new alias.
+docker login myregistry.azurecr.io
 
 
 
@@ -1485,10 +1485,10 @@ Formatting Instructions are guidelines that specify how data should be presented
 
 161
 OData
-ETags
+$format Query Option
 
-Definition: Entity tags (ETags) are version identifiers for a resource, used in OData (and HTTP in general) to support concurrency and caching.
-Context: When a client retrieves an entity with an ETag, it can include that ETag in update or delete requests. The server uses this to detect if the entity has changed since it was last read, helping prevent overwriting changes from other clients.
+Definition: An OData query parameter that suggests the response format (e.g., JSON or XML) the client prefers.
+Context: It does not affect server-internal logging or behavior, only the format of the returned data.
 
 
 
@@ -1496,10 +1496,10 @@ Context: When a client retrieves an entity with an ETag, it can include that ETa
 
 162
 OData
-$format Query Option
+ETags
 
-Definition: An OData query parameter that suggests the response format (e.g., JSON or XML) the client prefers.
-Context: It does not affect server-internal logging or behavior, only the format of the returned data.
+Definition: Entity tags (ETags) are version identifiers for a resource, used in OData (and HTTP in general) to support concurrency and caching.
+Context: When a client retrieves an entity with an ETag, it can include that ETag in update or delete requests. The server uses this to detect if the entity has changed since it was last read, helping prevent overwriting changes from other clients.
 
 
 
@@ -1714,7 +1714,7 @@ Lerwick: The main town and port of the Shetland Islands, Scotland, known for its
 
 186
 Lost in a Good Book
-Budgerigar: A small, brightly colored parakeet native to Australia, often kept as a pet. Known for their ability to mimic sounds and words.
+Evelyn Waugh (novels): English writer famous for satirical works like Brideshead Revisited and A Handful of Dust, exploring themes of aristocracy, faith, and morality.
 
 
 
@@ -1722,7 +1722,7 @@ Budgerigar: A small, brightly colored parakeet native to Australia, often kept a
 
 187
 Lost in a Good Book
-Evelyn Waugh (novels): English writer famous for satirical works like Brideshead Revisited and A Handful of Dust, exploring themes of aristocracy, faith, and morality.
+Budgerigar: A small, brightly colored parakeet native to Australia, often kept as a pet. Known for their ability to mimic sounds and words.
 
 
 
@@ -1911,9 +1911,9 @@ Back: Fail2Ban is an intrusion prevention software that monitors log files for s
 
 208
 Home Network Project
-Front: How does Pi-hole utilize DNS Sinkholing to block ads?
+Front: Describe the primary function of Grafana in a monitoring stack.
 
-Back: Pi-hole intercepts DNS queries for domains listed in its blocklists. Instead of resolving these domains to their legitimate IP addresses, Pi-hole returns a non-routable IP address (e.g., 0.0.0.0), preventing the ad content from loading on the client devices.
+Back: Grafana is an open-source platform for data visualization and analytics. It connects to various data sources like Prometheus, enabling users to create interactive and customizable dashboards to visualize metrics, monitor system performance, and gain insights into network and application behavior.
 
 
 
@@ -1921,9 +1921,9 @@ Back: Pi-hole intercepts DNS queries for domains listed in its blocklists. Inste
 
 209
 Home Network Project
-Front: Describe the primary function of Grafana in a monitoring stack.
+Front: How does Pi-hole utilize DNS Sinkholing to block ads?
 
-Back: Grafana is an open-source platform for data visualization and analytics. It connects to various data sources like Prometheus, enabling users to create interactive and customizable dashboards to visualize metrics, monitor system performance, and gain insights into network and application behavior.
+Back: Pi-hole intercepts DNS queries for domains listed in its blocklists. Instead of resolving these domains to their legitimate IP addresses, Pi-hole returns a non-routable IP address (e.g., 0.0.0.0), preventing the ad content from loading on the client devices.
 
 
 
@@ -2100,8 +2100,8 @@ Runs a Command Prompt command from PowerShell. Allows use of legacy commands, li
 
 226
 Powershell
-docker build -t <name>
-Tags a Docker image with a specified name, making it easier to reference and organize in local or remote repositories.
+Install-Module
+Installs PowerShell modules from the PowerShell Gallery, such as AzureRM or PowerShellGet. Often used to add functionality or manage cloud resources.
 
 
 
@@ -2109,8 +2109,8 @@ Tags a Docker image with a specified name, making it easier to reference and org
 
 227
 Powershell
-Service Manager (services.msc)
-A GUI tool for managing Windows services. You can start, stop, or restart services like Docker Desktop directly from this interface.
+docker build -t <name>
+Tags a Docker image with a specified name, making it easier to reference and organize in local or remote repositories.
 
 
 
@@ -2118,8 +2118,8 @@ A GUI tool for managing Windows services. You can start, stop, or restart servic
 
 228
 Powershell
-Install-Module
-Installs PowerShell modules from the PowerShell Gallery, such as AzureRM or PowerShellGet. Often used to add functionality or manage cloud resources.
+Service Manager (services.msc)
+A GUI tool for managing Windows services. You can start, stop, or restart services like Docker Desktop directly from this interface.
 
 
 
@@ -2193,8 +2193,8 @@ Sends HTTP or HTTPS requests to retrieve web content, like files or API data. Co
 
 236
 Powershell
-az
-The Azure CLI command-line tool for managing Azure resources like VMs, storage, and networks. It's cross-platform and integrates with scripting tools like PowerShell.
+Start-Process
+Runs an executable or script as a new process. Often used with arguments to control behavior, such as running installers or launching applications in a specific mode.
 
 
 
@@ -2202,8 +2202,8 @@ The Azure CLI command-line tool for managing Azure resources like VMs, storage, 
 
 237
 Powershell
-Start-Process
-Runs an executable or script as a new process. Often used with arguments to control behavior, such as running installers or launching applications in a specific mode.
+az
+The Azure CLI command-line tool for managing Azure resources like VMs, storage, and networks. It's cross-platform and integrates with scripting tools like PowerShell.
 
 
 
@@ -2318,15 +2318,25 @@ Definition: Metasploit modules designed to maintain ongoing access to a compromi
 
 249
 Network Mapping
-IEEE 802.1Q
+Service Map
 
-Definition: The standard protocol for VLAN tagging, enabling multiple Virtual Local Area Networks to share a single physical network link by inserting VLAN tags into Ethernet frames.
+Definition: A visual representation illustrating the relationships, dependencies, and interactions between various network services and applications within an organization, aiding in management and troubleshooting.
 
 
 
 
 
 250
+Network Mapping
+ARP Spoofing (Address Resolution Protocol Spoofing)
+
+Definition: A Man-in-the-Middle attack where an attacker sends falsified ARP messages on a local network, associating their MAC address with a legitimate IP address to intercept or manipulate traffic.
+
+
+
+
+
+251
 Network Mapping
 Buffer Overflow
 
@@ -2336,21 +2346,11 @@ Definition: A vulnerability where an application writes more data to a buffer th
 
 
 
-251
-Network Mapping
-Service Map
-
-Definition: A visual representation illustrating the relationships, dependencies, and interactions between various network services and applications within an organization, aiding in management and troubleshooting.
-
-
-
-
-
 252
 Network Mapping
-Logical Topology (Service Map)
+IEEE 802.1Q
 
-Definition: An abstract representation within a Service Map showing how services interact and depend on each other, focusing on data flow and service relationships rather than physical connections.
+Definition: The standard protocol for VLAN tagging, enabling multiple Virtual Local Area Networks to share a single physical network link by inserting VLAN tags into Ethernet frames.
 
 
 
@@ -2368,9 +2368,9 @@ Definition: An open-source penetration testing platform that provides a wide ran
 
 254
 Network Mapping
-ARP Spoofing (Address Resolution Protocol Spoofing)
+Logical Topology (Service Map)
 
-Definition: A Man-in-the-Middle attack where an attacker sends falsified ARP messages on a local network, associating their MAC address with a legitimate IP address to intercept or manipulate traffic.
+Definition: An abstract representation within a Service Map showing how services interact and depend on each other, focusing on data flow and service relationships rather than physical connections.
 
 
 
@@ -2378,9 +2378,9 @@ Definition: A Man-in-the-Middle attack where an attacker sends falsified ARP mes
 
 255
 Network Mapping
-Network Access Control (NAC)
+Passive Network Mapping
 
-Definition: A security solution enforcing policies on devices attempting network access, ensuring only authorized and compliant devices can connect through authentication, authorization, and compliance checks.
+Definition: The process of creating a network map by observing and analyzing existing traffic without actively probing or interacting with network devices, ensuring stealth and non-intrusiveness.
 
 
 
@@ -2398,9 +2398,9 @@ Definition: A security mechanism placed between buffers and control data on the 
 
 257
 Network Mapping
-Passive Network Mapping
+Network Access Control (NAC)
 
-Definition: The process of creating a network map by observing and analyzing existing traffic without actively probing or interacting with network devices, ensuring stealth and non-intrusiveness.
+Definition: A security solution enforcing policies on devices attempting network access, ensuring only authorized and compliant devices can connect through authentication, authorization, and compliance checks.
 
 
 
@@ -2418,9 +2418,9 @@ Definition: Memory buffers within applications susceptible to buffer overflow at
 
 259
 Network Mapping
-Shellcode Injection
+Polymorphic Shellcode
 
-Definition: A technique where an attacker injects shellcode—a small piece of code providing control over a compromised system—into a vulnerable application to execute arbitrary commands or establish unauthorized access.
+Definition: Shellcode that alters its code structure each time it is executed to evade detection by signature-based security systems like antivirus software, enhancing stealth.
 
 
 
@@ -2428,9 +2428,9 @@ Definition: A technique where an attacker injects shellcode—a small piece of c
 
 260
 Network Mapping
-Polymorphic Shellcode
+Shellcode Injection
 
-Definition: Shellcode that alters its code structure each time it is executed to evade detection by signature-based security systems like antivirus software, enhancing stealth.
+Definition: A technique where an attacker injects shellcode—a small piece of code providing control over a compromised system—into a vulnerable application to execute arbitrary commands or establish unauthorized access.
 
 
 
@@ -2799,8 +2799,8 @@ A utility in Access to manage external data connections. It allows refreshing, u
 
 301
 IW Migration
-Check Constraints and Computed Columns (SQL Server)
-Check constraints enforce custom rules on column values, ensuring data integrity at the database level. Computed columns derive their values from an expression referencing other columns, reducing redundant storage and improving data consistency.
+Transaction Handling (SQL Server)
+A mechanism to ensure that a series of database operations either all succeed or all fail, maintaining data integrity. Using commands like BEGIN TRAN, COMMIT, and ROLLBACK, developers control atomic operations and safeguard against partial updates.
 
 
 
@@ -2808,8 +2808,8 @@ Check constraints enforce custom rules on column values, ensuring data integrity
 
 302
 IW Migration
-Transaction Handling (SQL Server)
-A mechanism to ensure that a series of database operations either all succeed or all fail, maintaining data integrity. Using commands like BEGIN TRAN, COMMIT, and ROLLBACK, developers control atomic operations and safeguard against partial updates.
+Check Constraints and Computed Columns (SQL Server)
+Check constraints enforce custom rules on column values, ensuring data integrity at the database level. Computed columns derive their values from an expression referencing other columns, reducing redundant storage and improving data consistency.
 
 
 
@@ -2967,9 +2967,11 @@ Managed identities for Azure resources is the new name for the service formerly 
 
 320
 Azure Functions
-Use Case for User-assigned managed identity:
-Workloads where resources are recycled frequently, but permissions should stay consistent.
-For example, a workload where multiple virtual machines need to access the same resource.
+Reasons to choose WebJobs over Azure Functions
+
+You have specific customizations that you want to make to the JobHost that aren't supported by Azure Functions.
+You want to control your app's retry policies.
+WebJobs only supports C# on Microsoft Windows.
 
 
 
@@ -2977,11 +2979,9 @@ For example, a workload where multiple virtual machines need to access the same 
 
 321
 Azure Functions
-Reasons to choose WebJobs over Azure Functions
-
-You have specific customizations that you want to make to the JobHost that aren't supported by Azure Functions.
-You want to control your app's retry policies.
-WebJobs only supports C# on Microsoft Windows.
+Use Case for User-assigned managed identity:
+Workloads where resources are recycled frequently, but permissions should stay consistent.
+For example, a workload where multiple virtual machines need to access the same resource.
 
 
 
@@ -3157,16 +3157,6 @@ A person designated to work on a specific issue, indicating responsibility and o
 
 339
 Open Source/GitHub
-Contribution Guidelines
-
-A set of rules and best practices outlined by a project to ensure consistent and quality contributions from all contributors, often found in CONTRIBUTING.md.
-
-
-
-
-
-340
-Open Source/GitHub
 Code of Conduct
 
 Guidelines that outline expected behavior and interactions within a project’s community, promoting a respectful and inclusive environment.
@@ -3175,11 +3165,21 @@ Guidelines that outline expected behavior and interactions within a project’s 
 
 
 
+340
+Open Source/GitHub
+Contribution Guidelines
+
+A set of rules and best practices outlined by a project to ensure consistent and quality contributions from all contributors, often found in CONTRIBUTING.md.
+
+
+
+
+
 341
 Open Source/GitHub
-Issue Triage
+Maintainer
 
-The process of reviewing and categorizing issues in the issue tracker, often involving labeling, prioritizing, and assigning tasks to contributors.
+A person or group responsible for overseeing a repository, managing contributions, reviewing pull requests, and ensuring the project’s direction and quality.
 
 
 
@@ -3187,9 +3187,9 @@ The process of reviewing and categorizing issues in the issue tracker, often inv
 
 342
 Open Source/GitHub
-Maintainer
+Issue Triage
 
-A person or group responsible for overseeing a repository, managing contributions, reviewing pull requests, and ensuring the project’s direction and quality.
+The process of reviewing and categorizing issues in the issue tracker, often involving labeling, prioritizing, and assigning tasks to contributors.
 
 
 
@@ -3207,6 +3207,16 @@ The original repository from which a fork is created, where contributions are ev
 
 344
 Open Source/GitHub
+Changelog
+
+A document that records all notable changes made to a project, including new features, bug fixes, and updates, providing transparency and history for users and contributors.
+
+
+
+
+
+345
+Open Source/GitHub
 Merge Conflict
 
 A situation where changes from different branches cannot be automatically reconciled, requiring manual intervention to resolve discrepancies in the code.
@@ -3215,21 +3225,11 @@ A situation where changes from different branches cannot be automatically reconc
 
 
 
-345
+346
 Open Source/GitHub
 Label
 
 Tags assigned to issues or pull requests to categorize them, such as “good first issue,” “bug,” or “enhancement,” facilitating easier navigation and filtering.
-
-
-
-
-
-346
-Open Source/GitHub
-Changelog
-
-A document that records all notable changes made to a project, including new features, bug fixes, and updates, providing transparency and history for users and contributors.
 
 
 
@@ -3332,8 +3332,8 @@ Fruits of wild roses (hips) and hawthorn trees (haws), commonly seen in hedgerow
 
 357
 Jane Eyre
-Lachrymose
-(LAK-rih-mohs) Tearful, prone to crying, or causing sadness, often describing an emotional person, moment, or story.
+Efface
+To erase or remove something, especially from a surface or memory, making it less visible or prominent. Often used figuratively to describe fading memories or diminishing the impact of an event or object.
 
 
 
@@ -3341,8 +3341,8 @@ Lachrymose
 
 358
 Jane Eyre
-Efface
-To erase or remove something, especially from a surface or memory, making it less visible or prominent. Often used figuratively to describe fading memories or diminishing the impact of an event or object.
+Lachrymose
+(LAK-rih-mohs) Tearful, prone to crying, or causing sadness, often describing an emotional person, moment, or story.
 
 
 
@@ -3622,7 +3622,15 @@ Organize Imports by Group: Group import statements into three categories separat
 
 389
 PEP 8
-Handle Import Errors Gracefully: When dealing with optional dependencies, use try-except blocks to handle ImportError exceptions. This prevents the entire application from crashing if an optional module isn't available, allowing for more robust and flexible code.
+Consistent Alignment in Continuation Lines: Align continuation lines either vertically with the opening delimiter or use an extra level of indentation. Consistent alignment improves the visual structure and readability of the code.
+
+python
+Copy code
+result = some_function(
+    first_argument,
+    second_argument,
+    third_argument,
+)
 
 
 
@@ -3630,7 +3638,7 @@ Handle Import Errors Gracefully: When dealing with optional dependencies, use tr
 
 390
 PEP 8
-Limit the Use of Inline Comments: Use inline comments sparingly and only when they add significant clarity. Overusing inline comments can clutter the code and make it harder to read.
+Handle Import Errors Gracefully: When dealing with optional dependencies, use try-except blocks to handle ImportError exceptions. This prevents the entire application from crashing if an optional module isn't available, allowing for more robust and flexible code.
 
 
 
@@ -3638,7 +3646,7 @@ Limit the Use of Inline Comments: Use inline comments sparingly and only when th
 
 391
 PEP 8
-Structuring try-except-else-finally: Follow the order: try, except, else, then finally. Place else after all except blocks and before finally to ensure that code in else runs only if no exceptions occur, maintaining clear separation of logic.
+Limit the Use of Inline Comments: Use inline comments sparingly and only when they add significant clarity. Overusing inline comments can clutter the code and make it harder to read.
 
 
 
@@ -3646,7 +3654,7 @@ Structuring try-except-else-finally: Follow the order: try, except, else, then f
 
 392
 PEP 8
-No Trailing Whitespace: Ensure that there are no unnecessary spaces at the end of lines. Trailing whitespace can clutter the codebase and cause issues with version control diffs. Most editors can be configured to remove trailing spaces automatically.
+Structuring try-except-else-finally: Follow the order: try, except, else, then finally. Place else after all except blocks and before finally to ensure that code in else runs only if no exceptions occur, maintaining clear separation of logic.
 
 
 
@@ -3662,7 +3670,7 @@ Prevent Circular Imports: Avoid scenarios where two modules depend on each other
 
 394
 PEP 8
-Use Parentheses for Multi-Line Imports: When importing multiple objects from a module, enclose them within parentheses and list each on a separate line. This enhances readability and adheres to line length restrictions without using backslashes.
+No Trailing Whitespace: Ensure that there are no unnecessary spaces at the end of lines. Trailing whitespace can clutter the codebase and cause issues with version control diffs. Most editors can be configured to remove trailing spaces automatically.
 
 
 
@@ -3670,7 +3678,7 @@ Use Parentheses for Multi-Line Imports: When importing multiple objects from a m
 
 395
 PEP 8
-Prefer Absolute Imports: Use full paths for imports starting from the project's root rather than relative imports. Absolute imports are more readable, less error-prone, and clearly indicate the module's location within the project structure.
+Use Parentheses for Multi-Line Imports: When importing multiple objects from a module, enclose them within parentheses and list each on a separate line. This enhances readability and adheres to line length restrictions without using backslashes.
 
 
 
@@ -3678,15 +3686,7 @@ Prefer Absolute Imports: Use full paths for imports starting from the project's 
 
 396
 PEP 8
-Consistent Alignment in Continuation Lines: Align continuation lines either vertically with the opening delimiter or use an extra level of indentation. Consistent alignment improves the visual structure and readability of the code.
-
-python
-Copy code
-result = some_function(
-    first_argument,
-    second_argument,
-    third_argument,
-)
+Prefer Absolute Imports: Use full paths for imports starting from the project's root rather than relative imports. Absolute imports are more readable, less error-prone, and clearly indicate the module's location within the project structure.
 
 
 
@@ -3843,8 +3843,8 @@ A remote desktop sharing system that allows you to control a machine over the ne
 
 411
 WSL + Kali Linux
-Tools for Troubleshooting GUI Apps on WSL:
-xset: A command-line utility for managing X11 settings like display parameters and screen saver behavior.
+wsl --export <distro> <file.tar>
+Exports a WSL distribution to a .tar file. This can be used for backup or migration purposes.
 
 
 
@@ -3852,8 +3852,8 @@ xset: A command-line utility for managing X11 settings like display parameters a
 
 412
 WSL + Kali Linux
-wsl --export <distro> <file.tar>
-Exports a WSL distribution to a .tar file. This can be used for backup or migration purposes.
+Tools for Troubleshooting GUI Apps on WSL:
+xset: A command-line utility for managing X11 settings like display parameters and screen saver behavior.
 
 
 
@@ -3885,17 +3885,6 @@ xprop: A tool for querying X11 window properties. It can help with debugging dis
 
 415
 WSL + Kali Linux
-12. wsl --mount
-A feature introduced with WSL 2, this allows you to mount physical disks in WSL as Linux file systems. Useful for accessing raw disks like external drives directly within WSL.
-13. wsl --no-launch
-Prevents WSL from automatically launching the default Linux shell after a distribution is installed.
-
-
-
-
-
-416
-WSL + Kali Linux
 10. wsl --set-default <distro>
 Sets the default distribution to launch when using wsl without specifying a distribution. This is helpful for streamlining your workflow if you primarily work with one distro.
 11. wsl --list --verbose
@@ -3905,7 +3894,27 @@ Lists all installed distributions with additional details such as the version (W
 
 
 
+416
+WSL + Kali Linux
+12. wsl --mount
+A feature introduced with WSL 2, this allows you to mount physical disks in WSL as Linux file systems. Useful for accessing raw disks like external drives directly within WSL.
+13. wsl --no-launch
+Prevents WSL from automatically launching the default Linux shell after a distribution is installed.
+
+
+
+
+
 417
+WSL + Kali Linux
+XFCE (XForms Common Environment)
+A lightweight and fast desktop environment for Unix-like operating systems, known for its low resource usage. XFCE provides a complete graphical interface for managing windows, files, and system settings.
+
+
+
+
+
+418
 WSL + Kali Linux
 WSL Networking
 Accessing Windows Network Services from WSL: WSL allows you to access Windows network services and vice versa. For example, you can access a Windows-hosted HTTP server in WSL at localhost:port.
@@ -3915,7 +3924,7 @@ wsl.exe Networking: When WSL 2 is in use, it runs a virtualized network adapter 
 
 
 
-418
+419
 WSL + Kali Linux
 Tools for Troubleshooting GUI Apps on WSL:
 xrdb: A command-line utility for querying and modifying the X11 resource database, which holds configurations for window behavior and appearance.
@@ -3924,20 +3933,11 @@ xrdb: A command-line utility for querying and modifying the X11 resource databas
 
 
 
-419
+420
 WSL + Kali Linux
 You can also invoke Linux commands from PowerShell or CMD like:
 wsl ls (runs ls command in WSL)
 wsl sudo apt update (runs apt update in WSL)
-
-
-
-
-
-420
-WSL + Kali Linux
-XFCE (XForms Common Environment)
-A lightweight and fast desktop environment for Unix-like operating systems, known for its low resource usage. XFCE provides a complete graphical interface for managing windows, files, and system settings.
 
 
 
@@ -3993,8 +3993,8 @@ Docker can run on WSL 2, which enables you to run Linux containers directly on W
 
 426
 WSL + Kali Linux
-GPG (GNU Privacy Guard)
-A tool for secure communication and data encryption, which is commonly used for email encryption and signing documents. GPG can manage encryption keys and is often used in Linux environments for secure file and message handling.
+D-Bus
+A message bus system that allows applications and services to communicate with each other, particularly in Linux-based systems. D-Bus is essential for managing things like user authentication and device notifications in desktop environments.
 
 
 
@@ -4002,8 +4002,8 @@ A tool for secure communication and data encryption, which is commonly used for 
 
 427
 WSL + Kali Linux
-D-Bus
-A message bus system that allows applications and services to communicate with each other, particularly in Linux-based systems. D-Bus is essential for managing things like user authentication and device notifications in desktop environments.
+GPG (GNU Privacy Guard)
+A tool for secure communication and data encryption, which is commonly used for email encryption and signing documents. GPG can manage encryption keys and is often used in Linux environments for secure file and message handling.
 
 
 
@@ -4051,8 +4051,8 @@ A modern display server protocol that is intended as a replacement for the older
 
 432
 WSL + Kali Linux
-wsl --import <distro> <install-location> <tarball>
-Imports a WSL distribution from a .tar file into the specified install location. This is useful for migrating or creating a custom Linux environment.
+Wireshark Capture Filter
+A set of rules used to filter network traffic before it is captured in Wireshark. Capture filters can limit the types of traffic being collected, making it easier to focus on specific network issues.
 
 
 
@@ -4060,8 +4060,8 @@ Imports a WSL distribution from a .tar file into the specified install location.
 
 433
 WSL + Kali Linux
-Wireshark Capture Filter
-A set of rules used to filter network traffic before it is captured in Wireshark. Capture filters can limit the types of traffic being collected, making it easier to focus on specific network issues.
+wsl --import <distro> <install-location> <tarball>
+Imports a WSL distribution from a .tar file into the specified install location. This is useful for migrating or creating a custom Linux environment.
 
 
 
@@ -4090,8 +4090,8 @@ wsl --set-version <distro> 2: Changes the version of a distribution to WSL 2.
 
 436
 WSL + Kali Linux
-X11 (X Window System)
-A graphical windowing system for Unix-like operating systems, providing the foundation for graphical user interfaces. X11 is typically used with Linux systems to handle display rendering and interaction.
+IceWM (Ice Window Manager)
+A lightweight window manager used in various Linux distributions. It's known for being simple and using fewer resources compared to more complex desktop environments like GNOME or KDE.
 
 
 
@@ -4099,8 +4099,8 @@ A graphical windowing system for Unix-like operating systems, providing the foun
 
 437
 WSL + Kali Linux
-IceWM (Ice Window Manager)
-A lightweight window manager used in various Linux distributions. It's known for being simple and using fewer resources compared to more complex desktop environments like GNOME or KDE.
+X11 (X Window System)
+A graphical windowing system for Unix-like operating systems, providing the foundation for graphical user interfaces. X11 is typically used with Linux systems to handle display rendering and interaction.
 
 
 
