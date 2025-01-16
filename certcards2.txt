@@ -4,10 +4,6 @@
 
 
 
-1
-Search Engine Optimization
-SEOquake is a browser extension that provides on-page SEO audits, keyword analysis, and competitive insights directly within the browser. It facilitates quick SEO evaluations without leaving the webpage, offering valuable data for optimizing content and strategies.
-
 
 
 
