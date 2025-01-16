@@ -75,9 +75,6 @@ CIDR
 Classless Inter-Domain Routing
 A method for allocating IP addresses and routing Internet Protocol packets, allowing for more efficient use of IP address space compared to traditional class-based addressing.
 
-DEP
-Data Execution Prevention
-A security feature that marks certain memory regions as non-executable, preventing the execution of malicious code injected into data segments and enhancing protection against exploits like buffer overflows.
 
 IPsec
 Internet Protocol Security
