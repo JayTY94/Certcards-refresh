@@ -8,14 +8,6 @@
 
 
 
-2
-PEP 8
-Avoid Using Backslashes for Line Continuation: Refrain from using backslashes (\) to break lines, as they can lead to errors and reduce readability. Prefer implicit line continuation within parentheses, brackets, or braces.
-
-python
-# Discouraged
-total = first_variable + \
-        second_variable
 
 
 
