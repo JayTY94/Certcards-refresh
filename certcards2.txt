@@ -4,17 +4,10 @@
 
 
 
-1
-Python
-If you invoke Response.raise_for_status(), then Requests will raise an HTTPError for status codes between 400 and 600. If the status code indicates a successful request, then the program will proceed without raising that exception.
 
 
 
 
-
-2
-Finance Junk
-Discretionary Coupons on AT1 Bond: The coupons on an AT1 Bond are not guaranteed; banks can cancel coupon payments without defaulting, allowing them to conserve capital during financial stress.
 
 
 
