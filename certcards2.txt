@@ -10,11 +10,6 @@
 
 
 
-2
-Azure Functions
-2. Which of the following best describes the role of the Orchestrator function in a workflow? 
-The Orchestrator Function is written in code. The function is used for describing how actions are executed and the order in which actions are executed.
-
 
 
 
