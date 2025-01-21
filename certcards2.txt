@@ -4,17 +4,12 @@
 
 
 
-1
-Finance Junk
-Subordination of AT1 Bond: An AT1 Bond is deeply subordinated, sitting just above common equity in a liquidation hierarchy, resulting in higher risk and higher yields compared to more senior debt.
 
 
 
 
 
-2
-Finance Junk
-Loss-Absorption Trigger in AT1 Bond: An AT1 Bond includes a trigger (often a bank’s Core Equity Tier 1 ratio falling below around 5.125%–7%) that, when reached, forces conversion into equity or a principal write-down.
+
 
 
 
