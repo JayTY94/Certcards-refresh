@@ -15,18 +15,12 @@
 
 
 
-3
-Finance Junk
-Difference from Traditional Convertibles in AT1 Bond: Unlike standard convertible bonds where conversion is optional, an AT1 Bond undergoes mandatory conversion or write-down if the issuer’s financial health declines below specified thresholds.
 
 
 
 
 
-4
-Diffusers Library
-Likelihood Estimation
-The process of calculating the probability of the data under the model's parameters. In diffusion models, maximizing this likelihood means finding parameters that make the observed data most probable, allowing for a better approximation of complex data distributions.
+
 
 
 
@@ -4511,3 +4505,89 @@ A feature of Azure Monitor that provides extensible application performance mana
 Azure Functions + PP365
 local.settings.json
 A configuration file used during local development of Azure Functions. It stores environment variables, connection strings, and other settings required to run functions locally. This file is not deployed to Azure, ensuring that sensitive information remains secure during development.
+
+
+
+
+
+
+
+
+477
+Azure Functions
+Durable Functions provides timers for use in the orchestrator functions, which you can use to implement delays or set up timeouts for asynchronous actions. You should use durable timers in orchestrator functions instead of the setTimeout() and setInterval() functions.
+
+
+
+
+
+
+
+
+477
+Azure Functions
+You can create a durable timer by calling the createTimer() method of the DurableOrchestrationContext. This method returns a task that resumes on a specified date and time.
+
+
+
+
+
+
+
+
+477
+Azure Functions
+
+
+
+
+
+
+
+477
+Azure Functions
+
+
+
+
+
+
+
+477
+Azure Functions
+
+
+
+
+
+
+
+477
+Azure Functions
+
+
+
+
+
+
+
+477
+Azure Functions
+
+
+
+
+
+
+
+477
+Azure Functions
+
+
+
+
+
+
+
+477
+Azure Functions
