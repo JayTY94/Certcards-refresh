@@ -171,15 +171,6 @@ Contumacy
 
 
 18
-Diffusers Library
-Likelihood Estimation
-The process of calculating the probability of the data under the model's parameters. In diffusion models, maximizing this likelihood means finding parameters that make the observed data most probable, allowing for a better approximation of complex data distributions.
-
-
-
-
-
-19
 Taxes
 Penalties for Non-Compliance: Civil penalties for non-compliance with the Report of Foreign Bank and Financial Accounts (FBAR) can be significant, including fines up to $10,000 for non-willful violations and much higher penalties for willful violations.
 
@@ -187,7 +178,7 @@ Penalties for Non-Compliance: Civil penalties for non-compliance with the Report
 
 
 
-20
+19
 Azure AI Foundry
 If you want to use a virtual network to secure communications between your clients and the hub or project, you must use an Azure Virtual Network that you create and manage. For example, an Azure Virtual Network that uses a VPN or ExpressRoute connection to your on-premises network.
 
@@ -195,7 +186,7 @@ If you want to use a virtual network to secure communications between your clien
 
 
 
-21
+20
 Powershell
 cmd /c
 Runs a Command Prompt command from PowerShell. Allows use of legacy commands, like copy NUL, for operations not natively supported in PowerShell.
@@ -204,7 +195,7 @@ Runs a Command Prompt command from PowerShell. Allows use of legacy commands, li
 
 
 
-22
+21
 OData
 A Delta Token is a marker used in Delta Queries to track changes since the last query. Clients use delta tokens to request only the changes (additions, deletions, updates) that have occurred since their last synchronization, optimizing data retrieval.
 
@@ -212,16 +203,7 @@ A Delta Token is a marker used in Delta Queries to track changes since the last 
 
 
 
-23
-Diffusers Library
-Stochastic Differential Equations (SDEs)
-These equations describe how noise evolves over continuous time in diffusion models. By defining the noise dynamics, SDEs allow for modeling both forward (adding noise) and reverse (removing noise) processes as smooth, differential transformations.
-
-
-
-
-
-24
+22
 WSL + Kali Linux
 DBus (Desktop Bus)
 An inter-process communication (IPC) system that allows communication between applications and services on a Linux system. It’s essential for coordinating actions between various programs and system components, especially in graphical environments.
@@ -230,7 +212,7 @@ An inter-process communication (IPC) system that allows communication between ap
 
 
 
-25
+23
 IW Migration
 Stored Procedures and Triggers
 Database components that contain reusable SQL code and logic. Stored procedures perform complex queries or transformations. Triggers automatically run when certain table events occur (like insert, update, delete), enforcing rules or updating related data behind the scenes.
@@ -239,7 +221,7 @@ Database components that contain reusable SQL code and logic. Stored procedures 
 
 
 
-26
+24
 Search Engine Optimization
 A backlink is an incoming hyperlink from one webpage to another website. Backlinks are crucial for SEO as they signal authority and trustworthiness to search engines, thereby improving a website’s search engine rankings and visibility.
 
@@ -247,7 +229,7 @@ A backlink is an incoming hyperlink from one webpage to another website. Backlin
 
 
 
-27
+25
 Azure AI Foundry
 While most of the resources used by Azure AI Foundry live in your Azure subscription, some resources are in an Azure subscription managed by Microsoft. The cost for these managed resources shows on your Azure bill as a line item under the Azure Machine Learning resource provider.
 
@@ -255,7 +237,7 @@ While most of the resources used by Azure AI Foundry live in your Azure subscrip
 
 
 
-28
+26
 IW Migration
 Database Diagrams (SSMS)
 Graphical representations of a database’s schema. They visually display tables, columns, keys, and relationships, aiding comprehension of complex data models, enhancing communication among developers, and assisting in planning changes or migrations to other systems.
@@ -264,7 +246,7 @@ Graphical representations of a database’s schema. They visually display tables
 
 
 
-29
+27
 Diffusers Library
 There are three main components of the library to know about:
 Many different schedulers - algorithms that control how noise is added for training, and how to generate denoised images during inference.
@@ -273,16 +255,7 @@ Many different schedulers - algorithms that control how noise is added for train
 
 
 
-30
-Jane Eyre
-Piquant
-(PEE-kahnt) Having a pleasantly sharp or spicy taste; can also describe something intellectually stimulating or excitingly provocative.
-
-
-
-
-
-31
+28
 Azure Kubernetes Learning Path
 Dockerfile Example:
 FROM mcr.microsoft.com/dotnet/sdk:6.0
@@ -297,7 +270,16 @@ ENTRYPOINT ["dotnet", "myapp.dll"]
 
 
 
-32
+29
+Jane Eyre
+Piquant
+(PEE-kahnt) Having a pleasantly sharp or spicy taste; can also describe something intellectually stimulating or excitingly provocative.
+
+
+
+
+
+30
 Network Mapping
 Metasploit Framework
 
@@ -307,7 +289,7 @@ Definition: An open-source penetration testing platform that provides a wide ran
 
 
 
-33
+31
 Diffusers Library
 Markov Chain
 A sequence of random variables where each state depends only on the previous one. In diffusion models, the noise addition process is modeled as a Markov chain, allowing controlled transitions from clear images to noisy ones and vice versa, simplifying the math for training.
@@ -316,7 +298,7 @@ A sequence of random variables where each state depends only on the previous one
 
 
 
-34
+32
 IW Migration
 Security (SSMS)
 Tools and configurations for managing user access, roles, and permissions within SQL Server Management Studio. Administrators can control who can view, modify, or delete data, maintain compliance with policies, and ensure the database’s overall integrity.
@@ -325,7 +307,7 @@ Tools and configurations for managing user access, roles, and permissions within
 
 
 
-35
+33
 Azure AI Foundry
 Compute and quota allocation is managed as shared capacity for all projects in AI Foundry portal that share the same hub. This quota includes compute instance as managed cloud-based workstation for an individual. The same user can use a compute instance across projects.
 
@@ -333,7 +315,7 @@ Compute and quota allocation is managed as shared capacity for all projects in A
 
 
 
-36
+34
 Email Auth and Security
 p=reject
 
@@ -345,7 +327,7 @@ Provides the strictest protection against fraudulent emails.
 
 
 
-37
+35
 Email Auth and Security
 p=quarantine
 
@@ -357,7 +339,7 @@ Typically places such emails in the spam or junk folder.
 
 
 
-38
+36
 Azure AI Foundry
 AI services access keys to endpoints for prebuilt AI models are managed on the hub scope. Use these endpoints to access foundation models from Azure OpenAI, Speech, Vision, and Content Safety with one API key
 
@@ -365,24 +347,7 @@ AI services access keys to endpoints for prebuilt AI models are managed on the h
 
 
 
-39
-Jane Eyre
-Battledore and Shuttlecock
-(BAT-uhl-door and SHUT-l-kok) A predecessor to badminton, where players use paddles to hit a feathered object (shuttlecock) back and forth without letting it fall.
-
-
-
-
-
-40
-OData
-Formatting Instructions are guidelines that specify how data should be presented or displayed. Defined using annotations, they help client applications render data appropriately, such as formatting dates, numbers, or currencies in a user-friendly manner.
-
-
-
-
-
-41
+37
 IW Migration
 Indexing (Access/SQL Server)
 A strategy for improving data retrieval speeds by creating data structures (indexes) on certain fields. Proper indexing balances query performance gains against the overhead of maintaining those indexes during inserts, updates, and deletions.
@@ -391,7 +356,24 @@ A strategy for improving data retrieval speeds by creating data structures (inde
 
 
 
-42
+38
+Jane Eyre
+Battledore and Shuttlecock
+(BAT-uhl-door and SHUT-l-kok) A predecessor to badminton, where players use paddles to hit a feathered object (shuttlecock) back and forth without letting it fall.
+
+
+
+
+
+39
+OData
+Formatting Instructions are guidelines that specify how data should be presented or displayed. Defined using annotations, they help client applications render data appropriately, such as formatting dates, numbers, or currencies in a user-friendly manner.
+
+
+
+
+
+40
 Jane Eyre
 Merino (muh-REE-noh)
 A breed of sheep prized for its soft, fine wool, ideal for high-quality textiles. The term also refers to fabrics or garments made from this wool, valued for their warmth and luxurious texture.
@@ -400,7 +382,7 @@ A breed of sheep prized for its soft, fine wool, ideal for high-quality textiles
 
 
 
-43
+41
 Jane Eyre
 Propitious (pruh-PISH-uhs)
 Favorable or advantageous, indicating circumstances or timing that are likely to lead to success or good outcomes. Often used to describe auspicious events or benevolent actions.
@@ -409,7 +391,7 @@ Favorable or advantageous, indicating circumstances or timing that are likely to
 
 
 
-44
+42
 Jane Eyre
 Lachrymose
 (LAK-rih-mohs) Tearful, prone to crying, or causing sadness, often describing an emotional person, moment, or story.
@@ -418,7 +400,7 @@ Lachrymose
 
 
 
-45
+43
 Search Engine Optimization
 Link building is the practice of acquiring backlinks from other websites to improve a site's authority and search rankings. It is critical for enhancing a website’s SEO performance by increasing the number and quality of inbound links from reputable sources.
 
@@ -426,10 +408,29 @@ Link building is the practice of acquiring backlinks from other websites to impr
 
 
 
-46
+44
+Powershell
+docker build -t <name>
+Tags a Docker image with a specified name, making it easier to reference and organize in local or remote repositories.
+
+
+
+
+
+45
 DNS
 SRV (Service) Records
 DNS records that specify the location (hostname and port) of servers for particular services within a domain. Essential for services like SIP (VoIP) or LDAP, they enable clients to discover service endpoints automatically.
+
+
+
+
+
+46
+Azure Kubernetes Learning Path
+Docker images are large files that are initially stored on your PC, and we need tools to manage these files.
+
+The Docker CLI and Docker Desktop allow us to manage images by building, listing, removing, and running them. We manage Docker images by using the docker client. The client doesn't execute the commands directly, and sends all queries to the dockerd daemon.
 
 
 
@@ -454,15 +455,6 @@ Reusable routines returning a scalar value or a table. They allow encapsulation 
 
 
 49
-Powershell
-docker build -t <name>
-Tags a Docker image with a specified name, making it easier to reference and organize in local or remote repositories.
-
-
-
-
-
-50
 Network Mapping
 Control Plane (in SDN)
 
@@ -472,28 +464,7 @@ Definition: The centralized component in Software-Defined Networking responsible
 
 
 
-51
-Azure Kubernetes Learning Path
-Docker images are large files that are initially stored on your PC, and we need tools to manage these files.
-
-The Docker CLI and Docker Desktop allow us to manage images by building, listing, removing, and running them. We manage Docker images by using the docker client. The client doesn't execute the commands directly, and sends all queries to the dockerd daemon.
-
-
-
-
-
-52
-OData
-Delta Links
-
-Definition: Special links returned by the server that allow clients to track incremental changes rather than retrieving the entire dataset repeatedly.
-Context: After an initial full read, a client can use a delta link to get only the new or changed data. This is useful for synchronization scenarios and efficient data updates.
-
-
-
-
-
-53
+50
 OData
 ETags
 
@@ -504,7 +475,18 @@ Context: When a client retrieves an entity with an ETag, it can include that ETa
 
 
 
-54
+51
+OData
+Delta Links
+
+Definition: Special links returned by the server that allow clients to track incremental changes rather than retrieving the entire dataset repeatedly.
+Context: After an initial full read, a client can use a delta link to get only the new or changed data. This is useful for synchronization scenarios and efficient data updates.
+
+
+
+
+
+52
 Azure Kubernetes Learning Path
 Azure Container Instance is a service that loads and runs Docker images on demand. The Azure Container Instance service can retrieve an image from a registry, such as Docker Hub or Azure Container Registry.
 
@@ -512,16 +494,7 @@ Azure Container Instance is a service that loads and runs Docker images on deman
 
 
 
-55
-PP365
-Ribbon
-The toolbar interface in Dynamics 365 where users interact with commands and actions. Customizing the ribbon allows administrators to add, remove, or modify buttons and actions, enhancing the user experience and enabling integration with external services like Azure Functions without altering the core application code.
-
-
-
-
-
-56
+53
 PP365
 Plugin Registration Tool
 A utility provided by Microsoft for registering plugins, custom workflows, and webhooks in Dynamics 365. It allows developers to deploy and manage custom server-side code that executes in response to events within Dynamics 365, facilitating integration and customization.
@@ -530,7 +503,16 @@ A utility provided by Microsoft for registering plugins, custom workflows, and w
 
 
 
-57
+54
+PP365
+Ribbon
+The toolbar interface in Dynamics 365 where users interact with commands and actions. Customizing the ribbon allows administrators to add, remove, or modify buttons and actions, enhancing the user experience and enabling integration with external services like Azure Functions without altering the core application code.
+
+
+
+
+
+55
 DNS
 Remove-DnsServerZone (PowerShell Cmdlet)
 A PowerShell command used to delete an existing DNS zone from a Windows DNS Server. It allows administrators to remove obsolete or unnecessary zones efficiently through scripts or command-line operations.
@@ -539,15 +521,7 @@ A PowerShell command used to delete an existing DNS zone from a Windows DNS Serv
 
 
 
-58
-PEP 8
-Handle Import Errors Gracefully: When dealing with optional dependencies, use try-except blocks to handle ImportError exceptions. This prevents the entire application from crashing if an optional module isn't available, allowing for more robust and flexible code.
-
-
-
-
-
-59
+56
 WSL + Kali Linux
 VNC (Virtual Network Computing)
 A remote desktop sharing system that allows you to control a machine over the network. It transmits keyboard and mouse events from one machine to another and relays back the graphical screen updates. In your original setup, you intended to use VNC for accessing the Kali Linux GUI remotely.
@@ -556,7 +530,15 @@ A remote desktop sharing system that allows you to control a machine over the ne
 
 
 
-60
+57
+PEP 8
+Handle Import Errors Gracefully: When dealing with optional dependencies, use try-except blocks to handle ImportError exceptions. This prevents the entire application from crashing if an optional module isn't available, allowing for more robust and flexible code.
+
+
+
+
+
+58
 WSL + Kali Linux
 Tools for Troubleshooting GUI Apps on WSL:
 xrdb: A command-line utility for querying and modifying the X11 resource database, which holds configurations for window behavior and appearance.
@@ -565,7 +547,7 @@ xrdb: A command-line utility for querying and modifying the X11 resource databas
 
 
 
-61
+59
 PEP 8
 Order Sections Logically: Structure your Python file in this sequence: Module Docstring, Imports, Module-Level Variables/Constants, Classes, then Functions. This organization enhances readability and maintainability by grouping related components together.
 
@@ -573,7 +555,7 @@ Order Sections Logically: Structure your Python file in this sequence: Module Do
 
 
 
-62
+60
 IW Migration
 Database Backup and Restore (SSMS)
 Built-in wizards and features in SQL Server Management Studio to safeguard data. They allow administrators to create full, differential, or transaction log backups and restore databases to a previous state, ensuring data recovery after failures.
@@ -582,7 +564,7 @@ Built-in wizards and features in SQL Server Management Studio to safeguard data.
 
 
 
-63
+61
 Search Engine Optimization
 Answer The Public is a keyword research tool that visualizes search questions and autocomplete suggestions. It helps users generate content ideas by uncovering what questions and topics people are searching for related to specific keywords.
 
@@ -590,7 +572,7 @@ Answer The Public is a keyword research tool that visualizes search questions an
 
 
 
-64
+62
 Azure Kubernetes Learning Path
 Docker login will prompt you for a username and password. To find this information, go to the Azure portal and look up the access keys for the registry or run the following command.
 
@@ -601,7 +583,7 @@ az acr credential show --name myregistry --resource-group mygroup
 
 
 
-65
+63
 Jane Eyre
 Basin and Ewer
 (BAY-sin and YOO-er) A bowl (basin) and jug (ewer) used together for hand or face washing, commonly found before the advent of modern plumbing.
@@ -610,7 +592,7 @@ Basin and Ewer
 
 
 
-66
+64
 PEP 8
 Limit the Use of Inline Comments: Use inline comments sparingly and only when they add significant clarity. Overusing inline comments can clutter the code and make it harder to read.
 
@@ -618,7 +600,7 @@ Limit the Use of Inline Comments: Use inline comments sparingly and only when th
 
 
 
-67
+65
 Email Auth and Security
 Email Authentication Alignment
 
@@ -630,7 +612,7 @@ Provides consistent authentication results and improves email deliverability.
 
 
 
-68
+66
 PEP 8
 Alphabetize Imports Within Groups: While not strictly required, alphabetizing imports within each group (Standard Library, Third-Party, Local) enhances readability and makes it easier to locate specific imports. Consistent ordering also simplifies maintenance and collaboration.
 
@@ -638,7 +620,7 @@ Alphabetize Imports Within Groups: While not strictly required, alphabetizing im
 
 
 
-69
+67
 OData
 IsSideEffecting Annotation (Org.OData.Core.V1.IsSideEffecting)
 
@@ -649,7 +631,7 @@ Context: Useful for clients to understand that the request cannot be treated as 
 
 
 
-70
+68
 Azure Kubernetes Learning Path
 You push an image from your local computer to a Docker registry by using the docker push command. Before you push an image, you must create an alias for the image that specifies the repository and tag that the Docker registry creates. The repository name must be of the form *<login_server>/<image_name>:<tag/>. Use the docker tag command to perform this operation.
 
@@ -657,7 +639,7 @@ You push an image from your local computer to a Docker registry by using the doc
 
 
 
-71
+69
 Lost in a Good Book
 Vestry: A room in a church used for meetings, storage of clergy vestments, or preparation for services.
 
@@ -665,7 +647,7 @@ Vestry: A room in a church used for meetings, storage of clergy vestments, or pr
 
 
 
-72
+70
 PP365
 I had a ticket with Lauren Kawamoto going back to 11/22/24 about her permissions in the sandbox. It turns out that she needed the "TS - Recur Engagement" role to recur engagements. I thought that "system administrator" would be enough, but I was not able to do that myself with the sysadmin role. Strange.
 
@@ -673,7 +655,7 @@ I had a ticket with Lauren Kawamoto going back to 11/22/24 about her permissions
 
 
 
-73
+71
 IW Migration
 Template Explorer (SSMS)
 A feature in SQL Server Management Studio providing ready-made SQL code templates for common database tasks. Developers can quickly insert standardized scripts for creating tables, views, or procedures, streamlining development and enforcing coding standards.
@@ -682,7 +664,7 @@ A feature in SQL Server Management Studio providing ready-made SQL code template
 
 
 
-74
+72
 IW Migration
 Pass-Through Queries (Access)
 A type of query that sends SQL commands directly to an external database (e.g., SQL Server). Bypassing Access’s query engine, they offer better performance and exploit native database features, ideal when dealing with large datasets or complex logic.
@@ -691,7 +673,7 @@ A type of query that sends SQL commands directly to an external database (e.g., 
 
 
 
-75
+73
 DNS
 Conditional Forwarders vs. DNS Policies
 Conditional Forwarders direct specific domain queries to designated DNS servers, while DNS Policies allow for more granular control based on various criteria like client IP ranges. Both enhance DNS management but serve different operational needs.
@@ -700,7 +682,7 @@ Conditional Forwarders direct specific domain queries to designated DNS servers,
 
 
 
-76
+74
 Jane Eyre
 Efface
 To erase or remove something, especially from a surface or memory, making it less visible or prominent. Often used figuratively to describe fading memories or diminishing the impact of an event or object.
@@ -709,7 +691,16 @@ To erase or remove something, especially from a surface or memory, making it les
 
 
 
-77
+75
+IW Migration
+Execution Plans (SQL Server)
+Visual or textual representations of how the SQL Engine executes queries. They identify steps taken—like table scans, index seeks, or joins—helping developers and DBAs optimize performance, tune queries, and refine indexing strategies.
+
+
+
+
+
+76
 PEP 8
 Alias Imports Judiciously: Use the as keyword to create aliases for long module names or to resolve naming conflicts. Ensure that aliases are clear and widely recognized (e.g., import numpy as np) to maintain code readability and consistency.
 
@@ -717,10 +708,22 @@ Alias Imports Judiciously: Use the as keyword to create aliases for long module 
 
 
 
+77
+WSL + Kali Linux
+10. wsl --set-default <distro>
+Sets the default distribution to launch when using wsl without specifying a distribution. This is helpful for streamlining your workflow if you primarily work with one distro.
+11. wsl --list --verbose
+Lists all installed distributions with additional details such as the version (WSL 1 or 2), and their current state (running or stopped).
+
+
+
+
+
 78
-IW Migration
-Execution Plans (SQL Server)
-Visual or textual representations of how the SQL Engine executes queries. They identify steps taken—like table scans, index seeks, or joins—helping developers and DBAs optimize performance, tune queries, and refine indexing strategies.
+Network Mapping
+CDP (Cisco Discovery Protocol)
+
+Definition: A Cisco proprietary protocol that enables network devices to share information about themselves and their connected neighbors, aiding in network mapping and management.
 
 
 
@@ -736,21 +739,21 @@ Loud, uncontrollable laughter, often with a connotation of being excessive, mock
 
 
 80
-WSL + Kali Linux
-10. wsl --set-default <distro>
-Sets the default distribution to launch when using wsl without specifying a distribution. This is helpful for streamlining your workflow if you primarily work with one distro.
-11. wsl --list --verbose
-Lists all installed distributions with additional details such as the version (WSL 1 or 2), and their current state (running or stopped).
+Powershell
+-Wait
+Pauses execution until a specified process finishes. Ensures sequential steps in scripts are executed in the correct order.
 
 
 
 
 
 81
-Network Mapping
-CDP (Cisco Discovery Protocol)
+Email Auth and Security
+PGP (Pretty Good Privacy)
 
-Definition: A Cisco proprietary protocol that enables network devices to share information about themselves and their connected neighbors, aiding in network mapping and management.
+A data encryption and decryption program that provides cryptographic privacy and authentication.
+Used for securing emails through encryption and digital signatures.
+Combines symmetric and asymmetric encryption for robust security.
 
 
 
@@ -765,18 +768,6 @@ Docker provides us with the docker stats command. This command returns informati
 
 
 83
-Email Auth and Security
-PGP (Pretty Good Privacy)
-
-A data encryption and decryption program that provides cryptographic privacy and authentication.
-Used for securing emails through encryption and digital signatures.
-Combines symmetric and asymmetric encryption for robust security.
-
-
-
-
-
-84
 Powershell
 Start-Process
 Runs an executable or script as a new process. Often used with arguments to control behavior, such as running installers or launching applications in a specific mode.
@@ -785,16 +776,7 @@ Runs an executable or script as a new process. Often used with arguments to cont
 
 
 
-85
-Powershell
--Wait
-Pauses execution until a specified process finishes. Ensures sequential steps in scripts are executed in the correct order.
-
-
-
-
-
-86
+84
 Taxes
 Pass-Through Entities (PTEs) include business structures like partnerships and S corporations. The income, deductions, and credits pass through to the individual owners or shareholders, who then report these on their personal tax returns.
 
@@ -802,7 +784,15 @@ Pass-Through Entities (PTEs) include business structures like partnerships and S
 
 
 
-87
+85
+OData
+Metadata in OData describes the structure, data types, relationships, and other aspects of the data model. The $metadata endpoint provides the service’s data model and schema definitions using CSDL, essential for understanding available entities and their relationships.
+
+
+
+
+
+86
 IW Migration
 Linked Table Manager (in Access)
 A feature in MS Access that helps you manage and refresh connections to external data sources. If a database is split, this tool reconnects front-end objects to back-end tables, ensuring smooth data retrieval and updates.
@@ -811,7 +801,7 @@ A feature in MS Access that helps you manage and refresh connections to external
 
 
 
-88
+87
 Powershell
 Install-Module
 Installs PowerShell modules from the PowerShell Gallery, such as AzureRM or PowerShellGet. Often used to add functionality or manage cloud resources.
@@ -820,7 +810,7 @@ Installs PowerShell modules from the PowerShell Gallery, such as AzureRM or Powe
 
 
 
-89
+88
 Lost in a Good Book
 Budgerigar: A small, brightly colored parakeet native to Australia, often kept as a pet. Known for their ability to mimic sounds and words.
 
@@ -828,15 +818,7 @@ Budgerigar: A small, brightly colored parakeet native to Australia, often kept a
 
 
 
-90
-OData
-Metadata in OData describes the structure, data types, relationships, and other aspects of the data model. The $metadata endpoint provides the service’s data model and schema definitions using CSDL, essential for understanding available entities and their relationships.
-
-
-
-
-
-91
+89
 Search Engine Optimization
 A website crawler is a tool that systematically browses the web to index and analyze website content. It identifies SEO issues, broken links, and content structure, providing valuable insights for optimization and ensuring that websites are efficiently indexed by search engines.
 
@@ -844,7 +826,7 @@ A website crawler is a tool that systematically browses the web to index and ana
 
 
 
-92
+90
 PEP 8
 Organize Imports by Group: Group import statements into three categories separated by blank lines: Standard Library Imports, Third-Party Imports, and Local Application Imports. This clear separation helps in quickly identifying the source of each import.
 
@@ -852,7 +834,15 @@ Organize Imports by Group: Group import statements into three categories separat
 
 
 
-93
+91
+Search Engine Optimization
+Link equity refers to the value or authority passed from one page to another through hyperlinks. It influences the ranking potential of linked pages, helping them to perform better in search engine results by distributing authority throughout the website.
+
+
+
+
+
+92
 Home Network Project
 Front: What is Bandwidth and how does it differ from Throughput?
 
@@ -865,9 +855,19 @@ Throughput: The actual rate of successful data transfer achieved, often lower th
 
 
 
+93
+Azure AI Foundry
+To reduce the complexity of Azure RBAC management, AI Foundry provides a control plane proxy that allows you to perform operations on connected Azure AI services and Azure OpenAI resources. Performing operations on these resources through the control plane proxy only requires Azure RBAC permissions on the hub.
+
+
+
+
+
 94
-Search Engine Optimization
-Link equity refers to the value or authority passed from one page to another through hyperlinks. It influences the ranking potential of linked pages, helping them to perform better in search engine results by distributing authority throughout the website.
+Open Source/GitHub
+PEP 8
+
+Python Enhancement Proposal 8, the style guide for writing clean and readable Python code, outlining conventions for code layout and formatting.
 
 
 
@@ -882,41 +882,6 @@ Quarterly Due Dates: Pass-Through Entities (PTEs) often have quarterly estimated
 
 
 96
-Azure AI Foundry
-To reduce the complexity of Azure RBAC management, AI Foundry provides a control plane proxy that allows you to perform operations on connected Azure AI services and Azure OpenAI resources. Performing operations on these resources through the control plane proxy only requires Azure RBAC permissions on the hub.
-
-
-
-
-
-97
-Finance Junk
-Subordination of AT1 Bond: An AT1 Bond is deeply subordinated, sitting just above common equity in a liquidation hierarchy, resulting in higher risk and higher yields compared to more senior debt.
-
-
-
-
-
-98
-Open Source/GitHub
-PEP 8
-
-Python Enhancement Proposal 8, the style guide for writing clean and readable Python code, outlining conventions for code layout and formatting.
-
-
-
-
-
-99
-PP365
-CORS (Cross-Origin Resource Sharing)
-A security feature implemented in web browsers that restricts web pages from making requests to a different domain than the one that served the web page. Configuring CORS in Azure Functions allows specific domains (e.g., Dynamics 365) to interact with the function securely.
-
-
-
-
-
-100
 Email Auth and Security
 p=none
 
@@ -928,7 +893,16 @@ Used for monitoring and gathering data without affecting email delivery.
 
 
 
-101
+97
+PP365
+CORS (Cross-Origin Resource Sharing)
+A security feature implemented in web browsers that restricts web pages from making requests to a different domain than the one that served the web page. Configuring CORS in Azure Functions allows specific domains (e.g., Dynamics 365) to interact with the function securely.
+
+
+
+
+
+98
 DNS
 DNS Scavenging
 An automated process in Windows DNS that removes stale or outdated DNS records. It helps maintain DNS integrity by deleting records no longer valid, such as those from devices removed from the network or with changed IP addresses.
@@ -937,7 +911,7 @@ An automated process in Windows DNS that removes stale or outdated DNS records. 
 
 
 
-102
+99
 Azure Kubernetes Learning Path
 Command in DockerFile
 RUN	Executes a command in the container. Arguments to the RUN command are command-line commands.
@@ -946,7 +920,7 @@ RUN	Executes a command in the container. Arguments to the RUN command are comman
 
 
 
-103
+100
 IW Migration
 VBA Modules (Access)
 Visual Basic for Applications code libraries integrated within Access. Modules let developers write custom functions, event handlers, and business logic to enhance functionality beyond what macros offer, enabling more advanced data manipulation and validation.
@@ -955,7 +929,7 @@ Visual Basic for Applications code libraries integrated within Access. Modules l
 
 
 
-104
+101
 Azure Functions
 You can use three durable function types: Client, Orchestrator, and Activity.
 Client functions are the entry point for creating an instance of a Durable Functions orchestration. They can run in response to an event from many sources, such as a new HTTP request arriving, a message being posted to a message queue, an event arriving in an event stream. You can write them in any of the supported languages.
@@ -964,7 +938,7 @@ Client functions are the entry point for creating an instance of a Durable Funct
 
 
 
-105
+102
 PEP 8
 No Extra Blank Lines at the End of Files: Avoid inserting extra blank lines at the end of your Python files. Ensure that the file ends with a single newline character to comply with POSIX standards and prevent issues in some tools.
 
@@ -972,15 +946,7 @@ No Extra Blank Lines at the End of Files: Avoid inserting extra blank lines at t
 
 
 
-106
-Finance Junk
-Loss-Absorption Trigger in AT1 Bond: An AT1 Bond includes a trigger (often a bank’s Core Equity Tier 1 ratio falling below around 5.125%–7%) that, when reached, forces conversion into equity or a principal write-down.
-
-
-
-
-
-107
+103
 Open Source/GitHub
 GitHub Actions
 
@@ -990,16 +956,7 @@ A feature on GitHub that allows automation of workflows, such as running tests o
 
 
 
-108
-Azure Kubernetes Learning Path
-1. A container is launched using the --publish 8080:80 flag. Which of the following options is the most likely network configuration used for the container? 
-The Bridge network configuration is an internal, private network used by the container and isolates the container network from the Docker host network. We use the publish flag to map ports between the container and host ports.
-
-
-
-
-
-109
+104
 PEP 8
 Spaces Around Binary Operators: Place one space on both sides of binary operators (e.g., =, +, -, ==). This spacing makes expressions clearer and easier to read. For example:
 
@@ -1010,7 +967,16 @@ total = price + tax
 
 
 
-110
+105
+Azure Kubernetes Learning Path
+1. A container is launched using the --publish 8080:80 flag. Which of the following options is the most likely network configuration used for the container? 
+The Bridge network configuration is an internal, private network used by the container and isolates the container network from the Docker host network. We use the publish flag to map ports between the container and host ports.
+
+
+
+
+
+106
 Powershell
 /i (msiexec argument)
 Indicates installation mode for .msi files when using msiexec. Required for executing software setups from command-line tools or scripts.
@@ -1019,7 +985,7 @@ Indicates installation mode for .msi files when using msiexec. Required for exec
 
 
 
-111
+107
 WSL + Kali Linux
 Tools for Troubleshooting GUI Apps on WSL:
 xset: A command-line utility for managing X11 settings like display parameters and screen saver behavior.
@@ -1028,7 +994,7 @@ xset: A command-line utility for managing X11 settings like display parameters a
 
 
 
-112
+108
 WSL + Kali Linux
 WSL Interop
 WSL allows interoperability between Windows and Linux tools. You can run Windows executables from within a WSL terminal, such as:
@@ -1039,7 +1005,7 @@ explorer.exe (opens Windows File Explorer)
 
 
 
-113
+109
 DNS
 Group Policy Management for DNS
 Using Group Policy in Windows to enforce DNS settings and configurations across multiple servers and clients. It enables centralized management of DNS policies, security settings, and zone configurations, ensuring consistency and compliance.
@@ -1048,7 +1014,16 @@ Using Group Policy in Windows to enforce DNS settings and configurations across 
 
 
 
-114
+110
+Jane Eyre
+Hips and Haws
+Fruits of wild roses (hips) and hawthorn trees (haws), commonly seen in hedgerows. These red or orange berries are associated with autumn and are used in herbal remedies and preserves.
+
+
+
+
+
+111
 Network Mapping
 Metasploit Exploit Modules
 
@@ -1058,16 +1033,7 @@ Definition: Components of the Metasploit Framework designed to exploit specific 
 
 
 
-115
-Jane Eyre
-Hips and Haws
-Fruits of wild roses (hips) and hawthorn trees (haws), commonly seen in hedgerows. These red or orange berries are associated with autumn and are used in herbal remedies and preserves.
-
-
-
-
-
-116
+112
 Jane Eyre
 Contumelious Epithet
 (con-too-MEE-lee-uhs EP-uh-thet) An insult or scornful nickname intended to express contempt, often delivered with arrogance.
@@ -1076,7 +1042,18 @@ Contumelious Epithet
 
 
 
-117
+113
+PEP 8
+No Spaces Inside Brackets: Do not add spaces inside parentheses, brackets, or braces. This rule applies to function calls, indexing, and data structures. Correct formatting ensures consistency and prevents syntax errors.
+
+python
+my_list = [1, 2, 3]
+
+
+
+
+
+114
 Email Auth and Security
 BIMI (Brand Indicators for Message Identification)
 
@@ -1088,18 +1065,16 @@ Requires proper implementation of SPF, DKIM, and DMARC.
 
 
 
-118
-PEP 8
-No Spaces Inside Brackets: Do not add spaces inside parentheses, brackets, or braces. This rule applies to function calls, indexing, and data structures. Correct formatting ensures consistency and prevents syntax errors.
-
-python
-my_list = [1, 2, 3]
+115
+Jane Eyre
+Worsted
+(WUH-stid) A tightly spun yarn made from long-staple wool, creating smooth, durable fabrics often used in making suits, coats, and upholstery.
 
 
 
 
 
-119
+116
 WSL + Kali Linux
 You can also invoke Linux commands from PowerShell or CMD like:
 wsl ls (runs ls command in WSL)
@@ -1109,16 +1084,7 @@ wsl sudo apt update (runs apt update in WSL)
 
 
 
-120
-Jane Eyre
-Worsted
-(WUH-stid) A tightly spun yarn made from long-staple wool, creating smooth, durable fabrics often used in making suits, coats, and upholstery.
-
-
-
-
-
-121
+117
 Azure AI Foundry
 When using Azure AI Foundry portal, you can directly work with Azure OpenAI without an Azure Studio project or you can use Azure OpenAI through a project.
 
@@ -1126,16 +1092,7 @@ When using Azure AI Foundry portal, you can directly work with Azure OpenAI with
 
 
 
-122
-Jane Eyre
-Spoony
-(SPOO-nee) Foolishly or overly sentimental, especially in matters of love or infatuation, often appearing naïve or overly romantic.
-
-
-
-
-
-123
+118
 IW Migration
 SSIS (SQL Server Integration Services)
 A platform for building enterprise-level data integration, transformation, and migration workflows. While not directly in SSMS, SSIS packages can orchestrate complex ETL operations, complementing Access-to-SQL-Server migrations and ongoing data maintenance.
@@ -1144,7 +1101,16 @@ A platform for building enterprise-level data integration, transformation, and m
 
 
 
-124
+119
+Jane Eyre
+Spoony
+(SPOO-nee) Foolishly or overly sentimental, especially in matters of love or infatuation, often appearing naïve or overly romantic.
+
+
+
+
+
+120
 Azure AI Foundry
 Project workspaces that are created using a hub inherit the same security settings and shared resource access. Teams can create project workspaces as needed to organize their work, isolate data, and/or restrict access.
 
@@ -1152,7 +1118,7 @@ Project workspaces that are created using a hub inherit the same security settin
 
 
 
-125
+121
 Azure Functions + PP365
 Fetch API
 A modern JavaScript interface for making HTTP requests. Compared to XMLHttpRequest, the Fetch API provides a more powerful and flexible feature set for handling requests and responses, often used in custom scripts within Dynamics 365 to interact with services like Azure Functions securely.
@@ -1161,7 +1127,7 @@ A modern JavaScript interface for making HTTP requests. Compared to XMLHttpReque
 
 
 
-126
+122
 IW Migration
 SSMS Query Editor
 A text-based interface in SQL Server Management Studio where you can write, run, and optimize SQL queries. It supports syntax highlighting, IntelliSense, and execution plans, helping users test logic, retrieve data, and troubleshoot issues efficiently.
@@ -1170,7 +1136,7 @@ A text-based interface in SQL Server Management Studio where you can write, run,
 
 
 
-127
+123
 WSL + Kali Linux
 GPG (GNU Privacy Guard)
 A tool for secure communication and data encryption, which is commonly used for email encryption and signing documents. GPG can manage encryption keys and is often used in Linux environments for secure file and message handling.
@@ -1179,7 +1145,7 @@ A tool for secure communication and data encryption, which is commonly used for 
 
 
 
-128
+124
 Home Network Project
 Front: What are Service Discovery and its importance in containerized environments?
 
@@ -1189,7 +1155,7 @@ Back: Service Discovery is the process of automatically detecting and locating s
 
 
 
-129
+125
 Open Source/GitHub
 Good First Issue
 
@@ -1199,7 +1165,7 @@ A label for beginner-friendly tasks in a project’s issue tracker, designed to 
 
 
 
-130
+126
 PEP 8
 Automate Import Management: Employ tools such as isort to automatically sort and organize your import statements according to PEP 8 guidelines. Integrate these tools with your development workflow to maintain consistent and error-free import structures across your projects.
 
@@ -1207,7 +1173,7 @@ Automate Import Management: Employ tools such as isort to automatically sort and
 
 
 
-131
+127
 Azure Functions
 Use Case for User-assigned managed identity:
 Workloads where resources are recycled frequently, but permissions should stay consistent.
@@ -1217,7 +1183,7 @@ For example, a workload where multiple virtual machines need to access the same 
 
 
 
-132
+128
 DNS
 No-Refresh Interval
 In DNS scavenging, the period during which the timestamp on a DNS record cannot be updated. It prevents excessive DNS updates, helping determine when a record becomes stale and eligible for removal during scavenging.
@@ -1226,7 +1192,15 @@ In DNS scavenging, the period during which the timestamp on a DNS record cannot 
 
 
 
-133
+129
+PEP 8
+No Trailing Whitespace: Ensure that there are no unnecessary spaces at the end of lines. Trailing whitespace can clutter the codebase and cause issues with version control diffs. Most editors can be configured to remove trailing spaces automatically.
+
+
+
+
+
+130
 Home Network Project
 What is the command to update and upgrade packages on a Debian-based system like Raspberry Pi OS?
 
@@ -1237,15 +1211,7 @@ sudo apt update && sudo apt upgrade -y
 
 
 
-134
-PEP 8
-No Trailing Whitespace: Ensure that there are no unnecessary spaces at the end of lines. Trailing whitespace can clutter the codebase and cause issues with version control diffs. Most editors can be configured to remove trailing spaces automatically.
-
-
-
-
-
-135
+131
 PEP 8
 Blank Lines for Separation: Use blank lines to separate top-level functions and class definitions, typically two blank lines. Within classes, use one blank line to separate methods. This separation improves code organization and readability.
 
@@ -1253,7 +1219,7 @@ Blank Lines for Separation: Use blank lines to separate top-level functions and 
 
 
 
-136
+132
 Jane Eyre
 Blackaviced
 (BLACK-uh-vist) Having a dark or swarthy complexion, typically used descriptively in older literary works.
@@ -1262,7 +1228,25 @@ Blackaviced
 
 
 
-137
+133
+Azure AI Foundry
+Azure OpenAI: Provides access to the latest Open AI models. You can create secure deployments, try playgrounds, fine tune models, content filters, and batch jobs. The Azure OpenAI resource provider is Microsoft.CognitiveServices/account and the kind of resource is OpenAI.
+
+
+
+
+
+134
+Open Source/GitHub
+Issue Tracker
+
+A system within a repository where bugs, feature requests, and tasks are reported, tracked, and managed by contributors and maintainers.
+
+
+
+
+
+135
 Azure Functions
 There are two types of managed identities:
 
@@ -1273,27 +1257,7 @@ User-assigned. You may also create a managed identity as a standalone Azure reso
 
 
 
-138
-Open Source/GitHub
-Issue Tracker
-
-A system within a repository where bugs, feature requests, and tasks are reported, tracked, and managed by contributors and maintainers.
-
-
-
-
-
-139
-Open Source/GitHub
-Hotfix
-
-An urgent fix applied to a project to resolve critical bugs or security vulnerabilities, typically merged quickly into the main codebase.
-
-
-
-
-
-140
+136
 WSL + Kali Linux
 12. wsl --mount
 A feature introduced with WSL 2, this allows you to mount physical disks in WSL as Linux file systems. Useful for accessing raw disks like external drives directly within WSL.
@@ -1304,7 +1268,17 @@ Prevents WSL from automatically launching the default Linux shell after a distri
 
 
 
-141
+137
+Open Source/GitHub
+Hotfix
+
+An urgent fix applied to a project to resolve critical bugs or security vulnerabilities, typically merged quickly into the main codebase.
+
+
+
+
+
+138
 Taxes
 Reporting Threshold: The aggregate value of foreign financial accounts must exceed $10,000 at any time during the calendar year to require filing a Report of Foreign Bank and Financial Accounts (FBAR).
 Filing Deadline: The Report of Foreign Bank and Financial Accounts (FBAR) is due annually on April 15th, with an automatic extension to October 15th if the deadline is missed.
@@ -1313,7 +1287,7 @@ Filing Deadline: The Report of Foreign Bank and Financial Accounts (FBAR) is due
 
 
 
-142
+139
 Diffusers Library
 Denoising Process
 The step-by-step refinement in diffusion models where the model removes noise from a random input, progressing towards an image. At each step, the model estimates the noise in the image and subtracts it, gradually enhancing coherence and detail.
@@ -1322,33 +1296,7 @@ The step-by-step refinement in diffusion models where the model removes noise fr
 
 
 
-143
-Azure AI Foundry
-Azure OpenAI: Provides access to the latest Open AI models. You can create secure deployments, try playgrounds, fine tune models, content filters, and batch jobs. The Azure OpenAI resource provider is Microsoft.CognitiveServices/account and the kind of resource is OpenAI.
-
-
-
-
-
-144
-WSL + Kali Linux
-Wayland
-A modern display server protocol that is intended as a replacement for the older X11 system. While X11 is still widely used, Wayland is being adopted for more efficient and secure graphical environments, though it’s less compatible with WSL2 at the moment.
-
-
-
-
-
-145
-PP365
-API Management (APIM)
-A fully managed Azure service that enables organizations to publish, secure, transform, maintain, and monitor APIs. APIM provides features like rate limiting, API gateways, developer portals, and analytics, helping manage the full lifecycle of APIs and ensuring secure and scalable access to backend services.
-
-
-
-
-
-146
+140
 Azure Functions
 Reasons to choose WebJobs over Azure Functions
 
@@ -1360,7 +1308,25 @@ WebJobs only supports C# on Microsoft Windows.
 
 
 
-147
+141
+WSL + Kali Linux
+Wayland
+A modern display server protocol that is intended as a replacement for the older X11 system. While X11 is still widely used, Wayland is being adopted for more efficient and secure graphical environments, though it’s less compatible with WSL2 at the moment.
+
+
+
+
+
+142
+PP365
+API Management (APIM)
+A fully managed Azure service that enables organizations to publish, secure, transform, maintain, and monitor APIs. APIM provides features like rate limiting, API gateways, developer portals, and analytics, helping manage the full lifecycle of APIs and ensuring secure and scalable access to backend services.
+
+
+
+
+
+143
 Azure AI Search
 Depending on the data source, the indexer will try different operations to extract potentially indexable content:
 
@@ -1370,7 +1336,16 @@ When the document is a file with embedded images, such as a PDF, the indexer ext
 
 
 
-148
+144
+Powershell
+-AllowClobber
+Allows overwriting of existing aliases or functions during module installation, preventing conflicts with pre-existing definitions.
+
+
+
+
+
+145
 IW Migration
 Locking and Concurrency Control (SQL Server)
 Techniques to manage simultaneous data access, preventing conflicts and ensuring consistency. Locks, isolation levels, and optimistic concurrency are tools that balance performance with data correctness when multiple users edit data simultaneously.
@@ -1379,7 +1354,15 @@ Techniques to manage simultaneous data access, preventing conflicts and ensuring
 
 
 
-149
+146
+Lost in a Good Book
+Tunguska event: A massive explosion in Siberia (1908) caused by an airburst of a meteoroid or comet, flattening 800 square miles of forest.
+
+
+
+
+
+147
 Home Network Project
 Front: What is TLS Termination and why is it used in reverse proxies?
 
@@ -1389,7 +1372,7 @@ Back: TLS Termination refers to the process of decrypting incoming TLS/SSL encry
 
 
 
-150
+148
 Azure AI Search
 Whether you use the REST API or an Azure SDK, the following document operations are supported for data import:
     Upload (think upsert)
@@ -1401,16 +1384,7 @@ Whether you use the REST API or an Azure SDK, the following document operations 
 
 
 
-151
-Powershell
--AllowClobber
-Allows overwriting of existing aliases or functions during module installation, preventing conflicts with pre-existing definitions.
-
-
-
-
-
-152
+149
 Home Network Project
 Front: Describe the primary function of Grafana in a monitoring stack.
 
@@ -1420,24 +1394,7 @@ Back: Grafana is an open-source platform for data visualization and analytics. I
 
 
 
-153
-Lost in a Good Book
-Tunguska event: A massive explosion in Siberia (1908) caused by an airburst of a meteoroid or comet, flattening 800 square miles of forest.
-
-
-
-
-
-154
-Powershell
-/quiet (msiexec argument)
-Suppresses all installer prompts and runs the setup silently. Ideal for automated or non-interactive installations.
-
-
-
-
-
-155
+150
 Open Source/GitHub
 Test Suite
 
@@ -1447,24 +1404,7 @@ A collection of automated tests that verify the functionality and integrity of a
 
 
 
-156
-WSL + Kali Linux
-Xfwm4 (XFCE Window Manager)
-The window manager for the XFCE desktop environment. It manages window placement, appearance, and focus within the XFCE session.
-
-
-
-
-
-157
-Finance Junk
-Difference from Traditional Convertibles in AT1 Bond: Unlike standard convertible bonds where conversion is optional, an AT1 Bond undergoes mandatory conversion or write-down if the issuer’s financial health declines below specified thresholds.
-
-
-
-
-
-158
+151
 SharePoint
 Application Permissions (App-Only)
 Definition: Permissions granted directly to the application, without user context. The app operates independently of any user.
@@ -1475,7 +1415,33 @@ Authentication Flow: Utilizes the Client Credentials Flow with client ID and cli
 
 
 
-159
+152
+Powershell
+/quiet (msiexec argument)
+Suppresses all installer prompts and runs the setup silently. Ideal for automated or non-interactive installations.
+
+
+
+
+
+153
+WSL + Kali Linux
+Xfwm4 (XFCE Window Manager)
+The window manager for the XFCE desktop environment. It manages window placement, appearance, and focus within the XFCE session.
+
+
+
+
+
+154
+Taxes
+Purpose: The Report of Foreign Bank and Financial Accounts (FBAR) helps the U.S. government identify persons who may be using foreign financial accounts to circumvent U.S. law and trace funds used for illicit purposes or identify unreported income maintained or generated abroad.
+
+
+
+
+
+155
 IW Migration
 Property Sheets (Access)
 Panels that display and allow editing of properties for forms, reports, and controls. Users can customize appearance, behavior, event triggers, and data sources to tailor the interface and user experience to specific business requirements.
@@ -1484,7 +1450,7 @@ Panels that display and allow editing of properties for forms, reports, and cont
 
 
 
-160
+156
 Jane Eyre
 Salubrious
 (suh-LOO-bree-uhs) Describing something beneficial to health or well-being, such as a pleasant climate, nutritious food, or healthy lifestyle.
@@ -1493,7 +1459,7 @@ Salubrious
 
 
 
-161
+157
 Network Mapping
 Buffer Overflow
 
@@ -1503,7 +1469,7 @@ Definition: A vulnerability where an application writes more data to a buffer th
 
 
 
-162
+158
 Open Source/GitHub
 Label
 
@@ -1513,7 +1479,7 @@ Tags assigned to issues or pull requests to categorize them, such as “good fir
 
 
 
-163
+159
 Home Network Project
 Front: What is SSL Certificate and why is it important for web services?
 
@@ -1523,23 +1489,7 @@ Back: An SSL Certificate is a digital certificate that authenticates the identit
 
 
 
-164
-Taxes
-Purpose: The Report of Foreign Bank and Financial Accounts (FBAR) helps the U.S. government identify persons who may be using foreign financial accounts to circumvent U.S. law and trace funds used for illicit purposes or identify unreported income maintained or generated abroad.
-
-
-
-
-
-165
-Azure AI Search
-If you include a skillset, you'll need to specify output field mappings in the indexer definition. The output of a skillset is manifested internally as a tree structure referred to as an enriched document. Output field mappings allow you to select which parts of this tree to map into fields in your index.
-
-
-
-
-
-166
+160
 WSL + Kali Linux
 Xorg
 The open-source implementation of the X Window System (X11). It provides the graphical server for Unix-like operating systems, handling input, output, and screen display for graphical applications.
@@ -1548,23 +1498,15 @@ The open-source implementation of the X Window System (X11). It provides the gra
 
 
 
-167
-Search Engine Optimization
-On-page SEO involves optimizing individual web pages to rank higher and earn more relevant traffic in search engines. This includes optimizing content, HTML elements, and internal links to improve the page’s visibility and relevance for targeted keywords.
+161
+Azure AI Search
+If you include a skillset, you'll need to specify output field mappings in the indexer definition. The output of a skillset is manifested internally as a tree structure referred to as an enriched document. Output field mappings allow you to select which parts of this tree to map into fields in your index.
 
 
 
 
 
-168
-OData
-The @odata.type annotation specifies the exact entity type or derived type being referenced in an OData payload. It is crucial for handling inheritance and polymorphism by informing clients about the specific type of an entity for correct deserialization and processing.
-
-
-
-
-
-169
+162
 Lost in a Good Book
 Doric columns: A simple, sturdy style of Greek column with a plain capital and no base, emphasizing proportion and strength.
 
@@ -1572,7 +1514,23 @@ Doric columns: A simple, sturdy style of Greek column with a plain capital and n
 
 
 
-170
+163
+OData
+The @odata.type annotation specifies the exact entity type or derived type being referenced in an OData payload. It is crucial for handling inheritance and polymorphism by informing clients about the specific type of an entity for correct deserialization and processing.
+
+
+
+
+
+164
+Search Engine Optimization
+On-page SEO involves optimizing individual web pages to rank higher and earn more relevant traffic in search engines. This includes optimizing content, HTML elements, and internal links to improve the page’s visibility and relevance for targeted keywords.
+
+
+
+
+
+165
 Azure AI Foundry
 AI Foundry hub: The hub is the top-level resource in AI Foundry portal and is based on the Azure Machine Learning service. The Azure resource provider for a hub is Microsoft.MachineLearningServices/workspaces, and the kind of resource is Hub.
 
@@ -1580,7 +1538,7 @@ AI Foundry hub: The hub is the top-level resource in AI Foundry portal and is ba
 
 
 
-171
+166
 Powershell
 Remove-Item
 Deletes files, directories, or other items. Commonly used to clean up temporary files or outdated resources in automated scripts.
@@ -1589,7 +1547,16 @@ Deletes files, directories, or other items. Commonly used to clean up temporary 
 
 
 
-172
+167
+DNS
+Active Directory-Integrated Zones
+DNS zones that store their data within the Active Directory database. This integration allows for secure dynamic updates and automatic replication of DNS data across all domain controllers, enhancing security and redundancy.
+
+
+
+
+
+168
 PEP 8
 Structuring try-except-else-finally: Follow the order: try, except, else, then finally. Place else after all except blocks and before finally to ensure that code in else runs only if no exceptions occur, maintaining clear separation of logic.
 
@@ -1597,7 +1564,7 @@ Structuring try-except-else-finally: Follow the order: try, except, else, then f
 
 
 
-173
+169
 Taxes
 State-Specific Rules: Different states have different rules and deadlines for Pass-Through Entities (PTEs). For instance, in Hawaii, the Pass-Through Entity (PTE) tax must be paid by the original due date of the return, which for calendar year taxpayers is April 20th following the close of the taxable year.
 
@@ -1605,7 +1572,17 @@ State-Specific Rules: Different states have different rules and deadlines for Pa
 
 
 
-174
+170
+Open Source/GitHub
+Contribution Guidelines
+
+A set of rules and best practices outlined by a project to ensure consistent and quality contributions from all contributors, often found in CONTRIBUTING.md.
+
+
+
+
+
+171
 Email Auth and Security
 MUA (Mail User Agent)
 
@@ -1617,26 +1594,7 @@ Examples include Microsoft Outlook, Mozilla Thunderbird, and Gmail.
 
 
 
-175
-Open Source/GitHub
-Contribution Guidelines
-
-A set of rules and best practices outlined by a project to ensure consistent and quality contributions from all contributors, often found in CONTRIBUTING.md.
-
-
-
-
-
-176
-DNS
-Active Directory-Integrated Zones
-DNS zones that store their data within the Active Directory database. This integration allows for secure dynamic updates and automatic replication of DNS data across all domain controllers, enhancing security and redundancy.
-
-
-
-
-
-177
+172
 DNS
 Securing Zone Transfers
 Measures taken to protect DNS zone data during transfers between DNS servers. This includes restricting transfers to authorized IP addresses and using security protocols like TSIG or IPsec to authenticate and encrypt the data, ensuring integrity and confidentiality.
@@ -1645,7 +1603,16 @@ Measures taken to protect DNS zone data during transfers between DNS servers. Th
 
 
 
-178
+173
+WSL + Kali Linux
+wsl with Docker
+Docker can run on WSL 2, which enables you to run Linux containers directly on Windows. Docker Desktop for Windows integrates with WSL 2 to provide a seamless environment for both Docker and WSL.
+
+
+
+
+
+174
 Home Network Project
 Front: What is Prometheus and what is its role in network monitoring?
 
@@ -1655,7 +1622,7 @@ Back: Prometheus is an open-source monitoring and alerting toolkit designed for 
 
 
 
-179
+175
 Network Mapping
 Passive Network Mapping
 
@@ -1665,16 +1632,15 @@ Definition: The process of creating a network map by observing and analyzing exi
 
 
 
-180
-WSL + Kali Linux
-wsl with Docker
-Docker can run on WSL 2, which enables you to run Linux containers directly on Windows. Docker Desktop for Windows integrates with WSL 2 to provide a seamless environment for both Docker and WSL.
+176
+Azure Kubernetes Learning Path
+Azure Container Registry is a registry-hosting service provided by Azure. Each Azure Container Registry resource you create is a separate registry with a unique URL. These registries are private, meaning they require authentication to push or pull images
 
 
 
 
 
-181
+177
 Home Network Project
 Front: What is Service Mesh and how does it enhance microservices architecture?
 
@@ -1684,15 +1650,7 @@ Back: A Service Mesh is a dedicated infrastructure layer that manages service-to
 
 
 
-182
-Azure Kubernetes Learning Path
-Azure Container Registry is a registry-hosting service provided by Azure. Each Azure Container Registry resource you create is a separate registry with a unique URL. These registries are private, meaning they require authentication to push or pull images
-
-
-
-
-
-183
+178
 Jane Eyre
 Girandole
 (JEER-un-dohl) A decorative branched candlestick or lighting fixture, sometimes adorned with mirrors, often used in opulent interiors.
@@ -1701,7 +1659,7 @@ Girandole
 
 
 
-184
+179
 SharePoint
 Authentication and Authorization
 OAuth is commonly used. When building client applications, you'll typically register your app in Azure Active Directory to obtain the necessary credentials and permissions to interact with SharePoint.
@@ -1710,7 +1668,7 @@ OAuth is commonly used. When building client applications, you'll typically regi
 
 
 
-185
+180
 PP365
 User-Assigned Managed Identity
 A managed identity in Azure that exists as a separate Azure resource and can be assigned to multiple Azure services. Unlike system-assigned identities, user-assigned identities are independent of any single resource’s lifecycle, offering flexibility and reusability across different services.
@@ -1719,7 +1677,7 @@ A managed identity in Azure that exists as a separate Azure resource and can be 
 
 
 
-186
+181
 Search Engine Optimization
 Duplicate content refers to identical or very similar content appearing on multiple webpages or across different websites. It can negatively impact SEO by causing confusion for search engines about which page to rank, potentially diluting search rankings.
 
@@ -1727,7 +1685,7 @@ Duplicate content refers to identical or very similar content appearing on multi
 
 
 
-187
+182
 Azure AI Search
 A search service runs one indexer job per search unit. If you need concurrent processing, make sure you have sufficient replicas. Indexers don't run in the background, so you might detect more query throttling than usual if the service is under pressure.
 
@@ -1735,7 +1693,7 @@ A search service runs one indexer job per search unit. If you need concurrent pr
 
 
 
-188
+183
 Email Auth and Security
 DMARC (Domain-based Message Authentication, Reporting & Conformance)
 
@@ -1747,7 +1705,7 @@ Protects against unauthorized use of a domain in email communications.
 
 
 
-189
+184
 SharePoint
 When checking if a file exists, which HTTP status code indicates that the file was found?
 
@@ -1760,84 +1718,7 @@ A 200 OK status code indicates that the request was successful and the file exis
 
 
 
-190
-Lost in a Good Book
-(Pair of) secateurs: A small, handheld pruning tool used for cutting plants, branches, and stems in gardening.
-
-
-
-
-
-191
-Lost in a Good Book
-Proleptic: Relating to anticipation, particularly in literature or rhetoric, where future events are referred to as though they have already happened.
-
-
-
-
-
-192
-Powershell
-Service Manager (services.msc)
-A GUI tool for managing Windows services. You can start, stop, or restart services like Docker Desktop directly from this interface.
-
-
-
-
-
-193
-OData
-Annotations provide additional metadata about entities, properties, or relationships in the OData model. They enrich the data with information like display names, validation rules, and formatting instructions, enhancing both data semantics and client-side interactions.
-
-
-
-
-
-194
-Azure AI Search
-A quick way to perform a preliminary check on the document upload is to use Search explorer in the Azure portal.
-The explorer lets you query an index without having to write any code. The search experience is based on default settings, such as the simple syntax and default searchMode query parameter. Results are returned in JSON so that you can inspect the entire document.
-
-
-
-
-
-195
-Network Mapping
-Logical Topology (Service Map)
-
-Definition: An abstract representation within a Service Map showing how services interact and depend on each other, focusing on data flow and service relationships rather than physical connections.
-
-
-
-
-
-196
-Taxes
-The main differences between an S Corp and a C Corp fall into three major categories: formation, taxation, and ownership. Generally, taxes are the biggest and most important difference. C Corps are subject to corporate tax rates, while S Corps allow for pass-through taxation, meaning owners report the business profits and losses on their personal income tax returns.
-
-
-
-
-
-197
-Powershell
-Get-Service
-Displays the status of Windows services. Useful for checking if a service (e.g., Docker Desktop) is running, stopped, or paused.
-
-
-
-
-
-198
-Search Engine Optimization
-Ahrefs is a comprehensive SEO toolset used for backlink analysis, keyword research, competitor analysis, and site audits. It helps users identify backlink opportunities, monitor website performance, and gain insights into competitors' strategies to enhance their own SEO efforts.
-
-
-
-
-
-199
+185
 OData
 $compute Query Option
 
@@ -1848,7 +1729,75 @@ Context: For example, $compute=TotalPrice mul Quantity as ExtendedAmount could c
 
 
 
-200
+186
+Lost in a Good Book
+(Pair of) secateurs: A small, handheld pruning tool used for cutting plants, branches, and stems in gardening.
+
+
+
+
+
+187
+Taxes
+The main differences between an S Corp and a C Corp fall into three major categories: formation, taxation, and ownership. Generally, taxes are the biggest and most important difference. C Corps are subject to corporate tax rates, while S Corps allow for pass-through taxation, meaning owners report the business profits and losses on their personal income tax returns.
+
+
+
+
+
+188
+Lost in a Good Book
+Proleptic: Relating to anticipation, particularly in literature or rhetoric, where future events are referred to as though they have already happened.
+
+
+
+
+
+189
+Powershell
+Service Manager (services.msc)
+A GUI tool for managing Windows services. You can start, stop, or restart services like Docker Desktop directly from this interface.
+
+
+
+
+
+190
+OData
+Annotations provide additional metadata about entities, properties, or relationships in the OData model. They enrich the data with information like display names, validation rules, and formatting instructions, enhancing both data semantics and client-side interactions.
+
+
+
+
+
+191
+Network Mapping
+Logical Topology (Service Map)
+
+Definition: An abstract representation within a Service Map showing how services interact and depend on each other, focusing on data flow and service relationships rather than physical connections.
+
+
+
+
+
+192
+Search Engine Optimization
+Ahrefs is a comprehensive SEO toolset used for backlink analysis, keyword research, competitor analysis, and site audits. It helps users identify backlink opportunities, monitor website performance, and gain insights into competitors' strategies to enhance their own SEO efforts.
+
+
+
+
+
+193
+Powershell
+Get-Service
+Displays the status of Windows services. Useful for checking if a service (e.g., Docker Desktop) is running, stopped, or paused.
+
+
+
+
+
+194
 Azure AI Search
 After the first indexer run, you can rerun it on demand or set up a schedule.
 
@@ -1858,7 +1807,26 @@ You can monitor indexer status in the Azure portal or through Get Indexer Status
 
 
 
-201
+195
+Azure AI Search
+A quick way to perform a preliminary check on the document upload is to use Search explorer in the Azure portal.
+The explorer lets you query an index without having to write any code. The search experience is based on default settings, such as the simple syntax and default searchMode query parameter. Results are returned in JSON so that you can inspect the entire document.
+
+
+
+
+
+196
+Open Source/GitHub
+Issue Assignee
+
+A person designated to work on a specific issue, indicating responsibility and ownership for resolving the task or bug.
+
+
+
+
+
+197
 Powershell
 NUL
 A virtual file in Windows that discards written data. Commonly used in Command Prompt, NOT POWERSHELL to create empty files (e.g., copy NUL filename).
@@ -1867,7 +1835,7 @@ A virtual file in Windows that discards written data. Commonly used in Command P
 
 
 
-202
+198
 Email Auth and Security
 MX Toolbox
 
@@ -1879,17 +1847,7 @@ Helps administrators verify the correctness of their email authentication setups
 
 
 
-203
-Open Source/GitHub
-Issue Assignee
-
-A person designated to work on a specific issue, indicating responsibility and ownership for resolving the task or bug.
-
-
-
-
-
-204
+199
 PP365
 Managed Identities
 A feature in Azure that provides Azure services with an automatically managed identity in Azure Active Directory (Azure AD). Managed identities simplify authentication to other Azure services by eliminating the need to manage credentials manually, enhancing security and ease of use.
@@ -1898,7 +1856,7 @@ A feature in Azure that provides Azure services with an automatically managed id
 
 
 
-205
+200
 Powershell
 docker build
 Creates a Docker image from a Dockerfile and dependencies. This image can be used to run containerized applications on any compatible host.
@@ -1907,7 +1865,7 @@ Creates a Docker image from a Dockerfile and dependencies. This image can be use
 
 
 
-206
+201
 IW Migration
 Linked Server (SQL Server)
 A configuration that allows SQL Server to run queries against remote data sources as if they were local tables. This enables federated queries, joining data across different servers and even different database platforms.
@@ -1916,7 +1874,7 @@ A configuration that allows SQL Server to run queries against remote data source
 
 
 
-207
+202
 Open Source/GitHub
 CONTRIBUTING.md
 
@@ -1926,24 +1884,7 @@ A markdown file that outlines the process and guidelines for contributing to a p
 
 
 
-208
-Azure AI Foundry
-Hubs provide a central way for a team to govern security, connectivity, and computing resources across playgrounds and projects. Projects that are created using a hub inherit the same security settings and shared resource access. Teams can create as many projects as needed to organize work, isolate data, and/or restrict access.
-
-
-
-
-
-209
-IW Migration
-Refactoring and Normalization (Access/SQL Server)
-The process of reorganizing tables and fields to reduce redundancy and improve data integrity. Higher normalization forms minimize duplicate data and anomalies. This often improves long-term maintainability and eases migration to other systems.
-
-
-
-
-
-210
+203
 Powershell
 error during connect
 Indicates the Docker CLI failed to connect to the Docker daemon, often due to the service not running or incorrect configuration.
@@ -1955,25 +1896,24 @@ Refers to the Windows named pipe used for communicating with Docker Desktop's Li
 
 
 
-211
-DNS
-TSIG (Transaction SIGnature)
-A security mechanism used to authenticate DNS messages, ensuring that zone transfers and other DNS communications are from trusted sources. TSIG uses shared secret keys and cryptographic signatures to verify the authenticity of DNS transactions.
+204
+Azure AI Foundry
+Hubs provide a central way for a team to govern security, connectivity, and computing resources across playgrounds and projects. Projects that are created using a hub inherit the same security settings and shared resource access. Teams can create as many projects as needed to organize work, isolate data, and/or restrict access.
 
 
 
 
 
-212
-PP365
-Azure Managed Identity
-Another term for Managed Identities in Azure. It refers to the feature that provides Azure services with an automatically managed identity in Azure AD, facilitating secure authentication to other Azure resources without the need to handle credentials manually.
+205
+IW Migration
+Refactoring and Normalization (Access/SQL Server)
+The process of reorganizing tables and fields to reduce redundancy and improve data integrity. Higher normalization forms minimize duplicate data and anomalies. This often improves long-term maintainability and eases migration to other systems.
 
 
 
 
 
-213
+206
 Diffusers Library
 Classifier-Free Guidance
 A technique allowing diffusion models to generate images without an external classifier, enhancing flexibility in output. This guidance uses the model's own internal structure to fine-tune the output, improving realism without the need for additional label constraints.
@@ -1982,7 +1922,25 @@ A technique allowing diffusion models to generate images without an external cla
 
 
 
-214
+207
+PP365
+Azure Managed Identity
+Another term for Managed Identities in Azure. It refers to the feature that provides Azure services with an automatically managed identity in Azure AD, facilitating secure authentication to other Azure resources without the need to handle credentials manually.
+
+
+
+
+
+208
+DNS
+TSIG (Transaction SIGnature)
+A security mechanism used to authenticate DNS messages, ensuring that zone transfers and other DNS communications are from trusted sources. TSIG uses shared secret keys and cryptographic signatures to verify the authenticity of DNS transactions.
+
+
+
+
+
+209
 Azure AI Foundry
 Azure AI Studio is now Azure AI Foundry portal. We're updating the documentation to reflect this change. In the meantime, you might see references to Azure AI Studio.
 
@@ -1990,7 +1948,7 @@ Azure AI Studio is now Azure AI Foundry portal. We're updating the documentation
 
 
 
-215
+210
 Jane Eyre
 Habergeon
 (HAB-er-juhn) A sleeveless, lightweight coat of mail armor, typically covering the torso and sometimes the upper arms, used for protection in medieval combat.
@@ -1999,44 +1957,7 @@ Habergeon
 
 
 
-216
-Azure AI Search
-Indexers accept flattened row sets, such as a table or view, or items in a container or folder. In most cases, it creates one search document per row, record, or item.
-
-
-
-
-
-217
-WSL + Kali Linux
-wsl --update
-Updates the WSL 2 Linux kernel, ensuring you are running the latest version with improved features, security fixes, and bug resolutions.
-
-
-
-
-
-218
-Open Source/GitHub
-Upstream Repository
-
-The original repository from which a fork is created, where contributions are eventually proposed to be merged.
-
-
-
-
-
-219
-Open Source/GitHub
-Pull Request (PR)
-
-A request to merge changes from your fork or branch into the original repository, facilitating code review and collaboration with project maintainers.
-
-
-
-
-
-220
+211
 Home Network Project
 How do you install Docker on a Raspberry Pi?
 
@@ -2049,7 +1970,53 @@ sudo usermod -aG docker pi
 
 
 
-221
+212
+Open Source/GitHub
+Upstream Repository
+
+The original repository from which a fork is created, where contributions are eventually proposed to be merged.
+
+
+
+
+
+213
+WSL + Kali Linux
+wsl --update
+Updates the WSL 2 Linux kernel, ensuring you are running the latest version with improved features, security fixes, and bug resolutions.
+
+
+
+
+
+214
+Azure AI Search
+Indexers accept flattened row sets, such as a table or view, or items in a container or folder. In most cases, it creates one search document per row, record, or item.
+
+
+
+
+
+215
+Open Source/GitHub
+Pull Request (PR)
+
+A request to merge changes from your fork or branch into the original repository, facilitating code review and collaboration with project maintainers.
+
+
+
+
+
+216
+WSL + Kali Linux
+XFCE (XForms Common Environment)
+A lightweight and fast desktop environment for Unix-like operating systems, known for its low resource usage. XFCE provides a complete graphical interface for managing windows, files, and system settings.
+
+
+
+
+
+217
 OData
 Namespaces
 
@@ -2060,16 +2027,7 @@ Context: Used to differentiate entities, actions, and functions that may share c
 
 
 
-222
-IW Migration
-Syntax to find files that contain a substring. Needed this when trying to remember where I made certain files when working on IW files.
-Get-ChildItem -Recurse | Select-String "account_edit" -List | Select Path
-
-
-
-
-
-223
+218
 PEP 8
 Breaking Long Lines with Parentheses: Use parentheses to implicitly continue lines instead of backslashes. This method is more readable and less error-prone. Align continued lines vertically for clarity.
 
@@ -2085,16 +2043,33 @@ total = (
 
 
 
-224
+219
+Lost in a Good Book
+Cornice: An architectural feature where a projecting, decorative molding crowns a building or structure, often found at the top of walls.
+
+
+
+
+
+220
 WSL + Kali Linux
-XFCE (XForms Common Environment)
-A lightweight and fast desktop environment for Unix-like operating systems, known for its low resource usage. XFCE provides a complete graphical interface for managing windows, files, and system settings.
+/mnt Directory
+In WSL, the /mnt directory is where your Windows file system is mounted. For example, C:\ is accessible at /mnt/c, D:\ at /mnt/d, etc. This allows you to access and work with files from both Windows and Linux environments seamlessly.
 
 
 
 
 
-225
+221
+IW Migration
+Syntax to find files that contain a substring. Needed this when trying to remember where I made certain files when working on IW files.
+Get-ChildItem -Recurse | Select-String "account_edit" -List | Select Path
+
+
+
+
+
+222
 Azure Functions + PP365
 Dataverse Virtual Entities
 Entities in Dataverse that represent data stored outside the platform, accessible as if they were native entities. Virtual Entities allow Dynamics 365 applications to interact with external data sources like Azure Functions or other databases seamlessly, providing a unified data experience without data duplication.
@@ -2103,7 +2078,7 @@ Entities in Dataverse that represent data stored outside the platform, accessibl
 
 
 
-226
+223
 Open Source/GitHub
 Merge Conflict
 
@@ -2113,15 +2088,7 @@ A situation where changes from different branches cannot be automatically reconc
 
 
 
-227
-Lost in a Good Book
-Cornice: An architectural feature where a projecting, decorative molding crowns a building or structure, often found at the top of walls.
-
-
-
-
-
-228
+224
 Azure Functions + PP365
 XMLHttpRequest vs. Fetch API
 Both are JavaScript APIs for making HTTP requests from web pages. XMLHttpRequest is older and more verbose, while the Fetch API is modern, promise-based, and provides a more streamlined approach to handling asynchronous requests, making it preferable for integrating custom scripts in Dynamics 365.
@@ -2130,7 +2097,7 @@ Both are JavaScript APIs for making HTTP requests from web pages. XMLHttpRequest
 
 
 
-229
+225
 SharePoint
 SharePoint REST API adheres to REST (Representational State Transfer) principles, which means it uses standard HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources identified by URLs.
 
@@ -2138,16 +2105,25 @@ SharePoint REST API adheres to REST (Representational State Transfer) principles
 
 
 
-230
+226
 WSL + Kali Linux
-/mnt Directory
-In WSL, the /mnt directory is where your Windows file system is mounted. For example, C:\ is accessible at /mnt/c, D:\ at /mnt/d, etc. This allows you to access and work with files from both Windows and Linux environments seamlessly.
+Polkit (PolicyKit)
+A framework for defining and handling authorizations in a Linux system, particularly for desktop applications requiring elevated privileges. It’s used for managing permissions to perform administrative tasks through a GUI.
 
 
 
 
 
-231
+227
+Azure Functions + PP365
+Function URL
+The endpoint URL assigned to an Azure Function, used to invoke the function via HTTP requests. The Function URL typically includes the function app’s domain and may contain a function key for authentication, enabling secure and targeted access to the function’s operations.
+
+
+
+
+
+228
 Email Auth and Security
 Identifier Alignment
 
@@ -2159,34 +2135,7 @@ Can be achieved through relaxed alignment (subdomains are allowed) or strict ali
 
 
 
-232
-WSL + Kali Linux
-Polkit (PolicyKit)
-A framework for defining and handling authorizations in a Linux system, particularly for desktop applications requiring elevated privileges. It’s used for managing permissions to perform administrative tasks through a GUI.
-
-
-
-
-
-233
-Azure Functions + PP365
-Function URL
-The endpoint URL assigned to an Azure Function, used to invoke the function via HTTP requests. The Function URL typically includes the function app’s domain and may contain a function key for authentication, enabling secure and targeted access to the function’s operations.
-
-
-
-
-
-234
-DNS
-DNS Manager
-A graphical administrative tool in Windows Server used to manage DNS settings and zones. DNS Manager provides interfaces for creating and modifying DNS records, configuring zone properties, setting up forwarders, and implementing security measures.
-
-
-
-
-
-235
+229
 DNS
 Zone Transfers
 The process of copying DNS zone data from a primary DNS server to secondary DNS servers. Zone transfers ensure DNS data consistency and redundancy across multiple DNS servers, enhancing reliability and load distribution.
@@ -2195,7 +2144,24 @@ The process of copying DNS zone data from a primary DNS server to secondary DNS 
 
 
 
-236
+230
+SharePoint
+The SharePoint REST API can return data in both JSON and XML formats. By default, it often returns JSON, but you can specify the desired format using the Accept header.
+
+
+
+
+
+231
+DNS
+DNS Manager
+A graphical administrative tool in Windows Server used to manage DNS settings and zones. DNS Manager provides interfaces for creating and modifying DNS records, configuring zone properties, setting up forwarders, and implementing security measures.
+
+
+
+
+
+232
 Azure AI Foundry
 Managed compute resources and managed virtual networks exist in the Microsoft subscription, but you manage them. For example, you control which VM sizes are used for compute resources, and which outbound rules are configured for the managed virtual network.
 
@@ -2203,7 +2169,15 @@ Managed compute resources and managed virtual networks exist in the Microsoft su
 
 
 
-237
+233
+Lost in a Good Book
+Wisteria: A climbing flowering plant with fragrant, cascading purple or white blooms, often grown on pergolas or trellises.
+
+
+
+
+
+234
 IW Migration
 Forms (Access)
 User-friendly interfaces for entering, displaying, and editing data in tables. They can incorporate buttons, dropdowns, and validation rules, making data input more efficient and consistent, and often serve as the primary user interaction layer.
@@ -2212,18 +2186,45 @@ User-friendly interfaces for entering, displaying, and editing data in tables. T
 
 
 
+235
+DNS
+Forward Lookup Zones
+DNS zones that translate hostnames to IP addresses. They are the most common type of DNS zones, enabling clients to resolve domain names to their corresponding IPv4 or IPv6 addresses.
+
+
+
+
+
+236
+Jane Eyre
+Diablerie
+(dee-AH-bluh-ree) Mischievous, devilish behavior or sorcery; also refers to artwork, literature, or activities evoking dark, supernatural themes.
+
+
+
+
+
+237
+WSL + Kali Linux
+D-Bus
+A message bus system that allows applications and services to communicate with each other, particularly in Linux-based systems. D-Bus is essential for managing things like user authentication and device notifications in desktop environments.
+
+
+
+
+
 238
-SharePoint
-The SharePoint REST API can return data in both JSON and XML formats. By default, it often returns JSON, but you can specify the desired format using the Accept header.
+Search Engine Optimization
+Yoast SEO is a WordPress plugin that assists in optimizing website content for better SEO. It provides tools for managing meta tags, generating sitemaps, and improving content readability, helping users enhance their site’s search engine visibility and performance.
 
 
 
 
 
 239
-DNS
-Forward Lookup Zones
-DNS zones that translate hostnames to IP addresses. They are the most common type of DNS zones, enabling clients to resolve domain names to their corresponding IPv4 or IPv6 addresses.
+Taxes
+Taxation: Pass-Through Entities (PTEs) themselves do not pay income taxes. Instead, the owners or shareholders pay taxes on their share of the income on their personal tax returns.
+Benefits: Pass-Through Entities (PTEs) can offer tax benefits by avoiding double taxation, which occurs when income is taxed at both the corporate and individual levels.
 
 
 
@@ -2238,40 +2239,6 @@ Use __all__ to Define Public API: In your modules, define the __all__ list to ex
 
 
 241
-Search Engine Optimization
-Yoast SEO is a WordPress plugin that assists in optimizing website content for better SEO. It provides tools for managing meta tags, generating sitemaps, and improving content readability, helping users enhance their site’s search engine visibility and performance.
-
-
-
-
-
-242
-Lost in a Good Book
-Wisteria: A climbing flowering plant with fragrant, cascading purple or white blooms, often grown on pergolas or trellises.
-
-
-
-
-
-243
-Taxes
-Taxation: Pass-Through Entities (PTEs) themselves do not pay income taxes. Instead, the owners or shareholders pay taxes on their share of the income on their personal tax returns.
-Benefits: Pass-Through Entities (PTEs) can offer tax benefits by avoiding double taxation, which occurs when income is taxed at both the corporate and individual levels.
-
-
-
-
-
-244
-Jane Eyre
-Diablerie
-(dee-AH-bluh-ree) Mischievous, devilish behavior or sorcery; also refers to artwork, literature, or activities evoking dark, supernatural themes.
-
-
-
-
-
-245
 Azure AI Search
 Push model is an approach that uses APIs to upload documents into an existing search index. You can upload documents in batches of up to 1000 per batch, or 16 MB per batch, whichever limit comes first.
 
@@ -2279,16 +2246,7 @@ Push model is an approach that uses APIs to upload documents into an existing se
 
 
 
-246
-WSL + Kali Linux
-D-Bus
-A message bus system that allows applications and services to communicate with each other, particularly in Linux-based systems. D-Bus is essential for managing things like user authentication and device notifications in desktop environments.
-
-
-
-
-
-247
+242
 PEP 8
 Keep Imports at the Top: Ensure all import statements are placed at the beginning of the file, right after the module docstring and before any module-level variables or constants. This standard placement improves code organization and makes dependencies immediately visible.
 
@@ -2296,7 +2254,16 @@ Keep Imports at the Top: Ensure all import statements are placed at the beginnin
 
 
 
-248
+243
+WSL + Kali Linux
+IceWM (Ice Window Manager)
+A lightweight window manager used in various Linux distributions. It's known for being simple and using fewer resources compared to more complex desktop environments like GNOME or KDE.
+
+
+
+
+
+244
 Open Source/GitHub
 Changelog
 
@@ -2306,7 +2273,7 @@ A document that records all notable changes made to a project, including new fea
 
 
 
-249
+245
 Open Source/GitHub
 Contributor
 
@@ -2316,25 +2283,7 @@ An individual who contributes code, documentation, or other resources to an open
 
 
 
-250
-Azure Kubernetes Learning Path
-To pause a running container, use the pause command. This command suspends all processes in the container.
-
-To stop a running container, use the stop command. The stop command enables the working process to shut down gracefully by sending it a termination signal. The container's kernel terminates after the process shuts down.
-
-
-
-
-
-251
-Taxes
-U.S. persons, including citizens, residents, corporations, partnerships, limited liability companies, trusts, and estates, must file a Report of Foreign Bank and Financial Accounts (FBAR) if they meet the reporting threshold.
-
-
-
-
-
-252
+246
 Open Source/GitHub
 Code of Conduct
 
@@ -2344,7 +2293,37 @@ Guidelines that outline expected behavior and interactions within a project’s 
 
 
 
-253
+247
+Azure Kubernetes Learning Path
+To pause a running container, use the pause command. This command suspends all processes in the container.
+
+To stop a running container, use the stop command. The stop command enables the working process to shut down gracefully by sending it a termination signal. The container's kernel terminates after the process shuts down.
+
+
+
+
+
+248
+SharePoint
+To access SharePoint resources using REST, construct a RESTful HTTP request by using the OData standard, which corresponds to the desired client object model API. For example:
+
+GET https://{site_url}/_api/lists/getbytitle('{list_name}')/items
+Authorization: "Bearer " + accessToken
+Accept: "application/json;odata=verbose"
+
+
+
+
+
+249
+Taxes
+U.S. persons, including citizens, residents, corporations, partnerships, limited liability companies, trusts, and estates, must file a Report of Foreign Bank and Financial Accounts (FBAR) if they meet the reporting threshold.
+
+
+
+
+
+250
 WSL + Kali Linux
 X11 (X Window System)
 A graphical windowing system for Unix-like operating systems, providing the foundation for graphical user interfaces. X11 is typically used with Linux systems to handle display rendering and interaction.
@@ -2353,16 +2332,7 @@ A graphical windowing system for Unix-like operating systems, providing the foun
 
 
 
-254
-WSL + Kali Linux
-IceWM (Ice Window Manager)
-A lightweight window manager used in various Linux distributions. It's known for being simple and using fewer resources compared to more complex desktop environments like GNOME or KDE.
-
-
-
-
-
-255
+251
 SharePoint
 The Content-Type header specifies the media type of the resource being sent to the server. When uploading a file, setting the correct Content-Type ensures that SharePoint correctly interprets the file type. For example, for a Word document, you might use application/vnd.openxmlformats-officedocument.wordprocessingml.document.
 
@@ -2370,7 +2340,7 @@ The Content-Type header specifies the media type of the resource being sent to t
 
 
 
-256
+252
 DNS
 Root Hints
 A list of authoritative DNS servers for the root zone. Root hints are used by DNS servers to initiate recursive queries when resolving domain names, especially when no forwarders are configured.
@@ -2379,7 +2349,23 @@ A list of authoritative DNS servers for the root zone. Root hints are used by DN
 
 
 
-257
+253
+OData
+A Polymorphic Association is a relationship where an entity can be associated with multiple types of other entities. It requires the use of @odata.type to identify the specific type of related entities, enabling flexible and dynamic associations within the data model.
+
+
+
+
+
+254
+PEP 8
+Prevent Circular Imports: Avoid scenarios where two modules depend on each other directly or indirectly. Refactor by combining modules, extracting common functionality, or using local imports within functions to defer the import until necessary.
+
+
+
+
+
+255
 Azure Functions + PP365
 Dependency Management
 The practice of managing external libraries and packages that a Python application relies on. In Azure Functions, managing dependencies through requirements.txt ensures that all necessary packages are installed and versioned correctly, maintaining consistency between development and production environments.
@@ -2388,7 +2374,7 @@ The practice of managing external libraries and packages that a Python applicati
 
 
 
-258
+256
 PEP 8
 Consistent Alignment in Continuation Lines: Align continuation lines either vertically with the opening delimiter or use an extra level of indentation. Consistent alignment improves the visual structure and readability of the code.
 
@@ -2404,19 +2390,47 @@ result = some_function(
 
 
 
-259
-SharePoint
-To access SharePoint resources using REST, construct a RESTful HTTP request by using the OData standard, which corresponds to the desired client object model API. For example:
+257
+Azure AI Search
+If AI enrichment or integrated vectorization are solution requirements, you must use the pull model (indexers) to load an index. Skillsets are attached to indexers and don't run independently.
 
-GET https://{site_url}/_api/lists/getbytitle('{list_name}')/items
-Authorization: "Bearer " + accessToken
-Accept: "application/json;odata=verbose"
+
+
+
+
+258
+OData
+$count Query Option
+
+Definition: An OData query parameter ($count=true) that includes a count of the total number of items in the response.
+Context: Helps understand the size of the dataset for pagination or display, but does not return distinct values or limit data on its own.
+
+
+
+
+
+259
+Lost in a Good Book
+Haggard and Hergé (authors): H. Rider Haggard, known for adventure novels like King Solomon's Mines, and Hergé, Belgian creator of The Adventures of Tintin comics.
 
 
 
 
 
 260
+WSL + Kali Linux
+wsl Command
+The primary command-line interface for interacting with WSL instances. It is used to manage and run Linux distributions on Windows.
+Common options:
+wsl --set-default <distro>: Sets the default Linux distribution for running wsl commands.
+wsl --terminate <distro>: Terminates a running WSL distribution.
+wsl --shutdown: Stops all running WSL instances.
+
+
+
+
+
+261
 WSL + Kali Linux
 WSL Performance Tuning
 For better performance, particularly when running heavier workloads or containers, use a .wslconfig file to adjust resource allocation for WSL 2 (memory, CPU, etc.).
@@ -2431,47 +2445,7 @@ processors=2
 
 
 
-261
-PEP 8
-Prevent Circular Imports: Avoid scenarios where two modules depend on each other directly or indirectly. Refactor by combining modules, extracting common functionality, or using local imports within functions to defer the import until necessary.
-
-
-
-
-
 262
-WSL + Kali Linux
-wsl Command
-The primary command-line interface for interacting with WSL instances. It is used to manage and run Linux distributions on Windows.
-Common options:
-wsl --set-default <distro>: Sets the default Linux distribution for running wsl commands.
-wsl --terminate <distro>: Terminates a running WSL distribution.
-wsl --shutdown: Stops all running WSL instances.
-
-
-
-
-
-263
-OData
-$count Query Option
-
-Definition: An OData query parameter ($count=true) that includes a count of the total number of items in the response.
-Context: Helps understand the size of the dataset for pagination or display, but does not return distinct values or limit data on its own.
-
-
-
-
-
-264
-OData
-A Polymorphic Association is a relationship where an entity can be associated with multiple types of other entities. It requires the use of @odata.type to identify the specific type of related entities, enabling flexible and dynamic associations within the data model.
-
-
-
-
-
-265
 Azure Kubernetes Learning Path
 The following example creates an alias for the reservationsystem image.
 
@@ -2484,7 +2458,7 @@ If you run docker image ls, you'll see two entries for the image: one with the o
 
 
 
-266
+263
 Home Network Project
 Front: Explain the purpose of AllowedIPs in WireGuard configuration.
 
@@ -2498,9 +2472,37 @@ The final parameter, ., provides the build context for the source files for the 
 
 
 
+264
+Azure Functions + PP365
+Environment Variables
+Variables set in the operating environment that can be accessed by applications. In Python Azure Functions, environment variables are used to store configuration data, secrets, and connection strings securely, allowing functions to adapt to different environments without code changes.
+
+
+
+
+
+265
+Azure Functions + PP365
+Function Scale-Out
+The ability of Azure Functions to automatically scale the number of function instances based on demand. Python functions benefit from scale-out to handle varying workloads efficiently, ensuring that applications remain responsive and performant under different usage patterns.
+
+
+
+
+
+266
+Powershell
+Invoke-WebRequest
+Sends HTTP or HTTPS requests to retrieve web content, like files or API data. Commonly used for downloading installers or fetching resources directly into a script.
+
+
+
+
+
 267
-Lost in a Good Book
-Haggard and Hergé (authors): H. Rider Haggard, known for adventure novels like King Solomon's Mines, and Hergé, Belgian creator of The Adventures of Tintin comics.
+Azure Functions + PP365
+requirements.txt
+A file used in Python projects to list all dependencies and packages required by the application. In Azure Functions, requirements.txt ensures that all necessary Python libraries are installed when deploying functions, maintaining consistency between development and production environments.
 
 
 
@@ -2526,58 +2528,6 @@ A fork or clone of an upstream repository, where contributors can make changes i
 
 
 270
-Powershell
-Invoke-WebRequest
-Sends HTTP or HTTPS requests to retrieve web content, like files or API data. Commonly used for downloading installers or fetching resources directly into a script.
-
-
-
-
-
-271
-Azure Functions + PP365
-requirements.txt
-A file used in Python projects to list all dependencies and packages required by the application. In Azure Functions, requirements.txt ensures that all necessary Python libraries are installed when deploying functions, maintaining consistency between development and production environments.
-
-
-
-
-
-272
-Azure Functions
-The name of the system-assigned service principal is always the same as the name of the Azure resource it's created for. For a deployment slot, the name of its system-assigned identity is <app-name>/slots/<slot-name>.
-
-
-
-
-
-273
-Azure Functions + PP365
-Environment Variables
-Variables set in the operating environment that can be accessed by applications. In Python Azure Functions, environment variables are used to store configuration data, secrets, and connection strings securely, allowing functions to adapt to different environments without code changes.
-
-
-
-
-
-274
-Azure Functions + PP365
-Function Scale-Out
-The ability of Azure Functions to automatically scale the number of function instances based on demand. Python functions benefit from scale-out to handle varying workloads efficiently, ensuring that applications remain responsive and performant under different usage patterns.
-
-
-
-
-
-275
-Azure AI Search
-If AI enrichment or integrated vectorization are solution requirements, you must use the pull model (indexers) to load an index. Skillsets are attached to indexers and don't run independently.
-
-
-
-
-
-276
 Lost in a Good Book
 Diatryma:  A genus of large flightless Eocene birds from Wyoming and New Mexico having much reduced wings, large head and powerful beak, and long massive legs and constituting with extinct related forms (as Gastornis) an order of birds probably most nearly related to the surviving cariamas and bustards
 
@@ -2585,7 +2535,32 @@ Diatryma:  A genus of large flightless Eocene birds from Wyoming and New Mexico 
 
 
 
-277
+271
+Azure Functions
+The name of the system-assigned service principal is always the same as the name of the Azure resource it's created for. For a deployment slot, the name of its system-assigned identity is <app-name>/slots/<slot-name>.
+
+
+
+
+
+272
+OData
+Type Casting converts an entity from one type to another within inheritance hierarchies. In OData, it is facilitated by the @odata.type annotation, which specifies the target type for the cast, ensuring accurate data interpretation and processing.
+
+
+
+
+
+273
+PP365
+Webhooks
+HTTP callbacks triggered by specific events in applications like Dynamics 365. When an event occurs, the application sends an HTTP request to a predefined URL (e.g., an Azure Function), allowing external systems to respond in real-time without constant polling.
+
+
+
+
+
+274
 Azure Kubernetes Learning Path
 Azure Container Registry repositories are private, meaning they don't support unauthenticated access. To pull images from an Azure Container Registry repository, use the docker login command and specify the URL of the login server for the registry.
 
@@ -2595,16 +2570,7 @@ docker login myregistry.azurecr.io
 
 
 
-278
-PP365
-Webhooks
-HTTP callbacks triggered by specific events in applications like Dynamics 365. When an event occurs, the application sends an HTTP request to a predefined URL (e.g., an Azure Function), allowing external systems to respond in real-time without constant polling.
-
-
-
-
-
-279
+275
 Network Mapping
 Polymorphic Shellcode
 
@@ -2614,15 +2580,7 @@ Definition: Shellcode that alters its code structure each time it is executed to
 
 
 
-280
-OData
-Type Casting converts an entity from one type to another within inheritance hierarchies. In OData, it is facilitated by the @odata.type annotation, which specifies the target type for the cast, ensuring accurate data interpretation and processing.
-
-
-
-
-
-281
+276
 Azure Functions
 Here are some of the benefits of using managed identities:
 
@@ -2634,16 +2592,15 @@ Managed identities can be used at no extra cost.
 
 
 
-282
-WSL + Kali Linux
-WSL File System Performance
-The file system in WSL 2 is optimized for Linux applications but has some overhead when accessing files stored on Windows drives (/mnt/c, /mnt/d). It's recommended to store Linux-specific files in the WSL file system (/home, etc.) for better performance.
+277
+PEP 8
+Use Parentheses for Multi-Line Imports: When importing multiple objects from a module, enclose them within parentheses and list each on a separate line. This enhances readability and adheres to line length restrictions without using backslashes.
 
 
 
 
 
-283
+278
 Azure Functions + PP365
 Power Platform CLI
 A command-line interface tool for managing Power Platform resources, including Power Apps, Power Automate, and Dataverse. The Power Platform CLI facilitates automation, scripting, and advanced management tasks, enabling developers and administrators to interact with the platform efficiently.
@@ -2652,41 +2609,16 @@ A command-line interface tool for managing Power Platform resources, including P
 
 
 
-284
-Azure Functions + PP365
-Function App Plan
-The hosting plan for Azure Functions that determines compute resources, scaling behavior, and pricing. Python Azure Functions can be hosted on different plans, such as Consumption Plans for automatic scaling or Premium Plans for enhanced performance and features, allowing developers to choose based on application needs.
+279
+WSL + Kali Linux
+WSL File System Performance
+The file system in WSL 2 is optimized for Linux applications but has some overhead when accessing files stored on Windows drives (/mnt/c, /mnt/d). It's recommended to store Linux-specific files in the WSL file system (/home, etc.) for better performance.
 
 
 
 
 
-285
-PEP 8
-Use Parentheses for Multi-Line Imports: When importing multiple objects from a module, enclose them within parentheses and list each on a separate line. This enhances readability and adheres to line length restrictions without using backslashes.
-
-
-
-
-
-286
-OData
-An ETag is a mechanism for concurrency control in OData, representing a version identifier for a resource. It ensures that updates or deletions are performed on the correct version of a record, preventing conflicts and maintaining data integrity.
-
-
-
-
-
-287
-Jane Eyre
-Palliate
-(PAL-ee-ate) To alleviate pain or lessen the severity of something, especially symptoms or distress, without removing the cause; can also mean to downplay faults or mistakes.
-
-
-
-
-
-288
+280
 Azure Functions
 When you enable a user-assigned managed identity:
 
@@ -2696,7 +2628,41 @@ A service principal of a special type is created in Microsoft Entra ID for the i
 
 
 
-289
+281
+OData
+An ETag is a mechanism for concurrency control in OData, representing a version identifier for a resource. It ensures that updates or deletions are performed on the correct version of a record, preventing conflicts and maintaining data integrity.
+
+
+
+
+
+282
+Azure Functions + PP365
+Function App Plan
+The hosting plan for Azure Functions that determines compute resources, scaling behavior, and pricing. Python Azure Functions can be hosted on different plans, such as Consumption Plans for automatic scaling or Premium Plans for enhanced performance and features, allowing developers to choose based on application needs.
+
+
+
+
+
+283
+Lost in a Good Book
+Blagged (a ride): British slang meaning to obtain a ride, often by persuading or deceiving someone.
+
+
+
+
+
+284
+Jane Eyre
+Palliate
+(PAL-ee-ate) To alleviate pain or lessen the severity of something, especially symptoms or distress, without removing the cause; can also mean to downplay faults or mistakes.
+
+
+
+
+
+285
 Azure Functions
 When you enable a system-assigned managed identity:
 
@@ -2706,7 +2672,16 @@ A service principal of a special type is created in Microsoft Entra ID for the i
 
 
 
-290
+286
+Azure Functions + PP365
+Function Proxies
+A feature in Azure Functions that allows developers to create a façade over one or more functions or APIs. Function Proxies can manage routing, transformation, and composition of requests to Python Azure Functions, simplifying API management and enhancing security by abstracting backend services.
+
+
+
+
+
+287
 WSL + Kali Linux
 WSLg (Windows Subsystem for Linux GUI)
 A feature in WSL2 that allows graphical Linux applications to run natively on Windows, without requiring additional software like VNC or an X server.
@@ -2715,23 +2690,7 @@ A feature in WSL2 that allows graphical Linux applications to run natively on Wi
 
 
 
-291
-Lost in a Good Book
-Blagged (a ride): British slang meaning to obtain a ride, often by persuading or deceiving someone.
-
-
-
-
-
-292
-Lost in a Good Book
-Compère (of a game show): A host or master of ceremonies, responsible for introducing participants and keeping the event flowing.
-
-
-
-
-
-293
+288
 Network Mapping
 Persistence Modules (Metasploit)
 
@@ -2741,10 +2700,55 @@ Definition: Metasploit modules designed to maintain ongoing access to a compromi
 
 
 
-294
+289
+Azure Functions + PP365
+Remote Debugging
+The ability to debug Azure Functions running in Azure from a local development environment. Python developers can use tools like Visual Studio Code to attach debuggers to remote functions, allowing for real-time troubleshooting and issue resolution without affecting the production environment.
+
+
+
+
+
+290
+Lost in a Good Book
+Compère (of a game show): A host or master of ceremonies, responsible for introducing participants and keeping the event flowing.
+
+
+
+
+
+291
 Azure Functions + PP365
 Function App Name
 The unique identifier assigned to an Azure Function App during creation. The Function App Name is used to access and manage the Function App within the Azure Portal, forming part of the default domain for deployed functions (e.g., https://<functionappname>.azurewebsites.net).
+
+
+
+
+
+292
+Azure Functions + PP365
+Azure AD Grant Admin Consent
+The process of obtaining organizational approval for an application’s requested API permissions in Azure AD. Granting admin consent ensures that applications have the necessary permissions to operate within the organization's security policies, enabling seamless and authorized interactions with Azure services.
+
+
+
+
+
+293
+Network Mapping
+Exploit Buffers
+
+Definition: Memory buffers within applications susceptible to buffer overflow attacks, allowing attackers to inject and execute malicious code by overwriting adjacent memory areas.
+
+
+
+
+
+294
+Powershell
+Set-Content
+Writes or replaces the content of a file. Useful for creating files with specific content or initializing an empty file.
 
 
 
@@ -2761,10 +2765,10 @@ Definition: A security mechanism placed between buffers and control data on the 
 
 
 296
-Network Mapping
-Exploit Buffers
+Azure Kubernetes Learning Path
+The host network enables you to run the container on the host network directly. This configuration effectively removes the isolation between the host and the container at a network level.
 
-Definition: Memory buffers within applications susceptible to buffer overflow attacks, allowing attackers to inject and execute malicious code by overwriting adjacent memory areas.
+Keep in mind that the container can use only ports the host isn't already using.
 
 
 
@@ -2779,34 +2783,15 @@ Uploading large files (typically over 4MB) requires a chunked upload approach. S
 
 
 298
-Powershell
-Set-Content
-Writes or replaces the content of a file. Useful for creating files with specific content or initializing an empty file.
+Azure Functions + PP365
+Async Programming (Asyncio)
+A programming paradigm in Python that enables concurrent execution of code using asynchronous functions and event loops. In Azure Functions, leveraging asyncio can improve performance and scalability by allowing Python functions to handle multiple tasks simultaneously without blocking.
 
 
 
 
 
 299
-Azure Functions + PP365
-Remote Debugging
-The ability to debug Azure Functions running in Azure from a local development environment. Python developers can use tools like Visual Studio Code to attach debuggers to remote functions, allowing for real-time troubleshooting and issue resolution without affecting the production environment.
-
-
-
-
-
-300
-Azure Kubernetes Learning Path
-The host network enables you to run the container on the host network directly. This configuration effectively removes the isolation between the host and the container at a network level.
-
-Keep in mind that the container can use only ports the host isn't already using.
-
-
-
-
-
-301
 Jane Eyre
 Post-chaise
 (POST-shayz) A lightweight, horse-drawn carriage used for long-distance travel, designed for speed and efficiency, popular in the 18th and 19th centuries.
@@ -2815,7 +2800,17 @@ Post-chaise
 
 
 
-302
+300
+SharePoint
+How can you retrieve the metadata of a specific file, including its properties, using the SharePoint REST API?
+
+GET /_api/web/GetFileByServerRelativeUrl('/Documents/Report.docx')?$expand=ListItemAllFields
+
+
+
+
+
+301
 Diffusers Library
 Reverse Diffusion
 The inverse process where an image is generated by removing noise, step-by-step, from an initial noisy state. This approach is essential in diffusion models, reconstructing data by "reversing" the diffusion process and achieving high-quality image outputs.
@@ -2824,7 +2819,7 @@ The inverse process where an image is generated by removing noise, step-by-step,
 
 
 
-303
+302
 Azure Functions + PP365
 Azure Resource Manager (ARM) Templates
 JSON files that define the infrastructure and configuration for Azure resources. Python developers use ARM templates to automate the deployment of Azure Functions and their dependencies, ensuring consistent and repeatable environments for development, testing, and production.
@@ -2833,16 +2828,7 @@ JSON files that define the infrastructure and configuration for Azure resources.
 
 
 
-304
-Azure Functions + PP365
-Azure AD Grant Admin Consent
-The process of obtaining organizational approval for an application’s requested API permissions in Azure AD. Granting admin consent ensures that applications have the necessary permissions to operate within the organization's security policies, enabling seamless and authorized interactions with Azure services.
-
-
-
-
-
-305
+303
 DNS
 Refresh Interval
 The period following the No-Refresh Interval during which the timestamp on a DNS record can be updated. If a record is refreshed within this interval, it remains active; otherwise, it becomes eligible for scavenging.
@@ -2851,7 +2837,16 @@ The period following the No-Refresh Interval during which the timestamp on a DNS
 
 
 
-306
+304
+DNS
+Stub Zone
+A DNS zone that contains only essential information about another zone's authoritative DNS servers. It facilitates efficient DNS resolution by allowing a DNS server to know where to forward queries for that specific zone without storing all DNS records.
+
+
+
+
+
+305
 Azure Kubernetes Learning Path
 A volume is stored on the host filesystem at a specific folder location. Choose a folder where you know the data won't be modified by non-Docker processes.
 
@@ -2861,29 +2856,41 @@ Docker creates and manages the new volume by running the docker volume create co
 
 
 
+306
+Open Source/GitHub
+Virtual Environment
+
+An isolated environment in Python that allows you to manage dependencies and packages for a project without affecting the global Python installation.
+
+
+
+
+
 307
-DNS
-Stub Zone
-A DNS zone that contains only essential information about another zone's authoritative DNS servers. It facilitates efficient DNS resolution by allowing a DNS server to know where to forward queries for that specific zone without storing all DNS records.
+Search Engine Optimization
+Domain Authority (DA), developed by Moz, is a metric that predicts how well a website will rank on search engine result pages (SERPs). It is based on various factors, including the quality and quantity of backlinks, and helps gauge a site’s overall SEO strength.
 
 
 
 
 
 308
-Azure Functions + PP365
-Function Proxies
-A feature in Azure Functions that allows developers to create a façade over one or more functions or APIs. Function Proxies can manage routing, transformation, and composition of requests to Python Azure Functions, simplifying API management and enhancing security by abstracting backend services.
+WSL + Kali Linux
+WSL Networking
+Accessing Windows Network Services from WSL: WSL allows you to access Windows network services and vice versa. For example, you can access a Windows-hosted HTTP server in WSL at localhost:port.
+wsl.exe Networking: When WSL 2 is in use, it runs a virtualized network adapter with a different IP address than the host machine, but WSL 2 allows seamless access to services running on the host.
 
 
 
 
 
 309
-WSL + Kali Linux
-WSL Networking
-Accessing Windows Network Services from WSL: WSL allows you to access Windows network services and vice versa. For example, you can access a Windows-hosted HTTP server in WSL at localhost:port.
-wsl.exe Networking: When WSL 2 is in use, it runs a virtualized network adapter with a different IP address than the host machine, but WSL 2 allows seamless access to services running on the host.
+Email Auth and Security
+SMTP (Simple Mail Transfer Protocol)
+
+The standard protocol used for sending emails across the internet.
+Facilitates the transmission of email messages from senders to recipients via mail servers.
+Includes commands like HELO/EHLO, MAIL FROM, RCPT TO, DATA, and QUIT.
 
 
 
@@ -2906,35 +2913,6 @@ Pelmet(s): A decorative framework or fabric cover above a window, concealing cur
 
 
 312
-Azure Functions + PP365
-Async Programming (Asyncio)
-A programming paradigm in Python that enables concurrent execution of code using asynchronous functions and event loops. In Azure Functions, leveraging asyncio can improve performance and scalability by allowing Python functions to handle multiple tasks simultaneously without blocking.
-
-
-
-
-
-313
-Search Engine Optimization
-Domain Authority (DA), developed by Moz, is a metric that predicts how well a website will rank on search engine result pages (SERPs). It is based on various factors, including the quality and quantity of backlinks, and helps gauge a site’s overall SEO strength.
-
-
-
-
-
-314
-Email Auth and Security
-SMTP (Simple Mail Transfer Protocol)
-
-The standard protocol used for sending emails across the internet.
-Facilitates the transmission of email messages from senders to recipients via mail servers.
-Includes commands like HELO/EHLO, MAIL FROM, RCPT TO, DATA, and QUIT.
-
-
-
-
-
-315
 SharePoint
 How can you delete a file named "OldReport.docx" from the "Documents" library using the SharePoint REST API?
 
@@ -2944,17 +2922,17 @@ DELETE /_api/web/lists/getByTitle('Documents')/files('OldReport.docx')
 
 
 
-316
+313
 Open Source/GitHub
-Virtual Environment
+Code Review
 
-An isolated environment in Python that allows you to manage dependencies and packages for a project without affecting the global Python installation.
-
-
+The process where project maintainers and contributors examine changes proposed in a pull request to ensure code quality, functionality, and adherence to guidelines.
 
 
 
-317
+
+
+314
 Azure AI Search
 Integrated vectorization is an extension of the indexing and query pipelines in Azure AI Search. It adds the following capabilities:
 
@@ -2966,26 +2944,7 @@ Text-to-vector conversion during queries
 
 
 
-318
-WSL + Kali Linux
-wsl --import <distro> <install-location> <tarball>
-Imports a WSL distribution from a .tar file into the specified install location. This is useful for migrating or creating a custom Linux environment.
-
-
-
-
-
-319
-Open Source/GitHub
-Code Review
-
-The process where project maintainers and contributors examine changes proposed in a pull request to ensure code quality, functionality, and adherence to guidelines.
-
-
-
-
-
-320
+315
 Diffusers Library
 Forward and Reverse Processes
 In diffusion, the forward process gradually adds noise to data, following a fixed probabilistic schedule, and the reverse process learns to denoise the noisy data. Mathematically, the forward process models q(x_t | x_{t-1}), while the reverse learns p(x_{t-1} | x_t) to reconstruct images.
@@ -2994,11 +2953,62 @@ In diffusion, the forward process gradually adds noise to data, following a fixe
 
 
 
-321
+316
+PEP 8
+Spaces After Commas, Colons, and Semicolons: Insert a single space after commas, colons, and semicolons to separate elements and enhance readability. This applies to lists, function arguments, slicing, and control structures.
+
+python
+def func(a, b, c):
+    pass
+
+
+
+
+
+317
+WSL + Kali Linux
+wsl --import <distro> <install-location> <tarball>
+Imports a WSL distribution from a .tar file into the specified install location. This is useful for migrating or creating a custom Linux environment.
+
+
+
+
+
+318
+Network Mapping
+NetFlow
+
+Definition: A network protocol developed by Cisco for collecting and monitoring IP traffic data, providing insights into bandwidth usage, traffic patterns, and network performance.
+
+
+
+
+
+319
 Open Source/GitHub
 Maintainer
 
 A person or group responsible for overseeing a repository, managing contributions, reviewing pull requests, and ensuring the project’s direction and quality.
+
+
+
+
+
+320
+Network Mapping
+RADIUS Server (Remote Authentication Dial-In User Service)
+
+Definition: A networking protocol providing centralized Authentication, Authorization, and Accounting (AAA) for users accessing network services, commonly integrated with NAC solutions.
+
+
+
+
+
+321
+Network Mapping
+Network Access Control (NAC)
+
+Definition: A security solution enforcing policies on devices attempting network access, ensuring only authorized and compliant devices can connect through authentication, authorization, and compliance checks.
 
 
 
@@ -3013,10 +3023,9 @@ Indexers drive skillset execution and AI enrichment, where you can configure ski
 
 
 323
-SharePoint
-How can you retrieve the metadata of a specific file, including its properties, using the SharePoint REST API?
-
-GET /_api/web/GetFileByServerRelativeUrl('/Documents/Report.docx')?$expand=ListItemAllFields
+Powershell
+az
+The Azure CLI command-line tool for managing Azure resources like VMs, storage, and networks. It's cross-platform and integrates with scripting tools like PowerShell.
 
 
 
@@ -3024,23 +3033,15 @@ GET /_api/web/GetFileByServerRelativeUrl('/Documents/Report.docx')?$expand=ListI
 
 324
 Network Mapping
-NetFlow
+Payload (Metasploit)
 
-Definition: A network protocol developed by Cisco for collecting and monitoring IP traffic data, providing insights into bandwidth usage, traffic patterns, and network performance.
+Definition: Code that runs on a target system after a successful exploit, performing actions like opening a command shell, creating a reverse connection, or executing other malicious activities.
 
 
 
 
 
 325
-PEP 8
-Prefer Absolute Imports: Use full paths for imports starting from the project's root rather than relative imports. Absolute imports are more readable, less error-prone, and clearly indicate the module's location within the project structure.
-
-
-
-
-
-326
 Taxes
 An S Corporation is a type of corporation that meets specific Internal Revenue Code requirements. The main difference between an S Corp and a C Corp is how they are taxed. An S Corp is a pass-through entity, meaning that the corporation's income, deductions, and credits pass through to the shareholders, who report these on their personal tax returns.
 
@@ -3048,7 +3049,36 @@ An S Corporation is a type of corporation that meets specific Internal Revenue C
 
 
 
+326
+PEP 8
+Spaces Around Assignment Operators: Use spaces around assignment operators (=) to differentiate them from keyword arguments and enhance clarity in variable assignments.
+
+python
+Copy code
+total = 100
+
+
+
+
+
 327
+Azure Functions + PP365
+Client Credentials Grant
+An OAuth 2.0 authentication flow where an application uses its own credentials (client ID and secret) to obtain an access token. This grant type is used for server-to-server interactions, allowing applications like Azure Functions to authenticate with Azure AD without user involvement.
+
+
+
+
+
+328
+PEP 8
+Prefer Absolute Imports: Use full paths for imports starting from the project's root rather than relative imports. Absolute imports are more readable, less error-prone, and clearly indicate the module's location within the project structure.
+
+
+
+
+
+329
 Home Network Project
 Front: What is Docker Swarm and how does it differ from Kubernetes?
 
@@ -3058,74 +3088,7 @@ Back: Docker Swarm is Docker’s native clustering and orchestration tool for ma
 
 
 
-328
-Network Mapping
-RADIUS Server (Remote Authentication Dial-In User Service)
-
-Definition: A networking protocol providing centralized Authentication, Authorization, and Accounting (AAA) for users accessing network services, commonly integrated with NAC solutions.
-
-
-
-
-
-329
-Azure Functions + PP365
-Client Credentials Grant
-An OAuth 2.0 authentication flow where an application uses its own credentials (client ID and secret) to obtain an access token. This grant type is used for server-to-server interactions, allowing applications like Azure Functions to authenticate with Azure AD without user involvement.
-
-
-
-
-
 330
-PEP 8
-Spaces After Commas, Colons, and Semicolons: Insert a single space after commas, colons, and semicolons to separate elements and enhance readability. This applies to lists, function arguments, slicing, and control structures.
-
-python
-def func(a, b, c):
-    pass
-
-
-
-
-
-331
-Powershell
-az
-The Azure CLI command-line tool for managing Azure resources like VMs, storage, and networks. It's cross-platform and integrates with scripting tools like PowerShell.
-
-
-
-
-
-332
-Azure Functions + PP365
-XMLHttpRequest
-A JavaScript API used to send HTTP or HTTPS requests directly from a web page. While commonly used for AJAX calls, in the context of Dynamics 365, it can facilitate communication between custom buttons and external services like Azure Functions without page reloads.
-
-
-
-
-
-333
-Azure Functions + PP365
-OAuth 2.0 Authentication Flow
-A sequence of steps in the OAuth 2.0 protocol where an application obtains an access token from an authorization server. This flow involves redirecting users for consent, exchanging authorization codes for tokens, and securely accessing protected resources using the obtained tokens, enabling secure delegation of access.
-
-
-
-
-
-334
-WSL + Kali Linux
-Wireshark Capture Filter
-A set of rules used to filter network traffic before it is captured in Wireshark. Capture filters can limit the types of traffic being collected, making it easier to focus on specific network issues.
-
-
-
-
-
-335
 PEP 8
 Blank Lines Within Functions: Use single blank lines within functions to separate logical sections or blocks of code. This separation enhances readability without introducing excessive vertical space.
 
@@ -3141,17 +3104,25 @@ def process_data(data):
 
 
 
-336
-Network Mapping
-Payload (Metasploit)
-
-Definition: Code that runs on a target system after a successful exploit, performing actions like opening a command shell, creating a reverse connection, or executing other malicious activities.
-
+331
+Azure Functions + PP365
+XMLHttpRequest
+A JavaScript API used to send HTTP or HTTPS requests directly from a web page. While commonly used for AJAX calls, in the context of Dynamics 365, it can facilitate communication between custom buttons and external services like Azure Functions without page reloads.
 
 
 
 
-337
+
+332
+WSL + Kali Linux
+Wireshark Capture Filter
+A set of rules used to filter network traffic before it is captured in Wireshark. Capture filters can limit the types of traffic being collected, making it easier to focus on specific network issues.
+
+
+
+
+
+333
 Open Source/GitHub
 Issue Triage
 
@@ -3161,49 +3132,7 @@ The process of reviewing and categorizing issues in the issue tracker, often inv
 
 
 
-338
-Lost in a Good Book
-Impresario: A manager or producer of theatrical, musical, or other artistic performances, often entrepreneurial in nature.
-
-
-
-
-
-339
-IW Migration
-Check Constraints and Computed Columns (SQL Server)
-Check constraints enforce custom rules on column values, ensuring data integrity at the database level. Computed columns derive their values from an expression referencing other columns, reducing redundant storage and improving data consistency.
-
-
-
-
-
-340
-PEP 8
-One Import Per Line: Place each import statement on its own line to improve clarity and simplify version control diffs. Avoid combining multiple imports in a single line, which can make the code harder to read and maintain.
-
-
-
-
-
-341
-Lost in a Good Book
-Perfidious: Deceitful and untrustworthy, often describing betrayal or disloyalty.
-
-
-
-
-
-342
-Azure Functions + PP365
-Dynamic Content
-Data dynamically pulled from triggers or previous actions in Power Automate flows. Dynamic content allows flows to be flexible and responsive to varying input data, enabling customized and context-aware operations when interacting with services like Azure Functions and Dataverse.
-
-
-
-
-
-343
+334
 PEP 8
 Spaces in Slices and Function Parameters: Do not add spaces inside slicing brackets or between function parameters unless necessary for clarity. Proper spacing maintains clean syntax.
 
@@ -3214,18 +3143,51 @@ my_list[1:5]
 
 
 
-344
-OData
-$search Query Option
-
-Definition: An OData query option that allows free-text search within an entity set.
-Context: When supported by the service, $search provides a simple way for clients to find resources using keywords or phrases, much like a search engine query.
+335
+Azure Functions + PP365
+OAuth 2.0 Authentication Flow
+A sequence of steps in the OAuth 2.0 protocol where an application obtains an access token from an authorization server. This flow involves redirecting users for consent, exchanging authorization codes for tokens, and securely accessing protected resources using the obtained tokens, enabling secure delegation of access.
 
 
 
 
 
-345
+336
+Lost in a Good Book
+Impresario: A manager or producer of theatrical, musical, or other artistic performances, often entrepreneurial in nature.
+
+
+
+
+
+337
+Azure Functions + PP365
+Dynamic Content
+Data dynamically pulled from triggers or previous actions in Power Automate flows. Dynamic content allows flows to be flexible and responsive to varying input data, enabling customized and context-aware operations when interacting with services like Azure Functions and Dataverse.
+
+
+
+
+
+338
+IW Migration
+Check Constraints and Computed Columns (SQL Server)
+Check constraints enforce custom rules on column values, ensuring data integrity at the database level. Computed columns derive their values from an expression referencing other columns, reducing redundant storage and improving data consistency.
+
+
+
+
+
+339
+Azure Functions + PP365
+Managed Identity Credential Acquisition
+The process by which an Azure service with a managed identity obtains an access token from Azure AD. This token is used to authenticate requests to other Azure services, ensuring secure and seamless communication without the need for manual credential management.
+
+
+
+
+
+340
 WSL + Kali Linux
 wsl Command
 The primary command-line interface for interacting with WSL instances. It is used to manage and run Linux distributions on Windows.
@@ -3237,56 +3199,35 @@ wsl --set-version <distro> 2: Changes the version of a distribution to WSL 2.
 
 
 
-346
-Azure Functions + PP365
-Managed Identity Credential Acquisition
-The process by which an Azure service with a managed identity obtains an access token from Azure AD. This token is used to authenticate requests to other Azure services, ensuring secure and seamless communication without the need for manual credential management.
+341
+OData
+$search Query Option
+
+Definition: An OData query option that allows free-text search within an entity set.
+Context: When supported by the service, $search provides a simple way for clients to find resources using keywords or phrases, much like a search engine query.
 
 
 
 
 
-347
+342
 PEP 8
-Spaces Around Assignment Operators: Use spaces around assignment operators (=) to differentiate them from keyword arguments and enhance clarity in variable assignments.
-
-python
-Copy code
-total = 100
+One Import Per Line: Place each import statement on its own line to improve clarity and simplify version control diffs. Avoid combining multiple imports in a single line, which can make the code harder to read and maintain.
 
 
 
 
 
-348
+343
 Azure Functions + PP365
-Azure Functions Development Environment
-The setup and tools required to develop Azure Functions locally before deploying them to Azure. For Python developers, this includes an IDE like VS Code, Azure Functions Core Tools, Python runtime, virtual environments, and necessary extensions for seamless development and testing.
+Virtual Environment Activation
+The process of activating a Python virtual environmentto  isolate project dependencies. When developing Python Azure Functions, activating the virtual environment ensures that the correct packages are used, preventing conflicts and maintaining a clean development setup.
 
 
 
 
 
-349
-Network Mapping
-IEEE 802.15.4
-
-Definition: A standard for low-rate wireless personal area networks (LR-WPANs), forming the basis for protocols like Zigbee and Thread, commonly used in IoT and home automation.
-
-
-
-
-
-350
-WSL + Kali Linux
-wsl.exe and .bashrc
-.bashrc is a script that runs every time you launch a new terminal in WSL. You can use it to set environment variables, customize the prompt, or configure any other startup behavior you want.
-
-
-
-
-
-351
+344
 Home Network Project
 Front: What is DNS over HTTPS (DoH) and its advantages?
 
@@ -3300,16 +3241,36 @@ Censorship Resistance: Makes it harder for third parties to block or redirect DN
 
 
 
-352
-DNS
-DNS Zone Types
-Different types of DNS zones include Primary, Secondary, Stub, and Active Directory-Integrated zones. Each type serves distinct roles in DNS management, such as data storage, redundancy, delegation, and integration with directory services.
+345
+Azure Functions + PP365
+Azure Functions Development Environment
+The setup and tools required to develop Azure Functions locally before deploying them to Azure. For Python developers, this includes an IDE like VS Code, Azure Functions Core Tools, Python runtime, virtual environments, and necessary extensions for seamless development and testing.
 
 
 
 
 
-353
+346
+Lost in a Good Book
+Perfidious: Deceitful and untrustworthy, often describing betrayal or disloyalty.
+
+
+
+
+
+347
+SharePoint
+To retrieve the actual content of the file, you append /$value to the REST API endpoint. This instructs SharePoint to return the binary content of the file instead of its metadata.
+
+GET https://contoso.sharepoint.com/sites/YourSite/_api/web/GetFileByServerRelativeUrl('/Documents/Report.docx')/$value
+Headers:
+  Accept: application/octet-stream
+
+
+
+
+
+348
 WSL + Kali Linux
 WSL 1 vs. WSL 2
 WSL 1: A translation layer that converts Linux system calls into Windows system calls. It provides faster performance for file system operations but lacks full Linux kernel support.
@@ -3319,23 +3280,16 @@ WSL 2: A full Linux kernel running in a lightweight VM, offering full system cal
 
 
 
-354
-Lost in a Good Book
-Evelyn Waugh (novels): English writer famous for satirical works like Brideshead Revisited and A Handful of Dust, exploring themes of aristocracy, faith, and morality.
+349
+WSL + Kali Linux
+wsl.exe and .bashrc
+.bashrc is a script that runs every time you launch a new terminal in WSL. You can use it to set environment variables, customize the prompt, or configure any other startup behavior you want.
 
 
 
 
 
-355
-Search Engine Optimization
-Link Explorer by Moz is a tool for analyzing a website’s backlink profile and domain authority. It helps users identify linking opportunities, monitor backlink quality, and understand the overall strength of their site’s SEO through detailed backlink data.
-
-
-
-
-
-356
+350
 OData
 While not directly related to OData or Dataverse, yield is a programming concept used in iterators to return values one at a time. It is useful in broader API interactions and data processing but is not a primary term in the OData/Dataverse context.
 
@@ -3343,16 +3297,25 @@ While not directly related to OData or Dataverse, yield is a programming concept
 
 
 
-357
-Jane Eyre
-Beldame
-(BEL-dame) An old woman, sometimes used respectfully for a grandmother, or pejoratively to describe a hag or crone.
+351
+Search Engine Optimization
+Link Explorer by Moz is a tool for analyzing a website’s backlink profile and domain authority. It helps users identify linking opportunities, monitor backlink quality, and understand the overall strength of their site’s SEO through detailed backlink data.
 
 
 
 
 
-358
+352
+Network Mapping
+IEEE 802.15.4
+
+Definition: A standard for low-rate wireless personal area networks (LR-WPANs), forming the basis for protocols like Zigbee and Thread, commonly used in IoT and home automation.
+
+
+
+
+
+353
 Azure Functions + PP365
 Azure Functions Extensions
 Additional modules or packages that extend the capabilities of Azure Functions. For Python developers, extensions can provide support for integrating with other Azure services, enhancing bindings, and adding new triggers, enabling more complex and feature-rich serverless applications.
@@ -3361,7 +3324,7 @@ Additional modules or packages that extend the capabilities of Azure Functions. 
 
 
 
-359
+354
 Azure AI Search
 Indexers don't have dedicated processing resources. Based on this, indexers' status may show as idle before running (depending on other jobs in the queue) and run times may not be predictable. Other factors define indexer performance as well, such as document size, document complexity, image analysis, among others.
 
@@ -3369,9 +3332,55 @@ Indexers don't have dedicated processing resources. Based on this, indexers' sta
 
 
 
-360
+355
+DNS
+DNS Zone Types
+Different types of DNS zones include Primary, Secondary, Stub, and Active Directory-Integrated zones. Each type serves distinct roles in DNS management, such as data storage, redundancy, delegation, and integration with directory services.
+
+
+
+
+
+356
+Jane Eyre
+Beldame
+(BEL-dame) An old woman, sometimes used respectfully for a grandmother, or pejoratively to describe a hag or crone.
+
+
+
+
+
+357
 Lost in a Good Book
 (Chicken) vol-au-vent: A small, round, puff pastry case filled with a savory chicken mixture, often served as an appetizer.
+
+
+
+
+
+358
+Network Mapping
+Dependency Graph
+
+Definition: A visual representation within a Service Map that illustrates the relationships and dependencies between various network services, essential for understanding service impacts and troubleshooting.
+
+
+
+
+
+359
+Lost in a Good Book
+Evelyn Waugh (novels): English writer famous for satirical works like Brideshead Revisited and A Handful of Dust, exploring themes of aristocracy, faith, and morality.
+
+
+
+
+
+360
+Home Network Project
+Front: What is a Docker Compose file and what is it used for?
+
+Back: A Docker Compose file (docker-compose.yml) is a YAML file that defines and configures multi-container Docker applications. It specifies the services, networks, and volumes needed for the application, allowing users to start and manage all containers with a single command (docker-compose up).
 
 
 
@@ -3388,20 +3397,17 @@ A markdown file at the root of a repository that provides an overview of the pro
 
 
 362
-Azure Functions + PP365
-Virtual Environment Activation
-The process of activating a Python virtual environmentto  isolate project dependencies. When developing Python Azure Functions, activating the virtual environment ensures that the correct packages are used, preventing conflicts and maintaining a clean development setup.
+SharePoint
+The PUT method is used to update the entire content of an existing file. If you need to modify only specific properties or metadata, you might use MERGE with the PATCH method instead. However, for updating file content specifically, PUT is appropriate.
 
 
 
 
 
 363
-Diffusers Library
-Text-Guided Depth-to-Image Translation: adapt parts of an image guided by a text prompt while preserving structure via depth estimation
-    pipeline: depth2img
-
-Start by creating an instance of a DiffusionPipeline and specify which pipeline checkpoint you would like to download.
+Azure Functions
+What is the name of the file that contains function configuration data? 
+The configuration is named function.json, which contains JSON configuration data such as binding declarations.
 
 
 
@@ -3420,44 +3426,6 @@ Helps prevent email spoofing by verifying the sender's IP address against the do
 
 
 365
-Network Mapping
-Dependency Graph
-
-Definition: A visual representation within a Service Map that illustrates the relationships and dependencies between various network services, essential for understanding service impacts and troubleshooting.
-
-
-
-
-
-366
-Home Network Project
-Front: What is a Docker Compose file and what is it used for?
-
-Back: A Docker Compose file (docker-compose.yml) is a YAML file that defines and configures multi-container Docker applications. It specifies the services, networks, and volumes needed for the application, allowing users to start and manage all containers with a single command (docker-compose up).
-
-
-
-
-
-367
-Network Mapping
-Network Access Control (NAC)
-
-Definition: A security solution enforcing policies on devices attempting network access, ensuring only authorized and compliant devices can connect through authentication, authorization, and compliance checks.
-
-
-
-
-
-368
-SharePoint
-The PUT method is used to update the entire content of an existing file. If you need to modify only specific properties or metadata, you might use MERGE with the PATCH method instead. However, for updating file content specifically, PUT is appropriate.
-
-
-
-
-
-369
 Azure Functions + PP365
 Asyncio
 A Python library used to write concurrent code using the async/await syntax. In Azure Functions, leveraging asyncio allows Python developers to write non-blocking, asynchronous functions that handle multiple tasks efficiently, improving performance and scalability.
@@ -3466,7 +3434,18 @@ A Python library used to write concurrent code using the async/await syntax. In 
 
 
 
-370
+366
+Diffusers Library
+Text-Guided Depth-to-Image Translation: adapt parts of an image guided by a text prompt while preserving structure via depth estimation
+    pipeline: depth2img
+
+Start by creating an instance of a DiffusionPipeline and specify which pipeline checkpoint you would like to download.
+
+
+
+
+
+367
 Azure Functions + PP365
 Azure AD TokenRequestContext
 A context object used in Azure AD token acquisition processes, specifying the scopes and resources for which an access token is requested. TokenRequestContext ensures that tokens are issued with the appropriate permissions and are valid for the intended resources, facilitating secure and targeted access in applications.
@@ -3475,7 +3454,7 @@ A context object used in Azure AD token acquisition processes, specifying the sc
 
 
 
-371
+368
 Azure AI Search
 You can have multiple indexers writing into the same index, and you can reuse the same data source for multiple indexers. However, an indexer can only consume one data source at a time, and can only write to a single index.
 
@@ -3483,7 +3462,7 @@ You can have multiple indexers writing into the same index, and you can reuse th
 
 
 
-372
+369
 Network Mapping
 ARP Spoofing (Address Resolution Protocol Spoofing)
 
@@ -3493,19 +3472,7 @@ Definition: A Man-in-the-Middle attack where an attacker sends falsified ARP mes
 
 
 
-373
-SharePoint
-For more advanced scenarios or to leverage modern authentication libraries, you can use the Microsoft Authentication Library (MSAL) in PowerShell. This approach provides enhanced security features and easier token management.
-
-a. Install MSAL.PS Module
-powershell
-> Install-Module -Name MSAL.PS -Scope CurrentUser
-
-
-
-
-
-374
+370
 Email Auth and Security
 Feedback Loops (FBL)
 
@@ -3517,7 +3484,28 @@ Implemented through services like Return Path and Feedback Loop (FBL) agreements
 
 
 
-375
+371
+SharePoint
+For more advanced scenarios or to leverage modern authentication libraries, you can use the Microsoft Authentication Library (MSAL) in PowerShell. This approach provides enhanced security features and easier token management.
+
+a. Install MSAL.PS Module
+powershell
+> Install-Module -Name MSAL.PS -Scope CurrentUser
+
+
+
+
+
+372
+IW Migration
+Transaction Handling (SQL Server)
+A mechanism to ensure that a series of database operations either all succeed or all fail, maintaining data integrity. Using commands like BEGIN TRAN, COMMIT, and ROLLBACK, developers control atomic operations and safeguard against partial updates.
+
+
+
+
+
+373
 Azure AI Foundry
 AI Foundry project: A project is a child resource of the hub. The Azure resource provider for a project is Microsoft.MachineLearningServices/workspaces, and the kind of resource is Project. The project provides the following features:
     Access to development tools for building and customizing AI applications.
@@ -3528,18 +3516,35 @@ AI Foundry project: A project is a child resource of the hub. The Azure resource
 
 
 
+374
+Jane Eyre
+Arrogate
+(AIR-uh-gate) To seize or assume rights or privileges without justification, often in an overbearing or presumptuous manner.
+
+
+
+
+
+375
+Azure Functions + PP365
+Azure Service Principal
+An identity created for use with applications, hosted services, and automated tools to access Azure resources. Service principals enable secure, programmatic access to Azure services, acting as non-human users with specific permissions, essential for authenticating applications like Power Automate and Azure Functions.
+
+
+
+
+
 376
-Azure Functions
-What is the name of the file that contains function configuration data? 
-The configuration is named function.json, which contains JSON configuration data such as binding declarations.
+SharePoint
+The __metadata property specifies the type information of the item being created or updated. This helps SharePoint understand the schema of the item, ensuring that the correct fields and data types are used.
 
 
 
 
 
 377
-SharePoint
-The __metadata property specifies the type information of the item being created or updated. This helps SharePoint understand the schema of the item, ensuring that the correct fields and data types are used.
+Search Engine Optimization
+Google PageSpeed Insights analyzes the content of a web page and provides suggestions to make it faster. It evaluates both desktop and mobile performance, offering recommendations to improve load times and overall website performance for better user experience.
 
 
 
@@ -3555,41 +3560,6 @@ A global configuration file for Azure Functions that defines settings applicable
 
 
 379
-Search Engine Optimization
-Google PageSpeed Insights analyzes the content of a web page and provides suggestions to make it faster. It evaluates both desktop and mobile performance, offering recommendations to improve load times and overall website performance for better user experience.
-
-
-
-
-
-380
-Jane Eyre
-Arrogate
-(AIR-uh-gate) To seize or assume rights or privileges without justification, often in an overbearing or presumptuous manner.
-
-
-
-
-
-381
-Azure Functions + PP365
-Logging
-The practice of recording information about the execution of Azure Functions. Python Azure Functions implement logging to track operations, monitor performance, and diagnose issues, utilizing frameworks like Python’s logging module and integrating with Azure’s logging services for centralized monitoring.
-
-
-
-
-
-382
-IW Migration
-Transaction Handling (SQL Server)
-A mechanism to ensure that a series of database operations either all succeed or all fail, maintaining data integrity. Using commands like BEGIN TRAN, COMMIT, and ROLLBACK, developers control atomic operations and safeguard against partial updates.
-
-
-
-
-
-383
 WSL + Kali Linux
 nm-applet (Network Manager Applet)
 A system tray application that allows you to manage network connections in a graphical environment. It's commonly used with desktop environments like GNOME or XFCE for managing Wi-Fi, VPN, and Ethernet connections.
@@ -3598,7 +3568,16 @@ A system tray application that allows you to manage network connections in a gra
 
 
 
-384
+380
+Azure Functions + PP365
+Azure SDK for Python
+A collection of libraries provided by Microsoft to interact with Azure services using Python. The Azure SDK for Python simplifies the integration of Azure Functions with services like Azure Storage, Cosmos DB, and Azure Key Vault, providing robust and consistent APIs for developers.
+
+
+
+
+
+381
 Azure Functions + PP365
 Local Debugging
 Running and testing Azure Functions on a local machine to identify and fix issues before deployment. Python developers use tools like Azure Functions Core Tools and VS Code to debug functions locally, allowing for rapid development and troubleshooting in a controlled environment.
@@ -3607,10 +3586,37 @@ Running and testing Azure Functions on a local machine to identify and fix issue
 
 
 
-385
+382
+Azure Functions + PP365
+Function.json
+A file that defines the bindings and configuration for an individual Azure Function. In Python-based functions, function.json specifies the trigger type, input and output bindings, and other settings, enabling Azure to correctly route events and data to the function.
+
+
+
+
+
+383
+Azure Functions + PP365
+Logging
+The practice of recording information about the execution of Azure Functions. Python Azure Functions implement logging to track operations, monitor performance, and diagnose issues, utilizing frameworks like Python’s logging module and integrating with Azure’s logging services for centralized monitoring.
+
+
+
+
+
+384
 WSL + Kali Linux
 wsl --export <distro> <file.tar>
 Exports a WSL distribution to a .tar file. This can be used for backup or migration purposes.
+
+
+
+
+
+385
+Azure Functions + PP365
+Redirect URI
+A URI in OAuth 2.0 flows where the authorization server redirects the user after authentication. It ensures that tokens are sent to the correct application endpoint, maintaining security by validating the redirect destination during the authentication process.
 
 
 
@@ -3628,14 +3634,36 @@ Definition: A technique where an attacker injects shellcode—a small piece of c
 
 387
 Azure Functions + PP365
-Redirect URI
-A URI in OAuth 2.0 flows where the authorization server redirects the user after authentication. It ensures that tokens are sent to the correct application endpoint, maintaining security by validating the redirect destination during the authentication process.
+Service Bus Triggers
+Triggers that activate Azure Functions in response to messages in Azure Service Bus queues or topics. Python functions with Service Bus triggers can process asynchronous messages, enabling decoupled and scalable communication between different parts of an application or between services.
 
 
 
 
 
 388
+PEP 8
+Spaces Before Opening Parentheses: Do not add a space before the opening parenthesis in function calls, definitions, or other uses. This rule keeps the syntax clean and consistent.
+
+python
+Copy code
+my_function(arg1, arg2)
+
+
+
+
+
+389
+Network Mapping
+IEEE 802.1Q
+
+Definition: The standard protocol for VLAN tagging, enabling multiple Virtual Local Area Networks to share a single physical network link by inserting VLAN tags into Ethernet frames.
+
+
+
+
+
+390
 Logging in Python
 Q: Which handler would you choose to limit the size of your log files and maintain a specific number of backup files?
 
@@ -3646,31 +3674,10 @@ This handler manages log file sizes and retains a set number of backup files to 
 
 
 
-389
-Search Engine Optimization
-A canonical tag is an HTML element that specifies the preferred version of a webpage to prevent duplicate content issues. By indicating the canonical URL, it helps consolidate ranking signals and ensures search engines index the correct page.
-
-
-
-
-
-390
-SharePoint
-To retrieve the actual content of the file, you append /$value to the REST API endpoint. This instructs SharePoint to return the binary content of the file instead of its metadata.
-
-GET https://contoso.sharepoint.com/sites/YourSite/_api/web/GetFileByServerRelativeUrl('/Documents/Report.docx')/$value
-Headers:
-  Accept: application/octet-stream
-
-
-
-
-
 391
-Network Mapping
-IEEE 802.1Q
-
-Definition: The standard protocol for VLAN tagging, enabling multiple Virtual Local Area Networks to share a single physical network link by inserting VLAN tags into Ethernet frames.
+Azure Functions + PP365
+Function App Secrets
+Sensitive information required by Azure Functions, such as API keys or connection strings. Python Azure Functions manage secrets through environment variables, Azure Key Vault integrations, or managed identities, ensuring that sensitive data is stored securely and accessed only by authorized functions.
 
 
 
@@ -3688,15 +3695,40 @@ This means that only messages with a severity of WARNING and above will be proce
 
 
 393
-Azure Functions + PP365
-Service Bus Triggers
-Triggers that activate Azure Functions in response to messages in Azure Service Bus queues or topics. Python functions with Service Bus triggers can process asynchronous messages, enabling decoupled and scalable communication between different parts of an application or between services.
+Search Engine Optimization
+A canonical tag is an HTML element that specifies the preferred version of a webpage to prevent duplicate content issues. By indicating the canonical URL, it helps consolidate ranking signals and ensures search engines index the correct page.
 
 
 
 
 
 394
+Azure Functions + PP365
+Function App Settings
+Configuration settings for an Azure Function App that control its behavior and integration with other services. For Python Azure Functions, settings can include environment variables, connection strings, and runtime configurations, enabling customization and secure management of function properties.
+
+
+
+
+
+395
+Azure Functions + PP365
+Function App Slots
+Separate environments within a Function App that allow for staging and testing of functions before swapping them into production. Python developers use deployment slots to validate changes, perform tests, and ensure stability before making updates live, minimizing disruptions and ensuring reliability.
+
+
+
+
+
+396
+Lost in a Good Book
+Phaeton (bodied automobile): A type of early open-top car with no fixed roof, evoking the design of 19th-century horse-drawn carriages.
+
+
+
+
+
+397
 Azure Functions + PP365
 Azure Functions Premium Plan
 A hosting plan for Azure Functions that offers enhanced performance, VNET integration, and advanced features like unlimited execution duration and pre-warmed instances. Python functions hosted on the Premium Plan benefit from reduced cold starts and greater scalability, suitable for enterprise-grade applications.
@@ -3705,74 +3737,7 @@ A hosting plan for Azure Functions that offers enhanced performance, VNET integr
 
 
 
-395
-PEP 8
-Spaces Before Opening Parentheses: Do not add a space before the opening parenthesis in function calls, definitions, or other uses. This rule keeps the syntax clean and consistent.
-
-python
-Copy code
-my_function(arg1, arg2)
-
-
-
-
-
-396
-Azure Functions + PP365
-Azure SDK for Python
-A collection of libraries provided by Microsoft to interact with Azure services using Python. The Azure SDK for Python simplifies the integration of Azure Functions with services like Azure Storage, Cosmos DB, and Azure Key Vault, providing robust and consistent APIs for developers.
-
-
-
-
-
-397
-Lost in a Good Book
-Phaeton (bodied automobile): A type of early open-top car with no fixed roof, evoking the design of 19th-century horse-drawn carriages.
-
-
-
-
-
 398
-Azure Functions + PP365
-Azure Function App Logs
-Logs generated by Azure Functions that provide insights into function executions, errors, and performance. Python Azure Functions can emit logs to Azure Monitor and Application Insights, enabling developers to monitor, analyze, and optimize function behavior based on comprehensive log data.
-
-
-
-
-
-399
-Azure Functions + PP365
-Function App Secrets
-Sensitive information required by Azure Functions, such as API keys or connection strings. Python Azure Functions manage secrets through environment variables, Azure Key Vault integrations, or managed identities, ensuring that sensitive data is stored securely and accessed only by authorized functions.
-
-
-
-
-
-400
-IW Migration
-Linked Table Manager (Access)
-A utility in Access to manage external data connections. It allows refreshing, updating, or changing the source of linked tables, ensuring that front-end objects always correctly reference tables in the back-end or external databases.
-
-
-
-
-
-401
-Logging in Python
-Q: How can you configure multiple file handlers with different log levels for the same logger in Python's logging module?
-
-A: Add multiple handlers to the logger, each with its own level and target file, such as one handler with level=INFO writing to 'info.log' and another with level=ERROR writing to 'error.log'.
-This setup allows segregation of log messages based on severity levels across different files.
-
-
-
-
-
-402
 Logging in Python
 Q: Which logging level is appropriate for a message that indicates a minor problem that doesn't prevent the program from functioning?
 
@@ -3783,16 +3748,36 @@ This level signals potential issues that may require attention but do not halt t
 
 
 
-403
+399
 Azure Functions + PP365
-Function.json
-A file that defines the bindings and configuration for an individual Azure Function. In Python-based functions, function.json specifies the trigger type, input and output bindings, and other settings, enabling Azure to correctly route events and data to the function.
+Azure Function App Logs
+Logs generated by Azure Functions that provide insights into function executions, errors, and performance. Python Azure Functions can emit logs to Azure Monitor and Application Insights, enabling developers to monitor, analyze, and optimize function behavior based on comprehensive log data.
 
 
 
 
 
-404
+400
+Logging in Python
+Q: How can you configure multiple file handlers with different log levels for the same logger in Python's logging module?
+
+A: Add multiple handlers to the logger, each with its own level and target file, such as one handler with level=INFO writing to 'info.log' and another with level=ERROR writing to 'error.log'.
+This setup allows segregation of log messages based on severity levels across different files.
+
+
+
+
+
+401
+IW Migration
+Linked Table Manager (Access)
+A utility in Access to manage external data connections. It allows refreshing, updating, or changing the source of linked tables, ensuring that front-end objects always correctly reference tables in the back-end or external databases.
+
+
+
+
+
+402
 Azure Functions + PP365
 Environment Configuration
 The setup of environment-specific settings and variables that dictate how Python Azure Functions operate. Proper environment configuration ensures that functions behave correctly across different stages (development, staging, production), maintaining separation of concerns and enhancing security.
@@ -3801,7 +3786,52 @@ The setup of environment-specific settings and variables that dictate how Python
 
 
 
+403
+Search Engine Optimization
+Keyword density is the percentage of times a keyword appears on a webpage compared to the total number of words. It is used to optimize content for relevant keywords without overstuffing, ensuring that the content remains natural and readable while signaling relevance to search engines.
+
+
+
+
+
+404
+Logging in Python
+Q: What does WatchedFileHandler from the logging.handlers module do differently compared to FileHandler?
+
+A: It watches the log file for external modifications and automatically reopens it if the file is moved or deleted.
+This is useful when external tools handle log rotation, ensuring continuous logging without interruption.
+
+
+
+
+
 405
+Azure Functions + PP365
+Scopes
+Permissions in OAuth 2.0 that specify the level of access an application is requesting. Scopes define what actions the application can perform on behalf of the user or service, such as reading data, writing records, or accessing specific APIs, ensuring granular control over permissions.
+
+
+
+
+
+406
+Azure Functions + PP365
+GitHub Actions
+An automation tool integrated with GitHub that allows developers to create workflows for building, testing, and deploying code. Python Azure Functions can leverage GitHub Actions to implement CI/CD pipelines, enabling seamless integration with source control and automated deployments to Azure.
+
+
+
+
+
+407
+Search Engine Optimization
+An XML sitemap is a file that lists all the important pages of a website, helping search engines crawl the site more effectively. It improves the discoverability of webpages, ensures all content is indexed, and can include additional metadata about each URL.
+
+
+
+
+
+408
 SharePoint
 Whenever possible, the URI for these REST endpoints closely mimics the API signature of the resource in the SharePoint client object model. The main entry points for the REST service represent the site collection and site of the specified context. 
 
@@ -3813,23 +3843,7 @@ https://{site_url}/_api/web
 
 
 
-406
-PEP 8
-Remove Unused Imports: Regularly clean your code by eliminating imports that are not utilized. Unused imports clutter the codebase, increase memory usage, and can lead to longer load times. Utilize linters like flake8 or pylint to identify and remove them.
-
-
-
-
-
-407
-Search Engine Optimization
-Keyword density is the percentage of times a keyword appears on a webpage compared to the total number of words. It is used to optimize content for relevant keywords without overstuffing, ensuring that the content remains natural and readable while signaling relevance to search engines.
-
-
-
-
-
-408
+409
 Powershell
 -Force
 Overrides warnings or confirmation prompts, ensuring the command proceeds without manual intervention. Common in scripting for reliability.
@@ -3838,62 +3852,15 @@ Overrides warnings or confirmation prompts, ensuring the command proceeds withou
 
 
 
-409
-Azure Functions + PP365
-GitHub Actions
-An automation tool integrated with GitHub that allows developers to create workflows for building, testing, and deploying code. Python Azure Functions can leverage GitHub Actions to implement CI/CD pipelines, enabling seamless integration with source control and automated deployments to Azure.
-
-
-
-
-
 410
-Azure Functions + PP365
-Azure Service Principal
-An identity created for use with applications, hosted services, and automated tools to access Azure resources. Service principals enable secure, programmatic access to Azure services, acting as non-human users with specific permissions, essential for authenticating applications like Power Automate and Azure Functions.
+PEP 8
+Remove Unused Imports: Regularly clean your code by eliminating imports that are not utilized. Unused imports clutter the codebase, increase memory usage, and can lead to longer load times. Utilize linters like flake8 or pylint to identify and remove them.
 
 
 
 
 
 411
-Azure Functions + PP365
-Scopes
-Permissions in OAuth 2.0 that specify the level of access an application is requesting. Scopes define what actions the application can perform on behalf of the user or service, such as reading data, writing records, or accessing specific APIs, ensuring granular control over permissions.
-
-
-
-
-
-412
-Search Engine Optimization
-An XML sitemap is a file that lists all the important pages of a website, helping search engines crawl the site more effectively. It improves the discoverability of webpages, ensures all content is indexed, and can include additional metadata about each URL.
-
-
-
-
-
-413
-Logging in Python
-Q: What does WatchedFileHandler from the logging.handlers module do differently compared to FileHandler?
-
-A: It watches the log file for external modifications and automatically reopens it if the file is moved or deleted.
-This is useful when external tools handle log rotation, ensuring continuous logging without interruption.
-
-
-
-
-
-414
-Azure Functions + PP365
-Function App Slots
-Separate environments within a Function App that allow for staging and testing of functions before swapping them into production. Python developers use deployment slots to validate changes, perform tests, and ensure stability before making updates live, minimizing disruptions and ensuring reliability.
-
-
-
-
-
-415
 OData
 Batch Requests
 - Definition: OData feature allowing multiple operations (queries/updates) to be combined into a single HTTP request.
@@ -3903,16 +3870,27 @@ Batch Requests
 
 
 
-416
+412
 Azure Functions + PP365
-Function App Settings
-Configuration settings for an Azure Function App that control its behavior and integration with other services. For Python Azure Functions, settings can include environment variables, connection strings, and runtime configurations, enabling customization and secure management of function properties.
+API Gateway Integration
+Connecting Azure Functions with an API gateway to manage and secure API traffic. Integrating with services like Azure API Management allows Python Azure Functions to benefit from features like rate limiting, authentication, and monitoring, enhancing the security and scalability of exposed APIs.
 
 
 
 
 
-417
+413
+Logging in Python
+Q: What is a key benefit of using RotatingFileHandler from the logging.handlers module?
+
+A: It rotates log files when they reach a certain size, such as maxBytes=5*1024*1024 (5 MB).
+This prevents log files from growing indefinitely, managing disk space effectively.
+
+
+
+
+
+414
 SharePoint
 Delegated Permissions
 Definition: Permissions granted to an application on behalf of a user. The app acts as the user and can only perform actions that the user is permitted to do.
@@ -3923,7 +3901,7 @@ Authentication Flow: Typically involves interactive authentication methods like 
 
 
 
-418
+415
 DNS
 Conditional Forwarding
 A DNS configuration that directs queries for specific domain names to designated DNS servers instead of using default forwarders. It's useful for managing inter-office DNS resolution or directing queries for partner domains to their respective DNS servers.
@@ -3932,12 +3910,37 @@ A DNS configuration that directs queries for specific domain names to designated
 
 
 
-419
-Logging in Python
-Q: What is a key benefit of using RotatingFileHandler from the logging.handlers module?
+416
+Lost in a Good Book
+Antimacassar: A small cloth placed on furniture, especially chair backs, to protect against grease and wear, historically from hair oil ("macassar oil").
 
-A: It rotates log files when they reach a certain size, such as maxBytes=5*1024*1024 (5 MB).
-This prevents log files from growing indefinitely, managing disk space effectively.
+
+
+
+
+417
+Azure Functions + PP365
+Cold Start
+The latency experienced when an Azure Function is invoked after a period of inactivity. Python Azure Functions, especially on Consumption Plans, may experience cold starts, where the platform needs to allocate resources and initialize the function, leading to initial delays before execution.
+
+
+
+
+
+418
+SharePoint
+Which REST API endpoint would you use to check if a file named "Report.docx" exists in the "Documents" library of a SharePoint site?
+
+/_api/web/GetFolderByServerRelativeUrl('/Documents')/Files('Report.docx')
+
+
+
+
+
+419
+Azure Functions + PP365
+HTTP Triggers
+A type of function trigger that activates an Azure Function in response to HTTP requests. Python Azure Functions with HTTP triggers can handle RESTful API calls, webhooks, and other HTTP-based interactions, making them suitable for building APIs and integrating with web services.
 
 
 
@@ -3955,27 +3958,33 @@ This practice aligns loggers with the application's structure, making configurat
 
 
 421
-SharePoint
-Which REST API endpoint would you use to check if a file named "Report.docx" exists in the "Documents" library of a SharePoint site?
+Logging in Python
+Q: Which function is used to log a message with level WARNING in Python's logging module?
 
-/_api/web/GetFolderByServerRelativeUrl('/Documents')/Files('Report.docx')
+A: logging.warning()
+This function logs a message with a severity level of WARNING.
 
 
 
 
 
 422
-Azure Functions + PP365
-API Gateway Integration
-Connecting Azure Functions with an API gateway to manage and secure API traffic. Integrating with services like Azure API Management allows Python Azure Functions to benefit from features like rate limiting, authentication, and monitoring, enhancing the security and scalability of exposed APIs.
+Logging in Python
+Q: If a child logger has propagate set to False, what does this mean?
+
+A: It will not pass log messages to the parent logger.
+This isolates the logger, ensuring that messages are handled only by its own handlers.
 
 
 
 
 
 423
-Lost in a Good Book
-Antimacassar: A small cloth placed on furniture, especially chair backs, to protect against grease and wear, historically from hair oil ("macassar oil").
+Logging in Python
+Q: What does the exc_info parameter do in logging methods like logger.error() from the logging module?
+
+A: exc_info=True
+This includes exception traceback information in the log message, aiding in debugging.
 
 
 
@@ -4004,26 +4013,6 @@ This default format includes the log level, logger name, and the log message.
 
 
 426
-Azure Functions + PP365
-Cold Start
-The latency experienced when an Azure Function is invoked after a period of inactivity. Python Azure Functions, especially on Consumption Plans, may experience cold starts, where the platform needs to allocate resources and initialize the function, leading to initial delays before execution.
-
-
-
-
-
-427
-Logging in Python
-Q: If a child logger has propagate set to False, what does this mean?
-
-A: It will not pass log messages to the parent logger.
-This isolates the logger, ensuring that messages are handled only by its own handlers.
-
-
-
-
-
-428
 DNS
 DNS Policies
 A feature in Windows DNS Server that allows administrators to define rules for how DNS queries are handled. Policies can filter queries or provide different responses based on criteria like client IP addresses, enabling scenarios like split-brain DNS.
@@ -4032,7 +4021,16 @@ A feature in Windows DNS Server that allows administrators to define rules for h
 
 
 
-429
+427
+Azure Functions + PP365
+Application Insights
+A feature of Azure Monitor that provides extensible application performance management and monitoring. Python Azure Functions integrated with Application Insights can track telemetry data, diagnose issues, and gain insights into function performance and usage patterns, enhancing observability and reliability.
+
+
+
+
+
+428
 Logging in Python
 Q: Name a handler you would use to send log messages via email for critical errors.
 
@@ -4043,7 +4041,7 @@ This handler sends log messages through an SMTP server, suitable for alerting on
 
 
 
-430
+429
 Logging in Python
 Q: Which of the following is not a built-in logging level in Python: DEBUG, INFO, TRACE, CRITICAL?
 
@@ -4054,36 +4052,16 @@ TRACE is not a standard logging level in Python's logging module.
 
 
 
+430
+Jane Eyre
+Fillip
+(FIL-ip) A small but impactful boost or stimulus; also refers to a flicking motion made by snapping fingers.
+
+
+
+
+
 431
-Azure Functions + PP365
-HTTP Triggers
-A type of function trigger that activates an Azure Function in response to HTTP requests. Python Azure Functions with HTTP triggers can handle RESTful API calls, webhooks, and other HTTP-based interactions, making them suitable for building APIs and integrating with web services.
-
-
-
-
-
-432
-Azure Functions + PP365
-Application Insights
-A feature of Azure Monitor that provides extensible application performance management and monitoring. Python Azure Functions integrated with Application Insights can track telemetry data, diagnose issues, and gain insights into function performance and usage patterns, enhancing observability and reliability.
-
-
-
-
-
-433
-Logging in Python
-Q: Which function is used to log a message with level WARNING in Python's logging module?
-
-A: logging.warning()
-This function logs a message with a severity level of WARNING.
-
-
-
-
-
-434
 Logging in Python
 Q: Which formatter attribute includes the name of the function where the log message originated in Python's logging.Formatter?
 
@@ -4094,12 +4072,42 @@ This attribute inserts the function name into the log message, providing context
 
 
 
-435
-Logging in Python
-Q: What does the exc_info parameter do in logging methods like logger.error() from the logging module?
+432
+Azure AI Search
+You can run indexers on demand or on a recurring data refresh schedule that runs as often as every five minutes. More frequent updates preclude the use of indexers, requiring that you implement a 'push model' that simultaneously pushes data to both Azure AI Search and your external data source.
 
-A: exc_info=True
-This includes exception traceback information in the log message, aiding in debugging.
+
+
+
+
+433
+PEP 8
+No Spaces Around = for Keyword Arguments: Do not use spaces around the = sign when passing keyword arguments in function calls. This rule differentiates keyword arguments from assignment statements.
+
+python
+Copy code
+my_function(param1=value1, param2=value2)
+
+
+
+
+
+434
+Logging in Python
+Q: How can you configure logging using an external INI-style configuration file in Python's logging module?
+
+A: Use logging.config.fileConfig('logging.ini') from the logging.config module
+This function reads the logging configuration from an INI file, allowing for external and reusable configurations.
+
+
+
+
+
+435
+Network Mapping
+Service Map
+
+Definition: A visual representation illustrating the relationships, dependencies, and interactions between various network services and applications within an organization, aiding in management and troubleshooting.
 
 
 
@@ -4115,28 +4123,6 @@ A configuration file used during local development of Azure Functions. It stores
 
 
 437
-PEP 8
-No Spaces Around = for Keyword Arguments: Do not use spaces around the = sign when passing keyword arguments in function calls. This rule differentiates keyword arguments from assignment statements.
-
-python
-Copy code
-my_function(param1=value1, param2=value2)
-
-
-
-
-
-438
-Network Mapping
-Service Map
-
-Definition: A visual representation illustrating the relationships, dependencies, and interactions between various network services and applications within an organization, aiding in management and troubleshooting.
-
-
-
-
-
-439
 Logging in Python
 Q: Why is it recommended to use named loggers (e.g., logging.getLogger(__name__)) instead of the root logger?
 
@@ -4147,29 +4133,18 @@ Named loggers enable targeted configurations, such as setting different log leve
 
 
 
-440
+438
 Logging in Python
-Q: How can you configure logging using an external INI-style configuration file in Python's logging module?
+Q: What is the purpose of a Formatter in Python's logging module?
 
-A: Use logging.config.fileConfig('logging.ini') from the logging.config module
-This function reads the logging configuration from an INI file, allowing for external and reusable configurations.
-
-
-
-
-
-441
-Logging in Python
-Q: How can you configure Python's logging to output messages to a file instead of the console?
-
-A: Use FileHandler from the logging module with a filename like 'app.log'.
-This directs log messages to the specified file instead of the standard console output.
+A: To define the structure and content of log messages using formats like '%(asctime)s - %(levelname)s - %(message)s'.
+This ensures that log messages are consistently formatted for readability and analysis.
 
 
 
 
 
-442
+439
 Email Auth and Security
 Aggregate Reports
 
@@ -4181,7 +4156,7 @@ Typically formatted in XML, containing data on email sources, authentication out
 
 
 
-443
+440
 Logging in Python
 Q: What is the primary purpose of TimedRotatingFileHandler from the logging.handlers module?
 
@@ -4192,54 +4167,7 @@ This ensures that log files are segmented based on time, facilitating organized 
 
 
 
-444
-Jane Eyre
-Fillip
-(FIL-ip) A small but impactful boost or stimulus; also refers to a flicking motion made by snapping fingers.
-
-
-
-
-
-445
-Azure AI Search
-You can run indexers on demand or on a recurring data refresh schedule that runs as often as every five minutes. More frequent updates preclude the use of indexers, requiring that you implement a 'push model' that simultaneously pushes data to both Azure AI Search and your external data source.
-
-
-
-
-
-446
-Logging in Python
-Q: What is the purpose of a Formatter in Python's logging module?
-
-A: To define the structure and content of log messages using formats like '%(asctime)s - %(levelname)s - %(message)s'.
-This ensures that log messages are consistently formatted for readability and analysis.
-
-
-
-
-
-447
-Logging in Python
-Q: What is the purpose of the disable_existing_loggers key in a dictConfig logging configuration?
-
-A: disable_existing_loggers=False in logging.config.dictConfig
-This ensures that existing loggers not specified in the configuration remain active and are not disabled.
-
-
-
-
-
-448
-Lost in a Good Book
-Lerwick: The main town and port of the Shetland Islands, Scotland, known for its fishing and maritime history.
-
-
-
-
-
-449
+441
 Logging in Python
 Q: How do you add a custom filter to a logger or handler in Python's logging module?
 
@@ -4250,39 +4178,29 @@ This allows selective logging based on custom criteria defined within the filter
 
 
 
-450
+442
 Logging in Python
-Q: In TimedRotatingFileHandler from the logging.handlers module, what does the when parameter specify?
+Q: How can you configure Python's logging to output messages to a file instead of the console?
 
-A: when='midnight'
-This parameter sets the interval type for rotating logs, such as daily at midnight.
-
-
+A: Use FileHandler from the logging module with a filename like 'app.log'.
+This directs log messages to the specified file instead of the standard console output.
 
 
 
-451
+
+
+443
 Logging in Python
-Q: What does setting logging.disable(logging.CRITICAL) do to the logging system in Python's logging module?
+Q: What is the purpose of the disable_existing_loggers key in a dictConfig logging configuration?
 
-A: It disables all logging messages at or below the CRITICAL level.
-This effectively silences all log messages, as CRITICAL is the highest standard logging level.
-
-
-
-
-
-452
-Azure Functions
-Durable Functions allows you to define stateful workflows using an orchestration function. An orchestration function provides these extra benefits:
-You can define the workflows in code. You don't need to write a JSON description or use a workflow design tool.
-Functions can be called both synchronously and asynchronously. Output from the called functions is saved locally in variables and used in subsequent function calls.
+A: disable_existing_loggers=False in logging.config.dictConfig
+This ensures that existing loggers not specified in the configuration remain active and are not disabled.
 
 
 
 
 
-453
+444
 Logging in Python
 Q: Name the four main types of file handlers available in Python's logging module.
 
@@ -4293,7 +4211,26 @@ These handlers manage log output to files with varying rotation and monitoring c
 
 
 
-454
+445
+Lost in a Good Book
+Lerwick: The main town and port of the Shetland Islands, Scotland, known for its fishing and maritime history.
+
+
+
+
+
+446
+Logging in Python
+Q: In TimedRotatingFileHandler from the logging.handlers module, what does the when parameter specify?
+
+A: when='midnight'
+This parameter sets the interval type for rotating logs, such as daily at midnight.
+
+
+
+
+
+447
 Home Network Project
 Front: Explain the difference between a Docker Image and a Docker Container.
 
@@ -4305,7 +4242,37 @@ Docker Container: A runnable instance of a Docker image. Containers are created 
 
 
 
-455
+448
+Logging in Python
+Q: What does setting logging.disable(logging.CRITICAL) do to the logging system in Python's logging module?
+
+A: It disables all logging messages at or below the CRITICAL level.
+This effectively silences all log messages, as CRITICAL is the highest standard logging level.
+
+
+
+
+
+449
+Azure Functions
+Durable Functions allows you to define stateful workflows using an orchestration function. An orchestration function provides these extra benefits:
+You can define the workflows in code. You don't need to write a JSON description or use a workflow design tool.
+Functions can be called both synchronously and asynchronously. Output from the called functions is saved locally in variables and used in subsequent function calls.
+
+
+
+
+
+450
+PP365
+System-Assigned Managed Identity
+A type of managed identity in Azure that is directly tied to an individual Azure resource, such as an Azure Function. The lifecycle of a system-assigned managed identity is bound to the resource; it is automatically created when enabled and deleted when the resource is removed.
+
+
+
+
+
+451
 Diffusers Library
 Text-Guided Image-to-Image Translation: Adapt an image guided by a text prompt
     Pipeline: img2img
@@ -4316,7 +4283,7 @@ Text-Guided Image-Inpainting: Fill the masked part of an image given the image, 
 
 
 
-456
+452
 Home Network Project
 Front: What is Network Latency and how can it affect network performance?
 
@@ -4326,16 +4293,18 @@ Back: Network Latency refers to the time it takes for data to travel from the so
 
 
 
-457
-PP365
-System-Assigned Managed Identity
-A type of managed identity in Azure that is directly tied to an individual Azure resource, such as an Azure Function. The lifecycle of a system-assigned managed identity is bound to the resource; it is automatically created when enabled and deleted when the resource is removed.
+453
+Azure Functions
+2. Suppose your Azure Function has a blob trigger associated with it and you want it to execute only when png images are uploaded. Which of the following blob trigger Path values should you use? 
+
+samples-workitems/{name}.png
+The Path tells the blob trigger where it should monitor for changes, and if there are any filters applied. Adding a file extension to the Path specifies that uploaded files must have that file extension in order for the trigger to invoke the function.
 
 
 
 
 
-458
+454
 Home Network Project
 Front: What is Rate Limiting and how does it help in preventing attacks?
 
@@ -4345,32 +4314,25 @@ Back: Rate Limiting restricts the number of requests a user or IP address can ma
 
 
 
-459
-Finance Junk
-Definition of AT1 Bond: An AT1 Bond (Additional Tier 1 Bond), also known as a “CoCo” bond, is a hybrid security issued by banks that can convert into equity or have principal written down if certain financial thresholds are breached.
+455
+Home Network Project
+Front: What is Fail2Ban and how does it protect a network?
+
+Back: Fail2Ban is an intrusion prevention software that monitors log files for suspicious activity, such as repeated failed login attempts. When such patterns are detected, Fail2Ban automatically updates firewall rules to temporarily or permanently ban offending IP addresses, protecting the network from brute-force attacks and unauthorized access.
 
 
 
 
 
-460
-Finance Junk
-Market Characteristics of AT1 Bond: An AT1 Bond, commonly issued by European and global banks, appeals to investors seeking yield, but involves complex regulatory considerations and credit risks.
-
-
-
-
-
-461
+456
 Azure Functions
-2. Which of the following best describes the role of the Orchestrator function in a workflow? 
-The Orchestrator Function is written in code. The function is used for describing how actions are executed and the order in which actions are executed.
+Fan out/fan in: This pattern runs multiple functions in parallel and waits for all the functions to finish. You can aggregate the results of the parallel executions or use them to compute a final result.
 
 
 
 
 
-462
+457
 Home Network Project
 Front: How does Pi-hole utilize DNS Sinkholing to block ads?
 
@@ -4380,15 +4342,7 @@ Back: Pi-hole intercepts DNS queries for domains listed in its blocklists. Inste
 
 
 
-463
-Azure Functions
-Activity functions are the basic units of work in a Durable Functions orchestration. An activity function contains the actual work performed by the tasks being orchestrated.
-
-
-
-
-
-464
+458
 Home Network Project
 Front: What is Snort and how is it used in network security?
 
@@ -4398,46 +4352,23 @@ Back: Snort is an open-source network intrusion detection and prevention system 
 
 
 
-465
-Finance Junk
-Perpetual Nature of AT1 Bond: An AT1 Bond generally has no fixed maturity date, though it may include call options after a set period, subject to regulatory approval.
-
-
-
-
-
-466
+459
 Azure Functions
-2. Suppose your Azure Function has a blob trigger associated with it and you want it to execute only when png images are uploaded. Which of the following blob trigger Path values should you use? 
-
-samples-workitems/{name}.png
-The Path tells the blob trigger where it should monitor for changes, and if there are any filters applied. Adding a file extension to the Path specifies that uploaded files must have that file extension in order for the trigger to invoke the function.
-
-samples-workitems/{name}.png
-The Path tells the blob trigger where it should monitor for changes, and if there are any filters applied. Adding a file extension to the Path specifies that uploaded files must have that file extension in order for the trigger to invoke the function.
+Activity functions are the basic units of work in a Durable Functions orchestration. An activity function contains the actual work performed by the tasks being orchestrated.
 
 
 
 
 
-467
+460
 Azure Functions
-Fan out/fan in: This pattern runs multiple functions in parallel and waits for all the functions to finish. You can aggregate the results of the parallel executions or use them to compute a final result.
+2. Which of the following best describes the role of the Orchestrator function in a workflow? 
+The Orchestrator Function is written in code. The function is used for describing how actions are executed and the order in which actions are executed.
 
 
 
 
 
-468
+461
 Azure Functions
 Managed identities for Azure resources is the new name for the service formerly known as Managed Service Identity (MSI).
-
-
-
-
-
-469
-Home Network Project
-Front: What is Fail2Ban and how does it protect a network?
-
-Back: Fail2Ban is an intrusion prevention software that monitors log files for suspicious activity, such as repeated failed login attempts. When such patterns are detected, Fail2Ban automatically updates firewall rules to temporarily or permanently ban offending IP addresses, protecting the network from brute-force attacks and unauthorized access.
