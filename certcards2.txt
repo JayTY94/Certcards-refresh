@@ -4,11 +4,6 @@
 
 
 
-1
-Open Source/GitHub
-Semantic Versioning
-
-A versioning scheme that uses a three-part number (major.minor.patch) to convey the nature of changes in each release, helping users understand compatibility and updates.
 
 
 
