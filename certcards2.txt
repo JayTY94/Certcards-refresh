@@ -4,36 +4,19 @@
 
 
 
-1
-Diffusers Library
-There are three main components of the library to know about:
-Many different schedulers - algorithms that control how noise is added for training, and how to generate denoised images during inference.
 
 
 
 
 
-2
-Diffusers Library
-Markov Chain
-A sequence of random variables where each state depends only on the previous one. In diffusion models, the noise addition process is modeled as a Markov chain, allowing controlled transitions from clear images to noisy ones and vice versa, simplifying the math for training.
 
 
 
 
 
-3
-Diffusers Library
-Denoising Process
-The step-by-step refinement in diffusion models where the model removes noise from a random input, progressing towards an image. At each step, the model estimates the noise in the image and subtracts it, gradually enhancing coherence and detail.
 
 
 
-
-
-4
-Taxes
-Penalties for Non-Compliance: Civil penalties for non-compliance with the Report of Foreign Bank and Financial Accounts (FBAR) can be significant, including fines up to $10,000 for non-willful violations and much higher penalties for willful violations.
 
 
 
