@@ -4,23 +4,8 @@
 
 
 
-1
-OData
-Versioning
-
-Definition: The practice of evolving an OData model over time by introducing new namespaces or endpoints so changes don’t break existing clients.
-Context: It allows adding new features or making non-backward-compatible changes while still supporting legacy clients.
 
 
-
-
-
-2
-OData
-ETags
-
-Definition: Entity tags (ETags) are version identifiers for a resource, used in OData (and HTTP in general) to support concurrency and caching.
-Context: When a client retrieves an entity with an ETag, it can include that ETag in update or delete requests. The server uses this to detect if the entity has changed since it was last read, helping prevent overwriting changes from other clients.
 
 
 
