@@ -11,14 +11,6 @@
 
 
 
-3
-OData
-$compute Query Option
-
-Definition: An OData query option that lets you add computed properties to the result on the fly, based on existing fields.
-Context: For example, $compute=TotalPrice mul Quantity as ExtendedAmount could create a new ExtendedAmount field without altering the underlying data model.
-
-
 
 
 
