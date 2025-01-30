@@ -4873,3 +4873,145 @@ The latency experienced when an Azure Function is invoked after a period of inac
 Azure Functions + PP365
 local.settings.json
 A configuration file used during local development of Azure Functions. It stores environment variables, connection strings, and other settings required to run functions locally. This file is not deployed to Azure, ensuring that sensitive information remains secure during development.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+ASP.NET includes a variety of built-in security features such as request validation, input sanitization, SQL injection prevention, and protection against cross-site scripting (XSS) and cross-site request forgery (CSRF). HTTPS and encryption are also supported for secure communication.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+ASP.NET uses a flexible routing system to map URLs to controllers and actions in ASP.NET MVC or ASP.NET Web API applications. This routing system supports custom URL patterns and simplifies URL management.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+ASP.NET supports asynchronous programming with async and await keywords, allowing non-blocking operations such as file and database access. This improves scalability and performance by freeing up threads during long-running tasks.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+ASP.NET Core provides built-in Dependency Injection (DI) support, enabling you to manage dependencies in your application. This makes your code more modular, testable, and easier to maintain.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+ASP.NET supports caching to improve performance by reducing database calls and loading times. You can cache data at different levels, such as in-memory caching, distributed caching, or output caching, to increase the responsiveness of your application.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+ASP.NET provides comprehensive authentication and authorization mechanisms, such as ASP.NET Identity, for managing users and roles. It supports external authentication providers like Google and Facebook, allowing you to integrate them into your application seamlessly.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+ASP.NET offers several state management techniques, including Session State, View State, and Cookies, to retain data across user requests and provide a better user experience on dynamic websites.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+ASP.NET Razor syntax is a streamlined way to integrate C# code into HTML pages. Razor allows developers to write dynamic web pages by combining HTML and server-side logic seamlessly.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+ASP.NET Web API is a framework for building HTTP-based services that can be consumed by various clients, including browsers, mobile devices, and other web applications. It’s ideal for creating RESTful services in ASP.NET.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+ASP.NET Web Forms is an older way to build web applications, focusing on drag-and-drop components and less code, while ASP.NET MVC offers greater flexibility, control, and a more maintainable approach to building web applications.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+The ASP.NET MVC architecture is based on the Model-View-Controller pattern, which separates the application into three components: Models (data), Views (UI), and Controllers (logic), providing a clean separation of concerns for better maintainability.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+ASP.NET is a powerful framework for building dynamic web applications and services. It runs on the .NET platform, allowing developers to use multiple languages like C#, F#, and VB.NET to create modern web applications.
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+An Azure Function is implemented as a static class (.NET). The class provides a static, asynchronous method named Run, which acts as the entry point for the class. The parameters passed to the Run method provide the context for the trigger. If it's an HTTP trigger, the function receives an HttpRequest object.
+
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+In all cases, a function is passed an ILogger parameter. The function can use this parameter to write log messages, which the function app writes to storage for later analysis.
+
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+
+
+
+
+
+504
+Azure Functions + Visual Studio
+
+
+
+
+
+504
+Azure Functions + Visual Studio
