@@ -4,9 +4,6 @@
 
 
 
-1
-Azure Kubernetes Learning Path
-Docker provides us with the docker stats command. This command returns information for the container such as percentage CPU usage, percentage memory usage, I/O written to disk, network data sent and received, and process IDs assigned. This information is useful as an immediate data stream; however, no aggregation is done, because the data isn't stored. We'd have to install third-party software for meaningful data capture over a period of time.
 
 
 
