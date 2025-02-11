@@ -54,20 +54,6 @@ Link Explorer by Moz is a tool for analyzing a website’s backlink profile and 
 
 7
 Vocab
-Lacunary
-adjective
-SPA: LACK-yoo-nary
-IPA: /ˈlækjʊnəri/
-
-Characterized by gaps or missing portions, particularly in texts or manuscripts.
-Example: The ancient manuscript was lacunary, with several sections of the text lost to time.
-
-
-
-
-
-8
-Vocab
 Hieratic
 adjective
 SPA: hi-uh-RAT-ik
@@ -75,6 +61,20 @@ IPA: /ˌhaɪəˈrætɪk/
 
 Relating to the simplified, cursive form of Egyptian hieroglyphs, used by priests in ancient Egypt for religious texts.
 Example: The hieratic script was employed for everyday purposes in ancient Egypt, in contrast to the more elaborate hieroglyphic script.
+
+
+
+
+
+8
+Vocab
+Lacunary
+adjective
+SPA: LACK-yoo-nary
+IPA: /ˈlækjʊnəri/
+
+Characterized by gaps or missing portions, particularly in texts or manuscripts.
+Example: The ancient manuscript was lacunary, with several sections of the text lost to time.
 
 
 
@@ -361,17 +361,17 @@ The Content-Type header specifies the media type of the resource being sent to t
 
 
 38
-Powershell
--AllowClobber
-Allows overwriting of existing aliases or functions during module installation, preventing conflicts with pre-existing definitions.
+SharePoint
+The SharePoint REST API can return data in both JSON and XML formats. By default, it often returns JSON, but you can specify the desired format using the Accept header.
 
 
 
 
 
 39
-SharePoint
-The SharePoint REST API can return data in both JSON and XML formats. By default, it often returns JSON, but you can specify the desired format using the Accept header.
+Powershell
+-AllowClobber
+Allows overwriting of existing aliases or functions during module installation, preventing conflicts with pre-existing definitions.
 
 
 
@@ -608,7 +608,8 @@ Only one (1) provider is used when data is hydrated from the storage provider.
 
 65
 FSLogix
-A full VHD(x) clone is performed when Cloud Cache determines, at sign in, that a storage provider isn't at the same sequence. During this operation, all pending writes are kept in the local cache until all storage providers are at the same sequence. Once complete, the flush operation begins sending new data to the storage providers.
+Q: Which format does FSLogix use to store user profile data?
+A: FSLogix uses the VHDX (Virtual Hard Disk) format to store user profile data in containers.
 
 
 
@@ -616,8 +617,7 @@ A full VHD(x) clone is performed when Cloud Cache determines, at sign in, that a
 
 66
 FSLogix
-Q: What does the FSLogix Profile Container do when a user is logging into multiple Azure Virtual Desktops (AVD)?
-A: FSLogix mounts the same Profile Container (VHDX) to any virtual desktop the user logs into, ensuring that their profile settings, documents, and application preferences are consistent and immediately available across all virtual machines. This provides a unified experience regardless of which VM the user accesses.
+Cloud Cache operates the user's profile from the local cache during the user's session and must be configured with one or more remote storage providers as specified in CCDLocations. These remote storage providers store copies of the local cache and are used during the current session and for subsequent sign ins.
 
 
 
@@ -708,10 +708,10 @@ Explanation: Example: Update-Module -Name Az updates the Az module. To update al
 
 75
 Powershell Modules
-Get-InstalledModule
+PowerShell Gallery
 
-Definition: A cmdlet that retrieves modules installed on the system.
-Explanation: Useful for managing and updating modules. Example: Get-InstalledModule | Update-Module updates all installed modules.
+Definition: The central repository for PowerShell modules, scripts, and other resources.
+Explanation: Accessible via the Find-Module and Install-Module cmdlets. Website: PowerShell Gallery.
 
 
 
@@ -943,8 +943,8 @@ An Azure Function is implemented as a static class (.NET). The class provides a 
 
 
 99
-OData
-Type Casting converts an entity from one type to another within inheritance hierarchies. In OData, it is facilitated by the @odata.type annotation, which specifies the target type for the cast, ensuring accurate data interpretation and processing.
+Azure Functions + Visual Studio
+ASP.NET Razor syntax is a streamlined way to integrate C# code into HTML pages. Razor allows developers to write dynamic web pages by combining HTML and server-side logic seamlessly.
 
 
 
@@ -952,18 +952,18 @@ Type Casting converts an entity from one type to another within inheritance hier
 
 100
 OData
-Namespaces
-
-Definition: Unique identifiers (like MyCompany.CRM) that group related schemas and prevent naming conflicts in OData models.
-Context: Used to differentiate entities, actions, and functions that may share common names but serve different domains or versions.
+Type Casting converts an entity from one type to another within inheritance hierarchies. In OData, it is facilitated by the @odata.type annotation, which specifies the target type for the cast, ensuring accurate data interpretation and processing.
 
 
 
 
 
 101
-Azure Functions + Visual Studio
-ASP.NET Razor syntax is a streamlined way to integrate C# code into HTML pages. Razor allows developers to write dynamic web pages by combining HTML and server-side logic seamlessly.
+OData
+Namespaces
+
+Definition: Unique identifiers (like MyCompany.CRM) that group related schemas and prevent naming conflicts in OData models.
+Context: Used to differentiate entities, actions, and functions that may share common names but serve different domains or versions.
 
 
 
@@ -1099,8 +1099,8 @@ A virtual file in Windows that discards written data. Commonly used in Command P
 
 116
 Powershell
-Invoke-WebRequest
-Sends HTTP or HTTPS requests to retrieve web content, like files or API data. Commonly used for downloading installers or fetching resources directly into a script.
+docker build
+Creates a Docker image from a Dockerfile and dependencies. This image can be used to run containerized applications on any compatible host.
 
 
 
@@ -1349,8 +1349,7 @@ One Import Per Line: Place each import statement on its own line to improve clar
 
 142
 FSLogix
-Q: Which format does FSLogix use to store user profile data?
-A: FSLogix uses the VHDX (Virtual Hard Disk) format to store user profile data in containers.
+Cloud Cache uses the concept of a proxy file, represented as Profile_%username%.vhd though it isn't a true VHD file. The proxy file is used as a means to collect and process all I/O writes destined for the local cache. The I/O writes are buffered in memory and tracked via the proxy file before they're written out as block-level cache objects in the cache directory.
 
 
 
@@ -1358,7 +1357,7 @@ A: FSLogix uses the VHDX (Virtual Hard Disk) format to store user profile data i
 
 143
 FSLogix
-When the local cache doesn't contain the data requested by the file system, Cloud Cache hydrates (reads and copies) the data from 1 of the remote storage providers to the local cache. This operation is also part of the sign in process when populating the local cache for the user's profile.
+A full VHD(x) clone is performed when Cloud Cache determines, at sign in, that a storage provider isn't at the same sequence. During this operation, all pending writes are kept in the local cache until all storage providers are at the same sequence. Once complete, the flush operation begins sending new data to the storage providers.
 
 
 
@@ -1366,7 +1365,8 @@ When the local cache doesn't contain the data requested by the file system, Clou
 
 144
 FSLogix
-On a lazy asynchronous operation, Cloud Cache flushes the changes to all storage providers simultaneously as each provider is flushed on its own thread. FSLogix doesn't throttle this operation and utilizes as much throughput as the system will allow.
+Q: What does the FSLogix Profile Container do when a user is logging into multiple Azure Virtual Desktops (AVD)?
+A: FSLogix mounts the same Profile Container (VHDX) to any virtual desktop the user logs into, ensuring that their profile settings, documents, and application preferences are consistent and immediately available across all virtual machines. This provides a unified experience regardless of which VM the user accesses.
 
 
 
@@ -1396,10 +1396,10 @@ This level signals potential issues that may require attention but do not halt t
 
 147
 Logging in Python
-Q: In TimedRotatingFileHandler from the logging.handlers module, what does the when parameter specify?
+Q: What does WatchedFileHandler from the logging.handlers module do differently compared to FileHandler?
 
-A: when='midnight'
-This parameter sets the interval type for rotating logs, such as daily at midnight.
+A: It watches the log file for external modifications and automatically reopens it if the file is moved or deleted.
+This is useful when external tools handle log rotation, ensuring continuous logging without interruption.
 
 
 
@@ -1434,10 +1434,10 @@ In WSL, the /mnt directory is where your Windows file system is mounted. For exa
 
 151
 Powershell Modules
-Dot Sourcing
+Get-InstalledModule
 
-Definition: A method to load functions and variables from a script into the current session.
-Explanation: Not directly discussed, but related to loading scripts and modules. Typically done using a dot (.) before the script path.
+Definition: A cmdlet that retrieves modules installed on the system.
+Explanation: Useful for managing and updating modules. Example: Get-InstalledModule | Update-Module updates all installed modules.
 
 
 
@@ -1445,10 +1445,10 @@ Explanation: Not directly discussed, but related to loading scripts and modules.
 
 152
 Powershell Modules
-PowerShell Gallery
+Dot Sourcing
 
-Definition: The central repository for PowerShell modules, scripts, and other resources.
-Explanation: Accessible via the Find-Module and Install-Module cmdlets. Website: PowerShell Gallery.
+Definition: A method to load functions and variables from a script into the current session.
+Explanation: Not directly discussed, but related to loading scripts and modules. Typically done using a dot (.) before the script path.
 
 
 
@@ -1467,8 +1467,8 @@ Explanation: Makes the module's cmdlets and functions available for use. Example
 
 154
 PnP Powershell
-Invoke-RestMethod Parameters
-Key parameters include -Method (HTTP method), -Uri (API endpoint), -Headers (authentication and content type), and -Body (data payload), crucial for API interactions.
+Update-PnPListItem (PnP.PowerShell)
+Modifies an existing item in a SharePoint list. Allows updating fields and properties, supporting dynamic data management and automation.
 
 
 
@@ -1485,8 +1485,8 @@ A confidential key associated with an Azure AD application, used alongside the c
 
 156
 PnP Powershell
-OAuth 2.0 Authorization Code Flow
-An interactive authentication method involving user login and authorization, suitable for applications that can securely handle client secrets and require delegated permissions.
+Invoke-RestMethod Parameters
+Key parameters include -Method (HTTP method), -Uri (API endpoint), -Headers (authentication and content type), and -Body (data payload), crucial for API interactions.
 
 
 
@@ -1597,7 +1597,9 @@ To stop a running container, use the stop command. The stop command enables the 
 
 167
 Azure Kubernetes Learning Path
-Azure Container Instance is a service that loads and runs Docker images on demand. The Azure Container Instance service can retrieve an image from a registry, such as Docker Hub or Azure Container Registry.
+A volume is stored on the host filesystem at a specific folder location. Choose a folder where you know the data won't be modified by non-Docker processes.
+
+Docker creates and manages the new volume by running the docker volume create command. This command can form part of our Dockerfile definition, which means that you can create volumes as part of the container-creation process. Docker creates the volume if it doesn't exist when you try to mount the volume into a container the first time.
 
 
 
@@ -1605,9 +1607,7 @@ Azure Container Instance is a service that loads and runs Docker images on deman
 
 168
 Azure Kubernetes Learning Path
-A volume is stored on the host filesystem at a specific folder location. Choose a folder where you know the data won't be modified by non-Docker processes.
-
-Docker creates and manages the new volume by running the docker volume create command. This command can form part of our Dockerfile definition, which means that you can create volumes as part of the container-creation process. Docker creates the volume if it doesn't exist when you try to mount the volume into a container the first time.
+Azure Container Instance is a service that loads and runs Docker images on demand. The Azure Container Instance service can retrieve an image from a registry, such as Docker Hub or Azure Container Registry.
 
 
 
@@ -1658,20 +1658,20 @@ If AI enrichment or integrated vectorization are solution requirements, you must
 
 
 173
-Azure AI Search
-Whether you use the REST API or an Azure SDK, the following document operations are supported for data import:
-    Upload (think upsert)
-    merge
-    mergeOrUpload
-    delete
+Azure Functions + Visual Studio
+In all cases, a function is passed an ILogger parameter. The function can use this parameter to write log messages, which the function app writes to storage for later analysis.
 
 
 
 
 
 174
-Azure Functions + Visual Studio
-In all cases, a function is passed an ILogger parameter. The function can use this parameter to write log messages, which the function app writes to storage for later analysis.
+Azure AI Search
+Whether you use the REST API or an Azure SDK, the following document operations are supported for data import:
+    Upload (think upsert)
+    merge
+    mergeOrUpload
+    delete
 
 
 
@@ -1725,7 +1725,7 @@ Functions MUST NOT have side-effects. Functions can be invoked from a URL that a
 
 180
 Azure Functions + Visual Studio
-The ASP.NET MVC architecture is based on the Model-View-Controller pattern, which separates the application into three components: Models (data), Views (UI), and Controllers (logic), providing a clean separation of concerns for better maintainability.
+ASP.NET offers several state management techniques, including Session State, View State, and Cookies, to retain data across user requests and provide a better user experience on dynamic websites.
 
 
 
@@ -1773,8 +1773,8 @@ A service principal of a special type is created in Microsoft Entra ID for the i
 
 185
 DNS
-No-Refresh Interval
-In DNS scavenging, the period during which the timestamp on a DNS record cannot be updated. It prevents excessive DNS updates, helping determine when a record becomes stale and eligible for removal during scavenging.
+DNS Manager
+A graphical administrative tool in Windows Server used to manage DNS settings and zones. DNS Manager provides interfaces for creating and modifying DNS records, configuring zone properties, setting up forwarders, and implementing security measures.
 
 
 
@@ -1804,16 +1804,6 @@ Description: Retrieves the views available in a specified SharePoint list.
 
 188
 Audit Report Tracker (Sharepoint List)
-List Administrator
-Definition: A user with permissions to manage a specific SharePoint list, including adding columns, modifying views, and setting list-specific permissions.
-Context: Has permissions to edit and configure a specific list within a site.
-
-
-
-
-
-189
-Audit Report Tracker (Sharepoint List)
 Permissions (SharePoint Permissions)
 Definition: Settings that control what users can and cannot do in SharePoint (e.g., View, Edit, Delete).
 Context: Permissions can be set at various levels such as the site, list, or item level.
@@ -1822,10 +1812,20 @@ Context: Permissions can be set at various levels such as the site, list, or ite
 
 
 
+189
+Audit Report Tracker (Sharepoint List)
+List Administrator
+Definition: A user with permissions to manage a specific SharePoint list, including adding columns, modifying views, and setting list-specific permissions.
+Context: Has permissions to edit and configure a specific list within a site.
+
+
+
+
+
 190
 Powershell
-docker build
-Creates a Docker image from a Dockerfile and dependencies. This image can be used to run containerized applications on any compatible host.
+Invoke-WebRequest
+Sends HTTP or HTTPS requests to retrieve web content, like files or API data. Commonly used for downloading installers or fetching resources directly into a script.
 
 
 
@@ -1842,8 +1842,8 @@ Writes or replaces the content of a file. Useful for creating files with specifi
 
 192
 Powershell
-Remove-Item
-Deletes files, directories, or other items. Commonly used to clean up temporary files or outdated resources in automated scripts.
+cmd /c
+Runs a Command Prompt command from PowerShell. Allows use of legacy commands, like copy NUL, for operations not natively supported in PowerShell.
 
 
 
@@ -2116,8 +2116,7 @@ total = price + tax
 
 220
 FSLogix
-Q: How does FSLogix prevent user profile corruption in virtual desktop sessions?
-A: FSLogix stores user profiles in isolated containers (VHDX), reducing the chances of corruption by ensuring the profile is handled in a controlled environment that can be mounted and saved properly.
+Cloud Cache uses the locally mounted container to provide periodic updates to the remote storage providers. Cloud Cache is designed to insulate users from short-term or intermittent local (inner-region, close proximity) storage issues.
 
 
 
@@ -2125,8 +2124,9 @@ A: FSLogix stores user profiles in isolated containers (VHDX), reducing the chan
 
 221
 FSLogix
-Q: How does FSLogix improve Office 365 performance in Azure Virtual Desktop?
-A: FSLogix isolates Office 365 data (such as Outlook, Teams, OneDrive) in a container (VHDX), reducing load times and ensuring that data is quickly accessible without syncing delays.
+Data is written to all storage providers regardless of which provider is used during data hydration.
+Performance (latency, utilization, bottlenecks) of a storage provider affects its sync status with the local copy.
+Having one (1) or more provider that is behind in updates from local cache could be an indicator of an under performing storage provider.
 
 
 
@@ -2134,7 +2134,7 @@ A: FSLogix isolates Office 365 data (such as Outlook, Teams, OneDrive) in a cont
 
 222
 FSLogix
-Using Cloud Cache puts a performance and storage requirement on the virtual machine to accommodate the extra I/O operations and storage required by the local cache.
+When the local cache doesn't contain the data requested by the file system, Cloud Cache hydrates (reads and copies) the data from 1 of the remote storage providers to the local cache. This operation is also part of the sign in process when populating the local cache for the user's profile.
 
 
 
@@ -2142,10 +2142,10 @@ Using Cloud Cache puts a performance and storage requirement on the virtual mach
 
 223
 Logging in Python
-Q: What does WatchedFileHandler from the logging.handlers module do differently compared to FileHandler?
+Q: In TimedRotatingFileHandler from the logging.handlers module, what does the when parameter specify?
 
-A: It watches the log file for external modifications and automatically reopens it if the file is moved or deleted.
-This is useful when external tools handle log rotation, ensuring continuous logging without interruption.
+A: when='midnight'
+This parameter sets the interval type for rotating logs, such as daily at midnight.
 
 
 
@@ -2240,8 +2240,8 @@ Explanation: Controlled via the -Scope parameter in Install-Module. Options incl
 
 232
 PnP Powershell
-SharePoint REST API
-A set of web services provided by SharePoint to perform operations like CRUD actions on lists, libraries, and other SharePoint objects using standard HTTP methods.
+OAuth 2.0 Authorization Code Flow
+An interactive authentication method involving user login and authorization, suitable for applications that can securely handle client secrets and require delegated permissions.
 
 
 
@@ -2249,8 +2249,8 @@ A set of web services provided by SharePoint to perform operations like CRUD act
 
 233
 PnP Powershell
-PSCredential (Microsoft.PowerShell.Security)
-A PowerShell object that securely stores a username and password. Utilized for authentication purposes, ensuring sensitive information is handled safely.
+Remove-PnPListItem (PnP.PowerShell)
+Deletes an item from a SharePoint list. Useful for maintaining data integrity and automating data cleanup processes
 
 
 
@@ -2258,8 +2258,8 @@ A PowerShell object that securely stores a username and password. Utilized for a
 
 234
 PnP Powershell
-Remove-PnPListItem (PnP.PowerShell)
-Deletes an item from a SharePoint list. Useful for maintaining data integrity and automating data cleanup processes
+PSCredential (Microsoft.PowerShell.Security)
+A PowerShell object that securely stores a username and password. Utilized for authentication purposes, ensuring sensitive information is handled safely.
 
 
 
@@ -2351,11 +2351,11 @@ Keep in mind that the container can use only ports the host isn't already using.
 
 243
 Email Auth and Security
-Email Authentication Alignment
+SPF (Sender Policy Framework)
 
-Ensuring that SPF and DKIM align with the domain specified in the email's "From" header.
-Critical for DMARC to function correctly.
-Provides consistent authentication results and improves email deliverability.
+A DNS-based email authentication method.
+Specifies which mail servers are authorized to send emails on behalf of a domain.
+Helps prevent email spoofing by verifying the sender's IP address against the domain's SPF record.
 
 
 
@@ -2363,11 +2363,11 @@ Provides consistent authentication results and improves email deliverability.
 
 244
 Email Auth and Security
-SPF (Sender Policy Framework)
+Email Authentication Alignment
 
-A DNS-based email authentication method.
-Specifies which mail servers are authorized to send emails on behalf of a domain.
-Helps prevent email spoofing by verifying the sender's IP address against the domain's SPF record.
+Ensuring that SPF and DKIM align with the domain specified in the email's "From" header.
+Critical for DMARC to function correctly.
+Provides consistent authentication results and improves email deliverability.
 
 
 
@@ -2412,16 +2412,16 @@ Metadata annotations can be used to define additional characteristics or capabil
 
 
 249
-Azure AI Search
-You can run indexers on demand or on a recurring data refresh schedule that runs as often as every five minutes. More frequent updates preclude the use of indexers, requiring that you implement a 'push model' that simultaneously pushes data to both Azure AI Search and your external data source.
+Azure Functions + Visual Studio
+The ASP.NET MVC architecture is based on the Model-View-Controller pattern, which separates the application into three components: Models (data), Views (UI), and Controllers (logic), providing a clean separation of concerns for better maintainability.
 
 
 
 
 
 250
-Azure Functions + Visual Studio
-ASP.NET offers several state management techniques, including Session State, View State, and Cookies, to retain data across user requests and provide a better user experience on dynamic websites.
+Azure AI Search
+You can run indexers on demand or on a recurring data refresh schedule that runs as often as every five minutes. More frequent updates preclude the use of indexers, requiring that you implement a 'push model' that simultaneously pushes data to both Azure AI Search and your external data source.
 
 
 
@@ -2461,15 +2461,6 @@ ASP.NET Web API is a framework for building HTTP-based services that can be cons
 
 255
 DNS
-DNS Manager
-A graphical administrative tool in Windows Server used to manage DNS settings and zones. DNS Manager provides interfaces for creating and modifying DNS records, configuring zone properties, setting up forwarders, and implementing security measures.
-
-
-
-
-
-256
-DNS
 Securing Zone Transfers
 Measures taken to protect DNS zone data during transfers between DNS servers. This includes restricting transfers to authorized IP addresses and using security protocols like TSIG or IPsec to authenticate and encrypt the data, ensuring integrity and confidentiality.
 
@@ -2477,7 +2468,7 @@ Measures taken to protect DNS zone data during transfers between DNS servers. Th
 
 
 
-257
+256
 DNS
 Root Hints
 A list of authoritative DNS servers for the root zone. Root hints are used by DNS servers to initiate recursive queries when resolving domain names, especially when no forwarders are configured.
@@ -2486,9 +2477,22 @@ A list of authoritative DNS servers for the root zone. Root hints are used by DN
 
 
 
+257
+DNS
+No-Refresh Interval
+In DNS scavenging, the period during which the timestamp on a DNS record cannot be updated. It prevents excessive DNS updates, helping determine when a record becomes stale and eligible for removal during scavenging.
+
+
+
+
+
 258
 Azure Functions
-Fan out/fan in: This pattern runs multiple functions in parallel and waits for all the functions to finish. You can aggregate the results of the parallel executions or use them to compute a final result.
+Here are some of the benefits of using managed identities:
+
+You don't need to manage credentials. Credentials aren’t even accessible to you.
+You can use managed identities to authenticate to any resource that supports Microsoft Entra authentication, including your own applications.
+Managed identities can be used at no extra cost.
 
 
 
@@ -2496,11 +2500,7 @@ Fan out/fan in: This pattern runs multiple functions in parallel and waits for a
 
 259
 Azure Functions
-Here are some of the benefits of using managed identities:
-
-You don't need to manage credentials. Credentials aren’t even accessible to you.
-You can use managed identities to authenticate to any resource that supports Microsoft Entra authentication, including your own applications.
-Managed identities can be used at no extra cost.
+Fan out/fan in: This pattern runs multiple functions in parallel and waits for all the functions to finish. You can aggregate the results of the parallel executions or use them to compute a final result.
 
 
 
@@ -2516,6 +2516,16 @@ Managed identities for Azure resources is the new name for the service formerly 
 
 261
 Audit Report Tracker (Sharepoint List)
+View (SharePoint View)
+Definition: A pre-defined display of list data, which can filter, sort, and group information in a specific way.
+Context: Views can be customized to show only specific columns, items, or data based on user needs.
+
+
+
+
+
+262
+Audit Report Tracker (Sharepoint List)
 List Columns Endpoint (for getting column information in a SharePoint list):
 
 Endpoint: GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/columns
@@ -2525,22 +2535,12 @@ Description: Retrieves information about the columns in a specified list.
 
 
 
-262
-Audit Report Tracker (Sharepoint List)
-Create Column in List (for creating new columns in a SharePoint list):
-
-Endpoint: POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/columns
-Description: Creates a new column in the specified SharePoint list.
-
-
-
-
-
 263
 Audit Report Tracker (Sharepoint List)
-View (SharePoint View)
-Definition: A pre-defined display of list data, which can filter, sort, and group information in a specific way.
-Context: Views can be customized to show only specific columns, items, or data based on user needs.
+Create List Item (for creating a new item in a SharePoint list):
+
+Endpoint: POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
+Description: Adds a new item to a specified SharePoint list.
 
 
 
@@ -2548,8 +2548,8 @@ Context: Views can be customized to show only specific columns, items, or data b
 
 264
 Powershell
-cmd /c
-Runs a Command Prompt command from PowerShell. Allows use of legacy commands, like copy NUL, for operations not natively supported in PowerShell.
+Remove-Item
+Deletes files, directories, or other items. Commonly used to clean up temporary files or outdated resources in automated scripts.
 
 
 
@@ -2656,9 +2656,9 @@ sudo usermod -aG docker pi
 
 275
 Home Network Project
-Front: Describe the primary function of Grafana in a monitoring stack.
+Front: How does Pi-hole utilize DNS Sinkholing to block ads?
 
-Back: Grafana is an open-source platform for data visualization and analytics. It connects to various data sources like Prometheus, enabling users to create interactive and customizable dashboards to visualize metrics, monitor system performance, and gain insights into network and application behavior.
+Back: Pi-hole intercepts DNS queries for domains listed in its blocklists. Instead of resolving these domains to their legitimate IP addresses, Pi-hole returns a non-routable IP address (e.g., 0.0.0.0), preventing the ad content from loading on the client devices.
 
 
 
@@ -2777,15 +2777,6 @@ Tags assigned to issues or pull requests to categorize them, such as “good fir
 
 288
 Debugging in VS Code
-Watch Expression
-A tool in a debugger that allows you to monitor the value of a specific variable or expression during execution.
-
-
-
-
-
-289
-Debugging in VS Code
 Step Out
 A debugging feature that lets you exit the current function and return to the function that called it.
 
@@ -2793,10 +2784,19 @@ A debugging feature that lets you exit the current function and return to the fu
 
 
 
+289
+Debugging in VS Code
+Watch Expression
+A tool in a debugger that allows you to monitor the value of a specific variable or expression during execution.
+
+
+
+
+
 290
 Debugging in VS Code
-Debugger API
-An application programming interface (API) that allows developers to extend or automate debugging tools, often used to integrate debugging features into custom workflows or external tools.
+Live Debugging
+A type of debugging where changes are made to the program and tested while it is running in a live environment, often used in web development and real-time applications.
 
 
 
@@ -2844,8 +2844,8 @@ total = (
 
 294
 FSLogix
-Q: What happens to a FSLogix Profile Container when a user logs off?
-A: When a user logs off, the changes made to the profile are saved back into the Profile Container (VHDX file), ensuring that all settings and data are retained for the next session.
+Q: What is the purpose of the Office 365 Container in FSLogix?
+A: The Office 365 Container isolates and stores Office-specific data (like Outlook cache, OneDrive files, and Teams settings), improving performance and reducing load times for Office apps in virtual desktop environments.
 
 
 
@@ -2853,8 +2853,7 @@ A: When a user logs off, the changes made to the profile are saved back into the
 
 295
 FSLogix
-Q: How does FSLogix Profile Container enhance multi-session environments like Azure Virtual Desktop?
-A: In multi-session environments, FSLogix Profile Containers ensure that user profiles are loaded quickly and consistently, regardless of which session or virtual machine the user logs into, ensuring a persistent and smooth experience even when multiple users share the same infrastructure.
+All data written to the user's profile is temporarily stored as block-level cache objects in the same directory. Those block-level cache objects are then committed to the local cache. Before the block-level cache objects are created, the writes into the user's profile are processed in memory through a proxy file.
 
 
 
@@ -2862,7 +2861,8 @@ A: In multi-session environments, FSLogix Profile Containers ensure that user pr
 
 296
 FSLogix
-Cloud Cache uses the concept of a proxy file, represented as Profile_%username%.vhd though it isn't a true VHD file. The proxy file is used as a means to collect and process all I/O writes destined for the local cache. The I/O writes are buffered in memory and tracked via the proxy file before they're written out as block-level cache objects in the cache directory.
+Q: How does FSLogix improve Office 365 performance in Azure Virtual Desktop?
+A: FSLogix isolates Office 365 data (such as Outlook, Teams, OneDrive) in a container (VHDX), reducing load times and ensuring that data is quickly accessible without syncing delays.
 
 
 
@@ -2892,10 +2892,10 @@ This handler sends log messages through an SMTP server, suitable for alerting on
 
 299
 Logging in Python
-Q: What is the purpose of a Formatter in Python's logging module?
+Q: What is the primary purpose of TimedRotatingFileHandler from the logging.handlers module?
 
-A: To define the structure and content of log messages using formats like '%(asctime)s - %(levelname)s - %(message)s'.
-This ensures that log messages are consistently formatted for readability and analysis.
+A: To rotate log files at specific timed intervals, such as daily or hourly (when='midnight').
+This ensures that log files are segmented based on time, facilitating organized log management.
 
 
 
@@ -2965,8 +2965,8 @@ Explanation: Provides cmdlets to interact with Azure services. Example cmdlet: G
 
 306
 PnP Powershell
-Update-PnPListItem (PnP.PowerShell)
-Modifies an existing item in a SharePoint list. Allows updating fields and properties, supporting dynamic data management and automation.
+SharePoint Site URL
+The web address of a SharePoint site (e.g., https://accuityllp.sharepoint.com/sites/ASB), serving as the entry point for accessing site resources and APIs.
 
 
 
@@ -2974,8 +2974,8 @@ Modifies an existing item in a SharePoint list. Allows updating fields and prope
 
 307
 PnP Powershell
-Scopes
-Define the level of access an application has to resources. Examples include Files.ReadWrite.All and Sites.ReadWrite.All, determining what operations the app can perform.
+SharePoint REST API
+A set of web services provided by SharePoint to perform operations like CRUD actions on lists, libraries, and other SharePoint objects using standard HTTP methods.
 
 
 
@@ -3131,26 +3131,29 @@ The Orchestrator Function is written in code. The function is used for describin
 
 324
 Azure Functions
-The name of the system-assigned service principal is always the same as the name of the Azure resource it's created for. For a deployment slot, the name of its system-assigned identity is <app-name>/slots/<slot-name>.
+2. Suppose your Azure Function has a blob trigger associated with it and you want it to execute only when png images are uploaded. Which of the following blob trigger Path values should you use? 
+
+samples-workitems/{name}.png
+The Path tells the blob trigger where it should monitor for changes, and if there are any filters applied. Adding a file extension to the Path specifies that uploaded files must have that file extension in order for the trigger to invoke the function.
 
 
 
 
 
 325
-Audit Report Tracker (Sharepoint List)
-Create List Item (for creating a new item in a SharePoint list):
-
-Endpoint: POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
-Description: Adds a new item to a specified SharePoint list.
+Azure Functions
+The name of the system-assigned service principal is always the same as the name of the Azure resource it's created for. For a deployment slot, the name of its system-assigned identity is <app-name>/slots/<slot-name>.
 
 
 
 
 
 326
-Azure Functions
-Activity functions are the basic units of work in a Durable Functions orchestration. An activity function contains the actual work performed by the tasks being orchestrated.
+Audit Report Tracker (Sharepoint List)
+Create Column in List (for creating new columns in a SharePoint list):
+
+Endpoint: POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/columns
+Description: Creates a new column in the specified SharePoint list.
 
 
 
@@ -3233,21 +3236,21 @@ Contumelious Epithet
 
 
 335
-Jane Eyre
-Cachinnation (kak-ih-NAY-shun)
-Loud, uncontrollable laughter, often with a connotation of being excessive, mocking, or even sinister. Derived from the Latin word cachinnare, it emphasizes the intensity of the laugh.
-
-
-
-
-
-336
 SharePoint
 For more advanced scenarios or to leverage modern authentication libraries, you can use the Microsoft Authentication Library (MSAL) in PowerShell. This approach provides enhanced security features and easier token management.
 
 a. Install MSAL.PS Module
 powershell
 > Install-Module -Name MSAL.PS -Scope CurrentUser
+
+
+
+
+
+336
+Jane Eyre
+Cachinnation (kak-ih-NAY-shun)
+Loud, uncontrollable laughter, often with a connotation of being excessive, mocking, or even sinister. Derived from the Latin word cachinnare, it emphasizes the intensity of the laugh.
 
 
 
@@ -3267,9 +3270,9 @@ Headers:
 
 338
 Home Network Project
-Front: How does Pi-hole utilize DNS Sinkholing to block ads?
+Front: Describe the primary function of Grafana in a monitoring stack.
 
-Back: Pi-hole intercepts DNS queries for domains listed in its blocklists. Instead of resolving these domains to their legitimate IP addresses, Pi-hole returns a non-routable IP address (e.g., 0.0.0.0), preventing the ad content from loading on the client devices.
+Back: Grafana is an open-source platform for data visualization and analytics. It connects to various data sources like Prometheus, enabling users to create interactive and customizable dashboards to visualize metrics, monitor system performance, and gain insights into network and application behavior.
 
 
 
@@ -3287,11 +3290,9 @@ Back: Network Latency refers to the time it takes for data to travel from the so
 
 340
 Home Network Project
-Front: Explain the difference between a Docker Image and a Docker Container.
+Front: What is Rate Limiting and how does it help in preventing attacks?
 
-Back:
-Docker Image: A read-only template that contains the application and all its dependencies required to run it. Images are built from Dockerfiles and serve as the blueprint for containers.
-Docker Container: A runnable instance of a Docker image. Containers are created from images and can be started, stopped, moved, and deleted independently.
+Back: Rate Limiting restricts the number of requests a user or IP address can make to a service within a specific time frame. It helps prevent various attacks, such as brute-force attacks, denial-of-service (DoS) attacks, and abuse of APIs, by limiting the potential impact of malicious activities.
 
 
 
@@ -3410,8 +3411,8 @@ A markdown file at the root of a repository that provides an overview of the pro
 
 353
 Debugging in VS Code
-Reverse Debugging
-A debugging technique where you can move backward through the program’s execution to examine the program's state before an issue occurred, often helpful for tracking down bugs that involve complex states.
+Debugger API
+An application programming interface (API) that allows developers to extend or automate debugging tools, often used to integrate debugging features into custom workflows or external tools.
 
 
 
@@ -3419,8 +3420,8 @@ A debugging technique where you can move backward through the program’s execut
 
 354
 Debugging in VS Code
-Live Debugging
-A type of debugging where changes are made to the program and tested while it is running in a live environment, often used in web development and real-time applications.
+Remote Debugging
+The process of debugging code running on a different machine or environment from your local computer.
 
 
 
@@ -3428,8 +3429,8 @@ A type of debugging where changes are made to the program and tested while it is
 
 355
 Debugging in VS Code
-Remote Debugging
-The process of debugging code running on a different machine or environment from your local computer.
+Reverse Debugging
+A debugging technique where you can move backward through the program’s execution to examine the program's state before an issue occurred, often helpful for tracking down bugs that involve complex states.
 
 
 
@@ -3465,7 +3466,7 @@ def func(a, b, c):
 
 359
 FSLogix
-During a user's session when the connection to any storage provider becomes unhealthy, FSLogix queues up all the changes and then flushes them to the providers when they return to a healthy state.
+Using Cloud Cache puts a performance and storage requirement on the virtual machine to accommodate the extra I/O operations and storage required by the local cache.
 
 
 
@@ -3473,7 +3474,8 @@ During a user's session when the connection to any storage provider becomes unhe
 
 360
 FSLogix
-Cloud Cache operates the user's profile from the local cache during the user's session and must be configured with one or more remote storage providers as specified in CCDLocations. These remote storage providers store copies of the local cache and are used during the current session and for subsequent sign ins.
+Q: How does FSLogix prevent user profile corruption in virtual desktop sessions?
+A: FSLogix stores user profiles in isolated containers (VHDX), reducing the chances of corruption by ensuring the profile is handled in a controlled environment that can be mounted and saved properly.
 
 
 
@@ -3481,8 +3483,7 @@ Cloud Cache operates the user's profile from the local cache during the user's s
 
 361
 FSLogix
-Q: What is the purpose of the Office 365 Container in FSLogix?
-A: The Office 365 Container isolates and stores Office-specific data (like Outlook cache, OneDrive files, and Teams settings), improving performance and reducing load times for Office apps in virtual desktop environments.
+On a lazy asynchronous operation, Cloud Cache flushes the changes to all storage providers simultaneously as each provider is flushed on its own thread. FSLogix doesn't throttle this operation and utilizes as much throughput as the system will allow.
 
 
 
@@ -3490,10 +3491,10 @@ A: The Office 365 Container isolates and stores Office-specific data (like Outlo
 
 362
 Logging in Python
-Q: What is the primary purpose of TimedRotatingFileHandler from the logging.handlers module?
+Q: What is the purpose of a Formatter in Python's logging module?
 
-A: To rotate log files at specific timed intervals, such as daily or hourly (when='midnight').
-This ensures that log files are segmented based on time, facilitating organized log management.
+A: To define the structure and content of log messages using formats like '%(asctime)s - %(levelname)s - %(message)s'.
+This ensures that log messages are consistently formatted for readability and analysis.
 
 
 
@@ -3552,6 +3553,17 @@ Prevents WSL from automatically launching the default Linux shell after a distri
 
 368
 Powershell Modules
+Select-Object
+
+Definition: A cmdlet that selects specific properties of an object or set of objects.
+Explanation: Often used to filter and display only the needed information. Example: Get-Module -ListAvailable | Select-Object Name, Version, Path.
+
+
+
+
+
+369
+Powershell Modules
 PowerShell Module
 
 Definition: A package that contains PowerShell cmdlets, functions, scripts, and other resources.
@@ -3561,23 +3573,12 @@ Explanation: Extends PowerShell’s functionality and can be shared or reused ac
 
 
 
-369
+370
 Powershell Modules
 Cmdlet
 
 Definition: A lightweight command used in the PowerShell environment.
 Explanation: Cmdlets follow a Verb-Noun naming pattern (e.g., Get-Module, Import-Module) and perform specific functions within PowerShell.
-
-
-
-
-
-370
-Powershell Modules
-Select-Object
-
-Definition: A cmdlet that selects specific properties of an object or set of objects.
-Explanation: Often used to filter and display only the needed information. Example: Get-Module -ListAvailable | Select-Object Name, Version, Path.
 
 
 
@@ -3594,8 +3595,8 @@ Stores OAuth tokens locally to reduce the need for repeated authentication reque
 
 372
 PnP Powershell
-SharePoint Site URL
-The web address of a SharePoint site (e.g., https://accuityllp.sharepoint.com/sites/ASB), serving as the entry point for accessing site resources and APIs.
+Scopes
+Define the level of access an application has to resources. Examples include Files.ReadWrite.All and Sites.ReadWrite.All, determining what operations the app can perform.
 
 
 
@@ -3603,8 +3604,8 @@ The web address of a SharePoint site (e.g., https://accuityllp.sharepoint.com/si
 
 373
 PnP Powershell
-Add-PnPFile (PnP.PowerShell)
-Uploads a file to a specified SharePoint document library or folder. Supports parameters like -Path for local files and -Stream for uploading via a data stream.
+API Permissions
+Permissions granted to an application to access specific APIs like SharePoint or Microsoft Graph. Can be delegated (user-based) or application-level (app-only).
 
 
 
@@ -3648,10 +3649,7 @@ A security mechanism used to authenticate DNS messages, ensuring that zone trans
 
 378
 Azure Functions
-2. Suppose your Azure Function has a blob trigger associated with it and you want it to execute only when png images are uploaded. Which of the following blob trigger Path values should you use? 
-
-samples-workitems/{name}.png
-The Path tells the blob trigger where it should monitor for changes, and if there are any filters applied. Adding a file extension to the Path specifies that uploaded files must have that file extension in order for the trigger to invoke the function.
+Activity functions are the basic units of work in a Durable Functions orchestration. An activity function contains the actual work performed by the tasks being orchestrated.
 
 
 
@@ -3678,17 +3676,17 @@ Displays the status of Windows services. Useful for checking if a service (e.g.,
 
 
 381
-SharePoint
-The __metadata property specifies the type information of the item being created or updated. This helps SharePoint understand the schema of the item, ensuring that the correct fields and data types are used.
+Jane Eyre
+Merino (muh-REE-noh)
+A breed of sheep prized for its soft, fine wool, ideal for high-quality textiles. The term also refers to fabrics or garments made from this wool, valued for their warmth and luxurious texture.
 
 
 
 
 
 382
-Jane Eyre
-Merino (muh-REE-noh)
-A breed of sheep prized for its soft, fine wool, ideal for high-quality textiles. The term also refers to fabrics or garments made from this wool, valued for their warmth and luxurious texture.
+SharePoint
+The __metadata property specifies the type information of the item being created or updated. This helps SharePoint understand the schema of the item, ensuring that the correct fields and data types are used.
 
 
 
@@ -3704,15 +3702,6 @@ Fillip
 
 
 384
-Powershell
--Force
-Overrides warnings or confirmation prompts, ensuring the command proceeds without manual intervention. Common in scripting for reliability.
-
-
-
-
-
-385
 SharePoint
 Delegated Permissions
 Definition: Permissions granted to an application on behalf of a user. The app acts as the user and can only perform actions that the user is permitted to do.
@@ -3723,11 +3712,22 @@ Authentication Flow: Typically involves interactive authentication methods like 
 
 
 
+385
+Powershell
+-Force
+Overrides warnings or confirmation prompts, ensuring the command proceeds without manual intervention. Common in scripting for reliability.
+
+
+
+
+
 386
 Home Network Project
-Front: What is Rate Limiting and how does it help in preventing attacks?
+Front: Explain the difference between a Docker Image and a Docker Container.
 
-Back: Rate Limiting restricts the number of requests a user or IP address can make to a service within a specific time frame. It helps prevent various attacks, such as brute-force attacks, denial-of-service (DoS) attacks, and abuse of APIs, by limiting the potential impact of malicious activities.
+Back:
+Docker Image: A read-only template that contains the application and all its dependencies required to run it. Images are built from Dockerfiles and serve as the blueprint for containers.
+Docker Container: A runnable instance of a Docker image. Containers are created from images and can be started, stopped, moved, and deleted independently.
 
 
 
@@ -3774,17 +3774,17 @@ Pelmet(s): A decorative framework or fabric cover above a window, concealing cur
 
 
 391
-IW Migration
-SSIS (SQL Server Integration Services)
-A platform for building enterprise-level data integration, transformation, and migration workflows. While not directly in SSMS, SSIS packages can orchestrate complex ETL operations, complementing Access-to-SQL-Server migrations and ongoing data maintenance.
+Lost in a Good Book
+Diatryma:  A genus of large flightless Eocene birds from Wyoming and New Mexico having much reduced wings, large head and powerful beak, and long massive legs and constituting with extinct related forms (as Gastornis) an order of birds probably most nearly related to the surviving cariamas and bustards
 
 
 
 
 
 392
-Lost in a Good Book
-Diatryma:  A genus of large flightless Eocene birds from Wyoming and New Mexico having much reduced wings, large head and powerful beak, and long massive legs and constituting with extinct related forms (as Gastornis) an order of birds probably most nearly related to the surviving cariamas and bustards
+IW Migration
+SSIS (SQL Server Integration Services)
+A platform for building enterprise-level data integration, transformation, and migration workflows. While not directly in SSMS, SSIS packages can orchestrate complex ETL operations, complementing Access-to-SQL-Server migrations and ongoing data maintenance.
 
 
 
@@ -3879,8 +3879,8 @@ A debugging feature that pauses execution when the value of a specific variable 
 
 402
 Debugging in VS Code
-Code Coverage
-The process of determining which parts of your code have been executed during testing or debugging, helping to identify untested areas and ensure comprehensive testing.
+Debug Console
+A tool within a development environment used to evaluate expressions, view output, or interact with a running program during debugging.
 
 
 
@@ -3897,7 +3897,7 @@ A breakpoint that only pauses execution when a specific condition is met (e.g., 
 
 404
 PEP 8
-Use __all__ to Define Public API: In your modules, define the __all__ list to explicitly specify which objects are public and should be imported when using from module import *. This controls the module's public interface and prevents unintended namespace pollution.
+Blank Lines for Separation: Use blank lines to separate top-level functions and class definitions, typically two blank lines. Within classes, use one blank line to separate methods. This separation improves code organization and readability.
 
 
 
@@ -3905,7 +3905,7 @@ Use __all__ to Define Public API: In your modules, define the __all__ list to ex
 
 405
 PEP 8
-Blank Lines for Separation: Use blank lines to separate top-level functions and class definitions, typically two blank lines. Within classes, use one blank line to separate methods. This separation improves code organization and readability.
+Use __all__ to Define Public API: In your modules, define the __all__ list to explicitly specify which objects are public and should be imported when using from module import *. This controls the module's public interface and prevents unintended namespace pollution.
 
 
 
@@ -3921,8 +3921,8 @@ Prefer Absolute Imports: Use full paths for imports starting from the project's 
 
 407
 FSLogix
-Q: What is the main difference between FSLogix Profile Containers and traditional roaming profiles?
-A: FSLogix uses VHDX containers to store user profiles, ensuring portability and faster logons, while traditional roaming profiles can become fragmented and inconsistent across multiple virtual machines.
+Q: What happens to a FSLogix Profile Container when a user logs off?
+A: When a user logs off, the changes made to the profile are saved back into the Profile Container (VHDX file), ensuring that all settings and data are retained for the next session.
 
 
 
@@ -3930,7 +3930,8 @@ A: FSLogix uses VHDX containers to store user profiles, ensuring portability and
 
 408
 FSLogix
-During a first-time sign-in, FSLogix creates the container for the user in C:\ProgramData\FSLogix\Cache and mounts the container to the virtual machine. Next, FSLogix sets up all the necessary redirections for the user's profile. Then the User Profile Service creates the user's profile into the local cache.
+Q: What is the maximum supported size of a VHDX file in FSLogix?
+A: VHDX files can support up to 64 TB, making them suitable for large-scale enterprise environments where user profiles may require substantial storage capacity.
 
 
 
@@ -3938,7 +3939,7 @@ During a first-time sign-in, FSLogix creates the container for the user in C:\Pr
 
 409
 FSLogix
-Cloud Cache uses the locally mounted container to provide periodic updates to the remote storage providers. Cloud Cache is designed to insulate users from short-term or intermittent local (inner-region, close proximity) storage issues.
+During a user's session when the connection to any storage provider becomes unhealthy, FSLogix queues up all the changes and then flushes them to the providers when they return to a healthy state.
 
 
 
@@ -4006,17 +4007,6 @@ A message bus system that allows applications and services to communicate with e
 
 416
 Powershell Modules
-Install-Module
-
-Definition: A cmdlet used to download and install a module from a repository like the PowerShell Gallery.
-Explanation: Specifies the module name and installation scope. Example: Install-Module -Name Az -Scope CurrentUser.
-
-
-
-
-
-417
-Powershell Modules
 Module Manifest
 
 Definition: See Module Manifest (.psd1) above.
@@ -4026,12 +4016,23 @@ Explanation: Provides metadata and configuration for modules, ensuring they load
 
 
 
+417
+Powershell Modules
+Install-Module
+
+Definition: A cmdlet used to download and install a module from a repository like the PowerShell Gallery.
+Explanation: Specifies the module name and installation scope. Example: Install-Module -Name Az -Scope CurrentUser.
+
+
+
+
+
 418
 Powershell Modules
-Get-Module
+Get-Command
 
-Definition: A cmdlet that retrieves information about modules.
-Explanation: Can list currently loaded modules or all available modules using parameters like -ListAvailable. Example: Get-Module -ListAvailable.
+Definition: A cmdlet that retrieves all commands available in PowerShell, including those from modules.
+Explanation: Can be filtered to show commands from a specific module using the -Module parameter. Example: Get-Command -Module Az.
 
 
 
@@ -4039,8 +4040,8 @@ Explanation: Can list currently loaded modules or all available modules using pa
 
 419
 PnP Powershell
-Server Relative URL
-The URL path relative to the SharePoint server, excluding the domain (e.g., /sites/ASB/Shared Documents), used in REST API endpoints for precise resource targeting.
+Add-PnPFile (PnP.PowerShell)
+Uploads a file to a specified SharePoint document library or folder. Supports parameters like -Path for local files and -Stream for uploading via a data stream.
 
 
 
@@ -4048,8 +4049,8 @@ The URL path relative to the SharePoint server, excluding the domain (e.g., /sit
 
 420
 PnP Powershell
-Set-PnPWeb (PnP.PowerShell)
-Configures properties of a SharePoint site, such as title, description, and logo. Enables automated site customization and configuration management.
+Server Relative URL
+The URL path relative to the SharePoint server, excluding the domain (e.g., /sites/ASB/Shared Documents), used in REST API endpoints for precise resource targeting.
 
 
 
@@ -4066,8 +4067,8 @@ A PowerShell class providing methods for file manipulation, such as reading, wri
 
 422
 Azure Functions + PP365
-Logging
-The practice of recording information about the execution of Azure Functions. Python Azure Functions implement logging to track operations, monitor performance, and diagnose issues, utilizing frameworks like Python’s logging module and integrating with Azure’s logging services for centralized monitoring.
+GitHub Actions
+An automation tool integrated with GitHub that allows developers to create workflows for building, testing, and deploying code. Python Azure Functions can leverage GitHub Actions to implement CI/CD pipelines, enabling seamless integration with source control and automated deployments to Azure.
 
 
 
@@ -4075,8 +4076,8 @@ The practice of recording information about the execution of Azure Functions. Py
 
 423
 Azure Functions + PP365
-GitHub Actions
-An automation tool integrated with GitHub that allows developers to create workflows for building, testing, and deploying code. Python Azure Functions can leverage GitHub Actions to implement CI/CD pipelines, enabling seamless integration with source control and automated deployments to Azure.
+Logging
+The practice of recording information about the execution of Azure Functions. Python Azure Functions implement logging to track operations, monitor performance, and diagnose issues, utilizing frameworks like Python’s logging module and integrating with Azure’s logging services for centralized monitoring.
 
 
 
@@ -4200,8 +4201,8 @@ An individual who contributes code, documentation, or other resources to an open
 
 436
 Debugging in VS Code
-Debug Console
-A tool within a development environment used to evaluate expressions, view output, or interact with a running program during debugging.
+Code Coverage
+The process of determining which parts of your code have been executed during testing or debugging, helping to identify untested areas and ensure comprehensive testing.
 
 
 
@@ -4259,7 +4260,8 @@ result = some_function(
 
 442
 FSLogix
-All data written to the user's profile is temporarily stored as block-level cache objects in the same directory. Those block-level cache objects are then committed to the local cache. Before the block-level cache objects are created, the writes into the user's profile are processed in memory through a proxy file.
+Q: What is FSLogix App Masking, and how does it relate to managing applications in virtual desktops?
+A: FSLogix App Masking is a feature that allows administrators to control which applications are visible to which users in a virtual desktop environment. This "masks" applications based on user roles, ensuring that users only see the apps they have permissions for, without the need for separate application installations.
 
 
 
@@ -4267,8 +4269,8 @@ All data written to the user's profile is temporarily stored as block-level cach
 
 443
 FSLogix
-Q: What is the role of Profile Disk Differencing in FSLogix?
-A: Profile Disk Differencing allows FSLogix to create differencing VHDX disks, where changes to the user profile are stored in separate files, reducing the load on the main profile disk. This improves performance by ensuring faster read/write operations and reducing storage overhead.
+Q: What is the main difference between FSLogix Profile Containers and traditional roaming profiles?
+A: FSLogix uses VHDX containers to store user profiles, ensuring portability and faster logons, while traditional roaming profiles can become fragmented and inconsistent across multiple virtual machines.
 
 
 
@@ -4276,8 +4278,8 @@ A: Profile Disk Differencing allows FSLogix to create differencing VHDX disks, w
 
 444
 FSLogix
-Q: Where are FSLogix Profile Containers typically stored in Azure Virtual Desktop environments?
-A: FSLogix Profile Containers are typically stored in Azure Files or network shares (SMB share) to allow consistent access across different virtual desktop sessions.
+Q: How does FSLogix Profile Container enhance multi-session environments like Azure Virtual Desktop?
+A: In multi-session environments, FSLogix Profile Containers ensure that user profiles are loaded quickly and consistently, regardless of which session or virtual machine the user logs into, ensuring a persistent and smooth experience even when multiple users share the same infrastructure.
 
 
 
@@ -4328,15 +4330,6 @@ WSL 2: A full Linux kernel running in a lightweight VM, offering full system cal
 
 449
 WSL + Kali Linux
-X11 (X Window System)
-A graphical windowing system for Unix-like operating systems, providing the foundation for graphical user interfaces. X11 is typically used with Linux systems to handle display rendering and interaction.
-
-
-
-
-
-450
-WSL + Kali Linux
 /etc/wsl.conf
 A configuration file in Linux distributions that allows you to control WSL behavior at the system level, such as automating the mount points for drives, configuring interop with Windows tools, and controlling networking options.
 
@@ -4344,12 +4337,21 @@ A configuration file in Linux distributions that allows you to control WSL behav
 
 
 
+450
+WSL + Kali Linux
+X11 (X Window System)
+A graphical windowing system for Unix-like operating systems, providing the foundation for graphical user interfaces. X11 is typically used with Linux systems to handle display rendering and interaction.
+
+
+
+
+
 451
 Powershell Modules
-Directory Path for Modules
+Get-Module
 
-Definition: The file system locations where PowerShell modules are stored.
-Explanation: Common directories include C:\Program Files\PowerShell\Modules for all users and C:\Users\<Username>\Documents\PowerShell\Modules for individual users.
+Definition: A cmdlet that retrieves information about modules.
+Explanation: Can list currently loaded modules or all available modules using parameters like -ListAvailable. Example: Get-Module -ListAvailable.
 
 
 
@@ -4357,10 +4359,10 @@ Explanation: Common directories include C:\Program Files\PowerShell\Modules for 
 
 452
 Powershell Modules
-Get-Command
+Directory Path for Modules
 
-Definition: A cmdlet that retrieves all commands available in PowerShell, including those from modules.
-Explanation: Can be filtered to show commands from a specific module using the -Module parameter. Example: Get-Command -Module Az.
+Definition: The file system locations where PowerShell modules are stored.
+Explanation: Common directories include C:\Program Files\PowerShell\Modules for all users and C:\Users\<Username>\Documents\PowerShell\Modules for individual users.
 
 
 
@@ -4379,15 +4381,6 @@ Explanation: Installing a module with -Scope CurrentUser does not require admini
 
 454
 PnP Powershell
-Admin Consent
-Approval granted by an Azure AD administrator for an application to access certain resources or perform specific actions, essential for elevated API permissions.
-
-
-
-
-
-455
-PnP Powershell
 Get-PnPGroup (PnP.PowerShell)
 Retrieves information about SharePoint groups within a site. Assists in managing permissions and user access by programmatically handling group memberships.
 
@@ -4395,10 +4388,19 @@ Retrieves information about SharePoint groups within a site. Assists in managing
 
 
 
+455
+PnP Powershell
+OAuth 2.0 Client Credentials Flow
+An authentication method where applications authenticate using a client ID and client secret, enabling server-to-server interactions without user involvement.
+
+
+
+
+
 456
 PnP Powershell
-Remove-PnPUserFromGroup (PnP.PowerShell)
-Removes a user from a SharePoint group. Helps in maintaining accurate group memberships and enforcing access policies through scripts.
+Add-PnPListItem (PnP.PowerShell)
+Adds a new item to a SharePoint list. Enables automated data entry and integration with other systems by programmatically populating list data.
 
 
 
@@ -4406,8 +4408,8 @@ Removes a user from a SharePoint group. Helps in maintaining accurate group memb
 
 457
 Azure Functions + PP365
-Function App Name
-The unique identifier assigned to an Azure Function App during creation. The Function App Name is used to access and manage the Function App within the Azure Portal, forming part of the default domain for deployed functions (e.g., https://<functionappname>.azurewebsites.net).
+Dynamic Content
+Data dynamically pulled from triggers or previous actions in Power Automate flows. Dynamic content allows flows to be flexible and responsive to varying input data, enabling customized and context-aware operations when interacting with services like Azure Functions and Dataverse.
 
 
 
@@ -4415,8 +4417,8 @@ The unique identifier assigned to an Azure Function App during creation. The Fun
 
 458
 Azure Functions + PP365
-Dynamic Content
-Data dynamically pulled from triggers or previous actions in Power Automate flows. Dynamic content allows flows to be flexible and responsive to varying input data, enabling customized and context-aware operations when interacting with services like Azure Functions and Dataverse.
+Function App Name
+The unique identifier assigned to an Azure Function App during creation. The Function App Name is used to access and manage the Function App within the Azure Portal, forming part of the default domain for deployed functions (e.g., https://<functionappname>.azurewebsites.net).
 
 
 
@@ -4488,9 +4490,8 @@ my_list[1:5]
 
 466
 FSLogix
-Data is written to all storage providers regardless of which provider is used during data hydration.
-Performance (latency, utilization, bottlenecks) of a storage provider affects its sync status with the local copy.
-Having one (1) or more provider that is behind in updates from local cache could be an indicator of an under performing storage provider.
+Q: Where are FSLogix Profile Containers typically stored in Azure Virtual Desktop environments?
+A: FSLogix Profile Containers are typically stored in Azure Files or network shares (SMB share) to allow consistent access across different virtual desktop sessions.
 
 
 
@@ -4498,8 +4499,7 @@ Having one (1) or more provider that is behind in updates from local cache could
 
 467
 FSLogix
-Q: What is the maximum supported size of a VHDX file in FSLogix?
-A: VHDX files can support up to 64 TB, making them suitable for large-scale enterprise environments where user profiles may require substantial storage capacity.
+During a first-time sign-in, FSLogix creates the container for the user in C:\ProgramData\FSLogix\Cache and mounts the container to the virtual machine. Next, FSLogix sets up all the necessary redirections for the user's profile. Then the User Profile Service creates the user's profile into the local cache.
 
 
 
@@ -4507,8 +4507,8 @@ A: VHDX files can support up to 64 TB, making them suitable for large-scale ente
 
 468
 FSLogix
-Q: What is FSLogix App Masking, and how does it relate to managing applications in virtual desktops?
-A: FSLogix App Masking is a feature that allows administrators to control which applications are visible to which users in a virtual desktop environment. This "masks" applications based on user roles, ensuring that users only see the apps they have permissions for, without the need for separate application installations.
+Q: What is the role of Profile Disk Differencing in FSLogix?
+A: Profile Disk Differencing allows FSLogix to create differencing VHDX disks, where changes to the user profile are stored in separate files, reducing the load on the main profile disk. This improves performance by ensuring faster read/write operations and reducing storage overhead.
 
 
 
@@ -4577,10 +4577,9 @@ Exports a WSL distribution to a .tar file. This can be used for backup or migrat
 
 475
 Powershell Modules
-Module Path
-
-Definition: The directories where PowerShell looks for modules.
-Explanation: Can be viewed using the $env:PSModulePath environment variable. PowerShell searches these paths when importing modules.
+Windows System Modules Directory
+Definition: A default directory where PowerShell modules are stored for all users.
+Explanation: Typically located at C:\Program Files\PowerShell\Modules.
 
 
 
@@ -4599,15 +4598,34 @@ Explanation: Dependencies are specified in a module's manifest and must be prese
 
 477
 Powershell Modules
-Windows System Modules Directory
-Definition: A default directory where PowerShell modules are stored for all users.
-Explanation: Typically located at C:\Program Files\PowerShell\Modules.
+Module Path
+
+Definition: The directories where PowerShell looks for modules.
+Explanation: Can be viewed using the $env:PSModulePath environment variable. PowerShell searches these paths when importing modules.
 
 
 
 
 
 478
+PnP Powershell
+Admin Consent
+Approval granted by an Azure AD administrator for an application to access certain resources or perform specific actions, essential for elevated API permissions.
+
+
+
+
+
+479
+PnP Powershell
+Set-PnPWeb (PnP.PowerShell)
+Configures properties of a SharePoint site, such as title, description, and logo. Enables automated site customization and configuration management.
+
+
+
+
+
+480
 PnP Powershell
 Connect-PnPOnline (PnP.PowerShell)
 Establishes a connection to a SharePoint site using various authentication methods like client credentials or device code flow, enabling subsequent PnP.PowerShell cmdlets to interact with SharePoint.
@@ -4616,34 +4634,7 @@ Establishes a connection to a SharePoint site using various authentication metho
 
 
 
-479
-PnP Powershell
-Add-PnPListItem (PnP.PowerShell)
-Adds a new item to a SharePoint list. Enables automated data entry and integration with other systems by programmatically populating list data.
-
-
-
-
-
-480
-PnP Powershell
-Get-PnPSite (PnP.PowerShell)
-Fetches information about the current SharePoint site, including properties like URL, title, and storage usage. Helps in monitoring and managing site configurations.
-
-
-
-
-
 481
-Azure Functions + PP365
-Managed Identity Credential Acquisition
-The process by which an Azure service with a managed identity obtains an access token from Azure AD. This token is used to authenticate requests to other Azure services, ensuring secure and seamless communication without the need for manual credential management.
-
-
-
-
-
-482
 Azure Functions + PP365
 Azure Functions Development Environment
 The setup and tools required to develop Azure Functions locally before deploying them to Azure. For Python developers, this includes an IDE like VS Code, Azure Functions Core Tools, Python runtime, virtual environments, and necessary extensions for seamless development and testing.
@@ -4652,10 +4643,19 @@ The setup and tools required to develop Azure Functions locally before deploying
 
 
 
-483
+482
 Azure Functions + PP365
 Function Proxies
 A feature in Azure Functions that allows developers to create a façade over one or more functions or APIs. Function Proxies can manage routing, transformation, and composition of requests to Python Azure Functions, simplifying API management and enhancing security by abstracting backend services.
+
+
+
+
+
+483
+Azure Functions + PP365
+Managed Identity Credential Acquisition
+The process by which an Azure service with a managed identity obtains an access token from Azure AD. This token is used to authenticate requests to other Azure services, ensuring secure and seamless communication without the need for manual credential management.
 
 
 
@@ -4705,10 +4705,10 @@ A lightweight and fast desktop environment for Unix-like operating systems, know
 
 488
 Powershell Modules
-Force Parameter (-Force)
+Pester
 
-Definition: A parameter used with Import-Module to reload a module even if it's already imported.
-Explanation: Useful for ensuring the latest version of a module is loaded or to overwrite existing module imports.
+Definition: A testing framework for PowerShell.
+Explanation: Used for writing and running tests to ensure scripts and modules behave as expected.
 
 
 
@@ -4727,10 +4727,10 @@ Explanation: When installing a module with -Scope AllUsers, it requires administ
 
 490
 Powershell Modules
-Uninstall-Module
+Force Parameter (-Force)
 
-Definition: A cmdlet used to remove a module from the system.
-Explanation: Example: Uninstall-Module -Name ActiveDirectory removes the ActiveDirectory module.
+Definition: A parameter used with Import-Module to reload a module even if it's already imported.
+Explanation: Useful for ensuring the latest version of a module is loaded or to overwrite existing module imports.
 
 
 
@@ -4738,8 +4738,8 @@ Explanation: Example: Uninstall-Module -Name ActiveDirectory removes the ActiveD
 
 491
 PnP Powershell
-OAuth 2.0 Client Credentials Flow
-An authentication method where applications authenticate using a client ID and client secret, enabling server-to-server interactions without user involvement.
+Throttling in SharePoint
+Limits the number of API requests to prevent abuse and ensure service stability. Requires implementing retry logic and handling throttling responses in scripts.
 
 
 
@@ -4747,8 +4747,8 @@ An authentication method where applications authenticate using a client ID and c
 
 492
 PnP Powershell
-Parameter Set Conflict
-Occurs when incompatible or conflicting parameters are used together in a PowerShell cmdlet, leading to errors as PowerShell cannot determine the intended operation.
+Remove-PnPUserFromGroup (PnP.PowerShell)
+Removes a user from a SharePoint group. Helps in maintaining accurate group memberships and enforcing access policies through scripts.
 
 
 
@@ -4756,8 +4756,8 @@ Occurs when incompatible or conflicting parameters are used together in a PowerS
 
 493
 PnP Powershell
-Document Library
-A SharePoint component where documents are stored, managed, and shared. Examples include "Shared Documents" or custom libraries within a site.
+Get-PnPSite (PnP.PowerShell)
+Fetches information about the current SharePoint site, including properties like URL, title, and storage usage. Helps in monitoring and managing site configurations.
 
 
 
@@ -4813,10 +4813,10 @@ A set of rules used to filter network traffic before it is captured in Wireshark
 
 499
 Powershell Modules
-Pester
+Uninstall-Module
 
-Definition: A testing framework for PowerShell.
-Explanation: Used for writing and running tests to ensure scripts and modules behave as expected.
+Definition: A cmdlet used to remove a module from the system.
+Explanation: Example: Uninstall-Module -Name ActiveDirectory removes the ActiveDirectory module.
 
 
 
@@ -4845,77 +4845,14 @@ Explanation: Includes information like the module version, author, exported func
 
 502
 PnP Powershell
-Client ID (client_id)
-A unique identifier assigned to an Azure AD application upon registration. Used to identify the application during authentication processes.
+Parameter Set Conflict
+Occurs when incompatible or conflicting parameters are used together in a PowerShell cmdlet, leading to errors as PowerShell cannot determine the intended operation.
 
 
 
 
 
 503
-PnP Powershell
-Throttling in SharePoint
-Limits the number of API requests to prevent abuse and ensure service stability. Requires implementing retry logic and handling throttling responses in scripts.
-
-
-
-
-
-504
-PnP Powershell
-Invoke-RestMethod (Microsoft.PowerShell.Utility)
-Sends HTTP and HTTPS requests to RESTful APIs and processes the responses. Commonly used for interacting directly with SharePoint REST API in PowerShell scripts.
-
-
-
-
-
-505
-Azure Functions + PP365
-Function App Plan
-The hosting plan for Azure Functions that determines compute resources, scaling behavior, and pricing. Python Azure Functions can be hosted on different plans, such as Consumption Plans for automatic scaling or Premium Plans for enhanced performance and features, allowing developers to choose based on application needs.
-
-
-
-
-
-506
-Azure Functions + PP365
-Environment Configuration
-The setup of environment-specific settings and variables that dictate how Python Azure Functions operate. Proper environment configuration ensures that functions behave correctly across different stages (development, staging, production), maintaining separation of concerns and enhancing security.
-
-
-
-
-
-507
-Azure Functions + PP365
-Azure Function App Logs
-Logs generated by Azure Functions that provide insights into function executions, errors, and performance. Python Azure Functions can emit logs to Azure Monitor and Application Insights, enabling developers to monitor, analyze, and optimize function behavior based on comprehensive log data.
-
-
-
-
-
-508
-PnP Powershell
-API Permissions
-Permissions granted to an application to access specific APIs like SharePoint or Microsoft Graph. Can be delegated (user-based) or application-level (app-only).
-
-
-
-
-
-509
-PnP Powershell
-Set-PnPFileCheckedIn (PnP.PowerShell)
-Checks in a previously uploaded file in SharePoint, optionally adding comments. Essential for managing document versions and maintaining collaboration workflows.
-
-
-
-
-
-510
 PnP Powershell
 AADSTS7000218 Error
 An Azure AD error stating that the authentication request lacks a client_assertion or client_secret, preventing successful token acquisition.
@@ -4924,10 +4861,73 @@ An Azure AD error stating that the authentication request lacks a client_asserti
 
 
 
-511
+504
+PnP Powershell
+Document Library
+A SharePoint component where documents are stored, managed, and shared. Examples include "Shared Documents" or custom libraries within a site.
+
+
+
+
+
+505
 Azure Functions + PP365
 Local Debugging
 Running and testing Azure Functions on a local machine to identify and fix issues before deployment. Python developers use tools like Azure Functions Core Tools and VS Code to debug functions locally, allowing for rapid development and troubleshooting in a controlled environment.
+
+
+
+
+
+506
+Azure Functions + PP365
+Function App Plan
+The hosting plan for Azure Functions that determines compute resources, scaling behavior, and pricing. Python Azure Functions can be hosted on different plans, such as Consumption Plans for automatic scaling or Premium Plans for enhanced performance and features, allowing developers to choose based on application needs.
+
+
+
+
+
+507
+Azure Functions + PP365
+Environment Configuration
+The setup of environment-specific settings and variables that dictate how Python Azure Functions operate. Proper environment configuration ensures that functions behave correctly across different stages (development, staging, production), maintaining separation of concerns and enhancing security.
+
+
+
+
+
+508
+PnP Powershell
+Invoke-RestMethod (Microsoft.PowerShell.Utility)
+Sends HTTP and HTTPS requests to RESTful APIs and processes the responses. Commonly used for interacting directly with SharePoint REST API in PowerShell scripts.
+
+
+
+
+
+509
+PnP Powershell
+Client ID (client_id)
+A unique identifier assigned to an Azure AD application upon registration. Used to identify the application during authentication processes.
+
+
+
+
+
+510
+PnP Powershell
+System.IO.Stream (System.IO)
+Represents a sequence of bytes, such as a file. Used in PowerShell to handle file data streams for operations like uploading files to SharePoint.
+
+
+
+
+
+511
+Azure Functions + PP365
+Azure Function App Logs
+Logs generated by Azure Functions that provide insights into function executions, errors, and performance. Python Azure Functions can emit logs to Azure Monitor and Application Insights, enabling developers to monitor, analyze, and optimize function behavior based on comprehensive log data.
 
 
 
@@ -4944,8 +4944,8 @@ A hosting plan for Azure Functions that offers enhanced performance, VNET integr
 
 513
 Azure Functions + PP365
-Power Platform CLI
-A command-line interface tool for managing Power Platform resources, including Power Apps, Power Automate, and Dataverse. The Power Platform CLI facilitates automation, scripting, and advanced management tasks, enabling developers and administrators to interact with the platform efficiently.
+OAuth 2.0 Authentication Flow
+A sequence of steps in the OAuth 2.0 protocol where an application obtains an access token from an authorization server. This flow involves redirecting users for consent, exchanging authorization codes for tokens, and securely accessing protected resources using the obtained tokens, enabling secure delegation of access.
 
 
 
@@ -4953,8 +4953,8 @@ A command-line interface tool for managing Power Platform resources, including P
 
 514
 PnP Powershell
-System.IO.Stream (System.IO)
-Represents a sequence of bytes, such as a file. Used in PowerShell to handle file data streams for operations like uploading files to SharePoint.
+Set-PnPFileCheckedIn (PnP.PowerShell)
+Checks in a previously uploaded file in SharePoint, optionally adding comments. Essential for managing document versions and maintaining collaboration workflows.
 
 
 
@@ -4971,14 +4971,32 @@ Retrieves details about the current PnP.PowerShell connection, including authent
 
 516
 PnP Powershell
-Azure AD App Registration
-The process of registering an application in Azure Active Directory to obtain identifiers like client ID and tenant ID, enabling the app to authenticate and access Microsoft APIs.
+AppInv.aspx
+A SharePoint page used to grant app permissions to specific SharePoint sites, allowing custom or third-party apps to access site resources based on defined permissions.
 
 
 
 
 
 517
+Azure Functions + PP365
+Power Platform CLI
+A command-line interface tool for managing Power Platform resources, including Power Apps, Power Automate, and Dataverse. The Power Platform CLI facilitates automation, scripting, and advanced management tasks, enabling developers and administrators to interact with the platform efficiently.
+
+
+
+
+
+518
+Azure Functions + PP365
+Async Programming (Asyncio)
+A programming paradigm in Python that enables concurrent execution of code using asynchronous functions and event loops. In Azure Functions, leveraging asyncio can improve performance and scalability by allowing Python functions to handle multiple tasks simultaneously without blocking.
+
+
+
+
+
+519
 Azure Functions + PP365
 Azure AD TokenRequestContext
 A context object used in Azure AD token acquisition processes, specifying the scopes and resources for which an access token is requested. TokenRequestContext ensures that tokens are issued with the appropriate permissions and are valid for the intended resources, facilitating secure and targeted access in applications.
@@ -4987,28 +5005,10 @@ A context object used in Azure AD token acquisition processes, specifying the sc
 
 
 
-518
-Azure Functions + PP365
-OAuth 2.0 Authentication Flow
-A sequence of steps in the OAuth 2.0 protocol where an application obtains an access token from an authorization server. This flow involves redirecting users for consent, exchanging authorization codes for tokens, and securely accessing protected resources using the obtained tokens, enabling secure delegation of access.
-
-
-
-
-
-519
-Azure Functions + PP365
-local.settings.json
-A configuration file used during local development of Azure Functions. It stores environment variables, connection strings, and other settings required to run functions locally. This file is not deployed to Azure, ensuring that sensitive information remains secure during development.
-
-
-
-
-
 520
 PnP Powershell
-AppInv.aspx
-A SharePoint page used to grant app permissions to specific SharePoint sites, allowing custom or third-party apps to access site resources based on defined permissions.
+Azure AD App Registration
+The process of registering an application in Azure Active Directory to obtain identifiers like client ID and tenant ID, enabling the app to authenticate and access Microsoft APIs.
 
 
 
@@ -5025,8 +5025,8 @@ Retrieves a file from a SharePoint document library. Allows downloading files to
 
 522
 Azure Functions + PP365
-Async Programming (Asyncio)
-A programming paradigm in Python that enables concurrent execution of code using asynchronous functions and event loops. In Azure Functions, leveraging asyncio can improve performance and scalability by allowing Python functions to handle multiple tasks simultaneously without blocking.
+local.settings.json
+A configuration file used during local development of Azure Functions. It stores environment variables, connection strings, and other settings required to run functions locally. This file is not deployed to Azure, ensuring that sensitive information remains secure during development.
 
 
 
@@ -5043,15 +5043,6 @@ The process of obtaining organizational approval for an application’s requeste
 
 524
 Azure Functions + PP365
-Redirect URI
-A URI in OAuth 2.0 flows where the authorization server redirects the user after authentication. It ensures that tokens are sent to the correct application endpoint, maintaining security by validating the redirect destination during the authentication process.
-
-
-
-
-
-525
-Azure Functions + PP365
 host.json
 A global configuration file for Azure Functions that defines settings applicable to all functions within a Function App. For Python developers, host.json can be used to configure logging, extensions, and other runtime behaviors, enabling centralized control over function execution.
 
@@ -5059,10 +5050,19 @@ A global configuration file for Azure Functions that defines settings applicable
 
 
 
+525
+Azure Functions + PP365
+Redirect URI
+A URI in OAuth 2.0 flows where the authorization server redirects the user after authentication. It ensures that tokens are sent to the correct application endpoint, maintaining security by validating the redirect destination during the authentication process.
+
+
+
+
+
 526
 Azure Functions + PP365
-Azure Service Principal
-An identity created for use with applications, hosted services, and automated tools to access Azure resources. Service principals enable secure, programmatic access to Azure services, acting as non-human users with specific permissions, essential for authenticating applications like Power Automate and Azure Functions.
+Virtual Environment Activation
+The process of activating a Python virtual environmentto  isolate project dependencies. When developing Python Azure Functions, activating the virtual environment ensures that the correct packages are used, preventing conflicts and maintaining a clean development setup.
 
 
 
@@ -5070,8 +5070,8 @@ An identity created for use with applications, hosted services, and automated to
 
 527
 Azure Functions + PP365
-Virtual Environment Activation
-The process of activating a Python virtual environmentto  isolate project dependencies. When developing Python Azure Functions, activating the virtual environment ensures that the correct packages are used, preventing conflicts and maintaining a clean development setup.
+Azure Service Principal
+An identity created for use with applications, hosted services, and automated tools to access Azure resources. Service principals enable secure, programmatic access to Azure services, acting as non-human users with specific permissions, essential for authenticating applications like Power Automate and Azure Functions.
 
 
 
@@ -5088,8 +5088,8 @@ An OAuth 2.0 authentication flow where an application uses its own credentials (
 
 529
 Azure Functions + PP365
-Function App Secrets
-Sensitive information required by Azure Functions, such as API keys or connection strings. Python Azure Functions manage secrets through environment variables, Azure Key Vault integrations, or managed identities, ensuring that sensitive data is stored securely and accessed only by authorized functions.
+Function Scale-Out
+The ability of Azure Functions to automatically scale the number of function instances based on demand. Python functions benefit from scale-out to handle varying workloads efficiently, ensuring that applications remain responsive and performant under different usage patterns.
 
 
 
@@ -5097,8 +5097,8 @@ Sensitive information required by Azure Functions, such as API keys or connectio
 
 530
 Azure Functions + PP365
-Function Scale-Out
-The ability of Azure Functions to automatically scale the number of function instances based on demand. Python functions benefit from scale-out to handle varying workloads efficiently, ensuring that applications remain responsive and performant under different usage patterns.
+Function App Secrets
+Sensitive information required by Azure Functions, such as API keys or connection strings. Python Azure Functions manage secrets through environment variables, Azure Key Vault integrations, or managed identities, ensuring that sensitive data is stored securely and accessed only by authorized functions.
 
 
 
