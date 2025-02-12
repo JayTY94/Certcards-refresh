@@ -4,12 +4,6 @@
 
 
 
-1
-Azure Kubernetes Learning Path
-1. A container is launched using the --publish 8080:80 flag. Which of the following options is the most likely network configuration used for the container? 
-The Bridge network configuration is an internal, private network used by the container and isolates the container network from the Docker host network. We use the publish flag to map ports between the container and host ports.
-
-
 
 
 
