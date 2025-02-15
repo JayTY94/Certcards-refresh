@@ -4,19 +4,11 @@
 
 
 
-1
-Azure Kubernetes Learning Path
-Azure Container Registry is a registry-hosting service provided by Azure. Each Azure Container Registry resource you create is a separate registry with a unique URL. These registries are private, meaning they require authentication to push or pull images
 
 
 
 
 
-2
-Azure Kubernetes Learning Path
-A volume is stored on the host filesystem at a specific folder location. Choose a folder where you know the data won't be modified by non-Docker processes.
-
-Docker creates and manages the new volume by running the docker volume create command. This command can form part of our Dockerfile definition, which means that you can create volumes as part of the container-creation process. Docker creates the volume if it doesn't exist when you try to mount the volume into a container the first time.
 
 
 
@@ -4972,3 +4964,15 @@ Connecting Azure Functions with an API gateway to manage and secure API traffic.
 Azure Functions + PP365
 Azure Functions Extensions
 Additional modules or packages that extend the capabilities of Azure Functions. For Python developers, extensions can provide support for integrating with other Azure services, enhancing bindings, and adding new triggers, enabling more complex and feature-rich serverless applications.
+
+
+
+
+
+
+
+
+
+2
+Azure Kubernetes Learning Path
+Docker creates and manages the new volume by running the docker volume create command. This command can form part of our Dockerfile definition, which means that you can create volumes as part of the container-creation process. Docker creates the volume if it doesn't exist when you try to mount the volume into a container the first time.
