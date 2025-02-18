@@ -4,28 +4,18 @@
 
 
 
-1
-Azure Functions + PP365
-Fetch API
-A modern JavaScript interface for making HTTP requests. Compared to XMLHttpRequest, the Fetch API provides a more powerful and flexible feature set for handling requests and responses, often used in custom scripts within Dynamics 365 to interact with services like Azure Functions securely.
 
 
 
 
 
-2
-Azure Functions + PP365
-requirements.txt
-A file used in Python projects to list all dependencies and packages required by the application. In Azure Functions, requirements.txt ensures that all necessary Python libraries are installed when deploying functions, maintaining consistency between development and production environments.
 
 
 
 
 
-3
-Azure Functions + PP365
-Application Insights
-A feature of Azure Monitor that provides extensible application performance management and monitoring. Python Azure Functions integrated with Application Insights can track telemetry data, diagnose issues, and gain insights into function performance and usage patterns, enhancing observability and reliability.
+
+
 
 
 
