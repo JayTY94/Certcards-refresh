@@ -4,19 +4,9 @@
 
 
 
-1
-Azure Functions + PP365
-Function URL
-The endpoint URL assigned to an Azure Function, used to invoke the function via HTTP requests. The Function URL typically includes the function app’s domain and may contain a function key for authentication, enabling secure and targeted access to the function’s operations.
 
 
 
-
-
-2
-Azure Functions + PP365
-Function.json
-A file that defines the bindings and configuration for an individual Azure Function. In Python-based functions, function.json specifies the trigger type, input and output bindings, and other settings, enabling Azure to correctly route events and data to the function.
 
 
 
