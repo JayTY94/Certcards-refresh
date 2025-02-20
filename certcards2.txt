@@ -10,10 +10,6 @@
 
 
 
-2
-Azure Kubernetes Learning Path
-Docker creates and manages the new volume by running the docker volume create command. This command can form part of our Dockerfile definition, which means that you can create volumes as part of the container-creation process. Docker creates the volume if it doesn't exist when you try to mount the volume into a container the first time.
-
 
 
 
