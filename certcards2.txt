@@ -51,8 +51,8 @@ A hosting plan for Azure Functions that offers enhanced performance, VNET integr
 
 6
 Azure Functions + PP365
-local.settings.json
-A configuration file used during local development of Azure Functions. It stores environment variables, connection strings, and other settings required to run functions locally. This file is not deployed to Azure, ensuring that sensitive information remains secure during development.
+host.json
+A global configuration file for Azure Functions that defines settings applicable to all functions within a Function App. For Python developers, host.json can be used to configure logging, extensions, and other runtime behaviors, enabling centralized control over function execution.
 
 
 
@@ -69,8 +69,8 @@ A feature in Azure Functions that allows developers to create a façade over one
 
 8
 Azure Functions + PP365
-Power Platform CLI
-A command-line interface tool for managing Power Platform resources, including Power Apps, Power Automate, and Dataverse. The Power Platform CLI facilitates automation, scripting, and advanced management tasks, enabling developers and administrators to interact with the platform efficiently.
+Function App Secrets
+Sensitive information required by Azure Functions, such as API keys or connection strings. Python Azure Functions manage secrets through environment variables, Azure Key Vault integrations, or managed identities, ensuring that sensitive data is stored securely and accessed only by authorized functions.
 
 
 
@@ -78,8 +78,8 @@ A command-line interface tool for managing Power Platform resources, including P
 
 9
 Azure Functions + PP365
-Function App Secrets
-Sensitive information required by Azure Functions, such as API keys or connection strings. Python Azure Functions manage secrets through environment variables, Azure Key Vault integrations, or managed identities, ensuring that sensitive data is stored securely and accessed only by authorized functions.
+API Gateway Integration
+Connecting Azure Functions with an API gateway to manage and secure API traffic. Integrating with services like Azure API Management allows Python Azure Functions to benefit from features like rate limiting, authentication, and monitoring, enhancing the security and scalability of exposed APIs.
 
 
 
@@ -136,9 +136,9 @@ Definition: A visual representation illustrating the relationships, dependencies
 
 15
 Network Mapping
-NetFlow
+Logical Topology (Service Map)
 
-Definition: A network protocol developed by Cisco for collecting and monitoring IP traffic data, providing insights into bandwidth usage, traffic patterns, and network performance.
+Definition: An abstract representation within a Service Map showing how services interact and depend on each other, focusing on data flow and service relationships rather than physical connections.
 
 
 
@@ -211,7 +211,9 @@ The Orchestrator Function is written in code. The function is used for describin
 
 23
 Azure Functions
-The name of the system-assigned service principal is always the same as the name of the Azure resource it's created for. For a deployment slot, the name of its system-assigned identity is <app-name>/slots/<slot-name>.
+When you enable a system-assigned managed identity:
+
+A service principal of a special type is created in Microsoft Entra ID for the identity. The service principal is tied to the lifecycle of that Azure resource. When the Azure resource is deleted, Azure automatically deletes the service principal for you.
 
 
 
@@ -325,15 +327,7 @@ Use __all__ to Define Public API: In your modules, define the __all__ list to ex
 
 35
 PEP 8
-Consistent Alignment in Continuation Lines: Align continuation lines either vertically with the opening delimiter or use an extra level of indentation. Consistent alignment improves the visual structure and readability of the code.
-
-python
-Copy code
-result = some_function(
-    first_argument,
-    second_argument,
-    third_argument,
-)
+Automate Import Management: Employ tools such as isort to automatically sort and organize your import statements according to PEP 8 guidelines. Integrate these tools with your development workflow to maintain consistent and error-free import structures across your projects.
 
 
 
@@ -399,9 +393,9 @@ An urgent fix applied to a project to resolve critical bugs or security vulnerab
 
 42
 Open Source/GitHub
-Contribution Guidelines
+README.md
 
-A set of rules and best practices outlined by a project to ensure consistent and quality contributions from all contributors, often found in CONTRIBUTING.md.
+A markdown file at the root of a repository that provides an overview of the project, including its purpose, setup instructions, and usage information.
 
 
 
@@ -409,9 +403,9 @@ A set of rules and best practices outlined by a project to ensure consistent and
 
 43
 Open Source/GitHub
-Test Suite
+PEP 8
 
-A collection of automated tests that verify the functionality and integrity of a project’s code, ensuring that changes do not introduce new bugs.
+Python Enhancement Proposal 8, the style guide for writing clean and readable Python code, outlining conventions for code layout and formatting.
 
 
 
@@ -452,10 +446,10 @@ Explanation: Common directories include C:\Program Files\PowerShell\Modules for 
 
 47
 Powershell Modules
-Get-InstalledModule
+PowerShell Module
 
-Definition: A cmdlet that retrieves modules installed on the system.
-Explanation: Useful for managing and updating modules. Example: Get-InstalledModule | Update-Module updates all installed modules.
+Definition: A package that contains PowerShell cmdlets, functions, scripts, and other resources.
+Explanation: Extends PowerShell’s functionality and can be shared or reused across different environments and users.
 
 
 
@@ -485,10 +479,10 @@ Explanation: Used for writing and running tests to ensure scripts and modules be
 
 50
 Powershell Modules
-Force Parameter (-Force)
+Dependencies
 
-Definition: A parameter used with Import-Module to reload a module even if it's already imported.
-Explanation: Useful for ensuring the latest version of a module is loaded or to overwrite existing module imports.
+Definition: Other modules or components that a PowerShell module requires to function correctly.
+Explanation: Dependencies are specified in a module's manifest and must be present for the module to operate as intended. They can be viewed using properties like RequiredModules.
 
 
 
@@ -496,9 +490,10 @@ Explanation: Useful for ensuring the latest version of a module is loaded or to 
 
 51
 Powershell Modules
-Windows System Modules Directory
-Definition: A default directory where PowerShell modules are stored for all users.
-Explanation: Typically located at C:\Program Files\PowerShell\Modules.
+Az Module
+
+Definition: A module for managing Azure resources.
+Explanation: Provides cmdlets to interact with Azure services. Example cmdlet: Get-AzVM.
 
 
 
@@ -517,10 +512,9 @@ Explanation: Example: Uninstall-Module -Name ActiveDirectory removes the ActiveD
 
 53
 Powershell Modules
-Module Manifest (.psd1)
-
-Definition: A PowerShell data file that describes the contents and metadata of a module.
-Explanation: Includes information like the module version, author, exported functions, dependencies, and more. Essential for publishing and sharing modules.
+Exporting Functions and Cmdlets
+Definition: The process of making functions and cmdlets available to users when a module is imported.
+Explanation: Defined in the module's .psm1 file and specified in the module manifest (.psd1) under FunctionsToExport, CmdletsToExport, etc.
 
 
 
@@ -672,8 +666,8 @@ Tools and configurations for managing user access, roles, and permissions within
 
 68
 IW Migration
-Forms (Access)
-User-friendly interfaces for entering, displaying, and editing data in tables. They can incorporate buttons, dropdowns, and validation rules, making data input more efficient and consistent, and often serve as the primary user interaction layer.
+Syntax to find files that contain a substring. Needed this when trying to remember where I made certain files when working on IW files.
+Get-ChildItem -Recurse | Select-String "account_edit" -List | Select Path
 
 
 
@@ -681,8 +675,8 @@ User-friendly interfaces for entering, displaying, and editing data in tables. T
 
 69
 IW Migration
-SSMS Query Editor
-A text-based interface in SQL Server Management Studio where you can write, run, and optimize SQL queries. It supports syntax highlighting, IntelliSense, and execution plans, helping users test logic, retrieve data, and troubleshoot issues efficiently.
+Refactoring and Normalization (Access/SQL Server)
+The process of reorganizing tables and fields to reduce redundancy and improve data integrity. Higher normalization forms minimize duplicate data and anomalies. This often improves long-term maintainability and eases migration to other systems.
 
 
 
@@ -698,11 +692,7 @@ A search service runs one indexer job per search unit. If you need concurrent pr
 
 71
 Azure AI Search
-Whether you use the REST API or an Azure SDK, the following document operations are supported for data import:
-    Upload (think upsert)
-    merge
-    mergeOrUpload
-    delete
+Indexers don't have dedicated processing resources. Based on this, indexers' status may show as idle before running (depending on other jobs in the queue) and run times may not be predictable. Other factors define indexer performance as well, such as document size, document complexity, image analysis, among others.
 
 
 
@@ -809,8 +799,9 @@ Example: The novel's use of écriture gives a distinct rhythm and depth to the n
 
 80
 Vocab
-Lost in a Good Book
-Pelmet(s): A decorative framework or fabric cover above a window, concealing curtain fittings or rods.
+Jane Eyre
+Fillip
+(FIL-ip) A small but impactful boost or stimulus; also refers to a flicking motion made by snapping fingers.
 
 
 
@@ -828,7 +819,7 @@ Perfidious: Deceitful and untrustworthy, often describing betrayal or disloyalty
 82
 Vocab
 Lost in a Good Book
-Tunguska event: A massive explosion in Siberia (1908) caused by an airburst of a meteoroid or comet, flattening 800 square miles of forest.
+Doric columns: A simple, sturdy style of Greek column with a plain capital and no base, emphasizing proportion and strength.
 
 
 
@@ -836,8 +827,9 @@ Tunguska event: A massive explosion in Siberia (1908) caused by an airburst of a
 
 83
 Vocab
-Lost in a Good Book
-Blagged (a ride): British slang meaning to obtain a ride, often by persuading or deceiving someone.
+Jane Eyre
+Arrogate
+(AIR-uh-gate) To seize or assume rights or privileges without justification, often in an overbearing or presumptuous manner.
 
 
 
@@ -846,8 +838,8 @@ Blagged (a ride): British slang meaning to obtain a ride, often by persuading or
 84
 Vocab
 Jane Eyre
-Arrogate
-(AIR-uh-gate) To seize or assume rights or privileges without justification, often in an overbearing or presumptuous manner.
+Habergeon
+(HAB-er-juhn) A sleeveless, lightweight coat of mail armor, typically covering the torso and sometimes the upper arms, used for protection in medieval combat.
 
 
 
@@ -865,8 +857,8 @@ Proleptic: Relating to anticipation, particularly in literature or rhetoric, whe
 86
 Vocab
 Jane Eyre
-Piquant
-(PEE-kahnt) Having a pleasantly sharp or spicy taste; can also describe something intellectually stimulating or excitingly provocative.
+Contumelious Epithet
+(con-too-MEE-lee-uhs EP-uh-thet) An insult or scornful nickname intended to express contempt, often delivered with arrogance.
 
 
 
@@ -875,8 +867,8 @@ Piquant
 87
 Vocab
 Jane Eyre
-Habergeon
-(HAB-er-juhn) A sleeveless, lightweight coat of mail armor, typically covering the torso and sometimes the upper arms, used for protection in medieval combat.
+Post-chaise
+(POST-shayz) A lightweight, horse-drawn carriage used for long-distance travel, designed for speed and efficiency, popular in the 18th and 19th centuries.
 
 
 
@@ -885,8 +877,8 @@ Habergeon
 88
 Vocab
 Jane Eyre
-Spoony
-(SPOO-nee) Foolishly or overly sentimental, especially in matters of love or infatuation, often appearing naïve or overly romantic.
+Salubrious
+(suh-LOO-bree-uhs) Describing something beneficial to health or well-being, such as a pleasant climate, nutritious food, or healthy lifestyle.
 
 
 
@@ -962,6 +954,46 @@ Helps administrators verify the correctness of their email authentication setups
 
 
 95
+Azure Functions + Visual Studio
+An Azure Function is implemented as a static class (.NET). The class provides a static, asynchronous method named Run, which acts as the entry point for the class. The parameters passed to the Run method provide the context for the trigger. If it's an HTTP trigger, the function receives an HttpRequest object.
+
+
+
+
+
+96
+Azure Functions + Visual Studio
+The ASP.NET MVC architecture is based on the Model-View-Controller pattern, which separates the application into three components: Models (data), Views (UI), and Controllers (logic), providing a clean separation of concerns for better maintainability.
+
+
+
+
+
+97
+Azure Functions + Visual Studio
+ASP.NET uses a flexible routing system to map URLs to controllers and actions in ASP.NET MVC or ASP.NET Web API applications. This routing system supports custom URL patterns and simplifies URL management.
+
+
+
+
+
+98
+Azure Functions + Visual Studio
+ASP.NET Web API is a framework for building HTTP-based services that can be consumed by various clients, including browsers, mobile devices, and other web applications. It’s ideal for creating RESTful services in ASP.NET.
+
+
+
+
+
+99
+Azure Functions + Visual Studio
+ASP.NET offers several state management techniques, including Session State, View State, and Cookies, to retain data across user requests and provide a better user experience on dynamic websites.
+
+
+
+
+
+100
 Home Network Project
 Front: What is Snort and how is it used in network security?
 
@@ -971,7 +1003,7 @@ Back: Snort is an open-source network intrusion detection and prevention system 
 
 
 
-96
+101
 Home Network Project
 Front: What is TLS Termination and why is it used in reverse proxies?
 
@@ -981,7 +1013,7 @@ Back: TLS Termination refers to the process of decrypting incoming TLS/SSL encry
 
 
 
-97
+102
 Home Network Project
 Front: What is Docker Swarm and how does it differ from Kubernetes?
 
@@ -991,17 +1023,17 @@ Back: Docker Swarm is Docker’s native clustering and orchestration tool for ma
 
 
 
-98
+103
 Home Network Project
-Front: How does Pi-hole utilize DNS Sinkholing to block ads?
+Front: What are Service Discovery and its importance in containerized environments?
 
-Back: Pi-hole intercepts DNS queries for domains listed in its blocklists. Instead of resolving these domains to their legitimate IP addresses, Pi-hole returns a non-routable IP address (e.g., 0.0.0.0), preventing the ad content from loading on the client devices.
-
-
+Back: Service Discovery is the process of automatically detecting and locating services within a network, particularly in dynamic environments like container orchestration platforms. It enables containers to find and communicate with each other without manual configuration, facilitating scalability and efficient resource management.
 
 
 
-99
+
+
+104
 Home Network Project
 Front: Describe the primary function of Grafana in a monitoring stack.
 
@@ -1011,21 +1043,17 @@ Back: Grafana is an open-source platform for data visualization and analytics. I
 
 
 
-100
+105
 Home Network Project
-Front: What is DNS over HTTPS (DoH) and its advantages?
+Front: What is Network Latency and how can it affect network performance?
 
-Back: DNS over HTTPS (DoH) is a protocol that encrypts DNS queries by sending them over HTTPS. Advantages include:
-
-Privacy: Prevents eavesdropping and manipulation of DNS traffic.
-Security: Protects against DNS spoofing and man-in-the-middle attacks.
-Censorship Resistance: Makes it harder for third parties to block or redirect DNS queries.
+Back: Network Latency refers to the time it takes for data to travel from the source to the destination across a network. High latency can result in delays, slow application performance, lag in real-time communications, and poor user experiences, especially in activities like gaming, video conferencing, and streaming.
 
 
 
 
 
-101
+106
 Home Network Project
 Front: Explain the purpose of AllowedIPs in WireGuard configuration.
 
@@ -1034,46 +1062,6 @@ Back: AllowedIPs defines the IP addresses that are permitted to be routed throug
 The -f flag indicates the name of the Dockerfile to use.
 The -t flag specifies the name of the image to be created; in this example, myapp:v1.
 The final parameter, ., provides the build context for the source files for the COPY command: the set of files on the host computer needed during the build process.
-
-
-
-
-
-102
-Azure Functions + Visual Studio
-An Azure Function is implemented as a static class (.NET). The class provides a static, asynchronous method named Run, which acts as the entry point for the class. The parameters passed to the Run method provide the context for the trigger. If it's an HTTP trigger, the function receives an HttpRequest object.
-
-
-
-
-
-103
-Azure Functions + Visual Studio
-The ASP.NET MVC architecture is based on the Model-View-Controller pattern, which separates the application into three components: Models (data), Views (UI), and Controllers (logic), providing a clean separation of concerns for better maintainability.
-
-
-
-
-
-104
-Azure Functions + Visual Studio
-ASP.NET uses a flexible routing system to map URLs to controllers and actions in ASP.NET MVC or ASP.NET Web API applications. This routing system supports custom URL patterns and simplifies URL management.
-
-
-
-
-
-105
-Azure Functions + Visual Studio
-In all cases, a function is passed an ILogger parameter. The function can use this parameter to write log messages, which the function app writes to storage for later analysis.
-
-
-
-
-
-106
-Azure Functions + Visual Studio
-ASP.NET offers several state management techniques, including Session State, View State, and Cookies, to retain data across user requests and provide a better user experience on dynamic websites.
 
 
 
@@ -1176,8 +1164,8 @@ Installs PowerShell modules from the PowerShell Gallery, such as AzureRM or Powe
 
 117
 Powershell
-Set-Content
-Writes or replaces the content of a file. Useful for creating files with specific content or initializing an empty file.
+docker build
+Creates a Docker image from a Dockerfile and dependencies. This image can be used to run containerized applications on any compatible host.
 
 
 
@@ -1248,8 +1236,8 @@ A marker set in a program that causes the execution to pause so that the develop
 
 125
 Debugging in VS Code
-Exception Breakpoint
-A breakpoint that pauses the program when a specific exception (error) is raised.
+Debugger Attach
+A process where the debugger attaches to a running program (either locally or remotely) without stopping it. This is useful for debugging production systems or processes that cannot be restarted.
 
 
 
@@ -1320,8 +1308,8 @@ Modifies an existing item in a SharePoint list. Allows updating fields and prope
 
 133
 PnP Powershell
-Azure AD App Registration
-The process of registering an application in Azure Active Directory to obtain identifiers like client ID and tenant ID, enabling the app to authenticate and access Microsoft APIs.
+OAuth 2.0 Authorization Code Flow
+An interactive authentication method involving user login and authorization, suitable for applications that can securely handle client secrets and require delegated permissions.
 
 
 
@@ -1347,8 +1335,8 @@ Key parameters include -Method (HTTP method), -Uri (API endpoint), -Headers (aut
 
 136
 PnP Powershell
-Document Library
-A SharePoint component where documents are stored, managed, and shared. Examples include "Shared Documents" or custom libraries within a site.
+Server Relative URL
+The URL path relative to the SharePoint server, excluding the domain (e.g., /sites/ASB/Shared Documents), used in REST API endpoints for precise resource targeting.
 
 
 
@@ -1374,8 +1362,8 @@ Sends HTTP and HTTPS requests to RESTful APIs and processes the responses. Commo
 
 139
 PnP Powershell
-Remove-PnPListItem (PnP.PowerShell)
-Deletes an item from a SharePoint list. Useful for maintaining data integrity and automating data cleanup processes
+Set-PnPFileCheckedIn (PnP.PowerShell)
+Checks in a previously uploaded file in SharePoint, optionally adding comments. Essential for managing document versions and maintaining collaboration workflows.
 
 
 
@@ -1383,8 +1371,8 @@ Deletes an item from a SharePoint list. Useful for maintaining data integrity an
 
 140
 PnP Powershell
-Add-PnPListItem (PnP.PowerShell)
-Adds a new item to a SharePoint list. Enables automated data entry and integration with other systems by programmatically populating list data.
+AppInv.aspx
+A SharePoint page used to grant app permissions to specific SharePoint sites, allowing custom or third-party apps to access site resources based on defined permissions.
 
 
 
@@ -1392,8 +1380,8 @@ Adds a new item to a SharePoint list. Enables automated data entry and integrati
 
 141
 PnP Powershell
-AADSTS7000218 Error
-An Azure AD error stating that the authentication request lacks a client_assertion or client_secret, preventing successful token acquisition.
+Get-PnPWeb (PnP.PowerShell)
+Fetches details about the current SharePoint site, including properties like language, template, and navigation settings. Useful for site audits and management.
 
 
 
@@ -1401,8 +1389,8 @@ An Azure AD error stating that the authentication request lacks a client_asserti
 
 142
 PnP Powershell
-Client Secret (client_secret)
-A confidential key associated with an Azure AD application, used alongside the client ID to authenticate the application in secure authentication flows.
+Scopes
+Define the level of access an application has to resources. Examples include Files.ReadWrite.All and Sites.ReadWrite.All, determining what operations the app can perform.
 
 
 
@@ -1410,8 +1398,8 @@ A confidential key associated with an Azure AD application, used alongside the c
 
 143
 PnP Powershell
-API Permissions
-Permissions granted to an application to access specific APIs like SharePoint or Microsoft Graph. Can be delegated (user-based) or application-level (app-only).
+Parameter Set Conflict
+Occurs when incompatible or conflicting parameters are used together in a PowerShell cmdlet, leading to errors as PowerShell cannot determine the intended operation.
 
 
 
@@ -1469,9 +1457,9 @@ Context: It helps you quickly interact with Microsoft Graph APIs to retrieve or 
 
 149
 Audit Report Tracker (Sharepoint List)
-Content Type (SharePoint)
-Definition: A reusable set of columns (fields) and settings in SharePoint that define a specific kind of content (e.g., document, task).
-Context: A list can have multiple content types, each with different columns and settings depending on the type of data being tracked.
+Permissions (SharePoint Permissions)
+Definition: Settings that control what users can and cannot do in SharePoint (e.g., View, Edit, Delete).
+Context: Permissions can be set at various levels such as the site, list, or item level.
 
 
 
@@ -1517,8 +1505,8 @@ DNS zones that store their data within the Active Directory database. This integ
 
 154
 DNS
-No-Refresh Interval
-In DNS scavenging, the period during which the timestamp on a DNS record cannot be updated. It prevents excessive DNS updates, helping determine when a record becomes stale and eligible for removal during scavenging.
+Conditional Forwarding
+A DNS configuration that directs queries for specific domain names to designated DNS servers instead of using default forwarders. It's useful for managing inter-office DNS resolution or directing queries for partner domains to their respective DNS servers.
 
 
 
@@ -1535,14 +1523,30 @@ A list of authoritative DNS servers for the root zone. Root hints are used by DN
 
 156
 DNS
-DNS Zone Types
-Different types of DNS zones include Primary, Secondary, Stub, and Active Directory-Integrated zones. Each type serves distinct roles in DNS management, such as data storage, redundancy, delegation, and integration with directory services.
+Zone Transfers
+The process of copying DNS zone data from a primary DNS server to secondary DNS servers. Zone transfers ensure DNS data consistency and redundancy across multiple DNS servers, enhancing reliability and load distribution.
 
 
 
 
 
 157
+Search Engine Optimization
+Link equity refers to the value or authority passed from one page to another through hyperlinks. It influences the ranking potential of linked pages, helping them to perform better in search engine results by distributing authority throughout the website.
+
+
+
+
+
+158
+Search Engine Optimization
+Google PageSpeed Insights analyzes the content of a web page and provides suggestions to make it faster. It evaluates both desktop and mobile performance, offering recommendations to improve load times and overall website performance for better user experience.
+
+
+
+
+
+159
 FSLogix
 Cloud Cache uses storage providers based on the order of entries in CCDLocations.
 Storage providers should be listed in order of proximity, then preference.
@@ -1552,7 +1556,7 @@ Only one (1) provider is used when data is hydrated from the storage provider.
 
 
 
-158
+160
 FSLogix
 During a user's session when the connection to any storage provider becomes unhealthy, FSLogix queues up all the changes and then flushes them to the providers when they return to a healthy state.
 
@@ -1560,7 +1564,7 @@ During a user's session when the connection to any storage provider becomes unhe
 
 
 
-159
+161
 FSLogix
 Q: What happens to a FSLogix Profile Container when a user logs off?
 A: When a user logs off, the changes made to the profile are saved back into the Profile Container (VHDX file), ensuring that all settings and data are retained for the next session.
@@ -1569,15 +1573,7 @@ A: When a user logs off, the changes made to the profile are saved back into the
 
 
 
-160
-FSLogix
-On a lazy asynchronous operation, Cloud Cache flushes the changes to all storage providers simultaneously as each provider is flushed on its own thread. FSLogix doesn't throttle this operation and utilizes as much throughput as the system will allow.
-
-
-
-
-
-161
+162
 FSLogix
 Using Cloud Cache puts a performance and storage requirement on the virtual machine to accommodate the extra I/O operations and storage required by the local cache.
 
@@ -1585,19 +1581,9 @@ Using Cloud Cache puts a performance and storage requirement on the virtual mach
 
 
 
-162
-FSLogix
-Q: Which format does FSLogix use to store user profile data?
-A: FSLogix uses the VHDX (Virtual Hard Disk) format to store user profile data in containers.
-
-
-
-
-
 163
 FSLogix
-Q: What is the maximum supported size of a VHDX file in FSLogix?
-A: VHDX files can support up to 64 TB, making them suitable for large-scale enterprise environments where user profiles may require substantial storage capacity.
+Cloud Cache uses the concept of a proxy file, represented as Profile_%username%.vhd though it isn't a true VHD file. The proxy file is used as a means to collect and process all I/O writes destined for the local cache. The I/O writes are buffered in memory and tracked via the proxy file before they're written out as block-level cache objects in the cache directory.
 
 
 
@@ -1605,24 +1591,24 @@ A: VHDX files can support up to 64 TB, making them suitable for large-scale ente
 
 164
 FSLogix
-Q: What is the role of Profile Disk Differencing in FSLogix?
-A: Profile Disk Differencing allows FSLogix to create differencing VHDX disks, where changes to the user profile are stored in separate files, reducing the load on the main profile disk. This improves performance by ensuring faster read/write operations and reducing storage overhead.
+During a first-time sign-in, FSLogix creates the container for the user in C:\ProgramData\FSLogix\Cache and mounts the container to the virtual machine. Next, FSLogix sets up all the necessary redirections for the user's profile. Then the User Profile Service creates the user's profile into the local cache.
 
 
 
 
 
 165
-Search Engine Optimization
-Link equity refers to the value or authority passed from one page to another through hyperlinks. It influences the ranking potential of linked pages, helping them to perform better in search engine results by distributing authority throughout the website.
+FSLogix
+Q: How does FSLogix Profile Container enhance multi-session environments like Azure Virtual Desktop?
+A: In multi-session environments, FSLogix Profile Containers ensure that user profiles are loaded quickly and consistently, regardless of which session or virtual machine the user logs into, ensuring a persistent and smooth experience even when multiple users share the same infrastructure.
 
 
 
 
 
 166
-Search Engine Optimization
-Google PageSpeed Insights analyzes the content of a web page and provides suggestions to make it faster. It evaluates both desktop and mobile performance, offering recommendations to improve load times and overall website performance for better user experience.
+FSLogix
+Cloud Cache uses the locally mounted container to provide periodic updates to the remote storage providers. Cloud Cache is designed to insulate users from short-term or intermittent local (inner-region, close proximity) storage issues.
 
 
 
@@ -1638,7 +1624,7 @@ You Don’t Know JS: A series of books by Kyle Simpson that dives deep into the 
 
 168
 JavaScript Concepts
-Redux: A predictable state container for JavaScript apps, managing application state with a single source of truth and enabling time-travel debugging.
+Modularization: Organizing code into reusable, maintainable modules or components, enhancing code clarity and facilitating collaboration.
 
 
 
@@ -1646,7 +1632,7 @@ Redux: A predictable state container for JavaScript apps, managing application s
 
 169
 JavaScript Concepts
-Bootstrap: A popular CSS framework with JavaScript components, facilitating responsive design and consistent styling across web applications.
+Component-Based Architecture: Building applications by encapsulating functionality into independent, reusable components, commonly used in frontend frameworks.
 
 
 
@@ -1654,7 +1640,7 @@ Bootstrap: A popular CSS framework with JavaScript components, facilitating resp
 
 170
 JavaScript Concepts
-React: A library for building user interfaces using a component-based architecture, featuring JSX syntax and a virtual DOM for efficient rendering.
+GraphQL: A query language for APIs that allows clients to request exactly the data they need, improving efficiency and flexibility over REST.
 
 
 
@@ -1662,7 +1648,7 @@ React: A library for building user interfaces using a component-based architectu
 
 171
 JavaScript Concepts
-Virtual DOM: An in-memory representation of the real DOM used by libraries like React to optimize and batch DOM updates efficiently.
+Spread Operator (...): Expanding elements of arrays or properties of objects, useful for copying or merging data structures.
 
 
 
@@ -1670,7 +1656,7 @@ Virtual DOM: An in-memory representation of the real DOM used by libraries like 
 
 172
 JavaScript Concepts
-GraphQL: A query language for APIs that allows clients to request exactly the data they need, improving efficiency and flexibility over REST.
+Server-Side Rendering (SSR): Rendering web pages on the server before sending them to the client, improving performance and SEO.
 
 
 
@@ -1678,7 +1664,7 @@ GraphQL: A query language for APIs that allows clients to request exactly the da
 
 173
 JavaScript Concepts
-CI/CD Pipelines: Automated workflows for Continuous Integration and Continuous Deployment, using tools like GitHub Actions, Travis CI, and CircleCI to streamline development.
+React Hooks: Functions like useState and useEffect that allow functional components to manage state and side effects in React.
 
 
 
@@ -1686,7 +1672,7 @@ CI/CD Pipelines: Automated workflows for Continuous Integration and Continuous D
 
 174
 JavaScript Concepts
-Vercel: A cloud platform optimized for frontend frameworks like Next.js, offering easy deployments, serverless functions, and CDN integration.
+Closures: Functions that retain access to their lexical scope even when executed outside their original context, enabling data privacy and function factories.
 
 
 
@@ -1694,7 +1680,7 @@ Vercel: A cloud platform optimized for frontend frameworks like Next.js, offerin
 
 175
 JavaScript Concepts
-Spread and Rest Operators (...): Operators that expand elements of arrays or objects (spread) and collect multiple elements into a single array parameter (rest).
+Event Loop: The mechanism that handles asynchronous callbacks in JavaScript, ensuring non-blocking execution by managing the call stack and callback queue.
 
 
 
@@ -1702,7 +1688,7 @@ Spread and Rest Operators (...): Operators that expand elements of arrays or obj
 
 176
 JavaScript Concepts
-Parcel: A zero-configuration bundler that automatically handles various file types, offering faster builds with minimal setup.
+ESLint: A linter tool for identifying and fixing problematic patterns in JavaScript code, enforcing coding standards and best practices.
 
 
 
@@ -1710,7 +1696,7 @@ Parcel: A zero-configuration bundler that automatically handles various file typ
 
 177
 JavaScript Concepts
-Angular: A comprehensive framework by Google for building large-scale applications, utilizing TypeScript, two-way data binding, and dependency injection.
+Lazy Loading: Deferring the loading of non-critical resources until they are needed, improving initial load times and performance.
 
 
 
@@ -1718,7 +1704,7 @@ Angular: A comprehensive framework by Google for building large-scale applicatio
 
 178
 JavaScript Concepts
-Fetch API / Axios: Tools for making HTTP requests from the browser, allowing communication with backend services and APIs.
+Angular: A comprehensive framework by Google for building large-scale applications, utilizing TypeScript, two-way data binding, and dependency injection.
 
 
 
@@ -1726,7 +1712,7 @@ Fetch API / Axios: Tools for making HTTP requests from the browser, allowing com
 
 179
 JavaScript Concepts
-Caching Strategies: Techniques like browser caching and service workers to store resources locally, decreasing load times and server requests.
+Yarn: An alternative package manager to npm, offering faster installs and more reliable dependency management through lock files.
 
 
 
@@ -1734,7 +1720,7 @@ Caching Strategies: Techniques like browser caching and service workers to store
 
 180
 JavaScript Concepts
-Node.js: A JavaScript runtime built on Chrome's V8 engine, enabling server-side scripting and building scalable network applications.
+Tailwind CSS: A utility-first CSS framework that provides low-level utility classes, enabling rapid and flexible UI development.
 
 
 
@@ -1742,7 +1728,7 @@ Node.js: A JavaScript runtime built on Chrome's V8 engine, enabling server-side 
 
 181
 JavaScript Concepts
-Chai: An assertion library that pairs with testing frameworks like Mocha, providing readable and expressive test assertions.
+Testing Library: A family of libraries that encourage testing best practices by focusing on user interactions rather than implementation details.
 
 
 
@@ -1750,7 +1736,7 @@ Chai: An assertion library that pairs with testing frameworks like Mocha, provid
 
 182
 JavaScript Concepts
-ESLint: A linter tool for identifying and fixing problematic patterns in JavaScript code, enforcing coding standards and best practices.
+Variable Declarations (let, const, var): Keywords to declare variables with different scopes and mutability. let and const are block-scoped, while var is function-scoped.
 
 
 
@@ -1758,7 +1744,7 @@ ESLint: A linter tool for identifying and fixing problematic patterns in JavaScr
 
 183
 JavaScript Concepts
-Destructuring: Syntax for unpacking values from arrays or properties from objects into distinct variables, improving code readability and conciseness.
+Security Practices: Implementing measures to protect applications from vulnerabilities like Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF).
 
 
 
@@ -1766,7 +1752,7 @@ Destructuring: Syntax for unpacking values from arrays or properties from object
 
 184
 JavaScript Concepts
-Vue.js: A progressive framework for building user interfaces, known for its simplicity and flexibility, with features like directives and single-file components.
+Flow: A static type checker for JavaScript, enabling developers to add type annotations and catch type-related errors during development.
 
 
 
@@ -1774,7 +1760,7 @@ Vue.js: A progressive framework for building user interfaces, known for its simp
 
 185
 JavaScript Concepts
-Middleware: Functions in frameworks like Express.js that have access to request and response objects, used for tasks like authentication and logging.
+MobX: A simple, scalable state management library that uses observable data structures, promoting reactive programming patterns.
 
 
 
@@ -1782,7 +1768,7 @@ Middleware: Functions in frameworks like Express.js that have access to request 
 
 186
 JavaScript Concepts
-Prettier: A code formatter that enforces consistent styling across codebases, automatically formatting code on save or commit.
+Destructuring: Extracting values from arrays or objects into distinct variables using a concise syntax.
 
 
 
@@ -1790,7 +1776,7 @@ Prettier: A code formatter that enforces consistent styling across codebases, au
 
 187
 JavaScript Concepts
-Material-UI (MUI): A React component library implementing Google's Material Design, offering pre-built, customizable UI components.
+React Native: A framework for building native mobile applications using React, allowing code reuse across iOS and Android platforms.
 
 
 
@@ -1822,21 +1808,36 @@ Dependency Injection: A design pattern used in frameworks like Angular and NestJ
 
 191
 Terraform
-Expressions and Operators:
-Definition: Terraform uses expressions to compute values. These support arithmetic operations, string concatenation, and comparisons.
-Usage: Allows dynamic configuration based on variable values or conditions.
-
-Example:
-
-
-"${var.a + var.b}"
-"${var.env == "prod" ? "Production" : "Staging"}"
+Terraform Console:
+Definition: An interactive command-line tool that lets you experiment with expressions and inspect your current Terraform state.
+Usage: Run terraform console to evaluate expressions, test functions, or debug variable values interactively.
 
 
 
 
 
 192
+Terraform
+Dynamic Blocks:
+Definition: Allow you to construct nested blocks dynamically based on complex data structures.
+Usage: Ideal for when the number of nested blocks is not fixed and depends on variable data.
+
+Example:
+
+dynamic "ingress" {
+  for_each = var.ingress_rules
+  content {
+    from_port = ingress.value.from
+    to_port   = ingress.value.to
+    protocol  = ingress.value.protocol
+  }
+}
+
+
+
+
+
+193
 Terraform
 Double Quotes vs. Single Quotes:
 
@@ -1847,15 +1848,15 @@ Single Quotes (' '): Do not interpolate variables; they treat the content as a l
 
 
 
-193
-Terraform
-You can create and use Terraform modules that codify the standards for deploying and managing services in your organization, allowing teams to efficiently deploy services in compliance with your organization’s practices.
-
-
-
-
-
 194
+Terraform
+At a large organization, your centralized operations team may get many repetitive infrastructure requests. You can use Terraform to build a "self-serve" infrastructure model that lets product teams manage their own infrastructure independently.
+
+
+
+
+
+195
 Terraform
 Ternary Operator (Conditional Expression):
 A shorthand for conditional logic in interpolation.
@@ -1870,26 +1871,16 @@ ${var.env == "prod" ? "Production" : "Non-production"}
 
 
 
-195
-Terraform
-Local Values:
-Definition: Local values allow you to define computed variables within a configuration to simplify expressions or avoid repetition.
-Usage: Useful for intermediate calculations or to centralize common values.
-
-Example:
-
-locals {
-  app_name = "myapp"
-  instance_count = length(var.instance_ids)
-}
-
-
-
-
-
 196
 Terraform
-Ticket-based review processes are a bottleneck that can slow down development. Instead, you can use Sentinel, a policy-as-code framework, to automatically enforce compliance and governance policies before Terraform makes infrastructure changes. Sentinel policies are available in Terraform Enterprise and HCP Terraform.
+Meta-Arguments:
+Definition: Special arguments like count, depends_on, and lifecycle that control resource behavior and relationships.
+Count: Enables creating multiple instances of a resource.
+
+resource "aws_instance" "web" {
+  count = var.instance_count
+  # Other configuration...
+}
 
 
 
@@ -1897,13 +1888,7 @@ Ticket-based review processes are a bottleneck that can slow down development. I
 
 197
 Terraform
-Variable Declaration:
-Use the variable block to declare variables. For example:
-
-variable "env" {
-  description = "The deployment environment"
-  type        = string
-}
+Ticket-based review processes are a bottleneck that can slow down development. Instead, you can use Sentinel, a policy-as-code framework, to automatically enforce compliance and governance policies before Terraform makes infrastructure changes. Sentinel policies are available in Terraform Enterprise and HCP Terraform.
 
 
 
@@ -1951,10 +1936,7 @@ In Azure AI Document Intelligence, you can integrate with Azure Functions to tri
 
 201
 Todd Ideas
-In Azure AI Document Intelligence, Custom models are trained using your labeled datasets to extract distinct data from forms and documents, specific to your use cases. Standalone custom models can be combined to create composed models.
-Custom neural | Extract data from mixed-type documents.
-Custom template | Extract data from static layouts.
-Custom composed | Extract data using a collection of models.
+In Azure AI Document Intelligence, the incoming data is processed in the same region where the Document Intelligence resource was created. When you submit your documents to a Document Intelligence operation, it starts the process of analyzing the document to extract all text and identify structure and key values in a document.
 
 
 
@@ -1962,7 +1944,7 @@ Custom composed | Extract data using a collection of models.
 
 202
 Todd Ideas
-In Azure AI Document Intelligence, the incoming data is processed in the same region where the Document Intelligence resource was created. When you submit your documents to a Document Intelligence operation, it starts the process of analyzing the document to extract all text and identify structure and key values in a document.
+In Azure AI Document Intelligence, all customers in the same region share the temporary storage. The customer’s data is logically isolated from other customers with their Azure subscription and API credentials.
 
 
 
@@ -1970,7 +1952,7 @@ In Azure AI Document Intelligence, the incoming data is processed in the same re
 
 203
 Todd Ideas
-Connect Document Intelligence via REST APIs with external systems like CRM, ERP, or custom applications, facilitating real-time data exchange and business insights across diverse platforms in your technology ecosystem.
+In Azure AI Document Intelligence, although prebuilt models deliver robust extraction out-of-the-box, they offer customization options such as field mapping and configuration adjustments, enabling developers to fine-tune output formats to align with unique business requirements.
 
 
 
@@ -1978,10 +1960,7 @@ Connect Document Intelligence via REST APIs with external systems like CRM, ERP,
 
 204
 Todd Ideas
-In Azure AI Document Intelligence, document analysis (general extraction) models enable text extraction from forms and documents and return structured business-ready content ready for your organization's action, use, or development.
-
-Read | Extract printed and handwritten text.
-Layout | Extract text, tables, and document structure.
+In Azure AI Document Intelligence, prebuilt Document Intelligence seamlessly integrates with Azure Cognitive Search, enabling automated indexing and content extraction from processed documents, thereby enhancing search capabilities and data discoverability across enterprise repositories.
 
 
 
@@ -2052,8 +2031,8 @@ Running and testing Azure Functions on a local machine to identify and fix issue
 
 212
 Azure Functions + PP365
-API Gateway Integration
-Connecting Azure Functions with an API gateway to manage and secure API traffic. Integrating with services like Azure API Management allows Python Azure Functions to benefit from features like rate limiting, authentication, and monitoring, enhancing the security and scalability of exposed APIs.
+Azure Functions Extensions
+Additional modules or packages that extend the capabilities of Azure Functions. For Python developers, extensions can provide support for integrating with other Azure services, enhancing bindings, and adding new triggers, enabling more complex and feature-rich serverless applications.
 
 
 
@@ -2061,8 +2040,8 @@ Connecting Azure Functions with an API gateway to manage and secure API traffic.
 
 213
 Azure Functions + PP365
-Azure Functions Extensions
-Additional modules or packages that extend the capabilities of Azure Functions. For Python developers, extensions can provide support for integrating with other Azure services, enhancing bindings, and adding new triggers, enabling more complex and feature-rich serverless applications.
+Power Platform CLI
+A command-line interface tool for managing Power Platform resources, including Power Apps, Power Automate, and Dataverse. The Power Platform CLI facilitates automation, scripting, and advanced management tasks, enabling developers and administrators to interact with the platform efficiently.
 
 
 
@@ -2119,9 +2098,9 @@ Definition: A Man-in-the-Middle attack where an attacker sends falsified ARP mes
 
 219
 Network Mapping
-Logical Topology (Service Map)
+NetFlow
 
-Definition: An abstract representation within a Service Map showing how services interact and depend on each other, focusing on data flow and service relationships rather than physical connections.
+Definition: A network protocol developed by Cisco for collecting and monitoring IP traffic data, providing insights into bandwidth usage, traffic patterns, and network performance.
 
 
 
@@ -2307,7 +2286,15 @@ Limit the Use of Inline Comments: Use inline comments sparingly and only when th
 
 238
 PEP 8
-Automate Import Management: Employ tools such as isort to automatically sort and organize your import statements according to PEP 8 guidelines. Integrate these tools with your development workflow to maintain consistent and error-free import structures across your projects.
+Consistent Alignment in Continuation Lines: Align continuation lines either vertically with the opening delimiter or use an extra level of indentation. Consistent alignment improves the visual structure and readability of the code.
+
+python
+Copy code
+result = some_function(
+    first_argument,
+    second_argument,
+    third_argument,
+)
 
 
 
@@ -2345,9 +2332,9 @@ An individual who contributes code, documentation, or other resources to an open
 
 242
 Open Source/GitHub
-Issue Assignee
+Code Review
 
-A person designated to work on a specific issue, indicating responsibility and ownership for resolving the task or bug.
+The process where project maintainers and contributors examine changes proposed in a pull request to ensure code quality, functionality, and adherence to guidelines.
 
 
 
@@ -2365,9 +2352,9 @@ Tags assigned to issues or pull requests to categorize them, such as “good fir
 
 244
 Open Source/GitHub
-Pull Request (PR)
+Contribution Guidelines
 
-A request to merge changes from your fork or branch into the original repository, facilitating code review and collaboration with project maintainers.
+A set of rules and best practices outlined by a project to ensure consistent and quality contributions from all contributors, often found in CONTRIBUTING.md.
 
 
 
@@ -2375,9 +2362,9 @@ A request to merge changes from your fork or branch into the original repository
 
 245
 Open Source/GitHub
-PEP 8
+Test Suite
 
-Python Enhancement Proposal 8, the style guide for writing clean and readable Python code, outlining conventions for code layout and formatting.
+A collection of automated tests that verify the functionality and integrity of a project’s code, ensuring that changes do not introduce new bugs.
 
 
 
@@ -2450,10 +2437,9 @@ Explanation: Not directly discussed, but related to loading scripts and modules.
 
 252
 Powershell Modules
-Install-Module
-
-Definition: A cmdlet used to download and install a module from a repository like the PowerShell Gallery.
-Explanation: Specifies the module name and installation scope. Example: Install-Module -Name Az -Scope CurrentUser.
+Windows System Modules Directory
+Definition: A default directory where PowerShell modules are stored for all users.
+Explanation: Typically located at C:\Program Files\PowerShell\Modules.
 
 
 
@@ -2472,10 +2458,10 @@ Explanation: Allows modules to be imported automatically when their commands are
 
 254
 Powershell Modules
-Get-Help
+AllUsers Scope
 
-Definition: A cmdlet that displays help information for other cmdlets and functions.
-Explanation: Provides detailed documentation and examples. Example: Get-Help Get-AzVM -Detailed.
+Definition: An installation scope that makes a PowerShell module available to all users on the system.
+Explanation: When installing a module with -Scope AllUsers, it requires administrative privileges and places the module in a system-wide directory, typically C:\Program Files\PowerShell\Modules.
 
 
 
@@ -2483,9 +2469,10 @@ Explanation: Provides detailed documentation and examples. Example: Get-Help Get
 
 255
 Powershell Modules
-Exporting Functions and Cmdlets
-Definition: The process of making functions and cmdlets available to users when a module is imported.
-Explanation: Defined in the module's .psm1 file and specified in the module manifest (.psd1) under FunctionsToExport, CmdletsToExport, etc.
+Cmdlet
+
+Definition: A lightweight command used in the PowerShell environment.
+Explanation: Cmdlets follow a Verb-Noun naming pattern (e.g., Get-Module, Import-Module) and perform specific functions within PowerShell.
 
 
 
@@ -2504,10 +2491,10 @@ This includes exception traceback information in the log message, aiding in debu
 
 257
 Logging in Python
-Q: What is the default formatter format string if none is specified in logging.basicConfig()?
+Q: Why is it recommended to use named loggers (e.g., logging.getLogger(__name__)) instead of the root logger?
 
-A: '%(levelname)s:%(name)s:%(message)s'
-This default format includes the log level, logger name, and the log message.
+A: It allows for more granular control over logging behavior in different parts of an application.
+Named loggers enable targeted configurations, such as setting different log levels or handlers for specific modules.
 
 
 
@@ -2548,10 +2535,10 @@ This is useful when external tools handle log rotation, ensuring continuous logg
 
 261
 Logging in Python
-Q: What is the purpose of the disable_existing_loggers key in a dictConfig logging configuration?
+Q: How can you configure logging using an external INI-style configuration file in Python's logging module?
 
-A: disable_existing_loggers=False in logging.config.dictConfig
-This ensures that existing loggers not specified in the configuration remain active and are not disabled.
+A: Use logging.config.fileConfig('logging.ini') from the logging.config module
+This function reads the logging configuration from an INI file, allowing for external and reusable configurations.
 
 
 
@@ -2626,8 +2613,8 @@ Visual or textual representations of how the SQL Engine executes queries. They i
 
 269
 IW Migration
-Syntax to find files that contain a substring. Needed this when trying to remember where I made certain files when working on IW files.
-Get-ChildItem -Recurse | Select-String "account_edit" -List | Select Path
+Forms (Access)
+User-friendly interfaces for entering, displaying, and editing data in tables. They can incorporate buttons, dropdowns, and validation rules, making data input more efficient and consistent, and often serve as the primary user interaction layer.
 
 
 
@@ -2672,7 +2659,7 @@ You can monitor indexer status in the Azure portal or through Get Indexer Status
 
 274
 Azure AI Search
-Indexers drive skillset execution and AI enrichment, where you can configure skills to integrate extra processing of content en route to an index. A few examples are OCR over image files, text split skill for data chunking, and calling embedding models to generate vectors for vector search.
+You can run indexers on demand or on a recurring data refresh schedule that runs as often as every five minutes. More frequent updates preclude the use of indexers, requiring that you implement a 'push model' that simultaneously pushes data to both Azure AI Search and your external data source.
 
 
 
@@ -2749,9 +2736,8 @@ Wisteria: A climbing flowering plant with fragrant, cascading purple or white bl
 
 281
 Vocab
-Jane Eyre
-Battledore and Shuttlecock
-(BAT-uhl-door and SHUT-l-kok) A predecessor to badminton, where players use paddles to hit a feathered object (shuttlecock) back and forth without letting it fall.
+Lost in a Good Book
+Pelmet(s): A decorative framework or fabric cover above a window, concealing curtain fittings or rods.
 
 
 
@@ -2760,7 +2746,7 @@ Battledore and Shuttlecock
 282
 Vocab
 Lost in a Good Book
-Phaeton (bodied automobile): A type of early open-top car with no fixed roof, evoking the design of 19th-century horse-drawn carriages.
+Haggard and Hergé (authors): H. Rider Haggard, known for adventure novels like King Solomon's Mines, and Hergé, Belgian creator of The Adventures of Tintin comics.
 
 
 
@@ -2769,7 +2755,7 @@ Phaeton (bodied automobile): A type of early open-top car with no fixed roof, ev
 283
 Vocab
 Lost in a Good Book
-Haggard and Hergé (authors): H. Rider Haggard, known for adventure novels like King Solomon's Mines, and Hergé, Belgian creator of The Adventures of Tintin comics.
+Diatryma:  A genus of large flightless Eocene birds from Wyoming and New Mexico having much reduced wings, large head and powerful beak, and long massive legs and constituting with extinct related forms (as Gastornis) an order of birds probably most nearly related to the surviving cariamas and bustards
 
 
 
@@ -2778,8 +2764,8 @@ Haggard and Hergé (authors): H. Rider Haggard, known for adventure novels like 
 284
 Vocab
 Jane Eyre
-Beldame
-(BEL-dame) An old woman, sometimes used respectfully for a grandmother, or pejoratively to describe a hag or crone.
+Diablerie
+(dee-AH-bluh-ree) Mischievous, devilish behavior or sorcery; also refers to artwork, literature, or activities evoking dark, supernatural themes.
 
 
 
@@ -2796,9 +2782,8 @@ Compère (of a game show): A host or master of ceremonies, responsible for intro
 
 286
 Vocab
-Jane Eyre
-Cachinnation (kak-ih-NAY-shun)
-Loud, uncontrollable laughter, often with a connotation of being excessive, mocking, or even sinister. Derived from the Latin word cachinnare, it emphasizes the intensity of the laugh.
+Lost in a Good Book
+Cornice: An architectural feature where a projecting, decorative molding crowns a building or structure, often found at the top of walls.
 
 
 
@@ -2807,8 +2792,8 @@ Loud, uncontrollable laughter, often with a connotation of being excessive, mock
 287
 Vocab
 Jane Eyre
-Contumelious Epithet
-(con-too-MEE-lee-uhs EP-uh-thet) An insult or scornful nickname intended to express contempt, often delivered with arrogance.
+Cachinnation (kak-ih-NAY-shun)
+Loud, uncontrollable laughter, often with a connotation of being excessive, mocking, or even sinister. Derived from the Latin word cachinnare, it emphasizes the intensity of the laugh.
 
 
 
@@ -2816,9 +2801,8 @@ Contumelious Epithet
 
 288
 Vocab
-Jane Eyre
-Post-chaise
-(POST-shayz) A lightweight, horse-drawn carriage used for long-distance travel, designed for speed and efficiency, popular in the 18th and 19th centuries.
+Lost in a Good Book
+Evelyn Waugh (novels): English writer famous for satirical works like Brideshead Revisited and A Handful of Dust, exploring themes of aristocracy, faith, and morality.
 
 
 
@@ -2892,6 +2876,46 @@ Helps prevent email spoofing by verifying the sender's IP address against the do
 
 
 295
+Azure Functions + Visual Studio
+ASP.NET includes a variety of built-in security features such as request validation, input sanitization, SQL injection prevention, and protection against cross-site scripting (XSS) and cross-site request forgery (CSRF). HTTPS and encryption are also supported for secure communication.
+
+
+
+
+
+296
+Azure Functions + Visual Studio
+ASP.NET supports caching to improve performance by reducing database calls and loading times. You can cache data at different levels, such as in-memory caching, distributed caching, or output caching, to increase the responsiveness of your application.
+
+
+
+
+
+297
+Azure Functions + Visual Studio
+ASP.NET Web Forms is an older way to build web applications, focusing on drag-and-drop components and less code, while ASP.NET MVC offers greater flexibility, control, and a more maintainable approach to building web applications.
+
+
+
+
+
+298
+Azure Functions + Visual Studio
+In all cases, a function is passed an ILogger parameter. The function can use this parameter to write log messages, which the function app writes to storage for later analysis.
+
+
+
+
+
+299
+Azure Functions + Visual Studio
+ASP.NET is a powerful framework for building dynamic web applications and services. It runs on the .NET platform, allowing developers to use multiple languages like C#, F#, and VB.NET to create modern web applications.
+
+
+
+
+
+300
 Home Network Project
 Front: What is Service Mesh and how does it enhance microservices architecture?
 
@@ -2901,7 +2925,7 @@ Back: A Service Mesh is a dedicated infrastructure layer that manages service-to
 
 
 
-296
+301
 Home Network Project
 Front: What is Fail2Ban and how does it protect a network?
 
@@ -2911,7 +2935,7 @@ Back: Fail2Ban is an intrusion prevention software that monitors log files for s
 
 
 
-297
+302
 Home Network Project
 Front: What is Bandwidth and how does it differ from Throughput?
 
@@ -2924,17 +2948,17 @@ Throughput: The actual rate of successful data transfer achieved, often lower th
 
 
 
-298
+303
 Home Network Project
-Front: What is SSL Certificate and why is it important for web services?
+Front: How does Pi-hole utilize DNS Sinkholing to block ads?
 
-Back: An SSL Certificate is a digital certificate that authenticates the identity of a website and enables encrypted connections via SSL/TLS protocols. It ensures secure data transmission between the user's browser and the web server, protecting sensitive information from interception and tampering.
-
-
+Back: Pi-hole intercepts DNS queries for domains listed in its blocklists. Instead of resolving these domains to their legitimate IP addresses, Pi-hole returns a non-routable IP address (e.g., 0.0.0.0), preventing the ad content from loading on the client devices.
 
 
 
-299
+
+
+304
 Home Network Project
 How do you install Docker on a Raspberry Pi?
 
@@ -2947,51 +2971,15 @@ sudo usermod -aG docker pi
 
 
 
-300
-Home Network Project
-Front: What is Network Latency and how can it affect network performance?
-
-Back: Network Latency refers to the time it takes for data to travel from the source to the destination across a network. High latency can result in delays, slow application performance, lag in real-time communications, and poor user experiences, especially in activities like gaming, video conferencing, and streaming.
-
-
-
-
-
-301
-Azure Functions + Visual Studio
-ASP.NET includes a variety of built-in security features such as request validation, input sanitization, SQL injection prevention, and protection against cross-site scripting (XSS) and cross-site request forgery (CSRF). HTTPS and encryption are also supported for secure communication.
-
-
-
-
-
-302
-Azure Functions + Visual Studio
-ASP.NET supports caching to improve performance by reducing database calls and loading times. You can cache data at different levels, such as in-memory caching, distributed caching, or output caching, to increase the responsiveness of your application.
-
-
-
-
-
-303
-Azure Functions + Visual Studio
-ASP.NET Web Forms is an older way to build web applications, focusing on drag-and-drop components and less code, while ASP.NET MVC offers greater flexibility, control, and a more maintainable approach to building web applications.
-
-
-
-
-
-304
-Azure Functions + Visual Studio
-ASP.NET Web API is a framework for building HTTP-based services that can be consumed by various clients, including browsers, mobile devices, and other web applications. It’s ideal for creating RESTful services in ASP.NET.
-
-
-
-
-
 305
-Azure Functions + Visual Studio
-ASP.NET is a powerful framework for building dynamic web applications and services. It runs on the .NET platform, allowing developers to use multiple languages like C#, F#, and VB.NET to create modern web applications.
+Home Network Project
+Front: What is DNS over HTTPS (DoH) and its advantages?
+
+Back: DNS over HTTPS (DoH) is a protocol that encrypts DNS queries by sending them over HTTPS. Advantages include:
+
+Privacy: Prevents eavesdropping and manipulation of DNS traffic.
+Security: Protects against DNS spoofing and man-in-the-middle attacks.
+Censorship Resistance: Makes it harder for third parties to block or redirect DNS queries.
 
 
 
@@ -3081,8 +3069,11 @@ Runs a Command Prompt command from PowerShell. Allows use of legacy commands, li
 
 314
 Powershell
-az
-The Azure CLI command-line tool for managing Azure resources like VMs, storage, and networks. It's cross-platform and integrates with scripting tools like PowerShell.
+error during connect
+Indicates the Docker CLI failed to connect to the Docker daemon, often due to the service not running or incorrect configuration.
+
+//./pipe/dockerDesktopLinuxEngine
+Refers to the Windows named pipe used for communicating with Docker Desktop's Linux container engine. Errors suggest the service isn’t available.
 
 
 
@@ -3090,8 +3081,8 @@ The Azure CLI command-line tool for managing Azure resources like VMs, storage, 
 
 315
 Powershell
-docker build
-Creates a Docker image from a Dockerfile and dependencies. This image can be used to run containerized applications on any compatible host.
+Set-Content
+Writes or replaces the content of a file. Useful for creating files with specific content or initializing an empty file.
 
 
 
@@ -3162,8 +3153,8 @@ Similar to a breakpoint, but instead of pausing execution, a tracepoint logs inf
 
 323
 Debugging in VS Code
-Debugger Attach
-A process where the debugger attaches to a running program (either locally or remotely) without stopping it. This is useful for debugging production systems or processes that cannot be restarted.
+Exception Breakpoint
+A breakpoint that pauses the program when a specific exception (error) is raised.
 
 
 
@@ -3243,8 +3234,8 @@ A set of web services provided by SharePoint to perform operations like CRUD act
 
 332
 PnP Powershell
-Get-PnPGroup (PnP.PowerShell)
-Retrieves information about SharePoint groups within a site. Assists in managing permissions and user access by programmatically handling group memberships.
+New-PnPList (PnP.PowerShell)
+Creates a new SharePoint list within a site. Supports specifying list templates, columns, and settings, facilitating automated list management.
 
 
 
@@ -3261,8 +3252,8 @@ An authentication method where applications authenticate using a client ID and c
 
 334
 PnP Powershell
-Remove-PnPFile (PnP.PowerShell)
-Deletes a specified file from a SharePoint library or folder. Useful for automating cleanup tasks or managing outdated documents programmatically.
+Document Library
+A SharePoint component where documents are stored, managed, and shared. Examples include "Shared Documents" or custom libraries within a site.
 
 
 
@@ -3270,8 +3261,8 @@ Deletes a specified file from a SharePoint library or folder. Useful for automat
 
 335
 PnP Powershell
-PSCredential (Microsoft.PowerShell.Security)
-A PowerShell object that securely stores a username and password. Utilized for authentication purposes, ensuring sensitive information is handled safely.
+Admin Consent
+Approval granted by an Azure AD administrator for an application to access certain resources or perform specific actions, essential for elevated API permissions.
 
 
 
@@ -3279,8 +3270,8 @@ A PowerShell object that securely stores a username and password. Utilized for a
 
 336
 PnP Powershell
-Get-PnPSite (PnP.PowerShell)
-Fetches information about the current SharePoint site, including properties like URL, title, and storage usage. Helps in monitoring and managing site configurations.
+Remove-PnPListItem (PnP.PowerShell)
+Deletes an item from a SharePoint list. Useful for maintaining data integrity and automating data cleanup processes
 
 
 
@@ -3288,8 +3279,8 @@ Fetches information about the current SharePoint site, including properties like
 
 337
 PnP Powershell
-AppInv.aspx
-A SharePoint page used to grant app permissions to specific SharePoint sites, allowing custom or third-party apps to access site resources based on defined permissions.
+AADSTS7000218 Error
+An Azure AD error stating that the authentication request lacks a client_assertion or client_secret, preventing successful token acquisition.
 
 
 
@@ -3315,8 +3306,8 @@ The web address of a SharePoint site (e.g., https://accuityllp.sharepoint.com/si
 
 340
 PnP Powershell
-Scopes
-Define the level of access an application has to resources. Examples include Files.ReadWrite.All and Sites.ReadWrite.All, determining what operations the app can perform.
+Client Secret (client_secret)
+A confidential key associated with an Azure AD application, used alongside the client ID to authenticate the application in secure authentication flows.
 
 
 
@@ -3324,8 +3315,8 @@ Define the level of access an application has to resources. Examples include Fil
 
 341
 PnP Powershell
-Parameter Set Conflict
-Occurs when incompatible or conflicting parameters are used together in a PowerShell cmdlet, leading to errors as PowerShell cannot determine the intended operation.
+API Permissions
+Permissions granted to an application to access specific APIs like SharePoint or Microsoft Graph. Can be delegated (user-based) or application-level (app-only).
 
 
 
@@ -3352,9 +3343,10 @@ Context: Necessary to inspect and modify automation workflows in Power Automate 
 
 344
 Audit Report Tracker (Sharepoint List)
-Site Collection Administrator
-Definition: A user with full control over a SharePoint site collection, including managing permissions, lists, libraries, and settings.
-Context: Required to access and modify the structure, permissions, and content of a SharePoint site and its associated lists.
+List Columns Endpoint (for getting column information in a SharePoint list):
+
+Endpoint: GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/columns
+Description: Retrieves information about the columns in a specified list.
 
 
 
@@ -3372,9 +3364,9 @@ Context: Views can be customized to show only specific columns, items, or data b
 
 346
 Audit Report Tracker (Sharepoint List)
-Permissions (SharePoint Permissions)
-Definition: Settings that control what users can and cannot do in SharePoint (e.g., View, Edit, Delete).
-Context: Permissions can be set at various levels such as the site, list, or item level.
+Content Type (SharePoint)
+Definition: A reusable set of columns (fields) and settings in SharePoint that define a specific kind of content (e.g., document, task).
+Context: A list can have multiple content types, each with different columns and settings depending on the type of data being tracked.
 
 
 
@@ -3420,8 +3412,8 @@ A security mechanism used to authenticate DNS messages, ensuring that zone trans
 
 351
 DNS
-DNS Manager
-A graphical administrative tool in Windows Server used to manage DNS settings and zones. DNS Manager provides interfaces for creating and modifying DNS records, configuring zone properties, setting up forwarders, and implementing security measures.
+No-Refresh Interval
+In DNS scavenging, the period during which the timestamp on a DNS record cannot be updated. It prevents excessive DNS updates, helping determine when a record becomes stale and eligible for removal during scavenging.
 
 
 
@@ -3437,6 +3429,22 @@ Measures taken to protect DNS zone data during transfers between DNS servers. Th
 
 
 353
+Search Engine Optimization
+An XML sitemap is a file that lists all the important pages of a website, helping search engines crawl the site more effectively. It improves the discoverability of webpages, ensures all content is indexed, and can include additional metadata about each URL.
+
+
+
+
+
+354
+Search Engine Optimization
+A website crawler is a tool that systematically browses the web to index and analyze website content. It identifies SEO issues, broken links, and content structure, providing valuable insights for optimization and ensuring that websites are efficiently indexed by search engines.
+
+
+
+
+
+355
 FSLogix
 Q: What is the main difference between FSLogix Profile Containers and traditional roaming profiles?
 A: FSLogix uses VHDX containers to store user profiles, ensuring portability and faster logons, while traditional roaming profiles can become fragmented and inconsistent across multiple virtual machines.
@@ -3445,15 +3453,16 @@ A: FSLogix uses VHDX containers to store user profiles, ensuring portability and
 
 
 
-354
+356
 FSLogix
-When the local cache doesn't contain the data requested by the file system, Cloud Cache hydrates (reads and copies) the data from 1 of the remote storage providers to the local cache. This operation is also part of the sign in process when populating the local cache for the user's profile.
+Q: What is the purpose of the Office 365 Container in FSLogix?
+A: The Office 365 Container isolates and stores Office-specific data (like Outlook cache, OneDrive files, and Teams settings), improving performance and reducing load times for Office apps in virtual desktop environments.
 
 
 
 
 
-355
+357
 FSLogix
 A full VHD(x) clone is performed when Cloud Cache determines, at sign in, that a storage provider isn't at the same sequence. During this operation, all pending writes are kept in the local cache until all storage providers are at the same sequence. Once complete, the flush operation begins sending new data to the storage providers.
 
@@ -3461,7 +3470,15 @@ A full VHD(x) clone is performed when Cloud Cache determines, at sign in, that a
 
 
 
-356
+358
+FSLogix
+On a lazy asynchronous operation, Cloud Cache flushes the changes to all storage providers simultaneously as each provider is flushed on its own thread. FSLogix doesn't throttle this operation and utilizes as much throughput as the system will allow.
+
+
+
+
+
+359
 FSLogix
 Q: Where are FSLogix Profile Containers typically stored in Azure Virtual Desktop environments?
 A: FSLogix Profile Containers are typically stored in Azure Files or network shares (SMB share) to allow consistent access across different virtual desktop sessions.
@@ -3470,17 +3487,7 @@ A: FSLogix Profile Containers are typically stored in Azure Files or network sha
 
 
 
-357
-FSLogix
-Data is written to all storage providers regardless of which provider is used during data hydration.
-Performance (latency, utilization, bottlenecks) of a storage provider affects its sync status with the local copy.
-Having one (1) or more provider that is behind in updates from local cache could be an indicator of an under performing storage provider.
-
-
-
-
-
-358
+360
 FSLogix
 Q: How does FSLogix prevent user profile corruption in virtual desktop sessions?
 A: FSLogix stores user profiles in isolated containers (VHDX), reducing the chances of corruption by ensuring the profile is handled in a controlled environment that can be mounted and saved properly.
@@ -3489,16 +3496,16 @@ A: FSLogix stores user profiles in isolated containers (VHDX), reducing the chan
 
 
 
-359
+361
 FSLogix
-Q: How does FSLogix Profile Container enhance multi-session environments like Azure Virtual Desktop?
-A: In multi-session environments, FSLogix Profile Containers ensure that user profiles are loaded quickly and consistently, regardless of which session or virtual machine the user logs into, ensuring a persistent and smooth experience even when multiple users share the same infrastructure.
+Q: What is the maximum supported size of a VHDX file in FSLogix?
+A: VHDX files can support up to 64 TB, making them suitable for large-scale enterprise environments where user profiles may require substantial storage capacity.
 
 
 
 
 
-360
+362
 FSLogix
 All data written to the user's profile is temporarily stored as block-level cache objects in the same directory. Those block-level cache objects are then committed to the local cache. Before the block-level cache objects are created, the writes into the user's profile are processed in memory through a proxy file.
 
@@ -3506,25 +3513,9 @@ All data written to the user's profile is temporarily stored as block-level cach
 
 
 
-361
-Search Engine Optimization
-Keyword density is the percentage of times a keyword appears on a webpage compared to the total number of words. It is used to optimize content for relevant keywords without overstuffing, ensuring that the content remains natural and readable while signaling relevance to search engines.
-
-
-
-
-
-362
-Search Engine Optimization
-A website crawler is a tool that systematically browses the web to index and analyze website content. It identifies SEO issues, broken links, and content structure, providing valuable insights for optimization and ensuring that websites are efficiently indexed by search engines.
-
-
-
-
-
 363
 JavaScript Concepts
-Modularization: Organizing code into reusable, maintainable modules or components, enhancing code clarity and facilitating collaboration.
+Redux: A predictable state container for JavaScript apps, managing application state with a single source of truth and enabling time-travel debugging.
 
 
 
@@ -3540,7 +3531,7 @@ Code Splitting: Breaking down code into smaller bundles that can be loaded on de
 
 365
 JavaScript Concepts
-Template Literals: Enhanced string syntax using backticks, allowing embedded expressions and multi-line strings for better readability.
+RESTful APIs: Architectural style for designing networked applications, using HTTP requests to access and manipulate data through standard endpoints.
 
 
 
@@ -3548,7 +3539,7 @@ Template Literals: Enhanced string syntax using backticks, allowing embedded exp
 
 366
 JavaScript Concepts
-Component-Based Architecture: Building applications by encapsulating functionality into independent, reusable components, commonly used in frontend frameworks.
+Caching Strategies: Techniques like browser caching and service workers to store resources locally, decreasing load times and server requests.
 
 
 
@@ -3556,7 +3547,7 @@ Component-Based Architecture: Building applications by encapsulating functionali
 
 367
 JavaScript Concepts
-Arrow Functions: Concise syntax for writing functions using =>. They do not have their own this context, making them suitable for callbacks.
+React: A library for building user interfaces using a component-based architecture, featuring JSX syntax and a virtual DOM for efficient rendering.
 
 
 
@@ -3564,7 +3555,7 @@ Arrow Functions: Concise syntax for writing functions using =>. They do not have
 
 368
 JavaScript Concepts
-Closures: Functions that retain access to their lexical scope even when executed outside their original context, enabling data privacy and function factories.
+Arrow Functions: Concise syntax for writing functions using =>. They do not have their own this context, making them suitable for callbacks.
 
 
 
@@ -3572,7 +3563,7 @@ Closures: Functions that retain access to their lexical scope even when executed
 
 369
 JavaScript Concepts
-Event Loop: The mechanism that handles asynchronous callbacks in JavaScript, ensuring non-blocking execution by managing the call stack and callback queue.
+Async/Await: Syntax for handling asynchronous operations more readably, allowing async functions to pause execution with await until a Promise resolves.
 
 
 
@@ -3580,7 +3571,7 @@ Event Loop: The mechanism that handles asynchronous callbacks in JavaScript, ens
 
 370
 JavaScript Concepts
-Lazy Loading: Deferring the loading of non-critical resources until they are needed, improving initial load times and performance.
+Spread and Rest Operators (...): Operators that expand elements of arrays or objects (spread) and collect multiple elements into a single array parameter (rest).
 
 
 
@@ -3588,7 +3579,7 @@ Lazy Loading: Deferring the loading of non-critical resources until they are nee
 
 371
 JavaScript Concepts
-Yarn: An alternative package manager to npm, offering faster installs and more reliable dependency management through lock files.
+TypeScript: A superset of JavaScript that adds static typing, enhancing code quality, maintainability, and developer tooling through type checking.
 
 
 
@@ -3596,7 +3587,7 @@ Yarn: An alternative package manager to npm, offering faster installs and more r
 
 372
 JavaScript Concepts
-Prototype-Based Inheritance: JavaScript's inheritance model where objects inherit properties and methods from a prototype object, enabling dynamic property sharing.
+Webpack: A powerful module bundler that compiles JavaScript modules into a single bundle, optimizing assets for production.
 
 
 
@@ -3604,7 +3595,7 @@ Prototype-Based Inheritance: JavaScript's inheritance model where objects inheri
 
 373
 JavaScript Concepts
-Webpack: A powerful module bundler that compiles JavaScript modules into a single bundle, optimizing assets for production.
+Mocha: A flexible testing framework for Node.js, allowing developers to choose assertion libraries like Chai for writing tests.
 
 
 
@@ -3612,7 +3603,7 @@ Webpack: A powerful module bundler that compiles JavaScript modules into a singl
 
 374
 JavaScript Concepts
-Mocha: A flexible testing framework for Node.js, allowing developers to choose assertion libraries like Chai for writing tests.
+Parcel: A zero-configuration bundler that automatically handles various file types, offering faster builds with minimal setup.
 
 
 
@@ -3620,7 +3611,7 @@ Mocha: A flexible testing framework for Node.js, allowing developers to choose a
 
 375
 JavaScript Concepts
-Tailwind CSS: A utility-first CSS framework that provides low-level utility classes, enabling rapid and flexible UI development.
+Browser Storage (localStorage, sessionStorage, IndexedDB`): Mechanisms for storing data on the client side, enabling persistent and session-based data management.
 
 
 
@@ -3636,7 +3627,7 @@ MDN Web Docs: Comprehensive documentation for web technologies, including JavaSc
 
 377
 JavaScript Concepts
-DOM Manipulation: Using JavaScript to select and modify HTML elements, enabling dynamic and interactive web pages.
+Vite: A modern build tool optimized for speed and performance, providing instant server start and efficient hot module replacement.
 
 
 
@@ -3644,7 +3635,7 @@ DOM Manipulation: Using JavaScript to select and modify HTML elements, enabling 
 
 378
 JavaScript Concepts
-Hot Module Replacement (HMR): A feature in bundlers like Webpack and Vite that allows modules to be replaced without a full page reload during development.
+Prettier: A code formatter that enforces consistent styling across codebases, automatically formatting code on save or commit.
 
 
 
@@ -3652,7 +3643,7 @@ Hot Module Replacement (HMR): A feature in bundlers like Webpack and Vite that a
 
 379
 JavaScript Concepts
-MobX: A simple, scalable state management library that uses observable data structures, promoting reactive programming patterns.
+Destructuring: Syntax for unpacking values from arrays or properties from objects into distinct variables, improving code readability and conciseness.
 
 
 
@@ -3660,7 +3651,7 @@ MobX: A simple, scalable state management library that uses observable data stru
 
 380
 JavaScript Concepts
-Flow: A static type checker for JavaScript, enabling developers to add type annotations and catch type-related errors during development.
+Single-Page Application (SPA): A web application that loads a single HTML page and dynamically updates content without full page reloads.
 
 
 
@@ -3676,7 +3667,7 @@ Next.js: A React framework for server-side rendering and static site generation,
 
 382
 JavaScript Concepts
-Immutable Data Structures: Data structures that cannot be altered after creation, promoting predictable state management, especially in libraries like Redux.
+Context API: A React feature that provides a way to pass data through the component tree without prop drilling, useful for simple state management.
 
 
 
@@ -3684,7 +3675,7 @@ Immutable Data Structures: Data structures that cannot be altered after creation
 
 383
 JavaScript Concepts
-Jest: A JavaScript testing framework by Facebook, supporting unit, integration, and snapshot testing, particularly well-suited for React applications.
+npm (Node Package Manager): The default package manager for Node.js, used to install, share, and manage JavaScript packages and dependencies.
 
 
 
@@ -3692,7 +3683,7 @@ Jest: A JavaScript testing framework by Facebook, supporting unit, integration, 
 
 384
 JavaScript Concepts
-Bitbucket: A Git-based source code repository hosting service, offering integration with Atlassian products like Jira for project management.
+Jest: A JavaScript testing framework by Facebook, supporting unit, integration, and snapshot testing, particularly well-suited for React applications.
 
 
 
@@ -3700,7 +3691,7 @@ Bitbucket: A Git-based source code repository hosting service, offering integrat
 
 385
 JavaScript Concepts
-Service Workers: Scripts that run in the background of web browsers, enabling features like offline functionality and push notifications.
+Bitbucket: A Git-based source code repository hosting service, offering integration with Atlassian products like Jira for project management.
 
 
 
@@ -3725,18 +3716,15 @@ These are the building blocks of Terraform code, such as resource, module, provi
 
 388
 Terraform
-Dynamic Blocks:
-Definition: Allow you to construct nested blocks dynamically based on complex data structures.
-Usage: Ideal for when the number of nested blocks is not fixed and depends on variable data.
-
+Remote Backends and Interpolation:
+Definition: Terraform can store state remotely (e.g., in AWS S3, Azure Blob Storage). Variable interpolation may be used to configure these backends dynamically.
 Example:
 
-dynamic "ingress" {
-  for_each = var.ingress_rules
-  content {
-    from_port = ingress.value.from
-    to_port   = ingress.value.to
-    protocol  = ingress.value.protocol
+terraform {
+  backend "s3" {
+    bucket = var.state_bucket
+    key    = "path/to/my/key"
+    region = var.region
   }
 }
 
@@ -3746,7 +3734,10 @@ dynamic "ingress" {
 
 389
 Terraform
-Provisioning infrastructure across multiple clouds increases fault-tolerance, allowing for more graceful recovery from cloud provider outages. However, multi-cloud deployments add complexity because each provider has its own interfaces, tools, and workflows. Terraform lets you use the same workflow to manage multiple providers and handle cross-cloud dependencies.
+Variable References:
+Refer to variables using the var. prefix within interpolation expressions. For example:
+
+${var.env}
 
 
 
@@ -3754,7 +3745,7 @@ Provisioning infrastructure across multiple clouds increases fault-tolerance, al
 
 390
 Terraform
-Terraform allows you to manage the resources in each tier together, and automatically handles dependencies between tiers. For example, Terraform will deploy a database tier before provisioning the web servers that depend on it.
+You can create and use Terraform modules that codify the standards for deploying and managing services in your organization, allowing teams to efficiently deploy services in compliance with your organization’s practices.
 
 
 
@@ -3762,20 +3753,30 @@ Terraform allows you to manage the resources in each tier together, and automati
 
 391
 Terraform
-Meta-Arguments:
-Definition: Special arguments like count, depends_on, and lifecycle that control resource behavior and relationships.
-Count: Enables creating multiple instances of a resource.
+For Expressions:
 
-resource "aws_instance" "web" {
-  count = var.instance_count
-  # Other configuration...
-}
+Definition: These are used to transform or filter collections (lists or maps) inline.
+Usage: Useful for generating new lists or maps based on existing ones without using external loops.
+Example:
+
+[for instance in var.instances : instance.id]
 
 
 
 
 
 392
+Terraform
+Variable Interpolation:
+The process of embedding variable values into strings. This is done using the ${} syntax inside double quotes.
+Example:
+"The environment is ${var.env}"
+
+
+
+
+
+393
 Terraform
 List and Map Indexing:
 Access elements within lists or maps using square brackets.
@@ -3790,17 +3791,12 @@ ${var.settings["key_name"]}
 
 
 
-393
-Terraform
-At a large organization, your centralized operations team may get many repetitive infrastructure requests. You can use Terraform to build a "self-serve" infrastructure model that lets product teams manage their own infrastructure independently.
-
-
-
-
-
 394
 Terraform
-Network Infrastructure Automation (NIA) allows you to safely approve the changes that your applications require without having to manually translate tickets from developers into the changes you think their applications need.
+Debugging Tips:
+Check Quotes: Ensure that you use double quotes for strings that require interpolation.
+Use terraform validate: Run this command frequently to catch syntax issues early.
+Review Variable References: Confirm that all variable references use the correct var. prefix.
 
 
 
@@ -3808,7 +3804,10 @@ Network Infrastructure Automation (NIA) allows you to safely approve the changes
 
 395
 Todd Ideas
-In Azure AI Document Intelligence, all customers in the same region share the temporary storage. The customer’s data is logically isolated from other customers with their Azure subscription and API credentials.
+In Azure AI Document Intelligence, Custom models are trained using your labeled datasets to extract distinct data from forms and documents, specific to your use cases. Standalone custom models can be combined to create composed models.
+Custom neural | Extract data from mixed-type documents.
+Custom template | Extract data from static layouts.
+Custom composed | Extract data using a collection of models.
 
 
 
@@ -3816,7 +3815,11 @@ In Azure AI Document Intelligence, all customers in the same region share the te
 
 396
 Todd Ideas
-In Azure AI Document Intelligence, prebuilt models offer a straightforward integration via RESTful APIs. Their endpoints are designed for simplicity, returning data in structured JSON. This means that once you send your document for analysis, you can easily parse the response and integrate the extracted fields directly into your application’s workflow.
+In Azure AI Document Intelligence, Prebuilt models enable you to add intelligent document processing to your apps and flows without having to train and build your own models.
+Unified US tax | Extract from any US tax forms supported.
+US Tax W-2 | Extract taxable compensation details.
+US Tax 1099 | Extract 1099 variation details.
+US Tax 1040 | Extract 1040 variation details.
 
 
 
@@ -3824,7 +3827,7 @@ In Azure AI Document Intelligence, prebuilt models offer a straightforward integ
 
 397
 Todd Ideas
-In Azure AI Document Intelligence, prebuilt Document Intelligence seamlessly integrates with Azure Cognitive Search, enabling automated indexing and content extraction from processed documents, thereby enhancing search capabilities and data discoverability across enterprise repositories.
+In Azure AI Document Intelligence, the service’s performance depends heavily on the quality of input documents. Ensure your documents are high resolution, correctly oriented, and preprocessed (e.g., noise reduction, skew correction) to enhance data extraction accuracy.
 
 
 
@@ -3832,7 +3835,10 @@ In Azure AI Document Intelligence, prebuilt Document Intelligence seamlessly int
 
 398
 Todd Ideas
-In Azure AI Document Intelligence, although prebuilt models deliver robust extraction out-of-the-box, they offer customization options such as field mapping and configuration adjustments, enabling developers to fine-tune output formats to align with unique business requirements.
+In Azure AI Document Intelligence, document analysis (general extraction) models enable text extraction from forms and documents and return structured business-ready content ready for your organization's action, use, or development.
+
+Read | Extract printed and handwritten text.
+Layout | Extract text, tables, and document structure.
 
 
 
@@ -3840,7 +3846,9 @@ In Azure AI Document Intelligence, although prebuilt models deliver robust extra
 
 399
 Todd Ideas
-The most common way to authenticate access to Document Intelligence is by using the customer's Document Intelligence API key. Each request to the service URL must include an authentication header. This header passes along an API key (or token if applicable), which is used to validate your subscription for a service or group of services.
+In Azure AI Document Intelligence, Custom classifiers identify document types before invoking an extraction model.
+
+Custom classifier | Identify designated document types (classes) before invoking an extraction model.
 
 
 
@@ -3884,8 +3892,8 @@ An OAuth 2.0 authentication flow where an application uses its own credentials (
 
 404
 Azure Functions + PP365
-host.json
-A global configuration file for Azure Functions that defines settings applicable to all functions within a Function App. For Python developers, host.json can be used to configure logging, extensions, and other runtime behaviors, enabling centralized control over function execution.
+local.settings.json
+A configuration file used during local development of Azure Functions. It stores environment variables, connection strings, and other settings required to run functions locally. This file is not deployed to Azure, ensuring that sensitive information remains secure during development.
 
 
 
@@ -3911,8 +3919,8 @@ Both are JavaScript APIs for making HTTP requests from web pages. XMLHttpRequest
 
 407
 Azure Functions + PP365
-Azure AD TokenRequestContext
-A context object used in Azure AD token acquisition processes, specifying the scopes and resources for which an access token is requested. TokenRequestContext ensures that tokens are issued with the appropriate permissions and are valid for the intended resources, facilitating secure and targeted access in applications.
+Async Programming (Asyncio)
+A programming paradigm in Python that enables concurrent execution of code using asynchronous functions and event loops. In Azure Functions, leveraging asyncio can improve performance and scalability by allowing Python functions to handle multiple tasks simultaneously without blocking.
 
 
 
@@ -3920,8 +3928,8 @@ A context object used in Azure AD token acquisition processes, specifying the sc
 
 408
 Azure Functions + PP365
-Async Programming (Asyncio)
-A programming paradigm in Python that enables concurrent execution of code using asynchronous functions and event loops. In Azure Functions, leveraging asyncio can improve performance and scalability by allowing Python functions to handle multiple tasks simultaneously without blocking.
+Azure AD TokenRequestContext
+A context object used in Azure AD token acquisition processes, specifying the scopes and resources for which an access token is requested. TokenRequestContext ensures that tokens are issued with the appropriate permissions and are valid for the intended resources, facilitating secure and targeted access in applications.
 
 
 
@@ -4038,9 +4046,7 @@ Activity functions are the basic units of work in a Durable Functions orchestrat
 
 420
 Azure Functions
-When you enable a system-assigned managed identity:
-
-A service principal of a special type is created in Microsoft Entra ID for the identity. The service principal is tied to the lifecycle of that Azure resource. When the Azure resource is deleted, Azure automatically deletes the service principal for you.
+The name of the system-assigned service principal is always the same as the name of the Azure resource it's created for. For a deployment slot, the name of its system-assigned identity is <app-name>/slots/<slot-name>.
 
 
 
@@ -4186,9 +4192,9 @@ Guidelines that outline expected behavior and interactions within a project’s 
 
 435
 Open Source/GitHub
-Code Review
+Issue Assignee
 
-The process where project maintainers and contributors examine changes proposed in a pull request to ensure code quality, functionality, and adherence to guidelines.
+A person designated to work on a specific issue, indicating responsibility and ownership for resolving the task or bug.
 
 
 
@@ -4196,9 +4202,9 @@ The process where project maintainers and contributors examine changes proposed 
 
 436
 Open Source/GitHub
-README.md
+Pull Request (PR)
 
-A markdown file at the root of a repository that provides an overview of the project, including its purpose, setup instructions, and usage information.
+A request to merge changes from your fork or branch into the original repository, facilitating code review and collaboration with project maintainers.
 
 
 
@@ -4238,10 +4244,10 @@ Explanation: Can be filtered to show commands from a specific module using the -
 
 440
 Powershell Modules
-PowerShell Module
+Get-InstalledModule
 
-Definition: A package that contains PowerShell cmdlets, functions, scripts, and other resources.
-Explanation: Extends PowerShell’s functionality and can be shared or reused across different environments and users.
+Definition: A cmdlet that retrieves modules installed on the system.
+Explanation: Useful for managing and updating modules. Example: Get-InstalledModule | Update-Module updates all installed modules.
 
 
 
@@ -4271,10 +4277,10 @@ Explanation: Can be viewed using the $env:PSModulePath environment variable. Pow
 
 443
 Powershell Modules
-Dependencies
+Force Parameter (-Force)
 
-Definition: Other modules or components that a PowerShell module requires to function correctly.
-Explanation: Dependencies are specified in a module's manifest and must be present for the module to operate as intended. They can be viewed using properties like RequiredModules.
+Definition: A parameter used with Import-Module to reload a module even if it's already imported.
+Explanation: Useful for ensuring the latest version of a module is loaded or to overwrite existing module imports.
 
 
 
@@ -4282,10 +4288,10 @@ Explanation: Dependencies are specified in a module's manifest and must be prese
 
 444
 Powershell Modules
-Az Module
+Install-Module
 
-Definition: A module for managing Azure resources.
-Explanation: Provides cmdlets to interact with Azure services. Example cmdlet: Get-AzVM.
+Definition: A cmdlet used to download and install a module from a repository like the PowerShell Gallery.
+Explanation: Specifies the module name and installation scope. Example: Install-Module -Name Az -Scope CurrentUser.
 
 
 
@@ -4304,10 +4310,10 @@ Explanation: Installing a module with -Scope CurrentUser does not require admini
 
 446
 Powershell Modules
-AllUsers Scope
+Get-Help
 
-Definition: An installation scope that makes a PowerShell module available to all users on the system.
-Explanation: When installing a module with -Scope AllUsers, it requires administrative privileges and places the module in a system-wide directory, typically C:\Program Files\PowerShell\Modules.
+Definition: A cmdlet that displays help information for other cmdlets and functions.
+Explanation: Provides detailed documentation and examples. Example: Get-Help Get-AzVM -Detailed.
 
 
 
@@ -4315,10 +4321,10 @@ Explanation: When installing a module with -Scope AllUsers, it requires administ
 
 447
 Powershell Modules
-Cmdlet
+Module Manifest (.psd1)
 
-Definition: A lightweight command used in the PowerShell environment.
-Explanation: Cmdlets follow a Verb-Noun naming pattern (e.g., Get-Module, Import-Module) and perform specific functions within PowerShell.
+Definition: A PowerShell data file that describes the contents and metadata of a module.
+Explanation: Includes information like the module version, author, exported functions, dependencies, and more. Essential for publishing and sharing modules.
 
 
 
@@ -4337,10 +4343,10 @@ This parameter sets the interval type for rotating logs, such as daily at midnig
 
 449
 Logging in Python
-Q: Why is it recommended to use named loggers (e.g., logging.getLogger(__name__)) instead of the root logger?
+Q: What is the default formatter format string if none is specified in logging.basicConfig()?
 
-A: It allows for more granular control over logging behavior in different parts of an application.
-Named loggers enable targeted configurations, such as setting different log levels or handlers for specific modules.
+A: '%(levelname)s:%(name)s:%(message)s'
+This default format includes the log level, logger name, and the log message.
 
 
 
@@ -4370,10 +4376,10 @@ This parameter sets the layout of each log message, including timestamp, severit
 
 452
 Logging in Python
-Q: How can you configure logging using an external INI-style configuration file in Python's logging module?
+Q: What is the purpose of the disable_existing_loggers key in a dictConfig logging configuration?
 
-A: Use logging.config.fileConfig('logging.ini') from the logging.config module
-This function reads the logging configuration from an INI file, allowing for external and reusable configurations.
+A: disable_existing_loggers=False in logging.config.dictConfig
+This ensures that existing loggers not specified in the configuration remain active and are not disabled.
 
 
 
@@ -4459,8 +4465,8 @@ Techniques to manage simultaneous data access, preventing conflicts and ensuring
 
 461
 IW Migration
-Refactoring and Normalization (Access/SQL Server)
-The process of reorganizing tables and fields to reduce redundancy and improve data integrity. Higher normalization forms minimize duplicate data and anomalies. This often improves long-term maintainability and eases migration to other systems.
+SSMS Query Editor
+A text-based interface in SQL Server Management Studio where you can write, run, and optimize SQL queries. It supports syntax highlighting, IntelliSense, and execution plans, helping users test logic, retrieve data, and troubleshoot issues efficiently.
 
 
 
@@ -4468,7 +4474,11 @@ The process of reorganizing tables and fields to reduce redundancy and improve d
 
 462
 Azure AI Search
-Indexers don't have dedicated processing resources. Based on this, indexers' status may show as idle before running (depending on other jobs in the queue) and run times may not be predictable. Other factors define indexer performance as well, such as document size, document complexity, image analysis, among others.
+Whether you use the REST API or an Azure SDK, the following document operations are supported for data import:
+    Upload (think upsert)
+    merge
+    mergeOrUpload
+    delete
 
 
 
@@ -4492,7 +4502,7 @@ If AI enrichment or integrated vectorization are solution requirements, you must
 
 465
 Azure AI Search
-You can run indexers on demand or on a recurring data refresh schedule that runs as often as every five minutes. More frequent updates preclude the use of indexers, requiring that you implement a 'push model' that simultaneously pushes data to both Azure AI Search and your external data source.
+Indexers drive skillset execution and AI enrichment, where you can configure skills to integrate extra processing of content en route to an index. A few examples are OCR over image files, text split skill for data chunking, and calling embedding models to generate vectors for vector search.
 
 
 
@@ -4551,8 +4561,9 @@ Antimacassar: A small cloth placed on furniture, especially chair backs, to prot
 
 470
 Vocab
-Lost in a Good Book
-Lerwick: The main town and port of the Shetland Islands, Scotland, known for its fishing and maritime history.
+Jane Eyre
+Battledore and Shuttlecock
+(BAT-uhl-door and SHUT-l-kok) A predecessor to badminton, where players use paddles to hit a feathered object (shuttlecock) back and forth without letting it fall.
 
 
 
@@ -4560,9 +4571,8 @@ Lerwick: The main town and port of the Shetland Islands, Scotland, known for its
 
 471
 Vocab
-Jane Eyre
-Fillip
-(FIL-ip) A small but impactful boost or stimulus; also refers to a flicking motion made by snapping fingers.
+Lost in a Good Book
+Lerwick: The main town and port of the Shetland Islands, Scotland, known for its fishing and maritime history.
 
 
 
@@ -4571,7 +4581,7 @@ Fillip
 472
 Vocab
 Lost in a Good Book
-Diatryma:  A genus of large flightless Eocene birds from Wyoming and New Mexico having much reduced wings, large head and powerful beak, and long massive legs and constituting with extinct related forms (as Gastornis) an order of birds probably most nearly related to the surviving cariamas and bustards
+Phaeton (bodied automobile): A type of early open-top car with no fixed roof, evoking the design of 19th-century horse-drawn carriages.
 
 
 
@@ -4579,9 +4589,8 @@ Diatryma:  A genus of large flightless Eocene birds from Wyoming and New Mexico 
 
 473
 Vocab
-Jane Eyre
-Diablerie
-(dee-AH-bluh-ree) Mischievous, devilish behavior or sorcery; also refers to artwork, literature, or activities evoking dark, supernatural themes.
+Lost in a Good Book
+Tunguska event: A massive explosion in Siberia (1908) caused by an airburst of a meteoroid or comet, flattening 800 square miles of forest.
 
 
 
@@ -4589,8 +4598,9 @@ Diablerie
 
 474
 Vocab
-Lost in a Good Book
-Doric columns: A simple, sturdy style of Greek column with a plain capital and no base, emphasizing proportion and strength.
+Jane Eyre
+Beldame
+(BEL-dame) An old woman, sometimes used respectfully for a grandmother, or pejoratively to describe a hag or crone.
 
 
 
@@ -4599,13 +4609,23 @@ Doric columns: A simple, sturdy style of Greek column with a plain capital and n
 475
 Vocab
 Lost in a Good Book
-Cornice: An architectural feature where a projecting, decorative molding crowns a building or structure, often found at the top of walls.
+Blagged (a ride): British slang meaning to obtain a ride, often by persuading or deceiving someone.
 
 
 
 
 
 476
+Vocab
+Jane Eyre
+Piquant
+(PEE-kahnt) Having a pleasantly sharp or spicy taste; can also describe something intellectually stimulating or excitingly provocative.
+
+
+
+
+
+477
 Vocab
 Jane Eyre
 Hips and Haws
@@ -4615,20 +4635,11 @@ Fruits of wild roses (hips) and hawthorn trees (haws), commonly seen in hedgerow
 
 
 
-477
-Vocab
-Lost in a Good Book
-Evelyn Waugh (novels): English writer famous for satirical works like Brideshead Revisited and A Handful of Dust, exploring themes of aristocracy, faith, and morality.
-
-
-
-
-
 478
 Vocab
 Jane Eyre
-Salubrious
-(suh-LOO-bree-uhs) Describing something beneficial to health or well-being, such as a pleasant climate, nutritious food, or healthy lifestyle.
+Spoony
+(SPOO-nee) Foolishly or overly sentimental, especially in matters of love or infatuation, often appearing naïve or overly romantic.
 
 
 
@@ -4693,6 +4704,38 @@ Requires proper implementation of SPF, DKIM, and DMARC.
 
 
 484
+Azure Functions + Visual Studio
+ASP.NET Razor syntax is a streamlined way to integrate C# code into HTML pages. Razor allows developers to write dynamic web pages by combining HTML and server-side logic seamlessly.
+
+
+
+
+
+485
+Azure Functions + Visual Studio
+ASP.NET provides comprehensive authentication and authorization mechanisms, such as ASP.NET Identity, for managing users and roles. It supports external authentication providers like Google and Facebook, allowing you to integrate them into your application seamlessly.
+
+
+
+
+
+486
+Azure Functions + Visual Studio
+ASP.NET Core provides built-in Dependency Injection (DI) support, enabling you to manage dependencies in your application. This makes your code more modular, testable, and easier to maintain.
+
+
+
+
+
+487
+Azure Functions + Visual Studio
+ASP.NET supports asynchronous programming with async and await keywords, allowing non-blocking operations such as file and database access. This improves scalability and performance by freeing up threads during long-running tasks.
+
+
+
+
+
+488
 Home Network Project
 What is the command to update and upgrade packages on a Debian-based system like Raspberry Pi OS?
 
@@ -4703,7 +4746,7 @@ sudo apt update && sudo apt upgrade -y
 
 
 
-485
+489
 Home Network Project
 Front: What is Prometheus and what is its role in network monitoring?
 
@@ -4713,7 +4756,7 @@ Back: Prometheus is an open-source monitoring and alerting toolkit designed for 
 
 
 
-486
+490
 Home Network Project
 Front: Explain the difference between a Docker Image and a Docker Container.
 
@@ -4725,17 +4768,17 @@ Docker Container: A runnable instance of a Docker image. Containers are created 
 
 
 
-487
+491
 Home Network Project
-Front: What are Service Discovery and its importance in containerized environments?
+Front: What is SSL Certificate and why is it important for web services?
 
-Back: Service Discovery is the process of automatically detecting and locating services within a network, particularly in dynamic environments like container orchestration platforms. It enables containers to find and communicate with each other without manual configuration, facilitating scalability and efficient resource management.
-
-
+Back: An SSL Certificate is a digital certificate that authenticates the identity of a website and enables encrypted connections via SSL/TLS protocols. It ensures secure data transmission between the user's browser and the web server, protecting sensitive information from interception and tampering.
 
 
 
-488
+
+
+492
 Home Network Project
 Front: What is Rate Limiting and how does it help in preventing attacks?
 
@@ -4745,43 +4788,11 @@ Back: Rate Limiting restricts the number of requests a user or IP address can ma
 
 
 
-489
+493
 Home Network Project
 Front: What is a Docker Compose file and what is it used for?
 
 Back: A Docker Compose file (docker-compose.yml) is a YAML file that defines and configures multi-container Docker applications. It specifies the services, networks, and volumes needed for the application, allowing users to start and manage all containers with a single command (docker-compose up).
-
-
-
-
-
-490
-Azure Functions + Visual Studio
-ASP.NET Razor syntax is a streamlined way to integrate C# code into HTML pages. Razor allows developers to write dynamic web pages by combining HTML and server-side logic seamlessly.
-
-
-
-
-
-491
-Azure Functions + Visual Studio
-ASP.NET provides comprehensive authentication and authorization mechanisms, such as ASP.NET Identity, for managing users and roles. It supports external authentication providers like Google and Facebook, allowing you to integrate them into your application seamlessly.
-
-
-
-
-
-492
-Azure Functions + Visual Studio
-ASP.NET Core provides built-in Dependency Injection (DI) support, enabling you to manage dependencies in your application. This makes your code more modular, testable, and easier to maintain.
-
-
-
-
-
-493
-Azure Functions + Visual Studio
-ASP.NET supports asynchronous programming with async and await keywords, allowing non-blocking operations such as file and database access. This improves scalability and performance by freeing up threads during long-running tasks.
 
 
 
@@ -4863,11 +4874,8 @@ A GUI tool for managing Windows services. You can start, stop, or restart servic
 
 502
 Powershell
-error during connect
-Indicates the Docker CLI failed to connect to the Docker daemon, often due to the service not running or incorrect configuration.
-
-//./pipe/dockerDesktopLinuxEngine
-Refers to the Windows named pipe used for communicating with Docker Desktop's Linux container engine. Errors suggest the service isn’t available.
+az
+The Azure CLI command-line tool for managing Azure resources like VMs, storage, and networks. It's cross-platform and integrates with scripting tools like PowerShell.
 
 
 
@@ -4999,8 +5007,8 @@ A data structure that stores the sequence of function calls made in a program, s
 
 517
 PnP Powershell
-OAuth 2.0 Authorization Code Flow
-An interactive authentication method involving user login and authorization, suitable for applications that can securely handle client secrets and require delegated permissions.
+Azure AD App Registration
+The process of registering an application in Azure Active Directory to obtain identifiers like client ID and tenant ID, enabling the app to authenticate and access Microsoft APIs.
 
 
 
@@ -5017,8 +5025,8 @@ Stores OAuth tokens locally to reduce the need for repeated authentication reque
 
 519
 PnP Powershell
-New-PnPList (PnP.PowerShell)
-Creates a new SharePoint list within a site. Supports specifying list templates, columns, and settings, facilitating automated list management.
+Get-PnPGroup (PnP.PowerShell)
+Retrieves information about SharePoint groups within a site. Assists in managing permissions and user access by programmatically handling group memberships.
 
 
 
@@ -5026,8 +5034,8 @@ Creates a new SharePoint list within a site. Supports specifying list templates,
 
 520
 PnP Powershell
-Server Relative URL
-The URL path relative to the SharePoint server, excluding the domain (e.g., /sites/ASB/Shared Documents), used in REST API endpoints for precise resource targeting.
+Remove-PnPFile (PnP.PowerShell)
+Deletes a specified file from a SharePoint library or folder. Useful for automating cleanup tasks or managing outdated documents programmatically.
 
 
 
@@ -5044,8 +5052,8 @@ Represents a sequence of bytes, such as a file. Used in PowerShell to handle fil
 
 522
 PnP Powershell
-Admin Consent
-Approval granted by an Azure AD administrator for an application to access certain resources or perform specific actions, essential for elevated API permissions.
+PSCredential (Microsoft.PowerShell.Security)
+A PowerShell object that securely stores a username and password. Utilized for authentication purposes, ensuring sensitive information is handled safely.
 
 
 
@@ -5053,8 +5061,8 @@ Approval granted by an Azure AD administrator for an application to access certa
 
 523
 PnP Powershell
-Set-PnPFileCheckedIn (PnP.PowerShell)
-Checks in a previously uploaded file in SharePoint, optionally adding comments. Essential for managing document versions and maintaining collaboration workflows.
+Get-PnPSite (PnP.PowerShell)
+Fetches information about the current SharePoint site, including properties like URL, title, and storage usage. Helps in monitoring and managing site configurations.
 
 
 
@@ -5071,8 +5079,8 @@ Retrieves details about the current PnP.PowerShell connection, including authent
 
 525
 PnP Powershell
-Get-PnPWeb (PnP.PowerShell)
-Fetches details about the current SharePoint site, including properties like language, template, and navigation settings. Useful for site audits and management.
+Add-PnPListItem (PnP.PowerShell)
+Adds a new item to a SharePoint list. Enables automated data entry and integration with other systems by programmatically populating list data.
 
 
 
@@ -5117,10 +5125,9 @@ Context: Each item typically represents a single entity, such as a task or docum
 
 530
 Audit Report Tracker (Sharepoint List)
-List Columns Endpoint (for getting column information in a SharePoint list):
-
-Endpoint: GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/columns
-Description: Retrieves information about the columns in a specified list.
+Site Collection Administrator
+Definition: A user with full control over a SharePoint site collection, including managing permissions, lists, libraries, and settings.
+Context: Required to access and modify the structure, permissions, and content of a SharePoint site and its associated lists.
 
 
 
@@ -5178,8 +5185,8 @@ A DNS zone that contains only essential information about another zone's authori
 
 536
 DNS
-Conditional Forwarding
-A DNS configuration that directs queries for specific domain names to designated DNS servers instead of using default forwarders. It's useful for managing inter-office DNS resolution or directing queries for partner domains to their respective DNS servers.
+DNS Manager
+A graphical administrative tool in Windows Server used to manage DNS settings and zones. DNS Manager provides interfaces for creating and modifying DNS records, configuring zone properties, setting up forwarders, and implementing security measures.
 
 
 
@@ -5196,17 +5203,16 @@ A feature in Windows DNS Server that allows administrators to define rules for h
 
 538
 DNS
-Zone Transfers
-The process of copying DNS zone data from a primary DNS server to secondary DNS servers. Zone transfers ensure DNS data consistency and redundancy across multiple DNS servers, enhancing reliability and load distribution.
+DNS Zone Types
+Different types of DNS zones include Primary, Secondary, Stub, and Active Directory-Integrated zones. Each type serves distinct roles in DNS management, such as data storage, redundancy, delegation, and integration with directory services.
 
 
 
 
 
 539
-FSLogix
-Q: What is the purpose of the Office 365 Container in FSLogix?
-A: The Office 365 Container isolates and stores Office-specific data (like Outlook cache, OneDrive files, and Teams settings), improving performance and reducing load times for Office apps in virtual desktop environments.
+Search Engine Optimization
+Keyword density is the percentage of times a keyword appears on a webpage compared to the total number of words. It is used to optimize content for relevant keywords without overstuffing, ensuring that the content remains natural and readable while signaling relevance to search engines.
 
 
 
@@ -5214,13 +5220,21 @@ A: The Office 365 Container isolates and stores Office-specific data (like Outlo
 
 540
 FSLogix
-Cloud Cache operates the user's profile from the local cache during the user's session and must be configured with one or more remote storage providers as specified in CCDLocations. These remote storage providers store copies of the local cache and are used during the current session and for subsequent sign ins.
+When the local cache doesn't contain the data requested by the file system, Cloud Cache hydrates (reads and copies) the data from 1 of the remote storage providers to the local cache. This operation is also part of the sign in process when populating the local cache for the user's profile.
 
 
 
 
 
 541
+FSLogix
+Cloud Cache operates the user's profile from the local cache during the user's session and must be configured with one or more remote storage providers as specified in CCDLocations. These remote storage providers store copies of the local cache and are used during the current session and for subsequent sign ins.
+
+
+
+
+
+542
 FSLogix
 Q: How does FSLogix improve Office 365 performance in Azure Virtual Desktop?
 A: FSLogix isolates Office 365 data (such as Outlook, Teams, OneDrive) in a container (VHDX), reducing load times and ensuring that data is quickly accessible without syncing delays.
@@ -5229,15 +5243,17 @@ A: FSLogix isolates Office 365 data (such as Outlook, Teams, OneDrive) in a cont
 
 
 
-542
-FSLogix
-Cloud Cache uses the concept of a proxy file, represented as Profile_%username%.vhd though it isn't a true VHD file. The proxy file is used as a means to collect and process all I/O writes destined for the local cache. The I/O writes are buffered in memory and tracked via the proxy file before they're written out as block-level cache objects in the cache directory.
-
-
-
-
-
 543
+FSLogix
+Data is written to all storage providers regardless of which provider is used during data hydration.
+Performance (latency, utilization, bottlenecks) of a storage provider affects its sync status with the local copy.
+Having one (1) or more provider that is behind in updates from local cache could be an indicator of an under performing storage provider.
+
+
+
+
+
+544
 FSLogix
 Q: What is FSLogix App Masking, and how does it relate to managing applications in virtual desktops?
 A: FSLogix App Masking is a feature that allows administrators to control which applications are visible to which users in a virtual desktop environment. This "masks" applications based on user roles, ensuring that users only see the apps they have permissions for, without the need for separate application installations.
@@ -5246,17 +5262,10 @@ A: FSLogix App Masking is a feature that allows administrators to control which 
 
 
 
-544
-FSLogix
-During a first-time sign-in, FSLogix creates the container for the user in C:\ProgramData\FSLogix\Cache and mounts the container to the virtual machine. Next, FSLogix sets up all the necessary redirections for the user's profile. Then the User Profile Service creates the user's profile into the local cache.
-
-
-
-
-
 545
 FSLogix
-Cloud Cache uses the locally mounted container to provide periodic updates to the remote storage providers. Cloud Cache is designed to insulate users from short-term or intermittent local (inner-region, close proximity) storage issues.
+Q: Which format does FSLogix use to store user profile data?
+A: FSLogix uses the VHDX (Virtual Hard Disk) format to store user profile data in containers.
 
 
 
@@ -5264,16 +5273,17 @@ Cloud Cache uses the locally mounted container to provide periodic updates to th
 
 546
 FSLogix
-Q: What does the FSLogix Profile Container do when a user is logging into multiple Azure Virtual Desktops (AVD)?
-A: FSLogix mounts the same Profile Container (VHDX) to any virtual desktop the user logs into, ensuring that their profile settings, documents, and application preferences are consistent and immediately available across all virtual machines. This provides a unified experience regardless of which VM the user accesses.
+Q: What is the role of Profile Disk Differencing in FSLogix?
+A: Profile Disk Differencing allows FSLogix to create differencing VHDX disks, where changes to the user profile are stored in separate files, reducing the load on the main profile disk. This improves performance by ensuring faster read/write operations and reducing storage overhead.
 
 
 
 
 
 547
-Search Engine Optimization
-An XML sitemap is a file that lists all the important pages of a website, helping search engines crawl the site more effectively. It improves the discoverability of webpages, ensures all content is indexed, and can include additional metadata about each URL.
+FSLogix
+Q: What does the FSLogix Profile Container do when a user is logging into multiple Azure Virtual Desktops (AVD)?
+A: FSLogix mounts the same Profile Container (VHDX) to any virtual desktop the user logs into, ensuring that their profile settings, documents, and application preferences are consistent and immediately available across all virtual machines. This provides a unified experience regardless of which VM the user accesses.
 
 
 
@@ -5289,7 +5299,7 @@ NestJS: A progressive Node.js framework built with TypeScript, designed for buil
 
 549
 JavaScript Concepts
-RESTful APIs: Architectural style for designing networked applications, using HTTP requests to access and manipulate data through standard endpoints.
+Bootstrap: A popular CSS framework with JavaScript components, facilitating responsive design and consistent styling across web applications.
 
 
 
@@ -5297,7 +5307,7 @@ RESTful APIs: Architectural style for designing networked applications, using HT
 
 550
 JavaScript Concepts
-Cypress: An end-to-end testing framework focused on improving developer experience with real-time reloading and debugging capabilities.
+Template Literals: Enhanced string syntax using backticks, allowing embedded expressions and multi-line strings for better readability.
 
 
 
@@ -5305,7 +5315,7 @@ Cypress: An end-to-end testing framework focused on improving developer experien
 
 551
 JavaScript Concepts
-ES6 Classes: Syntactic sugar over JavaScript's prototype-based inheritance, providing a clearer and more familiar syntax for creating objects and handling inheritance.
+Cypress: An end-to-end testing framework focused on improving developer experience with real-time reloading and debugging capabilities.
 
 
 
@@ -5313,7 +5323,7 @@ ES6 Classes: Syntactic sugar over JavaScript's prototype-based inheritance, prov
 
 552
 JavaScript Concepts
-Server-Side Rendering (SSR): Rendering web pages on the server before sending them to the client, improving performance and SEO.
+ES6 Classes: Syntactic sugar over JavaScript's prototype-based inheritance, providing a clearer and more familiar syntax for creating objects and handling inheritance.
 
 
 
@@ -5321,7 +5331,7 @@ Server-Side Rendering (SSR): Rendering web pages on the server before sending th
 
 553
 JavaScript Concepts
-Async/Await: Syntax for handling asynchronous operations more readably, allowing async functions to pause execution with await until a Promise resolves.
+Virtual DOM: An in-memory representation of the real DOM used by libraries like React to optimize and batch DOM updates efficiently.
 
 
 
@@ -5329,7 +5339,7 @@ Async/Await: Syntax for handling asynchronous operations more readably, allowing
 
 554
 JavaScript Concepts
-React Hooks: Functions like useState and useEffect that allow functional components to manage state and side effects in React.
+CI/CD Pipelines: Automated workflows for Continuous Integration and Continuous Deployment, using tools like GitHub Actions, Travis CI, and CircleCI to streamline development.
 
 
 
@@ -5345,7 +5355,7 @@ Event Handling: Responding to user interactions like clicks and keypresses by at
 
 556
 JavaScript Concepts
-Spread Operator (...): Expanding elements of arrays or properties of objects, useful for copying or merging data structures.
+Vercel: A cloud platform optimized for frontend frameworks like Next.js, offering easy deployments, serverless functions, and CDN integration.
 
 
 
@@ -5353,7 +5363,7 @@ Spread Operator (...): Expanding elements of arrays or properties of objects, us
 
 557
 JavaScript Concepts
-Browser Storage (localStorage, sessionStorage, IndexedDB`): Mechanisms for storing data on the client side, enabling persistent and session-based data management.
+DOM Manipulation: Using JavaScript to select and modify HTML elements, enabling dynamic and interactive web pages.
 
 
 
@@ -5361,7 +5371,7 @@ Browser Storage (localStorage, sessionStorage, IndexedDB`): Mechanisms for stori
 
 558
 JavaScript Concepts
-Express.js: A minimalist web framework for Node.js, facilitating routing, middleware integration, and handling HTTP requests/responses.
+Fetch API / Axios: Tools for making HTTP requests from the browser, allowing communication with backend services and APIs.
 
 
 
@@ -5369,7 +5379,7 @@ Express.js: A minimalist web framework for Node.js, facilitating routing, middle
 
 559
 JavaScript Concepts
-Heroku: A cloud platform for deploying, managing, and scaling Node.js applications with support for various add-ons and integrations.
+Express.js: A minimalist web framework for Node.js, facilitating routing, middleware integration, and handling HTTP requests/responses.
 
 
 
@@ -5377,7 +5387,7 @@ Heroku: A cloud platform for deploying, managing, and scaling Node.js applicatio
 
 560
 JavaScript Concepts
-Vite: A modern build tool optimized for speed and performance, providing instant server start and efficient hot module replacement.
+Prototype-Based Inheritance: JavaScript's inheritance model where objects inherit properties and methods from a prototype object, enabling dynamic property sharing.
 
 
 
@@ -5385,7 +5395,7 @@ Vite: A modern build tool optimized for speed and performance, providing instant
 
 561
 JavaScript Concepts
-Variable Declarations (let, const, var): Keywords to declare variables with different scopes and mutability. let and const are block-scoped, while var is function-scoped.
+Heroku: A cloud platform for deploying, managing, and scaling Node.js applications with support for various add-ons and integrations.
 
 
 
@@ -5393,7 +5403,7 @@ Variable Declarations (let, const, var): Keywords to declare variables with diff
 
 562
 JavaScript Concepts
-Security Practices: Implementing measures to protect applications from vulnerabilities like Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF).
+Node.js: A JavaScript runtime built on Chrome's V8 engine, enabling server-side scripting and building scalable network applications.
 
 
 
@@ -5401,7 +5411,7 @@ Security Practices: Implementing measures to protect applications from vulnerabi
 
 563
 JavaScript Concepts
-TypeScript: A superset of JavaScript that adds static typing, enhancing code quality, maintainability, and developer tooling through type checking.
+Chai: An assertion library that pairs with testing frameworks like Mocha, providing readable and expressive test assertions.
 
 
 
@@ -5409,7 +5419,7 @@ TypeScript: A superset of JavaScript that adds static typing, enhancing code qua
 
 564
 JavaScript Concepts
-Single-Page Application (SPA): A web application that loads a single HTML page and dynamically updates content without full page reloads.
+Hot Module Replacement (HMR): A feature in bundlers like Webpack and Vite that allows modules to be replaced without a full page reload during development.
 
 
 
@@ -5417,7 +5427,7 @@ Single-Page Application (SPA): A web application that loads a single HTML page a
 
 565
 JavaScript Concepts
-Testing Library: A family of libraries that encourage testing best practices by focusing on user interactions rather than implementation details.
+Vue.js: A progressive framework for building user interfaces, known for its simplicity and flexibility, with features like directives and single-file components.
 
 
 
@@ -5425,7 +5435,7 @@ Testing Library: A family of libraries that encourage testing best practices by 
 
 566
 JavaScript Concepts
-Destructuring: Extracting values from arrays or objects into distinct variables using a concise syntax.
+Middleware: Functions in frameworks like Express.js that have access to request and response objects, used for tasks like authentication and logging.
 
 
 
@@ -5433,7 +5443,7 @@ Destructuring: Extracting values from arrays or objects into distinct variables 
 
 567
 JavaScript Concepts
-React Native: A framework for building native mobile applications using React, allowing code reuse across iOS and Android platforms.
+Immutable Data Structures: Data structures that cannot be altered after creation, promoting predictable state management, especially in libraries like Redux.
 
 
 
@@ -5441,7 +5451,7 @@ React Native: A framework for building native mobile applications using React, a
 
 568
 JavaScript Concepts
-Context API: A React feature that provides a way to pass data through the component tree without prop drilling, useful for simple state management.
+Material-UI (MUI): A React component library implementing Google's Material Design, offering pre-built, customizable UI components.
 
 
 
@@ -5457,7 +5467,7 @@ Netlify: A platform for deploying static sites and serverless functions, providi
 
 570
 JavaScript Concepts
-npm (Node Package Manager): The default package manager for Node.js, used to install, share, and manage JavaScript packages and dependencies.
+Service Workers: Scripts that run in the background of web browsers, enabling features like offline functionality and push notifications.
 
 
 
@@ -5465,9 +5475,15 @@ npm (Node Package Manager): The default package manager for Node.js, used to ins
 
 571
 Terraform
-Terraform Console:
-Definition: An interactive command-line tool that lets you experiment with expressions and inspect your current Terraform state.
-Usage: Run terraform console to evaluate expressions, test functions, or debug variable values interactively.
+Expressions and Operators:
+Definition: Terraform uses expressions to compute values. These support arithmetic operations, string concatenation, and comparisons.
+Usage: Allows dynamic configuration based on variable values or conditions.
+
+Example:
+
+
+"${var.a + var.b}"
+"${var.env == "prod" ? "Production" : "Staging"}"
 
 
 
@@ -5475,30 +5491,13 @@ Usage: Run terraform console to evaluate expressions, test functions, or debug v
 
 572
 Terraform
-Variable References:
-Refer to variables using the var. prefix within interpolation expressions. For example:
-
-${var.env}
+Provisioning infrastructure across multiple clouds increases fault-tolerance, allowing for more graceful recovery from cloud provider outages. However, multi-cloud deployments add complexity because each provider has its own interfaces, tools, and workflows. Terraform lets you use the same workflow to manage multiple providers and handle cross-cloud dependencies.
 
 
 
 
 
 573
-Terraform
-For Expressions:
-
-Definition: These are used to transform or filter collections (lists or maps) inline.
-Usage: Useful for generating new lists or maps based on existing ones without using external loops.
-Example:
-
-[for instance in var.instances : instance.id]
-
-
-
-
-
-574
 Terraform
 terraform validate:
 A CLI command that checks the syntax and internal consistency of your Terraform files without connecting to remote services. Use it to catch errors before applying any changes.
@@ -5507,18 +5506,25 @@ A CLI command that checks the syntax and internal consistency of your Terraform 
 
 
 
+574
+Terraform
+Terraform allows you to manage the resources in each tier together, and automatically handles dependencies between tiers. For example, Terraform will deploy a database tier before provisioning the web servers that depend on it.
+
+
+
+
+
 575
 Terraform
-Remote Backends and Interpolation:
-Definition: Terraform can store state remotely (e.g., in AWS S3, Azure Blob Storage). Variable interpolation may be used to configure these backends dynamically.
+Local Values:
+Definition: Local values allow you to define computed variables within a configuration to simplify expressions or avoid repetition.
+Usage: Useful for intermediate calculations or to centralize common values.
+
 Example:
 
-terraform {
-  backend "s3" {
-    bucket = var.state_bucket
-    key    = "path/to/my/key"
-    region = var.region
-  }
+locals {
+  app_name = "myapp"
+  instance_count = length(var.instance_ids)
 }
 
 
@@ -5527,10 +5533,13 @@ terraform {
 
 576
 Terraform
-Variable Interpolation:
-The process of embedding variable values into strings. This is done using the ${} syntax inside double quotes.
-Example:
-"The environment is ${var.env}"
+Variable Declaration:
+Use the variable block to declare variables. For example:
+
+variable "env" {
+  description = "The deployment environment"
+  type        = string
+}
 
 
 
@@ -5538,10 +5547,7 @@ Example:
 
 577
 Terraform
-Debugging Tips:
-Check Quotes: Ensure that you use double quotes for strings that require interpolation.
-Use terraform validate: Run this command frequently to catch syntax issues early.
-Review Variable References: Confirm that all variable references use the correct var. prefix.
+Network Infrastructure Automation (NIA) allows you to safely approve the changes that your applications require without having to manually translate tickets from developers into the changes you think their applications need.
 
 
 
@@ -5562,7 +5568,7 @@ Example:
 
 579
 Todd Ideas
-In Azure AI Document Intelligence, the service’s performance depends heavily on the quality of input documents. Ensure your documents are high resolution, correctly oriented, and preprocessed (e.g., noise reduction, skew correction) to enhance data extraction accuracy.
+Connect Document Intelligence via REST APIs with external systems like CRM, ERP, or custom applications, facilitating real-time data exchange and business insights across diverse platforms in your technology ecosystem.
 
 
 
@@ -5570,7 +5576,7 @@ In Azure AI Document Intelligence, the service’s performance depends heavily o
 
 580
 Todd Ideas
-In Azure AI Document Intelligence, The results from prebuilt models come as JSON payloads with key-value pairs that include both the extracted data and confidence scores. Use confidence thresholds to filter out less reliable data, and design your application logic to accommodate any missing or unexpected fields.
+The most common way to authenticate access to Document Intelligence is by using the customer's Document Intelligence API key. Each request to the service URL must include an authentication header. This header passes along an API key (or token if applicable), which is used to validate your subscription for a service or group of services.
 
 
 
@@ -5578,11 +5584,7 @@ In Azure AI Document Intelligence, The results from prebuilt models come as JSON
 
 581
 Todd Ideas
-In Azure AI Document Intelligence, Prebuilt models enable you to add intelligent document processing to your apps and flows without having to train and build your own models.
-Unified US tax | Extract from any US tax forms supported.
-US Tax W-2 | Extract taxable compensation details.
-US Tax 1099 | Extract 1099 variation details.
-US Tax 1040 | Extract 1040 variation details.
+In Azure AI Document Intelligence, The results from prebuilt models come as JSON payloads with key-value pairs that include both the extracted data and confidence scores. Use confidence thresholds to filter out less reliable data, and design your application logic to accommodate any missing or unexpected fields.
 
 
 
@@ -5590,11 +5592,7 @@ US Tax 1040 | Extract 1040 variation details.
 
 582
 Todd Ideas
-In Azure AI Document Intelligence, Prebuilt models enable you to add intelligent document processing to your apps and flows without having to train and build your own models.
-Check | Extract relevant information from checks.
-Credit card | Extract payment card information.
-Invoice | Extract customer and vendor details.
-Receipt | Extract sales transaction details.
+In Azure AI Document Intelligence, prebuilt models offer a straightforward integration via RESTful APIs. Their endpoints are designed for simplicity, returning data in structured JSON. This means that once you send your document for analysis, you can easily parse the response and integrate the extracted fields directly into your application’s workflow.
 
 
 
@@ -5602,6 +5600,8 @@ Receipt | Extract sales transaction details.
 
 583
 Todd Ideas
-In Azure AI Document Intelligence, Custom classifiers identify document types before invoking an extraction model.
-
-Custom classifier | Identify designated document types (classes) before invoking an extraction model.
+In Azure AI Document Intelligence, Prebuilt models enable you to add intelligent document processing to your apps and flows without having to train and build your own models.
+Check | Extract relevant information from checks.
+Credit card | Extract payment card information.
+Invoice | Extract customer and vendor details.
+Receipt | Extract sales transaction details.
