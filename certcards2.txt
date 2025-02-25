@@ -4,15 +4,6 @@
 
 
 
-1
-Azure Functions + PP365
-Remote Debugging
-The ability to debug Azure Functions running in Azure from a local development environment. Python developers can use tools like Visual Studio Code to attach debuggers to remote functions, allowing for real-time troubleshooting and issue resolution without affecting the production environment.
-
-
-
-
-
 2
 Azure Functions + PP365
 Redirect URI
