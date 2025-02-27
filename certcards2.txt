@@ -8,17 +8,11 @@
 
 
 
-2
-Search Engine Optimization
-An XML sitemap is a file that lists all the important pages of a website, helping search engines crawl the site more effectively. It improves the discoverability of webpages, ensures all content is indexed, and can include additional metadata about each URL.
 
 
 
 
 
-3
-Search Engine Optimization
-Keyword density is the percentage of times a keyword appears on a webpage compared to the total number of words. It is used to optimize content for relevant keywords without overstuffing, ensuring that the content remains natural and readable while signaling relevance to search engines.
 
 
 
