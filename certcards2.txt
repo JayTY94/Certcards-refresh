@@ -60,6 +60,16 @@ Definition: A technique where an attacker injects shellcode—a small piece of c
 
 
 
+
+
+
+
+
+
+
+
+
+
 7
 Network Mapping
 Metasploit Framework
