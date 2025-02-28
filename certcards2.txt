@@ -4,11 +4,7 @@
 
 
 
-1
-Network Mapping
-Buffer Overflow
 
-Definition: A vulnerability where an application writes more data to a buffer than it can hold, causing adjacent memory to be overwritten, potentially allowing arbitrary code execution or system crashes.
 
 
 
