@@ -4,10 +4,7 @@
 
 
 
-1
-IW Migration
-Database Diagrams (SSMS)
-Graphical representations of a database’s schema. They visually display tables, columns, keys, and relationships, aiding comprehension of complex data models, enhancing communication among developers, and assisting in planning changes or migrations to other systems.
+
 
 
 
