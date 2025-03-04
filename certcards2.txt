@@ -10,12 +10,6 @@
 
 
 
-2
-IW Migration
-Functions (User-Defined Functions) (SQL Server)
-Reusable routines returning a scalar value or a table. They allow encapsulation of logic into named units, improving code maintainability. However, careful use is required as certain functions can impact query performance if not optimized.
-
-
 
 
 
