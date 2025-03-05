@@ -4,21 +4,10 @@
 
 
 
-1
-Azure Functions
-Use Case for User-assigned managed identity:
-Workloads where resources are recycled frequently, but permissions should stay consistent.
-For example, a workload where multiple virtual machines need to access the same resource.
 
 
 
 
-
-2
-Azure Functions
-When you enable a user-assigned managed identity:
-
-A service principal of a special type is created in Microsoft Entra ID for the identity. The service principal is managed separately from the resources that use it.
 
 
 
