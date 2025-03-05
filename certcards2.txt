@@ -13,29 +13,16 @@
 
 
 
-3
-Azure Functions
-You can use three durable function types: Client, Orchestrator, and Activity.
-Client functions are the entry point for creating an instance of a Durable Functions orchestration. They can run in response to an event from many sources, such as a new HTTP request arriving, a message being posted to a message queue, an event arriving in an event stream. You can write them in any of the supported languages.
 
 
 
 
 
-4
-Azure Functions
-Durable Functions allows you to define stateful workflows using an orchestration function. An orchestration function provides these extra benefits:
-You can define the workflows in code. You don't need to write a JSON description or use a workflow design tool.
-Functions can be called both synchronously and asynchronously. Output from the called functions is saved locally in variables and used in subsequent function calls.
 
 
 
 
 
-5
-Azure Functions
-What is the name of the file that contains function configuration data? 
-The configuration is named function.json, which contains JSON configuration data such as binding declarations.
 
 
 
