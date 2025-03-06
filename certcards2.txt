@@ -6,14 +6,6 @@
 
 
 
-3
-Network Mapping
-Exploit Buffers
-
-Definition: Memory buffers within applications susceptible to buffer overflow attacks, allowing attackers to inject and execute malicious code by overwriting adjacent memory areas.
-
-
-
 
 
 4
