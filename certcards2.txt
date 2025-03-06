@@ -4,24 +4,6 @@
 
 
 
-1
-Network Mapping
-NetFlow
-
-Definition: A network protocol developed by Cisco for collecting and monitoring IP traffic data, providing insights into bandwidth usage, traffic patterns, and network performance.
-
-
-
-
-
-2
-Network Mapping
-Metasploit Exploit Modules
-
-Definition: Components of the Metasploit Framework designed to exploit specific vulnerabilities in target systems, enabling unauthorized access or execution of malicious actions.
-
-
-
 
 
 3
