@@ -8,12 +8,6 @@
 
 
 
-4
-Network Mapping
-Control Plane (in SDN)
-
-Definition: The centralized component in Software-Defined Networking responsible for maintaining a global network view and making routing decisions, communicating instructions to the Data Plane.
-
 
 
 
