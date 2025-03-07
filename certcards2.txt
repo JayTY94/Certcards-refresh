@@ -9,13 +9,6 @@
 
 
 
-2
-PEP 8
-No Spaces Around = for Keyword Arguments: Do not use spaces around the = sign when passing keyword arguments in function calls. This rule differentiates keyword arguments from assignment statements.
-
-python
-Copy code
-my_function(param1=value1, param2=value2)
 
 
 
