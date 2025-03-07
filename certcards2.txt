@@ -4,9 +4,6 @@
 
 
 
-1
-PEP 8
-No Trailing Whitespace: Ensure that there are no unnecessary spaces at the end of lines. Trailing whitespace can clutter the codebase and cause issues with version control diffs. Most editors can be configured to remove trailing spaces automatically.
 
 
 
