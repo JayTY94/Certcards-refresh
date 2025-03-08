@@ -14,44 +14,19 @@
 
 
 
-3
-PEP 8
-Spaces in Slices and Function Parameters: Do not add spaces inside slicing brackets or between function parameters unless necessary for clarity. Proper spacing maintains clean syntax.
-
-python
-my_list[1:5]
 
 
 
 
 
-4
-PEP 8
-Keep Imports at the Top: Ensure all import statements are placed at the beginning of the file, right after the module docstring and before any module-level variables or constants. This standard placement improves code organization and makes dependencies immediately visible.
 
 
 
 
 
-5
-PEP 8
-Limit the Use of Inline Comments: Use inline comments sparingly and only when they add significant clarity. Overusing inline comments can clutter the code and make it harder to read.
 
 
 
-
-
-6
-PEP 8
-Consistent Alignment in Continuation Lines: Align continuation lines either vertically with the opening delimiter or use an extra level of indentation. Consistent alignment improves the visual structure and readability of the code.
-
-python
-Copy code
-result = some_function(
-    first_argument,
-    second_argument,
-    third_argument,
-)
 
 
 
