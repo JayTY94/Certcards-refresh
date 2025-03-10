@@ -4,12 +4,6 @@
 
 
 
-1
-SharePoint
-How can you delete a file named "OldReport.docx" from the "Documents" library using the SharePoint REST API?
-
-DELETE /_api/web/lists/getByTitle('Documents')/files('OldReport.docx')
-
 
 
 
