@@ -4,19 +4,7 @@
 
 
 
-1
-Powershell
-Service Manager (services.msc)
-A GUI tool for managing Windows services. You can start, stop, or restart services like Docker Desktop directly from this interface.
 
-
-
-
-
-2
-Powershell
-Install-Module
-Installs PowerShell modules from the PowerShell Gallery, such as AzureRM or PowerShellGet. Often used to add functionality or manage cloud resources.
 
 
 
