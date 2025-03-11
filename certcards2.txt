@@ -5550,3 +5550,90 @@ Material-UI (MUI): A React component library implementing Google's Material Desi
 575
 JavaScript Concepts
 Responsive Design: Designing web applications to adapt seamlessly across various device sizes and screen resolutions for optimal user experience.
+
+
+
+
+
+211
+Vocab
+Interval Funds Offer Limited Liquidity:
+Interval funds are closed-end investment vehicles that allow investors to redeem shares only at specific, predetermined intervals, such as quarterly or annually, providing limited liquidity compared to traditional mutual funds.
+
+
+
+
+211
+Vocab
+Interval Funds Invest in Less Liquid Assets:
+Interval funds typically invest in alternative, less liquid assets like real estate, private equity, private debt, and structured credit, granting investors access to opportunities not typically available through conventional investment vehicles.
+
+
+
+
+
+211
+Vocab
+Interval Funds Carry Redemption Risk:
+Because interval funds permit redemptions only periodically—and often limit the total amount redeemable in each interval (commonly 5%-25% of assets)—investors may face difficulty liquidating positions quickly if the need arises.
+
+
+
+
+211
+Vocab
+Interval Funds May Provide Higher Yields and Diversification:
+Interval funds often seek higher returns or income by investing in less liquid, alternative assets, potentially enhancing portfolio diversification beyond traditional stocks and bonds.
+
+
+
+
+211
+Vocab
+Interval Funds Generally Have Higher Fees and Costs:
+Interval funds usually have higher management fees and operational expenses compared to typical mutual funds or ETFs, due to their complexity, specialized asset classes, and active management strategies.
+
+
+
+
+
+211
+Vocab
+Structured Credit Combines Debt Instruments:
+Structured credit refers to complex financial products created by pooling and repackaging loans, bonds, or other debt obligations, then dividing them into distinct risk-and-return segments called tranches.
+
+
+
+
+
+211
+Vocab
+Structured Credit Offers Different Risk Levels:
+Structured credit products are typically divided into multiple tranches, each offering varying degrees of risk, return, and priority in repayment, allowing investors to select the risk exposure that suits their investment profile.
+
+
+
+
+
+211
+Vocab
+Structured Credit Includes Products like CLOs and CDOs:
+Structured credit encompasses instruments such as collateralized loan obligations (CLOs), collateralized debt obligations (CDOs), mortgage-backed securities (MBS), and asset-backed securities (ABS), all designed to repackage and redistribute risk and return.
+
+
+
+
+
+211
+Vocab
+Structured Credit Provides Portfolio Diversification:
+Investors utilize structured credit products to diversify portfolios beyond traditional bonds or equities, potentially accessing higher yields or returns not typically achievable through standard debt instruments.
+
+
+
+
+
+211
+Vocab
+Structured Credit Carries Complexity and Risk:
+Structured credit products are often complex and require careful analysis due to risks related to credit quality, liquidity, underlying asset performance, and market conditions, making them suitable primarily for knowledgeable or institutional investors.
