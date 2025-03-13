@@ -19,17 +19,8 @@
 
 
 
-4
-JavaScript Concepts
-NestJS: A progressive Node.js framework built with TypeScript, designed for building scalable and maintainable server-side applications.
 
 
-
-
-
-5
-JavaScript Concepts
-Node.js: A JavaScript runtime built on Chrome's V8 engine, enabling server-side scripting and building scalable network applications.
 
 
 
