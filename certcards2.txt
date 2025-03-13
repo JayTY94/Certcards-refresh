@@ -4,25 +4,16 @@
 
 
 
-1
-JavaScript Concepts
-You Don’t Know JS: A series of books by Kyle Simpson that dives deep into the core mechanisms of JavaScript, enhancing understanding.
 
 
 
 
 
-2
-JavaScript Concepts
-Redux: A predictable state container for JavaScript apps, managing application state with a single source of truth and enabling time-travel debugging.
 
 
 
 
 
-3
-JavaScript Concepts
-Modularization: Organizing code into reusable, maintainable modules or components, enhancing code clarity and facilitating collaboration.
 
 
 
