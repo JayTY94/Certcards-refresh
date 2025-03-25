@@ -9,10 +9,6 @@
 
 
 
-2
-Debugging in VS Code
-Debugger Attach
-A process where the debugger attaches to a running program (either locally or remotely) without stopping it. This is useful for debugging production systems or processes that cannot be restarted.
 
 
 
