@@ -4,10 +4,6 @@
 
 
 
-1
-Debugging in VS Code
-Tracepoint
-Similar to a breakpoint, but instead of pausing execution, a tracepoint logs information about the execution of the program, such as variable values or function calls, without interrupting the flow.
 
 
 
