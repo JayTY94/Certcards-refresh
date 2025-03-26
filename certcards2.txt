@@ -4,14 +4,6 @@
 
 
 
-1
-Audit Report Tracker (Sharepoint List)
-Power Automate (Flow) Owner
-Definition: A user who has full control over a Flow, including the ability to edit, run, and manage its settings.
-Context: Necessary to inspect and modify automation workflows in Power Automate that are tied to SharePoint lists.
-
-
-
 
 
 2
