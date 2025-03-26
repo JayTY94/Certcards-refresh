@@ -4,13 +4,6 @@
 
 
 
-1
-OData
-IsSideEffecting Annotation (Org.OData.Core.V1.IsSideEffecting)
-
-Definition: An OData annotation that indicates an operation (action or function) may cause data changes on the server.
-Context: Useful for clients to understand that the request cannot be treated as purely read-only or cached safely.
-
 
 
 
