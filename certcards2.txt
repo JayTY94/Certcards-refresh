@@ -6,13 +6,6 @@
 
 
 
-2
-Audit Report Tracker (Sharepoint List)
-Permissions Endpoint (for managing list permissions in SharePoint):
-
-Endpoint: GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/permissions
-Description: Retrieves the permissions set for a specific SharePoint list.
-
 
 
 
