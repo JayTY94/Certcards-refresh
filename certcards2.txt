@@ -4,38 +4,13 @@
 
 
 
-1
-WSL + Kali Linux
-wsl.exe and .bashrc
-.bashrc is a script that runs every time you launch a new terminal in WSL. You can use it to set environment variables, customize the prompt, or configure any other startup behavior you want.
 
 
 
 
 
-2
-WSL + Kali Linux
-wsl Command
-The primary command-line interface for interacting with WSL instances. It is used to manage and run Linux distributions on Windows.
-Common options:
-wsl --set-default <distro>: Sets the default Linux distribution for running wsl commands.
-wsl --terminate <distro>: Terminates a running WSL distribution.
-wsl --shutdown: Stops all running WSL instances.
 
 
-
-
-
-3
-WSL + Kali Linux
-WSL Performance Tuning
-For better performance, particularly when running heavier workloads or containers, use a .wslconfig file to adjust resource allocation for WSL 2 (memory, CPU, etc.).
-Example .wslconfig:
-makefile
-Copy code
-[wsl2]
-memory=4GB
-processors=2
 
 
 
