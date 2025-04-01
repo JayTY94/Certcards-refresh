@@ -13,21 +13,9 @@
 
 
 
-3
-Home Network Project
-What is the command to update and upgrade packages on a Debian-based system like Raspberry Pi OS?
-
-bash
-sudo apt update && sudo apt upgrade -y
 
 
 
-
-
-4
-Azure Functions + PP365
-Azure SDK for Python
-A collection of libraries provided by Microsoft to interact with Azure services using Python. The Azure SDK for Python simplifies the integration of Azure Functions with services like Azure Storage, Cosmos DB, and Azure Key Vault, providing robust and consistent APIs for developers.
 
 
 
