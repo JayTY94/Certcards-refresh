@@ -4,23 +4,10 @@
 
 
 
-1
-Home Network Project
-Front: What is TLS Termination and why is it used in reverse proxies?
-
-Back: TLS Termination refers to the process of decrypting incoming TLS/SSL encrypted traffic at the reverse proxy level before forwarding it to backend servers. It offloads the computationally intensive decryption task from backend servers, improves performance, and allows for centralized management of SSL certificates.
 
 
 
 
-
-2
-Home Network Project
-Front: Explain the difference between a Docker Image and a Docker Container.
-
-Back:
-Docker Image: A read-only template that contains the application and all its dependencies required to run it. Images are built from Dockerfiles and serve as the blueprint for containers.
-Docker Container: A runnable instance of a Docker image. Containers are created from images and can be started, stopped, moved, and deleted independently.
 
 
 
