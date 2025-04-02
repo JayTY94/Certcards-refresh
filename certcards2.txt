@@ -9,13 +9,7 @@
 
 
 
-2
-Email Auth and Security
-Identifier Alignment
 
-Ensuring that the domains used in SPF and DKIM authentication align with the domain in the email's "From" header.
-Critical for DMARC to function correctly.
-Can be achieved through relaxed alignment (subdomains are allowed) or strict alignment (exact match required).
 
 
 
