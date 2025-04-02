@@ -4,12 +4,6 @@
 
 
 
-1
-Logging in Python
-Q: What does the exc_info parameter do in logging methods like logger.error() from the logging module?
-
-A: exc_info=True
-This includes exception traceback information in the log message, aiding in debugging.
 
 
 
