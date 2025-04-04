@@ -144,3 +144,34 @@ Build and execute SQL statements dynamically at runtime using sp_executesql or E
 Window Functions:
 
 Functions like ROW_NUMBER(), RANK(), LEAD(), and LAG() perform calculations across sets of rows related to the current row without collapsing the result set.
+
+
+
+
+
+
+
+Flashcard 1
+Q: What happens in T-SQL if you use GROUP BY but select columns that are not aggregated or not in the GROUP BY clause?
+A: You get an error. All columns in the SELECT must either be part of the GROUP BY clause or be wrapped in an aggregate function like SUM, AVG, MAX, etc.
+
+Flashcard 2
+Q: What is the purpose of the GROUP BY clause in T-SQL?
+A: It collapses rows into groups based on the values of one or more columns and applies aggregate functions to each group.
+
+Flashcard 3
+Q: How do window functions differ from aggregate functions with GROUP BY?
+A: Window functions (like SUM(...) OVER (...)) calculate values across sets of rows without collapsing them into a single row, preserving the full row data.
+
+Flashcard 4
+Q: What does SUM(x) OVER (PARTITION BY y) do?
+A: It sums the values of x for each group of rows where y has the same value, but keeps each row intact in the result set.
+
+Flashcard 5
+Q: Why would you use COALESCE(a, b) in a SELECT statement?
+A: It returns the first non-null value among its arguments. Useful for fallback values like choosing between custom and default rates.
+
+Flashcard 6
+Q: When should you use window functions instead of GROUP BY?
+A: When you want to calculate totals, ranks, or running sums without reducing the number of rows in your result set.
+
