@@ -4,12 +4,6 @@
 
 
 
-1
-Azure AI Search
-After the first indexer run, you can rerun it on demand or set up a schedule.
-
-You can monitor indexer status in the Azure portal or through Get Indexer Status API. You should also run queries on the index to verify the result is what you expected.
-
 
 
 
