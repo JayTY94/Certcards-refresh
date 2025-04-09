@@ -5986,3 +5986,46 @@ Red Side Story, FForde
 Probity
 Pronunciation: PROB-ih-tee
 Definition: Adherence to the highest principles and ideals; uprightness and integrity.
+
+
+
+
+
+
+12
+JavaScript Concepts
+Array Length Property: Remember to use array.length to get the number of elements in an array. This is a common mistake, but it's crucial for iterating through arrays correctly.
+(I had mistakenly used array.len instead)
+
+
+
+
+
+12
+JavaScript Concepts
+Variable Declaration: Use let and const for variable declarations instead of var. let allows you to declare variables that are limited to the scope of a block statement, while const is used for variables that should not be reassigned.
+
+
+
+
+
+
+12
+JavaScript Concepts
+Arrow Functions: Arrow functions provide a concise syntax for writing functions. They are especially useful for short functions and callbacks. For example:
+
+const add = (a, b) => a + b;
+
+
+
+
+
+
+12
+JavaScript Concepts
+Template Literals: Use template literals for string interpolation and multi-line strings. They are enclosed by backticks (`) and allow you to embed expressions using ${expression}. For example:
+
+const name = 'Jay';
+const greeting = `Hello, ${name}!`;
+
+
