@@ -20,25 +20,17 @@
 
 
 
-4
-JavaScript Concepts
-Immutable Data Structures: Data structures that cannot be altered after creation, promoting predictable state management, especially in libraries like Redux.
 
 
 
 
 
-5
-JavaScript Concepts
-React Native: A framework for building native mobile applications using React, allowing code reuse across iOS and Android platforms.
 
 
 
 
 
-6
-JavaScript Concepts
-Material-UI (MUI): A React component library implementing Google's Material Design, offering pre-built, customizable UI components.
+
 
 
 
