@@ -4,25 +4,17 @@
 
 
 
-1
-JavaScript Concepts
-MobX: A simple, scalable state management library that uses observable data structures, promoting reactive programming patterns.
 
 
 
 
 
-2
-JavaScript Concepts
-Spread Operator (...): Expanding elements of arrays or properties of objects, useful for copying or merging data structures.
 
 
 
 
 
-3
-JavaScript Concepts
-Flow: A static type checker for JavaScript, enabling developers to add type annotations and catch type-related errors during development.
+
 
 
 
