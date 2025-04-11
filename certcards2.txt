@@ -4,12 +4,6 @@
 
 
 
-1
-Azure Functions
-There are two types of managed identities:
-
-System-assigned. Some Azure resources, such as virtual machines allow you to enable a managed identity directly on the resource.
-User-assigned. You may also create a managed identity as a standalone Azure resource. You can create a user-assigned managed identity and assign it to one or more Azure Resources.
 
 
 
