@@ -53,3 +53,79 @@ Using Object.entries(): The Object.entries() method returns an array of the obje
 
 
 
+With Boolean(value) you can convert any value to a boolean. There is a fixed set of values, so called falsy values, that convert to false. Most importantly, false, 0, empty string, null, undefined and NaN are falsy.
+
+
+
+Boolean(-1);
+// => true
+
+Boolean(0);
+// => false
+
+Boolean(' ');
+// => true
+
+Boolean('');
+// => false
+
+
+For arrays, the String function will apply the string conversion for each element and join the results with a comma. You can also apply the join method yourself, e.g. to customize the separator. Note that in these cases null and undefined will be converted to an empty string.
+
+String([42, null, true, 'abc']);
+// => '42,,true,abc'
+
+
+
+
+For objects, by default String returns an unhelpful text.
+
+String({ key: 'value' });
+// => '[object Object]'
+
+
+
+In certain contexts, JavaScript will automatically convert a value to another data type before it evaluates some statement. This implicit conversion is called type coercion.
+
+
+Coercion to boolean commonly occurs for
+
+the condition of an if statement
+the first operand of the ternary operator ?
+the operand of the logical NOT operator !
+the operands of the logical AND && and OR || operators (the result of the expression is one of the operands, not necessarily a boolean)
+
+
+
+
+
+If the addition operator + is used for primitive values and one operand is a string, the other one will be coerced into a string as well. The conversion logic is the same as when using the String function. Afterwards, the two strings are concatenated.
+
+let name;
+'hello ' + name;
+// => 'hello undefined'
+
+
+
+
+Many operators coerce the operands into numbers (if necessary) according to the logic of the Number function explained above.
+
+Arithmetic operators: + (if no string is involved), -, *, /, %, **
+Unary plus and unary negation operators: +, -
+Relational operators (for non-string operands): >, >=, <, <=
+Bitwise operators: |, &, ^, ~
+
+
+
+NaN is not equal to itself (NaN !== NaN), so using case NaN: in a switch statement will not work.
+Use the isNaN function to check for NaN values before the switch statement or within a switch statement using switch (true).
+
+
+
+
+Ensure to use the comparison operator === instead of the assignment operator = when comparing values in switch cases. In an exercise, I had something like 
+case converted_value = 0
+instead of
+case converted_value === 0
+and that screwed up all of the following cases.
+

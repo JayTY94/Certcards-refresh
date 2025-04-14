@@ -8,21 +8,6 @@
 
 
 
-3
-Azure Functions
-Here are some of the benefits of using managed identities:
-
-You don't need to manage credentials. Credentials aren’t even accessible to you.
-You can use managed identities to authenticate to any resource that supports Microsoft Entra authentication, including your own applications.
-Managed identities can be used at no extra cost.
-
-
-
-
-
-4
-Azure Functions
-Activity functions are the basic units of work in a Durable Functions orchestration. An activity function contains the actual work performed by the tasks being orchestrated.
 
 
 
@@ -36,11 +21,7 @@ You can use three durable function types: Client, Orchestrator, and Activity.
 
 
 
-6
-Azure Functions
-When you enable a system-assigned managed identity:
 
-A service principal of a special type is created in Microsoft Entra ID for the identity. The service principal is tied to the lifecycle of that Azure resource. When the Azure resource is deleted, Azure automatically deletes the service principal for you.
 
 
 
