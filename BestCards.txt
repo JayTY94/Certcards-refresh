@@ -7,3 +7,14 @@ Can be achieved through relaxed alignment (subdomains are allowed) or strict ali
 
 =============
 
+Home Network Project
+Front: What is Bandwidth and how does it differ from Throughput?
+
+Back:
+
+Bandwidth: The maximum rate of data transfer across a network path, typically measured in Mbps or Gbps. It represents the network's capacity.
+Throughput: The actual rate of successful data transfer achieved, often lower than the bandwidth due to factors like network congestion and protocol overhead.
+
+
+
+=============
