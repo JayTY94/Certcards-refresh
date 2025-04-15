@@ -11,35 +11,10 @@
 
 
 
-2
-Home Network Project
-Front: What is Rate Limiting and how does it help in preventing attacks?
-
-Back: Rate Limiting restricts the number of requests a user or IP address can make to a service within a specific time frame. It helps prevent various attacks, such as brute-force attacks, denial-of-service (DoS) attacks, and abuse of APIs, by limiting the potential impact of malicious activities.
 
 
 
 
-
-3
-Home Network Project
-Front: What is Fail2Ban and how does it protect a network?
-
-Back: Fail2Ban is an intrusion prevention software that monitors log files for suspicious activity, such as repeated failed login attempts. When such patterns are detected, Fail2Ban automatically updates firewall rules to temporarily or permanently ban offending IP addresses, protecting the network from brute-force attacks and unauthorized access.
-
-
-
-
-
-4
-Home Network Project
-Front: What is DNS over HTTPS (DoH) and its advantages?
-
-Back: DNS over HTTPS (DoH) is a protocol that encrypts DNS queries by sending them over HTTPS. Advantages include:
-
-Privacy: Prevents eavesdropping and manipulation of DNS traffic.
-Security: Protects against DNS spoofing and man-in-the-middle attacks.
-Censorship Resistance: Makes it harder for third parties to block or redirect DNS queries.
 
 
 
