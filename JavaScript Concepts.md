@@ -129,3 +129,39 @@ instead of
 case converted_value === 0
 and that screwed up all of the following cases.
 
+
+
+
+By default, all parameters defined in the function declaration are optional in JavaScript. If you provide fewer arguments than there are parameters, the missing arguments will be undefined inside the function, see Null and Undefined.
+
+
+
+
+In many cases, it makes sense to assign a more appropriate default value than undefined. This can be done by specifying default parameters directly in the function definition.
+
+function someName(param1 = defaultValue1, param2 = defaultValue2) {
+  // ...
+}
+
+
+
+In JavaScript, you can only return exactly one value. If you want to pass more information, you need to combine it into one entity first, usually into an object, or an array.
+
+function divide(a, b) {
+  return {
+    quotient: Math.floor(a / b),
+    remainder: a % b,
+  };
+}
+
+
+Callback functions are functions passed as arguments. This programming pattern creates a sequence of function calls in both synchronous and asynchronous programming. Writing a callback function is no different from writing a function; however, the callback function must match the signature defined by the calling function.
+
+
+
+To create a deep copy of an object in JavaScript, you can use the JSON.parse(JSON.stringify(object)) method. This approach works well for simple objects, such as those with string:number pairs, and ensures that the original object remains unmodified.
+
+
+
+
+
