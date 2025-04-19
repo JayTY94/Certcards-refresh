@@ -8,9 +8,7 @@ Can be achieved through relaxed alignment (subdomains are allowed) or strict ali
 =============
 
 Home Network Project
-Front: What is Bandwidth and how does it differ from Throughput?
-
-Back:
+What is Bandwidth and how does it differ from Throughput?
 
 Bandwidth: The maximum rate of data transfer across a network path, typically measured in Mbps or Gbps. It represents the network's capacity.
 Throughput: The actual rate of successful data transfer achieved, often lower than the bandwidth due to factors like network congestion and protocol overhead.
@@ -18,3 +16,17 @@ Throughput: The actual rate of successful data transfer achieved, often lower th
 
 
 =============
+
+
+
+DNS
+SRV (Service) Records
+DNS records that specify the location (hostname and port) of servers for particular services within a domain. Essential for services like SIP (VoIP) or LDAP, they enable clients to discover service endpoints automatically.
+
+
+
+
+
+=============
+
+
