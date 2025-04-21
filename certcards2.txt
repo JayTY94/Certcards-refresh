@@ -5913,3 +5913,483 @@ They share compute resources, which can cause performance issues if one app cons
 Azure Developer Associate
 How can you keep an Azure App Service always warm and responsive?
 Enable "Always On" in app settings
+
+
+
+
+
+
+
+1
+Azure AD Authentication
+App Registration
+Registers an app in Azure AD, creating its identity to authenticate with Azure services. Allows the app to access resources and interact with Azure services.
+
+
+
+
+
+2
+Azure AD Authentication
+Service Principal
+A security identity for an app to authenticate and access Azure resources. Used for automated services and applications instead of using user credentials.
+
+
+
+
+
+3
+Azure AD Authentication
+Role Assignment
+Links a principal (user, group, service principal) to a role at a defined scope, granting specific permissions to interact with Azure resources.
+
+
+
+
+
+4
+Azure AD Authentication
+Scope
+Defines the level at which a role is applied, such as management group, subscription, resource group, or individual resource. Higher scopes apply to all child resources.
+
+
+
+
+
+5
+Azure AD Authentication
+Principal
+An identity (user, group, service principal) that is granted access to Azure resources based on assigned roles.
+
+
+
+
+
+6
+Azure AD Authentication
+Built-In Roles
+Predefined roles like Owner, Contributor, and Reader that grant specific permissions to manage Azure resources at various scopes.
+
+
+
+
+
+7
+Azure AD Authentication
+Custom Roles
+User-defined roles with specific permissions, used when built-in roles don’t provide the required access or for more granular control.
+
+
+
+
+
+8
+Azure AD Authentication
+Role Inheritance
+Roles assigned at a higher scope (e.g., subscription) are inherited by resources at lower scopes (e.g., resource groups, resources).
+
+
+
+
+
+9
+Azure AD Authentication
+Managed Identities
+Azure-managed identities used by Azure resources (like VMs) to authenticate to other Azure services, removing the need to manage credentials.
+
+
+
+
+
+10
+Azure AD Authentication
+App Registration vs Enterprise Application
+App Registration defines the app’s identity, while Enterprise Application represents the actual instance of the app within an Azure AD tenant.
+
+
+
+
+
+11
+Azure AD Authentication
+Service Principal Authentication Methods
+Authentication for service principals can be done using Client Secret, Client Certificate, or Managed Identity, which provides secure, credential-free access to Azure services.
+
+
+
+
+
+12
+Azure AD Authentication
+Role Assignment Propagation
+Role permissions may take time to propagate across Azure, so changes in role assignments might not be immediately reflected in access control.
+
+
+
+
+
+13
+Azure AD Authentication
+Azure AD Roles vs Azure Resource Roles
+Azure AD Roles manage access to directory functions (e.g., Global Administrator), while Resource Roles control access to Azure resources (e.g., Contributor).
+
+
+
+
+
+
+1
+Azure DevOps Pipelines
+What keyword is used to define multiple steps that should run in parallel in Azure DevOps YAML pipelines?
+Answer: matrix
+
+
+
+
+
+2
+Azure DevOps Pipelines
+How do you run a pipeline on a self-hosted agent in Azure DevOps?
+Answer: pool: self-hosted
+
+
+
+
+
+3
+Azure DevOps Pipelines
+What is the purpose of the 'checkout' step in an Azure DevOps YAML pipeline?
+Answer: It checks out the source code from the repository for use in the pipeline.
+
+
+
+
+
+4
+Azure DevOps Pipelines
+What does the 'variables' keyword do in a YAML pipeline?
+Answer: It declares the variables that can be used throughout the pipeline.
+
+
+
+
+
+5
+Azure DevOps Pipelines
+What is the default working directory for a pipeline job in Azure DevOps?
+Answer: $(Build.SourcesDirectory)
+
+
+
+
+
+
+6
+Azure DevOps Pipelines
+How do you add a manual approval gate before a pipeline proceeds to the next stage?
+Answer: Set a ApprovalRequired flag on the pipeline's stages.
+
+
+
+
+
+7
+Azure DevOps Pipelines
+How do you specify a deployment environment like 'staging' or 'production' in a YAML pipeline?
+Answer: Use the environment keyword, e.g., environment: 'staging'.
+
+
+
+
+
+8
+Azure DevOps Pipelines
+What does the 'trigger' keyword do in an Azure DevOps YAML pipeline?
+Answer: Defines the branches or events that will cause the pipeline to run, such as a commit to a specific branch.
+
+
+
+
+
+9
+Azure DevOps Pipelines
+What is the main purpose of a YAML file in Azure DevOps pipelines?
+Answer: To define and configure pipeline processes, including steps, tasks, and environments.
+
+
+
+
+
+
+10
+Azure DevOps Pipelines
+In an Azure DevOps pipeline, which YAML syntax would you use to reference a variable?
+Answer: $(variable_name)
+
+
+
+
+
+11
+Azure DevOps Pipelines
+What is the default trigger for a YAML-based pipeline in Azure DevOps?
+Answer: A trigger based on code changes in a Git repository.
+
+
+
+
+
+
+12
+Azure DevOps Pipelines
+Which YAML element in an Azure DevOps pipeline defines the steps or tasks to be executed?
+Answer: steps
+
+
+
+
+
+13
+Azure DevOps Pipelines
+How can you specify which agent pool should be used in a YAML pipeline file?
+Answer: pool: <agent_pool_name>
+
+
+
+
+
+14
+Azure DevOps Pipelines
+What is the purpose of the dependsOn keyword in Azure DevOps YAML pipelines?
+Answer: It specifies the order in which stages or jobs will execute.
+
+
+
+
+
+15
+Azure DevOps Pipelines
+In Azure DevOps, what command is used to run a pipeline manually from the Azure DevOps portal?
+Answer: "Run pipeline" button in the Azure DevOps portal.
+
+
+
+
+
+16
+Azure DevOps Pipelines
+How do you specify a deployment environment like 'staging' or 'production' in a YAML pipeline?
+Answer: Use the environment keyword, e.g., environment: 'staging'.
+
+
+
+
+
+17
+Azure DevOps Pipelines
+What does the trigger keyword do in an Azure DevOps YAML pipeline?
+Answer: It defines the branches or events that will cause the pipeline to run, such as a commit to a specific branch.
+
+
+
+
+
+18
+Azure DevOps Pipelines
+What does the jobs keyword in Azure DevOps YAML define?
+Answer: It defines a set of jobs that run in the pipeline. Each job can contain steps, and jobs can be executed in parallel or sequentially based on dependencies.
+
+
+
+
+
+19
+Azure DevOps Pipelines
+How do you specify a condition for a job or stage to run in an Azure DevOps YAML pipeline?
+Answer: You use the condition keyword, such as condition: succeeded() to define when a job should run based on the status of previous jobs.
+
+
+
+
+
+
+20
+Azure DevOps Pipelines
+How do you cache dependencies in Azure DevOps pipelines to speed up builds?
+Answer: Use the cache task in the YAML file to store and reuse files between pipeline runs. This can help speed up build times by caching dependencies.
+
+
+
+
+
+21
+Azure DevOps Pipelines
+What is the purpose of the trigger: none keyword in an Azure DevOps YAML pipeline?
+Answer: It disables automatic triggers, meaning the pipeline will not run automatically on code changes. This is useful for manual execution or scheduled runs.
+
+
+
+
+
+22
+Azure DevOps Pipelines
+In Azure DevOps, what is the use of the strategy keyword in a pipeline matrix?
+Answer: The strategy keyword allows you to define different combinations of variables or configurations for matrix jobs, enabling parallel execution with different environments or settings.
+
+
+
+
+
+
+23
+Azure DevOps Pipelines
+What does the resources keyword define in a YAML pipeline?
+Answer: The resources keyword allows you to define external resources such as repositories, containers, or pipelines that a pipeline will use or depend on.
+
+
+
+
+
+
+24
+Azure DevOps Pipelines
+How can you pass secrets securely in Azure DevOps YAML pipelines?
+Answer: You pass secrets using pipeline variables marked as secret in Azure DevOps. They are referenced in the YAML file as $(secret_variable) but are masked and not exposed in logs.
+
+
+
+
+
+
+25
+Azure DevOps Pipelines
+How can you trigger a pipeline based on a Git tag in Azure DevOps?
+Answer: You use the trigger keyword with the tags sub-keyword to specify that the pipeline should trigger when a Git tag is pushed.
+
+Example:
+trigger:
+  tags:
+    include:
+      - v*
+
+
+
+
+
+26
+Azure DevOps Pipelines
+What is a Deployment Pool in Azure DevOps?
+Answer: A Deployment Pool is a set of environments where deployments occur. You can configure and target specific deployment pools for releases to ensure the proper deployment environment is used.
+
+
+
+
+
+
+27
+Azure DevOps Pipelines
+How do you use stages with dependencies in Azure DevOps YAML pipelines?
+Answer: You can define dependsOn between stages to specify the execution order. Stages will run sequentially based on the dependencies defined, ensuring that one stage only runs after another has completed.
+
+
+
+
+
+28
+Azure DevOps Pipelines
+
+
+
+
+
+
+29
+Azure DevOps Pipelines
+
+
+
+
+
+
+30
+Azure DevOps Pipelines
+
+
+
+
+
+
+31
+Azure DevOps Pipelines
+
+
+
+
+
+
+32
+Azure DevOps Pipelines
+
+
+
+
+
+
+33
+Azure DevOps Pipelines
+
+
+
+
+
+
+34
+Azure DevOps Pipelines
+
+
+
+
+
+
+35
+Azure DevOps Pipelines
+
+
+
+
+
+
+36
+Azure DevOps Pipelines
+
+
+
+
+
+
+37
+Azure DevOps Pipelines
+
+
+
+
+
+
+38
+Azure DevOps Pipelines
+
+
+
+
+
+
+39
+Azure DevOps Pipelines
+
+
+
+
+
+
+40
+Azure DevOps Pipelines
