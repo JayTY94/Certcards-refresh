@@ -5,194 +5,6 @@
 
 
 1
-JavaScript Concepts
-Fetch API / Axios: Tools for making HTTP requests from the browser, allowing communication with backend services and APIs.
-
-
-
-
-
-2
-JavaScript Concepts
-Prototype-Based Inheritance: JavaScript's inheritance model where objects inherit properties and methods from a prototype object, enabling dynamic property sharing.
-
-
-
-
-
-3
-JavaScript Concepts
-Express.js: A minimalist web framework for Node.js, facilitating routing, middleware integration, and handling HTTP requests/responses.
-
-
-
-
-
-4
-JavaScript Concepts
-TypeScript: A superset of JavaScript that adds static typing, enhancing code quality, maintainability, and developer tooling through type checking.
-
-
-
-
-
-5
-JavaScript Concepts
-Parcel: A zero-configuration bundler that automatically handles various file types, offering faster builds with minimal setup.
-
-
-
-
-
-6
-JavaScript Concepts
-Hot Module Replacement (HMR): A feature in bundlers like Webpack and Vite that allows modules to be replaced without a full page reload during development.
-
-
-
-
-
-7
-JavaScript Concepts
-Variable Declarations (let, const, var): Keywords to declare variables with different scopes and mutability. let and const are block-scoped, while var is function-scoped.
-
-
-
-
-
-8
-JavaScript Concepts
-Next.js: A React framework for server-side rendering and static site generation, enhancing performance and SEO for React applications.
-
-
-
-
-
-9
-JavaScript Concepts
-Destructuring: Syntax for unpacking values from arrays or properties from objects into distinct variables, improving code readability and conciseness.
-
-
-
-
-
-10
-JavaScript Concepts
-Single-Page Application (SPA): A web application that loads a single HTML page and dynamically updates content without full page reloads.
-
-
-
-
-
-11
-JavaScript Concepts
-npm (Node Package Manager): The default package manager for Node.js, used to install, share, and manage JavaScript packages and dependencies.
-
-
-
-
-
-12
-JavaScript Concepts
-Promises: Objects representing the eventual completion or failure of asynchronous operations, allowing chaining with .then() and .catch().
-
-
-
-
-
-13
-JavaScript Concepts
-MDN Web Docs: Comprehensive documentation for web technologies, including JavaScript, HTML, CSS, and various APIs.
-
-
-
-
-
-14
-JavaScript Concepts
-Dictionary (Object)
-let dictionary = {
-    key1: "value1",
-    key2: "value2"
-};
-
-// Accessing values
-console.log(dictionary.key1); // Output: value1
-console.log(dictionary["key2"]); // Output: value2
-
-
-
-
-
-15
-JavaScript Concepts
-Async/Await: Syntax for handling asynchronous operations more readably, allowing async functions to pause execution with await until a Promise resolves.
-
-
-
-
-
-16
-JavaScript Concepts
-Netlify: A platform for deploying static sites and serverless functions, providing continuous deployment and built-in CI/CD pipelines.
-
-
-
-
-
-17
-JavaScript Concepts
-Template Literals: Use template literals for string interpolation and multi-line strings. They are enclosed by backticks (`) and allow you to embed expressions using ${expression}. For example:
-
-const name = 'Jay';
-const greeting = `Hello, ${name}!`;
-
-
-
-
-
-18
-JavaScript Concepts
-Array slice Function: The slice method returns a shallow copy of a portion of an array into a new array object.
-let array = [1, 2, 3, 4, 5];
-let slicedArray = array.slice(1, 4); // Output: [2, 3, 4]
-
-
-
-
-
-19
-JavaScript Concepts
-Component-Based Architecture: Building applications by encapsulating functionality into independent, reusable components, commonly used in frontend frameworks.
-
-
-
-
-
-20
-JavaScript Concepts
-Logical AND (&&) and OR (||) Statements
-if (condition1 && condition2) {
-    // Code to execute if both condition1 and condition2 are true
-}
-
-if (condition1 || condition2) {
-    // Code to execute if either condition1 or condition2 is true
-}
-
-
-
-
-
-21
-JavaScript Concepts
-Caching Strategies: Techniques like browser caching and service workers to store resources locally, decreasing load times and server requests.
-
-
-
-
-
-22
 Azure Developer Associate
 Azure blob storage rule run condition: 
 daysAfterLastTierChangeGreaterThan
@@ -203,7 +15,7 @@ daysAfterLastTierChangeGreaterThan
 
 
 
-23
+2
 Azure Developer Associate
 Q: Which Redis tier is best for development/testing?
 A: Basic Tier — single-node, no SLA, cheapest.
@@ -212,7 +24,7 @@ A: Basic Tier — single-node, no SLA, cheapest.
 
 
 
-24
+3
 Azure Developer Associate
 Q: What is a good practice for naming Redis keys?
 A: Use namespaces (e.g., user:123:profile) to organize and avoid conflicts.
@@ -221,7 +33,7 @@ A: Use namespaces (e.g., user:123:profile) to organize and avoid conflicts.
 
 
 
-25
+4
 Azure Developer Associate
 Rehydration priority options include:
 
@@ -231,7 +43,7 @@ Standard priority: The rehydration request is processed in the order it was rece
 
 
 
-26
+5
 Azure Developer Associate
 Q: Is SSL/TLS encryption supported in all Azure Cache for Redis tiers?
 A: Yes — encryption is available in all tiers.
@@ -240,7 +52,7 @@ A: Yes — encryption is available in all tiers.
 
 
 
-27
+6
 Azure Developer Associate
 Azure blob rule filter type:
 blobTypes
@@ -251,25 +63,24 @@ blobTypes
 
 
 
-28
+7
 Azure Developer Associate
-Q: What is the maximum cache size per node available in the Premium tier of Azure Cache for Redis?
-A: Over 1.2 TB.
+When you rehydrate a blob, you can set the priority for the rehydration operation via the optional x-ms-rehydrate-priority header on a Set Blob Tier or Copy Blob/Copy Blob From URL operation.
 
 
 
 
 
-29
+8
 Azure Developer Associate
-Q: Name 3 common use cases for Azure Cache for Redis.
-A: Session storage, API response caching, real-time leaderboards.
+Q: How does Standard Tier provide high availability?
+A: Through a Primary/Replica architecture with automatic failover.
 
 
 
 
 
-30
+9
 Azure Developer Associate
 Q: What happens when Redis memory is full?
 A: It evicts keys based on the configured eviction policy (e.g., LRU).
@@ -278,7 +89,7 @@ A: It evicts keys based on the configured eviction policy (e.g., LRU).
 
 
 
-31
+10
 Azure Developer Associate
 Q: How do you access Azure Cache for Redis from your app?
 A: Use a Redis client library and connect using host, port (6380 for SSL), and access key.
@@ -287,25 +98,25 @@ A: Use a Redis client library and connect using host, port (6380 for SSL), and a
 
 
 
-32
+11
 Azure Developer Associate
-What setting ensures an app only uses a connection string in a specific slot?
-Mark it as a deployment slot setting
+What Azure App Service feature allows zero-downtime deployment and testing?
+Deployment Slots
 
 
 
 
 
-33
+12
 Azure Developer Associate
-Q: What are Redis’s primary data structures?
-A: Strings, Lists, Sets, Sorted Sets, Hashes, Bitmaps, HyperLogLogs, Streams.
+What is the purpose of App Insights Profiler?
+It provides code-level performance diagnostics to identify bottlenecks under live traffic.
 
 
 
 
 
-34
+13
 Azure Developer Associate
 Q: What is Azure Cache for Redis?
 A: A fully managed, in-memory key-value caching service based on the open-source Redis engine.
@@ -314,16 +125,20 @@ A: A fully managed, in-memory key-value caching service based on the open-source
 
 
 
-35
+14
 Azure Developer Associate
-Q: Which Azure Cache for Redis tiers support Virtual Network (VNet) integration?
-A: Premium, Enterprise, and Enterprise Flash.
+Azure blob storage rule actions:
+  tierToCool
+  tierToCold
+  enableAutoTierToHotFromCool	
+  tierToArchive
+  delete
 
 
 
 
 
-36
+15
 Azure Developer Associate
 Q: Can the Standard tier of Azure Cache for Redis be deployed into a VNet?
 A: No — only Premium and above support VNet integration.
@@ -332,7 +147,7 @@ A: No — only Premium and above support VNet integration.
 
 
 
-37
+16
 Azure Developer Associate
 Q: Which Azure Redis tier supports persistence and clustering?
 A: Premium Tier — includes data persistence, clustering, geo-replication, and VNet integration.
@@ -341,7 +156,7 @@ A: Premium Tier — includes data persistence, clustering, geo-replication, and 
 
 
 
-38
+17
 Azure Developer Associate
 Q: What port is used for SSL/TLS connections to Azure Cache for Redis?
 A: Port 6380.
@@ -350,7 +165,7 @@ A: Port 6380.
 
 
 
-39
+18
 Azure Developer Associate
 What allows Azure App Service to integrate with private networks (VNets)?
 VNet Integration
@@ -359,16 +174,16 @@ VNet Integration
 
 
 
-40
+19
 Azure Developer Associate
-Q: Which tiers of Azure Cache for Redis are based on Redis Enterprise from Redis Inc.?
-A: Enterprise and Enterprise Flash tiers.
+What is the recommended way to authenticate an App Service to access Azure resources like Storage or Key Vault?
+Use a Managed Identity
 
 
 
 
 
-41
+20
 Azure Developer Associate
 There are two options for rehydrating a blob that is stored in the archive tier:
 
@@ -378,10 +193,183 @@ Change a blob's access tier to an online tier: You can rehydrate an archived blo
 
 
 
-42
+21
 Azure Developer Associate
 What Azure App Service feature allows gradual traffic routing between staging and production versions of an app?
 Deployment Slots
+
+
+
+
+
+22
+JavaScript Concepts
+Fetch API / Axios: Tools for making HTTP requests from the browser, allowing communication with backend services and APIs.
+
+
+
+
+
+23
+JavaScript Concepts
+Prototype-Based Inheritance: JavaScript's inheritance model where objects inherit properties and methods from a prototype object, enabling dynamic property sharing.
+
+
+
+
+
+24
+JavaScript Concepts
+Express.js: A minimalist web framework for Node.js, facilitating routing, middleware integration, and handling HTTP requests/responses.
+
+
+
+
+
+25
+JavaScript Concepts
+TypeScript: A superset of JavaScript that adds static typing, enhancing code quality, maintainability, and developer tooling through type checking.
+
+
+
+
+
+26
+JavaScript Concepts
+Parcel: A zero-configuration bundler that automatically handles various file types, offering faster builds with minimal setup.
+
+
+
+
+
+27
+JavaScript Concepts
+Hot Module Replacement (HMR): A feature in bundlers like Webpack and Vite that allows modules to be replaced without a full page reload during development.
+
+
+
+
+
+28
+JavaScript Concepts
+Variable Declarations (let, const, var): Keywords to declare variables with different scopes and mutability. let and const are block-scoped, while var is function-scoped.
+
+
+
+
+
+29
+JavaScript Concepts
+Next.js: A React framework for server-side rendering and static site generation, enhancing performance and SEO for React applications.
+
+
+
+
+
+30
+JavaScript Concepts
+Destructuring: Syntax for unpacking values from arrays or properties from objects into distinct variables, improving code readability and conciseness.
+
+
+
+
+
+31
+JavaScript Concepts
+Single-Page Application (SPA): A web application that loads a single HTML page and dynamically updates content without full page reloads.
+
+
+
+
+
+32
+JavaScript Concepts
+npm (Node Package Manager): The default package manager for Node.js, used to install, share, and manage JavaScript packages and dependencies.
+
+
+
+
+
+33
+JavaScript Concepts
+Promises: Objects representing the eventual completion or failure of asynchronous operations, allowing chaining with .then() and .catch().
+
+
+
+
+
+34
+JavaScript Concepts
+MDN Web Docs: Comprehensive documentation for web technologies, including JavaScript, HTML, CSS, and various APIs.
+
+
+
+
+
+35
+JavaScript Concepts
+Closures: Functions that retain access to their lexical scope even when executed outside their original context, enabling data privacy and function factories.
+
+
+
+
+
+36
+JavaScript Concepts
+Middleware: Functions in frameworks like Express.js that have access to request and response objects, used for tasks like authentication and logging.
+
+
+
+
+
+37
+JavaScript Concepts
+RESTful APIs: Architectural style for designing networked applications, using HTTP requests to access and manipulate data through standard endpoints.
+
+
+
+
+
+38
+JavaScript Concepts
+Array slice Function: The slice method returns a shallow copy of a portion of an array into a new array object.
+let array = [1, 2, 3, 4, 5];
+let slicedArray = array.slice(1, 4); // Output: [2, 3, 4]
+
+
+
+
+
+39
+JavaScript Concepts
+Template Literals: Use template literals for string interpolation and multi-line strings. They are enclosed by backticks (`) and allow you to embed expressions using ${expression}. For example:
+
+const name = 'Jay';
+const greeting = `Hello, ${name}!`;
+
+
+
+
+
+40
+JavaScript Concepts
+Destructuring: Extracting values from arrays or objects into distinct variables using a concise syntax.
+
+
+
+
+
+41
+JavaScript Concepts
+Yarn: An alternative package manager to npm, offering faster installs and more reliable dependency management through lock files.
+
+
+
+
+
+42
+JavaScript Concepts
+Caching Strategies: Techniques like browser caching and service workers to store resources locally, decreasing load times and server requests.
 
 
 
@@ -398,8 +386,8 @@ Adds a new item to a SharePoint list. Enables automated data entry and integrati
 
 44
 PnP Powershell
-Set-PnPWeb (PnP.PowerShell)
-Configures properties of a SharePoint site, such as title, description, and logo. Enables automated site customization and configuration management.
+Get-PnPFile (PnP.PowerShell)
+Retrieves a file from a SharePoint document library. Allows downloading files to a local path or accessing file properties and content directly within PowerShell scripts.
 
 
 
@@ -479,8 +467,8 @@ Fetches information about the current SharePoint site, including properties like
 
 53
 PnP Powershell
-System.IO.Stream (System.IO)
-Represents a sequence of bytes, such as a file. Used in PowerShell to handle file data streams for operations like uploading files to SharePoint.
+OAuth 2.0 Client Credentials Flow
+An authentication method where applications authenticate using a client ID and client secret, enabling server-to-server interactions without user involvement.
 
 
 
@@ -488,8 +476,8 @@ Represents a sequence of bytes, such as a file. Used in PowerShell to handle fil
 
 54
 PnP Powershell
-Client Secret (client_secret)
-A confidential key associated with an Azure AD application, used alongside the client ID to authenticate the application in secure authentication flows.
+Remove-PnPUserFromGroup (PnP.PowerShell)
+Removes a user from a SharePoint group. Helps in maintaining accurate group memberships and enforcing access policies through scripts.
 
 
 
@@ -542,9 +530,8 @@ Lerwick: The main town and port of the Shetland Islands, Scotland, known for its
 
 60
 Vocab
-Jane Eyre
-Cachinnation (kak-ih-NAY-shun)
-Loud, uncontrollable laughter, often with a connotation of being excessive, mocking, or even sinister. Derived from the Latin word cachinnare, it emphasizes the intensity of the laugh.
+Do Androids Dream of Electric Sheep?
+Bucolic (byoo-KOL-ik): Relating to the pleasant aspects of the countryside and country life; pastoral.
 
 
 
@@ -594,9 +581,8 @@ Structured credit products are often complex and require careful analysis due to
 
 65
 Vocab
-Jane Eyre
-Basin and Ewer
-(BAY-sin and YOO-er) A bowl (basin) and jug (ewer) used together for hand or face washing, commonly found before the advent of modern plumbing.
+Lost in a Good Book
+Wisteria: A climbing flowering plant with fragrant, cascading purple or white blooms, often grown on pergolas or trellises.
 
 
 
@@ -622,8 +608,8 @@ Cornice: An architectural feature where a projecting, decorative molding crowns 
 
 68
 Vocab
-Lost in a Good Book
-Perfidious: Deceitful and untrustworthy, often describing betrayal or disloyalty.
+Do Androids Dream of Electric Sheep?
+Kipple (KIP-uhl): A term coined by author Philip K. Dick referring to useless, discarded, or trivial items that tend to accumulate, often leading to clutter.
 
 
 
@@ -686,8 +672,8 @@ Evelyn Waugh (novels): English writer famous for satirical works like Brideshead
 
 75
 Vocab
-Do Androids Dream of Electric Sheep?
-Cogitated (KOJ-i-teyt-ed): Past tense of "cogitate," meaning to think deeply or ponder about something.
+Interval Funds May Provide Higher Yields and Diversification:
+Interval funds often seek higher returns or income by investing in less liquid, alternative assets, potentially enhancing portfolio diversification beyond traditional stocks and bonds.
 
 
 
@@ -695,8 +681,10 @@ Cogitated (KOJ-i-teyt-ed): Past tense of "cogitate," meaning to think deeply or 
 
 76
 Vocab
-Interval Funds Invest in Less Liquid Assets:
-Interval funds typically invest in alternative, less liquid assets like real estate, private equity, private debt, and structured credit, granting investors access to opportunities not typically available through conventional investment vehicles.
+Red Side Story, FForde
+Osculation
+Pronunciation: oss-kyoo-LAY-shun
+Definition: The act of kissing; in mathematics, it can also refer to the contact between curves or surfaces.
 
 
 
@@ -813,27 +801,15 @@ Explanation: Extends PowerShell’s functionality and can be shared or reused ac
 
 87
 Powershell Modules
-Connect-AzAccount
-
-Definition: A cmdlet from the Az module that authenticates your session with Azure.
-Example Usage: Connect-AzAccount prompts for Azure credentials to manage Azure resources.
+Ensure scripts use the correct module versions to maintain compatibility.
+Example:
+Import-Module -Name Az -RequiredVersion 5.0.0
 
 
 
 
 
 88
-Powershell Modules
-ActiveDirectory Module
-
-Definition: A module for managing Active Directory objects.
-Explanation: Provides cmdlets to manage users, groups, and other AD components. Example cmdlet: Get-ADUser.
-
-
-
-
-
-89
 Powershell Modules
 Exporting Functions and Cmdlets
 Definition: The process of making functions and cmdlets available to users when a module is imported.
@@ -843,18 +819,41 @@ Explanation: Defined in the module's .psm1 file and specified in the module mani
 
 
 
+89
+Powershell Modules
+Module Version Specification
+
+Definition: The practice of specifying exact module versions when importing to ensure script compatibility.
+Explanation: Done using parameters like -RequiredVersion in Import-Module. Example: Import-Module -Name Az -RequiredVersion 5.0.0.
+
+
+
+
+
 90
 Powershell Modules
-New-AzVM
+Installing a Module:
+Install-Module -Name Az -Scope CurrentUser
 
-Definition: Deploys a new Azure Virtual Machine.
-Example Usage: New-AzVM -ResourceGroupName "TestResourceGroup" -Name "TestVM" -Location "EastUS" -Image "Win2019Datacenter".
+Importing a Module:
+Import-Module -Name Az
 
 
 
 
 
 91
+Powershell Modules
+Get-Help <CmdletName> -Detailed
+
+Definition: Retrieves detailed help information for a specific cmdlet.
+Example Usage: Get-Help Get-AzVM -Detailed provides comprehensive information about the Get-AzVM cmdlet.
+
+
+
+
+
+92
 Powershell Modules
 Get-Command -Module <ModuleName>
 
@@ -865,23 +864,12 @@ Example Usage: Get-Command -Module Az lists all Az module cmdlets.
 
 
 
-92
+93
 Powershell Modules
 Get-Module -ListAvailable
 
 Definition: Lists all modules installed on the system that are available to be imported.
 Explanation: Shows modules in all module paths, regardless of whether they are currently loaded.
-
-
-
-
-
-93
-Powershell Modules
-Module.psm1
-
-Definition: The primary script file for a PowerShell module.
-Explanation: Contains the functions, cmdlets, and other code that define the module's functionality.
 
 
 
@@ -944,10 +932,10 @@ This isolates the logger, ensuring that messages are handled only by its own han
 
 99
 Logging in Python
-Q: What happens if you add multiple handlers to a logger that write to the same file without proper configuration in Python's logging module?
+Q: What should you avoid doing when configuring multiple handlers in Python's logging module?
 
-A: It can lead to duplicate log entries and potential file access conflicts.
-Ensuring that each handler writes to a unique file or managing handler configurations prevents such issues.
+A: Avoid configuring multiple handlers to write to the same log file unless it's intentional and properly managed to prevent conflicts.
+This prevents issues like duplicate log entries and file access errors.
 
 
 
@@ -955,10 +943,10 @@ Ensuring that each handler writes to a unique file or managing handler configura
 
 100
 Logging in Python
-Q: What does logging.disable(logging.CRITICAL) do in Python's logging module?
+Q: How can you include exception tracebacks in your log messages using Python's logging module?
 
-A: It disables all logging messages at or below the CRITICAL level.
-Since CRITICAL is the highest standard level, this effectively silences all log messages.
+A: By setting exc_info=True in logging methods like logger.error().
+This adds the exception traceback to the log message, providing detailed context for errors.
 
 
 
@@ -1021,10 +1009,10 @@ This organization simplifies managing logging settings across different parts of
 
 106
 Logging in Python
-Q: What should you do to ensure that logging.basicConfig() has an effect in Python's logging module?
+Q: How can you dynamically create loggers based on runtime information in Python's logging module?
 
-A: Call it before adding any custom handlers or performing other logging configurations, and ensure that the root logger doesn't already have handlers attached.
-This ensures that basicConfig properly initializes the logging system without being overridden.
+A: By using logging.getLogger() with dynamically constructed names, such as logging.getLogger(f"module_{module_id}").
+This allows for the creation of loggers tailored to specific runtime contexts or modules.
 
 
 
@@ -1043,10 +1031,10 @@ Loguru offers a more user-friendly and modern interface compared to the standard
 
 108
 Logging in Python
-Q: What is one of the best practices for securing log files in Python's logging module?
+Q: What is the role of a Formatter in a logging handler within Python's logging module?
 
-A: Setting appropriate file permissions to restrict unauthorized access.
-This protects sensitive log data from being accessed or tampered with by unauthorized users.
+A: To specify the layout and content of the log messages, such as including timestamps, log levels, and message text.
+Formatters ensure that log messages are consistently structured for readability and analysis.
 
 
 
@@ -1110,8 +1098,8 @@ A command-line interface tool for managing Power Platform resources, including P
 
 115
 Azure Functions + PP365
-Azure Service Principal
-An identity created for use with applications, hosted services, and automated tools to access Azure resources. Service principals enable secure, programmatic access to Azure services, acting as non-human users with specific permissions, essential for authenticating applications like Power Automate and Azure Functions.
+Function App Secrets
+Sensitive information required by Azure Functions, such as API keys or connection strings. Python Azure Functions manage secrets through environment variables, Azure Key Vault integrations, or managed identities, ensuring that sensitive data is stored securely and accessed only by authorized functions.
 
 
 
@@ -1172,9 +1160,8 @@ A: In multi-session environments, FSLogix Profile Containers ensure that user pr
 
 122
 FSLogix
-Cloud Cache uses storage providers based on the order of entries in CCDLocations.
-Storage providers should be listed in order of proximity, then preference.
-Only one (1) provider is used when data is hydrated from the storage provider.
+Q: What happens to a FSLogix Profile Container when a user logs off?
+A: When a user logs off, the changes made to the profile are saved back into the Profile Container (VHDX file), ensuring that all settings and data are retained for the next session.
 
 
 
@@ -1190,8 +1177,9 @@ Using Cloud Cache puts a performance and storage requirement on the virtual mach
 
 124
 FSLogix
-Q: What is the role of Profile Disk Differencing in FSLogix?
-A: Profile Disk Differencing allows FSLogix to create differencing VHDX disks, where changes to the user profile are stored in separate files, reducing the load on the main profile disk. This improves performance by ensuring faster read/write operations and reducing storage overhead.
+Data is written to all storage providers regardless of which provider is used during data hydration.
+Performance (latency, utilization, bottlenecks) of a storage provider affects its sync status with the local copy.
+Having one (1) or more provider that is behind in updates from local cache could be an indicator of an under performing storage provider.
 
 
 
@@ -1250,46 +1238,6 @@ Authentication Flow: Utilizes the Client Credentials Flow with client ID and cli
 
 
 130
-Azure Functions + Visual Studio
-ASP.NET provides comprehensive authentication and authorization mechanisms, such as ASP.NET Identity, for managing users and roles. It supports external authentication providers like Google and Facebook, allowing you to integrate them into your application seamlessly.
-
-
-
-
-
-131
-Azure Functions + Visual Studio
-ASP.NET Razor syntax is a streamlined way to integrate C# code into HTML pages. Razor allows developers to write dynamic web pages by combining HTML and server-side logic seamlessly.
-
-
-
-
-
-132
-Azure Functions + Visual Studio
-ASP.NET supports caching to improve performance by reducing database calls and loading times. You can cache data at different levels, such as in-memory caching, distributed caching, or output caching, to increase the responsiveness of your application.
-
-
-
-
-
-133
-Azure Functions + Visual Studio
-An Azure Function is implemented as a static class (.NET). The class provides a static, asynchronous method named Run, which acts as the entry point for the class. The parameters passed to the Run method provide the context for the trigger. If it's an HTTP trigger, the function receives an HttpRequest object.
-
-
-
-
-
-134
-Azure Functions + Visual Studio
-ASP.NET is a powerful framework for building dynamic web applications and services. It runs on the .NET platform, allowing developers to use multiple languages like C#, F#, and VB.NET to create modern web applications.
-
-
-
-
-
-135
 Python
 Q:
 What is a generator in Python?
@@ -1301,7 +1249,7 @@ A function that allows iteration over a sequence of values one at a time, using 
 
 
 
-136
+131
 Python
 Q:
 Which itertools function can be used to create an iterator that returns elements from the first iterable until it is exhausted, then proceeds to the next iterable?
@@ -1313,7 +1261,7 @@ itertools.chain().
 
 
 
-137
+132
 Python
 Q:
 Explain how itertools.combinations() differs from itertools.permutations().
@@ -1325,7 +1273,7 @@ itertools.combinations(iterable, r) generates all possible combinations of r ele
 
 
 
-138
+133
 Python
 Q:
 How does the iter() function work with iterables?
@@ -1337,31 +1285,31 @@ The iter() function returns an iterator object from an iterable by calling its _
 
 
 
-139
+134
 Python
 Q:
-How do you make a custom object iterable?
+How do you retrieve the next value from a generator named gen?
 
 A:
-By implementing the __iter__() method that returns an iterator (which can be the object itself with a __next__() method).
+Using the built-in next(gen) function.
 
 
 
 
 
-140
+135
 Python
 Q:
-What is the default exit code if a Python script ends without calling sys.exit()?
+Name a built-in context manager in Python and its purpose.
 
 A:
-0 (indicating successful execution).
+open() is a built-in context manager used for opening files. It ensures that the file is properly closed after its block of code is executed.
 
 
 
 
 
-141
+136
 Python
 Q:
 What does itertools.islice() do?
@@ -1373,7 +1321,7 @@ It creates an iterator that returns selected elements from the input iterable by
 
 
 
-142
+137
 Python
 import time
 from contextlib import contextmanager
@@ -1396,19 +1344,19 @@ with timer():
 
 
 
-143
+138
 Python
 Q:
-What are the two essential methods that an iterator class must implement?
+What is the main advantage of using generators over lists?
 
 A:
-__iter__() and __next__().
+Generators are memory-efficient as they generate items on-the-fly and don't store the entire sequence in memory, making them faster for large datasets.
 
 
 
 
 
-144
+139
 Python
 Q:
 What function from the os module is used to iterate through directories and files?
@@ -1420,19 +1368,18 @@ os.walk()
 
 
 
-145
+140
 Python
-Q:
-Explain the concept of generator pipelines.
+Which pathlib method can be used to iterate recursively through all files matching a pattern?
 
-A:
-Generator pipelines involve chaining multiple generators together, where each generator processes data and passes it to the next, enabling efficient and modular data processing.
-
+for file in Path('/path/to/directory').rglob('*.txt'):
+    print(file)
 
 
 
 
-146
+
+141
 Python
 Q:
 How does the os.walk() function handle permission errors by default?
@@ -1444,7 +1391,7 @@ It can be configured to print an error message and continue by using the onerror
 
 
 
-147
+142
 Python
 Q:
 What does sys.exit(1) signify in a Python script?
@@ -1456,7 +1403,7 @@ An error occurred during execution.
 
 
 
-148
+143
 Python
 Q:
 Which library is suggested for adding a progress bar to Python scripts?
@@ -1468,19 +1415,19 @@ tqdm
 
 
 
-149
+144
 Python
 Q:
-Which Python module is commonly used to set exit codes?
+What method is used to gracefully terminate a generator?
 
 A:
-sys
+The .close() method.
 
 
 
 
 
-150
+145
 Python
 Q:
 What method can be used to send a value into a generator, allowing it to receive data?
@@ -1492,43 +1439,47 @@ The .send(value) method.
 
 
 
+146
+Azure Functions + Visual Studio
+ASP.NET provides comprehensive authentication and authorization mechanisms, such as ASP.NET Identity, for managing users and roles. It supports external authentication providers like Google and Facebook, allowing you to integrate them into your application seamlessly.
+
+
+
+
+
+147
+Azure Functions + Visual Studio
+ASP.NET Razor syntax is a streamlined way to integrate C# code into HTML pages. Razor allows developers to write dynamic web pages by combining HTML and server-side logic seamlessly.
+
+
+
+
+
+148
+Azure Functions + Visual Studio
+ASP.NET supports caching to improve performance by reducing database calls and loading times. You can cache data at different levels, such as in-memory caching, distributed caching, or output caching, to increase the responsiveness of your application.
+
+
+
+
+
+149
+Azure Functions + Visual Studio
+An Azure Function is implemented as a static class (.NET). The class provides a static, asynchronous method named Run, which acts as the entry point for the class. The parameters passed to the Run method provide the context for the trigger. If it's an HTTP trigger, the function receives an HttpRequest object.
+
+
+
+
+
+150
+Azure Functions + Visual Studio
+ASP.NET is a powerful framework for building dynamic web applications and services. It runs on the .NET platform, allowing developers to use multiple languages like C#, F#, and VB.NET to create modern web applications.
+
+
+
+
+
 151
-DNS
-TSIG (Transaction SIGnature)
-A security mechanism used to authenticate DNS messages, ensuring that zone transfers and other DNS communications are from trusted sources. TSIG uses shared secret keys and cryptographic signatures to verify the authenticity of DNS transactions.
-
-
-
-
-
-152
-DNS
-Active Directory-Integrated Zones
-DNS zones that store their data within the Active Directory database. This integration allows for secure dynamic updates and automatic replication of DNS data across all domain controllers, enhancing security and redundancy.
-
-
-
-
-
-153
-DNS
-DNS Scavenging
-An automated process in Windows DNS that removes stale or outdated DNS records. It helps maintain DNS integrity by deleting records no longer valid, such as those from devices removed from the network or with changed IP addresses.
-
-
-
-
-
-154
-DNS
-No-Refresh Interval
-In DNS scavenging, the period during which the timestamp on a DNS record cannot be updated. It prevents excessive DNS updates, helping determine when a record becomes stale and eligible for removal during scavenging.
-
-
-
-
-
-155
 Terraform
 Debugging Tips:
 Check Quotes: Ensure that you use double quotes for strings that require interpolation.
@@ -1539,7 +1490,7 @@ Review Variable References: Confirm that all variable references use the correct
 
 
 
-156
+152
 Terraform
 Variable Interpolation:
 The process of embedding variable values into strings. This is done using the ${} syntax inside double quotes.
@@ -1550,41 +1501,38 @@ Example:
 
 
 
-157
+153
 Terraform
-Remote Backends and Interpolation:
-Definition: Terraform can store state remotely (e.g., in AWS S3, Azure Blob Storage). Variable interpolation may be used to configure these backends dynamically.
+Configuration Blocks:
+These are the building blocks of Terraform code, such as resource, module, provider, and output blocks.
+
+
+
+
+
+154
+Terraform
+Debugging with TF_LOG:
+
+Definition: Setting the TF_LOG environment variable enables detailed logging for troubleshooting.
+Usage: Helps trace issues during plan or apply phases by providing verbose output.
+
 Example:
-
-terraform {
-  backend "s3" {
-    bucket = var.state_bucket
-    key    = "path/to/my/key"
-    region = var.region
-  }
-}
+export TF_LOG=DEBUG
 
 
 
 
 
-158
+155
 Terraform
-Network Infrastructure Automation (NIA) allows you to safely approve the changes that your applications require without having to manually translate tickets from developers into the changes you think their applications need.
+At a large organization, your centralized operations team may get many repetitive infrastructure requests. You can use Terraform to build a "self-serve" infrastructure model that lets product teams manage their own infrastructure independently.
 
 
 
 
 
-159
-Terraform
-Ticket-based review processes are a bottleneck that can slow down development. Instead, you can use Sentinel, a policy-as-code framework, to automatically enforce compliance and governance policies before Terraform makes infrastructure changes. Sentinel policies are available in Terraform Enterprise and HCP Terraform.
-
-
-
-
-
-160
+156
 Terraform
 Splat Operator:
 Definition: The splat operator (*) extracts attributes from every element in a list of resources.
@@ -1597,7 +1545,7 @@ Example:
 
 
 
-161
+157
 Terraform
 Terraform Console:
 Definition: An interactive command-line tool that lets you experiment with expressions and inspect your current Terraform state.
@@ -1607,24 +1555,21 @@ Usage: Run terraform console to evaluate expressions, test functions, or debug v
 
 
 
-162
+158
 Terraform
-Local Values:
-Definition: Local values allow you to define computed variables within a configuration to simplify expressions or avoid repetition.
-Usage: Useful for intermediate calculations or to centralize common values.
+For Expressions:
 
+Definition: These are used to transform or filter collections (lists or maps) inline.
+Usage: Useful for generating new lists or maps based on existing ones without using external loops.
 Example:
 
-locals {
-  app_name = "myapp"
-  instance_count = length(var.instance_ids)
-}
+[for instance in var.instances : instance.id]
 
 
 
 
 
-163
+159
 Terraform
 Variable Declaration:
 Use the variable block to declare variables. For example:
@@ -1638,7 +1583,103 @@ variable "env" {
 
 
 
+160
+DNS
+TSIG (Transaction SIGnature)
+A security mechanism used to authenticate DNS messages, ensuring that zone transfers and other DNS communications are from trusted sources. TSIG uses shared secret keys and cryptographic signatures to verify the authenticity of DNS transactions.
+
+
+
+
+
+161
+DNS
+Active Directory-Integrated Zones
+DNS zones that store their data within the Active Directory database. This integration allows for secure dynamic updates and automatic replication of DNS data across all domain controllers, enhancing security and redundancy.
+
+
+
+
+
+162
+DNS
+DNS Scavenging
+An automated process in Windows DNS that removes stale or outdated DNS records. It helps maintain DNS integrity by deleting records no longer valid, such as those from devices removed from the network or with changed IP addresses.
+
+
+
+
+
+163
+DNS
+No-Refresh Interval
+In DNS scavenging, the period during which the timestamp on a DNS record cannot be updated. It prevents excessive DNS updates, helping determine when a record becomes stale and eligible for removal during scavenging.
+
+
+
+
+
 164
+Open Source/GitHub
+Contributor
+
+An individual who contributes code, documentation, or other resources to an open source project, helping to improve and maintain the project’s quality.
+
+
+
+
+
+165
+Open Source/GitHub
+Code Review
+
+The process where project maintainers and contributors examine changes proposed in a pull request to ensure code quality, functionality, and adherence to guidelines.
+
+
+
+
+
+166
+Open Source/GitHub
+Hotfix
+
+An urgent fix applied to a project to resolve critical bugs or security vulnerabilities, typically merged quickly into the main codebase.
+
+
+
+
+
+167
+Open Source/GitHub
+PEP 8
+
+Python Enhancement Proposal 8, the style guide for writing clean and readable Python code, outlining conventions for code layout and formatting.
+
+
+
+
+
+168
+Open Source/GitHub
+Pull Request (PR)
+
+A request to merge changes from your fork or branch into the original repository, facilitating code review and collaboration with project maintainers.
+
+
+
+
+
+169
+Open Source/GitHub
+Contribution Guidelines
+
+A set of rules and best practices outlined by a project to ensure consistent and quality contributions from all contributors, often found in CONTRIBUTING.md.
+
+
+
+
+
+170
 Debugging in VS Code
 Debugger API
 An application programming interface (API) that allows developers to extend or automate debugging tools, often used to integrate debugging features into custom workflows or external tools.
@@ -1647,7 +1688,7 @@ An application programming interface (API) that allows developers to extend or a
 
 
 
-165
+171
 Debugging in VS Code
 Watchpoint
 A debugging feature that pauses execution when the value of a specific variable changes, similar to a breakpoint but focused on value changes rather than specific lines of code.
@@ -1656,7 +1697,7 @@ A debugging feature that pauses execution when the value of a specific variable 
 
 
 
-166
+172
 Debugging in VS Code
 1. Debugger
 A tool used to inspect, control, and modify the execution of a program in order to identify and fix bugs.
@@ -1667,16 +1708,16 @@ A marker set in a program that causes the execution to pause so that the develop
 
 
 
-167
+173
 Debugging in VS Code
-Step Out
-A debugging feature that lets you exit the current function and return to the function that called it.
+Symbolic Debugging
+A debugging technique that uses debug symbols (which provide additional information like variable names, function names, and line numbers) to make debugging more understandable and precise, often used in conjunction with compiled languages.
 
 
 
 
 
-168
+174
 Debugging in VS Code
 Stack Trace
 A report that provides detailed information about the sequence of function calls and the state of the program at the point where an error occurred. It's often used to diagnose issues in the execution flow.
@@ -1685,7 +1726,7 @@ A report that provides detailed information about the sequence of function calls
 
 
 
-169
+175
 Debugging in VS Code
 Live Debugging
 A type of debugging where changes are made to the program and tested while it is running in a live environment, often used in web development and real-time applications.
@@ -1694,70 +1735,10 @@ A type of debugging where changes are made to the program and tested while it is
 
 
 
-170
+176
 Debugging in VS Code
 Watch Expression
 A tool in a debugger that allows you to monitor the value of a specific variable or expression during execution.
-
-
-
-
-
-171
-Open Source/GitHub
-Contributor
-
-An individual who contributes code, documentation, or other resources to an open source project, helping to improve and maintain the project’s quality.
-
-
-
-
-
-172
-Open Source/GitHub
-Code Review
-
-The process where project maintainers and contributors examine changes proposed in a pull request to ensure code quality, functionality, and adherence to guidelines.
-
-
-
-
-
-173
-Open Source/GitHub
-Hotfix
-
-An urgent fix applied to a project to resolve critical bugs or security vulnerabilities, typically merged quickly into the main codebase.
-
-
-
-
-
-174
-Open Source/GitHub
-Test Suite
-
-A collection of automated tests that verify the functionality and integrity of a project’s code, ensuring that changes do not introduce new bugs.
-
-
-
-
-
-175
-Open Source/GitHub
-Pull Request (PR)
-
-A request to merge changes from your fork or branch into the original repository, facilitating code review and collaboration with project maintainers.
-
-
-
-
-
-176
-Open Source/GitHub
-Contribution Guidelines
-
-A set of rules and best practices outlined by a project to ensure consistent and quality contributions from all contributors, often found in CONTRIBUTING.md.
 
 
 
@@ -2020,17 +2001,26 @@ Implemented through services like Return Path and Feedback Loop (FBL) agreements
 
 203
 Email Auth and Security
-MX Toolbox
+p=none
 
-An online suite of tools for diagnosing and analyzing DNS records.
-Checks SPF, DKIM, and DMARC configurations.
-Helps administrators verify the correctness of their email authentication setups.
+A DMARC policy action.
+Requests no specific action be taken on unauthenticated emails.
+Used for monitoring and gathering data without affecting email delivery.
 
 
 
 
 
 204
+RAG Project
+ASGI
+Asynchronous Server Gateway Interface — allows async Python web apps to talk to servers. Quart apps are ASGI apps.
+
+
+
+
+
+205
 RAG Project
 async / await
 Keywords in Python for writing non-blocking, asynchronous code.
@@ -2039,7 +2029,16 @@ Keywords in Python for writing non-blocking, asynchronous code.
 
 
 
-205
+206
+RAG Project
+Mock
+A fake object or function that replaces real dependencies during testing.
+
+
+
+
+
+207
 RAG Project
 Fixture
 A reusable setup block in pytest that prepares resources (e.g., a test client or mock blob).
@@ -2048,16 +2047,7 @@ A reusable setup block in pytest that prepares resources (e.g., a test client or
 
 
 
-206
-RAG Project
-io.BytesIO()
-In-memory file-like object — often used to hold a file before sending it via HTTP.
-
-
-
-
-
-207
+208
 RAG Project
 Blueprint
 A modular way to organize route handlers in Quart/Flask apps. Lets you split up your app by function (e.g., chat, upload).
@@ -2066,19 +2056,10 @@ A modular way to organize route handlers in Quart/Flask apps. Lets you split up 
 
 
 
-208
-RAG Project
-OIDC / Entra ID
-Authentication standards used by Azure for signing in users.
-
-
-
-
-
 209
 RAG Project
-auth_client
-A special fixture often defined in conftest.py that returns a test client with fake authentication already set up.
+Quart
+A Python web framework like Flask but with full support for async/await. Used to build async HTTP APIs.
 
 
 
@@ -2086,8 +2067,8 @@ A special fixture often defined in conftest.py that returns a test client with f
 
 210
 RAG Project
-test_client()
-A method on a Quart app that gives you a fake browser-like interface to make test requests like client.get("/endpoint").
+Config Object
+A centralized dictionary or structure that stores runtime settings and credentials for your app.
 
 
 
@@ -2095,23 +2076,14 @@ A method on a Quart app that gives you a fake browser-like interface to make tes
 
 211
 RAG Project
-Object ID (OID)
-Unique identifier for a user in Azure AD, used to scope their files or actions.
+__init__.py
+A special file that makes a directory a Python package (so it can be imported).
 
 
 
 
 
 212
-Azure DevOps Pipelines
-What is the purpose of the dependsOn keyword in Azure DevOps YAML pipelines?
-Answer: It specifies the order in which stages or jobs will execute.
-
-
-
-
-
-213
 Azure DevOps Pipelines
 How can you specify which agent pool should be used in a YAML pipeline file?
 Answer: pool: <agent_pool_name>
@@ -2120,10 +2092,19 @@ Answer: pool: <agent_pool_name>
 
 
 
+213
+Azure DevOps Pipelines
+What does the resources keyword define in a YAML pipeline?
+Answer: The resources keyword allows you to define external resources such as repositories, containers, or pipelines that a pipeline will use or depend on.
+
+
+
+
+
 214
 Azure DevOps Pipelines
-In Azure DevOps, what command is used to run a pipeline manually from the Azure DevOps portal?
-Answer: "Run pipeline" button in the Azure DevOps portal.
+What is the purpose of the trigger: none keyword in an Azure DevOps YAML pipeline?
+Answer: It disables automatic triggers, meaning the pipeline will not run automatically on code changes. This is useful for manual execution or scheduled runs.
 
 
 
@@ -2131,8 +2112,8 @@ Answer: "Run pipeline" button in the Azure DevOps portal.
 
 215
 Azure DevOps Pipelines
-How do you specify a condition for a job or stage to run in an Azure DevOps YAML pipeline?
-Answer: You use the condition keyword, such as condition: succeeded() to define when a job should run based on the status of previous jobs.
+What does the trigger keyword do in an Azure DevOps YAML pipeline?
+Answer: It defines the branches or events that will cause the pipeline to run, such as a commit to a specific branch.
 
 
 
@@ -2140,8 +2121,8 @@ Answer: You use the condition keyword, such as condition: succeeded() to define 
 
 216
 Azure DevOps Pipelines
-How can you pass secrets securely in Azure DevOps YAML pipelines?
-Answer: You pass secrets using pipeline variables marked as secret in Azure DevOps. They are referenced in the YAML file as $(secret_variable) but are masked and not exposed in logs.
+How do you use stages with dependencies in Azure DevOps YAML pipelines?
+Answer: You can define dependsOn between stages to specify the execution order. Stages will run sequentially based on the dependencies defined, ensuring that one stage only runs after another has completed.
 
 
 
@@ -2149,8 +2130,8 @@ Answer: You pass secrets using pipeline variables marked as secret in Azure DevO
 
 217
 Azure DevOps Pipelines
-What is the purpose of the 'checkout' step in an Azure DevOps YAML pipeline?
-Answer: It checks out the source code from the repository for use in the pipeline.
+What is the main purpose of a YAML file in Azure DevOps pipelines?
+Answer: To define and configure pipeline processes, including steps, tasks, and environments.
 
 
 
@@ -2173,8 +2154,8 @@ trigger:
 
 219
 Azure DevOps Pipelines
-How do you add a manual approval gate before a pipeline proceeds to the next stage?
-Answer: Set a ApprovalRequired flag on the pipeline's stages.
+What is the default trigger for a YAML-based pipeline in Azure DevOps?
+Answer: A trigger based on code changes in a Git repository.
 
 
 
@@ -2182,32 +2163,14 @@ Answer: Set a ApprovalRequired flag on the pipeline's stages.
 
 220
 Azure DevOps Pipelines
-What is the purpose of the trigger: none keyword in an Azure DevOps YAML pipeline?
-Answer: It disables automatic triggers, meaning the pipeline will not run automatically on code changes. This is useful for manual execution or scheduled runs.
+What does the 'variables' keyword do in a YAML pipeline?
+Answer: It declares the variables that can be used throughout the pipeline.
 
 
 
 
 
 221
-Azure AD Authentication
-Managed Identities
-Azure-managed identities used by Azure resources (like VMs) to authenticate to other Azure services, removing the need to manage credentials.
-
-
-
-
-
-222
-Azure AD Authentication
-Azure AD Roles vs Azure Resource Roles
-Azure AD Roles manage access to directory functions (e.g., Global Administrator), while Resource Roles control access to Azure resources (e.g., Contributor).
-
-
-
-
-
-223
 Azure AD Authentication
 Service Principal Authentication Methods
 Authentication for service principals can be done using Client Secret, Client Certificate, or Managed Identity, which provides secure, credential-free access to Azure services.
@@ -2216,10 +2179,28 @@ Authentication for service principals can be done using Client Secret, Client Ce
 
 
 
+222
+Azure AD Authentication
+Role Assignment Propagation
+Role permissions may take time to propagate across Azure, so changes in role assignments might not be immediately reflected in access control.
+
+
+
+
+
+223
+Azure AD Authentication
+App Registration
+Registers an app in Azure AD, creating its identity to authenticate with Azure services. Allows the app to access resources and interact with Azure services.
+
+
+
+
+
 224
 Azure AD Authentication
-Built-In Roles
-Predefined roles like Owner, Contributor, and Reader that grant specific permissions to manage Azure resources at various scopes.
+Role Assignment
+Links a principal (user, group, service principal) to a role at a defined scope, granting specific permissions to interact with Azure resources.
 
 
 
@@ -2235,182 +2216,6 @@ An identity (user, group, service principal) that is granted access to Azure res
 
 
 226
-JavaScript Concepts
-Vuex: A state management pattern and library for Vue.js applications, centralizing state and enabling predictable state mutations.
-
-
-
-
-
-227
-JavaScript Concepts
-Vite: A modern build tool optimized for speed and performance, providing instant server start and efficient hot module replacement.
-
-
-
-
-
-228
-JavaScript Concepts
-Browser Storage (localStorage, sessionStorage, IndexedDB`): Mechanisms for storing data on the client side, enabling persistent and session-based data management.
-
-
-
-
-
-229
-JavaScript Concepts
-Prettier: A code formatter that enforces consistent styling across codebases, automatically formatting code on save or commit.
-
-
-
-
-
-230
-JavaScript Concepts
-ESLint: A linter tool for identifying and fixing problematic patterns in JavaScript code, enforcing coding standards and best practices.
-
-
-
-
-
-231
-JavaScript Concepts
-Variable Declaration: Use let and const for variable declarations instead of var. let allows you to declare variables that are limited to the scope of a block statement, while const is used for variables that should not be reassigned.
-
-
-
-
-
-232
-JavaScript Concepts
-Dependency Injection: A design pattern used in frameworks like Angular and NestJS to manage and inject dependencies, promoting modularity and testability.
-
-
-
-
-
-233
-JavaScript Concepts
-Mocha: A flexible testing framework for Node.js, allowing developers to choose assertion libraries like Chai for writing tests.
-
-
-
-
-
-234
-JavaScript Concepts
-Event Loop: The mechanism that handles asynchronous callbacks in JavaScript, ensuring non-blocking execution by managing the call stack and callback queue.
-
-
-
-
-
-235
-JavaScript Concepts
-Server-Side Rendering (SSR): Rendering web pages on the server before sending them to the client, improving performance and SEO.
-
-
-
-
-
-236
-JavaScript Concepts
-Heroku: A cloud platform for deploying, managing, and scaling Node.js applications with support for various add-ons and integrations.
-
-
-
-
-
-237
-JavaScript Concepts
-Arrow Functions: Arrow functions provide a concise syntax for writing functions. They are especially useful for short functions and callbacks. For example:
-
-const add = (a, b) => a + b;
-
-
-
-
-
-238
-JavaScript Concepts
-Virtual DOM: An in-memory representation of the real DOM used by libraries like React to optimize and batch DOM updates efficiently.
-
-
-
-
-
-239
-JavaScript Concepts
-Switch Statement
-switch (expression) {
-    case value1:
-        // Code to execute if expression === value1
-        break;
-    case value2:
-        // Code to execute if expression === value2
-        break;
-    // Add more cases as needed
-    default:
-        // Code to execute if none of the cases match
-}
-
-
-
-
-
-240
-JavaScript Concepts
-Responsive Design: Designing web applications to adapt seamlessly across various device sizes and screen resolutions for optimal user experience.
-
-
-
-
-
-241
-JavaScript Concepts
-RESTful APIs: Architectural style for designing networked applications, using HTTP requests to access and manipulate data through standard endpoints.
-
-
-
-
-
-242
-JavaScript Concepts
-While Loop
-while (condition) {
-    // Code to execute as long as condition is true
-}
-
-
-
-
-
-243
-JavaScript Concepts
-Destructuring: Extracting values from arrays or objects into distinct variables using a concise syntax.
-
-
-
-
-
-244
-JavaScript Concepts
-Yarn: An alternative package manager to npm, offering faster installs and more reliable dependency management through lock files.
-
-
-
-
-
-245
-JavaScript Concepts
-Security Practices: Implementing measures to protect applications from vulnerabilities like Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF).
-
-
-
-
-
-246
 Azure Developer Associate
 Q: What Azure Redis tier offers a single-node setup with no SLA?
 A: Basic tier.
@@ -2419,7 +2224,7 @@ A: Basic tier.
 
 
 
-247
+227
 Azure Developer Associate
 Azure blob rule filter type:
 prefixMatch	
@@ -2430,7 +2235,7 @@ prefixMatch
 
 
 
-248
+228
 Azure Developer Associate
 Azure blob rule filter type:
 blobIndexMatch
@@ -2441,7 +2246,7 @@ blobIndexMatch
 
 
 
-249
+229
 Azure Developer Associate
 Q: Which Azure Cache for Redis tier is the first to support data persistence?
 A: The Premium tier.
@@ -2450,7 +2255,7 @@ A: The Premium tier.
 
 
 
-250
+230
 Azure Developer Associate
 Rehydration priority options include:
 
@@ -2460,7 +2265,7 @@ High priority: The rehydration request is prioritized over standard priority req
 
 
 
-251
+231
 Azure Developer Associate
 Azure blob storage rule run conditions
   daysAfterModificationGreaterThan
@@ -2472,24 +2277,25 @@ Azure blob storage rule run conditions
 
 
 
-252
+232
 Azure Developer Associate
-When you rehydrate a blob, you can set the priority for the rehydration operation via the optional x-ms-rehydrate-priority header on a Set Blob Tier or Copy Blob/Copy Blob From URL operation.
+Q: What is the maximum cache size per node available in the Premium tier of Azure Cache for Redis?
+A: Over 1.2 TB.
 
 
 
 
 
-253
+233
 Azure Developer Associate
-Q: How does Standard Tier provide high availability?
-A: Through a Primary/Replica architecture with automatic failover.
+Q: Name 3 common use cases for Azure Cache for Redis.
+A: Session storage, API response caching, real-time leaderboards.
 
 
 
 
 
-254
+234
 Azure Developer Associate
 When you copy an archived blob to a new blob in an online tier, the source blob remains unmodified in the archive tier. You must copy the archived blob to a new blob with a different name or to a different container. You can't overwrite the source blob by copying to the same blob.
 
@@ -2497,7 +2303,7 @@ When you copy an archived blob to a new blob in an online tier, the source blob 
 
 
 
-255
+235
 Azure Developer Associate
 Q: Which tier of Azure Cache for Redis introduces clustering for horizontal scaling?
 A: The Premium tier.
@@ -2506,7 +2312,7 @@ A: The Premium tier.
 
 
 
-256
+236
 Azure Developer Associate
 What must be configured on Application Gateway to work properly with App Service behind WAF?
 Custom health probes
@@ -2515,7 +2321,7 @@ Custom health probes
 
 
 
-257
+237
 Azure Developer Associate
 Which App Service tiers support auto-scaling?
 Standard, Premium, and Isolated tiers
@@ -2524,7 +2330,7 @@ Standard, Premium, and Isolated tiers
 
 
 
-258
+238
 Azure Developer Associate
 Q: What should you monitor in production Redis usage?
 A: Memory usage, key eviction rates, connection count, latency, hit/miss ratio.
@@ -2533,7 +2339,7 @@ A: Memory usage, key eviction rates, connection count, latency, hit/miss ratio.
 
 
 
-259
+239
 Azure Developer Associate
 Q: What are key benefits of using Redis?
 A: Ultra-fast performance, low latency, reduced database load, and real-time data access.
@@ -2542,7 +2348,7 @@ A: Ultra-fast performance, low latency, reduced database load, and real-time dat
 
 
 
-260
+240
 Azure Developer Associate
 What unique benefit does App Service Environment (ASE) offer over standard App Service plans?
 A dedicated, isolated network environment with high-scale capabilities
@@ -2551,7 +2357,7 @@ A dedicated, isolated network environment with high-scale capabilities
 
 
 
-261
+241
 Azure Developer Associate
 Which App Service deployment method enables CI/CD integration with GitHub or Azure Repos?
 Continuous Deployment (CI/CD)
@@ -2560,7 +2366,7 @@ Continuous Deployment (CI/CD)
 
 
 
-262
+242
 Azure Developer Associate
 Q: Can Redis be used as a primary database?
 A: Not recommended — Redis is best used as a cache, not a durable data store.
@@ -2569,7 +2375,7 @@ A: Not recommended — Redis is best used as a cache, not a durable data store.
 
 
 
-263
+243
 Azure Developer Associate
 Which service provides centralized telemetry and query support for logs and metrics across Azure services?
 Azure Monitor Logs (Log Analytics)
@@ -2578,16 +2384,16 @@ Azure Monitor Logs (Log Analytics)
 
 
 
-264
+244
 Azure Developer Associate
-What happens if one app in an App Service Plan consumes too much CPU?
-It can impact the performance of other apps in the same plan
+Q: Which tiers of Azure Cache for Redis are based on Redis Enterprise from Redis Inc.?
+A: Enterprise and Enterprise Flash tiers.
 
 
 
 
 
-265
+245
 Azure Developer Associate
 What Azure feature should you use to securely store secrets like connection strings?
 Azure Key Vault with Managed Identity
@@ -2596,10 +2402,178 @@ Azure Key Vault with Managed Identity
 
 
 
-266
+246
 Azure Developer Associate
 Which SDK allows you to log custom events in your App Service app for performance and error tracking?
 Application Insights SDK
+
+
+
+
+
+247
+JavaScript Concepts
+Vuex: A state management pattern and library for Vue.js applications, centralizing state and enabling predictable state mutations.
+
+
+
+
+
+248
+JavaScript Concepts
+Vite: A modern build tool optimized for speed and performance, providing instant server start and efficient hot module replacement.
+
+
+
+
+
+249
+JavaScript Concepts
+Browser Storage (localStorage, sessionStorage, IndexedDB`): Mechanisms for storing data on the client side, enabling persistent and session-based data management.
+
+
+
+
+
+250
+JavaScript Concepts
+Prettier: A code formatter that enforces consistent styling across codebases, automatically formatting code on save or commit.
+
+
+
+
+
+251
+JavaScript Concepts
+ESLint: A linter tool for identifying and fixing problematic patterns in JavaScript code, enforcing coding standards and best practices.
+
+
+
+
+
+252
+JavaScript Concepts
+Variable Declaration: Use let and const for variable declarations instead of var. let allows you to declare variables that are limited to the scope of a block statement, while const is used for variables that should not be reassigned.
+
+
+
+
+
+253
+JavaScript Concepts
+Angular: A comprehensive framework by Google for building large-scale applications, utilizing TypeScript, two-way data binding, and dependency injection.
+
+
+
+
+
+254
+JavaScript Concepts
+Testing Library: A family of libraries that encourage testing best practices by focusing on user interactions rather than implementation details.
+
+
+
+
+
+255
+JavaScript Concepts
+Event Loop: The mechanism that handles asynchronous callbacks in JavaScript, ensuring non-blocking execution by managing the call stack and callback queue.
+
+
+
+
+
+256
+JavaScript Concepts
+Server-Side Rendering (SSR): Rendering web pages on the server before sending them to the client, improving performance and SEO.
+
+
+
+
+
+257
+JavaScript Concepts
+Heroku: A cloud platform for deploying, managing, and scaling Node.js applications with support for various add-ons and integrations.
+
+
+
+
+
+258
+JavaScript Concepts
+Arrow Functions: Arrow functions provide a concise syntax for writing functions. They are especially useful for short functions and callbacks. For example:
+
+const add = (a, b) => a + b;
+
+
+
+
+
+259
+JavaScript Concepts
+Virtual DOM: An in-memory representation of the real DOM used by libraries like React to optimize and batch DOM updates efficiently.
+
+
+
+
+
+260
+JavaScript Concepts
+Async/Await: Syntax for handling asynchronous operations more readably, allowing async functions to pause execution with await until a Promise resolves.
+
+
+
+
+
+261
+JavaScript Concepts
+Responsive Design: Designing web applications to adapt seamlessly across various device sizes and screen resolutions for optimal user experience.
+
+
+
+
+
+262
+JavaScript Concepts
+Netlify: A platform for deploying static sites and serverless functions, providing continuous deployment and built-in CI/CD pipelines.
+
+
+
+
+
+263
+JavaScript Concepts
+While Loop
+while (condition) {
+    // Code to execute as long as condition is true
+}
+
+
+
+
+
+264
+JavaScript Concepts
+Array reverse Function: The reverse method reverses the order of the elements in an array in place.
+let array = [1, 2, 3, 4, 5];
+array.reverse();
+console.log(array); // Output: [5, 4, 3, 2, 1]
+
+
+
+
+
+265
+JavaScript Concepts
+Context API: A React feature that provides a way to pass data through the component tree without prop drilling, useful for simple state management.
+
+
+
+
+
+266
+JavaScript Concepts
+Security Practices: Implementing measures to protect applications from vulnerabilities like Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF).
 
 
 
@@ -2697,8 +2671,8 @@ A SharePoint component where documents are stored, managed, and shared. Examples
 
 277
 PnP Powershell
-AADSTS7000218 Error
-An Azure AD error stating that the authentication request lacks a client_assertion or client_secret, preventing successful token acquisition.
+Add-PnPFile (PnP.PowerShell)
+Uploads a file to a specified SharePoint document library or folder. Supports parameters like -Path for local files and -Stream for uploading via a data stream.
 
 
 
@@ -2706,8 +2680,8 @@ An Azure AD error stating that the authentication request lacks a client_asserti
 
 278
 PnP Powershell
-Admin Consent
-Approval granted by an Azure AD administrator for an application to access certain resources or perform specific actions, essential for elevated API permissions.
+Client Secret (client_secret)
+A confidential key associated with an Azure AD application, used alongside the client ID to authenticate the application in secure authentication flows.
 
 
 
@@ -2787,8 +2761,9 @@ Impresario: A manager or producer of theatrical, musical, or other artistic perf
 
 286
 Vocab
-Interval Funds Carry Redemption Risk:
-Because interval funds permit redemptions only periodically—and often limit the total amount redeemable in each interval (commonly 5%-25% of assets)—investors may face difficulty liquidating positions quickly if the need arises.
+Jane Eyre
+Beldame
+(BEL-dame) An old woman, sometimes used respectfully for a grandmother, or pejoratively to describe a hag or crone.
 
 
 
@@ -2806,8 +2781,9 @@ Fillip
 
 288
 Vocab
-Do Androids Dream of Electric Sheep?
-Inguinal region (ING-gwuh-nuhl REE-juhn): The area of the lower abdomen on either side of the pubic bone, also known as the groin, where the thigh meets the trunk.
+Jane Eyre
+Basin and Ewer
+(BAY-sin and YOO-er) A bowl (basin) and jug (ewer) used together for hand or face washing, commonly found before the advent of modern plumbing.
 
 
 
@@ -2839,7 +2815,7 @@ Example: His speech was full of anacoluthons, making it difficult to follow his 
 291
 Vocab
 Lost in a Good Book
-Diatryma:  A genus of large flightless Eocene birds from Wyoming and New Mexico having much reduced wings, large head and powerful beak, and long massive legs and constituting with extinct related forms (as Gastornis) an order of birds probably most nearly related to the surviving cariamas and bustards
+Perfidious: Deceitful and untrustworthy, often describing betrayal or disloyalty.
 
 
 
@@ -2866,8 +2842,10 @@ Spoony
 
 294
 Vocab
-Structured Credit Combines Debt Instruments:
-Structured credit refers to complex financial products created by pooling and repackaging loans, bonds, or other debt obligations, then dividing them into distinct risk-and-return segments called tranches.
+Red Side Story, FForde
+Semolina
+Pronunciation: sem-uh-LEE-nuh
+Definition: A coarse flour made from durum wheat, commonly used in making pasta and couscous.
 
 
 
@@ -2911,8 +2889,13 @@ Definition: To partially boil food as a preliminary step before further cooking.
 
 298
 Vocab
-Interval Funds May Provide Higher Yields and Diversification:
-Interval funds often seek higher returns or income by investing in less liquid, alternative assets, potentially enhancing portfolio diversification beyond traditional stocks and bonds.
+Palimpsest
+noun
+SPA: PAL-imps-est
+IPA: /ˈpælɪmpsɛst/
+
+A manuscript or document that has been written on, scraped off, and reused, often revealing traces of previous writings beneath the surface.
+Example: Archaeologists discovered an ancient palimpsest where earlier texts were still legible under the more recent writing.
 
 
 
@@ -2920,10 +2903,8 @@ Interval funds often seek higher returns or income by investing in less liquid, 
 
 299
 Vocab
-Red Side Story, FForde
-Osculation
-Pronunciation: oss-kyoo-LAY-shun
-Definition: The act of kissing; in mathematics, it can also refer to the contact between curves or surfaces.
+Interval Funds Invest in Less Liquid Assets:
+Interval funds typically invest in alternative, less liquid assets like real estate, private equity, private debt, and structured credit, granting investors access to opportunities not typically available through conventional investment vehicles.
 
 
 
@@ -3029,11 +3010,10 @@ Explanation: Provides cmdlets to interact with Azure services. Example cmdlet: G
 
 309
 Powershell Modules
-Listing All Available Modules:
-Get-Module -ListAvailable | Select-Object Name, Version, Path
+Module Scope Management
 
-Updating All Installed Modules:
-Get-InstalledModule | Update-Module
+Definition: Controlling the installation and availability scope of modules.
+Explanation: Deciding between CurrentUser and AllUsers scopes based on requirements and permissions.
 
 
 
@@ -3041,10 +3021,10 @@ Get-InstalledModule | Update-Module
 
 310
 Powershell Modules
-Module Scope Management
+PSReadLine Module
 
-Definition: Controlling the installation and availability scope of modules.
-Explanation: Deciding between CurrentUser and AllUsers scopes based on requirements and permissions.
+Definition: A module that enhances the command-line editing experience in PowerShell.
+Explanation: Provides features like syntax highlighting, auto-completion, and customizable key bindings.
 
 
 
@@ -3084,10 +3064,10 @@ Explanation: Contains compiled code (e.g., C#) that can be used by PowerShell mo
 
 314
 Powershell Modules
-Module Manifest Properties
+New-AzVM
 
-Definition: Specific attributes defined in a .psd1 file that describe module metadata.
-Explanation: Includes properties like ModuleVersion, Author, RequiredModules, FunctionsToExport, etc.
+Definition: Deploys a new Azure Virtual Machine.
+Example Usage: New-AzVM -ResourceGroupName "TestResourceGroup" -Name "TestVM" -Location "EastUS" -Image "Win2019Datacenter".
 
 
 
@@ -3161,10 +3141,10 @@ This practice ensures that logger names reflect the module structure, aiding in 
 
 321
 Logging in Python
-Q: What should you avoid doing when configuring multiple handlers in Python's logging module?
+Q: What happens if you add multiple handlers to a logger that write to the same file without proper configuration in Python's logging module?
 
-A: Avoid configuring multiple handlers to write to the same log file unless it's intentional and properly managed to prevent conflicts.
-This prevents issues like duplicate log entries and file access errors.
+A: It can lead to duplicate log entries and potential file access conflicts.
+Ensuring that each handler writes to a unique file or managing handler configurations prevents such issues.
 
 
 
@@ -3194,10 +3174,10 @@ Proper permissions ensure that only authorized users can read or modify log file
 
 324
 Logging in Python
-Q: What is one of the main disadvantages of using Python's built-in logging module?
+Q: What is the purpose of logging.basicConfig() in Python's logging module?
 
-A: It can be overly complex and verbose for simple applications or scripts.
-The extensive features may introduce unnecessary complexity when basic logging needs are sufficient.
+A: It provides a simple way to configure the root logger with basic settings like level, format, and filename.
+This function is ideal for quick setups without the need for multiple handlers or complex configurations.
 
 
 
@@ -3205,10 +3185,10 @@ The extensive features may introduce unnecessary complexity when basic logging n
 
 325
 Logging in Python
-Q: Which logging level is appropriate for a message that indicates a minor problem that doesn't prevent the program from functioning?
+Q: What is one advantage of using structured logging libraries like Structlog over Python's built-in logging module?
 
-A: WARNING
-This level signals potential issues that may require attention but do not halt the application's execution.
+A: Structured logging facilitates easier parsing, querying, and analysis of log data, especially when integrating with log management systems.
+This is particularly useful for applications that require detailed and machine-readable log formats.
 
 
 
@@ -3216,10 +3196,10 @@ This level signals potential issues that may require attention but do not halt t
 
 326
 Logging in Python
-Q: What should you do to ensure that logging.basicConfig() has an effect in Python's logging module?
+Q: What is the default formatter format string if none is specified in logging.basicConfig()?
 
-A: Call it before adding any custom handlers or performing other logging configurations, and ensure that the root logger doesn't already have handlers attached.
-This guarantees that basicConfig sets up the logging system as intended without being overridden.
+A: '%(levelname)s:%(name)s:%(message)s'
+This default format includes the log level, logger name, and the log message.
 
 
 
@@ -3238,10 +3218,10 @@ This limits the number of rotated files retained, managing disk space usage.
 
 328
 Logging in Python
-Q: How can you dynamically create loggers based on runtime information in Python's logging module?
+Q: What is the purpose of a Formatter in Python's logging module?
 
-A: By using logging.getLogger() with dynamically constructed names, such as logging.getLogger(f"module_{module_id}").
-This allows for the creation of loggers tailored to specific runtime contexts or modules.
+A: To define the structure and content of log messages using formats like '%(asctime)s - %(levelname)s - %(message)s'.
+This ensures that log messages are consistently formatted for readability and analysis.
 
 
 
@@ -3327,8 +3307,8 @@ The practice of managing external libraries and packages that a Python applicati
 
 337
 Azure Functions + PP365
-Local Debugging
-Running and testing Azure Functions on a local machine to identify and fix issues before deployment. Python developers use tools like Azure Functions Core Tools and VS Code to debug functions locally, allowing for rapid development and troubleshooting in a controlled environment.
+Async Programming (Asyncio)
+A programming paradigm in Python that enables concurrent execution of code using asynchronous functions and event loops. In Azure Functions, leveraging asyncio can improve performance and scalability by allowing Python functions to handle multiple tasks simultaneously without blocking.
 
 
 
@@ -3406,8 +3386,8 @@ During a user's session when the connection to any storage provider becomes unhe
 
 346
 FSLogix
-Q: What does the FSLogix Profile Container do when a user is logging into multiple Azure Virtual Desktops (AVD)?
-A: FSLogix mounts the same Profile Container (VHDX) to any virtual desktop the user logs into, ensuring that their profile settings, documents, and application preferences are consistent and immediately available across all virtual machines. This provides a unified experience regardless of which VM the user accesses.
+Q: What is the role of Profile Disk Differencing in FSLogix?
+A: Profile Disk Differencing allows FSLogix to create differencing VHDX disks, where changes to the user profile are stored in separate files, reducing the load on the main profile disk. This improves performance by ensuring faster read/write operations and reducing storage overhead.
 
 
 
@@ -3459,46 +3439,6 @@ Accept: "application/json;odata=verbose"
 
 
 352
-Azure Functions + Visual Studio
-ASP.NET offers several state management techniques, including Session State, View State, and Cookies, to retain data across user requests and provide a better user experience on dynamic websites.
-
-
-
-
-
-353
-Azure Functions + Visual Studio
-ASP.NET Web API is a framework for building HTTP-based services that can be consumed by various clients, including browsers, mobile devices, and other web applications. It’s ideal for creating RESTful services in ASP.NET.
-
-
-
-
-
-354
-Azure Functions + Visual Studio
-ASP.NET Web Forms is an older way to build web applications, focusing on drag-and-drop components and less code, while ASP.NET MVC offers greater flexibility, control, and a more maintainable approach to building web applications.
-
-
-
-
-
-355
-Azure Functions + Visual Studio
-ASP.NET includes a variety of built-in security features such as request validation, input sanitization, SQL injection prevention, and protection against cross-site scripting (XSS) and cross-site request forgery (CSRF). HTTPS and encryption are also supported for secure communication.
-
-
-
-
-
-356
-Azure Functions + Visual Studio
-ASP.NET supports asynchronous programming with async and await keywords, allowing non-blocking operations such as file and database access. This improves scalability and performance by freeing up threads during long-running tasks.
-
-
-
-
-
-357
 Python
 Q:
 What happens if you try to call gen.next() on a generator gen in Python 3?
@@ -3510,7 +3450,7 @@ It raises an AttributeError because the correct method to retrieve the next valu
 
 
 
-358
+353
 Python
 How can you re-raise an exception after handling it?
 
@@ -3525,7 +3465,7 @@ except ValueError as e:
 
 
 
-359
+354
 Python
 Q:
 What is the purpose of the finally block in exception handling?
@@ -3537,7 +3477,7 @@ To execute code regardless of whether an exception was raised or not, typically 
 
 
 
-360
+355
 Python
 Q:
 What exception is raised when an iterator has no more items?
@@ -3549,19 +3489,19 @@ StopIteration.
 
 
 
-361
+356
 Python
 Q:
-What does the with open(...) statement ensure when working with files in Python?
+What is the default exit code if a Python script ends without calling sys.exit()?
 
 A:
-It ensures that the file is properly closed after its block of code is executed, even if an error occurs.
+0 (indicating successful execution).
 
 
 
 
 
-362
+357
 Python
 Q:
 What is the advantage of using yield from in a generator?
@@ -3573,7 +3513,7 @@ yield from delegates part of the generator’s operations to another generator, 
 
 
 
-363
+358
 Python
 How do you resolve a relative path to an absolute path using pathlib?
 
@@ -3585,7 +3525,7 @@ absolute_path = relative_path.resolve()
 
 
 
-364
+359
 Python
 Q:
 How can you obtain command-line arguments in a Python script?
@@ -3597,42 +3537,43 @@ Using sys.argv
 
 
 
-365
+360
 Python
 Q:
-How can you create a context manager using a generator function?
+What are the two essential methods that an iterator class must implement?
 
 A:
-By using the @contextmanager decorator from the contextlib module and yielding control within the function.
+__iter__() and __next__().
 
 
 
 
 
-366
-Python
-Which pathlib method can be used to iterate recursively through all files matching a pattern?
-
-for file in Path('/path/to/directory').rglob('*.txt'):
-    print(file)
-
-
-
-
-
-367
+361
 Python
 Q:
-How can you set an exit code of 2 in a Python script?
+How can you raise an exception inside a generator from outside?
 
 A:
-Using either sys.exit(2) or exit(2).
+Using the .throw(type, value=None, traceback=None) method.
 
 
 
 
 
-368
+362
+Python
+How can you compare two Path objects for equality regardless of their string representations? By resolving both paths and comparing them.
+
+path1 = Path('/home/user/file.txt').resolve()
+path2 = Path('./file.txt').resolve()
+are_equal = path1 == path2
+
+
+
+
+
+363
 Python
 Q:
 What are the two methods that a context manager class must implement?
@@ -3644,7 +3585,7 @@ __enter__() and __exit__(exc_type, exc_value, traceback).
 
 
 
-369
+364
 Python
 Q:
 Which keyword is used to define a generator function in Python?
@@ -3656,19 +3597,7 @@ yield
 
 
 
-370
-Python
-How can you create all parent directories for a given path using pathlib?
-Using the .mkdir(parents=True, exist_ok=True) method.
-
-path = Path('/path/to/new/directory')
-path.mkdir(parents=True, exist_ok=True)
-
-
-
-
-
-371
+365
 Python
 Q:
 What does an exit code of 0 typically signify in a Python script?
@@ -3680,7 +3609,19 @@ Successful execution without errors.
 
 
 
-372
+366
+Python
+Q:
+Which Python module provides an object-oriented approach to handling filesystem paths?
+
+A:
+pathlib
+
+
+
+
+
+367
 Python
 Q:
 What is the primary purpose of exit codes in Python scripts?
@@ -3692,34 +3633,47 @@ To communicate the termination status of a script to the operating system or cal
 
 
 
+368
+Azure Functions + Visual Studio
+ASP.NET offers several state management techniques, including Session State, View State, and Cookies, to retain data across user requests and provide a better user experience on dynamic websites.
+
+
+
+
+
+369
+Azure Functions + Visual Studio
+ASP.NET Web API is a framework for building HTTP-based services that can be consumed by various clients, including browsers, mobile devices, and other web applications. It’s ideal for creating RESTful services in ASP.NET.
+
+
+
+
+
+370
+Azure Functions + Visual Studio
+ASP.NET Web Forms is an older way to build web applications, focusing on drag-and-drop components and less code, while ASP.NET MVC offers greater flexibility, control, and a more maintainable approach to building web applications.
+
+
+
+
+
+371
+Azure Functions + Visual Studio
+ASP.NET includes a variety of built-in security features such as request validation, input sanitization, SQL injection prevention, and protection against cross-site scripting (XSS) and cross-site request forgery (CSRF). HTTPS and encryption are also supported for secure communication.
+
+
+
+
+
+372
+Azure Functions + Visual Studio
+ASP.NET supports asynchronous programming with async and await keywords, allowing non-blocking operations such as file and database access. This improves scalability and performance by freeing up threads during long-running tasks.
+
+
+
+
+
 373
-DNS
-Remove-DnsServerZone (PowerShell Cmdlet)
-A PowerShell command used to delete an existing DNS zone from a Windows DNS Server. It allows administrators to remove obsolete or unnecessary zones efficiently through scripts or command-line operations.
-
-
-
-
-
-374
-DNS
-Refresh Interval
-The period following the No-Refresh Interval during which the timestamp on a DNS record can be updated. If a record is refreshed within this interval, it remains active; otherwise, it becomes eligible for scavenging.
-
-
-
-
-
-375
-DNS
-Zone Transfers
-The process of copying DNS zone data from a primary DNS server to secondary DNS servers. Zone transfers ensure DNS data consistency and redundancy across multiple DNS servers, enhancing reliability and load distribution.
-
-
-
-
-
-376
 Terraform
 Meta-Arguments:
 Definition: Special arguments like count, depends_on, and lifecycle that control resource behavior and relationships.
@@ -3734,7 +3688,7 @@ resource "aws_instance" "web" {
 
 
 
-377
+374
 Terraform
 Expressions and Operators:
 Definition: Terraform uses expressions to compute values. These support arithmetic operations, string concatenation, and comparisons.
@@ -3750,7 +3704,7 @@ Example:
 
 
 
-378
+375
 Terraform
 You can create and use Terraform modules that codify the standards for deploying and managing services in your organization, allowing teams to efficiently deploy services in compliance with your organization’s practices.
 
@@ -3758,21 +3712,15 @@ You can create and use Terraform modules that codify the standards for deploying
 
 
 
-379
+376
 Terraform
-Debugging with TF_LOG:
-
-Definition: Setting the TF_LOG environment variable enables detailed logging for troubleshooting.
-Usage: Helps trace issues during plan or apply phases by providing verbose output.
-
-Example:
-export TF_LOG=DEBUG
+Network Infrastructure Automation (NIA) allows you to safely approve the changes that your applications require without having to manually translate tickets from developers into the changes you think their applications need.
 
 
 
 
 
-380
+377
 Terraform
 Provisioning infrastructure across multiple clouds increases fault-tolerance, allowing for more graceful recovery from cloud provider outages. However, multi-cloud deployments add complexity because each provider has its own interfaces, tools, and workflows. Terraform lets you use the same workflow to manage multiple providers and handle cross-cloud dependencies.
 
@@ -3780,7 +3728,7 @@ Provisioning infrastructure across multiple clouds increases fault-tolerance, al
 
 
 
-381
+378
 Terraform
 Double Quotes vs. Single Quotes:
 
@@ -3791,7 +3739,7 @@ Single Quotes (' '): Do not interpolate variables; they treat the content as a l
 
 
 
-382
+379
 Terraform
 terraform validate:
 A CLI command that checks the syntax and internal consistency of your Terraform files without connecting to remote services. Use it to catch errors before applying any changes.
@@ -3800,7 +3748,7 @@ A CLI command that checks the syntax and internal consistency of your Terraform 
 
 
 
-383
+380
 Terraform
 List and Map Indexing:
 Access elements within lists or maps using square brackets.
@@ -3815,70 +3763,34 @@ ${var.settings["key_name"]}
 
 
 
+381
+DNS
+Remove-DnsServerZone (PowerShell Cmdlet)
+A PowerShell command used to delete an existing DNS zone from a Windows DNS Server. It allows administrators to remove obsolete or unnecessary zones efficiently through scripts or command-line operations.
+
+
+
+
+
+382
+DNS
+Refresh Interval
+The period following the No-Refresh Interval during which the timestamp on a DNS record can be updated. If a record is refreshed within this interval, it remains active; otherwise, it becomes eligible for scavenging.
+
+
+
+
+
+383
+DNS
+Zone Transfers
+The process of copying DNS zone data from a primary DNS server to secondary DNS servers. Zone transfers ensure DNS data consistency and redundancy across multiple DNS servers, enhancing reliability and load distribution.
+
+
+
+
+
 384
-Debugging in VS Code
-Variable Inspection
-The process of viewing and analyzing the values of variables in a program while it's running.
-
-
-
-
-
-385
-Debugging in VS Code
-Code Coverage
-The process of determining which parts of your code have been executed during testing or debugging, helping to identify untested areas and ensure comprehensive testing.
-
-
-
-
-
-386
-Debugging in VS Code
-Step Over
-A debugging feature that allows you to skip over a function call, running it entirely without entering it.
-
-
-
-
-
-387
-Debugging in VS Code
-Remote Debugging
-The process of debugging code running on a different machine or environment from your local computer.
-
-
-
-
-
-388
-Debugging in VS Code
-Step Into
-A debugging feature that allows you to enter a function call to examine its internal execution line by line.
-
-
-
-
-
-389
-Debugging in VS Code
-Hot Reloading
-A feature in some debuggers and IDEs that allows you to modify and reload parts of your code while the program is running, enabling you to see the changes in real time without restarting the application.
-
-
-
-
-
-390
-Debugging in VS Code
-Debug Console
-A tool within a development environment used to evaluate expressions, view output, or interact with a running program during debugging.
-
-
-
-
-
-391
 Open Source/GitHub
 README.md
 
@@ -3888,7 +3800,7 @@ A markdown file at the root of a repository that provides an overview of the pro
 
 
 
-392
+385
 Open Source/GitHub
 Changelog
 
@@ -3898,7 +3810,7 @@ A document that records all notable changes made to a project, including new fea
 
 
 
-393
+386
 Open Source/GitHub
 Code of Conduct
 
@@ -3908,7 +3820,7 @@ Guidelines that outline expected behavior and interactions within a project’s 
 
 
 
-394
+387
 Open Source/GitHub
 Issue Assignee
 
@@ -3918,11 +3830,74 @@ A person designated to work on a specific issue, indicating responsibility and o
 
 
 
-395
+388
 Open Source/GitHub
 Label
 
 Tags assigned to issues or pull requests to categorize them, such as “good first issue,” “bug,” or “enhancement,” facilitating easier navigation and filtering.
+
+
+
+
+
+389
+Debugging in VS Code
+Variable Inspection
+The process of viewing and analyzing the values of variables in a program while it's running.
+
+
+
+
+
+390
+Debugging in VS Code
+Code Coverage
+The process of determining which parts of your code have been executed during testing or debugging, helping to identify untested areas and ensure comprehensive testing.
+
+
+
+
+
+391
+Debugging in VS Code
+Step Out
+A debugging feature that lets you exit the current function and return to the function that called it.
+
+
+
+
+
+392
+Debugging in VS Code
+Call Stack
+A data structure that stores the sequence of function calls made in a program, showing the order in which they were called.
+
+
+
+
+
+393
+Debugging in VS Code
+Step Into
+A debugging feature that allows you to enter a function call to examine its internal execution line by line.
+
+
+
+
+
+394
+Debugging in VS Code
+Hot Reloading
+A feature in some debuggers and IDEs that allows you to modify and reload parts of your code while the program is running, enabling you to see the changes in real time without restarting the application.
+
+
+
+
+
+395
+Debugging in VS Code
+Debug Console
+A tool within a development environment used to evaluate expressions, view output, or interact with a running program during debugging.
 
 
 
@@ -4186,8 +4161,8 @@ Combines symmetric and asymmetric encryption for robust security.
 
 422
 RAG Project
-Patch / Monkeypatch
-Temporary override of code behavior during tests — often used to replace Azure calls with mocks.
+auth_client
+A special fixture often defined in conftest.py that returns a test client with fake authentication already set up.
 
 
 
@@ -4195,23 +4170,14 @@ Temporary override of code behavior during tests — often used to replace Azure
 
 423
 RAG Project
-ASGI
-Asynchronous Server Gateway Interface — allows async Python web apps to talk to servers. Quart apps are ASGI apps.
+Access Control
+Logic that determines who can access which resources or files.
 
 
 
 
 
 424
-RAG Project
-Route
-A URL endpoint in your app (e.g., /upload, /ask) that maps to a function.
-
-
-
-
-
-425
 RAG Project
 Dataclass
 A Python feature that makes it easy to create classes with fields. Often used for request/response models.
@@ -4220,10 +4186,19 @@ A Python feature that makes it easy to create classes with fields. Often used fo
 
 
 
+425
+RAG Project
+Test Client
+A simulated web client that sends fake HTTP requests to your app (e.g., client.post("/ask")).
+
+
+
+
+
 426
 RAG Project
-Config Object
-A centralized dictionary or structure that stores runtime settings and credentials for your app.
+Object ID (OID)
+Unique identifier for a user in Azure AD, used to scope their files or actions.
 
 
 
@@ -4231,14 +4206,23 @@ A centralized dictionary or structure that stores runtime settings and credentia
 
 427
 RAG Project
-Mock
-A fake object or function that replaces real dependencies during testing.
+test_client()
+A method on a Quart app that gives you a fake browser-like interface to make test requests like client.get("/endpoint").
 
 
 
 
 
 428
+RAG Project
+OIDC / Entra ID
+Authentication standards used by Azure for signing in users.
+
+
+
+
+
+429
 RAG Project
 Async Test
 A test defined with async def, usually needed for Quart and async functions.
@@ -4247,52 +4231,16 @@ A test defined with async def, usually needed for Quart and async functions.
 
 
 
-429
-RAG Project
-Factory Function (create_app)
-A function that sets up and returns a fully configured app instance. Used to cleanly separate setup from execution and enable testing.
-
-
-
-
-
 430
 Azure DevOps Pipelines
-What keyword is used to define multiple steps that should run in parallel in Azure DevOps YAML pipelines?
-Answer: matrix
+What is the purpose of the dependsOn keyword in Azure DevOps YAML pipelines?
+Answer: It specifies the order in which stages or jobs will execute.
 
 
 
 
 
 431
-Azure DevOps Pipelines
-In an Azure DevOps pipeline, which YAML syntax would you use to reference a variable?
-Answer: $(variable_name)
-
-
-
-
-
-432
-Azure DevOps Pipelines
-What is a Deployment Pool in Azure DevOps?
-Answer: A Deployment Pool is a set of environments where deployments occur. You can configure and target specific deployment pools for releases to ensure the proper deployment environment is used.
-
-
-
-
-
-433
-Azure DevOps Pipelines
-What is the main purpose of a YAML file in Azure DevOps pipelines?
-Answer: To define and configure pipeline processes, including steps, tasks, and environments.
-
-
-
-
-
-434
 Azure DevOps Pipelines
 What does the jobs keyword in Azure DevOps YAML define?
 Answer: It defines a set of jobs that run in the pipeline. Each job can contain steps, and jobs can be executed in parallel or sequentially based on dependencies.
@@ -4301,7 +4249,7 @@ Answer: It defines a set of jobs that run in the pipeline. Each job can contain 
 
 
 
-435
+432
 Azure DevOps Pipelines
 What is the default working directory for a pipeline job in Azure DevOps?
 Answer: $(Build.SourcesDirectory)
@@ -4310,10 +4258,37 @@ Answer: $(Build.SourcesDirectory)
 
 
 
+433
+Azure DevOps Pipelines
+How do you specify a condition for a job or stage to run in an Azure DevOps YAML pipeline?
+Answer: You use the condition keyword, such as condition: succeeded() to define when a job should run based on the status of previous jobs.
+
+
+
+
+
+434
+Azure DevOps Pipelines
+In an Azure DevOps pipeline, which YAML syntax would you use to reference a variable?
+Answer: $(variable_name)
+
+
+
+
+
+435
+Azure DevOps Pipelines
+In Azure DevOps, what command is used to run a pipeline manually from the Azure DevOps portal?
+Answer: "Run pipeline" button in the Azure DevOps portal.
+
+
+
+
+
 436
 Azure DevOps Pipelines
-How do you specify a deployment environment like 'staging' or 'production' in a YAML pipeline?
-Answer: Use the environment keyword, e.g., environment: 'staging'.
+How can you pass secrets securely in Azure DevOps YAML pipelines?
+Answer: You pass secrets using pipeline variables marked as secret in Azure DevOps. They are referenced in the YAML file as $(secret_variable) but are masked and not exposed in logs.
 
 
 
@@ -4321,8 +4296,8 @@ Answer: Use the environment keyword, e.g., environment: 'staging'.
 
 437
 Azure DevOps Pipelines
-What does the 'variables' keyword do in a YAML pipeline?
-Answer: It declares the variables that can be used throughout the pipeline.
+How do you specify a deployment environment like 'staging' or 'production' in a YAML pipeline?
+Answer: Use the environment keyword, e.g., environment: 'staging'.
 
 
 
@@ -4339,8 +4314,8 @@ Answer: steps
 
 439
 Azure AD Authentication
-Role Assignment Propagation
-Role permissions may take time to propagate across Azure, so changes in role assignments might not be immediately reflected in access control.
+Managed Identities
+Azure-managed identities used by Azure resources (like VMs) to authenticate to other Azure services, removing the need to manage credentials.
 
 
 
@@ -4348,8 +4323,8 @@ Role permissions may take time to propagate across Azure, so changes in role ass
 
 440
 Azure AD Authentication
-Custom Roles
-User-defined roles with specific permissions, used when built-in roles don’t provide the required access or for more granular control.
+Built-In Roles
+Predefined roles like Owner, Contributor, and Reader that grant specific permissions to manage Azure resources at various scopes.
 
 
 
@@ -4357,8 +4332,8 @@ User-defined roles with specific permissions, used when built-in roles don’t p
 
 441
 Azure AD Authentication
-Role Inheritance
-Roles assigned at a higher scope (e.g., subscription) are inherited by resources at lower scopes (e.g., resource groups, resources).
+Azure AD Roles vs Azure Resource Roles
+Azure AD Roles manage access to directory functions (e.g., Global Administrator), while Resource Roles control access to Azure resources (e.g., Contributor).
 
 
 
@@ -4366,178 +4341,14 @@ Roles assigned at a higher scope (e.g., subscription) are inherited by resources
 
 442
 Azure AD Authentication
-App Registration
-Registers an app in Azure AD, creating its identity to authenticate with Azure services. Allows the app to access resources and interact with Azure services.
+Scope
+Defines the level at which a role is applied, such as management group, subscription, resource group, or individual resource. Higher scopes apply to all child resources.
 
 
 
 
 
 443
-JavaScript Concepts
-GraphQL: A query language for APIs that allows clients to request exactly the data they need, improving efficiency and flexibility over REST.
-
-
-
-
-
-444
-JavaScript Concepts
-Service Workers: Scripts that run in the background of web browsers, enabling features like offline functionality and push notifications.
-
-
-
-
-
-445
-JavaScript Concepts
-Vue.js: A progressive framework for building user interfaces, known for its simplicity and flexibility, with features like directives and single-file components.
-
-
-
-
-
-446
-JavaScript Concepts
-Event Handling: Responding to user interactions like clicks and keypresses by attaching event listeners to DOM elements.
-
-
-
-
-
-447
-JavaScript Concepts
-Chai: An assertion library that pairs with testing frameworks like Mocha, providing readable and expressive test assertions.
-
-
-
-
-
-448
-JavaScript Concepts
-Bitbucket: A Git-based source code repository hosting service, offering integration with Atlassian products like Jira for project management.
-
-
-
-
-
-449
-JavaScript Concepts
-Angular: A comprehensive framework by Google for building large-scale applications, utilizing TypeScript, two-way data binding, and dependency injection.
-
-
-
-
-
-450
-JavaScript Concepts
-Testing Library: A family of libraries that encourage testing best practices by focusing on user interactions rather than implementation details.
-
-
-
-
-
-451
-JavaScript Concepts
-React Hooks: Functions like useState and useEffect that allow functional components to manage state and side effects in React.
-
-
-
-
-
-452
-JavaScript Concepts
-Lazy Loading: Deferring the loading of non-critical resources until they are needed, improving initial load times and performance.
-
-
-
-
-
-453
-JavaScript Concepts
-Webpack: A powerful module bundler that compiles JavaScript modules into a single bundle, optimizing assets for production.
-
-
-
-
-
-454
-JavaScript Concepts
-Spread and Rest Operators (...): Operators that expand elements of arrays or objects (spread) and collect multiple elements into a single array parameter (rest).
-
-
-
-
-
-455
-JavaScript Concepts
-Closures: Functions that retain access to their lexical scope even when executed outside their original context, enabling data privacy and function factories.
-
-
-
-
-
-456
-JavaScript Concepts
-Middleware: Functions in frameworks like Express.js that have access to request and response objects, used for tasks like authentication and logging.
-
-
-
-
-
-457
-JavaScript Concepts
-DOM Manipulation: Using JavaScript to select and modify HTML elements, enabling dynamic and interactive web pages.
-
-
-
-
-
-458
-JavaScript Concepts
-Template Literals: Enhanced string syntax using backticks, allowing embedded expressions and multi-line strings for better readability.
-
-
-
-
-
-459
-JavaScript Concepts
-Array Length Property: Remember to use array.length to get the number of elements in an array. This is a common mistake, but it's crucial for iterating through arrays correctly.
-(I had mistakenly used array.len instead)
-
-
-
-
-
-460
-JavaScript Concepts
-Array reverse Function: The reverse method reverses the order of the elements in an array in place.
-let array = [1, 2, 3, 4, 5];
-array.reverse();
-console.log(array); // Output: [5, 4, 3, 2, 1]
-
-
-
-
-
-461
-JavaScript Concepts
-Context API: A React feature that provides a way to pass data through the component tree without prop drilling, useful for simple state management.
-
-
-
-
-
-462
-JavaScript Concepts
-Jest: A JavaScript testing framework by Facebook, supporting unit, integration, and snapshot testing, particularly well-suited for React applications.
-
-
-
-
-
-463
 Azure Developer Associate
 If you define more than one action on the same blob, lifecycle management applies the least expensive action to the blob. For example, action delete is cheaper than action tierToArchive. Action tierToArchive is cheaper than action tierToCool.
 
@@ -4545,7 +4356,7 @@ If you define more than one action on the same blob, lifecycle management applie
 
 
 
-464
+444
 Azure Developer Associate
 Q: Does the Basic tier of Azure Cache for Redis support data persistence or high availability?
 A: No — it uses a single node with no persistence or HA.
@@ -4554,7 +4365,7 @@ A: No — it uses a single node with no persistence or HA.
 
 
 
-465
+445
 Azure Developer Associate
 While a blob is in the archive access tier, it's considered to be offline and can't be read or modified. In order to read or modify data in an archived blob, you must first rehydrate the blob to an online tier, either the hot or cool tier.
 
@@ -4562,7 +4373,7 @@ While a blob is in the archive access tier, it's considered to be offline and ca
 
 
 
-466
+446
 Azure Developer Associate
 Q: What kind of database is Redis?
 A: Redis is an in-memory key-value store, part of the NoSQL family.
@@ -4571,7 +4382,7 @@ A: Redis is an in-memory key-value store, part of the NoSQL family.
 
 
 
-467
+447
 Azure Developer Associate
 Q: What happens to cached data in the Basic or Standard tiers of Azure Cache for Redis if the node restarts?
 A: The data is lost — these tiers do not support persistence.
@@ -4580,7 +4391,7 @@ A: The data is lost — these tiers do not support persistence.
 
 
 
-468
+448
 Azure Developer Associate
 There are two options for rehydrating a blob that is stored in the archive tier:
 
@@ -4590,7 +4401,7 @@ Copy an archived blob to an online tier: You can rehydrate an archived blob by c
 
 
 
-469
+449
 Azure Developer Associate
 Q: Which Azure Cache for Redis tiers support both clustering and data persistence?
 A: Premium and higher (Enterprise, Enterprise Flash).
@@ -4599,7 +4410,7 @@ A: Premium and higher (Enterprise, Enterprise Flash).
 
 
 
-470
+450
 Azure Developer Associate
 Q: What is the typical Redis command to set a key with expiration?
 A: SET key value EX seconds – stores value with a TTL.
@@ -4608,7 +4419,7 @@ A: SET key value EX seconds – stores value with a TTL.
 
 
 
-471
+451
 Azure Developer Associate
 Q: Which Azure Cache for Redis tier allows SSD-backed storage for large datasets?
 A: Enterprise Flash tier.
@@ -4617,25 +4428,25 @@ A: Enterprise Flash tier.
 
 
 
-472
+452
 Azure Developer Associate
-What Azure App Service feature allows zero-downtime deployment and testing?
-Deployment Slots
+What setting ensures an app only uses a connection string in a specific slot?
+Mark it as a deployment slot setting
 
 
 
 
 
-473
+453
 Azure Developer Associate
-What is the purpose of App Insights Profiler?
-It provides code-level performance diagnostics to identify bottlenecks under live traffic.
+Q: What are Redis’s primary data structures?
+A: Strings, Lists, Sets, Sorted Sets, Hashes, Bitmaps, HyperLogLogs, Streams.
 
 
 
 
 
-474
+454
 Azure Developer Associate
 What does the App Service Plan define?
 It defines the pricing tier and compute resources (CPU, memory, instance count) used by your web app.
@@ -4644,7 +4455,7 @@ It defines the pricing tier and compute resources (CPU, memory, instance count) 
 
 
 
-475
+455
 Azure Developer Associate
 In Azure App Service, what should you configure on an Application Gateway to ensure health checks work correctly with WAF enabled?
 A custom probe
@@ -4653,20 +4464,16 @@ A custom probe
 
 
 
-476
+456
 Azure Developer Associate
-Azure blob storage rule actions:
-  tierToCool
-  tierToCold
-  enableAutoTierToHotFromCool	
-  tierToArchive
-  delete
+Q: Which Azure Cache for Redis tiers support Virtual Network (VNet) integration?
+A: Premium, Enterprise, and Enterprise Flash.
 
 
 
 
 
-477
+457
 Azure Developer Associate
 Q: Does Redis support multiple programming languages?
 A: Yes — supports .NET, Java, Python, Node.js, Go, Ruby, PHP, and more.
@@ -4675,7 +4482,7 @@ A: Yes — supports .NET, Java, Python, Node.js, Go, Ruby, PHP, and more.
 
 
 
-478
+458
 Azure Developer Associate
 How does horizontal scaling in App Service work?
 By increasing the number of instances running your app, either manually or automatically
@@ -4684,7 +4491,7 @@ By increasing the number of instances running your app, either manually or autom
 
 
 
-479
+459
 Azure Developer Associate
 Which diagnostic tool lets you trace and troubleshoot slow or failed HTTP requests?
 Application Insights (Failures blade or Profiler)
@@ -4693,16 +4500,16 @@ Application Insights (Failures blade or Profiler)
 
 
 
-480
+460
 Azure Developer Associate
-What is the recommended way to authenticate an App Service to access Azure resources like Storage or Key Vault?
-Use a Managed Identity
+What happens if one app in an App Service Plan consumes too much CPU?
+It can impact the performance of other apps in the same plan
 
 
 
 
 
-481
+461
 Azure Developer Associate
 To add a lifecycle management policy with Azure CLI, write the policy to a JSON file, then call the az storage account management-policy create command to create the policy.
 
@@ -4715,7 +4522,7 @@ az storage account management-policy create \
 
 
 
-482
+462
 Azure Developer Associate
 What is the default behavior when multiple apps share the same App Service Plan?
 They share compute resources, which can cause performance issues if one app consumes too much.
@@ -4724,7 +4531,7 @@ They share compute resources, which can cause performance issues if one app cons
 
 
 
-483
+463
 Azure Developer Associate
 How can you keep an Azure App Service always warm and responsive?
 Enable "Always On" in app settings
@@ -4733,10 +4540,197 @@ Enable "Always On" in app settings
 
 
 
+464
+JavaScript Concepts
+GraphQL: A query language for APIs that allows clients to request exactly the data they need, improving efficiency and flexibility over REST.
+
+
+
+
+
+465
+JavaScript Concepts
+Service Workers: Scripts that run in the background of web browsers, enabling features like offline functionality and push notifications.
+
+
+
+
+
+466
+JavaScript Concepts
+Vue.js: A progressive framework for building user interfaces, known for its simplicity and flexibility, with features like directives and single-file components.
+
+
+
+
+
+467
+JavaScript Concepts
+Event Handling: Responding to user interactions like clicks and keypresses by attaching event listeners to DOM elements.
+
+
+
+
+
+468
+JavaScript Concepts
+Chai: An assertion library that pairs with testing frameworks like Mocha, providing readable and expressive test assertions.
+
+
+
+
+
+469
+JavaScript Concepts
+Bitbucket: A Git-based source code repository hosting service, offering integration with Atlassian products like Jira for project management.
+
+
+
+
+
+470
+JavaScript Concepts
+Dependency Injection: A design pattern used in frameworks like Angular and NestJS to manage and inject dependencies, promoting modularity and testability.
+
+
+
+
+
+471
+JavaScript Concepts
+Mocha: A flexible testing framework for Node.js, allowing developers to choose assertion libraries like Chai for writing tests.
+
+
+
+
+
+472
+JavaScript Concepts
+React Hooks: Functions like useState and useEffect that allow functional components to manage state and side effects in React.
+
+
+
+
+
+473
+JavaScript Concepts
+Lazy Loading: Deferring the loading of non-critical resources until they are needed, improving initial load times and performance.
+
+
+
+
+
+474
+JavaScript Concepts
+Webpack: A powerful module bundler that compiles JavaScript modules into a single bundle, optimizing assets for production.
+
+
+
+
+
+475
+JavaScript Concepts
+Spread and Rest Operators (...): Operators that expand elements of arrays or objects (spread) and collect multiple elements into a single array parameter (rest).
+
+
+
+
+
+476
+JavaScript Concepts
+Dictionary (Object)
+let dictionary = {
+    key1: "value1",
+    key2: "value2"
+};
+
+// Accessing values
+console.log(dictionary.key1); // Output: value1
+console.log(dictionary["key2"]); // Output: value2
+
+
+
+
+
+477
+JavaScript Concepts
+Switch Statement
+switch (expression) {
+    case value1:
+        // Code to execute if expression === value1
+        break;
+    case value2:
+        // Code to execute if expression === value2
+        break;
+    // Add more cases as needed
+    default:
+        // Code to execute if none of the cases match
+}
+
+
+
+
+
+478
+JavaScript Concepts
+DOM Manipulation: Using JavaScript to select and modify HTML elements, enabling dynamic and interactive web pages.
+
+
+
+
+
+479
+JavaScript Concepts
+Template Literals: Enhanced string syntax using backticks, allowing embedded expressions and multi-line strings for better readability.
+
+
+
+
+
+480
+JavaScript Concepts
+Array Length Property: Remember to use array.length to get the number of elements in an array. This is a common mistake, but it's crucial for iterating through arrays correctly.
+(I had mistakenly used array.len instead)
+
+
+
+
+
+481
+JavaScript Concepts
+Logical AND (&&) and OR (||) Statements
+if (condition1 && condition2) {
+    // Code to execute if both condition1 and condition2 are true
+}
+
+if (condition1 || condition2) {
+    // Code to execute if either condition1 or condition2 is true
+}
+
+
+
+
+
+482
+JavaScript Concepts
+Component-Based Architecture: Building applications by encapsulating functionality into independent, reusable components, commonly used in frontend frameworks.
+
+
+
+
+
+483
+JavaScript Concepts
+Jest: A JavaScript testing framework by Facebook, supporting unit, integration, and snapshot testing, particularly well-suited for React applications.
+
+
+
+
+
 484
 PnP Powershell
-Get-PnPFile (PnP.PowerShell)
-Retrieves a file from a SharePoint document library. Allows downloading files to a local path or accessing file properties and content directly within PowerShell scripts.
+Set-PnPWeb (PnP.PowerShell)
+Configures properties of a SharePoint site, such as title, description, and logo. Enables automated site customization and configuration management.
 
 
 
@@ -4816,8 +4810,8 @@ Establishes a connection to a SharePoint site using various authentication metho
 
 493
 PnP Powershell
-OAuth 2.0 Client Credentials Flow
-An authentication method where applications authenticate using a client ID and client secret, enabling server-to-server interactions without user involvement.
+System.IO.Stream (System.IO)
+Represents a sequence of bytes, such as a file. Used in PowerShell to handle file data streams for operations like uploading files to SharePoint.
 
 
 
@@ -4825,8 +4819,8 @@ An authentication method where applications authenticate using a client ID and c
 
 494
 PnP Powershell
-Add-PnPFile (PnP.PowerShell)
-Uploads a file to a specified SharePoint document library or folder. Supports parameters like -Path for local files and -Stream for uploading via a data stream.
+AADSTS7000218 Error
+An Azure AD error stating that the authentication request lacks a client_assertion or client_secret, preventing successful token acquisition.
 
 
 
@@ -4834,8 +4828,8 @@ Uploads a file to a specified SharePoint document library or folder. Supports pa
 
 495
 PnP Powershell
-Remove-PnPUserFromGroup (PnP.PowerShell)
-Removes a user from a SharePoint group. Helps in maintaining accurate group memberships and enforcing access policies through scripts.
+Admin Consent
+Approval granted by an Azure AD administrator for an application to access certain resources or perform specific actions, essential for elevated API permissions.
 
 
 
@@ -4870,8 +4864,9 @@ Investors utilize structured credit products to diversify portfolios beyond trad
 
 499
 Vocab
-Do Androids Dream of Electric Sheep?
-Bucolic (byoo-KOL-ik): Relating to the pleasant aspects of the countryside and country life; pastoral.
+Jane Eyre
+Cachinnation (kak-ih-NAY-shun)
+Loud, uncontrollable laughter, often with a connotation of being excessive, mocking, or even sinister. Derived from the Latin word cachinnare, it emphasizes the intensity of the laugh.
 
 
 
@@ -4916,9 +4911,8 @@ Example: Chinese characters are logograms, each representing a concept or word r
 
 503
 Vocab
-Jane Eyre
-Beldame
-(BEL-dame) An old woman, sometimes used respectfully for a grandmother, or pejoratively to describe a hag or crone.
+Interval Funds Carry Redemption Risk:
+Because interval funds permit redemptions only periodically—and often limit the total amount redeemable in each interval (commonly 5%-25% of assets)—investors may face difficulty liquidating positions quickly if the need arises.
 
 
 
@@ -4926,8 +4920,8 @@ Beldame
 
 504
 Vocab
-Lost in a Good Book
-Wisteria: A climbing flowering plant with fragrant, cascading purple or white blooms, often grown on pergolas or trellises.
+Do Androids Dream of Electric Sheep?
+Inguinal region (ING-gwuh-nuhl REE-juhn): The area of the lower abdomen on either side of the pubic bone, also known as the groin, where the thigh meets the trunk.
 
 
 
@@ -4955,8 +4949,8 @@ Contumelious Epithet
 
 507
 Vocab
-Do Androids Dream of Electric Sheep?
-Kipple (KIP-uhl): A term coined by author Philip K. Dick referring to useless, discarded, or trivial items that tend to accumulate, often leading to clutter.
+Lost in a Good Book
+Diatryma:  A genus of large flightless Eocene birds from Wyoming and New Mexico having much reduced wings, large head and powerful beak, and long massive legs and constituting with extinct related forms (as Gastornis) an order of birds probably most nearly related to the surviving cariamas and bustards
 
 
 
@@ -4995,10 +4989,8 @@ Definition: The part of a theater stage in front of the curtain, often framing t
 
 511
 Vocab
-Red Side Story, FForde
-Semolina
-Pronunciation: sem-uh-LEE-nuh
-Definition: A coarse flour made from durum wheat, commonly used in making pasta and couscous.
+Structured Credit Combines Debt Instruments:
+Structured credit refers to complex financial products created by pooling and repackaging loans, bonds, or other debt obligations, then dividing them into distinct risk-and-return segments called tranches.
 
 
 
@@ -5035,13 +5027,8 @@ Compère (of a game show): A host or master of ceremonies, responsible for intro
 
 515
 Vocab
-Palimpsest
-noun
-SPA: PAL-imps-est
-IPA: /ˈpælɪmpsɛst/
-
-A manuscript or document that has been written on, scraped off, and reused, often revealing traces of previous writings beneath the surface.
-Example: Archaeologists discovered an ancient palimpsest where earlier texts were still legible under the more recent writing.
+Do Androids Dream of Electric Sheep?
+Cogitated (KOJ-i-teyt-ed): Past tense of "cogitate," meaning to think deeply or ponder about something.
 
 
 
@@ -5158,9 +5145,11 @@ Example Usage: New-AzResourceGroup -Name "TestResourceGroup" -Location "EastUS".
 
 526
 Powershell Modules
-Ensure scripts use the correct module versions to maintain compatibility.
-Example:
-Import-Module -Name Az -RequiredVersion 5.0.0
+Listing All Available Modules:
+Get-Module -ListAvailable | Select-Object Name, Version, Path
+
+Updating All Installed Modules:
+Get-InstalledModule | Update-Module
 
 
 
@@ -5168,16 +5157,27 @@ Import-Module -Name Az -RequiredVersion 5.0.0
 
 527
 Powershell Modules
-PSReadLine Module
+Connect-AzAccount
 
-Definition: A module that enhances the command-line editing experience in PowerShell.
-Explanation: Provides features like syntax highlighting, auto-completion, and customizable key bindings.
+Definition: A cmdlet from the Az module that authenticates your session with Azure.
+Example Usage: Connect-AzAccount prompts for Azure credentials to manage Azure resources.
 
 
 
 
 
 528
+Powershell Modules
+ActiveDirectory Module
+
+Definition: A module for managing Active Directory objects.
+Explanation: Provides cmdlets to manage users, groups, and other AD components. Example cmdlet: Get-ADUser.
+
+
+
+
+
+529
 Powershell Modules
 CurrentUser Scope
 
@@ -5188,23 +5188,12 @@ Explanation: Installing a module with -Scope CurrentUser does not require admini
 
 
 
-529
-Powershell Modules
-Module Version Specification
-
-Definition: The practice of specifying exact module versions when importing to ensure script compatibility.
-Explanation: Done using parameters like -RequiredVersion in Import-Module. Example: Import-Module -Name Az -RequiredVersion 5.0.0.
-
-
-
-
-
 530
 Powershell Modules
-Get-Help <CmdletName> -Detailed
+Module Manifest Properties
 
-Definition: Retrieves detailed help information for a specific cmdlet.
-Example Usage: Get-Help Get-AzVM -Detailed provides comprehensive information about the Get-AzVM cmdlet.
+Definition: Specific attributes defined in a .psd1 file that describe module metadata.
+Explanation: Includes properties like ModuleVersion, Author, RequiredModules, FunctionsToExport, etc.
 
 
 
@@ -5223,11 +5212,10 @@ Example Usage: Find-Module -Name SQLServer searches for the "SQLServer" module.
 
 532
 Powershell Modules
-Installing a Module:
-Install-Module -Name Az -Scope CurrentUser
+Module.psm1
 
-Importing a Module:
-Import-Module -Name Az
+Definition: The primary script file for a PowerShell module.
+Explanation: Contains the functions, cmdlets, and other code that define the module's functionality.
 
 
 
@@ -5290,10 +5278,10 @@ The extensive configurability may introduce unnecessary complexity when basic lo
 
 538
 Logging in Python
-Q: How can you include exception tracebacks in your log messages using Python's logging module?
+Q: What does logging.disable(logging.CRITICAL) do in Python's logging module?
 
-A: By setting exc_info=True in logging methods like logger.error().
-This adds the exception traceback to the log message, providing detailed context for errors.
+A: It disables all logging messages at or below the CRITICAL level.
+Since CRITICAL is the highest standard level, this effectively silences all log messages.
 
 
 
@@ -5312,10 +5300,10 @@ This handler sends log messages through an SMTP server, suitable for alerting on
 
 540
 Logging in Python
-Q: What is the purpose of logging.basicConfig() in Python's logging module?
+Q: What is one of the main disadvantages of using Python's built-in logging module?
 
-A: It provides a simple way to configure the root logger with basic settings like level, format, and filename.
-This function is ideal for quick setups without the need for multiple handlers or complex configurations.
+A: It can be overly complex and verbose for simple applications or scripts.
+The extensive features may introduce unnecessary complexity when basic logging needs are sufficient.
 
 
 
@@ -5334,10 +5322,10 @@ This allows selective logging based on content, enhancing log organization.
 
 542
 Logging in Python
-Q: What is one advantage of using structured logging libraries like Structlog over Python's built-in logging module?
+Q: Which logging level is appropriate for a message that indicates a minor problem that doesn't prevent the program from functioning?
 
-A: Structured logging facilitates easier parsing, querying, and analysis of log data, especially when integrating with log management systems.
-This is particularly useful for applications that require detailed and machine-readable log formats.
+A: WARNING
+This level signals potential issues that may require attention but do not halt the application's execution.
 
 
 
@@ -5345,10 +5333,10 @@ This is particularly useful for applications that require detailed and machine-r
 
 543
 Logging in Python
-Q: What is the default formatter format string if none is specified in logging.basicConfig()?
+Q: What should you do to ensure that logging.basicConfig() has an effect in Python's logging module?
 
-A: '%(levelname)s:%(name)s:%(message)s'
-This default format includes the log level, logger name, and the log message.
+A: Call it before adding any custom handlers or performing other logging configurations, and ensure that the root logger doesn't already have handlers attached.
+This guarantees that basicConfig sets up the logging system as intended without being overridden.
 
 
 
@@ -5367,10 +5355,10 @@ This difference allows for log management tailored to time-based or size-based r
 
 545
 Logging in Python
-Q: What is the purpose of a Formatter in Python's logging module?
+Q: What should you do to ensure that logging.basicConfig() has an effect in Python's logging module?
 
-A: To define the structure and content of log messages using formats like '%(asctime)s - %(levelname)s - %(message)s'.
-This ensures that log messages are consistently formatted for readability and analysis.
+A: Call it before adding any custom handlers or performing other logging configurations, and ensure that the root logger doesn't already have handlers attached.
+This ensures that basicConfig properly initializes the logging system without being overridden.
 
 
 
@@ -5378,10 +5366,10 @@ This ensures that log messages are consistently formatted for readability and an
 
 546
 Logging in Python
-Q: What is the role of a Formatter in a logging handler within Python's logging module?
+Q: What is one of the best practices for securing log files in Python's logging module?
 
-A: To specify the layout and content of the log messages, such as including timestamps, log levels, and message text.
-Formatters ensure that log messages are consistently structured for readability and analysis.
+A: Setting appropriate file permissions to restrict unauthorized access.
+This protects sensitive log data from being accessed or tampered with by unauthorized users.
 
 
 
@@ -5436,8 +5424,8 @@ A context object used in Azure AD token acquisition processes, specifying the sc
 
 552
 Azure Functions + PP365
-Function App Secrets
-Sensitive information required by Azure Functions, such as API keys or connection strings. Python Azure Functions manage secrets through environment variables, Azure Key Vault integrations, or managed identities, ensuring that sensitive data is stored securely and accessed only by authorized functions.
+Azure Service Principal
+An identity created for use with applications, hosted services, and automated tools to access Azure resources. Service principals enable secure, programmatic access to Azure services, acting as non-human users with specific permissions, essential for authenticating applications like Power Automate and Azure Functions.
 
 
 
@@ -5445,8 +5433,8 @@ Sensitive information required by Azure Functions, such as API keys or connectio
 
 553
 Azure Functions + PP365
-Async Programming (Asyncio)
-A programming paradigm in Python that enables concurrent execution of code using asynchronous functions and event loops. In Azure Functions, leveraging asyncio can improve performance and scalability by allowing Python functions to handle multiple tasks simultaneously without blocking.
+Local Debugging
+Running and testing Azure Functions on a local machine to identify and fix issues before deployment. Python developers use tools like Azure Functions Core Tools and VS Code to debug functions locally, allowing for rapid development and troubleshooting in a controlled environment.
 
 
 
@@ -5488,8 +5476,9 @@ All data written to the user's profile is temporarily stored as block-level cach
 
 558
 FSLogix
-Q: What happens to a FSLogix Profile Container when a user logs off?
-A: When a user logs off, the changes made to the profile are saved back into the Profile Container (VHDX file), ensuring that all settings and data are retained for the next session.
+Cloud Cache uses storage providers based on the order of entries in CCDLocations.
+Storage providers should be listed in order of proximity, then preference.
+Only one (1) provider is used when data is hydrated from the storage provider.
 
 
 
@@ -5513,9 +5502,8 @@ Cloud Cache operates the user's profile from the local cache during the user's s
 
 561
 FSLogix
-Data is written to all storage providers regardless of which provider is used during data hydration.
-Performance (latency, utilization, bottlenecks) of a storage provider affects its sync status with the local copy.
-Having one (1) or more provider that is behind in updates from local cache could be an indicator of an under performing storage provider.
+Q: What does the FSLogix Profile Container do when a user is logging into multiple Azure Virtual Desktops (AVD)?
+A: FSLogix mounts the same Profile Container (VHDX) to any virtual desktop the user logs into, ensuring that their profile settings, documents, and application preferences are consistent and immediately available across all virtual machines. This provides a unified experience regardless of which VM the user accesses.
 
 
 
@@ -5569,38 +5557,6 @@ The Content-Type header specifies the media type of the resource being sent to t
 
 
 567
-Azure Functions + Visual Studio
-ASP.NET Core provides built-in Dependency Injection (DI) support, enabling you to manage dependencies in your application. This makes your code more modular, testable, and easier to maintain.
-
-
-
-
-
-568
-Azure Functions + Visual Studio
-ASP.NET uses a flexible routing system to map URLs to controllers and actions in ASP.NET MVC or ASP.NET Web API applications. This routing system supports custom URL patterns and simplifies URL management.
-
-
-
-
-
-569
-Azure Functions + Visual Studio
-The ASP.NET MVC architecture is based on the Model-View-Controller pattern, which separates the application into three components: Models (data), Views (UI), and Controllers (logic), providing a clean separation of concerns for better maintainability.
-
-
-
-
-
-570
-Azure Functions + Visual Studio
-In all cases, a function is passed an ILogger parameter. The function can use this parameter to write log messages, which the function app writes to storage for later analysis.
-
-
-
-
-
-571
 Python
 Q:
 What is the purpose of itertools.groupby()?
@@ -5612,7 +5568,7 @@ It groups consecutive keys in an iterable that are identical, returning the key 
 
 
 
-572
+568
 Python
 Q:
 What does the pathlib.Path class represent in Python?
@@ -5624,7 +5580,7 @@ Filesystem paths with methods and properties for path manipulations in an object
 
 
 
-573
+569
 Python
 Q:
 How can you create an infinite iterator cycling through a given iterable using itertools?
@@ -5636,31 +5592,31 @@ Using itertools.cycle(iterable).
 
 
 
-574
+570
 Python
 Q:
-How do you retrieve the next value from a generator named gen?
+How do you make a custom object iterable?
 
 A:
-Using the built-in next(gen) function.
+By implementing the __iter__() method that returns an iterator (which can be the object itself with a __next__() method).
 
 
 
 
 
-575
+571
 Python
 Q:
-Name a built-in context manager in Python and its purpose.
+What does the with open(...) statement ensure when working with files in Python?
 
 A:
-open() is a built-in context manager used for opening files. It ensures that the file is properly closed after its block of code is executed.
+It ensures that the file is properly closed after its block of code is executed, even if an error occurs.
 
 
 
 
 
-576
+572
 Python
 Q:
 How can you define a custom exception in Python?
@@ -5675,7 +5631,7 @@ class MyCustomError(Exception):
 
 
 
-577
+573
 Python
 Q:
 Name a common use case for generators in Python.
@@ -5687,19 +5643,7 @@ Reading large files one line at a time without loading the entire file into memo
 
 
 
-578
-Python
-Q:
-What is the main advantage of using generators over lists?
-
-A:
-Generators are memory-efficient as they generate items on-the-fly and don't store the entire sequence in memory, making them faster for large datasets.
-
-
-
-
-
-579
+574
 Python
 Q:
 What does the else block do in a try-except statement?
@@ -5711,31 +5655,43 @@ The else block executes if no exceptions were raised in the try block.
 
 
 
-580
+575
 Python
 Q:
-How can you raise an exception inside a generator from outside?
+How can you create a context manager using a generator function?
 
 A:
-Using the .throw(type, value=None, traceback=None) method.
+By using the @contextmanager decorator from the contextlib module and yielding control within the function.
 
 
 
 
 
-581
+576
 Python
-How can you compare two Path objects for equality regardless of their string representations? By resolving both paths and comparing them.
+Q:
+Explain the concept of generator pipelines.
 
-path1 = Path('/home/user/file.txt').resolve()
-path2 = Path('./file.txt').resolve()
-are_equal = path1 == path2
-
-
+A:
+Generator pipelines involve chaining multiple generators together, where each generator processes data and passes it to the next, enabling efficient and modular data processing.
 
 
 
-582
+
+
+577
+Python
+Q:
+How can you set an exit code of 2 in a Python script?
+
+A:
+Using either sys.exit(2) or exit(2).
+
+
+
+
+
+578
 Python
 Q:
 Explain the difference between except Exception as e and except (ValueError, TypeError) as e.
@@ -5747,7 +5703,7 @@ except Exception as e catches all exceptions that inherit from Exception, while 
 
 
 
-583
+579
 Python
 Q:
 What is the advantage of using context managers for resource management?
@@ -5759,58 +5715,63 @@ They ensure that resources are properly acquired and released, even if errors oc
 
 
 
-584
+580
+Python
+How can you create all parent directories for a given path using pathlib?
+Using the .mkdir(parents=True, exist_ok=True) method.
+
+path = Path('/path/to/new/directory')
+path.mkdir(parents=True, exist_ok=True)
+
+
+
+
+
+581
 Python
 Q:
-What method is used to gracefully terminate a generator?
+Which Python module is commonly used to set exit codes?
 
 A:
-The .close() method.
+sys
+
+
+
+
+
+582
+Azure Functions + Visual Studio
+ASP.NET Core provides built-in Dependency Injection (DI) support, enabling you to manage dependencies in your application. This makes your code more modular, testable, and easier to maintain.
+
+
+
+
+
+583
+Azure Functions + Visual Studio
+ASP.NET uses a flexible routing system to map URLs to controllers and actions in ASP.NET MVC or ASP.NET Web API applications. This routing system supports custom URL patterns and simplifies URL management.
+
+
+
+
+
+584
+Azure Functions + Visual Studio
+The ASP.NET MVC architecture is based on the Model-View-Controller pattern, which separates the application into three components: Models (data), Views (UI), and Controllers (logic), providing a clean separation of concerns for better maintainability.
 
 
 
 
 
 585
-Python
-Q:
-Which Python module provides an object-oriented approach to handling filesystem paths?
-
-A:
-pathlib
+Azure Functions + Visual Studio
+In all cases, a function is passed an ILogger parameter. The function can use this parameter to write log messages, which the function app writes to storage for later analysis.
 
 
 
 
 
 586
-DNS
-Forward Lookup Zones
-DNS zones that translate hostnames to IP addresses. They are the most common type of DNS zones, enabling clients to resolve domain names to their corresponding IPv4 or IPv6 addresses.
-
-
-
-
-
-587
-DNS
-Conditional Forwarding
-A DNS configuration that directs queries for specific domain names to designated DNS servers instead of using default forwarders. It's useful for managing inter-office DNS resolution or directing queries for partner domains to their respective DNS servers.
-
-
-
-
-
-588
-DNS
-Root Hints
-A list of authoritative DNS servers for the root zone. Root hints are used by DNS servers to initiate recursive queries when resolving domain names, especially when no forwarders are configured.
-
-
-
-
-
-589
 Terraform
 Variable References:
 Refer to variables using the var. prefix within interpolation expressions. For example:
@@ -5821,16 +5782,25 @@ ${var.env}
 
 
 
-590
+587
 Terraform
-Configuration Blocks:
-These are the building blocks of Terraform code, such as resource, module, provider, and output blocks.
+Remote Backends and Interpolation:
+Definition: Terraform can store state remotely (e.g., in AWS S3, Azure Blob Storage). Variable interpolation may be used to configure these backends dynamically.
+Example:
+
+terraform {
+  backend "s3" {
+    bucket = var.state_bucket
+    key    = "path/to/my/key"
+    region = var.region
+  }
+}
 
 
 
 
 
-591
+588
 Terraform
 Built-In Functions:
 Definition: Terraform provides functions for manipulating data types like strings, lists, and maps.
@@ -5848,7 +5818,7 @@ lookup(map, key, default): Retrieves a value from a map.
 
 
 
-592
+589
 Terraform
 Dynamic Blocks:
 Definition: Allow you to construct nested blocks dynamically based on complex data structures.
@@ -5869,15 +5839,15 @@ dynamic "ingress" {
 
 
 
-593
+590
 Terraform
-At a large organization, your centralized operations team may get many repetitive infrastructure requests. You can use Terraform to build a "self-serve" infrastructure model that lets product teams manage their own infrastructure independently.
+Ticket-based review processes are a bottleneck that can slow down development. Instead, you can use Sentinel, a policy-as-code framework, to automatically enforce compliance and governance policies before Terraform makes infrastructure changes. Sentinel policies are available in Terraform Enterprise and HCP Terraform.
 
 
 
 
 
-594
+591
 Terraform
 Ternary Operator (Conditional Expression):
 A shorthand for conditional logic in interpolation.
@@ -5892,21 +5862,24 @@ ${var.env == "prod" ? "Production" : "Non-production"}
 
 
 
-595
+592
 Terraform
-For Expressions:
+Local Values:
+Definition: Local values allow you to define computed variables within a configuration to simplify expressions or avoid repetition.
+Usage: Useful for intermediate calculations or to centralize common values.
 
-Definition: These are used to transform or filter collections (lists or maps) inline.
-Usage: Useful for generating new lists or maps based on existing ones without using external loops.
 Example:
 
-[for instance in var.instances : instance.id]
+locals {
+  app_name = "myapp"
+  instance_count = length(var.instance_ids)
+}
 
 
 
 
 
-596
+593
 Terraform
 Terraform allows you to manage the resources in each tier together, and automatically handles dependencies between tiers. For example, Terraform will deploy a database tier before provisioning the web servers that depend on it.
 
@@ -5914,61 +5887,34 @@ Terraform allows you to manage the resources in each tier together, and automati
 
 
 
+594
+DNS
+Forward Lookup Zones
+DNS zones that translate hostnames to IP addresses. They are the most common type of DNS zones, enabling clients to resolve domain names to their corresponding IPv4 or IPv6 addresses.
+
+
+
+
+
+595
+DNS
+Conditional Forwarding
+A DNS configuration that directs queries for specific domain names to designated DNS servers instead of using default forwarders. It's useful for managing inter-office DNS resolution or directing queries for partner domains to their respective DNS servers.
+
+
+
+
+
+596
+DNS
+Root Hints
+A list of authoritative DNS servers for the root zone. Root hints are used by DNS servers to initiate recursive queries when resolving domain names, especially when no forwarders are configured.
+
+
+
+
+
 597
-Debugging in VS Code
-Exception Breakpoint
-A breakpoint that pauses the program when a specific exception (error) is raised.
-
-
-
-
-
-598
-Debugging in VS Code
-Conditional Breakpoint
-A breakpoint that only pauses execution when a specific condition is met (e.g., when a variable reaches a certain value).
-
-
-
-
-
-599
-Debugging in VS Code
-Symbolic Debugging
-A debugging technique that uses debug symbols (which provide additional information like variable names, function names, and line numbers) to make debugging more understandable and precise, often used in conjunction with compiled languages.
-
-
-
-
-
-600
-Debugging in VS Code
-Call Stack
-A data structure that stores the sequence of function calls made in a program, showing the order in which they were called.
-
-
-
-
-
-601
-Debugging in VS Code
-Reverse Debugging
-A debugging technique where you can move backward through the program’s execution to examine the program's state before an issue occurred, often helpful for tracking down bugs that involve complex states.
-
-
-
-
-
-602
-Debugging in VS Code
-Profiling
-The process of analyzing the performance of a program, including memory usage, execution time, and function calls, to identify bottlenecks and optimize performance.
-
-
-
-
-
-603
 Open Source/GitHub
 Downstream Repository
 
@@ -5978,7 +5924,7 @@ A fork or clone of an upstream repository, where contributors can make changes i
 
 
 
-604
+598
 Open Source/GitHub
 Good First Issue
 
@@ -5988,17 +5934,17 @@ A label for beginner-friendly tasks in a project’s issue tracker, designed to 
 
 
 
-605
+599
 Open Source/GitHub
-PEP 8
+Test Suite
 
-Python Enhancement Proposal 8, the style guide for writing clean and readable Python code, outlining conventions for code layout and formatting.
-
-
+A collection of automated tests that verify the functionality and integrity of a project’s code, ensuring that changes do not introduce new bugs.
 
 
 
-606
+
+
+600
 Open Source/GitHub
 CONTRIBUTING.md
 
@@ -6008,11 +5954,65 @@ A markdown file that outlines the process and guidelines for contributing to a p
 
 
 
-607
+601
 Open Source/GitHub
 GitHub Actions
 
 A feature on GitHub that allows automation of workflows, such as running tests or deploying code, in response to events like pull requests.
+
+
+
+
+
+602
+Debugging in VS Code
+Exception Breakpoint
+A breakpoint that pauses the program when a specific exception (error) is raised.
+
+
+
+
+
+603
+Debugging in VS Code
+Conditional Breakpoint
+A breakpoint that only pauses execution when a specific condition is met (e.g., when a variable reaches a certain value).
+
+
+
+
+
+604
+Debugging in VS Code
+Step Over
+A debugging feature that allows you to skip over a function call, running it entirely without entering it.
+
+
+
+
+
+605
+Debugging in VS Code
+Remote Debugging
+The process of debugging code running on a different machine or environment from your local computer.
+
+
+
+
+
+606
+Debugging in VS Code
+Reverse Debugging
+A debugging technique where you can move backward through the program’s execution to examine the program's state before an issue occurred, often helpful for tracking down bugs that involve complex states.
+
+
+
+
+
+607
+Debugging in VS Code
+Profiling
+The process of analyzing the performance of a program, including memory usage, execution time, and function calls, to identify bottlenecks and optimize performance.
 
 
 
@@ -6240,11 +6240,11 @@ Protects against unauthorized use of a domain in email communications.
 
 630
 Email Auth and Security
-p=none
+MX Toolbox
 
-A DMARC policy action.
-Requests no specific action be taken on unauthenticated emails.
-Used for monitoring and gathering data without affecting email delivery.
+An online suite of tools for diagnosing and analyzing DNS records.
+Checks SPF, DKIM, and DMARC configurations.
+Helps administrators verify the correctness of their email authentication setups.
 
 
 
@@ -6264,6 +6264,24 @@ Examples include Microsoft Outlook, Mozilla Thunderbird, and Gmail.
 
 632
 RAG Project
+Patch / Monkeypatch
+Temporary override of code behavior during tests — often used to replace Azure calls with mocks.
+
+
+
+
+
+633
+RAG Project
+io.BytesIO()
+In-memory file-like object — often used to hold a file before sending it via HTTP.
+
+
+
+
+
+634
+RAG Project
 Generator / yield
 Functions that produce values one at a time. Used to stream large responses or iterate lazily.
 
@@ -6271,7 +6289,7 @@ Functions that produce values one at a time. Used to stream large responses or i
 
 
 
-633
+635
 RAG Project
 pytest.mark.asyncio
 A decorator that marks a test function as asynchronous so you can use await inside it. Required when testing Quart or anything async.
@@ -6280,28 +6298,10 @@ A decorator that marks a test function as asynchronous so you can use await insi
 
 
 
-634
-RAG Project
-Quart
-A Python web framework like Flask but with full support for async/await. Used to build async HTTP APIs.
-
-
-
-
-
-635
-RAG Project
-Test Client
-A simulated web client that sends fake HTTP requests to your app (e.g., client.post("/ask")).
-
-
-
-
-
 636
 RAG Project
-Access Control
-Logic that determines who can access which resources or files.
+Factory Function (create_app)
+A function that sets up and returns a fully configured app instance. Used to cleanly separate setup from execution and enable testing.
 
 
 
@@ -6309,10 +6309,8 @@ Logic that determines who can access which resources or files.
 
 637
 RAG Project
-Middleware
-Functions that run before/after every request — often used for logging, auth, or telemetry.
-Telemetry / Instrumentation
-Logging of metrics, performance data, and errors (e.g., via Azure Monitor or OpenTelemetry).
+Route
+A URL endpoint in your app (e.g., /upload, /ask) that maps to a function.
 
 
 
@@ -6329,8 +6327,10 @@ Route decorators that ensure users are signed in and attach their user info to t
 
 639
 RAG Project
-__init__.py
-A special file that makes a directory a Python package (so it can be imported).
+Middleware
+Functions that run before/after every request — often used for logging, auth, or telemetry.
+Telemetry / Instrumentation
+Logging of metrics, performance data, and errors (e.g., via Azure Monitor or OpenTelemetry).
 
 
 
@@ -6338,8 +6338,8 @@ A special file that makes a directory a Python package (so it can be imported).
 
 640
 Azure DevOps Pipelines
-What does the trigger keyword do in an Azure DevOps YAML pipeline?
-Answer: It defines the branches or events that will cause the pipeline to run, such as a commit to a specific branch.
+What is the purpose of the 'checkout' step in an Azure DevOps YAML pipeline?
+Answer: It checks out the source code from the repository for use in the pipeline.
 
 
 
@@ -6347,23 +6347,14 @@ Answer: It defines the branches or events that will cause the pipeline to run, s
 
 641
 Azure DevOps Pipelines
-How do you run a pipeline on a self-hosted agent in Azure DevOps?
-Answer: pool: self-hosted
+What keyword is used to define multiple steps that should run in parallel in Azure DevOps YAML pipelines?
+Answer: matrix
 
 
 
 
 
 642
-Azure DevOps Pipelines
-In Azure DevOps, what is the use of the strategy keyword in a pipeline matrix?
-Answer: The strategy keyword allows you to define different combinations of variables or configurations for matrix jobs, enabling parallel execution with different environments or settings.
-
-
-
-
-
-643
 Azure DevOps Pipelines
 What does the 'trigger' keyword do in an Azure DevOps YAML pipeline?
 Answer: Defines the branches or events that will cause the pipeline to run, such as a commit to a specific branch.
@@ -6372,10 +6363,19 @@ Answer: Defines the branches or events that will cause the pipeline to run, such
 
 
 
+643
+Azure DevOps Pipelines
+How do you run a pipeline on a self-hosted agent in Azure DevOps?
+Answer: pool: self-hosted
+
+
+
+
+
 644
 Azure DevOps Pipelines
-How do you use stages with dependencies in Azure DevOps YAML pipelines?
-Answer: You can define dependsOn between stages to specify the execution order. Stages will run sequentially based on the dependencies defined, ensuring that one stage only runs after another has completed.
+What is a Deployment Pool in Azure DevOps?
+Answer: A Deployment Pool is a set of environments where deployments occur. You can configure and target specific deployment pools for releases to ensure the proper deployment environment is used.
 
 
 
@@ -6392,8 +6392,8 @@ Answer: Use the cache task in the YAML file to store and reuse files between pip
 
 646
 Azure DevOps Pipelines
-What does the resources keyword define in a YAML pipeline?
-Answer: The resources keyword allows you to define external resources such as repositories, containers, or pipelines that a pipeline will use or depend on.
+In Azure DevOps, what is the use of the strategy keyword in a pipeline matrix?
+Answer: The strategy keyword allows you to define different combinations of variables or configurations for matrix jobs, enabling parallel execution with different environments or settings.
 
 
 
@@ -6401,14 +6401,23 @@ Answer: The resources keyword allows you to define external resources such as re
 
 647
 Azure DevOps Pipelines
-What is the default trigger for a YAML-based pipeline in Azure DevOps?
-Answer: A trigger based on code changes in a Git repository.
+How do you add a manual approval gate before a pipeline proceeds to the next stage?
+Answer: Set a ApprovalRequired flag on the pipeline's stages.
 
 
 
 
 
 648
+Azure AD Authentication
+Custom Roles
+User-defined roles with specific permissions, used when built-in roles don’t provide the required access or for more granular control.
+
+
+
+
+
+649
 Azure AD Authentication
 App Registration vs Enterprise Application
 App Registration defines the app’s identity, while Enterprise Application represents the actual instance of the app within an Azure AD tenant.
@@ -6417,7 +6426,7 @@ App Registration defines the app’s identity, while Enterprise Application repr
 
 
 
-649
+650
 Azure AD Authentication
 Service Principal
 A security identity for an app to authenticate and access Azure resources. Used for automated services and applications instead of using user credentials.
@@ -6426,16 +6435,7 @@ A security identity for an app to authenticate and access Azure resources. Used 
 
 
 
-650
-Azure AD Authentication
-Scope
-Defines the level at which a role is applied, such as management group, subscription, resource group, or individual resource. Higher scopes apply to all child resources.
-
-
-
-
-
 651
 Azure AD Authentication
-Role Assignment
-Links a principal (user, group, service principal) to a role at a defined scope, granting specific permissions to interact with Azure resources.
+Role Inheritance
+Roles assigned at a higher scope (e.g., subscription) are inherited by resources at lower scopes (e.g., resource groups, resources).
