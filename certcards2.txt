@@ -4,40 +4,18 @@
 
 
 
-1
-Azure Developer Associate
-Azure blob storage rule run condition: 
-daysAfterLastTierChangeGreaterThan
-  Integer 
-  value indicating the age in days after last blob tier change time	The minimum duration in days that a rehydrated blob is kept in hot, cool, or cold tiers before being returned to the archive tier. This condition applies only to tierToArchive actions.
 
 
 
 
 
-2
-Azure Developer Associate
-Q: Which Redis tier is best for development/testing?
-A: Basic Tier — single-node, no SLA, cheapest.
 
 
 
 
 
-3
-Azure Developer Associate
-Q: What is a good practice for naming Redis keys?
-A: Use namespaces (e.g., user:123:profile) to organize and avoid conflicts.
 
 
-
-
-
-4
-Azure Developer Associate
-Rehydration priority options include:
-
-Standard priority: The rehydration request is processed in the order it was received and might take up to 15 hours.
 
 
 
