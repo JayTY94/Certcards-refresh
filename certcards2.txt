@@ -4,19 +4,8 @@
 
 
 
-1
-DNS
-TSIG (Transaction SIGnature)
-A security mechanism used to authenticate DNS messages, ensuring that zone transfers and other DNS communications are from trusted sources. TSIG uses shared secret keys and cryptographic signatures to verify the authenticity of DNS transactions.
 
 
-
-
-
-2
-DNS
-Active Directory-Integrated Zones
-DNS zones that store their data within the Active Directory database. This integration allows for secure dynamic updates and automatic replication of DNS data across all domain controllers, enhancing security and redundancy.
 
 
 
