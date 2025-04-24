@@ -4,10 +4,6 @@
 
 
 
-1
-DNS
-Remove-DnsServerZone (PowerShell Cmdlet)
-A PowerShell command used to delete an existing DNS zone from a Windows DNS Server. It allows administrators to remove obsolete or unnecessary zones efficiently through scripts or command-line operations.
 
 
 
