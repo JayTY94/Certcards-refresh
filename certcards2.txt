@@ -9,10 +9,6 @@
 
 
 
-2
-DNS
-Forward Lookup Zones
-DNS zones that translate hostnames to IP addresses. They are the most common type of DNS zones, enabling clients to resolve domain names to their corresponding IPv4 or IPv6 addresses.
 
 
 
@@ -6275,3 +6271,48 @@ Piquant
 Vocab
 Interval Funds Invest in Less Liquid Assets:
 Interval funds typically invest in alternative, less liquid assets like real estate, private equity, private debt, and structured credit, granting investors access to opportunities not typically available through conventional investment vehicles.
+
+
+
+
+
+
+217
+JavaScript Concepts
+A callback function is a function that is passed as an argument to another function and is executed after some operation has been completed. This allows for more flexible and modular code, especially when dealing with asynchronous operations.
+
+
+
+
+
+
+217
+JavaScript Concepts
+In this example, sayGoodbye is passed as a callback to greet and is executed after the greeting message.
+
+function greet(name, callback) {
+    console.log('Hello ' + name);
+    callback();
+}
+function sayGoodbye() {
+    console.log('Goodbye!');
+}
+greet('Jay', sayGoodbye);
+
+
+
+
+
+
+217
+JavaScript Concepts
+Front: What are the benefits of using callback functions?
+
+Back:
+Flexibility: Allows functions to be more modular and reusable.
+Asynchronous Handling: Enables handling of asynchronous operations like network requests and timers.
+Improved Code Organization: Helps in organizing code by separating concerns and improving readability.
+
+
+
+
