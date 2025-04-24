@@ -14,10 +14,6 @@
 
 
 
-3
-DNS
-Refresh Interval
-The period following the No-Refresh Interval during which the timestamp on a DNS record can be updated. If a record is refreshed within this interval, it remains active; otherwise, it becomes eligible for scavenging.
 
 
 
