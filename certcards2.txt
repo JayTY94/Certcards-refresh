@@ -4,10 +4,6 @@
 
 
 
-1
-Azure Developer Associate
-Q: What Azure Redis tier offers a single-node setup with no SLA?
-A: Basic tier.
 
 
 
