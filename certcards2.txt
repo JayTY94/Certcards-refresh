@@ -9,19 +9,9 @@
 
 
 
-2
-Azure Developer Associate
-Q: Does the Basic tier of Azure Cache for Redis support data persistence or high availability?
-A: No — it uses a single node with no persistence or HA.
 
 
 
-
-
-3
-Azure Developer Associate
-Q: Which Azure Cache for Redis tier is the first to support data persistence?
-A: The Premium tier.
 
 
 
