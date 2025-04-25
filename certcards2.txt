@@ -6268,3 +6268,272 @@ Registers an app in Azure AD, creating its identity to authenticate with Azure s
 Azure AD Authentication
 Principal
 An identity (user, group, service principal) that is granted access to Azure resources based on assigned roles.
+
+
+
+
+
+
+
+
+1
+Azure Developer Associate
+Front: Name the five Cosmos DB consistency levels, in order from strongest to weakest.
+Back: Strong → Bounded Staleness → Session → Consistent Prefix → Eventual.
+
+
+
+
+
+
+
+2
+Azure Developer Associate
+Front: What guarantee does Session consistency provide?
+Back: Monotonic reads, monotonic writes, read-your-writes, and write-fan-out within a single client session.
+
+
+
+
+
+
+
+3
+Azure Developer Associate
+Front: List three criteria for choosing a good logical partition key.
+Back:
+
+High cardinality (many distinct values)
+Even distribution of reads/writes (avoids “hot” partitions)
+Co-location of related items if you need cross-item transactions.
+
+
+
+
+
+
+
+4
+Azure Developer Associate
+Front: What are the three throughput models in Cosmos DB?
+Back:
+
+Manual (Provisioned) RU/s – fixed throughput you set.
+Autoscale RU/s – scales between 10% and 100× your minimum RU/s.
+Serverless – no provisioned RUs; pay per RU consumed.
+
+
+
+
+
+
+
+5
+Azure Developer Associate
+Front: How does autoscale billing calculate your minimum RU/s charge?
+Back: You’re billed at 10% of your maxThroughput setting. (e.g., max = 10 000 RU/s → min bill = 1 000 RU/s.)
+
+
+
+
+
+
+
+6
+Azure Developer Associate
+Front: What’s the Cosmos DB Change Feed used for?
+Back: An ordered, per-partition stream of inserts and updates—ideal for event sourcing, ETL, or triggering Functions.
+
+
+
+
+
+
+
+7
+Azure Developer Associate
+Front: How do you configure TTL in Cosmos DB, and what does it do?
+Back: Set a TTL (in seconds) at the container level (default) or override per item; Cosmos DB automatically deletes items after they expire.
+
+
+
+
+
+
+
+8
+Azure Developer Associate
+Front: Which indexing policy change lowers write RU costs for a seldom-queried property?
+Back: Add an exclude path for that property in your custom indexing policy to skip indexing it.
+
+
+
+
+
+
+
+9
+Azure Developer Associate
+Front: Name ways to authenticate applications to Cosmos DB.
+Back:
+
+Primary/Secondary keys
+Azure AD RBAC
+Resource tokens
+(But not SAS tokens.)
+
+
+
+
+
+10
+Azure Developer Associate
+Front: In the SDK, how should you handle 429 (throttled) errors?
+Back: Rely on the built-in retry policy with exponential backoff—don’t catch and retry immediately.
+
+
+
+
+
+
+
+11
+Azure Developer Associate
+Front: What happens to Strong consistency reads during a regional failover in a multi-region account?
+Back: Strong reads will only succeed in the current write region. If failover switches your write region, clients must target the new write region for linearizability.
+
+
+
+
+
+
+
+12
+Azure Developer Associate
+Front: Describe the difference between Bounded Staleness and Consistent Prefix.
+Back:
+Bounded Staleness: Ordered reads with a max lag of K versions or T seconds.
+Consistent Prefix: Ordered reads with no freshness bound (can lag indefinitely).
+
+
+
+
+
+
+
+13
+Azure Developer Associate
+Front: You need to guarantee “no gaps” in the sequence of writes but don’t care about client affinity. Which consistency level?
+Back: Consistent Prefix—it ensures write order, even if you see older data.
+
+
+
+
+
+
+
+14
+Azure Developer Associate
+Front: What’s the max data size and RU/s throughput a single logical partition can hold?
+Back:
+
+Data: up to 20 GB per logical partition
+Throughput: limited to the RU/s of its parent physical partition (≈10 000 RU/s per slice).
+
+
+
+
+
+
+
+15
+Azure Developer Associate
+Front: How does Cosmos DB decide when to split a physical partition?
+Back: When either data size nears 20 GB or provisioned throughput demand exceeds the single-partition RU/s limit (~10 000 RU/s).
+
+
+
+
+
+
+
+16
+Azure Developer Associate
+Front: You run a cross-partition query over 8 partitions that each cost 3 RU. How many total RUs?
+Back: 8 × 3 RU = 24 RU.
+
+
+
+
+
+
+
+17
+Azure Developer Associate
+Front: Why might you choose Serverless over Autoscale?
+Back: For very low-volume or unpredictable workloads where even Autoscale’s 10%-of-max RU floor is too costly.
+
+
+
+
+
+
+
+18
+Azure Developer Associate
+Front: What’s the effect of setting maxIntervalInSeconds to 0 in a Bounded Staleness policy?
+Back: You get purely version-based staleness (maxStalenessPrefix bound only), with no time-based freshness guarantee.
+
+
+
+
+
+
+
+19
+Azure Developer Associate
+Front: How do you exclude a nested JSON property (/address/zip) from indexing?
+Back:
+{
+  "indexingMode": "Consistent",
+  "includedPaths": [ { "path": "/*" } ],
+  "excludedPaths": [ { "path": "/address/zip/?" } ]
+}
+
+
+
+
+
+
+20
+Azure Developer Associate
+Front: In Autoscale, if you set maxThroughput to 50 000 RU/s, what’s the billed minimum?
+Back: 10% of 50 000 = 5 000 RU/s.
+
+
+
+
+
+
+
+21
+Azure Developer Associate
+Front: What’s a good pattern to avoid cross-partition fan-out in queries?
+Back: Always include the partition-key value in your WHERE clause (e.g., WHERE c.customerId = @id).
+
+
+
+
+
+
+
+22
+Azure Developer Associate
+Front: How can you override the account default consistency for a single SDK request?
+Back: Set the request-level consistency in the client call (e.g., .WithConsistencyLevel(ConsistencyLevel.Session) in the .NET SDK).
+
+
+
+
+
+
