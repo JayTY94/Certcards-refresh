@@ -429,8 +429,8 @@ It raises an AttributeError because the correct method to retrieve the next valu
 
 45
 Azure DevOps Pipelines
-How do you run a pipeline on a self-hosted agent in Azure DevOps?
-Answer: pool: self-hosted
+What does the 'trigger' keyword do in an Azure DevOps YAML pipeline?
+Answer: Defines the branches or events that will cause the pipeline to run, such as a commit to a specific branch.
 
 
 
@@ -438,8 +438,8 @@ Answer: pool: self-hosted
 
 46
 RAG Project
-async / await
-Keywords in Python for writing non-blocking, asynchronous code.
+auth_client
+A special fixture often defined in conftest.py that returns a test client with fake authentication already set up.
 
 
 
@@ -447,8 +447,8 @@ Keywords in Python for writing non-blocking, asynchronous code.
 
 47
 Azure AD Authentication
-Custom Roles
-User-defined roles with specific permissions, used when built-in roles don’t provide the required access or for more granular control.
+Built-In Roles
+Predefined roles like Owner, Contributor, and Reader that grant specific permissions to manage Azure resources at various scopes.
 
 
 
@@ -657,8 +657,8 @@ It groups consecutive keys in an iterable that are identical, returning the key 
 
 68
 Azure DevOps Pipelines
-In an Azure DevOps pipeline, which YAML syntax would you use to reference a variable?
-Answer: $(variable_name)
+How do you run a pipeline on a self-hosted agent in Azure DevOps?
+Answer: pool: self-hosted
 
 
 
@@ -666,8 +666,8 @@ Answer: $(variable_name)
 
 69
 RAG Project
-io.BytesIO()
-In-memory file-like object — often used to hold a file before sending it via HTTP.
+async / await
+Keywords in Python for writing non-blocking, asynchronous code.
 
 
 
@@ -675,8 +675,8 @@ In-memory file-like object — often used to hold a file before sending it via H
 
 70
 Azure AD Authentication
-Built-In Roles
-Predefined roles like Owner, Contributor, and Reader that grant specific permissions to manage Azure resources at various scopes.
+Custom Roles
+User-defined roles with specific permissions, used when built-in roles don’t provide the required access or for more granular control.
 
 
 
@@ -876,8 +876,8 @@ itertools.chain().
 
 91
 Azure DevOps Pipelines
-What does the jobs keyword in Azure DevOps YAML define?
-Answer: It defines a set of jobs that run in the pipeline. Each job can contain steps, and jobs can be executed in parallel or sequentially based on dependencies.
+In an Azure DevOps pipeline, which YAML syntax would you use to reference a variable?
+Answer: $(variable_name)
 
 
 
@@ -885,8 +885,8 @@ Answer: It defines a set of jobs that run in the pipeline. Each job can contain 
 
 92
 RAG Project
-test_client()
-A method on a Quart app that gives you a fake browser-like interface to make test requests like client.get("/endpoint").
+io.BytesIO()
+In-memory file-like object — often used to hold a file before sending it via HTTP.
 
 
 
@@ -894,8 +894,8 @@ A method on a Quart app that gives you a fake browser-like interface to make tes
 
 93
 Azure AD Authentication
-Service Principal Authentication Methods
-Authentication for service principals can be done using Client Secret, Client Certificate, or Managed Identity, which provides secure, credential-free access to Azure services.
+Role Assignment Propagation
+Role permissions may take time to propagate across Azure, so changes in role assignments might not be immediately reflected in access control.
 
 
 
@@ -1044,10 +1044,11 @@ In WSL, the /mnt directory is where your Windows file system is mounted. For exa
 
 109
 SharePoint
-Delegated Permissions
-Definition: Permissions granted to an application on behalf of a user. The app acts as the user and can only perform actions that the user is permitted to do.
-Use Case: Suitable for scenarios where a user is present and can interactively sign in, such as desktop applications or web apps with user interfaces.
-Authentication Flow: Typically involves interactive authentication methods like the Authorization Code Flow or Device Code Flow
+For more advanced scenarios or to leverage modern authentication libraries, you can use the Microsoft Authentication Library (MSAL) in PowerShell. This approach provides enhanced security features and easier token management.
+
+a. Install MSAL.PS Module
+powershell
+> Install-Module -Name MSAL.PS -Scope CurrentUser
 
 
 
@@ -1113,8 +1114,8 @@ Answer: The strategy keyword allows you to define different combinations of vari
 
 115
 RAG Project
-Object ID (OID)
-Unique identifier for a user in Azure AD, used to scope their files or actions.
+test_client()
+A method on a Quart app that gives you a fake browser-like interface to make test requests like client.get("/endpoint").
 
 
 
@@ -1122,8 +1123,8 @@ Unique identifier for a user in Azure AD, used to scope their files or actions.
 
 116
 Azure AD Authentication
-Role Assignment Propagation
-Role permissions may take time to propagate across Azure, so changes in role assignments might not be immediately reflected in access control.
+Scope
+Defines the level at which a role is applied, such as management group, subscription, resource group, or individual resource. Higher scopes apply to all child resources.
 
 
 
@@ -1255,11 +1256,11 @@ Built-in wizards and features in SQL Server Management Studio to safeguard data.
 
 130
 Email Auth and Security
-Feedback Loops (FBL)
+DMARC (Domain-based Message Authentication, Reporting & Conformance)
 
-Mechanisms by which email service providers notify senders about spam complaints from recipients.
-Allow senders to monitor and address spam-related issues, improving sender reputation and email deliverability.
-Implemented through services like Return Path and Feedback Loop (FBL) agreements with ISPs.
+Builds on SPF and DKIM to provide domain owners with policies for handling unauthenticated emails.
+Enables reporting on email authentication status and issues.
+Protects against unauthorized use of a domain in email communications.
 
 
 
@@ -1276,11 +1277,10 @@ A message bus system that allows applications and services to communicate with e
 
 132
 SharePoint
-For more advanced scenarios or to leverage modern authentication libraries, you can use the Microsoft Authentication Library (MSAL) in PowerShell. This approach provides enhanced security features and easier token management.
-
-a. Install MSAL.PS Module
-powershell
-> Install-Module -Name MSAL.PS -Scope CurrentUser
+Delegated Permissions
+Definition: Permissions granted to an application on behalf of a user. The app acts as the user and can only perform actions that the user is permitted to do.
+Use Case: Suitable for scenarios where a user is present and can interactively sign in, such as desktop applications or web apps with user interfaces.
+Authentication Flow: Typically involves interactive authentication methods like the Authorization Code Flow or Device Code Flow
 
 
 
@@ -1341,8 +1341,8 @@ except ValueError as e:
 
 137
 Azure DevOps Pipelines
-What is the main purpose of a YAML file in Azure DevOps pipelines?
-Answer: To define and configure pipeline processes, including steps, tasks, and environments.
+What does the resources keyword define in a YAML pipeline?
+Answer: The resources keyword allows you to define external resources such as repositories, containers, or pipelines that a pipeline will use or depend on.
 
 
 
@@ -1359,8 +1359,8 @@ A simulated web client that sends fake HTTP requests to your app (e.g., client.p
 
 139
 Azure AD Authentication
-Role Assignment
-Links a principal (user, group, service principal) to a role at a defined scope, granting specific permissions to interact with Azure resources.
+Service Principal Authentication Methods
+Authentication for service principals can be done using Client Secret, Client Certificate, or Managed Identity, which provides secure, credential-free access to Azure services.
 
 
 
@@ -1497,11 +1497,11 @@ User-friendly interfaces for entering, displaying, and editing data in tables. T
 
 153
 Email Auth and Security
-DMARC (Domain-based Message Authentication, Reporting & Conformance)
+Feedback Loops (FBL)
 
-Builds on SPF and DKIM to provide domain owners with policies for handling unauthenticated emails.
-Enables reporting on email authentication status and issues.
-Protects against unauthorized use of a domain in email communications.
+Mechanisms by which email service providers notify senders about spam complaints from recipients.
+Allow senders to monitor and address spam-related issues, improving sender reputation and email deliverability.
+Implemented through services like Return Path and Feedback Loop (FBL) agreements with ISPs.
 
 
 
@@ -1557,10 +1557,10 @@ A marker set in a program that causes the execution to pause so that the develop
 159
 Python
 Q:
-What is the purpose of the finally block in exception handling?
+How can you create an infinite iterator cycling through a given iterable using itertools?
 
 A:
-To execute code regardless of whether an exception was raised or not, typically used for cleanup actions.
+Using itertools.cycle(iterable).
 
 
 
@@ -1568,8 +1568,8 @@ To execute code regardless of whether an exception was raised or not, typically 
 
 160
 Azure DevOps Pipelines
-What is a Deployment Pool in Azure DevOps?
-Answer: A Deployment Pool is a set of environments where deployments occur. You can configure and target specific deployment pools for releases to ensure the proper deployment environment is used.
+What is the main purpose of a YAML file in Azure DevOps pipelines?
+Answer: To define and configure pipeline processes, including steps, tasks, and environments.
 
 
 
@@ -1586,8 +1586,8 @@ A modular way to organize route handlers in Quart/Flask apps. Lets you split up 
 
 162
 Azure AD Authentication
-Managed Identities
-Azure-managed identities used by Azure resources (like VMs) to authenticate to other Azure services, removing the need to manage credentials.
+Role Assignment
+Links a principal (user, group, service principal) to a role at a defined scope, granting specific permissions to interact with Azure resources.
 
 
 
@@ -1777,10 +1777,10 @@ A debugging technique that uses debug symbols (which provide additional informat
 182
 Python
 Q:
-How can you create an infinite iterator cycling through a given iterable using itertools?
+What is the purpose of the finally block in exception handling?
 
 A:
-Using itertools.cycle(iterable).
+To execute code regardless of whether an exception was raised or not, typically used for cleanup actions.
 
 
 
@@ -1788,8 +1788,8 @@ Using itertools.cycle(iterable).
 
 183
 Azure DevOps Pipelines
-What keyword is used to define multiple steps that should run in parallel in Azure DevOps YAML pipelines?
-Answer: matrix
+What does the jobs keyword in Azure DevOps YAML define?
+Answer: It defines a set of jobs that run in the pipeline. Each job can contain steps, and jobs can be executed in parallel or sequentially based on dependencies.
 
 
 
@@ -1797,8 +1797,8 @@ Answer: matrix
 
 184
 RAG Project
-Factory Function (create_app)
-A function that sets up and returns a fully configured app instance. Used to cleanly separate setup from execution and enable testing.
+Object ID (OID)
+Unique identifier for a user in Azure AD, used to scope their files or actions.
 
 
 
@@ -1806,8 +1806,8 @@ A function that sets up and returns a fully configured app instance. Used to cle
 
 185
 Azure AD Authentication
-Principal
-An identity (user, group, service principal) that is granted access to Azure resources based on assigned roles.
+Managed Identities
+Azure-managed identities used by Azure resources (like VMs) to authenticate to other Azure services, removing the need to manage credentials.
 
 
 
@@ -1909,7 +1909,7 @@ A SharePoint page used to grant app permissions to specific SharePoint sites, al
 
 196
 Todd Ideas
-In Azure AI Document Intelligence, prebuilt models offer a straightforward integration via RESTful APIs. Their endpoints are designed for simplicity, returning data in structured JSON. This means that once you send your document for analysis, you can easily parse the response and integrate the extracted fields directly into your application’s workflow.
+In Azure AI Document Intelligence, the service’s performance depends heavily on the quality of input documents. Ensure your documents are high resolution, correctly oriented, and preprocessed (e.g., noise reduction, skew correction) to enhance data extraction accuracy.
 
 
 
@@ -2005,8 +2005,8 @@ itertools.combinations(iterable, r) generates all possible combinations of r ele
 
 206
 Azure DevOps Pipelines
-What does the 'trigger' keyword do in an Azure DevOps YAML pipeline?
-Answer: Defines the branches or events that will cause the pipeline to run, such as a commit to a specific branch.
+What is the purpose of the 'checkout' step in an Azure DevOps YAML pipeline?
+Answer: It checks out the source code from the repository for use in the pipeline.
 
 
 
@@ -2014,8 +2014,8 @@ Answer: Defines the branches or events that will cause the pipeline to run, such
 
 207
 RAG Project
-Quart
-A Python web framework like Flask but with full support for async/await. Used to build async HTTP APIs.
+Patch / Monkeypatch
+Temporary override of code behavior during tests — often used to replace Azure calls with mocks.
 
 
 
@@ -2023,8 +2023,8 @@ A Python web framework like Flask but with full support for async/await. Used to
 
 208
 Azure AD Authentication
-App Registration vs Enterprise Application
-App Registration defines the app’s identity, while Enterprise Application represents the actual instance of the app within an Azure AD tenant.
+Principal
+An identity (user, group, service principal) that is granted access to Azure resources based on assigned roles.
 
 
 
@@ -2060,8 +2060,7 @@ TypeScript: A superset of JavaScript that adds static typing, enhancing code qua
 
 212
 Azure Developer Associate
-Q: Name 3 common use cases for Azure Cache for Redis.
-A: Session storage, API response caching, real-time leaderboards.
+When you copy an archived blob to a new blob in an online tier, the source blob remains unmodified in the archive tier. You must copy the archived blob to a new blob with a different name or to a different container. You can't overwrite the source blob by copying to the same blob.
 
 
 
@@ -2127,7 +2126,7 @@ Adds a user to a specified SharePoint group. Facilitates automated user manageme
 
 219
 Todd Ideas
-In Azure AI Document Intelligence, the service’s performance depends heavily on the quality of input documents. Ensure your documents are high resolution, correctly oriented, and preprocessed (e.g., noise reduction, skew correction) to enhance data extraction accuracy.
+In Azure AI Document Intelligence, prebuilt models offer a straightforward integration via RESTful APIs. Their endpoints are designed for simplicity, returning data in structured JSON. This means that once you send your document for analysis, you can easily parse the response and integrate the extracted fields directly into your application’s workflow.
 
 
 
@@ -2226,8 +2225,8 @@ The iter() function returns an iterator object from an iterable by calling its _
 
 228
 Azure DevOps Pipelines
-How do you cache dependencies in Azure DevOps pipelines to speed up builds?
-Answer: Use the cache task in the YAML file to store and reuse files between pipeline runs. This can help speed up build times by caching dependencies.
+What is a Deployment Pool in Azure DevOps?
+Answer: A Deployment Pool is a set of environments where deployments occur. You can configure and target specific deployment pools for releases to ensure the proper deployment environment is used.
 
 
 
@@ -2244,8 +2243,8 @@ Asynchronous Server Gateway Interface — allows async Python web apps to talk t
 
 230
 Azure AD Authentication
-Azure AD Roles vs Azure Resource Roles
-Azure AD Roles manage access to directory functions (e.g., Global Administrator), while Resource Roles control access to Azure resources (e.g., Contributor).
+Role Inheritance
+Roles assigned at a higher scope (e.g., subscription) are inherited by resources at lower scopes (e.g., resource groups, resources).
 
 
 
@@ -2281,7 +2280,8 @@ Prettier: A code formatter that enforces consistent styling across codebases, au
 
 234
 Azure Developer Associate
-When you copy an archived blob to a new blob in an online tier, the source blob remains unmodified in the archive tier. You must copy the archived blob to a new blob with a different name or to a different container. You can't overwrite the source blob by copying to the same blob.
+Q: Name 3 common use cases for Azure Cache for Redis.
+A: Session storage, API response caching, real-time leaderboards.
 
 
 
@@ -2441,8 +2441,8 @@ StopIteration.
 
 250
 Azure DevOps Pipelines
-How do you specify a condition for a job or stage to run in an Azure DevOps YAML pipeline?
-Answer: You use the condition keyword, such as condition: succeeded() to define when a job should run based on the status of previous jobs.
+What does the 'variables' keyword do in a YAML pipeline?
+Answer: It declares the variables that can be used throughout the pipeline.
 
 
 
@@ -2450,8 +2450,8 @@ Answer: You use the condition keyword, such as condition: succeeded() to define 
 
 251
 RAG Project
-Patch / Monkeypatch
-Temporary override of code behavior during tests — often used to replace Azure calls with mocks.
+Route
+A URL endpoint in your app (e.g., /upload, /ask) that maps to a function.
 
 
 
@@ -2459,8 +2459,8 @@ Temporary override of code behavior during tests — often used to replace Azure
 
 252
 Azure AD Authentication
-App Registration
-Registers an app in Azure AD, creating its identity to authenticate with Azure services. Allows the app to access resources and interact with Azure services.
+App Registration vs Enterprise Application
+App Registration defines the app’s identity, while Enterprise Application represents the actual instance of the app within an Azure AD tenant.
 
 
 
@@ -2634,8 +2634,8 @@ dynamic "ingress" {
 
 269
 Debugging in VS Code
-Stack Trace
-A report that provides detailed information about the sequence of function calls and the state of the program at the point where an error occurred. It's often used to diagnose issues in the execution flow.
+Remote Debugging
+The process of debugging code running on a different machine or environment from your local computer.
 
 
 
@@ -2655,8 +2655,8 @@ A:
 
 271
 Azure DevOps Pipelines
-What does the 'variables' keyword do in a YAML pipeline?
-Answer: It declares the variables that can be used throughout the pipeline.
+What keyword is used to define multiple steps that should run in parallel in Azure DevOps YAML pipelines?
+Answer: matrix
 
 
 
@@ -2664,8 +2664,8 @@ Answer: It declares the variables that can be used throughout the pipeline.
 
 272
 RAG Project
-auth_client
-A special fixture often defined in conftest.py that returns a test client with fake authentication already set up.
+Quart
+A Python web framework like Flask but with full support for async/await. Used to build async HTTP APIs.
 
 
 
@@ -2673,8 +2673,8 @@ A special fixture often defined in conftest.py that returns a test client with f
 
 273
 Azure AD Authentication
-Role Inheritance
-Roles assigned at a higher scope (e.g., subscription) are inherited by resources at lower scopes (e.g., resource groups, resources).
+Azure AD Roles vs Azure Resource Roles
+Azure AD Roles manage access to directory functions (e.g., Global Administrator), while Resource Roles control access to Azure resources (e.g., Contributor).
 
 
 
@@ -2826,8 +2826,8 @@ Ticket-based review processes are a bottleneck that can slow down development. I
 
 289
 Debugging in VS Code
-Remote Debugging
-The process of debugging code running on a different machine or environment from your local computer.
+Stack Trace
+A report that provides detailed information about the sequence of function calls and the state of the program at the point where an error occurred. It's often used to diagnose issues in the execution flow.
 
 
 
@@ -2847,14 +2847,8 @@ open() is a built-in context manager used for opening files. It ensures that the
 
 291
 Azure DevOps Pipelines
-How can you trigger a pipeline based on a Git tag in Azure DevOps?
-Answer: You use the trigger keyword with the tags sub-keyword to specify that the pipeline should trigger when a Git tag is pushed.
-
-Example:
-trigger:
-  tags:
-    include:
-      - v*
+What is the purpose of the trigger: none keyword in an Azure DevOps YAML pipeline?
+Answer: It disables automatic triggers, meaning the pipeline will not run automatically on code changes. This is useful for manual execution or scheduled runs.
 
 
 
@@ -2862,8 +2856,8 @@ trigger:
 
 292
 RAG Project
-Dataclass
-A Python feature that makes it easy to create classes with fields. Often used for request/response models.
+Access Control
+Logic that determines who can access which resources or files.
 
 
 
@@ -2871,8 +2865,8 @@ A Python feature that makes it easy to create classes with fields. Often used fo
 
 293
 Azure AD Authentication
-Scope
-Defines the level at which a role is applied, such as management group, subscription, resource group, or individual resource. Higher scopes apply to all child resources.
+App Registration
+Registers an app in Azure AD, creating its identity to authenticate with Azure services. Allows the app to access resources and interact with Azure services.
 
 
 
@@ -2900,7 +2894,7 @@ The practice of managing external libraries and packages that a Python applicati
 
 296
 JavaScript Concepts
-Chai: An assertion library that pairs with testing frameworks like Mocha, providing readable and expressive test assertions.
+ESLint: A linter tool for identifying and fixing problematic patterns in JavaScript code, enforcing coding standards and best practices.
 
 
 
@@ -2999,7 +2993,7 @@ A feature in WSL2 that allows graphical Linux applications to run natively on Wi
 
 307
 Terraform
-Provisioning infrastructure across multiple clouds increases fault-tolerance, allowing for more graceful recovery from cloud provider outages. However, multi-cloud deployments add complexity because each provider has its own interfaces, tools, and workflows. Terraform lets you use the same workflow to manage multiple providers and handle cross-cloud dependencies.
+At a large organization, your centralized operations team may get many repetitive infrastructure requests. You can use Terraform to build a "self-serve" infrastructure model that lets product teams manage their own infrastructure independently.
 
 
 
@@ -3017,10 +3011,10 @@ A debugging feature that allows you to enter a function call to examine its inte
 309
 Python
 Q:
-What is the advantage of using yield from in a generator?
+How do you make a custom object iterable?
 
 A:
-yield from delegates part of the generator’s operations to another generator, simplifying code and allowing for the composition of generators.
+By implementing the __iter__() method that returns an iterator (which can be the object itself with a __next__() method).
 
 
 
@@ -3028,8 +3022,8 @@ yield from delegates part of the generator’s operations to another generator, 
 
 310
 Azure DevOps Pipelines
-What is the purpose of the dependsOn keyword in Azure DevOps YAML pipelines?
-Answer: It specifies the order in which stages or jobs will execute.
+How do you cache dependencies in Azure DevOps pipelines to speed up builds?
+Answer: Use the cache task in the YAML file to store and reuse files between pipeline runs. This can help speed up build times by caching dependencies.
 
 
 
@@ -3037,8 +3031,8 @@ Answer: It specifies the order in which stages or jobs will execute.
 
 311
 RAG Project
-Access Control
-Logic that determines who can access which resources or files.
+Async Test
+A test defined with async def, usually needed for Quart and async functions.
 
 
 
@@ -3066,7 +3060,7 @@ Sensitive information required by Azure Functions, such as API keys or connectio
 
 314
 JavaScript Concepts
-ESLint: A linter tool for identifying and fixing problematic patterns in JavaScript code, enforcing coding standards and best practices.
+Chai: An assertion library that pairs with testing frameworks like Mocha, providing readable and expressive test assertions.
 
 
 
@@ -3143,7 +3137,7 @@ A full VHD(x) clone is performed when Cloud Cache determines, at sign in, that a
 
 322
 Terraform
-At a large organization, your centralized operations team may get many repetitive infrastructure requests. You can use Terraform to build a "self-serve" infrastructure model that lets product teams manage their own infrastructure independently.
+Provisioning infrastructure across multiple clouds increases fault-tolerance, allowing for more graceful recovery from cloud provider outages. However, multi-cloud deployments add complexity because each provider has its own interfaces, tools, and workflows. Terraform lets you use the same workflow to manage multiple providers and handle cross-cloud dependencies.
 
 
 
@@ -3161,10 +3155,10 @@ A debugging technique where you can move backward through the program’s execut
 324
 Python
 Q:
-What does the with open(...) statement ensure when working with files in Python?
+What is the advantage of using yield from in a generator?
 
 A:
-It ensures that the file is properly closed after its block of code is executed, even if an error occurs.
+yield from delegates part of the generator’s operations to another generator, simplifying code and allowing for the composition of generators.
 
 
 
@@ -3172,8 +3166,8 @@ It ensures that the file is properly closed after its block of code is executed,
 
 325
 Azure DevOps Pipelines
-Which YAML element in an Azure DevOps pipeline defines the steps or tasks to be executed?
-Answer: steps
+How do you specify a condition for a job or stage to run in an Azure DevOps YAML pipeline?
+Answer: You use the condition keyword, such as condition: succeeded() to define when a job should run based on the status of previous jobs.
 
 
 
@@ -3181,8 +3175,8 @@ Answer: steps
 
 326
 RAG Project
-Async Test
-A test defined with async def, usually needed for Quart and async functions.
+Factory Function (create_app)
+A function that sets up and returns a fully configured app instance. Used to cleanly separate setup from execution and enable testing.
 
 
 
@@ -3258,8 +3252,8 @@ The extensive configurability may introduce unnecessary complexity when basic lo
 
 334
 PnP Powershell
-Scopes
-Define the level of access an application has to resources. Examples include Files.ReadWrite.All and Sites.ReadWrite.All, determining what operations the app can perform.
+Invoke-RestMethod Parameters
+Key parameters include -Method (HTTP method), -Uri (API endpoint), -Headers (authentication and content type), and -Body (data payload), crucial for API interactions.
 
 
 
@@ -3298,10 +3292,10 @@ A type of debugging where changes are made to the program and tested while it is
 338
 Python
 Q:
-How do you make a custom object iterable?
+What does the with open(...) statement ensure when working with files in Python?
 
 A:
-By implementing the __iter__() method that returns an iterator (which can be the object itself with a __next__() method).
+It ensures that the file is properly closed after its block of code is executed, even if an error occurs.
 
 
 
@@ -3318,10 +3312,8 @@ Answer: A trigger based on code changes in a Git repository.
 
 340
 RAG Project
-Middleware
-Functions that run before/after every request — often used for logging, auth, or telemetry.
-Telemetry / Instrumentation
-Logging of metrics, performance data, and errors (e.g., via Azure Monitor or OpenTelemetry).
+Dataclass
+A Python feature that makes it easy to create classes with fields. Often used for request/response models.
 
 
 
@@ -3366,13 +3358,8 @@ It defines the pricing tier and compute resources (CPU, memory, instance count) 
 
 345
 Vocab
-Lacunary
-adjective
-SPA: LACK-yoo-nary
-IPA: /ˈlækjʊnəri/
-
-Characterized by gaps or missing portions, particularly in texts or manuscripts.
-Example: The ancient manuscript was lacunary, with several sections of the text lost to time.
+Lost in a Good Book
+Impresario: A manager or producer of theatrical, musical, or other artistic performances, often entrepreneurial in nature.
 
 
 
@@ -3391,8 +3378,8 @@ This prevents issues like duplicate log entries and file access errors.
 
 347
 PnP Powershell
-Invoke-RestMethod Parameters
-Key parameters include -Method (HTTP method), -Uri (API endpoint), -Headers (authentication and content type), and -Body (data payload), crucial for API interactions.
+Scopes
+Define the level of access an application has to resources. Examples include Files.ReadWrite.All and Sites.ReadWrite.All, determining what operations the app can perform.
 
 
 
@@ -3443,8 +3430,14 @@ class MyCustomError(Exception):
 
 352
 Azure DevOps Pipelines
-What is the default working directory for a pipeline job in Azure DevOps?
-Answer: $(Build.SourcesDirectory)
+How can you trigger a pipeline based on a Git tag in Azure DevOps?
+Answer: You use the trigger keyword with the tags sub-keyword to specify that the pipeline should trigger when a Git tag is pushed.
+
+Example:
+trigger:
+  tags:
+    include:
+      - v*
 
 
 
@@ -3452,8 +3445,10 @@ Answer: $(Build.SourcesDirectory)
 
 353
 RAG Project
-Route
-A URL endpoint in your app (e.g., /upload, /ask) that maps to a function.
+Middleware
+Functions that run before/after every request — often used for logging, auth, or telemetry.
+Telemetry / Instrumentation
+Logging of metrics, performance data, and errors (e.g., via Azure Monitor or OpenTelemetry).
 
 
 
@@ -3498,8 +3493,13 @@ A: A fully managed, in-memory key-value caching service based on the open-source
 
 358
 Vocab
-Lost in a Good Book
-Impresario: A manager or producer of theatrical, musical, or other artistic performances, often entrepreneurial in nature.
+Lacunary
+adjective
+SPA: LACK-yoo-nary
+IPA: /ˈlækjʊnəri/
+
+Characterized by gaps or missing portions, particularly in texts or manuscripts.
+Example: The ancient manuscript was lacunary, with several sections of the text lost to time.
 
 
 
@@ -3573,8 +3573,8 @@ Using the built-in next(gen) function.
 
 365
 Azure DevOps Pipelines
-What does the resources keyword define in a YAML pipeline?
-Answer: The resources keyword allows you to define external resources such as repositories, containers, or pipelines that a pipeline will use or depend on.
+Which YAML element in an Azure DevOps pipeline defines the steps or tasks to be executed?
+Answer: steps
 
 
 
@@ -3611,7 +3611,7 @@ Running and testing Azure Functions on a local machine to identify and fix issue
 
 369
 JavaScript Concepts
-Angular: A comprehensive framework by Google for building large-scale applications, utilizing TypeScript, two-way data binding, and dependency injection.
+Variable Declarations (let, const, var): Keywords to declare variables with different scopes and mutability. let and const are block-scoped, while var is function-scoped.
 
 
 
@@ -3696,8 +3696,8 @@ absolute_path = relative_path.resolve()
 
 378
 Azure DevOps Pipelines
-What does the trigger keyword do in an Azure DevOps YAML pipeline?
-Answer: It defines the branches or events that will cause the pipeline to run, such as a commit to a specific branch.
+What is the purpose of the dependsOn keyword in Azure DevOps YAML pipelines?
+Answer: It specifies the order in which stages or jobs will execute.
 
 
 
@@ -3733,7 +3733,7 @@ Data dynamically pulled from triggers or previous actions in Power Automate flow
 
 382
 JavaScript Concepts
-Variable Declarations (let, const, var): Keywords to declare variables with different scopes and mutability. let and const are block-scoped, while var is function-scoped.
+Angular: A comprehensive framework by Google for building large-scale applications, utilizing TypeScript, two-way data binding, and dependency injection.
 
 
 
@@ -3754,9 +3754,8 @@ Azure blob storage rule actions:
 
 384
 Vocab
-Jane Eyre
-Beldame
-(BEL-dame) An old woman, sometimes used respectfully for a grandmother, or pejoratively to describe a hag or crone.
+Do Androids Dream of Electric Sheep?
+Cephalic pattern (suh-FAL-ik PAT-ern): Refers to patterns or features related to the head or skull.
 
 
 
@@ -3793,9 +3792,16 @@ A: Profile Disk Differencing allows FSLogix to create differencing VHDX disks, w
 
 388
 Terraform
-Terraform Console:
-Definition: An interactive command-line tool that lets you experiment with expressions and inspect your current Terraform state.
-Usage: Run terraform console to evaluate expressions, test functions, or debug variable values interactively.
+Local Values:
+Definition: Local values allow you to define computed variables within a configuration to simplify expressions or avoid repetition.
+Usage: Useful for intermediate calculations or to centralize common values.
+
+Example:
+
+locals {
+  app_name = "myapp"
+  instance_count = length(var.instance_ids)
+}
 
 
 
@@ -3835,8 +3841,8 @@ with timer():
 
 391
 Azure DevOps Pipelines
-What is the purpose of the 'checkout' step in an Azure DevOps YAML pipeline?
-Answer: It checks out the source code from the repository for use in the pipeline.
+What is the default working directory for a pipeline job in Azure DevOps?
+Answer: $(Build.SourcesDirectory)
 
 
 
@@ -3873,7 +3879,7 @@ Variables set in the operating environment that can be accessed by applications.
 
 395
 JavaScript Concepts
-Mocha: A flexible testing framework for Node.js, allowing developers to choose assertion libraries like Chai for writing tests.
+Next.js: A React framework for server-side rendering and static site generation, enhancing performance and SEO for React applications.
 
 
 
@@ -3890,8 +3896,9 @@ A: Premium, Enterprise, and Enterprise Flash.
 
 397
 Vocab
-Do Androids Dream of Electric Sheep?
-Cephalic pattern (suh-FAL-ik PAT-ern): Refers to patterns or features related to the head or skull.
+Jane Eyre
+Beldame
+(BEL-dame) An old woman, sometimes used respectfully for a grandmother, or pejoratively to describe a hag or crone.
 
 
 
@@ -3928,16 +3935,9 @@ A: FSLogix mounts the same Profile Container (VHDX) to any virtual desktop the u
 
 401
 Terraform
-Local Values:
-Definition: Local values allow you to define computed variables within a configuration to simplify expressions or avoid repetition.
-Usage: Useful for intermediate calculations or to centralize common values.
-
-Example:
-
-locals {
-  app_name = "myapp"
-  instance_count = length(var.instance_ids)
-}
+Terraform Console:
+Definition: An interactive command-line tool that lets you experiment with expressions and inspect your current Terraform state.
+Usage: Run terraform console to evaluate expressions, test functions, or debug variable values interactively.
 
 
 
@@ -3957,8 +3957,8 @@ Generators are memory-efficient as they generate items on-the-fly and don't stor
 
 403
 Azure DevOps Pipelines
-How can you pass secrets securely in Azure DevOps YAML pipelines?
-Answer: You pass secrets using pipeline variables marked as secret in Azure DevOps. They are referenced in the YAML file as $(secret_variable) but are masked and not exposed in logs.
+How do you use stages with dependencies in Azure DevOps YAML pipelines?
+Answer: You can define dependsOn between stages to specify the execution order. Stages will run sequentially based on the dependencies defined, ensuring that one stage only runs after another has completed.
 
 
 
@@ -3975,10 +3975,10 @@ A centralized dictionary or structure that stores runtime settings and credentia
 
 405
 Powershell Modules
-Module Manifest (.psd1)
+Uninstall-Module
 
-Definition: A PowerShell data file that describes the contents and metadata of a module.
-Explanation: Includes information like the module version, author, exported functions, dependencies, and more. Essential for publishing and sharing modules.
+Definition: A cmdlet used to remove a module from the system.
+Explanation: Example: Uninstall-Module -Name ActiveDirectory removes the ActiveDirectory module.
 
 
 
@@ -3995,7 +3995,7 @@ A configuration file used during local development of Azure Functions. It stores
 
 407
 JavaScript Concepts
-Next.js: A React framework for server-side rendering and static site generation, enhancing performance and SEO for React applications.
+Mocha: A flexible testing framework for Node.js, allowing developers to choose assertion libraries like Chai for writing tests.
 
 
 
@@ -4076,8 +4076,8 @@ It creates an iterator that returns selected elements from the input iterable by
 
 415
 Azure DevOps Pipelines
-In Azure DevOps, what command is used to run a pipeline manually from the Azure DevOps portal?
-Answer: "Run pipeline" button in the Azure DevOps portal.
+How do you specify a deployment environment like 'staging' or 'production' in a YAML pipeline?
+Answer: Use the environment keyword, e.g., environment: 'staging'.
 
 
 
@@ -4094,10 +4094,10 @@ A decorator that marks a test function as asynchronous so you can use await insi
 
 417
 Powershell Modules
-Uninstall-Module
+Module Manifest (.psd1)
 
-Definition: A cmdlet used to remove a module from the system.
-Explanation: Example: Uninstall-Module -Name ActiveDirectory removes the ActiveDirectory module.
+Definition: A PowerShell data file that describes the contents and metadata of a module.
+Explanation: Includes information like the module version, author, exported functions, dependencies, and more. Essential for publishing and sharing modules.
 
 
 
@@ -4193,8 +4193,8 @@ Using sys.argv
 
 427
 Azure DevOps Pipelines
-How do you add a manual approval gate before a pipeline proceeds to the next stage?
-Answer: Set a ApprovalRequired flag on the pipeline's stages.
+What does the trigger keyword do in an Azure DevOps YAML pipeline?
+Answer: It defines the branches or events that will cause the pipeline to run, such as a commit to a specific branch.
 
 
 
@@ -4248,10 +4248,10 @@ Because interval funds permit redemptions only periodically—and often limit th
 
 433
 Logging in Python
-Q: What is a NullHandler used for in Python's logging module?
+Q: What is the purpose of logging.basicConfig() in Python's logging module?
 
-A: To discard log messages, preventing "No handler" warnings in library code.
-This is useful for libraries to ensure they don't interfere with the application's logging configuration.
+A: It provides a simple way to configure the root logger with basic settings like level, format, and filename.
+This function is ideal for quick setups without the need for multiple handlers or complex configurations.
 
 
 
@@ -4303,8 +4303,8 @@ Reading large files one line at a time without loading the entire file into memo
 
 438
 Azure DevOps Pipelines
-What is the purpose of the trigger: none keyword in an Azure DevOps YAML pipeline?
-Answer: It disables automatic triggers, meaning the pipeline will not run automatically on code changes. This is useful for manual execution or scheduled runs.
+How do you add a manual approval gate before a pipeline proceeds to the next stage?
+Answer: Set a ApprovalRequired flag on the pipeline's stages.
 
 
 
@@ -4359,10 +4359,10 @@ Fillip
 
 444
 Logging in Python
-Q: What is the purpose of logging.basicConfig() in Python's logging module?
+Q: What is a NullHandler used for in Python's logging module?
 
-A: It provides a simple way to configure the root logger with basic settings like level, format, and filename.
-This function is ideal for quick setups without the need for multiple handlers or complex configurations.
+A: To discard log messages, preventing "No handler" warnings in library code.
+This is useful for libraries to ensure they don't interfere with the application's logging configuration.
 
 
 
@@ -4393,10 +4393,11 @@ variable "env" {
 
 447
 Python
-Which pathlib method can be used to iterate recursively through all files matching a pattern?
+Q:
+What does the else block do in a try-except statement?
 
-for file in Path('/path/to/directory').rglob('*.txt'):
-    print(file)
+A:
+The else block executes if no exceptions were raised in the try block.
 
 
 
@@ -4404,8 +4405,8 @@ for file in Path('/path/to/directory').rglob('*.txt'):
 
 448
 Azure DevOps Pipelines
-How do you specify a deployment environment like 'staging' or 'production' in a YAML pipeline?
-Answer: Use the environment keyword, e.g., environment: 'staging'.
+How can you pass secrets securely in Azure DevOps YAML pipelines?
+Answer: You pass secrets using pipeline variables marked as secret in Azure DevOps. They are referenced in the YAML file as $(secret_variable) but are masked and not exposed in logs.
 
 
 
@@ -4471,11 +4472,10 @@ Limits the number of API requests to prevent abuse and ensure service stability.
 
 455
 Python
-Q:
-How can you raise an exception inside a generator from outside?
+Which pathlib method can be used to iterate recursively through all files matching a pattern?
 
-A:
-Using the .throw(type, value=None, traceback=None) method.
+for file in Path('/path/to/directory').rglob('*.txt'):
+    print(file)
 
 
 
@@ -4483,8 +4483,8 @@ Using the .throw(type, value=None, traceback=None) method.
 
 456
 Azure DevOps Pipelines
-How do you use stages with dependencies in Azure DevOps YAML pipelines?
-Answer: You can define dependsOn between stages to specify the execution order. Stages will run sequentially based on the dependencies defined, ensuring that one stage only runs after another has completed.
+In Azure DevOps, what command is used to run a pipeline manually from the Azure DevOps portal?
+Answer: "Run pipeline" button in the Azure DevOps portal.
 
 
 
@@ -4520,8 +4520,9 @@ Continuous Deployment (CI/CD)
 
 460
 Vocab
-Lost in a Good Book
-Wisteria: A climbing flowering plant with fragrant, cascading purple or white blooms, often grown on pergolas or trellises.
+Jane Eyre
+Post-chaise
+(POST-shayz) A lightweight, horse-drawn carriage used for long-distance travel, designed for speed and efficiency, popular in the 18th and 19th centuries.
 
 
 
@@ -4550,10 +4551,10 @@ Establishes a connection to a SharePoint site using various authentication metho
 463
 Python
 Q:
-How can you create a context manager using a generator function?
+How can you raise an exception inside a generator from outside?
 
 A:
-By using the @contextmanager decorator from the contextlib module and yielding control within the function.
+Using the .throw(type, value=None, traceback=None) method.
 
 
 
@@ -4561,10 +4562,9 @@ By using the @contextmanager decorator from the contextlib module and yielding c
 
 464
 Powershell Modules
-PowerShell Module
-
-Definition: A package that contains PowerShell cmdlets, functions, scripts, and other resources.
-Explanation: Extends PowerShell’s functionality and can be shared or reused across different environments and users.
+Exporting Functions and Cmdlets
+Definition: The process of making functions and cmdlets available to users when a module is imported.
+Explanation: Defined in the module's .psm1 file and specified in the module manifest (.psd1) under FunctionsToExport, CmdletsToExport, etc.
 
 
 
@@ -4589,8 +4589,8 @@ By increasing the number of instances running your app, either manually or autom
 
 467
 Vocab
-Do Androids Dream of Electric Sheep?
-Inguinal region (ING-gwuh-nuhl REE-juhn): The area of the lower abdomen on either side of the pubic bone, also known as the groin, where the thigh meets the trunk.
+Lost in a Good Book
+Wisteria: A climbing flowering plant with fragrant, cascading purple or white blooms, often grown on pergolas or trellises.
 
 
 
@@ -4619,10 +4619,10 @@ Fetches information about the current SharePoint site, including properties like
 470
 Python
 Q:
-What does the else block do in a try-except statement?
+How can you create a context manager using a generator function?
 
 A:
-The else block executes if no exceptions were raised in the try block.
+By using the @contextmanager decorator from the contextlib module and yielding control within the function.
 
 
 
@@ -4630,9 +4630,10 @@ The else block executes if no exceptions were raised in the try block.
 
 471
 Powershell Modules
-Exporting Functions and Cmdlets
-Definition: The process of making functions and cmdlets available to users when a module is imported.
-Explanation: Defined in the module's .psm1 file and specified in the module manifest (.psd1) under FunctionsToExport, CmdletsToExport, etc.
+PowerShell Module
+
+Definition: A package that contains PowerShell cmdlets, functions, scripts, and other resources.
+Explanation: Extends PowerShell’s functionality and can be shared or reused across different environments and users.
 
 
 
@@ -4718,8 +4719,8 @@ Server-Side Rendering (SSR): Rendering web pages on the server before sending th
 
 480
 Azure Developer Associate
-Q: Can Redis be used as a primary database?
-A: Not recommended — Redis is best used as a cache, not a durable data store.
+Q: What port is used for SSL/TLS connections to Azure Cache for Redis?
+A: Port 6380.
 
 
 
@@ -4727,9 +4728,8 @@ A: Not recommended — Redis is best used as a cache, not a durable data store.
 
 481
 Vocab
-Jane Eyre
-Post-chaise
-(POST-shayz) A lightweight, horse-drawn carriage used for long-distance travel, designed for speed and efficiency, popular in the 18th and 19th centuries.
+Do Androids Dream of Electric Sheep?
+Inguinal region (ING-gwuh-nuhl REE-juhn): The area of the lower abdomen on either side of the pubic bone, also known as the groin, where the thigh meets the trunk.
 
 
 
@@ -4748,8 +4748,8 @@ This is particularly useful for applications that require detailed and machine-r
 
 483
 PnP Powershell
-Admin Consent
-Approval granted by an Azure AD administrator for an application to access certain resources or perform specific actions, essential for elevated API permissions.
+System.IO.Stream (System.IO)
+Represents a sequence of bytes, such as a file. Used in PowerShell to handle file data streams for operations like uploading files to SharePoint.
 
 
 
@@ -4758,10 +4758,10 @@ Approval granted by an Azure AD administrator for an application to access certa
 484
 Python
 Q:
-Explain the concept of generator pipelines.
+What function from the os module is used to iterate through directories and files?
 
 A:
-Generator pipelines involve chaining multiple generators together, where each generator processes data and passes it to the next, enabling efficient and modular data processing.
+os.walk()
 
 
 
@@ -4787,8 +4787,8 @@ Lazy Loading: Deferring the loading of non-critical resources until they are nee
 
 487
 Azure Developer Associate
-Q: What port is used for SSL/TLS connections to Azure Cache for Redis?
-A: Port 6380.
+Q: Can Redis be used as a primary database?
+A: Not recommended — Redis is best used as a cache, not a durable data store.
 
 
 
@@ -4816,8 +4816,8 @@ This stops the log messages from being handled by ancestor loggers, ensuring the
 
 490
 PnP Powershell
-System.IO.Stream (System.IO)
-Represents a sequence of bytes, such as a file. Used in PowerShell to handle file data streams for operations like uploading files to SharePoint.
+Admin Consent
+Approval granted by an Azure AD administrator for an application to access certain resources or perform specific actions, essential for elevated API permissions.
 
 
 
@@ -4826,10 +4826,10 @@ Represents a sequence of bytes, such as a file. Used in PowerShell to handle fil
 491
 Python
 Q:
-What function from the os module is used to iterate through directories and files?
+Explain the concept of generator pipelines.
 
 A:
-os.walk()
+Generator pipelines involve chaining multiple generators together, where each generator processes data and passes it to the next, enabling efficient and modular data processing.
 
 
 
@@ -4964,10 +4964,10 @@ Uploads a file to a specified SharePoint document library or folder. Supports pa
 505
 Python
 Q:
-How can you set an exit code of 2 in a Python script?
+What are the two methods that a context manager class must implement?
 
 A:
-Using either sys.exit(2) or exit(2).
+__enter__() and __exit__(exc_type, exc_value, traceback).
 
 
 
@@ -4975,10 +4975,10 @@ Using either sys.exit(2) or exit(2).
 
 506
 Powershell Modules
-Connect-AzAccount
+Module Manifest Properties
 
-Definition: A cmdlet from the Az module that authenticates your session with Azure.
-Example Usage: Connect-AzAccount prompts for Azure credentials to manage Azure resources.
+Definition: Specific attributes defined in a .psd1 file that describe module metadata.
+Explanation: Includes properties like ModuleVersion, Author, RequiredModules, FunctionsToExport, etc.
 
 
 
@@ -5014,10 +5014,10 @@ Cornice: An architectural feature where a projecting, decorative molding crowns 
 
 510
 Logging in Python
-Q: What is the purpose of using hierarchical, dot-separated logger names in a Python application?
+Q: What is the significance of the level parameter when configuring a logger or handler in Python's logging module?
 
-A: To organize loggers in a hierarchy that reflects the application's module structure, allowing for inheritance of configurations and more granular control over logging behavior.
-This organization simplifies managing logging settings across different parts of the application.
+A: It sets the minimum severity of log messages that will be processed; messages below this level are ignored.
+For example, setting level=logging.INFO means that DEBUG messages will be ignored.
 
 
 
@@ -5025,8 +5025,8 @@ This organization simplifies managing logging settings across different parts of
 
 511
 PnP Powershell
-AADSTS7000218 Error
-An Azure AD error stating that the authentication request lacks a client_assertion or client_secret, preventing successful token acquisition.
+Client Secret (client_secret)
+A confidential key associated with an Azure AD application, used alongside the client ID to authenticate the application in secure authentication flows.
 
 
 
@@ -5035,10 +5035,10 @@ An Azure AD error stating that the authentication request lacks a client_asserti
 512
 Python
 Q:
-What does sys.exit(1) signify in a Python script?
+How can you set an exit code of 2 in a Python script?
 
 A:
-An error occurred during execution.
+Using either sys.exit(2) or exit(2).
 
 
 
@@ -5046,10 +5046,10 @@ An error occurred during execution.
 
 513
 Powershell Modules
-PSReadLine Module
+Module Load Order
 
-Definition: A module that enhances the command-line editing experience in PowerShell.
-Explanation: Provides features like syntax highlighting, auto-completion, and customizable key bindings.
+Definition: The sequence in which modules are loaded into a PowerShell session.
+Explanation: Important when resolving cmdlet conflicts or ensuring dependencies are loaded first.
 
 
 
@@ -5084,10 +5084,10 @@ Phaeton (bodied automobile): A type of early open-top car with no fixed roof, ev
 
 517
 Logging in Python
-Q: How does TimedRotatingFileHandler from the logging.handlers module differ from RotatingFileHandler?
+Q: What is one of the best practices for securing log files in Python's logging module?
 
-A: TimedRotatingFileHandler rotates log files based on time intervals (e.g., daily at midnight), whereas RotatingFileHandler rotates based on file size (maxBytes).
-This difference allows for log management tailored to time-based or size-based rotation needs.
+A: Setting appropriate file permissions to restrict unauthorized access.
+This protects sensitive log data from being accessed or tampered with by unauthorized users.
 
 
 
@@ -5095,8 +5095,8 @@ This difference allows for log management tailored to time-based or size-based r
 
 518
 PnP Powershell
-Client Secret (client_secret)
-A confidential key associated with an Azure AD application, used alongside the client ID to authenticate the application in secure authentication flows.
+AADSTS7000218 Error
+An Azure AD error stating that the authentication request lacks a client_assertion or client_secret, preventing successful token acquisition.
 
 
 
@@ -5105,10 +5105,10 @@ A confidential key associated with an Azure AD application, used alongside the c
 519
 Python
 Q:
-What are the two methods that a context manager class must implement?
+What does sys.exit(1) signify in a Python script?
 
 A:
-__enter__() and __exit__(exc_type, exc_value, traceback).
+An error occurred during execution.
 
 
 
@@ -5116,10 +5116,10 @@ __enter__() and __exit__(exc_type, exc_value, traceback).
 
 520
 Powershell Modules
-Module Load Order
+Connect-AzAccount
 
-Definition: The sequence in which modules are loaded into a PowerShell session.
-Explanation: Important when resolving cmdlet conflicts or ensuring dependencies are loaded first.
+Definition: A cmdlet from the Az module that authenticates your session with Azure.
+Example Usage: Connect-AzAccount prompts for Azure credentials to manage Azure resources.
 
 
 
@@ -5153,10 +5153,10 @@ Diatryma:  A genus of large flightless Eocene birds from Wyoming and New Mexico 
 
 524
 Logging in Python
-Q: What is the significance of the level parameter when configuring a logger or handler in Python's logging module?
+Q: What is the purpose of using hierarchical, dot-separated logger names in a Python application?
 
-A: It sets the minimum severity of log messages that will be processed; messages below this level are ignored.
-For example, setting level=logging.INFO means that DEBUG messages will be ignored.
+A: To organize loggers in a hierarchy that reflects the application's module structure, allowing for inheritance of configurations and more granular control over logging behavior.
+This organization simplifies managing logging settings across different parts of the application.
 
 
 
@@ -5185,11 +5185,10 @@ It can be configured to print an error message and continue by using the onerror
 
 527
 Powershell Modules
-Installing a Module:
-Install-Module -Name Az -Scope CurrentUser
+PSReadLine Module
 
-Importing a Module:
-Import-Module -Name Az
+Definition: A module that enhances the command-line editing experience in PowerShell.
+Explanation: Provides features like syntax highlighting, auto-completion, and customizable key bindings.
 
 
 
@@ -5214,13 +5213,8 @@ Use a Managed Identity
 
 530
 Vocab
-Anacoluthon
-noun
-SPA: an-uh-koh-LOO-thon
-IPA: /ˌænəkəˈluːθɒn/
-
-A grammatical construction in which a sentence begins in one way but ends in another, often disrupting the expected syntax or logical sequence.
-Example: His speech was full of anacoluthons, making it difficult to follow his intended argument.
+Lost in a Good Book
+Perfidious: Deceitful and untrustworthy, often describing betrayal or disloyalty.
 
 
 
@@ -5228,10 +5222,10 @@ Example: His speech was full of anacoluthons, making it difficult to follow his 
 
 531
 Logging in Python
-Q: What is one of the best practices for securing log files in Python's logging module?
+Q: How does TimedRotatingFileHandler from the logging.handlers module differ from RotatingFileHandler?
 
-A: Setting appropriate file permissions to restrict unauthorized access.
-This protects sensitive log data from being accessed or tampered with by unauthorized users.
+A: TimedRotatingFileHandler rotates log files based on time intervals (e.g., daily at midnight), whereas RotatingFileHandler rotates based on file size (maxBytes).
+This difference allows for log management tailored to time-based or size-based rotation needs.
 
 
 
@@ -5288,8 +5282,13 @@ It can impact the performance of other apps in the same plan
 
 537
 Vocab
-Lost in a Good Book
-Perfidious: Deceitful and untrustworthy, often describing betrayal or disloyalty.
+Anacoluthon
+noun
+SPA: an-uh-koh-LOO-thon
+IPA: /ˌænəkəˈluːθɒn/
+
+A grammatical construction in which a sentence begins in one way but ends in another, often disrupting the expected syntax or logical sequence.
+Example: His speech was full of anacoluthons, making it difficult to follow his intended argument.
 
 
 
@@ -5320,10 +5319,11 @@ tqdm
 
 540
 Powershell Modules
-Get-Module -ListAvailable
+Installing a Module:
+Install-Module -Name Az -Scope CurrentUser
 
-Definition: Lists all modules installed on the system that are available to be imported.
-Explanation: Shows modules in all module paths, regardless of whether they are currently loaded.
+Importing a Module:
+Import-Module -Name Az
 
 
 
@@ -5380,10 +5380,10 @@ yield
 
 546
 Powershell Modules
-Module Manifest Properties
+Get-Module -ListAvailable
 
-Definition: Specific attributes defined in a .psd1 file that describe module metadata.
-Explanation: Includes properties like ModuleVersion, Author, RequiredModules, FunctionsToExport, etc.
+Definition: Lists all modules installed on the system that are available to be imported.
+Explanation: Shows modules in all module paths, regardless of whether they are currently loaded.
 
 
 
@@ -5416,8 +5416,10 @@ Deployment Slots
 
 549
 Vocab
-Lost in a Good Book
-Pelmet(s): A decorative framework or fabric cover above a window, concealing curtain fittings or rods.
+Red Side Story, FForde
+Curtilage
+Pronunciation: KUR-tuh-lij
+Definition: The area immediately surrounding a house or dwelling, often considered part of its property for legal purposes.
 
 
 
@@ -5448,10 +5450,10 @@ They ensure that resources are properly acquired and released, even if errors oc
 
 552
 Powershell Modules
-ActiveDirectory Module
+Module.dll
 
-Definition: A module for managing Active Directory objects.
-Explanation: Provides cmdlets to manage users, groups, and other AD components. Example cmdlet: Get-ADUser.
+Definition: A dynamic link library file that can be part of a PowerShell module.
+Explanation: Contains compiled code (e.g., C#) that can be used by PowerShell modules for enhanced performance or functionality.
 
 
 
@@ -5480,10 +5482,8 @@ az storage account management-policy create \
 
 555
 Vocab
-Red Side Story, FForde
-Curtilage
-Pronunciation: KUR-tuh-lij
-Definition: The area immediately surrounding a house or dwelling, often considered part of its property for legal purposes.
+Lost in a Good Book
+Pelmet(s): A decorative framework or fabric cover above a window, concealing curtain fittings or rods.
 
 
 
@@ -5514,10 +5514,10 @@ path.mkdir(parents=True, exist_ok=True)
 
 558
 Powershell Modules
-New-AzVM
+ActiveDirectory Module
 
-Definition: Deploys a new Azure Virtual Machine.
-Example Usage: New-AzVM -ResourceGroupName "TestResourceGroup" -Name "TestVM" -Location "EastUS" -Image "Win2019Datacenter".
+Definition: A module for managing Active Directory objects.
+Explanation: Provides cmdlets to manage users, groups, and other AD components. Example cmdlet: Get-ADUser.
 
 
 
@@ -5525,7 +5525,7 @@ Example Usage: New-AzVM -ResourceGroupName "TestResourceGroup" -Name "TestVM" -L
 
 559
 JavaScript Concepts
-Middleware: Functions in frameworks like Express.js that have access to request and response objects, used for tasks like authentication and logging.
+DOM Manipulation: Using JavaScript to select and modify HTML elements, enabling dynamic and interactive web pages.
 
 
 
@@ -5565,10 +5565,10 @@ Loguru offers a more user-friendly and modern interface compared to the standard
 563
 Python
 Q:
-What method is used to gracefully terminate a generator?
+Which Python module is commonly used to set exit codes?
 
 A:
-The .close() method.
+sys
 
 
 
@@ -5576,10 +5576,10 @@ The .close() method.
 
 564
 Powershell Modules
-Module Version Specification
+New-AzVM
 
-Definition: The practice of specifying exact module versions when importing to ensure script compatibility.
-Explanation: Done using parameters like -RequiredVersion in Import-Module. Example: Import-Module -Name Az -RequiredVersion 5.0.0.
+Definition: Deploys a new Azure Virtual Machine.
+Example Usage: New-AzVM -ResourceGroupName "TestResourceGroup" -Name "TestVM" -Location "EastUS" -Image "Win2019Datacenter".
 
 
 
@@ -5587,7 +5587,7 @@ Explanation: Done using parameters like -RequiredVersion in Import-Module. Examp
 
 565
 JavaScript Concepts
-Template Literals: Enhanced string syntax using backticks, allowing embedded expressions and multi-line strings for better readability.
+Responsive Design: Designing web applications to adapt seamlessly across various device sizes and screen resolutions for optimal user experience.
 
 
 
@@ -5626,10 +5626,10 @@ Formatters ensure that log messages are consistently structured for readability 
 569
 Python
 Q:
-What does an exit code of 0 typically signify in a Python script?
+What method is used to gracefully terminate a generator?
 
 A:
-Successful execution without errors.
+The .close() method.
 
 
 
@@ -5637,10 +5637,10 @@ Successful execution without errors.
 
 570
 Powershell Modules
-CurrentUser Scope
+Module Version Specification
 
-Definition: An installation scope that makes a PowerShell module available only to the current user.
-Explanation: Installing a module with -Scope CurrentUser does not require administrative privileges and places the module in the user's profile directory, typically C:\Users\<Username>\Documents\PowerShell\Modules.
+Definition: The practice of specifying exact module versions when importing to ensure script compatibility.
+Explanation: Done using parameters like -RequiredVersion in Import-Module. Example: Import-Module -Name Az -RequiredVersion 5.0.0.
 
 
 
@@ -5648,7 +5648,7 @@ Explanation: Installing a module with -Scope CurrentUser does not require admini
 
 571
 JavaScript Concepts
-Responsive Design: Designing web applications to adapt seamlessly across various device sizes and screen resolutions for optimal user experience.
+Middleware: Functions in frameworks like Express.js that have access to request and response objects, used for tasks like authentication and logging.
 
 
 
@@ -5656,8 +5656,13 @@ Responsive Design: Designing web applications to adapt seamlessly across various
 
 572
 Azure Developer Associate
-Front: How does Cosmos DB decide when to split a physical partition?
-Back: When either data size nears 20 GB or provisioned throughput demand exceeds the single-partition RU/s limit (~10 000 RU/s).
+Front: Name ways to authenticate applications to Cosmos DB.
+Back:
+
+Primary/Secondary keys
+Azure AD RBAC
+Resource tokens
+(But not SAS tokens.)
 
 
 
@@ -5708,18 +5713,7 @@ Explanation: Resolved by fully qualifying cmdlet names with the module name (e.g
 
 577
 JavaScript Concepts
-Switch Statement
-switch (expression) {
-    case value1:
-        // Code to execute if expression === value1
-        break;
-    case value2:
-        // Code to execute if expression === value2
-        break;
-    // Add more cases as needed
-    default:
-        // Code to execute if none of the cases match
-}
+Template Literals: Enhanced string syntax using backticks, allowing embedded expressions and multi-line strings for better readability.
 
 
 
@@ -5727,8 +5721,12 @@ switch (expression) {
 
 578
 Azure Developer Associate
-Front: You run a cross-partition query over 8 partitions that each cost 3 RU. How many total RUs?
-Back: 8 × 3 RU = 24 RU.
+Front: What are the three throughput models in Cosmos DB?
+Back:
+
+Manual (Provisioned) RU/s – fixed throughput you set.
+Autoscale RU/s – scales between 10% and 100× your minimum RU/s.
+Serverless – no provisioned RUs; pay per RU consumed.
 
 
 
@@ -5757,10 +5755,10 @@ This flexibility makes it suitable for applications that require runtime logging
 581
 Python
 Q:
-What is the primary purpose of exit codes in Python scripts?
+What does an exit code of 0 typically signify in a Python script?
 
 A:
-To communicate the termination status of a script to the operating system or calling process.
+Successful execution without errors.
 
 
 
@@ -5768,10 +5766,10 @@ To communicate the termination status of a script to the operating system or cal
 
 582
 Powershell Modules
-Find-Module
+CurrentUser Scope
 
-Definition: Searches for modules in a repository like the PowerShell Gallery.
-Example Usage: Find-Module -Name SQLServer searches for the "SQLServer" module.
+Definition: An installation scope that makes a PowerShell module available only to the current user.
+Explanation: Installing a module with -Scope CurrentUser does not require administrative privileges and places the module in the user's profile directory, typically C:\Users\<Username>\Documents\PowerShell\Modules.
 
 
 
@@ -5779,7 +5777,7 @@ Example Usage: Find-Module -Name SQLServer searches for the "SQLServer" module.
 
 583
 JavaScript Concepts
-DOM Manipulation: Using JavaScript to select and modify HTML elements, enabling dynamic and interactive web pages.
+Netlify: A platform for deploying static sites and serverless functions, providing continuous deployment and built-in CI/CD pipelines.
 
 
 
@@ -5787,13 +5785,8 @@ DOM Manipulation: Using JavaScript to select and modify HTML elements, enabling 
 
 584
 Azure Developer Associate
-Front: Name ways to authenticate applications to Cosmos DB.
-Back:
-
-Primary/Secondary keys
-Azure AD RBAC
-Resource tokens
-(But not SAS tokens.)
+Front: How does Cosmos DB decide when to split a physical partition?
+Back: When either data size nears 20 GB or provisioned throughput demand exceeds the single-partition RU/s limit (~10 000 RU/s).
 
 
 
@@ -5801,10 +5794,9 @@ Resource tokens
 
 585
 Vocab
-Red Side Story, FForde
-Semolina
-Pronunciation: sem-uh-LEE-nuh
-Definition: A coarse flour made from durum wheat, commonly used in making pasta and couscous.
+Jane Eyre
+Spoony
+(SPOO-nee) Foolishly or overly sentimental, especially in matters of love or infatuation, often appearing naïve or overly romantic.
 
 
 
@@ -5824,10 +5816,10 @@ This function is useful for quick setups without the need for multiple handlers 
 587
 Python
 Q:
-Which Python module is commonly used to set exit codes?
+What is the primary purpose of exit codes in Python scripts?
 
 A:
-sys
+To communicate the termination status of a script to the operating system or calling process.
 
 
 
@@ -5835,10 +5827,10 @@ sys
 
 588
 Powershell Modules
-Module.dll
+Find-Module
 
-Definition: A dynamic link library file that can be part of a PowerShell module.
-Explanation: Contains compiled code (e.g., C#) that can be used by PowerShell modules for enhanced performance or functionality.
+Definition: Searches for modules in a repository like the PowerShell Gallery.
+Example Usage: Find-Module -Name SQLServer searches for the "SQLServer" module.
 
 
 
@@ -5846,7 +5838,18 @@ Explanation: Contains compiled code (e.g., C#) that can be used by PowerShell mo
 
 589
 JavaScript Concepts
-Netlify: A platform for deploying static sites and serverless functions, providing continuous deployment and built-in CI/CD pipelines.
+Switch Statement
+switch (expression) {
+    case value1:
+        // Code to execute if expression === value1
+        break;
+    case value2:
+        // Code to execute if expression === value2
+        break;
+    // Add more cases as needed
+    default:
+        // Code to execute if none of the cases match
+}
 
 
 
@@ -5854,12 +5857,8 @@ Netlify: A platform for deploying static sites and serverless functions, providi
 
 590
 Azure Developer Associate
-Front: What are the three throughput models in Cosmos DB?
-Back:
-
-Manual (Provisioned) RU/s – fixed throughput you set.
-Autoscale RU/s – scales between 10% and 100× your minimum RU/s.
-Serverless – no provisioned RUs; pay per RU consumed.
+Front: You run a cross-partition query over 8 partitions that each cost 3 RU. How many total RUs?
+Back: 8 × 3 RU = 24 RU.
 
 
 
@@ -5867,9 +5866,10 @@ Serverless – no provisioned RUs; pay per RU consumed.
 
 591
 Vocab
-Jane Eyre
-Spoony
-(SPOO-nee) Foolishly or overly sentimental, especially in matters of love or infatuation, often appearing naïve or overly romantic.
+Red Side Story, FForde
+Semolina
+Pronunciation: sem-uh-LEE-nuh
+Definition: A coarse flour made from durum wheat, commonly used in making pasta and couscous.
 
 
 
@@ -5919,6 +5919,34 @@ RESTful APIs: Architectural style for designing networked applications, using HT
 
 596
 Azure Developer Associate
+Front: How can you override the account default consistency for a single SDK request?
+Back: Set the request-level consistency in the client call (e.g., .WithConsistencyLevel(ConsistencyLevel.Session) in the .NET SDK).
+
+
+
+
+
+597
+Vocab
+Do Androids Dream of Electric Sheep?
+Caterwauled (KAT-er-wawld): Past tense of "caterwaul," meaning to make a shrill, wailing noise like that of a cat in heat; to howl or screech.
+
+
+
+
+
+598
+JavaScript Concepts
+Array slice Function: The slice method returns a shallow copy of a portion of an array into a new array object.
+let array = [1, 2, 3, 4, 5];
+let slicedArray = array.slice(1, 4); // Output: [2, 3, 4]
+
+
+
+
+
+599
+Azure Developer Associate
 Front: What’s the effect of setting maxIntervalInSeconds to 0 in a Bounded Staleness policy?
 Back: You get purely version-based staleness (maxStalenessPrefix bound only), with no time-based freshness guarantee.
 
@@ -5926,7 +5954,7 @@ Back: You get purely version-based staleness (maxStalenessPrefix bound only), wi
 
 
 
-597
+600
 Vocab
 Lost in a Good Book
 Evelyn Waugh (novels): English writer famous for satirical works like Brideshead Revisited and A Handful of Dust, exploring themes of aristocracy, faith, and morality.
@@ -5935,7 +5963,7 @@ Evelyn Waugh (novels): English writer famous for satirical works like Brideshead
 
 
 
-598
+601
 JavaScript Concepts
 While Loop
 while (condition) {
@@ -5946,7 +5974,7 @@ while (condition) {
 
 
 
-599
+602
 Azure Developer Associate
 Front: List three criteria for choosing a good logical partition key.
 Back:
@@ -5954,35 +5982,6 @@ Back:
 High cardinality (many distinct values)
 Even distribution of reads/writes (avoids “hot” partitions)
 Co-location of related items if you need cross-item transactions.
-
-
-
-
-
-600
-Vocab
-Do Androids Dream of Electric Sheep?
-Caterwauled (KAT-er-wawld): Past tense of "caterwaul," meaning to make a shrill, wailing noise like that of a cat in heat; to howl or screech.
-
-
-
-
-
-601
-JavaScript Concepts
-Array reverse Function: The reverse method reverses the order of the elements in an array in place.
-let array = [1, 2, 3, 4, 5];
-array.reverse();
-console.log(array); // Output: [5, 4, 3, 2, 1]
-
-
-
-
-
-602
-Azure Developer Associate
-Front: Which indexing policy change lowers write RU costs for a seldom-queried property?
-Back: Add an exclude path for that property in your custom indexing policy to skip indexing it.
 
 
 
@@ -5999,9 +5998,10 @@ Interval funds usually have higher management fees and operational expenses comp
 
 604
 JavaScript Concepts
-Array slice Function: The slice method returns a shallow copy of a portion of an array into a new array object.
+Array reverse Function: The reverse method reverses the order of the elements in an array in place.
 let array = [1, 2, 3, 4, 5];
-let slicedArray = array.slice(1, 4); // Output: [2, 3, 4]
+array.reverse();
+console.log(array); // Output: [5, 4, 3, 2, 1]
 
 
 
@@ -6009,8 +6009,8 @@ let slicedArray = array.slice(1, 4); // Output: [2, 3, 4]
 
 605
 Azure Developer Associate
-Front: What happens to Strong consistency reads during a regional failover in a multi-region account?
-Back: Strong reads will only succeed in the current write region. If failover switches your write region, clients must target the new write region for linearizability.
+Front: How does autoscale billing calculate your minimum RU/s charge?
+Back: You’re billed at 10% of your maxThroughput setting. (e.g., max = 10 000 RU/s → min bill = 1 000 RU/s.)
 
 
 
@@ -6043,8 +6043,8 @@ const greeting = `Hello, ${name}!`;
 
 608
 Azure Developer Associate
-Front: How does autoscale billing calculate your minimum RU/s charge?
-Back: You’re billed at 10% of your maxThroughput setting. (e.g., max = 10 000 RU/s → min bill = 1 000 RU/s.)
+Front: What’s the Cosmos DB Change Feed used for?
+Back: An ordered, per-partition stream of inserts and updates—ideal for event sourcing, ETL, or triggering Functions.
 
 
 
@@ -6052,10 +6052,8 @@ Back: You’re billed at 10% of your maxThroughput setting. (e.g., max = 10 000 
 
 609
 Vocab
-Red Side Story, FForde
-Gimbal
-Pronunciation: GIM-buhl
-Definition: A pivoted support that allows the rotation of an object about a single axis, often used in photography and aerospace for stabilization.
+Do Androids Dream of Electric Sheep?
+Jug-eared (JUHG-eerd): Describing someone with large, protruding ears that resemble the handles of a jug.
 
 
 
@@ -6072,8 +6070,8 @@ Array Length Property: Remember to use array.length to get the number of element
 
 611
 Azure Developer Associate
-Front: What’s the Cosmos DB Change Feed used for?
-Back: An ordered, per-partition stream of inserts and updates—ideal for event sourcing, ETL, or triggering Functions.
+Front: In the SDK, how should you handle 429 (throttled) errors?
+Back: Rely on the built-in retry policy with exponential backoff—don’t catch and retry immediately.
 
 
 
@@ -6081,10 +6079,8 @@ Back: An ordered, per-partition stream of inserts and updates—ideal for event 
 
 612
 Vocab
-Red Side Story, FForde
-Probity
-Pronunciation: PROB-ih-tee
-Definition: Adherence to the highest principles and ideals; uprightness and integrity.
+Lost in a Good Book
+Compère (of a game show): A host or master of ceremonies, responsible for introducing participants and keeping the event flowing.
 
 
 
@@ -6116,8 +6112,10 @@ Back: Set a TTL (in seconds) at the container level (default) or override per it
 
 615
 Vocab
-Do Androids Dream of Electric Sheep?
-Jug-eared (JUHG-eerd): Describing someone with large, protruding ears that resemble the handles of a jug.
+Red Side Story, FForde
+Probity
+Pronunciation: PROB-ih-tee
+Definition: Adherence to the highest principles and ideals; uprightness and integrity.
 
 
 
@@ -6133,8 +6131,8 @@ Destructuring: Extracting values from arrays or objects into distinct variables 
 
 617
 Azure Developer Associate
-Front: In the SDK, how should you handle 429 (throttled) errors?
-Back: Rely on the built-in retry policy with exponential backoff—don’t catch and retry immediately.
+Front: What guarantee does Session consistency provide?
+Back: Monotonic reads, monotonic writes, read-your-writes, and write-fan-out within a single client session.
 
 
 
@@ -6142,8 +6140,10 @@ Back: Rely on the built-in retry policy with exponential backoff—don’t catch
 
 618
 Vocab
-Lost in a Good Book
-Compère (of a game show): A host or master of ceremonies, responsible for introducing participants and keeping the event flowing.
+Red Side Story, FForde
+Gimbal
+Pronunciation: GIM-buhl
+Definition: A pivoted support that allows the rotation of an object about a single axis, often used in photography and aerospace for stabilization.
 
 
 
@@ -6151,7 +6151,7 @@ Compère (of a game show): A host or master of ceremonies, responsible for intro
 
 619
 JavaScript Concepts
-Component-Based Architecture: Building applications by encapsulating functionality into independent, reusable components, commonly used in frontend frameworks.
+Context API: A React feature that provides a way to pass data through the component tree without prop drilling, useful for simple state management.
 
 
 
@@ -6159,8 +6159,8 @@ Component-Based Architecture: Building applications by encapsulating functionali
 
 620
 Azure Developer Associate
-Front: You need to guarantee “no gaps” in the sequence of writes but don’t care about client affinity. Which consistency level?
-Back: Consistent Prefix—it ensures write order, even if you see older data.
+Front: Which indexing policy change lowers write RU costs for a seldom-queried property?
+Back: Add an exclude path for that property in your custom indexing policy to skip indexing it.
 
 
 
@@ -6179,7 +6179,7 @@ Definition: To partially boil food as a preliminary step before further cooking.
 
 622
 JavaScript Concepts
-Context API: A React feature that provides a way to pass data through the component tree without prop drilling, useful for simple state management.
+Component-Based Architecture: Building applications by encapsulating functionality into independent, reusable components, commonly used in frontend frameworks.
 
 
 
@@ -6187,10 +6187,8 @@ Context API: A React feature that provides a way to pass data through the compon
 
 623
 Azure Developer Associate
-Front: Describe the difference between Bounded Staleness and Consistent Prefix.
-Back:
-Bounded Staleness: Ordered reads with a max lag of K versions or T seconds.
-Consistent Prefix: Ordered reads with no freshness bound (can lag indefinitely).
+Front: You need to guarantee “no gaps” in the sequence of writes but don’t care about client affinity. Which consistency level?
+Back: Consistent Prefix—it ensures write order, even if you see older data.
 
 
 
@@ -6220,8 +6218,8 @@ Yarn: An alternative package manager to npm, offering faster installs and more r
 
 626
 Azure Developer Associate
-Front: Why might you choose Serverless over Autoscale?
-Back: For very low-volume or unpredictable workloads where even Autoscale’s 10%-of-max RU floor is too costly.
+Front: Name the five Cosmos DB consistency levels, in order from strongest to weakest.
+Back: Strong → Bounded Staleness → Session → Consistent Prefix → Eventual.
 
 
 
@@ -6248,8 +6246,8 @@ Security Practices: Implementing measures to protect applications from vulnerabi
 
 629
 Azure Developer Associate
-Front: What’s a good pattern to avoid cross-partition fan-out in queries?
-Back: Always include the partition-key value in your WHERE clause (e.g., WHERE c.customerId = @id).
+Front: What happens to Strong consistency reads during a regional failover in a multi-region account?
+Back: Strong reads will only succeed in the current write region. If failover switches your write region, clients must target the new write region for linearizability.
 
 
 
@@ -6274,8 +6272,10 @@ Jest: A JavaScript testing framework by Facebook, supporting unit, integration, 
 
 632
 Azure Developer Associate
-Front: In Autoscale, if you set maxThroughput to 50 000 RU/s, what’s the billed minimum?
-Back: 10% of 50 000 = 5 000 RU/s.
+Front: Describe the difference between Bounded Staleness and Consistent Prefix.
+Back:
+Bounded Staleness: Ordered reads with a max lag of K versions or T seconds.
+Consistent Prefix: Ordered reads with no freshness bound (can lag indefinitely).
 
 
 
@@ -6283,8 +6283,8 @@ Back: 10% of 50 000 = 5 000 RU/s.
 
 633
 Vocab
-Interval Funds Invest in Less Liquid Assets:
-Interval funds typically invest in alternative, less liquid assets like real estate, private equity, private debt, and structured credit, granting investors access to opportunities not typically available through conventional investment vehicles.
+Do Androids Dream of Electric Sheep?
+Cogitated (KOJ-i-teyt-ed): Past tense of "cogitate," meaning to think deeply or ponder about something.
 
 
 
@@ -6300,8 +6300,11 @@ Caching Strategies: Techniques like browser caching and service workers to store
 
 635
 Azure Developer Associate
-Front: What guarantee does Session consistency provide?
-Back: Monotonic reads, monotonic writes, read-your-writes, and write-fan-out within a single client session.
+Front: What’s the max data size and RU/s throughput a single logical partition can hold?
+Back:
+
+Data: up to 20 GB per logical partition
+Throughput: limited to the RU/s of its parent physical partition (≈10 000 RU/s per slice).
 
 
 
@@ -6309,9 +6312,8 @@ Back: Monotonic reads, monotonic writes, read-your-writes, and write-fan-out wit
 
 636
 Vocab
-Jane Eyre
-Piquant
-(PEE-kahnt) Having a pleasantly sharp or spicy taste; can also describe something intellectually stimulating or excitingly provocative.
+Interval Funds Invest in Less Liquid Assets:
+Interval funds typically invest in alternative, less liquid assets like real estate, private equity, private debt, and structured credit, granting investors access to opportunities not typically available through conventional investment vehicles.
 
 
 
@@ -6332,11 +6334,8 @@ Improved Code Organization: Helps in organizing code by separating concerns and 
 
 638
 Azure Developer Associate
-Front: What’s the max data size and RU/s throughput a single logical partition can hold?
-Back:
-
-Data: up to 20 GB per logical partition
-Throughput: limited to the RU/s of its parent physical partition (≈10 000 RU/s per slice).
+Front: Why might you choose Serverless over Autoscale?
+Back: For very low-volume or unpredictable workloads where even Autoscale’s 10%-of-max RU floor is too costly.
 
 
 
@@ -6344,8 +6343,9 @@ Throughput: limited to the RU/s of its parent physical partition (≈10 000 RU/s
 
 639
 Vocab
-Do Androids Dream of Electric Sheep?
-Cogitated (KOJ-i-teyt-ed): Past tense of "cogitate," meaning to think deeply or ponder about something.
+Jane Eyre
+Piquant
+(PEE-kahnt) Having a pleasantly sharp or spicy taste; can also describe something intellectually stimulating or excitingly provocative.
 
 
 
@@ -6361,13 +6361,8 @@ A callback function is a function that is passed as an argument to another funct
 
 641
 Azure Developer Associate
-Front: How do you exclude a nested JSON property (/address/zip) from indexing?
-Back:
-{
-  "indexingMode": "Consistent",
-  "includedPaths": [ { "path": "/*" } ],
-  "excludedPaths": [ { "path": "/address/zip/?" } ]
-}
+Front: What’s a good pattern to avoid cross-partition fan-out in queries?
+Back: Always include the partition-key value in your WHERE clause (e.g., WHERE c.customerId = @id).
 
 
 
@@ -6392,8 +6387,8 @@ greet('Jay', sayGoodbye);
 
 643
 Azure Developer Associate
-Front: Name the five Cosmos DB consistency levels, in order from strongest to weakest.
-Back: Strong → Bounded Staleness → Session → Consistent Prefix → Eventual.
+Front: In Autoscale, if you set maxThroughput to 50 000 RU/s, what’s the billed minimum?
+Back: 10% of 50 000 = 5 000 RU/s.
 
 
 
@@ -6401,5 +6396,10 @@ Back: Strong → Bounded Staleness → Session → Consistent Prefix → Eventua
 
 644
 Azure Developer Associate
-Front: How can you override the account default consistency for a single SDK request?
-Back: Set the request-level consistency in the client call (e.g., .WithConsistencyLevel(ConsistencyLevel.Session) in the .NET SDK).
+Front: How do you exclude a nested JSON property (/address/zip) from indexing?
+Back:
+{
+  "indexingMode": "Consistent",
+  "includedPaths": [ { "path": "/*" } ],
+  "excludedPaths": [ { "path": "/address/zip/?" } ]
+}
