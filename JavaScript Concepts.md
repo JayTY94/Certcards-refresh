@@ -193,3 +193,62 @@ const oneToTen = [...oneToFive, 6, 7, 8, 9, 10];
 
 oneToTen;
 // => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+
+
+The basic syntax for a string template in JavaScript uses backticks (`) and ${} for embedding expressions.
+  const name = 'Jay';
+  const greeting = `Hello, ${name}!`;
+  console.log(greeting); // Output: Hello, Jay!
+
+
+
+
+
+Front: How do you create multiline strings using string templates?
+Back: String templates allow for multiline strings without the need for concatenation or escape characters.
+  const multiline = `This is a string
+  that spans multiple
+  lines.`;
+  console.log(multiline);
+
+
+Front: Can you call functions within a string template?
+
+Back: Yes, you can call functions within ${} in a string template.
+  function getName() {
+    return 'Jay';
+  }
+  const greeting = `Hello, ${getName()}!`;
+  console.log(greeting); // Output: Hello, Jay!
+
+
+
+
+
+Front: Can you nest string templates within each other?
+Back: Yes, you can nest string templates within each other.
+  const name = 'Jay';
+  const nestedTemplate = `Hello, ${`dear ${name}`}!`;
+  console.log(nestedTemplate); // Output: Hello, dear Jay!
+
+
+Front: What are tagged templates and how do you use them?
+
+Back: Tagged templates allow you to parse template literals with a function. The function receives the template string and the values as arguments.
+  function tag(strings, ...values) {
+  console.log(strings); // Array of string segments
+  console.log(values);  // Array of values
+  return 'Tagged template result';
+}
+const result = tag`Hello, ${name}!`;
+console.log(result); // Output: Tagged template result
+
+
+Front: How do you access the raw string content of a template literal?
+
+Back: You can access the raw string content using the String.raw tag.
+  const rawString = String.raw`Hello\nWorld`;
+  console.log(rawString); // Output: Hello\nWorld
+
