@@ -4,12 +4,6 @@
 
 
 
-1
-Powershell Modules
-RequiredModules
-Definition: A property in a module manifest that lists other modules required for the module to function.
-Explanation: Ensures that dependencies are loaded before the module itself is imported. Example: (Get-InstalledModule -Name AzureRM).RequiredModules.
-
 
 
 
