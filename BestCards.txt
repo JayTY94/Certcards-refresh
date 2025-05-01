@@ -30,3 +30,14 @@ DNS records that specify the location (hostname and port) of servers for particu
 =============
 
 
+How does TimedRotatingFileHandler from the logging.handlers module differ from RotatingFileHandler?
+
+TimedRotatingFileHandler rotates log files based on time intervals (e.g., daily at midnight), whereas RotatingFileHandler rotates based on file size (maxBytes).
+
+
+
+
+
+
+
+=============
