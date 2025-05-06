@@ -252,3 +252,16 @@ Back: You can access the raw string content using the String.raw tag.
   const rawString = String.raw`Hello\nWorld`;
   console.log(rawString); // Output: Hello\nWorld
 
+
+Syntax to convert an aray to a set and back again to remove duplicates
+  export function removeDuplicates(playlist) { //playlist is an array of songs
+    const play_set = new Set (playlist)
+    return Array.from(play_set)
+  }
+
+
+Checks potentially very long playlsit for a specific track by converting to a set and using the Set.has() funciton.
+  export function hasTrack(playlist, track) {
+    const play_set = new Set (playlist)
+    return play_set.has(track)
+  }
