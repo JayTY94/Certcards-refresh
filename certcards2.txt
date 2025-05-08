@@ -4,11 +4,6 @@
 
 
 
-1
-PnP Powershell
-Add-PnPListItem (PnP.PowerShell)
-Adds a new item to a SharePoint list. Enables automated data entry and integration with other systems by programmatically populating list data.
-
 
 
 
