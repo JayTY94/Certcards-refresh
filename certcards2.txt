@@ -8,64 +8,30 @@
 
 
 
-2
-PnP Powershell
-Get-PnPFile (PnP.PowerShell)
-Retrieves a file from a SharePoint document library. Allows downloading files to a local path or accessing file properties and content directly within PowerShell scripts.
 
 
 
 
 
-3
-PnP Powershell
-API Permissions
-Permissions granted to an application to access specific APIs like SharePoint or Microsoft Graph. Can be delegated (user-based) or application-level (app-only).
 
 
 
 
 
-4
-PnP Powershell
-Add-PnPUserToGroup (PnP.PowerShell)
-Adds a user to a specified SharePoint group. Facilitates automated user management and access control within SharePoint environments.
 
 
 
 
 
-5
-PnP Powershell
-Get-PnPConnection (PnP.PowerShell)
-Retrieves details about the current PnP.PowerShell connection, including authentication method, scopes, and connection type, aiding in troubleshooting and verification.
 
 
 
 
 
-6
-PnP Powershell
-Scopes
-Define the level of access an application has to resources. Examples include Files.ReadWrite.All and Sites.ReadWrite.All, determining what operations the app can perform.
 
 
 
 
-
-7
-PnP Powershell
-System.IO.File (System.IO)
-A PowerShell class providing methods for file manipulation, such as reading, writing, opening, and closing files, essential for handling file operations in scripts.
-
-
-
-
-
-8
-PnP Powershell
-Client ID (client_id)
-A unique identifier assigned to an Azure AD application upon registration. Used to identify the application during authentication processes.
 
 
 
