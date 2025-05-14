@@ -41,3 +41,35 @@ TimedRotatingFileHandler rotates log files based on time intervals (e.g., daily 
 
 
 =============
+A Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instance in Secured Virtual Hubs and Hub Virtual Networks. Polciies will work across regions and subscriptions.
+
+
+
+
+
+
+=============
+
+
+
+
+
+
+
+=============
+
+
+
+
+
+
+
+=============
+
+
+
+
+
+
+
+=============
