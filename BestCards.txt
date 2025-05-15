@@ -49,6 +49,8 @@ A Firewall Policy is the recommended method to configure your Azure Firewall. It
 
 
 =============
+What is the maximum supported size of a VHDX file in FSLogix?
+VHDX files can support up to 64 TB, making them suitable for large-scale enterprise environments where user profiles may require substantial storage capacity.
 
 
 
