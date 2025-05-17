@@ -52,7 +52,7 @@ Explanation: Extends PowerShell’s functionality and can be shared or reused ac
 Powershell Modules
 Module Manifest
 
-Definition: See Module Manifest (.psd1) above.
+Definition: A PowerShell data file that describes the contents and metadata of a module.
 Explanation: Provides metadata and configuration for modules, ensuring they load correctly with specified dependencies and exported commands.
 
 
