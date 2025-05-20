@@ -4,10 +4,6 @@
 
 
 
-1
-IW Migration
-Linked Table Manager (in Access)
-A feature in MS Access that helps you manage and refresh connections to external data sources. If a database is split, this tool reconnects front-end objects to back-end tables, ensuring smooth data retrieval and updates.
 
 
 
