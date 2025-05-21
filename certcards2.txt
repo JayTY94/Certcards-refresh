@@ -9,28 +9,16 @@
 
 
 
-2
-IW Migration
-Linked Server (SQL Server)
-A configuration that allows SQL Server to run queries against remote data sources as if they were local tables. This enables federated queries, joining data across different servers and even different database platforms.
 
 
 
 
 
-3
-IW Migration
-Linked Table Manager (Access)
-A utility in Access to manage external data connections. It allows refreshing, updating, or changing the source of linked tables, ensuring that front-end objects always correctly reference tables in the back-end or external databases.
 
 
 
 
 
-4
-IW Migration
-Forms (Access)
-User-friendly interfaces for entering, displaying, and editing data in tables. They can incorporate buttons, dropdowns, and validation rules, making data input more efficient and consistent, and often serve as the primary user interaction layer.
 
 
 
