@@ -352,3 +352,29 @@ A LIFO (Last-In, First-Out) stack is a way of organizing data so that the most r
   You pop a plate off the top of the stack.
 
 
+
+Use a private backing field for getter-only properties
+  this._rows = …  
+  get rows() { return this._rows }
+
+
+Create N empty sub-arrays via Array.from
+  let cols = Array.from({ length: n }, () => [])
+
+
+Object literal { length: n } is just “array-like”: any object with a numeric .length can drive Array.from.
+  let cols = Array.from({ length: n }, () => [])
+
+
+Array.fill([]) shares the same array reference
+  new Array(3).fill([])  
+  // → [ref, ref, ref]
+
+
+Generate distinct arrays with fill() + map()
+  new Array(3).fill().map(() => [])  
+  // → [[], [], []]
+
+
+Split a string and convert parts to numbers
+  "1 2 3".split(" ").map(Number)
