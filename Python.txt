@@ -1093,3 +1093,49 @@ verbose = False  # Set based on some condition
 
 for i in tqdm(range(100), desc='Processing', disable=not verbose):
     pass
+
+
+
+
+Front: What is the only requirement for an __init__.py file to turn a folder into a Python package?
+Back: It can be completely empty—its mere presence signals Python that the folder is a package.
+
+Front: How do you perform a relative import from a child module to a parent module in a package?
+Back: Use syntax like from ..parent_pkg import parent_module (with __init__.py files marking each package level).
+
+Front: Why does ImportError: attempted relative import with no known parent package occur?
+Back: Because you ran the script directly (not as a module under its package), so Python doesn’t recognize its “parent.”
+
+Front: How can you run a script so that Python treats it as part of its package hierarchy?
+Back: From the project root, invoke it with python -m package_name.module_name.
+
+Front: What’s the quick “sys.path hack” to import a module from a sibling or parent folder?
+Back:
+
+python
+>>>
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
+import your_module
+Front: How can you avoid Python syntax errors when your folder has spaces in its name (e.g. Retain Integration)?
+Back: Either rename the folder to a valid identifier (e.g. retain_integration), or load it manually using importlib.util.spec_from_file_location.
+
+Front: What environment variable can you set so Python always knows where to find extra modules?
+Back: PYTHONPATH, e.g.
+
+bash
+>>>
+export PYTHONPATH="/path/to/project":$PYTHONPATH
+Front: Will adding an empty __init__.py in your Azure Functions project root break the Azure Functions loader?
+Back: No—as long as each function remains in its own folder with its own function.json and entry script, the root __init__.py won’t be treated as a function.
+
+Front: What’s the minimal notebook-friendly workaround to import a script from a non-package folder?
+Back:
+
+python
+>>>
+import sys
+sys.path.insert(0, r"C:\path\to\Retain Integration")
+from load_local_config import load_local_config
+Front: What should you do after getting the imports working with hacks, for cleaner long-term code?
+Back: Rename folders to valid package names, add __init__.py files, and switch to proper package or absolute imports.
