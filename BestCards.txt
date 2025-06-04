@@ -15,10 +15,6 @@ Throughput: The actual rate of successful data transfer achieved, often lower th
 
 
 =============
-
-
-
-DNS
 SRV (Service) Records
 DNS records that specify the location (hostname and port) of servers for particular services within a domain. Essential for services like SIP (VoIP) or LDAP, they enable clients to discover service endpoints automatically.
 
@@ -66,7 +62,7 @@ If a virus never saves itself to a storage drive, it may be able to evade antivi
 
 
 =============
-
+Password Spraying is where the attacker obtains the account names of individuals (like from the company's website) and then uses the same common passwords to try to authenticate to each of them.
 
 
 
@@ -74,3 +70,8 @@ If a virus never saves itself to a storage drive, it may be able to evade antivi
 
 
 =============
+802.11 management frames 
+    Communication that makes WiFi work
+    How devices find APs, managed QoS, associate, and disassociate with an AP 
+Original wireless standards did not add protection for management frames 
+    Sent in clear, no authentication or validation
