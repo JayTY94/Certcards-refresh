@@ -3,43 +3,6 @@
 
 
 
-
-1
-Azure Developer Associate
-What must be configured on Application Gateway to work properly with App Service behind WAF?
-Custom health probes
-
-
-
-
-
-2
-Azure Developer Associate
-Q: Can the Standard tier of Azure Cache for Redis be deployed into a VNet?
-A: No — only Premium and above support VNet integration.
-
-
-
-
-
-3
-Azure Developer Associate
-When you copy an archived blob to a new blob in an online tier, the source blob remains unmodified in the archive tier. You must copy the archived blob to a new blob with a different name or to a different container. You can't overwrite the source blob by copying to the same blob.
-
-
-
-
-
-4
-Azure Developer Associate
-There are two options for rehydrating a blob that is stored in the archive tier:
-
-Copy an archived blob to an online tier: You can rehydrate an archived blob by copying it to a new blob in the hot or cool tier with the Copy Blob or Copy Blob from URL operation. Microsoft recommends this option for most scenarios.
-
-
-
-
-
 5
 Azure Developer Associate
 What happens if one app in an App Service Plan consumes too much CPU?
