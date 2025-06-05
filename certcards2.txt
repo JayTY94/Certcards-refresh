@@ -4,28 +4,7 @@
 
 
 
-1
-Todd Ideas
-In Azure AI Document Intelligence, you can integrate with Azure Functions to trigger document processing automatically upon upload, using serverless computing for cost-effective, event-driven workflows that streamline data extraction and real-time business logic.
 
-
-
-
-
-2
-Todd Ideas
-In Azure AI Document Intelligence, Custom models are trained using your labeled datasets to extract distinct data from forms and documents, specific to your use cases. Standalone custom models can be combined to create composed models.
-Custom neural | Extract data from mixed-type documents.
-Custom template | Extract data from static layouts.
-Custom composed | Extract data using a collection of models.
-
-
-
-
-
-3
-Todd Ideas
-In Azure AI Document Intelligence, prebuilt models offer a straightforward integration via RESTful APIs. Their endpoints are designed for simplicity, returning data in structured JSON. This means that once you send your document for analysis, you can easily parse the response and integrate the extracted fields directly into your application’s workflow.
 
 
 
