@@ -234,9 +234,9 @@ Typically places such emails in the spam or junk folder.
 
 23
 Audit Report Tracker (Sharepoint List)
-View (SharePoint View)
-Definition: A pre-defined display of list data, which can filter, sort, and group information in a specific way.
-Context: Views can be customized to show only specific columns, items, or data based on user needs.
+Content Type
+Definition: A feature in SharePoint that defines a set of metadata (columns) and behaviors that apply to a certain type of content (e.g., a document, list item).
+Context: Helps structure how data is stored and interacted with in SharePoint.
 
 
 
@@ -244,9 +244,9 @@ Context: Views can be customized to show only specific columns, items, or data b
 
 24
 Audit Report Tracker (Sharepoint List)
-Content Type
-Definition: A feature in SharePoint that defines a set of metadata (columns) and behaviors that apply to a certain type of content (e.g., a document, list item).
-Context: Helps structure how data is stored and interacted with in SharePoint.
+View (SharePoint View)
+Definition: A pre-defined display of list data, which can filter, sort, and group information in a specific way.
+Context: Views can be customized to show only specific columns, items, or data based on user needs.
 
 
 
@@ -310,11 +310,11 @@ Description: Retrieves the views available in a specified SharePoint list.
 
 30
 Email Auth and Security
-Feedback Loops (FBL)
+MUA (Mail User Agent)
 
-Mechanisms by which email service providers notify senders about spam complaints from recipients.
-Allow senders to monitor and address spam-related issues, improving sender reputation and email deliverability.
-Implemented through services like Return Path and Feedback Loop (FBL) agreements with ISPs.
+An email client used by end-users to send, receive, and manage their emails.
+Provides the interface for users to interact with their email accounts.
+Examples include Microsoft Outlook, Mozilla Thunderbird, and Gmail.
 
 
 
@@ -322,11 +322,11 @@ Implemented through services like Return Path and Feedback Loop (FBL) agreements
 
 31
 Email Auth and Security
-MUA (Mail User Agent)
+Feedback Loops (FBL)
 
-An email client used by end-users to send, receive, and manage their emails.
-Provides the interface for users to interact with their email accounts.
-Examples include Microsoft Outlook, Mozilla Thunderbird, and Gmail.
+Mechanisms by which email service providers notify senders about spam complaints from recipients.
+Allow senders to monitor and address spam-related issues, improving sender reputation and email deliverability.
+Implemented through services like Return Path and Feedback Loop (FBL) agreements with ISPs.
 
 
 
@@ -419,17 +419,17 @@ User-defined roles with specific permissions, used when built-in roles don’t p
 
 
 42
-Azure AD Authentication
-Scope
-Defines the level at which a role is applied, such as management group, subscription, resource group, or individual resource. Higher scopes apply to all child resources.
+Azure Functions + Visual Studio
+ASP.NET Core provides built-in Dependency Injection (DI) support, enabling you to manage dependencies in your application. This makes your code more modular, testable, and easier to maintain.
 
 
 
 
 
 43
-Azure Functions + Visual Studio
-ASP.NET Core provides built-in Dependency Injection (DI) support, enabling you to manage dependencies in your application. This makes your code more modular, testable, and easier to maintain.
+Azure AD Authentication
+Scope
+Defines the level at which a role is applied, such as management group, subscription, resource group, or individual resource. Higher scopes apply to all child resources.
 
 
 
@@ -454,17 +454,17 @@ Predefined roles like Owner, Contributor, and Reader that grant specific permiss
 
 
 46
-Azure Functions + Visual Studio
-The ASP.NET MVC architecture is based on the Model-View-Controller pattern, which separates the application into three components: Models (data), Views (UI), and Controllers (logic), providing a clean separation of concerns for better maintainability.
+Azure AD Authentication
+Managed Identities
+Azure-managed identities used by Azure resources (like VMs) to authenticate to other Azure services, removing the need to manage credentials.
 
 
 
 
 
 47
-Azure AD Authentication
-Managed Identities
-Azure-managed identities used by Azure resources (like VMs) to authenticate to other Azure services, removing the need to manage credentials.
+Azure Functions + Visual Studio
+The ASP.NET MVC architecture is based on the Model-View-Controller pattern, which separates the application into three components: Models (data), Views (UI), and Controllers (logic), providing a clean separation of concerns for better maintainability.
 
 
 
@@ -577,8 +577,10 @@ A set of rules used to filter network traffic before it is captured in Wireshark
 
 60
 WSL + Kali Linux
-XFCE (XForms Common Environment)
-A lightweight and fast desktop environment for Unix-like operating systems, known for its low resource usage. XFCE provides a complete graphical interface for managing windows, files, and system settings.
+12. wsl --mount
+A feature introduced with WSL 2, this allows you to mount physical disks in WSL as Linux file systems. Useful for accessing raw disks like external drives directly within WSL.
+13. wsl --no-launch
+Prevents WSL from automatically launching the default Linux shell after a distribution is installed.
 
 
 
@@ -586,10 +588,8 @@ A lightweight and fast desktop environment for Unix-like operating systems, know
 
 61
 WSL + Kali Linux
-12. wsl --mount
-A feature introduced with WSL 2, this allows you to mount physical disks in WSL as Linux file systems. Useful for accessing raw disks like external drives directly within WSL.
-13. wsl --no-launch
-Prevents WSL from automatically launching the default Linux shell after a distribution is installed.
+XFCE (XForms Common Environment)
+A lightweight and fast desktop environment for Unix-like operating systems, known for its low resource usage. XFCE provides a complete graphical interface for managing windows, files, and system settings.
 
 
 
@@ -647,9 +647,9 @@ A person designated to work on a specific issue, indicating responsibility and o
 
 67
 Open Source/GitHub
-README.md
+Changelog
 
-A markdown file at the root of a repository that provides an overview of the project, including its purpose, setup instructions, and usage information.
+A document that records all notable changes made to a project, including new features, bug fixes, and updates, providing transparency and history for users and contributors.
 
 
 
@@ -657,9 +657,9 @@ A markdown file at the root of a repository that provides an overview of the pro
 
 68
 Open Source/GitHub
-Changelog
+README.md
 
-A document that records all notable changes made to a project, including new features, bug fixes, and updates, providing transparency and history for users and contributors.
+A markdown file at the root of a repository that provides an overview of the project, including its purpose, setup instructions, and usage information.
 
 
 
@@ -677,9 +677,9 @@ The process where project maintainers and contributors examine changes proposed 
 
 70
 Open Source/GitHub
-Good First Issue
+Contribution Guidelines
 
-A label for beginner-friendly tasks in a project’s issue tracker, designed to help new contributors make their initial contributions with manageable tasks.
+A set of rules and best practices outlined by a project to ensure consistent and quality contributions from all contributors, often found in CONTRIBUTING.md.
 
 
 
@@ -687,9 +687,9 @@ A label for beginner-friendly tasks in a project’s issue tracker, designed to 
 
 71
 Open Source/GitHub
-Contribution Guidelines
+Good First Issue
 
-A set of rules and best practices outlined by a project to ensure consistent and quality contributions from all contributors, often found in CONTRIBUTING.md.
+A label for beginner-friendly tasks in a project’s issue tracker, designed to help new contributors make their initial contributions with manageable tasks.
 
 
 
@@ -706,8 +706,8 @@ Authentication standards used by Azure for signing in users.
 
 73
 RAG Project
-Factory Function (create_app)
-A function that sets up and returns a fully configured app instance. Used to cleanly separate setup from execution and enable testing.
+__init__.py
+A special file that makes a directory a Python package (so it can be imported).
 
 
 
@@ -715,8 +715,8 @@ A function that sets up and returns a fully configured app instance. Used to cle
 
 74
 RAG Project
-__init__.py
-A special file that makes a directory a Python package (so it can be imported).
+Factory Function (create_app)
+A function that sets up and returns a fully configured app instance. Used to cleanly separate setup from execution and enable testing.
 
 
 
@@ -861,15 +861,6 @@ A report that provides detailed information about the sequence of function calls
 
 90
 Debugging in VS Code
-Live Debugging
-A type of debugging where changes are made to the program and tested while it is running in a live environment, often used in web development and real-time applications.
-
-
-
-
-
-91
-Debugging in VS Code
 Hot Reloading
 A feature in some debuggers and IDEs that allows you to modify and reload parts of your code while the program is running, enabling you to see the changes in real time without restarting the application.
 
@@ -877,7 +868,26 @@ A feature in some debuggers and IDEs that allows you to modify and reload parts 
 
 
 
+91
+Debugging in VS Code
+Live Debugging
+A type of debugging where changes are made to the program and tested while it is running in a live environment, often used in web development and real-time applications.
+
+
+
+
+
 92
+Azure Private DNS
+DNS Conditional Forwarding
+Definition: A feature that forwards DNS queries based on the domain being requested.
+Feature: Azure supports DNS conditional forwarding to allow DNS queries for specific domains to be forwarded to a designated DNS server, often useful in hybrid cloud scenarios.
+
+
+
+
+
+93
 Azure Private DNS
 Registration-Enabled
 Definition: A setting that allows Azure to automatically create DNS records (e.g., A records) for VMs in the linked Private DNS Zone.
@@ -887,7 +897,7 @@ Feature: Registration-Enabled enables automatic DNS record creation for VMs that
 
 
 
-93
+94
 Azure Private DNS
 Azure DNS Resolver
 Definition: The internal DNS resolver provided by Azure for resolving domain names within Azure services.
@@ -897,7 +907,7 @@ Feature: The Azure DNS Resolver resolves DNS queries for resources in the linked
 
 
 
-94
+95
 Azure Private DNS
 DNS Proxy
 Definition: A feature that allows DNS queries to be redirected from Azure resources to custom DNS servers.
@@ -907,21 +917,11 @@ Feature: DNS Proxy provides greater flexibility by enabling the use of your own 
 
 
 
-95
+96
 Azure Private DNS
 Dynamic DNS (DDNS)
 Definition: A DNS service that automatically updates DNS records when an IP address changes.
 Feature: Dynamic DNS in Azure Private DNS helps automatically update DNS records (e.g., when VM IP addresses change) without manual intervention.
-
-
-
-
-
-96
-Azure Private DNS
-MX Record (Mail Exchange Record):
-Definition: A DNS record that specifies the mail servers responsible for receiving email on behalf of a domain.
-Feature: You can use MX records in your Private DNS Zone to manage email services for internal applications.
 
 
 
@@ -939,9 +939,9 @@ Feature: Custom DNS servers can be used in combination with Azure Private DNS if
 
 98
 Azure Private DNS
-Hybrid DNS
-Definition: A DNS architecture that combines Azure DNS (Private and Public) with on-premises DNS services.
-Feature: Azure Private DNS allows integration with hybrid DNS setups, where DNS queries can be resolved both within Azure and on-premises, facilitating a seamless DNS experience across environments.
+Virtual Network Link
+Definition: A configuration that links an Azure Virtual Network to a Private DNS Zone, enabling DNS resolution for resources within that VNet.
+Feature: Virtual Network Links are a key feature that enables integration between Azure VNets and Private DNS Zones, allowing internal resources to resolve DNS names.
 
 
 
@@ -949,9 +949,9 @@ Feature: Azure Private DNS allows integration with hybrid DNS setups, where DNS 
 
 99
 Azure Private DNS
-Public DNS Zone
-Definition: A DNS zone used for resolving publicly accessible resources on the internet.
-Feature: While Azure Private DNS is for internal use, Public DNS Zones can be used in conjunction to handle external-facing resources.
+MX Record (Mail Exchange Record):
+Definition: A DNS record that specifies the mail servers responsible for receiving email on behalf of a domain.
+Feature: You can use MX records in your Private DNS Zone to manage email services for internal applications.
 
 
 
@@ -959,9 +959,9 @@ Feature: While Azure Private DNS is for internal use, Public DNS Zones can be us
 
 100
 Azure Private DNS
-DNS Conditional Forwarding
-Definition: A feature that forwards DNS queries based on the domain being requested.
-Feature: Azure supports DNS conditional forwarding to allow DNS queries for specific domains to be forwarded to a designated DNS server, often useful in hybrid cloud scenarios.
+Azure Network Security Groups (NSG)
+Definition: A set of rules used to control network traffic to and from Azure resources.
+Feature: While NSGs are not directly involved in DNS, they are often used to secure the traffic to DNS servers (whether private or custom) in Azure, including DNS queries.
 
 
 
@@ -969,9 +969,9 @@ Feature: Azure supports DNS conditional forwarding to allow DNS queries for spec
 
 101
 Azure Private DNS
-Record Set
-Definition: A collection of DNS records for a specific hostname within a DNS zone.
-Feature: Azure allows you to create and manage various types of record sets, including A, AAAA, CNAME, MX, PTR, and SOA, within Private DNS Zones.
+Hybrid DNS
+Definition: A DNS architecture that combines Azure DNS (Private and Public) with on-premises DNS services.
+Feature: Azure Private DNS allows integration with hybrid DNS setups, where DNS queries can be resolved both within Azure and on-premises, facilitating a seamless DNS experience across environments.
 
 
 
@@ -1325,6 +1325,15 @@ Answer: It declares the variables that can be used throughout the pipeline.
 
 136
 Azure DevOps Pipelines
+In Azure DevOps, what command is used to run a pipeline manually from the Azure DevOps portal?
+Answer: "Run pipeline" button in the Azure DevOps portal.
+
+
+
+
+
+137
+Azure DevOps Pipelines
 How can you trigger a pipeline based on a Git tag in Azure DevOps?
 Answer: You use the trigger keyword with the tags sub-keyword to specify that the pipeline should trigger when a Git tag is pushed.
 
@@ -1338,7 +1347,7 @@ trigger:
 
 
 
-137
+138
 Azure DevOps Pipelines
 How do you use stages with dependencies in Azure DevOps YAML pipelines?
 Answer: You can define dependsOn between stages to specify the execution order. Stages will run sequentially based on the dependencies defined, ensuring that one stage only runs after another has completed.
@@ -1347,7 +1356,7 @@ Answer: You can define dependsOn between stages to specify the execution order. 
 
 
 
-138
+139
 Azure DevOps Pipelines
 What does the trigger keyword do in an Azure DevOps YAML pipeline?
 Answer: It defines the branches or events that will cause the pipeline to run, such as a commit to a specific branch.
@@ -1356,19 +1365,10 @@ Answer: It defines the branches or events that will cause the pipeline to run, s
 
 
 
-139
-Azure DevOps Pipelines
-What is the default working directory for a pipeline job in Azure DevOps?
-Answer: $(Build.SourcesDirectory)
-
-
-
-
-
 140
 Azure DevOps Pipelines
-How do you add a manual approval gate before a pipeline proceeds to the next stage?
-Answer: Set a ApprovalRequired flag on the pipeline's stages.
+How can you specify which agent pool should be used in a YAML pipeline file?
+Answer: pool: <agent_pool_name>
 
 
 
@@ -1376,8 +1376,8 @@ Answer: Set a ApprovalRequired flag on the pipeline's stages.
 
 141
 Azure DevOps Pipelines
-How can you specify which agent pool should be used in a YAML pipeline file?
-Answer: pool: <agent_pool_name>
+What is the default working directory for a pipeline job in Azure DevOps?
+Answer: $(Build.SourcesDirectory)
 
 
 
@@ -1484,10 +1484,10 @@ This is particularly useful for applications that require detailed and machine-r
 
 151
 Logging in Python
-Q: Which logging level is appropriate for a message that indicates a minor problem that doesn't prevent the program from functioning?
+Q: Why might you choose to use Loguru over Python's built-in logging module?
 
-A: WARNING
-This level signals potential issues that may require attention but do not halt the application's execution.
+A: For simpler syntax, reduced boilerplate, and additional features like colorized output and automatic exception logging.
+Loguru offers a more user-friendly and modern interface compared to the standard logging module.
 
 
 
@@ -1622,6 +1622,15 @@ An async-safe queue in Python used for communication between producer and consum
 
 164
 Asynchronous Python
+Timeouts
+Techniques like asyncio.wait_for() used in Python to limit how long a coroutine can run before it's cancelled.
+
+
+
+
+
+165
+Asynchronous Python
 Race Condition
 A race condition occurs when multiple threads access and modify shared data concurrently, leading to unpredictable or incorrect results if not managed properly.
 
@@ -1629,7 +1638,7 @@ A race condition occurs when multiple threads access and modify shared data conc
 
 
 
-165
+166
 Asynchronous Python
 Daemon Thread
 Daemon threads are background threads that do not prevent the program from exiting; they automatically close when all non-daemon threads have finished.
@@ -1638,34 +1647,7 @@ Daemon threads are background threads that do not prevent the program from exiti
 
 
 
-166
-Asynchronous Python
-async
-A keyword used in Python to declare an asynchronous function (async def), enabling the use of await inside it.
-
-
-
-
-
 167
-Asynchronous Python
-asyncio.to_thread()
-Runs a blocking function in a background thread from an async Python function, allowing mixing of sync and async code.
-
-
-
-
-
-168
-Asynchronous Python
-Awaitable
-Any object in Python that can be used with await, including coroutine objects, asyncio.Future, and some libraries’ types.
-
-
-
-
-
-169
 Asynchronous Python
 Concurrency (Asyncio)
 Running multiple asynchronous Python tasks in overlapping time, achieved cooperatively through the event loop.
@@ -1674,7 +1656,16 @@ Running multiple asynchronous Python tasks in overlapping time, achieved coopera
 
 
 
-170
+168
+Asynchronous Python
+async
+A keyword used in Python to declare an asynchronous function (async def), enabling the use of await inside it.
+
+
+
+
+
+169
 Asynchronous Python
 Semaphore
 A semaphore is a synchronization tool that limits the number of threads that can access a resource simultaneously, often used for managing a pool of resources.
@@ -1683,10 +1674,19 @@ A semaphore is a synchronization tool that limits the number of threads that can
 
 
 
-171
+170
 Asynchronous Python
 Task
 A wrapper around a coroutine in Python’s asyncio that is managed by the event loop and can be cancelled, awaited, or monitored.
+
+
+
+
+
+171
+Asynchronous Python
+asyncio.to_thread()
+Runs a blocking function in a background thread from an async Python function, allowing mixing of sync and async code.
 
 
 
@@ -1707,10 +1707,10 @@ An error occurred during execution.
 173
 Python
 Q:
-What are the two methods that a context manager class must implement?
+How do you retrieve the next value from a generator named gen?
 
 A:
-__enter__() and __exit__(exc_type, exc_value, traceback).
+Using the built-in next(gen) function.
 
 
 
@@ -1719,10 +1719,10 @@ __enter__() and __exit__(exc_type, exc_value, traceback).
 174
 Python
 Q:
-How do you retrieve the next value from a generator named gen?
+What are the two methods that a context manager class must implement?
 
 A:
-Using the built-in next(gen) function.
+__enter__() and __exit__(exc_type, exc_value, traceback).
 
 
 
@@ -1894,7 +1894,7 @@ Destructuring: Syntax for unpacking values from arrays or properties from object
 
 190
 JavaScript Concepts
-DOM Manipulation: Using JavaScript to select and modify HTML elements, enabling dynamic and interactive web pages.
+Spread and Rest Operators (...): Operators that expand elements of arrays or objects (spread) and collect multiple elements into a single array parameter (rest).
 
 
 
@@ -1902,105 +1902,13 @@ DOM Manipulation: Using JavaScript to select and modify HTML elements, enabling 
 
 191
 JavaScript Concepts
-Spread and Rest Operators (...): Operators that expand elements of arrays or objects (spread) and collect multiple elements into a single array parameter (rest).
+DOM Manipulation: Using JavaScript to select and modify HTML elements, enabling dynamic and interactive web pages.
 
 
 
 
 
 192
-Azure Developer Associate
-Q: What port is used for SSL/TLS connections to Azure Cache for Redis?
-A: Port 6380.
-
-
-
-
-
-193
-Azure Developer Associate
-What Azure App Service feature allows gradual traffic routing between staging and production versions of an app?
-Deployment Slots
-
-
-
-
-
-194
-Azure Developer Associate
-Which diagnostic tool lets you trace and troubleshoot slow or failed HTTP requests?
-Application Insights (Failures blade or Profiler)
-
-
-
-
-
-195
-Azure Developer Associate
-What is the default behavior when multiple apps share the same App Service Plan?
-They share compute resources, which can cause performance issues if one app consumes too much.
-
-
-
-
-
-196
-Azure Developer Associate
-Front: Describe the difference between Bounded Staleness and Consistent Prefix.
-Back:
-Bounded Staleness: Ordered reads with a max lag of K versions or T seconds.
-Consistent Prefix: Ordered reads with no freshness bound (can lag indefinitely).
-
-
-
-
-
-197
-Azure Developer Associate
-What is the recommended way to authenticate an App Service to access Azure resources like Storage or Key Vault?
-Use a Managed Identity
-
-
-
-
-
-198
-Azure Developer Associate
-Front: In the SDK, how should you handle 429 (throttled) errors?
-Back: Rely on the built-in retry policy with exponential backoff—don’t catch and retry immediately.
-
-
-
-
-
-199
-Azure Developer Associate
-What Azure feature should you use to securely store secrets like connection strings?
-Azure Key Vault with Managed Identity
-
-
-
-
-
-200
-Azure Developer Associate
-Q: Can Redis be used as a primary database?
-A: Not recommended — Redis is best used as a cache, not a durable data store.
-
-
-
-
-
-201
-Azure Developer Associate
-Q: Which Azure Redis tier supports persistence and clustering?
-A: Premium Tier — includes data persistence, clustering, geo-replication, and VNet integration.
-
-
-
-
-
-202
 PnP PowerShell
 New-PnPList (PnP.PowerShell)
 Creates a new SharePoint list within a site. Supports specifying list templates, columns, and settings, facilitating automated list management.
@@ -2009,7 +1917,7 @@ Creates a new SharePoint list within a site. Supports specifying list templates,
 
 
 
-203
+193
 PnP PowerShell
 AppInv.aspx
 A SharePoint page used to grant app permissions to specific SharePoint sites, allowing custom or third-party apps to access site resources based on defined permissions.
@@ -2018,7 +1926,7 @@ A SharePoint page used to grant app permissions to specific SharePoint sites, al
 
 
 
-204
+194
 PnP PowerShell
 Set-PnPWeb (PnP.PowerShell)
 Configures properties of a SharePoint site, such as title, description, and logo. Enables automated site customization and configuration management.
@@ -2027,16 +1935,7 @@ Configures properties of a SharePoint site, such as title, description, and logo
 
 
 
-205
-PnP PowerShell
-Remove-PnPListItem (PnP.PowerShell)
-Deletes an item from a SharePoint list. Useful for maintaining data integrity and automating data cleanup processes
-
-
-
-
-
-206
+195
 PnP PowerShell
 Invoke-RestMethod (Microsoft.PowerShell.Utility)
 Sends HTTP and HTTPS requests to RESTful APIs and processes the responses. Commonly used for interacting directly with SharePoint REST API in PowerShell scripts.
@@ -2045,7 +1944,16 @@ Sends HTTP and HTTPS requests to RESTful APIs and processes the responses. Commo
 
 
 
-207
+196
+PnP PowerShell
+Remove-PnPListItem (PnP.PowerShell)
+Deletes an item from a SharePoint list. Useful for maintaining data integrity and automating data cleanup processes
+
+
+
+
+
+197
 PnP PowerShell
 Document Library
 A SharePoint component where documents are stored, managed, and shared. Examples include "Shared Documents" or custom libraries within a site.
@@ -2054,7 +1962,7 @@ A SharePoint component where documents are stored, managed, and shared. Examples
 
 
 
-208
+198
 PnP PowerShell
 OAuth 2.0 Client Credentials Flow
 An authentication method where applications authenticate using a client ID and client secret, enabling server-to-server interactions without user involvement.
@@ -2063,7 +1971,7 @@ An authentication method where applications authenticate using a client ID and c
 
 
 
-209
+199
 PnP PowerShell
 Connect-PnPOnline (PnP.PowerShell)
 Establishes a connection to a SharePoint site using various authentication methods like client credentials or device code flow, enabling subsequent PnP.PowerShell cmdlets to interact with SharePoint.
@@ -2072,7 +1980,7 @@ Establishes a connection to a SharePoint site using various authentication metho
 
 
 
-210
+200
 PnP PowerShell
 PSCredential (Microsoft.PowerShell.Security)
 A PowerShell object that securely stores a username and password. Utilized for authentication purposes, ensuring sensitive information is handled safely.
@@ -2081,7 +1989,7 @@ A PowerShell object that securely stores a username and password. Utilized for a
 
 
 
-211
+201
 PnP PowerShell
 Get-PnPWeb (PnP.PowerShell)
 Fetches details about the current SharePoint site, including properties like language, template, and navigation settings. Useful for site audits and management.
@@ -2090,7 +1998,7 @@ Fetches details about the current SharePoint site, including properties like lan
 
 
 
-212
+202
 Vocab
 Lost in a Good Book
 Doric columns: A simple, sturdy style of Greek column with a plain capital and no base, emphasizing proportion and strength.
@@ -2099,7 +2007,7 @@ Doric columns: A simple, sturdy style of Greek column with a plain capital and n
 
 
 
-213
+203
 Vocab
 Interval Funds Carry Redemption Risk:
 Because interval funds permit redemptions only periodically—and often limit the total amount redeemable in each interval (commonly 5%-25% of assets)—investors may face difficulty liquidating positions quickly if the need arises.
@@ -2108,7 +2016,16 @@ Because interval funds permit redemptions only periodically—and often limit th
 
 
 
-214
+204
+Vocab
+Lost in a Good Book
+Lerwick: The main town and port of the Shetland Islands, Scotland, known for its fishing and maritime history.
+
+
+
+
+
+205
 Vocab
 Logogram
 noun
@@ -2122,16 +2039,7 @@ Example: Chinese characters are logograms, each representing a concept or word r
 
 
 
-215
-Vocab
-Lost in a Good Book
-Lerwick: The main town and port of the Shetland Islands, Scotland, known for its fishing and maritime history.
-
-
-
-
-
-216
+206
 Vocab
 Do Androids Dream of Electric Sheep?
 Thalamic (thuh-LAM-ik): Relating to the thalamus, a part of the brain that acts as a relay station for sensory and motor signals.
@@ -2140,7 +2048,7 @@ Thalamic (thuh-LAM-ik): Relating to the thalamus, a part of the brain that acts 
 
 
 
-217
+207
 Vocab
 Lost in a Good Book
 Cornice: An architectural feature where a projecting, decorative molding crowns a building or structure, often found at the top of walls.
@@ -2149,7 +2057,7 @@ Cornice: An architectural feature where a projecting, decorative molding crowns 
 
 
 
-218
+208
 Vocab
 Jane Eyre
 Spoony
@@ -2159,7 +2067,7 @@ Spoony
 
 
 
-219
+209
 Vocab
 Jane Eyre
 Hips and Haws
@@ -2169,7 +2077,7 @@ Fruits of wild roses (hips) and hawthorn trees (haws), commonly seen in hedgerow
 
 
 
-220
+210
 Vocab
 Jane Eyre
 Fillip
@@ -2179,11 +2087,103 @@ Fillip
 
 
 
-221
+211
 Vocab
 Jane Eyre
 Contumelious Epithet
 (con-too-MEE-lee-uhs EP-uh-thet) An insult or scornful nickname intended to express contempt, often delivered with arrogance.
+
+
+
+
+
+212
+Azure Developer Associate
+Q: What port is used for SSL/TLS connections to Azure Cache for Redis?
+A: Port 6380.
+
+
+
+
+
+213
+Azure Developer Associate
+What Azure App Service feature allows gradual traffic routing between staging and production versions of an app?
+Deployment Slots
+
+
+
+
+
+214
+Azure Developer Associate
+Which diagnostic tool lets you trace and troubleshoot slow or failed HTTP requests?
+Application Insights (Failures blade or Profiler)
+
+
+
+
+
+215
+Azure Developer Associate
+What is the default behavior when multiple apps share the same App Service Plan?
+They share compute resources, which can cause performance issues if one app consumes too much.
+
+
+
+
+
+216
+Azure Developer Associate
+Front: Describe the difference between Bounded Staleness and Consistent Prefix.
+Back:
+Bounded Staleness: Ordered reads with a max lag of K versions or T seconds.
+Consistent Prefix: Ordered reads with no freshness bound (can lag indefinitely).
+
+
+
+
+
+217
+Azure Developer Associate
+Front: In the SDK, how should you handle 429 (throttled) errors?
+Back: Rely on the built-in retry policy with exponential backoff—don’t catch and retry immediately.
+
+
+
+
+
+218
+Azure Developer Associate
+What is the recommended way to authenticate an App Service to access Azure resources like Storage or Key Vault?
+Use a Managed Identity
+
+
+
+
+
+219
+Azure Developer Associate
+What Azure feature should you use to securely store secrets like connection strings?
+Azure Key Vault with Managed Identity
+
+
+
+
+
+220
+Azure Developer Associate
+Q: Which Azure Redis tier supports persistence and clustering?
+A: Premium Tier — includes data persistence, clustering, geo-replication, and VNet integration.
+
+
+
+
+
+221
+Azure Developer Associate
+Q: Can Redis be used as a primary database?
+A: Not recommended — Redis is best used as a cache, not a durable data store.
 
 
 
@@ -2212,11 +2212,11 @@ Context: Has permissions to edit and configure a specific list within a site.
 
 224
 Email Auth and Security
-MX Toolbox
+BIMI (Brand Indicators for Message Identification)
 
-An online suite of tools for diagnosing and analyzing DNS records.
-Checks SPF, DKIM, and DMARC configurations.
-Helps administrators verify the correctness of their email authentication setups.
+Allows organizations to display their brand logos alongside authenticated emails in recipients' inboxes.
+Enhances brand recognition and trust.
+Requires proper implementation of SPF, DKIM, and DMARC.
 
 
 
@@ -2224,11 +2224,11 @@ Helps administrators verify the correctness of their email authentication setups
 
 225
 Email Auth and Security
-BIMI (Brand Indicators for Message Identification)
+MX Toolbox
 
-Allows organizations to display their brand logos alongside authenticated emails in recipients' inboxes.
-Enhances brand recognition and trust.
-Requires proper implementation of SPF, DKIM, and DMARC.
+An online suite of tools for diagnosing and analyzing DNS records.
+Checks SPF, DKIM, and DMARC configurations.
+Helps administrators verify the correctness of their email authentication setups.
 
 
 
@@ -2263,7 +2263,7 @@ Registers an app in Azure AD, creating its identity to authenticate with Azure s
 
 229
 Azure Functions + Visual Studio
-An Azure Function is implemented as a static class (.NET). The class provides a static, asynchronous method named Run, which acts as the entry point for the class. The parameters passed to the Run method provide the context for the trigger. If it's an HTTP trigger, the function receives an HttpRequest object.
+ASP.NET is a powerful framework for building dynamic web applications and services. It runs on the .NET platform, allowing developers to use multiple languages like C#, F#, and VB.NET to create modern web applications.
 
 
 
@@ -2271,7 +2271,7 @@ An Azure Function is implemented as a static class (.NET). The class provides a 
 
 230
 Azure Functions + Visual Studio
-ASP.NET is a powerful framework for building dynamic web applications and services. It runs on the .NET platform, allowing developers to use multiple languages like C#, F#, and VB.NET to create modern web applications.
+An Azure Function is implemented as a static class (.NET). The class provides a static, asynchronous method named Run, which acts as the entry point for the class. The parameters passed to the Run method provide the context for the trigger. If it's an HTTP trigger, the function receives an HttpRequest object.
 
 
 
@@ -2342,24 +2342,6 @@ An individual who contributes code, documentation, or other resources to an open
 
 
 238
-RAG Project
-Object ID (OID)
-Unique identifier for a user in Azure AD, used to scope their files or actions.
-
-
-
-
-
-239
-RAG Project
-auth_client
-A special fixture often defined in conftest.py that returns a test client with fake authentication already set up.
-
-
-
-
-
-240
 Open Source/GitHub
 Code of Conduct
 
@@ -2369,7 +2351,34 @@ Guidelines that outline expected behavior and interactions within a project’s 
 
 
 
+239
+RAG Project
+Object ID (OID)
+Unique identifier for a user in Azure AD, used to scope their files or actions.
+
+
+
+
+
+240
+RAG Project
+auth_client
+A special fixture often defined in conftest.py that returns a test client with fake authentication already set up.
+
+
+
+
+
 241
+RAG Project
+Config Object
+A centralized dictionary or structure that stores runtime settings and credentials for your app.
+
+
+
+
+
+242
 Open Source/GitHub
 CONTRIBUTING.md
 
@@ -2379,7 +2388,16 @@ A markdown file that outlines the process and guidelines for contributing to a p
 
 
 
-242
+243
+RAG Project
+Patch / Monkeypatch
+Temporary override of code behavior during tests — often used to replace Azure calls with mocks.
+
+
+
+
+
+244
 Open Source/GitHub
 Label
 
@@ -2389,38 +2407,20 @@ Tags assigned to issues or pull requests to categorize them, such as “good fir
 
 
 
-243
-RAG Project
-Config Object
-A centralized dictionary or structure that stores runtime settings and credentials for your app.
-
-
-
-
-
-244
-RAG Project
-Access Control
-Logic that determines who can access which resources or files.
-
-
-
-
-
 245
-RAG Project
-Patch / Monkeypatch
-Temporary override of code behavior during tests — often used to replace Azure calls with mocks.
+Open Source/GitHub
+GitHub Actions
+
+A feature on GitHub that allows automation of workflows, such as running tests or deploying code, in response to events like pull requests.
 
 
 
 
 
 246
-Open Source/GitHub
-GitHub Actions
-
-A feature on GitHub that allows automation of workflows, such as running tests or deploying code, in response to events like pull requests.
+RAG Project
+Access Control
+Logic that determines who can access which resources or files.
 
 
 
@@ -2446,8 +2446,8 @@ A debugging technique where you can move backward through the program’s execut
 
 249
 Debugging in VS Code
-Watch Expression
-A tool in a debugger that allows you to monitor the value of a specific variable or expression during execution.
+Step Over
+A debugging feature that allows you to skip over a function call, running it entirely without entering it.
 
 
 
@@ -2455,8 +2455,8 @@ A tool in a debugger that allows you to monitor the value of a specific variable
 
 250
 Debugging in VS Code
-Step Over
-A debugging feature that allows you to skip over a function call, running it entirely without entering it.
+Watch Expression
+A tool in a debugger that allows you to monitor the value of a specific variable or expression during execution.
 
 
 
@@ -2473,8 +2473,8 @@ The process of determining which parts of your code have been executed during te
 
 252
 Debugging in VS Code
-Call Stack
-A data structure that stores the sequence of function calls made in a program, showing the order in which they were called.
+Step Out
+A debugging feature that lets you exit the current function and return to the function that called it.
 
 
 
@@ -2482,8 +2482,8 @@ A data structure that stores the sequence of function calls made in a program, s
 
 253
 Debugging in VS Code
-Step Out
-A debugging feature that lets you exit the current function and return to the function that called it.
+Call Stack
+A data structure that stores the sequence of function calls made in a program, showing the order in which they were called.
 
 
 
@@ -2518,9 +2518,9 @@ A tool within a development environment used to evaluate expressions, view outpu
 
 257
 Azure Private DNS
-SOA Record (Start of Authority Record):
-Definition: A DNS record that defines the authoritative DNS server for a domain, along with other administrative data.
-Feature: Azure automatically manages SOA records for each Private DNS Zone to define the authoritative source for that zone.
+Public DNS Zone
+Definition: A DNS zone used for resolving publicly accessible resources on the internet.
+Feature: While Azure Private DNS is for internal use, Public DNS Zones can be used in conjunction to handle external-facing resources.
 
 
 
@@ -2538,9 +2538,9 @@ Feature: Azure supports PTR records for reverse DNS lookups within a Private DNS
 
 259
 Azure Private DNS
-Virtual Network Link
-Definition: A configuration that links an Azure Virtual Network to a Private DNS Zone, enabling DNS resolution for resources within that VNet.
-Feature: Virtual Network Links are a key feature that enables integration between Azure VNets and Private DNS Zones, allowing internal resources to resolve DNS names.
+SOA Record (Start of Authority Record):
+Definition: A DNS record that defines the authoritative DNS server for a domain, along with other administrative data.
+Feature: Azure automatically manages SOA records for each Private DNS Zone to define the authoritative source for that zone.
 
 
 
@@ -2548,9 +2548,9 @@ Feature: Virtual Network Links are a key feature that enables integration betwee
 
 260
 Azure Private DNS
-Split-Horizon DNS
-Definition: A DNS setup where different DNS records are provided based on the requester's location.
-Feature: Azure Private DNS can be used to implement split-horizon DNS, where the same domain name resolves differently for internal (private) and external (public) users.
+Record Set
+Definition: A collection of DNS records for a specific hostname within a DNS zone.
+Feature: Azure allows you to create and manage various types of record sets, including A, AAAA, CNAME, MX, PTR, and SOA, within Private DNS Zones.
 
 
 
@@ -2558,9 +2558,9 @@ Feature: Azure Private DNS can be used to implement split-horizon DNS, where the
 
 261
 Azure Private DNS
-Azure Network Security Groups (NSG)
-Definition: A set of rules used to control network traffic to and from Azure resources.
-Feature: While NSGs are not directly involved in DNS, they are often used to secure the traffic to DNS servers (whether private or custom) in Azure, including DNS queries.
+Split-Horizon DNS
+Definition: A DNS setup where different DNS records are provided based on the requester's location.
+Feature: Azure Private DNS can be used to implement split-horizon DNS, where the same domain name resolves differently for internal (private) and external (public) users.
 
 
 
@@ -2588,9 +2588,9 @@ Feature: Automatic DNS Record Management makes it easier to manage internal DNS 
 
 264
 Azure Private DNS
-Private DNS Zone:
-Definition: A container within Azure that holds DNS records for a private domain, resolvable only within the associated Azure Virtual Networks (VNets).
-Feature: Azure Private DNS Zones allow automatic DNS resolution for internal resources within Azure, simplifying DNS management for internal services.
+DNS Zones Delegation
+Definition: The process of delegating authority for a DNS zone to another DNS server.
+Feature: Delegation in Azure enables hybrid DNS setups and can be used to delegate the management of specific domains within your DNS infrastructure.
 
 
 
@@ -2598,9 +2598,9 @@ Feature: Azure Private DNS Zones allow automatic DNS resolution for internal res
 
 265
 Azure Private DNS
-DNS Zones Delegation
-Definition: The process of delegating authority for a DNS zone to another DNS server.
-Feature: Delegation in Azure enables hybrid DNS setups and can be used to delegate the management of specific domains within your DNS infrastructure.
+Private DNS Zone:
+Definition: A container within Azure that holds DNS records for a private domain, resolvable only within the associated Azure Virtual Networks (VNets).
+Feature: Azure Private DNS Zones allow automatic DNS resolution for internal resources within Azure, simplifying DNS management for internal services.
 
 
 
@@ -2653,8 +2653,8 @@ An identity created for use with applications, hosted services, and automated to
 
 271
 Azure Functions + PP365
-OAuth 2.0 Authentication Flow
-A sequence of steps in the OAuth 2.0 protocol where an application obtains an access token from an authorization server. This flow involves redirecting users for consent, exchanging authorization codes for tokens, and securely accessing protected resources using the obtained tokens, enabling secure delegation of access.
+Azure Functions Extensions
+Additional modules or packages that extend the capabilities of Azure Functions. For Python developers, extensions can provide support for integrating with other Azure services, enhancing bindings, and adding new triggers, enabling more complex and feature-rich serverless applications.
 
 
 
@@ -2662,8 +2662,8 @@ A sequence of steps in the OAuth 2.0 protocol where an application obtains an ac
 
 272
 Azure Functions + PP365
-Azure Functions Extensions
-Additional modules or packages that extend the capabilities of Azure Functions. For Python developers, extensions can provide support for integrating with other Azure services, enhancing bindings, and adding new triggers, enabling more complex and feature-rich serverless applications.
+OAuth 2.0 Authentication Flow
+A sequence of steps in the OAuth 2.0 protocol where an application obtains an access token from an authorization server. This flow involves redirecting users for consent, exchanging authorization codes for tokens, and securely accessing protected resources using the obtained tokens, enabling secure delegation of access.
 
 
 
@@ -2748,6 +2748,14 @@ Having one (1) or more provider that is behind in updates from local cache could
 
 282
 FSLogix
+All data written to the user's profile is temporarily stored as block-level cache objects in the same directory. Those block-level cache objects are then committed to the local cache. Before the block-level cache objects are created, the writes into the user's profile are processed in memory through a proxy file.
+
+
+
+
+
+283
+FSLogix
 Q: What does the FSLogix Profile Container do when a user is logging into multiple Azure Virtual Desktops (AVD)?
 A: FSLogix mounts the same Profile Container (VHDX) to any virtual desktop the user logs into, ensuring that their profile settings, documents, and application preferences are consistent and immediately available across all virtual machines. This provides a unified experience regardless of which VM the user accesses.
 
@@ -2755,7 +2763,7 @@ A: FSLogix mounts the same Profile Container (VHDX) to any virtual desktop the u
 
 
 
-283
+284
 FSLogix
 Q: What happens to a FSLogix Profile Container when a user logs off?
 A: When a user logs off, the changes made to the profile are saved back into the Profile Container (VHDX file), ensuring that all settings and data are retained for the next session.
@@ -2764,18 +2772,10 @@ A: When a user logs off, the changes made to the profile are saved back into the
 
 
 
-284
-FSLogix
-All data written to the user's profile is temporarily stored as block-level cache objects in the same directory. Those block-level cache objects are then committed to the local cache. Before the block-level cache objects are created, the writes into the user's profile are processed in memory through a proxy file.
-
-
-
-
-
 285
 FSLogix
-Q: What is the role of Profile Disk Differencing in FSLogix?
-A: Profile Disk Differencing allows FSLogix to create differencing VHDX disks, where changes to the user profile are stored in separate files, reducing the load on the main profile disk. This improves performance by ensuring faster read/write operations and reducing storage overhead.
+Q: How does FSLogix prevent user profile corruption in virtual desktop sessions?
+A: FSLogix stores user profiles in isolated containers (VHDX), reducing the chances of corruption by ensuring the profile is handled in a controlled environment that can be mounted and saved properly.
 
 
 
@@ -2822,10 +2822,7 @@ terraform {
 
 288
 Terraform
-Debugging Tips:
-Check Quotes: Ensure that you use double quotes for strings that require interpolation.
-Use terraform validate: Run this command frequently to catch syntax issues early.
-Review Variable References: Confirm that all variable references use the correct var. prefix.
+Network Infrastructure Automation (NIA) allows you to safely approve the changes that your applications require without having to manually translate tickets from developers into the changes you think their applications need.
 
 
 
@@ -2851,13 +2848,30 @@ These are the building blocks of Terraform code, such as resource, module, provi
 
 291
 Terraform
-Network Infrastructure Automation (NIA) allows you to safely approve the changes that your applications require without having to manually translate tickets from developers into the changes you think their applications need.
+Debugging Tips:
+Check Quotes: Ensure that you use double quotes for strings that require interpolation.
+Use terraform validate: Run this command frequently to catch syntax issues early.
+Review Variable References: Confirm that all variable references use the correct var. prefix.
 
 
 
 
 
 292
+Terraform
+For Expressions:
+
+Definition: These are used to transform or filter collections (lists or maps) inline.
+Usage: Useful for generating new lists or maps based on existing ones without using external loops.
+Example:
+
+[for instance in var.instances : instance.id]
+
+
+
+
+
+293
 Terraform
 List and Map Indexing:
 Access elements within lists or maps using square brackets.
@@ -2872,23 +2886,9 @@ ${var.settings["key_name"]}
 
 
 
-293
-Terraform
-Provisioning infrastructure across multiple clouds increases fault-tolerance, allowing for more graceful recovery from cloud provider outages. However, multi-cloud deployments add complexity because each provider has its own interfaces, tools, and workflows. Terraform lets you use the same workflow to manage multiple providers and handle cross-cloud dependencies.
-
-
-
-
-
 294
 Terraform
-For Expressions:
-
-Definition: These are used to transform or filter collections (lists or maps) inline.
-Usage: Useful for generating new lists or maps based on existing ones without using external loops.
-Example:
-
-[for instance in var.instances : instance.id]
+Provisioning infrastructure across multiple clouds increases fault-tolerance, allowing for more graceful recovery from cloud provider outages. However, multi-cloud deployments add complexity because each provider has its own interfaces, tools, and workflows. Terraform lets you use the same workflow to manage multiple providers and handle cross-cloud dependencies.
 
 
 
@@ -2918,8 +2918,8 @@ Answer: matrix
 
 297
 Azure DevOps Pipelines
-What is the purpose of the 'checkout' step in an Azure DevOps YAML pipeline?
-Answer: It checks out the source code from the repository for use in the pipeline.
+How do you add a manual approval gate before a pipeline proceeds to the next stage?
+Answer: Set a ApprovalRequired flag on the pipeline's stages.
 
 
 
@@ -2927,8 +2927,8 @@ Answer: It checks out the source code from the repository for use in the pipelin
 
 298
 Azure DevOps Pipelines
-How do you specify a condition for a job or stage to run in an Azure DevOps YAML pipeline?
-Answer: You use the condition keyword, such as condition: succeeded() to define when a job should run based on the status of previous jobs.
+What is the purpose of the 'checkout' step in an Azure DevOps YAML pipeline?
+Answer: It checks out the source code from the repository for use in the pipeline.
 
 
 
@@ -2936,8 +2936,8 @@ Answer: You use the condition keyword, such as condition: succeeded() to define 
 
 299
 Azure DevOps Pipelines
-In Azure DevOps, what command is used to run a pipeline manually from the Azure DevOps portal?
-Answer: "Run pipeline" button in the Azure DevOps portal.
+How do you specify a condition for a job or stage to run in an Azure DevOps YAML pipeline?
+Answer: You use the condition keyword, such as condition: succeeded() to define when a job should run based on the status of previous jobs.
 
 
 
@@ -2963,24 +2963,6 @@ Answer: You pass secrets using pipeline variables marked as secret in Azure DevO
 
 302
 Azure DevOps Pipelines
-How do you specify a deployment environment like 'staging' or 'production' in a YAML pipeline?
-Answer: Use the environment keyword, e.g., environment: 'staging'.
-
-
-
-
-
-303
-Azure DevOps Pipelines
-In an Azure DevOps pipeline, which YAML syntax would you use to reference a variable?
-Answer: $(variable_name)
-
-
-
-
-
-304
-Azure DevOps Pipelines
 How do you cache dependencies in Azure DevOps pipelines to speed up builds?
 Answer: Use the cache task in the YAML file to store and reuse files between pipeline runs. This can help speed up build times by caching dependencies.
 
@@ -2988,7 +2970,16 @@ Answer: Use the cache task in the YAML file to store and reuse files between pip
 
 
 
-305
+303
+Azure DevOps Pipelines
+How do you specify a deployment environment like 'staging' or 'production' in a YAML pipeline?
+Answer: Use the environment keyword, e.g., environment: 'staging'.
+
+
+
+
+
+304
 Azure DevOps Pipelines
 What is the default trigger for a YAML-based pipeline in Azure DevOps?
 Answer: A trigger based on code changes in a Git repository.
@@ -2997,12 +2988,21 @@ Answer: A trigger based on code changes in a Git repository.
 
 
 
+305
+Azure DevOps Pipelines
+In an Azure DevOps pipeline, which YAML syntax would you use to reference a variable?
+Answer: $(variable_name)
+
+
+
+
+
 306
 Logging in Python
-Q: Why might you choose to use Loguru over Python's built-in logging module?
+Q: How can external log rotation tools like logrotate interact with Python's WatchedFileHandler from the logging.handlers module?
 
-A: For simpler syntax, reduced boilerplate, and additional features like colorized output and automatic exception logging.
-Loguru offers a more user-friendly and modern interface compared to the standard logging module.
+A: WatchedFileHandler detects external changes to the log file (like rotation) and automatically reopens the file, ensuring continuous logging without interruption.
+This integration ensures that logs remain consistent even when rotated by external utilities.
 
 
 
@@ -3010,10 +3010,10 @@ Loguru offers a more user-friendly and modern interface compared to the standard
 
 307
 Logging in Python
-Q: How can external log rotation tools like logrotate interact with Python's WatchedFileHandler from the logging.handlers module?
+Q: Which logging level is appropriate for a message that indicates a minor problem that doesn't prevent the program from functioning?
 
-A: WatchedFileHandler detects external changes to the log file (like rotation) and automatically reopens the file, ensuring continuous logging without interruption.
-This integration ensures that logs remain consistent even when rotated by external utilities.
+A: WARNING
+This level signals potential issues that may require attention but do not halt the application's execution.
 
 
 
@@ -3174,10 +3174,10 @@ Explanation: Typically located at C:\Program Files\PowerShell\Modules.
 
 322
 Powershell Modules
-Module Path
+Module Auto-Import
 
-Definition: The directories where PowerShell looks for modules.
-Explanation: Can be viewed using the $env:PSModulePath environment variable. PowerShell searches these paths when importing modules.
+Definition: See Auto-Import above.
+Explanation: Allows modules to be imported automatically when their commands are used, streamlining workflow.
 
 
 
@@ -3185,10 +3185,10 @@ Explanation: Can be viewed using the $env:PSModulePath environment variable. Pow
 
 323
 Powershell Modules
-Module Auto-Import
+Module Path
 
-Definition: See Auto-Import above.
-Explanation: Allows modules to be imported automatically when their commands are used, streamlining workflow.
+Definition: The directories where PowerShell looks for modules.
+Explanation: Can be viewed using the $env:PSModulePath environment variable. PowerShell searches these paths when importing modules.
 
 
 
@@ -3207,10 +3207,10 @@ Explanation: Provides cmdlets to interact with Azure services. Example cmdlet: G
 
 325
 Powershell Modules
-Get-Help
+Import-Module
 
-Definition: A cmdlet that displays help information for other cmdlets and functions.
-Explanation: Provides detailed documentation and examples. Example: Get-Help Get-AzVM -Detailed.
+Definition: A cmdlet used to load a PowerShell module into the current session.
+Explanation: Makes the module's cmdlets and functions available for use. Example: Import-Module -Name Az.
 
 
 
@@ -3218,8 +3218,8 @@ Explanation: Provides detailed documentation and examples. Example: Get-Help Get
 
 326
 Asynchronous Python
-Timeouts
-Techniques like asyncio.wait_for() used in Python to limit how long a coroutine can run before it's cancelled.
+Awaitable
+Any object in Python that can be used with await, including coroutine objects, asyncio.Future, and some libraries’ types.
 
 
 
@@ -3227,8 +3227,8 @@ Techniques like asyncio.wait_for() used in Python to limit how long a coroutine 
 
 327
 Asynchronous Python
-Global Interpreter Lock (GIL)
-The GIL is a mutex in CPython that ensures only one thread executes Python bytecode at a time, affecting true parallel execution of threads.
+Parallelism
+Running code in true simultaneous execution on multiple cores; not directly supported by asyncio, which is single-threaded.
 
 
 
@@ -3254,8 +3254,8 @@ A thread pool executor, provided by the concurrent.futures module, is an abstrac
 
 330
 Asynchronous Python
-Throttling
-Limiting concurrency in Python async code (e.g., with a Semaphore) to avoid overwhelming servers or APIs.
+asyncio.Future
+A low-level object representing a pending result in Python's asyncio; used internally by Tasks.
 
 
 
@@ -3263,14 +3263,32 @@ Limiting concurrency in Python async code (e.g., with a Semaphore) to avoid over
 
 331
 Asynchronous Python
-Backpressure
-A condition in async Python where producers send data faster than consumers can process; addressed using queues or throttling.
+Global Interpreter Lock (GIL)
+The GIL is a mutex in CPython that ensures only one thread executes Python bytecode at a time, affecting true parallel execution of threads.
 
 
 
 
 
 332
+Asynchronous Python
+Coroutine
+An async def function in Python that can pause at await expressions and resume later, enabling non-blocking asynchronous execution.
+
+
+
+
+
+333
+Asynchronous Python
+Throttling
+Limiting concurrency in Python async code (e.g., with a Semaphore) to avoid overwhelming servers or APIs.
+
+
+
+
+
+334
 Asynchronous Python
 pytest-asyncio
 A Python testing plugin that allows you to write and run tests for asynchronous code using async def and await.
@@ -3279,28 +3297,10 @@ A Python testing plugin that allows you to write and run tests for asynchronous 
 
 
 
-333
-Asynchronous Python
-Context Switching
-Context switching is the process of storing and restoring the state of a thread so that execution can resume later, which can introduce performance overhead.
-
-
-
-
-
-334
-Asynchronous Python
-Parallelism
-Running code in true simultaneous execution on multiple cores; not directly supported by asyncio, which is single-threaded.
-
-
-
-
-
 335
 Asynchronous Python
-asyncio.Semaphore
-A concurrency control mechanism in Python’s asyncio used to limit how many coroutines run at once.
+Backpressure
+A condition in async Python where producers send data faster than consumers can process; addressed using queues or throttling.
 
 
 
@@ -3393,6 +3393,18 @@ __iter__() and __next__().
 343
 Python
 Q:
+How can you set an exit code of 2 in a Python script?
+
+A:
+Using either sys.exit(2) or exit(2).
+
+
+
+
+
+344
+Python
+Q:
 Which keyword is used to define a generator function in Python?
 
 A:
@@ -3402,25 +3414,13 @@ yield
 
 
 
-344
+345
 Python
 Q:
 What does the pathlib.Path class represent in Python?
 
 A:
 Filesystem paths with methods and properties for path manipulations in an object-oriented manner.
-
-
-
-
-
-345
-Python
-Q:
-How can you set an exit code of 2 in a Python script?
-
-A:
-Using either sys.exit(2) or exit(2).
 
 
 
@@ -3452,6 +3452,14 @@ Chai: An assertion library that pairs with testing frameworks like Mocha, provid
 
 349
 JavaScript Concepts
+Template Literals: Enhanced string syntax using backticks, allowing embedded expressions and multi-line strings for better readability.
+
+
+
+
+
+350
+JavaScript Concepts
 Dictionary (Object)
 let dictionary = {
     key1: "value1",
@@ -3466,7 +3474,7 @@ console.log(dictionary["key2"]); // Output: value2
 
 
 
-350
+351
 JavaScript Concepts
 Dependency Injection: A design pattern used in frameworks like Angular and NestJS to manage and inject dependencies, promoting modularity and testability.
 
@@ -3474,7 +3482,7 @@ Dependency Injection: A design pattern used in frameworks like Angular and NestJ
 
 
 
-351
+352
 JavaScript Concepts
 Security Practices: Implementing measures to protect applications from vulnerabilities like Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF).
 
@@ -3482,17 +3490,12 @@ Security Practices: Implementing measures to protect applications from vulnerabi
 
 
 
-352
-JavaScript Concepts
-Template Literals: Enhanced string syntax using backticks, allowing embedded expressions and multi-line strings for better readability.
-
-
-
-
-
 353
 JavaScript Concepts
-MDN Web Docs: Comprehensive documentation for web technologies, including JavaScript, HTML, CSS, and various APIs.
+While Loop
+while (condition) {
+    // Code to execute as long as condition is true
+}
 
 
 
@@ -3500,10 +3503,7 @@ MDN Web Docs: Comprehensive documentation for web technologies, including JavaSc
 
 354
 JavaScript Concepts
-While Loop
-while (condition) {
-    // Code to execute as long as condition is true
-}
+MDN Web Docs: Comprehensive documentation for web technologies, including JavaScript, HTML, CSS, and various APIs.
 
 
 
@@ -3518,105 +3518,6 @@ Hot Module Replacement (HMR): A feature in bundlers like Webpack and Vite that a
 
 
 356
-Azure Developer Associate
-There are two options for rehydrating a blob that is stored in the archive tier:
-
-Change a blob's access tier to an online tier: You can rehydrate an archived blob to hot or cool by changing its tier using the Set Blob Tier operation.
-
-
-
-
-
-357
-Azure Developer Associate
-Front: What happens to Strong consistency reads during a regional failover in a multi-region account?
-Back: Strong reads will only succeed in the current write region. If failover switches your write region, clients must target the new write region for linearizability.
-
-
-
-
-
-358
-Azure Developer Associate
-Q: What is Azure Cache for Redis?
-A: A fully managed, in-memory key-value caching service based on the open-source Redis engine.
-
-
-
-
-
-359
-Azure Developer Associate
-Front: How do you configure TTL in Cosmos DB, and what does it do?
-Back: Set a TTL (in seconds) at the container level (default) or override per item; Cosmos DB automatically deletes items after they expire.
-
-
-
-
-
-360
-Azure Developer Associate
-Front: Name the five Cosmos DB consistency levels, in order from strongest to weakest.
-Back: Strong → Bounded Staleness → Session → Consistent Prefix → Eventual.
-
-
-
-
-
-361
-Azure Developer Associate
-Front: What’s the Cosmos DB Change Feed used for?
-Back: An ordered, per-partition stream of inserts and updates—ideal for event sourcing, ETL, or triggering Functions.
-
-
-
-
-
-362
-Azure Developer Associate
-Front: Which indexing policy change lowers write RU costs for a seldom-queried property?
-Back: Add an exclude path for that property in your custom indexing policy to skip indexing it.
-
-
-
-
-
-363
-Azure Developer Associate
-Front: What’s the max data size and RU/s throughput a single logical partition can hold?
-Back:
-
-Data: up to 20 GB per logical partition
-Throughput: limited to the RU/s of its parent physical partition (≈10 000 RU/s per slice).
-
-
-
-
-
-364
-Azure Developer Associate
-Give one example of a custom Azure Monitor metric you might emit from an Azure Function.
-
-Number of records replicated per run (e.g., RecordsReplicated).
-
-
-
-
-
-365
-Azure Developer Associate
-Front: List three criteria for choosing a good logical partition key.
-Back:
-
-High cardinality (many distinct values)
-Even distribution of reads/writes (avoids “hot” partitions)
-Co-location of related items if you need cross-item transactions.
-
-
-
-
-
-366
 PnP PowerShell
 Set-PnPFileCheckedIn (PnP.PowerShell)
 Checks in a previously uploaded file in SharePoint, optionally adding comments. Essential for managing document versions and maintaining collaboration workflows.
@@ -3625,7 +3526,7 @@ Checks in a previously uploaded file in SharePoint, optionally adding comments. 
 
 
 
-367
+357
 PnP PowerShell
 AADSTS7000218 Error
 An Azure AD error stating that the authentication request lacks a client_assertion or client_secret, preventing successful token acquisition.
@@ -3634,7 +3535,7 @@ An Azure AD error stating that the authentication request lacks a client_asserti
 
 
 
-368
+358
 PnP PowerShell
 Invoke-RestMethod Parameters
 Key parameters include -Method (HTTP method), -Uri (API endpoint), -Headers (authentication and content type), and -Body (data payload), crucial for API interactions.
@@ -3643,7 +3544,7 @@ Key parameters include -Method (HTTP method), -Uri (API endpoint), -Headers (aut
 
 
 
-369
+359
 PnP PowerShell
 Get-PnPGroup (PnP.PowerShell)
 Retrieves information about SharePoint groups within a site. Assists in managing permissions and user access by programmatically handling group memberships.
@@ -3652,7 +3553,7 @@ Retrieves information about SharePoint groups within a site. Assists in managing
 
 
 
-370
+360
 PnP PowerShell
 Add-PnPFile (PnP.PowerShell)
 Uploads a file to a specified SharePoint document library or folder. Supports parameters like -Path for local files and -Stream for uploading via a data stream.
@@ -3661,7 +3562,7 @@ Uploads a file to a specified SharePoint document library or folder. Supports pa
 
 
 
-371
+361
 PnP PowerShell
 Parameter Set Conflict
 Occurs when incompatible or conflicting parameters are used together in a PowerShell cmdlet, leading to errors as PowerShell cannot determine the intended operation.
@@ -3670,7 +3571,7 @@ Occurs when incompatible or conflicting parameters are used together in a PowerS
 
 
 
-372
+362
 PnP PowerShell
 Admin Consent
 Approval granted by an Azure AD administrator for an application to access certain resources or perform specific actions, essential for elevated API permissions.
@@ -3679,25 +3580,7 @@ Approval granted by an Azure AD administrator for an application to access certa
 
 
 
-373
-PnP PowerShell
-System.IO.Stream (System.IO)
-Represents a sequence of bytes, such as a file. Used in PowerShell to handle file data streams for operations like uploading files to SharePoint.
-
-
-
-
-
-374
-PnP PowerShell
-SharePoint Site URL
-The web address of a SharePoint site (e.g., https://accuityllp.sharepoint.com/sites/ASB), serving as the entry point for accessing site resources and APIs.
-
-
-
-
-
-375
+363
 PnP PowerShell
 PowerShell Remoting
 A feature allowing commands to be executed on remote computers. Facilitates managing SharePoint servers and other remote systems through PowerShell scripts.
@@ -3706,7 +3589,25 @@ A feature allowing commands to be executed on remote computers. Facilitates mana
 
 
 
-376
+364
+PnP PowerShell
+SharePoint Site URL
+The web address of a SharePoint site (e.g., https://accuityllp.sharepoint.com/sites/ASB), serving as the entry point for accessing site resources and APIs.
+
+
+
+
+
+365
+PnP PowerShell
+System.IO.Stream (System.IO)
+Represents a sequence of bytes, such as a file. Used in PowerShell to handle file data streams for operations like uploading files to SharePoint.
+
+
+
+
+
+366
 Vocab
 Jane Eyre
 Cachinnation (kak-ih-NAY-shun)
@@ -3716,7 +3617,7 @@ Loud, uncontrollable laughter, often with a connotation of being excessive, mock
 
 
 
-377
+367
 Vocab
 Do Androids Dream of Electric Sheep?
 Cephalic pattern (suh-FAL-ik PAT-ern): Refers to patterns or features related to the head or skull.
@@ -3725,21 +3626,7 @@ Cephalic pattern (suh-FAL-ik PAT-ern): Refers to patterns or features related to
 
 
 
-378
-Vocab
-Grapheme
-noun
-SPA: GRAP-heem
-IPA: /ˈɡræfiːm/
-
-The smallest unit of written language that carries meaning, such as a letter, a numeral, or a punctuation mark.
-Example: The letter "a" in the alphabet is a grapheme that represents a specific phoneme in many languages.
-
-
-
-
-
-379
+368
 Vocab
 Ecriture
 noun
@@ -3753,7 +3640,21 @@ Example: The novel's use of écriture gives a distinct rhythm and depth to the n
 
 
 
-380
+369
+Vocab
+Grapheme
+noun
+SPA: GRAP-heem
+IPA: /ˈɡræfiːm/
+
+The smallest unit of written language that carries meaning, such as a letter, a numeral, or a punctuation mark.
+Example: The letter "a" in the alphabet is a grapheme that represents a specific phoneme in many languages.
+
+
+
+
+
+370
 Vocab
 Lost in a Good Book
 Phaeton (bodied automobile): A type of early open-top car with no fixed roof, evoking the design of 19th-century horse-drawn carriages.
@@ -3762,7 +3663,7 @@ Phaeton (bodied automobile): A type of early open-top car with no fixed roof, ev
 
 
 
-381
+371
 Vocab
 Red Side Story, FForde
 Turpitude
@@ -3773,7 +3674,7 @@ Definition: Depravity; moral corruption or wickedness.
 
 
 
-382
+372
 Vocab
 Lost in a Good Book
 Pelmet(s): A decorative framework or fabric cover above a window, concealing curtain fittings or rods.
@@ -3782,7 +3683,7 @@ Pelmet(s): A decorative framework or fabric cover above a window, concealing cur
 
 
 
-383
+373
 Vocab
 Lost in a Good Book
 Impresario: A manager or producer of theatrical, musical, or other artistic performances, often entrepreneurial in nature.
@@ -3791,7 +3692,7 @@ Impresario: A manager or producer of theatrical, musical, or other artistic perf
 
 
 
-384
+374
 Vocab
 Red Side Story, FForde
 Probity
@@ -3802,12 +3703,107 @@ Definition: Adherence to the highest principles and ideals; uprightness and inte
 
 
 
-385
+375
 Vocab
-Red Side Story, FForde
-Osculation
-Pronunciation: oss-kyoo-LAY-shun
-Definition: The act of kissing; in mathematics, it can also refer to the contact between curves or surfaces.
+Jane Eyre
+Piquant
+(PEE-kahnt) Having a pleasantly sharp or spicy taste; can also describe something intellectually stimulating or excitingly provocative.
+
+
+
+
+
+376
+Azure Developer Associate
+There are two options for rehydrating a blob that is stored in the archive tier:
+
+Change a blob's access tier to an online tier: You can rehydrate an archived blob to hot or cool by changing its tier using the Set Blob Tier operation.
+
+
+
+
+
+377
+Azure Developer Associate
+Front: What happens to Strong consistency reads during a regional failover in a multi-region account?
+Back: Strong reads will only succeed in the current write region. If failover switches your write region, clients must target the new write region for linearizability.
+
+
+
+
+
+378
+Azure Developer Associate
+Q: What is Azure Cache for Redis?
+A: A fully managed, in-memory key-value caching service based on the open-source Redis engine.
+
+
+
+
+
+379
+Azure Developer Associate
+Front: How do you configure TTL in Cosmos DB, and what does it do?
+Back: Set a TTL (in seconds) at the container level (default) or override per item; Cosmos DB automatically deletes items after they expire.
+
+
+
+
+
+380
+Azure Developer Associate
+Front: Name the five Cosmos DB consistency levels, in order from strongest to weakest.
+Back: Strong → Bounded Staleness → Session → Consistent Prefix → Eventual.
+
+
+
+
+
+381
+Azure Developer Associate
+What’s an Azure Monitor Action Group used for?
+
+To define who and how to notify (email, SMS, webhook, Logic App, etc.) when an alert fires.
+
+
+
+
+
+382
+Azure Developer Associate
+Front: What’s the Cosmos DB Change Feed used for?
+Back: An ordered, per-partition stream of inserts and updates—ideal for event sourcing, ETL, or triggering Functions.
+
+
+
+
+
+383
+Azure Developer Associate
+Give one example of a custom Azure Monitor metric you might emit from an Azure Function.
+
+Number of records replicated per run (e.g., RecordsReplicated).
+
+
+
+
+
+384
+Azure Developer Associate
+Front: Which indexing policy change lowers write RU costs for a seldom-queried property?
+Back: Add an exclude path for that property in your custom indexing policy to skip indexing it.
+
+
+
+
+
+385
+Azure Developer Associate
+Front: What’s the max data size and RU/s throughput a single logical partition can hold?
+Back:
+
+Data: up to 20 GB per logical partition
+Throughput: limited to the RU/s of its parent physical partition (≈10 000 RU/s per slice).
 
 
 
@@ -3824,8 +3820,8 @@ The process of activating a Python virtual environment to isolate project depend
 
 387
 FSLogix
-Q: How does FSLogix prevent user profile corruption in virtual desktop sessions?
-A: FSLogix stores user profiles in isolated containers (VHDX), reducing the chances of corruption by ensuring the profile is handled in a controlled environment that can be mounted and saved properly.
+Q: What is the role of Profile Disk Differencing in FSLogix?
+A: Profile Disk Differencing allows FSLogix to create differencing VHDX disks, where changes to the user profile are stored in separate files, reducing the load on the main profile disk. This improves performance by ensuring faster read/write operations and reducing storage overhead.
 
 
 
@@ -3902,24 +3898,6 @@ ${var.env == "prod" ? "Production" : "Non-production"}
 
 395
 Azure DevOps Pipelines
-What is a Deployment Pool in Azure DevOps?
-Answer: A Deployment Pool is a set of environments where deployments occur. You can configure and target specific deployment pools for releases to ensure the proper deployment environment is used.
-
-
-
-
-
-396
-Azure DevOps Pipelines
-Which YAML element in an Azure DevOps pipeline defines the steps or tasks to be executed?
-Answer: steps
-
-
-
-
-
-397
-Azure DevOps Pipelines
 What is the main purpose of a YAML file in Azure DevOps pipelines?
 Answer: To define and configure pipeline processes, including steps, tasks, and environments.
 
@@ -3927,10 +3905,28 @@ Answer: To define and configure pipeline processes, including steps, tasks, and 
 
 
 
-398
+396
+Azure DevOps Pipelines
+What is a Deployment Pool in Azure DevOps?
+Answer: A Deployment Pool is a set of environments where deployments occur. You can configure and target specific deployment pools for releases to ensure the proper deployment environment is used.
+
+
+
+
+
+397
 Azure DevOps Pipelines
 How do you run a pipeline on a self-hosted agent in Azure DevOps?
 Answer: pool: self-hosted
+
+
+
+
+
+398
+Azure DevOps Pipelines
+Which YAML element in an Azure DevOps pipeline defines the steps or tasks to be executed?
+Answer: steps
 
 
 
@@ -4022,17 +4018,6 @@ This protects sensitive log data from being accessed or tampered with by unautho
 
 407
 Logging in Python
-Q: What happens if you add multiple handlers to a logger that write to the same file without proper configuration in Python's logging module?
-
-A: It can lead to duplicate log entries and potential file access conflicts.
-Ensuring that each handler writes to a unique file or managing handler configurations prevents such issues.
-
-
-
-
-
-408
-Logging in Python
 Q: What is the significance of the level parameter when configuring a logger or handler in Python's logging module?
 
 A: It sets the minimum severity of log messages that will be processed; messages below this level are ignored.
@@ -4042,18 +4027,18 @@ For example, setting level=logging.INFO means that DEBUG messages will be ignore
 
 
 
-409
+408
 Logging in Python
-Q: What is the default formatter format string if none is specified in logging.basicConfig()?
+Q: What happens if you add multiple handlers to a logger that write to the same file without proper configuration in Python's logging module?
 
-A: '%(levelname)s:%(name)s:%(message)s'
-This default format includes the log level, logger name, and the log message.
-
-
+A: It can lead to duplicate log entries and potential file access conflicts.
+Ensuring that each handler writes to a unique file or managing handler configurations prevents such issues.
 
 
 
-410
+
+
+409
 Logging in Python
 Q: What is the purpose of a Formatter in Python's logging module?
 
@@ -4064,12 +4049,23 @@ This ensures that log messages are consistently formatted for readability and an
 
 
 
+410
+Logging in Python
+Q: What is the default formatter format string if none is specified in logging.basicConfig()?
+
+A: '%(levelname)s:%(name)s:%(message)s'
+This default format includes the log level, logger name, and the log message.
+
+
+
+
+
 411
 Powershell Modules
-Import-Module
+Get-Help
 
-Definition: A cmdlet used to load a PowerShell module into the current session.
-Explanation: Makes the module's cmdlets and functions available for use. Example: Import-Module -Name Az.
+Definition: A cmdlet that displays help information for other cmdlets and functions.
+Explanation: Provides detailed documentation and examples. Example: Get-Help Get-AzVM -Detailed.
 
 
 
@@ -4109,6 +4105,17 @@ Explanation: Shows modules in all module paths, regardless of whether they are c
 
 415
 Powershell Modules
+Update-Module
+
+Definition: A cmdlet used to update an installed module to its latest version from the repository.
+Explanation: Example: Update-Module -Name Az updates the Az module. To update all modules: Get-InstalledModule | Update-Module.
+
+
+
+
+
+416
+Powershell Modules
 Find-Module
 
 Definition: Searches for modules in a repository like the PowerShell Gallery.
@@ -4118,7 +4125,7 @@ Example Usage: Find-Module -Name SQLServer searches for the "SQLServer" module.
 
 
 
-416
+417
 Powershell Modules
 Module.psm1
 
@@ -4129,23 +4136,12 @@ Explanation: Contains the functions, cmdlets, and other code that define the mod
 
 
 
-417
+418
 Powershell Modules
 Module Version Specification
 
 Definition: The practice of specifying exact module versions when importing to ensure script compatibility.
 Explanation: Done using parameters like -RequiredVersion in Import-Module. Example: Import-Module -Name Az -RequiredVersion 5.0.0.
-
-
-
-
-
-418
-Powershell Modules
-Update-Module
-
-Definition: A cmdlet used to update an installed module to its latest version from the repository.
-Explanation: Example: Update-Module -Name Az updates the Az module. To update all modules: Get-InstalledModule | Update-Module.
 
 
 
@@ -4164,10 +4160,10 @@ Example Usage: Connect-AzAccount prompts for Azure credentials to manage Azure r
 
 420
 Powershell Modules
-Module.dll
+Get-Command -Module <ModuleName>
 
-Definition: A dynamic link library file that can be part of a PowerShell module.
-Explanation: Contains compiled code (e.g., C#) that can be used by PowerShell modules for enhanced performance or functionality.
+Definition: Lists all commands (cmdlets, functions) provided by a specific module.
+Example Usage: Get-Command -Module Az lists all Az module cmdlets.
 
 
 
@@ -4175,8 +4171,8 @@ Explanation: Contains compiled code (e.g., C#) that can be used by PowerShell mo
 
 421
 Asynchronous Python
-asyncio.Future
-A low-level object representing a pending result in Python's asyncio; used internally by Tasks.
+Context Switching
+Context switching is the process of storing and restoring the state of a thread so that execution can resume later, which can introduce performance overhead.
 
 
 
@@ -4184,8 +4180,8 @@ A low-level object representing a pending result in Python's asyncio; used inter
 
 422
 Asynchronous Python
-asyncio.CancelledError
-An exception in Python that is raised inside a coroutine when it’s cancelled, allowing it to perform cleanup.
+Blocking Code
+Code like time.sleep() that halts the event loop and prevents other asynchronous Python tasks from running—should be avoided.
 
 
 
@@ -4193,32 +4189,14 @@ An exception in Python that is raised inside a coroutine when it’s cancelled, 
 
 423
 Asynchronous Python
-aiohttp
-An asynchronous HTTP client/server library in Python used to make non-blocking web requests.
+asyncio.Semaphore
+A concurrency control mechanism in Python’s asyncio used to limit how many coroutines run at once.
 
 
 
 
 
 424
-Asynchronous Python
-Coroutine
-An async def function in Python that can pause at await expressions and resume later, enabling non-blocking asynchronous execution.
-
-
-
-
-
-425
-Asynchronous Python
-async for (async iterator)
-Used to iterate over async sequences in Python, such as streaming data or asynchronous file lines.
-
-
-
-
-
-426
 Asynchronous Python
 Non-blocking I/O
 A key feature of async Python where I/O operations (e.g., file or network access) don’t block the event loop.
@@ -4227,25 +4205,25 @@ A key feature of async Python where I/O operations (e.g., file or network access
 
 
 
+425
+Asynchronous Python
+asyncio.CancelledError
+An exception in Python that is raised inside a coroutine when it’s cancelled, allowing it to perform cleanup.
+
+
+
+
+
+426
+Asynchronous Python
+aiohttp
+An asynchronous HTTP client/server library in Python used to make non-blocking web requests.
+
+
+
+
+
 427
-Asynchronous Python
-await
-A keyword that pauses an asynchronous Python function until the awaited coroutine or awaitable completes.
-
-
-
-
-
-428
-Asynchronous Python
-Event Loop
-The core of Python’s asyncio system, which schedules and runs asynchronous tasks cooperatively on a single thread.
-
-
-
-
-
-429
 Asynchronous Python
 asyncio.shield()
 Prevents a coroutine in Python from being cancelled even if the calling task is, ensuring it runs to completion.
@@ -4254,10 +4232,28 @@ Prevents a coroutine in Python from being cancelled even if the calling task is,
 
 
 
+428
+Asynchronous Python
+async for (async iterator)
+Used to iterate over async sequences in Python, such as streaming data or asynchronous file lines.
+
+
+
+
+
+429
+Asynchronous Python
+Deadlock
+Deadlock happens when two or more threads are waiting on each other to release locks, causing the program to become stuck with none of the threads progressing.
+
+
+
+
+
 430
 Asynchronous Python
-Structured Concurrency
-A design principle (used in Trio) ensuring all async Python tasks are scoped and cleaned up together, reducing leaks and bugs.
+await
+A keyword that pauses an asynchronous Python function until the awaited coroutine or awaitable completes.
 
 
 
@@ -4277,6 +4273,18 @@ They ensure that resources are properly acquired and released, even if errors oc
 
 432
 Python
+Q:
+Explain the difference between except Exception as e and except (ValueError, TypeError) as e.
+
+A:
+except Exception as e catches all exceptions that inherit from Exception, while except (ValueError, TypeError) as e only catches ValueError and TypeError exceptions.
+
+
+
+
+
+433
+Python
 How can you create all parent directories for a given path using pathlib?
 Using the .mkdir(parents=True, exist_ok=True) method.
 
@@ -4287,7 +4295,7 @@ path.mkdir(parents=True, exist_ok=True)
 
 
 
-433
+434
 Python
 Q:
 What does the else block do in a try-except statement?
@@ -4299,7 +4307,7 @@ The else block executes if no exceptions were raised in the try block.
 
 
 
-434
+435
 Python
 Q:
 How can you create a context manager using a generator function?
@@ -4311,25 +4319,13 @@ By using the @contextmanager decorator from the contextlib module and yielding c
 
 
 
-435
-Python
-Q:
-Explain the difference between except Exception as e and except (ValueError, TypeError) as e.
-
-A:
-except Exception as e catches all exceptions that inherit from Exception, while except (ValueError, TypeError) as e only catches ValueError and TypeError exceptions.
-
-
-
-
-
 436
 Python
 Q:
-What happens if you try to call gen.next() on a generator gen in Python 3?
+Which Python module provides an object-oriented approach to handling filesystem paths?
 
 A:
-It raises an AttributeError because the correct method to retrieve the next value is next(gen).
+pathlib
 
 
 
@@ -4338,10 +4334,10 @@ It raises an AttributeError because the correct method to retrieve the next valu
 437
 Python
 Q:
-Which Python module provides an object-oriented approach to handling filesystem paths?
+What happens if you try to call gen.next() on a generator gen in Python 3?
 
 A:
-pathlib
+It raises an AttributeError because the correct method to retrieve the next value is next(gen).
 
 
 
@@ -4362,10 +4358,10 @@ Using itertools.cycle(iterable).
 439
 Python
 Q:
-What does an exit code of 0 typically signify in a Python script?
+Which Python module is commonly used to set exit codes?
 
 A:
-Successful execution without errors.
+sys
 
 
 
@@ -4374,10 +4370,10 @@ Successful execution without errors.
 440
 Python
 Q:
-How does the os.walk() function handle permission errors by default?
+What does an exit code of 0 typically signify in a Python script?
 
 A:
-It can be configured to print an error message and continue by using the onerror parameter.
+Successful execution without errors.
 
 
 
@@ -4404,7 +4400,7 @@ const greeting = `Hello, ${name}!`;
 
 443
 JavaScript Concepts
-Parcel: A zero-configuration bundler that automatically handles various file types, offering faster builds with minimal setup.
+Variable Declarations (let, const, var): Keywords to declare variables with different scopes and mutability. let and const are block-scoped, while var is function-scoped.
 
 
 
@@ -4412,7 +4408,7 @@ Parcel: A zero-configuration bundler that automatically handles various file typ
 
 444
 JavaScript Concepts
-TypeScript: A superset of JavaScript that adds static typing, enhancing code quality, maintainability, and developer tooling through type checking.
+Parcel: A zero-configuration bundler that automatically handles various file types, offering faster builds with minimal setup.
 
 
 
@@ -4420,7 +4416,7 @@ TypeScript: A superset of JavaScript that adds static typing, enhancing code qua
 
 445
 JavaScript Concepts
-GraphQL: A query language for APIs that allows clients to request exactly the data they need, improving efficiency and flexibility over REST.
+Promises: Objects representing the eventual completion or failure of asynchronous operations, allowing chaining with .then() and .catch().
 
 
 
@@ -4428,7 +4424,7 @@ GraphQL: A query language for APIs that allows clients to request exactly the da
 
 446
 JavaScript Concepts
-Promises: Objects representing the eventual completion or failure of asynchronous operations, allowing chaining with .then() and .catch().
+GraphQL: A query language for APIs that allows clients to request exactly the data they need, improving efficiency and flexibility over REST.
 
 
 
@@ -4436,7 +4432,7 @@ Promises: Objects representing the eventual completion or failure of asynchronou
 
 447
 JavaScript Concepts
-Variable Declarations (let, const, var): Keywords to declare variables with different scopes and mutability. let and const are block-scoped, while var is function-scoped.
+TypeScript: A superset of JavaScript that adds static typing, enhancing code quality, maintainability, and developer tooling through type checking.
 
 
 
@@ -4444,10 +4440,7 @@ Variable Declarations (let, const, var): Keywords to declare variables with diff
 
 448
 JavaScript Concepts
-Array reverse Function: The reverse method reverses the order of the elements in an array in place.
-let array = [1, 2, 3, 4, 5];
-array.reverse();
-console.log(array); // Output: [5, 4, 3, 2, 1]
+Server-Side Rendering (SSR): Rendering web pages on the server before sending them to the client, improving performance and SEO.
 
 
 
@@ -4455,7 +4448,10 @@ console.log(array); // Output: [5, 4, 3, 2, 1]
 
 449
 JavaScript Concepts
-Server-Side Rendering (SSR): Rendering web pages on the server before sending them to the client, improving performance and SEO.
+Array reverse Function: The reverse method reverses the order of the elements in an array in place.
+let array = [1, 2, 3, 4, 5];
+array.reverse();
+console.log(array); // Output: [5, 4, 3, 2, 1]
 
 
 
@@ -4477,99 +4473,6 @@ if (condition1 || condition2) {
 
 
 451
-Azure Developer Associate
-What’s an Azure Monitor Action Group used for?
-
-To define who and how to notify (email, SMS, webhook, Logic App, etc.) when an alert fires.
-
-
-
-
-
-452
-Azure Developer Associate
-Front: How does Cosmos DB decide when to split a physical partition?
-Back: When either data size nears 20 GB or provisioned throughput demand exceeds the single-partition RU/s limit (~10 000 RU/s).
-
-
-
-
-
-453
-Azure Developer Associate
-Front: You need to guarantee “no gaps” in the sequence of writes but don’t care about client affinity. Which consistency level?
-Back: Consistent Prefix—it ensures write order, even if you see older data.
-
-
-
-
-
-454
-Azure Developer Associate
-Front: What’s the effect of setting maxIntervalInSeconds to 0 in a Bounded Staleness policy?
-Back: You get purely version-based staleness (maxStalenessPrefix bound only), with no time-based freshness guarantee.
-
-
-
-
-
-455
-Azure Developer Associate
-Front: In Autoscale, if you set maxThroughput to 50 000 RU/s, what’s the billed minimum?
-Back: 10% of 50 000 = 5 000 RU/s.
-
-
-
-
-
-456
-Azure Developer Associate
-What does the App Service Plan define?
-It defines the pricing tier and compute resources (CPU, memory, instance count) used by your web app.
-
-
-
-
-
-457
-Azure Developer Associate
-Which Azure Monitor API lets you ingest custom application logs into Azure Monitor Logs?
-
-The Data Collector API.
-
-
-
-
-
-458
-Azure Developer Associate
-Name two key columns in the AzureMetrics table in an Azure Monitor Log Analytics workspace.
-
-TimeGenerated and Value (also Namespace, Name, and AggregationType).
-
-
-
-
-
-459
-Azure Developer Associate
-Front: Why might you choose Serverless over Autoscale?
-Back: For very low-volume or unpredictable workloads where even Autoscale’s 10%-of-max RU floor is too costly.
-
-
-
-
-
-460
-Azure Developer Associate
-Q: What are Redis’s primary data structures?
-A: Strings, Lists, Sets, Sorted Sets, Hashes, Bitmaps, HyperLogLogs, Streams.
-
-
-
-
-
-461
 PnP PowerShell
 Import-PnPProvisioningTemplate (PnP.PowerShell)
 Imports a provisioning template into a SharePoint site, applying configurations and structures defined in the template. Enables automated site setup and customization.
@@ -4578,7 +4481,7 @@ Imports a provisioning template into a SharePoint site, applying configurations 
 
 
 
-462
+452
 PnP PowerShell
 Exponential Backoff
 A strategy for retrying failed operations with increasing delays between attempts. Helps in mitigating the impact of transient failures and reducing load on services.
@@ -4587,7 +4490,7 @@ A strategy for retrying failed operations with increasing delays between attempt
 
 
 
-463
+453
 PnP PowerShell
 Remove-PnPUserFromGroup (PnP.PowerShell)
 Removes a user from a SharePoint group. Helps in maintaining accurate group memberships and enforcing access policies through scripts.
@@ -4596,25 +4499,7 @@ Removes a user from a SharePoint group. Helps in maintaining accurate group memb
 
 
 
-464
-PnP PowerShell
-PSCredential Object (Microsoft.PowerShell.Security)
-Stores and manages user credentials securely within PowerShell. Used for authenticating commands that require user-based permissions.
-
-
-
-
-
-465
-PnP PowerShell
-Export-PnPProvisioningTemplate (PnP.PowerShell)
-Exports a SharePoint site's configuration into a provisioning template. Facilitates site replication, migration, and backup through PowerShell.
-
-
-
-
-
-466
+454
 PnP PowerShell
 Remove-PnPField (PnP.PowerShell)
 Deletes a field from a SharePoint list or library. Useful for cleaning up unused or outdated columns programmatically.
@@ -4623,25 +4508,25 @@ Deletes a field from a SharePoint list or library. Useful for cleaning up unused
 
 
 
-467
+455
 PnP PowerShell
-CSOM (Client-Side Object Model)
-An alternative to REST API for interacting with SharePoint from client applications. Provides a different set of libraries and methods for SharePoint operations.
+PSCredential Object (Microsoft.PowerShell.Security)
+Stores and manages user credentials securely within PowerShell. Used for authenticating commands that require user-based permissions.
 
 
 
 
 
-468
+456
 PnP PowerShell
-Update-PnPListItem (PnP.PowerShell)
-Modifies an existing item in a SharePoint list. Allows updating fields and properties, supporting dynamic data management and automation.
+Export-PnPProvisioningTemplate (PnP.PowerShell)
+Exports a SharePoint site's configuration into a provisioning template. Facilitates site replication, migration, and backup through PowerShell.
 
 
 
 
 
-469
+457
 PnP PowerShell
 Import-Clixml (Microsoft.PowerShell.Utility)
 Deserializes PowerShell objects from an XML format file. Allows retrieving previously exported objects, maintaining their original structure and properties.
@@ -4650,7 +4535,16 @@ Deserializes PowerShell objects from an XML format file. Allows retrieving previ
 
 
 
-470
+458
+PnP PowerShell
+CSOM (Client-Side Object Model)
+An alternative to REST API for interacting with SharePoint from client applications. Provides a different set of libraries and methods for SharePoint operations.
+
+
+
+
+
+459
 PnP PowerShell
 New-AzureADApplication (AzureAD)
 Creates a new application registration in Azure Active Directory via PowerShell. Automates the process of setting up apps for authentication and API access.
@@ -4659,26 +4553,27 @@ Creates a new application registration in Azure Active Directory via PowerShell.
 
 
 
-471
+460
+PnP PowerShell
+Update-PnPListItem (PnP.PowerShell)
+Modifies an existing item in a SharePoint list. Allows updating fields and properties, supporting dynamic data management and automation.
+
+
+
+
+
+461
 Vocab
-Jane Eyre
-Piquant
-(PEE-kahnt) Having a pleasantly sharp or spicy taste; can also describe something intellectually stimulating or excitingly provocative.
+Red Side Story, FForde
+Osculation
+Pronunciation: oss-kyoo-LAY-shun
+Definition: The act of kissing; in mathematics, it can also refer to the contact between curves or surfaces.
 
 
 
 
 
-472
-Vocab
-Interval Funds Generally Have Higher Fees and Costs:
-Interval funds usually have higher management fees and operational expenses compared to typical mutual funds or ETFs, due to their complexity, specialized asset classes, and active management strategies.
-
-
-
-
-
-473
+462
 Vocab
 Structured Credit Combines Debt Instruments:
 Structured credit refers to complex financial products created by pooling and repackaging loans, bonds, or other debt obligations, then dividing them into distinct risk-and-return segments called tranches.
@@ -4687,7 +4582,16 @@ Structured credit refers to complex financial products created by pooling and re
 
 
 
-474
+463
+Vocab
+Interval Funds Generally Have Higher Fees and Costs:
+Interval funds usually have higher management fees and operational expenses compared to typical mutual funds or ETFs, due to their complexity, specialized asset classes, and active management strategies.
+
+
+
+
+
+464
 Vocab
 Interval Funds Invest in Less Liquid Assets:
 Interval funds typically invest in alternative, less liquid assets like real estate, private equity, private debt, and structured credit, granting investors access to opportunities not typically available through conventional investment vehicles.
@@ -4696,27 +4600,7 @@ Interval funds typically invest in alternative, less liquid assets like real est
 
 
 
-475
-Vocab
-Red Side Story, FForde
-Proscenium
-Pronunciation: pruh-SEE-nee-uhm
-Definition: The part of a theater stage in front of the curtain, often framing the stage.
-
-
-
-
-
-476
-Vocab
-Lost in a Good Book
-Wisteria: A climbing flowering plant with fragrant, cascading purple or white blooms, often grown on pergolas or trellises.
-
-
-
-
-
-477
+465
 Vocab
 Palimpsest
 noun
@@ -4730,7 +4614,38 @@ Example: Archaeologists discovered an ancient palimpsest where earlier texts wer
 
 
 
-478
+466
+Vocab
+Red Side Story, FForde
+Proscenium
+Pronunciation: pruh-SEE-nee-uhm
+Definition: The part of a theater stage in front of the curtain, often framing the stage.
+
+
+
+
+
+467
+Vocab
+Lost in a Good Book
+Wisteria: A climbing flowering plant with fragrant, cascading purple or white blooms, often grown on pergolas or trellises.
+
+
+
+
+
+468
+Vocab
+Red Side Story, FForde
+Parboil
+Pronunciation: PAR-boyl
+Definition: To partially boil food as a preliminary step before further cooking.
+
+
+
+
+
+469
 Vocab
 Lost in a Good Book
 Tunguska event: A massive explosion in Siberia (1908) caused by an airburst of a meteoroid or comet, flattening 800 square miles of forest.
@@ -4739,7 +4654,7 @@ Tunguska event: A massive explosion in Siberia (1908) caused by an airburst of a
 
 
 
-479
+470
 Vocab
 Lost in a Good Book
 Perfidious: Deceitful and untrustworthy, often describing betrayal or disloyalty.
@@ -4748,12 +4663,98 @@ Perfidious: Deceitful and untrustworthy, often describing betrayal or disloyalty
 
 
 
+471
+Azure Developer Associate
+Front: List three criteria for choosing a good logical partition key.
+Back:
+
+High cardinality (many distinct values)
+Even distribution of reads/writes (avoids “hot” partitions)
+Co-location of related items if you need cross-item transactions.
+
+
+
+
+
+472
+Azure Developer Associate
+Name two key columns in the AzureMetrics table in an Azure Monitor Log Analytics workspace.
+
+TimeGenerated and Value (also Namespace, Name, and AggregationType).
+
+
+
+
+
+473
+Azure Developer Associate
+Front: In Autoscale, if you set maxThroughput to 50 000 RU/s, what’s the billed minimum?
+Back: 10% of 50 000 = 5 000 RU/s.
+
+
+
+
+
+474
+Azure Developer Associate
+Front: How does Cosmos DB decide when to split a physical partition?
+Back: When either data size nears 20 GB or provisioned throughput demand exceeds the single-partition RU/s limit (~10 000 RU/s).
+
+
+
+
+
+475
+Azure Developer Associate
+Front: You need to guarantee “no gaps” in the sequence of writes but don’t care about client affinity. Which consistency level?
+Back: Consistent Prefix—it ensures write order, even if you see older data.
+
+
+
+
+
+476
+Azure Developer Associate
+Front: What’s the effect of setting maxIntervalInSeconds to 0 in a Bounded Staleness policy?
+Back: You get purely version-based staleness (maxStalenessPrefix bound only), with no time-based freshness guarantee.
+
+
+
+
+
+477
+Azure Developer Associate
+Which Azure Monitor API lets you ingest custom application logs into Azure Monitor Logs?
+
+The Data Collector API.
+
+
+
+
+
+478
+Azure Developer Associate
+What does the App Service Plan define?
+It defines the pricing tier and compute resources (CPU, memory, instance count) used by your web app.
+
+
+
+
+
+479
+Azure Developer Associate
+What benefit do Azure Monitor dynamic threshold metric alerts provide over static thresholds?
+
+They use historical data to auto-adjust thresholds and reduce false positives.
+
+
+
+
+
 480
-Vocab
-Red Side Story, FForde
-Parboil
-Pronunciation: PAR-boyl
-Definition: To partially boil food as a preliminary step before further cooking.
+Azure Developer Associate
+Front: Why might you choose Serverless over Autoscale?
+Back: For very low-volume or unpredictable workloads where even Autoscale’s 10%-of-max RU floor is too costly.
 
 
 
@@ -4783,10 +4784,10 @@ Formatters ensure that log messages are consistently structured for readability 
 
 483
 Logging in Python
-Q: How can you dynamically create loggers based on runtime information in Python's logging module?
+Q: What is one of the main disadvantages of using Python's built-in logging module?
 
-A: By using logging.getLogger() with dynamically constructed names, such as logging.getLogger(f"module_{module_id}").
-This allows for the creation of loggers tailored to specific runtime contexts or modules.
+A: It can be overly complex and verbose for simple applications or scripts.
+The extensive features may introduce unnecessary complexity when basic logging needs are sufficient.
 
 
 
@@ -4794,10 +4795,10 @@ This allows for the creation of loggers tailored to specific runtime contexts or
 
 484
 Logging in Python
-Q: What is one of the main disadvantages of using Python's built-in logging module?
+Q: How can you dynamically create loggers based on runtime information in Python's logging module?
 
-A: It can be overly complex and verbose for simple applications or scripts.
-The extensive features may introduce unnecessary complexity when basic logging needs are sufficient.
+A: By using logging.getLogger() with dynamically constructed names, such as logging.getLogger(f"module_{module_id}").
+This allows for the creation of loggers tailored to specific runtime contexts or modules.
 
 
 
@@ -4827,10 +4828,10 @@ Explanation: Example: Uninstall-Module -Name ActiveDirectory removes the ActiveD
 
 487
 Powershell Modules
-Get-Command -Module <ModuleName>
+Module.dll
 
-Definition: Lists all commands (cmdlets, functions) provided by a specific module.
-Example Usage: Get-Command -Module Az lists all Az module cmdlets.
+Definition: A dynamic link library file that can be part of a PowerShell module.
+Explanation: Contains compiled code (e.g., C#) that can be used by PowerShell modules for enhanced performance or functionality.
 
 
 
@@ -4871,11 +4872,10 @@ Explanation: When installing a module with -Scope AllUsers, it requires administ
 
 491
 Powershell Modules
-Installing a Module:
-Install-Module -Name Az -Scope CurrentUser
+ActiveDirectory Module
 
-Importing a Module:
-Import-Module -Name Az
+Definition: A module for managing Active Directory objects.
+Explanation: Provides cmdlets to manage users, groups, and other AD components. Example cmdlet: Get-ADUser.
 
 
 
@@ -4883,10 +4883,11 @@ Import-Module -Name Az
 
 492
 Powershell Modules
-ActiveDirectory Module
+Installing a Module:
+Install-Module -Name Az -Scope CurrentUser
 
-Definition: A module for managing Active Directory objects.
-Explanation: Provides cmdlets to manage users, groups, and other AD components. Example cmdlet: Get-ADUser.
+Importing a Module:
+Import-Module -Name Az
 
 
 
@@ -4928,15 +4929,6 @@ Explanation: Provides metadata and configuration for modules, ensuring they load
 
 496
 Asynchronous Python
-Deadlock
-Deadlock happens when two or more threads are waiting on each other to release locks, causing the program to become stuck with none of the threads progressing.
-
-
-
-
-
-497
-Asynchronous Python
 Idle Task
 An asynchronous Python coroutine that’s currently waiting (e.g., on I/O or sleep), allowing others to run in the meantime.
 
@@ -4944,61 +4936,16 @@ An asynchronous Python coroutine that’s currently waiting (e.g., on I/O or sle
 
 
 
+497
+Asynchronous Python
+Event Loop
+The core of Python’s asyncio system, which schedules and runs asynchronous tasks cooperatively on a single thread.
+
+
+
+
+
 498
-Asynchronous Python
-asyncio.wait_for()
-Runs a coroutine with a timeout in Python; raises TimeoutError if the coroutine doesn’t finish in time.
-
-
-
-
-
-499
-Asynchronous Python
-asyncio.Lock
-An asynchronous lock in Python used to prevent multiple coroutines from accessing a shared resource at the same time.
-
-
-
-
-
-500
-Asynchronous Python
-asyncio.run()
-A high-level function in Python to start the event loop, run an async function, and close the loop automatically.
-
-
-
-
-
-501
-Asynchronous Python
-Blocking Code
-Code like time.sleep() that halts the event loop and prevents other asynchronous Python tasks from running—should be avoided.
-
-
-
-
-
-502
-Asynchronous Python
-Coroutine Object
-The result of calling an async def function; it must be awaited or scheduled with the event loop to execute.
-
-
-
-
-
-503
-Asynchronous Python
-Race Condition
-An issue in async Python code where multiple coroutines access shared data without proper coordination, leading to bugs.
-
-
-
-
-
-504
 Asynchronous Python
 Cooperative Multitasking
 The async model in Python where tasks yield control voluntarily (e.g., via await) instead of being preempted.
@@ -5007,10 +4954,64 @@ The async model in Python where tasks yield control voluntarily (e.g., via await
 
 
 
+499
+Asynchronous Python
+Structured Concurrency
+A design principle (used in Trio) ensuring all async Python tasks are scoped and cleaned up together, reducing leaks and bugs.
+
+
+
+
+
+500
+Asynchronous Python
+asyncio.Lock
+An asynchronous lock in Python used to prevent multiple coroutines from accessing a shared resource at the same time.
+
+
+
+
+
+501
+Asynchronous Python
+asyncio.wait_for()
+Runs a coroutine with a timeout in Python; raises TimeoutError if the coroutine doesn’t finish in time.
+
+
+
+
+
+502
+Asynchronous Python
+Race Condition
+An issue in async Python code where multiple coroutines access shared data without proper coordination, leading to bugs.
+
+
+
+
+
+503
+Asynchronous Python
+asyncio.run()
+A high-level function in Python to start the event loop, run an async function, and close the loop automatically.
+
+
+
+
+
+504
+Asynchronous Python
+async with (async context manager)
+Manages asynchronous resources in Python like network sessions or database connections with proper cleanup.
+
+
+
+
+
 505
 Asynchronous Python
-asyncio.gather()
-Runs multiple asynchronous Python tasks concurrently and waits for all to finish, optionally collecting exceptions.
+Coroutine Object
+The result of calling an async def function; it must be awaited or scheduled with the event loop to execute.
 
 
 
@@ -5019,10 +5020,10 @@ Runs multiple asynchronous Python tasks concurrently and waits for all to finish
 506
 Python
 Q:
-Which Python module is commonly used to set exit codes?
+What is the advantage of using yield from in a generator?
 
 A:
-sys
+yield from delegates part of the generator’s operations to another generator, simplifying code and allowing for the composition of generators.
 
 
 
@@ -5031,10 +5032,10 @@ sys
 507
 Python
 Q:
-How do you make a custom object iterable?
+How does the os.walk() function handle permission errors by default?
 
 A:
-By implementing the __iter__() method that returns an iterator (which can be the object itself with a __next__() method).
+It can be configured to print an error message and continue by using the onerror parameter.
 
 
 
@@ -5043,10 +5044,10 @@ By implementing the __iter__() method that returns an iterator (which can be the
 508
 Python
 Q:
-What is the advantage of using yield from in a generator?
+How do you make a custom object iterable?
 
 A:
-yield from delegates part of the generator’s operations to another generator, simplifying code and allowing for the composition of generators.
+By implementing the __iter__() method that returns an iterator (which can be the object itself with a __next__() method).
 
 
 
@@ -5065,18 +5066,6 @@ for file in Path('/path/to/directory').rglob('*.txt'):
 
 510
 Python
-How can you compare two Path objects for equality regardless of their string representations? By resolving both paths and comparing them.
-
-path1 = Path('/home/user/file.txt').resolve()
-path2 = Path('./file.txt').resolve()
-are_equal = path1 == path2
-
-
-
-
-
-511
-Python
 Q:
 What does itertools.islice() do?
 
@@ -5087,7 +5076,31 @@ It creates an iterator that returns selected elements from the input iterable by
 
 
 
+511
+Python
+How can you compare two Path objects for equality regardless of their string representations? By resolving both paths and comparing them.
+
+path1 = Path('/home/user/file.txt').resolve()
+path2 = Path('./file.txt').resolve()
+are_equal = path1 == path2
+
+
+
+
+
 512
+Python
+How do you resolve a relative path to an absolute path using pathlib?
+
+from pathlib import Path
+relative_path = Path('some/relative/path')
+absolute_path = relative_path.resolve()
+
+
+
+
+
+513
 Python
 Q:
 What is the primary purpose of exit codes in Python scripts?
@@ -5099,25 +5112,13 @@ To communicate the termination status of a script to the operating system or cal
 
 
 
-513
+514
 Python
 Q:
 What is the main advantage of using generators over lists?
 
 A:
 Generators are memory-efficient as they generate items on-the-fly and don't store the entire sequence in memory, making them faster for large datasets.
-
-
-
-
-
-514
-Python
-How do you resolve a relative path to an absolute path using pathlib?
-
-from pathlib import Path
-relative_path = Path('some/relative/path')
-absolute_path = relative_path.resolve()
 
 
 
@@ -5145,7 +5146,7 @@ Vue.js: A progressive framework for building user interfaces, known for its simp
 
 517
 JavaScript Concepts
-Yarn: An alternative package manager to npm, offering faster installs and more reliable dependency management through lock files.
+npm (Node Package Manager): The default package manager for Node.js, used to install, share, and manage JavaScript packages and dependencies.
 
 
 
@@ -5153,7 +5154,7 @@ Yarn: An alternative package manager to npm, offering faster installs and more r
 
 518
 JavaScript Concepts
-Caching Strategies: Techniques like browser caching and service workers to store resources locally, decreasing load times and server requests.
+Yarn: An alternative package manager to npm, offering faster installs and more reliable dependency management through lock files.
 
 
 
@@ -5161,7 +5162,7 @@ Caching Strategies: Techniques like browser caching and service workers to store
 
 519
 JavaScript Concepts
-npm (Node Package Manager): The default package manager for Node.js, used to install, share, and manage JavaScript packages and dependencies.
+Caching Strategies: Techniques like browser caching and service workers to store resources locally, decreasing load times and server requests.
 
 
 
@@ -5185,7 +5186,7 @@ React Hooks: Functions like useState and useEffect that allow functional compone
 
 522
 JavaScript Concepts
-Next.js: A React framework for server-side rendering and static site generation, enhancing performance and SEO for React applications.
+RESTful APIs: Architectural style for designing networked applications, using HTTP requests to access and manipulate data through standard endpoints.
 
 
 
@@ -5193,7 +5194,7 @@ Next.js: A React framework for server-side rendering and static site generation,
 
 523
 JavaScript Concepts
-RESTful APIs: Architectural style for designing networked applications, using HTTP requests to access and manipulate data through standard endpoints.
+Next.js: A React framework for server-side rendering and static site generation, enhancing performance and SEO for React applications.
 
 
 
@@ -5209,119 +5210,13 @@ Context API: A React feature that provides a way to pass data through the compon
 
 525
 JavaScript Concepts
-Array Length Property: Remember to use array.length to get the number of elements in an array. This is a common mistake, but it's crucial for iterating through arrays correctly.
-(I had mistakenly used array.len instead)
+Middleware: Functions in frameworks like Express.js that have access to request and response objects, used for tasks like authentication and logging.
 
 
 
 
 
 526
-Azure Developer Associate
-Front: How can you override the account default consistency for a single SDK request?
-Back: Set the request-level consistency in the client call (e.g., .WithConsistencyLevel(ConsistencyLevel.Session) in the .NET SDK).
-
-
-
-
-
-527
-Azure Developer Associate
-Front: What’s a good pattern to avoid cross-partition fan-out in queries?
-Back: Always include the partition-key value in your WHERE clause (e.g., WHERE c.customerId = @id).
-
-
-
-
-
-528
-Azure Developer Associate
-Name two ways to visualize Azure Monitor metrics in the Azure portal.
-
-Metrics Explorer and Workbooks.
-
-
-
-
-
-529
-Azure Developer Associate
-What benefit do Azure Monitor dynamic threshold metric alerts provide over static thresholds?
-
-They use historical data to auto-adjust thresholds and reduce false positives.
-
-
-
-
-
-530
-Azure Developer Associate
-Front: How does autoscale billing calculate your minimum RU/s charge?
-Back: You’re billed at 10% of your maxThroughput setting. (e.g., max = 10 000 RU/s → min bill = 1 000 RU/s.)
-
-
-
-
-
-531
-Azure Developer Associate
-Which Azure Monitor alert type runs a KQL query in your Log Analytics workspace and fires when the query returns results?
-
-Log alert rule.
-
-
-
-
-
-532
-Azure Developer Associate
-Name three built-in Azure Monitor Log Analytics tables used for logs (aside from AzureMetrics).
-
-AzureActivity, Perf, and Heartbeat.
-
-
-
-
-
-533
-Azure Developer Associate
-Front: You run a cross-partition query over 8 partitions that each cost 3 RU. How many total RUs?
-Back: 8 × 3 RU = 24 RU.
-
-
-
-
-
-534
-Azure Developer Associate
-What Azure Monitor feature lets you build interactive reports combining metrics, logs, and text?
-
-Workbooks.
-
-
-
-
-
-535
-Azure Developer Associate
-Name one Azure Monitor Insights solution that relies on metrics to surface VM or container performance.
-
-VM Insights or Container Insights.
-
-
-
-
-
-536
-PnP PowerShell
-JSON Conversion
-Transforms PowerShell objects to JSON format and vice versa using ConvertTo-Json and ConvertFrom-Json. Essential for handling REST API payloads and responses.
-
-
-
-
-
-537
 PnP PowerShell
 Write-Debug (Microsoft.PowerShell.Utility)
 Outputs debug information during script execution when the debug preference is enabled. Useful for in-depth troubleshooting and script analysis.
@@ -5330,7 +5225,7 @@ Outputs debug information during script execution when the debug preference is e
 
 
 
-538
+527
 PnP PowerShell
 JSON Payloads
 Data formatted in JSON used in REST API requests and responses. PowerShell uses ConvertTo-Json and ConvertFrom-Json for handling JSON data structures.
@@ -5339,7 +5234,25 @@ Data formatted in JSON used in REST API requests and responses. PowerShell uses 
 
 
 
-539
+528
+PnP PowerShell
+JSON Conversion
+Transforms PowerShell objects to JSON format and vice versa using ConvertTo-Json and ConvertFrom-Json. Essential for handling REST API payloads and responses.
+
+
+
+
+
+529
+PnP PowerShell
+New-Object (Microsoft.PowerShell.Utility)
+Creates an instance of a .NET Framework or COM object in PowerShell. Essential for handling complex data structures and interacting with .NET classes.
+
+
+
+
+
+530
 PnP PowerShell
 Remove-PnPFile (PnP.PowerShell)
 Deletes a specified file from a SharePoint library or folder. Useful for automating cleanup tasks or managing outdated documents programmatically.
@@ -5348,16 +5261,16 @@ Deletes a specified file from a SharePoint library or folder. Useful for automat
 
 
 
-540
+531
 PnP PowerShell
-Grant-PnPAzureADAppPermission (PnP.PowerShell)
-Grants specific API permissions to an Azure AD application directly from PowerShell. Streamlines the permission assignment process for SharePoint access.
+PowerShell Scopes
+Defines the visibility and lifetime of variables and functions within PowerShell. Includes global, script, and local scopes, managing how data is accessed and modified.
 
 
 
 
 
-541
+532
 PnP PowerShell
 Client Secret (client_secret)
 A confidential key associated with an Azure AD application, used alongside the client ID to authenticate the application in secure authentication flows.
@@ -5366,16 +5279,7 @@ A confidential key associated with an Azure AD application, used alongside the c
 
 
 
-542
-PnP PowerShell
-Environment Variables
-Variables that are set at the operating system level and accessible within PowerShell. Used to store configuration data and secrets securely without hardcoding.
-
-
-
-
-
-543
+533
 PnP PowerShell
 SharePoint App Permissions
 Defines the access rights granted to SharePoint apps via AppInv.aspx or Azure AD. Controls what resources and actions an app can perform within SharePoint.
@@ -5384,25 +5288,25 @@ Defines the access rights granted to SharePoint apps via AppInv.aspx or Azure AD
 
 
 
-544
+534
 PnP PowerShell
-App-Only Authentication
-A mode where applications authenticate without a user context, using client credentials to perform operations based on granted permissions. Suitable for automated scripts and services.
+Grant-PnPAzureADAppPermission (PnP.PowerShell)
+Grants specific API permissions to an Azure AD application directly from PowerShell. Streamlines the permission assignment process for SharePoint access.
 
 
 
 
 
-545
+535
 PnP PowerShell
-Invoke-PnPRequest (PnP.PowerShell)
-Sends custom HTTP requests to SharePoint APIs within PnP.PowerShell scripts. Allows for advanced interactions beyond standard cmdlet capabilities.
+Environment Variables
+Variables that are set at the operating system level and accessible within PowerShell. Used to store configuration data and secrets securely without hardcoding.
 
 
 
 
 
-546
+536
 Vocab
 Jane Eyre
 Beldame
@@ -5412,7 +5316,7 @@ Beldame
 
 
 
-547
+537
 Vocab
 Lost in a Good Book
 Evelyn Waugh (novels): English writer famous for satirical works like Brideshead Revisited and A Handful of Dust, exploring themes of aristocracy, faith, and morality.
@@ -5421,53 +5325,7 @@ Evelyn Waugh (novels): English writer famous for satirical works like Brideshead
 
 
 
-548
-Vocab
-Structured Credit Offers Different Risk Levels:
-Structured credit products are typically divided into multiple tranches, each offering varying degrees of risk, return, and priority in repayment, allowing investors to select the risk exposure that suits their investment profile.
-
-
-
-
-
-549
-Vocab
-Structured Credit Carries Complexity and Risk:
-Structured credit products are often complex and require careful analysis due to risks related to credit quality, liquidity, underlying asset performance, and market conditions, making them suitable primarily for knowledgeable or institutional investors.
-
-
-
-
-
-550
-Vocab
-Do Androids Dream of Electric Sheep?
-Jug-eared (JUHG-eerd): Describing someone with large, protruding ears that resemble the handles of a jug.
-
-
-
-
-
-551
-Vocab
-Lost in a Good Book
-Compère (of a game show): A host or master of ceremonies, responsible for introducing participants and keeping the event flowing.
-
-
-
-
-
-552
-Vocab
-Jane Eyre
-Basin and Ewer
-(BAY-sin and YOO-er) A bowl (basin) and jug (ewer) used together for hand or face washing, commonly found before the advent of modern plumbing.
-
-
-
-
-
-553
+538
 Vocab
 Lacunary
 adjective
@@ -5481,7 +5339,34 @@ Example: The ancient manuscript was lacunary, with several sections of the text 
 
 
 
-554
+539
+Vocab
+Structured Credit Offers Different Risk Levels:
+Structured credit products are typically divided into multiple tranches, each offering varying degrees of risk, return, and priority in repayment, allowing investors to select the risk exposure that suits their investment profile.
+
+
+
+
+
+540
+Vocab
+Lost in a Good Book
+Compère (of a game show): A host or master of ceremonies, responsible for introducing participants and keeping the event flowing.
+
+
+
+
+
+541
+Vocab
+Do Androids Dream of Electric Sheep?
+Jug-eared (JUHG-eerd): Describing someone with large, protruding ears that resemble the handles of a jug.
+
+
+
+
+
+542
 Vocab
 Jane Eyre
 Salubrious
@@ -5491,10 +5376,124 @@ Salubrious
 
 
 
-555
+543
 Vocab
-Structured Credit Includes Products like CLOs and CDOs:
-Structured credit encompasses instruments such as collateralized loan obligations (CLOs), collateralized debt obligations (CDOs), mortgage-backed securities (MBS), and asset-backed securities (ABS), all designed to repackage and redistribute risk and return.
+Jane Eyre
+Basin and Ewer
+(BAY-sin and YOO-er) A bowl (basin) and jug (ewer) used together for hand or face washing, commonly found before the advent of modern plumbing.
+
+
+
+
+
+544
+Vocab
+Structured Credit Carries Complexity and Risk:
+Structured credit products are often complex and require careful analysis due to risks related to credit quality, liquidity, underlying asset performance, and market conditions, making them suitable primarily for knowledgeable or institutional investors.
+
+
+
+
+
+545
+Vocab
+Interval Funds May Provide Higher Yields and Diversification:
+Interval funds often seek higher returns or income by investing in less liquid, alternative assets, potentially enhancing portfolio diversification beyond traditional stocks and bonds.
+
+
+
+
+
+546
+Azure Developer Associate
+Q: What are Redis’s primary data structures?
+A: Strings, Lists, Sets, Sorted Sets, Hashes, Bitmaps, HyperLogLogs, Streams.
+
+
+
+
+
+547
+Azure Developer Associate
+Name two ways to visualize Azure Monitor metrics in the Azure portal.
+
+Metrics Explorer and Workbooks.
+
+
+
+
+
+548
+Azure Developer Associate
+Front: How can you override the account default consistency for a single SDK request?
+Back: Set the request-level consistency in the client call (e.g., .WithConsistencyLevel(ConsistencyLevel.Session) in the .NET SDK).
+
+
+
+
+
+549
+Azure Developer Associate
+Front: How does autoscale billing calculate your minimum RU/s charge?
+Back: You’re billed at 10% of your maxThroughput setting. (e.g., max = 10 000 RU/s → min bill = 1 000 RU/s.)
+
+
+
+
+
+550
+Azure Developer Associate
+Front: What’s a good pattern to avoid cross-partition fan-out in queries?
+Back: Always include the partition-key value in your WHERE clause (e.g., WHERE c.customerId = @id).
+
+
+
+
+
+551
+Azure Developer Associate
+Which Azure Monitor alert type runs a KQL query in your Log Analytics workspace and fires when the query returns results?
+
+Log alert rule.
+
+
+
+
+
+552
+Azure Developer Associate
+Name three built-in Azure Monitor Log Analytics tables used for logs (aside from AzureMetrics).
+
+AzureActivity, Perf, and Heartbeat.
+
+
+
+
+
+553
+Azure Developer Associate
+Front: You run a cross-partition query over 8 partitions that each cost 3 RU. How many total RUs?
+Back: 8 × 3 RU = 24 RU.
+
+
+
+
+
+554
+Azure Developer Associate
+What are the two primary data types collected by Azure Monitor?
+
+Metrics and logs.
+
+
+
+
+
+555
+Azure Developer Associate
+What Azure Monitor feature lets you build interactive reports combining metrics, logs, and text?
+
+Workbooks.
 
 
 
@@ -5513,10 +5512,10 @@ Explanation: Provides features like syntax highlighting, auto-completion, and cu
 
 557
 Powershell Modules
-Get-Help <CmdletName> -Detailed
+Module Scope Management
 
-Definition: Retrieves detailed help information for a specific cmdlet.
-Example Usage: Get-Help Get-AzVM -Detailed provides comprehensive information about the Get-AzVM cmdlet.
+Definition: Controlling the installation and availability scope of modules.
+Explanation: Deciding between CurrentUser and AllUsers scopes based on requirements and permissions.
 
 
 
@@ -5524,10 +5523,10 @@ Example Usage: Get-Help Get-AzVM -Detailed provides comprehensive information ab
 
 558
 Powershell Modules
-Module Scope Management
+Get-Help <CmdletName> -Detailed
 
-Definition: Controlling the installation and availability scope of modules.
-Explanation: Deciding between CurrentUser and AllUsers scopes based on requirements and permissions.
+Definition: Retrieves detailed help information for a specific cmdlet.
+Example Usage: Get-Help Get-AzVM -Detailed provides comprehensive information about the Get-AzVM cmdlet.
 
 
 
@@ -5554,8 +5553,8 @@ Thread safety means that code or data structures function correctly when accesse
 
 561
 Asynchronous Python
-asyncio.as_completed()
-Runs multiple coroutines concurrently and yields their results in the order they complete, useful in Python for out-of-order processing.
+asyncio.gather()
+Runs multiple asynchronous Python tasks concurrently and waits for all to finish, optionally collecting exceptions.
 
 
 
@@ -5563,8 +5562,8 @@ Runs multiple coroutines concurrently and yields their results in the order they
 
 562
 Asynchronous Python
-async with (async context manager)
-Manages asynchronous resources in Python like network sessions or database connections with proper cleanup.
+Deadlock
+A state in async Python where tasks wait on each other indefinitely, halting progress—usually due to poor coordination.
 
 
 
@@ -5572,8 +5571,8 @@ Manages asynchronous resources in Python like network sessions or database conne
 
 563
 Asynchronous Python
-Deadlock
-A state in async Python where tasks wait on each other indefinitely, halting progress—usually due to poor coordination.
+asyncio.as_completed()
+Runs multiple coroutines concurrently and yields their results in the order they complete, useful in Python for out-of-order processing.
 
 
 
@@ -5624,6 +5623,18 @@ It ensures that the file is properly closed after its block of code is executed,
 568
 Python
 Q:
+What method is used to gracefully terminate a generator?
+
+A:
+The .close() method.
+
+
+
+
+
+569
+Python
+Q:
 Name a built-in context manager in Python and its purpose.
 
 A:
@@ -5633,7 +5644,7 @@ open() is a built-in context manager used for opening files. It ensures that the
 
 
 
-569
+570
 Python
 Q:
 How can you define a custom exception in Python?
@@ -5648,25 +5659,13 @@ class MyCustomError(Exception):
 
 
 
-570
-Python
-Q:
-What method is used to gracefully terminate a generator?
-
-A:
-The .close() method.
-
-
-
-
-
 571
 Python
 Q:
-What method can be used to send a value into a generator, allowing it to receive data?
+How does the iter() function work with iterables?
 
 A:
-The .send(value) method.
+The iter() function returns an iterator object from an iterable by calling its __iter__() method.
 
 
 
@@ -5675,10 +5674,10 @@ The .send(value) method.
 572
 Python
 Q:
-How does the iter() function work with iterables?
+What method can be used to send a value into a generator, allowing it to receive data?
 
 A:
-The iter() function returns an iterator object from an iterable by calling its __iter__() method.
+The .send(value) method.
 
 
 
@@ -5699,7 +5698,8 @@ Improved Code Organization: Helps in organizing code by separating concerns and 
 
 574
 JavaScript Concepts
-Testing Library: A family of libraries that encourage testing best practices by focusing on user interactions rather than implementation details.
+Array Length Property: Remember to use array.length to get the number of elements in an array. This is a common mistake, but it's crucial for iterating through arrays correctly.
+(I had mistakenly used array.len instead)
 
 
 
@@ -5707,7 +5707,7 @@ Testing Library: A family of libraries that encourage testing best practices by 
 
 575
 JavaScript Concepts
-Component-Based Architecture: Building applications by encapsulating functionality into independent, reusable components, commonly used in frontend frameworks.
+Testing Library: A family of libraries that encourage testing best practices by focusing on user interactions rather than implementation details.
 
 
 
@@ -5723,7 +5723,7 @@ Prettier: A code formatter that enforces consistent styling across codebases, au
 
 577
 JavaScript Concepts
-Middleware: Functions in frameworks like Express.js that have access to request and response objects, used for tasks like authentication and logging.
+Component-Based Architecture: Building applications by encapsulating functionality into independent, reusable components, commonly used in frontend frameworks.
 
 
 
@@ -5739,7 +5739,7 @@ A callback function is a function that is passed as an argument to another funct
 
 579
 JavaScript Concepts
-Destructuring: Extracting values from arrays or objects into distinct variables using a concise syntax.
+Netlify: A platform for deploying static sites and serverless functions, providing continuous deployment and built-in CI/CD pipelines.
 
 
 
@@ -5747,7 +5747,7 @@ Destructuring: Extracting values from arrays or objects into distinct variables 
 
 580
 JavaScript Concepts
-Netlify: A platform for deploying static sites and serverless functions, providing continuous deployment and built-in CI/CD pipelines.
+Destructuring: Extracting values from arrays or objects into distinct variables using a concise syntax.
 
 
 
@@ -5783,112 +5783,6 @@ let slicedArray = array.slice(1, 4); // Output: [2, 3, 4]
 
 
 583
-Azure Developer Associate
-What are the two primary data types collected by Azure Monitor?
-
-Metrics and logs.
-
-
-
-
-
-584
-Azure Developer Associate
-Which App Service deployment method enables CI/CD integration with GitHub or Azure Repos?
-Continuous Deployment (CI/CD)
-
-
-
-
-
-585
-Azure Developer Associate
-Front: What guarantee does Session consistency provide?
-Back: Monotonic reads, monotonic writes, read-your-writes, and write-fan-out within a single client session.
-
-
-
-
-
-586
-Azure Developer Associate
-Which Azure Monitor autoscale profile type allows different schedules with separate scale rules?
-
-Recurrence profile.
-
-
-
-
-
-587
-Azure Developer Associate
-What Azure Monitor feature uses metric alerts under the covers to scale Azure App Service and VM Scale Sets?
-
-Autoscale (via an Autoscale Setting).
-
-
-
-
-
-588
-Azure Developer Associate
-What default retention period does Azure Monitor keep high-frequency metrics “hot” in its native metrics store?
-
-93 days.
-
-
-
-
-
-589
-Azure Developer Associate
-What is the role of Azure Monitor Connection Monitor?
-
-It tests and alerts on network connectivity (latency/packet loss) between endpoints.
-
-
-
-
-
-590
-Azure Developer Associate
-How do you send Azure Monitor platform metrics into an Azure Log Analytics workspace?
-
-In your resource’s Diagnostic Settings, enable “Send to Log Analytics” under Metrics—then they show up in the AzureMetrics table.
-
-
-
-
-
-591
-Azure Developer Associate
-Which Azure Monitor table holds platform metrics when you route them into a Log Analytics workspace?
-
-AzureMetrics.
-
-
-
-
-
-592
-Azure Developer Associate
-What allows Azure App Service to integrate with private networks (VNets)?
-VNet Integration
-
-
-
-
-
-593
-PnP PowerShell
-Azure Key Vault Integration
-Securely stores and manages secrets, keys, and certificates used by applications. Enhances security by preventing hardcoding of sensitive information in scripts.
-
-
-
-
-
-594
 PnP PowerShell
 Secure Password Handling
 Practices for managing passwords securely in scripts, such as using ConvertTo-SecureString and PSCredential objects, to prevent exposure of sensitive information.
@@ -5897,7 +5791,43 @@ Practices for managing passwords securely in scripts, such as using ConvertTo-Se
 
 
 
-595
+584
+PnP PowerShell
+Invoke-PnPRequest (PnP.PowerShell)
+Sends custom HTTP requests to SharePoint APIs within PnP.PowerShell scripts. Allows for advanced interactions beyond standard cmdlet capabilities.
+
+
+
+
+
+585
+PnP PowerShell
+SharePoint Permissions Levels
+Predefined or custom permission sets in SharePoint that determine user access rights, such as Read, Contribute, and Full Control, managing what actions users can perform.
+
+
+
+
+
+586
+PnP PowerShell
+Throttling in SharePoint
+Limits the number of API requests to prevent abuse and ensure service stability. Requires implementing retry logic and handling throttling responses in scripts.
+
+
+
+
+
+587
+PnP PowerShell
+App-Only Authentication
+A mode where applications authenticate without a user context, using client credentials to perform operations based on granted permissions. Suitable for automated scripts and services.
+
+
+
+
+
+588
 PnP PowerShell
 Export-Clixml (Microsoft.PowerShell.Utility)
 Serializes PowerShell objects to an XML format file. Useful for securely storing complex objects, including credentials, for later retrieval.
@@ -5906,52 +5836,25 @@ Serializes PowerShell objects to an XML format file. Useful for securely storing
 
 
 
-596
+589
 PnP PowerShell
-PowerShell Scopes
-Defines the visibility and lifetime of variables and functions within PowerShell. Includes global, script, and local scopes, managing how data is accessed and modified.
+New-PnPField (PnP.PowerShell)
+Creates a new field in a SharePoint list or library. Supports defining field types, settings, and validations for structured data management.
 
 
 
 
 
-597
+590
 PnP PowerShell
-New-Object (Microsoft.PowerShell.Utility)
-Creates an instance of a .NET Framework or COM object in PowerShell. Essential for handling complex data structures and interacting with .NET classes.
+Azure Key Vault Integration
+Securely stores and manages secrets, keys, and certificates used by applications. Enhances security by preventing hardcoding of sensitive information in scripts.
 
 
 
 
 
-598
-PnP PowerShell
-Get-MsalToken (MSAL.PS)
-Retrieves an OAuth 2.0 access token using Microsoft Authentication Library (MSAL) in PowerShell. Facilitates secure token acquisition for API calls.
-
-
-
-
-
-599
-PnP PowerShell
-ConvertTo-SecureString (Microsoft.PowerShell.Security)
-Transforms plain text into a secure string object in PowerShell. Essential for handling sensitive data like passwords and client secrets securely.
-
-
-
-
-
-600
-PnP PowerShell
-Invoke-WebRequest (Microsoft.PowerShell.Utility)
-Sends HTTP and HTTPS requests to web pages or web services. Similar to Invoke-RestMethod but provides more detailed response information.
-
-
-
-
-
-601
+591
 PnP PowerShell
 API Rate Limits
 Restrictions on the number of API calls an application can make within a specific timeframe. Requires managing request rates to avoid exceeding limits and facing throttling.
@@ -5960,16 +5863,16 @@ Restrictions on the number of API calls an application can make within a specifi
 
 
 
-602
+592
 PnP PowerShell
-Token Caching
-Stores OAuth tokens locally to reduce the need for repeated authentication requests. Enhances script performance and reduces latency in API interactions.
+Write-Verbose (Microsoft.PowerShell.Utility)
+Outputs detailed information during script execution when the verbose preference is enabled. Aids in debugging and understanding script flow.
 
 
 
 
 
-603
+593
 Vocab
 Do Androids Dream of Electric Sheep?
 Kipple (KIP-uhl): A term coined by author Philip K. Dick referring to useless, discarded, or trivial items that tend to accumulate, often leading to clutter.
@@ -5978,34 +5881,16 @@ Kipple (KIP-uhl): A term coined by author Philip K. Dick referring to useless, d
 
 
 
-604
+594
 Vocab
-Lost in a Good Book
-Diatryma:  A genus of large flightless Eocene birds from Wyoming and New Mexico having much reduced wings, large head and powerful beak, and long massive legs and constituting with extinct related forms (as Gastornis) an order of birds probably most nearly related to the surviving cariamas and bustards
+Structured Credit Includes Products like CLOs and CDOs:
+Structured credit encompasses instruments such as collateralized loan obligations (CLOs), collateralized debt obligations (CDOs), mortgage-backed securities (MBS), and asset-backed securities (ABS), all designed to repackage and redistribute risk and return.
 
 
 
 
 
-605
-Vocab
-Structured Credit Provides Portfolio Diversification:
-Investors utilize structured credit products to diversify portfolios beyond traditional bonds or equities, potentially accessing higher yields or returns not typically achievable through standard debt instruments.
-
-
-
-
-
-606
-Vocab
-Interval Funds May Provide Higher Yields and Diversification:
-Interval funds often seek higher returns or income by investing in less liquid, alternative assets, potentially enhancing portfolio diversification beyond traditional stocks and bonds.
-
-
-
-
-
-607
+595
 Vocab
 Do Androids Dream of Electric Sheep?
 Wimple (WIM-puhl): A cloth headdress covering the head, neck, and sides of the face, traditionally worn by women in the Middle Ages and still by some nuns.
@@ -6014,16 +5899,25 @@ Wimple (WIM-puhl): A cloth headdress covering the head, neck, and sides of the f
 
 
 
-608
+596
 Vocab
-Do Androids Dream of Electric Sheep?
-Caterwauled (KAT-er-wawld): Past tense of "caterwaul," meaning to make a shrill, wailing noise like that of a cat in heat; to howl or screech.
+Lost in a Good Book
+Diatryma:  A genus of large flightless Eocene birds from Wyoming and New Mexico having much reduced wings, large head and powerful beak, and long massive legs and constituting with extinct related forms (as Gastornis) an order of birds probably most nearly related to the surviving cariamas and bustards
 
 
 
 
 
-609
+597
+Vocab
+Structured Credit Provides Portfolio Diversification:
+Investors utilize structured credit products to diversify portfolios beyond traditional bonds or equities, potentially accessing higher yields or returns not typically achievable through standard debt instruments.
+
+
+
+
+
+598
 Vocab
 Red Side Story, FForde
 Gimbal
@@ -6034,7 +5928,35 @@ Definition: A pivoted support that allows the rotation of an object about a sing
 
 
 
-610
+599
+Vocab
+Do Androids Dream of Electric Sheep?
+Caterwauled (KAT-er-wawld): Past tense of "caterwaul," meaning to make a shrill, wailing noise like that of a cat in heat; to howl or screech.
+
+
+
+
+
+600
+Vocab
+Lost in a Good Book
+Proleptic: Relating to anticipation, particularly in literature or rhetoric, where future events are referred to as though they have already happened.
+
+
+
+
+
+601
+Vocab
+Jane Eyre
+Palliate
+(PAL-ee-ate) To alleviate pain or lessen the severity of something, especially symptoms or distress, without removing the cause; can also mean to downplay faults or mistakes.
+
+
+
+
+
+602
 Vocab
 Do Androids Dream of Electric Sheep?
 Cogitated (KOJ-i-teyt-ed): Past tense of "cogitate," meaning to think deeply or ponder about something.
@@ -6043,31 +5965,117 @@ Cogitated (KOJ-i-teyt-ed): Past tense of "cogitate," meaning to think deeply or 
 
 
 
-611
-Vocab
-Well of Lost Plots, Fforde
-Redolent
-adjective | RED-uh-lent
+603
+Azure Developer Associate
+Which Azure Monitor autoscale profile type allows different schedules with separate scale rules?
 
-Strongly reminiscent or suggestive of something.
-or
-Having a pleasant fragrance.
-Example: The attic was redolent of old books and cedar chests.
+Recurrence profile.
+
+
+
+
+
+604
+Azure Developer Associate
+How do you send Azure Monitor platform metrics into an Azure Log Analytics workspace?
+
+In your resource’s Diagnostic Settings, enable “Send to Log Analytics” under Metrics—then they show up in the AzureMetrics table.
+
+
+
+
+
+605
+Azure Developer Associate
+Name one Azure Monitor Insights solution that relies on metrics to surface VM or container performance.
+
+VM Insights or Container Insights.
+
+
+
+
+
+606
+Azure Developer Associate
+Which App Service deployment method enables CI/CD integration with GitHub or Azure Repos?
+Continuous Deployment (CI/CD)
+
+
+
+
+
+607
+Azure Developer Associate
+Front: What guarantee does Session consistency provide?
+Back: Monotonic reads, monotonic writes, read-your-writes, and write-fan-out within a single client session.
+
+
+
+
+
+608
+Azure Developer Associate
+What Azure Monitor feature uses metric alerts under the covers to scale Azure App Service and VM Scale Sets?
+
+Autoscale (via an Autoscale Setting).
+
+
+
+
+
+609
+Azure Developer Associate
+Which Azure Monitor table holds platform metrics when you route them into a Log Analytics workspace?
+
+AzureMetrics.
+
+
+
+
+
+610
+Azure Developer Associate
+What is the role of Azure Monitor Connection Monitor?
+
+It tests and alerts on network connectivity (latency/packet loss) between endpoints.
+
+
+
+
+
+611
+Azure Developer Associate
+What default retention period does Azure Monitor keep high-frequency metrics “hot” in its native metrics store?
+
+93 days.
 
 
 
 
 
 612
-Vocab
-Lost in a Good Book
-Antimacassar: A small cloth placed on furniture, especially chair backs, to protect against grease and wear, historically from hair oil ("macassar oil").
+Azure Developer Associate
+Front: How do you exclude a nested JSON property (/address/zip) from indexing?
+Back:
+{
+  "indexingMode": "Consistent",
+  "includedPaths": [ { "path": "/*" } ],
+  "excludedPaths": [ { "path": "/address/zip/?" } ]
+}
 
 
 
 
 
 613
+JavaScript Concepts
+Virtual DOM: An in-memory representation of the real DOM used by libraries like React to optimize and batch DOM updates efficiently.
+
+
+
+
+
+614
 JavaScript Concepts
 In this example, sayGoodbye is passed as a callback to greet and is executed after the greeting message.
 
@@ -6084,14 +6092,6 @@ greet('Jay', sayGoodbye);
 
 
 
-614
-JavaScript Concepts
-Virtual DOM: An in-memory representation of the real DOM used by libraries like React to optimize and batch DOM updates efficiently.
-
-
-
-
-
 615
 JavaScript Concepts
 Jest: A JavaScript testing framework by Facebook, supporting unit, integration, and snapshot testing, particularly well-suited for React applications.
@@ -6101,90 +6101,42 @@ Jest: A JavaScript testing framework by Facebook, supporting unit, integration, 
 
 
 616
-Azure Developer Associate
-Front: How do you exclude a nested JSON property (/address/zip) from indexing?
-Back:
-{
-  "indexingMode": "Consistent",
-  "includedPaths": [ { "path": "/*" } ],
-  "excludedPaths": [ { "path": "/address/zip/?" } ]
-}
+PnP PowerShell
+Get-MsalToken (MSAL.PS)
+Retrieves an OAuth 2.0 access token using Microsoft Authentication Library (MSAL) in PowerShell. Facilitates secure token acquisition for API calls.
 
 
 
 
 
 617
-Azure Developer Associate
-How do you correlate errors from Application Insights exceptions with Azure Monitor CPU usage in a KQL query?
-
-Use join on time bins between the exceptions table and the AzureMetrics query.
+PnP PowerShell
+ConvertTo-SecureString (Microsoft.PowerShell.Security)
+Transforms plain text into a secure string object in PowerShell. Essential for handling sensitive data like passwords and client secrets securely.
 
 
 
 
 
 618
-Azure Developer Associate
-Where do Application Insights telemetry tables live when linked to an Azure Monitor Log Analytics workspace?
-
-In tables named requests, dependencies, exceptions, traces, etc.
+PnP PowerShell
+Token Caching
+Stores OAuth tokens locally to reduce the need for repeated authentication requests. Enhances script performance and reduces latency in API interactions.
 
 
 
 
 
 619
-Azure Developer Associate
-What’s the default ingestion and retention for logs in an Azure Monitor Log Analytics workspace?
-
-Default retention is 30 days (configurable up to 730 days); you pay per GB ingested.
+PnP PowerShell
+Invoke-WebRequest (Microsoft.PowerShell.Utility)
+Sends HTTP and HTTPS requests to web pages or web services. Similar to Invoke-RestMethod but provides more detailed response information.
 
 
 
 
 
 620
-Azure Developer Associate
-What’s the maximum retention you can configure for an Azure Monitor Log Analytics workspace?
-
-730 days (2 years).
-
-
-
-
-
-621
-Azure Developer Associate
-What Azure Monitor feature routes platform logs and metrics from Azure resources to destinations like Storage, Event Hubs, or a Log Analytics workspace?
-
-Diagnostic settings.
-
-
-
-
-
-622
-Azure Developer Associate
-What Azure Monitor portal tool lets you chart metric data and pin charts to an Azure dashboard?
-
-Metrics Explorer.
-
-
-
-
-
-623
-Azure Developer Associate
-Which Azure Monitor REST API endpoint runs Kusto queries against a Log Analytics workspace?
-
-https://api.loganalytics.io/v1/workspaces/{workspaceId}/query
-
-
-
-
-
-624
 PnP PowerShell
 REST API Endpoints
 Specific URLs used to access SharePoint resources via REST API. Includes paths for sites, lists, libraries, and items, enabling targeted operations.
@@ -6193,25 +6145,16 @@ Specific URLs used to access SharePoint resources via REST API. Includes paths f
 
 
 
-625
+621
 PnP PowerShell
-New-PnPField (PnP.PowerShell)
-Creates a new field in a SharePoint list or library. Supports defining field types, settings, and validations for structured data management.
+Token Expiry
+The duration an OAuth 2.0 access token remains valid before needing renewal. Scripts must handle token refresh logic to maintain uninterrupted API access.
 
 
 
 
 
-626
-PnP PowerShell
-Throttling in SharePoint
-Limits the number of API requests to prevent abuse and ensure service stability. Requires implementing retry logic and handling throttling responses in scripts.
-
-
-
-
-
-627
+622
 PnP PowerShell
 Get-PnPListItem (PnP.PowerShell)
 Fetches items from a SharePoint list based on specified criteria. Enables data retrieval for reporting, analysis, or further processing within scripts.
@@ -6220,7 +6163,7 @@ Fetches items from a SharePoint list based on specified criteria. Enables data r
 
 
 
-628
+623
 PnP PowerShell
 Add-PnPField (PnP.PowerShell)
 Adds a new field (column) to a SharePoint list or library. Supports various field types and configurations for customized data structures.
@@ -6229,16 +6172,7 @@ Adds a new field (column) to a SharePoint list or library. Supports various fiel
 
 
 
-629
-PnP PowerShell
-SharePoint Permissions Levels
-Predefined or custom permission sets in SharePoint that determine user access rights, such as Read, Contribute, and Full Control, managing what actions users can perform.
-
-
-
-
-
-630
+624
 PnP PowerShell
 PowerShell Profiles
 Scripts that run automatically when PowerShell starts. Used to customize the environment, load modules, and define functions for enhanced productivity.
@@ -6247,7 +6181,7 @@ Scripts that run automatically when PowerShell starts. Used to customize the env
 
 
 
-631
+625
 PnP PowerShell
 Get-AzureADServicePrincipal (AzureAD)
 Retrieves information about service principals in Azure Active Directory. Used to manage application identities and their associated permissions.
@@ -6256,34 +6190,43 @@ Retrieves information about service principals in Azure Active Directory. Used t
 
 
 
-632
-PnP PowerShell
-Set-PnPList (PnP.PowerShell)
-Modifies properties of a SharePoint list, such as title or description. Enables automated updates and management of list configurations.
+626
+Vocab
+Well of Lost Plots, Fforde
+Spinney (of trees)
+noun | SPIN-ee
+A small thicket or grove of trees.
+Example: The children hid in the spinney during their game of hide-and-seek.
 
 
 
 
 
-633
-PnP PowerShell
-Write-Verbose (Microsoft.PowerShell.Utility)
-Outputs detailed information during script execution when the verbose preference is enabled. Aids in debugging and understanding script flow.
-
-
-
-
-
-634
+627
 Vocab
 Lost in a Good Book
-Proleptic: Relating to anticipation, particularly in literature or rhetoric, where future events are referred to as though they have already happened.
+Antimacassar: A small cloth placed on furniture, especially chair backs, to protect against grease and wear, historically from hair oil ("macassar oil").
 
 
 
 
 
-635
+628
+Vocab
+Well of Lost Plots, Fforde
+Redolent
+adjective | RED-uh-lent
+
+Strongly reminiscent or suggestive of something.
+or
+Having a pleasant fragrance.
+Example: The attic was redolent of old books and cedar chests.
+
+
+
+
+
+629
 Vocab
 Well of Lost Plots, Fforde
 Panoply
@@ -6298,19 +6241,7 @@ Example: The museum’s exhibit displayed a panoply of medieval weaponry.
 
 
 
-636
-Vocab
-Well of Lost Plots, Fforde
-Spinney (of trees)
-noun | SPIN-ee
-A small thicket or grove of trees.
-Example: The children hid in the spinney during their game of hide-and-seek.
-
-
-
-
-
-637
+630
 Vocab
 Red Side Story, FForde
 Semolina
@@ -6321,48 +6252,7 @@ Definition: A coarse flour made from durum wheat, commonly used in making pasta 
 
 
 
-638
-Vocab
-Jane Eyre
-Palliate
-(PAL-ee-ate) To alleviate pain or lessen the severity of something, especially symptoms or distress, without removing the cause; can also mean to downplay faults or mistakes.
-
-
-
-
-
-639
-Vocab
-Well of Lost Plots, Fforde
-
-
-
-
-
-640
-Vocab
-Red Side Story, FForde
-Curtilage
-Pronunciation: KUR-tuh-lij
-Definition: The area immediately surrounding a house or dwelling, often considered part of its property for legal purposes.
-
-
-
-
-
-641
-Vocab
-Well of Lost Plots, Fforde
-Thrombosis
-noun | throm-BOH-sis
-The formation or presence of a blood clot within a blood vessel.
-Example: She was hospitalized with deep-vein thrombosis in her leg.
-
-
-
-
-
-642
+631
 Vocab
 Well of Lost Plots, Fforde
 Jetty
@@ -6374,169 +6264,38 @@ Example: We walked along the jetty to watch the fishing boats come in.
 
 
 
-643
+632
 Vocab
 Well of Lost Plots, Fforde
-Reigate
-noun | RYE-gate
-A market town in Surrey, England.
-Example: They enjoyed a day trip to Reigate, exploring its castle ruins.
 
 
 
 
 
-644
-PnP PowerShell
-ConvertFrom-SecureString (Microsoft.PowerShell.Security)
-Transforms a secure string object back into plain text. Should be used cautiously to avoid exposing sensitive information.
-
-
-
-
-
-645
-PnP PowerShell
-Retry Logic
-A programming practice where failed operations are attempted again after a delay. Essential for handling transient errors like API throttling or network issues.
-
-
-
-
-
-646
-PnP PowerShell
-Token Expiry
-The duration an OAuth 2.0 access token remains valid before needing renewal. Scripts must handle token refresh logic to maintain uninterrupted API access.
-
-
-
-
-
-647
-PnP PowerShell
-Get-PnPList (PnP.PowerShell)
-Retrieves a SharePoint list from the connected site. Used to access list properties, items, and metadata for further manipulation or analysis.
-
-
-
-
-
-648
-PnP PowerShell
-SharePoint CSOM (Client-Side Object Model)
-A programming model that allows interaction with SharePoint data from client applications. Provides an alternative to REST API for performing SharePoint operations.
-
-
-
-
-
-649
-PnP PowerShell
-Chained Cmdlets
-Using multiple cmdlets in a sequence where each cmdlet processes data output from the previous one. Enhances script efficiency and readability.
-
-
-
-
-
-650
-PnP PowerShell
-OAuth 2.0 Authorization Code Flow
-An interactive authentication method involving user login and authorization, suitable for applications that can securely handle client secrets and require delegated permissions.
-
-
-
-
-
-651
-PnP PowerShell
-SecureString (System.Security)
-Represents text that should be kept confidential, such as passwords. Provides methods to encrypt and handle sensitive information securely in scripts.
-
-
-
-
-
-652
-PnP PowerShell
-PowerShell Pipeline
-A feature that allows the output of one cmdlet to be passed as input to another cmdlet. Enables chaining commands for efficient data processing.
-
-
-
-
-
-653
-PnP PowerShell
-Delegated Permissions
-Permissions granted to applications to act on behalf of a signed-in user. Requires user consent and is used in interactive authentication scenarios.
-
-
-
-
-
-654
+633
 Vocab
 Well of Lost Plots, Fforde
-Panjandrum
-noun | pan-JAN-drum
-A person who has or claims to have great authority or influence.
-Example: The visiting dignitary acted like a panjandrum throughout the ceremony.
+Thrombosis
+noun | throm-BOH-sis
+The formation or presence of a blood clot within a blood vessel.
+Example: She was hospitalized with deep-vein thrombosis in her leg.
 
 
 
 
 
-655
+634
 Vocab
-Well of Lost Plots, Fforde
-Eminence grise
-noun | EM-uh-nence GREEZ
-A powerful advisor or decision-maker working behind the scenes.
-Example: Although never elected, the minister’s chief of staff was the real eminence grise.
+Red Side Story, FForde
+Curtilage
+Pronunciation: KUR-tuh-lij
+Definition: The area immediately surrounding a house or dwelling, often considered part of its property for legal purposes.
 
 
 
 
 
-656
-Vocab
-Well of Lost Plots, Fforde
-(naval) Pinnance
-noun | PIN-ans
-A small boat carried aboard a larger ship, used for transporting personnel or light cargo.
-Example: The admiral boarded the pinnance for his trip ashore.
-
-
-
-
-
-657
-Vocab
-Well of Lost Plots, Fforde
-Lych-gate
-noun | LICH-gate
-A roofed gateway at the entrance to a churchyard, often where a coffin rests before burial.
-Example: The mourners paused under the ancient lych-gate before entering the churchyard.
-
-
-
-
-
-658
-Vocab
-Well of Lost Plots, Fforde
-Memsahib
-noun | MEM-sah-ib
-A term used in colonial India for a European woman of rank or authority.
-Example: The memsahib surveyed the garden from her veranda, sipping tea.
-
-
-
-
-
-659
+635
 Vocab
 Anacoluthon
 noun
@@ -6550,13 +6309,250 @@ Example: His speech was full of anacoluthons, making it difficult to follow his 
 
 
 
+636
+Azure Developer Associate
+What allows Azure App Service to integrate with private networks (VNets)?
+VNet Integration
+
+
+
+
+
+637
+Azure Developer Associate
+How do you correlate errors from Application Insights exceptions with Azure Monitor CPU usage in a KQL query?
+
+Use join on time bins between the exceptions table and the AzureMetrics query.
+
+
+
+
+
+638
+Azure Developer Associate
+Where do Application Insights telemetry tables live when linked to an Azure Monitor Log Analytics workspace?
+
+In tables named requests, dependencies, exceptions, traces, etc.
+
+
+
+
+
+639
+Azure Developer Associate
+What Azure Monitor feature routes platform logs and metrics from Azure resources to destinations like Storage, Event Hubs, or a Log Analytics workspace?
+
+Diagnostic settings.
+
+
+
+
+
+640
+Azure Developer Associate
+What’s the default ingestion and retention for logs in an Azure Monitor Log Analytics workspace?
+
+Default retention is 30 days (configurable up to 730 days); you pay per GB ingested.
+
+
+
+
+
+641
+Azure Developer Associate
+What’s the maximum retention you can configure for an Azure Monitor Log Analytics workspace?
+
+730 days (2 years).
+
+
+
+
+
+642
+Azure Developer Associate
+What Azure Monitor portal tool lets you chart metric data and pin charts to an Azure dashboard?
+
+Metrics Explorer.
+
+
+
+
+
+643
+Azure Developer Associate
+Which Azure Monitor REST API endpoint runs Kusto queries against a Log Analytics workspace?
+
+https://api.loganalytics.io/v1/workspaces/{workspaceId}/query
+
+
+
+
+
+644
+Azure Developer Associate
+Which App Service log type contains the HTML for error pages when HTTP status codes exceed 400?
+
+Detailed error logs.
+
+
+
+
+
+645
+Azure Developer Associate
+How do you monitor a web app’s performance across multiple regions?
+
+Deploy an Application Insights instance in each region, then use Azure Monitor to aggregate metrics.
+
+
+
+
+
+646
+PnP PowerShell
+Set-PnPList (PnP.PowerShell)
+Modifies properties of a SharePoint list, such as title or description. Enables automated updates and management of list configurations.
+
+
+
+
+
+647
+PnP PowerShell
+ConvertFrom-SecureString (Microsoft.PowerShell.Security)
+Transforms a secure string object back into plain text. Should be used cautiously to avoid exposing sensitive information.
+
+
+
+
+
+648
+PnP PowerShell
+Retry Logic
+A programming practice where failed operations are attempted again after a delay. Essential for handling transient errors like API throttling or network issues.
+
+
+
+
+
+649
+PnP PowerShell
+SharePoint CSOM (Client-Side Object Model)
+A programming model that allows interaction with SharePoint data from client applications. Provides an alternative to REST API for performing SharePoint operations.
+
+
+
+
+
+650
+PnP PowerShell
+Get-PnPList (PnP.PowerShell)
+Retrieves a SharePoint list from the connected site. Used to access list properties, items, and metadata for further manipulation or analysis.
+
+
+
+
+
+651
+PnP PowerShell
+OAuth 2.0 Authorization Code Flow
+An interactive authentication method involving user login and authorization, suitable for applications that can securely handle client secrets and require delegated permissions.
+
+
+
+
+
+652
+PnP PowerShell
+Chained Cmdlets
+Using multiple cmdlets in a sequence where each cmdlet processes data output from the previous one. Enhances script efficiency and readability.
+
+
+
+
+
+653
+PnP PowerShell
+SecureString (System.Security)
+Represents text that should be kept confidential, such as passwords. Provides methods to encrypt and handle sensitive information securely in scripts.
+
+
+
+
+
+654
+PnP PowerShell
+PowerShell Pipeline
+A feature that allows the output of one cmdlet to be passed as input to another cmdlet. Enables chaining commands for efficient data processing.
+
+
+
+
+
+655
+PnP PowerShell
+Delegated Permissions
+Permissions granted to applications to act on behalf of a signed-in user. Requires user consent and is used in interactive authentication scenarios.
+
+
+
+
+
+656
+Vocab
+Well of Lost Plots, Fforde
+Reigate
+noun | RYE-gate
+A market town in Surrey, England.
+Example: They enjoyed a day trip to Reigate, exploring its castle ruins.
+
+
+
+
+
+657
+Vocab
+Well of Lost Plots, Fforde
+Panjandrum
+noun | pan-JAN-drum
+A person who has or claims to have great authority or influence.
+Example: The visiting dignitary acted like a panjandrum throughout the ceremony.
+
+
+
+
+
+658
+Vocab
+Well of Lost Plots, Fforde
+Eminence grise
+noun | EM-uh-nence GREEZ
+A powerful advisor or decision-maker working behind the scenes.
+Example: Although never elected, the minister’s chief of staff was the real eminence grise.
+
+
+
+
+
+659
+Vocab
+Well of Lost Plots, Fforde
+(naval) Pinnance
+noun | PIN-ans
+A small boat carried aboard a larger ship, used for transporting personnel or light cargo.
+Example: The admiral boarded the pinnance for his trip ashore.
+
+
+
+
+
 660
 Vocab
 Well of Lost Plots, Fforde
-Invigilating
-verb | in-VIJ-ih-lay-ting
-Supervising candidates during an examination to ensure proper conduct.
-Example: The professor spent the morning invigilating the hall to prevent any cheating.
+Lych-gate
+noun | LICH-gate
+A roofed gateway at the entrance to a churchyard, often where a coffin rests before burial.
+Example: The mourners paused under the ancient lych-gate before entering the churchyard.
 
 
 
@@ -6565,10 +6561,10 @@ Example: The professor spent the morning invigilating the hall to prevent any ch
 661
 Vocab
 Well of Lost Plots, Fforde
-Foolscap
-noun | FOOL-skap
-A large sheet of writing paper, traditionally about 13 × 17 inches.
-Example: He wrote his thesis on foolscap before transferring it to the computer.
+Memsahib
+noun | MEM-sah-ib
+A term used in colonial India for a European woman of rank or authority.
+Example: The memsahib surveyed the garden from her veranda, sipping tea.
 
 
 
@@ -6577,10 +6573,10 @@ Example: He wrote his thesis on foolscap before transferring it to the computer.
 662
 Vocab
 Well of Lost Plots, Fforde
-Milliner
-noun | MIL-ih-ner
-A maker or seller of women’s hats.
-Example: She apprenticed with a Parisian milliner to learn haute-couture hat design.
+Foolscap
+noun | FOOL-skap
+A large sheet of writing paper, traditionally about 13 × 17 inches.
+Example: He wrote his thesis on foolscap before transferring it to the computer.
 
 
 
@@ -6599,6 +6595,130 @@ Example: His insouciance about deadlines frustrated his teammates.
 
 
 664
+Vocab
+Well of Lost Plots, Fforde
+Milliner
+noun | MIL-ih-ner
+A maker or seller of women’s hats.
+Example: She apprenticed with a Parisian milliner to learn haute-couture hat design.
+
+
+
+
+
+665
+Vocab
+Well of Lost Plots, Fforde
+Invigilating
+verb | in-VIJ-ih-lay-ting
+Supervising candidates during an examination to ensure proper conduct.
+Example: The professor spent the morning invigilating the hall to prevent any cheating.
+
+
+
+
+
+666
+Azure Developer Associate
+How do you set a 10-second expiration on a Redis key in C#?
+
+csharp
+await db.StringSetAsync("test:key", "value", TimeSpan.FromSeconds(10));
+
+
+
+
+
+667
+Azure Developer Associate
+How can each developer use one key to access multiple APIs in API Management without publisher approval?
+
+Define a product containing those APIs and issue a single subscription to that product.
+
+
+
+
+
+668
+Azure Developer Associate
+What does an Init Container in an Azure Container Instance group do?
+It runs to completion before app containers start (e.g., for seeding data) and does not affect the restart policy of the main containers.
+
+
+
+
+
+669
+Azure Developer Associate
+What feature lets you validate a Linux Web App deployment and swap to production without downtime?
+
+Deployment slots.
+
+
+
+
+
+670
+Azure Developer Associate
+What is a namespace in Azure Container Registry (ACR)?
+
+A namespace is a forward-slash–delimited prefix grouping related repositories, enabling team isolation within a single registry.
+
+
+
+
+
+671
+Azure Developer Associate
+How do you define triggers and bindings in a C# script Azure Function?
+
+Create a function.json file for each function that specifies its triggers and bindings.
+
+
+
+
+
+672
+Azure Developer Associate
+How do you move Hot-tier blobs not modified for 90 days to the Cool tier?
+
+Add "tierToCool": { "daysAfterModificationGreaterThan": 90 } under "actions" → "baseBlob" in the lifecycle policy JSON.
+
+
+
+
+
+673
+Azure Developer Associate
+Name two platform features that Azure Container Apps adds on top of raw containers.
+• Built-in Dapr sidecars for service invocation and pub/sub.
+• KEDA-powered event-driven scaling (e.g., scale from 0 on HTTP or KEDA triggers).
+
+
+
+
+
+674
+Azure Developer Associate
+How do you ensure Event Grid events that fail due to 400/413 codes aren’t lost?
+
+Enable dead-lettering on the event subscription.
+
+
+
+
+
+675
+Azure Developer Associate
+Which caching pattern loads data on demand into Azure Cache for Redis?
+
+Data cache (Cache-Aside) pattern.
+
+
+
+
+
+676
 PnP PowerShell
 Invoke-WebRequest Parameters (Microsoft.PowerShell.Utility)
 Includes -Method, -Uri, -Headers, -Body, and others. Facilitates detailed HTTP request configurations for interacting with web services.
@@ -6607,7 +6727,7 @@ Includes -Method, -Uri, -Headers, -Body, and others. Facilitates detailed HTTP r
 
 
 
-665
+677
 Vocab
 Well of Lost Plots, Fforde
 Pinafore
@@ -6622,31 +6742,7 @@ Example: She wore a blue gingham pinafore while painting in the studio.
 
 
 
-666
-Vocab
-Well of Lost Plots, Fforde
-Homburg hat
-noun | HOM-berg hat
-A formal felt hat with a single center dent and a curled brim.
-Example: He tipped his homburg hat to the crowd as he arrived.
-
-
-
-
-
-667
-Vocab
-Well of Lost Plots, Fforde
-Gerund
-noun | JER-und
-A verb form ending in -ing that functions as a noun.
-Example: In the sentence “Swimming is fun,” swimming is a gerund.
-
-
-
-
-
-668
+678
 Vocab
 Well of Lost Plots, Fforde
 Frontispiece
@@ -6658,19 +6754,31 @@ Example: The antique volume featured an engraved frontispiece of its author.
 
 
 
-669
+679
 Vocab
 Well of Lost Plots, Fforde
-The Decameron
-noun | the deh-KAM-er-on
-A 14th-century collection of 100 novellas by Giovanni Boccaccio, framed as stories told by ten people sheltering from the Black Death.
-Example: The Decameron opens with its narrators deciding to entertain themselves with tales during the plague.
+Gerund
+noun | JER-und
+A verb form ending in -ing that functions as a noun.
+Example: In the sentence “Swimming is fun,” swimming is a gerund.
 
 
 
 
 
-670
+680
+Vocab
+Well of Lost Plots, Fforde
+Tabula rasa
+noun | TAB-yoo-luh RAY-suh
+Literally “blank slate”; the philosophical idea that the mind starts without innate content.
+Example: Locke argued that we are all born as a tabula rasa and learn through experience.
+
+
+
+
+
+681
 Vocab
 Well of Lost Plots, Fforde
 Split infinitive
@@ -6682,7 +6790,19 @@ Example: Despite objections from some grammarians, “to boldly go” remains a 
 
 
 
-671
+682
+Vocab
+Well of Lost Plots, Fforde
+Homburg hat
+noun | HOM-berg hat
+A formal felt hat with a single center dent and a curled brim.
+Example: He tipped his homburg hat to the crowd as he arrived.
+
+
+
+
+
+683
 Vocab
 Well of Lost Plots, Fforde
 Inveigle
@@ -6694,10 +6814,296 @@ Example: He tried to inveigle his way into the VIP lounge using a fake invitatio
 
 
 
-672
+684
 Vocab
 Well of Lost Plots, Fforde
-Tabula rasa
-noun | TAB-yoo-luh RAY-suh
-Literally “blank slate”; the philosophical idea that the mind starts without innate content.
-Example: Locke argued that we are all born as a tabula rasa and learn through experience.
+The Decameron
+noun | the deh-KAM-er-on
+A 14th-century collection of 100 novellas by Giovanni Boccaccio, framed as stories told by ten people sheltering from the Black Death.
+Example: The Decameron opens with its narrators deciding to entertain themselves with tales during the plague.
+
+
+
+
+
+685
+Azure Developer Associate
+How should you store up to 2,000 characters of location and weather info on a blob?
+
+Use blob metadata via an HTTP PUT request (metadata size limit is 8 KB total).
+
+
+
+
+
+686
+Azure Developer Associate
+Which role grants least privilege to allow a user to create a VM with a managed identity?
+
+Virtual Machine Contributor.
+
+
+
+
+
+687
+Azure Developer Associate
+Which messaging solution supports 2 MB messages and automatic duplicate detection?
+
+Azure Service Bus Premium tier with duplicate detection enabled.
+
+
+
+
+
+688
+Azure Developer Associate
+How does the Always restart policy differ from OnFailure and Never in Azure Container Instances?
+
+Always restarts containers regardless of exit code; OnFailure restarts only on non-zero exit; Never runs a container at most once (no restarts).
+
+
+
+
+
+689
+Azure Developer Associate
+To which storage locations can Event Hubs Capture deliver streaming data? (Choose three.)
+
+• Azure Blob Storage
+• Azure Data Lake Storage Gen1
+• Azure Data Lake Storage Gen2
+
+
+
+
+
+690
+Azure Developer Associate
+Why choose Azure Container Apps instead of Azure Functions for a containerized background task?
+
+Container Apps supports event-driven scaling (KEDA), service discovery, and traffic splitting for container images; Functions can’t directly deploy container images.
+
+
+
+
+
+691
+Azure Developer Associate
+How do you limit an Azure Functions consumption plan to 10 instances?
+
+Set "functionAppScaleLimit": 10 in the function’s host.json file.
+
+
+
+
+
+692
+Azure Developer Associate
+Which two parameters are mandatory for ReadItemAsync in the Azure Cosmos DB .NET SDK?
+
+partitionKey and id.
+
+
+
+
+
+693
+Azure Developer Associate
+How do you get notified when an Azure web app’s response time crosses a threshold?
+
+Implement Application Insights web tests with alert rules on response time.
+
+
+
+
+
+694
+Azure Developer Associate
+How do you enable and size Local Cache for an Azure Web App?
+
+Set WEBSITE_LOCAL_CACHE_OPTION="Always" and WEBSITE_LOCAL_CACHE_SIZEINMB="1500" in the app’s configuration settings.
+
+
+
+
+
+695
+Azure Developer Associate
+Which Application Insights metrics are unaffected by sampling?
+
+Preaggregated standard metrics (used for dashboarding and real-time alerts).
+
+
+
+
+
+696
+Azure Developer Associate
+Which two services guarantee FIFO delivery and once-only processing? (Choose two.)
+
+• Azure Service Bus with duplicate detection
+• Azure Service Bus with sessions enabled
+
+
+
+
+
+697
+Azure Developer Associate
+How do you set a container group to restart on failure using the Azure CLI?
+
+Include --restart-policy OnFailure in the az container create command.
+
+
+
+
+
+698
+Azure Developer Associate
+In a multitenant Entra ID app, how many application objects and service principals exist?
+
+One application object in the home tenant and multiple service principals—one per tenant where the app is used.
+
+
+
+
+
+699
+Azure Developer Associate
+If you omit --restart-policy when creating an Azure Container Instance group, what restart policy applies?
+The default is Always, so containers restart on any exit code unless you explicitly set OnFailure or Never.
+
+
+
+
+
+700
+Azure Developer Associate
+What three steps secure and document partner APIs in Azure API Management?
+
+  Create an APIM instance and import the existing API.
+  Configure OAuth 2.0 in APIM for secure access.
+  Implement APIM policies to enforce rate limits and quotas.
+
+
+
+
+
+701
+Azure Developer Associate
+Which Azure storage service supports a user delegation SAS?
+
+The Blob service only.
+
+
+
+
+
+702
+Azure Developer Associate
+Which APIM configuration limits API calls per source within a time interval?
+
+A rate-limit policy (e.g., <rate-limit-by-key> in the inbound section).
+
+
+
+
+
+703
+Azure Developer Associate
+How do you expose only necessary operations, secure them, and mock responses in API Management?
+
+Create a blank API, manually define required operations, and use policies to validate JWT tokens, rate limit, and return mocked responses.
+
+
+
+
+
+704
+Azure Developer Associate
+Which CLI command deploys an Azure Container App from a local Dockerfile?
+
+bash
+az containerapp up --source .
+
+
+
+
+
+705
+Azure Developer Associate
+Which CLI command rotates a key in Azure Key Vault?
+
+az keyvault key rotate --vault-name <vaultName> --name <keyName>
+
+
+
+
+
+706
+Azure Developer Associate
+How do you temporarily prevent modifications or deletions on blobs during an investigation?
+
+Configure a legal hold on the container.
+
+
+
+
+
+707
+Azure Developer Associate
+Which persistence setting minimizes storage cost while keeping performance high for Azure Cache for Redis?
+
+Enable RDB persistence with soft-delete disabled on the associated storage account.
+
+
+
+
+
+708
+Azure Developer Associate
+Which role is required to generate a user delegation SAS for blobs?
+
+A role that includes Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey, such as Contributor.
+
+
+
+
+
+709
+Azure Developer Associate
+Where do you associate a stored access policy for blobs?
+
+On the container that hosts the blobs.
+
+
+
+
+
+710
+Azure Developer Associate
+What Azure CLI command allows CORS from https://myapps.com on a Web App?
+
+csharp
+az webapp cors add -g MyResourceGroup -n MyWebApp --allowed-origins https://myapps.com
+
+
+
+
+
+711
+Azure Developer Associate
+How can you group keys in Azure App Configuration?
+
+Use key prefixes (e.g., Prod:Database:ConnString) and labels (e.g., "Production", "Staging").
+
+
+
+
+
+712
+Azure Developer Associate
+Which Azure Cosmos DB consistency level maximizes write throughput at the cost of ordering guarantees?
+
+Eventual consistency.
