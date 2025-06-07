@@ -4,28 +4,12 @@
 
 
 
-1
-IW Migration
-Locking and Concurrency Control (SQL Server)
-Techniques to manage simultaneous data access, preventing conflicts and ensuring consistency. Locks, isolation levels, and optimistic concurrency are tools that balance performance with data correctness when multiple users edit data simultaneously.
 
 
 
 
 
-2
-IW Migration
-Database Backup and Restore (SSMS)
-Built-in wizards and features in SQL Server Management Studio to safeguard data. They allow administrators to create full, differential, or transaction log backups and restore databases to a previous state, ensuring data recovery after failures.
 
-
-
-
-
-3
-IW Migration
-Indexing (Access/SQL Server)
-A strategy for improving data retrieval speeds by creating data structures (indexes) on certain fields. Proper indexing balances query performance gains against the overhead of maintaining those indexes during inserts, updates, and deletions.
 
 
 
