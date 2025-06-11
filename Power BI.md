@@ -187,3 +187,28 @@ A:
 This option, in the Dataverse (OData) connector, fetches related lookup or option‐set tables alongside the main entity in one API call.
 
 Reduces the number of round trips, preserves folding, and can significantly cut down on refresh time compared to separately querying each related table.
+
+
+What’s the difference between SUMMARIZE and SUMMARIZECOLUMNS?
+SUMMARIZE creates a virtual table using a row context that you must convert to filter context with CALCULATE, whereas SUMMARIZECOLUMNS works directly in filter context, handles aggregations and filter modifiers more predictably, and is optimized by the engine for better performance.
+
+How does ALLEXCEPT work in a measure?
+ALLEXCEPT(table, column1, …) removes all filters on the specified table except those on the listed columns. It’s used inside CALCULATE to preserve only certain filters (for example, keep EngagementID but ignore Task Category).
+
+Why can’t you reference a newly added column alias in the same SUMMARIZECOLUMNS call?
+DAX processes each expression in a single SUMMARIZECOLUMNS call in isolation, so the engine doesn’t know aliases until after all expressions are parsed. You must either inline the logic or add the column in a separate step.
+
+What pattern lets you reference intermediate calculations by name when building a calculated table?
+Use a two-step ADDCOLUMNS approach: first add your intermediate columns, then in a second ADDCOLUMNS call reference those names to compute further results (for example, percentages).
+
+When would you use GENERATESERIES in DAX?
+GENERATESERIES(start, end, increment) produces a single-column table of numeric values at the specified step size. It’s useful for creating bins or ranges (for example, percentage buckets) for frequency analysis.
+
+What’s the scope of variables (VAR) inside an ADDCOLUMNS column definition?
+A VAR declared inside one column’s definition lives only within that column. To share results, you must either repeat the logic or separate the columns into multiple ADDCOLUMNS calls so that the column values exist in the table.
+
+Why might SUMMARIZECOLUMNS yield better performance than SUMMARIZE?
+The Tabular engine has built-in optimizations for SUMMARIZECOLUMNS that reduce temporary table materializations and merge identical aggregations, resulting in faster query plans, especially on large fact tables.
+
+What is the difference between row context and filter context in DAX?
+Row context iterates over rows (as in iterators like SUMX or SUMMARIZE), while filter context filters tables for evaluation (as in measures and visuals). CALCULATE is the primary way to convert row context into filter context and apply or modify filters.

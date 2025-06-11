@@ -32,15 +32,6 @@ TimedRotatingFileHandler rotates log files based on time intervals (e.g., daily 
 
 
 
-
-=============
-A Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instance in Secured Virtual Hubs and Hub Virtual Networks. Polciies will work across regions and subscriptions.
-
-
-
-
-
-
 =============
 What is the maximum supported size of a VHDX file in FSLogix?
 VHDX files can support up to 64 TB, making them suitable for large-scale enterprise environments where user profiles may require substantial storage capacity.
@@ -53,6 +44,15 @@ VHDX files can support up to 64 TB, making them suitable for large-scale enterpr
 
 =============
 If a virus never saves itself to a storage drive, it may be able to evade antivirus software. Instead of existing as a file that might execute, the fileless virus operates soley in the memory of the comptuer. Once it's sarted, all operations happen inside of RAM.
+
+
+
+
+
+
+
+=============
+A Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instance in Secured Virtual Hubs and Hub Virtual Networks. Polciies will work across regions and subscriptions.
 
 
 
