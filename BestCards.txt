@@ -73,3 +73,24 @@ Password Spraying is where the attacker obtains the account names of individuals
     How devices find APs, managed QoS, associate, and disassociate with an AP 
 Original wireless standards did not add protection for management frames 
     Sent in clear, no authentication or validation
+
+
+
+
+
+
+=============
+Diffusion means that if we change a single bit of the plaintext, then about half of the bits in the cyphertext should change, and similarly, if we change one bit of the cyphertext, then about half of the plaintext bits should change.
+
+
+
+
+
+=============
+
+
+
+
+
+
+=============
