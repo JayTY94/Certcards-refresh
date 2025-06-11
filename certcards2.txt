@@ -4,9 +4,7 @@
 
 
 
-1
-JavaScript Concepts
-Service Workers: Scripts that run in the background of web browsers, enabling features like offline functionality and push notifications.
+
 
 
 
