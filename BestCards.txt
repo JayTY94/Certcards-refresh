@@ -87,7 +87,7 @@ Diffusion means that if we change a single bit of the plaintext, then about half
 
 
 =============
-
+Data Execution Prevention is a way to only allow applications to run in certain areas of memory where that particular function is allowed. Vulnerabilities that try to run an application from teh data sction of memory would be blocked by Data Execution Prevention.
 
 
 
