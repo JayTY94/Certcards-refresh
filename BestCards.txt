@@ -1,9 +1,7 @@
 
-Identifier Alignment
+Identifier Alignment refers to the requirement that the domains used in SPF and DKIM authentication match the domain in the email's "From" header, which is essential for DMARC to function properly. This alignment can be either relaxed (allowing subdomains) or strict (requiring an exact match).
 
-Ensuring that the domains used in SPF and DKIM authentication align with the domain in the email's "From" header.
-Critical for DMARC to function correctly.
-Can be achieved through relaxed alignment (subdomains are allowed) or strict alignment (exact match required).
+
 
 =============
 
@@ -23,9 +21,8 @@ DNS records that specify the location (hostname and port) of servers for particu
 
 
 =============
-How does TimedRotatingFileHandler from the logging.handlers module differ from RotatingFileHandler?
+TimedRotatingFileHandler is a logging handler in Python that rotates log files based on time intervals (e.g., daily), whereas RotatingFileHandler rotates them based on file size thresholds.
 
-TimedRotatingFileHandler rotates log files based on time intervals (e.g., daily at midnight), whereas RotatingFileHandler rotates based on file size (maxBytes).
 
 
 
@@ -33,8 +30,8 @@ TimedRotatingFileHandler rotates log files based on time intervals (e.g., daily 
 
 
 =============
-What is the maximum supported size of a VHDX file in FSLogix?
-VHDX files can support up to 64 TB, making them suitable for large-scale enterprise environments where user profiles may require substantial storage capacity.
+VHDX files in FSLogix support a maximum size of 64 TB, making them suitable for enterprise environments that require large-scale user profile storage.
+
 
 
 
@@ -87,7 +84,35 @@ Diffusion means that if we change a single bit of the plaintext, then about half
 
 
 =============
-Data Execution Prevention is a way to only allow applications to run in certain areas of memory where that particular function is allowed. Vulnerabilities that try to run an application from teh data sction of memory would be blocked by Data Execution Prevention.
+Data Execution Prevention is a way to only allow applications to run in certain areas of memory where that particular function is allowed. Vulnerabilities that try to run an application from the data section of memory would be blocked by Data Execution Prevention.
+
+
+
+
+
+=============
+A War Dialer is a computer program that automatically dials a series of telephone numbers to find lines connected to computer systems and catalogs those numbers so that a cracker can try to attack those hosts.
+
+
+
+
+
+=============
+
+
+
+
+
+
+=============
+
+
+
+
+
+
+=============
+
 
 
 
