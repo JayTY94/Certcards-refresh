@@ -4,10 +4,6 @@
 
 
 
-1
-Azure Developer Associate
-What Azure feature should you use to securely store secrets like connection strings?
-Azure Key Vault with Managed Identity
 
 
 
