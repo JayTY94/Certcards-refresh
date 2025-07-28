@@ -26,10 +26,10 @@ nacelle
 
 
 ===================
-Homburg hat
-noun | HOM-berg hat
-A formal felt hat with a single center dent and a curled brim.
-Example: He tipped his homburg hat to the crowd as he arrived.
+Tabula rasa
+noun | TAB-yoo-luh RAY-suh
+Literally “blank slate”; the philosophical idea that the mind starts without innate content.
+Example: Locke argued that we are all born as a tabula rasa and learn through experience.
 
 ===================
 Jetty
