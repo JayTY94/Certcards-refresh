@@ -4,26 +4,8 @@
 
 
 
-1
-Azure Functions + Visual Studio
-ASP.NET offers several state management techniques, including Session State, View State, and Cookies, to retain data across user requests and provide a better user experience on dynamic websites.
 
 
-
-
-
-2
-Azure Functions + Visual Studio
-ASP.NET supports caching to improve performance by reducing database calls and loading times. You can cache data at different levels, such as in-memory caching, distributed caching, or output caching, to increase the responsiveness of your application.
-
-
-
-
-
-3
-Azure AD Authentication
-Built-In Roles
-Predefined roles like Owner, Contributor, and Reader that grant specific permissions to manage Azure resources at various scopes.
 
 
 
