@@ -6737,3 +6737,272 @@ How to Sell a Haunted House, Hendrix
 Debride a Wound
 Pronunciation: dih-BREED uh woond
 Definition: The medical removal of dead, damaged, or infected tissue from a wound to promote healing and reduce the risk of infection.
+
+
+
+
+
+
+
+
+1
+TSQL
+Column and Table Aliasing:
+
+Use the AS keyword to rename columns and tables (e.g., ts_name AS ar_adjustment_name).
+Consistent naming conventions (like using underscores) improve readability and maintenance.
+
+
+
+
+
+
+2
+TSQL
+JOIN Types and Conditions:
+
+FULL OUTER JOIN: Returns rows when there is a match in either table, useful for capturing unmatched records.
+Self-Joins: Joining a table to itself using different aliases to handle relationships within the same table.
+
+
+
+
+
+3
+TSQL
+Inline Comments in SQL:
+
+Use -- to add descriptive comments that explain parts of your query, making it easier to understand later.
+
+
+
+
+
+
+4
+TSQL
+COALESCE Function:
+
+Returns the first non-null value from a list of expressions (e.g., COALESCE(ts_invoiceid, inv.ts_invoiceid)).
+
+
+
+
+
+
+5
+TSQL
+CASE Expressions:
+
+Implements conditional logic within queries to create computed columns or flags (e.g., flagging which date or account source is used).
+
+
+
+
+
+
+6
+TSQL
+Indexing Considerations:
+
+Ensure columns used in JOINs or WHERE clauses are indexed for better performance.
+
+
+
+
+
+
+7
+TSQL
+Self-Joins for Hierarchies:
+
+Useful for comparing or relating data within the same table.
+Effective for simple or fixed-level hierarchies; consider recursive CTEs for deep or variable hierarchies.
+
+
+
+
+
+
+8
+TSQL
+Pivoting Data:
+
+Use the PIVOT operator to transform rows into columns for reporting or data summarization.
+
+
+
+
+
+
+9
+TSQL
+Set Operations:
+
+UNION / UNION ALL: Combine result sets from multiple queries (with or without duplicate removal).
+INTERSECT: Returns rows common to both queries.
+EXCEPT: Returns rows from the first query that do not appear in the second.
+
+
+
+
+
+
+10
+TSQL
+Common Table Expressions (CTEs):
+
+Defined with the WITH clause to create temporary result sets within a query.
+Recursive CTEs: Handle hierarchical data by repeatedly referencing the CTE itself.
+
+
+
+
+
+
+11
+TSQL
+Subqueries:
+
+Queries nested within other queries (in SELECT, FROM, or WHERE clauses) to return single or multiple values.
+
+
+
+
+
+
+12
+TSQL
+Derived Tables:
+
+Subqueries in the FROM clause that act as temporary tables with an alias.
+
+
+
+
+
+
+13
+TSQL
+Temporary Tables:
+
+Created with a hash (#) prefix to hold intermediate results for complex or staged queries.
+
+
+
+
+
+
+14
+TSQL
+Table Variables:
+
+Declared using DECLARE and used similarly to temporary tables, often for smaller data sets with a more limited scope.
+
+
+
+
+
+
+15
+TSQL
+Stored Procedures:
+
+Precompiled TSQL routines that encapsulate one or more SQL statements, enhancing reusability, performance, and security.
+
+
+
+
+
+
+16
+TSQL
+User-Defined Functions (UDFs):
+
+Custom functions that return scalar values or tables, encapsulating reusable logic.
+
+
+
+
+
+
+17
+TSQL
+Transactions and Isolation Levels:
+
+Use BEGIN TRANSACTION, COMMIT, and ROLLBACK to group related SQL statements, ensuring data integrity.
+Isolation levels (e.g., READ COMMITTED) manage concurrency and data consistency.
+
+
+
+
+
+
+18
+TSQL
+Window Functions:
+
+Functions like ROW_NUMBER(), RANK(), LEAD(), and LAG() perform calculations across sets of rows related to the current row without collapsing the result set.
+
+
+
+
+
+
+19
+TSQL
+Q: What happens in T-SQL if you use GROUP BY but select columns that are not aggregated or not in the GROUP BY clause?
+A: You get an error. All columns in the SELECT must either be part of the GROUP BY clause or be wrapped in an aggregate function like SUM, AVG, MAX, etc.
+
+
+
+
+
+
+20
+TSQL
+Q: What is the purpose of the GROUP BY clause in T-SQL?
+A: It collapses rows into groups based on the values of one or more columns and applies aggregate functions to each group.
+
+
+
+
+
+
+21
+TSQL
+Q: How do window functions differ from aggregate functions with GROUP BY?
+A: Window functions (like SUM(...) OVER (...)) calculate values across sets of rows without collapsing them into a single row, preserving the full row data.
+
+
+
+
+
+
+22
+TSQL
+Q: What does SUM(x) OVER (PARTITION BY y) do?
+A: It sums the values of x for each group of rows where y has the same value, but keeps each row intact in the result set.
+
+
+
+
+
+
+23
+TSQL
+Q: Why would you use COALESCE(a, b) in a SELECT statement?
+A: It returns the first non-null value among its arguments. Useful for fallback values like choosing between custom and default rates.
+
+
+
+
+
+
+24
+TSQL
+Q: When should you use window functions instead of GROUP BY?
+A: When you want to calculate totals, ranks, or running sums without reducing the number of rows in your result set.
+
+
+
