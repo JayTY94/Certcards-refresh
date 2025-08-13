@@ -1307,7 +1307,6 @@ Data formatted in JSON used in REST API requests and responses. PowerShell uses 
 134
 C# Basics
 .NET uses a garbage collector that automatically manages memory. The GC.Collect() method can be called manually if needed, but generally not required.
-This revised set focuses solely on C#/.NET concepts without the Python comparison, making it more focused on learning C# directly.
 
 
 
