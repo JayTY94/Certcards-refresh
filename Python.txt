@@ -1,483 +1,4 @@
 
-
-Flashcard 30
-
-Q:
-What does the .with_suffix(new_suffix) method do in pathlib?
-
-A:
-It returns a new Path object with the file’s suffix changed to new_suffix.
-
-Example:
-
-python
-Copy
-file = Path('document.txt')
-new_file = file.with_suffix('.md')  # 'document.md'
-Command-Line Argument Parsing (argparse)
-Flashcard 31
-
-Q:
-What is the purpose of the argparse module in Python?
-
-A:
-To parse command-line arguments and options in a user-friendly way.
-
-Flashcard 32
-
-Q:
-How do you add a required positional argument using argparse?
-
-A:
-By using the .add_argument() method without specifying -- prefixes.
-
-Example:
-
-python
-Copy
-import argparse
-
-parser = argparse.ArgumentParser()
-parser.add_argument('filename', help='Name of the file to process')
-args = parser.parse_args()
-Flashcard 33
-
-Q:
-How can you add an optional argument with a default value using argparse?
-
-A:
-By specifying the argument name with -- and providing the default parameter.
-
-Example:
-
-python
-Copy
-parser.add_argument('--verbose', action='store_true', default=False, help='Enable verbose output')
-Flashcard 34
-
-Q:
-What method do you call to parse the command-line arguments after defining them with argparse?
-
-A:
-.parse_args()
-
-Flashcard 35
-
-Q:
-How can you display help messages for command-line arguments using argparse?
-
-A:
-By running the script with the -h or --help flag, which is automatically handled by argparse.
-
-Advanced tqdm Usage
-Flashcard 36
-
-Q:
-How can you add a dynamic description to a tqdm progress bar?
-
-A:
-By using the desc parameter when initializing the progress bar.
-
-Example:
-
-python
-Copy
-from tqdm import tqdm
-for i in tqdm(range(100), desc='Processing'):
-    pass
-Flashcard 37
-
-Q:
-How do you update a tqdm progress bar manually?
-
-A:
-Using the .update(n) method, where n is the number of steps to increment.
-
-Example:
-
-python
-Copy
-from tqdm import tqdm
-pbar = tqdm(total=100)
-pbar.update(10)
-pbar.close()
-Flashcard 38
-
-Q:
-What is the purpose of the leave parameter in tqdm?
-
-A:
-To determine whether to keep the progress bar display after completion (leave=True) or remove it (leave=False).
-
-Flashcard 39
-
-Q:
-How can you nest multiple tqdm progress bars?
-
-A:
-By using multiple tqdm instances with different levels, often by setting the position parameter to avoid overlapping.
-
-Example:
-
-python
-Copy
-from tqdm import tqdm
-for i in tqdm(range(3), desc='Outer', position=0):
-    for j in tqdm(range(5), desc='Inner', position=1, leave=False):
-        pass
-Flashcard 40
-
-Q:
-How can you use tqdm with file operations, such as reading lines from a file?
-
-A:
-By wrapping the file iterator with tqdm to display a progress bar.
-
-Example:
-
-python
-Copy
-from tqdm import tqdm
-
-with open('large_file.txt', 'r') as f:
-    for line in tqdm(f, desc='Reading lines'):
-        pass
-Decorators (Advanced Usage)
-Flashcard 41
-
-Q:
-How can decorators be used to modify the behavior of generator functions?
-
-A:
-By defining a decorator that wraps the generator function, potentially altering how yield statements are handled or adding additional functionality before and after iteration.
-
-Example:
-
-python
-Copy
-def generator_decorator(gen_func):
-    def wrapper(*args, **kwargs):
-        gen = gen_func(*args, **kwargs)
-        # Modify generator behavior here
-        return gen
-    return wrapper
-
-@generator_decorator
-def my_generator():
-    yield 1
-    yield 2
-
-for value in my_generator():
-    print(value)
-Flashcard 42
-
-Q:
-What is the purpose of @functools.wraps in decorator functions?
-
-A:
-To preserve the original function’s metadata (such as the name and docstring) when it is wrapped by a decorator.
-
-Example:
-
-python
-Copy
-from functools import wraps
-
-def my_decorator(func):
-    @wraps(func)
-    def wrapper(*args, **kwargs):
-        # Pre-processing
-        result = func(*args, **kwargs)
-        # Post-processing
-        return result
-    return wrapper
-Flashcard 43
-
-Q:
-Can decorators be used with class methods and, if so, how?
-
-A:
-Yes, decorators can be applied to class methods by placing the decorator above the method definition within the class.
-
-Example:
-
-python
-Copy
-def my_decorator(func):
-    def wrapper(*args, **kwargs):
-        print("Before method call")
-        return func(*args, **kwargs)
-    return wrapper
-
-class MyClass:
-    @my_decorator
-    def my_method(self):
-        print("Inside method")
-
-obj = MyClass()
-obj.my_method()
-# Output:
-# Before method call
-# Inside method
-Lazy Evaluation
-Flashcard 44
-
-Q:
-What is lazy evaluation, and how do generators implement it in Python?
-
-A:
-Lazy evaluation is a strategy where computations are deferred until their results are needed. Generators implement lazy evaluation by yielding one item at a time, generating each value only when requested.
-
-Flashcard 45
-
-Q:
-Why is lazy evaluation beneficial when dealing with large datasets?
-
-A:
-It reduces memory consumption and can improve performance by avoiding the storage and processing of the entire dataset at once.
-
-Advanced Exception Handling
-Flashcard 46
-
-Q:
-How can you create a context manager that suppresses specific exceptions?
-
-A:
-By using the contextlib.suppress() context manager.
-
-Example:
-
-python
-Copy
-from contextlib import suppress
-
-with suppress(FileNotFoundError):
-    os.remove('non_existent_file.txt')
-# No exception is raised if the file does not exist
-Flashcard 47
-
-Q:
-What is the purpose of the raise ... from ... syntax in exception handling?
-
-A:
-To chain exceptions, indicating that one exception was the direct cause of another.
-
-Example:
-
-python
-Copy
-try:
-    1 / 0
-except ZeroDivisionError as e:
-    raise ValueError("Invalid operation") from e
-Additional Python Modules and Functions
-Flashcard 48
-
-Q:
-Which module provides tools for working with asynchronous code, including asynchronous generators?
-
-A:
-The asyncio module.
-
-Flashcard 49
-
-Q:
-How can you create an asynchronous generator in Python?
-
-A:
-By defining a generator function with async def and using yield or yield from within it.
-
-Example:
-
-python
-Copy
-async def async_gen():
-    for i in range(3):
-        yield i
-Flashcard 50
-
-Q:
-What is the difference between itertools.accumulate() and itertools.reduce()?
-
-A:
-itertools.accumulate() returns an iterator that yields accumulated sums (or results of a specified function), while functools.reduce() applies a function cumulatively to the items of a sequence, reducing it to a single value.
-
-Performance and Optimization
-Flashcard 51
-
-Q:
-How can you measure the performance of a generator function?
-
-A:
-By using the timeit module or integrating timing within the generator using time measurements.
-
-Example:
-
-python
-Copy
-import time
-
-def timed_gen():
-    start = time.time()
-    yield from range(1000000)
-    end = time.time()
-    print(f"Time taken: {end - start} seconds")
-
-gen = timed_gen()
-for _ in gen:
-    pass
-Flashcard 52
-
-Q:
-What are some ways to optimize generator performance in Python?
-
-A:
-
-Minimizing the number of yield statements.
-Avoiding complex computations within the generator.
-Using built-in functions and libraries that are optimized in C.
-Real-World Applications
-Flashcard 53
-
-Q:
-How can generators be used to process streaming data, such as reading from a live sensor?
-
-A:
-By creating a generator that yields data points as they are received, allowing real-time processing without storing the entire stream.
-
-Example:
-
-python
-Copy
-def sensor_data_stream():
-    while True:
-        data = get_sensor_data()  # Hypothetical function
-        yield data
-Flashcard 54
-
-Q:
-Explain how generators can be utilized in a web scraping pipeline.
-
-A:
-Generators can sequentially yield URLs to scrape, process fetched data on-the-fly, and handle large amounts of data efficiently without excessive memory usage.
-
-Example:
-
-python
-Copy
-def url_generator(url_list):
-    for url in url_list:
-        yield url
-
-def fetch_content(url):
-    # Fetch and process content
-    pass
-
-for url in url_generator(['http://example.com/page1', 'http://example.com/page2']):
-    content = fetch_content(url)
-    # Process content
-Advanced Pathlib
-Flashcard 55
-
-Q:
-How can you check if two Path objects refer to the same file in different locations?
-
-A:
-By comparing their resolved absolute paths using the .resolve() method.
-
-Example:
-
-python
-Copy
-path1 = Path('/path/to/file').resolve()
-path2 = Path('../path/to/file').resolve()
-are_same = path1 == path2
-Flashcard 56
-
-Q:
-Which pathlib method can be used to get the parent directory of a given path?
-
-A:
-.parent
-
-Example:
-
-python
-Copy
-path = Path('/path/to/file.txt')
-parent = path.parent  # '/path/to'
-Flashcard 57
-
-Q:
-How can you iterate over all files in a directory (non-recursively) using pathlib?
-
-A:
-Using the .iterdir() method.
-
-Example:
-
-python
-Copy
-for file in Path('/path/to/directory').iterdir():
-    if file.is_file():
-        print(file)
-Flashcard 58
-
-Q:
-What does the .stem attribute of a Path object return?
-
-A:
-The filename without its suffix.
-
-Example:
-
-python
-Copy
-path = Path('/path/to/file.txt')
-print(path.stem)  # Output: 'file'
-Flashcard 59
-
-Q:
-How can you check if a Path object points to a symbolic link?
-
-A:
-Using the .is_symlink() method.
-
-Example:
-
-python
-Copy
-path = Path('/path/to/symlink')
-if path.is_symlink():
-    print("It's a symbolic link.")
-Asynchronous Programming with Generators
-Flashcard 60
-
-Q:
-What keyword is used to define an asynchronous generator function in Python?
-
-A:
-async def
-
-Flashcard 61
-
-Q:
-How do you iterate over an asynchronous generator?
-
-A:
-Using async for.
-
-Example:
-
-python
-Copy
-async def async_gen():
-    yield 1
-    yield 2
-
-async def main():
-    async for value in async_gen():
-        print(value)
 Advanced Usage of sys and os Modules
 Flashcard 62
 
@@ -488,9 +9,6 @@ A:
 Using the .returncode attribute of the CompletedProcess object.
 
 Example:
-
-python
-Copy
 import subprocess
 
 result = subprocess.run(['ls', '-l'])
@@ -512,9 +30,6 @@ A:
 By appending or inserting paths to sys.path.
 
 Example:
-
-python
-Copy
 import sys
 sys.path.append('/path/to/custom/modules')
 Advanced Context Managers
@@ -527,9 +42,6 @@ A:
 By defining a context manager that uses os.chdir() in __enter__() and restores the original directory in __exit__().
 
 Example:
-
-python
-Copy
 import os
 from contextlib import contextmanager
 
@@ -556,9 +68,6 @@ A:
 To manage a dynamic number of context managers and ensure that all entered contexts are properly exited, even if exceptions occur.
 
 Example:
-
-python
-Copy
 from contextlib import ExitStack
 
 with ExitStack() as stack:
@@ -574,9 +83,6 @@ A:
 By defining a decorator that inspects the types of the arguments before calling the original function and raises an exception if they don't match the expected types.
 
 Example:
-
-python
-Copy
 from functools import wraps
 
 def type_check(expected_types):
@@ -602,9 +108,6 @@ A:
 To allow decorators to accept parameters, enabling more flexible and configurable decorator behavior.
 
 Example:
-
-python
-Copy
 from functools import wraps
 
 def repeat(times):
@@ -644,9 +147,6 @@ A:
 Using the list() constructor.
 
 Example:
-
-python
-Copy
 def gen():
     yield 1
     yield 2
@@ -661,9 +161,6 @@ A:
 To simplify the creation of context managers by allowing you to write a generator function that yields control back to the context.
 
 Example:
-
-python
-Copy
 from contextlib import contextmanager
 
 @contextmanager
@@ -680,9 +177,6 @@ A:
 By specifying a tuple of exception types in the except clause.
 
 Example:
-
-python
-Copy
 try:
     # Code that may raise exceptions
     pass
@@ -697,9 +191,6 @@ A:
 It returns True if any element of the generator is True, otherwise False. It evaluates elements lazily and stops as soon as a True is found.
 
 Example:
-
-python
-Copy
 result = any(x > 10 for x in gen())
 Flashcard 74
 
@@ -721,9 +212,6 @@ A:
 To limit the number of items retrieved from the infinite generator, preventing an endless loop.
 
 Example:
-
-python
-Copy
 import itertools
 
 def infinite_gen():
@@ -744,9 +232,6 @@ A:
 asyncio allows the creation of asynchronous generators using async def and yield, enabling concurrent execution of asynchronous tasks.
 
 Example:
-
-python
-Copy
 import asyncio
 
 async def async_gen():
@@ -769,9 +254,6 @@ A:
 By using profiling tools like cProfile to analyze the generator’s execution and identify slow parts.
 
 Example:
-
-python
-Copy
 import cProfile
 
 def gen():
@@ -801,9 +283,6 @@ A:
 yield from can improve performance by delegating part of the generator’s operations to another generator, reducing overhead and simplifying code.
 
 Example:
-
-python
-Copy
 def generator1():
     yield from range(1000)
 
@@ -821,9 +300,6 @@ A:
 Generators can act as producers by yielding data, which consumers can iterate over, allowing for efficient and decoupled data processing.
 
 Example:
-
-python
-Copy
 def producer():
     for i in range(10):
         yield i
@@ -843,9 +319,6 @@ A:
 By reading and processing one log entry at a time using a generator, memory usage is minimized, and the system can handle very large files efficiently.
 
 Example:
-
-python
-Copy
 def read_logs(file_path):
     with open(file_path, 'r') as f:
         for line in f:
@@ -863,9 +336,6 @@ A:
 By using the add_mutually_exclusive_group() method.
 
 Example:
-
-python
-Copy
 parser = argparse.ArgumentParser()
 group = parser.add_mutually_exclusive_group()
 group.add_argument('--add', action='store_true')
@@ -880,9 +350,6 @@ A:
 By using the add_subparsers() method to create sub-commands.
 
 Example:
-
-python
-Copy
 parser = argparse.ArgumentParser()
 subparsers = parser.add_subparsers(dest='command')
 
@@ -899,9 +366,6 @@ A:
 By setting the nargs parameter to '+' or another appropriate value.
 
 Example:
-
-python
-Copy
 parser.add_argument('--files', nargs='+', help='List of files to process')
 Flashcard 85
 
@@ -912,9 +376,6 @@ A:
 It stores True if the argument is present, and False otherwise, typically used for boolean flags.
 
 Example:
-
-python
-Copy
 parser.add_argument('--verbose', action='store_true', help='Enable verbose output')
 Best Practices and Patterns
 Flashcard 86
@@ -942,9 +403,6 @@ A:
 By using nested with statements or contextlib.ExitStack to manage multiple context managers efficiently.
 
 Example with ExitStack:
-
-python
-Copy
 from contextlib import ExitStack
 
 with ExitStack() as stack:
@@ -968,9 +426,6 @@ A:
 By maintaining a counter within the decorator and exiting after reaching the maximum number of retries.
 
 Example:
-
-python
-Copy
 from functools import wraps
 
 def retry(max_retries):
@@ -1002,9 +457,6 @@ A:
 By defining a generator that reads and yields fixed-size chunks from the file.
 
 Example:
-
-python
-Copy
 def read_in_chunks(file_path, chunk_size=1024):
     with open(file_path, 'rb') as f:
         while True:
@@ -1032,9 +484,6 @@ A:
 By using a try-except block around the .unlink() method.
 
 Example:
-
-python
-Copy
 from pathlib import Path
 
 file = Path('file_to_delete.txt')
@@ -1054,9 +503,6 @@ A:
 By using the .set_postfix() method.
 
 Example:
-
-python
-Copy
 from tqdm import tqdm
 import time
 
@@ -1083,9 +529,6 @@ A:
 By setting the disable parameter to True when the condition is met.
 
 Example:
-
-python
-Copy
 from tqdm import tqdm
 import sys
 
