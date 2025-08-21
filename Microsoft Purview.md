@@ -311,6 +311,348 @@ You can apply just one sensitivity label to an item such as a document, email, o
 
 31
 Microsoft Purview
+For files, emails, and meetings, but not for groups and sites, if a user tries to remove a label or replace it with a label that has a lower priority, by default the user must provide a justification to perform this action. 
+
+
+
+
+
+32
+Microsoft Purview
+In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. A DLP policy can help you identify, monitor, and automatically protect sensitive data-at-rest, data-in-motion, and data-in-use. DLP policies act on a variety of locations, methods of data transmission, and types of user activities.
+
+
+
+
+
+
+
+33
+Microsoft Purview
+DLP policies are how you monitor the activities that users take on sensitive items at rest, sensitive items in transit, or sensitive items in use and then take protective actions. For example, when a user attempts a prohibited action, like copying a sensitive item to an unapproved location or sharing medical information in an email, DLP can:
+
+show a pop-up policy tip to the user that warns them that they might be trying to share a sensitive item inappropriately
+
+
+
+
+
+
+34
+Microsoft Purview
+Evaluate the impact of the controls by implementing them with a DLP policy in simulation mode. Actions defined in a policy aren't applied while the policy is in simulation mode. 
+
+
+
+
+
+35
+Microsoft Purview
+Once the DLP policy in simulation mode meets all your objectives, turn it on. Continue to monitor the outcomes of the policy application and tune as needed.
+In general, policies take effect about an hour after being turned on.
+
+
+
+
+
+36
+Microsoft Purview
+Choose administrative scoping - DLP supports assigning Administrative Units to policies. Administrators who are assigned to an administrative unit can only create and manage policies for the users, groups, distribution groups, accounts, and sites that they're assigned to.
+
+
+
+
+
+37
+Microsoft Purview
+Steps to create a DLP policy
+    Choose what you want to monitor
+    Choose administrative scoping
+    Choose where you want to monitor
+    Choose the conditions that must be matched for a policy to be applied to an item
+    Choose the action to take when the policy conditions are met
+
+
+
+
+38
+Microsoft Purview
+After you create a DLP policy, it's stored in a central policy store and then synced to the various content sources, including:
+    • Exchange, and from there to Outlook on the web and Outlook
+    • OneDrive
+    • SharePoint sites
+    • Office desktop programs (Excel, PowerPoint, and Word)
+    Microsoft Teams channels and chat messages.
+
+
+
+
+
+39
+Microsoft Purview
+All DLP policies are created and maintained in the Microsoft Purview portal. See Create and Deploy data loss prevention policies for more information. 
+After you create a DLP policy, it's stored in a central policy store and then synced to the various content sources.
+
+
+
+
+40
+Microsoft Purview
+DLP reports a vast amount of information to Microsoft Purview from monitoring policy matches and actions, to user activities. You need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the Microsoft 365 audit Logs first, is processed, and makes its way to different reporting tools.
+
+
+
+
+
+
+1
+Microsoft Purview
+You can view the last 30 days of DLP information in Activity Explorer using these preconfigured filters:
+
+    Endpoint DLP activities
+    Files containing sensitive info types
+    Egress activities
+    DLP policies that detected activities
+    DLP policy rules that detected activities
+
+
+
+
+
+2
+Microsoft Purview
+Administrative units in Microsoft Entra ID enable you to restrict administrative permissions to specific parts of your Microsoft Entra organization. You can create, delete, and edit administrative units in Microsoft Entra. 
+
+
+
+
+
+3
+Microsoft Purview
+
+
+
+
+
+
+4
+Microsoft Purview
+
+
+
+
+
+
+5
+Microsoft Purview
+
+
+
+
+
+
+6
+Microsoft Purview
+
+
+
+
+
+
+7
+Microsoft Purview
+
+
+
+
+
+
+8
+Microsoft Purview
+
+
+
+
+
+
+9
+Microsoft Purview
+
+
+
+
+
+
+10
+Microsoft Purview
+
+
+
+
+
+
+11
+Microsoft Purview
+
+
+
+
+
+
+12
+Microsoft Purview
+
+
+
+
+
+
+13
+Microsoft Purview
+
+
+
+
+
+
+14
+Microsoft Purview
+
+
+
+
+
+
+15
+Microsoft Purview
+
+
+
+
+
+
+16
+Microsoft Purview
+
+
+
+
+
+
+17
+Microsoft Purview
+
+
+
+
+
+
+18
+Microsoft Purview
+
+
+
+
+
+
+19
+Microsoft Purview
+
+
+
+
+
+
+20
+Microsoft Purview
+
+
+
+
+
+
+21
+Microsoft Purview
+
+
+
+
+
+
+22
+Microsoft Purview
+
+
+
+
+
+
+23
+Microsoft Purview
+
+
+
+
+
+
+24
+Microsoft Purview
+
+
+
+
+
+
+25
+Microsoft Purview
+
+
+
+
+
+
+26
+Microsoft Purview
+
+
+
+
+
+
+27
+Microsoft Purview
+
+
+
+
+
+
+28
+Microsoft Purview
+
+
+
+
+
+
+29
+Microsoft Purview
+
+
+
+
+
+
+30
+Microsoft Purview
+
+
+
+
+
+
+31
+Microsoft Purview
 
 
 
