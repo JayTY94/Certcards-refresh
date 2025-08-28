@@ -1,0 +1,345 @@
+1
+CCH Axcess
+Templates are used to add new staff without having to repeatedly enter the same basic information. Enter default options in profile templates to decrease the time required to create staff. See Setting Up Staff Templates for more information.
+
+
+
+
+
+
+
+2
+CCH Axcess
+To launch the Data Migration Utility, click Utilities under Firm on the Application Links window in Dashboard, and then click Migrate data.
+
+
+
+
+
+
+
+3
+CCH Axcess
+You can create teams in Staff Manager that mirror the working groups, departments, reporting relationships, or other groupings used in your firm. Grouping staff into teams can simplify Staff Manager since administrative tasks, such as assigning staff to projects, can be performed for all team members at one time. You can also organize reports by teams.
+
+
+
+
+
+
+
+4
+CCH Axcess
+The application menu contains the available actions for CCH AxcessTM product. The menu also provides access to user options and, if applicable, a list of recently accessed records. Click the X emblem in the upper left corner of the window to display the menu and view the available options.
+
+
+
+
+
+
+5
+CCH Axcess
+The ribbon is used throughout CCH Axcess™. It replaces the menus used in previous product versions. You no longer have to navigate menus or open multiple toolbars to locate the commands you need. Each ribbon can have multiple tabs. Commands displayed on each tab vary by module. On each tab, commands are grouped by similar functions.
+
+
+
+
+
+
+
+6
+CCH Axcess
+Grids are used to list and access items, such as clients and staff. Grid data can be manipulated in various ways. Some of the behaviors for managing grid data, such as Print, Export, and Find, follow Microsoft® standards. Additional grid components exist on the ribbon, right-click menu, and in the grid itself.
+
+
+
+
+
+
+
+7
+CCH Axcess
+The Export Grid option exports up to 20,000 records from all pages of the Client Manager Quick Search results. For the Staff Manager Quick Search, only the current page of results are exported with this option. 
+
+That behavior seems really inconsistent to me.
+
+
+
+
+
+
+
+8
+CCH Axcess
+Views define the columns and associated data that display in the Client Manager and Staff Manager grids. These grids display the existing records for the selected view that you have assigned rights to view. Column selection, sorting, and number of records per page preferences are retained on your machine for each view.
+
+
+
+
+
+
+
+9
+CCH Axcess
+Views are organized on the navigation panel. Do one of the following to display the Views section:
+
+    In Staff Manager, click the Staff navigation bar.
+    In Client Manager, click the Clients navigation bar.
+
+
+
+
+
+10
+CCH Axcess
+You can search for grid contents in several ways.
+    Search. The Search box immediately above the grid is used to search the entire system, not just the current grid contents, by client or staff name or ID. This feature refreshes the grid, displaying only the records that match your search criteria.
+    Find. 
+    Quick Search. 
+
+
+
+
+11
+CCH Axcess
+You can search for grid contents in several ways.
+    Search. 
+    Find. The Find command in the Grid View group on the Home tab searches all grid columns for the current grid view. This feature selects the rows containing content that matches your criteria.
+    Quick Search. 
+
+
+
+
+12
+CCH Axcess
+You can search for grid contents in several ways.
+    Search. 
+    Find. 
+    Quick Search. Quick Search filters can be expanded on the Client Manager and Staff Manager navigation panels to search the entire system, not just the current grid contents, for client or staff criteria other than ID or name. See Using Quick Search for more information about this feature.
+
+
+
+
+
+
+13
+CCH Axcess
+Enter a client or staff ID, or a client or staff name in the Search box above the grid. Enter the complete criteria to search for specific records or partial information to search for similar matches.
+
+    Name refers to the sort name saved in the client or staff profile.
+    You can search for the client ID and sub ID by adding periods to the search string. For example, find client ID 123 with sub ID 001 by entering 123.001 in the Search box.
+
+
+
+
+
+14
+CCH Axcess
+You can select records across multiple pages in Clients, Staff, and Shared views. There is no restriction on the maximum number of records that can be selected; however, the Open option is available only for a maximum of ten selected Clients or Staff records. To clear all selected records across multiple pages, click Clear Selection in the Grid View group on the Home tab.
+
+
+
+
+
+15
+CCH Axcess
+There are some grids in the client profile that allow selection of only one record at a time. For grids that allow selection of multiple records, the total number of selected records across all pages displays in the status bar.
+
+
+
+
+
+16
+CCH Axcess
+
+
+
+
+
+
+17
+CCH Axcess
+
+
+
+
+
+
+18
+CCH Axcess
+
+
+
+
+
+
+19
+CCH Axcess
+
+
+
+
+
+
+20
+CCH Axcess
+
+
+
+
+
+
+21
+CCH Axcess
+
+
+
+
+
+
+22
+CCH Axcess
+
+
+
+
+
+
+23
+CCH Axcess
+
+
+
+
+
+
+24
+CCH Axcess
+
+
+
+
+
+
+25
+CCH Axcess
+
+
+
+
+
+
+26
+CCH Axcess
+
+
+
+
+
+
+27
+CCH Axcess
+
+
+
+
+
+
+28
+CCH Axcess
+
+
+
+
+
+
+29
+CCH Axcess
+
+
+
+
+
+
+30
+CCH Axcess
+
+
+
+
+
+
+31
+CCH Axcess
+
+
+
+
+
+
+32
+CCH Axcess
+
+
+
+
+
+
+33
+CCH Axcess
+
+
+
+
+
+
+34
+CCH Axcess
+
+
+
+
+
+
+35
+CCH Axcess
+
+
+
+
+
+
+36
+CCH Axcess
+
+
+
+
+
+
+37
+CCH Axcess
+
+
+
+
+
+
+38
+CCH Axcess
+
+
+
+
+
+
+39
+CCH Axcess
+
+
+
+
+
+
+40
+CCH Axcess
