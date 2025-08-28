@@ -151,6 +151,8 @@ There are some grids in the client profile that allow selection of only one reco
 
 16
 CCH Axcess
+To quickly add an item to the Quick Access Toolbar, right-click any ribbon command, ribbon group command, or Application menu command and select Add to Quick Access Toolbar from the menu.
+
 
 
 
@@ -159,7 +161,7 @@ CCH Axcess
 
 17
 CCH Axcess
-
+You can customize some of the functional options and design features of CCH Axcess™ modules you have installed by accessing User Options from the Application menu located in the upper-left corner of the window. Customizations are applied to the modules available under your personal login.
 
 
 
@@ -167,6 +169,9 @@ CCH Axcess
 
 18
 CCH Axcess
+Providing Access Through Staff Attributes
+Granting access by organizational unit or position allows for less maintenance, but gives less precise control. Including or excluding some staff in various groups may be required. An advantage of granting access through attributes is that new staff or staff whose attributes change are automatically granted access according to their organizational unit or position.
+
 
 
 
@@ -175,6 +180,8 @@ CCH Axcess
 
 19
 CCH Axcess
+Security groups are used to grant staff access to functions in CCH Axcess. A full rights security group is created at installation. The system administrator can assign staff to this group. Assignment to the full rights security group gives staff access to all modules and functions.
+
 
 
 
@@ -183,6 +190,8 @@ CCH Axcess
 
 20
 CCH Axcess
+Security groups with any level of rights can be created. Staff can be assigned to multiple security groups and have the cumulative rights granted in the various groups. Staff assigned to any group where a function is indicated as Never allow have no access to that function under any circumstance.
+
 
 
 
