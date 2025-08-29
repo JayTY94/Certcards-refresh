@@ -200,6 +200,7 @@ Security groups with any level of rights can be created. Staff can be assigned t
 
 21
 CCH Axcess
+The sub-ID field displays only when the option to identify clients by both the main ID and the sub-ID is selected in Firm > Settings and defaults.
 
 
 
@@ -208,6 +209,8 @@ CCH Axcess
 
 22
 CCH Axcess
+Enable AutoText descriptions
+Allows you to create return and firm-level descriptions for fields that allow multiple entries, for example, fields for interest items or dividend items. The descriptions are then available for selection from the repeater fields in other areas of the return.
 
 
 
@@ -216,6 +219,8 @@ CCH Axcess
 
 23
 CCH Axcess
+In Client Manager, opened from the links on the Application Links window in Dashboard, you can manage information about your clients and client groups. When you set up client profiles, the information about each client is available in all CCH Axcess products and pre-populates whenever applicable.
+
 
 
 
@@ -224,6 +229,8 @@ CCH Axcess
 
 24
 CCH Axcess
+For tax filing purposes, sole proprietors should be added as an Individual client type. Sole Proprietorship is not an accepted client type in Tax.
+
 
 
 
