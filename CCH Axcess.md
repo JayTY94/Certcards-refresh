@@ -239,6 +239,8 @@ For tax filing purposes, sole proprietors should be added as an Individual clien
 
 25
 CCH Axcess
+Your client's information is managed in profiles containing details you enter about them. For example, in addition to the client's ID and name, a client's profile may include tax filing type, addresses, phone numbers, and classification in your firm.
+
 
 
 
@@ -247,6 +249,8 @@ CCH Axcess
 
 26
 CCH Axcess
+Custom client types that are set up in Global Lists allow you to add client profile detail that is not limited to a specific tax product and can be used in the Tax system or for a purpose not related to tax returns.
+
 
 
 
@@ -255,7 +259,12 @@ CCH Axcess
 
 27
 CCH Axcess
-
+Different Client Status values available:
+    Active. Available in all modules for all activity.
+    Inactive. Available for reporting only.
+    On hold. Available in all areas.
+    Litigation hold. On hold for litigation reasons and cannot be deleted.
+    Terminated. Not available in lists and unavailable for activity.
 
 
 
@@ -263,7 +272,7 @@ CCH Axcess
 
 28
 CCH Axcess
-
+Client IDs can have up to 15 characters and can include spaces.
 
 
 
@@ -271,7 +280,7 @@ CCH Axcess
 
 29
 CCH Axcess
-
+Custom identification number types are defined in Global Lists and are used to store identification numbers that are in addition to the identification numbers used for tax-specific client types.
 
 
 
