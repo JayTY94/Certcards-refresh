@@ -1,8 +1,113 @@
+
+31
+CCH Axcess
+When creating a client or editing an existing client, a check mark displays in the Meets Attributes column for any client access group where the client's general and administrative information meets the client attribute criteria as defined in the client access group profile.
+
+
+
+
+
+32
+CCH Axcess
+Data flows from the client profile to tax returns. If the Firm > Setting and defaults > Tax > Options > Allow the option to update the client profile when changes are made to a tax return box is selected, you also have the option to update the client profile when changes are made to a tax return.
+
+
+
+
+
+
+
+
+33
+CCH Axcess
+Token Authentication increases the security of firm and client data because:
+
+    1. OIP applications do not need to handle usernames and passwords.
+    2. The firm may enforce multi-factor authentication when a user is granting consent to an OIP application.
+    3. Users may revoke consent to an OIP application without the need to change their password.
+
+
+
+
+
+34
+CCH Axcess
+Resource - Some data or capability of a software platform. CCH Axcess Open Integration Platform (OIP) has resources for client, staff, firm, and other information.
+
+
+
+
+
+35
+CCH Axcess
+Resource Server - The server that responds to API requests for a protected resource. For CCH Axcess this is usually published as part of api.cchaxces.com
+
+
+
+
+
+
+36
+CCH Axcess
+Resource Owner - The CCH Axcess staff that can grant access to a protected resource. They can later revoke this consent if desired.
+
+
+
+
+
+
+37
+CCH Axcess
+Authorization Server - The server that handles requests and responses for Oauth2 tokens. For CCH Axcess this is usually part of login.cchaxcess.com
+
+
+
+
+
+
+38
+CCH Axcess
+Client Application - A software program that uses OIP APIs to obtain tokens and access protected resources on behalf of the resource owner. The term client in this context does not imply any specifics about the device where the application runs, only that it is making requests to and receiving responses from the resource server. 
+
+
+
+
+
+
+39
+CCH Axcess
+We recommend using the following scopes for your OID application:
+    CCHAxcess_data_writeaccess
+    CCHAxcess_Profile
+    IDInfo 
+    offline_access 
+    Openid - Required to have sub claims.
+
+
+
+
+
+40
+CCH Axcess
+We recommend using the following scopes for your OID application:
+    CCHAxcess_data_writeaccess - Allows the application to read or write CCH Axcess data as determined by the user's licenses and membership in security groups.
+    CCHAxcess_Profile
+    IDInfo 
+    offline_access 
+    Openid 
+
+
+
+
+
 1
 CCH Axcess
-Templates are used to add new staff without having to repeatedly enter the same basic information. Enter default options in profile templates to decrease the time required to create staff. See Setting Up Staff Templates for more information.
-
-
+We recommend using the following scopes for your OID application:
+    CCHAxcess_data_writeaccess 
+    CCHAxcess_Profile - Provides additional information in the ID token about the authorizing user such as email and name. 
+    IDInfo 
+    offline_access 
+    Openid 
 
 
 
@@ -10,9 +115,12 @@ Templates are used to add new staff without having to repeatedly enter the same 
 
 2
 CCH Axcess
-To launch the Data Migration Utility, click Utilities under Firm on the Application Links window in Dashboard, and then click Migrate data.
-
-
+We recommend using the following scopes for your OID application:
+    CCHAxcess_data_writeaccess 
+    CCHAxcess_Profile 
+    IDInfo - Required to obtain the ID token that us used for logout.
+    offline_access 
+    Openid 
 
 
 
@@ -20,9 +128,12 @@ To launch the Data Migration Utility, click Utilities under Firm on the Applicat
 
 3
 CCH Axcess
-You can create teams in Staff Manager that mirror the working groups, departments, reporting relationships, or other groupings used in your firm. Grouping staff into teams can simplify Staff Manager since administrative tasks, such as assigning staff to projects, can be performed for all team members at one time. You can also organize reports by teams.
-
-
+We recommend using the following scopes for your OID application:
+    CCHAxcess_data_writeaccess 
+    CCHAxcess_Profile
+    IDInfo 
+    offline_access - Required to obtain a refresh token.
+    Openid 
 
 
 
@@ -30,8 +141,11 @@ You can create teams in Staff Manager that mirror the working groups, department
 
 4
 CCH Axcess
-The application menu contains the available actions for CCH AxcessTM product. The menu also provides access to user options and, if applicable, a list of recently accessed records. Click the X emblem in the upper left corner of the window to display the menu and view the available options.
-
+Interpret the response from the CCH Axcess authorization token endpoint. When no errors take place and the status code is 200, the response body contains the following JSON name/value pairs:
+    id_token - This JSON web token (JWT) is used for logout. It also contains useful information about the authorizing user if the application uses the scope CCHAxcess_Profile. 
+    access token 
+    expires_in 
+    refresh_token
 
 
 
@@ -39,8 +153,11 @@ The application menu contains the available actions for CCH AxcessTM product. Th
 
 5
 CCH Axcess
-The ribbon is used throughout CCH Axcess™. It replaces the menus used in previous product versions. You no longer have to navigate menus or open multiple toolbars to locate the commands you need. Each ribbon can have multiple tabs. Commands displayed on each tab vary by module. On each tab, commands are grouped by similar functions.
-
+Interpret the response from the CCH Axcess authorization token endpoint. When no errors take place and the status code is 200, the response body contains the following JSON name/value pairs:
+    id_token 
+    access token - This JWT is used when making api requests for protected resources.
+    expires_in 
+    refresh_token
 
 
 
@@ -49,8 +166,11 @@ The ribbon is used throughout CCH Axcess™. It replaces the menus used in previ
 
 6
 CCH Axcess
-Grids are used to list and access items, such as clients and staff. Grid data can be manipulated in various ways. Some of the behaviors for managing grid data, such as Print, Export, and Find, follow Microsoft® standards. Additional grid components exist on the ribbon, right-click menu, and in the grid itself.
-
+Interpret the response from the CCH Axcess authorization token endpoint. When no errors take place and the status code is 200, the response body contains the following JSON name/value pairs:
+    id_token 
+    access token 
+    expires_in - The number of seconds until the access token expires. Refer to the next section for suggested use. 
+    refresh_token 
 
 
 
@@ -59,10 +179,11 @@ Grids are used to list and access items, such as clients and staff. Grid data ca
 
 7
 CCH Axcess
-The Export Grid option exports up to 20,000 records from all pages of the Client Manager Quick Search results. For the Staff Manager Quick Search, only the current page of results are exported with this option. 
-
-That behavior seems really inconsistent to me.
-
+Interpret the response from the CCH Axcess authorization token endpoint. When no errors take place and the status code is 200, the response body contains the following JSON name/value pairs:
+    id_token 
+    access token
+    expires_in 
+    refresh_token - A string that can be used to get new access and refresh tokens. Refer to the next section for suggested use.
 
 
 
@@ -71,9 +192,9 @@ That behavior seems really inconsistent to me.
 
 8
 CCH Axcess
-Views define the columns and associated data that display in the Client Manager and Staff Manager grids. These grids display the existing records for the selected view that you have assigned rights to view. Column selection, sorting, and number of records per page preferences are retained on your machine for each view.
+The Authorization Code Flow (defined in OAuth 2.0 RFC 6749, section 4.1), involves exchanging an authorization code for a token.
 
-
+This flow can only be used for confidential applications (such as Regular Web Applications) because the application's authentication methods are included in the exchange and must be kept secure.
 
 
 
@@ -81,10 +202,7 @@ Views define the columns and associated data that display in the Client Manager 
 
 9
 CCH Axcess
-Views are organized on the navigation panel. Do one of the following to display the Views section:
 
-    In Staff Manager, click the Staff navigation bar.
-    In Client Manager, click the Clients navigation bar.
 
 
 
@@ -92,30 +210,22 @@ Views are organized on the navigation panel. Do one of the following to display 
 
 10
 CCH Axcess
-You can search for grid contents in several ways.
-    Search. The Search box immediately above the grid is used to search the entire system, not just the current grid contents, by client or staff name or ID. This feature refreshes the grid, displaying only the records that match your search criteria.
-    Find. 
-    Quick Search. 
+
+
 
 
 
 
 11
 CCH Axcess
-You can search for grid contents in several ways.
-    Search. 
-    Find. The Find command in the Grid View group on the Home tab searches all grid columns for the current grid view. This feature selects the rows containing content that matches your criteria.
-    Quick Search. 
+
+
 
 
 
 
 12
 CCH Axcess
-You can search for grid contents in several ways.
-    Search. 
-    Find. 
-    Quick Search. Quick Search filters can be expanded on the Client Manager and Staff Manager navigation panels to search the entire system, not just the current grid contents, for client or staff criteria other than ID or name. See Using Quick Search for more information about this feature.
 
 
 
@@ -124,10 +234,7 @@ You can search for grid contents in several ways.
 
 13
 CCH Axcess
-Enter a client or staff ID, or a client or staff name in the Search box above the grid. Enter the complete criteria to search for specific records or partial information to search for similar matches.
 
-    Name refers to the sort name saved in the client or staff profile.
-    You can search for the client ID and sub ID by adding periods to the search string. For example, find client ID 123 with sub ID 001 by entering 123.001 in the Search box.
 
 
 
@@ -135,7 +242,7 @@ Enter a client or staff ID, or a client or staff name in the Search box above th
 
 14
 CCH Axcess
-You can select records across multiple pages in Clients, Staff, and Shared views. There is no restriction on the maximum number of records that can be selected; however, the Open option is available only for a maximum of ten selected Clients or Staff records. To clear all selected records across multiple pages, click Clear Selection in the Grid View group on the Home tab.
+
 
 
 
@@ -143,7 +250,7 @@ You can select records across multiple pages in Clients, Staff, and Shared views
 
 15
 CCH Axcess
-There are some grids in the client profile that allow selection of only one record at a time. For grids that allow selection of multiple records, the total number of selected records across all pages displays in the status bar.
+
 
 
 
@@ -151,8 +258,6 @@ There are some grids in the client profile that allow selection of only one reco
 
 16
 CCH Axcess
-To quickly add an item to the Quick Access Toolbar, right-click any ribbon command, ribbon group command, or Application menu command and select Add to Quick Access Toolbar from the menu.
-
 
 
 
@@ -161,7 +266,7 @@ To quickly add an item to the Quick Access Toolbar, right-click any ribbon comma
 
 17
 CCH Axcess
-You can customize some of the functional options and design features of CCH Axcess™ modules you have installed by accessing User Options from the Application menu located in the upper-left corner of the window. Customizations are applied to the modules available under your personal login.
+
 
 
 
@@ -169,9 +274,6 @@ You can customize some of the functional options and design features of CCH Axce
 
 18
 CCH Axcess
-Providing Access Through Staff Attributes
-Granting access by organizational unit or position allows for less maintenance, but gives less precise control. Including or excluding some staff in various groups may be required. An advantage of granting access through attributes is that new staff or staff whose attributes change are automatically granted access according to their organizational unit or position.
-
 
 
 
@@ -180,8 +282,6 @@ Granting access by organizational unit or position allows for less maintenance, 
 
 19
 CCH Axcess
-Security groups are used to grant staff access to functions in CCH Axcess. A full rights security group is created at installation. The system administrator can assign staff to this group. Assignment to the full rights security group gives staff access to all modules and functions.
-
 
 
 
@@ -190,8 +290,6 @@ Security groups are used to grant staff access to functions in CCH Axcess. A ful
 
 20
 CCH Axcess
-Security groups with any level of rights can be created. Staff can be assigned to multiple security groups and have the cumulative rights granted in the various groups. Staff assigned to any group where a function is indicated as Never allow have no access to that function under any circumstance.
-
 
 
 
@@ -200,7 +298,6 @@ Security groups with any level of rights can be created. Staff can be assigned t
 
 21
 CCH Axcess
-The sub-ID field displays only when the option to identify clients by both the main ID and the sub-ID is selected in Firm > Settings and defaults.
 
 
 
@@ -209,8 +306,6 @@ The sub-ID field displays only when the option to identify clients by both the m
 
 22
 CCH Axcess
-Enable AutoText descriptions
-Allows you to create return and firm-level descriptions for fields that allow multiple entries, for example, fields for interest items or dividend items. The descriptions are then available for selection from the repeater fields in other areas of the return.
 
 
 
@@ -219,8 +314,6 @@ Allows you to create return and firm-level descriptions for fields that allow mu
 
 23
 CCH Axcess
-In Client Manager, opened from the links on the Application Links window in Dashboard, you can manage information about your clients and client groups. When you set up client profiles, the information about each client is available in all CCH Axcess products and pre-populates whenever applicable.
-
 
 
 
@@ -229,8 +322,6 @@ In Client Manager, opened from the links on the Application Links window in Dash
 
 24
 CCH Axcess
-For tax filing purposes, sole proprietors should be added as an Individual client type. Sole Proprietorship is not an accepted client type in Tax.
-
 
 
 
@@ -239,8 +330,6 @@ For tax filing purposes, sole proprietors should be added as an Individual clien
 
 25
 CCH Axcess
-Your client's information is managed in profiles containing details you enter about them. For example, in addition to the client's ID and name, a client's profile may include tax filing type, addresses, phone numbers, and classification in your firm.
-
 
 
 
@@ -249,8 +338,6 @@ Your client's information is managed in profiles containing details you enter ab
 
 26
 CCH Axcess
-Custom client types that are set up in Global Lists allow you to add client profile detail that is not limited to a specific tax product and can be used in the Tax system or for a purpose not related to tax returns.
-
 
 
 
@@ -259,12 +346,7 @@ Custom client types that are set up in Global Lists allow you to add client prof
 
 27
 CCH Axcess
-Different Client Status values available:
-    Active. Available in all modules for all activity.
-    Inactive. Available for reporting only.
-    On hold. Available in all areas.
-    Litigation hold. On hold for litigation reasons and cannot be deleted.
-    Terminated. Not available in lists and unavailable for activity.
+
 
 
 
@@ -272,7 +354,7 @@ Different Client Status values available:
 
 28
 CCH Axcess
-Client IDs can have up to 15 characters and can include spaces.
+
 
 
 
@@ -280,7 +362,7 @@ Client IDs can have up to 15 characters and can include spaces.
 
 29
 CCH Axcess
-Custom identification number types are defined in Global Lists and are used to store identification numbers that are in addition to the identification numbers used for tax-specific client types.
+
 
 
 
