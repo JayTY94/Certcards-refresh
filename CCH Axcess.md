@@ -202,6 +202,12 @@ This flow can only be used for confidential applications (such as Regular Web Ap
 
 9
 CCH Axcess
+The following terms are used to define your organizational unit hierarchy:
+
+    Firm.
+    Region (if used, requires at least one Office).
+    Office (requires at least one Business Unit). An office can only be assigned to one region.
+    Business Unit. A business unit can be assigned to one or more offices.
 
 
 
@@ -210,6 +216,7 @@ CCH Axcess
 
 10
 CCH Axcess
+Once you assign a return default to an organization unit, if there is a configuration set assigned to a lower-level organization unit, the lower-level setting overrides the settings of the higher-level organizational unit. See Defining Your Firm's Organizational Unit Hierarchy for more information.
 
 
 
@@ -218,7 +225,7 @@ CCH Axcess
 
 11
 CCH Axcess
-
+Return configuration sets are used to set default tax return input, such as signature block, correspondence options, and e-filing options. A return configuration set can then be selected or applied automatically to tax returns. Your firm can assign a return configuration set as the default for an organizational unit in Firm > Settings and defaults.
 
 
 
@@ -226,6 +233,8 @@ CCH Axcess
 
 12
 CCH Axcess
+Each return must be assigned to a configuration set. If you have only one configuration set, it cannot be deleted. If you delete a configuration set with returns assigned to it, those returns are assigned to another configuration set that you specify during the deletion process.
+
 
 
 
@@ -234,6 +243,8 @@ CCH Axcess
 
 13
 CCH Axcess
+Configuration sets that have been used for printing returns can be deleted. Those configuration sets will be soft deletedClosed and can be recovered and used to print exact duplicates of the returns they originally produced. Configuration sets that have never been used to print returns are permanently removed from the system and cannot be recovered.
+
 
 
 
@@ -242,7 +253,9 @@ CCH Axcess
 
 14
 CCH Axcess
-
+Federal ID number (PTIN)
+Enter the signer's federal Preparer Tax Identification Number (PTIN). It will display on all federal returns instead of the Social Security Number and is used for states conforming to the federal provision. The number must begin with a P.
+Note: The PTIN, consisting of a P and the eight digits assigned to this preparer, must be formatted correctly or it will not save when you exit this window.
 
 
 
