@@ -263,7 +263,13 @@ Note: The PTIN, consisting of a P and the eight digits assigned to this preparer
 
 15
 CCH Axcess
+Use the Correspondence return configuration set windows to do the following:
 
+    Configure your letter types and label options
+    Customize a heading and complimentary close
+    Customize options for letter and filing instructions content
+    Configure grantor, custodial, and beneficiary letter preparation
+    Customize stationery options for your letterhead and font
 
 
 
@@ -271,6 +277,8 @@ CCH Axcess
 
 16
 CCH Axcess
+The term Pro Forma in CCH® ProSystem fx® Tax means to roll forward a return from one year to the next. The following video shows how to Pro Forma your returns using Tax.
+
 
 
 
@@ -279,7 +287,7 @@ CCH Axcess
 
 17
 CCH Axcess
-
+If the Use "I" in all Letters option is selected for Organizers, the singular grammar variables I, me, and my are set automatically and are not flagged as potential grammar variables in Organizer letters.
 
 
 
@@ -287,6 +295,11 @@ CCH Axcess
 
 18
 CCH Axcess
+You can use the Add Client window to enter minimal information about the new client, or you can click Client Profile to open the Client Profile window where you can enter more detailed information. See Entering General Client Information for more information.
+
+If you have the right to add a client, you also have the ability to add a return.
+
+
 
 
 
@@ -295,6 +308,8 @@ CCH Axcess
 
 19
 CCH Axcess
+You can change standard clients to any client type other than custom and custom clients to any other client type.
+The availability of client types depends on returns that are associated with the client. See Changing Types for Clients with Returns below for more information.
 
 
 
@@ -303,7 +318,12 @@ CCH Axcess
 
 20
 CCH Axcess
+You can change the client type for multiple clients by doing the following:
 
+    Open Dashboard, click Application Links on the navigation panel, and then click Client Manager under Clients.
+    In the Client Manager grid, select the check box to the left of each client to update. You must select 100 or fewer clients of the same client type.
+    Select Update Multiple > Client Type Only from the Home ribbon.
+    On the General window, change the client type selection.
 
 
 
