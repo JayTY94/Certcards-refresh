@@ -51,21 +51,11 @@ Beldame
 
 6
 Jane Eyre, Bronte
-Hips and Haws
-Fruits of wild roses (hips) and hawthorn trees (haws), commonly seen in hedgerows. These red or orange berries are associated with autumn and are used in herbal remedies and preserves.
+Fillip
+(FIL-ip) A small but impactful boost or stimulus; also refers to a flicking motion made by snapping fingers.
 
-159
-JavaScript Concepts
-Front: What are tagged templates and how do you use them?
-
-Back: Tagged templates allow you to parse template literals with a function. The function receives the template string and the values as arguments.
-  function tag(strings, ...values) {
-  console.log(strings); // Array of string segments
-  console.log(values);  // Array of values
-  return 'Tagged template result';
-}
-const result = tag`Hello, ${name}!`;
-console.log(result); // Output: Tagged template result
+String({ key: 'value' });
+// => '[object Object]'
 
 
 
@@ -73,11 +63,8 @@ console.log(result); // Output: Tagged template result
 
 7
 Jane Eyre, Bronte
-Fillip
-(FIL-ip) A small but impactful boost or stimulus; also refers to a flicking motion made by snapping fingers.
-
-String({ key: 'value' });
-// => '[object Object]'
+Hips and Haws
+Fruits of wild roses (hips) and hawthorn trees (haws), commonly seen in hedgerows. These red or orange berries are associated with autumn and are used in herbal remedies and preserves.
 
 
 
@@ -227,19 +214,6 @@ df.resample('M').agg({'value': ['sum', 'mean']})
 
 20
 Pandas
-What does the unstack() function do in Pandas?
-
-unstack() "unpivots" a DataFrame by converting the index into columns.
-
-    Example:
-df.groupby(['category', 'sub_category']).sum().unstack()
-
-
-
-
-
-21
-Pandas
 How do you apply multiple aggregation functions (e.g., sum, mean) to different columns in a groupby operation?
 
 Use .agg() with a dictionary to specify different aggregation functions for each column.
@@ -251,20 +225,20 @@ df.groupby('category').agg({'value': ['sum', 'mean'], 'other_col': 'max'})
 
 
 
-22
+21
 Pandas
-How can you fill missing values using interpolation in a time-series column?
+What does the unstack() function do in Pandas?
 
-Use .interpolate() to perform interpolation on missing values.
+unstack() "unpivots" a DataFrame by converting the index into columns.
 
     Example:
-df['value'] = df['value'].interpolate(method='linear')
+df.groupby(['category', 'sub_category']).sum().unstack()
 
 
 
 
 
-23
+22
 Pandas
 How do you filter a DataFrame df using the query() method?
 
@@ -272,6 +246,19 @@ query() allows you to filter rows based on conditions written as a string.
 
     Example:
 df.query('value > 10 and category == "A"')
+
+
+
+
+
+23
+Pandas
+How can you fill missing values using interpolation in a time-series column?
+
+Use .interpolate() to perform interpolation on missing values.
+
+    Example:
+df['value'] = df['value'].interpolate(method='linear')
 
 
 
@@ -303,15 +290,6 @@ You can pass several comma-separated Boolean tests into KEEPFILTERS, and each on
 
 26
 DAX
-KEEPFILTERS is a modifier, not a standalone function.
-You can only use KEEPFILTERS inside a filter argument of CALCULATE or CALCULATETABLE; it can’t wrap an entire table expression on its own.
-
-
-
-
-
-27
-DAX
 KEEPFILTERS syntax is simple.
 
 dax
@@ -319,6 +297,15 @@ CALCULATE(
   <expression>,
   KEEPFILTERS( <BooleanFilter1> [, <BooleanFilter2>, … ] )
 )
+
+
+
+
+
+27
+DAX
+KEEPFILTERS is a modifier, not a standalone function.
+You can only use KEEPFILTERS inside a filter argument of CALCULATE or CALCULATETABLE; it can’t wrap an entire table expression on its own.
 
 
 
@@ -335,8 +322,8 @@ If your outer context excludes every value in your KEEPFILTERS set, the measure 
 
 29
 DAX
-KEEPFILTERS shines in part-to-whole calculations.
-Use KEEPFILTERS when you need “this item’s sales ÷ its category’s sales”—it preserves the category filter while applying your item filter.
+KEEPFILTERS makes filters additive (intersecting) instead of replacing.
+By default, CALCULATE(…, Column = Value) replaces any existing filter on Column. Wrapping that predicate in KEEPFILTERS forces DAX to intersect it with whatever filters are already in place.
 
 
 
@@ -344,8 +331,8 @@ Use KEEPFILTERS when you need “this item’s sales ÷ its category’s sales�
 
 30
 DAX
-KEEPFILTERS vs. ALL/REMOVEFILTERS (and other modifiers).
-While ALL or REMOVEFILTERS clears filters, and ALLEXCEPT/ALLSELECTED clear selectively, KEEPFILTERS does the opposite—it retains existing filters and narrows them further.
+KEEPFILTERS shines in part-to-whole calculations.
+Use KEEPFILTERS when you need “this item’s sales ÷ its category’s sales”—it preserves the category filter while applying your item filter.
 
 
 
@@ -353,8 +340,8 @@ While ALL or REMOVEFILTERS clears filters, and ALLEXCEPT/ALLSELECTED clear selec
 
 31
 DAX
-KEEPFILTERS makes filters additive (intersecting) instead of replacing.
-By default, CALCULATE(…, Column = Value) replaces any existing filter on Column. Wrapping that predicate in KEEPFILTERS forces DAX to intersect it with whatever filters are already in place.
+KEEPFILTERS vs. ALL/REMOVEFILTERS (and other modifiers).
+While ALL or REMOVEFILTERS clears filters, and ALLEXCEPT/ALLSELECTED clear selectively, KEEPFILTERS does the opposite—it retains existing filters and narrows them further.
 
 
 
@@ -623,25 +610,6 @@ Ticket-based review processes are a bottleneck that can slow down development. I
 
 58
 Terraform
-Provisioning infrastructure across multiple clouds increases fault-tolerance, allowing for more graceful recovery from cloud provider outages. However, multi-cloud deployments add complexity because each provider has its own interfaces, tools, and workflows. Terraform lets you use the same workflow to manage multiple providers and handle cross-cloud dependencies.
-
-
-
-
-
-59
-Terraform
-Double Quotes vs. Single Quotes:
-
-Double Quotes (" "): Allow variable interpolation.
-Single Quotes (' '): Do not interpolate variables; they treat the content as a literal string.
-
-
-
-
-
-60
-Terraform
 Local Values:
 Definition: Local values allow you to define computed variables within a configuration to simplify expressions or avoid repetition.
 Usage: Useful for intermediate calculations or to centralize common values.
@@ -657,7 +625,37 @@ locals {
 
 
 
+59
+Terraform
+Provisioning infrastructure across multiple clouds increases fault-tolerance, allowing for more graceful recovery from cloud provider outages. However, multi-cloud deployments add complexity because each provider has its own interfaces, tools, and workflows. Terraform lets you use the same workflow to manage multiple providers and handle cross-cloud dependencies.
+
+
+
+
+
+60
+Terraform
+Double Quotes vs. Single Quotes:
+
+Double Quotes (" "): Allow variable interpolation.
+Single Quotes (' '): Do not interpolate variables; they treat the content as a literal string.
+
+
+
+
+
 61
+Terraform
+Debugging Tips:
+Check Quotes: Ensure that you use double quotes for strings that require interpolation.
+Use terraform validate: Run this command frequently to catch syntax issues early.
+Review Variable References: Confirm that all variable references use the correct var. prefix.
+
+
+
+
+
+62
 Terraform
 Meta-Arguments:
 Definition: Special arguments like count, depends_on, and lifecycle that control resource behavior and relationships.
@@ -667,17 +665,6 @@ resource "aws_instance" "web" {
   count = var.instance_count
   # Other configuration...
 }
-
-
-
-
-
-62
-Terraform
-Debugging Tips:
-Check Quotes: Ensure that you use double quotes for strings that require interpolation.
-Use terraform validate: Run this command frequently to catch syntax issues early.
-Review Variable References: Confirm that all variable references use the correct var. prefix.
 
 
 
@@ -748,8 +735,8 @@ Sensitive information required by Azure Functions, such as API keys or connectio
 
 70
 Azure Functions + PP365
-HTTP Triggers
-A type of function trigger that activates an Azure Function in response to HTTP requests. Python Azure Functions with HTTP triggers can handle RESTful API calls, webhooks, and other HTTP-based interactions, making them suitable for building APIs and integrating with web services.
+Service Bus Triggers
+Triggers that activate Azure Functions in response to messages in Azure Service Bus queues or topics. Python functions with Service Bus triggers can process asynchronous messages, enabling decoupled and scalable communication between different parts of an application or between services.
 
 
 
@@ -757,8 +744,8 @@ A type of function trigger that activates an Azure Function in response to HTTP 
 
 71
 Azure Functions + PP365
-Service Bus Triggers
-Triggers that activate Azure Functions in response to messages in Azure Service Bus queues or topics. Python functions with Service Bus triggers can process asynchronous messages, enabling decoupled and scalable communication between different parts of an application or between services.
+HTTP Triggers
+A type of function trigger that activates an Azure Function in response to HTTP requests. Python Azure Functions with HTTP triggers can handle RESTful API calls, webhooks, and other HTTP-based interactions, making them suitable for building APIs and integrating with web services.
 
 
 
@@ -811,8 +798,8 @@ Answer: You can define dependsOn between stages to specify the execution order. 
 
 77
 Azure DevOps Pipelines
-In Azure DevOps, what command is used to run a pipeline manually from the Azure DevOps portal?
-Answer: "Run pipeline" button in the Azure DevOps portal.
+What is the default trigger for a YAML-based pipeline in Azure DevOps?
+Answer: A trigger based on code changes in a Git repository.
 
 
 
@@ -820,8 +807,8 @@ Answer: "Run pipeline" button in the Azure DevOps portal.
 
 78
 Azure DevOps Pipelines
-What is the default trigger for a YAML-based pipeline in Azure DevOps?
-Answer: A trigger based on code changes in a Git repository.
+In Azure DevOps, what command is used to run a pipeline manually from the Azure DevOps portal?
+Answer: "Run pipeline" button in the Azure DevOps portal.
 
 
 
@@ -924,9 +911,9 @@ Consistent naming conventions (like using underscores) improve readability and m
 
 88
 TSQL
-Derived Tables:
+Table Variables:
 
-Subqueries in the FROM clause that act as temporary tables with an alias.
+Declared using DECLARE and used similarly to temporary tables, often for smaller data sets with a more limited scope.
 
 
 
@@ -934,9 +921,9 @@ Subqueries in the FROM clause that act as temporary tables with an alias.
 
 89
 TSQL
-Table Variables:
+Derived Tables:
 
-Declared using DECLARE and used similarly to temporary tables, often for smaller data sets with a more limited scope.
+Subqueries in the FROM clause that act as temporary tables with an alias.
 
 
 
@@ -1099,7 +1086,7 @@ For tax filing purposes, sole proprietors should be added as an Individual clien
 
 105
 CCH Axcess
-The sub-ID field displays only when the option to identify clients by both the main ID and the sub-ID is selected in Firm > Settings and defaults.
+Grids are used to list and access items, such as clients and staff. Grid data can be manipulated in various ways. Some of the behaviors for managing grid data, such as Print, Export, and Find, follow Microsoft® standards. Additional grid components exist on the ribbon, right-click menu, and in the grid itself.
 
 
 
@@ -1107,7 +1094,7 @@ The sub-ID field displays only when the option to identify clients by both the m
 
 106
 CCH Axcess
-Grids are used to list and access items, such as clients and staff. Grid data can be manipulated in various ways. Some of the behaviors for managing grid data, such as Print, Export, and Find, follow Microsoft® standards. Additional grid components exist on the ribbon, right-click menu, and in the grid itself.
+The sub-ID field displays only when the option to identify clients by both the main ID and the sub-ID is selected in Firm > Settings and defaults.
 
 
 
@@ -1132,7 +1119,7 @@ Granting access by organizational unit or position allows for less maintenance, 
 
 109
 CCH Axcess
-Templates are used to add new staff without having to repeatedly enter the same basic information. Enter default options in profile templates to decrease the time required to create staff. See Setting Up Staff Templates for more information.
+You can customize some of the functional options and design features of CCH Axcess™ modules you have installed by accessing User Options from the Application menu located in the upper-left corner of the window. Customizations are applied to the modules available under your personal login.
 
 
 
@@ -1140,7 +1127,9 @@ Templates are used to add new staff without having to repeatedly enter the same 
 
 110
 CCH Axcess
-You can customize some of the functional options and design features of CCH Axcess™ modules you have installed by accessing User Options from the Application menu located in the upper-left corner of the window. Customizations are applied to the modules available under your personal login.
+The Export Grid option exports up to 20,000 records from all pages of the Client Manager Quick Search results. For the Staff Manager Quick Search, only the current page of results are exported with this option. 
+
+That behavior seems really inconsistent to me.
 
 
 
@@ -1148,12 +1137,7 @@ You can customize some of the functional options and design features of CCH Axce
 
 111
 CCH Axcess
-Different Client Status values available:
-    Active. Available in all modules for all activity.
-    Inactive. Available for reporting only.
-    On hold. Available in all areas.
-    Litigation hold. On hold for litigation reasons and cannot be deleted.
-    Terminated. Not available in lists and unavailable for activity.
+Templates are used to add new staff without having to repeatedly enter the same basic information. Enter default options in profile templates to decrease the time required to create staff. See Setting Up Staff Templates for more information.
 
 
 
@@ -1161,7 +1145,7 @@ Different Client Status values available:
 
 112
 CCH Axcess
-All client access groups with an assigned organizational unit the same as the organizational unit (office and business unit) of the client displays in the Client Access Group Assignments grid.
+You can select records across multiple pages in Clients, Staff, and Shared views. There is no restriction on the maximum number of records that can be selected; however, the Open option is available only for a maximum of ten selected Clients or Staff records. To clear all selected records across multiple pages, click Clear Selection in the Grid View group on the Home tab.
 
 
 
@@ -1282,11 +1266,12 @@ public class Dog {
 
 121
 C# Basics
-How do you write an if-statement in C#?
+How is inheritance implemented in C#?
 
-C#:
-if (x > 10) {
-    Console.WriteLine("x is greater than 10");
+public class Dog : Animal {
+    public void Bark() {
+        Console.WriteLine("Dog barks");
+    }
 }
 
 
@@ -1295,12 +1280,11 @@ if (x > 10) {
 
 122
 C# Basics
-How is inheritance implemented in C#?
+How do you write an if-statement in C#?
 
-public class Dog : Animal {
-    public void Bark() {
-        Console.WriteLine("Dog barks");
-    }
+C#:
+if (x > 10) {
+    Console.WriteLine("x is greater than 10");
 }
 
 
@@ -1405,6 +1389,15 @@ A VM extension that allows you to run PowerShell or shell scripts post-deploymen
 
 134
 Azure VM + Developer
+X11 Forwarding
+An SSH technique that lets GUI applications run on a remote Linux machine but display on your local computer; requires an X server locally.
+
+
+
+
+
+135
+Azure VM + Developer
 Linter
 A code analysis tool that detects errors, bugs, and style violations before runtime; common examples include ESLint (JavaScript) and Pylint (Python).
 
@@ -1412,7 +1405,7 @@ A code analysis tool that detects errors, bugs, and style violations before runt
 
 
 
-135
+136
 Azure VM + Developer
 Availability Zone
 A physically isolated datacenter location within an Azure region, designed for high availability by spreading resources across separate zones with independent power, cooling, and networking.
@@ -1421,19 +1414,10 @@ A physically isolated datacenter location within an Azure region, designed for h
 
 
 
-136
+137
 Azure VM + Developer
 Inbound NAT Rule
 A networking rule used with load balancers to map a public-facing port to a specific VM's internal port, enabling external access to individual VMs in backend pools.
-
-
-
-
-
-137
-Azure VM + Developer
-X11 Forwarding
-An SSH technique that lets GUI applications run on a remote Linux machine but display on your local computer; requires an X server locally.
 
 
 
@@ -1626,9 +1610,9 @@ A software agent installed on each ESXi host in a vSphere Cluster to enable High
 
 159
 VMWare
-vCenter Server Appliance (VCSA)
+ESXi Host
 
-A Linux-based virtual appliance version of vCenter Server, which is optimized for VMware environments. The VCSA is a lightweight, pre-configured appliance designed to simplify deployment and management of vCenter Server without needing a Windows server.
+A physical server that runs the VMware ESXi hypervisor to host virtual machines (VMs).
 
 
 
@@ -1636,9 +1620,9 @@ A Linux-based virtual appliance version of vCenter Server, which is optimized fo
 
 160
 VMWare
-ESXi Host
+vCenter Server Appliance (VCSA)
 
-A physical server that runs the VMware ESXi hypervisor to host virtual machines (VMs).
+A Linux-based virtual appliance version of vCenter Server, which is optimized for VMware environments. The VCSA is a lightweight, pre-configured appliance designed to simplify deployment and management of vCenter Server without needing a Windows server.
 
 
 
@@ -1764,7 +1748,7 @@ Federated governance provides a centralized place to develop data safety, qualit
 
 174
 Microsoft Purview
-To get started quickly, you might pick the preconfigured U.K. Financial Data policy template, which includes the Credit Card Number, EU Debit Card Number, and SWIFT Code sensitive information types.
+Sensitivity labels provide users and admins with visibility into the sensitivity of the data that they're using, and the labels themselves can apply protection actions that include encryption, access restrictions, and visual markings.
 
 
 
@@ -1772,7 +1756,7 @@ To get started quickly, you might pick the preconfigured U.K. Financial Data pol
 
 175
 Microsoft Purview
-The most effective end-user documentation will be customized guidance and instructions you provide for the label names and configurations you choose. You can use the label policy setting Provide users with a link to a custom help page to specify an internal link for this documentation.
+To get started quickly, you might pick the preconfigured U.K. Financial Data policy template, which includes the Credit Card Number, EU Debit Card Number, and SWIFT Code sensitive information types.
 
 
 
@@ -1780,13 +1764,29 @@ The most effective end-user documentation will be customized guidance and instru
 
 176
 Microsoft Purview
-Sensitivity labels provide users and admins with visibility into the sensitivity of the data that they're using, and the labels themselves can apply protection actions that include encryption, access restrictions, and visual markings.
+Because a Sensitivity Label is stored in clear text in the metadata for files and emails, third-party apps and services can read it and then apply their own protective actions, if required.
 
 
 
 
 
 177
+Microsoft Purview
+Microsoft Purview Privileged Access Management helps protect your organization from breaches and helps to meet compliance best practices by limiting standing access to sensitive data or access to critical configuration settings. Instead of administrators having constant access, just-in-time access rules are implemented for tasks that need elevated permissions.
+
+
+
+
+
+178
+Microsoft Purview
+The most effective end-user documentation will be customized guidance and instructions you provide for the label names and configurations you choose. You can use the label policy setting Provide users with a link to a custom help page to specify an internal link for this documentation.
+
+
+
+
+
+179
 Microsoft Purview
 DLP policies can be applied to the following locations:
     Exchange online email
@@ -1801,15 +1801,7 @@ DLP policies can be applied to the following locations:
 
 
 
-178
-Microsoft Purview
-Microsoft Purview Privileged Access Management helps protect your organization from breaches and helps to meet compliance best practices by limiting standing access to sensitive data or access to critical configuration settings. Instead of administrators having constant access, just-in-time access rules are implemented for tasks that need elevated permissions.
-
-
-
-
-
-179
+180
 Microsoft Purview
 DLP policies are how you monitor the activities that users take on sensitive items at rest, sensitive items in transit, or sensitive items in use and then take protective actions. For example, when a user attempts a prohibited action, like copying a sensitive item to an unapproved location or sharing medical information in an email, DLP can:
 
@@ -1819,7 +1811,7 @@ show a pop-up policy tip to the user that warns them that they might be trying t
 
 
 
-180
+181
 Microsoft Purview
 After you create a DLP policy, it's stored in a central policy store and then synced to the various content sources, including:
     • Exchange, and from there to Outlook on the web and Outlook
@@ -1832,20 +1824,12 @@ After you create a DLP policy, it's stored in a central policy store and then sy
 
 
 
-181
+182
 Microsoft Purview
 For organization-wide data consumers:
     Data discovery - helps you easily find the data you need.
     Secure access - facilitates safe access to your data.
     Data understanding - providing what you need to know about the data.
-
-
-
-
-
-182
-Microsoft Purview
-Because a Sensitivity Label is stored in clear text in the metadata for files and emails, third-party apps and services can read it and then apply their own protective actions, if required.
 
 
 
@@ -1880,8 +1864,8 @@ Serializes PowerShell objects to an XML format file. Useful for securely storing
 
 186
 PnP PowerShell
-Azure Key Vault Integration
-Securely stores and manages secrets, keys, and certificates used by applications. Enhances security by preventing hardcoding of sensitive information in scripts.
+Remove-PnPListItem (PnP.PowerShell)
+Deletes an item from a SharePoint list. Useful for maintaining data integrity and automating data cleanup processes
 
 
 
@@ -1889,8 +1873,8 @@ Securely stores and manages secrets, keys, and certificates used by applications
 
 187
 PnP PowerShell
-Remove-PnPListItem (PnP.PowerShell)
-Deletes an item from a SharePoint list. Useful for maintaining data integrity and automating data cleanup processes
+Azure Key Vault Integration
+Securely stores and manages secrets, keys, and certificates used by applications. Enhances security by preventing hardcoding of sensitive information in scripts.
 
 
 
@@ -2042,10 +2026,11 @@ except Exception as e catches all exceptions that inherit from Exception, while 
 
 201
 Python
-Which pathlib method can be used to iterate recursively through all files matching a pattern?
+Q:
+How does the os.walk() function handle permission errors by default?
 
-for file in Path('/path/to/directory').rglob('*.txt'):
-    print(file)
+A:
+It can be configured to print an error message and continue by using the onerror parameter.
 
 
 
@@ -2053,11 +2038,10 @@ for file in Path('/path/to/directory').rglob('*.txt'):
 
 202
 Python
-Q:
-How does the os.walk() function handle permission errors by default?
+Which pathlib method can be used to iterate recursively through all files matching a pattern?
 
-A:
-It can be configured to print an error message and continue by using the onerror parameter.
+for file in Path('/path/to/directory').rglob('*.txt'):
+    print(file)
 
 
 
@@ -2379,8 +2363,8 @@ const greeting = `Hello, ${name}!`;
 
 233
 Azure AD Authentication
-Custom Roles
-User-defined roles with specific permissions, used when built-in roles don’t provide the required access or for more granular control.
+Service Principal
+A security identity for an app to authenticate and access Azure resources. Used for automated services and applications instead of using user credentials.
 
 
 
@@ -2388,8 +2372,8 @@ User-defined roles with specific permissions, used when built-in roles don’t p
 
 234
 Azure AD Authentication
-Service Principal
-A security identity for an app to authenticate and access Azure resources. Used for automated services and applications instead of using user credentials.
+Custom Roles
+User-defined roles with specific permissions, used when built-in roles don’t provide the required access or for more granular control.
 
 
 
@@ -2570,6 +2554,15 @@ A: It sums the values of x for each group of rows where y has the same value, bu
 
 253
 TSQL
+Q: When should you use window functions instead of GROUP BY?
+A: When you want to calculate totals, ranks, or running sums without reducing the number of rows in your result set.
+
+
+
+
+
+254
+TSQL
 JOIN Types and Conditions:
 
 FULL OUTER JOIN: Returns rows when there is a match in either table, useful for capturing unmatched records.
@@ -2579,21 +2572,10 @@ Self-Joins: Joining a table to itself using different aliases to handle relation
 
 
 
-254
+255
 TSQL
 Q: Why would you use COALESCE(a, b) in a SELECT statement?
 A: It returns the first non-null value among its arguments. Useful for fallback values like choosing between custom and default rates.
-
-
-
-
-
-255
-TSQL
-Self-Joins for Hierarchies:
-
-Useful for comparing or relating data within the same table.
-Effective for simple or fixed-level hierarchies; consider recursive CTEs for deep or variable hierarchies.
 
 
 
@@ -2610,8 +2592,10 @@ A: Window functions (like SUM(...) OVER (...)) calculate values across sets of r
 
 257
 TSQL
-Q: When should you use window functions instead of GROUP BY?
-A: When you want to calculate totals, ranks, or running sums without reducing the number of rows in your result set.
+Self-Joins for Hierarchies:
+
+Useful for comparing or relating data within the same table.
+Effective for simple or fixed-level hierarchies; consider recursive CTEs for deep or variable hierarchies.
 
 
 
@@ -2662,17 +2646,6 @@ Explanation: Provides cmdlets to interact with Azure services. Example cmdlet: G
 
 262
 PowerShell Modules
-Connect-AzAccount
-
-Definition: A cmdlet from the Az module that authenticates your session with Azure.
-Example Usage: Connect-AzAccount prompts for Azure credentials to manage Azure resources.
-
-
-
-
-
-263
-PowerShell Modules
 Module Manifest Properties
 
 Definition: Specific attributes defined in a .psd1 file that describe module metadata.
@@ -2682,29 +2655,18 @@ Explanation: Includes properties like ModuleVersion, Author, RequiredModules, Fu
 
 
 
+263
+PowerShell Modules
+Connect-AzAccount
+
+Definition: A cmdlet from the Az module that authenticates your session with Azure.
+Example Usage: Connect-AzAccount prompts for Azure credentials to manage Azure resources.
+
+
+
+
+
 264
-PowerShell Modules
-Get-Help
-
-Definition: A cmdlet that displays help information for other cmdlets and functions.
-Explanation: Provides detailed documentation and examples. Example: Get-Help Get-AzVM -Detailed.
-
-
-
-
-
-265
-PowerShell Modules
-Module Manifest (.psd1)
-
-Definition: A PowerShell data file that describes the contents and metadata of a module.
-Explanation: Includes information like the module version, author, exported functions, dependencies, and more. Essential for publishing and sharing modules.
-
-
-
-
-
-266
 PowerShell Modules
 Installing a Module:
 Install-Module -Name Az -Scope CurrentUser
@@ -2716,7 +2678,7 @@ Import-Module -Name Az
 
 
 
-267
+265
 PowerShell Modules
 Cmdlet
 
@@ -2727,12 +2689,34 @@ Explanation: Cmdlets follow a Verb-Noun naming pattern (e.g., Get-Module, Import
 
 
 
+266
+PowerShell Modules
+Get-Help
+
+Definition: A cmdlet that displays help information for other cmdlets and functions.
+Explanation: Provides detailed documentation and examples. Example: Get-Help Get-AzVM -Detailed.
+
+
+
+
+
+267
+PowerShell Modules
+Module Manifest (.psd1)
+
+Definition: A PowerShell data file that describes the contents and metadata of a module.
+Explanation: Includes information like the module version, author, exported functions, dependencies, and more. Essential for publishing and sharing modules.
+
+
+
+
+
 268
 PowerShell Modules
-PowerShell Module
+AllUsers Scope
 
-Definition: A package that contains PowerShell cmdlets, functions, scripts, and other resources.
-Explanation: Extends PowerShell’s functionality and can be shared or reused across different environments and users.
+Definition: An installation scope that makes a PowerShell module available to all users on the system.
+Explanation: When installing a module with -Scope AllUsers, it requires administrative privileges and places the module in a system-wide directory, typically C:\Program Files\PowerShell\Modules.
 
 
 
@@ -2740,7 +2724,12 @@ Explanation: Extends PowerShell’s functionality and can be shared or reused ac
 
 269
 CCH Axcess
-Client IDs can have up to 15 characters and can include spaces.
+Different Client Status values available:
+    Active. Available in all modules for all activity.
+    Inactive. Available for reporting only.
+    On hold. Available in all areas.
+    Litigation hold. On hold for litigation reasons and cannot be deleted.
+    Terminated. Not available in lists and unavailable for activity.
 
 
 
@@ -2748,13 +2737,21 @@ Client IDs can have up to 15 characters and can include spaces.
 
 270
 CCH Axcess
-Views define the columns and associated data that display in the Client Manager and Staff Manager grids. These grids display the existing records for the selected view that you have assigned rights to view. Column selection, sorting, and number of records per page preferences are retained on your machine for each view.
+All client access groups with an assigned organizational unit the same as the organizational unit (office and business unit) of the client displays in the Client Access Group Assignments grid.
 
 
 
 
 
 271
+CCH Axcess
+Client IDs can have up to 15 characters and can include spaces.
+
+
+
+
+
+272
 CCH Axcess
 Enable AutoText descriptions
 Allows you to create return and firm-level descriptions for fields that allow multiple entries, for example, fields for interest items or dividend items. The descriptions are then available for selection from the repeater fields in other areas of the return.
@@ -2763,20 +2760,9 @@ Allows you to create return and firm-level descriptions for fields that allow mu
 
 
 
-272
-CCH Axcess
-You can search for grid contents in several ways.
-    Search. The Search box immediately above the grid is used to search the entire system, not just the current grid contents, by client or staff name or ID. This feature refreshes the grid, displaying only the records that match your search criteria.
-    Find. 
-    Quick Search.
-
-
-
-
-
 273
 CCH Axcess
-You can select records across multiple pages in Clients, Staff, and Shared views. There is no restriction on the maximum number of records that can be selected; however, the Open option is available only for a maximum of ten selected Clients or Staff records. To clear all selected records across multiple pages, click Clear Selection in the Grid View group on the Home tab.
+Views define the columns and associated data that display in the Client Manager and Staff Manager grids. These grids display the existing records for the selected view that you have assigned rights to view. Column selection, sorting, and number of records per page preferences are retained on your machine for each view.
 
 
 
@@ -2784,7 +2770,7 @@ You can select records across multiple pages in Clients, Staff, and Shared views
 
 274
 CCH Axcess
-The ribbon is used throughout CCH Axcess™. It replaces the menus used in previous product versions. You no longer have to navigate menus or open multiple toolbars to locate the commands you need. Each ribbon can have multiple tabs. Commands displayed on each tab vary by module. On each tab, commands are grouped by similar functions.
+To launch the Data Migration Utility, click Utilities under Firm on the Application Links window in Dashboard, and then click Migrate data.
 
 
 
@@ -2792,23 +2778,13 @@ The ribbon is used throughout CCH Axcess™. It replaces the menus used in previ
 
 275
 CCH Axcess
-The Export Grid option exports up to 20,000 records from all pages of the Client Manager Quick Search results. For the Staff Manager Quick Search, only the current page of results are exported with this option. 
-
-That behavior seems really inconsistent to me.
+The ribbon is used throughout CCH Axcess™. It replaces the menus used in previous product versions. You no longer have to navigate menus or open multiple toolbars to locate the commands you need. Each ribbon can have multiple tabs. Commands displayed on each tab vary by module. On each tab, commands are grouped by similar functions.
 
 
 
 
 
 276
-CCH Axcess
-Custom client types that are set up in Global Lists allow you to add client profile detail that is not limited to a specific tax product and can be used in the Tax system or for a purpose not related to tax returns.
-
-
-
-
-
-277
 CCH Axcess
 You can search for grid contents in several ways.
     Search. 
@@ -2819,9 +2795,20 @@ You can search for grid contents in several ways.
 
 
 
+277
+CCH Axcess
+You can search for grid contents in several ways.
+    Search. The Search box immediately above the grid is used to search the entire system, not just the current grid contents, by client or staff name or ID. This feature refreshes the grid, displaying only the records that match your search criteria.
+    Find. 
+    Quick Search.
+
+
+
+
+
 278
 CCH Axcess
-To launch the Data Migration Utility, click Utilities under Firm on the Application Links window in Dashboard, and then click Migrate data.
+To quickly add an item to the Quick Access Toolbar, right-click any ribbon command, ribbon group command, or Application menu command and select Add to Quick Access Toolbar from the menu.
 
 
 
@@ -2925,19 +2912,6 @@ public class Dog : IAnimal {
 
 286
 C# Basics
-What are the key access modifiers in C#?
-
-public: Accessible anywhere.
-private: Accessible only within the same class.
-protected: Accessible within the same class and derived classes.
-internal: Accessible within the same assembly.
-
-
-
-
-
-287
-C# Basics
 Events use delegates to provide a way for a class to notify other classes when something happens.
 Example:
 public delegate void EventHandler();
@@ -2958,17 +2932,22 @@ public class Subscriber {
 
 
 
+287
+C# Basics
+What is the role of namespaces in C#?
+
+C#: Namespaces organize classes, structs, and other types into logical groups.
+Example:
+using System;
+using System.Linq;
+
+
+
+
+
 288
 C# Basics
-How do you handle exceptions in C#?
-
-C#:
-try {
-    int x = 1 / 0;
-}
-catch (DivideByZeroException) {
-    Console.WriteLine("Cannot divide by zero");
-}
+.NET uses a garbage collector that automatically manages memory. The GC.Collect() method can be called manually if needed, but generally not required.
 
 
 
@@ -3020,7 +2999,8 @@ A: Profile Disk Differencing allows FSLogix to create differencing VHDX disks, w
 
 294
 FSLogix
-When the local cache doesn't contain the data requested by the file system, Cloud Cache hydrates (reads and copies) the data from 1 of the remote storage providers to the local cache. This operation is also part of the sign in process when populating the local cache for the user's profile.
+FSLogix Cloud Cache:
+A caching mechanism within FSLogix that stores user profile data in the cloud. This improves redundancy and performance by ensuring that profiles remain available even if primary storage becomes inaccessible.
 
 
 
@@ -3028,8 +3008,7 @@ When the local cache doesn't contain the data requested by the file system, Clou
 
 295
 FSLogix
-FSLogix Cloud Cache:
-A caching mechanism within FSLogix that stores user profile data in the cloud. This improves redundancy and performance by ensuring that profiles remain available even if primary storage becomes inaccessible.
+When the local cache doesn't contain the data requested by the file system, Cloud Cache hydrates (reads and copies) the data from 1 of the remote storage providers to the local cache. This operation is also part of the sign in process when populating the local cache for the user's profile.
 
 
 
@@ -3056,8 +3035,8 @@ Virtual hard disk file formats used by FSLogix Profile Containers to store user 
 
 298
 FSLogix
-SMB Share (Server Message Block):
-A network file-sharing protocol used in Windows environments. SMB shares, like those provided by Azure Files, are commonly used for storing FSLogix Profile Containers, ensuring centralized and efficient access.
+FSLogix Application Masking:
+A component of FSLogix used to control application visibility. It isolates and hides applications (and their dependencies) from users who should not access them, based on group policies, thereby simplifying desktop environments.
 
 
 
@@ -3110,6 +3089,15 @@ A file used by SSH to store server fingerprints, preventing man-in-the-middle at
 
 304
 Azure VM + Developer
+VS Code Workspace (.code-workspace)
+A VS Code config file that defines multi-root folders, editor settings, and extension recommendations for a consistent project layout and experience.
+
+
+
+
+
+305
+Azure VM + Developer
 12-Factor App
 A set of best practices for building cloud-native apps, including stateless processes, config via environment variables, and dev/prod parity.
 
@@ -3117,7 +3105,7 @@ A set of best practices for building cloud-native apps, including stateless proc
 
 
 
-305
+306
 Azure VM + Developer
 Build Tool
 A program used to automate the compilation, packaging, and dependency resolution of a software project (e.g., `make`, `npm`, `dotnet build`, `gradle`).
@@ -3126,19 +3114,10 @@ A program used to automate the compilation, packaging, and dependency resolution
 
 
 
-306
+307
 Azure VM + Developer
 Debugger Config (launch.json)
 A JSON config file in VS Code that specifies how to run and debug an app, including which script to execute, arguments, environment variables, and breakpoints.
-
-
-
-
-
-307
-Azure VM + Developer
-VS Code Workspace (.code-workspace)
-A VS Code config file that defines multi-root folders, editor settings, and extension recommendations for a consistent project layout and experience.
 
 
 
@@ -3247,9 +3226,9 @@ Manual VHD Upload – A process where you create a VHD file, upload it to Azure 
 
 319
 VMWare
-vSAN (Virtual SAN)
+ESXi Shell
 
-A VMware product that creates virtualized storage by aggregating local storage from ESXi hosts in a cluster, providing a shared storage solution without needing external storage hardware.
+A command-line interface (CLI) used to manage and troubleshoot VMware ESXi hosts. The ESXi Shell allows administrators to run shell commands directly on the ESXi host for tasks like system configuration, troubleshooting, and diagnostics.
 
 
 
@@ -3267,9 +3246,9 @@ A group of ESXi hosts that work together as a single entity, allowing for resour
 
 321
 VMWare
-ESXi Shell
+vSAN (Virtual SAN)
 
-A command-line interface (CLI) used to manage and troubleshoot VMware ESXi hosts. The ESXi Shell allows administrators to run shell commands directly on the ESXi host for tasks like system configuration, troubleshooting, and diagnostics.
+A VMware product that creates virtualized storage by aggregating local storage from ESXi hosts in a cluster, providing a shared storage solution without needing external storage hardware.
 
 
 
@@ -3327,9 +3306,9 @@ A feature of VMware vSphere that automatically balances workloads across ESXi ho
 
 327
 VMWare
-ESXi Virtual Machine Monitor (VMM)
+VMware Horizon
 
-A component of VMware ESXi that manages virtual machine execution, including CPU, memory, and I/O operations. It ensures that VMs are isolated from each other and allows each VM to operate independently of the host.
+A VMware product used for Virtual Desktop Infrastructure (VDI), enabling the delivery of virtual desktops and applications.
 
 
 
@@ -3337,9 +3316,9 @@ A component of VMware ESXi that manages virtual machine execution, including CPU
 
 328
 VMWare
-VMware Horizon
+ESXi Virtual Machine Monitor (VMM)
 
-A VMware product used for Virtual Desktop Infrastructure (VDI), enabling the delivery of virtual desktops and applications.
+A component of VMware ESXi that manages virtual machine execution, including CPU, memory, and I/O operations. It ensures that VMs are isolated from each other and allows each VM to operate independently of the host.
 
 
 
@@ -3356,8 +3335,8 @@ An async def function in Python that can pause at await expressions and resume l
 
 330
 Asynchronous Python
-Race Condition
-A race condition occurs when multiple threads access and modify shared data concurrently, leading to unpredictable or incorrect results if not managed properly.
+Backpressure
+A condition in async Python where producers send data faster than consumers can process; addressed using queues or throttling.
 
 
 
@@ -3365,8 +3344,8 @@ A race condition occurs when multiple threads access and modify shared data conc
 
 331
 Asynchronous Python
-Backpressure
-A condition in async Python where producers send data faster than consumers can process; addressed using queues or throttling.
+Race Condition
+A race condition occurs when multiple threads access and modify shared data concurrently, leading to unpredictable or incorrect results if not managed properly.
 
 
 
@@ -3401,8 +3380,8 @@ A low-level object representing a pending result in Python's asyncio; used inter
 
 335
 Asynchronous Python
-asyncio.Lock
-An asynchronous lock in Python used to prevent multiple coroutines from accessing a shared resource at the same time.
+Thread Pool Executor
+A thread pool executor, provided by the concurrent.futures module, is an abstraction that manages a pool of worker threads and simplifies scheduling and executing asynchronous tasks.
 
 
 
@@ -3410,8 +3389,8 @@ An asynchronous lock in Python used to prevent multiple coroutines from accessin
 
 336
 Asynchronous Python
-Thread Pool Executor
-A thread pool executor, provided by the concurrent.futures module, is an abstraction that manages a pool of worker threads and simplifies scheduling and executing asynchronous tasks.
+asyncio.Lock
+An asynchronous lock in Python used to prevent multiple coroutines from accessing a shared resource at the same time.
 
 
 
@@ -3448,7 +3427,7 @@ Data classification
 
 340
 Microsoft Purview
-Publish the labels. After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable—you define it once, and then you can include it in several label policies assigned to different users.
+Administrative units in Microsoft Entra ID enable you to restrict administrative permissions to specific parts of your Microsoft Entra organization. You can create, delete, and edit administrative units in Microsoft Entra.
 
 
 
@@ -3469,7 +3448,7 @@ In a data loss prevention policy, you:
 
 342
 Microsoft Purview
-Governance domains: Governance domains are a new way of organizing your data estate through business concepts, like Marketing or Finance, providing context for your data assets. A governance domain is a boundary that enables the common governance, ownership, and discovery of data products and business concepts like glossary terms, OKRs, or critical data.
+Publish the labels. After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable—you define it once, and then you can include it in several label policies assigned to different users.
 
 
 
@@ -3488,7 +3467,7 @@ Data classification provides a graphical identification of items in your organiz
 
 344
 Microsoft Purview
-Administrative units in Microsoft Entra ID enable you to restrict administrative permissions to specific parts of your Microsoft Entra organization. You can create, delete, and edit administrative units in Microsoft Entra.
+You can apply just one sensitivity label to an item such as a document, email, or container. If you use the option that requires your users to provide a justification for changing a label to a lower sensitivity for files, emails, and meetings, the order of this list identifies the lower sensitivity.
 
 
 
@@ -3496,7 +3475,7 @@ Administrative units in Microsoft Entra ID enable you to restrict administrative
 
 345
 Microsoft Purview
-Choose administrative scoping - DLP supports assigning Administrative Units to policies. Administrators who are assigned to an administrative unit can only create and manage policies for the users, groups, distribution groups, accounts, and sites that they're assigned to.
+Governance domains: Governance domains are a new way of organizing your data estate through business concepts, like Marketing or Finance, providing context for your data assets. A governance domain is a boundary that enables the common governance, ownership, and discovery of data products and business concepts like glossary terms, OKRs, or critical data.
 
 
 
@@ -3504,7 +3483,7 @@ Choose administrative scoping - DLP supports assigning Administrative Units to p
 
 346
 Microsoft Purview
-You can apply just one sensitivity label to an item such as a document, email, or container. If you use the option that requires your users to provide a justification for changing a label to a lower sensitivity for files, emails, and meetings, the order of this list identifies the lower sensitivity.
+DLP reports a vast amount of information to Microsoft Purview from monitoring policy matches and actions, to user activities. You need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the Microsoft 365 audit Logs first, is processed, and makes its way to different reporting tools.
 
 
 
@@ -3512,7 +3491,7 @@ You can apply just one sensitivity label to an item such as a document, email, o
 
 347
 Microsoft Purview
-When you create your sensitivity labels in the Microsoft Purview portal, they appear in a list on the Labels page from Information Protection. In this list, the order of the labels is important because it sets their priority. You want your most restrictive sensitivity label, such as Highly Confidential to appear at the bottom of the list and your least restrictive sensitivity label, such as Personal or Public, to appear at the top.
+Choose administrative scoping - DLP supports assigning Administrative Units to policies. Administrators who are assigned to an administrative unit can only create and manage policies for the users, groups, distribution groups, accounts, and sites that they're assigned to.
 
 
 
@@ -3531,8 +3510,8 @@ As you work with Data Map and Unified Catalog, keep these points in mind:
 
 349
 PnP PowerShell
-SharePoint Site URL
-The web address of a SharePoint site (e.g., https://accuityllp.sharepoint.com/sites/ASB), serving as the entry point for accessing site resources and APIs.
+Import-PnPProvisioningTemplate (PnP.PowerShell)
+Imports a provisioning template into a SharePoint site, applying configurations and structures defined in the template. Enables automated site setup and customization.
 
 
 
@@ -3540,8 +3519,8 @@ The web address of a SharePoint site (e.g., https://accuityllp.sharepoint.com/si
 
 350
 PnP PowerShell
-Import-PnPProvisioningTemplate (PnP.PowerShell)
-Imports a provisioning template into a SharePoint site, applying configurations and structures defined in the template. Enables automated site setup and customization.
+SharePoint Site URL
+The web address of a SharePoint site (e.g., https://accuityllp.sharepoint.com/sites/ASB), serving as the entry point for accessing site resources and APIs.
 
 
 
@@ -3594,15 +3573,6 @@ Represents a sequence of bytes, such as a file. Used in PowerShell to handle fil
 
 356
 PnP PowerShell
-Environment Variables
-Variables that are set at the operating system level and accessible within PowerShell. Used to store configuration data and secrets securely without hardcoding.
-
-
-
-
-
-357
-PnP PowerShell
 Remove-PnPFile (PnP.PowerShell)
 Deletes a specified file from a SharePoint library or folder. Useful for automating cleanup tasks or managing outdated documents programmatically.
 
@@ -3610,10 +3580,19 @@ Deletes a specified file from a SharePoint library or folder. Useful for automat
 
 
 
+357
+PnP PowerShell
+Environment Variables
+Variables that are set at the operating system level and accessible within PowerShell. Used to store configuration data and secrets securely without hardcoding.
+
+
+
+
+
 358
 PnP PowerShell
-API Rate Limits
-Restrictions on the number of API calls an application can make within a specific timeframe. Requires managing request rates to avoid exceeding limits and facing throttling.
+Add-PnPFile (PnP.PowerShell)
+Uploads a file to a specified SharePoint document library or folder. Supports parameters like -Path for local files and -Stream for uploading via a data stream.
 
 
 
@@ -3681,18 +3660,6 @@ os.walk()
 
 364
 Python
-Q:
-What does an exit code of 0 typically signify in a Python script?
-
-A:
-Successful execution without errors.
-
-
-
-
-
-365
-Python
 import time
 from contextlib import contextmanager
 
@@ -3709,6 +3676,18 @@ with timer():
     # Code block to measure
     time.sleep(2)
 # Output: Elapsed time: 2.002 seconds
+
+
+
+
+
+365
+Python
+Q:
+What does an exit code of 0 typically signify in a Python script?
+
+A:
+Successful execution without errors.
 
 
 
@@ -3773,7 +3752,7 @@ GetChangeFeedEstimatorBuilder
 
 371
 Azure Developer Associate
-Azure Container Instances can mount an Azure file share created with Azure Files. Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol.
+In Read and Delete mode, Service Bus receives the request from the consumer, it marks the message as consumed and returns it to the consumer application. This mode is the simplest model. It works best for scenarios in which the application can tolerate not processing a message if a failure occurs.
 
 
 
@@ -3781,12 +3760,7 @@ Azure Container Instances can mount an Azure file share created with Azure Files
 
 372
 Azure Developer Associate
-The .NET SDK for Azure Cosmos DB for NoSQL ships with a change feed processor, which has four core components:
-
-Monitored container
-Lease container	The lease container serves as a storage mechanism to manage state across multiple change feed consumers (clients).
-Host
-Delegate
+Azure Container Instances can mount an Azure file share created with Azure Files. Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol.
 
 
 
@@ -3794,7 +3768,12 @@ Delegate
 
 373
 Azure Developer Associate
-In Read and Delete mode, Service Bus receives the request from the consumer, it marks the message as consumed and returns it to the consumer application. This mode is the simplest model. It works best for scenarios in which the application can tolerate not processing a message if a failure occurs.
+The .NET SDK for Azure Cosmos DB for NoSQL ships with a change feed processor, which has four core components:
+
+Monitored container
+Lease container	The lease container serves as a storage mechanism to manage state across multiple change feed consumers (clients).
+Host
+Delegate
 
 
 
@@ -3813,24 +3792,13 @@ Feature manager: A feature manager is an application package that handles the li
 Azure Developer Associate
 As a solution architect/developer, you should consider using Storage queues when:
 
-Your application must store over 80 gigabytes of messages in a queue.
-You require server side logs of all of the transactions executed against your queues.
-
-
-
-
-
-376
-Azure Developer Associate
-As a solution architect/developer, you should consider using Storage queues when:
-
 Your application wants to track progress for processing a message in the queue. It's useful if the worker processing a message crashes. Another worker can then use that information to continue from where the prior worker left off.
 
 
 
 
 
-377
+376
 Azure Developer Associate
 Azure supports two types of queue mechanisms: Service Bus queues and Storage queues.
 
@@ -3840,9 +3808,23 @@ Storage queues are part of the Azure Storage infrastructure. They allow you to s
 
 
 
+377
+Azure Developer Associate
+As a solution architect/developer, you should consider using Storage queues when:
+
+Your application must store over 80 gigabytes of messages in a queue.
+You require server side logs of all of the transactions executed against your queues.
+
+
+
+
+
 378
 Azure Developer Associate
-Azure Service Bus is a fully managed enterprise message broker with message queues and publish-subscribe topics. Service Bus is used to decouple applications and services. Data is transferred between different applications and services using messages. A message is a container decorated with metadata, and contains data. The data can be any kind of information, including structured data encoded with the common formats such as the following ones: JSON, XML, Apache Avro, and Plain Text.
+As a solution architect/developer, you should consider using Service Bus queues when:
+
+Your solution requires the queue to provide a guaranteed first-in-first-out (FIFO) ordered delivery.
+Your solution needs to support automatic duplicate detection.
 
 
 
@@ -3898,18 +3880,6 @@ Definition: A legal document that modifies, explains, or adds to a previously ex
 383
 Vocab
 Something Rotten, Fforde
-Cazique
-noun | kuh-ZEEK
-A native chief in parts of Latin America and the Caribbean during the colonial period.
-Example: The Spanish chroniclers often referred to the local ruler as a cazique.
-
-
-
-
-
-384
-Vocab
-Something Rotten, Fforde
 Brocade (dress)
 noun | bro-KAYD
 A rich fabric woven with a raised pattern, often in gold or silver thread, used in formal garments.
@@ -3919,7 +3889,31 @@ Example: Her brocade dress shimmered under the ballroom lights.
 
 
 
+384
+Vocab
+Something Rotten, Fforde
+Cazique
+noun | kuh-ZEEK
+A native chief in parts of Latin America and the Caribbean during the colonial period.
+Example: The Spanish chroniclers often referred to the local ruler as a cazique.
+
+
+
+
+
 385
+Vocab
+Well of Lost Plots, Fforde
+Inveigle
+verb | in-VAY-guhl
+To entice, lure, or persuade by flattery or deception.
+Example: He tried to inveigle his way into the VIP lounge using a fake invitation.
+
+
+
+
+
+386
 Vocab
 Well of Lost Plots, Fforde
 Eminence grise
@@ -3931,7 +3925,7 @@ Example: Although never elected, the minister’s chief of staff was the real em
 
 
 
-386
+387
 Vocab
 Palimpsest
 noun
@@ -3945,25 +3939,16 @@ Example: Archaeologists discovered an ancient palimpsest where earlier texts wer
 
 
 
-387
-Vocab
-Well of Lost Plots, Fforde
-Inveigle
-verb | in-VAY-guhl
-To entice, lure, or persuade by flattery or deception.
-Example: He tried to inveigle his way into the VIP lounge using a fake invitation.
-
-
-
-
-
 388
 Vocab
-Something Rotten, Fforde
-Buddleia
-noun | BUD-lee-uh
-A flowering shrub, also known as the butterfly bush, popular for attracting pollinators.
-Example: The garden was full of buddleia, drawing in bees and butterflies.
+Well of Lost Plots, Fforde
+Pinafore
+noun | PIN-uh-for
+
+A sleeveless garment worn over a dress, like an apron.
+
+A light sleeveless dress.
+Example: She wore a blue gingham pinafore while painting in the studio.
 
 
 
@@ -4009,6 +3994,14 @@ When ... appears on the left-hand side of an assignment, those three dots are kn
 
 393
 JavaScript Concepts
+Promises: Objects representing the eventual completion or failure of asynchronous operations, allowing chaining with .then() and .catch().
+
+
+
+
+
+394
+JavaScript Concepts
 Delete Operator: You can remove a key-value pair from an object using the delete operator.
 
 const obj = { key1: "value1", key2: "value2", key3: "value3" };
@@ -4018,20 +4011,9 @@ delete obj.key3; // Removes key3
 
 
 
-394
-JavaScript Concepts
-Promises: Objects representing the eventual completion or failure of asynchronous operations, allowing chaining with .then() and .catch().
-
-
-
-
-
 395
 JavaScript Concepts
-Array reverse Function: The reverse method reverses the order of the elements in an array in place.
-let array = [1, 2, 3, 4, 5];
-array.reverse();
-console.log(array); // Output: [5, 4, 3, 2, 1]
+Callback functions are functions passed as arguments. This programming pattern creates a sequence of function calls in both synchronous and asynchronous programming. Writing a callback function is no different from writing a function; however, the callback function must match the signature defined by the calling function.
 
 
 
@@ -4039,7 +4021,10 @@ console.log(array); // Output: [5, 4, 3, 2, 1]
 
 396
 JavaScript Concepts
-Callback functions are functions passed as arguments. This programming pattern creates a sequence of function calls in both synchronous and asynchronous programming. Writing a callback function is no different from writing a function; however, the callback function must match the signature defined by the calling function.
+Array reverse Function: The reverse method reverses the order of the elements in an array in place.
+let array = [1, 2, 3, 4, 5];
+array.reverse();
+console.log(array); // Output: [5, 4, 3, 2, 1]
 
 
 
@@ -4109,6 +4094,17 @@ Queries nested within other queries (in SELECT, FROM, or WHERE clauses) to retur
 
 403
 PowerShell Modules
+PowerShell Module
+
+Definition: A package that contains PowerShell cmdlets, functions, scripts, and other resources.
+Explanation: Extends PowerShell’s functionality and can be shared or reused across different environments and users.
+
+
+
+
+
+404
+PowerShell Modules
 Scope (Installation)
 
 Definition: Determines whether a module is installed for all users or just the current user.
@@ -4118,23 +4114,12 @@ Explanation: Controlled via the -Scope parameter in Install-Module. Options incl
 
 
 
-404
+405
 PowerShell Modules
 Module.dll
 
 Definition: A dynamic link library file that can be part of a PowerShell module.
 Explanation: Contains compiled code (e.g., C#) that can be used by PowerShell modules for enhanced performance or functionality.
-
-
-
-
-
-405
-PowerShell Modules
-AllUsers Scope
-
-Definition: An installation scope that makes a PowerShell module available to all users on the system.
-Explanation: When installing a module with -Scope AllUsers, it requires administrative privileges and places the module in a system-wide directory, typically C:\Program Files\PowerShell\Modules.
 
 
 
@@ -4187,10 +4172,7 @@ Explanation: Important when resolving cmdlet conflicts or ensuring dependencies 
 
 410
 CCH Axcess
-You can search for grid contents in several ways.
-    Search. 
-    Find. 
-    Quick Search. Quick Search filters can be expanded on the Client Manager and Staff Manager navigation panels to search the entire system, not just the current grid contents, for client or staff criteria other than ID or name. See Using Quick Search for more information about this feature.
+Custom client types that are set up in Global Lists allow you to add client profile detail that is not limited to a specific tax product and can be used in the Tax system or for a purpose not related to tax returns.
 
 
 
@@ -4198,7 +4180,7 @@ You can search for grid contents in several ways.
 
 411
 CCH Axcess
-In Client Manager, opened from the links on the Application Links window in Dashboard, you can manage information about your clients and client groups. When you set up client profiles, the information about each client is available in all CCH Axcess products and pre-populates whenever applicable.
+Your client's information is managed in profiles containing details you enter about them. For example, in addition to the client's ID and name, a client's profile may include tax filing type, addresses, phone numbers, and classification in your firm.
 
 
 
@@ -4206,7 +4188,7 @@ In Client Manager, opened from the links on the Application Links window in Dash
 
 412
 CCH Axcess
-Your client's information is managed in profiles containing details you enter about them. For example, in addition to the client's ID and name, a client's profile may include tax filing type, addresses, phone numbers, and classification in your firm.
+Security groups with any level of rights can be created. Staff can be assigned to multiple security groups and have the cumulative rights granted in the various groups. Staff assigned to any group where a function is indicated as Never allow have no access to that function under any circumstance.
 
 
 
@@ -4214,7 +4196,10 @@ Your client's information is managed in profiles containing details you enter ab
 
 413
 CCH Axcess
-To quickly add an item to the Quick Access Toolbar, right-click any ribbon command, ribbon group command, or Application menu command and select Add to Quick Access Toolbar from the menu.
+You can search for grid contents in several ways.
+    Search. 
+    Find. 
+    Quick Search. Quick Search filters can be expanded on the Client Manager and Staff Manager navigation panels to search the entire system, not just the current grid contents, for client or staff criteria other than ID or name. See Using Quick Search for more information about this feature.
 
 
 
@@ -4233,7 +4218,7 @@ Views are organized on the navigation panel. Do one of the following to display 
 
 415
 CCH Axcess
-Custom identification number types are defined in Global Lists and are used to store identification numbers that are in addition to the identification numbers used for tax-specific client types.
+In Client Manager, opened from the links on the Application Links window in Dashboard, you can manage information about your clients and client groups. When you set up client profiles, the information about each client is available in all CCH Axcess products and pre-populates whenever applicable.
 
 
 
@@ -4241,7 +4226,7 @@ Custom identification number types are defined in Global Lists and are used to s
 
 416
 CCH Axcess
-Security groups with any level of rights can be created. Staff can be assigned to multiple security groups and have the cumulative rights granted in the various groups. Staff assigned to any group where a function is indicated as Never allow have no access to that function under any circumstance.
+The application menu contains the available actions for CCH AxcessTM product. The menu also provides access to user options and, if applicable, a list of recently accessed records. Click the X emblem in the upper left corner of the window to display the menu and view the available options.
 
 
 
@@ -4249,7 +4234,7 @@ Security groups with any level of rights can be created. Staff can be assigned t
 
 417
 CCH Axcess
-The application menu contains the available actions for CCH AxcessTM product. The menu also provides access to user options and, if applicable, a list of recently accessed records. Click the X emblem in the upper left corner of the window to display the menu and view the available options.
+Custom identification number types are defined in Global Lists and are used to store identification numbers that are in addition to the identification numbers used for tax-specific client types.
 
 
 
@@ -4268,12 +4253,12 @@ Enter a client or staff ID, or a client or staff name in the Search box above th
 
 419
 C# Basics
-What is the syntax for a for loop in C#?
+What are the key access modifiers in C#?
 
-C#:
-for (int i = 0; i < 5; i++) {
-    Console.WriteLine(i);
-}
+public: Accessible anywhere.
+private: Accessible only within the same class.
+protected: Accessible within the same class and derived classes.
+internal: Accessible within the same assembly.
 
 
 
@@ -4281,7 +4266,15 @@ for (int i = 0; i < 5; i++) {
 
 420
 C# Basics
-.NET uses a garbage collector that automatically manages memory. The GC.Collect() method can be called manually if needed, but generally not required.
+How do you handle exceptions in C#?
+
+C#:
+try {
+    int x = 1 / 0;
+}
+catch (DivideByZeroException) {
+    Console.WriteLine("Cannot divide by zero");
+}
 
 
 
@@ -4289,12 +4282,12 @@ C# Basics
 
 421
 C# Basics
-What is the role of namespaces in C#?
+What is the syntax for a for loop in C#?
 
-C#: Namespaces organize classes, structs, and other types into logical groups.
-Example:
-using System;
-using System.Linq;
+C#:
+for (int i = 0; i < 5; i++) {
+    Console.WriteLine(i);
+}
 
 
 
@@ -4372,17 +4365,6 @@ public class Animal {
 
 427
 C# Basics
-Tuples allow grouping multiple values into a single object without defining a class.
-Example:
-var person = (Name: "John", Age: 30);
-Console.WriteLine(person.Name);  // Output: John
-
-
-
-
-
-428
-C# Basics
 C#: Delegates are type-safe function pointers, allowing methods to be passed as parameters.
 Example:
 delegate void GreetDelegate();
@@ -4394,10 +4376,21 @@ greet();
 
 
 
+428
+C# Basics
+Tuples allow grouping multiple values into a single object without defining a class.
+Example:
+var person = (Name: "John", Age: 30);
+Console.WriteLine(person.Name);  // Output: John
+
+
+
+
+
 429
 FSLogix
-Q: How does FSLogix prevent user profile corruption in virtual desktop sessions?
-A: FSLogix stores user profiles in isolated containers (VHDX), reducing the chances of corruption by ensuring the profile is handled in a controlled environment that can be mounted and saved properly.
+SMB Share (Server Message Block):
+A network file-sharing protocol used in Windows environments. SMB shares, like those provided by Azure Files, are commonly used for storing FSLogix Profile Containers, ensuring centralized and efficient access.
 
 
 
@@ -4405,8 +4398,8 @@ A: FSLogix stores user profiles in isolated containers (VHDX), reducing the chan
 
 430
 FSLogix
-FSLogix Application Masking:
-A component of FSLogix used to control application visibility. It isolates and hides applications (and their dependencies) from users who should not access them, based on group policies, thereby simplifying desktop environments.
+Q: How does FSLogix prevent user profile corruption in virtual desktop sessions?
+A: FSLogix stores user profiles in isolated containers (VHDX), reducing the chances of corruption by ensuring the profile is handled in a controlled environment that can be mounted and saved properly.
 
 
 
@@ -4441,7 +4434,8 @@ A: FSLogix uses VHDX containers to store user profiles, ensuring portability and
 
 434
 FSLogix
-All data written to the user's profile is temporarily stored as block-level cache objects in the same directory. Those block-level cache objects are then committed to the local cache. Before the block-level cache objects are created, the writes into the user's profile are processed in memory through a proxy file.
+Multi-Session Environment:
+A setup where multiple users share the same operating system instance (typical of RDS and multi-session AVD deployments). This environment requires special considerations—such as the use of a Redirector Driver—to handle concurrent access and prevent file locking issues.
 
 
 
@@ -4449,8 +4443,7 @@ All data written to the user's profile is temporarily stored as block-level cach
 
 435
 FSLogix
-Multi-Session Environment:
-A setup where multiple users share the same operating system instance (typical of RDS and multi-session AVD deployments). This environment requires special considerations—such as the use of a Redirector Driver—to handle concurrent access and prevent file locking issues.
+All data written to the user's profile is temporarily stored as block-level cache objects in the same directory. Those block-level cache objects are then committed to the local cache. Before the block-level cache objects are created, the writes into the user's profile are processed in memory through a proxy file.
 
 
 
@@ -4520,14 +4513,23 @@ A workflow where the code is executed and debugged on a remote machine (e.g., cl
 
 443
 Azure VM + Developer
-Dev Containers
-A container-based dev environment defined in `.devcontainer.json`, allowing full isolation and consistent tooling across developers, either locally or in Codespaces.
+Dotfiles
+A collection of personal configuration files (e.g., `.bashrc`, `.gitconfig`, `.vimrc`) that define your shell, editor, and tool preferences across machines.
 
 
 
 
 
 444
+Azure VM + Developer
+Systemd Service
+A background service on Linux managed by `systemctl`, which can run your app as a daemon, restart on failure, and start automatically on boot.
+
+
+
+
+
+445
 Azure VM + Developer
 .env File
 A flat file storing environment variables (like `DEBUG=true`, `API_KEY=xyz`) for local development and testing, typically excluded from version control.
@@ -4536,19 +4538,10 @@ A flat file storing environment variables (like `DEBUG=true`, `API_KEY=xyz`) for
 
 
 
-445
-Azure VM + Developer
-Dotfiles
-A collection of personal configuration files (e.g., `.bashrc`, `.gitconfig`, `.vimrc`) that define your shell, editor, and tool preferences across machines.
-
-
-
-
-
 446
 Azure VM + Developer
-Systemd Service
-A background service on Linux managed by `systemctl`, which can run your app as a daemon, restart on failure, and start automatically on boot.
+Dev Containers
+A container-based dev environment defined in `.devcontainer.json`, allowing full isolation and consistent tooling across developers, either locally or in Codespaces.
 
 
 
@@ -4590,7 +4583,7 @@ Compute Gallery Resource – The top-level container that stores multiple image 
 
 451
 Azure Compute Gallery
-Managed Image – A single, region-bound image stored in Azure, lacking versioning and replication features found in ACG.
+Capture from Existing VM – Creating an image by generalizing or specializing a VM and capturing it into ACG.
 
 
 
@@ -4609,7 +4602,7 @@ Image size
 
 453
 Azure Compute Gallery
-Capture from Existing VM – Creating an image by generalizing or specializing a VM and capturing it into ACG.
+Managed Image – A single, region-bound image stored in Azure, lacking versioning and replication features found in ACG.
 
 
 
@@ -4625,7 +4618,7 @@ Deployment Latency – The time required for a newly published image to become a
 
 455
 Azure Compute Gallery
-Shared Image Gallery Reader Role – An RBAC role that allows users to access images for deployment but not modify them.
+License Considerations – Some images (e.g., RHEL, Windows Server) require Azure Hybrid Benefit or additional licensing.
 
 
 
@@ -4633,7 +4626,7 @@ Shared Image Gallery Reader Role – An RBAC role that allows users to access im
 
 456
 Azure Compute Gallery
-License Considerations – Some images (e.g., RHEL, Windows Server) require Azure Hybrid Benefit or additional licensing.
+Shared Image Gallery Reader Role – An RBAC role that allows users to access images for deployment but not modify them.
 
 
 
@@ -4728,16 +4721,6 @@ A logical grouping of CPU, memory, and storage resources in a VMware cluster, wh
 
 466
 VMWare
-ESXi Host Profiles
-
-A feature that allows administrators to configure, enforce, and standardize settings across multiple ESXi hosts in a cluster. Host profiles ensure consistency in configuration, such as networking, storage, and security settings, across all hosts in a given environment.
-
-
-
-
-
-467
-VMWare
 Storage I/O Control (SIOC)
 
 A feature in VMware vSphere that manages storage I/O requests to ensure that all virtual machines receive fair access to storage resources. It helps avoid I/O contention by controlling the bandwidth allocated to different VMs when accessing shared storage.
@@ -4746,11 +4729,21 @@ A feature in VMware vSphere that manages storage I/O requests to ensure that all
 
 
 
+467
+VMWare
+ESXi Host Profiles
+
+A feature that allows administrators to configure, enforce, and standardize settings across multiple ESXi hosts in a cluster. Host profiles ensure consistency in configuration, such as networking, storage, and security settings, across all hosts in a given environment.
+
+
+
+
+
 468
 VMWare
-Hypervisor
+ESXi Console Access
 
-Software that allows the creation and management of virtual machines by abstracting the physical hardware. There are two types: Type 1 (bare-metal) and Type 2 (hosted).
+The ability to access the ESXi host’s console directly via the physical server or over a network using remote tools like SSH or the vSphere Client. This allows administrators to troubleshoot and configure the host or to work around issues when vCenter Server is unavailable.
 
 
 
@@ -4803,8 +4796,8 @@ An asynchronous HTTP client/server library in Python used to make non-blocking w
 
 474
 Asynchronous Python
-Cooperative Multitasking
-The async model in Python where tasks yield control voluntarily (e.g., via await) instead of being preempted.
+Lock (Mutex)
+A lock is a synchronization primitive used to control access to a shared resource, ensuring that only one thread can access a specific block of code at a time.
 
 
 
@@ -4812,8 +4805,8 @@ The async model in Python where tasks yield control voluntarily (e.g., via await
 
 475
 Asynchronous Python
-Lock (Mutex)
-A lock is a synchronization primitive used to control access to a shared resource, ensuring that only one thread can access a specific block of code at a time.
+Cooperative Multitasking
+The async model in Python where tasks yield control voluntarily (e.g., via await) instead of being preempted.
 
 
 
@@ -4867,7 +4860,7 @@ Data curation is about organizing, annotating, and publishing your data so that 
 
 481
 Microsoft Purview
-Create the labels. Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. You can then use sublabels to group similar labels by category.
+When you create your sensitivity labels in the Microsoft Purview portal, they appear in a list on the Labels page from Information Protection. In this list, the order of the labels is important because it sets their priority. You want your most restrictive sensitivity label, such as Highly Confidential to appear at the bottom of the list and your least restrictive sensitivity label, such as Personal or Public, to appear at the top.
 
 
 
@@ -4875,7 +4868,9 @@ Create the labels. Create and name your sensitivity labels according to your org
 
 482
 Microsoft Purview
-Microsoft Purview comes with preconfigured DLP templates for Financial, Medical and health, and Privacy policy templates. Additionally, you can build your own using the Custom template. As you design and create your actual DLP policies, having a working knowledge of the sensitive items you need to protect helps you choose the right sensitive information type.
+Data discovery is about ensuring users can find the data they need for day-to-day business and innovation.
+
+Data health is about ensuring data quality standards are maintained across your estate, and having an active data lifecycle keeping your data fresh and secure.
 
 
 
@@ -4893,7 +4888,7 @@ For data officers and CxO stakeholders:
 
 484
 Microsoft Purview
-Extend SharePoint protection when files are downloaded when you configure a default sensitivity label for SharePoint document libraries and select the option to extend protection for unencrypted files. Then, when these files are downloaded, the current SharePoint permissions travel with the labeled file.
+Create the labels. Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. You can then use sublabels to group similar labels by category.
 
 
 
@@ -4917,7 +4912,7 @@ When you create your DLP policies, you should consider rolling them out graduall
 
 487
 Microsoft Purview
-You can configure your policies so that, when a DLP policy is triggered, email notifications are sent automatically, and policy tips are shown to admins and end users. Policy tips are useful ways to raise awareness of risky behaviors on sensitive items and train users to avoid those behaviors in the future.
+Extend SharePoint protection when files are downloaded when you configure a default sensitivity label for SharePoint document libraries and select the option to extend protection for unencrypted files. Then, when these files are downloaded, the current SharePoint permissions travel with the labeled file.
 
 
 
@@ -4925,7 +4920,7 @@ You can configure your policies so that, when a DLP policy is triggered, email n
 
 488
 Microsoft Purview
-For files, emails, and meetings, but not for groups and sites, if a user tries to remove a label or replace it with a label that has a lower priority, by default the user must provide a justification to perform this action.
+Microsoft Purview comes with preconfigured DLP templates for Financial, Medical and health, and Privacy policy templates. Additionally, you can build your own using the Custom template. As you design and create your actual DLP policies, having a working knowledge of the sensitive items you need to protect helps you choose the right sensitive information type.
 
 
 
@@ -4933,8 +4928,8 @@ For files, emails, and meetings, but not for groups and sites, if a user tries t
 
 489
 PnP PowerShell
-Add-PnPFile (PnP.PowerShell)
-Uploads a file to a specified SharePoint document library or folder. Supports parameters like -Path for local files and -Stream for uploading via a data stream.
+API Rate Limits
+Restrictions on the number of API calls an application can make within a specific timeframe. Requires managing request rates to avoid exceeding limits and facing throttling.
 
 
 
@@ -4951,8 +4946,8 @@ Permissions granted to applications to act on behalf of a signed-in user. Requir
 
 491
 PnP PowerShell
-Parameter Set Conflict
-Occurs when incompatible or conflicting parameters are used together in a PowerShell cmdlet, leading to errors as PowerShell cannot determine the intended operation.
+REST API Endpoints
+Specific URLs used to access SharePoint resources via REST API. Includes paths for sites, lists, libraries, and items, enabling targeted operations.
 
 
 
@@ -4960,8 +4955,8 @@ Occurs when incompatible or conflicting parameters are used together in a PowerS
 
 492
 PnP PowerShell
-REST API Endpoints
-Specific URLs used to access SharePoint resources via REST API. Includes paths for sites, lists, libraries, and items, enabling targeted operations.
+Parameter Set Conflict
+Occurs when incompatible or conflicting parameters are used together in a PowerShell cmdlet, leading to errors as PowerShell cannot determine the intended operation.
 
 
 
@@ -4996,8 +4991,8 @@ Using multiple cmdlets in a sequence where each cmdlet processes data output fro
 
 496
 PnP PowerShell
-Export-PnPProvisioningTemplate (PnP.PowerShell)
-Exports a SharePoint site's configuration into a provisioning template. Facilitates site replication, migration, and backup through PowerShell.
+OAuth 2.0 Client Credentials Flow
+An authentication method where applications authenticate using a client ID and client secret, enabling server-to-server interactions without user involvement.
 
 
 
@@ -5005,8 +5000,8 @@ Exports a SharePoint site's configuration into a provisioning template. Facilita
 
 497
 PnP PowerShell
-OAuth 2.0 Client Credentials Flow
-An authentication method where applications authenticate using a client ID and client secret, enabling server-to-server interactions without user involvement.
+Export-PnPProvisioningTemplate (PnP.PowerShell)
+Exports a SharePoint site's configuration into a provisioning template. Facilitates site replication, migration, and backup through PowerShell.
 
 
 
@@ -5093,6 +5088,23 @@ itertools.accumulate() returns an iterator that yields accumulated sums (or resu
 504
 Python
 Q:
+How can you check if a Path object points to a symbolic link?
+
+A:
+Using the .is_symlink() method.
+
+Example:
+path = Path('/path/to/symlink')
+if path.is_symlink():
+    print("It's a symbolic link.")
+
+
+
+
+
+505
+Python
+Q:
 How can you nest multiple tqdm progress bars?
 
 A:
@@ -5108,7 +5120,24 @@ for i in tqdm(range(3), desc='Outer', position=0):
 
 
 
-505
+506
+Python
+Q:
+How can you create an asynchronous generator in Python?
+
+A:
+By defining a generator function with async def and using yield or yield from within it.
+
+Example:
+async def async_gen():
+    for i in range(3):
+        yield i
+
+
+
+
+
+507
 Python
 Q:
 How can generators be used to process streaming data, such as reading from a live sensor?
@@ -5126,19 +5155,7 @@ def sensor_data_stream():
 
 
 
-506
-Python
-Q:
-What is the purpose of the leave parameter in tqdm?
-
-A:
-To determine whether to keep the progress bar display after completion (leave=True) or remove it (leave=False).
-
-
-
-
-
-507
+508
 Python
 Q:
 How do you iterate over an asynchronous generator?
@@ -5159,26 +5176,9 @@ async def main():
 
 
 
-508
-Python
-Q:
-What method can be used to send a value into a generator, allowing it to receive data?
-
-A:
-The .send(value) method.
-
-
-
-
-
 509
 Azure Developer Associate
-The .NET SDK for Azure Cosmos DB for NoSQL ships with a change feed processor, which has four core components:
-
-Monitored container	This container is monitored for any insert or update operations. These changes are then reflected in the feed.
-Lease container
-Host
-Delegate
+Azure Service Bus is a fully managed enterprise message broker with message queues and publish-subscribe topics. Service Bus is used to decouple applications and services. Data is transferred between different applications and services using messages. A message is a container decorated with metadata, and contains data. The data can be any kind of information, including structured data encoded with the common formats such as the following ones: JSON, XML, Apache Avro, and Plain Text.
 
 
 
@@ -5196,7 +5196,12 @@ The lease container component serves as a storage mechanism to manage state acro
 
 511
 Azure Developer Associate
-As the .NET SDK for Azure Cosmos DB for NoSQL change feed processor handles changes, it functions as a time-based pointer. The pointer moves forward in time across the change feed and sends batches of changes to the delegate to run business logic.
+The .NET SDK for Azure Cosmos DB for NoSQL ships with a change feed processor, which has four core components:
+
+Monitored container	This container is monitored for any insert or update operations. These changes are then reflected in the feed.
+Lease container
+Host
+Delegate
 
 
 
@@ -5214,10 +5219,9 @@ Azure Container Instances does not support scaling, load balancing, revisions, s
 
 513
 Azure Developer Associate
-As a solution architect/developer, you should consider using Service Bus queues when:
+This question tests the candidate's knowledge of Azure Service Bus message expiration.
 
-Your solution requires the queue to provide a guaranteed first-in-first-out (FIFO) ordered delivery.
-Your solution needs to support automatic duplicate detection.
+To avoid affecting existing applications, the time to live of the existing topic must not be changed. A new topic needs to be created. Changing the topic's default time to live will affect other applications. A message-level time to live cannot be higher than the topic's time to live.
 
 
 
@@ -5225,9 +5229,7 @@ Your solution needs to support automatic duplicate detection.
 
 514
 Azure Developer Associate
-This question tests the candidate's knowledge of Azure Service Bus message expiration.
-
-To avoid affecting existing applications, the time to live of the existing topic must not be changed. A new topic needs to be created. Changing the topic's default time to live will affect other applications. A message-level time to live cannot be higher than the topic's time to live.
+As the .NET SDK for Azure Cosmos DB for NoSQL change feed processor handles changes, it functions as a time-based pointer. The pointer moves forward in time across the change feed and sends batches of changes to the delegate to run business logic.
 
 
 
@@ -5274,12 +5276,14 @@ In the Azure Service Bus Peek Lock mode, the receive operation becomes two-stage
 
 518
 Azure Developer Associate
-You plan to generate a shared access signature (SAS) token for read access to a blob in a storage account.
-You need to secure the token from being compromised. What should you use?
+Your company is developing a new web application that will be deployed as a containerized solution on Azure. The application is expected to have fluctuating workloads and needs to be highly available.
 
-Microsoft Entra ID credentials assigned the Contributor role
-NOT 
-Microsoft Entra ID credentials assigned the Reader role (Readers can't do the action described, but definitely only give read access).
+You need to create a solution that allows the application to scale based on demand and recover from failures automatically.
+
+Each correct answer presents part of the solution. Which two actions should you perform? (Choose two.)
+
+  Deploy the containerized application to Azure Container Apps.
+  Publish the application's image to Azure Container Registry.
 
 
 
@@ -5287,14 +5291,11 @@ Microsoft Entra ID credentials assigned the Reader role (Readers can't do the ac
 
 519
 Vocab
-Well of Lost Plots, Fforde
-Pinafore
-noun | PIN-uh-for
-
-A sleeveless garment worn over a dress, like an apron.
-
-A light sleeveless dress.
-Example: She wore a blue gingham pinafore while painting in the studio.
+Something Rotten, Fforde
+Buddleia
+noun | BUD-lee-uh
+A flowering shrub, also known as the butterfly bush, popular for attracting pollinators.
+Example: The garden was full of buddleia, drawing in bees and butterflies.
 
 
 
@@ -5411,6 +5412,17 @@ Prototype-Based Inheritance: JavaScript's inheritance model where objects inheri
 
 530
 JavaScript Concepts
+For arrays, the String function will apply the string conversion for each element and join the results with a comma. You can also apply the join method yourself, e.g. to customize the separator. Note that in these cases null and undefined will be converted to an empty string.
+
+String([42, null, true, 'abc']);
+// => '42,,true,abc'
+
+
+
+
+
+531
+JavaScript Concepts
 Syntax to convert an aray to a set and back again to remove duplicates
   export function removeDuplicates(playlist) { //playlist is an array of songs
     const play_set = new Set (playlist)
@@ -5421,18 +5433,15 @@ Syntax to convert an aray to a set and back again to remove duplicates
 
 
 
-531
-JavaScript Concepts
-For arrays, the String function will apply the string conversion for each element and join the results with a comma. You can also apply the join method yourself, e.g. to customize the separator. Note that in these cases null and undefined will be converted to an empty string.
-
-String([42, null, true, 'abc']);
-// => '42,,true,abc'
-
-
-
-
-
 532
+JavaScript Concepts
+Prototype-Based Inheritance: JavaScript uses prototype-based inheritance, meaning objects can inherit properties and methods from other objects. This is achieved through the prototype chain3.
+
+
+
+
+
+533
 JavaScript Concepts
 To create a deep copy of an object in JavaScript, you can use the JSON.parse(JSON.stringify(object)) method. This approach works well for simple objects, such as those with string:number pairs, and ensures that the original object remains unmodified.
 
@@ -5440,7 +5449,15 @@ To create a deep copy of an object in JavaScript, you can use the JSON.parse(JSO
 
 
 
-533
+534
+JavaScript Concepts
+Built-In Methods: JavaScript objects come with built-in methods like Object.keys(), Object.values(), and Object.entries() which allow you to interact with the object's properties in various ways4.
+
+
+
+
+
+535
 JavaScript Concepts
 Dot Notation: You can add a new key-value pair to an object using dot notation. This is useful when you know the name of the property.
 
@@ -5451,7 +5468,7 @@ obj.key3 = "value3"; // Adds key3 with value3
 
 
 
-534
+536
 JavaScript Concepts
 MDN Web Docs: Comprehensive documentation for web technologies, including JavaScript, HTML, CSS, and various APIs.
 
@@ -5459,15 +5476,7 @@ MDN Web Docs: Comprehensive documentation for web technologies, including JavaSc
 
 
 
-535
-JavaScript Concepts
-Built-In Methods: JavaScript objects come with built-in methods like Object.keys(), Object.values(), and Object.entries() which allow you to interact with the object's properties in various ways4.
-
-
-
-
-
-536
+537
 JavaScript Concepts
 Testing Library: A family of libraries that encourage testing best practices by focusing on user interactions rather than implementation details.
 
@@ -5475,24 +5484,9 @@ Testing Library: A family of libraries that encourage testing best practices by 
 
 
 
-537
-JavaScript Concepts
-Vue.js: A progressive framework for building user interfaces, known for its simplicity and flexibility, with features like directives and single-file components.
-
-
-
-
-
 538
 JavaScript Concepts
-In JavaScript, you can only return exactly one value. If you want to pass more information, you need to combine it into one entity first, usually into an object, or an array.
-
-function divide(a, b) {
-  return {
-    quotient: Math.floor(a / b),
-    remainder: a % b,
-  };
-}
+Vue.js: A progressive framework for building user interfaces, known for its simplicity and flexibility, with features like directives and single-file components.
 
 
 
@@ -5570,9 +5564,9 @@ When ... appears on the left-hand side of an assignment, those three dots are kn
 
 546
 VMWare
-ESXi Console Access
+Hypervisor
 
-The ability to access the ESXi host’s console directly via the physical server or over a network using remote tools like SSH or the vSphere Client. This allows administrators to troubleshoot and configure the host or to work around issues when vCenter Server is unavailable.
+Software that allows the creation and management of virtual machines by abstracting the physical hardware. There are two types: Type 1 (bare-metal) and Type 2 (hosted).
 
 
 
@@ -5600,9 +5594,9 @@ The requirement for shared storage and network configuration to allow seamless m
 
 549
 VMWare
-vSphere Distributed Switch (vDS)
+Fault Tolerance (FT)
 
-A virtual switch that allows the central management of network configurations across multiple ESXi hosts. A vDS provides enhanced features like port mirroring, private VLANs, and traffic shaping for advanced network management in VMware environments.
+A VMware feature that provides continuous availability by creating a shadow VM on a different host that automatically takes over in case of a host failure, ensuring zero downtime.
 
 
 
@@ -5610,9 +5604,9 @@ A virtual switch that allows the central management of network configurations ac
 
 550
 VMWare
-Fault Tolerance (FT)
+vSphere Distributed Switch (vDS)
 
-A VMware feature that provides continuous availability by creating a shadow VM on a different host that automatically takes over in case of a host failure, ensuring zero downtime.
+A virtual switch that allows the central management of network configurations across multiple ESXi hosts. A vDS provides enhanced features like port mirroring, private VLANs, and traffic shaping for advanced network management in VMware environments.
 
 
 
@@ -5686,15 +5680,6 @@ A wrapper around a coroutine in Python’s asyncio that is managed by the event 
 
 558
 Asynchronous Python
-Blocking Code
-Code like time.sleep() that halts the event loop and prevents other asynchronous Python tasks from running—should be avoided.
-
-
-
-
-
-559
-Asynchronous Python
 Global Interpreter Lock (GIL)
 The GIL is a mutex in CPython that ensures only one thread executes Python bytecode at a time, affecting true parallel execution of threads.
 
@@ -5702,16 +5687,16 @@ The GIL is a mutex in CPython that ensures only one thread executes Python bytec
 
 
 
-560
+559
 Asynchronous Python
-Timeouts
-Techniques like asyncio.wait_for() used in Python to limit how long a coroutine can run before it's cancelled.
+Blocking Code
+Code like time.sleep() that halts the event loop and prevents other asynchronous Python tasks from running—should be avoided.
 
 
 
 
 
-561
+560
 Asynchronous Python
 Non-blocking I/O
 A key feature of async Python where I/O operations (e.g., file or network access) don’t block the event loop.
@@ -5720,9 +5705,18 @@ A key feature of async Python where I/O operations (e.g., file or network access
 
 
 
+561
+Asynchronous Python
+Timeouts
+Techniques like asyncio.wait_for() used in Python to limit how long a coroutine can run before it's cancelled.
+
+
+
+
+
 562
 Microsoft Purview
-DLP reports a vast amount of information to Microsoft Purview from monitoring policy matches and actions, to user activities. You need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the Microsoft 365 audit Logs first, is processed, and makes its way to different reporting tools.
+You can configure your policies so that, when a DLP policy is triggered, email notifications are sent automatically, and policy tips are shown to admins and end users. Policy tips are useful ways to raise awareness of risky behaviors on sensitive items and train users to avoid those behaviors in the future.
 
 
 
@@ -5741,13 +5735,21 @@ For data owners and stewards:
 
 564
 Microsoft Purview
-Evaluate the impact of the controls by implementing them with a DLP policy in simulation mode. Actions defined in a policy aren't applied while the policy is in simulation mode.
+For files, emails, and meetings, but not for groups and sites, if a user tries to remove a label or replace it with a label that has a lower priority, by default the user must provide a justification to perform this action.
 
 
 
 
 
 565
+Microsoft Purview
+Evaluate the impact of the controls by implementing them with a DLP policy in simulation mode. Actions defined in a policy aren't applied while the policy is in simulation mode.
+
+
+
+
+
+566
 Microsoft Purview
 Steps to create a DLP policy
     Choose what you want to monitor
@@ -5760,7 +5762,15 @@ Steps to create a DLP policy
 
 
 
-566
+567
+Microsoft Purview
+Run the policy in simulation mode, without Policy Tips and then use the DLP reports, and any incident reports, to assess the impact of the policies. You can use DLP reports to view the number, location, type, and severity of policy matches. Based on the results, you can fine-tune your policies as needed.
+
+
+
+
+
+568
 Microsoft Purview
 A governance domain can house many data products but a data product is managed by a single governance domain and can be discovered across many domains.
 
@@ -5768,7 +5778,23 @@ A governance domain can house many data products but a data product is managed b
 
 
 
-567
+569
+Microsoft Purview
+If your organization has implemented administrative units, you can scope your DLP policies by administrative unit or leave the scope default, which applies policies to the full directory. For more information, see Policy Scoping.
+
+
+
+
+
+570
+Microsoft Purview
+Run the policy in simulation mode with notifications and Policy Tips so that you can begin to teach users about your compliance policies and prepare them for when the policies are applied. It's useful to have a link to an organization policy page that provides more details about the policy in the Policy Tip.
+
+
+
+
+
+571
 Microsoft Purview
 Members of your compliance team who will create and sensitivity labels need permissions to the Microsoft Purview portal. You can use the following role groups:
 
@@ -5777,41 +5803,6 @@ Members of your compliance team who will create and sensitivity labels need perm
     Information Protection Analysts
     Information Protection Investigators
     Information Protection Readers
-
-
-
-
-
-568
-Microsoft Purview
-If your organization has implemented administrative units, you can scope your DLP policies by administrative unit or leave the scope default, which applies policies to the full directory. For more information, see Policy Scoping.
-
-
-
-
-
-569
-Microsoft Purview
-Microsoft Purview includes:
-Sensitive information types 
-Trainable classifiers to identify sensitive items by using examples of the data you're interested in rather than identifying elements in the item.
-Data classification
-
-
-
-
-
-570
-Microsoft Purview
-Run the policy in simulation mode, without Policy Tips and then use the DLP reports, and any incident reports, to assess the impact of the policies. You can use DLP reports to view the number, location, type, and severity of policy matches. Based on the results, you can fine-tune your policies as needed.
-
-
-
-
-
-571
-Microsoft Purview
-When viewed by users in your organization, an applied sensitivity label appears like a tag on apps and can be easily integrated into their existing workflows. Your sensitivity labels aren't visible in apps to users from other organizations, or to guests.
 
 
 
@@ -5837,8 +5828,8 @@ An interactive authentication method involving user login and authorization, sui
 
 574
 PnP PowerShell
-Throttling in SharePoint
-Limits the number of API requests to prevent abuse and ensure service stability. Requires implementing retry logic and handling throttling responses in scripts.
+Client Secret (client_secret)
+A confidential key associated with an Azure AD application, used alongside the client ID to authenticate the application in secure authentication flows.
 
 
 
@@ -5846,8 +5837,8 @@ Limits the number of API requests to prevent abuse and ensure service stability.
 
 575
 PnP PowerShell
-Client Secret (client_secret)
-A confidential key associated with an Azure AD application, used alongside the client ID to authenticate the application in secure authentication flows.
+Throttling in SharePoint
+Limits the number of API requests to prevent abuse and ensure service stability. Requires implementing retry logic and handling throttling responses in scripts.
 
 
 
@@ -5864,8 +5855,8 @@ Data formatted in JSON used in REST API requests and responses. PowerShell uses 
 
 577
 PnP PowerShell
-Invoke-WebRequest Parameters (Microsoft.PowerShell.Utility)
-Includes -Method, -Uri, -Headers, -Body, and others. Facilitates detailed HTTP request configurations for interacting with web services.
+Add-PnPField (PnP.PowerShell)
+Adds a new field (column) to a SharePoint list or library. Supports various field types and configurations for customized data structures.
 
 
 
@@ -5873,8 +5864,8 @@ Includes -Method, -Uri, -Headers, -Body, and others. Facilitates detailed HTTP r
 
 578
 PnP PowerShell
-Add-PnPField (PnP.PowerShell)
-Adds a new field (column) to a SharePoint list or library. Supports various field types and configurations for customized data structures.
+Invoke-WebRequest Parameters (Microsoft.PowerShell.Utility)
+Includes -Method, -Uri, -Headers, -Body, and others. Facilitates detailed HTTP request configurations for interacting with web services.
 
 
 
@@ -5910,15 +5901,10 @@ Sends HTTP and HTTPS requests to web pages or web services. Similar to Invoke-Re
 582
 Python
 Q:
-How can you create an asynchronous generator in Python?
+What is the purpose of the leave parameter in tqdm?
 
 A:
-By defining a generator function with async def and using yield or yield from within it.
-
-Example:
-async def async_gen():
-    for i in range(3):
-        yield i
+To determine whether to keep the progress bar display after completion (leave=True) or remove it (leave=False).
 
 
 
@@ -5927,15 +5913,10 @@ async def async_gen():
 583
 Python
 Q:
-How can you check if a Path object points to a symbolic link?
+What method can be used to send a value into a generator, allowing it to receive data?
 
 A:
-Using the .is_symlink() method.
-
-Example:
-path = Path('/path/to/symlink')
-if path.is_symlink():
-    print("It's a symbolic link.")
+The .send(value) method.
 
 
 
@@ -6001,6 +5982,18 @@ print(path.stem)  # Output: 'file'
 588
 Python
 Q:
+How do you make a custom object iterable?
+
+A:
+By implementing the __iter__() method that returns an iterator (which can be the object itself with a __next__() method).
+
+
+
+
+
+589
+Python
+Q:
 What is the purpose of the raise ... from ... syntax in exception handling?
 
 A:
@@ -6012,18 +6005,6 @@ try:
 except ZeroDivisionError as e:
     raise ValueError("Invalid operation") from e
 Additional Python Modules and Functions
-
-
-
-
-
-589
-Python
-Q:
-How do you make a custom object iterable?
-
-A:
-By implementing the __iter__() method that returns an iterator (which can be the object itself with a __next__() method).
 
 
 
@@ -6044,10 +6025,10 @@ It reduces memory consumption and can improve performance by avoiding the storag
 591
 Python
 Q:
-What is the purpose of the argparse module in Python?
+How can you measure the performance of a generator function?
 
 A:
-To parse command-line arguments and options in a user-friendly way.
+By using the timeit module or integrating timing within the generator using time measurements.
 
 
 
@@ -6063,6 +6044,19 @@ Feature management is a modern software-development practice that decouples feat
 
 593
 Azure Developer Associate
+You plan to generate a shared access signature (SAS) token for read access to a blob in a storage account.
+You need to secure the token from being compromised. What should you use?
+
+Microsoft Entra ID credentials assigned the Contributor role
+NOT 
+Microsoft Entra ID credentials assigned the Reader role (Readers can't do the action described, but definitely only give read access).
+
+
+
+
+
+594
+Azure Developer Associate
 You create an Azure Service Bus topic with a default message time to live of 10 minutes.
 You need to send messages to this topic with a time to live of 15 minutes. The solution must not affect other applications that are using the topic.
 What should you recommend?
@@ -6075,7 +6069,7 @@ Change the specific message’s time to live to 15 minutes.
 
 
 
-594
+595
 Azure Developer Associate
 A company plans to implement a Microsoft Defender for Cloud solution.
 The company has the following requirements:
@@ -6093,24 +6087,11 @@ Premium
 
 
 
-595
-Azure Developer Associate
-Your company is developing a new web application that will be deployed as a containerized solution on Azure. The application is expected to have fluctuating workloads and needs to be highly available.
-
-You need to create a solution that allows the application to scale based on demand and recover from failures automatically.
-
-Each correct answer presents part of the solution. Which two actions should you perform? (Choose two.)
-
-  Deploy the containerized application to Azure Container Apps.
-  Publish the application's image to Azure Container Registry.
-
-
-
-
-
 596
 Azure Developer Associate
-Messages carry a payload and metadata. The metadata is in the form of key-value pair properties, and describes the payload, and gives handling instructions to Service Bus and applications. Occasionally, that metadata alone is sufficient to carry the information that the sender wants to communicate to receivers, and the payload remains empty.
+Azure supports two types of queue mechanisms: Service Bus queues and Storage queues.
+
+Service Bus queues are part of a broader Azure messaging infrastructure that supports queuing, publish/subscribe, and more advanced integration patterns. They're designed to integrate applications or application components that might span multiple communication protocols, data contracts, trust domains, or network environments.
 
 
 
@@ -6118,9 +6099,7 @@ Messages carry a payload and metadata. The metadata is in the form of key-value 
 
 597
 Azure Developer Associate
-Azure supports two types of queue mechanisms: Service Bus queues and Storage queues.
-
-Service Bus queues are part of a broader Azure messaging infrastructure that supports queuing, publish/subscribe, and more advanced integration patterns. They're designed to integrate applications or application components that might span multiple communication protocols, data contracts, trust domains, or network environments.
+Messages carry a payload and metadata. The metadata is in the form of key-value pair properties, and describes the payload, and gives handling instructions to Service Bus and applications. Occasionally, that metadata alone is sufficient to carry the information that the sender wants to communicate to receivers, and the payload remains empty.
 
 
 
@@ -6168,18 +6147,6 @@ A: Delegate
 
 602
 Vocab
-Well of Lost Plots, Fforde
-Reigate
-noun | RYE-gate
-A market town in Surrey, England.
-Example: They enjoyed a day trip to Reigate, exploring its castle ruins.
-
-
-
-
-
-603
-Vocab
 Something Rotten, Fforde
 Muslin (curtains)
 noun | MUZ-lin
@@ -6190,7 +6157,30 @@ Example: The muslin curtains let in a soft, diffused light.
 
 
 
+603
+Vocab
+Well of Lost Plots, Fforde
+Reigate
+noun | RYE-gate
+A market town in Surrey, England.
+Example: They enjoyed a day trip to Reigate, exploring its castle ruins.
+
+
+
+
+
 604
+Vocab
+How to Sell a Haunted House, Hendrix
+Truckle
+Pronunciation: TRUHK-uhl
+Definition: To act in a subservient or groveling manner, often to gain favor or avoid punishment; can also refer to a small wheel of cheese.
+
+
+
+
+
+605
 Vocab
 How to Sell a Haunted House, Hendrix
 Trimalleolar Fracture
@@ -6201,7 +6191,7 @@ Definition: A severe ankle fracture involving all three malleoli—the medial, l
 
 
 
-605
+606
 Vocab
 Jingo, Pratchett
 Crinoline
@@ -6213,7 +6203,7 @@ Example: Her gown was supported by a wide crinoline that swayed as she walked.
 
 
 
-606
+607
 Vocab
 Jingo, Pratchett
 Cruet
@@ -6225,18 +6215,19 @@ Example: The table was set with a cruet of balsamic vinegar and olive oil.
 
 
 
-607
-Vocab
-How to Sell a Haunted House, Hendrix
-Truckle
-Pronunciation: TRUHK-uhl
-Definition: To act in a subservient or groveling manner, often to gain favor or avoid punishment; can also refer to a small wheel of cheese.
-
-
-
-
-
 608
+Vocab
+Something Rotten, Fforde
+Florin
+noun | FLOR-in
+A former British coin worth two shillings, or one-tenth of a pound, used before decimalization.
+Example: He found an old florin in the attic among his grandfather’s coins.
+
+
+
+
+
+609
 Vocab
 Lost in a Good Book
 Wisteria: A climbing flowering plant with fragrant, cascading purple or white blooms, often grown on pergolas or trellises.
@@ -6245,7 +6236,7 @@ Wisteria: A climbing flowering plant with fragrant, cascading purple or white bl
 
 
 
-609
+610
 Vocab
 Anacoluthon
 noun
@@ -6254,18 +6245,6 @@ IPA: /ˌænəkəˈluːθɒn/
 
 A grammatical construction in which a sentence begins in one way but ends in another, often disrupting the expected syntax or logical sequence.
 Example: His speech was full of anacoluthons, making it difficult to follow his intended argument.
-
-
-
-
-
-610
-Vocab
-Something Rotten, Fforde
-Florin
-noun | FLOR-in
-A former British coin worth two shillings, or one-tenth of a pound, used before decimalization.
-Example: He found an old florin in the attic among his grandfather’s coins.
 
 
 
@@ -6304,7 +6283,14 @@ RESTful APIs: Architectural style for designing networked applications, using HT
 
 614
 JavaScript Concepts
-Using Object.keys() with for...of Loop: The Object.keys() method returns an array of the object's own enumerable property names. You can then use the for...of loop to iterate over these keys1.
+In JavaScript, you can only return exactly one value. If you want to pass more information, you need to combine it into one entity first, usually into an object, or an array.
+
+function divide(a, b) {
+  return {
+    quotient: Math.floor(a / b),
+    remainder: a % b,
+  };
+}
 
 
 
@@ -6312,12 +6298,7 @@ Using Object.keys() with for...of Loop: The Object.keys() method returns an arra
 
 615
 JavaScript Concepts
-Front: What are the benefits of using callback functions?
-
-Back:
-Flexibility: Allows functions to be more modular and reusable.
-Asynchronous Handling: Enables handling of asynchronous operations like network requests and timers.
-Improved Code Organization: Helps in organizing code by separating concerns and improving readability.
+Using Object.keys() with for...of Loop: The Object.keys() method returns an array of the object's own enumerable property names. You can then use the for...of loop to iterate over these keys1.
 
 
 
@@ -6325,13 +6306,12 @@ Improved Code Organization: Helps in organizing code by separating concerns and 
 
 616
 JavaScript Concepts
-Object Literals: The most common way to create an object is using object literals, which are a list of name-value pairs inside curly braces {}. For example:
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 50,
-  eyeColor: "blue"
-};
+Front: What are the benefits of using callback functions?
+
+Back:
+Flexibility: Allows functions to be more modular and reusable.
+Asynchronous Handling: Enables handling of asynchronous operations like network requests and timers.
+Improved Code Organization: Helps in organizing code by separating concerns and improving readability.
 
 
 
@@ -6351,6 +6331,28 @@ Type Coercion to boolean commonly occurs for
 
 618
 JavaScript Concepts
+Object Literals: The most common way to create an object is using object literals, which are a list of name-value pairs inside curly braces {}. For example:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+
+
+
+
+619
+JavaScript Concepts
+Case Sensitivity: JavaScript identifiers are case-sensitive. This means that y and Y are considered different variables. It's important to be consistent with the use of case to avoid errors in your code1.
+
+
+
+
+
+620
+JavaScript Concepts
 With Boolean(value) you can convert any value to a boolean. There is a fixed set of values, so called falsy values, that convert to false. Most importantly, false, 0, empty string, null, undefined and NaN are falsy.
 Boolean(-1);// => true
 Boolean(0);// => false
@@ -6361,7 +6363,7 @@ Boolean('');// => false
 
 
 
-619
+621
 JavaScript Concepts
 Callback
 A function passed as an argument to be invoked later, once some operation completes.
@@ -6375,30 +6377,9 @@ A function passed as an argument to be invoked later, once some operation comple
 
 
 
-620
-JavaScript Concepts
-Case Sensitivity: JavaScript identifiers are case-sensitive. This means that y and Y are considered different variables. It's important to be consistent with the use of case to avoid errors in your code1.
-
-
-
-
-
-621
-JavaScript Concepts
-The basic syntax for a string template in JavaScript uses backticks (`) and ${} for embedding expressions.
-  const name = 'Jay';
-  const greeting = `Hello, ${name}!`;
-  console.log(greeting); // Output: Hello, Jay!
-
-
-
-
-
 622
 Microsoft Purview
-Data discovery is about ensuring users can find the data they need for day-to-day business and innovation.
-
-Data health is about ensuring data quality standards are maintained across your estate, and having an active data lifecycle keeping your data fresh and secure.
+When viewed by users in your organization, an applied sensitivity label appears like a tag on apps and can be easily integrated into their existing workflows. Your sensitivity labels aren't visible in apps to users from other organizations, or to guests.
 
 
 
@@ -6406,7 +6387,10 @@ Data health is about ensuring data quality standards are maintained across your 
 
 623
 Microsoft Purview
-Related to business domains are data products. A data product is a business construct with a name, description, owners, and most importantly a list of associated data assets. The data product provides context for the assets that are included within it, and provides a use case for data consumers.
+Microsoft Purview includes:
+Sensitive information types 
+Trainable classifiers to identify sensitive items by using examples of the data you're interested in rather than identifying elements in the item.
+Data classification
 
 
 
@@ -6414,7 +6398,7 @@ Related to business domains are data products. A data product is a business cons
 
 624
 Microsoft Purview
-Data understanding is about ensure data has quality descriptors that help users understand what the data is and how it should be used.
+The Groups & sites scope becomes available and selected by default when you enable sensitivity labels for containers and synchronize labels. This option lets you protect content in SharePoint sites, Teams sites, and Loop workspaces by labeling those containers but doesn't label the items in them.
 
 
 
@@ -6430,13 +6414,29 @@ Define what each label can do. Configure the protection settings you want associ
 
 626
 Microsoft Purview
-Run the policy in simulation mode with notifications and Policy Tips so that you can begin to teach users about your compliance policies and prepare them for when the policies are applied. It's useful to have a link to an organization policy page that provides more details about the policy in the Policy Tip.
+Related to business domains are data products. A data product is a business construct with a name, description, owners, and most importantly a list of associated data assets. The data product provides context for the assets that are included within it, and provides a use case for data consumers.
 
 
 
 
 
 627
+Microsoft Purview
+In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. A DLP policy can help you identify, monitor, and automatically protect sensitive data-at-rest, data-in-motion, and data-in-use. DLP policies act on a variety of locations, methods of data transmission, and types of user activities.
+
+
+
+
+
+628
+Microsoft Purview
+Data understanding is about ensure data has quality descriptors that help users understand what the data is and how it should be used.
+
+
+
+
+
+629
 Microsoft Purview
 You can view the last 30 days of DLP information in Activity Explorer using these preconfigured filters:
 
@@ -6445,22 +6445,6 @@ You can view the last 30 days of DLP information in Activity Explorer using thes
     Egress activities
     DLP policies that detected activities
     DLP policy rules that detected activities
-
-
-
-
-
-628
-Microsoft Purview
-The Groups & sites scope becomes available and selected by default when you enable sensitivity labels for containers and synchronize labels. This option lets you protect content in SharePoint sites, Teams sites, and Loop workspaces by labeling those containers but doesn't label the items in them.
-
-
-
-
-
-629
-Microsoft Purview
-In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. A DLP policy can help you identify, monitor, and automatically protect sensitive data-at-rest, data-in-motion, and data-in-use. DLP policies act on a variety of locations, methods of data transmission, and types of user activities.
 
 
 
@@ -6522,8 +6506,8 @@ A programming model that allows interaction with SharePoint data from client app
 
 636
 PnP PowerShell
-JSON Conversion
-Transforms PowerShell objects to JSON format and vice versa using ConvertTo-Json and ConvertFrom-Json. Essential for handling REST API payloads and responses.
+Invoke-PnPRequest (PnP.PowerShell)
+Sends custom HTTP requests to SharePoint APIs within PnP.PowerShell scripts. Allows for advanced interactions beyond standard cmdlet capabilities.
 
 
 
@@ -6531,8 +6515,8 @@ Transforms PowerShell objects to JSON format and vice versa using ConvertTo-Json
 
 637
 PnP PowerShell
-Invoke-PnPRequest (PnP.PowerShell)
-Sends custom HTTP requests to SharePoint APIs within PnP.PowerShell scripts. Allows for advanced interactions beyond standard cmdlet capabilities.
+JSON Conversion
+Transforms PowerShell objects to JSON format and vice versa using ConvertTo-Json and ConvertFrom-Json. Essential for handling REST API payloads and responses.
 
 
 
@@ -6559,64 +6543,16 @@ Deletes a field from a SharePoint list or library. Useful for cleaning up unused
 640
 Python
 Q:
-How can you measure the performance of a generator function?
+What is the purpose of the argparse module in Python?
 
 A:
-By using the timeit module or integrating timing within the generator using time measurements.
+To parse command-line arguments and options in a user-friendly way.
 
 
 
 
 
 641
-Python
-Q:
-How do you add a required positional argument using argparse?
-
-A:
-By using the .add_argument() method without specifying -- prefixes.
-
-Example:
-import argparse
-
-parser = argparse.ArgumentParser()
-parser.add_argument('filename', help='Name of the file to process')
-args = parser.parse_args()
-
-
-
-
-
-642
-Python
-Q:
-How can you add a dynamic description to a tqdm progress bar?
-
-A:
-By using the desc parameter when initializing the progress bar.
-
-Example:
-from tqdm import tqdm
-for i in tqdm(range(100), desc='Processing'):
-    pass
-
-
-
-
-
-643
-Python
-Q:
-How can decorators be used to modify the behavior of generator functions?
-
-A:
-By defining a decorator that wraps the generator function, potentially altering how yield statements are handled or adding additional functionality before and after iteration.
-
-
-
-
-
-644
 Python
 Q:
 How can you create a context manager that suppresses specific exceptions?
@@ -6635,7 +6571,43 @@ with suppress(FileNotFoundError):
 
 
 
-645
+642
+Python
+Q:
+How do you add a required positional argument using argparse?
+
+A:
+By using the .add_argument() method without specifying -- prefixes.
+
+Example:
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('filename', help='Name of the file to process')
+args = parser.parse_args()
+
+
+
+
+
+643
+Python
+Q:
+How can you add a dynamic description to a tqdm progress bar?
+
+A:
+By using the desc parameter when initializing the progress bar.
+
+Example:
+from tqdm import tqdm
+for i in tqdm(range(100), desc='Processing'):
+    pass
+
+
+
+
+
+644
 Python
 Q:
 What is lazy evaluation, and how do generators implement it in Python?
@@ -6647,7 +6619,7 @@ Lazy evaluation is a strategy where computations are deferred until their result
 
 
 
-646
+645
 Python
 Q:
 What are some ways to optimize generator performance in Python?
@@ -6657,6 +6629,18 @@ A:
 Minimizing the number of yield statements.
 Avoiding complex computations within the generator.
 Using built-in functions and libraries that are optimized in C.
+
+
+
+
+
+646
+Python
+Q:
+How can decorators be used to modify the behavior of generator functions?
+
+A:
+By defining a decorator that wraps the generator function, potentially altering how yield statements are handled or adding additional functionality before and after iteration.
 
 
 
@@ -6678,23 +6662,6 @@ parser.add_argument('--verbose', action='store_true', default=False, help='Enabl
 
 648
 Python
-How can you check if two Path objects refer to the same file in different locations?
-
-A:
-By comparing their resolved absolute paths using the .resolve() method.
-
-Example:
-path1 = Path('/path/to/file').resolve()
-path2 = Path('../path/to/file').resolve()
-are_same = path1 == path2
-Flashcard 56
-
-
-
-
-
-649
-Python
 from functools import wraps
 
 def my_decorator(func):
@@ -6705,6 +6672,23 @@ def my_decorator(func):
         # Post-processing
         return result
     return wrapper
+
+
+
+
+
+649
+Python
+How can you check if two Path objects refer to the same file in different locations?
+
+A:
+By comparing their resolved absolute paths using the .resolve() method.
+
+Example:
+path1 = Path('/path/to/file').resolve()
+path2 = Path('../path/to/file').resolve()
+are_same = path1 == path2
+Flashcard 56
 
 
 
@@ -6721,24 +6705,6 @@ A: @Microsoft.KeyVault(SecretName=MySecret;VaultName=MyVault)
 
 651
 Azure Developer Associate
-Q: In Azure Storage, which SAS type supports Azure AD identity delegation?
-A: User delegation SAS (Blob service only)
-
-
-
-
-
-652
-Azure Developer Associate
-Q: In Azure Service Bus topics, which filter matches properties like MessageId or CorrelationId?
-A: Correlation filter
-
-
-
-
-
-653
-Azure Developer Associate
 Q: In Azure API Management, which policy lets you return fake responses without calling the backend?
 A: Mock-response policy
 
@@ -6746,7 +6712,16 @@ A: Mock-response policy
 
 
 
-654
+652
+Azure Developer Associate
+Q: In Azure Storage, which SAS type supports Azure AD identity delegation?
+A: User delegation SAS (Blob service only)
+
+
+
+
+
+653
 Azure Developer Associate
 Q: In Azure Event Hubs, what provides independent views of an event stream?
 A: Consumer group
@@ -6755,10 +6730,19 @@ A: Consumer group
 
 
 
+654
+Azure Developer Associate
+Q: In Azure Service Bus topics, which filter matches properties like MessageId or CorrelationId?
+A: Correlation filter
+
+
+
+
+
 655
 Azure Developer Associate
-Q: In Azure Event Hubs, what unit enables parallel processing of events?
-A: Partition
+Q: In Azure API Management, which pipeline is used to remove headers from responses?
+A: Outbound pipeline
 
 
 
@@ -6766,8 +6750,8 @@ A: Partition
 
 656
 Azure Developer Associate
-Q: In Azure API Management, which pipeline is used to remove headers from responses?
-A: Outbound pipeline
+Q: In Azure Event Hubs, what unit enables parallel processing of events?
+A: Partition
 
 
 
@@ -6814,6 +6798,17 @@ Example: The hospital staff checked the rotas to see who was on night duty.
 
 661
 Vocab
+How to Sell a Haunted House, Hendrix
+Camellia
+Pronunciation: kuh-MEE-lee-uh
+Definition: An evergreen shrub native to Asia, prized for its glossy leaves and showy, rose-like flowers. Commonly used in landscaping and known for varieties like Camellia japonica and Camellia sinensis (the tea plant).
+
+
+
+
+
+662
+Vocab
 Well of Lost Plots, Fforde
 Gerund
 noun | JER-und
@@ -6824,23 +6819,12 @@ Example: In the sentence “Swimming is fun,” swimming is a gerund.
 
 
 
-662
+663
 Vocab
 How to Sell a Haunted House, Hendrix
 Probate
 Pronunciation: PROH-bayt
 Definition: The legal process of validating a deceased person’s will and administering their estate according to that will or state law.
-
-
-
-
-
-663
-Vocab
-How to Sell a Haunted House, Hendrix
-Camellia
-Pronunciation: kuh-MEE-lee-uh
-Definition: An evergreen shrub native to Asia, prized for its glossy leaves and showy, rose-like flowers. Commonly used in landscaping and known for varieties like Camellia japonica and Camellia sinensis (the tea plant).
 
 
 
@@ -6858,6 +6842,18 @@ Definition: Genetic indicators that predict how an individual will respond to sp
 
 665
 Vocab
+Well of Lost Plots, Fforde
+Lych-gate
+noun | LICH-gate
+A roofed gateway at the entrance to a churchyard, often where a coffin rests before burial.
+Example: The mourners paused under the ancient lych-gate before entering the churchyard.
+
+
+
+
+
+666
+Vocab
 Lacunary
 adjective
 SPA: LACK-yoo-nary
@@ -6870,7 +6866,7 @@ Example: The ancient manuscript was lacunary, with several sections of the text 
 
 
 
-666
+667
 Vocab
 Well of Lost Plots, Fforde
 Frontispiece
@@ -6882,7 +6878,19 @@ Example: The antique volume featured an engraved frontispiece of its author.
 
 
 
-667
+668
+Vocab
+Well of Lost Plots, Fforde
+Insouciance
+noun | in-SOO-see-ance
+Casual lack of concern; indifference.
+Example: His insouciance about deadlines frustrated his teammates.
+
+
+
+
+
+669
 Vocab
 Jingo, Pratchett
 Effendi
@@ -6894,33 +6902,12 @@ Example: The effendi greeted us warmly as we entered his home.
 
 
 
-668
-Vocab
-Jingo, Pratchett
-Windlass
-noun | WIND-luhs
-A mechanical device used for lifting or hauling, typically consisting of a horizontal cylinder turned by a crank or motor.
-Example: The sailors used a windlass to raise the anchor.
-
-
-
-
-
-669
-Vocab
-Well of Lost Plots, Fforde
-Lych-gate
-noun | LICH-gate
-A roofed gateway at the entrance to a churchyard, often where a coffin rests before burial.
-Example: The mourners paused under the ancient lych-gate before entering the churchyard.
-
-
-
-
-
 670
 JavaScript Concepts
-Prototype-Based Inheritance: JavaScript uses prototype-based inheritance, meaning objects can inherit properties and methods from other objects. This is achieved through the prototype chain3.
+The basic syntax for a string template in JavaScript uses backticks (`) and ${} for embedding expressions.
+  const name = 'Jay';
+  const greeting = `Hello, ${name}!`;
+  console.log(greeting); // Output: Hello, Jay!
 
 
 
@@ -6949,8 +6936,7 @@ let slicedArray = array.slice(1, 4); // Output: [2, 3, 4]
 
 673
 JavaScript Concepts
-NaN is not equal to itself (NaN !== NaN), so using case NaN: in a switch statement will not work.
-Use the isNaN function to check for NaN values before the switch statement or within a switch statement using switch (true).
+Reserved Words: Identifiers cannot be the same as JavaScript reserved words (keywords). Reserved words are predefined in the language and have special meanings, such as var, let, const, function, and class. Using these as identifiers will result in syntax errors1.
 
 
 
@@ -6958,7 +6944,8 @@ Use the isNaN function to check for NaN values before the switch statement or wi
 
 674
 JavaScript Concepts
-Reserved Words: Identifiers cannot be the same as JavaScript reserved words (keywords). Reserved words are predefined in the language and have special meanings, such as var, let, const, function, and class. Using these as identifiers will result in syntax errors1.
+NaN is not equal to itself (NaN !== NaN), so using case NaN: in a switch statement will not work.
+Use the isNaN function to check for NaN values before the switch statement or within a switch statement using switch (true).
 
 
 
@@ -6987,6 +6974,17 @@ Context API: A React feature that provides a way to pass data through the compon
 
 677
 JavaScript Concepts
+Bracket Notation: You can also use bracket notation, which is useful when the property name is dynamically determined.
+
+const obj = { key1: "value1", key2: "value2" };
+obj["key3"] = "value3"; // Adds key3 with value3
+
+
+
+
+
+678
+JavaScript Concepts
 Front: How do you access the raw string content of a template literal?
 
 Back: You can access the raw string content using the String.raw tag.
@@ -6997,29 +6995,12 @@ Back: You can access the raw string content using the String.raw tag.
 
 
 
-678
+679
 JavaScript Concepts
 Object.assign(): This method can be used to copy the values of all enumerable own properties from one or more source objects to a target object.
 
 const obj = { key1: "value1", key2: "value2" };
 Object.assign(obj, { key3: "value3" }); // Adds key3 with value3
-
-
-
-
-
-679
-JavaScript Concepts
-Front: What are tagged templates and how do you use them?
-
-Back: Tagged templates allow you to parse template literals with a function. The function receives the template string and the values as arguments.
-  function tag(strings, ...values) {
-  console.log(strings); // Array of string segments
-  console.log(values);  // Array of values
-  return 'Tagged template result';
-}
-const result = tag`Hello, ${name}!`;
-console.log(result); // Output: Tagged template result
 
 
 
@@ -7095,15 +7076,6 @@ A: Stored access policy
 
 686
 Azure Developer Associate
-Q: In Azure API Management, what’s the difference between a Subscription and a Policy?
-A: Subscription = access key for consumers; Policy = runtime behavior (rate limiting, transformations, security).
-
-
-
-
-
-687
-Azure Developer Associate
 Q: In Application Insights, what’s the technique that traces requests across services?
 A: Distributed tracing
 
@@ -7111,13 +7083,22 @@ A: Distributed tracing
 
 
 
+687
+Azure Developer Associate
+Q: In Azure API Management, what’s the difference between a Subscription and a Policy?
+A: Subscription = access key for consumers; Policy = runtime behavior (rate limiting, transformations, security).
+
+
+
+
+
 688
 Vocab
-Well of Lost Plots, Fforde
-Insouciance
-noun | in-SOO-see-ance
-Casual lack of concern; indifference.
-Example: His insouciance about deadlines frustrated his teammates.
+Jingo, Pratchett
+Windlass
+noun | WIND-luhs
+A mechanical device used for lifting or hauling, typically consisting of a horizontal cylinder turned by a crank or motor.
+Example: The sailors used a windlass to raise the anchor.
 
 
 
@@ -7149,11 +7130,8 @@ Example: Owen Wister’s work laid the foundation for cowboy fiction.
 
 691
 Vocab
-Well of Lost Plots, Fforde
-The Decameron
-noun | the deh-KAM-er-on
-A 14th-century collection of 100 novellas by Giovanni Boccaccio, framed as stories told by ten people sheltering from the Black Death.
-Example: The Decameron opens with its narrators deciding to entertain themselves with tales during the plague.
+Lost in a Good Book
+Pelmet(s): A decorative framework or fabric cover above a window, concealing curtain fittings or rods.
 
 
 
@@ -7162,7 +7140,7 @@ Example: The Decameron opens with its narrators deciding to entertain themselves
 692
 Vocab
 Lost in a Good Book
-Pelmet(s): A decorative framework or fabric cover above a window, concealing curtain fittings or rods.
+Phaeton (bodied automobile): A type of early open-top car with no fixed roof, evoking the design of 19th-century horse-drawn carriages.
 
 
 
@@ -7170,8 +7148,11 @@ Pelmet(s): A decorative framework or fabric cover above a window, concealing cur
 
 693
 Vocab
-Lost in a Good Book
-Phaeton (bodied automobile): A type of early open-top car with no fixed roof, evoking the design of 19th-century horse-drawn carriages.
+Well of Lost Plots, Fforde
+The Decameron
+noun | the deh-KAM-er-on
+A 14th-century collection of 100 novellas by Giovanni Boccaccio, framed as stories told by ten people sheltering from the Black Death.
+Example: The Decameron opens with its narrators deciding to entertain themselves with tales during the plague.
 
 
 
@@ -7234,7 +7215,16 @@ Unique Names: All JavaScript variables must be identified with unique names, cal
 
 699
 JavaScript Concepts
-A callback function is a function that is passed as an argument to another function and is executed after some operation has been completed. This allows for more flexible and modular code, especially when dealing with asynchronous operations.
+Front: What are tagged templates and how do you use them?
+
+Back: Tagged templates allow you to parse template literals with a function. The function receives the template string and the values as arguments.
+  function tag(strings, ...values) {
+  console.log(strings); // Array of string segments
+  console.log(values);  // Array of values
+  return 'Tagged template result';
+}
+const result = tag`Hello, ${name}!`;
+console.log(result); // Output: Tagged template result
 
 
 
@@ -7242,60 +7232,13 @@ A callback function is a function that is passed as an argument to another funct
 
 700
 JavaScript Concepts
-Key-Value Pairs: Objects in JavaScript are collections of key-value pairs. Each key is a string (or symbol) and each value can be any data type, including other objects2.
+A callback function is a function that is passed as an argument to another function and is executed after some operation has been completed. This allows for more flexible and modular code, especially when dealing with asynchronous operations.
 
 
 
 
 
 701
-JavaScript Concepts
-Closures: Functions that retain access to their lexical scope even when executed outside their original context, enabling data privacy and function factories.
-
-
-
-
-
-702
-JavaScript Concepts
-Bracket Notation: You can also use bracket notation, which is useful when the property name is dynamically determined.
-
-const obj = { key1: "value1", key2: "value2" };
-obj["key3"] = "value3"; // Adds key3 with value3
-
-
-
-
-
-703
-JavaScript Concepts
-Component-Based Architecture: Building applications by encapsulating functionality into independent, reusable components, commonly used in frontend frameworks.
-
-
-
-
-
-704
-JavaScript Concepts
-Using for...in Loop: The for...in loop is useful for iterating over all enumerable properties of an object, including inherited ones. To avoid iterating over inherited properties, use the hasOwnProperty method1.
-
-
-
-
-
-705
-JavaScript Concepts
-Checks potentially very long playlsit for a specific track by converting to a set and using the Set.has() funciton.
-  export function hasTrack(playlist, track) {
-    const play_set = new Set (playlist)
-    return play_set.has(track)
-  }
-
-
-
-
-
-706
 JavaScript Concepts
 In many cases, it makes sense to assign a more appropriate default value than undefined. This can be done by specifying default parameters directly in the function definition.
 
@@ -7307,9 +7250,58 @@ function someName(param1 = defaultValue1, param2 = defaultValue2) {
 
 
 
+702
+JavaScript Concepts
+Key-Value Pairs: Objects in JavaScript are collections of key-value pairs. Each key is a string (or symbol) and each value can be any data type, including other objects2.
+
+
+
+
+
+703
+JavaScript Concepts
+Checks potentially very long playlsit for a specific track by converting to a set and using the Set.has() funciton.
+  export function hasTrack(playlist, track) {
+    const play_set = new Set (playlist)
+    return play_set.has(track)
+  }
+
+
+
+
+
+704
+JavaScript Concepts
+Closures: Functions that retain access to their lexical scope even when executed outside their original context, enabling data privacy and function factories.
+
+
+
+
+
+705
+JavaScript Concepts
+Using for...in Loop: The for...in loop is useful for iterating over all enumerable properties of an object, including inherited ones. To avoid iterating over inherited properties, use the hasOwnProperty method1.
+
+
+
+
+
+706
+JavaScript Concepts
+Component-Based Architecture: Building applications by encapsulating functionality into independent, reusable components, commonly used in frontend frameworks.
+
+
+
+
+
 707
 JavaScript Concepts
-Virtual DOM: An in-memory representation of the real DOM used by libraries like React to optimize and batch DOM updates efficiently.
+Front: How do you create multiline strings using string templates?
+Back: String templates allow for multiline strings without the need for concatenation or escape characters.
+  const multiline = `This is a string
+  that spans multiple
+  lines.`;
+  console.log(multiline);
 
 
 
@@ -7328,27 +7320,6 @@ Definition: Adherence to the highest principles and ideals; uprightness and inte
 
 709
 JavaScript Concepts
-Yarn: An alternative package manager to npm, offering faster installs and more reliable dependency management through lock files.
-
-
-
-
-
-710
-JavaScript Concepts
-Front: How do you create multiline strings using string templates?
-Back: String templates allow for multiline strings without the need for concatenation or escape characters.
-  const multiline = `This is a string
-  that spans multiple
-  lines.`;
-  console.log(multiline);
-
-
-
-
-
-711
-JavaScript Concepts
 Front: Can you call functions within a string template?
 
 Back: Yes, you can call functions within ${} in a string template.
@@ -7357,6 +7328,22 @@ Back: Yes, you can call functions within ${} in a string template.
   }
   const greeting = `Hello, ${getName()}!`;
   console.log(greeting); // Output: Hello, Jay!
+
+
+
+
+
+710
+JavaScript Concepts
+Virtual DOM: An in-memory representation of the real DOM used by libraries like React to optimize and batch DOM updates efficiently.
+
+
+
+
+
+711
+JavaScript Concepts
+Yarn: An alternative package manager to npm, offering faster installs and more reliable dependency management through lock files.
 
 
 
@@ -7376,6 +7363,14 @@ Many operators coerce the operands into numbers (if necessary) according to the 
 
 713
 JavaScript Concepts
+Using Object.entries(): The Object.entries() method returns an array of the object's own enumerable property [key, value] pairs. You can use the for...of loop to iterate over these pairs1.
+
+
+
+
+
+714
+JavaScript Concepts
 JavaScript's array destructuring syntax is a concise way to extract values from an array and assign them to distinct variables. In this example, each value in the numberOfMoons array is assigned to its corresponding planet:
 
     const numberOfMoons = [0, 2, 14];
@@ -7388,21 +7383,13 @@ JavaScript's array destructuring syntax is a concise way to extract values from 
 
 
 
-714
+715
 JavaScript Concepts
 If the addition operator + is used for primitive values and one operand is a string, the other one will be coerced into a string as well. The conversion logic is the same as when using the String function. Afterwards, the two strings are concatenated.
 
 let name;
 'hello ' + name;
 // => 'hello undefined'
-
-
-
-
-
-715
-JavaScript Concepts
-Using Object.entries(): The Object.entries() method returns an array of the object's own enumerable property [key, value] pairs. You can use the for...of loop to iterate over these pairs1.
 
 
 
@@ -7463,20 +7450,6 @@ Feature: Delegation in Azure enables hybrid DNS setups and can be used to delega
 
 720
 JavaScript Concepts
-Prototype-Based Inheritance: JavaScript uses prototype-based inheritance, meaning objects can inherit properties and methods from other objects. This is achieved through the prototype chain3.
-
-195
-Azure Private DNS
-Automatic DNS Record Management
-Definition: A feature of Azure Private DNS that automatically manages DNS records for Azure resources.
-Feature: Automatic DNS Record Management makes it easier to manage internal DNS records by automatically registering records for Azure resources such as VMs or load balancers in the Private DNS Zone.
-
-
-
-
-
-721
-JavaScript Concepts
 Front: What are the benefits of using callback functions?
 
 Back:
@@ -7487,3 +7460,17 @@ Improved Code Organization: Helps in organizing code by separating concerns and 
 192
 Azure Compute Gallery
 Ephemeral OS Disk – A temporary VM disk that cannot be used with ACG images.
+
+
+
+
+
+721
+JavaScript Concepts
+Prototype-Based Inheritance: JavaScript uses prototype-based inheritance, meaning objects can inherit properties and methods from other objects. This is achieved through the prototype chain3.
+
+195
+Azure Private DNS
+Automatic DNS Record Management
+Definition: A feature of Azure Private DNS that automatically manages DNS records for Azure resources.
+Feature: Automatic DNS Record Management makes it easier to manage internal DNS records by automatically registering records for Azure resources such as VMs or load balancers in the Private DNS Zone.
