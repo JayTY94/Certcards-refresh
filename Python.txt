@@ -582,3 +582,76 @@ sys.path.insert(0, r"C:\path\to\Retain Integration")
 from load_local_config import load_local_config
 Front: What should you do after getting the imports working with hacks, for cleaner long-term code?
 Back: Rename folders to valid package names, add __init__.py files, and switch to proper package or absolute imports.
+
+
+
+
+
+
+Dataclasses (@dataclass)
+Auto-generates __init__, __repr__, and equality methods from field definitions.
+Use __post_init__ for extra setup. Reduces boilerplate but can be less explicit.
+
+Classic OOP __init__
+Manually defines the constructor. More verbose, but clearer for teams unfamiliar with dataclasses. Full control over initialization.
+
+from __future__ import annotations
+Stores type hints as strings (lazy evaluation).
+Allows forward references without quotes and avoids circular import issues.
+
+NumPy-Style Docstrings
+Standard docstring format with sections: Parameters, Returns, Raises, Examples, Notes.
+Widely used in the scientific Python ecosystem and supported by Sphinx/napoleon.
+
+Custom Logging Configuration
+Use logging.config.dictConfig for structured logging setup.
+Supports multiple handlers (console + file) and formatters in a single config dictionary.
+
+Rotating File Handler
+logging.handlers.RotatingFileHandler rotates log files when they reach a size limit.
+Prevents unbounded growth and keeps recent logs accessible.
+
+Assertions vs. Explicit Checks
+assert can be stripped away with python -O.
+For production code, prefer if ...: raise ValueError or RuntimeError.
+
+Zip Slip (Path Traversal Attack)
+Malicious zips can contain members like ../../etc/passwd.
+Naïve extractall() writes outside the intended folder.
+Fix: use Path.resolve() to normalize paths and ensure they remain within a safe directory.
+
+Pathlib (Path)
+Modern replacement for os.path.
+Supports intuitive operators (/ for joining paths), suffix checks, directory creation, and normalization with .resolve().
+
+Path.resolve()
+Converts a path into an absolute, normalized path.
+
+Collapses . and ..
+
+Adds current working directory if relative
+
+Follows symlinks by default
+Useful for ensuring extracted or user-provided paths stay within safe directories.
+
+XML Parsing with ElementTree
+Use xml.etree.ElementTree for XML processing.
+
+.iter("TagName") to find elements
+
+.attrib to access attributes
+
+Catch ParseError for malformed XML
+Namespaces require special handling ({namespace}Tag).
+
+Empty DataFrame Handling
+Calling pd.concat([]) raises an error.
+Guard with if dfs: before concatenating, or return an empty DataFrame with expected columns.
+
+Forward References in Type Hints
+Type hints can refer to classes not yet defined.
+Solutions: quotes ("Node") or from __future__ import annotations.
+
+File Extraction Safety
+Always validate file paths when writing extracted or uploaded content.
+Use .resolve() to normalize, and ensure the target directory is a parent of the resolved path.
