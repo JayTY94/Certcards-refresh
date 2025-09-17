@@ -57,7 +57,7 @@ Private Endpoint for Compute Gallery – A network security feature that restric
 Customer-Managed Keys (CMK) – Encryption keys controlled by your organization instead of using Azure-managed encryption.
 8. Planning & Limitations
 Subscription & Region Restrictions
-One Compute Gallery Per Subscription – ACG is tied to a single subscription.
+One Subscription per Compute Gallery – ACG is tied to a single subscription.
 Region Availability – Not all Azure regions support Compute Gallery replication.
 Azure Government & Sovereign Clouds – Some regions (China, US Gov) have restricted Compute Gallery availability.
 Quota & Scaling Limits
