@@ -98,7 +98,10 @@ A War Dialer is a computer program that automatically dials a series of telephon
 
 
 =============
-
+How to clear teh cache for a specific web page in Chrome:
+    Open the developer tools tab [f12]
+    [shift] + [r-click] the refresh button
+    Choose "Empty Cache and Hard Reload"
 
 
 
