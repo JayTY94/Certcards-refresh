@@ -147,7 +147,7 @@ Azure File Sync enables you to centralize your organization's file shares in Azu
 
 9
 Azure Files Documentation
-
+Azure File Sync enables you to centralize your organization's file shares in Azure Files transforming an on-premises (or cloud) Windows Server into a quick cache of your SMB Azure file share.
 
 
 
@@ -155,7 +155,7 @@ Azure Files Documentation
 
 10
 Azure Files Documentation
-
+File shares (preview), offered by the Microsoft.FileShares resource provider. File shares are a new top-level resource that simplify the deployment of Azure Files by eliminating the storage account. Unlike classic file shares, which must be deployed into a storage account, file shares are deployed directly into the resource group like storage accounts themselves
 
 
 
@@ -163,7 +163,7 @@ Azure Files Documentation
 
 11
 Azure Files Documentation
-
+Classic file shares, and the child objects for other storage services like blob containers, that live within the same storage account share a common pool of storage, IOPS, and throughput. This means placing multiple classic file shares in a storage account requires planning to avoid capacity bottlenecks
 
 
 
@@ -171,6 +171,8 @@ Azure Files Documentation
 
 12
 Azure Files Documentation
+Many important settings, such as network and security rules, are applied at the storage account level. You should consider the storage account to be a trust boundary and only place classic file shares in the same storage account if you're ok with them having the same security settings.
+
 
 
 
@@ -179,7 +181,7 @@ Azure Files Documentation
 
 13
 Azure Files Documentation
-
+Provisioned storage accounts are distinguished using the FileStorage storage account kind. Provisioned storage accounts allow you to deploy provisioned classic file shares on either SSD or HDD based hardware. We recommend using provisioned storage accounts for all new classic file share deployments.
 
 
 
@@ -187,6 +189,9 @@ Azure Files Documentation
 
 14
 Azure Files Documentation
+Pay-as-you-go storage accounts are distinguished using the StorageV2 storage account kind. 
+They allow you to deploy file shares on HDD based hardware. 
+They can be used to store classic file shares and other storage resources such as blob containers, queues, or tables.
 
 
 
@@ -195,7 +200,7 @@ Azure Files Documentation
 
 15
 Azure Files Documentation
-
+Using the storage account key to mount the Azure file share is effectively an administrator operation, because the mounted file share has full permissions to all of the files and folders on the share, even if they have ACLs. When using the storage account key to mount over SMB, the NTLMv2 authentication protocol is used.
 
 
 
@@ -203,6 +208,7 @@ Azure Files Documentation
 
 16
 Azure Files Documentation
+Soft delete is a storage-account level setting that allows you to recover your file share when it's accidentally deleted. When a file share is deleted, it transitions to a soft deleted state instead of being permanently erased. You can configure the amount of time soft deleted shares are recoverable before they're permanently deleted.
 
 
 
@@ -211,7 +217,7 @@ Azure Files Documentation
 
 17
 Azure Files Documentation
-
+You can back up your Azure file share via share snapshots, which are read-only, point-in-time copies of your share. Snapshots are incremental, meaning they only contain as much data as has changed since the previous snapshot. You can have up to 200 snapshots per file share and retain them for up to 10 years.
 
 
 
@@ -219,7 +225,7 @@ Azure Files Documentation
 
 18
 Azure Files Documentation
-
+Azure Backup for Azure file shares handles the scheduling and retention of snapshots. Its grandfather-father-son (GFS) capabilities mean that you can take daily, weekly, monthly, and yearly snapshots, each with their own distinct retention period.
 
 
 
@@ -227,7 +233,7 @@ Azure Files Documentation
 
 19
 Azure Files Documentation
-
+You can perform both item-level and share-level restores in the Azure portal using Azure Backup. All you need to do is choose the restore point (a particular snapshot), the particular file or directory if relevant, and then the location (original or alternate) you wish you restore to.
 
 
 
@@ -235,6 +241,8 @@ Azure Files Documentation
 
 20
 Azure Files Documentation
+HDD file shares support all four redundancy types. SSD file shares support only LRS and ZRS.
+
 
 
 
