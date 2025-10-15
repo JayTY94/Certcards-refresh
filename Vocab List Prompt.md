@@ -2,26 +2,34 @@ Vocab List Prompt
 
 Define the following list of words with a format similar to the entries at the end of this message.
 
-Barnaby Rudge
-Zane Grey
-Owen Wister
-thylacine
-de riguer
-brocade (dress)
-buddleia
-timpet
-florin
-bete noir
-paella
-rusk
-tannoy
-salver
-creosote
-nobble
-cazique
-muslin (curtains)
-Coriolanus
-nacelle
+orrery
+lintel
+brume
+silage
+gaol
+lodestone
+svelte
+maestrum
+coif
+furlong
+curried a garment
+keening
+scud of clouds
+pall
+habiliment
+bedlam
+larcener
+wood and batten
+bole of a tree
+livery
+travois
+servitor
+macerated
+deride
+stanchiion
+verdigris
+sibilant
+remise
 
 
 
