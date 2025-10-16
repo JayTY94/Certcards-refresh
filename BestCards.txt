@@ -49,7 +49,7 @@ If a virus never saves itself to a storage drive, it may be able to evade antivi
 
 
 =============
-A Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instance in Secured Virtual Hubs and Hub Virtual Networks. Polciies will work across regions and subscriptions.
+A Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instance in Secured Virtual Hubs and Hub Virtual Networks. Polcies will work across regions and subscriptions.
 
 
 
