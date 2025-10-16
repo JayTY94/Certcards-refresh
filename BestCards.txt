@@ -98,10 +98,67 @@ A War Dialer is a computer program that automatically dials a series of telephon
 
 
 =============
-How to clear teh cache for a specific web page in Chrome:
+How to clear the cache for a specific web page in Chrome:
     Open the developer tools tab [f12]
     [shift] + [r-click] the refresh button
     Choose "Empty Cache and Hard Reload"
+
+
+
+
+
+=============
+Extensible Authentication Protocol - Flexible Authentication via Secure Tunneling (EAP-FAST) is an updated form of LEAP (Lightweight EAP) that was commonly used after Wired Equivalent Privacy (WEP) was replaced with Wi-Fi Protected Access (WPA)
+
+
+
+
+
+=============
+Horizontal Privilege Escalation means that a user achieves access permissions belonging to another user that owns the same access level as the user that started the cyber attack. It is a bit more challenging compared to vertical privilege escalation since it requires a deep understanding of how operating systems work.
+
+
+
+
+
+=============
+Unpivoting is a useful feature of Power BI. You can use this feature with data from any source, but you would most often use it when importing data from Excel. Unpivoting streamlines the process of creating DAX measures on the data later.
+
+
+
+
+
+
+=============
+A good example of an operational report is one that allows monitoring of a manufacturing production line. When an unexpected event arises, such as equipment malfunction, a button could allow workers to start a maintenance request.
+
+
+
+
+
+=============
+
+
+
+
+
+
+=============
+
+
+
+
+
+
+=============
+
+
+
+
+
+
+=============
+
 
 
 
