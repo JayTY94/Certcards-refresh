@@ -4,10 +4,6 @@
 
 
 
-1
-FSLogix
-A full VHD(x) clone is performed when Cloud Cache determines, at sign in, that a storage provider isn't at the same sequence. During this operation, all pending writes are kept in the local cache until all storage providers are at the same sequence. Once complete, the flush operation begins sending new data to the storage providers.
-
 
 
 
