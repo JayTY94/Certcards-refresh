@@ -137,7 +137,7 @@ A good example of an operational report is one that allows monitoring of a manuf
 
 
 =============
-
+Cofusion means that each bit of the cyphertext should depend on several parts of the key, obscuring the connections between the two. This hides the relationship between the ciphertext and the key. Confusion increass the ambiguity of cyphertext and is used by both block and stream cyphers.
 
 
 
