@@ -32,6 +32,49 @@ The practice of managing external libraries and packages that a Python applicati
 
 
 4
+FSLogix
+Cloud Cache uses the locally mounted container to provide periodic updates to the remote storage providers. Cloud Cache is designed to insulate users from short-term or intermittent local (inner-region, close proximity) storage issues.
+
+
+
+
+
+5
+FSLogix
+Q: Where are FSLogix Profile Containers typically stored in Azure Virtual Desktop environments?
+A: FSLogix Profile Containers are typically stored in Azure Files or network shares (SMB share) to allow consistent access across different virtual desktop sessions.
+
+
+
+
+
+6
+FSLogix
+SMB Share (Server Message Block):
+A network file-sharing protocol used in Windows environments. SMB shares, like those provided by Azure Files, are commonly used for storing FSLogix Profile Containers, ensuring centralized and efficient access.
+
+
+
+
+
+7
+FSLogix
+Cloud Cache operates the user's profile from the local cache during the user's session and must be configured with one or more remote storage providers as specified in CCDLocations. These remote storage providers store copies of the local cache and are used during the current session and for subsequent sign ins.
+
+
+
+
+
+8
+FSLogix
+Q: What is the main difference between FSLogix Profile Containers and traditional roaming profiles?
+A: FSLogix uses VHDX containers to store user profiles, ensuring portability and faster logons, while traditional roaming profiles can become fragmented and inconsistent across multiple virtual machines.
+
+
+
+
+
+9
 OAuth 2.0 RFC6749
 Instead of using the resource owner's credentials to access protected
    resources, the client obtains an access token -- a string denoting a
@@ -41,7 +84,7 @@ Instead of using the resource owner's credentials to access protected
 
 
 
-5
+10
 OAuth 2.0 RFC6749
 OAuth defines four roles:
 
@@ -61,7 +104,7 @@ OAuth defines four roles:
 
 
 
-6
+11
 OAuth 2.0 RFC6749
 The OAuth 1.0 protocol ([RFC5849]), published as an informational
    document, was the result of a small ad hoc community effort.  This
@@ -74,7 +117,7 @@ The OAuth 1.0 protocol ([RFC5849]), published as an informational
 
 
 
-7
+12
 OAuth 2.0 RFC6749
 OAuth defines four roles:
 
@@ -91,7 +134,7 @@ OAuth defines four roles:
 
 
 
-8
+13
 OAuth 2.0 RFC6749
 For example, an end-user (resource owner) can grant a printing
    service (client) access to her protected photos stored at a photo-
@@ -100,49 +143,6 @@ For example, an end-user (resource owner) can grant a printing
    directly with a server trusted by the photo-sharing service
    (authorization server), which issues the printing service delegation-
    specific credentials (access token).
-
-
-
-
-
-9
-FSLogix
-Cloud Cache uses the locally mounted container to provide periodic updates to the remote storage providers. Cloud Cache is designed to insulate users from short-term or intermittent local (inner-region, close proximity) storage issues.
-
-
-
-
-
-10
-FSLogix
-Q: Where are FSLogix Profile Containers typically stored in Azure Virtual Desktop environments?
-A: FSLogix Profile Containers are typically stored in Azure Files or network shares (SMB share) to allow consistent access across different virtual desktop sessions.
-
-
-
-
-
-11
-FSLogix
-SMB Share (Server Message Block):
-A network file-sharing protocol used in Windows environments. SMB shares, like those provided by Azure Files, are commonly used for storing FSLogix Profile Containers, ensuring centralized and efficient access.
-
-
-
-
-
-12
-FSLogix
-Cloud Cache operates the user's profile from the local cache during the user's session and must be configured with one or more remote storage providers as specified in CCDLocations. These remote storage providers store copies of the local cache and are used during the current session and for subsequent sign ins.
-
-
-
-
-
-13
-FSLogix
-Q: What is the main difference between FSLogix Profile Containers and traditional roaming profiles?
-A: FSLogix uses VHDX containers to store user profiles, ensuring portability and faster logons, while traditional roaming profiles can become fragmented and inconsistent across multiple virtual machines.
 
 
 
@@ -243,51 +243,6 @@ There is a wealth of additional information and user experiences available on th
 
 
 24
-Asynchronous Python
-return_exceptions=True (in gather)
-A parameter in Python's asyncio.gather() that returns exceptions as part of the results instead of cancelling all tasks on error.
-
-
-
-
-
-25
-Asynchronous Python
-Race Condition
-An issue in async Python code where multiple coroutines access shared data without proper coordination, leading to bugs.
-
-
-
-
-
-26
-Asynchronous Python
-asyncio.CancelledError
-An exception in Python that is raised inside a coroutine when it’s cancelled, allowing it to perform cleanup.
-
-
-
-
-
-27
-Asynchronous Python
-async
-A keyword used in Python to declare an asynchronous function (async def), enabling the use of await inside it.
-
-
-
-
-
-28
-Asynchronous Python
-Timeouts
-Techniques like asyncio.wait_for() used in Python to limit how long a coroutine can run before it's cancelled.
-
-
-
-
-
-29
 Accounting
 Chart of Accounts (COA)
 The master list of accounts (assets, liabilities, equity, revenue, expenses) used in the general ledger.
@@ -296,7 +251,7 @@ The master list of accounts (assets, liabilities, equity, revenue, expenses) use
 
 
 
-30
+25
 Accounting
 Reconciliation
 Comparing records from two sources (e.g., general ledger vs. bank statement) to confirm accuracy.
@@ -305,7 +260,7 @@ Comparing records from two sources (e.g., general ledger vs. bank statement) to 
 
 
 
-31
+26
 Accounting
 Intangible Assets
 Non-physical assets with value, such as patents, trademarks, or customer lists.
@@ -314,7 +269,7 @@ Non-physical assets with value, such as patents, trademarks, or customer lists.
 
 
 
-32
+27
 Accounting
 Allowance Method for Doubtful Accounts
 Estimates bad debts in advance by setting up a contra-asset account (Allowance for Doubtful Accounts). Matches bad debt expense with related sales.
@@ -323,10 +278,55 @@ Estimates bad debts in advance by setting up a contra-asset account (Allowance f
 
 
 
-33
+28
 Accounting
 Matching Principle
 Expenses are recorded in the same period as the revenues they help generate. Example: sales commission tied to December sales is recorded in December, even if paid in January.
+
+
+
+
+
+29
+Asynchronous Python
+return_exceptions=True (in gather)
+A parameter in Python's asyncio.gather() that returns exceptions as part of the results instead of cancelling all tasks on error.
+
+
+
+
+
+30
+Asynchronous Python
+Race Condition
+An issue in async Python code where multiple coroutines access shared data without proper coordination, leading to bugs.
+
+
+
+
+
+31
+Asynchronous Python
+asyncio.CancelledError
+An exception in Python that is raised inside a coroutine when it’s cancelled, allowing it to perform cleanup.
+
+
+
+
+
+32
+Asynchronous Python
+async
+A keyword used in Python to declare an asynchronous function (async def), enabling the use of await inside it.
+
+
+
+
+
+33
+Asynchronous Python
+Timeouts
+Techniques like asyncio.wait_for() used in Python to limit how long a coroutine can run before it's cancelled.
 
 
 
@@ -444,6 +444,51 @@ Pivot tables in Python (via libraries like pandas) or spreadsheets transform lon
 
 
 44
+Azure VM + Developer
+Port Forwarding
+An SSH feature that lets you tunnel remote ports (e.g., a web app running on port 5000 on a VM) to your local machine for testing and access.
+
+
+
+
+
+45
+Azure VM + Developer
+Language Server Protocol (LSP)
+A communication protocol between an editor and a language-specific server that provides smart features like autocomplete, go-to-definition, and linting.
+
+
+
+
+
+46
+Azure VM + Developer
+Language Runtime
+The software layer that interprets and executes code written in a particular language (e.g., Python, Node.js, .NET Core), and must be installed in the dev environment.
+
+
+
+
+
+47
+Azure VM + Developer
+X11 Forwarding
+An SSH technique that lets GUI applications run on a remote Linux machine but display on your local computer; requires an X server locally.
+
+
+
+
+
+48
+Azure VM + Developer
+Dotfiles
+A collection of personal configuration files (e.g., `.bashrc`, `.gitconfig`, `.vimrc`) that define your shell, editor, and tool preferences across machines.
+
+
+
+
+
+49
 Python + Oauth2.0
 redirect_uri
 
@@ -453,7 +498,7 @@ The URL where the OAuth provider sends the user after login. It must match the o
 
 
 
-45
+50
 Python + Oauth2.0
 http.server.SimpleHTTPRequestHandler
 
@@ -463,7 +508,7 @@ A built-in Python class that handles HTTP GET requests and serves files from the
 
 
 
-46
+51
 Python + Oauth2.0
 Content-Type: application/x-www-form-urlencoded
 
@@ -473,7 +518,7 @@ A header that tells the OAuth token endpoint how the POST data is formatted. Thi
 
 
 
-47
+52
 Python + Oauth2.0
 global token_dict
 
@@ -483,56 +528,11 @@ Declares that `token_dict` is a global variable so it can be modified inside the
 
 
 
-48
+53
 Python + Oauth2.0
 webbrowser.open()
 
 A Python function that launches the default web browser and navigates to the given URL. Used here to initiate the login process for the user.
-
-
-
-
-
-49
-Azure VM + Developer
-Port Forwarding
-An SSH feature that lets you tunnel remote ports (e.g., a web app running on port 5000 on a VM) to your local machine for testing and access.
-
-
-
-
-
-50
-Azure VM + Developer
-Language Server Protocol (LSP)
-A communication protocol between an editor and a language-specific server that provides smart features like autocomplete, go-to-definition, and linting.
-
-
-
-
-
-51
-Azure VM + Developer
-Language Runtime
-The software layer that interprets and executes code written in a particular language (e.g., Python, Node.js, .NET Core), and must be installed in the dev environment.
-
-
-
-
-
-52
-Azure VM + Developer
-X11 Forwarding
-An SSH technique that lets GUI applications run on a remote Linux machine but display on your local computer; requires an X server locally.
-
-
-
-
-
-53
-Azure VM + Developer
-Dotfiles
-A collection of personal configuration files (e.g., `.bashrc`, `.gitconfig`, `.vimrc`) that define your shell, editor, and tool preferences across machines.
 
 
 
@@ -1276,6 +1276,32 @@ By defining a decorator that wraps the generator function, potentially altering 
 
 
 129
+FSLogix
+Outlook OST Files:
+Offline Storage Table files used by Microsoft Outlook to store a synchronized copy of mailbox data locally. They enable offline access to email, calendar, and contact data. Managing these files in an Office Container prevents them from bloating the main user profile.
+
+
+
+
+
+130
+FSLogix
+On a lazy asynchronous operation, Cloud Cache flushes the changes to all storage providers simultaneously as each provider is flushed on its own thread. FSLogix doesn't throttle this operation and utilizes as much throughput as the system will allow.
+
+
+
+
+
+131
+FSLogix
+Q: Which format does FSLogix use to store user profile data?
+A: FSLogix uses the VHDX (Virtual Hard Disk) format to store user profile data in containers.
+
+
+
+
+
+132
 OAuth 2.0 RFC6749
 OAuth defines four roles:
 
@@ -1291,7 +1317,7 @@ OAuth defines four roles:
 
 
 
-130
+133
 OAuth 2.0 RFC6749
 In OAuth, the client requests access to resources controlled
    by the resource owner and hosted by the resource server, and is
@@ -1302,38 +1328,12 @@ In OAuth, the client requests access to resources controlled
 
 
 
-131
+134
 OAuth 2.0 RFC6749
 Access tokens
    are issued to third-party clients by an authorization server with the
    approval of the resource owner.  The client uses the access token to
    access the protected resources hosted by the resource server.
-
-
-
-
-
-132
-FSLogix
-Outlook OST Files:
-Offline Storage Table files used by Microsoft Outlook to store a synchronized copy of mailbox data locally. They enable offline access to email, calendar, and contact data. Managing these files in an Office Container prevents them from bloating the main user profile.
-
-
-
-
-
-133
-FSLogix
-On a lazy asynchronous operation, Cloud Cache flushes the changes to all storage providers simultaneously as each provider is flushed on its own thread. FSLogix doesn't throttle this operation and utilizes as much throughput as the system will allow.
-
-
-
-
-
-134
-FSLogix
-Q: Which format does FSLogix use to store user profile data?
-A: FSLogix uses the VHDX (Virtual Hard Disk) format to store user profile data in containers.
 
 
 
@@ -1421,51 +1421,6 @@ SOHO stands for Small Office and Home Office Networks. It allows computers in a 
 
 
 144
-Asynchronous Python
-Deadlock
-A state in async Python where tasks wait on each other indefinitely, halting progress—usually due to poor coordination.
-
-
-
-
-
-145
-Asynchronous Python
-Semaphore
-A semaphore is a synchronization tool that limits the number of threads that can access a resource simultaneously, often used for managing a pool of resources.
-
-
-
-
-
-146
-Asynchronous Python
-asyncio.create_task()
-Schedules a coroutine to run concurrently as a Task in Python's event loop and starts it immediately.
-
-
-
-
-
-147
-Asynchronous Python
-Coroutine
-An async def function in Python that can pause at await expressions and resume later, enabling non-blocking asynchronous execution.
-
-
-
-
-
-148
-Asynchronous Python
-Global Interpreter Lock (GIL)
-The GIL is a mutex in CPython that ensures only one thread executes Python bytecode at a time, affecting true parallel execution of threads.
-
-
-
-
-
-149
 Accounting
 Audit vs. Review vs. Compilation
 Levels of financial statement assurance:
@@ -1480,7 +1435,7 @@ Levels of financial statement assurance:
 
 
 
-150
+145
 Accounting
 General Ledger (GL)
 Central accounting record where all journal entries are posted, organized by account.
@@ -1489,7 +1444,7 @@ Central accounting record where all journal entries are posted, organized by acc
 
 
 
-151
+146
 Accounting
 Amortization
 Systematic allocation of the cost of intangible assets (patents, goodwill) over their useful life.
@@ -1498,7 +1453,7 @@ Systematic allocation of the cost of intangible assets (patents, goodwill) over 
 
 
 
-152
+147
 Accounting
 Journal Entry
 The basic transaction record showing debits and credits across accounts.
@@ -1507,10 +1462,55 @@ The basic transaction record showing debits and credits across accounts.
 
 
 
-153
+148
 Accounting
 Current Ratio
 Liquidity ratio = Current Assets ÷ Current Liabilities. Shows ability to pay short-term obligations.
+
+
+
+
+
+149
+Asynchronous Python
+Deadlock
+A state in async Python where tasks wait on each other indefinitely, halting progress—usually due to poor coordination.
+
+
+
+
+
+150
+Asynchronous Python
+Semaphore
+A semaphore is a synchronization tool that limits the number of threads that can access a resource simultaneously, often used for managing a pool of resources.
+
+
+
+
+
+151
+Asynchronous Python
+asyncio.create_task()
+Schedules a coroutine to run concurrently as a Task in Python's event loop and starts it immediately.
+
+
+
+
+
+152
+Asynchronous Python
+Coroutine
+An async def function in Python that can pause at await expressions and resume later, enabling non-blocking asynchronous execution.
+
+
+
+
+
+153
+Asynchronous Python
+Global Interpreter Lock (GIL)
+The GIL is a mutex in CPython that ensures only one thread executes Python bytecode at a time, affecting true parallel execution of threads.
 
 
 
@@ -1623,6 +1623,51 @@ Context managers in Python (with … as …) automatically close resources like 
 
 
 164
+Azure VM + Developer
+Cloud-Init
+A Linux-native tool that enables automatic VM customization on boot using YAML config files, typically used to install packages, configure networking, or run scripts.
+
+
+
+
+
+165
+Azure VM + Developer
+Package Manager
+A tool for installing, updating, and managing external libraries your app depends on (e.g., `pip`, `npm`, `nuget`, `brew`).
+
+
+
+
+
+166
+Azure VM + Developer
+Persistent vs Ephemeral
+A comparison between VMs that retain data and configurations across reboots (persistent) vs temporary VMs used for disposable environments like Codespaces (ephemeral).
+
+
+
+
+
+167
+Azure VM + Developer
+Availability Zone
+A physically isolated datacenter location within an Azure region, designed for high availability by spreading resources across separate zones with independent power, cooling, and networking.
+
+
+
+
+
+168
+Azure VM + Developer
+Debugger Config (launch.json)
+A JSON config file in VS Code that specifies how to run and debug an app, including which script to execute, arguments, environment variables, and breakpoints.
+
+
+
+
+
+169
 Python + Oauth2.0
 handler.wfile.write()
 
@@ -1633,7 +1678,7 @@ handler is an instance of OAuthHandler, which inherits from http.server.SimpleHT
 
 
 
-165
+170
 Python + Oauth2.0
 base64.b64encode
 
@@ -1643,7 +1688,7 @@ Encodes the client ID and secret into a base64 string for use in the `Authorizat
 
 
 
-166
+171
 Python + Oauth2.0
 do_GET()
 
@@ -1653,7 +1698,7 @@ A method in `SimpleHTTPRequestHandler` that is automatically called when the ser
 
 
 
-167
+172
 Python + Oauth2.0
 urllib.parse.urlparse / parse_qs
 
@@ -1663,57 +1708,12 @@ Functions used to break down the incoming URL and extract query parameters. In t
 
 
 
-168
+173
 Python + Oauth2.0
 handler.end_headers()
 
 Finalizes the HTTP response headers. It must be called after `handler.send_response()` and before writing any content to the response body.
 handler is an instance of OAuthHandler, which inherits from http.server.SimpleHTTPRequestHandler
-
-
-
-
-
-169
-Azure VM + Developer
-Cloud-Init
-A Linux-native tool that enables automatic VM customization on boot using YAML config files, typically used to install packages, configure networking, or run scripts.
-
-
-
-
-
-170
-Azure VM + Developer
-Package Manager
-A tool for installing, updating, and managing external libraries your app depends on (e.g., `pip`, `npm`, `nuget`, `brew`).
-
-
-
-
-
-171
-Azure VM + Developer
-Persistent vs Ephemeral
-A comparison between VMs that retain data and configurations across reboots (persistent) vs temporary VMs used for disposable environments like Codespaces (ephemeral).
-
-
-
-
-
-172
-Azure VM + Developer
-Availability Zone
-A physically isolated datacenter location within an Azure region, designed for high availability by spreading resources across separate zones with independent power, cooling, and networking.
-
-
-
-
-
-173
-Azure VM + Developer
-Debugger Config (launch.json)
-A JSON config file in VS Code that specifies how to run and debug an app, including which script to execute, arguments, environment variables, and breakpoints.
 
 
 
@@ -2482,51 +2482,6 @@ https://docs.netgate.com/pfsense/en/latest/network/ipv6/basics.html
 
 
 251
-Asynchronous Python
-async for (async iterator)
-Used to iterate over async sequences in Python, such as streaming data or asynchronous file lines.
-
-
-
-
-
-252
-Asynchronous Python
-Thread
-A thread is an independent sequence of execution within a program. Multiple threads can run concurrently within the same process.
-
-
-
-
-
-253
-Asynchronous Python
-Idle Task
-An asynchronous Python coroutine that’s currently waiting (e.g., on I/O or sleep), allowing others to run in the meantime.
-
-
-
-
-
-254
-Asynchronous Python
-Non-blocking I/O
-A key feature of async Python where I/O operations (e.g., file or network access) don’t block the event loop.
-
-
-
-
-
-255
-Asynchronous Python
-Lock (Mutex)
-A lock is a synchronization primitive used to control access to a shared resource, ensuring that only one thread can access a specific block of code at a time.
-
-
-
-
-
-256
 Accounting
 Deferral
 Delay recognition of revenue or expense to a later period. Example: prepaid rent (asset) or unearned revenue (liability).
@@ -2535,7 +2490,7 @@ Delay recognition of revenue or expense to a later period. Example: prepaid rent
 
 
 
-257
+252
 Accounting
 Statement of Cash Flows
 Financial statement reporting cash activity in Operating, Investing, and Financing categories.
@@ -2544,7 +2499,7 @@ Financial statement reporting cash activity in Operating, Investing, and Financi
 
 
 
-258
+253
 Accounting
 Audit Trail
 Evidence showing how a transaction was recorded, modified, and reported. Critical for compliance and system integrity.
@@ -2553,7 +2508,7 @@ Evidence showing how a transaction was recorded, modified, and reported. Critica
 
 
 
-259
+254
 Accounting
 Contra-Asset Account
 An account that offsets the balance of a related asset account. Example: Accumulated Depreciation reduces Equipment value.
@@ -2562,13 +2517,58 @@ An account that offsets the balance of a related asset account. Example: Accumul
 
 
 
-260
+255
 Accounting
 Accruals vs. Deferrals
 
 Accruals: record revenue/expenses before cash flow (e.g., accrued wages).
 
 Deferrals: record after cash flow (e.g., prepaid rent, unearned revenue).
+
+
+
+
+
+256
+Asynchronous Python
+async for (async iterator)
+Used to iterate over async sequences in Python, such as streaming data or asynchronous file lines.
+
+
+
+
+
+257
+Asynchronous Python
+Thread
+A thread is an independent sequence of execution within a program. Multiple threads can run concurrently within the same process.
+
+
+
+
+
+258
+Asynchronous Python
+Idle Task
+An asynchronous Python coroutine that’s currently waiting (e.g., on I/O or sleep), allowing others to run in the meantime.
+
+
+
+
+
+259
+Asynchronous Python
+Non-blocking I/O
+A key feature of async Python where I/O operations (e.g., file or network access) don’t block the event loop.
+
+
+
+
+
+260
+Asynchronous Python
+Lock (Mutex)
+A lock is a synchronization primitive used to control access to a shared resource, ensuring that only one thread can access a specific block of code at a time.
 
 
 
@@ -2679,6 +2679,51 @@ In ElementTree, listening for "end" events ensures you process each XML element 
 
 
 271
+Azure VM + Developer
+Linter
+A code analysis tool that detects errors, bugs, and style violations before runtime; common examples include ESLint (JavaScript) and Pylint (Python).
+
+
+
+
+
+272
+Azure VM + Developer
+Debug Adapter Protocol
+A VS Code protocol that enables consistent debugging experiences across languages by abstracting debugger backends from the editor interface.
+
+
+
+
+
+273
+Azure VM + Developer
+Remote - SSH (VS Code)
+A VS Code extension that allows seamless editing, terminal access, and debugging on a remote machine via SSH, making a remote system feel local.
+
+
+
+
+
+274
+Azure VM + Developer
+.ssh/known_hosts
+A file used by SSH to store server fingerprints, preventing man-in-the-middle attacks by validating that the server hasn’t changed unexpectedly.
+
+
+
+
+
+275
+Azure VM + Developer
+Pre-Commit Hook
+A Git hook that runs scripts (e.g., formatters, tests) before committing code, helping catch issues early in the development workflow.
+
+
+
+
+
+276
 Python + Oauth2.0
 requests.post
 
@@ -2688,7 +2733,7 @@ Sends an HTTP POST request to the token endpoint with the authorization code and
 
 
 
-272
+277
 Python + Oauth2.0
 authorize_url
 
@@ -2698,7 +2743,7 @@ The endpoint where the user is sent to log in and grant access. It’s part of t
 
 
 
-273
+278
 Python + Oauth2.0
 Authorization Code Flow
 
@@ -2708,7 +2753,7 @@ An OAuth 2.0 process where the user logs in via a browser, and the app receives 
 
 
 
-274
+279
 Python + Oauth2.0
 socketserver.TCPServer
 
@@ -2718,56 +2763,11 @@ A Python class that creates a simple TCP server. In this script, it listens on `
 
 
 
-275
+280
 Python + Oauth2.0
 handle_request()
 
 A method of `TCPServer` that waits for a single incoming request and then processes it using the specified handler class. It’s used here to catch the OAuth redirect containing the authorization code.
-
-
-
-
-
-276
-Azure VM + Developer
-Linter
-A code analysis tool that detects errors, bugs, and style violations before runtime; common examples include ESLint (JavaScript) and Pylint (Python).
-
-
-
-
-
-277
-Azure VM + Developer
-Debug Adapter Protocol
-A VS Code protocol that enables consistent debugging experiences across languages by abstracting debugger backends from the editor interface.
-
-
-
-
-
-278
-Azure VM + Developer
-Remote - SSH (VS Code)
-A VS Code extension that allows seamless editing, terminal access, and debugging on a remote machine via SSH, making a remote system feel local.
-
-
-
-
-
-279
-Azure VM + Developer
-.ssh/known_hosts
-A file used by SSH to store server fingerprints, preventing man-in-the-middle attacks by validating that the server hasn’t changed unexpectedly.
-
-
-
-
-
-280
-Azure VM + Developer
-Pre-Commit Hook
-A Git hook that runs scripts (e.g., formatters, tests) before committing code, helping catch issues early in the development workflow.
 
 
 
@@ -3544,24 +3544,6 @@ parent = path.parent  # '/path/to'
 
 
 356
-Asynchronous Python
-Backpressure
-A condition in async Python where producers send data faster than consumers can process; addressed using queues or throttling.
-
-
-
-
-
-357
-Asynchronous Python
-Context Switching
-Context switching is the process of storing and restoring the state of a thread so that execution can resume later, which can introduce performance overhead.
-
-
-
-
-
-358
 Accounting
 Retained Earnings
 The cumulative net income of a company that hasn’t been distributed to shareholders as dividends.
@@ -3570,10 +3552,28 @@ The cumulative net income of a company that hasn’t been distributed to shareho
 
 
 
-359
+357
 Accounting
 Depreciation Methods
 Different approaches for allocating asset cost: straight-line, declining balance, or units-of-production.
+
+
+
+
+
+358
+Asynchronous Python
+Backpressure
+A condition in async Python where producers send data faster than consumers can process; addressed using queues or throttling.
+
+
+
+
+
+359
+Asynchronous Python
+Context Switching
+Context switching is the process of storing and restoring the state of a thread so that execution can resume later, which can introduce performance overhead.
 
 
 
@@ -3678,6 +3678,51 @@ Choosing FilledGovtUnits in the TaxTransfer export options includes only forms t
 
 
 369
+Azure VM + Developer
+Makefile / Task Runner
+A scriptable command list (via `make` or tools like `npm run`) used to automate tasks such as builds, tests, or environment setup in a dev workflow.
+
+
+
+
+
+370
+Azure VM + Developer
+SSH Config File
+A local file (`~/.ssh/config`) used to define aliases and settings for SSH connections, making it easier to reuse hostnames, ports, and identities.
+
+
+
+
+
+371
+Azure VM + Developer
+VS Code Workspace (.code-workspace)
+A VS Code config file that defines multi-root folders, editor settings, and extension recommendations for a consistent project layout and experience.
+
+
+
+
+
+372
+Azure VM + Developer
+Dependency Management
+The process of tracking and resolving software dependencies, ensuring your project uses compatible versions of external libraries.
+
+
+
+
+
+373
+Azure VM + Developer
+Formatter
+A tool that automatically reformats source code to follow a defined style guide, improving consistency and readability (e.g., Prettier, Black).
+
+
+
+
+
+374
 Python + Oauth2.0
 ("localhost", 8080)
 
@@ -3689,7 +3734,7 @@ with socketserver.TCPServer(("localhost", 8080), OAuthHandler) as httpd:
 
 
 
-370
+375
 Python + Oauth2.0
 handler.wfile.write()
 
@@ -3700,7 +3745,7 @@ handler is an instance of OAuthHandler, which inherits from http.server.SimpleHT
 
 
 
-371
+376
 Python + Oauth2.0
 OAuthHandler (Custom HTTP Request Handler)
 
@@ -3710,7 +3755,7 @@ A subclass of `http.server.SimpleHTTPRequestHandler` that overrides the `do_GET`
 
 
 
-372
+377
 Python + Oauth2.0
 handler.send_response()
 
@@ -3721,56 +3766,11 @@ handler is an instance of OAuthHandler, which inherits from http.server.SimpleHT
 
 
 
-373
+378
 Python + Oauth2.0
 urllib.parse.urlencode()
 
 Encodes a dictionary of parameters into a URL query string. This ensures special characters are properly escaped and the URL is valid.
-
-
-
-
-
-374
-Azure VM + Developer
-Makefile / Task Runner
-A scriptable command list (via `make` or tools like `npm run`) used to automate tasks such as builds, tests, or environment setup in a dev workflow.
-
-
-
-
-
-375
-Azure VM + Developer
-SSH Config File
-A local file (`~/.ssh/config`) used to define aliases and settings for SSH connections, making it easier to reuse hostnames, ports, and identities.
-
-
-
-
-
-376
-Azure VM + Developer
-VS Code Workspace (.code-workspace)
-A VS Code config file that defines multi-root folders, editor settings, and extension recommendations for a consistent project layout and experience.
-
-
-
-
-
-377
-Azure VM + Developer
-Dependency Management
-The process of tracking and resolving software dependencies, ensuring your project uses compatible versions of external libraries.
-
-
-
-
-
-378
-Azure VM + Developer
-Formatter
-A tool that automatically reformats source code to follow a defined style guide, improving consistency and readability (e.g., Prettier, Black).
 
 
 
@@ -4547,6 +4547,33 @@ The <Identifier Hierarchy="…"> attribute in XML tax exports is the structural 
 
 
 455
+Azure VM + Developer
+Systemd Service
+A background service on Linux managed by `systemctl`, which can run your app as a daemon, restart on failure, and start automatically on boot.
+
+
+
+
+
+456
+Azure VM + Developer
+Inbound NAT Rule
+A networking rule used with load balancers to map a public-facing port to a specific VM's internal port, enabling external access to individual VMs in backend pools.
+
+
+
+
+
+457
+Azure VM + Developer
+Test Pyramid
+A testing strategy that favors many fast unit tests, fewer integration tests, and minimal end-to-end tests to maintain speed and reliability.
+
+
+
+
+
+458
 Python + Oauth2.0
 with socketserver.TCPServer(...) as httpd
 
@@ -4556,7 +4583,7 @@ A context manager that ensures the server is properly started and shut down. It 
 
 
 
-456
+459
 Python + Oauth2.0
 urllib.parse.unquote()
 
@@ -4566,38 +4593,11 @@ Decodes percent-encoded characters in a URL. Used here to clean up the authoriza
 
 
 
-457
+460
 Python + Oauth2.0
 auth_request_url
 
 The full URL constructed from `authorize_url` and query parameters like `client_id`, `redirect_uri`, and `scope`. This is the link opened in the browser to start the OAuth flow.
-
-
-
-
-
-458
-Azure VM + Developer
-Systemd Service
-A background service on Linux managed by `systemctl`, which can run your app as a daemon, restart on failure, and start automatically on boot.
-
-
-
-
-
-459
-Azure VM + Developer
-Inbound NAT Rule
-A networking rule used with load balancers to map a public-facing port to a specific VM's internal port, enabling external access to individual VMs in backend pools.
-
-
-
-
-
-460
-Azure VM + Developer
-Test Pyramid
-A testing strategy that favors many fast unit tests, fewer integration tests, and minimal end-to-end tests to maintain speed and reliability.
 
 
 
