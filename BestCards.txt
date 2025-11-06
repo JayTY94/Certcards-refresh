@@ -144,7 +144,7 @@ Cofusion means that each bit of the cyphertext should depend on several parts of
 
 
 =============
-
+Security Orchestration, Automation and Response (SOAR) refers to technologies that enable organizations to collect inputs monitored by the security operations team. For example, alerts from the SIEM system and other security technologies--where incident analysis and triage can be performed by leveraging a combination of human and machine power--help define, prioritize, and drive standardized incident response activities.
 
 
 
