@@ -2,34 +2,26 @@ Vocab List Prompt
 
 Define the following list of words with a format similar to the entries at the end of this message.
 
-calotte hat
-bay window
-tezontle
-newel post
-taffeta
-frieze
-acanthus
-pilasters
-streptomycin
-codein
-maguey
-Azande
-susto
-damask
-trosseau
-chemises
-duraznillos
-Zapotec
-bolero jacket
-sivler salver
-traceries
-prognathism
-tulle
-dissimulate
-mycorrhiza
-obeisance
-maenad
-portiere
+ukases of the supreme communist authority
+mohair sweater
+pert face
+quondam
+telological
+C. Wright Mills
+Brahms and Schuman
+runnels
+papoola
+endogenous
+tropism
+paresis
+garrulous
+proctological
+milieu
+flivvers
+peripatetic
+Chaconne in D
+apperception
+peripatetic
 
 
 
