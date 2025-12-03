@@ -4,55 +4,18 @@
 
 
 
-1
-Azure VM + Developer
-Language Server Protocol (LSP)
-A communication protocol between an editor and a language-specific server that provides smart features like autocomplete, go-to-definition, and linting.
 
 
 
 
 
-2
-Azure VM + Developer
-Cloud-Init
-A Linux-native tool that enables automatic VM customization on boot using YAML config files, typically used to install packages, configure networking, or run scripts.
 
 
 
 
 
-3
-Azure VM + Developer
-Availability Zone
-A physically isolated datacenter location within an Azure region, designed for high availability by spreading resources across separate zones with independent power, cooling, and networking.
 
 
-
-
-
-4
-Azure VM + Developer
-Pre-Commit Hook
-A Git hook that runs scripts (e.g., formatters, tests) before committing code, helping catch issues early in the development workflow.
-
-
-
-
-
-5
-Azure VM + Developer
-VS Code Workspace (.code-workspace)
-A VS Code config file that defines multi-root folders, editor settings, and extension recommendations for a consistent project layout and experience.
-
-
-
-
-
-6
-Azure VM + Developer
-Formatter
-A tool that automatically reformats source code to follow a defined style guide, improving consistency and readability (e.g., Prettier, Black).
 
 
 
@@ -103,12 +66,7 @@ Example: The hospital staff checked the rotas to see who was on night duty.
 
 
 
-11
-Vocab
-How to Sell a Haunted House, Hendrix
-Camellia
-Pronunciation: kuh-MEE-lee-uh
-Definition: An evergreen shrub native to Asia, prized for its glossy leaves and showy, rose-like flowers. Commonly used in landscaping and known for varieties like Camellia japonica and Camellia sinensis (the tea plant).
+
 
 
 
