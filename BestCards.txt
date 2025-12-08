@@ -151,21 +151,21 @@ Security Orchestration, Automation and Response (SOAR) refers to technologies th
 
 
 =============
-
-
-
-
-
-
-=============
-
+Split Key - A cryptographic key that is divided into two or more separate data items that individually convey no knowledge of the whole key that results from combining the two items.
 
 
 
 
 
 =============
+Educational reports assume that the report consumer is unfamilliar with the data or context. The reports must provide clear narrative detail and guidance to help with understanding. This type of report is often used in journalism and by governments to disseminate information to large audiences that have varying levels of undestaning on the subject.
 
+
+
+
+
+=============
+In the context of IT, Markdown is often used in software development and documentation as a way to format and style text within code repositories and project documentation. IT si also commonly used in collaboration tools and web-based editors, such as GitHub and Stack Overflow, for tis ease of use and readability.
 
 
 
