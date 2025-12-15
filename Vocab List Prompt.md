@@ -2,26 +2,30 @@ Vocab List Prompt
 
 Define the following list of words with a format similar to the entries at the end of this message.
 
-ukases of the supreme communist authority
-mohair sweater
-pert face
-quondam
-telological
-C. Wright Mills
-Brahms and Schuman
-runnels
-papoola
-endogenous
-tropism
-paresis
-garrulous
-proctological
-milieu
-flivvers
-peripatetic
-Chaconne in D
-apperception
-peripatetic
+Stetson hat
+Sierra Leone
+Krio language
+Hippocrates
+phthisis
+Ibn Sina
+tubercule
+quinine
+otoscope
+Patt's diseas
+scrofula
+Sukanta Bhattacharua
+pulmonary
+albumen silver print
+belladonna
+preternaturally
+Robert Koch
+Adirondack chair
+ototoxic
+comorbidities
+retrovirus
+impressionism
+adjuvant
+Lesotho
 
 
 
