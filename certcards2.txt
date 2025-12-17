@@ -7259,3 +7259,24 @@ Environment Scope defines where and how environment variables apply:
     Process Scope: Variables exist only for the current process.
     User Scope: Variables apply to the current user account.
     System Scope: Variables apply to all users on the machine.
+
+
+
+
+
+982
+Terraform
+Remember that variables can't reference each other for their default values: use a local instead. For example, when I wanted to make a name prefix for a VNET template: 
+
+locals {
+  name_prefix = "${var.environment}-${var.org_code}-${var.location}"
+}
+
+
+
+
+
+
+21213
+Terraform
+You can't nest subnets in Azure! It's embarrassing that I forgot that. They need to use a flat structure with no overlap.
