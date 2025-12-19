@@ -7279,4 +7279,4 @@ locals {
 
 21213
 Terraform
-You can't nest subnets in Azure! It's embarrassing that I forgot that. They need to use a flat structure with no overlap.
+You can't nest subnets in Azure! It's embarrassing that I forgot that. They need to use a flat structure with no overlap in their CIDR blocks.
