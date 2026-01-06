@@ -4,21 +4,11 @@
 
 
 
-1
-Terraform
-Remember that variables can't reference each other for their default values: use a local instead. For example, when I wanted to make a name prefix for a VNET template: 
-
-locals {
-  name_prefix = "${var.environment}-${var.org_code}-${var.location}"
-}
 
 
 
 
 
-2
-Terraform
-You can't nest subnets in Azure! It's embarrassing that I forgot that. They need to use a flat structure with no overlap in their CIDR blocks.
 
 
 
@@ -47,8 +37,6 @@ Image size
 Azure Compute Gallery
 Azure DevOps Pipelines for Image Deployment – A CI/CD workflow that automatically builds, tests, and publishes images.
 
-const name = 'Jay';
-const greeting = `Hello, ${name}!`;
 
 
 
@@ -7173,3 +7161,834 @@ Explain the concept of generator pipelines.
 
 A:
 Generator pipelines involve chaining multiple generators together, where each generator processes data and passes it to the next, enabling efficient and modular data processing.
+
+
+
+
+
+
+
+1
+Linux
+Process
+A running instance of a program with its own memory and resources. Each process is assigned a unique Process ID (PID). Processes can be foreground or background tasks and can spawn child processes.
+
+
+
+
+
+
+2
+Linux
+PID (Process ID)
+A numeric identifier assigned to every running process. Useful for monitoring, debugging, and sending signals such as termination, reload, or stop via commands like kill or ps.
+
+
+
+
+
+
+3
+Linux
+systemd
+The default system and service manager for many Linux distributions. It controls system startup, manages services, and provides tools like systemctl, journalctl, and unit files for configuration.
+
+
+
+
+
+
+4
+Linux
+Service
+A long-running system process managed by systemd. Services can be started, stopped, enabled at boot, or viewed for logs using commands like systemctl start, systemctl enable, and journalctl.
+
+
+
+
+
+
+5
+Linux
+Root Directory (/)
+The top-level directory in the Linux filesystem hierarchy. All files and subdirectories branch from /, including system, user, and device paths.
+
+
+
+
+
+
+6
+Linux
+Home Directory (alias ~/)
+The personal directory assigned to each user, typically under /home/username. It stores personal files, configuration settings, and user-specific application data.
+
+
+
+
+
+
+7
+Linux
+Permissions
+Rules governing who can read, write, or execute a file. Divided into three groups: owner, group, and others. Displayed in formats like rwxr-x--- and modified with chmod.
+
+
+
+
+
+
+8
+Linux
+chmod
+A command used to change file permissions. Supports both symbolic format (e.g., chmod g+w) and numeric format (e.g., chmod 755). Controls read, write, and execute access.
+
+
+
+
+
+
+9
+Linux
+chown
+A command that changes file or directory ownership. It can modify the owner, group, or both (e.g., chown user:group file). Only the root user can change ownership.
+
+
+
+
+
+
+10
+Linux
+ps (Process Status)
+A command that lists running processes. Often used with options like ps aux to view all processes across users or to locate PIDs for analysis or control.
+
+
+
+
+
+
+11
+Linux
+top
+A real-time system monitor showing CPU usage, memory consumption, and process activity. Helpful for observing system behavior and identifying resource-heavy processes.
+
+
+
+
+
+
+12
+Linux
+journalctl
+The command used to read logs managed by systemd. It allows filtering by service, time range, boot sessions, and priority levels.
+
+
+
+
+
+
+13
+Linux
+systemctl
+The primary tool for managing systemd services. It starts, stops, enables, disables, and queries the status of services such as web servers or SSH.
+
+
+
+
+
+
+14
+Linux
+ls -l
+A long-format directory listing that displays permissions, owners, file size, and timestamps. Essential for diagnosing permission or ownership problems.
+
+
+
+
+
+
+15
+Linux
+chmod 755 / chmod 644
+Common permission settings. 755 typically applies to directories and executables, while 644 applies to files. These patterns control read, write, and execute privileges.
+
+
+
+
+
+
+16
+Linux
+chgrp
+A command that changes the group ownership of a file or directory. Useful when coordinating access among multiple users or scripts.
+
+
+
+
+
+
+17
+Linux
+awk
+A text-processing tool useful for extracting columns, performing simple calculations, or transforming structured text from logs or commands.
+
+
+
+
+
+
+18
+Linux
+sed
+A stream editor used to modify text as it passes through a pipeline. It can replace words, delete lines, or rewrite patterns without opening an editor.
+
+
+
+
+
+
+19
+Linux
+redirect (>, >>)
+Operators that send command output into files. > overwrites files, while >> appends to them. These are commonly used for capturing logs during small projects.
+
+
+
+
+
+
+20
+Linux
+cron job
+A scheduled task defined in a crontab entry. Useful for running scripts at regular intervals, such as hourly cleanup or diagnostic logs.
+
+
+
+
+
+
+21
+Linux
+uptime
+A command that displays how long the system has been running along with the load average. Useful during system-health exploration.
+
+
+
+
+
+
+22
+Linux
+df -h
+A command that reports disk space usage in a human-friendly format. Helpful for diagnosing storage constraints and exploring filesystem layouts.
+
+
+
+
+
+
+23
+Linux
+du -sh
+Displays the disk usage of a directory or file. Often used to identify large folders when cleaning up a system.
+
+
+
+
+
+
+24
+Linux
+nano / vim
+Text editors available in the terminal. Nano is beginner-friendly, while Vim offers powerful text manipulation features for configuration and scripting tasks.
+
+
+
+
+
+
+25
+Linux
+User Data / Cloud-Init
+A script or configuration passed to a newly created virtual machine that runs on first boot. Commonly used to install packages, create users, configure security rules, or start services automatically.
+
+
+
+
+
+
+26
+Linux
+SSH Config File
+A local file (~/.ssh/config) that stores predefined connection settings, allowing quick access to remote servers with short, human-friendly commands.
+
+
+
+
+
+
+27
+Linux
+Cloud-init Log
+A log file on a cloud instance (typically /var/log/cloud-init.log) that records the results of the initialization process. Useful for debugging failed provisioning steps.
+
+
+
+
+
+
+28
+Linux
+journalctl -u <service>
+A command that displays logs for a specific systemd service. Helpful when diagnosing boot scripts, cloud-init actions, or service failures.
+
+
+
+
+
+
+
+29
+Linux
+systemctl enable
+A command that configures a service to start automatically at boot. Often used after installing custom agents or scripts in a new server.
+
+
+
+
+
+
+30
+Linux
+htop
+An interactive process viewer that offers a more detailed, user-friendly alternative to top. Helps visualize CPU, memory, and per-process activity.
+
+
+
+
+
+
+31
+Linux
+/proc Filesystem
+A virtual pseudo-filesystem that exposes kernel and process information in real time. Contains details on CPU, memory, processes, and more.
+
+
+
+
+
+
+32
+Linux
+TTL Tag (Time-To-Live Tag)
+A metadata tag on cloud resources used by automation to identify and automatically delete outdated or ephemeral infrastructure. Helps control cost and resource hygiene.
+
+
+
+
+
+
+1
+GUI Docker Container
+Docker Container ID
+
+A unique SHA256 identifier assigned to each container instance, used to reference, stop, inspect, or execute commands within a specific container.
+
+
+
+
+
+
+2
+GUI Docker Container
+Docker Build Context
+
+The folder and contents sent to Docker during docker build. Dockerfile must be inside this context, and relative paths are resolved against it.
+
+
+
+
+
+
+3
+GUI Docker Container
+CMD in Dockerfile
+
+Specifies the default command to run when the container starts. Only one CMD is allowed; using shell form allows chaining multiple commands, exec form runs a single binary directly.
+
+
+
+
+
+
+4
+GUI Docker Container
+Docker Port Mapping
+
+-p host_port:container_port exposes a container port to the host, allowing services like XRDP to be reachable from Windows via localhost.
+
+
+
+
+
+
+5
+GUI Docker Container
+Docker exec
+
+Runs commands inside a running container, useful for troubleshooting, updating passwords, or starting/stopping services without rebuilding the image.
+
+
+
+
+
+
+6
+GUI Docker Container
+XRDP Daemon
+
+The main process handling RDP connections in a container. Must be running alongside xrdp-sesman for Windows Remote Desktop to connect successfully.
+
+
+
+
+
+
+7
+GUI Docker Container
+XRDP Session Manager (xrdp-sesman)
+
+Handles user sessions for XRDP. Runs in the foreground to keep the container alive, coordinating session authentication and desktop environment startup.
+
+
+
+
+
+
+8
+GUI Docker Container
+Noninteractive apt
+
+Setting DEBIAN_FRONTEND=noninteractive prevents apt from prompting during package installs, avoiding build hangs when installing desktop environments like XFCE inside Docker.
+
+
+
+
+
+
+9
+GUI Docker Container
+RDP Connection Troubleshooting
+
+Verify container is running, ports are mapped correctly, XRDP daemon is active, and Windows firewall permits connections. Test connectivity via Test-NetConnection localhost -Port 3389.
+
+
+
+
+
+
+10
+GUI Docker Container
+WSL2 Networking
+
+Docker inside WSL2 exposes container ports to Windows via localhost. Containers listen on 0.0.0.0, but RDP may require explicit 127.0.0.1:3389 for Windows clients.
+
+
+
+
+
+
+11
+GUI Docker Container
+Container Daemons Startup
+
+Multiple services inside a container require either chaining in a shell-form CMD or a process manager. Only one CMD is allowed per Dockerfile; shell form allows starting XRDP + sesman simultaneously.
+
+
+
+
+
+
+12
+GUI Docker Container
+Docker GUI Containers on WSL2
+
+Run Linux GUI apps in Docker on Windows by exposing necessary ports (e.g., 3389 for RDP) and using a lightweight desktop environment. WSL2 enables near-native performance with Docker Desktop.
+
+
+
+
+
+
+13
+GUI Docker Container
+XFCE in Docker
+
+A minimal desktop environment suitable for RDP in containers. Install with DEBIAN_FRONTEND=noninteractive to prevent interactive prompts during builds. Avoid heavier desktops to reduce build time and resource usage.
+
+
+
+
+
+
+14
+GUI Docker Container
+Starting Multiple Daemons
+
+Containers only allow one CMD. Use shell-form CMD (bash -c "cmd1 && cmd2") to start multiple services like xrdp and xrdp-sesman simultaneously.
+
+
+
+
+
+
+15
+GUI Docker Container
+Avoiding Interactive Prompts in Docker Builds
+
+Set ENV DEBIAN_FRONTEND=noninteractive and chain commands to prevent apt package installs from pausing for keyboard layout, locale, or timezone prompts during automated builds.
+
+
+
+
+
+
+16
+GUI Docker Container
+Exposing Ports for RDP
+
+Use -p host_port:3389 in docker run to map the container’s XRDP port to Windows. Access with 127.0.0.1:3389 to ensure Windows RDP connects correctly to the container.
+
+
+
+
+
+
+17
+GUI Docker Container
+Verifying XRDP Status
+
+Check with ps aux | grep xrdp. Both xrdp and xrdp-sesman must be running. Start manually with service xrdp start if needed.
+
+
+
+
+
+
+18
+GUI Docker Container
+RDP Troubleshooting Steps
+
+    Confirm container is running (docker ps)
+    Confirm port mapping is correct
+    Confirm XRDP daemon is active
+    Test connectivity with Test-NetConnection localhost -Port 3389
+    Check Windows firewall or WSL2 networking
+
+
+
+
+
+19
+GUI Docker Container
+Updating Container Passwords
+
+Use docker exec -it <container> passwd root to set a root password for XRDP login. Avoid empty passwords to prevent RDP client rejection.
+
+
+
+
+
+
+20
+GUI Docker Container
+WSL2 Networking Notes
+
+Docker containers in WSL2 expose ports via 0.0.0.0. Some Windows clients require explicit 127.0.0.1:port connections. Networking issues often appear as “cannot connect” errors in RDP.
+
+
+
+
+
+
+21
+GUI Docker Container
+Container Persistence
+
+Containers are ephemeral; changes inside are lost unless committed or volumes are used. Keep configuration in Dockerfile for reproducible builds of GUI environments.
+
+
+
+
+
+
+
+1
+Everything is Tuberculosis, Green
+Stetson hat (STET-sun HAT)
+noun
+A wide-brimmed felt hat popularized by John B. Stetson, often associated with American cowboys and frontier culture.
+Example: He tipped his Stetson hat as he stepped out into the sun.
+
+
+
+
+
+2
+Everything is Tuberculosis, Green
+Sierra Leone (see-AIR-uh lee-OHN)
+proper noun
+A country on the west coast of Africa, historically linked to the transatlantic slave trade and later founded as a settlement for freed slaves.
+Example: Sierra Leone gained independence from Britain in 1961.
+
+
+
+
+
+
+3
+Everything is Tuberculosis, Green
+Krio language (KREE-oh LAN-gwij)
+noun
+An English-based creole language spoken in Sierra Leone, serving as a lingua franca across ethnic groups.
+Example: Krio allows people from different regions to communicate easily.
+
+
+
+
+
+
+4
+Everything is Tuberculosis, Green
+Hippocrates (hi-POK-ruh-teez)
+proper noun
+c. 460–370 BCE
+An ancient Greek physician often called the “father of medicine,” known for emphasizing observation, diagnosis, and medical ethics.
+Example: The Hippocratic Oath is traditionally attributed to Hippocrates.
+
+
+
+
+
+
+5
+Everything is Tuberculosis, Green
+phthisis (THIGH-sis)
+noun
+An archaic medical term for tuberculosis or wasting diseases, especially those causing progressive weight loss.
+Example: In older texts, tuberculosis was commonly referred to as phthisis.
+
+
+
+
+
+
+6
+Everything is Tuberculosis, Green
+tubercule (TOO-ber-kyool)
+noun
+A small rounded lesion or nodule, especially one characteristic of tuberculosis.
+Example: The presence of tubercles helped physicians identify TB in tissue samples.
+
+
+
+
+
+
+7
+Everything is Tuberculosis, Green
+quinine (KWIN-een)
+noun
+A bitter compound derived from cinchona bark, historically used to treat malaria and reduce fever.
+Example: Quinine was vital to European survival in malaria-prone regions.
+
+
+
+
+
+
+8
+Everything is Tuberculosis, Green
+otoscope (OH-toh-skohp)
+noun
+A medical instrument used to examine the ear canal and eardrum.
+Example: The doctor used an otoscope to check for infection.
+
+
+
+
+
+
+9
+Everything is Tuberculosis, Green
+Pott’s disease (PAHTS dih-ZEEZ)
+noun
+A form of tuberculosis that affects the spine, leading to pain, deformity, and neurological complications.
+Example: Untreated Pott’s disease can cause spinal collapse.
+
+
+
+
+
+
+10
+Everything is Tuberculosis, Green
+scrofula (SKROO-fyoo-luh)
+noun
+Tuberculosis of the lymph nodes, especially in the neck, historically known as the “king’s evil.”
+Example: Scrofula was once believed to be cured by royal touch.
+
+
+
+
+
+
+11
+Everything is Tuberculosis, Green
+pulmonary (PULL-muh-nair-ee)
+adjective
+Relating to the lungs or respiratory system.
+Example: Tuberculosis is primarily a pulmonary disease.
+
+
+
+
+
+
+12
+Everything is Tuberculosis, Green
+albumen silver print (AL-byuh-min SIL-ver PRINT)
+noun
+A photographic printing process using egg white and silver salts, common in the 19th century.
+Example: The archive preserved several albumen silver prints from the 1800s.
+
+
+
+
+
+
+13
+Everything is Tuberculosis, Green
+belladonna (bel-uh-DON-uh)
+noun
+A poisonous plant historically used in medicine and cosmetics; its extracts affect the nervous system.
+Example: Belladonna was once used to dilate pupils for cosmetic effect.
+
+
+
+
+
+
+14
+Everything is Tuberculosis, Green
+preternaturally (pree-ter-NATCH-er-uh-lee)
+adverb
+To an extent beyond what is normal or natural, though not necessarily supernatural.
+Example: The room was preternaturally quiet.
+
+
+
+
+
+15
+Everything is Tuberculosis, Green
+Adirondack chair (ad-uh-RON-dak CHAIR)
+noun
+A wooden outdoor chair with a slanted seat and wide armrests, originating in the Adirondack Mountains.
+Example: They relaxed by the lake in Adirondack chairs.
+
+
+
+
+
+16
+Everything is Tuberculosis, Green
+ototoxic (OH-toh-TOK-sik)
+adjective
+Harmful to the ear, particularly the inner ear or auditory nerve.
+Example: Some antibiotics are ototoxic at high doses.
+
+
+
+
+
+17
+Everything is Tuberculosis, Green
+comorbidities (koh-mor-BID-uh-teez)
+noun
+The presence of additional diseases or conditions alongside a primary illness.
+Example: Diabetes is a common comorbidity in chronic illness.
+
+
+
+
+
+18
+Everything is Tuberculosis, Green
+retrovirus (RET-roh-VY-rus)
+noun
+A virus that inserts its genetic material into a host cell’s DNA using reverse transcription.
+Example: HIV is the most well-known retrovirus.
+
+
+
+
+
+19
+Everything is Tuberculosis, Green
+impressionism (im-PRESH-uh-niz-um)
+noun
+An art movement emphasizing light, color, and momentary visual impressions over realism.
+Example: Impressionism broke sharply from academic painting traditions.
+
+
+
+
+
+20
+Everything is Tuberculosis, Green
+adjuvant (AD-juh-vuhnt)
+noun
+A substance that enhances the effectiveness of a medical treatment, especially vaccines.
+Example: The vaccine included an adjuvant to boost immune response.
+
+
+
+
+
+
+21
+Everything is Tuberculosis, Green
+Lesotho (lih-SOO-too)
+proper noun
+A landlocked country entirely surrounded by South Africa, known for its high elevation.
+Example: Lesotho is sometimes called the “Kingdom in the Sky.”
+
+
+
+
+
+22
+Everything is Tuberculosis, Green
+Ibn Sina (ibn SEE-nuh)
+proper noun
+c. 980–1037 CE
+A Persian polymath, known in Europe as Avicenna, whose medical and philosophical works shaped Islamic and Western medicine for centuries.
+Example: Ibn Sina’s Canon of Medicine remained influential well into the Renaissance.
+
+
+
+
+
+
+23
+Everything is Tuberculosis, Green
+Sukanta Bhattacharya (soo-KUN-tuh BOT-uh-CHAR-juh)
+proper noun
+1926–1947
+A Bengali poet whose work combined humanist compassion with political awareness during the final years of British rule in India.
+Example: Sukanta Bhattacharya wrote with urgency shaped by poverty and illness.
+
+
+
