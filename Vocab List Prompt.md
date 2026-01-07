@@ -1,31 +1,57 @@
-Vocab List Prompt
-
 Define the following list of words with a format similar to the entries at the end of this message.
 
-Stetson hat
-Sierra Leone
-Krio language
-Hippocrates
-phthisis
-Ibn Sina
-tubercule
-quinine
-otoscope
-Patt's diseas
-scrofula
-Sukanta Bhattacharua
-pulmonary
-albumen silver print
-belladonna
-preternaturally
-Robert Koch
-Adirondack chair
-ototoxic
-comorbidities
-retrovirus
-impressionism
-adjuvant
-Lesotho
+viands
+replete
+exudate
+unquent
+pelp
+scounderelle
+nescient
+hove
+shimfin
+glabrous
+carrack
+benthic
+fetor
+bowsprit
+sterterously
+emboyment
+pannier
+sleek-fed
+thoroughbred skinies
+sonorous
+gill as a unit of measurement
+glabrine
+lissome
+lictors
+stolid
+antedate
+sloe-eyed
+draybeast
+pompadour
+scow
+skorse
+barouche
+viaduct
+locally modish
+epistle
+buskin
+tenderfooted
+tarsal claws
+dorsum
+micturate
+immured
+unguent
+feckless
+eclosia
+dactyls
+ells of rope
+bumptious
+yawlp
+absqualation
+ophidian scales
+tegmenta
+oleaginous
 
 
 
