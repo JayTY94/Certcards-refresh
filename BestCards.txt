@@ -179,7 +179,7 @@ Wide-form data refers to a format for organizing data in which each row represen
 
 
 =============
-
+You can open the Local Group Policy Editor by running the gpedit.msc command in the Windows Run dialog [Win] + [R]. It provides a graphical interface for monitoring policies, making it easier to find and modify specific settings.
 
 
 
