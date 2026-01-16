@@ -7641,3 +7641,474 @@ Zip Slip (Path Traversal Attack)
 Malicious zips can contain members like ../../etc/passwd.
 Naïve extractall() writes outside the intended folder.
 Fix: use Path.resolve() to normalize paths and ensure they remain within a safe directory.
+
+
+
+
+
+
+
+
+2
+Exchange Online and Defender
+Authenticated Received Chain (ARC): If a non-Microsoft service modifies inbound messages before delivery to Microsoft 365, you can identify the service as a trusted ARC sealer (if the service supports it). Trusted ARC sealers preserve unmodified email information so the modified messages don't automatically fail email authentication checks in Microsoft 365.
+
+
+
+
+
+
+
+
+3
+Exchange Online and Defender
+Domain-based Message Authentication, Reporting, and Conformance (DMARC): DMARC helps destination email servers decide what to do with messages from the custom domain that fail SPF and DKIM checks. Be sure to include the DMARC policy (p=reject or p=quarantine) and DMARC report destinations (aggregate and forensic reports) in the DMARC records. 
+
+
+
+
+
+
+
+
+4
+Exchange Online and Defender
+DomainKeys Identified Mail (DKIM): DKIM signs outbound messages and stores the signature in the message header that survives message forwarding. 
+
+
+
+
+
+
+
+
+5
+Exchange Online and Defender
+Sender Policy Framework (SPF): The SPF TXT record identifies valid sources of email from senders in the domain. For instructions, see Set up SPF to identify valid email sources for your custom cloud domains.
+
+
+
+
+
+
+
+
+6
+Exchange Online and Defender
+If you're using the *.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do: 
+
+SPF and DKIM are configured automatically
+DMARC still needs to be manually set up via DNS records.
+
+
+
+
+
+
+
+
+7
+Exchange Online and Defender
+Protection features have an unconfigurable order of processing. For example, incoming messages are always evaluated for malware before spam.
+The threat policies of a specific feature (anti-spam, anti-malware, anti-phishing, etc.) are applied in a specific order of precedence.
+
+
+
+
+
+
+
+
+8
+Exchange Online and Defender
+If a user is intentionally or unintentionally included in multiple policies of a specific feature, the first applicable threat policy for that feature (based on the order of precedence) determines what happens to the item (a message, file, URL, etc.).
+
+
+
+
+
+
+
+
+
+9
+Exchange Online and Defender
+Once the first threat policy is applied to a specific item for a user, policy processing for that feature stops. No more threat policies of that feature are evaluated for that user and that specific item.
+
+
+
+
+
+
+
+
+
+10
+Exchange Online and Defender
+If you decide to use custom threat policies, use the Configuration analyzer to periodically compare the settings in your policies to the recommended settings in the Standard and Strict preset security policies.
+
+
+
+
+
+
+
+
+
+
+11
+Exchange Online and Defender
+Email & collaboration permissions in the Microsoft Defender portal: Administration of some security features in Defender for Office 365 is available with Email & collaboration permissions. For example:
+    Configuration analyzer
+    Admin quarantine management and quarantine policies
+    Admin submissions and review of user reported messages
+    User tags
+
+
+
+
+
+
+
+
+12
+Exchange Online and Defender
+You can create allow entries for domains and email addresses and URLs on the corresponding tabs in the Tenant Allow/Block List to override the following verdicts:
+
+    Bulk
+    Spam
+    High confidence spam
+    Phishing (not high confidence phishing)
+
+
+
+
+
+
+
+
+
+13
+Exchange Online and Defender
+You can't create allow entries directly in the Tenant Allow/Block List for the following items:
+
+    Malware or high confidence phishing verdicts for domains and email addresses or URLs.
+    Any verdicts for files.
+
+
+
+
+
+
+
+
+14
+Exchange Online and Defender
+We recommend you begin with the preset security policies in Exchange Online Protection (EOP) and Defender for Office 365 fast by assigning them to specific pilot users or defined groups as part of your evaluation. 
+
+
+
+
+
+
+
+
+15
+Exchange Online and Defender
+Threat Explorer is a powerful near real-time tool to help Security Operations teams investigate and respond to threats and displays information about detected malware and phishing in email and files in Office 365, as well as other security threats and risks to your organization.
+
+
+
+
+
+
+
+
+16
+Exchange Online and Defender
+You can use Attack simulation training in the Microsoft Defender portal to run realistic attack scenarios in your organization, which help you identify and find vulnerable users before a real attack impacts your environment.
+
+
+
+
+
+
+
+
+17
+Exchange Online and Defender
+On the left navigation menu, click Reports and expand the Email & collaboration heading. The Email & collaboration reports are about spotting security trends some of which will allow you to take action (through buttons like 'Go to submissions'), and others that will show trends. These metrics are generated automatically.
+
+
+
+
+
+
+
+
+18
+Exchange Online and Defender
+You can integrate Defender for Office 365 with Microsoft Sentinel or a generic security information and event management (SIEM) service to enable centralized monitoring of alerts and activities from connected apps. 
+
+
+
+
+
+
+
+
+19
+Exchange Online and Defender
+Archive mailboxes (called In-Place Archiving) let people in your Microsoft 365 or Office 365 organization take control of messaging data by providing additional email storage. 
+
+
+
+
+
+
+
+
+20
+Exchange Online and Defender
+People can use Outlook or Outlook on the web (formerly known as Outlook Web App) to view messages in their archive mailbox and move or copy messages between their primary and archive mailboxes.
+
+
+
+
+
+
+
+
+21
+Exchange Online and Defender
+Litigation Hold allows you to preserve or archive mailbox content for compliance and eDiscovery.
+
+
+
+
+
+
+
+
+22
+Exchange Online and Defender
+You can preserve the contents of deleted mailboxes indefinitely by using inactive mailboxes. You can make an inactive mailbox by placing an In-Place Hold or a Litigation Hold on the mailbox, and then deleting the corresponding user account. 
+
+
+
+
+
+
+
+
+23
+Exchange Online and Defender
+You can use auditing solutions in Microsoft Purview to track changes made to your Exchange Online configuration by Microsoft and by your organization's administrators, and to audit mailbox access by persons other than the mailbox owner.
+
+
+
+
+
+
+
+
+24
+Exchange Online and Defender
+Messaging records management (MRM) helps your organization manage email lifecycle to meet business and regulatory requirements and reduce the legal risks associated with email. In Exchange Online, you can use In-Place Hold or Litigation Hold to preserve email and Retention tags and retention policies to archive and delete email.
+
+
+
+
+
+
+
+
+25
+Exchange Online and Defender
+Information Rights Management (IRM) helps you and your users control who can access, forward, print, or copy sensitive data within an email. IRM can use your on-premises Active Directory Rights Management Services (AD RMS) server.
+
+
+
+
+
+
+
+
+26
+Exchange Online and Defender
+Secure/Multipurpose Internet Mail Extensions (S/MIME) allows email users to help protect sensitive information by sending signed and encrypted email within their organization. As an administrator, you can enable S/MIME-based security for your organization if you have mailboxes in either Exchange Server or Exchange Online.
+
+
+
+
+
+
+
+
+27
+Exchange Online and Defender
+If you need to limit permissions and capabilities to features in Exchange Online, you can assign Exchange Online permissions in the Exchange admin center (EAC) and in Exchange Online PowerShell.
+
+To manage Exchange Online permissions in the EAC, go to Roles > Admin roles
+
+
+
+
+
+
+28
+Exchange Online and Defender
+Role names that start with the prefix 'My' (for example, MyContactInformation) are end-user roles. End-user roles are assigned to users in role assignment policies, which allow users to operate on object they own (for example, their own account or distribution groups they created). For more information, see Role assignment policies in Exchange Online.
+
+
+
+
+
+
+
+
+
+29
+Exchange Online and Defender
+Role names that start or end with 'Application' are part of RBAC for Applications in Exchange Online. For more information, see Role Based Access Control for Applications in Exchange Online.
+
+
+
+
+
+
+
+
+
+30
+Exchange Online and Defender
+Sender Policy Framework (SPF): Specifies the source email servers that are authorized to send mail for the domain.
+
+
+
+
+
+
+
+
+
+31
+Exchange Online and Defender
+DomainKeys Identified Mail (DKIM): Uses a domain to digitally sign important elements of the message to ensure the message remains unaltered in transit.
+
+
+
+
+
+
+
+
+
+32
+Exchange Online and Defender
+Domain-based Message Authentication, Reporting and Conformance (DMARC): Specifies the action for messages that fail SPF or DKIM checks for senders in the domain, and specifies where to send the DMARC results (reporting).
+
+
+
+
+
+
+
+
+
+33
+Exchange Online and Defender
+Authenticated Received Chain (ARC): Preserves original email authentication information by known services that modify messages in transit. The destination email server can use this information to authenticate messages that would otherwise fail DMARC.
+
+
+
+
+
+
+
+
+
+34
+Exchange Online and Defender
+A standard SMTP email message consists of a message envelope and message content:
+
+The message envelope contains information for transmitting and receiving the message between SMTP servers. The message envelope is described in RFC 5321. Recipients never see the message envelope because it's generated during the message transmission process.
+
+
+
+
+
+
+
+
+35
+Exchange Online and Defender
+A standard SMTP email message consists of a message envelope and message content:
+
+The message content contains message header fields (collectively called the message header) and the message body. The message header is described in RFC 5322.
+
+
+
+
+
+
+
+
+36
+Exchange Online and Defender
+HELO identifies the sending server
+    HELO is the original SMTP greeting.
+    The client sends it to introduce itself to the receiving server and start the SMTP conversation.
+    It includes the client’s fully qualified domain name (FQDN) or IP address (e.g., HELO mail.example.com).
+
+
+
+
+
+
+
+
+37
+Exchange Online and Defender
+HELO is required for legacy/standard SMTP (non‑ESMTP)
+    Every SMTP server that follows the basic SMTP specification must support HELO.
+    It is the minimal handshake required before any mail transaction can proceed.
+    If a server does not support ESMTP extensions, HELO—not EHLO—will be used.
+
+
+
+
+
+
+
+
+38
+Exchange Online and Defender
+HELO is simple: it only introduces the client.
+    It does not provide a mechanism for the client to learn about server features such as STARTTLS, AUTH, SIZE, or other ESMTP extensions.
+    Those are only available via EHLO.
+
+
+
+
+
+
+
+
+39
+Exchange Online and Defender
+A valid, consistent HELO value affects deliverability
+    Receiving servers often inspect the HELO identity as a hygiene and reputation signal.
+    A mismatch, nonexistent domain, or generic hostname (e.g., localhost) can contribute to spam classification or rejection.
+    While DMARC does not directly use HELO, SPF checks can, and mailbox providers use its validity as a trust indicator.
+
+
+
+
+
+40
+Exchange Online and Defender
+SPF: As explained in Set up SPF to identify valid email sources for your custom cloud domains, SPF uses a TXT record in DNS to:
+
+Identify valid sources of mail from the MAIL FROM domain.
+What to do if the destination email server receives mail from an undefined source ('hard fail' to reject the message; 'soft fail' to accept and mark the message).
