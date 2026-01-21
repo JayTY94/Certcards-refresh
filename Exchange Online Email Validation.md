@@ -165,6 +165,8 @@ In Microsoft 365, you typically use IP addresses in the SPF TXT record only if y
 
 16
 Exchange Online and Defender
+DMARC treats -all (hard fail) and ~all (soft fail) as SPF failures. But the DMARC policy is effectively ignored for SPF ~all failures if the messages don't also contain DKIM signatures. We recommend -all so DMARC can act on messages that fail SPF if the messages also lack DKIM signatures.
+
 
 
 
@@ -173,6 +175,7 @@ Exchange Online and Defender
 
 17
 Exchange Online and Defender
+When the destination email system checks the valid email sources in the SPF record, SPF validation fails if the check requires too many DNS lookups. For more information, see the Troubleshooting SPF TXT records section later in this article.
 
 
 
@@ -181,6 +184,7 @@ Exchange Online and Defender
 
 18
 Exchange Online and Defender
+Each defined domain or subdomain in DNS requires an SPF TXT record, and only one SPF record is allowed per domain or subdomain. Email authentication protection for undefined subdomains is best handled by DMARC.
 
 
 
@@ -189,6 +193,7 @@ Exchange Online and Defender
 
 19
 Exchange Online and Defender
+You can't modify the existing SPF TXT record for the *.onmicrosoft.com domain.
 
 
 
@@ -197,7 +202,13 @@ Exchange Online and Defender
 
 20
 Exchange Online and Defender
+Scenario: Parked domains
+You own the domains contoso.net and contoso.org, but you don't use them for email. You want to specify no one is authorized to send email from contoso.net or contoso.org.
 
+SPF TXT record for contoso.net:
+    v=spf1 -all
+SPF TXT record for contoso.org:
+    v=spf1 -all
 
 
 
@@ -205,6 +216,7 @@ Exchange Online and Defender
 
 21
 Exchange Online and Defender
+The digital signature is stored in the DKIM-Signature header field in the message header and remains valid as long as intermediate email systems don't modify the signed parts of the message. The signing domain is identified by the d= value in the DKIM-Signature header field.
 
 
 
@@ -213,6 +225,7 @@ Exchange Online and Defender
 
 22
 Exchange Online and Defender
+DKIM public keys are stored in DNS records for the signing domain (CNAME records in Microsoft 365; other email systems might use TXT records).
 
 
 
@@ -221,6 +234,7 @@ Exchange Online and Defender
 
 23
 Exchange Online and Defender
+A message can have multiple DKIM signatures by different domains. In fact, many hosted email services sign the message using the service domain, and then sign the message again using the customer domain after the customer configures DKIM signing for the domain.
 
 
 
@@ -229,6 +243,7 @@ Exchange Online and Defender
 
 24
 Exchange Online and Defender
+A message can have multiple DKIM signatures by different domains. In fact, many hosted email services sign the message using the service domain, and then sign the message again using the customer domain after the customer configures DKIM signing for the domain.
 
 
 
@@ -237,6 +252,8 @@ Exchange Online and Defender
 
 25
 Exchange Online and Defender
+If you own registered but unused domains: If you own registered domains that aren't used for email or anything at all (also known as parked domains), don't publish DKIM records for those domains. The lack of a DKIM record (hence, the lack of a public key in DNS to validate the message signature) prevents DKIM validation of forged domains.
+
 
 
 
@@ -245,7 +262,7 @@ Exchange Online and Defender
 
 26
 Exchange Online and Defender
-
+In Microsoft 365, two public-private key pairs are generated when DKIM signing using a custom domain or subdomain is enabled. The private keys that are used to sign the message are inaccessible. The CNAME records point to the corresponding public keys that are used to verify the DKIM signature. These records are known as selectors.
 
 
 
@@ -253,6 +270,8 @@ Exchange Online and Defender
 
 27
 Exchange Online and Defender
+Only one selector (CNAME record pointing to a DKIM public key) is active and used when DKIM signing using a custom domain is enabled.
+The other selector is inactive. It's activated and used only after any future DKIM key rotation, and then only after the original selector is deactivated.
 
 
 
