@@ -280,7 +280,8 @@ The other selector is inactive. It's activated and used only after any future DK
 
 28
 Exchange Online and Defender
-
+To see our DMARC policy:
+dig TXT _dmarc.accuityadvisors.com
 
 
 
