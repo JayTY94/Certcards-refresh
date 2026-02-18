@@ -3,7 +3,7 @@ Identifier Alignment refers to the requirement that the domains used in SPF and 
 
 
 
-=============
+........
 
 What is Bandwidth and how does it differ from Throughput?
 
@@ -12,7 +12,7 @@ Throughput: The actual rate of successful data transfer achieved, often lower th
 
 
 
-=============
+........
 SRV (Service) Records
 DNS records that specify the location (hostname and port) of servers for particular services within a domain. Essential for services like SIP (VoIP) or LDAP, they enable clients to discover service endpoints automatically.
 
@@ -20,7 +20,7 @@ DNS records that specify the location (hostname and port) of servers for particu
 
 
 
-=============
+........
 TimedRotatingFileHandler is a logging handler in Python that rotates log files based on time intervals (e.g., daily), whereas RotatingFileHandler rotates them based on file size thresholds.
 
 
@@ -29,7 +29,7 @@ TimedRotatingFileHandler is a logging handler in Python that rotates log files b
 
 
 
-=============
+........
 VHDX files in FSLogix support a maximum size of 64 TB, making them suitable for enterprise environments that require large-scale user profile storage.
 
 
@@ -39,7 +39,7 @@ VHDX files in FSLogix support a maximum size of 64 TB, making them suitable for 
 
 
 
-=============
+........
 If a virus never saves itself to a storage drive, it may be able to evade antivirus software. Instead of existing as a file that might execute, the fileless virus operates soley in the memory of the comptuer. Once it's sarted, all operations happen inside of RAM.
 
 
@@ -48,7 +48,7 @@ If a virus never saves itself to a storage drive, it may be able to evade antivi
 
 
 
-=============
+........
 A Firewall Policy is the recommended method to configure your Azure Firewall. It's a global resource that can be used across multiple Azure Firewall instance in Secured Virtual Hubs and Hub Virtual Networks. Polcies will work across regions and subscriptions.
 
 
@@ -56,7 +56,7 @@ A Firewall Policy is the recommended method to configure your Azure Firewall. It
 
 
 
-=============
+........
 Password Spraying is where the attacker obtains the account names of individuals (like from the company's website) and then uses the same common passwords to try to authenticate to each of them.
 
 
@@ -64,7 +64,7 @@ Password Spraying is where the attacker obtains the account names of individuals
 
 
 
-=============
+........
 802.11 management frames 
     Communication that makes WiFi work
     How devices find APs, managed QoS, associate, and disassociate with an AP 
@@ -76,28 +76,28 @@ Original wireless standards did not add protection for management frames
 
 
 
-=============
+........
 Diffusion means that if we change a single bit of the plaintext, then about half of the bits in the cyphertext should change, and similarly, if we change one bit of the cyphertext, then about half of the plaintext bits should change.
 
 
 
 
 
-=============
+........
 Data Execution Prevention is a way to only allow applications to run in certain areas of memory where that particular function is allowed. Vulnerabilities that try to run an application from the data section of memory would be blocked by Data Execution Prevention.
 
 
 
 
 
-=============
+........
 A War Dialer is a computer program that automatically dials a series of telephone numbers to find lines connected to computer systems and catalogs those numbers so that a cracker can try to attack those hosts.
 
 
 
 
 
-=============
+........
 How to clear the cache for a specific web page in Chrome:
     Open the developer tools tab [f12]
     [shift] + [r-click] the refresh button
@@ -107,21 +107,21 @@ How to clear the cache for a specific web page in Chrome:
 
 
 
-=============
+........
 Extensible Authentication Protocol - Flexible Authentication via Secure Tunneling (EAP-FAST) is an updated form of LEAP (Lightweight EAP) that was commonly used after Wired Equivalent Privacy (WEP) was replaced with Wi-Fi Protected Access (WPA)
 
 
 
 
 
-=============
+........
 Horizontal Privilege Escalation means that a user achieves access permissions belonging to another user that owns the same access level as the user that started the cyber attack. It is a bit more challenging compared to vertical privilege escalation since it requires a deep understanding of how operating systems work.
 
 
 
 
 
-=============
+........
 Unpivoting is a useful feature of Power BI. You can use this feature with data from any source, but you would most often use it when importing data from Excel. Unpivoting streamlines the process of creating DAX measures on the data later.
 
 
@@ -129,81 +129,78 @@ Unpivoting is a useful feature of Power BI. You can use this feature with data f
 
 
 
-=============
+........
 A good example of an operational report is one that allows monitoring of a manufacturing production line. When an unexpected event arises, such as equipment malfunction, a button could allow workers to start a maintenance request.
 
 
 
 
 
-=============
+........
 Cofusion means that each bit of the cyphertext should depend on several parts of the key, obscuring the connections between the two. This hides the relationship between the ciphertext and the key. Confusion increass the ambiguity of cyphertext and is used by both block and stream cyphers.
 
 
 
 
 
-=============
+........
 Security Orchestration, Automation and Response (SOAR) refers to technologies that enable organizations to collect inputs monitored by the security operations team. For example, alerts from the SIEM system and other security technologies--where incident analysis and triage can be performed by leveraging a combination of human and machine power--help define, prioritize, and drive standardized incident response activities.
 
 
 
 
 
-=============
+........
 Split Key - A cryptographic key that is divided into two or more separate data items that individually convey no knowledge of the whole key that results from combining the two items.
 
 
 
 
 
-=============
+........
 Educational reports assume that the report consumer is unfamilliar with the data or context. The reports must provide clear narrative detail and guidance to help with understanding. This type of report is often used in journalism and by governments to disseminate information to large audiences that have varying levels of undestaning on the subject.
 
 
 
 
 
-=============
+........
 In the context of IT, Markdown is often used in software development and documentation as a way to format and style text within code repositories and project documentation. IT is also commonly used in collaboration tools and web-based editors, such as GitHub and Stack Overflow, for tis ease of use and readability.
 
 
 
 
 
-=============
+........
 Wide-form data refers to a format for organizing data in which each row represents a single observation and each column represents a different variable. This is in contrast to long-form data, whre each row respresents a single observation of a single variable, and multiple rows are used to represent all variables for a single observation.
 
 
 
 
 
-=============
+........
 You can open the Local Group Policy Editor by running the gpedit.msc command in the Windows Run dialog [Win] + [R]. It provides a graphical interface for monitoring policies, making it easier to find and modify specific settings.
 
 
 
 
 
-=============
+........
 
 
 
 
 
 
-=============
+........
 
 
 
 
 
 
-=============
+........
 
 
 
 
-
-
-=============
