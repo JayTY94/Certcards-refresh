@@ -116,3 +116,26 @@ If you cannot explain why Terraform wants to destroy a resource, you should not 
 Refactors that change addresses are dangerous; refactors that change expressions are usually safe.
 ........
 When Terraform behaves unexpectedly during refactors, the answer is almost always in the state file, not the configuration.
+........
+Terraform import block syntax is very simple. Make sure that you have a resource block for the import to go to or you use the -generate-config-out option with terraform plan.
+Example
+import {
+  to = azurerm_ip_group.old_ip_group
+  id = "/subscriptions/e4f1f240-7c87-4e7f-a12f-36553fb8721a/resourceGroups/Offshore_VDI/providers/Microsoft.Network/ipGroups/Offshore-AVD-IG"
+}
+........
+If you have import blocks set up but no resource blocks for them to fill, you can generate new .tf files using terraform plan.
+
+terraform plan -generate-config-out='<filename>.tf'
+
+This will create a new file with a mostly functional resource block in it.
+........
+I had a typo that made terraform look for a provider that it didn't need. Because I had typed out the "to" section on an import block, I had used "azure_firewall_policy_rule_collection_group.old_rcg" instead of "azurerm_firewall_policy_rule_collection_group.old_rcg". That made terraform look for a provider called "azure" instead of "azurerm". 
+
+import {
+  id = "/subscriptions/e4f1f240-7c87-4e7f..."
+  to = azure_firewall_policy_rule_collection_group.old_rcg
+}
+........
+........
+........
