@@ -186,7 +186,7 @@ You can open the Local Group Policy Editor by running the gpedit.msc command in 
 
 
 ........
-
+Data granularity indicates the level of the detail, so the higher the granularity, the  more detail is represented in the data.
 
 
 
