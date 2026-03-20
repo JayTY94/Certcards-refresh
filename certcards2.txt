@@ -7493,3 +7493,343 @@ Using object({ ... }) enforces structure and validation for complex inputs, impr
 759
 Terraform
 If Terraform wants to destroy resources after moving them into a module, the cause is usually a module path change in the resource address. The fix is to move state, not to re‑apply.
+
+
+
+
+
+
+
+1
+Observability and SRE
+Impact-based Alerting vs Symptom-based Alerting
+Impact-based alerting triggers when users are actually experiencing problems, such as elevated error rates or failed requests. Symptom-based alerting triggers on internal signals like CPU usage, memory pressure, or pod restarts that may correlate with failures but do not necessarily indicate user impact. Mature SRE practices prefer impact-based alerts for paging to reduce alert fatigue.
+
+
+
+
+
+2
+Observability and SRE
+An Error Budget is the allowable amount of unreliability a system can experience over a defined period while still meeting its Service Level Objective (SLO). It represents the tradeoff space between reliability and feature velocity, enabling teams to decide when to slow releases or invest in stability work.
+
+
+
+
+
+3
+Observability and SRE
+Error Budget Burn Rate measures how quickly a service is consuming its error budget relative to the allowed rate. A high burn rate indicates that reliability is being lost faster than acceptable and may require immediate action, even if the absolute number of failures is still small.
+
+
+
+
+
+4
+Observability and SRE
+Time-weighted Reliability means that when failures occur matters, not just how many occur. Multiple small outages spread over time can consume error budgets faster than a single larger outage, which is why frequent intermittent failures are treated as higher risk in SRE practices.
+
+
+
+
+
+
+5
+Observability and SRE
+Rolling Window SLOs evaluate reliability over a continuously moving time window (for example, the last 30 days) rather than a fixed calendar period. This prevents teams from “resetting” reliability after a bad period and ensures SLOs reflect current system behavior.
+
+
+
+
+
+
+6
+Observability and SRE
+Observability is the ability to understand why a system is behaving a certain way based on the signals it emits. Unlike monitoring, which answers whether something is wrong, observability enables investigation of unknown or novel failure modes by correlating metrics, logs, and traces.
+
+
+
+
+
+
+7
+Observability and SRE
+An Unknown-Unknown is a failure mode that was not anticipated and therefore has no predefined alert or dashboard. Observability is designed to support investigation of unknown-unknowns by enabling flexible querying and correlation rather than relying solely on predefined checks.
+
+
+
+
+
+
+8
+Observability and SRE
+Latent Conditions are hidden weaknesses in a system that do not cause failures on their own but contribute to incidents when combined with other factors. These conditions often accumulate silently and are a key focus of blameless postmortems.
+
+
+
+
+
+
+9
+Observability and SRE
+Systems Thinking in Incident Analysis treats failures as the result of interactions between multiple components rather than a single root cause. When no clear root cause exists, it usually indicates systemic design weaknesses rather than missing data or individual mistakes.
+
+
+
+
+
+
+10
+Observability and SRE
+Blast Radius describes the scope of impact when a failure occurs, including how many users, services, or regions are affected. Observability practices focus on rapidly determining blast radius to guide response priority and communication.
+
+
+
+
+
+
+11
+Observability and SRE
+Traffic Volume is a contextual metric that describes how much demand a system is handling, but it is not itself a signal of health. Traffic is typically used as a denominator for error rates or latency analysis rather than as a paging indicator.
+
+
+
+
+
+
+12
+Observability and SRE
+Signal vs Context
+A signal directly indicates system correctness or user experience, such as error rate or request success. Contextual metrics, like traffic volume or CPU usage, provide background information but are not sufficient on their own to determine whether a system is failing.
+
+
+
+
+
+
+13
+Observability and SRE
+Symptom-based alerting triggers on indirect indicators of potential problems, such as high CPU usage, memory pressure, or pod restarts. These alerts often correlate with failures but do not guarantee user impact and can lead to alert fatigue if used for paging.
+
+
+
+
+
+
+14
+Observability and SRE
+Impact-based alerting triggers when users are actually experiencing degraded service, such as increased error rates or failed requests. This form of alerting is preferred for paging because it aligns operational response with real customer pain.
+
+
+
+
+
+
+15
+Observability and SRE
+Error budget consumption describes how much of the allowed unreliability has already been used within an SLO period. It focuses on how reliability is spent over time, not just whether the SLO has been violated.
+
+
+
+
+
+
+16
+Observability and SRE
+Time-weighted failures recognize that frequent, intermittent failures often degrade user trust more than a single sustained outage. As a result, many short incidents can be more damaging to reliability objectives than one longer failure.
+
+
+
+
+
+
+17
+Observability and SRE
+Fixed window evaluation measures reliability over static periods like calendar months. This approach can hide recent instability and encourages unhealthy behavior such as deferring fixes until the window resets.
+
+
+
+
+
+
+18
+Observability and SRE
+Incident vs Failure
+A failure is a technical malfunction in a system component, while an incident is a situation that requires coordinated human response. Not all failures become incidents, but all incidents involve failures that matter operationally.
+
+
+
+
+
+
+19
+Observability and SRE
+Observability vs Monitoring
+Monitoring answers known questions such as “Is the service up?” Observability enables investigation into unknown or unexpected behavior by allowing engineers to ask new questions of the system’s telemetry.
+
+
+
+
+
+20
+Observability and SRE
+Traffic volume is most useful when used as a denominator for metrics like error rate or latency percentiles. On its own, traffic does not indicate health, but it provides essential context for interpreting other signals.
+
+
+
+
+
+21
+Observability and SRE
+Latent conditions are hidden weaknesses in a system that remain dormant until combined with other factors. These conditions accumulate over time and are often the true drivers behind major incidents.
+
+
+
+
+
+22
+Observability and SRE
+
+
+
+
+
+
+23
+Observability and SRE
+
+
+
+
+
+
+24
+Observability and SRE
+
+
+
+
+
+
+25
+Observability and SRE
+
+
+
+
+
+
+26
+Observability and SRE
+
+
+
+
+
+
+27
+Observability and SRE
+
+
+
+
+
+
+28
+Observability and SRE
+
+
+
+
+
+
+29
+Observability and SRE
+
+
+
+
+
+
+30
+Observability and SRE
+
+
+
+
+
+
+31
+Observability and SRE
+
+
+
+
+
+
+32
+Observability and SRE
+
+
+
+
+
+
+33
+Observability and SRE
+
+
+
+
+
+
+34
+Observability and SRE
+
+
+
+
+
+
+35
+Observability and SRE
+
+
+
+
+
+
+36
+Observability and SRE
+
+
+
+
+
+
+37
+Observability and SRE
+
+
+
+
+
+
+38
+Observability and SRE
+
+
+
+
+
+
+39
+Observability and SRE
+
+
+
+
+
+
+40
+Observability and SRE
