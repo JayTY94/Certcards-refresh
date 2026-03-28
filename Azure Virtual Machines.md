@@ -172,6 +172,10 @@ The VM client includes the operating system and other workloads and applications
 
 17
 Azure Virtual Machines
+1. What capabilities does enabling VM insights provide?
+Prebuilt client performance workbooks and guest OS metrics.
+Enable VM insights with the Azure Monitor Agent to collect guest OS metrics and use prebuilt workbooks to visualize VM client performance.
+
 
 
 
@@ -180,6 +184,10 @@ Azure Virtual Machines
 
 18
 Azure Virtual Machines
+2. What's a quick way to install the Azure Monitor Agent to collect guest OS metrics?
+Select the Azure Monitor Agent when you enable VM insights.
+Select the Azure Monitor Agent instead of the legacy Log Analytics Agent when you enable VM insights.
+
 
 
 
@@ -188,7 +196,7 @@ Azure Virtual Machines
 
 19
 Azure Virtual Machines
-
+Azure Virtual Desktop uses Azure Monitor for monitoring and alerts like many other Azure services. This lets admins identify issues through a single interface.
 
 
 
@@ -196,7 +204,12 @@ Azure Virtual Machines
 
 20
 Azure Virtual Machines
+You can open Azure Monitor for Azure Virtual Desktop by doing the following:
 
+    Go to the Azure portal.
+    Search for and select Azure Monitor from the Azure portal. Select Insights Hub under Insights, then select Azure Virtual Desktop. Once you have the page open, enter the Subscription, Resource group, Host pool, and Time range of the environment you want to monitor.
+
+This assumes that the diagnostics settings and workspace were already configured.
 
 
 
@@ -204,6 +217,8 @@ Azure Virtual Machines
 
 21
 Azure Virtual Machines
+To collect information on your Azure Virtual Desktop infrastructure, you'll need to enable several diagnostic settings on your Azure Virtual Desktop host pools and workspaces (this is your Azure Virtual Desktop workspace, not your Log Analytics workspace).
+
 
 
 
