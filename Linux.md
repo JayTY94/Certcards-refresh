@@ -228,7 +228,9 @@ ss -o state established '( dport = :ssh or sport = :ssh )'
 
 21
 Linux
+Command to check ssh in the journalctl log
 
+    sudo journalctl -u ssh --since "2 hours ago"
 
 
 
@@ -236,6 +238,9 @@ Linux
 
 22
 Linux
+With journalctl, if two different fields are matched, only entries matching both expressions at the same time are shown:
+
+    journalctl _SYSTEMD_UNIT=avahi-daemon.service _PID=28097
 
 
 
@@ -244,6 +249,10 @@ Linux
 
 23
 Linux
+With journalctl, if two matches refer to the same field, all entries matching
+either expression are shown:
+
+    journalctl _SYSTEMD_UNIT=avahi-daemon.service _SYSTEMD_UNIT=dbus.service
 
 
 
