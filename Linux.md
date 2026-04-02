@@ -194,15 +194,21 @@ When entered, this should output a list of information from the Systemd logs ass
 
 18
 Linux
-
-
+ss 
+    used to dump socket statistics. It allows showing information similar to netstat.  It can display more TCP and state information than other tools.
+    When no option is used ss displays a list of open non-listening sockets (e.g. TCP/UNIX/UDP) that have established connection.
 
 
 
 
 19
 Linux
+ss -t -a
+        Display all TCP sockets.
 
+ss -t -a -Z
+        Display all TCP sockets with process SELinux security
+        contexts.
 
 
 
@@ -210,7 +216,11 @@ Linux
 
 20
 Linux
+ss -u -a
+        Display all UDP sockets.
 
+ss -o state established '( dport = :ssh or sport = :ssh )'
+        Display all established ssh connections.
 
 
 
