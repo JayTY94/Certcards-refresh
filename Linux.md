@@ -261,7 +261,10 @@ either expression are shown:
 
 24
 Linux
+The cloud-init main log (/var/log/cloud-init.log)
+This file is the golden source of truth: a detailed, chronological record of every stage and module. When you need to know exactly what happened, look here. Searching this file for ERROR or WARNING will often lead you directly to the problem.
 
+less /var/log/cloud-init.log
 
 
 
@@ -269,7 +272,10 @@ Linux
 
 25
 Linux
+The cloud-init output log (/var/log/cloud-init-output.log)
+This log captures the full stdout and stderr of all scripts executed by cloud-init (e.g., from runcmd). If a module ran but your script within it failed, the error message will be in this file.
 
+less /var/log/cloud-init-output.log
 
 
 
@@ -277,7 +283,16 @@ Linux
 
 26
 Linux
-
+Added to my cloud-init.yaml.tpl file to add another user to practice file ownership
+users:
+  - default
+  - name: labuser
+    gecos: Local-only lab user (no SSH)
+    shell: /usr/sbin/nologin
+    lock_passwd: true
+    create_home: true
+    home: /home/labuser
+    ssh_authorized_keys: []
 
 
 
@@ -285,6 +300,8 @@ Linux
 
 27
 Linux
+Your Linux system keeps a detailed record of its activity, and most of it lives in one place: /var/log. It’s the go-to directory when something breaks, slows down, or behaves oddly. For anyone working in DevOps—or even just getting started with Linux—knowing your way around system logs isn’t optional. It’s part of the job.
+
 
 
 
@@ -293,7 +310,12 @@ Linux
 
 28
 Linux
-
+/var/log/syslog or /var/log/messages	
+    General system messages	
+    Boot information, device changes, system services
+/var/log/auth.log or /var/log/secure	
+    Authentication events	
+    Login attempts, sudo commands, SSH access
 
 
 
@@ -301,7 +323,12 @@ Linux
 
 29
 Linux
-
+/var/log/kern.log	
+    Kernel messages	
+    Hardware issues, driver problems
+/var/log/dmesg	
+    Boot messages	
+    Device initializations, hardware detection
 
 
 
@@ -309,7 +336,11 @@ Linux
 
 30
 Linux
+# View entire file
+cat /var/log/syslog
 
+# View last 10 lines
+tail /var/log/syslog
 
 
 
@@ -317,6 +348,11 @@ Linux
 
 31
 Linux
+# Follow log in real-time (great for troubleshooting)
+tail -f /var/log/syslog
+
+# Search for specific terms
+grep "error" /var/log/syslog
 
 
 
@@ -325,6 +361,14 @@ Linux
 
 32
 Linux
+typical syslog entry:
+Jan 15 14:23:01 myserver sshd[12345]: Failed password for invalid user admin from 192.168.1.5 port 43210 ssh2
+
+Breaking this down:
+    Jan 15 14:23:01 - Timestamp showing when the event occurred
+    myserver - The hostname of the machine
+    sshd[12345] - The program name and process ID
+    Failed password for invalid user admin... - The actual message describing what happened
 
 
 
@@ -333,7 +377,16 @@ Linux
 
 33
 Linux
-
+journalctl option
+--rotate
+    Asks the journal daemon to rotate journal files. This call
+    does not return until the rotation operation is complete.
+    Journal file rotation has the effect that all currently active
+    journal files are marked as archived and renamed, so that they
+    are never written to in future. New (empty) journal files are
+    then created in their place. This operation may be combined
+    with --vacuum-size=, --vacuum-time= and --vacuum-file= into a
+    single command, see above.
 
 
 
@@ -341,6 +394,20 @@ Linux
 
 34
 Linux
+journalctl options
+--vacuum-size=, --vacuum-time=, --vacuum-files=
+    --vacuum-size= removes the oldest archived journal files until
+    the disk space they use falls below the specified size.
+    Accepts the usual "K", "M", "G" and "T" suffixes (to the base
+    of 1024).
+
+    --vacuum-time= removes archived journal files older than the
+    specified timespan. Accepts the usual "s" (default), "m", "h",
+    "days", "weeks", "months", and "years" suffixes, see
+    systemd.time(7) for details.
+
+    --vacuum-files= leaves only the specified number of separate
+    journal files.
 
 
 
@@ -349,7 +416,11 @@ Linux
 
 35
 Linux
+Start apache2 service and then check if it's running
 
+azureuser@exercism-vm-20260403:/mnt/exercism$ sudo systemctl start apache2
+azureuser@exercism-vm-20260403:/mnt/exercism$ sudo systemctl is-active apache2
+active
 
 
 
@@ -357,7 +428,10 @@ Linux
 
 36
 Linux
-
+Stop apache2 service and then check if it's running
+azureuser@exercism-vm-20260403:/mnt/exercism$ sudo systemctl stop apache2
+azureuser@exercism-vm-20260403:/mnt/exercism$ sudo systemctl is-active apache2
+inactive
 
 
 
@@ -365,6 +439,11 @@ Linux
 
 37
 Linux
+# Enable a service to start at boot (creates a symlink in the target directory)
+sudo systemctl enable nginx
+
+# Start it now AND enable it (common pattern)
+sudo systemctl enable --now nginx
 
 
 
@@ -373,6 +452,11 @@ Linux
 
 38
 Linux
+# Disable a service (removes the symlink, does not stop the running service)
+sudo systemctl disable nginx
+
+# Disable and stop in one command
+sudo systemctl disable --now nginx
 
 
 
