@@ -205,6 +205,8 @@ Compliance scans through Azure policies are triggered by various methods:
 
 22
 Azure Policy
+Events from Azure Policy (Event Source) are pushed through Microsoft Azure Event Grid to Event Handlers. An Event Handler is the place where the event is sent. Several services, such as Microsoft Azure Functions, Microsoft Azure Logic Apps, or your own custom HTTP listener, can be configured to handle events.
+
 
 
 
@@ -213,6 +215,8 @@ Azure Policy
 
 23
 Azure Policy
+What is the purpose of Azure Policy and how does it help in managing resources?
+Azure Policy assesses compliance at scale and enforces organizational and regulatory standards across Azure environments.
 
 
 
@@ -221,6 +225,8 @@ Azure Policy
 
 24
 Azure Policy
+What is the purpose of the Enforcement Mode in Azure Policy?
+It allows testing the policy's outcome on existing resources without initiating the policy effect.
 
 
 
@@ -229,6 +235,8 @@ Azure Policy
 
 25
 Azure Policy
+What are the two recommended steps to deploy policies safely in an existing environment?
+Start from assignments with Enforcement Mode Disabled and then deploy policies in deployment rings.
 
 
 
@@ -237,6 +245,9 @@ Azure Policy
 
 26
 Azure Policy
+What is the role of Azure Resource Manager in the governance of Azure applications and resources?
+
+It's the deployment and management service for Azure, providing a management layer that allows creation, update, and deletion of resources.
 
 
 
@@ -245,6 +256,8 @@ Azure Policy
 
 27
 Azure Policy
+At what levels can Azure Policies be assigned?
+Management Group, Subscription, and Resource Group
 
 
 
