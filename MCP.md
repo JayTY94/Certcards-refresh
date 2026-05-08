@@ -5,6 +5,7 @@
 
 1
 MCP
+For STDIO-based servers: Never write to stdout. Writing to stdout will corrupt the JSON-RPC messages and break your server. Python's print() function writes to stdout by default, but can be used safely with file=sys.stderr.
 
 
 
@@ -12,6 +13,9 @@ MCP
 
 2
 MCP
+Claude.app logging related to MCP is written to log files in ~/Library/Logs/Claude:
+  mcp.log will contain general logging about MCP connections and connection failures.
+  Files named mcp-server-SERVERNAME.log will contain error (stderr) logging from the named server.
 
 
 
