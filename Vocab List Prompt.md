@@ -1,57 +1,47 @@
 Define the following list of words with a format similar to the entries at the end of this message.
 
-viands
-replete
-exudate
-unquent
-pelp
-scounderelle
-nescient
-hove
-shimfin
-glabrous
-carrack
-benthic
-fetor
-bowsprit
-sterterously
-emboyment
-pannier
-sleek-fed
-thoroughbred skinies
-sonorous
-gill as a unit of measurement
-glabrine
-lissome
-lictors
-stolid
-antedate
-sloe-eyed
-draybeast
-pompadour
-scow
-skorse
-barouche
-viaduct
-locally modish
-epistle
-buskin
-tenderfooted
-tarsal claws
-dorsum
-micturate
-immured
-unguent
-feckless
-eclosia
-dactyls
-ells of rope
-bumptious
-yawlp
-absqualation
-ophidian scales
-tegmenta
-oleaginous
+vagaries
+mephistopheles
+suppurated
+imbroglio
+maharaja
+factotum
+bloviating
+bouffant
+volte-face
+barbiturates
+scrabbulous
+Charles Lutwidge Dodgson
+topoisomerase
+Zipf's law
+ourvre
+grawlix
+runsible-spoon
+archaebacteria
+hosannas
+carbuncle
+transposon
+promontory
+histone
+retinol
+neoplasm
+retrovirus
+peccadillo
+legerdemain
+axon
+histrionic
+charwomen
+Moulin Rouge
+savonarola
+dipsomonia
+contretemps
+chary
+monomaniacal
+gaffe
+agitprop film
+vitiate
+myrmecology
+palimpsest
 
 
 
