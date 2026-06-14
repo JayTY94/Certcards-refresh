@@ -1,48 +1,36 @@
 Define the following list of words with a format similar to the entries at the end of this message.
 
-vagaries
-mephistopheles
-suppurated
-imbroglio
-maharaja
-factotum
-bloviating
-bouffant
-volte-face
-barbiturates
-scrabbulous
-Charles Lutwidge Dodgson
-topoisomerase
-Zipf's law
-ourvre
-grawlix
-runsible-spoon
-archaebacteria
-hosannas
-carbuncle
-transposon
-promontory
-histone
-retinol
-neoplasm
-retrovirus
-peccadillo
-legerdemain
-axon
-histrionic
-charwomen
-Moulin Rouge
-savonarola
-dipsomonia
-contretemps
-chary
-monomaniacal
-gaffe
-agitprop film
-vitiate
-myrmecology
-palimpsest
-
+pennons
+declasse
+officiously
+casemate
+pyroxylin
+arabesque
+boudoir
+divan
+suisse
+vesper
+anteliers
+doxology
+limpid
+Third Book of Pataruel
+Heraclitus
+curlew
+covert
+piquer
+interrogative
+gamin
+garret
+astrakan collar
+dolman
+capote and kepi
+caisson
+heliotrope
+gimlet
+genarme
+white phlox
+tabouret
+grisette
 
 
 ===================
