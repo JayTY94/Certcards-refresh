@@ -4,7 +4,7 @@
 
 30
 Certified Kubernetes Administrator
-
+Deployments are a common resource in Kubernetes, and the replica sets within are important for keeping the desired number of replicas running.
 
 
 
@@ -12,7 +12,7 @@ Certified Kubernetes Administrator
 
 31
 Certified Kubernetes Administrator
-
+Rollouts are versioned, and you can optionally leave notes for other Kubernetes administrators and developers.
 
 
 
@@ -20,6 +20,7 @@ Certified Kubernetes Administrator
 
 32
 Certified Kubernetes Administrator
+You can expose a Deployment, which creates a service for users to access the application from outside the cluster.
 
 
 
@@ -28,7 +29,7 @@ Certified Kubernetes Administrator
 
 33
 Certified Kubernetes Administrator
-
+Maintenance is inevitable and will mean, at some point, you must know how to cordon and drain to perform OS upgrades or add additional resources to a node.
 
 
 
@@ -36,7 +37,7 @@ Certified Kubernetes Administrator
 
 34
 Certified Kubernetes Administrator
-
+You can add a node to an existing cluster to provide additional resources to applications running in Kubernetes.
 
 
 
@@ -44,7 +45,7 @@ Certified Kubernetes Administrator
 
 35
 Certified Kubernetes Administrator
-
+Much like a package manager in Linux, Helm is a package manager and templating engine for Kubernetes.
 
 
 
@@ -52,7 +53,7 @@ Certified Kubernetes Administrator
 
 36
 Certified Kubernetes Administrator
-
+Much like Helm for deploying complex apps, there's also Kustomize, which is built into kubectl (no additional CLI). You should get familiar with using kustomization.yaml with base and overlays for the exam, as well as know how to use Helm templates to deploy applications to Kubernetes.
 
 
 
@@ -60,7 +61,7 @@ Certified Kubernetes Administrator
 
 37
 Certified Kubernetes Administrator
-
+It's important to know how to extend the Kubernetes cluster with operators and CRDs and to take advantage of the extensibility of Kubernetes.
 
 
 
