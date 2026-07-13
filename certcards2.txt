@@ -7622,3 +7622,148 @@ Caused by port resolution failure (SQL Browser or firewall).
 SQL Server Config
 Replication / SQL Replicator (context)
 An external service or application that connects to SQL Server. Sensitive to connection reliability, collation compatibility, and configuration correctness.
+
+
+
+
+
+
+
+
+
+
+
+
+
+30
+Certified Kubernetes Administrator
+Deployments are a common resource in Kubernetes, and the replica sets within are important for keeping the desired number of replicas running.
+
+
+
+
+
+31
+Certified Kubernetes Administrator
+Rollouts are versioned, and you can optionally leave notes for other Kubernetes administrators and developers.
+
+
+
+
+
+32
+Certified Kubernetes Administrator
+You can expose a Deployment, which creates a service for users to access the application from outside the cluster.
+
+
+
+
+
+
+33
+Certified Kubernetes Administrator
+Maintenance is inevitable and will mean, at some point, you must know how to cordon and drain to perform OS upgrades or add additional resources to a node.
+
+
+
+
+
+34
+Certified Kubernetes Administrator
+You can add a node to an existing cluster to provide additional resources to applications running in Kubernetes.
+
+
+
+
+
+35
+Certified Kubernetes Administrator
+Much like a package manager in Linux, Helm is a package manager and templating engine for Kubernetes.
+
+
+
+
+
+36
+Certified Kubernetes Administrator
+Much like Helm for deploying complex apps, there's also Kustomize, which is built into kubectl (no additional CLI). You should get familiar with using kustomization.yaml with base and overlays for the exam, as well as know how to use Helm templates to deploy applications to Kubernetes.
+
+
+
+
+
+37
+Certified Kubernetes Administrator
+It's important to know how to extend the Kubernetes cluster with operators and CRDs and to take advantage of the extensibility of Kubernetes.
+
+
+
+
+
+38
+Certified Kubernetes Administrator
+For Service discovery, DNS resolution happens via CoreDNS in a Kubernetes cluster. We explored how to discover both pods and Services via DNS queries. For the xam, you will be expected to know how to configure and use CoreDNS.
+
+
+
+
+
+39
+Certified Kubernetes Administrator
+CoreDNS is running in a Deployment in the kube-system namespace. We can replicate the pods in the CoreDNS Deployment to get faster Domain Name resolution.
+
+
+
+
+
+40
+Certified Kubernetes Administrator
+The kubelet is responsible for populating each pod with the proper CoreDNS IP address to allow for the pod's DNS resolution. For the exam, remember that there's the /etc/kubernetes/manifests directory on the control plane node where the kubelet will automatically start pods (called static pods).
+
+
+
+
+
+41
+Certified Kubernetes Administrator
+The DNS resolver file in a pod is /etc/resolv.conf, which will have certain search criteria according to the services in the cluster. The resolv.conf file also contains the DNS IP address. When resolving hostnames on the exam, don't forget to use the pod's FQDN if it's in a different namespace.
+
+
+
+
+
+42
+Certified Kubernetes Administrator
+Ingress and ingress controllers allow layer-7 routing to the cluster to communicate to a pod via a service. Ingress can handle routing to multiple Services in the same ingress resource, and you'll need to know ingress controllers and ingress resources.
+
+
+
+
+
+43
+Certified Kubernetes Administrator
+The kubelet is a Service running on the node itself. You can reload the daemon and restart the Service as you change the configuration for creating pods. For the exam, you will be expected to know how to start, stop, and reload the kubelet daemon.
+
+
+
+
+
+44
+Certified Kubernetes Administrator
+The CNI in Kubernetes assists wth communicaton from node to node be encapuslating the packet and adding a header for the source and destination route. For the exam, you'll need to understand host networking configuration on cluster nodes.
+
+
+
+
+
+45
+Certified Kubernetes Administrator
+Network Policies control the flow of traffic between pods in a Kubernetes cluster. They allow administrators to enforce default deny rules and selectively permit traffic based on pod selectors, namespace selectors, and IP blocks.
+
+
+
+
+
+46
+Certified Kubernetes Administrator
+The Gateway API represents the next evolution in managing and routing ingress traffic into Kubernetes clusters. It expands traffic management capabilities acrososs both layer 4 and layer 7,  offering greater flexibility compared to the traditional ingress resource.

@@ -196,3 +196,42 @@ Windows – Open Local Group Policy Editor
 
 ........
 Data granularity indicates the level of the detail, so the higher the granularity, the more detail is represented in the data.
+
+
+
+
+
+
+........
+TSIG (Transaction Signature)
+
+A security protocol used to authenticate DNS zone transfers between servers. TSIG employs shared secret keys and cryptographic signatures to ensure that only authorized servers can perform zone transfers.
+
+
+
+
+........
+The man (manual) command displays the manual pages for other commands, providing detailed information about their usage, options, and functionalities. While some shells offer a help command, it typically provides limited information and is not as comprehensive as man.
+
+
+
+
+........
+The en dash is omitted when the sentence ontains a "from... to" or "between... and" formulation. In these contexts, the end ash is read as "through" or "to".
+
+
+
+
+........
+
+
+
+
+
+........
+
+
+
+
+
+........
