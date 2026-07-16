@@ -7959,3 +7959,273 @@ A dynamic inventory generates hosts at runtime from an external source (cloud, C
 Ansible
 Module Return Data
 Modules return structured JSON including changed, failed, and module-specific data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+47
+Certified Kubernetes Administrator
+etcd — The cluster's key-value store; the single source of truth for all cluster state. Back it up with etcdctl snapshot save — a favorite exam task. If etcd is down, the API server can't read or write anything.
+
+
+
+
+
+
+
+48
+Certified Kubernetes Administrator
+Control plane components — kube-apiserver (front door for all requests), etcd (state), kube-scheduler (assigns pods to nodes), kube-controller-manager (reconciles desired vs. actual state), cloud-controller-manager (cloud integration).
+
+
+
+
+
+
+
+49
+Certified Kubernetes Administrator
+Static pod — A pod the kubelet runs directly from a manifest file on the node (/etc/kubernetes/manifests/), independent of the API server. This is how control-plane pods bootstrap. Edit the file on the node to change it — never kubectl edit. A read-only "mirror pod" appears in the API for visibility.
+
+
+
+
+
+
+
+50
+Certified Kubernetes Administrator
+kubeadm upgrade order — Control plane first, workers last. Sequence: kubeadm upgrade apply on first control-plane node → other control-plane nodes → then per worker: kubeadm upgrade node → drain → upgrade kubelet/kubectl → uncordon. The kubelet may lag the control plane by a version, never lead it.
+
+
+
+
+
+
+
+
+
+
+
+
+1
+Certified Kubernetes Administrator
+RBAC: Role vs. ClusterRole — A Role grants permissions within one namespace; a ClusterRole grants them cluster-wide or on cluster-scoped resources (nodes, PVs). Bind with RoleBinding (namespace scope) or ClusterRoleBinding (cluster scope). You can pair a ClusterRole with a RoleBinding to reuse permissions in a single namespace — but you can never bind a namespaced Role with a ClusterRoleBinding.
+
+
+
+
+
+
+
+2
+Certified Kubernetes Administrator
+Imperative speed trick — Generate YAML fast with kubectl create <obj> ... --dry-run=client -o yaml > file.yaml, then edit. This is the single biggest time-saver on the hands-on exam.
+
+
+
+
+
+
+
+3
+Certified Kubernetes Administrator
+Taints/tolerations vs. affinity — Taints repel, affinity attracts. A taint on a node repels pods unless they carry a matching toleration; nodeAffinity actively pulls a pod toward nodes with matching labels. A toleration alone doesn't place a pod anywhere — it only removes the repulsion.
+
+
+
+
+
+
+
+4
+Certified Kubernetes Administrator
+nodeAffinity — hard vs. soft — requiredDuringSchedulingIgnoredDuringExecution = hard rule (pod won't schedule if unmet). preferredDuringScheduling... = soft rule (scheduler tries, but places it anyway if it can't). nodeName pins to one exact node and skips the scheduler entirely — brittle, avoid.
+
+
+
+
+
+
+
+5
+Certified Kubernetes Administrator
+Deployment vs. DaemonSet vs. StatefulSet — Deployment: stateless, N interchangeable replicas. DaemonSet: exactly one pod per (matching) node — for agents like log/metric collectors. StatefulSet: stable identity + ordered, persistent per-pod storage — for databases.
+
+
+
+
+
+
+
+6
+Certified Kubernetes Administrator
+Rolling update controls — On a Deployment, maxUnavailable (how many pods can be down during the update) and maxSurge (how many extra above desired count) govern the rollout. Use kubectl rollout status/undo/history deploy/<name> to watch, revert, or inspect revisions.
+
+
+
+
+
+
+
+7
+Certified Kubernetes Administrator
+Service type ladder — ClusterIP (default, internal-only) → NodePort (static port 30000–32767 on every node's IP) → LoadBalancer (external cloud LB, built on top of NodePort). ExternalName is the odd one out — it just returns a CNAME to an external DNS name, no proxying.
+
+
+
+
+
+
+
+8
+Certified Kubernetes Administrator
+NodePort reach — Exposes the app at <anyNodeIP>:<nodePort>, reachable from outside the cluster. Every node forwards that port to the service, even nodes not running the pod.
+
+
+
+
+
+
+
+9
+Certified Kubernetes Administrator
+NetworkPolicy default behavior — A pod with no policy selecting it is non-isolated: all ingress and egress allowed. Once any policy selects it, that pod becomes default-deny for the covered direction(s), and only explicitly listed traffic passes. Policies are additive allow-lists. Requires a CNI that enforces them (Calico, Cilium) — basic CNIs silently ignore them.
+
+
+
+
+
+
+
+10
+Certified Kubernetes Administrator
+CoreDNS — The in-cluster DNS add-on; resolves Service and pod names. Service DNS format: <service>.<namespace>.svc.cluster.local. If name resolution breaks, check the CoreDNS pods in kube-system and its ConfigMap.
+
+
+
+
+
+
+
+11
+Certified Kubernetes Administrator
+Ingress vs. Service — A Service does L4 (TCP/UDP) exposure and load balancing. Ingress does L7 HTTP(S) routing — host/path rules, TLS termination — and needs an Ingress controller (nginx, Traefik) running to actually work. Ingress routes to Services.
+
+
+
+
+
+
+
+12
+Certified Kubernetes Administrator
+kube-proxy — Runs on every node and programs the iptables/IPVS rules that make ClusterIP/NodePort virtual IPs actually route to pod endpoints. Not the same as DNS (that's CoreDNS).
+
+
+
+
+
+
+
+13
+Certified Kubernetes Administrator
+Access modes — RWO (ReadWriteOnce): read-write by a single node (multiple pods on that same node can share it). ROX (ReadOnlyMany): read-only, many nodes. RWX (ReadWriteMany): read-write, many nodes — needs shared storage like NFS. RWOP (ReadWriteOncePod): read-write by exactly one pod. Trap: RWO is per-node, not per-pod.
+
+
+
+
+
+
+
+14
+Certified Kubernetes Administrator
+Reclaim policies — Delete: PV and backing storage removed when the PVC is deleted (default for dynamic provisioning). Retain: PV and data kept for manual cleanup — safest for important data. Recycle: deprecated, don't use.
+
+
+
+
+
+
+
+15
+Certified Kubernetes Administrator
+PV vs. PVC vs. StorageClass — A PersistentVolume (PV) is the actual storage resource. A PersistentVolumeClaim (PVC) is a pod's request for storage that binds to a matching PV. A StorageClass enables dynamic provisioning — it auto-creates a PV on demand when a PVC references it, so you don't pre-create PVs by hand.
+
+
+
+
+
+
+
+16
+Certified Kubernetes Administrator
+Binding logic — A PVC binds to a PV only if capacity, access mode, and (if set) StorageClass all match. A PVC stuck Pending usually means no matching PV exists and no StorageClass is set to provision one.
+
+
+
+
+
+
+
+17
+Certified Kubernetes Administrator
+Previous container logs — kubectl logs <pod> --previous (-p) shows output from the last terminated instance — essential for CrashLoopBackOff. Pair it with kubectl describe pod and kubectl get events to see why it restarted (exit code, OOMKilled, ImagePullBackOff).
+
+
+
+
+
+
+
+18
+Certified Kubernetes Administrator
+Node NotReady — Check the kubelet on that node first (systemctl status kubelet, journalctl -u kubelet). The kubelet reports node health to the API server; if it's down or misconfigured, the node flips to NotReady. Also verify the CNI plugin and container runtime.
+
+
+
+
+
+
+
+19
+Certified Kubernetes Administrator
+Troubleshooting flow — get (broad status) → describe (events + config on the object) → logs (app output, add --previous if crashed) → node-level (journalctl -u kubelet, crictl ps). Move from cluster view inward to the failing component.
+
+
+
+
+
+
+
+20
+Certified Kubernetes Administrator
+Common pod states — Pending = can't schedule (resources/affinity/taints or unbound PVC). ImagePullBackOff = bad image name or registry auth. CrashLoopBackOff = app starts then dies (check --previous logs). OOMKilled = exceeded memory limit.
+
+
+
+
+
+
+
+21
+Certified Kubernetes Administrator
+Helm vs. Kustomize — Helm = package manager: versioned charts, templating with variables, install/upgrade/rollback with release history (like apt/npm). Kustomize = template-free YAML customization via base + overlays/patches, built into kubectl -k, no packaging or release tracking. Helm for packaging & releases; Kustomize for environment variants of plain manifests.
+
+
+
+
+
+
