@@ -8129,4 +8129,8 @@ Extra vars (-e) always win and override all other variable definitions.
 830
 Ansible
 OK State
+<<<<<<< HEAD
 A task reports “ok” when the system already matches the desired state.
+=======
+A task reports “ok” when the system already matches the desired state.
+>>>>>>> 3db7bd90675b1a291e582117f0acbf377d642191
