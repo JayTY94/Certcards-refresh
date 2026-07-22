@@ -8310,3 +8310,81 @@ Standard's database engine ignores RAM above 128 GB for the buffer pool. Provisi
 Ansible
 Extra Vars Precedence
 Extra vars (-e) always win and override all other variable definitions.
+
+
+
+
+
+
+
+
+
+22
+Certified Kubernetes Administrator
+To have data persist beyond the life of a pod, we use PVs. For the exam, if you are asked to retain data after deleting a pod, make sure to create a PV.
+
+
+
+
+
+23
+Certified Kubernetes Administrator
+A volume is reserved or claimed for a pod by a resource in Kubernetes called a Persistent Volume Claim, or PVC, which chooses the volume with the size nearest to the requested capacity. You will need to know how to mount a volume in a deployment or pod for the exam.
+
+
+
+
+
+24
+Certified Kubernetes Administrator
+There are two volume modes to choose form when creating a PV--FileSystem and Block. If none is specified in the YAML, FileSystem mode is chosen. 
+
+
+
+
+25
+Certified Kubernetes Administrator
+There are two volume modes to choose form when creating a PV--FileSystem and Block. For the exam, look for an indication that the volume should be a directory; in this case you would use a FileSystem volume type. If there's mention of a raw file system, you woul duse the block volume type.
+
+
+
+
+
+
+26
+Certified Kubernetes Administrator
+There are three reclaim policies available to a PV: Retain, Recycle, and Delete. The reclaim policy tells the PV what to do when it's unmounted from the pod. Watch out for words like retain or delete in exam questions like these.
+
+
+
+
+
+27
+Certified Kubernetes Administrator
+There are four different access modes: ReadWriteOnce, ReadOnlyMany, ReadWriteMany, and ReadWriteOncePod. The access mode determines if nodes can access the PV, how many nodes can access the PV at a time, and whether they have the read and/or write permission.
+
+
+
+
+
+28
+Certified Kubernetes Administrator
+On the exam, check to see if multiple nodes will need access to a Persistent Volume; that will be a key indicator of which access mode to use (e.g. ReadWriteOnce or ReadWriteMany).
+
+
+
+
+
+29
+Certified Kubernetes Administrator
+A storage class is a way to dynamically provision storage in Kubernetes. YOu do not have to create a PV to use a storage class. 
+
+
+
+
+
+30
+Certified Kubernetes Administrator
+When a question on the exam asks to use an existing storage class, you only have to create a PVC and choose which storage class to use; the volume will be created automatically.
+
+
