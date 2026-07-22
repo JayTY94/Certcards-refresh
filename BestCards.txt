@@ -217,7 +217,7 @@ The man (manual) command displays the manual pages for other commands, providing
 
 
 ........
-The en dash is omitted when the sentence ontains a "from... to" or "between... and" formulation. In these contexts, the end ash is read as "through" or "to".
+The en dash is omitted when the sentence ontains a "from... to" or "between... and" formulation. In these contexts, the en dash is read as "through" or "to".
 
 
 
