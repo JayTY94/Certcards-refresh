@@ -28,9 +28,15 @@ When creating a user, the common name inside the certificate signing request is 
 
 
 
-4
-Certified Kubernetes Administrator
-It's important to know how to extend the Kubernetes cluster with operators and CRDs and to take advantage of the extensibility of Kubernetes.
+11
+MCP
+MCP defines three core primitives that servers can expose:
+  Tools
+  Resources
+  Prompts
+
+
+
 
 
 
@@ -84,12 +90,7 @@ A storage class is a way to dynamically provision storage in Kubernetes. YOu do 
 
 
 
-11
-MCP
-MCP defines three core primitives that servers can expose:
-  Tools
-  Resources
-  Prompts
+
 
 
 
