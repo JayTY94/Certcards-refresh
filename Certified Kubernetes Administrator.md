@@ -25,7 +25,8 @@ Certified Kubernetes Administrator
 
 2
 Certified Kubernetes Administrator
-
+# list the API CRDs and grep out the ones installed for Gateway API
+    kubectl get crds | grep gateway
 
 
 
