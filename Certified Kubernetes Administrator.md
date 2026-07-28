@@ -1,69 +1,6 @@
 
 
 
-31
-Certified Kubernetes Administrator
-
-
-
-
-
-
-32
-Certified Kubernetes Administrator
-
-
-
-
-
-
-33
-Certified Kubernetes Administrator
-
-
-
-
-
-
-34
-Certified Kubernetes Administrator
-
-
-
-
-
-
-35
-Certified Kubernetes Administrator
-
-
-
-
-
-
-36
-Certified Kubernetes Administrator
-
-
-
-
-
-
-37
-Certified Kubernetes Administrator
-
-
-
-
-
-
-38
-Certified Kubernetes Administrator
-
-
-
-
-
 
 39
 Certified Kubernetes Administrator

@@ -8153,3 +8153,87 @@ Partition — A chunk of a dataset that lives on a single node and is processed 
 837
 Apache Spark
 DAG (Directed Acyclic Graph) — Spark's internal map of all transformation steps and their dependencies. "Acyclic" = flows one direction, no loops. When you call an action, Spark uses the DAG to plan the most efficient execution path.
+
+
+
+
+
+
+
+
+
+
+
+31
+Certified Kubernetes Administrator
+After the previous commands are run, create the namespace per the instructions with the command
+
+kubectl create ns db08328
+
+
+
+
+
+
+32
+Certified Kubernetes Administrator
+You can follow that up by listing all namespaces with the command
+
+kubectl get ns
+
+
+
+
+
+33
+Certified Kubernetes Administrator
+You can change your context using the command
+
+kubectl config set-context --current --namespace db08328
+
+
+
+
+
+34
+Certified Kubernetes Administrator
+After you've set the tontext to the namespace in whicn you'll be creating the Deployment, create the Deployment named mysql with the command
+
+kubectl create deploy mysql --image mysql:8
+
+After this, you can list the bods with the command kubectl get po.
+
+
+
+
+
+35
+Certified Kubernetes Administrator
+The kubectl logs command iss a handy utility for viewing the stdout and stderr from a container within a pod. If there are two containers inside of one pod, you must add a -c and specify the container you'd like to access. For example,
+
+kubectl run busybox --image busybox --command [<commands>] --dry-run=client -o yaml > pod.yaml
+
+
+
+
+
+36
+Certified Kubernetes Administrator
+To view the logs in a pod, we can use the kubectl command-line utility or look in the /var/logs/containers directory.
+
+
+
+
+
+37
+Certified Kubernetes Administrator
+The cluster metrics can be monitored with the metrics server, which will already be installed within the exam environment.
+
+
+
+
+
+38
+Certified Kubernetes Administrator
+Network problems can be identified by looking at the kube-proxy, as it is the facilitator of firewalled traffic from pod to pod within a cluster. We can also see if a CNI is installed in our cluster to determine network problems.
+
