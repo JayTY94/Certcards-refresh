@@ -2,99 +2,6 @@
 
 
 
-39
-Certified Kubernetes Administrator
-
-
-
-
-
-
-40
-Certified Kubernetes Administrator
-
-
-
-
-
-
-41
-Certified Kubernetes Administrator
-
-
-
-
-
-
-42
-Certified Kubernetes Administrator
-
-
-
-
-
-
-43
-Certified Kubernetes Administrator
-
-
-
-
-
-
-44
-Certified Kubernetes Administrator
-
-
-
-
-
-
-45
-Certified Kubernetes Administrator
-
-
-
-
-
-
-46
-Certified Kubernetes Administrator
-
-
-
-
-
-
-47
-Certified Kubernetes Administrator
-
-
-
-
-
-
-48
-Certified Kubernetes Administrator
-
-
-
-
-
-
-49
-Certified Kubernetes Administrator
-
-
-
-
-
-
-50
-Certified Kubernetes Administrator
-
-
-
 
 
 
@@ -105,6 +12,11 @@ Certified Kubernetes Administrator
 
 1
 Certified Kubernetes Administrator
+# List a single replication controller with specified NAME in ps output format
+  kubectl get replicationcontroller web
+  
+# List deployments in JSON output format, in the "v1" version of the "apps" API group
+  kubectl get deployments.v1.apps -o json
 
 
 
