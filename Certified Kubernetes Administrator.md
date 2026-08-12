@@ -5,7 +5,8 @@
 
 42
 Certified Kubernetes Administrator
-
+# create a service from the apache deployment
+kubectl expose deploy apache --name apache-svc --port 80
 
 
 
@@ -13,7 +14,8 @@ Certified Kubernetes Administrator
 
 43
 Certified Kubernetes Administrator
-
+# create a temporary pod named netshoot and get a shell to the container all in the same kubectl command
+kubectl run netshoot --image=nicolaka/netshoot --rm -it -- sh
 
 
 
