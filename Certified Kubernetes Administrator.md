@@ -23,6 +23,11 @@ kubectl run netshoot --image=nicolaka/netshoot --rm -it -- sh
 
 44
 Certified Kubernetes Administrator
+# describe the controlplane node to view the taint applied
+kubectl describe no controlplane | grep Taint
+
+# get the pod to run on the control plane by removing the taint
+kubectl taint no controlplane node-role.kubernetes.io/control-plane:NoSchedule-
 
 
 

@@ -4,53 +4,19 @@
 
 
 
-1
-Certified Kubernetes Administrator
-When a question on the exam asks to use an existing storage class, you only have to create a PVC and choose which storage class to use; the volume will be created automatically.
 
 
 
 
 
-2
-Certified Kubernetes Administrator
-There are two volume modes to choose form when creating a PV--FileSystem and Block. If none is specified in the YAML, FileSystem mode is chosen.
 
 
 
 
 
-3
-Certified Kubernetes Administrator
-# List a single replication controller with specified NAME in ps output format
-  kubectl get replicationcontroller web
-  
-# List deployments in JSON output format, in the "v1" version of the "apps" API group
-  kubectl get deployments.v1.apps -o json
 
 
 
-
-
-4
-Certified Kubernetes Administrator
-Kubernetes – Label a Node
-
-kubectl label nodes worker-1 disk=ssd
-
-Labels use key=value with an equals sign, not a colon. Used later by nodeSelector and Service selectors to target the object.
-
-
-
-
-
-5
-Certified Kubernetes Administrator
-Kubernetes – Create a ConfigMap From Literals
-
-kubectl create configmap app-config --from-literal=ENV=prod --from-literal=TIER=web
-
-One --from-literal per key; you repeat the flag rather than comma-separating. Related: --from-file=path and --from-env-file=file.
 
 
 
