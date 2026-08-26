@@ -8155,3 +8155,511 @@ A task reports “ok” when the system already matches the desired state.
 Ansible
 Inventory Variables vs Play Variables
 Inventory variables are resolved before play execution; play variables override them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+42
+Certified Kubernetes Administrator
+# create a service from the apache deployment
+kubectl expose deploy apache --name apache-svc --port 80
+
+
+
+
+
+43
+Certified Kubernetes Administrator
+# create a temporary pod named netshoot and get a shell to the container all in the same kubectl command
+kubectl run netshoot --image=nicolaka/netshoot --rm -it -- sh
+
+
+
+
+
+44
+Certified Kubernetes Administrator
+# describe the controlplane node to view the taint applied
+kubectl describe no controlplane | grep Taint
+
+# get the pod to run on the control plane by removing the taint
+kubectl taint no controlplane node-role.kubernetes.io/control-plane:NoSchedule-
+
+
+
+
+
+
+45
+Certified Kubernetes Administrator
+A Kubernetes Service is not a proxy process. It is a stable virtual IP plus forwarding rules that kube-proxy programs into every node's kernel, which rewrites the destination to a real pod IP.
+
+
+
+
+
+
+46
+Certified Kubernetes Administrator
+EndpointSlices hold the pod IPs currently backing a Kubernetes Service. Zero endpoints nearly always means the Service's label selector does not match the pods, or the pods are failing their readiness probe.
+
+
+
+
+
+
+47
+Certified Kubernetes Administrator
+Kubernetes Service Debugging
+- Empty endpoints: selector mismatch or failing readiness probe
+- Populated endpoints, still failing: wrong targetPort, kube-proxy, or NetworkPolicy
+
+Checking endpoints first halves the problem space.
+
+
+
+
+
+48
+Certified Kubernetes Administrator
+A Kubernetes Service selector matches pod labels, never pod names. Compare `kubectl get svc <name> -o yaml` against `kubectl get pods --show-labels` to catch typos, case differences, and renamed labels.
+
+
+
+
+
+
+49
+Certified Kubernetes Administrator
+In a Kubernetes Service, `port` is what the Service listens on and `targetPort` is the port on the backing pod. The two are frequently different and are easily confused.
+
+
+
+
+
+
+50
+Certified Kubernetes Administrator
+Kubernetes allows `targetPort` to name a container port, such as `targetPort: http`. The backing pods must declare a `containerPort` with that exact name. This lets pods change port numbers without editing the Service.
+
+
+
+
+
+
+
+
+
+
+
+1
+Certified Kubernetes Administrator
+ClusterIP is the default Kubernetes Service type. It allocates a virtual IP reachable only inside the cluster and load balances across ready endpoints. It provides no external exposure.
+
+
+
+
+
+
+2
+Certified Kubernetes Administrator
+A NodePort Service opens the same port, by default within 30000–32767, on every Kubernetes node and forwards it to the Service. It builds on ClusterIP rather than replacing it.
+
+
+
+
+
+
+3
+Certified Kubernetes Administrator
+A LoadBalancer Service asks the cloud provider to provision an external load balancer, layering on top of NodePort and ClusterIP. On bare metal it stays `Pending` unless something like MetalLB is installed.
+
+
+
+
+
+
+4
+Certified Kubernetes Administrator
+A Kubernetes Service of type ExternalName creates no endpoints and does no proxying. Cluster DNS returns a CNAME to an external hostname. Being DNS-only, it cannot remap ports or terminate TLS.
+
+
+
+
+
+
+5
+Certified Kubernetes Administrator
+Setting `clusterIP: None` makes a Kubernetes Service headless: no virtual IP, no kube-proxy rules. DNS returns individual pod IPs, and each pod becomes addressable at `<pod>.<service>.<namespace>.svc.cluster.local`.
+
+
+
+
+
+
+6
+Certified Kubernetes Administrator
+Kubernetes StatefulSets require a headless governing Service so replicas are addressable individually. A database pod such as `db-0` must reach `db-1` directly for replication, which a load-balanced virtual IP would prevent.
+
+
+
+
+
+
+7
+Certified Kubernetes Administrator
+Setting `sessionAffinity: ClientIP` on a Kubernetes Service makes requests from one client IP consistently reach the same pod. It provides stickiness only, and does not make any pod addressable by name.
+
+
+
+
+
+
+8
+Certified Kubernetes Administrator
+`externalTrafficPolicy: Cluster` is the Kubernetes default. Traffic reaching any node may forward to a pod on another node, giving even distribution, but the extra hop applies source NAT and hides the client IP.
+
+
+
+
+
+
+9
+Certified Kubernetes Administrator
+`externalTrafficPolicy: Local` removes the extra node hop, preserving the true client source IP. The tradeoff is that nodes without a local backing pod silently drop the traffic.
+
+
+
+
+
+
+10
+Certified Kubernetes Administrator
+kube-proxy runs on every Kubernetes node, watching the API server and programming kernel forwarding rules for Services. Despite the name it never sits in the data path — the kernel handles packets.
+
+
+
+
+
+
+11
+Certified Kubernetes Administrator
+kube-proxy Modes
+- Both run in the kernel, not userspace
+- iptables: sequential rule chains, latency grows with Service count, random selection only
+- IPVS: hash lookup at scale, multiple balancing algorithms
+
+
+
+
+
+12
+Certified Kubernetes Administrator
+A Kubernetes Service FQDN is `<service>.<namespace>.svc.cluster.local` — service name first, namespace second. A Service `db` in namespace `data` is `db.data.svc.cluster.local`. Reversing the order is a frequent mistake.
+
+
+
+
+
+
+13
+Certified Kubernetes Administrator
+Kubernetes pods resolve shortened DNS names using search domains in `/etc/resolv.conf`. Within one namespace the bare Service name works; across namespaces, `<service>.<namespace>` is sufficient without the full suffix.
+
+
+
+
+
+
+14
+Certified Kubernetes Administrator
+Kubernetes pods have their own DNS pattern, distinct from Services: `<pod-ip-with-dashes>.<namespace>.pod.cluster.local`, for example `10-244-1-5.default.pod.cluster.local`.
+
+
+
+
+
+
+15
+Certified Kubernetes Administrator
+CoreDNS is the Kubernetes cluster DNS server, running as a Deployment in `kube-system` and configured by a ConfigMap called the Corefile. It is fronted by a Service named `kube-dns`.
+
+
+
+
+
+
+16
+Certified Kubernetes Administrator
+Kubernetes DNS Triage
+- Reachable by ClusterIP but not by name means DNS, not the Service
+- Check CoreDNS pod status in kube-system
+- Check its logs
+- Check the Corefile ConfigMap
+
+
+
+
+
+17
+Certified Kubernetes Administrator
+A Kubernetes pod's `dnsPolicy` defaults to `ClusterFirst`, sending queries to cluster DNS. Setting `Default` inherits the node's resolver and bypasses cluster DNS, so Service names stop resolving.
+
+
+
+
+
+
+18
+Certified Kubernetes Administrator
+Kubernetes NetworkPolicies express allow rules only and are enforced by the CNI plugin. There is no deny rule — denial happens implicitly when a pod is selected by any policy.
+
+
+
+
+
+
+19
+Certified Kubernetes Administrator
+A Kubernetes pod selected by no NetworkPolicy accepts all traffic. Once any policy selects it for a direction, that pod becomes default-deny in that direction, permitting only explicitly listed traffic.
+
+
+
+
+
+
+20
+Certified Kubernetes Administrator
+The `policyTypes` field declares which directions a Kubernetes NetworkPolicy governs. Listing `[Ingress]` with no rules blocks all inbound while leaving egress untouched. Naming `Egress` locks outbound down even with an empty rule list.
+
+
+
+
+
+21
+Certified Kubernetes Administrator
+Multiple Kubernetes NetworkPolicies selecting the same pod combine additively, allowing the union of everything they permit. A restrictive policy can never subtract from what a permissive one already allows.
+
+
+
+
+
+
+22
+Certified Kubernetes Administrator
+NetworkPolicy Selectors – AND
+
+Two selectors under one list item combine with AND: pods matching the pod selector, but only inside the selected namespaces.
+```yaml
+- from:
+  - namespaceSelector: {matchLabels: {team: data}}
+    podSelector: {matchLabels: {role: api}}
+```
+
+
+
+
+
+
+23
+Certified Kubernetes Administrator
+NetworkPolicy Selectors – OR
+
+Two separately dashed items combine with OR: any pod in those namespaces, or any pod matching the pod selector anywhere.
+```yaml
+- from:
+  - namespaceSelector: {matchLabels: {team: data}}
+  - podSelector: {matchLabels: {role: api}}
+```
+
+
+
+
+
+24
+Certified Kubernetes Administrator
+A default-deny egress NetworkPolicy immediately breaks name resolution, because pods can no longer reach CoreDNS on port 53. The fix is an egress rule allowing UDP and TCP port 53 to `kube-system`.
+
+
+
+
+
+
+25
+Certified Kubernetes Administrator
+Kubernetes NetworkPolicies are enforced by the CNI plugin, so a plugin lacking support accepts the objects and silently ignores them. Plain Flannel does not enforce policy; Calico and Cilium do.
+
+
+
+
+
+
+26
+Certified Kubernetes Administrator
+A Kubernetes Ingress defines HTTP and HTTPS routing by hostname and path. It requires an ingress controller such as NGINX or Traefik — the resource alone performs no routing.
+
+
+
+
+
+
+27
+Certified Kubernetes Administrator
+`pathType: Exact` on a Kubernetes Ingress matches the specified path and nothing beyond it. A rule for `/api` will not match `/api/users`, which falls through to another rule or the default backend.
+
+
+
+
+
+
+28
+Certified Kubernetes Administrator
+`pathType: Prefix` on a Kubernetes Ingress matches whole path segments. A rule for `/api` matches `/api` and `/api/users`, but not `/apifoo`. `ImplementationSpecific` instead delegates interpretation to the controller.
+
+
+
+
+
+
+29
+Certified Kubernetes Administrator
+A TLS secret referenced by a Kubernetes Ingress must be type `kubernetes.io/tls` and must live in the same namespace as the Ingress. Cross-namespace references are not supported.
+
+
+
+
+
+
+30
+Certified Kubernetes Administrator
+When a Kubernetes ingress controller cannot find the TLS secret named by an Ingress, it serves its own default certificate instead of erroring. The symptom is a wrong certificate, not a failure.
+
+
+
+
+
+
+31
+Certified Kubernetes Administrator
+The Kubernetes Gateway API succeeds Ingress, motivated by role separation rather than new protocol capability. It handles both layer 4 and layer 7, and still requires a controller implementation.
+
+
+
+
+
+
+32
+Certified Kubernetes Administrator
+Gateway API Resources
+- GatewayClass: infrastructure provider selects the implementation
+- Gateway: cluster operator defines listeners, ports, TLS
+- HTTPRoute / GRPCRoute / TCPRoute: developers define routing for their own services
+
+
+
+
+
+33
+Certified Kubernetes Administrator
+A Gateway API listener uses `allowedRoutes.namespaces` — `Same`, `All`, or `Selector` — to control which namespaces may attach routes. The Gateway owner grants permission; route authors cannot claim it unilaterally.
+
+
+
+
+
+
+34
+Certified Kubernetes Administrator
+Ingress vs. Gateway API
+- Ingress: one resource, extended by controller-specific annotations that do not port between implementations
+- Gateway API: typed portable resources split across infrastructure, operator, and developer roles
+
+
+
+
+
+
+35
+Certified Kubernetes Administrator
+A CNI plugin allocates pod IP addresses and wires up pod networking in Kubernetes. kubeadm deliberately does not install one, leaving the choice of Calico, Cilium, or Flannel to the administrator.
+
+
+
+
+
+
+36
+Certified Kubernetes Administrator
+On a fresh kubeadm cluster with no CNI installed, control plane static pods start normally on the host network, but all other pods stay `Pending` or `ContainerCreating` and CoreDNS never starts.
+
+
+
+
+
+
+37
+Certified Kubernetes Administrator
+Static pods are managed directly by the Kubernetes kubelet from `/etc/kubernetes/manifests`, not the API server. `kubectl delete` removes only the mirror object; the manifest file must be moved to remove the pod.
+
+
+
+
+
+
+38
+Certified Kubernetes Administrator
+All Kubernetes control plane components on a kubeadm cluster run as static pods from `/etc/kubernetes/manifests`. This is why editing those manifest files is how you reconfigure the API server or etcd.
+
+
+
+
+
+
+39
+Certified Kubernetes Administrator
+Quality of Service class in Kubernetes is assigned per pod, derived from requests and limits across every container and both resources. A pod gets exactly one class; there is no per-resource QoS.
+
+
+
+
+
+
+40
+Certified Kubernetes Administrator
+A Kubernetes pod is Guaranteed QoS only when every container sets both requests and limits, at equal values, for both CPU and memory. Any omission drops it to a lower class.
+
+
+
+
+
+
+41
+Certified Kubernetes Administrator
+Burstable QoS applies when a Kubernetes pod sets at least one request or limit but falls short of Guaranteed. Specifying memory requests and limits while leaving CPU unset lands here.
+
+
+
+
+
+
+42
+Certified Kubernetes Administrator
+BestEffort QoS applies to Kubernetes pods declaring no requests or limits on any container. They are scheduled wherever space exists and are the first evicted under node pressure.
+
+
+
+
+
+
+43
+Certified Kubernetes Administrator
+Under node pressure the Kubernetes kubelet evicts BestEffort pods first, then Burstable pods exceeding their requests, then Guaranteed pods last. Setting requests and limits is a survivability decision.
