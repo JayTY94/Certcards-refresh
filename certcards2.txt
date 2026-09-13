@@ -4,52 +4,26 @@
 
 
 
-1
-Certified Kubernetes Administrator
-A volume is reserved or claimed for a pod by a resource in Kubernetes called a Persistent Volume Claim, or PVC, which chooses the volume with the size nearest to the requested capacity. You will need to know how to mount a volume in a deployment or pod for the exam.
 
 
 
 
 
-2
-Certified Kubernetes Administrator
-/etc/kubernetes/pki contains the crown jewels of a kubeadm control plane’s security.
-Certificates and keys here allow the API server, controller-manager, scheduler, and kubelet to trust and talk to each other.
 
 
 
 
 
-3
-Certified Kubernetes Administrator
-Kubernetes – Upgrade a Cluster With kubeadm
-
-kubeadm upgrade plan
-
-Flow: upgrade plan (shows target versions) → upgrade apply v1.33.x on the control plane → upgrade node on workers. Each node is wrapped in drain → upgrade kubelet/kubectl packages → uncordon.
 
 
 
 
 
-4
-Certified Kubernetes Administrator
-kubectl describe vs. kubectl explain
-
-describe: state of a LIVE object — events, status, conditions. Example: kubectl describe pod db
-explain: schema and docs of a FIELD path. Example: kubectl explain deployment.spec.strategy (add --recursive to dump the whole field tree).
 
 
 
 
 
-5
-Certified Kubernetes Administrator
-Labels vs. Annotations
-
-Labels: identifying key/value pairs you can SELECT on (nodeSelector, Service selectors, -l). Used for scheduling.
-Annotations: free-form metadata you CANNOT select on. Used for notes, tooling hints, and build info.
 
 
 
