@@ -6,7 +6,8 @@
 
 44
 Certified Kubernetes Administrator
-
+# get the status of kubelet using systemctl and save to '/tmp/kubelet-status.txt'
+sudo systemctl status kubelet > /tmp/kubelet-status.txt
 
 
 
