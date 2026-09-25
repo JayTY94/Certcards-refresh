@@ -3,6 +3,13 @@
 
 15
 Certified Kubernetes Administrator
+# create a deployment named "source-ip-app" that uses the image 'registry.k8s.io/echoserver:1.4'
+kubectl create deploy source-ip-app --image registry.k8s.io/echoserver:1.4
+
+# list the deployment and the pods in that deployment
+kubectl get deploy,po
+
+
 
 
 
@@ -11,6 +18,9 @@ Certified Kubernetes Administrator
 
 16
 Certified Kubernetes Administrator
+For the deployment named source-ip-app , change the rollout strategy for a deployment to "Recreate".
+# edit the deployment and change the rollout strategy to recreate
+kubectl edit deploy source-ip-app
 
 
 
@@ -19,7 +29,11 @@ Certified Kubernetes Administrator
 
 17
 Certified Kubernetes Administrator
-
+Running a Pod on a Specific Node
+    create with kubectl run <podname> --dry-run=client -o yaml > pod.yaml
+    edit pod.yaml
+    add pod.spec.nodeName: <nodename>
+    kubectl apply -f pod.yaml
 
 
 
