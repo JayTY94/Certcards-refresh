@@ -41,7 +41,15 @@ Running a Pod on a Specific Node
 
 18
 Certified Kubernetes Administrator
-
+YAML syntax for toleration in a pod
+kind: Pod
+metadata:
+  ...
+spec:
+  tolerations:
+  - key: "dedicated"
+    value: "special-user"
+    effect: "NoSchedule"
 
 
 
