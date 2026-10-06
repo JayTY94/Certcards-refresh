@@ -63,7 +63,10 @@ noun
 An antibiotic used to treat bacterial infections, especially tuberculosis.
 Example: Streptomycin revolutionized medicine by offering an effective treatment for TB.
 ===================
-
+Tabula Rasa (TAB-yoo-luh RAY-suh)
+noun
+Literally "blank slate"; the philisophical idea that the mind starts without innate content.
+Example: Locke argued that we are all born as tabula rasa and learn through experience.
 ===================
 
 ===================
