@@ -34,8 +34,7 @@ A NodePort Service opens the same port, by default within 30000–32767, on ever
 
 4
 Certified Kubernetes Administrator
-# list unit files with systemctl and grep for 'kube'
-sudo systemctl list-unit-files --type service --all | grep kube > services.csv
+Kustomize has the concepts of bases and overlays. A base is a directory with a kustomization.yaml, which contains a set of resources and associated customization. A base has no knowledge of an overlay and can be used in multiple overlays.
 
 
 
@@ -51,11 +50,7 @@ ClusterIP is the default Kubernetes Service type. It allocates a virtual IP reac
 
 6
 Certified Kubernetes Administrator
-# list the newly created role and role binding
-kubectl get role,rolebinding
-
-# using 'auth can-i', verify that you can create service accounts as Sandra
-kubectl auth can-i create sa --namespace default --as Sandra
+Kustomize has the concepts of bases and overlays. A base is a directory with a kustomization.yaml, which contains a set of resources and associated customization. An overlay is a directory with a kustomization.yaml that refers to other kustomization directories as its bases.
 
 
 
@@ -63,14 +58,8 @@ kubectl auth can-i create sa --namespace default --as Sandra
 
 7
 Certified Kubernetes Administrator
-# evict the pods that are running on node01
-kubectl drain node01 --ignore-daemonsets
-
-# verify that there are no pods running on node01
-kubectl get po -o wide -A | grep node01
-
-# mark the node scheduleable once again
-kubectl uncordon node01
+# get the status of kubelet using systemctl and save to '/tmp/kubelet-status.txt'
+sudo systemctl status kubelet > /tmp/kubelet-status.txt
 
 
 
@@ -78,17 +67,24 @@ kubectl uncordon node01
 
 8
 Certified Kubernetes Administrator
-# create a deployment named "source-ip-app" that uses the image 'registry.k8s.io/echoserver:1.4'
-kubectl create deploy source-ip-app --image registry.k8s.io/echoserver:1.4
-
-# list the deployment and the pods in that deployment
-kubectl get deploy,po
+Burstable QoS applies when a Kubernetes pod sets at least one request or limit but falls short of Guaranteed. Specifying memory requests and limits while leaving CPU unset lands here.
 
 
 
 
 
 9
+Certified Kubernetes Administrator
+# create a role binding named 'acme-corp-role-binding', add 'acme-corp-clusterrole' role and 'secure-sa' service account
+kubectl -n default create rolebinding acme-corp-role-binding --clusterrole=acme-corp-clusterrole --serviceaccount=default:secure-sa
+
+I was missing the namespace stuff when I did this in an exercise.
+
+
+
+
+
+10
 Certified Kubernetes Administrator
 # create a role binding named 'acme-corp-role-binding', add 'acme-corp-clusterrole' role and 'secure-sa' serviceaccount
 kubectl -n default create rolebinding acme-corp-role-binding --clusterrole=acme-corp-clusterrole --serviceaccount=default:secure-sa
@@ -97,22 +93,13 @@ kubectl -n default create rolebinding acme-corp-role-binding --clusterrole=acme-
 
 
 
-10
-Certified Kubernetes Administrator
-# check the current and target version of control plane components
-kubeadm upgrade plan
-
-
-
-
-
 11
 Certified Kubernetes Administrator
-Remember the following for deleting a pod created with kubectl apply -f spec-file.yaml. 
+# create a role binding named 'dev-view-binding' to allow the 'dev' service account to view resources in the default namespace
+kubectl create rolebinding dev-view-binding --clusterrole=view --serviceaccount=default:dev --namespace=default
 
-kubectl delete pod data-processor -n production
-
-I keep forgetting that it's delete, not destroy. Not putting in the namespace was also tripping me up.
+# verify the 'dev' service account can view pods in the default namespace
+kubectl auth can-i get po --namespace default --as=system:serviceaccount:default:dev
 
 
 
@@ -185,8 +172,9 @@ less /var/log/cloud-init.log
 
 18
 Linux
-/run
-/run is another new directory. System processes use it to store temporary data for their own nefarious reasons. This is another one of those DO NOT TOUCH folders.
+Command to check ssh in the journalctl log
+
+    sudo journalctl -u ssh --since "2 hours ago"
 
 
 
@@ -194,8 +182,8 @@ Linux
 
 19
 Linux
-chown
-A command that changes file or directory ownership. It can modify the owner, group, or both (e.g., chown user:group file). Only the root user can change ownership.
+df -h
+A command that reports disk space usage in a human-friendly format. Helpful for diagnosing storage constraints and exploring filesystem layouts.
 
 
 
@@ -213,8 +201,7 @@ With journalctl, if two different fields are matched, only entries matching both
 
 21
 Linux
-/proc
-/proc, like /dev is a virtual directory. It contains information about your computer, such as information about your CPU and the kernel your Linux system is running. As with /dev, the files and directories are generated when your computer starts, or on the fly, as your system is running and things change.
+/var contains things like logs in the /var/log subdirectories. Logs are files that register events that happen on the system. If something fails in the kernel, it will be logged in a file in /var/log; if someone tries to break into your computer from outside, your firewall will also log the attempt here. It also contains spools for tasks.
 
 
 
@@ -222,16 +209,20 @@ Linux
 
 22
 Linux
-You can list running processes using the ps command (ps means process status). The ps command displays your currently running processes in real-time.
-This will display the process for the current shell with four columns:
+journalctl options
+--vacuum-size=, --vacuum-time=, --vacuum-files=
+    --vacuum-size= removes the oldest archived journal files until
+    the disk space they use falls below the specified size.
+    Accepts the usual "K", "M", "G" and "T" suffixes (to the base
+    of 1024).
 
-    PID returns the unique process ID
+    --vacuum-time= removes archived journal files older than the
+    specified timespan. Accepts the usual "s" (default), "m", "h",
+    "days", "weeks", "months", and "years" suffixes, see
+    systemd.time(7) for details.
 
-    TTY returns the terminal type you're logged into
-
-    TIME returns the total amount of CPU usage
-
-    CMD returns the name of the command that launched the process.
+    --vacuum-files= leaves only the specified number of separate
+    journal files.
 
 
 
@@ -270,8 +261,8 @@ atomic groups (?>...) or possessive quantifiers a++ remove the backtracking; or 
 
 26
 Regex
-Named backreference
-— Python: (?P=name). Others: \k<name>.
+Match the right character set
+— \d is digits only; hex needs [0-9a-fA-F], "text inside quotes" needs [^"].
 
 
 
@@ -375,10 +366,8 @@ Backreference gotcha — require your separators
 
 37
 Regex
-Atomic group (?>...)
-— Once it matches, the engine
-won't backtrack into it
-. A key tool against catastrophic backtracking.
+s — dotall / single-line
+— Makes . match newlines too. (The name is confusing — s is for "single line treated as one blob.")
 
 
 
@@ -436,7 +425,10 @@ Require resources to send diagnostic logs to an Azure Monitor Logs workspace.
 
 43
 Azure Policy
-Multiple policies can be assigned to a single resource at the same scope or at different scopes. Each policy mostly has a different effect defined. The condition and effect for each policy is independently evaluated. The net result of layering policy definitions is considered cumulative most restrictive.
+Compliance scans through Azure policies are triggered by various methods:
+
+    Automatic full scan - A full compliance scan is triggered automatically every 24 hours.
+    Manual scan for Brownfield scenarios - In cases where a new policy is applied to existing resources (Brownfield scenarios), you can manually trigger a compliance scan by running az policy state trigger-scan.
 
 
 
@@ -472,8 +464,8 @@ Data maintained by the server and associated with a session identifier (typicall
 
 47
 KACE API
-Operational Failure Mode
-Logging in successfully but losing cookies between requests results in errors that appear unrelated to authentication (e.g., missing context, organization, or permissions), even when a bearer token is present.
+requests.Session – Required for KACE APIs
+KACE APIs require requests.Session() so cookies set during login are preserved and replayed. Without a session, server‑side context such as the selected organization is lost.
 
 
 
@@ -498,8 +490,8 @@ When API behavior contradicts documentation, inspect HTTP traffic (headers, cook
 
 50
 KACE API
-requests Without Session
-Using requests.get() or requests.post() directly creates stateless, one‑off requests. Cookies returned by the server are discarded unless manually reattached, making this unsuitable for session‑oriented APIs.
+Using requests Without Session – Common Failure
+Calling requests.post() followed by requests.get() without a shared Session causes cookies returned during authentication to be discarded. This breaks session‑oriented APIs even when authentication initially succeeds.
 
 
 
@@ -507,8 +499,8 @@ Using requests.get() or requests.post() directly creates stateless, one‑off re
 
 51
 KACE API
-Debugging Technique – Inspect Session Cookies
-When debugging authentication issues, inspecting session.cookies confirms whether login established a session and whether cookies are being preserved as expected.
+Bearer Token Authentication
+An authentication model where the client presents a token (usually OAuth/JWT) with each request. The token itself contains or implies identity, tenant, and permissions. No server‑side session or cookies are required.
 
 
 
@@ -525,8 +517,9 @@ The default for local MCP servers. The host launches your server as a child subp
 
 53
 MCP
-Streamable HTTP transport (MCP)
-The transport for remote MCP servers. Supports request/response and server-sent streaming over HTTP. This is the transport that requires the OAuth 2.1 authorization spec.
+stdio vs Streamable HTTP
+stdio — local, parent/child via pipes, credentials come from environment variables
+Streamable HTTP — remote, networked, credentials come from OAuth 2.1 flows
 
 
 
@@ -568,12 +561,8 @@ Most server features go: client asks, server answers. Sampling goes: server asks
 
 57
 MCP
-Server primitives (what your server exposes)
-Three things a server can offer to clients:
-
-Tools — functions the model invokes mid-task
-Resources — read-only data the user attaches to context
-Prompts — templated workflows the user invokes
+Model Context Protocol (MCP)
+An open standard from Anthropic (Nov 2024) for connecting LLM applications to external tools and data sources. Solves the "N×M integration problem" — instead of every AI app writing custom connectors for every data source, both sides speak one protocol.
 
 
 
@@ -598,16 +587,7 @@ MCP's architecture is modeled on the Language Server Protocol (LSP) — the prot
 
 60
 MCP
-Error responses
-On bad input, return a JSON-RPC error response — don't crash, don't silently default, don't return success-with-null. JSON-RPC defines numeric error codes:
-
-Code	Meaning
--32700	Parse error
--32600	Invalid Request
--32601	Method not found
--32602	Invalid params
--32603	Internal error
-Include a clear message. The model often reads error text and self-corrects on the next call.
+Note that MCP server refers to the program that serves context data, regardless of where it runs. MCP servers can execute locally or remotely. For example, when Claude Desktop launches the filesystem server, the server runs locally on the same machine because it uses the STDIO transport. This is commonly referred to as a “local” MCP server.
 
 
 
@@ -615,7 +595,11 @@ Include a clear message. The model often reads error text and self-corrects on t
 
 61
 MCP
-MCP servers are programs that expose specific capabilities to AI applications through standardized protocol interfaces.
+Three roles: Host, Client, Server
+    Host — the LLM application the user interacts with (Claude Desktop, an IDE). Initiates connections.
+    Client — a connector object inside the host. One client per server connection.
+    Server — your code. Exposes tools, resources, prompts.
+The confusing bit: "client" is internal to the host, not a separate program. The host is the whole app; the client is its arm reaching out to one server.
 
 
 
@@ -702,11 +686,11 @@ render — Built-in Visualizations Last step of a query to chart results:
 
 70
 KQL
-Common Beginner Mistakes
+Bonus — Common Type Casts
 
-    Using = instead of == for equality (single = is assignment).
-    Forgetting to project before a join — slower and leaks ambiguous columns.
-    Relying on default join (hits the innerunique trap).
+    tostring(), toint(), tolong(), toreal(), tobool()
+    todatetime("2026-04-22"), totimespan("01:30:00")
+    todynamic() to parse a JSON string into a dynamic object Casting is required before using a dynamic column in summarize by, sort by, or join on.
 
 
 
@@ -714,10 +698,11 @@ Common Beginner Mistakes
 
 71
 KQL
-bin() — Time and Numeric Buckets Rounds a value down to the nearest multiple of the bin size.
+let Statement Binds a name to a scalar, a tabular expression, or a function. Declared at the top of the query; ; separates statements.
 
-    bin(TimeGenerated, 5m) — 5-minute buckets for time-series charts
-    bin(Price, 10) — numeric buckets of 10 Pair with summarize … by bin(...) for render timechart visualizations.
+    let cutoff = ago(7d);
+    let VIPs = Users | where Tier == "Gold";
+    VIPs | where LastSeen > cutoff
 
 
 
@@ -725,15 +710,13 @@ bin() — Time and Numeric Buckets Rounds a value down to the nearest multiple o
 
 72
 KQL
-Conditional Aggregations: countif, sumif, avgif
+KQL Join — The innerunique Gotcha 
+The default join kind is innerunique, not inner. It silently deduplicates the left side's join keys before matching — you can lose rows you expected. Always specify kind= explicitly:
 
-
-| summarize
-    Errors = countif(Level == "Error"),
-    Warnings = countif(Level == "Warning"),
-    BigSpend = sumif(Amount, Amount > 1000)
-
-Avoids filtering then re-joining — one pass, multiple conditional buckets.
+    kind=inner — true inner join, every matching pair
+    kind=leftouter — keep all left rows, null for unmatched
+    kind=fullouter — keep unmatched rows from both sides
+    kind=leftanti — left rows with no match on right (great for "not in")
 
 
 
@@ -770,11 +753,13 @@ Evaluates predicates top-to-bottom; last value is the default. Use iff(cond, a, 
 
 75
 KQL
-has vs. contains
-
-    has — matches whole indexed terms (words split on punctuation/whitespace). Uses the term index. Fast.
-    contains — substring scan, no index. Slow on large tables. "login" would match "relogin". 
-    Rule of thumb: searching for a full token (username, IP, error code, GUID) → has. Need a partial substring → contains.
+String Functions
+    tolower(), toupper()
+    trim(@"\s+", s)
+    — trim by regex
+    replace_string(s, "old", "new")
+    extract(@"Error (\d+)", 1, Message)
+    — first regex capture group
 
 
 
@@ -793,10 +778,8 @@ Use union kind=outer (default) to keep all columns; kind=inner keeps only shared
 
 77
 KQL
-summarize — KQL's Aggregator There is no GROUP BY in KQL. Everything happens in one operator:
-
-T | summarize Count=count(), Avg=avg(Dur) by EventLevel
-The by clause defines the groups. Omit by to aggregate the entire table into one row.
+The Pipe | 
+KQL is a pipelined language. Each | takes the tabular result from the previous step and feeds it as input to the next operator. Read queries left-to-right, top-to-bottom: source table → filter → transform → aggregate → present.
 
 
 
@@ -838,9 +821,8 @@ If a version source has frozen feature metadata that conflicts with your destina
 
 81
 Azure Compute Gallery and Disk Architecture
-NVMe vs. SCSI — why NVMe wins on modern hardware 
-SCSI was designed for single-head spinning disks: one command queue made sense. 
-NVMe was designed for parallel SSDs from scratch: up to 65,535 queues, each up to 65,535 commands deep. On many-core CPUs, every core can run its own queue without contending through one bottleneck. The result is dramatically higher IOPS-per-vCPU.
+Azure VM Agent (waagent / WindowsAzureGuestAgent) 
+The daemon that turns a generic OS into "an Azure VM." On first boot, reads provisioning input from the Azure fabric (hostname, password, custom data, SSH keys), then enables extensions. If absent or broken in a captured image, VMs deploy but never finish provisioning — extensions never run, status sits at "Not Ready." Smoke-test extension push on every Packer output.
 
 
 
@@ -951,8 +933,8 @@ Inventory variables are resolved before play execution; play variables override 
 
 93
 Ansible
-INI Inventory Format
-The INI format is the simplest inventory format and is commonly used for static host lists.
+Lowest Precedence
+Role defaults have the lowest variable precedence.
 
 
 
@@ -960,25 +942,14 @@ The INI format is the simplest inventory format and is commonly used for static 
 
 94
 Ansible
-Desired State
-Desired state describes what the system should look like, not the steps to get there (e.g., “package is installed”, not “run apt install”).
+Parent Group
+A parent group applies variables and targeting to all child groups.
 
 
 
 
 
 95
-Ansible
-Mental Model Shortcut
-Modules = state logic
-Tasks = module invocations
-Plays = host targeting
-
-
-
-
-
-96
 Ansible
 Play
 A play maps a set of hosts to a set of tasks to be executed on those hosts.
@@ -987,10 +958,19 @@ A play maps a set of hosts to a set of tasks to be executed on those hosts.
 
 
 
+96
+Ansible
+Module Execution Location
+Most modules are copied to and executed on the managed host, not the control node.
+
+
+
+
+
 97
 Ansible
-Task
-A task is a single action that invokes one Ansible module with specific parameters.
+Host Definition
+A host is identified by a name or IP address and may include host-specific variables.
 
 
 
@@ -1007,8 +987,8 @@ Using shell or command bypasses idempotency, state detection, and error semantic
 
 99
 Ansible
-Extra Vars Precedence
-Extra vars (-e) always win and override all other variable definitions.
+Command vs Shell
+command does not invoke a shell or support pipes/redirection; shell does.
 
 
 
@@ -1016,14 +996,113 @@ Extra vars (-e) always win and override all other variable definitions.
 
 100
 Ansible
-Static Inventory
-A static inventory is a fixed list of hosts defined in files.
+Host Variables
+Host variables apply only to a single host and override group-level variables.
 
 
 
 
 
 101
+VBA Office Macros
+ByVal
+A parameter passing mode where the procedure receives a copy of the value. Changes inside the procedure do not modify the caller’s original variable.
+
+
+
+
+
+102
+VBA Office Macros
+Variant Type
+A flexible VBA type that can hold different kinds of values (string, number, date, object reference). Variants make quick macros easy but can hide type issues unless you validate and convert intentionally.
+
+
+
+
+
+103
+VBA Office Macros
+Style for Following Paragraph
+A Word style property that determines which style is automatically applied when the user presses Enter after a paragraph. When styles are chained, dependent styles must exist in the document for the chain to work correctly.
+
+
+
+
+
+104
+VBA Office Macros
+Parentheses in Procedure Calls
+In VBA, parentheses are required when you use Call or when passing arguments to a Function whose return value is being used. Misplacing parentheses can change evaluation order and cause confusing errors.
+
+
+
+
+
+105
+VBA Office Macros
+Named Arguments
+A VBA calling style that specifies parameter names (e.g., Source:=... Destination:=...). It improves readability and reduces mistakes when calling methods with many parameters.
+
+
+
+
+
+106
+VBA Office Macros
+Cursor Jumping in Word Macros
+An undesirable behavior caused by excessive use of Selection.Move, Select, or Activate. It is avoided by performing formatting operations on Range objects instead of Selection.
+
+
+
+
+
+107
+VBA Office Macros
+For Each … Next
+An iteration loop that visits each item in a collection (e.g., paragraphs, sections, shapes). It is usually safer than index loops for Word collections.
+
+
+
+
+
+108
+VBA Office Macros
+Do While / Do Until
+A loop that repeats while a condition is True (Do While) or until a condition becomes True (Do Until). It is used when you don’t know the exact number of iterations ahead of time.
+
+
+
+
+
+109
+VBA Office Macros
+ScreenUpdating (Word VBA)
+An Application-level property that controls whether Word visually updates the screen during macro execution. Disabling it improves performance but does not fix logical issues caused by Selection misuse.
+
+
+
+
+
+110
+VBA Office Macros
+Link to Previous (Headers and Footers)
+A section-level setting in Word that causes a header or footer to inherit content from the previous section. If enabled, changes to one section’s header or footer will propagate to linked sections.
+
+
+
+
+
+111
+VBA Office Macros
+Comments ( ' )
+Any text after a single quote is ignored by VBA at runtime. Comments are used to document intent and clarify what each section of a macro does.
+
+
+
+
+
+112
 Azure Virtual Machines
 Metrics are numerical values collected at predetermined intervals to describe some aspect of a system. Metrics can measure VM performance, resource utilization, error counts, user responses, or any other aspect of the system that you can quantify.
 
@@ -1031,17 +1110,19 @@ Metrics are numerical values collected at predetermined intervals to describe so
 
 
 
-102
+113
 Azure Virtual Machines
-The VM size can be changed while the VM is running, as long as the new size is available in the current hardware cluster the VM is running on. 
-The command line tools report an error if you attempt to resize a VM to an unavailable size. 
-Changing a running VM size automatically reboots the machine to complete the request.
+To open Metrics Explorer, you can:
+
+    Select Metrics from the VM's left navigation menu under Monitoring.
+    Select the See all Metrics link next to Platform metrics on the Monitoring tab of the VM's Overview page.
+    Select Metrics from the left navigation menu on the Azure Monitor Overview page.
 
 
 
 
 
-103
+114
 Azure Virtual Machines
 2. What's a quick way to install the Azure Monitor Agent to collect guest OS metrics?
 Select the Azure Monitor Agent when you enable VM insights.
@@ -1051,7 +1132,7 @@ Select the Azure Monitor Agent instead of the legacy Log Analytics Agent when yo
 
 
 
-104
+115
 Azure Virtual Machines
 Azure Backup uses a Recovery Services vault for storing the backup data. Azure Storage blobs back up a vault, making it an efficient and economical long-term storage medium. With the vault in place, you can select the machines to back up, and define a backup policy (when snapshots are taken and for how long they’re stored).
 
@@ -1059,125 +1140,21 @@ Azure Backup uses a Recovery Services vault for storing the backup data. Azure S
 
 
 
-105
-Azure Virtual Machines
-Azure Backup uses several components that you download and deploy to each computer you want to back up. The component that you deploy depends on what you want to protect.
-
-    Azure Backup agent
-    System Center Data Protection Manager
-    Azure Backup Server
-    Azure Backup VM extension
-
-
-
-
-
-106
-Azure Virtual Machines
-The VM client includes the operating system and other workloads and applications. To monitor the software running on your VM, you install the Azure Monitor Agent, which collects data from inside the VM. VM insights:
-
-    Installs Azure Monitor Agent on your VM.
-    Creates a DCR that collects and sends a predefined set of client performance data to a Log Analytics workspace.
-    Presents the data in curated workbooks.
-
-
-
-
-
-107
-VBA Office Macros
-ByVal
-A parameter passing mode where the procedure receives a copy of the value. Changes inside the procedure do not modify the caller’s original variable.
-
-
-
-
-
-108
-VBA Office Macros
-Variant Type
-A flexible VBA type that can hold different kinds of values (string, number, date, object reference). Variants make quick macros easy but can hide type issues unless you validate and convert intentionally.
-
-
-
-
-
-109
-VBA Office Macros
-Style for Following Paragraph
-A Word style property that determines which style is automatically applied when the user presses Enter after a paragraph. When styles are chained, dependent styles must exist in the document for the chain to work correctly.
-
-
-
-
-
-110
-VBA Office Macros
-Parentheses in Procedure Calls
-In VBA, parentheses are required when you use Call or when passing arguments to a Function whose return value is being used. Misplacing parentheses can change evaluation order and cause confusing errors.
-
-
-
-
-
-111
-VBA Office Macros
-Named Arguments
-A VBA calling style that specifies parameter names (e.g., Source:=... Destination:=...). It improves readability and reduces mistakes when calling methods with many parameters.
-
-
-
-
-
-112
-VBA Office Macros
-Cursor Jumping in Word Macros
-An undesirable behavior caused by excessive use of Selection.Move, Select, or Activate. It is avoided by performing formatting operations on Range objects instead of Selection.
-
-
-
-
-
-113
-VBA Office Macros
-For Each … Next
-An iteration loop that visits each item in a collection (e.g., paragraphs, sections, shapes). It is usually safer than index loops for Word collections.
-
-
-
-
-
-114
-VBA Office Macros
-Sub … End Sub
-A procedure block that runs actions but does not return a value. VBA uses Sub to mark the start of the macro and End Sub to mark the end.
-
-
-
-
-
-115
-VBA Office Macros
-ScreenUpdating (Word VBA)
-An Application-level property that controls whether Word visually updates the screen during macro execution. Disabling it improves performance but does not fix logical issues caused by Selection misuse.
-
-
-
-
-
 116
-VBA Office Macros
-Function … End Function
-A procedure block that returns a value to its caller. Functions can be used in code and (in Excel) often in worksheet cells, whereas Word macros are commonly written as Subs.
+Azure Virtual Machines
+To collect information on your Azure Virtual Desktop infrastructure, you'll need to enable several diagnostic settings on your Azure Virtual Desktop host pools and workspaces (this is your Azure Virtual Desktop workspace, not your Log Analytics workspace).
 
 
 
 
 
 117
-VBA Office Macros
-Header/Footer Scope
-In Word, headers and footers belong to sections rather than the document as a whole. Modifying headers or footers without accounting for section boundaries can cause unintended changes.
+Azure Virtual Machines
+The VM client includes the operating system and other workloads and applications. To monitor the software running on your VM, you install the Azure Monitor Agent, which collects data from inside the VM. VM insights:
+
+    Installs Azure Monitor Agent on your VM.
+    Creates a DCR that collects and sends a predefined set of client performance data to a Log Analytics workspace.
+    Presents the data in curated workbooks.
 
 
 
@@ -1216,8 +1193,9 @@ for_each is preferred for optional singletons and stable identities.
 
 121
 AVD + Terraform
-type_handler_version
-Version of the VM extension handler. Incorrect or unhealthy versions can silently break functionality.
+AADLoginForWindows extension
+Azure VM extension that enables Entra ID authentication for Windows logon.
+Registers CloudAP credential providers and allows Entra users to sign in to Windows.
 
 
 
@@ -1304,8 +1282,8 @@ People who enter flow more frequently. Curious, persistent, intrinsically motiva
 
 130
 Flow State
-The 4% Rule 
-The ideal challenge should exceed your current skill by roughly 4% — just barely noticeable. Not a massive stretch, just enough that you have to pay attention. Growth comes from stacking these increments day after day.
+Flow Cycle — Release Phase 
+Step away from the problem. A walk, a shower, any low-grade physical activity. Lets the prefrontal cortex disengage so the brain shifts from effortful to automatic processing.
 
 
 
@@ -1331,8 +1309,13 @@ A set of brain regions that handles self-referential thinking, mind wandering, a
 
 133
 Flow State
-The Mastered-Song Problem 
-A guitarist who has fully mastered a song won't enter flow performing it. The challenge is too low relative to skill — the brain settles into boredom. Flow requires stretch, even a small one (the 4% rule).
+The Five Neurochemicals of Flow 
+    Dopamine (focus, pattern recognition), 
+    norepinephrine (arousal, alertness), 
+    endorphins (pain relief, pleasure), 
+    anandamide (lateral thinking, reduced anxiety), 
+    serotonin (mood stability, afterglow). 
+    Together they form the most potent feel-good cocktail the brain can produce.
 
 
 
@@ -1395,10 +1378,10 @@ Example: Her bouffant looked like it required structural engineering.
 
 139
 The Violinist's Thumb, Keane
-Retinol (RET-in-ol)
+volte-face (volt-FAHS)
 noun
-A form of vitamin A important for vision and skin health.
-Example: Retinol is common in skin creams and overhyped skincare forums.
+A sudden reversal of opinion or policy.
+Example: The company made a volte-face after public criticism.
 
 
 
@@ -1428,10 +1411,10 @@ Example: Fraud can vitiate a contract.
 
 142
 The Violinist's Thumb, Keane
-Zipf's law (ZIPFS law)
+contretemps (KON-truh-tahn)
 noun
-The principle that in many datasets, the most common item appears about twice as often as the second, three times as often as the third, etc.
-Example: Word frequencies in books often follow Zipf’s law.
+An embarrassing mishap or unexpected disagreement.
+Example: The dinner party ended in a diplomatic contretemps.
 
 
 
@@ -1439,10 +1422,10 @@ Example: Word frequencies in books often follow Zipf’s law.
 
 143
 The Violinist's Thumb, Keane
-hosannas (hoh-ZAN-uhz)
+maharaja (mah-huh-RAH-juh)
 noun
-Shouts of praise or adoration, especially religious.
-Example: The crowd greeted the victor with hosannas.
+A Hindu prince or ruler in India; also used figuratively for someone living in luxury.
+Example: He traveled like a maharaja, with servants and trunks.
 
 
 
@@ -1524,8 +1507,8 @@ Revoke the certificate. Rotating usernames, passwords, or extending validity doe
 
 151
 Certificate-Based Authentication
-X.509
-The standard that defines the structure of a public-key certificate — fields like subject, issuer, serial number, validity dates, public key, and the issuer's signature. Every TLS/HTTPS, S/MIME, or smart-card cert you encounter is an X.509 certificate.
+Subject Alternative Name (SAN)
+The X.509 extension that lists additional hostnames a single cert covers (e.g., `www.site.com`, `api.site.com`, `site.com`). Modern browsers ignore the legacy Common Name (CN) field entirely and only validate hostnames against the SAN list.
 
 
 
@@ -1542,8 +1525,8 @@ Every root CA cert is self-signed (issuer = subject). It has to be — the chain
 
 153
 Certificate-Based Authentication
-Why CBA Is "Phishing-Resistant"
-The credential is cryptographically bound to the legitimate server's identity (TLS handshake transcript signed with the user's private key). A spoofed site can't get a usable signature out of the user because it isn't the real server. Nothing typeable means nothing replayable.
+OCSP Must-Staple
+An extension baked into a certificate that tells clients: reject the connection unless a stapled OCSP response is present. Without must-staple, clients usually soft-fail when OCSP is unreachable, and an attacker who can block OCSP traffic exploits that. Must-staple closes the soft-fail hole.
 
 
 
@@ -1551,8 +1534,8 @@ The credential is cryptographically bound to the legitimate server's identity (T
 
 154
 Certificate-Based Authentication
-OCSP (Online Certificate Status Protocol)
-Real-time, per-certificate revocation check. The client asks the CA's OCSP responder "is *this one* serial still valid?" — lightweight versus downloading a full CRL, but requires a live connection.
+Why CBA Is "Phishing-Resistant"
+The credential is cryptographically bound to the legitimate server's identity (TLS handshake transcript signed with the user's private key). A spoofed site can't get a usable signature out of the user because it isn't the real server. Nothing typeable means nothing replayable.
 
 
 
@@ -1583,11 +1566,8 @@ The query cost above which SQL Server considers a parallel plan. Default of 5 is
 
 157
 SQL Server
-FULL recovery means the log grows between log backups. Plan for:
-
-Peak .ldf size between log backups (on the database disk)
-Backup target capacity — full + diff + log files pile up over retention (e.g., 30 days)
-Forget either and you'll hit a full disk. When the backup target fills, log backups fail, the log can't truncate, and the live disk fills next — cascade failure.
+Transaction log storage — what matters 
+The log is append-only sequential writes; every commit waits on a flush. Write latency dominates — target sub-millisecond on premium SSD or NVMe. IOPS and throughput matter more for data files (random) and analytics workloads (sequential throughput).
 
 
 
@@ -1631,13 +1611,8 @@ Maximum number of cores a single query can use in parallel. 0 = unlimited (bad o
 
 162
 SQL Server
-Database in SUSPECT state — procedure
-
-Set to EMERGENCY mode (read-only, single-user)
-Run DBCC CHECKDB to assess corruption
-Restore from backup if possible — always preferred
-Last resort: REPAIR_ALLOW_DATA_LOSS (which can drop data to make the DB consistent)
-Never run REPAIR_ALLOW_DATA_LOSS as step one.
+Online index rebuild = Enterprise only 
+24x7 shops that can't tolerate table locks during maintenance windows need Enterprise. Standard can only do offline rebuilds (schema-mod lock on the table). This single requirement drives many Enterprise purchases.
 
 
 
@@ -1675,8 +1650,8 @@ Query sys.dm_os_wait_stats to see what SQL Server is waiting on. Most performanc
 
 166
 SQL Server
-SOS_SCHEDULER_YIELD 
-CPU pressure. Workers are yielding their schedulers because demand exceeds available CPU. Reinforce with signal-waits % >20–25%. Could be undersized VM, runaway parallel queries, or missing indexes forcing CPU-burning scans.
+tempdb 
+Shared system database used as a scratchpad by every database on the instance: temp tables, table variables, sort/hash spills, snapshot/RCSI version store. Recreated from scratch every service restart — nothing in it is persistent. Because everyone shares it, a slow or undersized tempdb hurts the entire instance.
 
 
 
@@ -1732,7 +1707,7 @@ Large refactors often look dangerous because of address changes, not because inf
 
 173
 Terraform
-If a module suddenly creates resources in an unexpected account, it is likely using the default provider because an alias was not explicitly passed.
+A provider alias allows multiple configurations of the same provider, such as different regions or accounts.
 
 
 
@@ -1756,12 +1731,7 @@ If Terraform plans changes after deleting .terraform.lock.hcl, provider versions
 
 176
 Terraform
-Terraform import block syntax is very simple. Make sure that you have a resource block for the import to go to or you use the -generate-config-out option with terraform plan.
-Example
-import {
-  to = azurerm_ip_group.old_ip_group
-  id = "/subscriptions/e4f1f240-7c87-4e7f-a12f-36553fb8721a/resourceGroups/Offshore_VDI/providers/Microsoft.Network/ipGroups/Offshore-AVD-IG"
-}
+If resources are recreated after reordering a map literal, the map keys likely changed. Terraform cares about keys, not visual order.
 
 
 
@@ -1777,7 +1747,7 @@ Resources referenced by other resources often cannot be replaced cleanly, even w
 
 178
 Terraform
-The count meta‑argument creates multiple resources using numeric indexes. These indexes shift when items are added or removed, making them unsafe for long‑lived infrastructure.
+If a resource’s address changes, Terraform treats it as a completely different resource, even if the underlying infrastructure is identical.
 
 
 
@@ -1810,7 +1780,7 @@ Traffic Volume is a contextual metric that describes how much demand a system is
 
 182
 Observability and SRE
-An Unknown-Unknown is a failure mode that was not anticipated and therefore has no predefined alert or dashboard. Observability is designed to support investigation of unknown-unknowns by enabling flexible querying and correlation rather than relying solely on predefined checks.
+Latent conditions are hidden weaknesses in a system that remain dormant until combined with other factors. These conditions accumulate over time and are often the true drivers behind major incidents.
 
 
 
@@ -1897,13 +1867,8 @@ The collation assigned to a user database. Can be changed independently, but doe
 
 192
 SQL Server Config
-SQL connectivity test hierarchy
-Standard troubleshooting order:
-
-DNS / ping
-Port check (Test-NetConnection)
-SQL login (sqlcmd)
-Application config
+SQL Server service
+A Windows service that runs a SQL Server instance (e.g., SQL Server (SQLREPL)). Stopping the service stops that instance.
 
 
 
@@ -1937,7 +1902,7 @@ Job → Stages → Tasks — Spark's execution hierarchy. An action creates a jo
 
 196
 Apache Spark
-DataFrame — Data organized into named columns with a schema — essentially a distributed table, like a spreadsheet or SQL table. Built on top of RDDs but higher-level and faster because Spark understands its structure. The default choice for most structured work today.
+Driver vs. Executor — Driver plans and coordinates (the manager); executors do the actual computation on data partitions (the workers).
 
 
 
@@ -2001,7 +1966,7 @@ Lazy Evaluation — Spark delays all computation until an action is called. This
 
 204
 Apache Spark
-Driver — The "brain" of a Spark application. Runs your main function, creates the SparkSession, splits the job into tasks, delegates them to executors, and collects results. If the Driver crashes, the whole application fails.
+RDD vs. DataFrame — RDD is low-level and unstructured (just a distributed collection); DataFrame adds a schema (named columns + types), enabling Catalyst optimization. Use DataFrames by default; drop to RDDs only for fine-grained control.
 
 
 
@@ -2085,9 +2050,16 @@ A horizontal partition of the table — typically 128 MB to 512 MB worth of rows
 
 212
 Parquet
-Dremel Model
+Parquet File Structure (Mental Model)
 
-The algorithm Parquet uses to store nested data (structs, arrays, maps) in pure columnar form. Originally published by Google. Each leaf field becomes its own column, accompanied by two extra integers per value: definition level and repetition level.
+```
+File
+ └─ Row Group  (128–512 MB, unit of parallelism, holds min/max stats)
+     └─ Column Chunk  (one per column, contiguous on disk)
+         └─ Page  (~1 MB, unit of encoding + compression)
+```
+
+Wrapped at both ends with the magic bytes `PAR1`. Footer sits at the end.
 
 
 
@@ -2144,8 +2116,7 @@ A user in the eDiscovery Manager role group can't access a specific eDiscovery c
 
 217
 eDiscovery
-Standard eDiscovery features are included with Microsoft 365 and Office 365 E1, E3, and E5 plans. It supports case creation, content search, holds, and basic exports.
-Premium eDiscovery features add capabilities like review sets, analytics, optical character recognition (OCR), and better export controls. It requires additional licensing.
+With the case created, the next step is to run searches to find relevant content. You can search across Exchange, SharePoint, OneDrive, and Teams using keywords or other filters. Search statistics help refine results, and you can preview content to make sure you're capturing what matters.
 
 
 
@@ -2171,9 +2142,9 @@ In Microsoft Purview eDiscovery, preserve content that could be relevant to the 
 
 220
 eDiscovery
-You're analyzing a large volume of email data in a review set. What's the benefit of running analytics before starting manual review?
+A case reviewer is using the filter panel in a review set to identify documents that are missing tags. What condition should they use?
 
-It reduces review volume by grouping near-duplicates and identifying key emails.
+Tag field with the 'Is empty' operator.
 
 
 
@@ -2181,13 +2152,8 @@ It reduces review volume by grouping near-duplicates and identifying key emails.
 
 221
 eDiscovery
-Here are some of the things analytics can do for review sets:
-
-Remove duplicate documents
-Identify the most inclusive emails in a thread
-Group near-duplicate files together
-Organize content by theme
-Flag potentially privileged material using machine learning
+A compliance officer needs to start an investigation into potential data leaks. What should they do first in Microsoft Purview eDiscovery?
+    Create a new eDiscovery case.
 
 
 
@@ -2232,7 +2198,7 @@ The digital signature is stored in the DKIM-Signature header field in the messag
 
 226
 Exchange Online and Defender
-You can't modify the existing SPF TXT record for the *.onmicrosoft.com domain.
+We recommend you begin with the preset security policies in Exchange Online Protection (EOP) and Defender for Office 365 fast by assigning them to specific pilot users or defined groups as part of your evaluation.
 
 
 
@@ -2240,7 +2206,10 @@ You can't modify the existing SPF TXT record for the *.onmicrosoft.com domain.
 
 227
 Exchange Online and Defender
-We recommend you begin with the preset security policies in Exchange Online Protection (EOP) and Defender for Office 365 fast by assigning them to specific pilot users or defined groups as part of your evaluation.
+If you're using the *.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do: 
+
+SPF and DKIM are configured automatically
+DMARC still needs to be manually set up via DNS records.
 
 
 
@@ -2248,11 +2217,9 @@ We recommend you begin with the preset security policies in Exchange Online Prot
 
 228
 Exchange Online and Defender
-How DKIM helps SPF: DKIM can validate messages that fail SPF. For example:
-
-    Messages from an email hosting service where the same MAIL FROM address is used for mail from other domains.
-    Messages that encounter server-based email forwarding.
-    Because the DKIM signature in the message header isn't affected or altered in these scenarios, these messages are able to pass DKIM.
+HELO is simple: it only introduces the client.
+    It does not provide a mechanism for the client to learn about server features such as STARTTLS, AUTH, SIZE, or other ESMTP extensions.
+    Those are only available via EHLO.
 
 
 
@@ -2276,7 +2243,10 @@ Threat Explorer is a powerful near real-time tool to help Security Operations te
 
 231
 Exchange Online and Defender
-As previously described, SPF makes no attempt to match the domain in MAIL FROM domain and From addresses. DKIM doesn't care if the domain that signed the message matches the domain in the From address. DMARC addresses these deficiencies by using SPF and DKIM to confirm that the domains in the MAIL FROM and From addresses match.
+SPF: As explained in Set up SPF to identify valid email sources for your custom cloud domains, SPF uses a TXT record in DNS to:
+
+Identify valid sources of mail from the MAIL FROM domain.
+What to do if the destination email server receives mail from an undefined source ('hard fail' to reject the message; 'soft fail' to accept and mark the message).
 
 
 
@@ -2284,7 +2254,7 @@ As previously described, SPF makes no attempt to match the domain in MAIL FROM d
 
 232
 Exchange Online and Defender
-If a user is intentionally or unintentionally included in multiple policies of a specific feature, the first applicable threat policy for that feature (based on the order of precedence) determines what happens to the item (a message, file, URL, etc.).
+Authenticated Received Chain (ARC): Preserves original email authentication information by known services that modify messages in transit. The destination email server can use this information to authenticate messages that would otherwise fail DMARC.
 
 
 
@@ -2292,7 +2262,7 @@ If a user is intentionally or unintentionally included in multiple policies of a
 
 233
 Exchange Online and Defender
-Secure/Multipurpose Internet Mail Extensions (S/MIME) allows email users to help protect sensitive information by sending signed and encrypted email within their organization. As an administrator, you can enable S/MIME-based security for your organization if you have mailboxes in either Exchange Server or Exchange Online.
+If a user is intentionally or unintentionally included in multiple policies of a specific feature, the first applicable threat policy for that feature (based on the order of precedence) determines what happens to the item (a message, file, URL, etc.).
 
 
 
@@ -2332,7 +2302,7 @@ Data lineage — A Unity Catalog feature that traces how data flows from source 
 
 238
 Databricks Fundamentals
-Data lake vs. Data warehouse — A lake is a cheap dumping ground for raw files (flexible but messy); a warehouse holds clean, structured tables (reliable but rigid and pricey). The lakehouse merges the best of both.
+Cluster vs. Serverless — With a regular cluster you choose and manage the machines (and watch idle cost). With serverless, Databricks handles the servers behind the scenes and they start near-instantly.
 
 
 
@@ -2340,7 +2310,7 @@ Data lake vs. Data warehouse — A lake is a cheap dumping ground for raw files 
 
 239
 Databricks Fundamentals
-GRANT / REVOKE — SQL commands in Unity Catalog that give or remove a user's access to data objects (tables, schemas). The everyday mechanics of "who can see what."
+Delta Lake — The reliable table format that sits on top of raw cloud files and makes them trustworthy. It's what turns a messy lake into something you can safely report from.
 
 
 
@@ -2356,7 +2326,7 @@ Time travel — Delta keeps a version history, so you can query a table as it ex
 
 241
 Databricks Fundamentals
-Silver vs. Gold (the tricky one) — Both are clean. Silver = detailed rows, tidied up. Gold = those rows rolled up into summaries. The tell: words like summarized, aggregated, KPIs, dashboard, or executive point to Gold . If it's still individual transactions (just clean ones), it's Silver .
+Managed vs. External tables — With a managed table, Databricks controls both the metadata and the data files (drop the table → data is deleted). With an external table, the data files live outside Databricks' control (drop the table → files remain). Rule of thumb: managed = Databricks owns the files; external = you do.
 
 
 
@@ -2364,7 +2334,7 @@ Silver vs. Gold (the tricky one) — Both are clean. Silver = detailed rows, tid
 
 242
 Databricks Fundamentals
-Schema enforcement — Delta rejects writes that don't match the table's defined structure (wrong columns/types), protecting tables from accidental corruption.
+Unity Catalog — Databricks' governance layer: controls who can access which data, tracks where data came from, and centralizes permissions across the workspace. The keyword is governance — not speed, not storage.
 
 
 
@@ -2405,10 +2375,10 @@ Example: The mysterious remark piqued his curiosity.
 
 246
 The King in Yellow, Chambers
-déclassé (day-klah-SAY)
-adjective
-Having fallen in social status; no longer fashionable, respectable, or belonging to one's former class.
-Example: The once-grand hotel seemed déclassé compared with the newer resorts.
+divan (dih-VAN)
+noun
+A long, low sofa without a back, or a council chamber in some Middle Eastern governments.
+Example: Guests reclined on the divan after dinner.
 
 
 
@@ -2416,10 +2386,10 @@ Example: The once-grand hotel seemed déclassé compared with the newer resorts.
 
 247
 The King in Yellow, Chambers
-boudoir (BOO-dwahr)
+doxology (dok-SOL-uh-jee)
 noun
-A woman's private sitting room or bedroom, especially in a wealthy household.
-Example: She retired to her boudoir to read and write letters.
+A short hymn or expression of praise to God, especially in Christian worship.
+Example: The congregation concluded the service by singing the doxology.
 
 
 
@@ -2498,7 +2468,7 @@ Necessary vs. sufficient cause. Necessary = the failure can't happen without it.
 
 255
 Diagnostic Method
-Minimal reproduction. The smallest case that still triggers the failure. Every element you remove that keeps the bug alive is a confounder eliminated — turning "sometimes it breaks" into a sharp, testable signal.
+Schrödinbug. A bug that never misbehaved until someone read the code, realized it couldn't have worked, and then it started failing. Contrast the Heisenbug: a Heisenbug hides when observed; a Schrödinbug is revealed by observation.
 
 
 
@@ -2506,7 +2476,7 @@ Minimal reproduction. The smallest case that still triggers the failure. Every e
 
 256
 Diagnostic Method
-Delta debugging (Zeller, 1999). An algorithm that automatically trims a failure-inducing input or change-set down to the minimal piece that still triggers the bug — halving and re-testing until only the essential trigger remains. It's minimal reproduction, mechanized. From the paper "Yesterday, my program worked. Today, it does not. Why?"
+Bohrbug. A solid, deterministic bug that reproduces reliably under the same conditions — the easy kind. Named after the stable Bohr atom model.
 
 
 
@@ -2522,7 +2492,7 @@ Competing hypotheses. Generate several explanations (3–5) before touching the 
 
 258
 Diagnostic Method
-Symptom fix vs. root-cause fix. A symptom fix silences the error; a root-cause fix removes the thing that produced it. The tell you only patched a symptom: the bug comes back later, often wearing a different mask.
+Regression. A previously-working behavior that breaks after a change. The prompt for delta debugging / git bisect and the first question: what changed?
 
 
 
@@ -2550,7 +2520,7 @@ When a fix kills one symptom but not the other, suspect Hickam.
 
 261
 Diagnostic Method
-Scientific debugging (Zeller). The formal name for the above, from Andreas Zeller's work: observe failure → form a falsifiable hypothesis → design an experiment that could disprove it → refine. "Debugging as a science, not a craft."
+Bug-inducing commit (BIC). The specific commit that introduced a regression — the thing git bisect is hunting for.
 
 
 
@@ -2583,15 +2553,6 @@ Nginx can directly serve static files such as HTML, CSS, JavaScript, and images.
 
 265
 Nginx
-Kubernetes Service
-A Kubernetes Service can provide stable network access to Nginx Pods. The Service selects the appropriate Pods using labels and forwards traffic to the port on which Nginx is listening.
-
-
-
-
-
-266
-Nginx
 Kubernetes Mental Model
 When Nginx appears in a Kubernetes exercise, think of it primarily as a simple HTTP application running inside a container. Kubernetes manages the Pod, Deployment, networking, and scaling while Nginx handles the HTTP requests.
 
@@ -2599,10 +2560,19 @@ When Nginx appears in a Kubernetes exercise, think of it primarily as a simple H
 
 
 
+266
+Nginx
+Port 80
+Nginx normally listens for HTTP traffic on TCP port 80. In Kubernetes, a container running the Nginx image will typically have its web server listening on port 80 inside the Pod.
+
+
+
+
+
 267
 Nginx
-Server Block
-A server block is an Nginx configuration section that defines how requests for a particular hostname or listening port should be handled. It is roughly analogous to a virtual host in other web servers.
+Kubernetes Image
+The nginx container image packages the Nginx web server and its default configuration into a container image. Running kubectl run nginx --image=nginx therefore creates a Pod running a basic web server.
 
 
 
@@ -2658,7 +2628,11 @@ A CNI plugin allocates pod IP addresses and wires up pod networking in Kubernete
 
 273
 Certified Kubernetes Administrator
-Kustomize has the concepts of bases and overlays. A base is a directory with a kustomization.yaml, which contains a set of resources and associated customization. An overlay is a directory with a kustomization.yaml that refers to other kustomization directories as its bases.
+# list the newly created role and role binding
+kubectl get role,rolebinding
+
+# using 'auth can-i', verify that you can create service accounts as Sandra
+kubectl auth can-i create sa --namespace default --as Sandra
 
 
 
@@ -2666,8 +2640,14 @@ Kustomize has the concepts of bases and overlays. A base is a directory with a k
 
 274
 Certified Kubernetes Administrator
-# get the status of kubelet using systemctl and save to '/tmp/kubelet-status.txt'
-sudo systemctl status kubelet > /tmp/kubelet-status.txt
+# evict the pods that are running on node01
+kubectl drain node01 --ignore-daemonsets
+
+# verify that there are no pods running on node01
+kubectl get po -o wide -A | grep node01
+
+# mark the node scheduleable once again
+kubectl uncordon node01
 
 
 
@@ -2696,10 +2676,8 @@ kubectl create deployment  mysql --image=mysql:8 --dry-run=client -o yaml > exer
 
 277
 Certified Kubernetes Administrator
-# create a role binding named 'acme-corp-role-binding', add 'acme-corp-clusterrole' role and 'secure-sa' service account
-kubectl -n default create rolebinding acme-corp-role-binding --clusterrole=acme-corp-clusterrole --serviceaccount=default:secure-sa
-
-I was missing the namespace stuff when I did this in an exercise.
+# check the current and target version of control plane components
+kubeadm upgrade plan
 
 
 
@@ -2707,15 +2685,11 @@ I was missing the namespace stuff when I did this in an exercise.
 
 278
 Certified Kubernetes Administrator
-YAML syntax for toleration in a pod
-kind: Pod
-metadata:
-  ...
-spec:
-  tolerations:
-  - key: "dedicated"
-    value: "special-user"
-    effect: "NoSchedule"
+Remember the following for deleting a pod created with kubectl apply -f spec-file.yaml. 
+
+kubectl delete pod data-processor -n production
+
+I keep forgetting that it's delete, not destroy. Not putting in the namespace was also tripping me up.
 
 
 
@@ -2803,8 +2777,8 @@ Text editors available in the terminal. Nano is beginner-friendly, while Vim off
 
 286
 Linux
-df -h
-A command that reports disk space usage in a human-friendly format. Helpful for diagnosing storage constraints and exploring filesystem layouts.
+chown
+A command that changes file or directory ownership. It can modify the owner, group, or both (e.g., chown user:group file). Only the root user can change ownership.
 
 
 
@@ -2825,11 +2799,16 @@ ss -t -a -Z
 
 288
 Linux
-# Enable a service to start at boot (creates a symlink in the target directory)
-sudo systemctl enable nginx
+You can list running processes using the ps command (ps means process status). The ps command displays your currently running processes in real-time.
+This will display the process for the current shell with four columns:
 
-# Start it now AND enable it (common pattern)
-sudo systemctl enable --now nginx
+    PID returns the unique process ID
+
+    TTY returns the terminal type you're logged into
+
+    TIME returns the total amount of CPU usage
+
+    CMD returns the name of the command that launched the process.
 
 
 
@@ -2858,8 +2837,11 @@ There are more lib directories scattered around the file system, but this one, t
 
 291
 Linux
-/dev
-/dev contains device files. Many of these are generated at boot time or even on the fly. For example, if you plug in a new webcam or a USB pendrive into your machine, a new device entry will automagically pop up here.
+ss -u -a
+        Display all UDP sockets.
+
+ss -o state established '( dport = :ssh or sport = :ssh )'
+        Display all established ssh connections.
 
 
 
@@ -2877,8 +2859,8 @@ In (\d{4})-(?:\d{2})-(\d{2}), group 1 = year, group 2 = day (the (?:...) month i
 
 293
 Regex
-Match the right character set
-— \d is digits only; hex needs [0-9a-fA-F], "text inside quotes" needs [^"].
+Named backreference
+— Python: (?P=name). Others: \k<name>.
 
 
 
@@ -2886,9 +2868,7 @@ Match the right character set
 
 294
 Regex
-Possessive ++ *+ ?+
-— Like greedy, but
-never gives characters back during backtracking. Prevents catastrophic backtracking. (Python's built-in re only supports these from version 3.11+.)
+\b only works next to a word character — not against #, @, or $.
 
 
 
@@ -2974,8 +2954,8 @@ Gotcha:
 
 303
 Regex
-\w / \W
-— \w = word character, equivalent to [a-zA-Z0-9_] (note the underscore!). \W = any non-word character.
+. (the dot)
+— Matches any single character except a newline (by default). To match a literal period, escape it (\.) or put it in a class ([.]). Inside a character class, the dot loses its power and is just a literal dot.
 
 
 
@@ -2983,8 +2963,10 @@ Regex
 
 304
 Regex
-. (the dot)
-— Matches any single character except a newline (by default). To match a literal period, escape it (\.) or put it in a class ([.]). Inside a character class, the dot loses its power and is just a literal dot.
+Atomic group (?>...)
+— Once it matches, the engine
+won't backtrack into it
+. A key tool against catastrophic backtracking.
 
 
 
@@ -3022,9 +3004,8 @@ Use the Policy exemptions feature to exempt a resource hierarchy or an individua
 
 308
 Azure Policy
-What is the role of Azure Resource Manager in the governance of Azure applications and resources?
-
-It's the deployment and management service for Azure, providing a management layer that allows creation, update, and deletion of resources.
+At what levels can Azure Policies be assigned?
+Management Group, Subscription, and Resource Group
 
 
 
@@ -3040,10 +3021,7 @@ Azure Policy can prevent noncompliant resources from being created. Azure Policy
 
 310
 Azure Policy
-Compliance scans through Azure policies are triggered by various methods:
-
-    Automatic full scan - A full compliance scan is triggered automatically every 24 hours.
-    Manual scan for Brownfield scenarios - In cases where a new policy is applied to existing resources (Brownfield scenarios), you can manually trigger a compliance scan by running az policy state trigger-scan.
+Multiple policies can be assigned to a single resource at the same scope or at different scopes. Each policy mostly has a different effect defined. The condition and effect for each policy is independently evaluated. The net result of layering policy definitions is considered cumulative most restrictive.
 
 
 
@@ -3105,8 +3083,8 @@ If an authentication response contains Set‑Cookie headers, the API likely expe
 
 317
 KACE API
-requests.Session – Invisible Behavior
-requests.Session() automatically parses Set‑Cookie headers, stores cookies internally, and injects a Cookie header into future requests. This behavior is implicit and can obscure the root cause of failures when not understood.
+Debugging Technique – Inspect Session Cookies
+When debugging authentication issues, inspecting session.cookies confirms whether login established a session and whether cookies are being preserved as expected.
 
 
 
@@ -3125,9 +3103,8 @@ Like HTTP vs REST: HTTP defines verbs and headers; REST gives them meaning.
 
 319
 MCP
-stdio vs Streamable HTTP
-stdio — local, parent/child via pipes, credentials come from environment variables
-Streamable HTTP — remote, networked, credentials come from OAuth 2.1 flows
+Streamable HTTP transport (MCP)
+The transport for remote MCP servers. Supports request/response and server-sent streaming over HTTP. This is the transport that requires the OAuth 2.1 authorization spec.
 
 
 
@@ -3156,8 +3133,10 @@ In a stdio MCP server, stdout is reserved for valid JSON-RPC messages. A stray p
 
 322
 MCP
-Model Context Protocol (MCP)
-An open standard from Anthropic (Nov 2024) for connecting LLM applications to external tools and data sources. Solves the "N×M integration problem" — instead of every AI app writing custom connectors for every data source, both sides speak one protocol.
+The key participants in the MCP architecture are:
+  MCP Host: The AI application that coordinates and manages one or multiple MCP clients
+  MCP Client: A component that maintains a connection to an MCP server and obtains context from an MCP server for the MCP host to use
+  MCP Server: A program that provides context to MCP clients
 
 
 
@@ -3165,10 +3144,12 @@ An open standard from Anthropic (Nov 2024) for connecting LLM applications to ex
 
 323
 MCP
-The key participants in the MCP architecture are:
-  MCP Host: The AI application that coordinates and manages one or multiple MCP clients
-  MCP Client: A component that maintains a connection to an MCP server and obtains context from an MCP server for the MCP host to use
-  MCP Server: A program that provides context to MCP clients
+Server primitives (what your server exposes)
+Three things a server can offer to clients:
+
+Tools — functions the model invokes mid-task
+Resources — read-only data the user attaches to context
+Prompts — templated workflows the user invokes
 
 
 
@@ -3321,11 +3302,10 @@ Faster and cleaner than chained extract() calls when the format is predictable. 
 
 337
 KQL
-let Statement Binds a name to a scalar, a tabular expression, or a function. Declared at the top of the query; ; separates statements.
+bin() — Time and Numeric Buckets Rounds a value down to the nearest multiple of the bin size.
 
-    let cutoff = ago(7d);
-    let VIPs = Users | where Tier == "Gold";
-    VIPs | where LastSeen > cutoff
+    bin(TimeGenerated, 5m) — 5-minute buckets for time-series charts
+    bin(Price, 10) — numeric buckets of 10 Pair with summarize … by bin(...) for render timechart visualizations.
 
 
 
@@ -3364,11 +3344,11 @@ in, !in, in~, !in~ Membership tests.
 
 341
 KQL
-count() vs. dcount() vs. count_distinct()
+has vs. contains
 
-    count() — total rows, duplicates included.
-    dcount(col) — approximate distinct count using HyperLogLog. Fast on huge datasets, slight inaccuracy.
-    count_distinct(col) — exact distinct count. Use on smaller sets where precision matters.
+    has — matches whole indexed terms (words split on punctuation/whitespace). Uses the term index. Fast.
+    contains — substring scan, no index. Slow on large tables. "login" would match "relogin". 
+    Rule of thumb: searching for a full token (username, IP, error code, GUID) → has. Need a partial substring → contains.
 
 
 
@@ -3376,10 +3356,10 @@ count() vs. dcount() vs. count_distinct()
 
 342
 KQL
-distinct Returns unique combinations of the listed columns. Think of it as "give me the unique set."
+mv-expand — Array to Rows Turns one row with an array into multiple rows (like SQL UNNEST or CROSS APPLY).
 
-Events | distinct UserId, EventType
-Cheaper than summarize by UserId, EventType when you don't need aggregates.
+T | mv-expand Tag = Tags
+If Tags held ["red","blue","green"], you now get three rows. Use mv-apply when you need to filter or transform each element before expansion.
 
 
 
@@ -3387,8 +3367,10 @@ Cheaper than summarize by UserId, EventType when you don't need aggregates.
 
 343
 KQL
-The Pipe | 
-KQL is a pipelined language. Each | takes the tabular result from the previous step and feeds it as input to the next operator. Read queries left-to-right, top-to-bottom: source table → filter → transform → aggregate → present.
+summarize — KQL's Aggregator There is no GROUP BY in KQL. Everything happens in one operator:
+
+T | summarize Count=count(), Avg=avg(Dur) by EventLevel
+The by clause defines the groups. Omit by to aggregate the entire table into one row.
 
 
 
@@ -3447,11 +3429,13 @@ A managed image, a snapshot, a VM, another existing image version, or a VHD. Can
 
 349
 Azure Compute Gallery and Disk Architecture
-Hyper-V Generation 2 = UEFI + GPT 
-    Gen 1 = Legacy BIOS + MBR. 
-    Gen 2 = UEFI firmware + GPT partition table. 
+SecurityType flag values
 
-Trusted Launch, Secure Boot, and vTPM all require Gen 2. Set hyper_v_generation = "V2" on the image definition. Captured Gen 1 images cannot be retrofitted — you'd need to recapture from a Gen 2 source VM.
+    Standard — no Trusted Launch
+    TrustedLaunch — Secure Boot + vTPM + measured boot
+    ConfidentialVM — adds hardware memory encryption (AMD SEV-SNP / Intel TDX)
+
+Set on the image definition. Required for the corresponding VM to deploy as that security type.
 
 
 
@@ -3459,8 +3443,8 @@ Trusted Launch, Secure Boot, and vTPM all require Gen 2. Set hyper_v_generation 
 
 350
 Azure Compute Gallery and Disk Architecture
-Don't prune the driver store 
-Some build pipelines shrink images by trimming the Windows driver store. If you trim out the destination controller's driver, you've built an unbootable image. Won't surface until deploy. Default: leave the store alone unless you know exactly which devices the image will face.
+Sysprep 3-run limit 
+You cannot sysprep /generalize the same Windows install more than 3 times. Each pass adds wear to activation tickets, the driver store, and component-based servicing state. Microsoft caps it to prevent corruption. Implication: never reuse a generalized image as the base of another build — start fresh each time.
 
 
 
@@ -3532,8 +3516,8 @@ Host variables override group variables.
 
 358
 Ansible
-Lowest Precedence
-Role defaults have the lowest variable precedence.
+INI Inventory Format
+The INI format is the simplest inventory format and is commonly used for static host lists.
 
 
 
@@ -3550,8 +3534,10 @@ If a module exists for the resource, use it instead of shell.
 
 360
 Ansible
-Host Group
-A host group is a logical collection of hosts used for targeting plays.
+Mental Model Shortcut
+Modules = state logic
+Tasks = module invocations
+Plays = host targeting
 
 
 
@@ -3559,8 +3545,8 @@ A host group is a logical collection of hosts used for targeting plays.
 
 361
 Ansible
-Variable Naming Strategy
-Prefix variables by role or domain to avoid collisions (e.g., nginx_port).
+Group Vars Precedence
+Group variables override role defaults but are overridden by host variables.
 
 
 
@@ -3568,8 +3554,8 @@ Prefix variables by role or domain to avoid collisions (e.g., nginx_port).
 
 362
 Ansible
-Host Definition
-A host is identified by a name or IP address and may include host-specific variables.
+Task
+A task is a single action that invokes one Ansible module with specific parameters.
 
 
 
@@ -3577,8 +3563,8 @@ A host is identified by a name or IP address and may include host-specific varia
 
 363
 Ansible
-Failed State
-A task reports “failed” when the module cannot complete successfully.
+Extra Vars Precedence
+Extra vars (-e) always win and override all other variable definitions.
 
 
 
@@ -3586,8 +3572,8 @@ A task reports “failed” when the module cannot complete successfully.
 
 364
 Ansible
-Inventory
-Inventory is the source of truth that defines which hosts exist and how they are grouped.
+Static Inventory
+A static inventory is a fixed list of hosts defined in files.
 
 
 
@@ -3603,60 +3589,6 @@ A task reports “ok” when the system already matches the desired state.
 
 
 366
-Azure Virtual Machines
-Azure Backup is a backup as a service offering that protects physical or virtual machines no matter where they reside: on-premises or in the cloud.
-
-
-
-
-
-367
-Azure Virtual Machines
-Azure reserves the first four addresses and the last address in each subnet for its use.
-
-
-
-
-
-368
-Azure Virtual Machines
-There is no separate cost for NICs. However, there is a limit to how many NICs you can use based on your VM's size. Size your VM accordingly and reference Virtual Machine pricing.
-
-
-
-
-
-369
-Azure Virtual Machines
-What are the layers of a VM that need to be monitored?
-VM monitoring layers consist of the VM host and the client VM, which includes the guest OS and the workloads and applications that run on the VM.
-
-
-
-
-
-370
-Azure Virtual Machines
-To collect information on your Azure Virtual Desktop infrastructure, you'll need to enable several diagnostic settings on your Azure Virtual Desktop host pools and workspaces (this is your Azure Virtual Desktop workspace, not your Log Analytics workspace).
-
-
-
-
-
-371
-Azure Virtual Machines
-You can open Azure Monitor for Azure Virtual Desktop by doing the following:
-
-    Go to the Azure portal.
-    Search for and select Azure Monitor from the Azure portal. Select Insights Hub under Insights, then select Azure Virtual Desktop. Once you have the page open, enter the Subscription, Resource group, Host pool, and Time range of the environment you want to monitor.
-
-This assumes that the diagnostics settings and workspace were already configured.
-
-
-
-
-
-372
 VBA Office Macros
 Global Word Template Deployment
 A deployment approach where a customized macro-enabled template replaces the default Normal.dotm so that firm-wide macros and styles are automatically available in every Word session.
@@ -3665,7 +3597,7 @@ A deployment approach where a customized macro-enabled template replaces the def
 
 
 
-373
+367
 VBA Office Macros
 Production-Ready Word Formatting Macro
 A macro that uses Range instead of Selection, validates Selection.Type, ensures required styles exist, and respects section and header/footer boundaries.
@@ -3674,7 +3606,7 @@ A macro that uses Range instead of Selection, validates Selection.Type, ensures 
 
 
 
-374
+368
 VBA Office Macros
 Err Object
 A global VBA object that holds details about the most recent runtime error (number, description). It is typically checked after On Error Resume Next and cleared with Err.Clear.
@@ -3683,7 +3615,7 @@ A global VBA object that holds details about the most recent runtime error (numb
 
 
 
-375
+369
 VBA Office Macros
 Selection.Type
 A Word VBA property that indicates the type of current selection, such as normal text, insertion point, table, shape, or header/footer. Checking Selection.Type helps prevent runtime errors when macros assume text selection.
@@ -3692,7 +3624,7 @@ A Word VBA property that indicates the type of current selection, such as normal
 
 
 
-376
+370
 VBA Office Macros
 Select Case
 A multi-branch control structure that chooses one of many paths based on a single expression. It is often clearer than many ElseIf blocks when you have multiple discrete cases.
@@ -3701,7 +3633,7 @@ A multi-branch control structure that chooses one of many paths based on a singl
 
 
 
-377
+371
 VBA Office Macros
 Set (Object Assignment)
 The Set keyword assigns an object reference to an object variable. Without Set, VBA attempts value assignment and will error when working with objects.
@@ -3710,25 +3642,25 @@ The Set keyword assigns an object reference to an object variable. Without Set, 
 
 
 
-378
+372
 VBA Office Macros
-Do While / Do Until
-A loop that repeats while a condition is True (Do While) or until a condition becomes True (Do Until). It is used when you don’t know the exact number of iterations ahead of time.
+Word Sections
+Logical divisions within a Word document that allow different page layouts, headers, footers, and formatting rules. Headers and footers are scoped to sections, not the entire document.
 
 
 
 
 
-379
+373
 VBA Office Macros
-Module vs Procedure Scope
-A variable declared at the top of a module persists for the lifetime of the host application session, while a variable declared inside a Sub or Function exists only during that procedure’s execution.
+Exit Sub / Exit Function
+Early termination statements that immediately leave a procedure. They are commonly used for defensive checks (e.g., “nothing selected → exit”) and for clean control flow after successful completion.
 
 
 
 
 
-380
+374
 VBA Office Macros
 On Error Resume Next
 A VBA error-handling mode that tells VBA to continue execution on the next statement after an error. It can be useful for “try-and-check” patterns but is risky if you do not validate Err.Number and reset error handling.
@@ -3737,7 +3669,7 @@ A VBA error-handling mode that tells VBA to continue execution on the next state
 
 
 
-381
+375
 VBA Office Macros
 Application.OrganizerCopy
 A Word VBA method used to copy styles, macros, or other objects between documents or templates. It is often used to copy required styles from Normal.dotm into the active document when those styles do not already exist.
@@ -3746,10 +3678,69 @@ A Word VBA method used to copy styles, macros, or other objects between document
 
 
 
-382
+376
 VBA Office Macros
 Selection vs Range (Word VBA)
 Selection represents the user’s current cursor position or highlighted content and changes as the cursor moves. Range is an object that represents a portion of a document and can be manipulated without moving the cursor, making Range safer and more stable for Word automation.
+
+
+
+
+
+377
+Azure Virtual Machines
+Let's assume you want to configure and install more software on your virtual machine after the initial deployment. You want this task to use a specific configuration, monitored and executed automatically.
+
+Azure VM extensions are small applications that enable you to configure and automate tasks on Azure VMs after initial deployment.
+
+
+
+
+
+378
+Azure Virtual Machines
+The VM size can be changed while the VM is running, as long as the new size is available in the current hardware cluster the VM is running on. 
+The command line tools report an error if you attempt to resize a VM to an unavailable size. 
+Changing a running VM size automatically reboots the machine to complete the request.
+
+
+
+
+
+379
+Azure Virtual Machines
+There is no separate cost for NICs. However, there is a limit to how many NICs you can use based on your VM's size. Size your VM accordingly and reference Virtual Machine pricing.
+
+
+
+
+
+380
+Azure Virtual Machines
+What are the layers of a VM that need to be monitored?
+VM monitoring layers consist of the VM host and the client VM, which includes the guest OS and the workloads and applications that run on the VM.
+
+
+
+
+
+381
+Azure Virtual Machines
+Metric Namespace: 
+In Metrics Explorer, most resource types have only one namespace, but for some types, you must pick a namespace. For example, storage accounts have separate namespaces for files, tables, blobs, and queues
+
+
+
+
+
+382
+Azure Virtual Machines
+You can open Azure Monitor for Azure Virtual Desktop by doing the following:
+
+    Go to the Azure portal.
+    Search for and select Azure Monitor from the Azure portal. Select Insights Hub under Insights, then select Azure Virtual Desktop. Once you have the page open, enter the Subscription, Resource group, Host pool, and Time range of the environment you want to monitor.
+
+This assumes that the diagnostics settings and workspace were already configured.
 
 
 
@@ -3805,8 +3796,9 @@ Azure RBAC role that allows a user to see and launch desktops or apps in AVD.
 
 388
 AVD + Terraform
-Azure RBAC plane vs OS auth plane
-Terraform provisions RBAC, but Windows authentication still depends on VM extensions + reboot + credential providers.
+LSASS (Local Security Authority Subsystem Service)
+Windows component that handles authentication.
+Does not fully reload new credential providers until reboot.
 
 
 
@@ -3866,8 +3858,11 @@ One opens up creative connections, the other narrows and sharpens attention.
 
 394
 Flow State
-Flow Cycle — Recovery Phase 
-The brain replenishes depleted neurochemicals. Feels flat or low-energy. Skipping recovery triggers excess cortisol, which undermines the learning gains from flow.
+Flow vs. Hyperfocus
+
+Flow: Directed and intentional. Requires clear goals and challenge-skill match.
+Hyperfocus: Happens to you without deliberate control.
+ADHD research found students with higher ADHD symptoms reported higher hyperfocus but lower flow. The raw absorption capacity could be an asset — but only when flow conditions are engineered around it.
 
 
 
@@ -3957,10 +3952,10 @@ Example: Dodgson invented words because English apparently wasn’t weird enough
 
 403
 The Violinist's Thumb, Keane
-volte-face (volt-FAHS)
+Retinol (RET-in-ol)
 noun
-A sudden reversal of opinion or policy.
-Example: The company made a volte-face after public criticism.
+A form of vitamin A important for vision and skin health.
+Example: Retinol is common in skin creams and overhyped skincare forums.
 
 
 
@@ -3990,10 +3985,10 @@ Example: The lawyer grinned like Mephistopheles after reading the contract.
 
 406
 The Violinist's Thumb, Keane
-charwomen (CHAR-wim-in)
+Zipf's law (ZIPFS law)
 noun
-Women employed to clean houses or offices, especially by the day.
-Example: Victorian offices often employed charwomen for cleaning.
+The principle that in many datasets, the most common item appears about twice as often as the second, three times as often as the third, etc.
+Example: Word frequencies in books often follow Zipf’s law.
 
 
 
@@ -4001,10 +3996,10 @@ Example: Victorian offices often employed charwomen for cleaning.
 
 407
 The Violinist's Thumb, Keane
-œuvre (UV-ruh)
+hosannas (hoh-ZAN-uhz)
 noun
-The complete body of work produced by an artist or writer.
-Example: Her entire œuvre dealt with memory and grief.
+Shouts of praise or adoration, especially religious.
+Example: The crowd greeted the victor with hosannas.
 
 
 
@@ -4023,10 +4018,10 @@ Example: The election turned into a legal imbroglio.
 
 409
 The Violinist's Thumb, Keane
-Girolamo Savonarola (sav-on-uh-ROH-luh)
-proper noun
-A Dominican preacher in Florence known for fiery sermons and the “Bonfire of the Vanities.”
-Example: Savonarola denounced luxury until politics denounced him back.
+grawlix (GRAW-liks)
+noun
+A string of symbols like @#$% used in comics to represent swearing.
+Example: The speech bubble was pure grawlix and rage.
 
 
 
@@ -4095,10 +4090,8 @@ The self-signature on a CSR that proves the requester holds the private key matc
 
 416
 Certificate-Based Authentication
-PKCS#10 vs PKCS#12
-- PKCS#10 = the CSR format. A signed *request* sent to a CA asking for a certificate.
-- PKCS#12 = a container bundling an issued certificate + its private key.
-- Memory hook: "10 asks, 12 stores."
+Certificate Transparency (CT) — quick context
+Public append-only logs of every certificate issued by participating CAs. Misissued certs become visible publicly so domain owners can detect them. Complements (and on the web largely replaces) pinning.
 
 
 
@@ -4106,8 +4099,10 @@ PKCS#10 vs PKCS#12
 
 417
 Certificate-Based Authentication
-Certificate Transparency (CT) — quick context
-Public append-only logs of every certificate issued by participating CAs. Misissued certs become visible publicly so domain owners can detect them. Complements (and on the web largely replaces) pinning.
+PKCS#10 vs PKCS#12
+- PKCS#10 = the CSR format. A signed *request* sent to a CA asking for a certificate.
+- PKCS#12 = a container bundling an issued certificate + its private key.
+- Memory hook: "10 asks, 12 stores."
 
 
 
@@ -4195,8 +4190,13 @@ Server + CAL: one server license + one CAL per user/device. Cheaper at small use
 
 425
 SQL Server
-Online index rebuild = Enterprise only 
-24x7 shops that can't tolerate table locks during maintenance windows need Enterprise. Standard can only do offline rebuilds (schema-mod lock on the table). This single requirement drives many Enterprise purchases.
+Database in SUSPECT state — procedure
+
+Set to EMERGENCY mode (read-only, single-user)
+Run DBCC CHECKDB to assess corruption
+Restore from backup if possible — always preferred
+Last resort: REPAIR_ALLOW_DATA_LOSS (which can drop data to make the DB consistent)
+Never run REPAIR_ALLOW_DATA_LOSS as step one.
 
 
 
@@ -4212,7 +4212,11 @@ Transaction log (.ldf) Every database has data files (.mdf, .ndf) plus one trans
 
 427
 SQL Server
-A SQL Server instance (engine, Windows service) hosts many databases. Each database is data files + a transaction log, organized into schemas. Recovery model decides log behavior → log file sizing → backup strategy → backup target sizing. Edition decides features and limits → which decides what hardware is useful (Standard caps RAM at 128 GB) and whether the workload is even possible (online rebuilds → Enterprise).
+Data files vs log file vs tempdb — I/O personalities
+
+Data files — random reads/writes; IOPS + capacity
+Log file — sequential writes; latency is king
+tempdb — bursty mixed; needs its own fast disk + multiple equally-sized files
 
 
 
@@ -4220,8 +4224,8 @@ A SQL Server instance (engine, Windows service) hosts many databases. Each datab
 
 428
 SQL Server
-PAGELATCH_UP on pages 2:1:1, 2:1:3, 2:2:3 
-Database ID 2 = tempdb. Page numbers 1 (PFS), 2 (GAM), 3 (SGAM) are allocation pages. Heavy waits here = tempdb allocation contention. Fix: multiple equally-sized tempdb data files; tempdb on fast storage.
+SOS_SCHEDULER_YIELD 
+CPU pressure. Workers are yielding their schedulers because demand exceeds available CPU. Reinforce with signal-waits % >20–25%. Could be undersized VM, runaway parallel queries, or missing indexes forcing CPU-burning scans.
 
 
 
@@ -4288,7 +4292,7 @@ Terraform identifies resources by their resource address, not by cloud provider 
 
 436
 Terraform
-Refactors that change addresses are dangerous; refactors that change expressions are usually safe.
+If a module suddenly creates resources in an unexpected account, it is likely using the default provider because an alias was not explicitly passed.
 
 
 
@@ -4328,7 +4332,7 @@ Renaming a resource block without updating state causes Terraform to plan a dest
 
 441
 Terraform
-Using any disables meaningful validation and makes refactors harder to reason about.
+The count meta‑argument creates multiple resources using numeric indexes. These indexes shift when items are added or removed, making them unsafe for long‑lived infrastructure.
 
 
 
@@ -4636,16 +4640,9 @@ File → Row Groups → Column Chunks → Pages → Encoded values. Memorize thi
 
 474
 Parquet
-Parquet File Structure (Mental Model)
+Dremel Model
 
-```
-File
- └─ Row Group  (128–512 MB, unit of parallelism, holds min/max stats)
-     └─ Column Chunk  (one per column, contiguous on disk)
-         └─ Page  (~1 MB, unit of encoding + compression)
-```
-
-Wrapped at both ends with the magic bytes `PAR1`. Footer sits at the end.
+The algorithm Parquet uses to store nested data (structs, arrays, maps) in pure columnar form. Originally published by Google. Each leaf field becomes its own column, accompanied by two extra integers per value: definition level and repetition level.
 
 
 
@@ -4697,7 +4694,8 @@ eDiscovery Manager or eDiscovery Administrator
 
 479
 eDiscovery
-With the case created, the next step is to run searches to find relevant content. You can search across Exchange, SharePoint, OneDrive, and Teams using keywords or other filters. Search statistics help refine results, and you can preview content to make sure you're capturing what matters.
+Standard eDiscovery features are included with Microsoft 365 and Office 365 E1, E3, and E5 plans. It supports case creation, content search, holds, and basic exports.
+Premium eDiscovery features add capabilities like review sets, analytics, optical character recognition (OCR), and better export controls. It requires additional licensing.
 
 
 
@@ -4779,7 +4777,7 @@ In Microsoft 365, two public-private key pairs are generated when DKIM signing u
 
 488
 Exchange Online and Defender
-If you own registered but unused domains: If you own registered domains that aren't used for email or anything at all (also known as parked domains), configure SPF TXT records to indicate that no email should ever come from those domains as described later in this article.
+You can't modify the existing SPF TXT record for the *.onmicrosoft.com domain.
 
 
 
@@ -4787,7 +4785,7 @@ If you own registered but unused domains: If you own registered domains that are
 
 489
 Exchange Online and Defender
-Sender Policy Framework (SPF): Specifies the source email servers that are authorized to send mail for the domain.
+Role names that start with the prefix 'My' (for example, MyContactInformation) are end-user roles. End-user roles are assigned to users in role assignment policies, which allow users to operate on object they own (for example, their own account or distribution groups they created). For more information, see Role assignment policies in Exchange Online.
 
 
 
@@ -4822,13 +4820,7 @@ If you use only the Microsoft Online Email Routing Address (MOERA) domain for em
 
 493
 Exchange Online and Defender
-Implicit email authentication extends regular SPF, DKIM, and DMARC checks by using signals from other sources to evaluate inbound email. These sources include:
-
-    Sender reputation.
-    Sender history.
-    Recipient history.
-    Behavioral analysis.
-    Other advanced techniques.
+You can use auditing solutions in Microsoft Purview to track changes made to your Exchange Online configuration by Microsoft and by your organization's administrators, and to audit mailbox access by persons other than the mailbox owner.
 
 
 
@@ -4868,7 +4860,7 @@ Apache Spark — The engine underneath Databricks that processes huge datasets i
 
 498
 Databricks Fundamentals
-Gold layer — Cleaned and aggregated tables: KPIs, totals, roll-ups — purpose-built for dashboards, BI, and executives. Mental image: the showroom.
+Data lake vs. Data warehouse — A lake is a cheap dumping ground for raw files (flexible but messy); a warehouse holds clean, structured tables (reliable but rigid and pricey). The lakehouse merges the best of both.
 
 
 
@@ -4884,7 +4876,7 @@ Notebook — A browser-based document of code cells (SQL or Python) that you run
 
 500
 Databricks Fundamentals
-Lakehouse — A data platform that combines a data lake's cheap, flexible storage with a data warehouse's reliability and speed. It's the core idea behind Databricks: one system for raw files and trustworthy business tables.
+GRANT / REVOKE — SQL commands in Unity Catalog that give or remove a user's access to data objects (tables, schemas). The everyday mechanics of "who can see what."
 
 
 
@@ -4900,7 +4892,7 @@ Databricks SQL — The part of the platform aimed at running queries, building d
 
 502
 Databricks Fundamentals
-Medallion architecture — A design pattern that refines data through three progressively cleaner layers: Bronze → Silver → Gold . Data flows left to right, getting more polished at each hop. (Think medal tiers: rough to refined.)
+Silver vs. Gold (the tricky one) — Both are clean. Silver = detailed rows, tidied up. Gold = those rows rolled up into summaries. The tell: words like summarized, aggregated, KPIs, dashboard, or executive point to Gold . If it's still individual transactions (just clean ones), it's Silver .
 
 
 
@@ -4949,10 +4941,10 @@ Example: Heliotrope grew along the edge of the garden path.
 
 507
 The King in Yellow, Chambers
-divan (dih-VAN)
+boudoir (BOO-dwahr)
 noun
-A long, low sofa without a back, or a council chamber in some Middle Eastern governments.
-Example: Guests reclined on the divan after dinner.
+A woman's private sitting room or bedroom, especially in a wealthy household.
+Example: She retired to her boudoir to read and write letters.
 
 
 
@@ -4982,10 +4974,10 @@ Example: The veteran appeared in a capote and kepi from his old regiment.
 
 510
 The King in Yellow, Chambers
-pyroxylin (pie-ROX-uh-lin)
+arabesque (air-uh-BESK)
 noun
-A highly flammable substance made from nitrated cellulose, used in lacquers, plastics, and early photographic film.
-Example: Early manufacturers used pyroxylin to produce glossy decorative coatings.
+An ornate decorative design featuring intertwined lines, leaves, and floral patterns; also a ballet pose.
+Example: The manuscript margins were filled with intricate arabesques.
 
 
 
@@ -4993,10 +4985,10 @@ Example: Early manufacturers used pyroxylin to produce glossy decorative coating
 
 511
 The King in Yellow, Chambers
-Third Book of Pantagruel (PAN-tuh-groo-el)
-proper noun
-The third novel in the series by François Rabelais, featuring the adventures of Pantagruel and Panurge and known for its satire and philosophical discussions.
-Example: The Third Book of Pantagruel explores questions of fate, marriage, and human folly.
+caisson (KAY-son)
+noun
+A wagon used for carrying artillery ammunition, or a watertight chamber used in construction below water level.
+Example: The artillery caisson followed behind the guns.
 
 
 
@@ -5015,10 +5007,10 @@ Example: Heraclitus argued that conflict and change are fundamental aspects of r
 
 513
 The King in Yellow, Chambers
-astrakhan collar (AS-truh-kan KOL-er)
+dolman (DOHL-man)
 noun
-A collar made from astrakhan, a curly-fleeced lamb fur traditionally used in luxury clothing.
-Example: Her winter coat featured a black astrakhan collar.
+A fitted military-style jacket with decorative braid, especially associated with hussar uniforms.
+Example: The cavalry officer wore an ornate dolman trimmed with gold cord.
 
 
 
@@ -5042,7 +5034,7 @@ Swiss cheese model (Reason). Each safeguard is a slice of cheese with holes; an 
 
 516
 Diagnostic Method
-Schrödinbug. A bug that never misbehaved until someone read the code, realized it couldn't have worked, and then it started failing. Contrast the Heisenbug: a Heisenbug hides when observed; a Schrödinbug is revealed by observation.
+Minimal reproduction. The smallest case that still triggers the failure. Every element you remove that keeps the bug alive is a confounder eliminated — turning "sometimes it breaks" into a sharp, testable signal.
 
 
 
@@ -5066,7 +5058,7 @@ Fishbone / Ishikawa diagram. A cause-and-effect diagram (named for Kaoru Ishikaw
 
 519
 Diagnostic Method
-Regression. A previously-working behavior that breaks after a change. The prompt for delta debugging / git bisect and the first question: what changed?
+Symptom fix vs. root-cause fix. A symptom fix silences the error; a root-cause fix removes the thing that produced it. The tell you only patched a symptom: the bug comes back later, often wearing a different mask.
 
 
 
@@ -5090,7 +5082,7 @@ Differential diagnosis. From medicine: enumerate all plausible causes, rank by l
 
 522
 Diagnostic Method
-Bisection / binary search. Repeatedly halve the suspect space and test the midpoint; each test eliminates half. Turns a linear hunt through N candidates into ~log₂(N) steps.
+Scientific debugging (Zeller). The formal name for the above, from Andreas Zeller's work: observe failure → form a falsifiable hypothesis → design an experiment that could disprove it → refine. "Debugging as a science, not a craft."
 
 
 
@@ -5115,8 +5107,8 @@ A reverse proxy receives client requests and forwards them to backend applicatio
 
 525
 Nginx
-nginx.conf
-nginx.conf is the primary configuration file for Nginx. It defines settings such as listening ports, server blocks, request routing, logging, and reverse-proxy behavior. The main configuration file is commonly located at /etc/nginx/nginx.conf.
+Kubernetes Service
+A Kubernetes Service can provide stable network access to Nginx Pods. The Service selects the appropriate Pods using labels and forwards traffic to the port on which Nginx is listening.
 
 
 
@@ -5155,7 +5147,8 @@ In a Kubernetes Service, `port` is what the Service listens on and `targetPort` 
 
 529
 Certified Kubernetes Administrator
-Kustomize has the concepts of bases and overlays. A base is a directory with a kustomization.yaml, which contains a set of resources and associated customization. A base has no knowledge of an overlay and can be used in multiple overlays.
+# list unit files with systemctl and grep for 'kube'
+sudo systemctl list-unit-files --type service --all | grep kube > services.csv
 
 
 
@@ -5191,15 +5184,6 @@ kubectl logs pod-logging-si
 
 533
 Certified Kubernetes Administrator
-Create an Ingress resource that will allow you to resolve the domain name hello.com to the service named apache-svc over port 80 .
-Remember that the domain resolution is handled with Ingress/spec/- host: "hello.com"
-
-
-
-
-
-534
-Certified Kubernetes Administrator
 # view the config that kubelet uses to authenticate to the Kubernetes API
 cat /etc/kubernetes/kubelet.conf > kubelet-config.txt
 
@@ -5210,9 +5194,22 @@ openssl x509 -in /var/lib/kubelet/pki/kubelet-client-current.pem -text -noout
 
 
 
+534
+Certified Kubernetes Administrator
+Create an Ingress resource that will allow you to resolve the domain name hello.com to the service named apache-svc over port 80 .
+Remember that the domain resolution is handled with Ingress/spec/- host: "hello.com"
+
+
+
+
+
 535
 Certified Kubernetes Administrator
-Burstable QoS applies when a Kubernetes pod sets at least one request or limit but falls short of Guaranteed. Specifying memory requests and limits while leaving CPU unset lands here.
+# create a deployment named "source-ip-app" that uses the image 'registry.k8s.io/echoserver:1.4'
+kubectl create deploy source-ip-app --image registry.k8s.io/echoserver:1.4
+
+# list the deployment and the pods in that deployment
+kubectl get deploy,po
 
 
 
@@ -5220,11 +5217,11 @@ Burstable QoS applies when a Kubernetes pod sets at least one request or limit b
 
 536
 Certified Kubernetes Administrator
-# create a role binding named 'dev-view-binding' to allow the 'dev' service account to view resources in the default namespace
-kubectl create rolebinding dev-view-binding --clusterrole=view --serviceaccount=default:dev --namespace=default
+# using 'auth can-i', verify that you can create deployments as the 'secure-sa' service account in the default namespace
+kubectl auth can-i create deploy --namespace default --as=system:serviceaccount:default:secure-sa
 
-# verify the 'dev' service account can view pods in the default namespace
-kubectl auth can-i get po --namespace default --as=system:serviceaccount:default:dev
+# using 'auth can-i', verify that you CANNOT delete daemonSets as the 'secure-sa' service account in the kube-system namespace 
+kubectl auth can-i delete ds --namespace kube-system --as=system:serviceaccount:default:secure-sa
 
 
 
@@ -5232,11 +5229,15 @@ kubectl auth can-i get po --namespace default --as=system:serviceaccount:default
 
 537
 Certified Kubernetes Administrator
-# using 'auth can-i', verify that you can create deployments as the 'secure-sa' service account in the default namespace
-kubectl auth can-i create deploy --namespace default --as=system:serviceaccount:default:secure-sa
-
-# using 'auth can-i', verify that you CANNOT delete daemonSets as the 'secure-sa' service account in the kube-system namespace 
-kubectl auth can-i delete ds --namespace kube-system --as=system:serviceaccount:default:secure-sa
+YAML syntax for toleration in a pod
+kind: Pod
+metadata:
+  ...
+spec:
+  tolerations:
+  - key: "dedicated"
+    value: "special-user"
+    effect: "NoSchedule"
 
 
 
@@ -5295,9 +5296,8 @@ Displays the disk usage of a directory or file. Often used to identify large fol
 
 543
 Linux
-Command to check ssh in the journalctl log
-
-    sudo journalctl -u ssh --since "2 hours ago"
+/run
+/run is another new directory. System processes use it to store temporary data for their own nefarious reasons. This is another one of those DO NOT TOUCH folders.
 
 
 
@@ -5329,7 +5329,8 @@ conforms to.  CPU usage is unlikely to add up to exactly 100%.
 
 546
 Linux
-/var contains things like logs in the /var/log subdirectories. Logs are files that register events that happen on the system. If something fails in the kernel, it will be logged in a file in /var/log; if someone tries to break into your computer from outside, your firewall will also log the attempt here. It also contains spools for tasks.
+/proc
+/proc, like /dev is a virtual directory. It contains information about your computer, such as information about your CPU and the kernel your Linux system is running. As with /dev, the files and directories are generated when your computer starts, or on the fly, as your system is running and things change.
 
 
 
@@ -5337,20 +5338,11 @@ Linux
 
 547
 Linux
-journalctl options
---vacuum-size=, --vacuum-time=, --vacuum-files=
-    --vacuum-size= removes the oldest archived journal files until
-    the disk space they use falls below the specified size.
-    Accepts the usual "K", "M", "G" and "T" suffixes (to the base
-    of 1024).
+# Enable a service to start at boot (creates a symlink in the target directory)
+sudo systemctl enable nginx
 
-    --vacuum-time= removes archived journal files older than the
-    specified timespan. Accepts the usual "s" (default), "m", "h",
-    "days", "weeks", "months", and "years" suffixes, see
-    systemd.time(7) for details.
-
-    --vacuum-files= leaves only the specified number of separate
-    journal files.
+# Start it now AND enable it (common pattern)
+sudo systemctl enable --now nginx
 
 
 
@@ -5376,11 +5368,8 @@ A real-time system monitor showing CPU usage, memory consumption, and process ac
 
 550
 Linux
-ss -u -a
-        Display all UDP sockets.
-
-ss -o state established '( dport = :ssh or sport = :ssh )'
-        Display all established ssh connections.
+/dev
+/dev contains device files. Many of these are generated at boot time or even on the fly. For example, if you plug in a new webcam or a USB pendrive into your machine, a new device entry will automagically pop up here.
 
 
 
@@ -5406,7 +5395,9 @@ m — multiline
 
 553
 Regex
-\b only works next to a word character — not against #, @, or $.
+Possessive ++ *+ ?+
+— Like greedy, but
+never gives characters back during backtracking. Prevents catastrophic backtracking. (Python's built-in re only supports these from version 3.11+.)
 
 
 
@@ -5491,8 +5482,8 @@ Ordered alternation
 
 562
 Regex
-s — dotall / single-line
-— Makes . match newlines too. (The name is confusing — s is for "single line treated as one blob.")
+\w / \W
+— \w = word character, equivalent to [a-zA-Z0-9_] (note the underscore!). \W = any non-word character.
 
 
 
@@ -5537,8 +5528,9 @@ It allows testing the policy's outcome on existing resources without initiating 
 
 567
 Azure Policy
-At what levels can Azure Policies be assigned?
-Management Group, Subscription, and Resource Group
+What is the role of Azure Resource Manager in the governance of Azure applications and resources?
+
+It's the deployment and management service for Azure, providing a management layer that allows creation, update, and deletion of resources.
 
 
 
@@ -5584,8 +5576,8 @@ If an API evolved from a web UI, assume session state and cookie handling until 
 
 572
 KACE API
-requests.Session – Required for KACE APIs
-KACE APIs require requests.Session() so cookies set during login are preserved and replayed. Without a session, server‑side context such as the selected organization is lost.
+Operational Failure Mode
+Logging in successfully but losing cookies between requests results in errors that appear unrelated to authentication (e.g., missing context, organization, or permissions), even when a bearer token is present.
 
 
 
@@ -5611,8 +5603,8 @@ KACE uses a session‑oriented API model. Login creates a server‑side session 
 
 575
 KACE API
-Using requests Without Session – Common Failure
-Calling requests.post() followed by requests.get() without a shared Session causes cookies returned during authentication to be discarded. This breaks session‑oriented APIs even when authentication initially succeeds.
+requests Without Session
+Using requests.get() or requests.post() directly creates stateless, one‑off requests. Cookies returned by the server are discarded unless manually reattached, making this unsuitable for session‑oriented APIs.
 
 
 
@@ -5620,8 +5612,8 @@ Calling requests.post() followed by requests.get() without a shared Session caus
 
 576
 KACE API
-Bearer Token Authentication
-An authentication model where the client presents a token (usually OAuth/JWT) with each request. The token itself contains or implies identity, tenant, and permissions. No server‑side session or cookies are required.
+requests.Session – Invisible Behavior
+requests.Session() automatically parses Set‑Cookie headers, stores cookies internally, and injects a Cookie header into future requests. This behavior is implicit and can obscure the root cause of failures when not understood.
 
 
 
@@ -5701,7 +5693,16 @@ A lightweight format MCP uses for every message. Required fields on a request:
 
 584
 MCP
-Note that MCP server refers to the program that serves context data, regardless of where it runs. MCP servers can execute locally or remotely. For example, when Claude Desktop launches the filesystem server, the server runs locally on the same machine because it uses the STDIO transport. This is commonly referred to as a “local” MCP server.
+Error responses
+On bad input, return a JSON-RPC error response — don't crash, don't silently default, don't return success-with-null. JSON-RPC defines numeric error codes:
+
+Code	Meaning
+-32700	Parse error
+-32600	Invalid Request
+-32601	Method not found
+-32602	Invalid params
+-32603	Internal error
+Include a clear message. The model often reads error text and self-corrects on the next call.
 
 
 
@@ -5709,11 +5710,7 @@ Note that MCP server refers to the program that serves context data, regardless 
 
 585
 MCP
-Three roles: Host, Client, Server
-    Host — the LLM application the user interacts with (Claude Desktop, an IDE). Initiates connections.
-    Client — a connector object inside the host. One client per server connection.
-    Server — your code. Exposes tools, resources, prompts.
-The confusing bit: "client" is internal to the host, not a separate program. The host is the whole app; the client is its arm reaching out to one server.
+MCP servers are programs that expose specific capabilities to AI applications through standardized protocol interfaces.
 
 
 
@@ -5790,11 +5787,11 @@ Case-Insensitive String Operators Add a tilde (~) to make a string operator case
 
 593
 KQL
-Bonus — Common Type Casts
+Common Beginner Mistakes
 
-    tostring(), toint(), tolong(), toreal(), tobool()
-    todatetime("2026-04-22"), totimespan("01:30:00")
-    todynamic() to parse a JSON string into a dynamic object Casting is required before using a dynamic column in summarize by, sort by, or join on.
+    Using = instead of == for equality (single = is assignment).
+    Forgetting to project before a join — slower and leaks ambiguous columns.
+    Relying on default join (hits the innerunique trap).
 
 
 
@@ -5814,13 +5811,15 @@ Dynamic Types (JSON-like) dynamic holds arbitrary JSON: arrays, property bags, n
 
 595
 KQL
-KQL Join — The innerunique Gotcha 
-The default join kind is innerunique, not inner. It silently deduplicates the left side's join keys before matching — you can lose rows you expected. Always specify kind= explicitly:
+Conditional Aggregations: countif, sumif, avgif
 
-    kind=inner — true inner join, every matching pair
-    kind=leftouter — keep all left rows, null for unmatched
-    kind=fullouter — keep unmatched rows from both sides
-    kind=leftanti — left rows with no match on right (great for "not in")
+
+| summarize
+    Errors = countif(Level == "Error"),
+    Warnings = countif(Level == "Warning"),
+    BigSpend = sumif(Amount, Amount > 1000)
+
+Avoids filtering then re-joining — one pass, multiple conditional buckets.
 
 
 
@@ -5852,13 +5851,11 @@ between Inclusive range check for numbers or datetimes.
 
 598
 KQL
-String Functions
-    tolower(), toupper()
-    trim(@"\s+", s)
-    — trim by regex
-    replace_string(s, "old", "new")
-    extract(@"Error (\d+)", 1, Message)
-    — first regex capture group
+count() vs. dcount() vs. count_distinct()
+
+    count() — total rows, duplicates included.
+    dcount(col) — approximate distinct count using HyperLogLog. Fast on huge datasets, slight inaccuracy.
+    count_distinct(col) — exact distinct count. Use on smaller sets where precision matters.
 
 
 
@@ -5877,10 +5874,10 @@ top vs. sort + take
 
 600
 KQL
-mv-expand — Array to Rows Turns one row with an array into multiple rows (like SQL UNNEST or CROSS APPLY).
+distinct Returns unique combinations of the listed columns. Think of it as "give me the unique set."
 
-T | mv-expand Tag = Tags
-If Tags held ["red","blue","green"], you now get three rows. Use mv-apply when you need to filter or transform each element before expansion.
+Events | distinct UserId, EventType
+Cheaper than summarize by UserId, EventType when you don't need aggregates.
 
 
 
@@ -5906,8 +5903,9 @@ A label, not an enforcement. After the date, Azure annotates the version as past
 
 603
 Azure Compute Gallery and Disk Architecture
-Azure VM Agent (waagent / WindowsAzureGuestAgent) 
-The daemon that turns a generic OS into "an Azure VM." On first boot, reads provisioning input from the Azure fabric (hostname, password, custom data, SSH keys), then enables extensions. If absent or broken in a captured image, VMs deploy but never finish provisioning — extensions never run, status sits at "Not Ready." Smoke-test extension push on every Packer output.
+NVMe vs. SCSI — why NVMe wins on modern hardware 
+SCSI was designed for single-head spinning disks: one command queue made sense. 
+NVMe was designed for parallel SSDs from scratch: up to 65,535 queues, each up to 65,535 commands deep. On many-core CPUs, every core can run its own queue without contending through one bottleneck. The result is dramatically higher IOPS-per-vCPU.
 
 
 
@@ -5935,13 +5933,11 @@ hen you create an image version, the feature flags from its source (DiskControll
 
 606
 Azure Compute Gallery and Disk Architecture
-SecurityType flag values
+Hyper-V Generation 2 = UEFI + GPT 
+    Gen 1 = Legacy BIOS + MBR. 
+    Gen 2 = UEFI firmware + GPT partition table. 
 
-    Standard — no Trusted Launch
-    TrustedLaunch — Secure Boot + vTPM + measured boot
-    ConfidentialVM — adds hardware memory encryption (AMD SEV-SNP / Intel TDX)
-
-Set on the image definition. Required for the corresponding VM to deploy as that security type.
+Trusted Launch, Secure Boot, and vTPM all require Gen 2. Set hyper_v_generation = "V2" on the image definition. Captured Gen 1 images cannot be retrofitted — you'd need to recapture from a Gen 2 source VM.
 
 
 
@@ -5949,8 +5945,8 @@ Set on the image definition. Required for the corresponding VM to deploy as that
 
 607
 Azure Compute Gallery and Disk Architecture
-Sysprep 3-run limit 
-You cannot sysprep /generalize the same Windows install more than 3 times. Each pass adds wear to activation tickets, the driver store, and component-based servicing state. Microsoft caps it to prevent corruption. Implication: never reuse a generalized image as the base of another build — start fresh each time.
+Don't prune the driver store 
+Some build pipelines shrink images by trimming the Windows driver store. If you trim out the destination controller's driver, you've built an unbootable image. Won't surface until deploy. Default: leave the store alone unless you know exactly which devices the image will face.
 
 
 
@@ -6025,8 +6021,8 @@ If you can’t explain where a variable’s value comes from, the design is wron
 
 615
 Ansible
-Parent Group
-A parent group applies variables and targeting to all child groups.
+Desired State
+Desired state describes what the system should look like, not the steps to get there (e.g., “package is installed”, not “run apt install”).
 
 
 
@@ -6046,8 +6042,8 @@ Use inventory groups like prod, stage, dev to scope variables cleanly.
 
 617
 Ansible
-Module Execution Location
-Most modules are copied to and executed on the managed host, not the control node.
+Host Group
+A host group is a logical collection of hosts used for targeting plays.
 
 
 
@@ -6055,8 +6051,8 @@ Most modules are copied to and executed on the managed host, not the control nod
 
 618
 Ansible
-Group Vars Precedence
-Group variables override role defaults but are overridden by host variables.
+Variable Naming Strategy
+Prefix variables by role or domain to avoid collisions (e.g., nginx_port).
 
 
 
@@ -6073,8 +6069,8 @@ The all group implicitly contains every host in the inventory.
 
 620
 Ansible
-Command vs Shell
-command does not invoke a shell or support pipes/redirection; shell does.
+Failed State
+A task reports “failed” when the module cannot complete successfully.
 
 
 
@@ -6082,8 +6078,8 @@ command does not invoke a shell or support pipes/redirection; shell does.
 
 621
 Ansible
-Host Variables
-Host variables apply only to a single host and override group-level variables.
+Inventory
+Inventory is the source of truth that defines which hosts exist and how they are grouped.
 
 
 
@@ -6099,55 +6095,6 @@ SSH is the default transport Ansible uses to connect to managed hosts and execut
 
 
 623
-Azure Virtual Machines
-Let's assume you want to configure and install more software on your virtual machine after the initial deployment. You want this task to use a specific configuration, monitored and executed automatically.
-
-Azure VM extensions are small applications that enable you to configure and automate tasks on Azure VMs after initial deployment.
-
-
-
-
-
-624
-Azure Virtual Machines
-To open Metrics Explorer, you can:
-
-    Select Metrics from the VM's left navigation menu under Monitoring.
-    Select the See all Metrics link next to Platform metrics on the Monitoring tab of the VM's Overview page.
-    Select Metrics from the left navigation menu on the Azure Monitor Overview page.
-
-
-
-
-
-625
-Azure Virtual Machines
-Azure Monitor Metrics automatically monitors a predefined set of metrics for every Azure VM, and retains the data for 93 days with some exceptions.
-
-
-
-
-
-626
-Azure Virtual Machines
-Metric Namespace: 
-In Metrics Explorer, most resource types have only one namespace, but for some types, you must pick a namespace. For example, storage accounts have separate namespaces for files, tables, blobs, and queues
-
-
-
-
-
-627
-Azure Virtual Machines
-2. Which of these parameters isn't included in the dropdown fields when you define a Metrics Explorer graph?
-Time range
-You select the time range and granularity for a metrics graph by selecting the time filter above the graph.
-
-
-
-
-
-628
 VBA Office Macros
 Implicit Type Suffixes (%, $, @)
 Legacy VBA type characters that force a variable’s type (e.g., % for Integer). They can reduce clarity and are generally avoided in modern VBA style, but you will still see them in older codebases.
@@ -6156,7 +6103,7 @@ Legacy VBA type characters that force a variable’s type (e.g., % for Integer).
 
 
 
-629
+624
 VBA Office Macros
 Range.Expand wdParagraph
 A Word VBA operation that expands a Range to include the entire paragraph containing it. Useful for applying paragraph-level formatting without moving the cursor.
@@ -6165,7 +6112,7 @@ A Word VBA operation that expands a Range to include the entire paragraph contai
 
 
 
-630
+625
 VBA Office Macros
 Paragraph Object (Word VBA)
 Represents a paragraph in a Word document. Looping through ActiveDocument.Paragraphs is the safest way to apply formatting consistently across all paragraphs.
@@ -6174,7 +6121,7 @@ Represents a paragraph in a Word document. Looping through ActiveDocument.Paragr
 
 
 
-631
+626
 VBA Office Macros
 Normal.dotm
 The global Word template that loads at application startup (firm specific). Macros and styles stored in Normal.dotm are available to all documents for that user, making it the execution boundary for global Word macros.
@@ -6183,7 +6130,7 @@ The global Word template that loads at application startup (firm specific). Macr
 
 
 
-632
+627
 VBA Office Macros
 Line Continuation ( _ )
 An underscore preceded by a space tells VBA that a statement continues on the next line. It is commonly used to keep long argument lists readable, especially in Word methods that take many named parameters.
@@ -6192,7 +6139,7 @@ An underscore preceded by a space tells VBA that a statement continues on the ne
 
 
 
-633
+628
 VBA Office Macros
 Label (e.g., ErrorHandler: )
 A named target within a procedure used by GoTo or error handling constructs. Labels exist only within the procedure where they are declared.
@@ -6201,37 +6148,84 @@ A named target within a procedure used by GoTo or error handling constructs. Lab
 
 
 
-634
+629
 VBA Office Macros
-Exit Sub / Exit Function
-Early termination statements that immediately leave a procedure. They are commonly used for defensive checks (e.g., “nothing selected → exit”) and for clean control flow after successful completion.
+Sub … End Sub
+A procedure block that runs actions but does not return a value. VBA uses Sub to mark the start of the macro and End Sub to mark the end.
+
+
+
+
+
+630
+VBA Office Macros
+Module vs Procedure Scope
+A variable declared at the top of a module persists for the lifetime of the host application session, while a variable declared inside a Sub or Function exists only during that procedure’s execution.
+
+
+
+
+
+631
+VBA Office Macros
+Function … End Function
+A procedure block that returns a value to its caller. Functions can be used in code and (in Excel) often in worksheet cells, whereas Word macros are commonly written as Subs.
+
+
+
+
+
+632
+VBA Office Macros
+Header/Footer Scope
+In Word, headers and footers belong to sections rather than the document as a whole. Modifying headers or footers without accounting for section boundaries can cause unintended changes.
+
+
+
+
+
+633
+Azure Virtual Machines
+Azure Backup is a backup as a service offering that protects physical or virtual machines no matter where they reside: on-premises or in the cloud.
+
+
+
+
+
+634
+Azure Virtual Machines
+Azure reserves the first four addresses and the last address in each subnet for its use.
 
 
 
 
 
 635
-VBA Office Macros
-Word Sections
-Logical divisions within a Word document that allow different page layouts, headers, footers, and formatting rules. Headers and footers are scoped to sections, not the entire document.
+Azure Virtual Machines
+Azure Monitor Metrics automatically monitors a predefined set of metrics for every Azure VM, and retains the data for 93 days with some exceptions.
 
 
 
 
 
 636
-VBA Office Macros
-Link to Previous (Headers and Footers)
-A section-level setting in Word that causes a header or footer to inherit content from the previous section. If enabled, changes to one section’s header or footer will propagate to linked sections.
+Azure Virtual Machines
+Azure Backup uses several components that you download and deploy to each computer you want to back up. The component that you deploy depends on what you want to protect.
+
+    Azure Backup agent
+    System Center Data Protection Manager
+    Azure Backup Server
+    Azure Backup VM extension
 
 
 
 
 
 637
-VBA Office Macros
-Comments ( ' )
-Any text after a single quote is ignored by VBA at runtime. Comments are used to document intent and clarify what each section of a macro does.
+Azure Virtual Machines
+2. Which of these parameters isn't included in the dropdown fields when you define a Metrics Explorer graph?
+Time range
+You select the time range and granularity for a metrics graph by selecting the time filter above the graph.
 
 
 
@@ -6259,9 +6253,8 @@ With NtLmSsp + 0xc0000064, it means Windows could not resolve the Entra user.
 
 640
 AVD + Terraform
-AADLoginForWindows extension
-Azure VM extension that enables Entra ID authentication for Windows logon.
-Registers CloudAP credential providers and allows Entra users to sign in to Windows.
+type_handler_version
+Version of the VM extension handler. Incorrect or unhealthy versions can silently break functionality.
 
 
 
@@ -6287,9 +6280,8 @@ Installing an extension in Terraform does not automatically reboot the VM unless
 
 643
 AVD + Terraform
-LSASS (Local Security Authority Subsystem Service)
-Windows component that handles authentication.
-Does not fully reload new credential providers until reboot.
+Azure RBAC plane vs OS auth plane
+Terraform provisions RBAC, but Windows authentication still depends on VM extensions + reboot + credential providers.
 
 
 
@@ -6339,11 +6331,8 @@ Hungarian-American psychologist who formally named "flow" in the 1970s and publi
 
 648
 Flow State
-Flow vs. Hyperfocus
-
-Flow: Directed and intentional. Requires clear goals and challenge-skill match.
-Hyperfocus: Happens to you without deliberate control.
-ADHD research found students with higher ADHD symptoms reported higher hyperfocus but lower flow. The raw absorption capacity could be an asset — but only when flow conditions are engineered around it.
+The 4% Rule 
+The ideal challenge should exceed your current skill by roughly 4% — just barely noticeable. Not a massive stretch, just enough that you have to pay attention. Growth comes from stacking these increments day after day.
 
 
 
@@ -6351,8 +6340,8 @@ ADHD research found students with higher ADHD symptoms reported higher hyperfocu
 
 649
 Flow State
-Flow Cycle — Release Phase 
-Step away from the problem. A walk, a shower, any low-grade physical activity. Lets the prefrontal cortex disengage so the brain shifts from effortful to automatic processing.
+Flow Cycle — Recovery Phase 
+The brain replenishes depleted neurochemicals. Feels flat or low-energy. Skipping recovery triggers excess cortisol, which undermines the learning gains from flow.
 
 
 
@@ -6382,13 +6371,8 @@ Group/collective — social conditions that produce shared flow
 
 652
 Flow State
-The Five Neurochemicals of Flow 
-    Dopamine (focus, pattern recognition), 
-    norepinephrine (arousal, alertness), 
-    endorphins (pain relief, pleasure), 
-    anandamide (lateral thinking, reduced anxiety), 
-    serotonin (mood stability, afterglow). 
-    Together they form the most potent feel-good cocktail the brain can produce.
+The Mastered-Song Problem 
+A guitarist who has fully mastered a song won't enter flow performing it. The challenge is too low relative to skill — the brain settles into boredom. Flow requires stretch, even a small one (the 4% rule).
 
 
 
@@ -6473,10 +6457,10 @@ Example: Certain antibiotics target bacterial topoisomerase.
 
 660
 The Violinist's Thumb, Keane
-contretemps (KON-truh-tahn)
+charwomen (CHAR-wim-in)
 noun
-An embarrassing mishap or unexpected disagreement.
-Example: The dinner party ended in a diplomatic contretemps.
+Women employed to clean houses or offices, especially by the day.
+Example: Victorian offices often employed charwomen for cleaning.
 
 
 
@@ -6495,10 +6479,10 @@ Example: The axon carried impulses to the muscle.
 
 662
 The Violinist's Thumb, Keane
-maharaja (mah-huh-RAH-juh)
+œuvre (UV-ruh)
 noun
-A Hindu prince or ruler in India; also used figuratively for someone living in luxury.
-Example: He traveled like a maharaja, with servants and trunks.
+The complete body of work produced by an artist or writer.
+Example: Her entire œuvre dealt with memory and grief.
 
 
 
@@ -6517,10 +6501,10 @@ Example: Compared with embezzlement, lateness was a peccadillo.
 
 664
 The Violinist's Thumb, Keane
-grawlix (GRAW-liks)
-noun
-A string of symbols like @#$% used in comics to represent swearing.
-Example: The speech bubble was pure grawlix and rage.
+Girolamo Savonarola (sav-on-uh-ROH-luh)
+proper noun
+A Dominican preacher in Florence known for fiery sermons and the “Bonfire of the Vanities.”
+Example: Savonarola denounced luxury until politics denounced him back.
 
 
 
@@ -6557,8 +6541,8 @@ What you generate to ask a CA for a certificate. Contains your public key + iden
 
 668
 Certificate-Based Authentication
-Subject Alternative Name (SAN)
-The X.509 extension that lists additional hostnames a single cert covers (e.g., `www.site.com`, `api.site.com`, `site.com`). Modern browsers ignore the legacy Common Name (CN) field entirely and only validate hostnames against the SAN list.
+X.509
+The standard that defines the structure of a public-key certificate — fields like subject, issuer, serial number, validity dates, public key, and the issuer's signature. Every TLS/HTTPS, S/MIME, or smart-card cert you encounter is an X.509 certificate.
 
 
 
@@ -6575,8 +6559,8 @@ TLS where both sides present certificates. Standard TLS only authenticates the s
 
 670
 Certificate-Based Authentication
-OCSP Must-Staple
-An extension baked into a certificate that tells clients: reject the connection unless a stapled OCSP response is present. Without must-staple, clients usually soft-fail when OCSP is unreachable, and an attacker who can block OCSP traffic exploits that. Must-staple closes the soft-fail hole.
+Subordinate (Intermediate) CAs — Why Use Them
+The root's private key is kept offline in tightly protected hardware. Day-to-day signing is delegated to subordinate CAs. If a subordinate is compromised, you revoke and replace it without touching the root.
 
 
 
@@ -6584,8 +6568,8 @@ An extension baked into a certificate that tells clients: reject the connection 
 
 671
 Certificate-Based Authentication
-Subordinate (Intermediate) CAs — Why Use Them
-The root's private key is kept offline in tightly protected hardware. Day-to-day signing is delegated to subordinate CAs. If a subordinate is compromised, you revoke and replace it without touching the root.
+OCSP (Online Certificate Status Protocol)
+Real-time, per-certificate revocation check. The client asks the CA's OCSP responder "is *this one* serial still valid?" — lightweight versus downloading a full CRL, but requires a live connection.
 
 
 
@@ -6613,8 +6597,11 @@ Use Extended Events. The built-in system_health XE session already captures xml_
 
 674
 SQL Server
-Transaction log storage — what matters 
-The log is append-only sequential writes; every commit waits on a flush. Write latency dominates — target sub-millisecond on premium SSD or NVMe. IOPS and throughput matter more for data files (random) and analytics workloads (sequential throughput).
+FULL recovery means the log grows between log backups. Plan for:
+
+Peak .ldf size between log backups (on the database disk)
+Backup target capacity — full + diff + log files pile up over retention (e.g., 30 days)
+Forget either and you'll hit a full disk. When the backup target fills, log backups fail, the log can't truncate, and the live disk fills next — cascade failure.
 
 
 
@@ -6687,11 +6674,7 @@ Switching to SIMPLE to "fix log growth" throws away point-in-time recovery. If t
 
 682
 SQL Server
-Data files vs log file vs tempdb — I/O personalities
-
-Data files — random reads/writes; IOPS + capacity
-Log file — sequential writes; latency is king
-tempdb — bursty mixed; needs its own fast disk + multiple equally-sized files
+A SQL Server instance (engine, Windows service) hosts many databases. Each database is data files + a transaction log, organized into schemas. Recovery model decides log behavior → log file sizing → backup strategy → backup target sizing. Edition decides features and limits → which decides what hardware is useful (Standard caps RAM at 128 GB) and whether the workload is even possible (online rebuilds → Enterprise).
 
 
 
@@ -6699,8 +6682,8 @@ tempdb — bursty mixed; needs its own fast disk + multiple equally-sized files
 
 683
 SQL Server
-tempdb 
-Shared system database used as a scratchpad by every database on the instance: temp tables, table variables, sort/hash spills, snapshot/RCSI version store. Recreated from scratch every service restart — nothing in it is persistent. Because everyone shares it, a slow or undersized tempdb hurts the entire instance.
+PAGELATCH_UP on pages 2:1:1, 2:1:3, 2:2:3 
+Database ID 2 = tempdb. Page numbers 1 (PFS), 2 (GAM), 3 (SGAM) are allocation pages. Heavy waits here = tempdb allocation contention. Fix: multiple equally-sized tempdb data files; tempdb on fast storage.
 
 
 
@@ -6757,7 +6740,7 @@ If Terraform wants to destroy resources after moving them into a module, the cau
 
 690
 Terraform
-A provider alias allows multiple configurations of the same provider, such as different regions or accounts.
+Refactors that change addresses are dangerous; refactors that change expressions are usually safe.
 
 
 
@@ -6773,7 +6756,12 @@ If a plan shows destruction with no corresponding creates, suspect state/address
 
 692
 Terraform
-If resources are recreated after reordering a map literal, the map keys likely changed. Terraform cares about keys, not visual order.
+Terraform import block syntax is very simple. Make sure that you have a resource block for the import to go to or you use the -generate-config-out option with terraform plan.
+Example
+import {
+  to = azurerm_ip_group.old_ip_group
+  id = "/subscriptions/e4f1f240-7c87-4e7f-a12f-36553fb8721a/resourceGroups/Offshore_VDI/providers/Microsoft.Network/ipGroups/Offshore-AVD-IG"
+}
 
 
 
@@ -6789,7 +6777,7 @@ If create_before_destroy is enabled but Terraform still plans a destroy first, d
 
 694
 Terraform
-If a resource’s address changes, Terraform treats it as a completely different resource, even if the underlying infrastructure is identical.
+Using any disables meaningful validation and makes refactors harder to reason about.
 
 
 
@@ -6821,7 +6809,7 @@ Error Budget Burn Rate measures how quickly a service is consuming its error bud
 
 698
 Observability and SRE
-Latent conditions are hidden weaknesses in a system that remain dormant until combined with other factors. These conditions accumulate over time and are often the true drivers behind major incidents.
+An Unknown-Unknown is a failure mode that was not anticipated and therefore has no predefined alert or dashboard. Observability is designed to support investigation of unknown-unknowns by enabling flexible querying and correlation rather than relying solely on predefined checks.
 
 
 
@@ -6905,23 +6893,19 @@ tempdb (temporary objects)
 
 707
 SQL Server Config
-SQL Server service
-A Windows service that runs a SQL Server instance (e.g., SQL Server (SQLREPL)). Stopping the service stops that instance.
+SQL connectivity test hierarchy
+Standard troubleshooting order:
+
+DNS / ping
+Port check (Test-NetConnection)
+SQL login (sqlcmd)
+Application config
 
 
 
 
 
 708
-SQL Server Config
-Replication / SQL Replicator (context)
-An external service or application that connects to SQL Server. Sensitive to connection reliability, collation compatibility, and configuration correctness.
-
-
-
-
-
-709
 SQL Server Config
 Static port
 A fixed port manually assigned to an instance. Removes dependency on SQL Browser and improves connectivity reliability.
@@ -6930,9 +6914,18 @@ A fixed port manually assigned to an instance. Removes dependency on SQL Browser
 
 
 
+709
+SQL Server Config
+Replication / SQL Replicator (context)
+An external service or application that connects to SQL Server. Sensitive to connection reliability, collation compatibility, and configuration correctness.
+
+
+
+
+
 710
 Apache Spark
-Driver vs. Executor — Driver plans and coordinates (the manager); executors do the actual computation on data partitions (the workers).
+DataFrame — Data organized into named columns with a schema — essentially a distributed table, like a spreadsheet or SQL table. Built on top of RDDs but higher-level and faster because Spark understands its structure. The default choice for most structured work today.
 
 
 
@@ -6999,7 +6992,7 @@ SparkSession — The unified entry point into all Spark functionality — the "f
 
 718
 Apache Spark
-RDD vs. DataFrame — RDD is low-level and unstructured (just a distributed collection); DataFrame adds a schema (named columns + types), enabling Catalyst optimization. Use DataFrames by default; drop to RDDs only for fine-grained control.
+Driver — The "brain" of a Spark application. Runs your main function, creates the SparkSession, splits the job into tasks, delegates them to executors, and collects results. If the Driver crashes, the whole application fails.
 
 
 
@@ -7158,9 +7151,9 @@ Access control is essential in Microsoft Purview eDiscovery. Case access is rest
 
 733
 eDiscovery
-A case reviewer is using the filter panel in a review set to identify documents that are missing tags. What condition should they use?
+You're analyzing a large volume of email data in a review set. What's the benefit of running analytics before starting manual review?
 
-Tag field with the 'Is empty' operator.
+It reduces review volume by grouping near-duplicates and identifying key emails.
 
 
 
@@ -7168,8 +7161,13 @@ Tag field with the 'Is empty' operator.
 
 734
 eDiscovery
-A compliance officer needs to start an investigation into potential data leaks. What should they do first in Microsoft Purview eDiscovery?
-    Create a new eDiscovery case.
+Here are some of the things analytics can do for review sets:
+
+Remove duplicate documents
+Identify the most inclusive emails in a thread
+Group near-duplicate files together
+Organize content by theme
+Flag potentially privileged material using machine learning
 
 
 
@@ -7219,10 +7217,7 @@ DomainKeys Identified Mail (DKIM): DKIM signs outbound messages and stores the s
 
 740
 Exchange Online and Defender
-If you're using the *.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do: 
-
-SPF and DKIM are configured automatically
-DMARC still needs to be manually set up via DNS records.
+If you own registered but unused domains: If you own registered domains that aren't used for email or anything at all (also known as parked domains), configure SPF TXT records to indicate that no email should ever come from those domains as described later in this article.
 
 
 
@@ -7230,7 +7225,7 @@ DMARC still needs to be manually set up via DNS records.
 
 741
 Exchange Online and Defender
-Role names that start with the prefix 'My' (for example, MyContactInformation) are end-user roles. End-user roles are assigned to users in role assignment policies, which allow users to operate on object they own (for example, their own account or distribution groups they created). For more information, see Role assignment policies in Exchange Online.
+Sender Policy Framework (SPF): Specifies the source email servers that are authorized to send mail for the domain.
 
 
 
@@ -7238,9 +7233,11 @@ Role names that start with the prefix 'My' (for example, MyContactInformation) a
 
 742
 Exchange Online and Defender
-HELO is simple: it only introduces the client.
-    It does not provide a mechanism for the client to learn about server features such as STARTTLS, AUTH, SIZE, or other ESMTP extensions.
-    Those are only available via EHLO.
+How DKIM helps SPF: DKIM can validate messages that fail SPF. For example:
+
+    Messages from an email hosting service where the same MAIL FROM address is used for mail from other domains.
+    Messages that encounter server-based email forwarding.
+    Because the DKIM signature in the message header isn't affected or altered in these scenarios, these messages are able to pass DKIM.
 
 
 
@@ -7256,10 +7253,13 @@ Litigation Hold allows you to preserve or archive mailbox content for compliance
 
 744
 Exchange Online and Defender
-SPF: As explained in Set up SPF to identify valid email sources for your custom cloud domains, SPF uses a TXT record in DNS to:
+Implicit email authentication extends regular SPF, DKIM, and DMARC checks by using signals from other sources to evaluate inbound email. These sources include:
 
-Identify valid sources of mail from the MAIL FROM domain.
-What to do if the destination email server receives mail from an undefined source ('hard fail' to reject the message; 'soft fail' to accept and mark the message).
+    Sender reputation.
+    Sender history.
+    Recipient history.
+    Behavioral analysis.
+    Other advanced techniques.
 
 
 
@@ -7267,7 +7267,7 @@ What to do if the destination email server receives mail from an undefined sourc
 
 745
 Exchange Online and Defender
-You can use auditing solutions in Microsoft Purview to track changes made to your Exchange Online configuration by Microsoft and by your organization's administrators, and to audit mailbox access by persons other than the mailbox owner.
+As previously described, SPF makes no attempt to match the domain in MAIL FROM domain and From addresses. DKIM doesn't care if the domain that signed the message matches the domain in the From address. DMARC addresses these deficiencies by using SPF and DKIM to confirm that the domains in the MAIL FROM and From addresses match.
 
 
 
@@ -7275,7 +7275,7 @@ You can use auditing solutions in Microsoft Purview to track changes made to you
 
 746
 Exchange Online and Defender
-Authenticated Received Chain (ARC): Preserves original email authentication information by known services that modify messages in transit. The destination email server can use this information to authenticate messages that would otherwise fail DMARC.
+Secure/Multipurpose Internet Mail Extensions (S/MIME) allows email users to help protect sensitive information by sending signed and encrypted email within their organization. As an administrator, you can enable S/MIME-based security for your organization if you have mailboxes in either Exchange Server or Exchange Online.
 
 
 
@@ -7307,7 +7307,7 @@ Lakeflow (2026 branding) — Recent Databricks material rebrands orchestration a
 
 750
 Databricks Fundamentals
-Cluster vs. Serverless — With a regular cluster you choose and manage the machines (and watch idle cost). With serverless, Databricks handles the servers behind the scenes and they start near-instantly.
+Gold layer — Cleaned and aggregated tables: KPIs, totals, roll-ups — purpose-built for dashboards, BI, and executives. Mental image: the showroom.
 
 
 
@@ -7323,7 +7323,7 @@ Delta Sharing — An open protocol for securely sharing live data with people ou
 
 752
 Databricks Fundamentals
-Delta Lake — The reliable table format that sits on top of raw cloud files and makes them trustworthy. It's what turns a messy lake into something you can safely report from.
+Lakehouse — A data platform that combines a data lake's cheap, flexible storage with a data warehouse's reliability and speed. It's the core idea behind Databricks: one system for raw files and trustworthy business tables.
 
 
 
@@ -7331,7 +7331,7 @@ Delta Lake — The reliable table format that sits on top of raw cloud files and
 
 753
 Databricks Fundamentals
-Managed vs. External tables — With a managed table, Databricks controls both the metadata and the data files (drop the table → data is deleted). With an external table, the data files live outside Databricks' control (drop the table → files remain). Rule of thumb: managed = Databricks owns the files; external = you do.
+Schema enforcement — Delta rejects writes that don't match the table's defined structure (wrong columns/types), protecting tables from accidental corruption.
 
 
 
@@ -7339,7 +7339,7 @@ Managed vs. External tables — With a managed table, Databricks controls both t
 
 754
 Databricks Fundamentals
-Unity Catalog — Databricks' governance layer: controls who can access which data, tracks where data came from, and centralizes permissions across the workspace. The keyword is governance — not speed, not storage.
+Medallion architecture — A design pattern that refines data through three progressively cleaner layers: Bronze → Silver → Gold . Data flows left to right, getting more polished at each hop. (Think medal tiers: rough to refined.)
 
 
 
@@ -7380,10 +7380,10 @@ Example: The café was frequented by students, artists, and grisettes.
 
 758
 The King in Yellow, Chambers
-doxology (dok-SOL-uh-jee)
-noun
-A short hymn or expression of praise to God, especially in Christian worship.
-Example: The congregation concluded the service by singing the doxology.
+déclassé (day-klah-SAY)
+adjective
+Having fallen in social status; no longer fashionable, respectable, or belonging to one's former class.
+Example: The once-grand hotel seemed déclassé compared with the newer resorts.
 
 
 
@@ -7413,10 +7413,10 @@ Example: The castle’s pennons fluttered in the wind above the battlements.
 
 761
 The King in Yellow, Chambers
-arabesque (air-uh-BESK)
+pyroxylin (pie-ROX-uh-lin)
 noun
-An ornate decorative design featuring intertwined lines, leaves, and floral patterns; also a ballet pose.
-Example: The manuscript margins were filled with intricate arabesques.
+A highly flammable substance made from nitrated cellulose, used in lacquers, plastics, and early photographic film.
+Example: Early manufacturers used pyroxylin to produce glossy decorative coatings.
 
 
 
@@ -7424,10 +7424,10 @@ Example: The manuscript margins were filled with intricate arabesques.
 
 762
 The King in Yellow, Chambers
-caisson (KAY-son)
-noun
-A wagon used for carrying artillery ammunition, or a watertight chamber used in construction below water level.
-Example: The artillery caisson followed behind the guns.
+Third Book of Pantagruel (PAN-tuh-groo-el)
+proper noun
+The third novel in the series by François Rabelais, featuring the adventures of Pantagruel and Panurge and known for its satire and philosophical discussions.
+Example: The Third Book of Pantagruel explores questions of fate, marriage, and human folly.
 
 
 
@@ -7446,10 +7446,10 @@ Example: White phlox brightened the shaded corner of the yard.
 
 764
 The King in Yellow, Chambers
-dolman (DOHL-man)
+astrakhan collar (AS-truh-kan KOL-er)
 noun
-A fitted military-style jacket with decorative braid, especially associated with hussar uniforms.
-Example: The cavalry officer wore an ornate dolman trimmed with gold cord.
+A collar made from astrakhan, a curly-fleeced lamb fur traditionally used in luxury clothing.
+Example: Her winter coat featured a black astrakhan collar.
 
 
 
@@ -7473,7 +7473,7 @@ Confounding variable. A hidden factor that correlates with the outcome but isn't
 
 767
 Diagnostic Method
-Bohrbug. A solid, deterministic bug that reproduces reliably under the same conditions — the easy kind. Named after the stable Bohr atom model.
+Delta debugging (Zeller, 1999). An algorithm that automatically trims a failure-inducing input or change-set down to the minimal piece that still triggers the bug — halving and re-testing until only the essential trigger remains. It's minimal reproduction, mechanized. From the paper "Yesterday, my program worked. Today, it does not. Why?"
 
 
 
@@ -7513,7 +7513,7 @@ Latent vs. active failure (Reason). Active = the unsafe act directly linked to t
 
 772
 Diagnostic Method
-Bug-inducing commit (BIC). The specific commit that introduced a regression — the thing git bisect is hunting for.
+Bisection / binary search. Repeatedly halve the suspect space and test the midpoint; each test eliminates half. Turns a linear hunt through N candidates into ~log₂(N) steps.
 
 
 
@@ -7546,8 +7546,8 @@ Nginx is a web server and reverse proxy used to serve HTTP content and forward r
 
 776
 Nginx
-Port 80
-Nginx normally listens for HTTP traffic on TCP port 80. In Kubernetes, a container running the Nginx image will typically have its web server listening on port 80 inside the Pod.
+nginx.conf
+nginx.conf is the primary configuration file for Nginx. It defines settings such as listening ports, server blocks, request routing, logging, and reverse-proxy behavior. The main configuration file is commonly located at /etc/nginx/nginx.conf.
 
 
 
@@ -7555,5 +7555,5 @@ Nginx normally listens for HTTP traffic on TCP port 80. In Kubernetes, a contain
 
 777
 Nginx
-Kubernetes Image
-The nginx container image packages the Nginx web server and its default configuration into a container image. Running kubectl run nginx --image=nginx therefore creates a Pod running a basic web server.
+Server Block
+A server block is an Nginx configuration section that defines how requests for a particular hostname or listening port should be handled. It is roughly analogous to a virtual host in other web servers.
