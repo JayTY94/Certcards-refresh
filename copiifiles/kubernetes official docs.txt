@@ -1,0 +1,69 @@
+https://kubernetes.io/docs/setup/
+
+Getting started
+This section lists the different ways to set up and run Kubernetes. When you install Kubernetes, choose an installation type based on; ease of maintenance, security, control, available resources, and expertise required to operate and manage a cluster. 
+
+You can download Kubernetes to deploy a kubernetes cluster on a local machine, to the cloud, or for your own datacenter.
+
+Several Kubernetes components such as kube-apiserver or kube-proxy can also be deployed as container images within the cluster.
+
+It is recommended to run Kubernetes components as container images whenever possible, and to have Kubernetes manage those componenets. Components that run containers - notably, the kubelet - can't be included in this category. 
+
+If you don't want to manage a Kubernetes cluster yourself, you could pick a managed service, including certified platforms. There are also other standardized and custom solutions across a wide range of cloud and bare metal environments.
+
+Learning Environment.
+If you're learning Kubernetes, use the tool supported by the Kubernetes community, or tools in the ecosystem to set up a Kubernetes cluster on a local machine. See Learning environment.
+
+Production environment
+When evaluating a solution for a production environment, consider which aspects of operating a Kubernetes cluster (or abstrations) you want to manage yourself and which you prefer to hand over to a provider. 
+
+For a cluster you're managing yourself, the officially supported tool for deploying kubernetes is kubeadm.
+
+What's next
+Download Kubernetes
+Download and install tools including kubectl 
+Select a container rutnime for your new cluster 
+Learn about best practice sfor cluster setup.
+
+Kubernetes is designed for its control plane to run on Linux. Within your cluster you can run applications on Linux or other operating systems, including Windows.
+
+    Learn to set up clusters with Windows nodes 
+
+https://kubernetes.io/docs/setup/learning-environment/
+
+Learning Environment
+
+If you are learning Kuberenets, you need a place to practice. This page explains your options for setting up a Kubernetes environment where you can experiment and learn.
+
+Installing kubectl 
+
+Before you set up a cluster, you need the kubectl command-line tool. This tool lets you communicate with a Kubernetes cluster and run commands against it.
+
+See Install and set up kubectl for installation instructions.
+
+Setting up local Kubernetes environments
+
+Running Kubernetes locally gives you a safe environment to learn and experiment. You can set up and tear down clusters without worrying about costs or affecting production systems.
+
+kind
+kind (Kubernetes IN Docker) runs Kubernetes clusters using Docker containers as nodes. It is lightweight and designed specifically for testing Kubernetes itself, but works great for learning too.
+
+To get started with kind, see the kind quickstart.
+
+minikube
+minikube runs a single-node Kubernetes cluster on your local machine. It supports multiple container runtimes and owrks on Linux, macOS, and Windows. To get started with minikube, see the minikube get started guide.
+
+Other local options
+
+This item links to a third party project or product that is not part of Kubernetes iteslf. More information here.
+
+There are several third-party tools that can also run Kubernetes locally. Kubernetes does not provide support for these tools, but they may work well for your learning needs:
+
+    Docker Desktop can run a local Kubernetes cluster 
+    Podman Desktop can run a local Kubernetes Cluster
+    Rancher Desktop provides Kubernetes on your Desktop
+    MicroK8s runs a lightweigth Kubernetes cluster.
+    Red Hat CodeReady Containers (CRC) runs a minimal OpnenShift cluster locally (OpenShift is Kubernetes-conformant)
+
+Refer to each tool's documentation for setup instructions and support.
+
