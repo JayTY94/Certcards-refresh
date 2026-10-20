@@ -1,36 +1,14 @@
 Define the following list of words with a format similar to the entries at the end of this message.
 
-pennons
-declasse
-officiously
-casemate
-pyroxylin
-arabesque
-boudoir
-divan
-suisse
-vesper
-anteliers
-doxology
-limpid
-Third Book of Pataruel
-Heraclitus
-curlew
-covert
-piquer
-interrogative
-gamin
-garret
-astrakan collar
-dolman
-capote and kepi
-caisson
-heliotrope
-gimlet
-genarme
-white phlox
-tabouret
-grisette
+scurrilous
+jerry shop
+cavil
+skald
+barrows
+louche dignity
+footpad
+cosseted (indulgence)
+faff
 
 
 ===================
