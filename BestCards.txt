@@ -241,9 +241,29 @@ DNS over HTTPS(DoH) is a protocol that encrypts DNS queries by sending them over
 
 ........
 Duplicate content refers to identical or very similar content appearing on multiple webpages or across different websites. It can negatively impact SEO by causing confusiton for search engines about which page to rank, diluting search rankings.
+
+
+
+
 ........
+Client Credentials Grant 
+An OAuth2.0 authentication flwo where an application uses its own credentials (Client ID and Secret) to obtain an access token. This grant type is used for server-to-server ineteractions, allowing applications like Azure Functions to authenticate with Azure AD without user involvement.
+
+
+
 ........
+
+
+
+
 ........
+
+
+
+
 ........
-........
+
+
+
+
 ........
