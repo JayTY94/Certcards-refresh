@@ -5,7 +5,7 @@ import string
 length = int(input("Enter password length: "))
 
 # Combine letters, digits, and symbols
-characters = string.ascii_letters + string.digits + string.punctuation
+characters = string.ascii_letters + string.digits + "!@#$%^&*"
 
 # Generate the password using a list comprehension and join
 password = "".join(random.choice(characters) for _ in range(length))
