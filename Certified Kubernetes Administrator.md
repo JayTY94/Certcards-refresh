@@ -3,39 +3,6 @@
 
 
 
-
-7
-Certified Kubernetes Administrator
-
-
-
-
-
-
-8
-Certified Kubernetes Administrator
-
-
-
-
-
-
-9
-Certified Kubernetes Administrator
-
-
-
-
-
-
-10
-Certified Kubernetes Administrator
-
-
-
-
-
-
 11
 Certified Kubernetes Administrator
 
