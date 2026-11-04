@@ -3,48 +3,12 @@
 
 
 
-11
-Certified Kubernetes Administrator
-
-
-
-
-
-
-12
-Certified Kubernetes Administrator
-
-
-
-
-
-
-13
-Certified Kubernetes Administrator
-
-
-
-
-
-
-14
-Certified Kubernetes Administrator
-
-
-
-
-
-
-15
-Certified Kubernetes Administrator
-
-
-
-
-
 
 16
 Certified Kubernetes Administrator
+Check which versions are available to upgrade to and validate whether your current cluster is upgradeable. This command can only run on the control plane nodes where the kubeconfig file "admin.conf" exists. To skip the internet check, pass in the optional [version] parameter.
+
+kubeadm upgrade plan [version] [flags]
 
 
 
