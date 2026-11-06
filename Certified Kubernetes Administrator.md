@@ -3,6 +3,10 @@
 
 22
 Certified Kubernetes Administrator
+# Remove the default annotation from local-path
+kubectl patch storageclass local-path -p '{"metadata": {"annotations": {"storageclass.kubernetes.io/is-default-class": "false"}}}'
+# Set local-path-retain as the new default
+kubectl patch storageclass local-path-retain -p '{"metadata": {"annotations": {"storageclass.kubernetes.io/is-default-class": "true"}}}'
 
 
 
@@ -11,8 +15,16 @@ Certified Kubernetes Administrator
 
 23
 Certified Kubernetes Administrator
-
-
+Pod Spec to add a pvc
+kind: Pod
+...
+spec:
+  containers:
+  ...
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+      claimName: retain-pvc
 
 
 
